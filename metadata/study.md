@@ -1,3 +1,11 @@
+---
+name: soep-core
+label: SOEP-Core
+config:
+    variables:
+        label-table: True
+---
+
 # SOEP-Core
 
 ## Citation
