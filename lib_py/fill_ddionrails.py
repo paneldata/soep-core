@@ -26,7 +26,11 @@ def study():
     os.system("cp metadata/study.md ddionrails")
 
 def r2ddi():
-    os.system("rm -r ddionrails/r2ddi; cp -r r2ddi ddionrails")
+    os.system("""
+        rm -r ddionrails/r2ddi
+        mkdir -p ddionrails/r2ddi/v31
+        cp -r r2ddi/v31/en ddionrails/r2ddi/v31
+    """)
 
 def main():
     study()
