@@ -20,6 +20,8 @@ def variables():
         "variable":"variable_name",
         "concept":"concept_name",
     }, inplace=True)
+    valid = x.ix[ : , ("study_name", "dataset_name", "variable_name")].duplicated() == False
+    x = x.ix[valid]
     x.to_csv("ddionrails/variables.csv", index=False)
 
 def study():
