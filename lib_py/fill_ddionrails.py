@@ -35,6 +35,9 @@ def variables():
     lower_all_names(x)
     x.to_csv("ddionrails/variables.csv", index=False)
 
+def bibtex():
+    os.system("cp metadata/bibtex.bib ddionrails")
+
 def study():
     os.system("cp metadata/study.md ddionrails")
 
@@ -50,6 +53,7 @@ def main():
     datasets()
     variables()
     r2ddi()
+    bibtex()
 
 if __name__ == "__main__":
     main()
