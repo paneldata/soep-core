@@ -1,0 +1,575 @@
+study,questionnaire,question,item,template.id,text_de,instruction_de,text,instruction,scale,answer_list,filter,goto,concept,description,number
+soep-core,soep-core-2014-ll,0,,,"Dieser Fragebogen ergänzt die Angaben im grünen Personenfragebogen. Er enthält Informationen zur Person, die nur einmal erfragt werden.
+Achtung: Jugendliche, die 1997 geboren sind, erhalten stattdessen den roten Jugendfragebogen.
+Ihre Mitarbeit ist freiwillig. Die wissenschaftliche Aussagekraft dieser Untersuchung hängt aber entscheidend von der Mitarbeit aller Personen ab.
+Darum bitten wir Sie herzlich, unserem Mitarbeiter dieses Interview zu gewähren oder den Fragebogen sorgfältig selbst auszufüllen.",,"This questionnaire complements information of the green personal questionnaire. Attention: Youth, born 1997 need to complete the red youth questionnaire. Your participation is voluntary but the scientific relevance of this study depends crucially on the participation of every member of every household. Therefore we ask that: You allow our representative to carry out this interview, or you carefully fill out the questionnaire yourself.",,txt,,,,,,
+soep-core,soep-core-2014-ll,0,1,,Bitte vor Übergabe unbedingt eintragen lt. Adressenprotokoll:,,"Before handing in the questionnaire, please enter in accordance with the address log:",,txt,,,,,,
+soep-core,soep-core-2014-ll,0,hnr,,Nr. des Haushalts:,,No. of household:,,int,,,,hnr,,
+soep-core,soep-core-2014-ll,0,pnr,,Person Nr.:,,Person No.:,,int,,,,pnr,,
+soep-core,soep-core-2014-ll,0,name,,Vorname:,Bitte in Druckbuchstaben,Prename:,Please use block capitals,chr,,,,name,,
+soep-core,soep-core-2014-ll,1,,,In welchem Jahr und in welchem Monat sind Sie geboren?,,What are your birth month and birth year?,,txt,,,,,"Researcher Notes:
+Maximum: 1900
+",1
+soep-core,soep-core-2014-ll,1,lgeb,,Jahr,,Year,,int,,,,lgeb,,1
+soep-core,soep-core-2014-ll,1,lgebmo,,Monat,,Month,,int,,,,lgebmo,,1
+soep-core,soep-core-2014-ll,2,,,"In welchem Ort sind Sie geboren?
+Bitte nennen Sie bei Orten, die es mehrmals gibt bzw. bei kleinen Orten den Namen der nahegelegenen Stadt mit. ","Tragen Sie bitte den Ortsnamen in das linke Feld und ggf. die Zusatzangabe in das rechte Feld.
+Bitte verfahren Sie auch entsprechend bei Geburtsorten, die nicht in Deutschland liegen. Z. B. „Düsseldorf“, „Frankfurt an der Oder“, „Frankfurt am Main“ in das linke Feld und im Fall von „Roßdorf
+bei Schmalkalden“, tragen Sie „Roßdorf“ in das linke und „bei Schmalkalden“ in das rechte Feld ein.
+Bitte verfahren Sie auch entsprechend bei Geburtsorten, die nicht in Deutschland liegen. ",Where were you born?,"Please write the name of the town in the left blank and any additional information in the right blank. For example, write ""Düsseldorf,"" ""Frankfurt an der Oder,"" ""Frankfurt am Main,"" in the left blank and in the case of ""Roßdorf bei Schmalkalden,, write ""Roßdorf"" in the left and ""bei Schmalkalden"" in the right blank. Please do the same for birthplaces outside Germany.",txt,,,,,,2
+soep-core,soep-core-2014-ll,2,lgebort1,,Ort,"Bitte heutige, ggf. deutsche Bezeichnung eintragen! ",Place:,"Please state the present, if applicable German name:",chr,,,,lgebort1,,2
+soep-core,soep-core-2014-ll,2,lgebort2,,Zusatzangabe,,additional entry:,,chr,,,,lgebort2,,2
+soep-core,soep-core-2014-ll,3,,,Wo liegt Ihr Geburtsort heute?,,Where is your birthplace located today?,,cat,lgebd,,1 @ 14,lgebd,,3
+soep-core,soep-core-2014-ll,3,lgebal,,[Außerhalb Deutschlands] und zwar:,Bitte heutige Bezeichnung ggf. deutsche Bezeichnung  eintragen!,Outside of germany:,"Please give the current (if relevant, German) name!",chr,,,,lgebal,,3
+soep-core,soep-core-2014-ll,4,,,Sind Sie aufgrund von Flucht oder Vertreibung nach dem zweiten Weltkrieg bis 1950 auf das heutige Gebiet Deutschlands gekommen?,,Did you come due to flight or expulsion after the second world war until 1950 on the today's territory of Germany?,,cat,lflucht,,1 @ 20,lflucht,,4
+soep-core,soep-core-2014-ll,5,,,Wann sind Sie nach Deutschland zugezogen?,"Falls Sie mehrmals nach Deutschland zugezogen sind, beziehen Sie sich bitte auf den letzten Zuzug!
+Dies gilt auch für die folgenden Fragen 6-13! ",When did you move to Germany?,"If you repeatedly moved to Germany, please refer to the last influx! The same applies to the following questions 6-13!",txt,,4;lflucht = 2,,,,5
+soep-core,soep-core-2014-ll,5,lzug01,,Jahr,,Year,,int,,,,lzug01,,5
+soep-core,soep-core-2014-ll,6,,,"Für den Zuzug nach Deutschland gibt es unterschiedliche rechtliche Grundlagen.
+Wie war das bei Ihnen, welchen Status haben Sie damals bei Ihrer Einreise nach Deutschland gehabt?",,There are different judicial principles for moving in to Germany. Which of the following immigrant categories did you belong to when you moved to Germany?,,cat,lzug02,,,lzug02,"Routing:
+*IF [Q5000,1] **GOTO BLOCK 700 
+*IF [Q5000,2] *GOTO 8000 
+*IF [Q5000,3] *GOTO 8000
+",6
+soep-core,soep-core-2014-ll,6a,,,"Hatten Sie schon vor Ihrem Zuzug nach Deutschland eine Jobzusage, also ein Arbeitsvertrag oder einen Auftrag für eine selbständige Tätigkeit in Deutschland?",,"Have you had a job commitment, so a contract of employment or a contract for self-employment in Germany before your immigration to Germany?",,cat,lzugarb,,,lzugarb,,6a
+soep-core,soep-core-2014-ll,7,,,Welchen Aufenthaltsstatus haben Sie derzeit?,,What is your current residence status?,,cat,lstat,,,lstat,"Filter:
+ASK ONLY IF Q500 : LZUG02=4,5
+",7
+soep-core,soep-core-2014-ll,8,,,Was beschreibt Ihre Wohnsituation unmittelbar nach dem Zuzug nach Deutschland am besten?,,What describes your immediate housing situation after the influx to Germany the best?,,cat,lzugw,,,lzugw,,8
+soep-core,soep-core-2014-ll,9,,,Welcher der folgenden Gründe war bei Ihnen der Hauptgrund nach Deutschland zu ziehen?,,Which of the following reasons was the main reason for you to come to Germany?,,cat,lzuggr,,,lzuggr,,9
+soep-core,soep-core-2014-ll,9,lzuggrso,,[Sonstige Gründe] und zwar:,,[Other reasons]:,,chr,,,,lzuggrso,,9
+soep-core,soep-core-2014-ll,10,,,"Hatten Sie bei Ihrem Zuzug nach Deutschland Unterstützung von Verwandten oder Bekannten, die bereits in Deutschland lebten? ",Mehrfachnennungen möglich!,"At your arrival, did you have any support of relatives or acquaintances who already lived in Germany?",Multiple answers possible!,txt,,,,,,10
+soep-core,soep-core-2014-ll,10,lzugunt1,,"Ja, von Verwandten ",,"Yes, by relatives",,bin,,,,lzugunt1,,10
+soep-core,soep-core-2014-ll,10,lzugunt2,,"Ja, von Bekannten ",,"Yes, by acquaintances",,bin,,,,lzugunt2,,10
+soep-core,soep-core-2014-ll,10,lzugunt3,,Nein,,No,,bin,,,,lzugunt3,,10
+soep-core,soep-core-2014-ll,11,,,Bei der nächsten Frage geht es um Ihre Kenntnisse in der deutschen Sprache.,,The next question is about your knowledge of the German language.,,txt,,,,,,11
+soep-core,soep-core-2014-ll,11,lspzug1,,[Sprechen] Wie gut konnten Sie vor Ihrem Zuzug nach Deutschland die deutsche Sprache ...,,[Speak] How well could you speak German before you moved to Germany?,,cat,lspzug x,,,lspzug1,,11
+soep-core,soep-core-2014-ll,11,lspzug2,,[Schreiben] Wie gut konnten Sie vor Ihrem Zuzug nach Deutschland die deutsche Sprache ...,,How well could you write German before you moved to Germany?,,cat,lspzug x,,,lspzug2,,11
+soep-core,soep-core-2014-ll,11,lspzug3,,[Lesen] Wie gut konnten Sie vor Ihrem Zuzug nach Deutschland die deutsche Sprache ...,,How well could you read German before you moved to Germany?,,cat,lspzug x,,,lspzug3,,11
+soep-core,soep-core-2014-ll,11,lmusp2,,[Sprechen] Wie gut können Sie jetzt die deutsche Sprache ...,,[Speak] How well is your German now??,,cat,lspzug x,,,lmusp2,,11
+soep-core,soep-core-2014-ll,11,lmusp3,,[Schreiben] Wie gut können Sie jetzt die deutsche Sprache ...,,[write] How well is your german now??,,cat,lspzug x,,,lmusp3,,11
+soep-core,soep-core-2014-ll,11,lmusp6,,[Lesen] Wie gut können Sie jetzt die deutsche Sprache ...,,[read] How well is your German now??,,cat,lspzug x,,,lmusp6,,11
+soep-core,soep-core-2014-ll,12,,,Haben Sie Deutsch-Sprachkurse besucht?,Mehrfachnennungen möglich!,Did you attend German language courses?,Multiple answers possible!,txt,,,,,,12
+soep-core,soep-core-2014-ll,12,lspkurs1,,"Ja, im Herkunftsland ",,"Yes, in the country of origin",,bin,,,,lspkurs1,,12
+soep-core,soep-core-2014-ll,12,lspkurs2,,"Ja, in Deutschland ",,"Yes, in Germany",,bin,,,,lspkurs2,,12
+soep-core,soep-core-2014-ll,12,lspkurs3,,Nein,,No,,bin,,,,lspkurs3,,12
+soep-core,soep-core-2014-ll,13,,,"Wenn Sie einmal vergleichen:
+In welcher beruflichen Stellung waren Sie bei Ihrer letzten Stelle vor Ihrem Umzug nach Deutschland tätig? Und in welcher beruflichen Stellung waren Sie bei Ihrer ersten Stelle in Deutschland tätig? ",,If you compare once: in which professional position were you working at your last job before your moved to Germany? And which professional position at your first job in Germany?,,txt,,,,,,13
+soep-core,soep-core-2014-ll,13,l1erw1,,Letzte Stelle vor dem Umzug nach Deutschland,,Last post before moving to Germany,,cat,l1erw x,,,l1erw1,,13
+soep-core,soep-core-2014-ll,13,l1erw2,,Erste Stelle in Deutschland,,First place in Germany,,cat,l1erw x,,,l1erw2,,13
+soep-core,soep-core-2014-ll,14,,,Haben Sie heute die deutsche Staatsangehörigkeit?,,Do you have the german citizenship today?,,cat,lsta3,,2 @ 19,lsta3,,14
+soep-core,soep-core-2014-ll,15,,,Haben Sie neben der deutschen eine zweite Staatsangehörigkeit?,,Do you have a second citizenship in addition to your German?,,cat,lsta4,14;lsta3=1,,lsta4,,15
+soep-core,soep-core-2014-ll,15,lsta4x,,[Ja] und zwar:,Bitte eintragen,Yes:,Please enter,chr,,15;lsta4=1,,lsta4x,,15
+soep-core,soep-core-2014-ll,16,,,Haben Sie die deutsche Staatsangehörigkeit seit Geburt oder erst später erworben?,,Have you had German citizenship since birth or did you acquire it at a later date?,,cat,lsta5,,1 @ 20,lsta5,,16
+soep-core,soep-core-2014-ll,17,,,Welche Staatsangehörigkeit hatten Sie vorher?,Bitte eintragen,What citizenship did you have before?,Please enter,chr,,16;lsta5=2,,lsta5x,,17
+soep-core,soep-core-2014-ll,18,,,"Und in welchem Jahr haben Sie die deutsche Staatsangehörigkeit erworben?
+
+Im Jahr",,And in what year did you acquire German citizenship?,,int,,,>0 @ 20,lsta6,,18
+soep-core,soep-core-2014-ll,19,,,Welche Staatsangehörigkeit haben Sie?,,What is your citizenship?,,chr,,,,lnat,,19
+soep-core,soep-core-2014-ll,20,,,"Wo haben Sie vor der deutschen Wiedervereinigung, also vor 1989, gewohnt?",,"Where did you live before German reunification, i.e. before 1989?",,cat,lwied,,,lwied,,20
+soep-core,soep-core-2014-ll,21,,,"Nun noch etwas ganz anderes:
+Seit welchem Jahr leben Sie persönlich schon in dieser Wohnung?",,"To change the subject, how long have you lived in your current home?",,txt,,,,,,21
+soep-core,soep-core-2014-ll,21,lwohnj,,Seit ...,(Jahr eintragen),Since...,(Enter year),int,,,,lwohnj,"Researcher Notes:
+Maximum: 2011
+",21
+soep-core,soep-core-2014-ll,22,,,"Haben Sie außer dieser Wohnung, also die Wohnung in der der Befragungshaushalt lebt, noch eine andere Wohnung, in der Sie selbst auch wohnen oder Ihren Urlaub verbringen?",Mehrfachnennungen möglich!,"Except this apartment, so the apartment in which the survey budget lives, do you have another apartment, where you even live or spend your vacation in?",Multiple answers possible!,txt,,,,,,22
+soep-core,soep-core-2014-ll,22,l2wohna,,"Ja, in Deutschland ",,In Germany,,bin,,,,l2wohna,,22
+soep-core,soep-core-2014-ll,22,l2wohnb,,"Ja, im Ausland",,"Yes, abroad ",,bin,,,,l2wohnb,"Filter:
+ASK ONLY IF Q6901 : L2WOHN1=1
+",22
+soep-core,soep-core-2014-ll,22,l2wohnc,,Nein,,No,,bin,,,,l2wohnc,,22
+soep-core,soep-core-2014-ll,22,l2wohn3,,Welche Wohnung benutzen Sie überwiegend?,,Where do you reside most of the time?,,cat,l2wohn3,(22:l2ohna=1) | (22:l2wohnb=1),,l2wohn3,"Filter:
+ASK ONLY IF Q6901 : L2WOHN1=1
+",22
+soep-core,soep-core-2014-ll,23,,,"Wo haben Sie den größten Teil Ihrer Kindheit bis zum 15. Lebensjahr verbracht?
+War das ...",,Where did you spend the majority of your childhood up to the age of 15? Was it ...,,cat,lkh01,,,lkh01,,23
+soep-core,soep-core-2014-ll,24,,,Leben Sie heute noch in dieser Stadt oder dieser Gegend?,,Do you still live in the same city or area today?,,cat,lkh02,,,lkh02,,24
+soep-core,soep-core-2014-ll,25,,,Wie viele von Ihren ersten 15 Lebensjahren haben Sie bei der folgenden Personen gelebt?,Bitte auf ganze Jahre runden! (Hinweis: Adoptiveltern gelten wie leibliche Eltern),How many years of your childhood (up to the age of 15) did you live with the following persons?,Please round off to the nearest full year! (Note: adoptive parents count as biological parents),txt,,,,,"Researcher Notes:
+Antworten: numerische Werte
+**Weitere Angabe in CAPI: Summe der Jahre (bitte prüfen!) > jedoch keine Variable
+**1 = LKH03
+**2 = LKH04
+**3 = LKH05
+**4 = LKH06
+**5 = LKH07
+**6 = LKH08
+**7 = LKH09
+**8 = LKH10
+",25
+soep-core,soep-core-2014-ll,25,lkh03,,Bei Ihren beiden (leiblichen) Eltern … Jahre,"(Hinweis:
+Adoptiveltern gelten wie leibliche Eltern)",With both of your (biological) parents … years,(Note: adoptive parents apply as biological parents),int,,,,lkh03,,25
+soep-core,soep-core-2014-ll,25,lkh04,,Bei Ihrer Mutter allein (ohne Partner) … Jahre,,With your mother without a (new) companion … years,,int,,,,lkh04,,25
+soep-core,soep-core-2014-ll,25,lkh05,,Bei Ihrer Mutter mit (neuem) Partner … Jahre,,With your mother and her (new) companion … years,,int,,,,lkh05,,25
+soep-core,soep-core-2014-ll,25,lkh06,,Bei Ihrem Vater allein (ohne Partnerin) … Jahre,,With your father without a (new) companion … years,,int,,,,lkh06,,25
+soep-core,soep-core-2014-ll,25,lkh07,,Bei Ihrem Vater mit (neuer) Partnerin … Jahre,,With your father and her (new) companion … years,,int,,,,lkh07,,25
+soep-core,soep-core-2014-ll,25,lkh08,,Bei anderen Verwandten … Jahre,,With other relatives … years,,int,,,,lkh08,,25
+soep-core,soep-core-2014-ll,25,lkh09,,Bei Pflegeeltern … Jahre,,With foster parents … years,,int,,,,lkh09,,25
+soep-core,soep-core-2014-ll,25,lkh10,,Im Heim … Jahre,,In an orphanage … years,,int,,,,lkh10,,25
+soep-core,soep-core-2014-ll,25,9,,Summe der Jahre (bitte prüfen!),,Sum total of all years (please check!),,txt,,,,,,25
+soep-core,soep-core-2014-ll,26,,,Leben Ihr Vater und Ihre Mutter hier im Haushalt?,"[Nur der Vater / Nur die Mutter] Die folgenden Fragen 22 – 29 bitte nur für den Elternteil beantworten, der nicht hier im Haushalt lebt!;
+[Nein, beide nicht] Die folgenden Fragen 22 – 29 bitte getrennt für Vater und Mutter beantworten!",Does your mother and father live in this household?,"[The father / mother only] Answer the following questions 22 - 29 only for the parent not living in the household. [No, both not] Please answer the following questions separately 22 - 29 for father and mother!",cat,lvm,,1 @ 36,lvm,"Researcher Notes:
+Instruktion:
+**if Q2100: LVM = 2,3 : Die folgenden Fragen 22-29 bitte nur für den Elternteil beantworten, der nicht im Haushalt lebt!
+**if Q2100: LVM = 4: Die folgenden Fragen 22-29 bitte getrennt für Vater und Mutter beantworten!
+
+Routing:
+*IF [Q21000,1] *GOTO 30000 
+*IF [Q21000,2] **GOTO BLOCK 2200 
+*IF [Q21000,3] **GOTO BLOCK 2200 
+*IF [Q21000,4] **GOTO BLOCK 2200
+",26
+soep-core,soep-core-2014-ll,27,,,"Lebt Ihr Vater / Ihre Mutter noch? Wenn ja, wo? Wenn verstorben, wann?",,"Does your father / mother still live? If so, where does he / she live? If not, when did he / she die?",,txt,,,,,,27
+soep-core,soep-core-2014-ll,27,lv01,,Vater sofern nicht im Haushalt lebend,,"Father, if not living in the household",,cat,lv01,26;lvm=3 | 4,,lv01,Vater (lebendig),27
+soep-core,soep-core-2014-ll,27,lv02,,"[Vater] Ist verstorben, und zwar im Jahr:",,[father] Is deceased: died in the year,,int,,26;lvm=3 | 4,,lv02,Vater Jahr Verstorben,27
+soep-core,soep-core-2014-ll,27,lm01,,Mutter sofern nicht im Haushalt lebend,,"Mother, if not living in the household",,cat,lm01,26;lvm=2 | 4,,lm01,Mutter (lebendig),27
+soep-core,soep-core-2014-ll,27,lm02,,"[Mutter] Ist verstorben, und zwar im Jahr:",,[mother] Is deceased: died in the year,,int,,26;lvm=2 | 4,,lm02,Mutter Jahr Verstorben,27
+soep-core,soep-core-2014-ll,28,,,In welchem Jahr wurde Ihr Vater / Ihre Mutter geboren?,,When was your father / mother born (year)?,,txt,,,,,,28
+soep-core,soep-core-2014-ll,28,lv03,,Vater sofern nicht im Haushalt lebend,,"Father, if not living in the household",,int,,26;lvm=3 | 4,,lv03,Geburtsjahr Vater,28
+soep-core,soep-core-2014-ll,28,lm03,,Mutter sofern nicht im Haushalt lebend,,"Mother, if not living in the household",,int,,26;lvm=2 | 4,,lm03,Geburtsjahr Mutter,28
+soep-core,soep-core-2014-ll,29,,,Ist Ihr Vater / Ihre Mutter in Deutschland geboren?,,Was your father / mother born in Germany?,,txt,,,,,,29
+soep-core,soep-core-2014-ll,29,2,,Vater sofern nicht im Haushalt lebend,,"Father, if not living in the household",,txt,,26;lvm=3 | 4,,,Geburtsland Vater Deutschland,29
+soep-core,soep-core-2014-ll,29,lv03a,,[Vater] Ja,,Yes,,bin,,26;lvm=3 | 4,,lv03a,,29
+soep-core,soep-core-2014-ll,29,lv03b,,[Vater] Nein: Bitte Geburtsland angeben,,[father] please state country of birth,,chr,,26;lvm=3 | 4,,lv03b,Geburtsland Vater,29
+soep-core,soep-core-2014-ll,29,5,,Mutter sofern nicht im Haushalt lebend,,"Mother, if not living in the household",,txt,,26;lvm=2 | 4,,,Geburtsland Mutter Deutschland,29
+soep-core,soep-core-2014-ll,29,lm03a,,[Mutter] Ja,,Yes,,bin,,26;lvm=2 | 4,,lm03a,,29
+soep-core,soep-core-2014-ll,29,lm03b,,[Mutter] Nein: Bitte Geburtsland angeben,,[mother] please state country of birth,,chr,,26;lvm=2 | 4,,lm03b,Geburtsland Mutter,29
+soep-core,soep-core-2014-ll,30,,,Hat (bzw. hatte) Ihr Vater / Ihre Mutter die deutsche Staatsbürgerschaft?,,Does or did your father / mother have German citizenship?,,txt,,,,,,30
+soep-core,soep-core-2014-ll,30,lv04,,Vater sofern nicht im Haushalt lebend,,"Father, if not living in the household",,cat,lv04,26;lvm=3 | 4,,lv04,Staatsbürgerschaft Vater,30
+soep-core,soep-core-2014-ll,30,lm04,,Mutter sofern nicht im Haushalt lebend,,"Mother, if not living in the household",,cat,lm04,26;lvm=2 | 4,,lm04,Staatsbürgerschaft Mutter,30
+soep-core,soep-core-2014-ll,31,,,Welchen Schulabschluss hat Ihr Vater / Ihre Mutter erworben?,,What type of school-leaving certificate did your father / mother attain?,,txt,,,,,,31
+soep-core,soep-core-2014-ll,31,lv05,,Vater sofern nicht im Haushalt lebend,,"Father, if not living in the household",,cat,lv05,26;lvm=3 | 4,,lv05,Schulabschluss Vater,31
+soep-core,soep-core-2014-ll,31,lm05,,Mutter sofern nicht im Haushalt lebend,,"Mother, if not living in the household",,cat,lm05,26;lvm=2 | 4,,lm05,Schulabschluss Mutter,31
+soep-core,soep-core-2014-ll,32,,,Hat Ihr Vater / Ihre Mutter eine berufliche Ausbildung oder ein Studium abgeschlossen?,,Did your father / mother complete vocational training or a university degree?,,txt,,,,,,32
+soep-core,soep-core-2014-ll,32,lv06,,Vater sofern nicht im Haushalt lebend,,"Father, if not living in the household",,cat,lv06,26;lvm=3 | 4,,lv06,Ausbildungsabschluss Vater,32
+soep-core,soep-core-2014-ll,32,lm06,,Mutter sofern nicht im Haushalt lebend,,"Mother, if not living in the household",,cat,lm06,26;lvm=2 | 4,,lm06,Ausbildungsabschluss Mutter,32
+soep-core,soep-core-2014-ll,33,,,"Falls zutreffend:
+Welche berufliche Tätigkeit übte Ihr Vater / Ihre Mutter aus, als Sie selbst 15 Jahre alt waren?",Bitte genaue Berufsbezeichnung angeben.,If applicable: What was your father’s / mother’s occupation when you were 15 years old?,Please specify exact job title.,txt,,,,,,33
+soep-core,soep-core-2014-ll,33,lv07,,Vater,,Father,,chr,,26;lvm=3 | 4,,lv07,Berufstätigkeit Vater,33
+soep-core,soep-core-2014-ll,33,lm07,,Mutter,,Mother,,chr,,26;lvm=2 | 4,,lm07,Berufstätigkeit Mutter,33
+soep-core,soep-core-2014-ll,34,,,"In welcher beruflichen Stellung war Ihr Vater / Ihre Mutter damals tätig, als Sie 15 Jahre alt waren?",,Which of the following categories describes your father’s / mother’s occupational status when you were 15 years old?,,txt,,,,,,34
+soep-core,soep-core-2014-ll,34,1,,Vater sofern nicht im Haushalt lebend,,"Father, if not living in the household",,txt,,26;lvm=3 | 4,,,,34
+soep-core,soep-core-2014-ll,34,lv08,,[Vater] Arbeiter (auch in der Landwirtschaft),,[Father] Blue-collar worker (Arbeiter) (also in agriculture),,cat,lv08,26;lvm=3 | 4,,lv08,Berufliche Stellung Vater: Arbeiter,34
+soep-core,soep-core-2014-ll,34,lv09,,[Vater] Angestellte,,[Father] White-collar worker (Angestellte),,cat,lv09,26;lvm=3 | 4,,lv09,Berufliche Stellung Vater: Angestellte,34
+soep-core,soep-core-2014-ll,34,lv10,,[Vater] Beamte / Staatsverwaltung (einschl. Richter und Berufssoldaten),,[Father] Civil servant or public administration employee (including judges and professional soldiers),,cat,lv10,26;lvm=3 | 4,,lv10,Berufliche Stellung Vater: Beamte / Staatsverwaltung,34
+soep-core,soep-core-2014-ll,34,lv11,,[Vater] Selbstständige (einschl. mithelfender Familienangehöriger),,[Father] Self-employed (including family members working for the self-employed),,cat,lv11,26;lvm=3 | 4,,lv11,Berufliche Stellung Vater: Selbständige,34
+soep-core,soep-core-2014-ll,34,lv12,,Ihr Vater ...,,Your Father …,,cat,lv12,26;lvm=3 | 4,,lv12,berufl. Stellung Vater: Nicht Erwerbstätig / Verstorben,34
+soep-core,soep-core-2014-ll,34,7,,Mutter sofern nicht im Haushalt lebend,,"Mother, if not living in the household",,txt,,26;lvm=2 | 4,,,,34
+soep-core,soep-core-2014-ll,34,lm08,,[Mutter] Arbeiter (auch in der Landwirtschaft),,[Mother] Blue-collar worker (Arbeiter) (also in agriculture),,cat,lm08,26;lvm=2 | 4,,lm08,Berufliche Stellung Mutter: Arbeiter,34
+soep-core,soep-core-2014-ll,34,lm09,,[Mutter] Angestellte,,[Mother] White-collar worker (Angestellte),,cat,lm09,26;lvm=2 | 4,,lm09,Berufliche Stellung Mutter: Angestellte,34
+soep-core,soep-core-2014-ll,34,lm10,,[Mutter] Beamte / Staatsverwaltung (einschl. Richter und Berufssoldaten),,[Mother] Civil servant or public administration employee (including judges and professional soldiers),,cat,lm10,26;lvm=2 | 4,,lm10,Berufliche Stellung Mutter: Beamte / Staatsverwaltung,34
+soep-core,soep-core-2014-ll,34,lm11,,[Mutter] Selbstständige (einschl. mithelfender Familienangehöriger),,[Mother] Self-employed (including family members working for the self-employed),,cat,lm11,26;lvm=2 | 4,,lm11,Berufliche Stellung Mutter: Selbständige,34
+soep-core,soep-core-2014-ll,34,lm12,,Ihre Mutter ...,,Your Mother …,,cat,lm12,26;lvm=2 | 4,,lm12,berufl. Stellung Mutter: Nicht Erwerbstätig / Verstorben,34
+soep-core,soep-core-2014-ll,35,,,Gehören bzw. gehörten Ihr Vater / Ihre Mutter einer Kirche oder Religionsgemeinschaft an?,,Does / did your father / mother belong to a church or religious group?,,txt,,,,,,35
+soep-core,soep-core-2014-ll,35,lv13,,Vater sofern nicht im Haushalt lebend,,"Father, if not living in the living in the household",,cat,lv13,26;lvm=3 | 4,,lv13,Religion Vater,35
+soep-core,soep-core-2014-ll,35,lm13,,Mutter sofern nicht im Haushalt lebend,,"Mother, if not living in the household",,cat,lm13,26;lvm=2 | 4,,lm13,Religion Mutter,35
+soep-core,soep-core-2014-ll,36,,,"Wenn Sie sich einmal zurückerinnern:
+Wie stark haben sich Ihre Eltern um Ihre Leistungen in der Schule gekümmert?",,"If you think back to when you were in school, how interested and involved were your parents in your grades and progress at school?",,cat,lleist,,,lleist,,36
+soep-core,soep-core-2014-ll,37,,,"Können Sie sich an Ihr letztes Schulzeugnis erinnern?
+Welche Note hatten Sie in Ihrem letzten Zeugnis in den folgenden drei Fächern?",,"Can you remember your last report card from school?
+What were your grades in the following three subjects?",,txt,,,,,,37
+soep-core,soep-core-2014-ll,37,lsch1,,Deutsch,,German,,cat,lsch x,,,lsch1,,37
+soep-core,soep-core-2014-ll,37,lsch2,,Mathematik,,Math,,cat,lsch x,,,lsch2,,37
+soep-core,soep-core-2014-ll,37,lsch3,,Erste Fremdsprache,,First foreign language,,cat,lsch x,,,lsch3,,37
+soep-core,soep-core-2014-ll,38,,,"Als Sie etwas 15 Jahre alt waren:
+Wie oft kam es damals vor, dass Sie mit Ihren Eltern Streit hatten?",Bitte ein Kreuz pro Zeile!,How often did you argue or fight with your parents when you were 15 years old?,Please make one X per row!,txt,,,,,"Researcher Notes:
+Statement 1 = LSTRV
+**Statement 2 = LSTRM
+",38
+soep-core,soep-core-2014-ll,38,lstrv,,Mit meinem Vater,,With my father,,cat,lstr x,,,lstrv,,38
+soep-core,soep-core-2014-ll,38,lstrm,,Mit meiner Mutter,,With my mother,,cat,lstr x,,,lstrm,,38
+soep-core,soep-core-2014-ll,39,,,"Haben Sie in Ihrer Jugend aktiv Musik gemacht, gemeint ist Gesang oder Spielen eines Musikinstruments?",,"Were you actively involved in musical activities growing up? For example, did you sing or play a musical instrument?",,cat,lmusi,,,lmusi,,39
+soep-core,soep-core-2014-ll,40,,,Haben Sie in Ihrer Jugend außerhalb der Schule Sport getrieben?,,Did you play sports outside of school gym classes growing up?,,cat,lsp1,,2 @ 43,lsp1,"Routing:
+*IF [Q34000,2] **GOTO BLOCK 3700
+",40
+soep-core,soep-core-2014-ll,41,,,"Was war für Sie die wichtigste Sportart, die Sie ausgeübt haben?",,Which sports you played was most important to you?,,txt,,40;lsp1 = 1,,,Sportart,41
+soep-core,soep-core-2014-ll,41,lsp2,,Wichtigste Sportart:,,Most important sports:,,chr,,,,lsp2,,41
+soep-core,soep-core-2014-ll,42,,,Haben Sie in dieser Sportart auch an Wettkämpfen teilgenommen?,,Did you play this sport competitively?,,cat,lsp3,,,lsp3,,42
+soep-core,soep-core-2014-ll,43,,,"Wir bitten Sie nun um Angaben zu Ihrem eigenen Lebenslauf ab dem Alter von 15 Jahren.
+
+Bitte füllen Sie das Schema wie folgt aus:","1) Tragen Sie in die 
+großen Kästchen das Jahr ein, in dem Sie 15 Jahre alt wurden, das Jahr, 
+in dem sie 20 wurden, 25 wurden usw. bis zu Ihrem heutigen Lebensalter.
+
+2)
+ Kreuzen Sie dann bitte in den Kästchen darunter an, wie Ihr Leben seit 
+dem 15. Lebensjahr verlaufen ist, von wann bis wann Sie in der Schule 
+waren, in der Berufsausbildung waren, berufstätig waren usw.
+Wichtig 
+ist, dass für alle Jahre Ihres Lebens bis heute bzw. bis zu Ihrem 65. 
+Lebensjahr etwas angekreuzt ist. Wenn in einem Jahr mehreres zutraf, 
+können Sie mehreres ankreuzen.",We would like to ask you now for some information about your personal history starting at age of 15. Please fill out the table below as follows:,"Please state what has happened in your life since you were 15—from when to when you were in school,
+in vocational training, employed, etc. It is important that you give some answer for every year of your life
+up to the present or up to the age of 65. If more than one answer applies in a particular year, please give
+more than one answer.",txt,,,,,"Researcher Notes:
+Es handelt sich um numerische Werte.
+**
+**Statement 1 = LJ01
+**Statement 2 = LJ02
+**Statement 3 = LJ03
+**Statement 4 = LJ04
+**Statement 5 = LJ05
+**Statement 6 = LJ06
+**Statement 7 = LJ07
+**Statement 8 = LJ08
+**Statement 9 = LJ09
+",43
+soep-core,soep-core-2014-ll,43,lj01,,[15] Jahr,,Year at the age of 15,,int,,,,lj01,,43
+soep-core,soep-core-2014-ll,43,lj02,,[20] Jahr,,Year at the age of 20,,int,,,,lj02,,43
+soep-core,soep-core-2014-ll,43,lj03,,[25] Jahr,,Year at the age of 25,,int,,,,lj03,,43
+soep-core,soep-core-2014-ll,43,lj04,,[30] Jahr,,Year at the age of 30,,int,,,,lj04,,43
+soep-core,soep-core-2014-ll,43,lj05,,[35] Jahr,,Year at the age of 35,,int,,,,lj05,,43
+soep-core,soep-core-2014-ll,43,lj06,,[40] Jahr,,Year at the age of 40,,int,,,,lj06,,43
+soep-core,soep-core-2014-ll,43,lj07,,[45] Jahr,,Year at the age of 45,,int,,,,lj07,,43
+soep-core,soep-core-2014-ll,43,lj08,,[50] Jahr,,Year at the age of 50,,int,,,,lj08,,43
+soep-core,soep-core-2014-ll,43,lj09,,[55] Jahr,,Year at the age of 55,,int,,,,lj09,,43
+soep-core,soep-core-2014-ll,43,lj10,,[60] Jahr,,Year at the age of 60,,int,,,,lj10,,43
+soep-core,soep-core-2014-ll,43,lj11,,[65] Jahr,,Year at the age of 65,,int,,,,lj11,,43
+soep-core,soep-core-2014-ll,43,13,,Im Alter von … war ich:,,At the age of ...  I was:,,txt,,,,,"Researcher Notes:
+Statement 1 = LKAL1
+**Statement 2 = LKAL2
+**Statement 3 = LKAL3
+**Statement 4 = LKAL4
+**Statement 5 = LKAL5
+**Statement 6 = LKAL6
+**Statement 7 = LKAL7
+**Statement 8 = LKAL8
+**Statement 9 = LKAL9
+",43
+soep-core,soep-core-2014-ll,43,lkal1,,"in Schule, Studium, Abendschule",,attending school / university / evening school,,chr,,,,lkal1,,43
+soep-core,soep-core-2014-ll,43,lkal2,,"in Lehre, Berufsausbildung, Fortbildung, Umschulung",,completing an apprenticeship / vocational training / further education / retraining,,chr,,,,lkal2,,43
+soep-core,soep-core-2014-ll,43,lkal3,,"beim (freiwilligen) Wehrdienst / Zivildienst, freiwilliges soziales, ökologisches Jahr, Bundesfreiwilligendienst, im Krieg, in Gefangenschaft",,in (voluntary) military/community service /  voluntary social / ecological year / federal volunteer service / at war / in captivity,,chr,,,,lkal3,,43
+soep-core,soep-core-2014-ll,43,lkal4,,voll berufstätig (einschl. Zeit- / Berufssoldat),,employed full-time (including regular / professional soldiers),,chr,,,,lkal4,,43
+soep-core,soep-core-2014-ll,43,lkal5,,teilzeitbeschäftigt oder geringfügig erwerbstätig,,employed part-time or marginally employed,,chr,,,,lkal5,,43
+soep-core,soep-core-2014-ll,43,lkal6,,arbeitslos,,unemployed,,chr,,,,lkal6,,43
+soep-core,soep-core-2014-ll,43,lkal7,,Hausfrau / Hausmann,,homemaker,,chr,,,,lkal7,,43
+soep-core,soep-core-2014-ll,43,lkal8,,"im Ruhestand, Rentner / Pensionär (auch Vorruhestand)",,Retired / in early retirement,,chr,,,,lkal8,,43
+soep-core,soep-core-2014-ll,43,lkal9,,Sonstiges,,other,,chr,,,,lkal9,,43
+soep-core,soep-core-2014-ll,44,,,In welchem Jahr haben Sie zuletzt die Schule besucht?,"Wir bitten Sie nun um genauere Angaben zu einigen Punkten Ihres Lebensverlaufs, die mit der Ausbildung und dem Beruf zu tun haben. Zunächst zur Schule:",What was the last year you attended school?,"We now ask for details on some issues of your life history, which have to do with the training and the profession. First to the school:",txt,,,,,,44
+soep-core,soep-core-2014-ll,44,lsab1,,Jahr,,Year,,int,,,,lsab1,"Researcher Notes:
+Option ""Jahr"" nicht zum ankreuzen, also kein Wert in den Daten vorhanden.
+
+Routing:
+*IF [Q38010,2] *GOTO 44000
+",44
+soep-core,soep-core-2014-ll,44,lsab2,,Gehe noch zur Schule,,I am still attending school,,bin,,,1 @ 50,lsab2,"Filter:
+ASK ONLY IF Q3801 : LSAB2=1
+",44
+soep-core,soep-core-2014-ll,45,,,Wo haben Sie zuletzt die Schule besucht? War das ...,,Where did you last attend school? Was it...,,cat,lsab3,,(1 @ 48);(1@49),lsab3,Ort Schulausbildung,45
+soep-core,soep-core-2014-ll,46,,,Wie viele Jahre haben Sie die Schule besucht?,,How many years did you attend school?,,txt,,45;lsab3 = 3,,,"Researcher Notes:
+sinnvolles nummmerisches Maximum
+
+Filter:
+ASK ONLY IF Q3900 : LSAB3=3
+",46
+soep-core,soep-core-2014-ll,46,lsab4,,Jahre,,Years,,int,,,,lsab4,,46
+soep-core,soep-core-2014-ll,47,,,Mit was für einem Abschluss haben Sie die Schule beendet?,,What type of school-leaving certificate did you attain?,,cat,lsab5,,1:3 @ 51,lsab5,"Routing:
+*IF [Q41000,1] *GOTO 45000 
+*IF [Q41000,2] *GOTO 45000 
+*IF [Q41000,3] *GOTO 45000
+",47
+soep-core,soep-core-2014-ll,48,,,In welchem Bundesland haben Sie zuletzt die Schule besucht?,(Bitte eintragen!),In which German federal state (Bundesland) did you last attend school?,(Please enter!),chr,,,,lsab6,"Researcher Notes:
+Variable LBUND wird generiert.
+",48
+soep-core,soep-core-2014-ll,49,,,Welchen Schulabschluss haben Sie gemacht?,,What type of school-leaving certificate did you attain?,,cat,lsab7,,,lsab7,,49
+soep-core,soep-core-2014-ll,49,lsab8,,[Schule ohne Abschluss verlassen] Bitte eintragen: zuletzt besuchte Schule,,Please state: last school type attended,,chr,,49;lsab7 = 1,,lsab8,Letzte Schule (ohne Abschluss),49
+soep-core,soep-core-2014-ll,49,lsab9,,[Sonstiger Schulabschluss] Bitte eintragen: Art des Schulabschlusses,,Please state: type of school-leaving certificate attained,,chr,,49;lsab7 = 6,,lsab9,Sonst_Schulabschluss,49
+soep-core,soep-core-2014-ll,50,,,"Wenn Sie einmal an die Schulklasse denken, die Sie zuletzt besucht haben:
+Wie viele Ihrer Mitschüler oder deren Eltern stammten nicht aus Deutschland?",,If you think back to the last grade of school you attended: How many of your fellow students or their parents were not from Germany?,,cat,lsab10,,,lsab10,,50
+soep-core,soep-core-2014-ll,51,,,Streben Sie in Zukunft noch einen Schulabschluss an?,,Do you intend to graduate in the future?,,cat,lsab11,,3 @ 53,lsab11,"Routing:
+*IF [Q45000,3] *GOTO 47000
+",51
+soep-core,soep-core-2014-ll,52,,,Welchen höchsten Schulabschluss streben Sie an?,,What is the highest degree you plan to attain?,,cat,lsab12,,,lsab12,"Filter:
+ASK ONLY IF Q4500 : LSAB11=1,2
+",52
+soep-core,soep-core-2014-ll,53,,,Haben Sie in Deutschland eine Berufsausbildung oder ein Studium abgeschlossen?,,Have you completed vocational training or university studies in Germany?,,cat,lab01,,2 @ 55,lab01,"Routing:
+*IF [Q47000,2] *GOTO 49000
+",53
+soep-core,soep-core-2014-ll,54,,,Was für ein Ausbildungs- oder Studienabschluss war das und in welchem Jahr haben Sie diesen Abschluss gemacht?,Mehrfachnennungen möglich!,What type of vocational or university degree did you attain and when did you attain it?,Multiple answers possible!,txt,,53;lab01 = 1,,,Art Berufsausbildungsabschluss,54
+soep-core,soep-core-2014-ll,54,lab02,,"Lehre, Facharbeiterabschluss",,Apprenticeship (Lehre) / Vocational degree as skilled worker (Facharbeiterabschluss),,bin,,,,lab02,,54
+soep-core,soep-core-2014-ll,54,lab03,,"Berufsfachschule, Handelsschule, Schule des Gesundheitswesens",,Full-time vocational school (Berufsfachschule) / commercial college (Handelsschule) / Health sector school (Schule des Gesundheitswesens),,bin,,,,lab03,,54
+soep-core,soep-core-2014-ll,54,lab04,,"Fachschule, z.B. Meister-, Technikerabschluss",,"Higher level trade or technical school (e.g. Meisterschule,Technikerschule)",,bin,,,,lab04,,54
+soep-core,soep-core-2014-ll,54,lab05,,Beamtenausbildung,,Training for civil servants (Beamtenausbildung),,bin,,,,lab05,,54
+soep-core,soep-core-2014-ll,54,lab06,,"Fachhochschule, Berufsakademie (früher: auch Ingenieurschule, Lehrerbildung, DDR: Ingenieur- und Fachschulabschluss)",,"Technical or professionally oriented college (Fachhochschule, Berufsakademie; formerly also engineer or teacher training)",,bin,,,,lab06,,54
+soep-core,soep-core-2014-ll,54,lab07,,"Universitäts-, Hochschulabschluss",,University or university-level degree,,bin,,,,lab07,,54
+soep-core,soep-core-2014-ll,54,lab40,,Promotion,,Doctoral studies (Promotion),,bin,,,,lab40,,54
+soep-core,soep-core-2014-ll,54,lab08,,Sonstiger Abschluss,,Other degree,,bin,,,,lab08,,54
+soep-core,soep-core-2014-ll,54,lab02j,,"[Lehre, Facharbeiterabschluss] Jahr:",,[Apprenticeship  / Vocational degree as skilled worker] year:,,int,,54:lab02 = 1,,lab02j,Jahr Abschluss: Lehre,54
+soep-core,soep-core-2014-ll,54,lab03j,,"[Berufsfachschule, Handelsschule, Schule des Gesundheitswesens] Jahr:",,[Full-time vocational school  / commercial college  / Health sector school] year:,,int,,54:lab03 = 1,,lab03j,Jahr Abschluss: Berufsfachschule etc.,54
+soep-core,soep-core-2014-ll,54,lab04j,,"[Fachschule, z.B. Meister-, Technikerabschluss] Jahr:",,[Higher level trade or technical school] year:,,int,,54:lab04 = 1,,lab04j,Jahr Abschluss: Fachschule,54
+soep-core,soep-core-2014-ll,54,lab05j,,[Beamtenausbildung] Jahr:,,[Training for civil servants] year:,,int,,54:lab05 = 1,,lab05j,Jahr Abschluss: Beamtenausbildung,54
+soep-core,soep-core-2014-ll,54,lab06j,,"[Fachhochschule, Berufsakademie (früher: auch Ingenieurschule, Lehrerbildung, DDR: Ingenieur- und Fachschulabschluss)] Jahr:",,"[Technical or professionally oriented college, formerly also engineer or teacher training)] year:",,int,,54:lab06 = 1,,lab06j,Jahr Abschluss: Fachhochschule etc.,54
+soep-core,soep-core-2014-ll,54,lab07j,,"[Universitäts-, Hochschulabschluss] Jahr:",,[University or university-level degree] year:,,int,,54:lab07 = 1,,lab07j,Jahr Abschluss: Universität,54
+soep-core,soep-core-2014-ll,54,lab40j,,[Promotion] Jahr:,,[Doctoral studies] year:,,int,,54:lab40 = 1,,lab40j,Jahr Abschluss: Promotion,54
+soep-core,soep-core-2014-ll,54,lab08j,,[Sonstiger Abschluss] Jahr:,,[Other degree] year:,,int,,54:lab08 = 1,,lab08j,Jahr Abschluss: Sonstiger Abschluss,54
+soep-core,soep-core-2014-ll,54,lab02x,,"[Lehre, Facharbeiterabschluss] Bitte Ausbildungsberuf eintragen!",,[Apprenticeship  / Vocational degree as skilled worker] Please state the occupation:,,chr,,54:lab02 = 1,,lab02x,Nennung Ausbildungsberuf: Lehre,54
+soep-core,soep-core-2014-ll,54,lab03x,,"[Berufsfachschule, Handelsschule, Schule des Gesundheitswesens] Bitte Ausbildungsberuf eintragen!",,[Full-time vocational school  / commercial college  / Health sector school] Please state the occupation:,,chr,,54:lab03 = 1,,lab03x,Nennung Ausbildungsberuf: Berufsfachschule etc.,54
+soep-core,soep-core-2014-ll,54,lab04x,,"[Fachschule, z.B. Meister-, Technikerabschluss] Bitte Ausbildungsberuf eintragen!",,[Higher level trade or technical school] Please state the occupation:,,chr,,54:lab04 = 1,,lab04x,Nennung Ausbildungsberuf: Fachschule,54
+soep-core,soep-core-2014-ll,54,lab05x1,,[Beamtenausbildung] Bitte Ausbildungsberuf eintragen!,,[Training for civil servants] Please state the occupation:,,chr,,54:lab05 = 1,,lab05x1,Nennung Ausbildungsberuf: Beamtenausbildung,54
+soep-core,soep-core-2014-ll,54,lab05x2,,[Beamtenausbildung] Bitte zusätzlich Laufbahn eintragen!,,[Training for civil servants] Please state the career path:,,chr,,54:lab05 = 1,,lab05x2,Nennung Laufbahn: Beamtenausbildung,54
+soep-core,soep-core-2014-ll,54,lab06x1,,"[Fachhochschule, Berufsakademie (früher: auch Ingenieurschule, Lehrerbildung, DDR: Ingenieur- und Fachschulabschluss)] Bitte Abschluss eintragen!",,"[Technical or professionally oriented college, formerly also engineer or teacher training)] Please state degree:",,chr,,54:lab06 = 1,,lab06x1,Nennung Abschluss: Fachhochschule,54
+soep-core,soep-core-2014-ll,54,lab06x2,,"[Fachhochschule, Berufsakademie (früher: auch Ingenieurschule, Lehrerbildung, DDR: Ingenieur- und Fachschulabschluss)] Bitte zusätzlich Fachrichtung eintragen!",,"[Technical or professionally oriented college, formerly also engineer or teacher training)] Please state subject(s):",,chr,,54:lab06 = 1,,lab06x2,Nennung Fachrichtung: Fachhochule etc.,54
+soep-core,soep-core-2014-ll,54,lab07x1,,"[Universitäts-, Hochschulabschluss] Bitte Abschluss eintragen!",,[University or university-level degree] Please state degree:,,chr,,54:lab07 = 1,,lab07x1,Nennung Abschluss: Universität,54
+soep-core,soep-core-2014-ll,54,lab07x2,,"[Universitäts-, Hochschulabschluss] Bitte zusätzlich Fachrichtung eintragen!",,[University or university-level degree] Please state subject(s):,,chr,,54:lab07 = 1,,lab07x2,Nennung Fachrichtung: Universität,54
+soep-core,soep-core-2014-ll,54,lab40x1,,[Promotion] Bitte Abschluss eintragen!,,[Doctoral studies] Please state degree:,,chr,,54:lab40 = 1,,lab40x1,Nennung Abschluss: Promotion,54
+soep-core,soep-core-2014-ll,54,lab40x2,,[Promotion] Bitte zusätzlich Fachrichtung eintragen!,,[Doctoral studies] Please state subject(s):,,chr,,54:lab40 = 1,,lab40x2,Nennung Fachrichtung: Promotion,54
+soep-core,soep-core-2014-ll,54,lab08x,,[Sonstiger Abschluss] Bitte Abschluss eintragen!,,[Other degree] Please state degree:,,chr,,54:lab08 = 1,,lab08x,Nennung Abschluss: Sonstiger Abschluss,54
+soep-core,soep-core-2014-ll,55,,,Haben Sie in einem anderen Land als Deutschland eine berufliche Ausbildung oder ein Studium gemacht?,,Have you completed vocational training or university studies in another country than Germany?,,cat,lab10,,2 @ 60,lab10,"Routing:
+*IF [Q49000,2] *GOTO 53000
+",55
+soep-core,soep-core-2014-ll,56,,,Was für eine Ausbildung war das?,"Mehrfachnennungen möglich, die Fragen 57-59 beziehen sich dann auf den höchsten Abschluss.",What kind of education or training was it?,"Multiple answers possible, the questions 57-59 refer to the highest degree.",txt,,55;lab10 = 1,,,Art Berufsausbildungsabschluss Ausland,56
+soep-core,soep-core-2014-ll,56,lab11,,Ich wurde in einem Betrieb angelernt,,I received in-house training at a company,,bin,,,,lab11,,56
+soep-core,soep-core-2014-ll,56,lab12,,Ich habe in einem Betrieb eine längere Ausbildung gemacht,,I completed an extended apprenticeship at a company,,bin,,,,lab12,,56
+soep-core,soep-core-2014-ll,56,lab13,,Ich habe eine berufsbildende Schule besucht,,I attended a vocational school,,bin,,,,lab13,,56
+soep-core,soep-core-2014-ll,56,lab14,,Ich habe eine Hochschule besucht,,I attended a university or higher educational institution,,bin,,,,lab14,,56
+soep-core,soep-core-2014-ll,56,lab15,,Sonstiges,,Other degree,,bin,,,,lab15,,56
+soep-core,soep-core-2014-ll,57,,,In welchem Jahr haben Sie diese Ausbildung beendet?,,When did you complete this education or training?,,txt,,,,,"Researcher Notes:
+Maximum: 2011
+",57
+soep-core,soep-core-2014-ll,57,lab16,,Jahr,,Year,,int,,,,lab16,,57
+soep-core,soep-core-2014-ll,58,,,Haben Sie ein Zeugnis über den erfolgreichen Abschluss dieser Ausbildung erhalten?,,Did you receive a transcript or certificate documenting the successful completion of this training or education?,,cat,lab17,,2 @ 60,lab17,,58
+soep-core,soep-core-2014-ll,59,,,Haben Sie die Anerkennung Ihres Abschlusses in Deutschland beantragt?,,Did you apply for a recognition of your degree in Germany?,,cat,laner,,,laner,,59
+soep-core,soep-core-2014-ll,59,lanerab,,[Ja] Und wurde Ihr Abschluss in Deutschland anerkannt?,,Has this degree or certificate been recognized in Germany?,,cat,lanerab,59;laner=1,,lanerab,,59
+soep-core,soep-core-2014-ll,59,11,,Und wann haben Sie den Bescheid erhalten?,,When did you receive the notification?,,txt,,59;laner=1,,11,,59
+soep-core,soep-core-2014-ll,59,lanerm,,Monat,,Month,,int,,,,lanerm,,59
+soep-core,soep-core-2014-ll,59,lanerj,,Jahr,,Year,,int,,,,lanerj,,59
+soep-core,soep-core-2014-ll,59,lanerno,,[Nein] Warum haben Sie die Anerkennung Ihres Abschlusses nicht beantragt?,,Why didn`t you apply for the recognition?,,cat,lanerno,59;laner=2,,lanerno,,59
+soep-core,soep-core-2014-ll,60,,,Streben Sie in Zukunft noch einen beruflichen Ausbildungsabschluss oder Hochschulabschluss an?,,Do you intend to complete vocational / occupational training or attain a university degree in the future?,,cat,lab19,,,lab19,"Routing:
+*IF [Q53000,3] **GOTO BLOCK 5
+",60
+soep-core,soep-core-2014-ll,60,33,,[Ja] Welchen der folgenden Abschlüsse streben Sie an?,Mehrfachnennungen möglich!,[Yes] Which of the following degrees do you plan to attain?,Multiple answers possible!,txt,,60;lab19 = 1|2,,,"Researcher Notes:
+Statement 1 = LAB20
+**Statement 2 = LAB21
+**Statement 3 = LAB22
+**Statement 4 = LAB23
+**Statement 5 = LAB24
+**Statement 6 = LAB25
+**Statement 7 = LAB26
+**
+**Skala: ""Ja"" nicht im PAPI vorhanden, jedoch hat jede genannte Antwort den Code 1.
+",60
+soep-core,soep-core-2014-ll,60,lab20,,Abschluss einer Lehre,,Apprenticeship,,bin,,,,lab20,,60
+soep-core,soep-core-2014-ll,60,lab21,,Berufsfachschule oder Schule des Gesundheitswesens,,Full-time vocational school (Berufsfachschule) or health sector school (Schule des Gesundheitswesens),,bin,,,,lab21,,60
+soep-core,soep-core-2014-ll,60,lab22,,"Fachschule (z.B. Meister-, Technikerschule)",,"Higher-level trade or technical school (Meisterschule, Technikerschule)",,bin,,,,lab22,,60
+soep-core,soep-core-2014-ll,60,lab23,,Beamtenausbildung,,Training for civil servants (Beamtenausbildung),,bin,,,,lab23,,60
+soep-core,soep-core-2014-ll,60,lab24,,Anerkannte Berufsakademie,,Accredited professional school (Berufsakademie),,bin,,,,lab24,,60
+soep-core,soep-core-2014-ll,60,lab25,,Fachhochschule,,Technical or professional college (Fachhochschule),,bin,,,,lab25,,60
+soep-core,soep-core-2014-ll,60,lab26,,Universität,,University,,bin,,,,lab26,,60
+soep-core,soep-core-2014-ll,61,,,"Wie alt waren Sie, als Sie erstmals eine berufliche Tätigkeit aufgenommen haben?","Gemeint ist nicht die Berufsausbildung, sondern die erste Tätigkeit danach!",If you already were employed: How old were you when you first started working?,We are not referring to vocational training but to your first job after you completed your training!,txt,,,,,,61
+soep-core,soep-core-2014-ll,61,l1erw,,Jahre alt,,... years old,,int,,,,l1erw,"Researcher Notes:
+Option ""Alter"" nicht anzukreuzen, hat also keinen Wert in den Daten.
+
+Routing:
+*IF [Q55010,2] *GOTO 68000
+",61
+soep-core,soep-core-2014-ll,61,l1no,,War noch nie berufstätig bzw. bin in erster betrieblicher Ausbildung,,Have not yet held a job / have not yet completed in-service training,,bin,,,1 @ 77,l1no,"Filter:
+ASK ONLY IF Q5501 : L1NO=1
+",61
+soep-core,soep-core-2014-ll,62,,,Üben Sie heute noch dieselbe berufliche Tätigkeit aus?,,Are you still doing the same job ?,,cat,l1erwt,61:l1erw > 0,2 @ 65,l1erwt,,62
+soep-core,soep-core-2014-ll,63,,,"Sind Sie heute noch in derselben beruflichen Stellung tätig, wie bei Ihrer ersten Tätigkeit?",,Are you still in the same working position when you first startet?,,cat,l1erwst,62; l1erwt = 1,2@65,l1erwst,,63
+soep-core,soep-core-2014-ll,64,,,"Sind Sie heute noch beim selben Arbeitgeber beschäftigt, wie bei Ihrer ersten beruflichen Tätigkeit? ",Falls Sie selbständig sind: haben Sie noch den gleichen Betrieb/die gleiche Selbständigkeit wie damals?,Are you still working for the same employer?,If you are self-employed. Do you still have the same company / the same self-employment as then?,cat,l1erwag,63; l1erwst = 1,1@77,l1erwag,,64
+soep-core,soep-core-2014-ll,65,,,In welcher beruflichen Stellung waren Sie damals in Ihrer ersten Tätigkeit beschäftigt?,,What occupational status did you have at that time (in your first job)?,,txt,,64;l1erwag=2,,,Berufliche Stellung (1. Job),65
+soep-core,soep-core-2014-ll,65,l1arb,,"Arbeiter 
+(auch in der Landwirtschaft)",,Blue-collar worker (Arbeiter) (also in agriculture),,cat,l1arb,,,l1arb,,65
+soep-core,soep-core-2014-ll,65,2,,"Selbstständige 
+(einschl. mithelfender Familienangehöriger)",,Self-employed (including family members working for the self-employed),,txt,,,,,,65
+soep-core,soep-core-2014-ll,65,l1sst1,,Selbstständige Landwirte,,Self-employed farmer,,cat,l1sst x,,,l1sst1,,65
+soep-core,soep-core-2014-ll,65,l1sst2,,"Freie Berufe, selbstständige Akademiker",,"Freelance professional, selfemployed academic (selbständiger Akademiker)",,cat,l1sst x,,,l1sst2,,65
+soep-core,soep-core-2014-ll,65,l1sst3,,Sonstige Selbstständige,,Other self-employed,,cat,l1sst x,,,l1sst3,,65
+soep-core,soep-core-2014-ll,65,l1sst4,,Mithelfende Familienangehörige,,Family member working for self-employed relative,,bin,,,,l1sst4,,65
+soep-core,soep-core-2014-ll,65,l1ang,,Angestellte,,White-collar worker (Angestellte),,cat,l1ang,,,l1ang,,65
+soep-core,soep-core-2014-ll,65,l1amt,,Beamte / Staatsverwaltung (einschl. Richter und Berufssoldaten),,Civil servant or public administration employee (including judges and professional soldiers),,cat,l1amt,,,l1amt,,65
+soep-core,soep-core-2014-ll,66,,,"Welche berufliche Tätigkeit haben Sie damals, in Ihrer ersten Stelle, ausgeübt?","Bitte geben Sie die genaue Tätigkeitsbezeichnung an, also z.B. nicht „kaufmännischer Angestellter“, sondern: „Speditionskaufmann“, nicht „Arbeiter“, sondern: „Maschinenschlosser“.
+
+Bitte in Druckbuchstaben eintragen!",What was your job title at that time (in your first job)?,"Please state the specific job title. For example, do not write ""clerk"" but rather ""shipping clerk"", not ""blue-collar worker"" but rather ""machine metalworker"".",chr,,,,l1ber,,66
+soep-core,soep-core-2014-ll,67,,,Welche Art von Ausbildung war für diese Tätigkeit in der Regel erforderlich?,,What kind of training is usually required for this kind of work?,,cat,l1aus,,,l1aus,,67
+soep-core,soep-core-2014-ll,68,,,"Gehörte der Betrieb, in dem Sie damals arbeiteten, zum öffentlichen Dienst bzw. zur Staatsverwaltung?",,Was the company you worked for at that time part of the public sector or public administration?,,cat,l1oed,,,l1oed,,68
+soep-core,soep-core-2014-ll,69,,,In welchem Wirtschaftszweig / welcher Branche / welchem Dienstleistungsbereich war das Unternehmen bzw. die Einrichtung überwiegend tätig?,"Bitte geben Sie die genaue Berufsbezeichnung an, z.B. nicht „Industrie“, sondern „Elektroindustrie“, nicht „Handel“, sondern „Einzelhandel“, nicht „öffentlicher Dienst“, sondern „Krankenhaus“.
+
+Bitte in Druckbuchstaben eintragen!",What sector of business or industry was your company or institution active in for the most part?,"Please state the correct job title e.g. not ""industry"" but ""electronic industry"", not ""trade"" but ""retail trade"", not ""public service"", but ""hospital"". Please write in block letters. ",chr,,,,l1bra,,69
+soep-core,soep-core-2014-ll,70,,,"Haben Sie seitdem ein- oder mehrmals den Beruf gewechselt, so dass sich die Art Ihrer Tätigkeit grundlegend geändert hat?",,"Have you changed your occupation one or more times since then, such that the type of work you do has changed significantly?",,cat,lwexl1,,,lwexl1,,70
+soep-core,soep-core-2014-ll,70,1,,"[Ja] In welchem Jahr sind Sie dann in den Beruf gewechselt, den Sie heute ausüben bzw. zuletzt ausgeübt haben?",,[Yes] When did you change to your current occupation or to the occupation that you worked in at your last job?,,txt,,,,,"Researcher Notes:
+Maximum: 2011
+
+Filter:
+ASK ONLY IF Q6101 : LWEXL1=1,2
+",70
+soep-core,soep-core-2014-ll,70,lwexl2,,Jahr,,Year,,int,,70;lwexl1 = 1 | 2,,lwexl2,,70
+soep-core,soep-core-2014-ll,71,,,Sind Sie derzeit erwerbstätig?,,Are you gainfully employed at the present time?,,cat,lerw,,1 @ 77,lerw,"Routing:
+*IF [Q62000,1] *GOTO 68000
+",71
+soep-core,soep-core-2014-ll,72,,,[Nein] In welchem Jahr sind Sie zuletzt erwerbstätig gewesen?,,When was the last year in which you were gainfully employed?,,txt,,71;lerw = 2,,,Jahr (letzter Job),72
+soep-core,soep-core-2014-ll,72,lend,,Jahr,,Year,,int,,,,lend,,72
+soep-core,soep-core-2014-ll,73,,,"Waren Sie zuletzt voll berufstätig, teilzeitbeschäftigt oder geringfügig bzw. unregelmäßig beschäftigt?",,"Were you last employed full-time, part-time, or marginally in your last job?",,cat,lstd,,,lstd,,73
+soep-core,soep-core-2014-ll,74,,,"Gehörte der Betrieb, in dem Sie zuletzt arbeiteten, zum öffentlichen Dienst bzw. zur Staatsverwaltung?",,Was the company where you held your last job part of the public sector or public administration?,,cat,loed,,,loed,,74
+soep-core,soep-core-2014-ll,75,,,In welchem Wirtschaftszweig / welcher Branche / welchem Dienstleistungsbereich war das Unternehmen bzw. die Einrichtung überwiegend tätig?,"Bitte geben Sie die genaue Berufsbezeichnung an, z.B. nicht „Industrie“, sondern „Elektroindustrie“, nicht „Handel“, sondern „Einzelhandel“, nicht „öffentlicher Dienst“, sondern „Krankenhaus“.
+
+Bitte in Druckbuchstaben eintragen!",What sector of business or industry was your company or institution active in for the most part?,"Please state the correct job title e.g. not ""Industry"" but ""electronic Industry"", not ""trade"" but ""retail trade"", not ""public service"", but ""hospital"". Please write in block letters. ",chr,,,,lbra,,75
+soep-core,soep-core-2014-ll,76,,,In welcher beruflichen Stellung waren Sie zuletzt beschäftigt?,"Wenn Sie mehr als eine berufliche Tätigkeit ausübten, beantworten Sie die folgenden Fragen bitte nur für Ihre damalige berufliche Haupttätigkeit!",What was your occupational status in your last job?,"If you had more than a professional activity, answer the following questions only for your time main occupation!",txt,,,,,"Researcher Notes:
+Frage so in CAPI nicht vorhanden.
+**1 = wird gefiltert zu LARB
+**2 = wird gefiltert zu LANG
+**3 = wird gefiltert zu LSST X
+**4 = wird gefiltert zu LAMT
+**5 = wird gefiltert zu LAZUBI
+**6 = LBERKA
+",76
+soep-core,soep-core-2014-ll,76,larb,,Arbeiter  (auch in der Landwirtschaft),,Blue-collar worker (Arbeiter) (also in agriculture),,cat,larb,,,larb,"Filter:
+ASK ONLY IF Q6701 : L XXX Dummy=1
+",76
+soep-core,soep-core-2014-ll,76,2,,Selbstständige  (einschl. mithelfender Familienangehöriger),,Self-employed (including family members working for the self-employed),,txt,,,,,"Researcher Notes:
+Statement 1 = LSST1
+**Statement 2 = LSST2
+**Statement 3 = LSST3
+**Statement 4 = LSST4
+**
+**Mithelfende Familienangehörige: nur Single Coded
+
+Filter:
+ASK ONLY IF Q6701 : L XXX Dummy=3
+",76
+soep-core,soep-core-2014-ll,76,lsst1,,Selbstständige Landwirte,,Self-employed farmer,,cat,lsst x,,,lsst1,,76
+soep-core,soep-core-2014-ll,76,lsst2,,"Freie Berufe, selbstständige Akademiker",,"Freelance professional, selfemployed academic (selbständiger Akademiker)",,cat,lsst x,,,lsst2,,76
+soep-core,soep-core-2014-ll,76,lsst3,,Sonstige Selbstständige,,Other self-employed,,cat,lsst x,,,lsst3,,76
+soep-core,soep-core-2014-ll,76,lsst4,,,,,,cat,lsst4,,,lsst4,,76
+soep-core,soep-core-2014-ll,76,lazubi,,Auszubildende / Praktikanten,,Apprentice / trainee / intern,,cat,lazubi,,,lazubi,"Filter:
+ASK ONLY IF Q6701 : L XXX Dummy=5
+",76
+soep-core,soep-core-2014-ll,76,lang,,Angestellte,,White-collar worker (Angestellte),,cat,lang,,,lang,"Filter:
+ASK ONLY IF Q6701 : L XXX Dummy=2
+",76
+soep-core,soep-core-2014-ll,76,lamt,,Beamte / Staatsverwaltung (einschl. Richter und Berufssoldaten),,Civil servant or public administration employee (including judges and professional soldiers),,cat,lamt,,,lamt,"Filter:
+ASK ONLY IF Q6701 : L XXX Dummy=4
+",76
+soep-core,soep-core-2014-ll,77,,,Haben Sie einen der folgend genannten freiwilligen Dienste abgeleistet?,,Have you performed any of the following voluntary services?,,txt,,,,,,77
+soep-core,soep-core-2014-ll,77,lfsj,,Freiwilliges soziales/ökologisches Jahr,,Voluntary social/ecological year (freiwilliges soziales/ökologisches Jahr)..,,bin,,,,lfsj,,77
+soep-core,soep-core-2014-ll,77,lfrei1,,Bundesfreiwilligendienst,,Federal volunteer service (Bundesfreiwilligendienst),,bin,,,,lfrei1,,77
+soep-core,soep-core-2014-ll,77,lfrei2,,Freiwilligen Wehrdienst,,Voluntary military service (Freiwilligen Wehrdienst),,bin,,,,lfrei2,,77
+soep-core,soep-core-2014-ll,77,lfreino,,Keinen dieser freiwilligen Dienste abgeleistet,,Performed none of these voluntary services,,bin,,,,lfreino,,77
+soep-core,soep-core-2014-ll,77,5,,[Bundesfreiwilligendienst] Wie lange?,,[Federal volunteer service] How long?,,txt,,77;lfrei1 = 1,,,Dauer Bundesfreiwilligendienst [Monate],77
+soep-core,soep-core-2014-ll,77,lfrei1mo,,Anzahl Monate,,Months,,int,,77;lfrei1 = 1,,lfrei1mo,,77
+soep-core,soep-core-2014-ll,77,7,,[Freiwilligen Wehrdienst] Wie lange?,,[Voluntary military service] How long?,,txt,,77;lfrei2 = 1,,,Dauer Freiwilliger Wehrdienst [Monate],77
+soep-core,soep-core-2014-ll,77,lfrei2mo,,Anzahl Monate,,Months,,int,,77;lfrei2 = 1,,lfrei2mo,,77
+soep-core,soep-core-2014-ll,78,,,"Nur an Männer die 1992 oder früher geboren wurden:  
+Haben Sie Wehr- oder Zivildienst geleistet?",,Did you do compulsory military service or community service in place of military service?,,txt,,,,,"Researcher Notes:
+Programmierung: Fragen nur an Männer die 1992 oder früher geboren sind!
+",78
+soep-core,soep-core-2014-ll,78,lwehr2,,"Ja, …",,"Yes, ...",,cat,lwehr2,74;lwehr1 = 1,,lwehr2,"Form Wehr-, Zivildienst",78
+soep-core,soep-core-2014-ll,78,lwehr3,,"Nein, …",,"No, ...",,cat,lwehr3,74;lwehr1 = 2,,lwehr3,Gründe kein Wehr- und Zivieldienst,78
+soep-core,soep-core-2014-ll,79,,,Haben oder hatten Sie Geschwister?,"Gemeint sind leibliche, Halb-, Stief- und Adoptivgeschwister.
+Geben Sie uns bitte für jedes Ihrer Geschwister folgende Angaben (maximal zehn Geschwister).
+Bitte beginnen Sie mit dem ältesten Geschwisterteil und fahren dem Alter nach fort, bis zum Jüngsten.
+Geben Sie bitte auch an, ob Sie Ihre gesamte Kindheit - also bis zu Ihrem 15. Lebensjahr - mit dem jeweiligen Geschwister gemeinsam gelebt haben. ",Do you have or had any siblings?,"We are referring here to biological siblings, half-siblings, step-siblings, and adoptive siblings.
+Please provide the following information for each of your siblings (maximum of 10), from oldest to youngest. Please also state whether you lived with each sibling for your entire childhood, that is, up to the age of 15.",txt,,,,,,79
+soep-core,soep-core-2014-ll,79,lbsanz,,"Ja, und zwar … Geschwister",,Yes ... siblings,,int,,,,lbsanz,,79
+soep-core,soep-core-2014-ll,79,lbsno,,Nein,,No,,bin,,,1 @ 80,lbsno,,79
+soep-core,soep-core-2014-ll,79,lbsj1,,Geburtsjahr,,Birthyear,,int,,,,lbsj1,,79
+soep-core,soep-core-2014-ll,79,lbsmo1,,Monat ,,Month ,,int,,,,lbsmo1,,79
+soep-core,soep-core-2014-ll,79,lbssex1,,Geschlecht ,,Sex ,,cat,lbssexx,,,lbssex1,,79
+soep-core,soep-core-2014-ll,79,lbsart1,,Art des Geschwisters,,Type of sibling,,cat,lbsartx,,,lbsart1,,79
+soep-core,soep-core-2014-ll,79,79.1,,Gesamte Kindheit – bis zu Ihrem 15. Lebensjahr zusammen gelebt?,,Did you live together throughout your entire childhood?,,txt,,,,,,79
+soep-core,soep-core-2014-ll,79,lbs15j1,,Ja,,Yes,,bin,,,,lbs15j1,,79
+soep-core,soep-core-2014-ll,79,lbs15n1,,"Nein, nur: … Jahre",,"No, only ... years",,int,,,,lbs15n1,,79
+soep-core,soep-core-2014-ll,80,,,"Haben oder hatten sie Kinder? Wenn ja, wie viele?",Gemeint sind leibliche oder adoptierte Kinder (nicht Pflege- oder Stiefkinder).,"Do you have or had children? If so, how much?",We mean you own children or adopted children ( not stepchildren or fosterchildren),txt,,,,,,80
+soep-core,soep-core-2014-ll,80,lkind,,"Ja, und zwar … Kinder:",,Yes ... children,,int,,,,lkind,"Researcher Notes:
+Option ""Ja"" nicht zum ankreuzen, es findet sich also kein Wert dafür in den Daten.
+
+Routing:
+*IF [Q70010,2] *GOTO 71000
+",80
+soep-core,soep-core-2014-ll,80,lkno,,"Nein, hatte nie Kinder",,"No, I never had any kids",,bin,,,1 @ 81,lkno,"Researcher Notes:
+sinnvolles numerischer Maximum
+
+Filter:
+ASK ONLY IF Q7001 : LKNO=1
+",80
+soep-core,soep-core-2014-ll,80,lkgeb1,,Geburtsjahr,,,,int,,,,lkgeb1,,80
+soep-core,soep-core-2014-ll,80,lksex1,,Geschlecht,,,,cat,lksex x,,,lksex1,,80
+soep-core,soep-core-2014-ll,80,lkwo1,,Wo lebt das Kind heute?,,,,cat,lkwo x,,,lkwo1,,80
+soep-core,soep-core-2014-ll,81,,,"Im Folgenden geht es um Partnerschaft und Ehe / eingetragene gleichgeschlechtliche Partnerschaft. 
+Die Fragen werden immer in Bezug auf die Beziehung gestellt, unabhängig davon, ob Sie in dieser Beziehung geheiratet haben oder nicht. Bei den Fragen geht es sowohl um die aktuelle Beziehung, als auch um frühere Beziehungen. Wir beginnen mit der aktuellen Beziehung und fragen dann rückblickend nach den festen Beziehungen, die Sie vorher hatten. Bei den früheren Beziehungen sprechen wir dann von fester Beziehung, wenn diese sechs Monate oder länger andauerte. ","Wenn wir hier von Ehe oder Heirat sprechen, ist immer auch
+ eingetragene gleichgeschlechtliche Partnerschaft gemeint! 
+Gehen Sie die Spalten der Reihe nach von oben nach unten durch - also erst A von 1 bis 6, 
+dann B von 1 bis 6 usw. Wenn Sie etwas überspringen können, wird dies durch einen Pfeil und der Stelle angezeigt, an der Sie bitte weiter machen. Z.B. bedeutet B5, weiter mit Spalte B, 5. Frage! ","The following is about partnership and marriage. The questions are always asked in terms of the relationship, regardless of whether you got married in this relationship or not. Whether you have been married in the particular relationship or not will be clarified in subsequent questions. The questions are about both, the current relationship, as well as former relationships. We begin with the current relationship and then ask you retrospectively about the steady relationships you had before.Concerning the previous relations, we speak of a steady relationship if it lasted six months or longer.","If we are talking about matrimony or marriage, it is always meant registered same-sex partnership! Go through the columns sequentially from top to bottom - so first A from 1 to 6, then B from 1 to 6, etc. If you can skip something, this will be shown by an arrow and the place where you please keep go on. For example, B5, means continue with column B, 5th issue!",txt,,,,,,81
+soep-core,soep-core-2014-ll,81,lp1a,,"A 
+Haben Sie derzeit eine feste Beziehung?",,A Do you currently have a fixed relationship?,,cat,lp1a,,,lp1a,,81
+soep-core,soep-core-2014-ll,81,81a1,,[A] 1. Die Beziehung …,,[A] 1. The relationship...,,txt,,,,,,81
+soep-core,soep-core-2014-ll,81,lpja,,[A] – begann im Jahr,,[A] 1. Began in the year,,int,,81:lp1a=1,,lpja,,81
+soep-core,soep-core-2014-ll,81,81a3,,[A] 3. Wohnen / Wohnten Sie zusammen?,,[A] 3. Do or did you live together?,,txt,,81:lpja>0,,,,81
+soep-core,soep-core-2014-ll,81,lp2a,,[A] 3. Nein,,[A] 3. No,,bin,,,,lp2a,,81
+soep-core,soep-core-2014-ll,81,lpleb1a,,"[A] 3. Ja, zusammengezogen im Jahr",,"[A] 3. Yes, moved together in the year",,int,,,,lpleb1a,,81
+soep-core,soep-core-2014-ll,81,81a5,,[A] 4. Wohnen Sie noch zusammen?,,[A] 4. Do you still live together?,,txt,,81;lp2a!=2 | 81,,,,81
+soep-core,soep-core-2014-ll,81,lpleb5a,,[A] 4. Ja,,[A] 4. Yes,,bin,,,,lpleb5a,,81
+soep-core,soep-core-2014-ll,81,lpleb3a,,"[A] 4. Nein, Ende des gemeinsamen Wohnens im Jahr",,"[A] 4. No, end of living together in the year",,int,,,,lpleb3a,,81
+soep-core,soep-core-2014-ll,81,81a6,,[A] 5. Sind / Waren Sie in dieser Beziehung verheiratet?,,[A] 5. Are / were you married in this relationship?,,txt,,,,,,81
+soep-core,soep-core-2014-ll,81,lehea,,[A] 5. Nein,,[A] 5. No,,bin,,,,lehea,,81
+soep-core,soep-core-2014-ll,81,lehe1a,,"[A] 5. Ja, wir haben geheiratet im Jahr",,"[A] 5. Yes, we have married in the year",,int,,,,lehe1a,,81
+soep-core,soep-core-2014-ll,81,lehe2a,,[A] 6. Besteht diese Ehe noch?,,[A] 6. Does this marriage still exist?,,cat,lehe2a,81;lehea!=2,,lehe2a,,81
+soep-core,soep-core-2014-ll,81,lehe3a,,"[A] 6. Nein, die Ehe endete im Jahr",,"[A] 6. No, the marriage ended in the year",,int,,,,lehe3a,,81
+soep-core,soep-core-2014-ll,81,lp1b,,"B 
+Hatten Sie davor eine feste Beziehung?",,B Have you had a stable relationship before?,,cat,lp1b,81;lp1a>1 | 81,2 @ A,lp1b,,81
+soep-core,soep-core-2014-ll,81,81b1,,[B] 1. Die Beziehung …,,[B] 1. The relationship...,,txt,,,,,,81
+soep-core,soep-core-2014-ll,81,lpjb,,[B] – begann im Jahr,,[B] 1. Began in the year,,int,,81;lp1b=1,,lpjb,,81
+soep-core,soep-core-2014-ll,81,81b2,,[B] 2. Die Beziehung,,[B] 2. The relationship,,txt,,,,,,81
+soep-core,soep-core-2014-ll,81,lpend1b,,[B] – endete im Jahr,,[B] 2. Ended in the year,,int,,,,lpend1b,,81
+soep-core,soep-core-2014-ll,81,lpend2b,,[B] – und endete durch,,[B] 2. And ended by,,cat,lpend2b,,,lpend2b,,81
+soep-core,soep-core-2014-ll,81,81b3,,[B] 3. Wohnen / Wohnten Sie zusammen?,,[B] 3. Do or did you live together?,,txt,,,,,,81
+soep-core,soep-core-2014-ll,81,lp2b,,[B] 3. Nein,,[B] 3. No,,bin,,,,lp2b,,81
+soep-core,soep-core-2014-ll,81,lpleb1b,,"[B] 3. Ja, zusammengezogen im Jahr",,"[B] 3. Yes, moved together in the year",,int,,,,lpleb1b,,81
+soep-core,soep-core-2014-ll,81,81b4,,[B] 4. Wohnen Sie noch zusammen?,,[B] 4. Do you still live together?,,txt,,81;lp2b!=2 | 81,,,,81
+soep-core,soep-core-2014-ll,81,lpleb5b,,[B] 4. Ja,,[B] 4. Yes,,bin,,,,lpleb5b,,81
+soep-core,soep-core-2014-ll,81,lpleb3b,,"[B] 4. Nein, Ende des gemeinsamen Wohnens im Jahr",,"[B] 4. No, end of living together in the year",,int,,,,lpleb3b,,81
+soep-core,soep-core-2014-ll,81,81b5,,[B] 5. Sind / Waren Sie in dieser Beziehung verheiratet?,,[B] 5. Are / were you married in this relationship?,,txt,,,,,,81
+soep-core,soep-core-2014-ll,81,leheb,,[B] 5. Nein,,[B] 5. No,,bin,,,,leheb,,81
+soep-core,soep-core-2014-ll,81,lehe1b,,"[B] 5. Ja, wir haben geheiratet im Jahr",,"[B] 5. Yes, we married in the year",,int,,,,lehe1b,,81
+soep-core,soep-core-2014-ll,81,lehe2b,,[B] 6. Besteht diese Ehe noch?,,[B] 6. Does this marriage still exist?,,cat,lehe2b,81;leheb!=2,,lehe2b,,81
+soep-core,soep-core-2014-ll,81,lehe3b,,"[B] 6. Nein, die Ehe endete im Jahr",,"[B] 6. No, the marriage ended in the year",,int,,,,lehe3b,,81
+soep-core,soep-core-2014-ll,81,lp1c,,"C 
+Hatten Sie davor eine feste Beziehung?",,[C] Did you have a stable relationship before?,,cat,lp1c,81;leheb=2,2 @ A,lp1c,,81
+soep-core,soep-core-2014-ll,81,81c1,,[C] 1. Die Beziehung …,,[C] 1. The relationship...,,txt,,,,,,81
+soep-core,soep-core-2014-ll,81,lpjc,,[C] – begann im Jahr,,[C] 1. Began in the year,,int,,81;lp1c=1,,lpjc,,81
+soep-core,soep-core-2014-ll,81,81c2,,[C] 2. Die Beziehung,,[C] 2. The relationship,,txt,,,,,,81
+soep-core,soep-core-2014-ll,81,lpend1c,,[C] – endete im Jahr,,[C] 2. Ended in the year,,int,,,,lpend1c,,81
+soep-core,soep-core-2014-ll,81,lpend2c,,[C] – und endete durch,,[C] 2. And ended by,,cat,lpend2c,,,lpend2c,,81
+soep-core,soep-core-2014-ll,81,81c3,,[C] 3. Wohnen / Wohnten Sie zusammen?,,[C] 3. Do or did you live together?,,txt,,,,,,81
+soep-core,soep-core-2014-ll,81,lp2c,,[C] 3. Nein,,[C] 3. No,,bin,,,,lp2c,,81
+soep-core,soep-core-2014-ll,81,lpleb1c,,"[C] 3. Ja, zusammengezogen im Jahr",,"[B] 3. Yes, moved together in the year",,int,,,,lpleb1c,,81
+soep-core,soep-core-2014-ll,81,81c4,,[C] 4. Wohnen Sie noch zusammen?,,[C] 4. Do you still live together?,,txt,,81;lp2c!=2 | 81,,,,81
+soep-core,soep-core-2014-ll,81,lpleb5c,,[C] 4. Ja,,[C] 4. Yes,,bin,,,,lpleb5c,,81
+soep-core,soep-core-2014-ll,81,lpleb3c,,"[C] 4. Nein, Ende des gemeinsamen Wohnens im Jahr",,"[C] 4. No, end of living together in the year",,int,,,,lpleb3c,,81
+soep-core,soep-core-2014-ll,81,81c5,,[C] 5. Sind / Waren Sie in dieser Beziehung verheiratet?,,[C] 5. Are / were you married in this relationship?,,txt,,,,,,81
+soep-core,soep-core-2014-ll,81,lehec,,[C] 5. Nein,,[C] 5. No,,bin,,,,lehec,,81
+soep-core,soep-core-2014-ll,81,lehe1c,,"[C] 5. Ja, wir haben geheiratet im Jahr",,"[C] 5. Yes, we married in the year",,int,,,,lehe1c,,81
+soep-core,soep-core-2014-ll,81,lehe2c,,[C] 6. Besteht diese Ehe noch?,,[C] 6. Does this marriage still exist?,,cat,lehe2c,81;lehec!=2,,lehe2c,,81
+soep-core,soep-core-2014-ll,81,lehe3c,,"[C] 6. Nein, die Ehe endete im Jahr",,"[C] 6. No, the marriage ended in the year",,int,,,,lehe3c,,81
+soep-core,soep-core-2014-ll,81,lp1d,,"D
+Hatten Sie davor eine feste Beziehung?",,[D] Did you have a relationship before?,,cat,lp1d,81;lehec=2,2 @ A,lp1d,,81
+soep-core,soep-core-2014-ll,81,81d1,,[D] 1. Die Beziehung …,,[D] 1. The relationship ...,,txt,,,,,,81
+soep-core,soep-core-2014-ll,81,lpjd,,[D] – begann im Jahr,,[D] 1. Began in the year,,int,,81;lp1d=1,,lpjd,,81
+soep-core,soep-core-2014-ll,81,81d2,,[D] 2. Die Beziehung,,[D] 2. The relationship,,txt,,,,,,81
+soep-core,soep-core-2014-ll,81,lpend1d,,[D] 2. endete im Jahr,,[D] 2. Ended in the year,,int,,,,lpend1d,,81
+soep-core,soep-core-2014-ll,81,lpend2d,,[D] 2. und endete durch,,[D] 2. And ended by,,cat,lpend2d,,,lpend2d,,81
+soep-core,soep-core-2014-ll,81,81d3,,[D] 3. Wohnen / Wohnten Sie zusammen?,,[D] 3. Do or did you live together?,,txt,,,,,,81
+soep-core,soep-core-2014-ll,81,lp2d,,[D] 3. Nein,,[D] 3. No,,bin,,,,lp2d,,81
+soep-core,soep-core-2014-ll,81,lpleb1d,,"[D] 3. Ja, zusammengezogen im Jahr",,"[D] 3. Yes, moved together in the year",,int,,,,lpleb1d,,81
+soep-core,soep-core-2014-ll,81,81d4,,[D] 4. Wohnen Sie noch zusammen?,,[D] 4. Do you still live together?,,txt,,81;lp2d!=2 | 81,,,,81
+soep-core,soep-core-2014-ll,81,lpleb5d,,[D] 4. Ja,,[D] 4. Yes,,bin,,,,lpleb5d,,81
+soep-core,soep-core-2014-ll,81,lpleb3d,,"[D] 4. Nein, Ende des gemeinsamen Wohnens im Jahr",,"[D] 4. No, end of living together in the year",,int,,,,lpleb3d,,81
+soep-core,soep-core-2014-ll,81,81d5,,[D] 5. Sind / Waren Sie in dieser Beziehung verheiratet?,,[D] 5. Are / were you married in this relationship?,,txt,,,,,,81
+soep-core,soep-core-2014-ll,81,lehed,,[D] 5. Nein,,[D] 5. No,,bin,,,,lehed,,81
+soep-core,soep-core-2014-ll,81,lehe1d,,"[D] 5. Ja, wir haben geheiratet im Jahr",,"[D] 5. Yes, we married in the year",,int,,,,lehe1d,,81
+soep-core,soep-core-2014-ll,81,lehe2d,,[D] 6. Besteht diese Ehe noch?,,[D] 6. Does this marriage still exist?,,cat,lehe2d,81;lehed!=2,,lehe2d,,81
+soep-core,soep-core-2014-ll,81,lehe3d,,"[D] 6. Nein, die Ehe endete im Jahr",,"[D] 6. No, the marriage ended in the year",,int,,,,lehe3d,,81
+soep-core,soep-core-2014-ll,A,,,Welches Datum haben wir heute und um wie viel Uhr haben Sie den Fragebogen beendet?,,What date do we have today and at which time have you finished your survey?,,txt,,,,,,A
+soep-core,soep-core-2014-ll,A,ldatt,,Tag,,Day,,int,,,,ldatt,,A
+soep-core,soep-core-2014-ll,A,ldatm,,Monat,,Month,,int,,,,ldatm,,A
+soep-core,soep-core-2014-ll,A,ldatst,,Stunde,,Hour,,int,,,,ldatst,,A
+soep-core,soep-core-2014-ll,A,ldatmi,,Minute,,Minute,,int,,,,ldatmi,,A
+soep-core,soep-core-2014-ll,B,,,Wie wurde die Befragung durchgeführt?,,How was the interview conducted?,,cat,lform,,,lform,,B
+soep-core,soep-core-2014-ll,C,,,Interviewdauer:,,Duration of the interview:,,txt,,,,,,C
+soep-core,soep-core-2014-ll,C,ldauer1,,Das mündliche (Teil-)Interview dauerte … Minuten,,The oral (complete or partial) interview lasted … minutes,,int,,,,ldauer1,,C
+soep-core,soep-core-2014-ll,C,ldauer2,,Befragter brauchte zum Selbstausfüllen … Minuten,(bitte erfragen),Length in minutes written interview,please enter:,int,,,,ldauer2,,C
+soep-core,soep-core-2014-ll,D,,,Sonstige Hinweise:,,Other notes:,,chr,,,,ltext,,D
+soep-core,soep-core-2014-ll,INT,,,Vielen Dank für Ihre Mitarbeit!,,Thank you for your participation!,,txt,,,,,,
+soep-core,soep-core-2014-ll,INT,listnr,,Listen-Nr.,,List. No.,,int,,,,listnr,,
+soep-core,soep-core-2014-ll,INT,lfdnr,,Lfd. Nr.,,Lfd. No.,,int,,,,lfdnr,,
+soep-core,soep-core-2014-ll,INT,lintnr,,Abrechnungs-Nummer,,Deduction No.,,int,,,,lintnr,,
