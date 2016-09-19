@@ -7,8 +7,8 @@ from ddi.onrails.repos import merge_instruments
 
 def main():
     merge_instruments.main(
-        export_json=True,
-        export_yaml=False,
+        export_json=False,
+        export_yaml=True,
     )
 
 if __name__ == "__main__":
