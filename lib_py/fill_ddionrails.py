@@ -45,6 +45,7 @@ def main():
     concepts()
     datasets()
     variables()
+    merge_instruments.main()
     copy.r2ddi("r2ddi/v31/en", "ddionrails/r2ddi/v31")
     copy.bibtex()
 
