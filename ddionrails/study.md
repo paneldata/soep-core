@@ -12,7 +12,7 @@ config:
 
 * **Title:** German Socio-Economic Panel Study (SOEP)
 * **DOI:** 10.5684/soep.v31
-* **Authors:** Jürgen Schupp; Martin Kroh; Jan Goebel; Simone Bartsch; Marco Giesselmann; Markus Grabka; Peter Krause; Elisabeth Liebau; David Richter; Christian Schmitt; Daniel Schnitzlein; Frauke Peter; Ingrid Tucci
+* **Authors:** Jürgen Schupp; Jan Goebel; Martin Kroh; Carsten Schröder; Klaudia Erhardt; Alexandra Fedorets; Marco Giesselmann; Markus Grabka; Peter Krause; Simon Kuehne; Maximilian Priem; David Richter; Rainer Siegers; Paul Schmelzer; Christian Schmitt; Daniel Schnitzlein; Ingrid Tucci; Knut Wenzig
 * **URL:** http://dx.doi.org/10.5684/soep.v31 
 
 Publications using these data should cite the DOI (doi:10.5684/soep.v31) and include one of the following references:
@@ -25,6 +25,8 @@ Publications using these data should cite the DOI (doi:10.5684/soep.v31) and inc
 
 The German Socio-Economic Panel (SOEP) study is a wide-ranging representative longitudinal study of private households, located at the German Institute for Economic Research, DIW Berlin. Every year, nearly 11,000 households, and more than 20,000 persons are sampled by the fieldwork organization TNS Infratest Sozialforschung. The data provide information on all household members, consisting of Germans living in the "old" and "new" federal states (the former West and East Germany), foreigners, and recent immigrants to Germany. The study was launched in 1984. Some of the many topics include household composition, occupational biographies, employment, earnings, health and satisfaction indicators. As early as June 1990—even before the Economic, Social and Monetary Union—SOEP expanded to include the states of the former German Democratic Republic (GDR), thus seizing the rare opportunity to observe the transformation of an entire society. An immigrant sample was added as well to account for the changes that took place in German society in 1994/95. Further new samples were added in 1998, 2000, 2002, 2006, 2009, 2011, and 2012. The survey is constantly being adapted and developed in response to current social developments. The international version contains 95% of all cases surveyed.
 
+A more detailled overview can be found in the [Desktop Companion](http://about.paneldata.org/soep/dtc/)
+
 ## Method
 
 Data collector: TNS Infratest Sozialforschung GmbH.
@@ -35,7 +37,7 @@ Selection method: All samples of SOEP are multi-stage random samples which are r
 
 Collection mode: The interview methodology of the SOEP is based on a set of pre-tested questionnaires for households and individuals. Generally an interviewer tries to obtain face-to-face interviews with all members of a given survey household aged 16 years and over. Additionally one person (head of household) is asked to answer a household related questionnaire covering information on housing, housing costs, and different sources of income. This covers also some questions on children in the household up to 16 years of age, mainly concerning their enrollment in educational institutions (kindergarten, elementary school, etc.).
 
-An overview of the sample sizes can be found in ["SOEP Samples Overview"](http://panel.gsoep.de/soepinfo2012/info/soep_samples_size.pdf).
+An overview of the sample sizes can be found in ["SOEP Samples Overview"](http://about.paneldata.org/soep/dtc/sample.html).
 
 ### Questionnaire
 
@@ -78,11 +80,11 @@ Additionally, each year, topical modules provide more in-depth information on (a
 
 SOEP-Core contains a multitude of different datasets (there were over 300 different files in the 2013 data distribution, v29). The following simplified categorization gives a general picture of the data: there are datafiles that describe the development of the sample such that the user knows which person or household was part of the interviewed sample in any given year. Then there are wave-specific original data files, that contain the data from each year’s questionnaires without any changes except for very basic consistency checks. To help the user with the data, there are also wave specific generated data. These contain consistently coded and named variables across all waves, can be used when combining datasets across waves. The SOEP also provides various data on the respondent’s background, refeered to as biographical data. These can be separated conceptually into unchanging biographical data (such as information on parental education or data from the mother-child questionnaires) and regularly updated data when changes take place in a respondent’s life (birth, children recorded in the respondent`s birh biography, job changes recorded in the job history). There are also some files in the Core SOEP that are longitudinal in nature, containing information from several years in one file, or - in the case of the multiple imputations (MIHINC) several observations per household for one year. Finally, there are some files that cannot be easily categorized: some are datasets collected only once, some provide information about the interviewers, some about respondents outside of Germany.
 
-Each wave or survey year is identified by letters of the alphabet: the first wave in 1984 is wave "A", 1985 is wave "B", and so on, up to BB in 2011. To simplify notation, the "$" sign is used referring to all waves in one group of datasets. For example, $H refers to all household level datasets AH to BBH. For each year of SOEP data there are single data files for households (e.g., $H) as well as for individual respondents (e.g., $P) and children (e.g., $KIND) based on interview information. These observations make up the "net" population, with each of these files containing as many records as interviews could be conducted. Additional data files with a limited number of variables based on the "address log" constitute the "gross" number of households and household members, that is, i.e. all households and household members that were eligible for an interview in any given year.
+Each wave or survey year is identified by letters of the alphabet: the first wave in 1984 is wave "A", 1985 is wave "B", and so on, up to BE in 2013. To simplify notation, the "$" sign is used referring to all waves in one group of datasets. For example, $H refers to all household level datasets AH to BEH. For each year of SOEP data there are single data files for households (e.g., $H) as well as for individual respondents (e.g., $P) and children (e.g., $KIND) based on interview information. These observations make up the "net" population, with each of these files containing as many records as interviews could be conducted. Additional data files with a limited number of variables based on the "address log" constitute the "gross" number of households and household members, that is, i.e. all households and household members that were eligible for an interview in any given year.
 
 Because of the overall data structure with data on different observational levels, analysis requires data to be combined using matching or merging procedures. These merging procedures need identifiers to allow datasets to be conbinated. The central individual identifier across time is PERSNR, which is fixed over time (and of course over datasets). Since a person might move to a different household at any point in time, yearly household identifiers called HHNRAKT are necessary. The exact same information is also stored in$HHNR, allowing easier matching depending on the dataset used. Finally, each individual (respondent or child) can be traced back to a member or a split-off from an original SOEP household in the SAMPLESPECIFIC first wave.
 
-This household’s ID, which is fixed no matter how often a person changes household in the course of time, is called HHNR. All these identifiers are included in the aforementioned master file PPFAD with the wave-specific household identifiers named AHHNR (for wave 1), BHHNR (wave 2), ..., BBHHNR (wave 28). Figure 8 provides a schematic overview of gross and net samples an how they relate to cross-sectional and longitudinal data.
+This household’s ID, which is fixed no matter how often a person changes household in the course of time, is called HHNR. All these identifiers are included in the aforementioned master file PPFAD with the wave-specific household identifiers named AHHNR (for wave 1), BHHNR (wave 2), ..., BEHHNR (wave 30). 
 
 ### Missing conventions
 
@@ -106,5 +108,5 @@ Alternative data format: [SOEPlong](https://paneldata.org/soep-long)
 
 ## Other material and Notes
 
-More detailed documentation is available online at <http://www.diw.de/en/diw_02.c.222735.en/documentation.html>
+More detailed documentation is available online at: http://www.diw.de/en/diw_02.c.222735.en/documentation.html
 
