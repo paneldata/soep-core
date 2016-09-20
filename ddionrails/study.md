@@ -11,11 +11,11 @@ config:
 ## Citation
 
 * **Title:** German Socio-Economic Panel Study (SOEP)
-* **DOI:** 10.5684/soep.v30
+* **DOI:** 10.5684/soep.v31
 * **Authors:** Jürgen Schupp; Martin Kroh; Jan Goebel; Simone Bartsch; Marco Giesselmann; Markus Grabka; Peter Krause; Elisabeth Liebau; David Richter; Christian Schmitt; Daniel Schnitzlein; Frauke Peter; Ingrid Tucci
-* **URL:** http://dx.doi.org/10.5684/soep.v29 
+* **URL:** http://dx.doi.org/10.5684/soep.v31 
 
-Publications using these data should cite the DOI (doi:10.5684/soep.v29) and include one of the following references:
+Publications using these data should cite the DOI (doi:10.5684/soep.v31) and include one of the following references:
 
 * Gert G. Wagner, Joachim R. Frick, and Jürgen Schupp (2007) The German Socio-Economic Panel Study (SOEP) - Scope, Evolution and Enhancements, Schmollers Jahrbuch (Journal of Applied Social Science Studies) 127 (1), 139-169 (download)
 * Gert G. Wagner, Jan Göbel, Peter Krause, Rainer Pischner, and Ingo Sieber (2008) Das Sozio-oekonomische Panel (SOEP): Multidisziplinäres Haushaltspanel und Kohortenstudie für Deutschland - Eine Einführung (für neue Datennutzer) mit einem Ausblick (für erfahrene Anwender), AStA Wirtschafts- und Sozialstatistisches Archiv 2 (4), 301-328 (download)
