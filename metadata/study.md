@@ -108,5 +108,5 @@ Alternative data format: [SOEPlong](https://paneldata.org/soep-long)
 
 ## Other material and Notes
 
-More detailed documentation is available online at <http://www.diw.de/en/diw_02.c.222735.en/documentation.html>
+More detailed documentation is available online at: http://www.diw.de/en/diw_02.c.222735.en/documentation.html
 
