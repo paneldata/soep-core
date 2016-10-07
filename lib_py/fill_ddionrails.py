@@ -3,7 +3,7 @@ import pandas as pd
 
 sys.path.append(os.path.expanduser("~/github/ddi.py/"))
 
-from ddi.onrails.repos import merge_instruments, dor1, copy
+from ddi.onrails.repos import merge_instruments, dor1, copy, convert_r2ddi
 
 def datasets():
     x = pd.read_csv("metadata/datasets.csv")
@@ -45,9 +45,10 @@ def main():
     concepts()
     datasets()
     variables()
+    convert_r2ddi.Parser(version="v31").write_json()
     merge_instruments.main()
-    copy.r2ddi("r2ddi/v31/en", "ddionrails/r2ddi/v31")
     copy.bibtex()
 
 if __name__ == "__main__":
     main()
+
