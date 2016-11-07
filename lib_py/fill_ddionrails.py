@@ -42,7 +42,11 @@ def questions_variables():
     x = x[["study_name", "dataset_name", "variable_name"]]
     def determin_question(x):
         try:
-            return Q_IN_V_RE.match(x).group(1)
+            i = Q_IN_V_RE.match(x).group(1)
+            if i[0] == "0":
+                return i[1]
+            else:
+                return i
         except:
             return None
     x["question_name"] = x["variable_name"].apply(determin_question)
