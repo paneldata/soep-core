@@ -83,6 +83,7 @@ def main():
     concepts()
     datasets()
     variables()
+    questions_variables()
     convert_r2ddi.Parser(version="v31").write_json()
     merge_instruments.main()
     copy.bibtex()
