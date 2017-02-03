@@ -1,0 +1,117 @@
+<codebook>
+  <dataDscr>
+    <var ID="hhnr" intrvl="numeric" files="mihinc">
+      <labl>Ursprungshaushaltsnummer</labl>
+      <sumStat type="Min.">27</sumStat>
+      <sumStat type="1st Qu.">51720</sumStat>
+      <sumStat type="Median">298300</sumStat>
+      <sumStat type="Mean">723900</sumStat>
+      <sumStat type="3rd Qu.">722400</sumStat>
+      <sumStat type="Max.">3500000</sumStat>
+      <sumStat type="valid">2804109</sumStat>
+      <sumStat type="invalid">0</sumStat>
+    </var>
+    <var ID="hhnrakt" intrvl="numeric" files="mihinc">
+      <labl>Current household number</labl>
+      <sumStat type="Min.">27</sumStat>
+      <sumStat type="1st Qu.">110900</sumStat>
+      <sumStat type="Median">297200</sumStat>
+      <sumStat type="Mean">727500</sumStat>
+      <sumStat type="3rd Qu.">722300</sumStat>
+      <sumStat type="Max.">3503000</sumStat>
+      <sumStat type="valid">2804109</sumStat>
+      <sumStat type="invalid">0</sumStat>
+    </var>
+    <var ID="syear" intrvl="numeric" files="mihinc">
+      <labl>Survey year</labl>
+      <sumStat type="Min.">1995</sumStat>
+      <sumStat type="1st Qu.">2002</sumStat>
+      <sumStat type="Median">2007</sumStat>
+      <sumStat type="Mean">2007</sumStat>
+      <sumStat type="3rd Qu.">2012</sumStat>
+      <sumStat type="Max.">2015</sumStat>
+      <sumStat type="valid">2804109</sumStat>
+      <sumStat type="invalid">0</sumStat>
+    </var>
+    <var ID="mi" intrvl="numeric" files="mihinc">
+      <labl>Observation identifier</labl>
+      <sumStat type="Min.">1</sumStat>
+      <sumStat type="1st Qu.">6043</sumStat>
+      <sumStat type="Median">28600</sumStat>
+      <sumStat type="Mean">49890</sumStat>
+      <sumStat type="3rd Qu.">92330</sumStat>
+      <sumStat type="Max.">156100</sumStat>
+      <sumStat type="valid">2804109</sumStat>
+      <sumStat type="invalid">0</sumStat>
+    </var>
+    <var ID="mj" intrvl="numeric" files="mihinc">
+      <labl>Imputation identifier</labl>
+      <sumStat type="Min.">0</sumStat>
+      <sumStat type="1st Qu.">2</sumStat>
+      <sumStat type="Median">5</sumStat>
+      <sumStat type="Mean">5</sumStat>
+      <sumStat type="3rd Qu.">8</sumStat>
+      <sumStat type="Max.">10</sumStat>
+      <sumStat type="valid">2804109</sumStat>
+      <sumStat type="invalid">0</sumStat>
+    </var>
+    <var ID="ihinc" intrvl="numeric" files="mihinc">
+      <labl>Monthly net household income (imputed)</labl>
+      <sumStat type="Min.">0</sumStat>
+      <sumStat type="1st Qu.">1430</sumStat>
+      <sumStat type="Median">2096</sumStat>
+      <sumStat type="Mean">2473</sumStat>
+      <sumStat type="3rd Qu.">3000</sumStat>
+      <sumStat type="Max.">1e+05</sumStat>
+      <sumStat type="NA's">13639</sumStat>
+      <sumStat type="valid">2790470</sumStat>
+      <sumStat type="invalid">13639</sumStat>
+    </var>
+    <var ID="impflag" intrvl="labeled_numeric" files="mihinc">
+      <labl>Imputation flag: 1 if ihinc missing, 0 otherwise</labl>
+      <sumStat type="valid">2549190</sumStat>
+      <sumStat type="invalid">254919</sumStat>
+      <catgry missing="TRUE">
+        <catValu>-6</catValu>
+        <labl>[-6] Fragebogenversion mit geaenderter Filterfuehrung</labl>
+        <catStat type="freq">      0</catStat>
+      </catgry>
+      <catgry missing="TRUE">
+        <catValu>-5</catValu>
+        <labl>[-5] In Fragebogenversion nicht enthalten</labl>
+        <catStat type="freq">      0</catStat>
+      </catgry>
+      <catgry missing="TRUE">
+        <catValu>-4</catValu>
+        <labl>[-4] Unzulaessige Mehrfachantwort</labl>
+        <catStat type="freq">      0</catStat>
+      </catgry>
+      <catgry missing="TRUE">
+        <catValu>-3</catValu>
+        <labl>[-3] nicht valide</labl>
+        <catStat type="freq">      0</catStat>
+      </catgry>
+      <catgry missing="TRUE">
+        <catValu>-2</catValu>
+        <labl>[-2] trifft nicht zu</labl>
+        <catStat type="freq"> 254919</catStat>
+      </catgry>
+      <catgry missing="TRUE">
+        <catValu>-1</catValu>
+        <labl>[-1] keine Angabe</labl>
+        <catStat type="freq">      0</catStat>
+      </catgry>
+      <catgry missing="FALSE">
+        <catValu>0</catValu>
+        <labl>[0] Observed value</labl>
+        <catStat type="freq">2413020</catStat>
+      </catgry>
+      <catgry missing="FALSE">
+        <catValu>1</catValu>
+        <labl>[1] Imputed value</labl>
+        <catStat type="freq"> 136170</catStat>
+      </catgry>
+    </var>
+  </dataDscr>
+  <fileDscr ID="mihinc"/>
+</codebook>
