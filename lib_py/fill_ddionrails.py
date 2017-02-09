@@ -45,7 +45,7 @@ def main():
     concepts()
     datasets()
     variables()
-    convert_r2ddi.Parser(version="v31").write_json()
+    convert_r2ddi.Parser(version="v32").write_json()
     copy.bibtex()
 
 if __name__ == "__main__":
