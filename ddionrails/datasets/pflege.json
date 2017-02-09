@@ -1,1 +1,612 @@
-{"hhnr": {"name": "hhnr", "name_cs": "hhnr", "variable": "hhnr", "dataset": "pflege", "label": "Original Household Number", "categories": {"frequencies": [], "labels": [], "missings": [], "values": []}, "statistics": {"names": ["Min.", "1st Qu.", "Median", "Mean", "3rd Qu.", "Max.", "valid", "invalid"], "values": ["43", "33250", "268500", "507100", "508400", "3342000", "11368", "0"]}, "scale": "", "label_de": "Ursprungshaushaltsnummer"}, "persnr": {"name": "persnr", "name_cs": "persnr", "variable": "persnr", "dataset": "pflege", "label": "Never Changing Person ID", "categories": {"frequencies": [], "labels": [], "missings": [], "values": []}, "statistics": {"names": ["Min.", "1st Qu.", "Median", "Mean", "3rd Qu.", "Max.", "valid", "invalid"], "values": ["401", "364200", "2683000", "5083000", "5088000", "35010000", "11368", "0"]}, "scale": "", "label_de": "Unveraenderliche Personennummer"}, "erhebj": {"name": "erhebj", "name_cs": "erhebj", "variable": "erhebj", "dataset": "pflege", "label": "Survey Year", "categories": {"frequencies": [], "labels": [], "missings": [], "values": []}, "statistics": {"names": ["Min.", "1st Qu.", "Median", "Mean", "3rd Qu.", "Max.", "valid", "invalid"], "values": ["1985", "1998", "2004", "2003", "2010", "2014", "11368", "0"]}, "scale": "", "label_de": "Survey Year"}, "maxgrad": {"name": "maxgrad", "name_cs": "maxgrad", "variable": "maxgrad", "dataset": "pflege", "label": "Level of long-term care", "categories": {"frequencies": [0, 0, 0, 0, 0, 184, 1374, 2319, 622, 3847, 3022], "labels": ["[-6] Version of questionnaire with modified filtering", "[-5] Not included in this version of the questionnaire", "[-4] Inadmissible multiple response", "[-3] Answer improbable", "[-2] Does not apply", "[-1] No Answer", "[1] Errand Outside HH", "[2] Running The HH", "[3] Daily Tasks In HH", "[4] Simple Care Tasks", "[5] Difficult Care Tasks"], "missings": [true, true, true, true, true, true, false, false, false, false, false], "values": ["-6", "-5", "-4", "-3", "-2", "-1", "1", "2", "3", "4", "5"], "labels_de": ["[-6] Fragebogenversion mit geaenderter Filterfuehrung", "[-5] In Fragebogenversion nicht enthalten", "[-4] Unzulaessige Mehrfachantwort", "[-3] nicht valide", "[-2] trifft nicht zu", "[-1] keine Angabe", "[1] Hilfe nur bei Besorg.a.Haus", "[2] Hilfe bei Versorgung", "[3] Hilfe bei tgl. Verricht.i.Haus", "[4] einf. Pflegetaetigkeit", "[5] schwierige Pflegetaetigkeit"]}, "statistics": {"names": ["valid", "invalid"], "values": ["11184", "184"]}, "scale": "cat", "label_de": "Grad der Pflegebeduerftigkeit"}, "multgrad": {"name": "multgrad", "name_cs": "multgrad", "variable": "multgrad", "dataset": "pflege", "label": "Long-term care categories", "categories": {"frequencies": [], "labels": [], "missings": [], "values": []}, "statistics": {"names": ["Min.", "1st Qu.", "Median", "Mean", "3rd Qu.", "Max.", "NA's", "valid", "invalid"], "values": ["1", "10000", "11000", "9163", "11010", "11010", "184", "11184", "184"]}, "scale": "", "label_de": "Pflegekategorien"}, "werpflgt": {"name": "werpflgt", "name_cs": "werpflgt", "variable": "werpflgt", "dataset": "pflege", "label": "Person Providing Care", "categories": {"frequencies": [], "labels": [], "missings": [], "values": []}, "statistics": {"names": ["Min.", "1st Qu.", "Median", "Mean", "3rd Qu.", "Max.", "NA's", "valid", "invalid"], "values": ["1", "1000", "1000", "1381000", "11000", "11110000", "2537", "8831", "2537"]}, "scale": "", "label_de": "Betreuer,Pfleger"}, "pnrcare": {"name": "pnrcare", "name_cs": "pnrcare", "variable": "pnrcare", "dataset": "pflege", "label": "PNR, Person Providing Care", "categories": {"frequencies": [], "labels": [], "missings": [], "values": []}, "statistics": {"names": ["Min.", "1st Qu.", "Median", "Mean", "3rd Qu.", "Max.", "NA's", "valid", "invalid"], "values": ["2502", "579600", "2844000", "5757000", "5084000", "33420000", "5503", "5865", "5503"]}, "scale": "", "label_de": "PNR, pflegende Person"}, "pay": {"name": "pay", "name_cs": "pay", "variable": "pay", "dataset": "pflege", "label": "Payed Care", "categories": {"frequencies": [0, 419, 0, 0, 9179, 99, 684, 987], "labels": ["[-6] Version of questionnaire with modified filtering", "[-5] Not included in this version of the questionnaire", "[-4] Inadmissible multiple response", "[-3] Answer improbable", "[-2] Does not apply", "[-1] No Answer", "[1] Yes", "[2] No"], "missings": [true, true, true, true, true, true, false, false], "values": ["-6", "-5", "-4", "-3", "-2", "-1", "1", "2"], "labels_de": ["[-6] Fragebogenversion mit geaenderter Filterfuehrung", "[-5] In Fragebogenversion nicht enthalten", "[-4] Unzulaessige Mehrfachantwort", "[-3] nicht valide", "[-2] trifft nicht zu", "[-1] keine Angabe", "[1] Ja", "[2] Nein"]}, "statistics": {"names": ["valid", "invalid"], "values": ["1671", "9697"]}, "scale": "cat", "label_de": "Pflege gegen Bezahlung"}, "stufe": {"name": "stufe", "name_cs": "stufe", "variable": "stufe", "dataset": "pflege", "label": "Care Level", "categories": {"frequencies": [0, 101, 0, 0, 6425, 75, 31, 2506, 1601, 629], "labels": ["[-6] Version of questionnaire with modified filtering", "[-5] Not included in this version of the questionnaire", "[-4] Inadmissible multiple response", "[-3] Answer improbable", "[-2] Does not apply", "[-1] No Answer", "[0] Care Level 0", "[1] Care Level 1", "[2] Care Level 2", "[3] Care Level 3"], "missings": [true, true, true, true, true, true, false, false, false, false], "values": ["-6", "-5", "-4", "-3", "-2", "-1", "0", "1", "2", "3"], "labels_de": ["[-6] Fragebogenversion mit geaenderter Filterfuehrung", "[-5] In Fragebogenversion nicht enthalten", "[-4] Unzulaessige Mehrfachantwort", "[-3] nicht valide", "[-2] trifft nicht zu", "[-1] keine Angabe", "[0] Pflegestufe 0", "[1] Pflegestufe 1", "[2] Pflegestufe 2", "[3] Pflegestufe 3"]}, "statistics": {"names": ["valid", "invalid"], "values": ["4767", "6601"]}, "scale": "cat", "label_de": "Pflegestufe"}, "further": {"name": "further", "name_cs": "further", "variable": "further", "dataset": "pflege", "label": "number of further persons req. help", "categories": {"frequencies": [], "labels": [], "missings": [], "values": []}, "statistics": {"names": ["Min.", "1st Qu.", "Median", "Mean", "3rd Qu.", "Max.", "NA's", "valid", "invalid"], "values": ["1", "1", "1", "1.142", "1", "3", "11149", "219", "11149"]}, "scale": "", "label_de": "number of further persons req. help"}, "carecost": {"name": "carecost", "name_cs": "carecost", "variable": "carecost", "dataset": "pflege", "label": "regular monthly costs for care", "categories": {"frequencies": [], "labels": [], "missings": [], "values": []}, "statistics": {"names": ["Min.", "1st Qu.", "Median", "Mean", "3rd Qu.", "Max.", "NA's", "valid", "invalid"], "values": ["1", "100", "200", "328.5", "400", "6000", "9972", "1396", "9972"]}, "scale": "", "label_de": "regular monthly costs for care"}}
+{
+  "hhnr": {
+    "name": "hhnr",
+    "name_cs": "hhnr",
+    "variable": "hhnr",
+    "dataset": "pflege",
+    "label": "Original Household Number",
+    "categories": {
+      "frequencies": [],
+      "labels": [],
+      "missings": [],
+      "values": []
+    },
+    "statistics": {
+      "names": [
+        "Min.",
+        "1st Qu.",
+        "Median",
+        "Mean",
+        "3rd Qu.",
+        "Max.",
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "43",
+        "34610",
+        "272700",
+        "562300",
+        "511200",
+        "3487000",
+        "11982",
+        "0"
+      ]
+    },
+    "scale": "",
+    "label_de": "Ursprungshaushaltsnummer"
+  },
+  "persnr": {
+    "name": "persnr",
+    "name_cs": "persnr",
+    "variable": "persnr",
+    "dataset": "pflege",
+    "label": "Never Changing Person Id",
+    "categories": {
+      "frequencies": [],
+      "labels": [],
+      "missings": [],
+      "values": []
+    },
+    "statistics": {
+      "names": [
+        "Min.",
+        "1st Qu.",
+        "Median",
+        "Mean",
+        "3rd Qu.",
+        "Max.",
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "401",
+        "374400",
+        "2725000",
+        "5635000",
+        "5115000",
+        "35010000",
+        "11982",
+        "0"
+      ]
+    },
+    "scale": "",
+    "label_de": "Unveraenderliche Personennummer"
+  },
+  "syear": {
+    "name": "syear",
+    "name_cs": "syear",
+    "variable": "syear",
+    "dataset": "pflege",
+    "label": "Survey Year",
+    "categories": {
+      "frequencies": [],
+      "labels": [],
+      "missings": [],
+      "values": []
+    },
+    "statistics": {
+      "names": [
+        "Min.",
+        "1st Qu.",
+        "Median",
+        "Mean",
+        "3rd Qu.",
+        "Max.",
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "1985",
+        "1998",
+        "2005",
+        "2004",
+        "2011",
+        "2015",
+        "11982",
+        "0"
+      ]
+    },
+    "scale": "",
+    "label_de": "Survey Year"
+  },
+  "maxgrad": {
+    "name": "maxgrad",
+    "name_cs": "maxgrad",
+    "variable": "maxgrad",
+    "dataset": "pflege",
+    "label": "Level of long-term care",
+    "categories": {
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        190,
+        1422,
+        2466,
+        622,
+        4095,
+        3187
+      ],
+      "labels": [
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Errand Outside HH",
+        "[2] Running The HH",
+        "[3] Daily Tasks In HH",
+        "[4] Simple Care Tasks",
+        "[5] Difficult Care Tasks"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "values": [
+        "-6",
+        "-5",
+        "-4",
+        "-3",
+        "-2",
+        "-1",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Hilfe nur bei Besorg.a.Haus",
+        "[2] Hilfe bei Versorgung",
+        "[3] Hilfe bei tgl. Verricht.i.Haus",
+        "[4] einf. Pflegetaetigkeit",
+        "[5] schwierige Pflegetaetigkeit"
+      ]
+    },
+    "statistics": {
+      "names": [
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "11792",
+        "190"
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Grad der Pflegebeduerftigkeit"
+  },
+  "multgrad": {
+    "name": "multgrad",
+    "name_cs": "multgrad",
+    "variable": "multgrad",
+    "dataset": "pflege",
+    "label": "Long-term care categories",
+    "categories": {
+      "frequencies": [],
+      "labels": [],
+      "missings": [],
+      "values": []
+    },
+    "statistics": {
+      "names": [
+        "Min.",
+        "1st Qu.",
+        "Median",
+        "Mean",
+        "3rd Qu.",
+        "Max.",
+        "NA's",
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "1",
+        "10000",
+        "11000",
+        "9187",
+        "11010",
+        "11010",
+        "190",
+        "11792",
+        "190"
+      ]
+    },
+    "scale": "",
+    "label_de": "Pflegekategorien"
+  },
+  "werpflgt": {
+    "name": "werpflgt",
+    "name_cs": "werpflgt",
+    "variable": "werpflgt",
+    "dataset": "pflege",
+    "label": "Person Providing Care",
+    "categories": {
+      "frequencies": [],
+      "labels": [],
+      "missings": [],
+      "values": []
+    },
+    "statistics": {
+      "names": [
+        "Min.",
+        "1st Qu.",
+        "Median",
+        "Mean",
+        "3rd Qu.",
+        "Max.",
+        "NA's",
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "10",
+        "100",
+        "100",
+        "140300",
+        "1100",
+        "1111000",
+        "2595",
+        "9387",
+        "2595"
+      ]
+    },
+    "scale": "",
+    "label_de": "Betreuer,Pfleger"
+  },
+  "pnrcare": {
+    "name": "pnrcare",
+    "name_cs": "pnrcare",
+    "variable": "pnrcare",
+    "dataset": "pflege",
+    "label": "PNR, Person Providing Care",
+    "categories": {
+      "frequencies": [],
+      "labels": [],
+      "missings": [],
+      "values": []
+    },
+    "statistics": {
+      "names": [
+        "Min.",
+        "1st Qu.",
+        "Median",
+        "Mean",
+        "3rd Qu.",
+        "Max.",
+        "NA's",
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "2502",
+        "676700",
+        "2894000",
+        "6573000",
+        "5135000",
+        "34870000",
+        "5656",
+        "6326",
+        "5656"
+      ]
+    },
+    "scale": "",
+    "label_de": "PNR, pflegende Person"
+  },
+  "pay": {
+    "name": "pay",
+    "name_cs": "pay",
+    "variable": "pay",
+    "dataset": "pflege",
+    "label": "Payed Care",
+    "categories": {
+      "frequencies": [
+        0,
+        419,
+        0,
+        0,
+        9587,
+        106,
+        779,
+        1091
+      ],
+      "labels": [
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes",
+        "[2] No"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "values": [
+        "-6",
+        "-5",
+        "-4",
+        "-3",
+        "-2",
+        "-1",
+        "1",
+        "2"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja",
+        "[2] Nein"
+      ]
+    },
+    "statistics": {
+      "names": [
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "1870",
+        "10112"
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Pflege gegen Bezahlung"
+  },
+  "stufe": {
+    "name": "stufe",
+    "name_cs": "stufe",
+    "variable": "stufe",
+    "dataset": "pflege",
+    "label": "Care Level",
+    "categories": {
+      "frequencies": [
+        0,
+        101,
+        0,
+        0,
+        6564,
+        75,
+        68,
+        2759,
+        1745,
+        670
+      ],
+      "labels": [
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[0] Care Level 0",
+        "[1] Care Level 1",
+        "[2] Care Level 2",
+        "[3] Care Level 3"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "values": [
+        "-6",
+        "-5",
+        "-4",
+        "-3",
+        "-2",
+        "-1",
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] Pflegestufe 0",
+        "[1] Pflegestufe 1",
+        "[2] Pflegestufe 2",
+        "[3] Pflegestufe 3"
+      ]
+    },
+    "statistics": {
+      "names": [
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "5242",
+        "6740"
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Pflegestufe"
+  },
+  "further": {
+    "name": "further",
+    "name_cs": "further",
+    "variable": "further",
+    "dataset": "pflege",
+    "label": "number of further persons req. help",
+    "categories": {
+      "frequencies": [],
+      "labels": [],
+      "missings": [],
+      "values": []
+    },
+    "statistics": {
+      "names": [
+        "Min.",
+        "1st Qu.",
+        "Median",
+        "Mean",
+        "3rd Qu.",
+        "Max.",
+        "NA's",
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "1",
+        "1",
+        "1",
+        "1.151",
+        "1",
+        "5",
+        "11717",
+        "265",
+        "11717"
+      ]
+    },
+    "scale": "",
+    "label_de": "number of further persons req. help"
+  },
+  "carecost": {
+    "name": "carecost",
+    "name_cs": "carecost",
+    "variable": "carecost",
+    "dataset": "pflege",
+    "label": "regular monthly costs for care",
+    "categories": {
+      "frequencies": [],
+      "labels": [],
+      "missings": [],
+      "values": []
+    },
+    "statistics": {
+      "names": [
+        "Min.",
+        "1st Qu.",
+        "Median",
+        "Mean",
+        "3rd Qu.",
+        "Max.",
+        "NA's",
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "1",
+        "100",
+        "200",
+        "311.1",
+        "350",
+        "6000",
+        "10289",
+        "1693",
+        "10289"
+      ]
+    },
+    "scale": "",
+    "label_de": "regular monthly costs for care"
+  },
+  "appraisal": {
+    "name": "appraisal",
+    "name_cs": "appraisal",
+    "variable": "appraisal",
+    "dataset": "pflege",
+    "label": "Officially Assessed As in Need of Care",
+    "categories": {
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        11578,
+        25,
+        379
+      ],
+      "labels": [
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "values": [
+        "-6",
+        "-5",
+        "-4",
+        "-3",
+        "-2",
+        "-1",
+        "1"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] yes"
+      ]
+    },
+    "statistics": {
+      "names": [
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "379",
+        "11603"
+      ]
+    },
+    "scale": "cat",
+    "label_de": "officially assessed as in need of care"
+  }
+}
