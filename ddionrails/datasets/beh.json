@@ -284,7 +284,7 @@
     "name_cs": "hhnrakt",
     "variable": "hhnrakt",
     "dataset": "beh",
-    "label": "Current Wave HH Number (=BEHNR)",
+    "label": "Current Wave HH Number (=BEHHNR)",
     "categories": {
       "frequencies": [],
       "labels": [],
@@ -321,7 +321,7 @@
     "name_cs": "behhnr",
     "variable": "behhnr",
     "dataset": "beh",
-    "label": "Current Household Number (=HHNRAKT)",
+    "label": "Current Wave HH Number (=HHNRAKT)",
     "categories": {
       "frequencies": [],
       "labels": [],
@@ -2203,36 +2203,63 @@
     "dataset": "beh",
     "label": "No Internet Connection",
     "categories": {
-      "frequencies": [],
-      "labels": [],
-      "missings": [],
-      "values": []
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        13195,
+        53,
+        2789
+      ],
+      "labels": [
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] No, No Internet Connection"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "values": [
+        "-6",
+        "-5",
+        "-4",
+        "-3",
+        "-2",
+        "-1",
+        "1"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Nein, kein Internetanschluss"
+      ]
     },
     "statistics": {
       "names": [
-        "Min.",
-        "1st Qu.",
-        "Median",
-        "Mean",
-        "3rd Qu.",
-        "Max.",
-        "NA's",
         "valid",
         "invalid"
       ],
       "values": [
-        "1",
-        "1",
-        "1",
-        "1",
-        "1",
-        "1",
-        "13248",
         "2789",
         "13248"
       ]
     },
-    "scale": "",
+    "scale": "cat",
     "label_de": "Kein Internetanschluss"
   },
   "beh1501": {
@@ -3644,7 +3671,7 @@
         "[-3] Answer improbable",
         "[-2] Does not apply",
         "[-1] No Answer",
-        "[1] \\nDo Not Know",
+        "[1] Do Not Know",
         "[2] No Cost Of Heating"
       ],
       "missings": [
@@ -3755,7 +3782,7 @@
         "[-3] Answer improbable",
         "[-2] Does not apply",
         "[-1] No Answer",
-        "[1] \\nDo Not Know",
+        "[1] Do Not Know",
         "[2] Included In Cost Of Heating",
         "[3] No Cost Of Electricity"
       ],
@@ -6442,7 +6469,7 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Yes",
-        "[2] \\nNo"
+        "[2] No"
       ],
       "missings": [
         true,
@@ -9957,8 +9984,8 @@
         "[1] Not at all",
         "[2] A Bit",
         "[3] Just Bearable",
-        "[4] Heavily",
-        "[5] Extremely"
+        "[4] Strong",
+        "[5] Very Strong"
       ],
       "missings": [
         true,
@@ -10043,8 +10070,8 @@
         "[1] Not at all",
         "[2] A Bit",
         "[3] Just Bearable",
-        "[4] Heavily",
-        "[5] Extremely"
+        "[4] Strong",
+        "[5] Very Strong"
       ],
       "missings": [
         true,
@@ -10129,8 +10156,8 @@
         "[1] Not at all",
         "[2] A Bit",
         "[3] Just Bearable",
-        "[4] Heavily",
-        "[5] Extremely"
+        "[4] Strong",
+        "[5] Very Strong"
       ],
       "missings": [
         true,
@@ -10377,9 +10404,9 @@
         "[-1] No Answer",
         "[1] All",
         "[2] Most",
-        "[3] Approximately The Half",
-        "[4] Approximately A Quarter",
-        "[5] Less Than A Quarter",
+        "[3] About Half",
+        "[4] About A Quarter",
+        "[5] Less Than One-Quarter",
         "[6] None"
       ],
       "missings": [
@@ -12466,7 +12493,7 @@
         "[3] Completed Without Interviewer",
         "[4] Partly Oral, Partly Written",
         "[5] Proxy",
-        "[8] Written",
+        "[8] Written, By Mail",
         "[9] CAPI",
         "[10] CAWI"
       ],
