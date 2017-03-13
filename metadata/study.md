@@ -4,6 +4,10 @@ label: SOEP-Core
 config:
     variables:
         label-table: True
+    script-generators:
+        -   soep-stata
+        -   soep-spss
+        -   soep-r
 ---
 
 # SOEP-Core
