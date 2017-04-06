@@ -3,7 +3,11 @@ name: soep-core
 label: SOEP-Core
 config:
     variables:
-        label-table: True
+        label_table: True
+    script_generators:
+        -   soep-stata
+        -   soep-spss
+        -   soep-r
 ---
 
 # SOEP-Core
