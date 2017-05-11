@@ -3,7 +3,7 @@ import pandas as pd
 
 sys.path.append(os.path.expanduser("~/github/ddi.py/"))
 
-from ddi.onrails.repos import merge_instruments, dor1, copy, convert_r2ddi
+from ddi.onrails.repos import merge_instruments, dor1, copy, convert_r2ddi, topics
 
 def datasets():
     x = pd.read_csv("metadata/datasets.csv")
@@ -47,6 +47,7 @@ def main():
     variables()
     convert_r2ddi.Parser("soep-core", version="v32").write_json()
     copy.bibtex()
+    topics.Topic.import_all()
 
 if __name__ == "__main__":
     main()
