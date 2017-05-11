@@ -6,7 +6,7 @@ sys.path.append(os.path.expanduser("~/github/ddi.py/"))
 Q_IN_V_RE = re.compile(r'^[a-z]*([0-9]{2})')
 I_IN_V_RE = re.compile(r'^([a-z]{1,2})([hp])')
 
-from ddi.onrails.repos import merge_instruments, dor1, copy, convert_r2ddi
+from ddi.onrails.repos import merge_instruments, dor1, copy, convert_r2ddi, topics
 
 def datasets():
     x = pd.read_csv("metadata/datasets.csv")
@@ -87,6 +87,7 @@ def main():
     convert_r2ddi.Parser("soep-core", version="v32").write_json()
     merge_instruments.main()
     copy.bibtex()
+    topics.Topic.import_all()
 
 if __name__ == "__main__":
     main()
