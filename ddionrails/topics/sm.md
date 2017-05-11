@@ -1,532 +1,537 @@
-# sm
+---
+topic: sm
+label: survey methodology
+---
+
+# survey methodology [sm]
 
 
-## fii
+## field information [fii]
 
-- item_6637: Number Of Interviewers
-- pop: Sample Membership 1984
-- hrgroup: Household Random Group
-- item_6641: Respondent In Household
-- item_3536: 95%-Sample
-- hi4500: Selection Criteria, Hi-Income
-- item_5453: Stratification Units
-- prgroup: Random Groups
-- spielhh: HH In Brutto For Experiment
-- item_5452: Clusters, Primary Sampling Units
-- item_3537: Random Groups
-- item_5762: Gross Regarding Determination
-- _4160_h_fii: Generated Income Threshold For HRF
-- rnetto: Calculated Mon. HH Net Income, Infratest
-- hpop: Sample Membership 1984
-- item_6640: Person Surveyed
-- psample: Sample Member
+- {item_5452}: Clusters, Primary Sampling Units
+- {hpop}: Sample Membership 1984
+- {item_5453}: Stratification Units
+- {hrgroup}: Household Random Group
+- {item_3537}: Random Groups
+- {item_6641}: Respondent In Household
+- {spielhh}: HH In Brutto For Experiment
+- {pop}: Sample Membership 1984
+- {item_6640}: Person Surveyed
+- {item_3536}: 95%-Sample
+- {hi4500}: Selection Criteria, Hi-Income
+- {item_5762}: Gross Regarding Determination
+- {prgroup}: Random Groups
+- {item_6637}: Number Of Interviewers
+- {rnetto}: Calculated Mon. HH Net Income, Infratest
+- {_4160_h_fii}: Generated Income Threshold For HRF
+- {psample}: Sample Member
 
-## ide
+## identifiers [ide]
 
-- item_4537: Person Number 3. Sibling
-- item_4539: Mother's Person Number
-- item_2255: New Person And Household Number
-- _cid: Original Household Number
-- k_samp: Sample Membership
-- item_5617: Survey Year
-- intid: Interviewer ID
-- pnrold: Serial Person Number In Previous Year
-- hhnrold: HH Number Previous Year With Person ID
-- item_4164: ID Number
-- _iv_year: year of interview
-- intnrv: ID First Interviewer
-- item_5516: Old Household And Person Number
-- item_3964: Interviewer ID for 3. Pers.
-- _pgen_pgpartnr: Partner Person Number
-- jahr: Survey Year
-- _pequiv_x11104ll: Subsample Identifier
-- _pid: Never Changing Person ID
-- _ptr_to_khv: Pointer To Head Of Household
-- hpmax: highest PNR in HH
-- _intv_year: year of interview
-- _vpnr: Current household Number (BBHHNR)
-- item_3968: Interviewer ID for 5. Pers.
-- item_3914: Survey Year
-- ypnrneu: New Household And Person Number
-- item_3917: HH Number Previous Year With Person ID
-- _ptr_to_mutti: Pointer To Mother
-- item_2261: Old Household And Person Number
-- ypnrakt: Serial Person Number
-- sample1: SUBSAMPLE
-- item_3972: Interviewer ID for 7. Pers.
-- item_3974: Interviewer ID for 8. Pers.
-- intibb: Interviewer Number IBB, East
-- casemat: Case Match, Combined Panel Households
-- item_2138: SUBSAMPLE
-- hsample: Sample Member
-- item_3669: Person Number Surveyed
-- datumy: Calendar Year Of Interview
-- _ptr_to_mutti_prtnr: Pointer To Partner Of Mother
-- item_3962: Interviewer ID for 2. Pers.
-- item_8498: Person Number Person Providing Info
-- hd: SUBSAMPLE
-- _pequiv_x11102: HH Identification Number
-- auskv: Person Number Providing Info Prev Yr
-- pnrakt: Serial Person Number
-- pnrfest2: ID person died
-- item_3610: Person Number Mother
-- ypnralt: Old Household And Person Number
-- item_5454: Twin Status: Source of Information
-- item_5881: Calendar Year Of Interview
-- _ptr_to_khv_prtn: Pointer To Partner Of Head
-- item_3912: Nr Of Interview Who Enumerated
-- ppnr: Never Changing Person ID
-- item_1697: Sample Member
-- _6453_h_ide: year of Interview
-- item_7115: Identifiers
-- _hid: Current Wave HH Number (=BDHHNR)
-- listl: Lists In Current Year
-- item_3970: Interviewer ID for 6. Pers.
-- item_3915: Subsample
-- item_3966: Interviewer ID for 4. Pers.
-- inteins: ID First Interviewer
-- item_6988: Identifiers
-- item_7116: survey year
-- pnr: ID number of person interviewed
-- item_2246: SUBSAMPLE
-- item_3960: Interviewer ID for 1. Pers.
-- item_3570: Person Number Father
-- _pgen_pgpartz: Partner Indicator
-- item_5502: Serial Person Number
-- _intid: Interviewer ID
-- stichu: SUBSAMPLE
-- item_4538: Person Number 4. Sibling
-- item_4536: Person Number 2. Sibling
-- _pequiv_x11101ll: Person Identification Number
-- hknr: Serial Number Of Child
-- welle: Survey Year
-- item_6173: Never Changing Person ID Mother
-- ausk: Person Providing Info
-- _6454_h_ide: Wave (Sample I), first census
+- {item_3968}: Interviewer ID for 5. Pers.
+- {item_2255}: New Person And Household Number
+- {item_3972}: Interviewer ID for 7. Pers.
+- {_ptr_to_mutti_prtnr}: Pointer To Partner Of Mother
+- {pnrfest2}: ID person died
+- {item_3962}: Interviewer ID for 2. Pers.
+- {item_3966}: Interviewer ID for 4. Pers.
+- {item_2138}: SUBSAMPLE
+- {jahr}: Survey Year
+- {_pequiv_x11104ll}: Subsample Identifier
+- {item_3914}: Survey Year
+- {item_4539}: Mother's Person Number
+- {ausk}: Person Providing Info
+- {ypnrakt}: Serial Person Number
+- {listl}: Lists In Current Year
+- {item_3915}: Subsample
+- {_6454_h_ide}: Wave (Sample I), first census
+- {intibb}: Interviewer Number IBB, East
+- {_ptr_to_khv}: Pointer To Head Of Household
+- {item_3669}: Person Number Surveyed
+- {pnr}: ID number of person interviewed
+- {casemat}: Case Match, Combined Panel Households
+- {item_4537}: Person Number 3. Sibling
+- {hpmax}: highest PNR in HH
+- {item_3974}: Interviewer ID for 8. Pers.
+- {hknr}: Serial Number Of Child
+- {datumy}: Calendar Year Of Interview
+- {ppnr}: Never Changing Person ID
+- {item_3917}: HH Number Previous Year With Person ID
+- {item_6173}: Never Changing Person ID Mother
+- {_ptr_to_khv_prtn}: Pointer To Partner Of Head
+- {inteins}: ID First Interviewer
+- {item_3570}: Person Number Father
+- {auskv}: Person Number Providing Info Prev Yr
+- {_6453_h_ide}: year of Interview
+- {item_3964}: Interviewer ID for 3. Pers.
+- {item_5617}: Survey Year
+- {item_5454}: Twin Status: Source of Information
+- {item_3610}: Person Number Mother
+- {_iv_year}: year of interview
+- {intnrv}: ID First Interviewer
+- {pnrold}: Serial Person Number In Previous Year
+- {pnrakt}: Serial Person Number
+- {k_samp}: Sample Membership
+- {item_2261}: Old Household And Person Number
+- {item_6988}: Identifiers
+- {item_5502}: Serial Person Number
+- {_pid}: Never Changing Person ID
+- {_cid}: Original Household Number
+- {item_4538}: Person Number 4. Sibling
+- {hd}: SUBSAMPLE
+- {item_5881}: Calendar Year Of Interview
+- {_pgen_pgpartz}: Partner Indicator
+- {stichu}: SUBSAMPLE
+- {_ptr_to_mutti}: Pointer To Mother
+- {_hid}: Current Wave HH Number (=BDHHNR)
+- {item_3960}: Interviewer ID for 1. Pers.
+- {hhnrold}: HH Number Previous Year With Person ID
+- {item_2246}: SUBSAMPLE
+- {ypnrneu}: New Household And Person Number
+- {item_4164}: ID Number
+- {_pequiv_x11101ll}: Person Identification Number
+- {_pgen_pgpartnr}: Partner Person Number
+- {item_3970}: Interviewer ID for 6. Pers.
+- {_intid}: Interviewer ID
+- {ypnralt}: Old Household And Person Number
+- {intid}: Interviewer ID
+- {welle}: Survey Year
+- {item_3912}: Nr Of Interview Who Enumerated
+- {item_1697}: Sample Member
+- {item_7116}: survey year
+- {item_5516}: Old Household And Person Number
+- {_pequiv_x11102}: HH Identification Number
+- {item_8498}: Person Number Person Providing Info
+- {sample1}: SUBSAMPLE
+- {_vpnr}: Current household Number (BBHHNR)
+- {hsample}: Sample Member
+- {_intv_year}: year of interview
+- {item_4536}: Person Number 2. Sibling
+- {item_7115}: Identifiers
 
-## sdr
+## sampling design and random groups [sdr]
 
-- abhau: Wave Left Household
-- item_5537: Year When Temporarily Absent
-- item_5535: Year Moved Into Dwelling
-- item_6639: Migrant Code 2
-- _2603_h_sdr: Person 1 Moved Into HH In Month
-- pzugv: Member Of Household In Previous Year
-- yabwesj: Year When Temporarily Absent
-- item_4484: Year Moved Into Current Residence
-- item_3428: Number Of Persons in HH
-- _pequiv_h11102: Number of hh members age 15-18
-- hlk0021: Current Residence Of Third Person
-- _2615_h_sdr: Person 2 Left HH In Year
-- _pequiv_h11107: Number of hh members age 11-12
-- _pequiv_h11108: Number of hh members age 13-15
-- item_5532: Month Moved Out Of Dwelling
-- item_6620: Point
-- item_6638: Migrant Code 1
-- hlk0007: Number Of Persons In HH
-- pzugj: Year Entered,Left Panel
-- _pequiv_d11107: Number of Children in HH
-- ypzugm: Month Entered,Left Panel
-- _2617_h_sdr: Person 3 Left HH In Year
-- _2605_h_sdr: Person 2 Moved Into HH
-- hlk0018: Second Person Not In HH Since
-- _2607_h_sdr: Person 2 Moved Into HH In Year
-- hlk0014: Date Third Person Moved In
-- item_5510: Year Entered,Left Panel
-- _2606_h_sdr: Person 2 Moved Into HH In Month
-- _pequiv_d11106: Number of Persons in HH
-- _pequiv_h11101: Number of hh members age 0-14
-- hlk0020: Third Person Not In HH Since
-- item_3429: Number Of Persons in HH, No Answer
-- hlk0023: Current Residence Of Forth Person
-- abwesj: Year When Temporarily Absent
-- _2616_h_sdr: Person 3 Left HH In Month
-- _pequiv_h11112: Indicator-wife in HH
-- item_8517: [until 2011] Relationship To Head Of Household
-- item_5504: Relationship To Head Of Household
-- item_5524: Wave Entered Household
-- hlk0012: Date First Person Moved In
-- item_6569: Test Splitgroups
-- item_5521: New Household And Person Number
-- pzugm: Month Entered,Left Panel
-- hlk0022: Forth Person Not In HH Since
-- hlk0013: Date Second Person Moved In
-- item_6621: Sign Of Onomastic (D, Z)
-- hlk0008: Persons Added To Household After 1.7.1989
-- _2599_h_sdr: Change In HH Comp Since Jan 1st Prev Yr
-- _2618_h_sdr: No Person Left HH
-- waus: Wave When Moved Away
-- _pequiv_h11103: Number of hh members age 0-1
-- item_5509: Month Entered,Left Panel
-- auszugj: Year Moved Out Of Dwelling
-- hlk0011: First Name 3. Person
-- ypzugj: Year Entered,Left Panel
-- item_5523: year of access to panel
-- item_5528: Member Of Household In Previous Year
-- yabhau: Wave Left Household
-- _pequiv_h11109: Number of hh members age 16-18
-- _pequiv_h11104: Number of hh members age 2-4
-- hlk0016: First Person Not In HH Since
-- _2601_h_sdr: HH Exists Since Year
-- yzuhau: Wave Entered Household
-- abwesm: Month When Temporarily Absent
-- ypzug: Member Of Household
-- auszugm: Month Moved Out Of Dwelling
-- _pequiv_h11110: No. hh members 19 and above or 16-18,ind
-- item_5536: Month When Temporarily Absent
-- yeinzugj: Year Moved Into Dwelling
-- yauszugj: Year Moved Out Of Dwelling
-- _2604_h_sdr: Person 1 Moved Into HH In Year
-- _2608_h_sdr: Person 3 Moved Into HH
-- wein: Wave When Moved To This Address
-- hkind: Children Under 16 Yr In Household
-- _2600_h_sdr: HH Exists Since Month
-- _2609_h_sdr: Person 3 Moved Into HH In Month
-- _2613_h_sdr: Person 1 Left HH In Year
-- hlk0010: First Name 2.Person
-- yzupan: Wave Entered Panel
-- _pequiv_h11111: Indicator - Head in HH
-- item_3954: Number Of People In HH
-- hlk0015: Persons Also In  HH Up To1.7.89
-- item_6624: Response Adresses
-- _pequiv_h11106: Number of hh members age 8-10
-- stell: Relationship To Head Of Household
-- hlk0017: Current Residence Of First Person
-- _pequiv_h11105: Number of hh members age 5-7
-- _2611_h_sdr: No New Entry
-- yabwesm: Month When Temporarily Absent
-- yauszugm: Month Moved Out Of Dwelling
-- hlk0009: First Name1. Person
-- item_5508: Member Of Household
-- _2602_h_sdr: Person 1 Moved Into HH
-- _2610_h_sdr: Person 3 Moved Into HH In Year
-- hlk0019: Current Residence Of Second Person
-- _2612_h_sdr: Person 1 Left HH In Month
-- item_6623: Tranche
-- pzug: Member Of Household
-- ypzugv: Member Of Household In Previous Year
-- _2614_h_sdr: Person 2 Left HH In Month
-- einzugj: Year Moved Into Dwelling
-- ystell: Relationship To Head Of Household
-- item_5533: Year Moved Out Of Dwelling
-- item_5525: Wave Left Household
-- item_6622: Incentivesplit
-- _pequiv_d11105: Relationship to HH Head
+- {_2603_h_sdr}: Person 1 Moved Into HH In Month
+- {yauszugm}: Month Moved Out Of Dwelling
+- {item_5504}: Relationship To Head Of Household
+- {_2618_h_sdr}: No Person Left HH
+- {_2608_h_sdr}: Person 3 Moved Into HH
+- {_2615_h_sdr}: Person 2 Left HH In Year
+- {item_6638}: Migrant Code 1
+- {yabwesj}: Year When Temporarily Absent
+- {yabwesm}: Month When Temporarily Absent
+- {item_5510}: Year Entered,Left Panel
+- {item_4484}: Year Moved Into Current Residence
+- {hlk0022}: Forth Person Not In HH Since
+- {item_6622}: Incentivesplit
+- {yzupan}: Wave Entered Panel
+- {abwesj}: Year When Temporarily Absent
+- {yzuhau}: Wave Entered Household
+- {_2600_h_sdr}: HH Exists Since Month
+- {_pequiv_h11109}: Number of hh members age 16-18
+- {item_6569}: Test Splitgroups
+- {_pequiv_h11110}: No. hh members 19 and above or 16-18,ind
+- {auszugm}: Month Moved Out Of Dwelling
+- {hlk0015}: Persons Also In  HH Up To1.7.89
+- {item_5536}: Month When Temporarily Absent
+- {hlk0007}: Number Of Persons In HH
+- {hlk0018}: Second Person Not In HH Since
+- {ypzug}: Member Of Household
+- {item_5524}: Wave Entered Household
+- {_pequiv_h11101}: Number of hh members age 0-14
+- {item_8517}: [until 2011] Relationship To Head Of Household
+- {wein}: Wave When Moved To This Address
+- {_pequiv_d11106}: Number of Persons in HH
+- {_pequiv_h11106}: Number of hh members age 8-10
+- {_pequiv_d11105}: Relationship to HH Head
+- {_2606_h_sdr}: Person 2 Moved Into HH In Month
+- {hlk0012}: Date First Person Moved In
+- {waus}: Wave When Moved Away
+- {stell}: Relationship To Head Of Household
+- {_2612_h_sdr}: Person 1 Left HH In Month
+- {hlk0014}: Date Third Person Moved In
+- {hlk0021}: Current Residence Of Third Person
+- {abhau}: Wave Left Household
+- {_pequiv_h11103}: Number of hh members age 0-1
+- {_2611_h_sdr}: No New Entry
+- {_2616_h_sdr}: Person 3 Left HH In Month
+- {ypzugj}: Year Entered,Left Panel
+- {pzug}: Member Of Household
+- {hlk0019}: Current Residence Of Second Person
+- {hlk0011}: First Name 3. Person
+- {item_5508}: Member Of Household
+- {item_5509}: Month Entered,Left Panel
+- {yauszugj}: Year Moved Out Of Dwelling
+- {_pequiv_h11111}: Indicator - Head in HH
+- {item_6639}: Migrant Code 2
+- {_pequiv_h11104}: Number of hh members age 2-4
+- {_2614_h_sdr}: Person 2 Left HH In Month
+- {_pequiv_h11105}: Number of hh members age 5-7
+- {ypzugm}: Month Entered,Left Panel
+- {hlk0009}: First Name1. Person
+- {auszugj}: Year Moved Out Of Dwelling
+- {hlk0017}: Current Residence Of First Person
+- {_2599_h_sdr}: Change In HH Comp Since Jan 1st Prev Yr
+- {_pequiv_h11112}: Indicator-wife in HH
+- {item_3954}: Number Of People In HH
+- {item_5521}: New Household And Person Number
+- {_pequiv_h11102}: Number of hh members age 15-18
+- {hlk0008}: Persons Added To Household After 1.7.1989
+- {_2617_h_sdr}: Person 3 Left HH In Year
+- {item_5535}: Year Moved Into Dwelling
+- {item_6621}: Sign Of Onomastic (D, Z)
+- {_2602_h_sdr}: Person 1 Moved Into HH
+- {yabhau}: Wave Left Household
+- {item_5523}: year of access to panel
+- {item_5537}: Year When Temporarily Absent
+- {item_5532}: Month Moved Out Of Dwelling
+- {_2609_h_sdr}: Person 3 Moved Into HH In Month
+- {_pequiv_h11107}: Number of hh members age 11-12
+- {ypzugv}: Member Of Household In Previous Year
+- {pzugj}: Year Entered,Left Panel
+- {_2605_h_sdr}: Person 2 Moved Into HH
+- {hlk0023}: Current Residence Of Forth Person
+- {yeinzugj}: Year Moved Into Dwelling
+- {item_5528}: Member Of Household In Previous Year
+- {hlk0010}: First Name 2.Person
+- {item_6623}: Tranche
+- {_pequiv_d11107}: Number of Children in HH
+- {_2613_h_sdr}: Person 1 Left HH In Year
+- {einzugj}: Year Moved Into Dwelling
+- {_2607_h_sdr}: Person 2 Moved Into HH In Year
+- {_pequiv_h11108}: Number of hh members age 13-15
+- {item_5533}: Year Moved Out Of Dwelling
+- {_2610_h_sdr}: Person 3 Moved Into HH In Year
+- {_2601_h_sdr}: HH Exists Since Year
+- {item_6624}: Response Adresses
+- {item_6620}: Point
+- {item_3428}: Number Of Persons in HH
+- {pzugv}: Member Of Household In Previous Year
+- {item_3429}: Number Of Persons in HH, No Answer
+- {ystell}: Relationship To Head Of Household
+- {hlk0013}: Date Second Person Moved In
+- {hlk0020}: Third Person Not In HH Since
+- {hkind}: Children Under 16 Yr In Household
+- {pzugm}: Month Entered,Left Panel
+- {item_5525}: Wave Left Household
+- {_2604_h_sdr}: Person 1 Moved Into HH In Year
+- {abwesm}: Month When Temporarily Absent
+- {hlk0016}: First Person Not In HH Since
 
-## inq
+## interviewer questionnaire [inq]
 
-- item_4165: Date
-- item_4174: Completed Degree
-- item_5443: Interviewer Sex
-- item_4167: Age
-- item_5579: Level Of Education (until 2000)
-- item_5580: Marital Status (Until 2000)
-- item_8514: Interviewer number in data LiD (SOEPcore)
-- item_4180: Internet Usage
-- item_5451: Year Of First Cooperation With SOEP
-- item_4175: Size Of Household
-- item_5424: Last year at Infratest
-- item_5578: Normal Job Of Interviewer (until 2000)
-- item_8515: Interviewer number in Interviewer data LiD (SOEPcore)
-- item_4172: Civil Servant
-- item_5441: First year at Infratest
-- item_4176: HH Net Income
-- item_4166: Gender
-- item_4173: Completed School
-- item_4178: HH Income Over 12000 DM
-- item_4171: White-Collar Worker
-- item_4168: Job
-- item_4179: HH Income Between 7000 And 8000 DM
-- item_4170: Blue-Collar Worker
-- item_4169: Job Status
-- item_5440: Interviewer Year Of Birth
-- item_4177: HH Income Over 10000 DM
+- {item_4179}: HH Income Between 7000 And 8000 DM
+- {item_4170}: Blue-Collar Worker
+- {item_4177}: HH Income Over 10000 DM
+- {item_5440}: Interviewer Year Of Birth
+- {item_8515}: Interviewer number in Interviewer data LiD (SOEPcore)
+- {item_5451}: Year Of First Cooperation With SOEP
+- {item_8514}: Interviewer number in data LiD (SOEPcore)
+- {item_4173}: Completed School
+- {item_5579}: Level Of Education (until 2000)
+- {item_4174}: Completed Degree
+- {item_5578}: Normal Job Of Interviewer (until 2000)
+- {item_4175}: Size Of Household
+- {item_5441}: First year at Infratest
+- {item_4169}: Job Status
+- {item_4178}: HH Income Over 12000 DM
+- {item_4165}: Date
+- {item_4168}: Job
+- {item_4176}: HH Net Income
+- {item_4167}: Age
+- {item_5443}: Interviewer Sex
+- {item_5424}: Last year at Infratest
+- {item_4172}: Civil Servant
+- {item_5580}: Marital Status (Until 2000)
+- {item_4166}: Gender
+- {item_4171}: White-Collar Worker
+- {item_4180}: Internet Usage
 
-## iom
+## influx / outflux of panel members [iom]
 
-- _pequiv_w11110: Population Factor for w11107$$
-- item_5772: Weighting Factor Sample G wave 2002
-- hbleib: Inverse Staying Probability 2012
-- _pequiv_w11101: Respondents X-Sec.Weight - without 1st subsample
-- item_6985: Weighting Factor Sample K wave 2012
-- item_5777: Weighting Factor Samples A.to E wave 2000
-- item_5771: Weighting Factor Sample G Wave 2002
-- item_6984: Weighting Factor Sample A - J wave 2012
-- item_5456: Weighting Factor Sample F wave 2000
-- _pequiv_w11109: Population Factor for w11103$$
-- item_5769: Weighting Factor Samples A - E Wave 2000
-- item_5774: Weighting Factor Sample H Wave 2006
-- item_77: Inverse Sampling Probability
-- phrfe: Weighting Factor Sample E Wave 1998
-- item_5773: Weighting Factor Samples A - G Wave 2006
-- _pequiv_w11104: Population Factor for W11101$$
-- item_8502: BETA: Weighting Factor Sample M Wave 2013
-- _pequiv_w11111: Population Factor for w11108$$
-- item_6983: Weighting Factor Sample K Wave 2011
-- item_6982: Weighting Factor Samples A - J Wave 2012
-- phrf: Weighting Factor Wave 1984
-- _pequiv_w11107: X-Sectional Weight - Enumerated Individual
-- item_8501: BETA: Weighting Factor Samples A - K Wave 2013
-- item_8503: BETA: Weighting Factor Samples A - K wave 2013
-- item_5779: Weighting Factor Samples A - G wave 2006
-- item_8504: BETA: Weighting Factor Sample M wave 2013
-- item_5780: Weighting Factor Sample H wave 2006
-- _pequiv_w11105: Individual Weight - all samples including sample G
-- item_5770: Weighting Factor Samples A - F Wave 2002
-- _pequiv_w11108: Longitudinal Weight - Enumerated Individual
-- item_6519: Weighting Factor Samples A - H wave 2011
-- item_5767: Weighting Factor Samples A - D  Wave 1998
-- item_6520: Weighting Factor Sample J wave 2011
-- item_6518: Weighting Factor Sample J Wave 2011
-- item_5778: Weighting Factor Samples A - F wave 2002
-- item_6517: Weighting Factor Samples A - H Wave 2011
-- item_5775: Weighting Factor Samples A - D  wave 1998
-- pbleib: Inverse Staying Probability 2010
-- item_5776: Weighting Factor sample E wave 1998
-- _pequiv_w11103: Longitudinal Weight - Respondent Individual
-- hhrf: Weighting Factor Wave 2011
-- item_5455: Weighting Factor Sample F Wave 2000
-- _pequiv_w11102: HH Weight
+- {item_5774}: Weighting Factor Sample H Wave 2006
+- {item_6985}: Weighting Factor Sample K wave 2012
+- {item_5777}: Weighting Factor Samples A.to E wave 2000
+- {item_6982}: Weighting Factor Samples A - J Wave 2012
+- {phrfe}: Weighting Factor Sample E Wave 1998
+- {_pequiv_w11105}: Individual Weight - all samples including sample G
+- {_pequiv_w11107}: X-Sectional Weight - Enumerated Individual
+- {item_6983}: Weighting Factor Sample K Wave 2011
+- {_pequiv_w11111}: Population Factor for w11108$$
+- {item_5455}: Weighting Factor Sample F Wave 2000
+- {item_5767}: Weighting Factor Samples A - D  Wave 1998
+- {item_6984}: Weighting Factor Sample A - J wave 2012
+- {item_5780}: Weighting Factor Sample H wave 2006
+- {item_5776}: Weighting Factor sample E wave 1998
+- {hbleib}: Inverse Staying Probability 2012
+- {pbleib}: Inverse Staying Probability 2010
+- {_pequiv_w11102}: HH Weight
+- {item_5769}: Weighting Factor Samples A - E Wave 2000
+- {item_8504}: BETA: Weighting Factor Sample M wave 2013
+- {item_5770}: Weighting Factor Samples A - F Wave 2002
+- {item_5771}: Weighting Factor Sample G Wave 2002
+- {item_5773}: Weighting Factor Samples A - G Wave 2006
+- {item_5778}: Weighting Factor Samples A - F wave 2002
+- {_pequiv_w11103}: Longitudinal Weight - Respondent Individual
+- {item_8503}: BETA: Weighting Factor Samples A - K wave 2013
+- {_pequiv_w11101}: Respondents X-Sec.Weight - without 1st subsample
+- {_pequiv_w11109}: Population Factor for w11103$$
+- {item_8501}: BETA: Weighting Factor Samples A - K Wave 2013
+- {item_5772}: Weighting Factor Sample G wave 2002
+- {hhrf}: Weighting Factor Wave 2011
+- {_pequiv_w11110}: Population Factor for w11107$$
+- {item_5775}: Weighting Factor Samples A - D  wave 1998
+- {item_5456}: Weighting Factor Sample F wave 2000
+- {item_6518}: Weighting Factor Sample J Wave 2011
+- {item_6517}: Weighting Factor Samples A - H Wave 2011
+- {item_6520}: Weighting Factor Sample J wave 2011
+- {_pequiv_w11104}: Population Factor for W11101$$
+- {item_5779}: Weighting Factor Samples A - G wave 2006
+- {item_77}: Inverse Sampling Probability
+- {item_6519}: Weighting Factor Samples A - H wave 2011
+- {item_8502}: BETA: Weighting Factor Sample M Wave 2013
+- {_pequiv_w11108}: Longitudinal Weight - Enumerated Individual
+- {phrf}: Weighting Factor Wave 1984
 
-## int
+## interview [int]
 
-- item_3947: Completeness
-- item_5976: result of address search
-- herg2: Survey Result First Re-Survey
-- item_7501: interview translation device
-- sonder: Specifics Of Preliminary Version
-- item_3920: Field Phase
-- intza: Number Of Interviewers
-- item_4188: Field Work Phase
-- item_3913: Result Interviewer Control, Panel Care
-- perge: SUBSAMPLE
-- vmb: Result Of Assets Interview
-- item_3938: Post-Processing Contact Result 1. Pers.
-- item_3932: First Processing Contact Result 4. Pers.
-- nett1: Current Wave Survey Status 1984
-- perg: Interview Work Result, 1 Digit
-- wstatus: Follow-Up Status
-- item_7495: response
-- hadq: Source Of Information
-- pbuh5: Translation Device: Polish
-- letztbef: Year Of Last Survey, Netto=10-99
-- anker: Anchor Person
-- luecke: Missing In Previous Year
-- item_3165: Date Of Last Update
-- item_5522: Type Of Person Record
-- item_3941: Post-Processing Contact Result 4. Pers.
-- hstu: Household Steps Of Survey
-- item_3955: Type Of Residence
-- item_7499: interview translation device
-- pwdh: Invitation Follow-Up Survey
-- item_5517: Follow-Up Status
-- vodere: Choice of Incentive
-- hergs: Household Survey Result, One Digit
-- padq: Source Of Address Information
-- paderq: Person Supplying Address Information
-- item_3937: Post-Processing Int.: Drop Out Reason HH
-- item_3942: Post-Processing Contact Result 5. Pers.
-- item_3166: Questionnaire Version
-- _775_p_int: Questionnaire Version
-- item_5506: Sample Status
-- dj: Cognitive Test - Wanna DJ
-- item_8500: Value Set At 0
-- item_5520: Person Supplying Address Information
-- telk1: Survey Telephone Contact
-- pergzv: Work Result Previous Year
-- item_5530: Missing In Previous Year
-- item_5512: Interview Work Result, One Digit
-- item_5507: Survey Status
-- schk: Contact By Mail
-- pbuh3: Translation Device: Russian
-- hform1: Survey Type Main Survey
-- item_7519: Persons Biography
-- vorab: Completeness Of Preliminary Version
-- _3815_h_int: Questionnaire Version
-- item_3934: First Processing Contact Result 6. Pers.
-- item_7505: interview translation device
-- item_3926: Telephone Post-Processing
-- item_5519: Source Of Address Information
-- haderq: Address Check Two-Digit
-- item_7503: interview translation device
-- ypergz: Interview Work Result, Two Digits
-- ypbio: Work Result Biography
-- pformv: Work Form Previous Year
-- item_3939: Post-Processing Contact Result 2. Pers.
-- item_3930: First Processing Contact Result 2. Pers.
-- item_5515: Work Result Previous Year
-- item_3922: Number HH Contacts
-- pbuh1: Translation Device: English
-- item_4162: Result Brutto 1
-- item_4163: Result Brutto 2
-- item_3945: Post-Processing Contact Result 8. Pers.
-- hformv: Type Of Survey Previous Year
-- item_5750: Grip Force Test
-- ywstatus: Follow-Up Status
-- pbio: Work Result Biography
-- pbuh4: Translation Device: Rumanian
-- item_5529: Last Update Of Person
-- ylint: Wave Last Interviewed
-- pbuh6: German Speaking Person in HH
-- item_4158: Willing To Participate, Prev. Year
-- item_5538: Work Result Biography
-- ypadq: Source Of Address Information
-- erstbefr: Year First Surveyed, Netto=10-99
-- pbuh9: No Translation Device
-- hdatrep: Data Report
-- item_3924: Number Of Contacts In First Processing
-- _6508_p_int: Split (Sample J)
-- item_7498: interview translation device
-- ypaderq: Person Supplying Address Information
-- item_5975: contact per Email
-- item_6991: Participation in the Test Identifying Words
-- hbuh: interview translation device
-- item_6989: Participation in the Test Naming Animals
-- item_3919: Result: Special Code E
-- befstat: Survey Status
-- item_3944: Post-Processing Contact Result 7. Pers.
-- item_7497: interview translation device
-- zuhau: Wave Entered Household
-- ypergzv: Work Result In Previous Year
-- hergv: Survey Results Previous Year
-- item_3925: Number Of Contacts In Post-Processing
-- inckontr: Incentivized Households
-- item_5513: Interview Work Result, Two Digits
-- ypart: Type Of Person Record
-- yluecke: Missing In Previous Year
-- item_3957: Residential Area
-- item_3935: First Processing Contact Result 7. Pers.
-- item_3958: Week ID For Interview
-- pbuh2: Translation Device: Turkish
-- pbuh8: German Speaking Person Outside HH
-- pbuh7: Professional Interpreter
-- item_3931: First Processing Contact Result 3. Pers.
-- ypup: Last Update Of Person
-- intdabei: Preliminary Version  P-Interview collected
-- item_3928: First Processing Int.: Drop Out Reason HH
-- htel: Telephone
-- zupan: Wave Entered Panel
-- item_3946: Final Dropout Reason HH
-- item_6990: Participation in the Test Numbers-Signs
-- item_3943: Post-Processing Contact Result 6. Pers.
-- pergz: Interview Work Result, 2 Digits
-- hand: Special Case, See Address Log
-- item_3929: First Processing Contact Result 1. Pers.
-- item_2263: Last Update Of Person
-- item_7504: interview translation device
-- austritt: Year Of Last Contact, Netto=10-99
-- psozv: Compliance Linking of Data
-- intk: Interviewer Contacts
-- yperg: Interview Work Result, One Digit
-- item_7518: interview translation device
-- item_5531: Work Result In Previous Year
-- item_3933: First Processing Contact Result 5. Pers.
-- datummo: Month Household Last Contacted
-- netto: Current Wave Survey Status 1984
-- eintritt: Year First Contacted, Netto=10-99
-- item_5526: year of last interviews
-- item_3956: Private HH/Residential Home
-- item_3918: Last Interviewer
-- ypergv: Work Result Previous Year
-- item_3921: Final Result Wave 1
-- item_2260: Work Result Previous Year
-- item_3927: Written Post-Processing
-- pader: Success Obtaining Address
-- split: Starting Work Form
-- ypader: Success Obtaining Address
-- item_3948: Processing Procedure For Completed Interviews
-- ystistat: Sample Status
-- hader: Household Address Check
-- item_3940: Post-Processing Contact Result 3. Pers.
-- item_3435: Total Non Response Persons
-- herg1: Survey Result Main Survey
-- item_7500: interview translation device
-- item_7502: interview translation device
-- item_3949: Processing Procedure For Dropouts
-- telk2: Re-Survey Telephone Contact
-- hhnetto: Current Wave Survey Status 2010
-- hergsz: Household Survey Result, Two Digits
-- item_5518: Success Obtaining Address
-- item_3936: First Processing Contact Result 8. Pers.
-- stistat: Sample Status
-- lint: Wave Last Interviewed
-- ybefstat: Survey Status
-- datumtg: Day Household Last Contacted
-- item_3923: Day, Month Last HH Contact
+- {hader}: Household Address Check
+- {ypadq}: Source Of Address Information
+- {intdabei}: Preliminary Version  P-Interview collected
+- {item_3955}: Type Of Residence
+- {item_7503}: interview translation device
+- {item_5526}: year of last interviews
+- {zuhau}: Wave Entered Household
+- {item_5529}: Last Update Of Person
+- {stistat}: Sample Status
+- {pbuh8}: German Speaking Person Outside HH
+- {hdatrep}: Data Report
+- {ystistat}: Sample Status
+- {item_3925}: Number Of Contacts In Post-Processing
+- {ywstatus}: Follow-Up Status
+- {item_3919}: Result: Special Code E
+- {pbuh5}: Translation Device: Polish
+- {item_3940}: Post-Processing Contact Result 3. Pers.
+- {item_3435}: Total Non Response Persons
+- {wstatus}: Follow-Up Status
+- {item_7497}: interview translation device
+- {eintritt}: Year First Contacted, Netto=10-99
+- {hstu}: Household Steps Of Survey
+- {nett1}: Current Wave Survey Status 1984
+- {pbuh4}: Translation Device: Rumanian
+- {item_3935}: First Processing Contact Result 7. Pers.
+- {hand}: Special Case, See Address Log
+- {pformv}: Work Form Previous Year
+- {lint}: Wave Last Interviewed
+- {item_3939}: Post-Processing Contact Result 2. Pers.
+- {dj}: Cognitive Test - Wanna DJ
+- {item_7498}: interview translation device
+- {datummo}: Month Household Last Contacted
+- {item_5506}: Sample Status
+- {item_5538}: Work Result Biography
+- {item_6989}: Participation in the Test Naming Animals
+- {item_3913}: Result Interviewer Control, Panel Care
+- {austritt}: Year Of Last Contact, Netto=10-99
+- {haderq}: Address Check Two-Digit
+- {pbuh2}: Translation Device: Turkish
+- {htel}: Telephone
+- {item_3931}: First Processing Contact Result 3. Pers.
+- {item_3945}: Post-Processing Contact Result 8. Pers.
+- {item_5517}: Follow-Up Status
+- {item_4188}: Field Work Phase
+- {yperg}: Interview Work Result, One Digit
+- {item_3933}: First Processing Contact Result 5. Pers.
+- {pbio}: Work Result Biography
+- {item_7501}: interview translation device
+- {item_5519}: Source Of Address Information
+- {netto}: Current Wave Survey Status 1984
+- {pbuh9}: No Translation Device
+- {item_3929}: First Processing Contact Result 1. Pers.
+- {ypergzv}: Work Result In Previous Year
+- {item_3166}: Questionnaire Version
+- {herg1}: Survey Result Main Survey
+- {item_2260}: Work Result Previous Year
+- {anker}: Anchor Person
+- {item_4163}: Result Brutto 2
+- {ypup}: Last Update Of Person
+- {item_2263}: Last Update Of Person
+- {perg}: Interview Work Result, 1 Digit
+- {item_3937}: Post-Processing Int.: Drop Out Reason HH
+- {item_5531}: Work Result In Previous Year
+- {hadq}: Source Of Information
+- {pader}: Success Obtaining Address
+- {herg2}: Survey Result First Re-Survey
+- {split}: Starting Work Form
+- {item_3944}: Post-Processing Contact Result 7. Pers.
+- {pbuh7}: Professional Interpreter
+- {befstat}: Survey Status
+- {erstbefr}: Year First Surveyed, Netto=10-99
+- {item_7504}: interview translation device
+- {ypergz}: Interview Work Result, Two Digits
+- {telk1}: Survey Telephone Contact
+- {hergv}: Survey Results Previous Year
+- {item_3947}: Completeness
+- {pbuh1}: Translation Device: English
+- {item_3938}: Post-Processing Contact Result 1. Pers.
+- {item_3932}: First Processing Contact Result 4. Pers.
+- {item_5515}: Work Result Previous Year
+- {datumtg}: Day Household Last Contacted
+- {item_5530}: Missing In Previous Year
+- {pbuh6}: German Speaking Person in HH
+- {intk}: Interviewer Contacts
+- {item_3924}: Number Of Contacts In First Processing
+- {item_3942}: Post-Processing Contact Result 5. Pers.
+- {hbuh}: interview translation device
+- {item_7505}: interview translation device
+- {telk2}: Re-Survey Telephone Contact
+- {vmb}: Result Of Assets Interview
+- {item_3923}: Day, Month Last HH Contact
+- {item_8500}: Value Set At 0
+- {item_5512}: Interview Work Result, One Digit
+- {_775_p_int}: Questionnaire Version
+- {vodere}: Choice of Incentive
+- {_6508_p_int}: Split (Sample J)
+- {hhnetto}: Current Wave Survey Status 2010
+- {item_6990}: Participation in the Test Numbers-Signs
+- {item_5522}: Type Of Person Record
+- {item_5507}: Survey Status
+- {item_3956}: Private HH/Residential Home
+- {item_3941}: Post-Processing Contact Result 4. Pers.
+- {pwdh}: Invitation Follow-Up Survey
+- {zupan}: Wave Entered Panel
+- {letztbef}: Year Of Last Survey, Netto=10-99
+- {item_3922}: Number HH Contacts
+- {item_6991}: Participation in the Test Identifying Words
+- {psozv}: Compliance Linking of Data
+- {item_3943}: Post-Processing Contact Result 6. Pers.
+- {ybefstat}: Survey Status
+- {item_7518}: interview translation device
+- {item_5513}: Interview Work Result, Two Digits
+- {item_5976}: result of address search
+- {luecke}: Missing In Previous Year
+- {item_3946}: Final Dropout Reason HH
+- {item_3936}: First Processing Contact Result 8. Pers.
+- {hergsz}: Household Survey Result, Two Digits
+- {item_7500}: interview translation device
+- {paderq}: Person Supplying Address Information
+- {item_3958}: Week ID For Interview
+- {item_5518}: Success Obtaining Address
+- {item_7499}: interview translation device
+- {item_3921}: Final Result Wave 1
+- {padq}: Source Of Address Information
+- {item_3165}: Date Of Last Update
+- {item_3928}: First Processing Int.: Drop Out Reason HH
+- {ypergv}: Work Result Previous Year
+- {item_3927}: Written Post-Processing
+- {item_3957}: Residential Area
+- {inckontr}: Incentivized Households
+- {perge}: SUBSAMPLE
+- {item_3949}: Processing Procedure For Dropouts
+- {_3815_h_int}: Questionnaire Version
+- {hformv}: Type Of Survey Previous Year
+- {ypaderq}: Person Supplying Address Information
+- {hform1}: Survey Type Main Survey
+- {item_3930}: First Processing Contact Result 2. Pers.
+- {item_7495}: response
+- {item_3920}: Field Phase
+- {sonder}: Specifics Of Preliminary Version
+- {ypart}: Type Of Person Record
+- {intza}: Number Of Interviewers
+- {item_3926}: Telephone Post-Processing
+- {pergzv}: Work Result Previous Year
+- {ypbio}: Work Result Biography
+- {item_5750}: Grip Force Test
+- {pergz}: Interview Work Result, 2 Digits
+- {ypader}: Success Obtaining Address
+- {pbuh3}: Translation Device: Russian
+- {item_3918}: Last Interviewer
+- {item_7519}: Persons Biography
+- {item_7502}: interview translation device
+- {yluecke}: Missing In Previous Year
+- {ylint}: Wave Last Interviewed
+- {item_4158}: Willing To Participate, Prev. Year
+- {schk}: Contact By Mail
+- {hergs}: Household Survey Result, One Digit
+- {vorab}: Completeness Of Preliminary Version
+- {item_5520}: Person Supplying Address Information
+- {item_4162}: Result Brutto 1
+- {item_5975}: contact per Email
+- {item_3948}: Processing Procedure For Completed Interviews
+- {item_3934}: First Processing Contact Result 6. Pers.
 
-## wim
+## weighting and imputation [wim]
 
-- hforms: Result Of Survey
-- hdauer2: Interview Length Written
-- _2561_h_wim: Type Of Interview, Assets
-- _hgen_hghmonth: Month Of Interview
-- item_4258: Length In Minutes Oral Interview
-- item_5898: result of requestioning
-- _976_p_wim: Communication With Interviewer
-- item_3720: Day Of Interview
-- item_3579: Further Persons Present
-- pdatm: Month Of Interview
-- ypformv: Work Form Previous Year
-- vform: survey instrument
-- _2135_h_wim: Language Version
-- hform: Survey Instrument
-- _926_p_wim: Third Person Present
-- hform2: Survey Type First Re-Survey
-- item_3959: Interview Date For 1. Pers.
-- k_instr: Language Version Of Questionnaire
-- item_3679: Length In Minutes Oral Interview
-- _2456_h_wim: Communication With Interviewer
-- vdatt: day of interview
-- _2562_h_wim: Interview Length Assets Oral
-- vdatmi: minute of interview
-- item_3700: Length In Minutes Written Interview
-- vdatm: month of interview
-- item_3963: Interview Date For 3. Pers.
-- hdauer1: Interview Length Oral
-- item_5511: Interview Work Form
-- ber: Willing To Participate
-- pdauer3: Interview Duration
-- item_5514: Work Form Previous Year
-- item_7204: Interview Length
-- pdauer1: Length In Minutes Oral Interview
-- ypform: Interview Work Form
-- item_5340: Month Of Interview
-- hdatt: Day Of Interview
-- item_3167: Language Version
-- _pequiv_x11105: Individual responded to Survey
-- item_3971: Interview Date For 7. Pers.
-- _2563_h_wim: Interview Length Assets Written
-- item_3965: Interview Date For 4. Pers.
-- item_4259: Length In Minutes Written Interview
-- item_3961: Interview Date For 2. Pers.
-- pdatmi: Minute Of Interview
-- item_3769: Month Of Interview
-- hdatm: Month Of Interview
-- _pequiv_x11103: Individual in HH at Survey
-- vdatst: hour of interview
-- _2457_h_wim: Which Person Interpreter
-- item_3973: Interview Date For 8. Pers.
-- item_4261: Month Of The Interview
-- item_4257: Survey Instrument
-- item_4489: Survey Instrument
-- item_4260: Day Of The Interview
-- item_3969: Interview Date For 6. Pers.
-- pdauer2: Length In Minutes Written Interview
-- pdatst: Hour Of Interview
-- _hgen_hghmode: Interview Method
-- _927_p_wim: Language Version
-- item_3967: Interview Date For 5. Pers.
-- _pgen_pgmode: Interview Method
-- _977_p_wim: Which Person Interpreter
-- pdatt: Day Of Interview
-- _3911_p_wim: Type Of Answers
-- _pgen_pgmonth: Month Of Interview
-- part: Type Of Person Record
-- hdatst: Hour Of Interview
-- pform: Survey Instrument
-- _2586_h_wim: Persons Present During Interview
-- item_5782: Weighting and imputation
-- hdatmi: Minute Of Interview
-- item_3708: Survey Instrument
-- item_5783: Weighting and imputation
+- {item_5340}: Month Of Interview
+- {pdauer1}: Length In Minutes Oral Interview
+- {_926_p_wim}: Third Person Present
+- {item_4489}: Survey Instrument
+- {_pgen_pgmode}: Interview Method
+- {_2457_h_wim}: Which Person Interpreter
+- {vform}: survey instrument
+- {pform}: Survey Instrument
+- {item_3967}: Interview Date For 5. Pers.
+- {_927_p_wim}: Language Version
+- {pdatst}: Hour Of Interview
+- {item_3973}: Interview Date For 8. Pers.
+- {item_7204}: Interview Length
+- {_hgen_hghmonth}: Month Of Interview
+- {item_3963}: Interview Date For 3. Pers.
+- {_2562_h_wim}: Interview Length Assets Oral
+- {item_3579}: Further Persons Present
+- {pdauer2}: Length In Minutes Written Interview
+- {hdauer1}: Interview Length Oral
+- {item_3769}: Month Of Interview
+- {vdatt}: day of interview
+- {item_5898}: result of requestioning
+- {ber}: Willing To Participate
+- {k_instr}: Language Version Of Questionnaire
+- {item_3700}: Length In Minutes Written Interview
+- {ypformv}: Work Form Previous Year
+- {item_3969}: Interview Date For 6. Pers.
+- {item_3167}: Language Version
+- {_pequiv_x11103}: Individual in HH at Survey
+- {_pequiv_x11105}: Individual responded to Survey
+- {hform2}: Survey Type First Re-Survey
+- {pdatm}: Month Of Interview
+- {vdatm}: month of interview
+- {hform}: Survey Instrument
+- {hdatmi}: Minute Of Interview
+- {ypform}: Interview Work Form
+- {item_5782}: Weighting and imputation
+- {hdatst}: Hour Of Interview
+- {item_4259}: Length In Minutes Written Interview
+- {_977_p_wim}: Which Person Interpreter
+- {_3911_p_wim}: Type Of Answers
+- {_pgen_pgmonth}: Month Of Interview
+- {pdatt}: Day Of Interview
+- {pdatmi}: Minute Of Interview
+- {_2456_h_wim}: Communication With Interviewer
+- {vdatst}: hour of interview
+- {vdatmi}: minute of interview
+- {item_5511}: Interview Work Form
+- {hforms}: Result Of Survey
+- {item_4261}: Month Of The Interview
+- {_976_p_wim}: Communication With Interviewer
+- {pdauer3}: Interview Duration
+- {hdauer2}: Interview Length Written
+- {hdatm}: Month Of Interview
+- {_2586_h_wim}: Persons Present During Interview
+- {item_3961}: Interview Date For 2. Pers.
+- {item_5783}: Weighting and imputation
+- {item_4258}: Length In Minutes Oral Interview
+- {item_5514}: Work Form Previous Year
+- {hdatt}: Day Of Interview
+- {item_3965}: Interview Date For 4. Pers.
+- {item_3708}: Survey Instrument
+- {item_3971}: Interview Date For 7. Pers.
+- {item_4260}: Day Of The Interview
+- {item_3679}: Length In Minutes Oral Interview
+- {_2135_h_wim}: Language Version
+- {_hgen_hghmode}: Interview Method
+- {item_4257}: Survey Instrument
+- {part}: Type Of Person Record
+- {_2563_h_wim}: Interview Length Assets Written
+- {_2561_h_wim}: Type Of Interview, Assets
+- {item_3720}: Day Of Interview
+- {item_3959}: Interview Date For 1. Pers.
 

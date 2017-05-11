@@ -1,6 +1,11 @@
-# misc
+---
+topic: misc
+label: Miscellaneous
+---
+
+# Miscellaneous [misc]
 
 
-## inter
+## International comparison [inter]
 
 
