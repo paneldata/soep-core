@@ -15,11 +15,11 @@ config:
 ## Citation
 
 * **Title:** German Socio-Economic Panel Study (SOEP)
-* **DOI:** 10.5684/soep.v31
-* **Authors:** Jürgen Schupp; Jan Goebel; Martin Kroh; Carsten Schröder; Klaudia Erhardt; Alexandra Fedorets; Marco Giesselmann; Markus Grabka; Peter Krause; Simon Kuehne; Maximilian Priem; David Richter; Rainer Siegers; Paul Schmelzer; Christian Schmitt; Daniel Schnitzlein; Ingrid Tucci; Knut Wenzig
-* **URL:** http://dx.doi.org/10.5684/soep.v31 
+* **DOI:** 10.5684/soep.v32.1
+* **Authors:** Jürgen Schupp; Jan Goebel; Martin Kroh; Carsten Schröder; Charlotte Bartels; Klaudia Erhardt; Alexandra Fedorets; Marco Giesselmann; Markus Grabka; Peter Krause; Simon Kühne; David Richter; Rainer Siegers; Paul Schmelzer; Christian Schmitt; Daniel Schnitzlein; Knut Wenzig
+* **URL:** http://dx.doi.org/10.5684/soep.v32.1 
 
-Publications using these data should cite the DOI (doi:10.5684/soep.v31) and include one of the following references:
+Publications using these data should cite the DOI (doi:10.5684/soep.v32.1) and include one of the following references:
 
 * Gert G. Wagner, Joachim R. Frick, and Jürgen Schupp (2007) The German Socio-Economic Panel Study (SOEP) - Scope, Evolution and Enhancements, Schmollers Jahrbuch (Journal of Applied Social Science Studies) 127 (1), 139-169 (download)
 * Gert G. Wagner, Jan Göbel, Peter Krause, Rainer Pischner, and Ingo Sieber (2008) Das Sozio-oekonomische Panel (SOEP): Multidisziplinäres Haushaltspanel und Kohortenstudie für Deutschland - Eine Einführung (für neue Datennutzer) mit einem Ausblick (für erfahrene Anwender), AStA Wirtschafts- und Sozialstatistisches Archiv 2 (4), 301-328 (download)
@@ -27,7 +27,7 @@ Publications using these data should cite the DOI (doi:10.5684/soep.v31) and inc
 
 ## Study Info
 
-The German Socio-Economic Panel (SOEP) study is a wide-ranging representative longitudinal study of private households, located at the German Institute for Economic Research, DIW Berlin. Every year, nearly 11,000 households, and more than 20,000 persons are sampled by the fieldwork organization TNS Infratest Sozialforschung. The data provide information on all household members, consisting of Germans living in the "old" and "new" federal states (the former West and East Germany), foreigners, and recent immigrants to Germany. The study was launched in 1984. Some of the many topics include household composition, occupational biographies, employment, earnings, health and satisfaction indicators. As early as June 1990—even before the Economic, Social and Monetary Union—SOEP expanded to include the states of the former German Democratic Republic (GDR), thus seizing the rare opportunity to observe the transformation of an entire society. An immigrant sample was added as well to account for the changes that took place in German society in 1994/95. Further new samples were added in 1998, 2000, 2002, 2006, 2009, 2011, and 2012. The survey is constantly being adapted and developed in response to current social developments. The international version contains 95% of all cases surveyed.
+The German Socio-Economic Panel (SOEP) study is a wide-ranging representative longitudinal study of private households, located at the German Institute for Economic Research, DIW Berlin. Every year, nearly 11,000 households, and more than 20,000 persons are sampled by the fieldwork organization TNS Infratest Sozialforschung. The data provide information on all household members, consisting of Germans living in the "old" and "new" federal states (the former West and East Germany), foreigners, and recent immigrants to Germany. The study was launched in 1984. Some of the many topics include household composition, occupational biographies, employment, earnings, health and satisfaction indicators. As early as June 1990—even before the Economic, Social and Monetary Union—SOEP expanded to include the states of the former German Democratic Republic (GDR), thus seizing the rare opportunity to observe the transformation of an entire society. An immigrant sample was added as well to account for the changes that took place in German society in 1994/95. Further new samples were added in 1998, 2000, 2002, 2006, 2009, 2011, and 2012. Since Version 31 (10.5684/soep.v31) the SOEP includes the complete data from “Familien in Deutschland” (Families in Germany, FiD) which has been retrospectively integrated into the SOEP and made available in user-friendly form to all SOEP users. The FiD survey has been carried out in parallel to the SOEP as a so-called “SOEP-related study” from 2010 to 2013. The survey is constantly being adapted and developed in response to current social developments. The international version contains 95% of all cases surveyed.
 
 A more detailled overview can be found in the [Desktop Companion](http://about.paneldata.org/soep/dtc/)
 
