@@ -8,8 +8,8 @@
       "question": "101",
       "name": "101",
       "label": "Bitte geben Sie den Vornamen, das Geschlecht und Geburtsjahr der verstorbenen Person an:\n[Vorname der verstorbenen Person]",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vname",
           "instruction": "Bitte in Druckbuchstaben",
           "instruction_de": "Bitte in Druckbuchstaben",
@@ -25,9 +25,10 @@
           "view_import_type": "Numeric",
           "view_rgt": 51559.0,
           "view_sort_id": 1.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 0,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -36,8 +37,8 @@
       "question": "102",
       "name": "102",
       "label": "Geschlecht:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vsex",
           "concept": "vsex",
           "label": "Geschlecht verst. Person",
@@ -65,9 +66,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 1,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -76,8 +78,8 @@
       "question": "103",
       "name": "103",
       "label": "Geburtsjahr",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "vgebj",
           "label": "Geburtsjahr verst. Person",
           "number": 103.0,
@@ -92,9 +94,10 @@
           "view_lft": 51559.0,
           "view_rgt": 51561.0,
           "view_sort_id": 3.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 2,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -103,8 +106,8 @@
       "question": "201",
       "name": "201",
       "label": "In welchem Verwandtschaftsverh\u00e4ltnis standen Sie zu der verstorbenen Person? \nDer / die Verstorbene war...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vfam",
           "concept": "vfam",
           "label": "Verwandtschaft zur verstorbenen Person",
@@ -142,9 +145,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 3,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -153,8 +157,8 @@
       "question": "202",
       "name": "202",
       "label": "andere Person, und zwar:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vfamso",
           "description": "Filter:\nASK ONLY IF Q201 : VFAM=4\n",
           "filter": "ASK ONLY IF Q201 : VFAM=4",
@@ -171,9 +175,10 @@
           "view_lft": 51561.0,
           "view_rgt": 51563.0,
           "view_sort_id": 5.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 4,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -182,8 +187,8 @@
       "question": "300",
       "name": "300",
       "label": "Wie alt war Ihr Angeh\u00f6riger, als er / sie verstarb?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "valt",
           "label": "Sterbealter",
           "number": 300.0,
@@ -197,9 +202,10 @@
           "view_lft": 51562.0,
           "view_rgt": 51564.0,
           "view_sort_id": 6.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 5,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -208,8 +214,8 @@
       "question": "400",
       "name": "400",
       "label": "Hat der / die Verstorbene hier im Haushalt gelebt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vinhh",
           "concept": "vinhh",
           "description": "Routing:\n*IF [Q4000,1] **GOTO BLOCK 900\n",
@@ -238,9 +244,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 6,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -249,8 +256,8 @@
       "question": "500",
       "name": "500",
       "label": "Wissen Sie, ob der / die Verstorbene jemals an der Studie \"Leben in Deutschland\" teilgenommen hat?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vlid",
           "concept": "vlid",
           "label": "Teilnahme LiD",
@@ -282,9 +289,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 7,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -293,8 +301,8 @@
       "question": "601",
       "name": "601",
       "label": "In welchem h\u00e4uslichen Umfeld hat der / die Verstorbene w\u00e4hrend des letzten Lebensjahres vorwiegend gelebt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vleb01",
           "concept": "vleb01",
           "label": "H\u00e4usliches Umfeld",
@@ -347,9 +355,10 @@
               "value": 7
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 8,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -358,8 +367,8 @@
       "question": "602",
       "name": "602",
       "label": "sonstiges Umfeld, und zwar:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vleb02",
           "description": "Filter:\nASK ONLY IF Q601 : VLEB01=7\n",
           "filter": "ASK ONLY IF Q601 : VLEB01=7",
@@ -376,9 +385,10 @@
           "view_lft": 51566.0,
           "view_rgt": 51568.0,
           "view_sort_id": 10.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 9,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -387,8 +397,8 @@
       "question": "700",
       "name": "700",
       "label": "Wo hat der / die Verstorbene da gelebt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vleb03",
           "concept": "vleb03",
           "label": "Ort verstorbene Person",
@@ -430,9 +440,10 @@
               "value": 5
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 10,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -441,8 +452,8 @@
       "question": "800",
       "name": "800",
       "label": "W\u00e4hrend der letzten zw\u00f6lf Monate ihres / seines Lebens: wie oft hatten Sie da in der Regel\npers\u00f6nlichen Kontakt zu dem / der Verstorbenen, sei es durch Besuche, telefonisch oder schriftlich?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vkont",
           "concept": "vkont",
           "label": "Kontakt zur verst. Person",
@@ -484,9 +495,10 @@
               "value": 5
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 11,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -495,8 +507,8 @@
       "question": "901",
       "name": "901",
       "label": "Wo ist Ihr Angeh\u00f6riger verstorben?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vwo",
           "concept": "vwo",
           "label": "Wo verstorben",
@@ -549,9 +561,10 @@
               "value": 7
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 12,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -560,8 +573,8 @@
       "question": "902",
       "name": "902",
       "label": "An einem anderen Ort, und zwar:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vwoso",
           "description": "Filter:\nASK ONLY IF Q901 : VWO=6\n",
           "filter": "ASK ONLY IF Q901 : VWO=6",
@@ -578,9 +591,10 @@
           "view_lft": 51570.0,
           "view_rgt": 51572.0,
           "view_sort_id": 14.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 13,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -589,8 +603,8 @@
       "question": "1001",
       "name": "1001",
       "label": "K\u00f6nnen Sie uns bitte sagen, was die Todesursache war?\n\nMehrfachnennungen m\u00f6glich!",
-      "items": {
-        "root": {
+      "items": [
+        {
           "label": "Todesursache",
           "number": 1001.0,
           "scale": "txt",
@@ -604,10 +618,11 @@
           "view_lft": 51571.0,
           "view_rgt": 51583.0,
           "view_sort_id": 15.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
-          "item": 1.0,
+        {
+          "item": "1.0",
           "number": 1001.0,
           "scale": "bin",
           "text": "Ein Herzinfarkt",
@@ -617,8 +632,8 @@
           "view_sort_id": 16.0,
           "sn": 1
         },
-        "2.0": {
-          "item": 2.0,
+        {
+          "item": "2.0",
           "number": 1001.0,
           "scale": "bin",
           "text": "Eine Herz-Kreislauf-Erkrankung",
@@ -628,8 +643,8 @@
           "view_sort_id": 17.0,
           "sn": 2
         },
-        "3.0": {
-          "item": 3.0,
+        {
+          "item": "3.0",
           "number": 1001.0,
           "scale": "bin",
           "text": "Eine Krebserkrankung",
@@ -639,8 +654,8 @@
           "view_sort_id": 18.0,
           "sn": 3
         },
-        "4.0": {
-          "item": 4.0,
+        {
+          "item": "4.0",
           "number": 1001.0,
           "scale": "bin",
           "text": "Ein Schlaganfall",
@@ -650,8 +665,8 @@
           "view_sort_id": 19.0,
           "sn": 4
         },
-        "5.0": {
-          "item": 5.0,
+        {
+          "item": "5.0",
           "number": 1001.0,
           "scale": "bin",
           "text": "Eine schwere Infektionskrankheit (z.B. Lungenentz\u00fcndung, Grippe)",
@@ -661,8 +676,8 @@
           "view_sort_id": 20.0,
           "sn": 5
         },
-        "6.0": {
-          "item": 6.0,
+        {
+          "item": "6.0",
           "number": 1001.0,
           "scale": "bin",
           "text": "Krankheit des Magen-Darm-Traktes",
@@ -672,8 +687,8 @@
           "view_sort_id": 21.0,
           "sn": 6
         },
-        "7.0": {
-          "item": 7.0,
+        {
+          "item": "7.0",
           "number": 1001.0,
           "scale": "bin",
           "text": "Eine Atemwegserkrankung",
@@ -683,8 +698,8 @@
           "view_sort_id": 22.0,
           "sn": 7
         },
-        "8.0": {
-          "item": 8.0,
+        {
+          "item": "8.0",
           "number": 1001.0,
           "scale": "bin",
           "text": "Ein Unfall",
@@ -694,8 +709,8 @@
           "view_sort_id": 23.0,
           "sn": 8
         },
-        "9.0": {
-          "item": 9.0,
+        {
+          "item": "9.0",
           "number": 1001.0,
           "scale": "bin",
           "text": "Sonstige Ursache",
@@ -705,8 +720,8 @@
           "view_sort_id": 24.0,
           "sn": 9
         },
-        "11.0": {
-          "item": 11.0,
+        {
+          "item": "11.0",
           "number": 1001.0,
           "scale": "bin",
           "text": "Wei\u00df nicht",
@@ -716,7 +731,7 @@
           "view_sort_id": 25.0,
           "sn": 10
         }
-      },
+      ],
       "sn": 14,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -725,8 +740,8 @@
       "question": "1002",
       "name": "1002",
       "label": "Sonstige Ursache, und zwar:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vurs10",
           "description": "Filter:\nASK ONLY IF Q1001 : VURS XX=9\n",
           "filter": "ASK ONLY IF Q1001 : VURS XX=9",
@@ -743,9 +758,10 @@
           "view_lft": 51572.0,
           "view_rgt": 51584.0,
           "view_sort_id": 26.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 15,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -754,8 +770,8 @@
       "question": "1100",
       "name": "1100",
       "label": "Hatte der / die Verstorbene vorsorglich eine oder mehrere der folgenden Dokumente hinterlegt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "label": "Vorsorge-Dokumente",
           "number": 1100.0,
           "scale": "txt",
@@ -768,11 +784,12 @@
           "view_lft": 51583.0,
           "view_rgt": 51589.0,
           "view_sort_id": 27.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "vdok xx",
-          "item": 1.0,
+          "item": "1.0",
           "number": 1100.0,
           "scale": "cat",
           "text": "Ein Testament, einen letzten Willen",
@@ -798,9 +815,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "vdok xx",
-          "item": 2.0,
+          "item": "2.0",
           "number": 1100.0,
           "scale": "cat",
           "text": "Eine Patientenverf\u00fcgung (mit Angaben \u00fcber m\u00f6gliche Krankheitsbehandlungen)",
@@ -826,9 +843,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "vdok xx",
-          "item": 3.0,
+          "item": "3.0",
           "number": 1100.0,
           "scale": "cat",
           "text": "Eine Vorsorgevollmacht (z.B. f\u00fcr den Fall eines Verlustes der Einwilligungsf\u00e4higkeit)",
@@ -854,9 +871,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "vdok xx",
-          "item": 4.0,
+          "item": "4.0",
           "number": 1100.0,
           "scale": "cat",
           "text": "Eine Sterbeverf\u00fcgung (z.B. mit Angaben zur Bestattung)",
@@ -882,7 +899,7 @@
           ],
           "sn": 4
         }
-      },
+      ],
       "sn": 16,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -891,8 +908,8 @@
       "question": "1200",
       "name": "1200",
       "label": "Hatte der/die Verstorbene unter schwerwiegenden Einschr\u00e4nkungen der geistigen Leistungsf\u00e4higkeit (z.B. Ged\u00e4chtnisverlust) gelitten?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vleist",
           "concept": "vleist",
           "label": "Einschr\u00e4nkungen, geistig",
@@ -924,9 +941,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 17,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -935,8 +953,8 @@
       "question": "1300",
       "name": "1300",
       "label": "Wie gut w\u00fcrden Sie den Gesundheitszustand des / der verstorbenen Person etwa drei Monate vor dem Tod beschreiben?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vges01",
           "concept": "vges01",
           "label": "Gesundheitzustand",
@@ -978,9 +996,10 @@
               "value": 5
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 18,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -989,8 +1008,8 @@
       "question": "1400",
       "name": "1400",
       "label": "War der / die Verstorbene etwa drei Monate vor dem Tod hilfe- oder pflegebed\u00fcrftig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vpfleg",
           "concept": "vpfleg",
           "description": "Routing:\n*IF [Q14000,2] *GOTO 16000\n",
@@ -1019,9 +1038,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 19,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -1030,8 +1050,8 @@
       "question": "1501",
       "name": "1501",
       "label": "Bei welchen der folgenden T\u00e4tigkeiten brauchte der / die Verstorbene Hilfe? Brauchte Hilfe bei ...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "label": "Bei welchen T\u00e4tigkeiten Hilfe",
           "number": 1501.0,
           "scale": "txt",
@@ -1045,10 +1065,11 @@
           "view_lft": 51591.0,
           "view_rgt": 51597.0,
           "view_sort_id": 35.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
-          "item": 1.0,
+        {
+          "item": "1.0",
           "number": 1501.0,
           "scale": "bin",
           "text": "Besorgungen und Erledigungen au\u00dfer Haus",
@@ -1058,8 +1079,8 @@
           "view_sort_id": 36.0,
           "sn": 1
         },
-        "2.0": {
-          "item": 2.0,
+        {
+          "item": "2.0",
           "number": 1501.0,
           "scale": "bin",
           "text": "Haushaltsf\u00fchrung, Versorgung mit Mahlzeiten und Getr\u00e4nken",
@@ -1069,8 +1090,8 @@
           "view_sort_id": 37.0,
           "sn": 2
         },
-        "3.0": {
-          "item": 3.0,
+        {
+          "item": "3.0",
           "number": 1501.0,
           "scale": "bin",
           "text": "Einfacheren Pfleget\u00e4tigkeiten, z.B. Hilfe beim An- und Auskleiden, Waschen, K\u00e4mmen, Rasieren",
@@ -1080,8 +1101,8 @@
           "view_sort_id": 38.0,
           "sn": 3
         },
-        "4.0": {
-          "item": 4.0,
+        {
+          "item": "4.0",
           "number": 1501.0,
           "scale": "bin",
           "text": "Schwierigeren Pfleget\u00e4tigkeiten, z.B. Hilfe beim Umbetten, Stuhlgang usw.",
@@ -1091,7 +1112,7 @@
           "view_sort_id": 39.0,
           "sn": 4
         }
-      },
+      ],
       "sn": 20,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -1099,8 +1120,8 @@
     "1502": {
       "question": "1502",
       "name": "1502",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vhilka",
           "concept": "vhilka",
           "description": "Researcher Notes:\nnachtr\u00e4glich generiert\n",
@@ -1122,9 +1143,10 @@
               "value": 1
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 21,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -1133,8 +1155,8 @@
       "question": "1600",
       "name": "1600",
       "label": "Denken Sie bitte einmal an die Zeit bevor Ihr Angeh\u00f6riger verstarb. Was meinen Sie: Wie zufrieden war er oder sie, alles in allem, mit seinem oder ihrem damaligen Leben?\n\nAntworten Sie bitte anhand der folgenden Skala,\nbei der \"0\" ganz und gar unzufrieden, \"10\" ganz und gar zufrieden bedeutet.",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nSkala soll 0 bis 10 sein\n",
           "label": "Lebenszufriedenheit verst. Person",
           "number": 1600.0,
@@ -1148,11 +1170,12 @@
           "view_lft": 51597.0,
           "view_rgt": 51601.0,
           "view_sort_id": 41.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "vzul x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 1600.0,
           "scale": "cat",
           "text": "Etwa ein Jahr vor seinem/ihrem Tod",
@@ -1218,9 +1241,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "vzul x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 1600.0,
           "scale": "cat",
           "text": "Etwa drei Monate vor seinem/ihrem Tod",
@@ -1286,7 +1309,7 @@
           ],
           "sn": 2
         }
-      },
+      ],
       "sn": 22,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"
@@ -1295,8 +1318,8 @@
       "question": "1700",
       "name": "1700",
       "label": "Zum Schluss eine Frage an Sie pers\u00f6nlich:\nIn welchem Umfang hat sich Ihr Leben durch den Tod Ihres Angeh\u00f6rigen ver\u00e4ndert?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "vver",
           "concept": "vver",
           "label": "Ver\u00e4nderung durch Tod",
@@ -1327,9 +1350,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 23,
       "instrument": "soep-core-2009-vp",
       "study": "soep-core"

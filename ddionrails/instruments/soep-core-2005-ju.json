@@ -11,8 +11,8 @@
       "question": "100",
       "name": "100",
       "label": "Wohnen Sie gegenw\u00e4rtig im elterlichen Haushalt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jwohn1",
           "description": "Routing:\n*IF [Q1000,2] *GOTO 4000\n",
           "goto": "*IF [Q1000,2] *GOTO 4000",
@@ -39,9 +39,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 0,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -50,8 +51,8 @@
       "question": "200",
       "name": "200",
       "label": "Haben Sie ein eigenes Zimmer f\u00fcr sich alleine, oder teilen Sie Ihr Zimmer mit anderen Personen (beispielsweise Geschwistern)?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jwohn2",
           "description": "Filter:\nASK ONLY IF Q100 : JWOHN1=1\n",
           "filter": "ASK ONLY IF Q100 : JWOHN1=1",
@@ -79,9 +80,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 1,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -90,8 +92,8 @@
       "question": "300",
       "name": "300",
       "label": "Haben Sie neben der Wohnung bei Ihren Eltern noch eine andere Wohnung oder ein Zimmer, wo Sie selbst auch wohnen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jwohn3",
           "label": "Wohnung au\u00dferhalb Elternhaus",
           "number": 300.0,
@@ -117,9 +119,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 2,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -128,8 +131,8 @@
       "question": "400",
       "name": "400",
       "label": "Verdienen Sie schon selbst Geld durch Arbeit oder Jobs?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jjob1",
           "description": "Routing:\n*IF [Q4000,2] *GOTO 6000\n",
           "goto": "*IF [Q4000,2] *GOTO 6000",
@@ -157,9 +160,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 3,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -168,8 +172,8 @@
       "question": "500",
       "name": "500",
       "label": "Verdienen Sie das Geld ...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jjob2",
           "description": "Filter:\nASK ONLY IF Q400 : JJOB1=1\n",
           "filter": "ASK ONLY IF Q400 : JJOB1=1",
@@ -202,9 +206,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 4,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -213,8 +218,8 @@
       "question": "600",
       "name": "600",
       "label": "Haben Sie fr\u00fcher schon einmal \"gejobbt\" und damit etwas Geld verdient?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jjob3",
           "description": "Routing:\n*IF [Q6000,2] *GOTO 9000\n",
           "goto": "*IF [Q6000,2] *GOTO 9000",
@@ -244,9 +249,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 5,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -255,8 +261,8 @@
       "question": "700",
       "name": "700",
       "label": "In welchem Alter haben Sie erstmals mit dem regelm\u00e4\u00dfigen \"Jobben\" angefangen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Filter:\nASK ONLY IF Q600 : JJOB3=1\n",
           "filter": "ASK ONLY IF Q600 : JJOB3=1",
           "instruction": "Gemeint sind einigerma\u00dfen regelm\u00e4\u00dfige Verdienstquellen w\u00e4hrend der Ferien oder w\u00e4hrend des ganzen Jahres, z.B. h\u00e4ufiges Babysitten, Nachilfeunterricht geben oder Austragen von Zeitungen.",
@@ -273,9 +279,10 @@
           "view_lft": 45568.0,
           "view_rgt": 45570.0,
           "view_sort_id": 7.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 6,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -284,8 +291,8 @@
       "question": "800",
       "name": "800",
       "label": "Haben Sie diese Jobs aus Interesse ausge\u00fcbt oder nur, um sich noch ein paar Euro hinzuzuverdienen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jjob5",
           "label": "Gr\u00fcnde Jobben",
           "number": 800.0,
@@ -316,9 +323,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 7,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -327,8 +335,8 @@
       "question": "900",
       "name": "900",
       "label": "Wie ist das heute:\nErhalten Sie Taschengeld oder einen regelm\u00e4\u00dfigen Zuschuss von Ihren Eltern oder anderen Verwandten?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jtg1",
           "description": "Routing:\n*IF [Q9000,2] **GOTO BLOCK 1100\n",
           "goto": "*IF [Q9000,2] **GOTO BLOCK 1100",
@@ -356,9 +364,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 8,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -367,8 +376,8 @@
       "question": "1001",
       "name": "1001",
       "label": "Wie viel Taschengeld oder Zuschuss erhalten Sie regelm\u00e4\u00dfig pro Woche?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "label": "Taschengeld Woche",
           "number": 1001.0,
           "scale": "int",
@@ -382,9 +391,10 @@
           "view_lft": 45571.0,
           "view_rgt": 45573.0,
           "view_sort_id": 10.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 9,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -393,8 +403,8 @@
       "question": "1002",
       "name": "1002",
       "label": "Oder wie viel Taschengeld oder Zuschuss erhalten Sie regelm\u00e4\u00dfig pro Monat?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "label": "Taschengeld Woche",
           "number": 1002.0,
           "scale": "int",
@@ -408,9 +418,10 @@
           "view_lft": 45572.0,
           "view_rgt": 45574.0,
           "view_sort_id": 11.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 10,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -419,8 +430,8 @@
       "question": "1101",
       "name": "1101",
       "label": "K\u00f6nnen Sie gelegentlich oder regelm\u00e4\u00dfig etwas Geld sparen, z.B. f\u00fcr eigene Anschaffungen oder Reisen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jspar1",
           "description": "Routing:\n*IF [Q11010,3] *GOTO 12000\n",
           "goto": "*IF [Q11010,3] *GOTO 12000",
@@ -454,9 +465,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 11,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -465,8 +477,8 @@
       "question": "1102",
       "name": "1102",
       "label": "Wie viel sparen Sie ungef\u00e4hr im Monat?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jspar3",
           "description": "Researcher Notes:\nOption \"Euro\" nicht zum ankreuzen, es findet sich also kein Wert daf\u00fcr in den Daten.\n\nFilter:\nASK ONLY IF Q1101 : JSPAR1=1,2\n",
           "filter": "ASK ONLY IF Q1101 : JSPAR1=1,2",
@@ -495,9 +507,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 12,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -506,8 +519,8 @@
       "question": "1103",
       "name": "1103",
       "label": "Wie viel sparen Sie ungef\u00e4hr pro Monat?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Filter:\nASK ONLY IF Q1102 : JSPAR3=2\n",
           "filter": "ASK ONLY IF Q1102 : JSPAR3=2",
           "label": "H\u00f6he Sparbetrag",
@@ -523,9 +536,10 @@
           "view_lft": 45575.0,
           "view_rgt": 45577.0,
           "view_sort_id": 14.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 13,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -534,8 +548,8 @@
       "question": "1200",
       "name": "1200",
       "label": "Wie wichtig sind f\u00fcr Ihr Leben derzeit folgende Menschen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = JWICH1\n**Statement 2 = JWICH2\n**Statement 3 = JWICH3\n**Statement 4 = JWICH4\n**Statement 5 = JWICH5\n**Statement 6 = JWICH6\n**Statement 7 = JWICH7\n**Statement 8 = JWICH8\n**Statement 9 = JWICH9\n",
           "instruction": "Bitte ein Kreuz pro Zeile!",
           "instruction_de": "Bitte ein Kreuz pro Zeile!",
@@ -551,11 +565,12 @@
           "view_lft": 45576.0,
           "view_rgt": 45587.0,
           "view_sort_id": 15.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jwich x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 1200.0,
           "scale": "cat",
           "text": "Mein Vater",
@@ -591,9 +606,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jwich x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 1200.0,
           "scale": "cat",
           "text": "Meine Mutter",
@@ -629,9 +644,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "jwich x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 1200.0,
           "scale": "cat",
           "text": "Mein Bruder / meine Schwester",
@@ -667,9 +682,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "jwich x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 1200.0,
           "scale": "cat",
           "text": "Eine andere verwandte Person",
@@ -705,9 +720,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "jwich x",
-          "item": 5.0,
+          "item": "5.0",
           "number": 1200.0,
           "scale": "cat",
           "text": "Meine feste Freundin / mein fester Freund",
@@ -743,9 +758,9 @@
           ],
           "sn": 5
         },
-        "6.0": {
+        {
           "answer_list": "jwich x",
-          "item": 6.0,
+          "item": "6.0",
           "number": 1200.0,
           "scale": "cat",
           "text": "Mein bester Freund / meine beste Freundin",
@@ -781,9 +796,9 @@
           ],
           "sn": 6
         },
-        "7.0": {
+        {
           "answer_list": "jwich x",
-          "item": 7.0,
+          "item": "7.0",
           "number": 1200.0,
           "scale": "cat",
           "text": "Ein Lehrer / eine Lehrerin",
@@ -819,9 +834,9 @@
           ],
           "sn": 7
         },
-        "8.0": {
+        {
           "answer_list": "jwich x",
-          "item": 8.0,
+          "item": "8.0",
           "number": 1200.0,
           "scale": "cat",
           "text": "Meine Clique / Gruppe, der ich angeh\u00f6re",
@@ -857,9 +872,9 @@
           ],
           "sn": 8
         },
-        "9.0": {
+        {
           "answer_list": "jwich x",
-          "item": 9.0,
+          "item": "9.0",
           "number": 1200.0,
           "scale": "cat",
           "text": "Eine sonstige Person",
@@ -895,7 +910,7 @@
           ],
           "sn": 9
         }
-      },
+      ],
       "sn": 14,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -904,8 +919,8 @@
       "question": "1300",
       "name": "1300",
       "label": "Wie oft kommt es vor, dass Sie sich mit den folgenden Personen streiten?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = JSTR1\n**Statement 2 = JSTR2\n**Statement 3 = JSTR3\n**Statement 4 = JSTR4\n**Statement 5 = JSTR5\n",
           "instruction": "Bitte ein Kreuz pro Zeile!",
           "instruction_de": "Bitte ein Kreuz pro Zeile!",
@@ -921,11 +936,12 @@
           "view_lft": 45577.0,
           "view_rgt": 45593.0,
           "view_sort_id": 25.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jstr x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 1300.0,
           "scale": "cat",
           "text": "Mit meinem Vater",
@@ -966,9 +982,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jstr x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 1300.0,
           "scale": "cat",
           "text": "Mit meiner Mutter",
@@ -1009,9 +1025,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "jstr x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 1300.0,
           "scale": "cat",
           "text": "Mit meinem Bruder / meiner Schwester",
@@ -1052,9 +1068,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "jstr x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 1300.0,
           "scale": "cat",
           "text": "Mit fester Freundin / festem Freund",
@@ -1095,9 +1111,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "jstr x",
-          "item": 5.0,
+          "item": "5.0",
           "number": 1300.0,
           "scale": "cat",
           "text": "Mit bestem Freund / bester Freundin",
@@ -1138,7 +1154,7 @@
           ],
           "sn": 5
         }
-      },
+      ],
       "sn": 15,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -1147,8 +1163,8 @@
       "question": "1401",
       "name": "1401",
       "label": "Wie h\u00e4ufig treten in Ihrer Beziehung zu Ihren Eltern die folgenden Situationen auf?\n\nWie h\u00e4ufig kommt es vor, ...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = JBEZ1M\n**Statement 2 = JBEZ2M\n**Statement 3 = JBEZ3M\n**Statement 4 = JBEZ4M\n**Statement 5 = JBEZ5M\n**Statement 6 = JBEZ6M\n**Statement 7 = JBEZ7M\n**Statement 8 = JBEZ8M\n**Statement 9 = JBEZ9M\n",
           "instruction": "Machen Sie die Angaben f\u00fcr Mutter und Vater jeweils getrennt.\nFalls es nur einen Elternteil gibt, lassen Sie die andere Zeile bitte leer!",
           "instruction_de": "Machen Sie die Angaben f\u00fcr Mutter und Vater jeweils getrennt.\nFalls es nur einen Elternteil gibt, lassen Sie die andere Zeile bitte leer!",
@@ -1165,11 +1181,12 @@
           "view_lft": 45587.0,
           "view_rgt": 45603.0,
           "view_sort_id": 31.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jbez x m",
-          "item": 1.0,
+          "item": "1.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "dass Ihre Eltern mit Ihnen \u00fcber Dinge sprechen, die Sie tun oder erlebt haben?",
@@ -1206,9 +1223,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jbez x m",
-          "item": 2.0,
+          "item": "2.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "dass Ihre Eltern Dinge ansprechen, die Sie \u00e4rgern oder belasten?",
@@ -1245,9 +1262,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "jbez x m",
-          "item": 3.0,
+          "item": "3.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "dass Ihre Eltern nach Ihrer Meinung fragen, bevor sie etwas entscheiden, das Sie betrifft?",
@@ -1284,9 +1301,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "jbez x m",
-          "item": 4.0,
+          "item": "4.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "dass, wenn Sie etwas tun, was Ihre Eltern gut finden, Ihre Eltern Ihnen auch zeigen, dass sie sich dar\u00fcber freuen?",
@@ -1323,9 +1340,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "jbez x m",
-          "item": 5.0,
+          "item": "5.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "dass, wenn Sie und Ihre Eltern ein Problem miteinander haben, Sie dann gemeinsam eine L\u00f6sung finden k\u00f6nnen?",
@@ -1362,9 +1379,9 @@
           ],
           "sn": 5
         },
-        "6.0": {
+        {
           "answer_list": "jbez x m",
-          "item": 6.0,
+          "item": "6.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "dass Ihre Eltern Ihnen das Gef\u00fchl geben, dass sie Ihnen wirklich vetrauen?",
@@ -1401,9 +1418,9 @@
           ],
           "sn": 6
         },
-        "7.0": {
+        {
           "answer_list": "jbez x m",
-          "item": 7.0,
+          "item": "7.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "dass Ihre Eltern nach Ihrer Meinung fragen, bevor sie \u00fcber Familienangelegenheiten entscheiden?",
@@ -1440,9 +1457,9 @@
           ],
           "sn": 7
         },
-        "8.0": {
+        {
           "answer_list": "jbez x m",
-          "item": 8.0,
+          "item": "8.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "dass Ihre Eltern Ihnen gegen\u00fcber Entscheidungen begr\u00fcnden?",
@@ -1479,9 +1496,9 @@
           ],
           "sn": 8
         },
-        "9.0": {
+        {
           "answer_list": "jbez x m",
-          "item": 9.0,
+          "item": "9.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "dass Ihre Eltern Ihnen zeigen, dass sie Sie wirklich lieben?",
@@ -1518,7 +1535,7 @@
           ],
           "sn": 9
         }
-      },
+      ],
       "sn": 16,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -1527,8 +1544,8 @@
       "question": "1402",
       "name": "1402",
       "label": "Wie h\u00e4ufig treten in Ihrer Beziehung zu Ihren Eltern die folgenden Situationen auf?\n\nWie h\u00e4ufig kommt es vor, ...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = JBEZ1V\n**Statement 2 = JBEZ2V\n**Statement 3 = JBEZ3V\n**Statement 4 = JBEZ4V\n**Statement 5 = JBEZ5V\n**Statement 6 = JBEZ6V\n**Statement 7 = JBEZ7V\n**Statement 8 = JBEZ8V\n**Statement 9 = JBEZ9V\n",
           "instruction": "Machen Sie die Angaben f\u00fcr Mutter und Vater jeweils getrennt.\n\nFalls es nur einen Elternteil gibt, lassen Sie die andere Zeile bitte leer!",
           "instruction_de": "Machen Sie die Angaben f\u00fcr Mutter und Vater jeweils getrennt.\n\nFalls es nur einen Elternteil gibt, lassen Sie die andere Zeile bitte leer!",
@@ -1545,11 +1562,12 @@
           "view_lft": 45593.0,
           "view_rgt": 45613.0,
           "view_sort_id": 41.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jbez x v",
-          "item": 1.0,
+          "item": "1.0",
           "number": 1402.0,
           "scale": "cat",
           "text": "dass Ihre Eltern mit Ihnen \u00fcber Dinge sprechen, die Sie tun oder erlebt haben?",
@@ -1586,9 +1604,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jbez x v",
-          "item": 2.0,
+          "item": "2.0",
           "number": 1402.0,
           "scale": "cat",
           "text": "dass Ihre Eltern Dinge ansprechen, die Sie \u00e4rgern oder belasten?",
@@ -1625,9 +1643,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "jbez x v",
-          "item": 3.0,
+          "item": "3.0",
           "number": 1402.0,
           "scale": "cat",
           "text": "dass Ihre Eltern nach Ihrer Meinung fragen, bevor sie etwas entscheiden, das Sie betrifft?",
@@ -1664,9 +1682,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "jbez x v",
-          "item": 4.0,
+          "item": "4.0",
           "number": 1402.0,
           "scale": "cat",
           "text": "dass, wenn Sie etwas tun, was Ihre Eltern gut finden, Ihre Eltern Ihnen auch zeigen, dass sie sich dar\u00fcber freuen?",
@@ -1703,9 +1721,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "jbez x v",
-          "item": 5.0,
+          "item": "5.0",
           "number": 1402.0,
           "scale": "cat",
           "text": "dass, wenn Sie und Ihre Eltern ein Problem miteinander haben, Sie dann gemeinsam eine L\u00f6sung finden k\u00f6nnen?",
@@ -1742,9 +1760,9 @@
           ],
           "sn": 5
         },
-        "6.0": {
+        {
           "answer_list": "jbez x v",
-          "item": 6.0,
+          "item": "6.0",
           "number": 1402.0,
           "scale": "cat",
           "text": "dass Ihre Eltern Ihnen das Gef\u00fchl geben, dass sie Ihnen wirklich vetrauen?",
@@ -1781,9 +1799,9 @@
           ],
           "sn": 6
         },
-        "7.0": {
+        {
           "answer_list": "jbez x v",
-          "item": 7.0,
+          "item": "7.0",
           "number": 1402.0,
           "scale": "cat",
           "text": "dass Ihre Eltern nach Ihrer Meinung fragen, bevor sie \u00fcber Familienangelegenheiten entscheiden?",
@@ -1820,9 +1838,9 @@
           ],
           "sn": 7
         },
-        "8.0": {
+        {
           "answer_list": "jbez x v",
-          "item": 8.0,
+          "item": "8.0",
           "number": 1402.0,
           "scale": "cat",
           "text": "dass Ihre Eltern Ihnen gegen\u00fcber Entscheidungen begr\u00fcnden?",
@@ -1859,9 +1877,9 @@
           ],
           "sn": 8
         },
-        "9.0": {
+        {
           "answer_list": "jbez x v",
-          "item": 9.0,
+          "item": "9.0",
           "number": 1402.0,
           "scale": "cat",
           "text": "dass Ihre Eltern Ihnen zeigen, dass sie Sie wirklich lieben?",
@@ -1898,7 +1916,7 @@
           ],
           "sn": 9
         }
-      },
+      ],
       "sn": 17,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -1907,8 +1925,8 @@
       "question": "1500",
       "name": "1500",
       "label": "Wie h\u00e4ufig \u00fcben Sie die folgenden Freizeitbesch\u00e4ftigungen aus?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = JFZ01\n**Statement 2 = JFZ02\n**Statement 3 = JFZ03\n**Statement 4 = JFZ04\n**Statement 5 = JFZ05\n**Statement 6 = JFZ06\n**Statement 7 = JFZ07\n**Statement 8 = JFZ08\n**Statement 9 = JFZ09\n**Statement 10 = JFZ10\n**Statement 11= JFZ11\n**Statement 12 = JFZ12\n**Statement 13 = JFZ13\n**\n",
           "instruction": "Bitte [b][u]ein[/u][/b] Kreuz pro Zeile!",
           "instruction_de": "Bitte [b][u]ein[/u][/b] Kreuz pro Zeile!",
@@ -1924,11 +1942,12 @@
           "view_lft": 45603.0,
           "view_rgt": 45627.0,
           "view_sort_id": 51.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jfz xx",
-          "item": 1.0,
+          "item": "1.0",
           "number": 1500.0,
           "scale": "cat",
           "text": "Fernsehen / Video",
@@ -1964,9 +1983,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jfz xx",
-          "item": 2.0,
+          "item": "2.0",
           "number": 1500.0,
           "scale": "cat",
           "text": "Computerspiele",
@@ -2002,9 +2021,9 @@
           ],
           "sn": 2
         },
-        "4.0": {
+        {
           "answer_list": "jfz xx",
-          "item": 4.0,
+          "item": "4.0",
           "number": 1500.0,
           "scale": "cat",
           "text": "Musik h\u00f6ren",
@@ -2040,9 +2059,9 @@
           ],
           "sn": 3
         },
-        "5.0": {
+        {
           "answer_list": "jfz xx",
-          "item": 5.0,
+          "item": "5.0",
           "number": 1500.0,
           "scale": "cat",
           "text": "Musik machen",
@@ -2078,9 +2097,9 @@
           ],
           "sn": 4
         },
-        "6.0": {
+        {
           "answer_list": "jfz xx",
-          "item": 6.0,
+          "item": "6.0",
           "number": 1500.0,
           "scale": "cat",
           "text": "Sport treiben",
@@ -2116,9 +2135,9 @@
           ],
           "sn": 5
         },
-        "7.0": {
+        {
           "answer_list": "jfz xx",
-          "item": 7.0,
+          "item": "7.0",
           "number": 1500.0,
           "scale": "cat",
           "text": "Tanz, Theater u.\u00e4.",
@@ -2154,9 +2173,9 @@
           ],
           "sn": 6
         },
-        "8.0": {
+        {
           "answer_list": "jfz xx",
-          "item": 8.0,
+          "item": "8.0",
           "number": 1500.0,
           "scale": "cat",
           "text": "Technische Arbeiten, Computer programmieren",
@@ -2192,9 +2211,9 @@
           ],
           "sn": 7
         },
-        "9.0": {
+        {
           "answer_list": "jfz xx",
-          "item": 9.0,
+          "item": "9.0",
           "number": 1500.0,
           "scale": "cat",
           "text": "Lesen",
@@ -2230,9 +2249,9 @@
           ],
           "sn": 8
         },
-        "15.0": {
+        {
           "answer_list": "jfz xx",
-          "item": 15.0,
+          "item": "15.0",
           "number": 1500.0,
           "scale": "cat",
           "text": "Ehrenamtliche T\u00e4tigkeit",
@@ -2268,9 +2287,9 @@
           ],
           "sn": 9
         },
-        "10.0": {
+        {
           "answer_list": "jfz xx",
-          "item": 10.0,
+          "item": "10.0",
           "number": 1500.0,
           "scale": "cat",
           "text": "Einfach nichts tun / abh\u00e4ngen / tr\u00e4umen",
@@ -2306,9 +2325,9 @@
           ],
           "sn": 10
         },
-        "11.0": {
+        {
           "answer_list": "jfz xx",
-          "item": 11.0,
+          "item": "11.0",
           "number": 1500.0,
           "scale": "cat",
           "text": "Mit fester Freundin / festem Freund zusammensein",
@@ -2344,9 +2363,9 @@
           ],
           "sn": 11
         },
-        "12.0": {
+        {
           "answer_list": "jfz xx",
-          "item": 12.0,
+          "item": "12.0",
           "number": 1500.0,
           "scale": "cat",
           "text": "Mit bestem Freund / bester Freundin zusammensein",
@@ -2382,9 +2401,9 @@
           ],
           "sn": 12
         },
-        "13.0": {
+        {
           "answer_list": "jfz xx",
-          "item": 13.0,
+          "item": "13.0",
           "number": 1500.0,
           "scale": "cat",
           "text": "Mit Gruppe / Clique zusammensein",
@@ -2420,7 +2439,7 @@
           ],
           "sn": 13
         }
-      },
+      ],
       "sn": 18,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2429,8 +2448,8 @@
       "question": "1600",
       "name": "1600",
       "label": "\u00dcben Sie aktiv Musik aus, gemeint ist: Gesang oder Spielen eines Musikinstruments?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jmus1",
           "description": "Routing:\n*IF [Q16000,2] *GOTO 20000\n",
           "goto": "*IF [Q16000,2] *GOTO 20000",
@@ -2458,9 +2477,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 19,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2469,8 +2489,8 @@
       "question": "1701",
       "name": "1701",
       "label": "Welche Art von Musik machen Sie \u00fcberwiegend?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jmus2",
           "description": "Filter:\nASK ONLY IF Q1600 : JMUS1=1\n",
           "filter": "ASK ONLY IF Q1600 : JMUS1=1",
@@ -2504,9 +2524,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 20,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2515,8 +2536,8 @@
       "question": "1702",
       "name": "1702",
       "label": "\u00dcben Sie die Musik nur alleine, in einem Orchester oder in einer Musikgruppe oder Band aus?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jmus3",
           "label": "gemeinsames Musizieren",
           "number": 1702.0,
@@ -2553,9 +2574,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 21,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2564,8 +2586,8 @@
       "question": "1800",
       "name": "1800",
       "label": "In welchem Alter haben Sie begonnen, ein Musikinstrument oder Gesang zu lernen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "label": "Alter Beginn Musizieren",
           "number": 1800.0,
           "scale": "int",
@@ -2578,9 +2600,10 @@
           "view_lft": 45629.0,
           "view_rgt": 45631.0,
           "view_sort_id": 68.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 22,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2589,8 +2612,8 @@
       "question": "1900",
       "name": "1900",
       "label": "Haben oder hatten Sie daf\u00fcr auch bezahlten Musikunterricht (au\u00dferhalb der Schule)?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jmus5",
           "label": "Musikunterricht",
           "number": 1900.0,
@@ -2616,9 +2639,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 23,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2627,8 +2651,8 @@
       "question": "2000",
       "name": "2000",
       "label": "Treiben Sie Sport?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jsp1",
           "description": "Routing:\n*IF [Q20000,2] *GOTO 25000\n",
           "goto": "*IF [Q20000,2] *GOTO 25000",
@@ -2656,9 +2680,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 24,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2667,8 +2692,8 @@
       "question": "2101",
       "name": "2101",
       "label": "Welches ist f\u00fcr Sie die wichtigste Sportart, die Sie aus\u00fcben?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jsp2",
           "label": "Sportart",
           "number": 2101.0,
@@ -2683,9 +2708,10 @@
           "view_lft": 45632.0,
           "view_rgt": 45634.0,
           "view_sort_id": 71.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 25,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2693,8 +2719,8 @@
     "2102": {
       "question": "2102",
       "name": "2102",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nVariable wird nachtr\u00e4glich generiert, so nicht im Feld\n",
           "label": "Listennummer Sportart",
           "number": 2102.0,
@@ -2707,9 +2733,10 @@
           "view_lft": 45633.0,
           "view_rgt": 45635.0,
           "view_sort_id": 72.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 26,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2718,8 +2745,8 @@
       "question": "2200",
       "name": "2200",
       "label": "In welchem Alter haben Sie mit dieser Sportart begonnen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "label": "Alter bei Beginn der Sportart",
           "number": 2200.0,
           "scale": "int",
@@ -2732,9 +2759,10 @@
           "view_lft": 45634.0,
           "view_rgt": 45636.0,
           "view_sort_id": 73.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 27,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2743,8 +2771,8 @@
       "question": "2300",
       "name": "2300",
       "label": "Wo und mit wem betreiben Sie diese Sportart haupts\u00e4chlich?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jsp4",
           "label": "Sport treiben allein / Verein",
           "number": 2300.0,
@@ -2790,9 +2818,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 28,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2801,8 +2830,8 @@
       "question": "2400",
       "name": "2400",
       "label": "Nehmen Sie in dieser Sportart auch an Wettk\u00e4mpfen teil?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jsp5",
           "label": "Sport Wettk\u00e4mpfe",
           "number": 2400.0,
@@ -2828,9 +2857,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 29,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2839,8 +2869,8 @@
       "question": "2500",
       "name": "2500",
       "label": "Gehen Sie noch zur Schule?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jsch",
           "description": "Routing:\n*IF [Q25000,1] *GOTO 28000\n",
           "goto": "*IF [Q25000,1] *GOTO 28000",
@@ -2873,9 +2903,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 30,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2884,8 +2915,8 @@
       "question": "2601",
       "name": "2601",
       "label": "In welchem Jahr haben Sie die allgemeinbildende Schule beendet?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Filter:\nASK ONLY IF Q2500 : JSCH=5,6\n",
           "filter": "ASK ONLY IF Q2500 : JSCH=5,6",
           "label": "Jahr Schule beendet",
@@ -2901,9 +2932,10 @@
           "view_lft": 45638.0,
           "view_rgt": 45640.0,
           "view_sort_id": 77.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 31,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2912,8 +2944,8 @@
       "question": "2602",
       "name": "2602",
       "label": "Mit was f\u00fcr einem Abschluss haben Sie die Schule verlassen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jschab1",
           "label": "Schulabschluss",
           "number": 2602.0,
@@ -2955,9 +2987,10 @@
               "value": 5
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 32,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2965,8 +2998,8 @@
     "2603": {
       "question": "2603",
       "name": "2603",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jschab2",
           "description": "Filter:\nASK ONLY IF Q2602 : JSCHAB1=1\n",
           "filter": "ASK ONLY IF Q2602 : JSCHAB1=1",
@@ -2983,9 +3016,10 @@
           "view_lft": 45640.0,
           "view_rgt": 45642.0,
           "view_sort_id": 79.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 33,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -2993,8 +3027,8 @@
     "2604": {
       "question": "2604",
       "name": "2604",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jschab3",
           "description": "Filter:\nASK ONLY IF Q2602 : JSCHAB1=5\n",
           "filter": "ASK ONLY IF Q2602 : JSCHAB1=5",
@@ -3011,9 +3045,10 @@
           "view_lft": 45641.0,
           "view_rgt": 45643.0,
           "view_sort_id": 80.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 34,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -3022,8 +3057,8 @@
       "question": "2700",
       "name": "2700",
       "label": "Streben Sie in Zukunft noch einen Schulabschluss an?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jschab4",
           "description": "Routing:\n*IF [Q27000,3] **GOTO BLOCK 2900\n",
           "goto": "*IF [Q27000,3] **GOTO BLOCK 2900",
@@ -3056,9 +3091,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 35,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -3067,8 +3103,8 @@
       "question": "2800",
       "name": "2800",
       "label": "Welchen h\u00f6chsten Schulabschluss streben Sie an?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jschab5",
           "description": "Filter:\nASK ONLY IF Q2700 : JSCHAB4=1,2\n",
           "filter": "ASK ONLY IF Q2700 : JSCHAB4=1,2",
@@ -3106,9 +3142,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 36,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -3117,8 +3154,8 @@
       "question": "2901",
       "name": "2901",
       "label": "Welche Fremdsprachen haben Sie in der Schule gelernt?\nWelches war Ihre erste Fremdsprache?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jspr1",
           "label": "Erste Fremdsprache",
           "number": 2901.0,
@@ -3165,9 +3202,10 @@
               "value": 7
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 37,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -3176,8 +3214,8 @@
       "question": "2902",
       "name": "2902",
       "label": "Und welches war Ihre zweite, sofern Sie eine zweite Fremdsprache hatten?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jspr2",
           "label": "Zweite Fremdsprache",
           "number": 2902.0,
@@ -3229,9 +3267,10 @@
               "value": 8
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 38,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -3240,8 +3279,8 @@
       "question": "3000",
       "name": "3000",
       "label": "Haben Sie jemals in einem anderen Land, also [u]nicht[/u] in Deutschland, die Schule besucht?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jschl",
           "label": "Schulbesuch Ausland",
           "number": 3000.0,
@@ -3272,9 +3311,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 39,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -3283,8 +3323,8 @@
       "question": "3100",
       "name": "3100",
       "label": "Haben Sie jemals eine Privatschule besucht?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jprsch",
           "label": "Besuch Privatschule",
           "number": 3100.0,
@@ -3315,9 +3355,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 40,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -3326,8 +3367,8 @@
       "question": "3200",
       "name": "3200",
       "label": "Neben dem normalen Unterricht gibt es ja auch andere M\u00f6glichkeiten, sich in der Schule zu engagieren. Haben Sie sich in Ihrer Schulzeit - fr\u00fcher oder jetzt - in einem oder mehreren der folgenden Bereiche engagiert?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = JENG1\n**Statement 2 = JENG2\n**Statement 3 = JENG3\n**Statement 4 = JENG4\n**Statement 5 = JENG5\n**Statement 6 = JENG6\n**Statement 7 = JENG7\n**Statement 8 = JENG8\n",
           "instruction": "Bitte alles Zutreffende ankreuzen!",
           "instruction_de": "Bitte alles Zutreffende ankreuzen!",
@@ -3343,11 +3384,12 @@
           "view_lft": 45648.0,
           "view_rgt": 45658.0,
           "view_sort_id": 87.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jeng x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 3200.0,
           "scale": "cat",
           "text": "- als Klassensprecher",
@@ -3363,9 +3405,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jeng x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 3200.0,
           "scale": "cat",
           "text": "- als Schulsprecher",
@@ -3381,9 +3423,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "jeng x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 3200.0,
           "scale": "cat",
           "text": "- beim Erstellen einer Sch\u00fclerzeitung",
@@ -3399,9 +3441,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "jeng x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 3200.0,
           "scale": "cat",
           "text": "- in Theatergruppe / Tanzgruppe",
@@ -3417,9 +3459,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "jeng x",
-          "item": 5.0,
+          "item": "5.0",
           "number": 3200.0,
           "scale": "cat",
           "text": "- in Chor / Orchester / Musikgruppe",
@@ -3435,9 +3477,9 @@
           ],
           "sn": 5
         },
-        "6.0": {
+        {
           "answer_list": "jeng x",
-          "item": 6.0,
+          "item": "6.0",
           "number": 3200.0,
           "scale": "cat",
           "text": "- in freiwilliger Sport-AG",
@@ -3453,9 +3495,9 @@
           ],
           "sn": 6
         },
-        "7.0": {
+        {
           "answer_list": "jeng x",
-          "item": 7.0,
+          "item": "7.0",
           "number": 3200.0,
           "scale": "cat",
           "text": "- in sonstiger AG oder Neigungsgruppe",
@@ -3471,9 +3513,9 @@
           ],
           "sn": 7
         },
-        "8.0": {
+        {
           "answer_list": "jeng x",
-          "item": 8.0,
+          "item": "8.0",
           "number": 3200.0,
           "scale": "cat",
           "text": "Nein, nichts davon",
@@ -3489,7 +3531,7 @@
           ],
           "sn": 8
         }
-      },
+      ],
       "sn": 41,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -3498,8 +3540,8 @@
       "question": "3300",
       "name": "3300",
       "label": "Wie zufrieden sind Sie selbst mit Ihren schulischen Leistungen, wie sie heute sind bzw. zuletzt waren?\n\nBin mit meinen ...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nSkala sollte von 0 bis 10 reichen\n**\n**Statement 1 = JLEIST1\n**Statement 2 = JLEIST2\n**Statement 3 = JLEIST3\n**Statement 4 = JLEIST4\n",
           "instruction": "Bitte kreuzen Sie f\u00fcr jede Leistung auf der Skala einen Wert an:\nWenn Sie ganz und gar unzufrieden sind, den Wert \"0\",\nwenn Sie ganz und gar zufrieden sind, den Wert \"10\".\nWenn Sie teils zufrieden / teils unzufrieden sind, einen Wert dazwischen.",
           "instruction_de": "Bitte kreuzen Sie f\u00fcr jede Leistung auf der Skala einen Wert an:\nWenn Sie ganz und gar unzufrieden sind, den Wert \"0\",\nwenn Sie ganz und gar zufrieden sind, den Wert \"10\".\nWenn Sie teils zufrieden / teils unzufrieden sind, einen Wert dazwischen.",
@@ -3515,11 +3557,12 @@
           "view_lft": 45649.0,
           "view_rgt": 45663.0,
           "view_sort_id": 96.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jleist x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 3300.0,
           "scale": "cat",
           "text": "- schulischen Leistungen insgesamt",
@@ -3585,9 +3628,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jleist x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 3300.0,
           "scale": "cat",
           "text": "- Leistungen in Deutsch",
@@ -3653,9 +3696,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "jleist x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 3300.0,
           "scale": "cat",
           "text": "- Leistungen in Mathematik",
@@ -3721,9 +3764,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "jleist x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 3300.0,
           "scale": "cat",
           "text": "- Leistungen in der ersten Fremdsprache",
@@ -3789,7 +3832,7 @@
           ],
           "sn": 4
         }
-      },
+      ],
       "sn": 42,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -3798,8 +3841,8 @@
       "question": "3400",
       "name": "3400",
       "label": "Hatten Sie nach Abschluss der Grundschule eine Haupt-, Realschul- oder eine Gymnasialempfehlung?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jempf",
           "label": "Schulempfehlung",
           "number": 3400.0,
@@ -3835,9 +3878,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 43,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -3846,8 +3890,8 @@
       "question": "3501",
       "name": "3501",
       "label": "Welche Note oder welche Punktzahl hatten Sie in Ihrem [u]letzten[/u] Zeugnis in den folgenden drei F\u00e4chern?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nAls numerische Werte behandeln.\n**\n**Statement 1 = JSCH1A\n**Statement 2 = JSCH2A\n",
           "instruction": "Bitte tragen Sie das Zutreffende ein:",
           "instruction_de": "Bitte tragen Sie das Zutreffende ein:",
@@ -3864,11 +3908,12 @@
           "view_lft": 45663.0,
           "view_rgt": 45667.0,
           "view_sort_id": 102.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jsch x a",
-          "item": 1.0,
+          "item": "1.0",
           "number": 3501.0,
           "scale": "cat",
           "text": "Schulnoten von 1-6",
@@ -3885,9 +3930,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jsch x a",
-          "item": 2.0,
+          "item": "2.0",
           "number": 3501.0,
           "scale": "cat",
           "text": "Punktezahl von 0-15",
@@ -3904,7 +3949,7 @@
           ],
           "sn": 2
         }
-      },
+      ],
       "sn": 44,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -3913,8 +3958,8 @@
       "question": "3502",
       "name": "3502",
       "label": "Falls Gesamtschule, bitte zus\u00e4tzlich angeben:\n\nNiveau A, B, C",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jsch3a",
           "label": "Niveau Gesamtschule",
           "number": 3502.0,
@@ -3929,9 +3974,10 @@
           "view_lft": 45664.0,
           "view_rgt": 45668.0,
           "view_sort_id": 105.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 45,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -3940,8 +3986,8 @@
       "question": "3503",
       "name": "3503",
       "label": "Falls gymnasiale Oberstufe, bitte zus\u00e4tzlich angeben:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jsch4a",
           "label": "Niveau gymnasiale Oberstufe",
           "number": 3503.0,
@@ -3973,9 +4019,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 46,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -3984,8 +4031,8 @@
       "question": "3504",
       "name": "3504",
       "label": "Welche Note oder welche Punktzahl hatten Sie in Ihrem letzten Zeugnis in den folgenden drei F\u00e4chern?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nAls numerische Werte behandeln.\n**\n**Statement 1 = JSCH1B\n**Statement 2 = JSCH2B\n",
           "instruction": "Bitte tragen Sie das Zutreffende ein:",
           "instruction_de": "Bitte tragen Sie das Zutreffende ein:",
@@ -4002,11 +4049,12 @@
           "view_lft": 45668.0,
           "view_rgt": 45672.0,
           "view_sort_id": 107.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jsch x b",
-          "item": 1.0,
+          "item": "1.0",
           "number": 3504.0,
           "scale": "cat",
           "text": "Schulnoten von 1-6",
@@ -4023,9 +4071,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jsch x b",
-          "item": 2.0,
+          "item": "2.0",
           "number": 3504.0,
           "scale": "cat",
           "text": "Punktezahl von 0-15",
@@ -4042,7 +4090,7 @@
           ],
           "sn": 2
         }
-      },
+      ],
       "sn": 47,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4051,8 +4099,8 @@
       "question": "3505",
       "name": "3505",
       "label": "Falls Gesamtschule, bitte zus\u00e4tzlich angeben:\n\nNiveau A, B, C",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jsch3b",
           "label": "Niveau Gesamtschule",
           "number": 3505.0,
@@ -4067,9 +4115,10 @@
           "view_lft": 45669.0,
           "view_rgt": 45673.0,
           "view_sort_id": 110.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 48,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4078,8 +4127,8 @@
       "question": "3506",
       "name": "3506",
       "label": "Falls gymnasiale Oberstufe, bitte zus\u00e4tzlich angeben:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jsch4b",
           "label": "Niveau gymnasiale Oberstufe",
           "number": 3506.0,
@@ -4111,9 +4160,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 49,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4122,8 +4172,8 @@
       "question": "3507",
       "name": "3507",
       "label": "Welche Note oder welche Punktzahl hatten Sie in Ihrem letzten Zeugnis in den folgenden drei F\u00e4chern?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nAls numerische Werte behandeln.\n**\n**Statement 1 = JSCH1C\n**Statement 2 = JSCH2C\n",
           "instruction": "Bitte tragen Sie das Zutreffende ein:",
           "instruction_de": "Bitte tragen Sie das Zutreffende ein:",
@@ -4140,11 +4190,12 @@
           "view_lft": 45673.0,
           "view_rgt": 45677.0,
           "view_sort_id": 112.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jsch x c",
-          "item": 1.0,
+          "item": "1.0",
           "number": 3507.0,
           "scale": "cat",
           "text": "Schulnoten von 1-6",
@@ -4161,9 +4212,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jsch x c",
-          "item": 2.0,
+          "item": "2.0",
           "number": 3507.0,
           "scale": "cat",
           "text": "Punktezahl von 0-15",
@@ -4180,7 +4231,7 @@
           ],
           "sn": 2
         }
-      },
+      ],
       "sn": 50,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4189,8 +4240,8 @@
       "question": "3508",
       "name": "3508",
       "label": "Falls Gesamtschule, bitte zus\u00e4tzlich angeben:\n\nNiveau A, B, C",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jsch3c",
           "label": "Niveau Gesamtschule",
           "number": 3508.0,
@@ -4205,9 +4256,10 @@
           "view_lft": 45674.0,
           "view_rgt": 45678.0,
           "view_sort_id": 115.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 51,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4216,8 +4268,8 @@
       "question": "3509",
       "name": "3509",
       "label": "Falls gymnasiale Oberstufe, bitte zus\u00e4tzlich angeben:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jsch4c",
           "label": "Niveau gymnasiale Oberstufe",
           "number": 3509.0,
@@ -4249,9 +4301,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 52,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4260,8 +4313,8 @@
       "question": "3600",
       "name": "3600",
       "label": "Haben Sie in Ihrer Schulzeit einmal eine Klasse wiederholt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jwied1",
           "description": "Routing:\n*IF [Q36000,2] *GOTO 38000\n",
           "goto": "*IF [Q36000,2] *GOTO 38000",
@@ -4289,9 +4342,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 53,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4300,8 +4354,8 @@
       "question": "3700",
       "name": "3700",
       "label": "Welche Klasse haben Sie wiederholt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nBei der Angabe \"XX\" handelt es sich um numerische Werte.\n**\n**1 = JWIED2\n**2 = JWIED3\n\nFilter:\nASK ONLY IF Q3600 : JWIED1=1\n",
           "filter": "ASK ONLY IF Q3600 : JWIED1=1",
           "label": "Wiederholung Klasse",
@@ -4316,10 +4370,11 @@
           "view_lft": 45679.0,
           "view_rgt": 45683.0,
           "view_sort_id": 118.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
-          "item": 1.0,
+        {
+          "item": "1.0",
           "number": 3700.0,
           "scale": "bin",
           "text": "Das erste Mal die XX. Klasse",
@@ -4328,8 +4383,8 @@
           "view_sort_id": 119.0,
           "sn": 1
         },
-        "2.0": {
-          "item": 2.0,
+        {
+          "item": "2.0",
           "number": 3700.0,
           "scale": "bin",
           "text": "Falls zutreffend: Das zweite Mal die XX. Klasse",
@@ -4338,7 +4393,7 @@
           "view_sort_id": 120.0,
           "sn": 2
         }
-      },
+      ],
       "sn": 54,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4347,8 +4402,8 @@
       "question": "3800",
       "name": "3800",
       "label": "Haben Sie irgendwann einmal bezahlten Nachhilfeunterricht bekommen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jnach",
           "label": "Nachhilfeunterricht",
           "number": 3800.0,
@@ -4374,9 +4429,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 55,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4385,8 +4441,8 @@
       "question": "3900",
       "name": "3900",
       "label": "Wie stark k\u00fcmmern sich oder haben Ihre Eltern Sie auch selbst bei den Hausaufgaben und beim Lernen f\u00fcr die Schule unterst\u00fctzt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jelt1",
           "label": "Eltern Schulleistung",
           "number": 3900.0,
@@ -4422,9 +4478,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 56,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4433,8 +4490,8 @@
       "question": "4000",
       "name": "4000",
       "label": "Unterst\u00fctzen Ihre Eltern oder haben Ihre Eltern Sie auch selbst bei den Hausaufgaben und beim Lernen f\u00fcr die Schule unterst\u00fctzt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jelt2",
           "label": "Eltern Unterst\u00fctzung Schule",
           "number": 4000.0,
@@ -4470,9 +4527,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 57,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4481,8 +4539,8 @@
       "question": "4100",
       "name": "4100",
       "label": "Gibt es oder gab es Meinungsverschiedenheiten in Ihrem Elternhaus wegen Ihrer schulischen Leistungen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jelt3",
           "label": "Meinungsverschiedenheit mit Eltern bzgl. Schulleistung",
           "number": 4100.0,
@@ -4518,9 +4576,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 58,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4529,8 +4588,8 @@
       "question": "4200",
       "name": "4200",
       "label": "In welcher Weise suchen Ihre Eltern oder haben Ihre Eltern den Kontakt mit der Schule gesucht?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = JELT4\n**Statement 2 = JELT5\n**Statement 3 = JELT6\n**Statement 4 = JELT7\n**Statement 5 = JELT8\n",
           "instruction": "Bitte alles Zutreffende ankreuzen!",
           "instruction_de": "Bitte alles Zutreffende ankreuzen!",
@@ -4546,11 +4605,12 @@
           "view_lft": 45686.0,
           "view_rgt": 45693.0,
           "view_sort_id": 125.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jelt x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 4200.0,
           "scale": "cat",
           "text": "Regelm\u00e4\u00dfige Teilnahme am Elternabend",
@@ -4566,9 +4626,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jelt x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 4200.0,
           "scale": "cat",
           "text": "Regelm\u00e4\u00dfige Besuche von Elternsprechtagen",
@@ -4584,9 +4644,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "jelt x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 4200.0,
           "scale": "cat",
           "text": "Aufsuchen des Lehrers / der Lehrerin auch au\u00dferhalb von Sprechtagen",
@@ -4602,9 +4662,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "jelt x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 4200.0,
           "scale": "cat",
           "text": "Engagement als Elternvertereter",
@@ -4620,9 +4680,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "jelt x",
-          "item": 5.0,
+          "item": "5.0",
           "number": 4200.0,
           "scale": "cat",
           "text": "Nichts davon",
@@ -4638,7 +4698,7 @@
           ],
           "sn": 5
         }
-      },
+      ],
       "sn": 59,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4647,8 +4707,8 @@
       "question": "4300",
       "name": "4300",
       "label": "Wenn Sie einmal an die Schulklasse denken, die Sie gegenw\u00e4rtig besuchen oder zuletzt besucht haben:\nWie viele Ihrer Mitsch\u00fcler waren oder sind Ausl\u00e4nder bzw. sind nicht in Deutschland geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jausl",
           "label": "Migrantenanteil Klasse",
           "number": 4300.0,
@@ -4694,9 +4754,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 60,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4705,8 +4766,8 @@
       "question": "4400",
       "name": "4400",
       "label": "Haben Sie schon irgendeine Art berufliche Ausbildung begonnen oder abgeschlossen, einschlie\u00dflich Lehrg\u00e4ngen oder Praktikum au\u00dferhalb der Schule?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jaus1",
           "description": "Routing:\n*IF [Q44000,2] *GOTO 46000\n",
           "goto": "*IF [Q44000,2] *GOTO 46000",
@@ -4734,9 +4795,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 61,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4745,8 +4807,8 @@
       "question": "4501",
       "name": "4501",
       "label": "Welche Art von Ausbildung ist oder war das?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = JAUS02\n**Statement 2 = JAUS03\n**Statement 3 = JAUS04\n**Statement 4 = JAUS05\n**Statement 5 = JAUS06\n",
           "instruction": "Bitte alles Zutreffende ankreuzen!\nMehrfachnennungen m\u00f6glich!",
           "instruction_de": "Bitte alles Zutreffende ankreuzen!\nMehrfachnennungen m\u00f6glich!",
@@ -4763,11 +4825,12 @@
           "view_lft": 45694.0,
           "view_rgt": 45701.0,
           "view_sort_id": 133.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jaus xx 1",
-          "item": 1.0,
+          "item": "1.0",
           "number": 4501.0,
           "scale": "cat",
           "text": "Berufsgrundschuljahr / Berufsvorbereitungsjahr",
@@ -4789,9 +4852,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jaus xx 1",
-          "item": 2.0,
+          "item": "2.0",
           "number": 4501.0,
           "scale": "cat",
           "text": "Berufliche Eingliederungslehrg\u00e4nge",
@@ -4813,9 +4876,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "jaus xx 1",
-          "item": 3.0,
+          "item": "3.0",
           "number": 4501.0,
           "scale": "cat",
           "text": "Berufsausbildung (Lehre)",
@@ -4837,9 +4900,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "jaus xx 1",
-          "item": 4.0,
+          "item": "4.0",
           "number": 4501.0,
           "scale": "cat",
           "text": "Berufsfachschule oder Schule des Gesundheitswesens",
@@ -4861,9 +4924,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "jaus xx 1",
-          "item": 5.0,
+          "item": "5.0",
           "number": 4501.0,
           "scale": "cat",
           "text": "Praktikum, Volontariat",
@@ -4885,7 +4948,7 @@
           ],
           "sn": 5
         }
-      },
+      ],
       "sn": 62,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4894,8 +4957,8 @@
       "question": "4502",
       "name": "4502",
       "label": "Falls schon beendet: Haben Sie die Ausbildung regul\u00e4r abgeschlossen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jaus02a",
           "description": "Filter:\nASK ONLY IF Q4501 : JAUS XX 1 ST=1 & SC=2\n",
           "filter": "ASK ONLY IF Q4501 : JAUS XX 1 ST=1 & SC=2",
@@ -4924,9 +4987,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 63,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4935,8 +4999,8 @@
       "question": "4503",
       "name": "4503",
       "label": "Falls schon beendet: Haben Sie die Ausbildung regul\u00e4r abgeschlossen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jaus03a",
           "description": "Filter:\nASK ONLY IF Q4501 : JAUS XX 1 ST=2 & SC=2\n",
           "filter": "ASK ONLY IF Q4501 : JAUS XX 1 ST=2 & SC=2",
@@ -4965,9 +5029,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 64,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -4976,8 +5041,8 @@
       "question": "4504",
       "name": "4504",
       "label": "Falls schon beendet: Haben Sie die Ausbildung regul\u00e4r abgeschlossen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jaus04a",
           "description": "Filter:\nASK ONLY IF Q4501 : JAUS XX 1 ST=3 & SC=2\n",
           "filter": "ASK ONLY IF Q4501 : JAUS XX 1 ST=3 & SC=2",
@@ -5006,9 +5071,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 65,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -5017,8 +5083,8 @@
       "question": "4505",
       "name": "4505",
       "label": "Falls schon beendet: Haben Sie die Ausbildung regul\u00e4r abgeschlossen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jaus05a",
           "description": "Filter:\nASK ONLY IF Q4501 : JAUS XX 1 ST=4 & SC=2\n",
           "filter": "ASK ONLY IF Q4501 : JAUS XX 1 ST=4 & SC=2",
@@ -5047,9 +5113,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 66,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -5058,8 +5125,8 @@
       "question": "4506",
       "name": "4506",
       "label": "Falls schon beendet: Haben Sie die Ausbildung regul\u00e4r abgeschlossen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jaus06a",
           "description": "Filter:\nASK ONLY IF Q4501 : JAUS XX 1 ST=5 & SC=2\n",
           "filter": "ASK ONLY IF Q4501 : JAUS XX 1 ST=5 & SC=2",
@@ -5088,9 +5155,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 67,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -5099,8 +5167,8 @@
       "question": "4600",
       "name": "4600",
       "label": "Streben Sie in der Zukunft einen beruflichen Ausbildungsabschluss oder Hochschulabschluss an?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jaus07",
           "description": "Routing:\n*IF [Q46000,3] **GOTO BLOCK 4800\n",
           "goto": "*IF [Q46000,3] **GOTO BLOCK 4800",
@@ -5133,9 +5201,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 68,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -5144,8 +5213,8 @@
       "question": "4701",
       "name": "4701",
       "label": "Welchen der folgenden Ausbildungsabschl\u00fcsse streben Sie an?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = JAUS08\n**Statement 2 = JAUS09\n**Statement 3 = JAUS10\n**Statement 4 = JAUS11\n**Statement 5 = JAUS12\n**Statement 6 = JAUS13\n**Statement 7 = JAUS14\n**\n**Skala: \"Ja\" nicht im PAPI vorhanden, jedoch hat jede genannte Antwort den Code 1.\n",
           "instruction": "Mehrere Nennnungen m\u00f6glich!",
           "instruction_de": "Mehrere Nennnungen m\u00f6glich!",
@@ -5162,11 +5231,12 @@
           "view_lft": 45706.0,
           "view_rgt": 45715.0,
           "view_sort_id": 145.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jaus xx 2",
-          "item": 1.0,
+          "item": "1.0",
           "number": 4701.0,
           "scale": "cat",
           "text": "Abschluss einer Lehre",
@@ -5183,9 +5253,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jaus xx 2",
-          "item": 2.0,
+          "item": "2.0",
           "number": 4701.0,
           "scale": "cat",
           "text": "Berufsfachschule oder Schule des Gesundheitswesens",
@@ -5202,9 +5272,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "jaus xx 2",
-          "item": 3.0,
+          "item": "3.0",
           "number": 4701.0,
           "scale": "cat",
           "text": "Fachschule (z.B. Meister-, Technikerschule)",
@@ -5221,9 +5291,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "jaus xx 2",
-          "item": 4.0,
+          "item": "4.0",
           "number": 4701.0,
           "scale": "cat",
           "text": "Beamtenausbildung",
@@ -5240,9 +5310,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "jaus xx 2",
-          "item": 5.0,
+          "item": "5.0",
           "number": 4701.0,
           "scale": "cat",
           "text": "Anerkannte Berufsakademie",
@@ -5259,9 +5329,9 @@
           ],
           "sn": 5
         },
-        "6.0": {
+        {
           "answer_list": "jaus xx 2",
-          "item": 6.0,
+          "item": "6.0",
           "number": 4701.0,
           "scale": "cat",
           "text": "Fachhochschule",
@@ -5278,9 +5348,9 @@
           ],
           "sn": 6
         },
-        "7.0": {
+        {
           "answer_list": "jaus xx 2",
-          "item": 7.0,
+          "item": "7.0",
           "number": 4701.0,
           "scale": "cat",
           "text": "Universit\u00e4t",
@@ -5297,7 +5367,7 @@
           ],
           "sn": 7
         }
-      },
+      ],
       "sn": 69,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -5305,8 +5375,8 @@
     "4702": {
       "question": "4702",
       "name": "4702",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jauska",
           "description": "Researcher Notes:\nnachtr\u00e4glich generiert\n",
           "label": "Art angestrebter Ausbildungsabschluss Gesamt KA",
@@ -5327,9 +5397,10 @@
               "value": 1
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 70,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -5338,8 +5409,8 @@
       "question": "4801",
       "name": "4801",
       "label": "In welchem Alter sp\u00e4testens wollen Sie wirtschaftlich auf eigenen Beinen stehen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jaus16",
           "description": "Researcher Notes:\nOption \"Im Alter von\" keine Option zum ankreuzen, somit kein Wert in den Daten vorhanden.\n**Option \"Stehe bereits heute auf eigenen Beinen\" hat Code 1.\n",
           "label": "Wirtschaftliche Selbst\u00e4ndigkeit",
@@ -5367,9 +5438,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 71,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -5378,8 +5450,8 @@
       "question": "4802",
       "name": "4802",
       "label": "Im Alter von",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Filter:\nASK ONLY IF Q4801 : JAUS16=1\n",
           "filter": "ASK ONLY IF Q4801 : JAUS16=1",
           "label": "Alter wirtschaftliche Selbst\u00e4ndigkeit",
@@ -5395,9 +5467,10 @@
           "view_lft": 45716.0,
           "view_rgt": 45718.0,
           "view_sort_id": 155.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 72,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -5406,8 +5479,8 @@
       "question": "4900",
       "name": "4900",
       "label": "Wissen Sie schon, welchen Beruf Sie ergreifen m\u00f6chten?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jber01",
           "description": "Routing:\n*IF [Q49000,3] *GOTO 52000\n",
           "goto": "*IF [Q49000,3] *GOTO 52000",
@@ -5440,9 +5513,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 73,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -5451,8 +5525,8 @@
       "question": "5000",
       "name": "5000",
       "label": "Welcher Beruf ist das?\nBitte nennen Sie uns m\u00f6glichst die genaue Bezeichnung Ihres angestrebten Berufs.",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jber02",
           "description": "Filter:\nASK ONLY IF Q4900 : JBER01=1,2\n",
           "filter": "ASK ONLY IF Q4900 : JBER01=1,2",
@@ -5468,9 +5542,10 @@
           "view_lft": 45718.0,
           "view_rgt": 45720.0,
           "view_sort_id": 157.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 74,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -5479,8 +5554,8 @@
       "question": "5100",
       "name": "5100",
       "label": "F\u00fcr wie gut halten Sie sich gegenw\u00e4rtig im Hinblick auf Ihren angestrebten Beruf informiert?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jber03",
           "label": "Informiertheit Berufswunsch",
           "number": 5100.0,
@@ -5516,9 +5591,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 75,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -5527,8 +5603,8 @@
       "question": "5200",
       "name": "5200",
       "label": "Inwieweit stimmen Sie den folgenden Aussagen zu Ihrer Berufswahl zu?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = JBER04\n**Statement 2 = JBER05\n**Statement 3 = JBER06\n**Statement 4 = JBER07\n",
           "instruction": "Bitte ein Kreuz pro Zeile!",
           "instruction_de": "Bitte ein Kreuz pro Zeile!",
@@ -5544,11 +5620,12 @@
           "view_lft": 45720.0,
           "view_rgt": 45726.0,
           "view_sort_id": 159.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jber xx 1",
-          "item": 1.0,
+          "item": "1.0",
           "number": 5200.0,
           "scale": "cat",
           "text": "Bei meiner Berufswahl haben die Vorschl\u00e4ge meiner Eltern gro\u00dfes Gewicht",
@@ -5579,9 +5656,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jber xx 1",
-          "item": 2.0,
+          "item": "2.0",
           "number": 5200.0,
           "scale": "cat",
           "text": "Mir geht es nicht darum, den einzig richtigen Beruf zu finden. Ich lasse einfach auf mich zukommen, was sich bietet",
@@ -5612,9 +5689,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "jber xx 1",
-          "item": 3.0,
+          "item": "3.0",
           "number": 5200.0,
           "scale": "cat",
           "text": "Ich habe mich lange mit verschiedenen beruflichen M\u00f6glichkeiten besch\u00e4ftigt, um eine richtige Entscheidung zu treffen",
@@ -5645,9 +5722,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "jber xx 1",
-          "item": 4.0,
+          "item": "4.0",
           "number": 5200.0,
           "scale": "cat",
           "text": "Ich bin noch dabei herauszufinden, wo meine F\u00e4higkeiten liegen und welche Berufe f\u00fcr mich die richtigen sein k\u00f6nnten",
@@ -5678,7 +5755,7 @@
           ],
           "sn": 4
         }
-      },
+      ],
       "sn": 76,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -5687,8 +5764,8 @@
       "question": "5300",
       "name": "5300",
       "label": "F\u00fcr die Arbeit und die Wahl des Berufs k\u00f6nnen einem unterschiedliche Dinge wichtig sein.\nBitte geben Sie f\u00fcr jeden der folgenden Punkte an, ob er f\u00fcr Sie bei der Berufswahl \n- sehr wichtig\n- wichtig\n- weniger wichtig\n- oder ganz und gar unwichtig ist.\n\nWie wichtig ist f\u00fcr Ihre Berufswahl ...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = JBER08\n**Statement 2 = JBER09\n**Statement 3 = JBER10\n**Statement 4 = JBER11\n**Statement 5 = JBER12\n**Statement 6 = JBER13\n**Statement 7 = JBER14\n**Statement 8 = JBER15\n**Statement 9 = JBER16\n**Statement 10 = JBER17\n**Statement 11 = JBER18\n**Statement 12 = JBER19\n",
           "label": "Einflussfaktoren Berufswahl",
           "number": 5300.0,
@@ -5702,11 +5779,12 @@
           "view_lft": 45721.0,
           "view_rgt": 45739.0,
           "view_sort_id": 164.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jber xx 2",
-          "item": 1.0,
+          "item": "1.0",
           "number": 5300.0,
           "scale": "cat",
           "text": "- eine sichere Berufsstellung?",
@@ -5737,9 +5815,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jber xx 2",
-          "item": 2.0,
+          "item": "2.0",
           "number": 5300.0,
           "scale": "cat",
           "text": "- ein hohes Einkommen?",
@@ -5770,9 +5848,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "jber xx 2",
-          "item": 3.0,
+          "item": "3.0",
           "number": 5300.0,
           "scale": "cat",
           "text": "- gute Aufstiegsm\u00f6glichkeiten?",
@@ -5803,9 +5881,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "jber xx 2",
-          "item": 4.0,
+          "item": "4.0",
           "number": 5300.0,
           "scale": "cat",
           "text": "- ein Beruf, der anerkannt und geachtet wird?",
@@ -5836,9 +5914,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "jber xx 2",
-          "item": 5.0,
+          "item": "5.0",
           "number": 5300.0,
           "scale": "cat",
           "text": "- ein Beruf, der einem viel Freizeit l\u00e4sst?",
@@ -5869,9 +5947,9 @@
           ],
           "sn": 5
         },
-        "6.0": {
+        {
           "answer_list": "jber xx 2",
-          "item": 6.0,
+          "item": "6.0",
           "number": 5300.0,
           "scale": "cat",
           "text": "- eine interessante T\u00e4tigkeit?",
@@ -5902,9 +5980,9 @@
           ],
           "sn": 6
         },
-        "7.0": {
+        {
           "answer_list": "jber xx 2",
-          "item": 7.0,
+          "item": "7.0",
           "number": 5300.0,
           "scale": "cat",
           "text": "- eine T\u00e4tigkeit, bei der man selbst\u00e4ndig arbeiten kann?",
@@ -5935,9 +6013,9 @@
           ],
           "sn": 7
         },
-        "8.0": {
+        {
           "answer_list": "jber xx 2",
-          "item": 8.0,
+          "item": "8.0",
           "number": 5300.0,
           "scale": "cat",
           "text": "- viel Kontakt zu anderen Menschen?",
@@ -5968,9 +6046,9 @@
           ],
           "sn": 8
         },
-        "9.0": {
+        {
           "answer_list": "jber xx 2",
-          "item": 9.0,
+          "item": "9.0",
           "number": 5300.0,
           "scale": "cat",
           "text": "- ein Beruf, der f\u00fcr die Gesellschaft wichtig ist?",
@@ -6001,9 +6079,9 @@
           ],
           "sn": 9
         },
-        "10.0": {
+        {
           "answer_list": "jber xx 2",
-          "item": 10.0,
+          "item": "10.0",
           "number": 5300.0,
           "scale": "cat",
           "text": "- sichere und gesunde Arbeitsbedingungen?",
@@ -6034,9 +6112,9 @@
           ],
           "sn": 10
         },
-        "11.0": {
+        {
           "answer_list": "jber xx 2",
-          "item": 11.0,
+          "item": "11.0",
           "number": 5300.0,
           "scale": "cat",
           "text": "- ein Beruf, der einem gen\u00fcgend Zeit f\u00fcr famili\u00e4re Verpflichtungen l\u00e4sst?",
@@ -6067,9 +6145,9 @@
           ],
           "sn": 11
         },
-        "12.0": {
+        {
           "answer_list": "jber xx 2",
-          "item": 12.0,
+          "item": "12.0",
           "number": 5300.0,
           "scale": "cat",
           "text": "- ein Beruf, bei dem man anderen Menschen helfen kann?",
@@ -6100,7 +6178,7 @@
           ],
           "sn": 12
         }
-      },
+      ],
       "sn": 77,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -6109,8 +6187,8 @@
       "question": "5400",
       "name": "5400",
       "label": "Wenn Sie sich einmal Ihre berufliche und private Zukunft vorstellen:\nWie wahrscheinlich ist es, dass die folgendene Entwickungen eintreten werden?\n\nStufen Sie bitte jeweils die Wahrscheinlichkeit auf einer Skala ein, die von 0 Prozent bis 100 Prozent geht.\n\nWie wahrscheinlich ist es, dass Sie ...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = JZUK01\n**Statement 2 = JZUK02\n**Statement 3 = JZUK03\n**Statement 4 = JZUK04\n**Statement 5 = JZUK05\n**Statement 6 = JZUK06\n**Statement 7 = JZUK07\n**Statement 8 = JZUK08\n**Statement 9 = JZUK09\n**Statement 10 = JZUK10\n**Statement 11 = JZUK11\n**Statement 12 = JZUK12\n",
           "instruction": "Bitte [b][u]ein[/u] [/b]Kreuz pro Zeile!",
           "instruction_de": "Bitte [b][u]ein[/u] [/b]Kreuz pro Zeile!",
@@ -6126,11 +6204,12 @@
           "view_lft": 45726.0,
           "view_rgt": 45752.0,
           "view_sort_id": 177.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jzuk xx",
-          "item": 1.0,
+          "item": "1.0",
           "number": 5400.0,
           "scale": "cat",
           "text": "- einen Ausbildungs- oder Studienplatz f\u00fcr Ihren gew\u00fcnschten Beruf bekommen?",
@@ -6196,9 +6275,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jzuk xx",
-          "item": 2.0,
+          "item": "2.0",
           "number": 5400.0,
           "scale": "cat",
           "text": "- Ihre Ausbildung oder Ihr Studium erfolgreich abschlie\u00dfen?",
@@ -6264,9 +6343,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "jzuk xx",
-          "item": 3.0,
+          "item": "3.0",
           "number": 5400.0,
           "scale": "cat",
           "text": "- in Ihrem angestrebten Beruf auch einen Arbeitsplatz finden?",
@@ -6332,9 +6411,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "jzuk xx",
-          "item": 4.0,
+          "item": "4.0",
           "number": 5400.0,
           "scale": "cat",
           "text": "- beruflich erfolgreich sein und weiterkommen werden?",
@@ -6400,9 +6479,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "jzuk xx",
-          "item": 5.0,
+          "item": "5.0",
           "number": 5400.0,
           "scale": "cat",
           "text": "- l\u00e4ngere Zeit arbeitslos werden?",
@@ -6468,9 +6547,9 @@
           ],
           "sn": 5
         },
-        "6.0": {
+        {
           "answer_list": "jzuk xx",
-          "item": 6.0,
+          "item": "6.0",
           "number": 5400.0,
           "scale": "cat",
           "text": "- aus famili\u00e4ren Gr\u00fcnden, z.B. Kindererziehung, beruflich zur\u00fcckstecken?",
@@ -6536,9 +6615,9 @@
           ],
           "sn": 6
         },
-        "7.0": {
+        {
           "answer_list": "jzuk xx",
-          "item": 7.0,
+          "item": "7.0",
           "number": 5400.0,
           "scale": "cat",
           "text": "- sich selbst\u00e4ndig machen bzw. freiberuflich t\u00e4tig werden?",
@@ -6604,9 +6683,9 @@
           ],
           "sn": 7
         },
-        "8.0": {
+        {
           "answer_list": "jzuk xx",
-          "item": 8.0,
+          "item": "8.0",
           "number": 5400.0,
           "scale": "cat",
           "text": "- einmal im Ausland arbeiten werden?",
@@ -6672,9 +6751,9 @@
           ],
           "sn": 8
         },
-        "9.0": {
+        {
           "answer_list": "jzuk xx",
-          "item": 9.0,
+          "item": "9.0",
           "number": 5400.0,
           "scale": "cat",
           "text": "- einmal heiraten werden?",
@@ -6740,9 +6819,9 @@
           ],
           "sn": 9
         },
-        "10.0": {
+        {
           "answer_list": "jzuk xx",
-          "item": 10.0,
+          "item": "10.0",
           "number": 5400.0,
           "scale": "cat",
           "text": "- mit einer Partnerin / einem Partner unverheiratet zusammenleben werden?",
@@ -6808,9 +6887,9 @@
           ],
           "sn": 10
         },
-        "11.0": {
+        {
           "answer_list": "jzuk xx",
-          "item": 11.0,
+          "item": "11.0",
           "number": 5400.0,
           "scale": "cat",
           "text": "- ein Kind haben werden?",
@@ -6876,9 +6955,9 @@
           ],
           "sn": 11
         },
-        "12.0": {
+        {
           "answer_list": "jzuk xx",
-          "item": 12.0,
+          "item": "12.0",
           "number": 5400.0,
           "scale": "cat",
           "text": "- mehrer Kinder haben werden?",
@@ -6944,7 +7023,7 @@
           ],
           "sn": 12
         }
-      },
+      ],
       "sn": 78,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -6953,8 +7032,8 @@
       "question": "5501",
       "name": "5501",
       "label": "In welchem Jahr sind Sie geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "label": "Geburtsjahr",
           "number": 5501.0,
           "scale": "int",
@@ -6968,9 +7047,10 @@
           "view_lft": 45739.0,
           "view_rgt": 45753.0,
           "view_sort_id": 190.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 79,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -6979,8 +7059,8 @@
       "question": "5502",
       "name": "5502",
       "label": "Und in welchem Monat sind Sie geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nMaximum: 12\n",
           "label": "Geburtsmonat",
           "number": 5502.0,
@@ -6995,9 +7075,10 @@
           "view_lft": 45752.0,
           "view_rgt": 45754.0,
           "view_sort_id": 191.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 80,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7006,8 +7087,8 @@
       "question": "5600",
       "name": "5600",
       "label": "Sind Sie in Deutschland geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jsta1",
           "description": "Routing:\n*IF [Q56000,1] *GOTO 67010\n",
           "goto": "*IF [Q56000,1] *GOTO 67010",
@@ -7035,9 +7116,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 81,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7046,8 +7128,8 @@
       "question": "5701",
       "name": "5701",
       "label": "In welchem Land sind Sie geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jsta2",
           "description": "Researcher Notes:\nZusatzangabe: LSTA2NR\n",
           "instruction": "Bitte heutige Bezeichnung eintragen!",
@@ -7065,9 +7147,10 @@
           "view_lft": 45754.0,
           "view_rgt": 45756.0,
           "view_sort_id": 193.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 82,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7075,8 +7158,8 @@
     "5702": {
       "question": "5702",
       "name": "5702",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nnachtr\u00e4glich generiert\n",
           "label": "Listennummer Geburtsland",
           "number": 5702.0,
@@ -7089,9 +7172,10 @@
           "view_lft": 45755.0,
           "view_rgt": 45757.0,
           "view_sort_id": 194.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 83,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7100,8 +7184,8 @@
       "question": "5800",
       "name": "5800",
       "label": "Wann sind Sie in die Bundesrepublik Deutschland zugezogen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "label": "Zuzug Deutschland",
           "number": 5800.0,
           "scale": "int",
@@ -7114,9 +7198,10 @@
           "view_lft": 45756.0,
           "view_rgt": 45758.0,
           "view_sort_id": 195.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 84,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7125,8 +7210,8 @@
       "question": "5900",
       "name": "5900",
       "label": "Zu welcher der folgenden Zuwanderergruppen geh\u00f6rten Sie, als Sie nach Deutschland kamen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Routing:\n*IF [Q59000,1] **GOTO BLOCK 6100 \n*IF [Q59000,2] *GOTO 62000 \n*IF [Q59000,3] *GOTO 62000\n",
           "goto": "*IF [Q59000,1] **GOTO BLOCK 6100 \n*IF [Q59000,2] *GOTO 62000 \n*IF [Q59000,3] *GOTO 62000",
           "label": "Zuwanderergruppe",
@@ -7141,10 +7226,11 @@
           "view_lft": 45757.0,
           "view_rgt": 45764.0,
           "view_sort_id": 196.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
-          "item": 1.0,
+        {
+          "item": "1.0",
           "number": 5900.0,
           "scale": "bin",
           "text": "Aussiedler, d.h. deutschst\u00e4mmige Person aus osteurop\u00e4ischen Staaten",
@@ -7153,8 +7239,8 @@
           "view_sort_id": 197.0,
           "sn": 1
         },
-        "2.0": {
-          "item": 2.0,
+        {
+          "item": "2.0",
           "number": 5900.0,
           "scale": "bin",
           "text": "Deutscher, der l\u00e4ngere Zeit im Ausland gelebt hat",
@@ -7163,8 +7249,8 @@
           "view_sort_id": 198.0,
           "sn": 2
         },
-        "3.0": {
-          "item": 3.0,
+        {
+          "item": "3.0",
           "number": 5900.0,
           "scale": "bin",
           "text": "B\u00fcrger eines EU-Mitgliedstaates",
@@ -7173,8 +7259,8 @@
           "view_sort_id": 199.0,
           "sn": 3
         },
-        "4.0": {
-          "item": 4.0,
+        {
+          "item": "4.0",
           "number": 5900.0,
           "scale": "bin",
           "text": "Asylbewerber oder Fl\u00fcchtling",
@@ -7183,8 +7269,8 @@
           "view_sort_id": 200.0,
           "sn": 4
         },
-        "5.0": {
-          "item": 5.0,
+        {
+          "item": "5.0",
           "number": 5900.0,
           "scale": "bin",
           "text": "Sonstiger Ausl\u00e4nder",
@@ -7193,7 +7279,7 @@
           "view_sort_id": 201.0,
           "sn": 5
         }
-      },
+      ],
       "sn": 85,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7202,8 +7288,8 @@
       "question": "6000",
       "name": "6000",
       "label": "Haben Sie heute eine [u]unbefristete[/u] oder eine [u]befristete[/u] Aufenthaltserlaubnis oder haben Sie die deutsche Staatsb\u00fcrgerschaft erworben?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jzug03",
           "description": "Filter:\nASK ONLY IF Q5900 : JZUG02=4,5\n",
           "filter": "ASK ONLY IF Q5900 : JZUG02=4,5",
@@ -7236,9 +7322,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 86,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7247,8 +7334,8 @@
       "question": "6101",
       "name": "6101",
       "label": "Haben Sie nach Ihrer Einreise zun\u00e4chst in einem Aufnahmelager oder \u00dcbergangswohnheim gelebt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jzug04",
           "label": "Aufnahmelager/\u00dcbergangswohnheim",
           "number": 6101.0,
@@ -7275,9 +7362,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 87,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7286,8 +7374,8 @@
       "question": "6102",
       "name": "6102",
       "label": "Wie viele Wochen haben sie dort gelebt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Filter:\nASK ONLY IF Q6101 : JZUG04=1\n",
           "filter": "ASK ONLY IF Q6101 : JZUG04=1",
           "label": "Aufnahmelager/\u00dcbergangswohnheim [Wochen]",
@@ -7303,9 +7391,10 @@
           "view_lft": 45765.0,
           "view_rgt": 45767.0,
           "view_sort_id": 204.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 88,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7314,8 +7403,8 @@
       "question": "6103",
       "name": "6103",
       "label": "Beziehungsweise wie viele Monate haben sie dort gelebt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Filter:\nASK ONLY IF Q6101 : JZUG04=1\n",
           "filter": "ASK ONLY IF Q6101 : JZUG04=1",
           "label": "Aufnahmelager/\u00dcbergangswohnheim [Monate]",
@@ -7331,9 +7420,10 @@
           "view_lft": 45766.0,
           "view_rgt": 45768.0,
           "view_sort_id": 205.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 89,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7342,8 +7432,8 @@
       "question": "6200",
       "name": "6200",
       "label": "Als Sie einreisten, kamen Sie da als Familienangeh\u00f6riger einer bereits in Deutschland lebenden Familie bzw. Person?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jzug07",
           "description": "Routing:\n*IF [Q62000,1] *GOTO 64000\n",
           "goto": "*IF [Q62000,1] *GOTO 64000",
@@ -7371,9 +7461,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 90,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7382,8 +7473,8 @@
       "question": "6300",
       "name": "6300",
       "label": "Hatten Sie vor der Einreise \u00fcberhaupt Kontakte zu anderen Verwandten oder Bekannten in Deutschland, an die Sie sich wenden konnten?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jzug08",
           "description": "Filter:\nASK ONLY IF Q6200 : JZUG07=2\n\nRouting:\n*IF [Q63000,2] *GOTO 65000\n",
           "filter": "ASK ONLY IF Q6200 : JZUG07=2",
@@ -7412,9 +7503,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 91,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7423,8 +7515,8 @@
       "question": "6400",
       "name": "6400",
       "label": "Sind Sie in den Ort in Deutschland gezogen, wo diese Verwandten bzw. Bekannten lebten?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jzug09",
           "label": "Zuzug Ort Verwandte",
           "number": 6400.0,
@@ -7450,9 +7542,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 92,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7461,8 +7554,8 @@
       "question": "6500",
       "name": "6500",
       "label": "Haben Sie in Deutschland eine Schule besucht?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jdsch1",
           "description": "Routing:\n*IF [Q65000,2] **GOTO BLOCK 6700\n",
           "goto": "*IF [Q65000,2] **GOTO BLOCK 6700",
@@ -7490,9 +7583,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 93,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7501,8 +7595,8 @@
       "question": "6601",
       "name": "6601",
       "label": "In welche Klasse sind Sie in Deutschland in die Schule gekommen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "label": "Klassenstufe",
           "number": 6601.0,
           "scale": "int",
@@ -7516,9 +7610,10 @@
           "view_lft": 45771.0,
           "view_rgt": 45773.0,
           "view_sort_id": 210.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 94,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7527,8 +7622,8 @@
       "question": "6602",
       "name": "6602",
       "label": "Haben Sie [u]vorher[/u] eine spezielle Vorbereitungsklasse f\u00fcr Ausl\u00e4nder in Deutschland besucht?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jdsch3",
           "label": "Besuch Vorbereitungsklasse f\u00fcr Ausl\u00e4nder",
           "number": 6602.0,
@@ -7555,9 +7650,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 95,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7566,8 +7662,8 @@
       "question": "6701",
       "name": "6701",
       "label": "Wo haben Sie den gr\u00f6\u00dften Teil Ihrer Kindheit bis zum 15. Lebensjahr verbracht?\nWar das...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jkh01",
           "label": "Wohnort Kindheit",
           "number": 6701.0,
@@ -7604,9 +7700,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 96,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7615,8 +7712,8 @@
       "question": "6702",
       "name": "6702",
       "label": "Leben Sie heute noch in dieser Stadt oder dieser Gegend?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jkh02",
           "label": "Wohnort heute / Kindheit",
           "number": 6702.0,
@@ -7648,9 +7745,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 97,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7659,8 +7757,8 @@
       "question": "6801",
       "name": "6801",
       "label": "Haben oder hatten Sie Geschwister?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jgesch1",
           "label": "Geschwister",
           "number": 6801.0,
@@ -7687,9 +7785,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 98,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7698,8 +7797,8 @@
       "question": "6802",
       "name": "6802",
       "label": "Falls ja: wie viele Br\u00fcder?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nsinnvolles nummerisches Maximum\n\nFilter:\nASK ONLY IF Q6801 : JGESCH1=1\n",
           "filter": "ASK ONLY IF Q6801 : JGESCH1=1",
           "label": "Anzahl Br\u00fcder",
@@ -7715,9 +7814,10 @@
           "view_lft": 45776.0,
           "view_rgt": 45778.0,
           "view_sort_id": 215.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 99,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7726,8 +7826,8 @@
       "question": "6803",
       "name": "6803",
       "label": "Falls ja: und wie viele Schwestern?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nsinnvolles nummerisches Maximum\n\nFilter:\nASK ONLY IF Q6801 : JGESCH1=1\n",
           "filter": "ASK ONLY IF Q6801 : JGESCH1=1",
           "label": "Anzahl Schwestern",
@@ -7743,9 +7843,10 @@
           "view_lft": 45777.0,
           "view_rgt": 45779.0,
           "view_sort_id": 216.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 100,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7753,8 +7854,8 @@
     "6804": {
       "question": "6804",
       "name": "6804",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jgeka",
           "description": "Researcher Notes:\nnachtr\u00e4glich generierte Variable\n",
           "label": "Geschwister Gesamt KA",
@@ -7775,9 +7876,10 @@
               "value": 1
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 101,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7786,8 +7888,8 @@
       "question": "6901",
       "name": "6901",
       "label": "Wie viele von Ihren ersten 15 Lebensjahren haben Sie bei den folgenden Personen gelebt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nAntworten: numerische Werte\n**Weitere Angabe in PAPI: Summe der Jahre (bitte pr\u00fcfen!) > jedoch keine Variable\n**1 = JKH03\n**2 = JKH04\n**3 = JKH05\n**4 = JKH06\n**5 = JKH07\n**6 = JKH08\n**7 = JKH09\n**8 = JKH10\n",
           "instruction": "Bitte auf ganze Jahre runden!\n(Hinweis: Adoptiveltern gelten wie leibliche Eltern)",
           "instruction_de": "Bitte auf ganze Jahre runden!\n(Hinweis: Adoptiveltern gelten wie leibliche Eltern)",
@@ -7804,10 +7906,11 @@
           "view_lft": 45779.0,
           "view_rgt": 45789.0,
           "view_sort_id": 218.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
-          "item": 1.0,
+        {
+          "item": "1.0",
           "number": 6901.0,
           "scale": "bin",
           "text": "Bei Ihren beiden (leiblichen) Eltern",
@@ -7817,8 +7920,8 @@
           "view_sort_id": 219.0,
           "sn": 1
         },
-        "2.0": {
-          "item": 2.0,
+        {
+          "item": "2.0",
           "number": 6901.0,
           "scale": "bin",
           "text": "Bei Ihrer Mutter alleine (ohne Partner)",
@@ -7828,8 +7931,8 @@
           "view_sort_id": 220.0,
           "sn": 2
         },
-        "3.0": {
-          "item": 3.0,
+        {
+          "item": "3.0",
           "number": 6901.0,
           "scale": "bin",
           "text": "Bei Ihrer Mutter mit (neuem) Partner",
@@ -7839,8 +7942,8 @@
           "view_sort_id": 221.0,
           "sn": 3
         },
-        "4.0": {
-          "item": 4.0,
+        {
+          "item": "4.0",
           "number": 6901.0,
           "scale": "bin",
           "text": "Bei Ihrem Vater alleine (ohne Partnerin)",
@@ -7850,8 +7953,8 @@
           "view_sort_id": 222.0,
           "sn": 4
         },
-        "5.0": {
-          "item": 5.0,
+        {
+          "item": "5.0",
           "number": 6901.0,
           "scale": "bin",
           "text": "Bei Ihrem Vater mit (neuer) Partnerin",
@@ -7861,8 +7964,8 @@
           "view_sort_id": 223.0,
           "sn": 5
         },
-        "6.0": {
-          "item": 6.0,
+        {
+          "item": "6.0",
           "number": 6901.0,
           "scale": "bin",
           "text": "Bei anderen Verwandten",
@@ -7872,8 +7975,8 @@
           "view_sort_id": 224.0,
           "sn": 6
         },
-        "7.0": {
-          "item": 7.0,
+        {
+          "item": "7.0",
           "number": 6901.0,
           "scale": "bin",
           "text": "Bei Pflegeeltern",
@@ -7883,8 +7986,8 @@
           "view_sort_id": 225.0,
           "sn": 7
         },
-        "8.0": {
-          "item": 8.0,
+        {
+          "item": "8.0",
           "number": 6901.0,
           "scale": "bin",
           "text": "Im Heim",
@@ -7894,7 +7997,7 @@
           "view_sort_id": 226.0,
           "sn": 8
         }
-      },
+      ],
       "sn": 102,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7902,8 +8005,8 @@
     "6902": {
       "question": "6902",
       "name": "6902",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jkhka",
           "description": "Researcher Notes:\nnachtr\u00e4glich generierte Variable\n",
           "label": "Personen Kindheit Gesamt KA",
@@ -7924,9 +8027,10 @@
               "value": 1
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 103,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7935,8 +8039,8 @@
       "question": "7000",
       "name": "7000",
       "label": "Leben Ihr Vater und Ihre Mutter hier im Haushalt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jvm",
           "description": "Researcher Notes:\nInstruktion:\n**if Q7000: JVM = 2,3 : Die folgenden Fragen 71-78 bitte nur f\u00fcr den Elternteil beantworten, der nicht im Haushalt lebt!\n**if Q7000: JVM = 4: Die folgenden Fragen 71-78 bitte getrennt f\u00fcr Vater und Mutter beantworten!\n\nRouting:\n*IF [Q70000,1] *GOTO 79000\n",
           "goto": "*IF [Q70000,1] *GOTO 79000",
@@ -7974,9 +8078,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 104,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -7985,8 +8090,8 @@
       "question": "7101",
       "name": "7101",
       "label": "Lebt Ihr Vater noch?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jv dummy",
           "description": "Filter:\nASK ONLY IF Q7000 : JVM=3,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=3,4",
@@ -8015,9 +8120,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 105,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8026,8 +8132,8 @@
       "question": "7102",
       "name": "7102",
       "label": "Wo lebt Ihr Vater?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jv01",
           "description": "Filter:\nASK ONLY IF Q7101 : JV Dummy=1\n",
           "filter": "ASK ONLY IF Q7101 : JV Dummy=1",
@@ -8066,9 +8172,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 106,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8077,8 +8184,8 @@
       "question": "7103",
       "name": "7103",
       "label": "Ist verstorben, und zwar im Jahr:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Filter:\nASK ONLY IF Q7101 : JV Dummy=2\n",
           "filter": "ASK ONLY IF Q7101 : JV Dummy=2",
           "label": "Vater Jahr Verstorben",
@@ -8094,9 +8201,10 @@
           "view_lft": 45792.0,
           "view_rgt": 45794.0,
           "view_sort_id": 231.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 107,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8105,8 +8213,8 @@
       "question": "7104",
       "name": "7104",
       "label": "Lebt Ihre Mutter noch?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jm dummy",
           "description": "Filter:\nASK ONLY IF Q7000 : JVM=2,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=2,4",
@@ -8135,9 +8243,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 108,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8146,8 +8255,8 @@
       "question": "7105",
       "name": "7105",
       "label": "Wo lebt Ihre Mutter?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jm01",
           "description": "Filter:\nASK ONLY IF Q7104 : JM Dummy=1\n",
           "filter": "ASK ONLY IF Q7104 : JM Dummy=1",
@@ -8186,9 +8295,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 109,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8197,8 +8307,8 @@
       "question": "7106",
       "name": "7106",
       "label": "Ist verstorben, und zwar im Jahr:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Filter:\nASK ONLY IF Q7104 : JM Dummy=2\n",
           "filter": "ASK ONLY IF Q7104 : JM Dummy=2",
           "label": "Mutter Jahr Verstorben",
@@ -8214,9 +8324,10 @@
           "view_lft": 45795.0,
           "view_rgt": 45797.0,
           "view_sort_id": 234.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 110,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8225,8 +8336,8 @@
       "question": "7201",
       "name": "7201",
       "label": "In welchem Jahr wurde Ihr Vater geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nsinnvolles nummerisches Maximum?\n\nFilter:\nASK ONLY IF Q7000 : JVM=3,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=3,4",
           "label": "Geburtsjahr Vater",
@@ -8242,9 +8353,10 @@
           "view_lft": 45796.0,
           "view_rgt": 45798.0,
           "view_sort_id": 235.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 111,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8253,8 +8365,8 @@
       "question": "7202",
       "name": "7202",
       "label": "In welchem Jahr wurde Ihre Mutter geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nsinnvolles nummerisches Maximum\n\nFilter:\nASK ONLY IF Q7000 : JVM=2,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=2,4",
           "label": "Geburtsjahr Mutter",
@@ -8270,9 +8382,10 @@
           "view_lft": 45797.0,
           "view_rgt": 45799.0,
           "view_sort_id": 236.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 112,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8281,8 +8394,8 @@
       "question": "7301",
       "name": "7301",
       "label": "Hat (bzw. hatte) Ihr Vater die deutsche Staatsb\u00fcrgerschaft?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jv04",
           "description": "Filter:\nASK ONLY IF Q7000 : JVM=3,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=3,4",
@@ -8311,9 +8424,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 113,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8322,8 +8436,8 @@
       "question": "7302",
       "name": "7302",
       "label": "Hat (bzw. hatte) Ihre Mutter die deutsche Staatsb\u00fcrgerschaft?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jm04",
           "description": "Filter:\nASK ONLY IF Q7000 : JVM=2,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=2,4",
@@ -8352,9 +8466,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 114,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8363,8 +8478,8 @@
       "question": "7401",
       "name": "7401",
       "label": "Welchen Schulabschluss hat Ihr Vater erworben?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jv05",
           "description": "Filter:\nASK ONLY IF Q7000 : JVM=3,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=3,4",
@@ -8413,9 +8528,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 115,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8424,8 +8540,8 @@
       "question": "7402",
       "name": "7402",
       "label": "Welchen Schulabschluss hat Ihre Mutter erworben?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jm05",
           "description": "Filter:\nASK ONLY IF Q7000 : JVM=2,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=2,4",
@@ -8474,9 +8590,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 116,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8485,8 +8602,8 @@
       "question": "7501",
       "name": "7501",
       "label": "Hat Ihr Vater eine berufliche Ausbildung oder ein Studium abgeschlossen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jv06",
           "description": "Filter:\nASK ONLY IF Q7000 : JVM=3,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=3,4",
@@ -8525,9 +8642,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 117,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8536,8 +8654,8 @@
       "question": "7502",
       "name": "7502",
       "label": "Hat Ihre Mutter eine berufliche Ausbildung oder ein Studium abgeschlossen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jm06",
           "description": "Filter:\nASK ONLY IF Q7000 : JVM=2,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=2,4",
@@ -8576,9 +8694,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 118,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8587,8 +8706,8 @@
       "question": "7601",
       "name": "7601",
       "label": "Falls zutreffend:\nWelche berufliche T\u00e4tigkeit \u00fcbt Ihr Vater aus bzw. hat Ihr Vater zuletzt ausge\u00fcbt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jv07",
           "description": "Filter:\nASK ONLY IF Q7000 : JVM=3,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=3,4",
@@ -8607,9 +8726,10 @@
           "view_lft": 45804.0,
           "view_rgt": 45806.0,
           "view_sort_id": 243.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 119,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8618,8 +8738,8 @@
       "question": "7602",
       "name": "7602",
       "label": "Falls zutreffend:\nWelche berufliche T\u00e4tigkeit \u00fcbt Ihre Mutter aus bzw. hat Ihre Mutter zuletzt ausge\u00fcbt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jm07",
           "description": "Filter:\nASK ONLY IF Q7000 : JVM=2,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=2,4",
@@ -8638,9 +8758,10 @@
           "view_lft": 45805.0,
           "view_rgt": 45807.0,
           "view_sort_id": 244.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 120,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8649,8 +8770,8 @@
       "question": "7701",
       "name": "7701",
       "label": "In welcher beruflichen Stellung ist Ihr Vater bzw. war Ihr Vater zuletzt t\u00e4tig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jv2 dummy",
           "description": "Researcher Notes:\nFrage so in CAPI nicht vorhanden.\n**1 = wird gefiltert zu LV08\n**2 = wird gefiltert zu LV09\n**3 = wird gefiltert zu LV10\n**4 = wird gefiltert zu LV11\n**5 = wird gefiltert zu LV12\n**6 = wird gefiltert zu LV12\n\nFilter:\nASK ONLY IF Q7000 : JVM=3,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=3,4",
@@ -8694,9 +8815,10 @@
               "value": 5
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 121,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8705,8 +8827,8 @@
       "question": "7702",
       "name": "7702",
       "label": "In welcher beruflichen Stellung als Arbeiter ist Ihr Vater bzw. war Ihr Vater zuletzt t\u00e4tig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jv08",
           "description": "Filter:\nASK ONLY IF Q7701 : JV2 Dummy=1\n",
           "filter": "ASK ONLY IF Q7701 : JV2 Dummy=1",
@@ -8750,9 +8872,10 @@
               "value": 5
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 122,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8761,8 +8884,8 @@
       "question": "7703",
       "name": "7703",
       "label": "In welcher beruflichen Stellung als Angestellter ist Ihr Vater bzw. war Ihr Vater zuletzt t\u00e4tig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jv09",
           "description": "Filter:\nASK ONLY IF Q7701 : JV2 Dummy=2\n",
           "filter": "ASK ONLY IF Q7701 : JV2 Dummy=2",
@@ -8811,9 +8934,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 123,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8822,8 +8946,8 @@
       "question": "7704",
       "name": "7704",
       "label": "In welcher beruflichen Stellung als Beamter ist Ihr Vater bzw. war Ihr Vater zuletzt t\u00e4tig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jv10",
           "description": "Filter:\nASK ONLY IF Q7701 : JV2 Dummy=3\n",
           "filter": "ASK ONLY IF Q7701 : JV2 Dummy=3",
@@ -8862,9 +8986,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 124,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8873,8 +8998,8 @@
       "question": "7705",
       "name": "7705",
       "label": "In welchem Bereich als Selbst\u00e4ndiger ist Ihr Vater bzw. war Ihr Vater zuletzt t\u00e4tig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv11",
           "concept": "lv11",
           "description": "Filter:\nASK ONLY IF Q7701 : JV2 Dummy=4\n",
@@ -8929,9 +9054,10 @@
               "value": 7
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 125,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8940,8 +9066,8 @@
       "question": "7706",
       "name": "7706",
       "label": "Ihr Vater ...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jv12",
           "description": "Filter:\nASK ONLY IF Q7701 : JV2 Dummy=5\n",
           "filter": "ASK ONLY IF Q7701 : JV2 Dummy=5",
@@ -8965,9 +9091,10 @@
               "value": 1
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 126,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -8976,8 +9103,8 @@
       "question": "7707",
       "name": "7707",
       "label": "In welcher beruflichen Stellung ist Ihre Mutter bzw. war Ihre Mutter zuletzt t\u00e4tig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jm2 dummy",
           "description": "Researcher Notes:\nFrage in CAPI nicht vorhanden.\n**Frage so in CAPI nicht vorhanden.\n**1 = wird gefiltert zu LM08\n**2 = wird gefiltert zu LM09\n**3 = wird gefiltert zu LM10\n**4 = wird gefiltert zu LM11\n**5 = wird gefiltert zu LM12\n**6 = wird gefiltert zu LM12\n\nFilter:\nASK ONLY IF Q7000 : JVM=2,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=2,4",
@@ -9021,9 +9148,10 @@
               "value": 5
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 127,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -9032,8 +9160,8 @@
       "question": "7708",
       "name": "7708",
       "label": "In welcher beruflichen Stellung als Arbeiter ist Ihre Mutter bzw. war Ihre Mutter zuletzt t\u00e4tig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jm08",
           "description": "Filter:\nASK ONLY IF Q7707 : JM2 Dummy=1\n",
           "filter": "ASK ONLY IF Q7707 : JM2 Dummy=1",
@@ -9077,9 +9205,10 @@
               "value": 5
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 128,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -9088,8 +9217,8 @@
       "question": "7709",
       "name": "7709",
       "label": "In welcher beruflichen Stellung als Angestellte ist Ihre Mutter bzw. war Ihre Mutter zuletzt t\u00e4tig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jm09",
           "description": "Filter:\nASK ONLY IF Q7707 : JM2 Dummy=2\n",
           "filter": "ASK ONLY IF Q7707 : JM2 Dummy=2",
@@ -9138,9 +9267,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 129,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -9149,8 +9279,8 @@
       "question": "7710",
       "name": "7710",
       "label": "In welcher beruflichen Stellung als Beamte ist Ihre Mutter bzw. war Ihre Mutter zuletzt t\u00e4tig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jm10",
           "description": "Filter:\nASK ONLY IF Q7707 : JM2 Dummy=3\n",
           "filter": "ASK ONLY IF Q7707 : JM2 Dummy=3",
@@ -9189,9 +9319,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 130,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -9200,8 +9331,8 @@
       "question": "7711",
       "name": "7711",
       "label": "In welchem Bereich als Selbst\u00e4ndige ist Ihre Mutter bzw. war Ihre Mutter zuletzt t\u00e4tig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jm11",
           "description": "Filter:\nASK ONLY IF Q7707 : JM2 Dummy=4\n",
           "filter": "ASK ONLY IF Q7707 : JM2 Dummy=4",
@@ -9255,9 +9386,10 @@
               "value": 7
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 131,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -9266,8 +9398,8 @@
       "question": "7712",
       "name": "7712",
       "label": "Ihre Mutter ...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jm12",
           "description": "Filter:\nASK ONLY IF Q7707 : JM2 Dummy=5\n",
           "filter": "ASK ONLY IF Q7707 : JM2 Dummy=5",
@@ -9291,9 +9423,10 @@
               "value": 1
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 132,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -9302,8 +9435,8 @@
       "question": "7801",
       "name": "7801",
       "label": "Geh\u00f6rt bzw. geh\u00f6rte Ihr Vater einer Kirche oder Religionsgemeinschaft an?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jv13",
           "description": "Filter:\nASK ONLY IF Q7000 : JVM=3,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=3,4",
@@ -9347,9 +9480,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 133,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -9358,8 +9492,8 @@
       "question": "7802",
       "name": "7802",
       "label": "Geh\u00f6rt bzw. geh\u00f6rte Ihre Mutter einer Kirche oder Religionsgemeinschaft an?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jm13",
           "description": "Filter:\nASK ONLY IF Q7000 : JVM=2,4\n",
           "filter": "ASK ONLY IF Q7000 : JVM=2,4",
@@ -9403,9 +9537,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 134,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -9414,8 +9549,8 @@
       "question": "7900",
       "name": "7900",
       "label": "Glauben Sie, dass man eine Partnerin / einen Partner braucht, um wirklich gl\u00fccklich zu sein, oder glauben Sie, man kann alleine genauso gl\u00fccklich oder gl\u00fccklicher leben?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jpart",
           "label": "Partner und Gl\u00fcck",
           "number": 7900.0,
@@ -9451,9 +9586,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 135,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -9462,8 +9598,8 @@
       "question": "8000",
       "name": "8000",
       "label": "Glauben Sie, dass man eigene Kinder braucht, um wirklich gl\u00fccklich zu sein, oder glauben Sie, man kann ohne ein eigenes Kind genauso gl\u00fccklich oder gl\u00fccklicher leben?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "jkind",
           "label": "Kinder und Gl\u00fcck",
           "number": 8000.0,
@@ -9499,9 +9635,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 136,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -9510,8 +9647,8 @@
       "question": "8100",
       "name": "8100",
       "label": "Wovon h\u00e4ngt es Ihrer Meinung nach in Deutschland tats\u00e4chlich ab, ob jemand Erfolg hat und sozial aufsteigt?\nBitte geben Sie zu jeder der folgenden Aussage an, in welchem Ma\u00dfe Sie ihr zustimmen.",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = JERF01\n**Statement 2 = JERF02\n**Statement 3 = JERF03\n**Statement 4 = JERF04\n**Statement 5 = JERF05\n**Statement 6 = JERF06\n**Statement 7 = JERF07\n**Statement 8 = JERF08\n**Statement 9 = JERF09\n**Statement 10 = JERF10\n**Statement 11 = JERF11\n**Statement 12 = JERF12\n",
           "instruction": "Bitt ein Kreuz pro Zeile!",
           "instruction_de": "Bitt ein Kreuz pro Zeile!",
@@ -9527,11 +9664,12 @@
           "view_lft": 45822.0,
           "view_rgt": 45836.0,
           "view_sort_id": 261.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jerf xx",
-          "item": 1.0,
+          "item": "1.0",
           "number": 8100.0,
           "scale": "cat",
           "text": "Man muss sich anstrengen und flei\u00dfig sein",
@@ -9562,9 +9700,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jerf xx",
-          "item": 2.0,
+          "item": "2.0",
           "number": 8100.0,
           "scale": "cat",
           "text": "Man muss andere ausnutzen",
@@ -9595,9 +9733,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "jerf xx",
-          "item": 3.0,
+          "item": "3.0",
           "number": 8100.0,
           "scale": "cat",
           "text": "Man muss begabt und intelligent sein",
@@ -9628,9 +9766,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "jerf xx",
-          "item": 4.0,
+          "item": "4.0",
           "number": 8100.0,
           "scale": "cat",
           "text": "Man muss aus der richtigen Familie stammen",
@@ -9661,9 +9799,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "jerf xx",
-          "item": 5.0,
+          "item": "5.0",
           "number": 8100.0,
           "scale": "cat",
           "text": "Man muss gute Fachkenntnisse auf seinem Spezialgebiet haben",
@@ -9694,9 +9832,9 @@
           ],
           "sn": 5
         },
-        "6.0": {
+        {
           "answer_list": "jerf xx",
-          "item": 6.0,
+          "item": "6.0",
           "number": 8100.0,
           "scale": "cat",
           "text": "Man muss Geld und Verm\u00f6gen haben",
@@ -9727,9 +9865,9 @@
           ],
           "sn": 6
         },
-        "7.0": {
+        {
           "answer_list": "jerf xx",
-          "item": 7.0,
+          "item": "7.0",
           "number": 8100.0,
           "scale": "cat",
           "text": "Man muss einen m\u00f6glichst guten Schulabschluss haben",
@@ -9760,9 +9898,9 @@
           ],
           "sn": 7
         },
-        "8.0": {
+        {
           "answer_list": "jerf xx",
-          "item": 8.0,
+          "item": "8.0",
           "number": 8100.0,
           "scale": "cat",
           "text": "Man muss r\u00fccksichtslos und hart sein",
@@ -9793,9 +9931,9 @@
           ],
           "sn": 8
         },
-        "9.0": {
+        {
           "answer_list": "jerf xx",
-          "item": 9.0,
+          "item": "9.0",
           "number": 8100.0,
           "scale": "cat",
           "text": "Man muss Beziehungen zu den richtigen Leuten haben",
@@ -9826,9 +9964,9 @@
           ],
           "sn": 9
         },
-        "10.0": {
+        {
           "answer_list": "jerf xx",
-          "item": 10.0,
+          "item": "10.0",
           "number": 8100.0,
           "scale": "cat",
           "text": "Man muss sich auf der richtigen Seite politisch engagieren",
@@ -9859,9 +9997,9 @@
           ],
           "sn": 10
         },
-        "11.0": {
+        {
           "answer_list": "jerf xx",
-          "item": 11.0,
+          "item": "11.0",
           "number": 8100.0,
           "scale": "cat",
           "text": "Man muss das \"richtige\" Geschlecht haben; M\u00e4nner haben bessere Aufstiegschancen",
@@ -9892,9 +10030,9 @@
           ],
           "sn": 11
         },
-        "12.0": {
+        {
           "answer_list": "jerf xx",
-          "item": 12.0,
+          "item": "12.0",
           "number": 8100.0,
           "scale": "cat",
           "text": "Man muss dynamisch sein und Initiative haben",
@@ -9925,7 +10063,7 @@
           ],
           "sn": 12
         }
-      },
+      ],
       "sn": 137,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
@@ -9934,8 +10072,8 @@
       "question": "8200",
       "name": "8200",
       "label": "Nun noch etwas ganz anderes: \nDie folgenden Aussagen kennzeichnen verschiedene Einstellungen zum Leben und zur Zukunft. \nBitte sagen Sie, ob Sie f\u00fcr sich pers\u00f6nlich jeweils\n\n- voll zustimmen \n- eher zustimmen\n- eher nicht zustimmen \n- oder \u00fcberhaupt nicht zustimmen.",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = JZU01\n**Statement 2 = JZU02\n**Statement 3 = JZU03\n**Statement 4 = JZU04\n**Statement 5 = JZU05\n**Statement 6 = JZU06\n**Statement 7 = JZU07\n**Statement 8 = JZU08\n**Statement 9 = JZU09\n**Statement 10 = JZU10\n",
           "label": "Lebenseinstellungen",
           "number": 8200.0,
@@ -9948,11 +10086,12 @@
           "view_import_type": "Matrix",
           "view_lft": 45823.0,
           "view_sort_id": 274.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "jzu xx",
-          "item": 1.0,
+          "item": "1.0",
           "number": 8200.0,
           "scale": "cat",
           "text": "Wie mein Leben verl\u00e4uft, h\u00e4ngt von mir selbst ab",
@@ -9983,9 +10122,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "jzu xx",
-          "item": 2.0,
+          "item": "2.0",
           "number": 8200.0,
           "scale": "cat",
           "text": "Im Vergleich mit anderen habe ich nicht das erreicht, was ich verdient h\u00e4tte",
@@ -10016,9 +10155,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "jzu xx",
-          "item": 3.0,
+          "item": "3.0",
           "number": 8200.0,
           "scale": "cat",
           "text": "Was man im Leben erreicht, ist in erster Linie eine Frage von Schicksal oder Gl\u00fcck",
@@ -10049,9 +10188,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "jzu xx",
-          "item": 4.0,
+          "item": "4.0",
           "number": 8200.0,
           "scale": "cat",
           "text": "Ich mache h\u00e4ufig die Erfahrung, dass andere \u00fcber mein Leben bestimmen",
@@ -10082,9 +10221,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "jzu xx",
-          "item": 5.0,
+          "item": "5.0",
           "number": 8200.0,
           "scale": "cat",
           "text": "Erfolg muss man sich hart erarbeiten",
@@ -10115,9 +10254,9 @@
           ],
           "sn": 5
         },
-        "6.0": {
+        {
           "answer_list": "jzu xx",
-          "item": 6.0,
+          "item": "6.0",
           "number": 8200.0,
           "scale": "cat",
           "text": "Wenn ich im Leben auf Schwierigkeiten sto\u00dfe, zweifle ich oft an meinen F\u00e4higkeiten",
@@ -10148,9 +10287,9 @@
           ],
           "sn": 6
         },
-        "7.0": {
+        {
           "answer_list": "jzu xx",
-          "item": 7.0,
+          "item": "7.0",
           "number": 8200.0,
           "scale": "cat",
           "text": "Welche M\u00f6glichkeiten ich im Leben habe, wird von den sozialen Umst\u00e4nden bestimmt",
@@ -10181,9 +10320,9 @@
           ],
           "sn": 7
         },
-        "8.0": {
+        {
           "answer_list": "jzu xx",
-          "item": 8.0,
+          "item": "8.0",
           "number": 8200.0,
           "scale": "cat",
           "text": "Wichtiger als alle Anstrengungen sind die F\u00e4higkeiten, die man mitbringt",
@@ -10214,9 +10353,9 @@
           ],
           "sn": 8
         },
-        "9.0": {
+        {
           "answer_list": "jzu xx",
-          "item": 9.0,
+          "item": "9.0",
           "number": 8200.0,
           "scale": "cat",
           "text": "Ich habe wenig Kontrolle \u00fcber die Dinge, die in meinem Leben passieren",
@@ -10247,9 +10386,9 @@
           ],
           "sn": 9
         },
-        "10.0": {
+        {
           "answer_list": "jzu xx",
-          "item": 10.0,
+          "item": "10.0",
           "number": 8200.0,
           "scale": "cat",
           "text": "Wenn man sich sozial oder politisch engagiert, kann man die sozialen Verh\u00e4ltnisse beeinflussen",
@@ -10280,7 +10419,7 @@
           ],
           "sn": 10
         }
-      },
+      ],
       "sn": 138,
       "instrument": "soep-core-2005-ju",
       "study": "soep-core"
