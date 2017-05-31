@@ -8,8 +8,8 @@
       "question": "101",
       "name": "101",
       "label": "Wie hei\u00dft Ihr Kind?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "instruction": "Bitte in Druckbuchstaben",
           "instruction_de": "Bitte in Druckbuchstaben",
           "label": "Name Kind",
@@ -24,9 +24,10 @@
           "view_import_type": "Numeric",
           "view_rgt": 48208.0,
           "view_sort_id": 1.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 0,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -34,8 +35,8 @@
     "102": {
       "question": "102",
       "name": "102",
-      "items": {
-        "root": {
+      "items": [
+        {
           "label": "Personennummer Kind",
           "number": 102.0,
           "scale": "int",
@@ -47,9 +48,10 @@
           "view_lft": 48207.0,
           "view_rgt": 48209.0,
           "view_sort_id": 2.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 1,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -58,8 +60,8 @@
       "question": "201",
       "name": "201",
       "label": "In welchem Jahr wurde Ihr Kind geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "bgebj",
           "label": "Geburtsjahr Kind",
           "number": 201.0,
@@ -81,9 +83,10 @@
               "value": 1
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 2,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -92,8 +95,8 @@
       "question": "202",
       "name": "202",
       "label": "Und in welchem Monat wurde Ihr Kind geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "label": "Geburtsmonat Kind",
           "number": 202.0,
           "scale": "int",
@@ -107,9 +110,10 @@
           "view_lft": 48209.0,
           "view_rgt": 48211.0,
           "view_sort_id": 4.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 3,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -118,8 +122,8 @@
       "question": "301",
       "name": "301",
       "label": "Haben Sie Ihr Kind gestillt und wenn ja, wie lange?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "bstil1",
           "description": "Researcher Notes:\nAntwort \"Habe l\u00e4nger gestillt\" in n\u00e4chster Frage codieren (BSTIL2).\n",
           "label": "Stillzeit",
@@ -152,9 +156,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 4,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -163,8 +168,8 @@
       "question": "302",
       "name": "302",
       "label": "Und zwar:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Filter:\nASK ONLY IF Q301 : BSTIL1=3\n",
           "filter": "ASK ONLY IF Q301 : BSTIL1=3",
           "instruction": "Bitte geben Sie die Anzahl der Monate an!",
@@ -182,9 +187,10 @@
           "view_lft": 48211.0,
           "view_rgt": 48213.0,
           "view_sort_id": 6.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 5,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -193,8 +199,8 @@
       "question": "400",
       "name": "400",
       "label": "Wie sehen Sie Ihr Kind heute?\nInwieweit treffen die folgenden Aussagen zu?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = BAKT1\n**Statement 2 = BAKT2\n**Statement 3 = BAKT3\n**Statement 4 = BAKT4\n**Statement 5 = BAKT5\n**Statement 6 = BAKT6\n**Statement 7 = BAKT7\n",
           "label": "Einsch\u00e4tzung Entwicklung aktuell",
           "number": 400.0,
@@ -208,11 +214,12 @@
           "view_lft": 48212.0,
           "view_rgt": 48221.0,
           "view_sort_id": 7.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "bakt x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 400.0,
           "scale": "cat",
           "text": "Mein Kind ist meist fr\u00f6hlich und zufrieden",
@@ -243,9 +250,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "bakt x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 400.0,
           "scale": "cat",
           "text": "Mein Kind ist leicht erregbar und weint h\u00e4ufig",
@@ -276,9 +283,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "bakt x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 400.0,
           "scale": "cat",
           "text": "Mein Kind ist schwer zu tr\u00f6sten",
@@ -309,9 +316,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "bakt x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 400.0,
           "scale": "cat",
           "text": "Mein Kind ist neugierig und aktiv",
@@ -342,9 +349,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "bakt x",
-          "item": 5.0,
+          "item": "5.0",
           "number": 400.0,
           "scale": "cat",
           "text": "Mein Kind ist gespr\u00e4chig, redet gern",
@@ -375,9 +382,9 @@
           ],
           "sn": 5
         },
-        "6.0": {
+        {
           "answer_list": "bakt x",
-          "item": 6.0,
+          "item": "6.0",
           "number": 400.0,
           "scale": "cat",
           "text": "Mein Kind zeigt Mitgef\u00fchl, wennn andere traurig sind",
@@ -408,9 +415,9 @@
           ],
           "sn": 6
         },
-        "7.0": {
+        {
           "answer_list": "bakt x",
-          "item": 7.0,
+          "item": "7.0",
           "number": 400.0,
           "scale": "cat",
           "text": "Die Gesundheit meines Kindes macht mir Sorgen",
@@ -441,7 +448,7 @@
           ],
           "sn": 7
         }
-      },
+      ],
       "sn": 6,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -450,8 +457,8 @@
       "question": "501",
       "name": "501",
       "label": "Gab es bei Ihrem Kind in den letzten [u]12 Monaten[/u] gesundheitliche Probleme, die einen [u]Krankenhausaufenthalt [/u]notwendig machten?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "bges1",
           "label": "Krankenhausaufenthalt Kind (12 Monate)",
           "number": 501.0,
@@ -478,9 +485,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 7,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -489,8 +497,8 @@
       "question": "502",
       "name": "502",
       "label": "Und zwar:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Filter:\nASK ONLY IF Q501 : BGES1=1\n",
           "filter": "ASK ONLY IF Q501 : BGES1=1",
           "instruction": "Bitte geben Sie die Anzahl der Aufenthaltstage im Krankenhaus an.",
@@ -508,9 +516,10 @@
           "view_lft": 48221.0,
           "view_rgt": 48223.0,
           "view_sort_id": 16.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 8,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -519,8 +528,8 @@
       "question": "601",
       "name": "601",
       "label": "Ist von einem Arzt bei Ihrem Kind einmal eine der folgenden Erkrankungen oder St\u00f6rungen festgestellt worden?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\n1 = BSTOR01\n**2 = BSTOR02\n**3 = BSTOR03\n**4 = BSTOR04\n**5 = BSTOR05\n**6 = BSTOR06\n**7 = BSTOR07\n**8 = BSTOR08\n**9 = BSTOR09\n**10 = BSTOR10\n**11 = BSTOR11\n**12 = BSTOR12\n**13 = BSTOR14\n",
           "instruction": "Bitte alles Zutreffende ankreuzen!",
           "instruction_de": "Bitte alles Zutreffende ankreuzen!",
@@ -537,10 +546,11 @@
           "view_lft": 48222.0,
           "view_rgt": 48237.0,
           "view_sort_id": 17.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
-          "item": 1.0,
+        {
+          "item": "1.0",
           "number": 601.0,
           "scale": "bin",
           "text": "Asthma",
@@ -550,8 +560,8 @@
           "view_sort_id": 18.0,
           "sn": 1
         },
-        "2.0": {
-          "item": 2.0,
+        {
+          "item": "2.0",
           "number": 601.0,
           "scale": "bin",
           "text": "Chronische Bronchitis",
@@ -561,8 +571,8 @@
           "view_sort_id": 19.0,
           "sn": 2
         },
-        "3.0": {
-          "item": 3.0,
+        {
+          "item": "3.0",
           "number": 601.0,
           "scale": "bin",
           "text": "Spastische /akute Bronchitis",
@@ -572,8 +582,8 @@
           "view_sort_id": 20.0,
           "sn": 3
         },
-        "4.0": {
-          "item": 4.0,
+        {
+          "item": "4.0",
           "number": 601.0,
           "scale": "bin",
           "text": "Pseudokrupp / Kruppsyndrom",
@@ -583,8 +593,8 @@
           "view_sort_id": 21.0,
           "sn": 4
         },
-        "5.0": {
-          "item": 5.0,
+        {
+          "item": "5.0",
           "number": 601.0,
           "scale": "bin",
           "text": "Mittelohrentz\u00fcndung",
@@ -594,8 +604,8 @@
           "view_sort_id": 22.0,
           "sn": 5
         },
-        "6.0": {
-          "item": 6.0,
+        {
+          "item": "6.0",
           "number": 601.0,
           "scale": "bin",
           "text": "Heuschnupfen",
@@ -605,8 +615,8 @@
           "view_sort_id": 23.0,
           "sn": 6
         },
-        "7.0": {
-          "item": 7.0,
+        {
+          "item": "7.0",
           "number": 601.0,
           "scale": "bin",
           "text": "Neurodermitis",
@@ -616,8 +626,8 @@
           "view_sort_id": 24.0,
           "sn": 7
         },
-        "8.0": {
-          "item": 8.0,
+        {
+          "item": "8.0",
           "number": 601.0,
           "scale": "bin",
           "text": "Fehlsichtigkeit (z.B. Kurz- bzw. Weitsichtigkeit, Schielen)",
@@ -627,8 +637,8 @@
           "view_sort_id": 25.0,
           "sn": 8
         },
-        "9.0": {
-          "item": 9.0,
+        {
+          "item": "9.0",
           "number": 601.0,
           "scale": "bin",
           "text": "Schwerh\u00f6rigkeit",
@@ -638,8 +648,8 @@
           "view_sort_id": 26.0,
           "sn": 9
         },
-        "10.0": {
-          "item": 10.0,
+        {
+          "item": "10.0",
           "number": 601.0,
           "scale": "bin",
           "text": "Ern\u00e4hrungsst\u00f6rungen",
@@ -649,8 +659,8 @@
           "view_sort_id": 27.0,
           "sn": 10
         },
-        "11.0": {
-          "item": 11.0,
+        {
+          "item": "11.0",
           "number": 601.0,
           "scale": "bin",
           "text": "St\u00f6rungen der Motorik, des Bewegungsapparates",
@@ -660,8 +670,8 @@
           "view_sort_id": 28.0,
           "sn": 11
         },
-        "12.0": {
-          "item": 12.0,
+        {
+          "item": "12.0",
           "number": 601.0,
           "scale": "bin",
           "text": "Sonstige St\u00f6rungen / Behinderungen",
@@ -671,8 +681,8 @@
           "view_sort_id": 29.0,
           "sn": 12
         },
-        "14.0": {
-          "item": 14.0,
+        {
+          "item": "14.0",
           "number": 601.0,
           "scale": "bin",
           "text": "Nein, nichts davon",
@@ -682,7 +692,7 @@
           "view_sort_id": 30.0,
           "sn": 13
         }
-      },
+      ],
       "sn": 9,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -691,8 +701,8 @@
       "question": "602",
       "name": "602",
       "label": "Und zwar:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "bstor13",
           "description": "Filter:\nASK ONLY IF Q601 : BSTOR XX=12\n",
           "filter": "ASK ONLY IF Q601 : BSTOR XX=12",
@@ -709,9 +719,10 @@
           "view_lft": 48223.0,
           "view_rgt": 48238.0,
           "view_sort_id": 31.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 10,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -720,8 +731,8 @@
       "question": "701",
       "name": "701",
       "label": "Wie ist gegenw\u00e4rtig das Gewicht Ihres Kindes?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "instruction": "Gewicht in Kilogramm angeben!",
           "instruction_de": "Gewicht in Kilogramm angeben!",
           "label": "Gewicht Kind",
@@ -737,9 +748,10 @@
           "view_lft": 48237.0,
           "view_rgt": 48239.0,
           "view_sort_id": 32.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 11,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -748,8 +760,8 @@
       "question": "702",
       "name": "702",
       "label": "Und wie gro\u00df ist Ihr Kind gegenw\u00e4rtig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "instruction": "K\u00f6rpergr\u00f6\u00dfe in cm angeben!",
           "instruction_de": "K\u00f6rpergr\u00f6\u00dfe in cm angeben!",
           "label": "Gr\u00f6\u00dfe Kind",
@@ -765,9 +777,10 @@
           "view_lft": 48238.0,
           "view_rgt": 48240.0,
           "view_sort_id": 33.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 12,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -776,8 +789,8 @@
       "question": "801",
       "name": "801",
       "label": "Wenn Sie einmal an eine normale Woche denken:\nGibt es au\u00dfer Ihnen andere Personen oder Einrichtungen, die die Betreuung des Kindes zeitweise \u00fcbernehmen?\nWenn ja, welche Personen oder Einrichtungen sind das und wie viele Stunden pro Woche \u00fcbernehmen sie die Betreuung?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = BSIT1\n**Statement 2 = BSIT2\n**Statement 3 = BSIT3\n**Statement 4 = BSIT4\n**Statement 5 = BSIT5\n**Statement 6 = BSIT6\n**Statement 7 = BSIT7\n**Statement 8 = BSIT8\n**Statement 9 = BSIT9\n",
           "label": "Personen Kinderbetreuung",
           "number": 801.0,
@@ -792,11 +805,12 @@
           "view_lft": 48239.0,
           "view_rgt": 48250.0,
           "view_sort_id": 34.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "bsit x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 801.0,
           "scale": "cat",
           "text": "(Ehe) Partner",
@@ -813,9 +827,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "bsit x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 801.0,
           "scale": "cat",
           "text": "Vater des Kindes (falls nicht im Haushalt)",
@@ -832,9 +846,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "bsit x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 801.0,
           "scale": "cat",
           "text": "Gro\u00dfeltern des Kindes",
@@ -851,9 +865,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "bsit x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 801.0,
           "scale": "cat",
           "text": "\u00c4ltere Geschwister des Kindes",
@@ -870,9 +884,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "bsit x",
-          "item": 5.0,
+          "item": "5.0",
           "number": 801.0,
           "scale": "cat",
           "text": "Andere Verwandte",
@@ -889,9 +903,9 @@
           ],
           "sn": 5
         },
-        "6.0": {
+        {
           "answer_list": "bsit x",
-          "item": 6.0,
+          "item": "6.0",
           "number": 801.0,
           "scale": "cat",
           "text": "Tagesmutter (au\u00dfer Haus)",
@@ -908,9 +922,9 @@
           ],
           "sn": 6
         },
-        "7.0": {
+        {
           "answer_list": "bsit x",
-          "item": 7.0,
+          "item": "7.0",
           "number": 801.0,
           "scale": "cat",
           "text": "Kinderfrau (in Ihrem Haushalt)",
@@ -927,9 +941,9 @@
           ],
           "sn": 7
         },
-        "8.0": {
+        {
           "answer_list": "bsit x",
-          "item": 8.0,
+          "item": "8.0",
           "number": 801.0,
           "scale": "cat",
           "text": "Krippe, Kindergarten, Kindertageseinrichtung",
@@ -946,9 +960,9 @@
           ],
           "sn": 8
         },
-        "9.0": {
+        {
           "answer_list": "bsit x",
-          "item": 9.0,
+          "item": "9.0",
           "number": 801.0,
           "scale": "cat",
           "text": "Andere (z.B. Babysitter, Nachbarn)",
@@ -965,7 +979,7 @@
           ],
           "sn": 9
         }
-      },
+      ],
       "sn": 13,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -974,8 +988,8 @@
       "question": "802",
       "name": "802",
       "label": "Und wie viele Stunden pro Woche \u00fcbernimmt Ihr (Ehe) Partner die Betreuung?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nsinnvolles numerische Maximum\n\nFilter:\nASK ONLY IF Q801 : BSIT X ST=1 & SC=1\n",
           "filter": "ASK ONLY IF Q801 : BSIT X ST=1 & SC=1",
           "label": "Betreuungszeit (Ehe) Partner",
@@ -991,9 +1005,10 @@
           "view_lft": 48240.0,
           "view_rgt": 48251.0,
           "view_sort_id": 44.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 14,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -1002,8 +1017,8 @@
       "question": "803",
       "name": "803",
       "label": "Und wie viele Stunden pro Woche \u00fcbernimmt der Vater des Kindes (falls nicht im Haushalt) die Betreuung?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nsinnvolles numerische Maximum\n\nFilter:\nASK ONLY IF Q801 : BSIT X ST=2 & SC=1\n",
           "filter": "ASK ONLY IF Q801 : BSIT X ST=2 & SC=1",
           "label": "Betreuungszeit Vater (falls nicht im HH)",
@@ -1019,9 +1034,10 @@
           "view_lft": 48250.0,
           "view_rgt": 48252.0,
           "view_sort_id": 45.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 15,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -1030,8 +1046,8 @@
       "question": "804",
       "name": "804",
       "label": "Und wie viele Stunden pro Woche \u00fcbernehmen die Gro\u00dfeltern des Kindes die Betreuung?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nsinnvolles numerische Maximum\n\nFilter:\nASK ONLY IF Q801 : BSIT X ST=3 & SC=1\n",
           "filter": "ASK ONLY IF Q801 : BSIT X ST=3 & SC=1",
           "label": "Betreuungszeit Gro\u00dfeltern",
@@ -1047,9 +1063,10 @@
           "view_lft": 48251.0,
           "view_rgt": 48253.0,
           "view_sort_id": 46.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 16,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -1058,8 +1075,8 @@
       "question": "805",
       "name": "805",
       "label": "Und wie viele Stunden pro Woche \u00fcbernehmen die \u00e4lteren Geschwister des Kindes die Betreuung?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nsinnvolles numerische Maximum\n\nFilter:\nASK ONLY IF Q801 : BSIT X ST=4 & SC=1\n",
           "filter": "ASK ONLY IF Q801 : BSIT X ST=4 & SC=1",
           "label": "Betreuungszeit Geschwister",
@@ -1075,9 +1092,10 @@
           "view_lft": 48252.0,
           "view_rgt": 48254.0,
           "view_sort_id": 47.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 17,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -1086,8 +1104,8 @@
       "question": "806",
       "name": "806",
       "label": "Und wie viele Stunden pro Woche \u00fcbernehmen andere Verwandte die Betreuung?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nsinnvolles numerische Maximum\n\nFilter:\nASK ONLY IF Q801 : BSIT X ST=5 & SC=1\n",
           "filter": "ASK ONLY IF Q801 : BSIT X ST=5 & SC=1",
           "label": "Betreuungszeit Verwandte",
@@ -1103,9 +1121,10 @@
           "view_lft": 48253.0,
           "view_rgt": 48255.0,
           "view_sort_id": 48.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 18,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -1114,8 +1133,8 @@
       "question": "807",
       "name": "807",
       "label": "Und wie viele Stunden pro Woche \u00fcbernimmt die Tagesmutter (au\u00dfer Haus) die Betreuung?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nsinnvolles numerische Maximum\n\nFilter:\nASK ONLY IF Q801 : BSIT X ST=6 & SC=1\n",
           "filter": "ASK ONLY IF Q801 : BSIT X ST=6 & SC=1",
           "label": "Betreuungszeit Tagesmutter",
@@ -1131,9 +1150,10 @@
           "view_lft": 48254.0,
           "view_rgt": 48256.0,
           "view_sort_id": 49.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 19,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -1142,8 +1162,8 @@
       "question": "808",
       "name": "808",
       "label": "Und wie viele Stunden pro Woche \u00fcbernimmt die Kinderfrau (in Ihrem Haushalt) die Betreuung?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nsinnvolles numerische Maximum\n\nFilter:\nASK ONLY IF Q801 : BSIT X ST=7 & SC=1\n",
           "filter": "ASK ONLY IF Q801 : BSIT X ST=7 & SC=1",
           "label": "Betreuungszeit Kinderfrau (im HH)",
@@ -1159,9 +1179,10 @@
           "view_lft": 48255.0,
           "view_rgt": 48257.0,
           "view_sort_id": 50.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 20,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -1170,8 +1191,8 @@
       "question": "809",
       "name": "809",
       "label": "Und wie viele Stunden pro Woche \u00fcbernimmt die Krippe, der Kindergarten oder die Kindertageseinrichtung die Betreuung?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nsinnvolles numerische Maximum\n\nFilter:\nASK ONLY IF Q801 : BSIT X ST=8 & SC=1\n",
           "filter": "ASK ONLY IF Q801 : BSIT X ST=8 & SC=1",
           "label": "Betreuungszeit Kindergarten etc.",
@@ -1187,9 +1208,10 @@
           "view_lft": 48256.0,
           "view_rgt": 48258.0,
           "view_sort_id": 51.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 21,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -1198,8 +1220,8 @@
       "question": "810",
       "name": "810",
       "label": "Und wie viele Stunden pro Woche \u00fcbernehmen andere Personen (z.B. Babysitter, Nachbarn) die Betreuung?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nsinnvolles numerische Maximum\n\nFilter:\nASK ONLY IF Q801 : BSIT X ST=9 & SC=1\n",
           "filter": "ASK ONLY IF Q801 : BSIT X ST=9 & SC=1",
           "label": "Betreuungszeit andere Personen",
@@ -1215,9 +1237,10 @@
           "view_lft": 48257.0,
           "view_rgt": 48259.0,
           "view_sort_id": 52.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 22,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -1226,8 +1249,8 @@
       "question": "811",
       "name": "811",
       "label": "Wenn Sie einmal an eine normale Woche denken:\nGibt es au\u00dfer Ihnen andere Personen, die die Betreuung des Kindes zeitweise \u00fcbernehmen?\nWenn ja, welche Personen sind das und wie viele Stunden pro Woche \u00fcbernehmen sie die Betreuung?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "bsitno",
           "label": "Keine weitere Betreuung Kind",
           "number": 811.0,
@@ -1249,9 +1272,10 @@
               "value": 1
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 23,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -1260,8 +1284,8 @@
       "question": "900",
       "name": "900",
       "label": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen [u]gemeinsam mit Ihrem Kind[/u] folgende Aktivit\u00e4ten ausgef\u00fchrt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = BAKTIV1\n**Statement 2 = BAKTIV2\n**Statement 3 = BAKTIV3\n**Statement 4 = BAKTIV4\n**Statement 5 = BAKTIV5\n**Statement 6 = BAKTIV6\n**Statement 7 = BAKTIV7\n**Statement 8 = BAKTIV8\n**Statement 9 = BAKTIV9\n",
           "label": "T\u00e4tigkeiten mit Kind",
           "number": 900.0,
@@ -1275,11 +1299,12 @@
           "view_lft": 48259.0,
           "view_rgt": 48270.0,
           "view_sort_id": 54.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "baktiv x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 900.0,
           "scale": "cat",
           "text": "(Vor-) Singen von Kinderliedern",
@@ -1310,9 +1335,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "baktiv x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 900.0,
           "scale": "cat",
           "text": "Spazierg\u00e4nge an der frischen Luft",
@@ -1343,9 +1368,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "baktiv x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 900.0,
           "scale": "cat",
           "text": "Malen oder Basteln",
@@ -1376,9 +1401,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "baktiv x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 900.0,
           "scale": "cat",
           "text": "Geschichten vorlesen oder erz\u00e4hlen",
@@ -1409,9 +1434,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "baktiv x",
-          "item": 5.0,
+          "item": "5.0",
           "number": 900.0,
           "scale": "cat",
           "text": "Bilderb\u00fccher anschauen",
@@ -1442,9 +1467,9 @@
           ],
           "sn": 5
         },
-        "6.0": {
+        {
           "answer_list": "baktiv x",
-          "item": 6.0,
+          "item": "6.0",
           "number": 900.0,
           "scale": "cat",
           "text": "Zum Spielplatz gehen",
@@ -1475,9 +1500,9 @@
           ],
           "sn": 6
         },
-        "7.0": {
+        {
           "answer_list": "baktiv x",
-          "item": 7.0,
+          "item": "7.0",
           "number": 900.0,
           "scale": "cat",
           "text": "Besuch bei anderen Familien mit Kindern",
@@ -1508,9 +1533,9 @@
           ],
           "sn": 7
         },
-        "8.0": {
+        {
           "answer_list": "baktiv x",
-          "item": 8.0,
+          "item": "8.0",
           "number": 900.0,
           "scale": "cat",
           "text": "Mit dem Kind einkaufen gehen",
@@ -1541,9 +1566,9 @@
           ],
           "sn": 8
         },
-        "9.0": {
+        {
           "answer_list": "baktiv x",
-          "item": 9.0,
+          "item": "9.0",
           "number": 900.0,
           "scale": "cat",
           "text": "Zusammen Fernsehen / Video / DVD ansehen",
@@ -1574,7 +1599,7 @@
           ],
           "sn": 9
         }
-      },
+      ],
       "sn": 24,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -1583,8 +1608,8 @@
       "question": "1001",
       "name": "1001",
       "label": "Darf Ihr Kind schon alleine, also [u]ohne[/u] Erwachsene, Fernsehen, Video oder DVD schauen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "btv1",
           "label": "Kind alleine Fernsehen",
           "number": 1001.0,
@@ -1616,9 +1641,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 25,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -1627,8 +1653,8 @@
       "question": "1002",
       "name": "1002",
       "label": "Und zwar:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Filter:\nASK ONLY IF Q1001 : BTV1=1,2\n",
           "filter": "ASK ONLY IF Q1001 : BTV1=1,2",
           "instruction": "Bitte geben Sie die Stunden pro Woche an!",
@@ -1646,9 +1672,10 @@
           "view_lft": 48270.0,
           "view_rgt": 48272.0,
           "view_sort_id": 65.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 26,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -1657,8 +1684,8 @@
       "question": "1100",
       "name": "1100",
       "label": "Wie w\u00fcrden Sie Ihr Kind im Vergleich zu anderen Kindern gleichen Alters beurteilen?\n\nMein Kind ...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nNumber of Fields: 11\n**\n**1 = BVERGL1\n**2 = BVERGL2\n**3 = BVERGL3\n**4 = BVERGL4\n",
           "instruction": "Je weiter links Sie Ihr Kreuz machen, um so mehr trifft die linke Eigenschaft zu,\nje weiter rechts Sie Ihr Kreuz machen, um so mehr trifft die rechte Eigenschaft zu!",
           "instruction_de": "Je weiter links Sie Ihr Kreuz machen, um so mehr trifft die linke Eigenschaft zu,\nje weiter rechts Sie Ihr Kreuz machen, um so mehr trifft die rechte Eigenschaft zu!",
@@ -1674,11 +1701,12 @@
           "view_lft": 48271.0,
           "view_rgt": 48277.0,
           "view_sort_id": 66.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "bvergl x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 1100.0,
           "scale": "cat",
           "text": "ist eher sch\u00fcchtern",
@@ -1709,9 +1737,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "bvergl x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 1100.0,
           "scale": "cat",
           "text": "ist eher konzentriert",
@@ -1742,9 +1770,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "bvergl x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 1100.0,
           "scale": "cat",
           "text": "ist eher trotzig",
@@ -1775,9 +1803,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "bvergl x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 1100.0,
           "scale": "cat",
           "text": "begreift eher schnell",
@@ -1808,7 +1836,7 @@
           ],
           "sn": 4
         }
-      },
+      ],
       "sn": 27,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -1817,8 +1845,8 @@
       "question": "1201",
       "name": "1201",
       "label": "F\u00fcr Eltern ist es immer ein gro\u00dfes Erlebnis, wenn das Kind schon wieder etwas Neues kann.\nBitte geben Sie an, welche Dinge das bei Ihrem Kind sind.\n\nSprechen:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = BSPR3\n**Statement 2 = BSPR1\n**Statement 3 = BSPR2\n**Statement 4 = BSPR4\n**Statement 5 = BSPR5\n",
           "label": "Fertigkeit Sprechen",
           "number": 1201.0,
@@ -1833,11 +1861,12 @@
           "view_lft": 48272.0,
           "view_rgt": 48283.0,
           "view_sort_id": 71.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "3.0": {
+        {
           "answer_list": "bspr x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 1201.0,
           "scale": "cat",
           "text": "Spricht in ganzen S\u00e4tzen (mit vier oder mehr W\u00f6rtern)",
@@ -1864,9 +1893,9 @@
           ],
           "sn": 1
         },
-        "1.0": {
+        {
           "answer_list": "bspr x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 1201.0,
           "scale": "cat",
           "text": "Folgt Anweisungen, die es f\u00fcnf Minuten zuvor geh\u00f6rt hat",
@@ -1893,9 +1922,9 @@
           ],
           "sn": 2
         },
-        "2.0": {
+        {
           "answer_list": "bspr x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 1201.0,
           "scale": "cat",
           "text": "Nennt seinen Vor- und Nachnamen, wenn es danach gefragt wird",
@@ -1922,9 +1951,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "bspr x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 1201.0,
           "scale": "cat",
           "text": "H\u00f6rt in der Regel Geschichten mindestens 15 Min. aufmerksam zu",
@@ -1951,9 +1980,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "bspr x",
-          "item": 5.0,
+          "item": "5.0",
           "number": 1201.0,
           "scale": "cat",
           "text": "\u00dcberbringt einfache Nachrichten wie z.B. \"Essen ist fertig\"",
@@ -1980,7 +2009,7 @@
           ],
           "sn": 5
         }
-      },
+      ],
       "sn": 28,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -1989,8 +2018,8 @@
       "question": "1202",
       "name": "1202",
       "label": "F\u00fcr Eltern ist es immer ein gro\u00dfes Erlebnis, wenn das Kind schon wieder etwas Neues kann.\nBitte geben Sie an, welche Dinge das bei Ihrem Kind sind.\n\nAlltagsfertigkeiten:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = BALL1\n**Statement 2 = BALL2\n**Statement 3 = BALL3\n**Statement 4 = BALL4\n**Statement 5 = BALL5\n",
           "label": "Alltagsfertigkeiten",
           "number": 1202.0,
@@ -2005,11 +2034,12 @@
           "view_lft": 48277.0,
           "view_rgt": 48289.0,
           "view_sort_id": 77.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "ball x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 1202.0,
           "scale": "cat",
           "text": "Isst selbst\u00e4ndig mit dem L\u00f6ffel, ohne zu kleckern",
@@ -2036,9 +2066,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "ball x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 1202.0,
           "scale": "cat",
           "text": "Putzt sich selbst die Nase",
@@ -2065,9 +2095,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "ball x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 1202.0,
           "scale": "cat",
           "text": "Ben\u00fctzt f\u00fcr \"gro\u00dfes Gesch\u00e4ft\" die Toilette",
@@ -2094,9 +2124,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "ball x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 1202.0,
           "scale": "cat",
           "text": "Zieht sich Hosen und Unterhosen selbst richtig herum an",
@@ -2123,9 +2153,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "ball x",
-          "item": 5.0,
+          "item": "5.0",
           "number": 1202.0,
           "scale": "cat",
           "text": "Putzt sich selbst die Z\u00e4hne",
@@ -2152,7 +2182,7 @@
           ],
           "sn": 5
         }
-      },
+      ],
       "sn": 29,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -2161,8 +2191,8 @@
       "question": "1203",
       "name": "1203",
       "label": "F\u00fcr Eltern ist es immer ein gro\u00dfes Erlebnis, wenn das Kind schon wieder etwas Neues kann.\nBitte geben Sie an, welche Dinge das bei Ihrem Kind sind.\n\nBewegung:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = BBEW1\n**Statement 2 = BBEW3\n**Statement 3 = BBEW4\n**Statement 4 = BBEW5\n**Statement 5 = BBEW2\n",
           "label": "Fertigkeit Bewegung",
           "number": 1203.0,
@@ -2177,11 +2207,12 @@
           "view_lft": 48283.0,
           "view_rgt": 48295.0,
           "view_sort_id": 83.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "bbew x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 1203.0,
           "scale": "cat",
           "text": "L\u00e4uft Treppen vorw\u00e4rts hinunter",
@@ -2208,9 +2239,9 @@
           ],
           "sn": 1
         },
-        "3.0": {
+        {
           "answer_list": "bbew x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 1203.0,
           "scale": "cat",
           "text": "Klettert auf Kletterger\u00fcste und andere hohe Spielger\u00e4te",
@@ -2237,9 +2268,9 @@
           ],
           "sn": 2
         },
-        "4.0": {
+        {
           "answer_list": "bbew x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 1203.0,
           "scale": "cat",
           "text": "Schneidet mit einer Schere Papier durch",
@@ -2266,9 +2297,9 @@
           ],
           "sn": 3
         },
-        "5.0": {
+        {
           "answer_list": "bbew x",
-          "item": 5.0,
+          "item": "5.0",
           "number": 1203.0,
           "scale": "cat",
           "text": "Malt auf Papier erkennbare Formen",
@@ -2295,9 +2326,9 @@
           ],
           "sn": 4
         },
-        "2.0": {
+        {
           "answer_list": "bbew x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 1203.0,
           "scale": "cat",
           "text": "H\u00e4lt Stifte richtig (nicht mit der Faust), um zu malen",
@@ -2324,7 +2355,7 @@
           ],
           "sn": 5
         }
-      },
+      ],
       "sn": 30,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -2333,8 +2364,8 @@
       "question": "1204",
       "name": "1204",
       "label": "F\u00fcr Eltern ist es immer ein gro\u00dfes Erlebnis, wenn das Kind schon wieder etwas Neues kann.\nBitte geben Sie an, welche Dinge das bei Ihrem Kind sind.\n\n\nSoziale Beziehungen:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = BSOZ2\n**Statement 2 = BSOZ3\n**Statement 3 = BSOZ4\n**Statement 4 = BSOZ5\n**Statement 5 = BSOZ6\n",
           "label": "Fertigkeit Soziale Beziehungen",
           "number": 1204.0,
@@ -2349,11 +2380,12 @@
           "view_lft": 48289.0,
           "view_rgt": 48301.0,
           "view_sort_id": 89.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "2.0": {
+        {
           "answer_list": "bsoz x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 1204.0,
           "scale": "cat",
           "text": "Nimmt an Spielen mit anderen Kindern teil",
@@ -2380,9 +2412,9 @@
           ],
           "sn": 1
         },
-        "3.0": {
+        {
           "answer_list": "bsoz x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 1204.0,
           "scale": "cat",
           "text": "Besch\u00e4ftigt sich mit Rollenspielen (\"tun als ob\")",
@@ -2409,9 +2441,9 @@
           ],
           "sn": 2
         },
-        "4.0": {
+        {
           "answer_list": "bsoz x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 1204.0,
           "scale": "cat",
           "text": "Zeigt eine Vorliebe f\u00fcr bestimmte Spielgef\u00e4hrten oder Freunde",
@@ -2438,9 +2470,9 @@
           ],
           "sn": 3
         },
-        "5.0": {
+        {
           "answer_list": "bsoz x",
-          "item": 5.0,
+          "item": "5.0",
           "number": 1204.0,
           "scale": "cat",
           "text": "Benennt eigene Gef\u00fchle, z.B. \"traurig\", \"freuen\", \"Angst\"",
@@ -2467,9 +2499,9 @@
           ],
           "sn": 4
         },
-        "1.0": {
+        {
           "answer_list": "bsoz x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 1204.0,
           "scale": "cat",
           "text": "Wechselt sich mit anderen beim Spielen ab, ohne darum gebeten zu werden",
@@ -2496,7 +2528,7 @@
           ],
           "sn": 5
         }
-      },
+      ],
       "sn": 31,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -2505,8 +2537,8 @@
       "question": "1301",
       "name": "1301",
       "label": "Sprechen Sie oder andere Haushaltsmitglieder mit Ihrem Kind nur Deutsch oder auch in einer anderen Sprache?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "bdtsch1",
           "label": "Sprache mit Kind",
           "number": 1301.0,
@@ -2538,9 +2570,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 32,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"
@@ -2549,8 +2582,8 @@
       "question": "1302",
       "name": "1302",
       "label": "Und zwar:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "bdtsch2",
           "description": "Filter:\nASK ONLY IF Q1301 : BDTSCH1=2,3\n",
           "filter": "ASK ONLY IF Q1301 : BDTSCH1=2,3",
@@ -2566,9 +2599,10 @@
           "view_import_type": "Numeric",
           "view_lft": 48301.0,
           "view_sort_id": 96.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 33,
       "instrument": "soep-core-2013-e2",
       "study": "soep-core"

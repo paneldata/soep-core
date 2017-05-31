@@ -8,8 +8,8 @@
       "question": "1",
       "name": "1",
       "label": "Wir bitten Sie nun um genauere Angaben zu einigen Punkten Ihres Lebensverlaufs, die mit der Ausbildung und dem Beruf zu tun haben. \nZun\u00e4chst zur Schule:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "label": "Einf\u00fchrung Ausbildungsblock",
           "number": 1.0,
           "scale": "int",
@@ -22,9 +22,10 @@
           "view_lft": 47517.0,
           "view_rgt": 47519.0,
           "view_sort_id": 128.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 0,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -33,8 +34,8 @@
       "question": "101",
       "name": "101",
       "label": "In welchem Jahr sind Sie geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lgeb",
           "label": "Geburtsjahr",
           "number": 101.0,
@@ -48,9 +49,10 @@
           "view_import_type": "Numeric",
           "view_rgt": 47392.0,
           "view_sort_id": 1.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 1,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -59,8 +61,8 @@
       "question": "102",
       "name": "102",
       "label": "Und in welchem Monat sind Sie geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lgebmo",
           "label": "Geburtsmonat",
           "number": 102.0,
@@ -75,9 +77,10 @@
           "view_lft": 47391.0,
           "view_rgt": 47393.0,
           "view_sort_id": 2.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 2,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -86,8 +89,8 @@
       "question": "200",
       "name": "200",
       "label": "Sind Sie in Deutschland geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsta1",
           "concept": "lsta1",
           "description": "Routing:\n*IF [Q2000,1] *GOTO 16000\n",
@@ -118,9 +121,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 3,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -129,8 +133,8 @@
       "question": "301",
       "name": "301",
       "label": "In welchem Land sind Sie geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsta2",
           "description": "Researcher Notes:\nZusatzangabe: LSTA2NR\n",
           "instruction": "Bitte heutige Bezeichnung eintragen!",
@@ -148,9 +152,10 @@
           "view_lft": 47393.0,
           "view_rgt": 47395.0,
           "view_sort_id": 4.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 4,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -158,8 +163,8 @@
     "302": {
       "question": "302",
       "name": "302",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lsta2nr",
           "description": "Researcher Notes:\nnachtr\u00e4glich generierte Variable\n",
           "label": "Listennummer Geburtsland",
@@ -173,9 +178,10 @@
           "view_lft": 47394.0,
           "view_rgt": 47396.0,
           "view_sort_id": 5.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 5,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -184,8 +190,8 @@
       "question": "400",
       "name": "400",
       "label": "Wann sind Sie in die Bundesrepublik Deutschland zugezogen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lzug01",
           "description": "Researcher Notes:\nMaximum: 2011\n",
           "label": "Zuzug Deutschland",
@@ -200,9 +206,10 @@
           "view_lft": 47395.0,
           "view_rgt": 47397.0,
           "view_sort_id": 6.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 6,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -211,8 +218,8 @@
       "question": "500",
       "name": "500",
       "label": "Zu welcher der folgenden Zuwanderergruppen geh\u00f6rten Sie, als Sie nach Deutschland kamen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Routing:\n*IF [Q5000,1] **GOTO BLOCK 700 \n*IF [Q5000,2] *GOTO 8000 \n*IF [Q5000,3] *GOTO 8000\n",
           "goto": "*IF [Q5000,1] **GOTO BLOCK 700 \n*IF [Q5000,2] *GOTO 8000 \n*IF [Q5000,3] *GOTO 8000",
           "label": "Zuwanderergruppe",
@@ -227,10 +234,11 @@
           "view_lft": 47396.0,
           "view_rgt": 47403.0,
           "view_sort_id": 7.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
-          "item": 1.0,
+        {
+          "item": "1.0",
           "number": 500.0,
           "scale": "bin",
           "text": "Aussiedler, d.h. deutschst\u00e4mmige Person aus osteurop\u00e4ischen Staaten",
@@ -239,8 +247,8 @@
           "view_sort_id": 8.0,
           "sn": 1
         },
-        "2.0": {
-          "item": 2.0,
+        {
+          "item": "2.0",
           "number": 500.0,
           "scale": "bin",
           "text": "Deutscher, der l\u00e4ngere Zeit im Ausland gelebt hat",
@@ -249,8 +257,8 @@
           "view_sort_id": 9.0,
           "sn": 2
         },
-        "3.0": {
-          "item": 3.0,
+        {
+          "item": "3.0",
           "number": 500.0,
           "scale": "bin",
           "text": "B\u00fcrger eines EU-Mitgliedstaates",
@@ -259,8 +267,8 @@
           "view_sort_id": 10.0,
           "sn": 3
         },
-        "4.0": {
-          "item": 4.0,
+        {
+          "item": "4.0",
           "number": 500.0,
           "scale": "bin",
           "text": "Asylbewerber oder Fl\u00fcchtling",
@@ -269,8 +277,8 @@
           "view_sort_id": 11.0,
           "sn": 4
         },
-        "5.0": {
-          "item": 5.0,
+        {
+          "item": "5.0",
           "number": 500.0,
           "scale": "bin",
           "text": "Sonstiger Ausl\u00e4nder",
@@ -279,7 +287,7 @@
           "view_sort_id": 12.0,
           "sn": 5
         }
-      },
+      ],
       "sn": 7,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -288,8 +296,8 @@
       "question": "600",
       "name": "600",
       "label": "Haben Sie heute eine [u]unbefristete[/u] oder eine [u]befristete[/u] Aufenthaltserlaubnis oder haben Sie die deutsche Staatsb\u00fcrgerschaft erworben?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lzug03",
           "concept": "lzug03",
           "description": "Filter:\nASK ONLY IF Q500 : LZUG02=4,5\n",
@@ -323,9 +331,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 8,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -334,8 +343,8 @@
       "question": "701",
       "name": "701",
       "label": "Haben Sie nach Ihrer Einreise zun\u00e4chst in einem Aufnahmelager oder \u00dcbergangswohnheim gelebt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lzug04",
           "concept": "lzug04",
           "label": "Aufnahmelager",
@@ -363,9 +372,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 9,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -374,8 +384,8 @@
       "question": "702",
       "name": "702",
       "label": "Wenn ja, wie lange?\n\n[Wochen]",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lzug05",
           "description": "Researcher Notes:\nsinnvolles nummerisches Maximum\n\nFilter:\nASK ONLY IF Q701 : LZUG04=1\n",
           "filter": "ASK ONLY IF Q701 : LZUG04=1",
@@ -394,9 +404,10 @@
           "view_lft": 47404.0,
           "view_rgt": 47406.0,
           "view_sort_id": 15.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 10,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -405,8 +416,8 @@
       "question": "703",
       "name": "703",
       "label": "Wenn ja, wie lange?\n\n[Monate]",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lzug06",
           "description": "Researcher Notes:\nsinnvolles numerisches Maximum\n\nFilter:\nASK ONLY IF Q701 : LZUG04=1\n",
           "filter": "ASK ONLY IF Q701 : LZUG04=1",
@@ -425,9 +436,10 @@
           "view_lft": 47405.0,
           "view_rgt": 47407.0,
           "view_sort_id": 16.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 11,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -436,8 +448,8 @@
       "question": "800",
       "name": "800",
       "label": "Als Sie einreisten, kamen Sie da als Familienangeh\u00f6riger einer bereits in Deutschland lebenden Familie bzw. Person?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lzug07",
           "concept": "lzug07",
           "description": "Routing:\n*IF [Q8000,1] *GOTO 10000\n",
@@ -466,9 +478,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 12,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -477,8 +490,8 @@
       "question": "900",
       "name": "900",
       "label": "Hatten Sie vor der Einreise \u00fcberhaupt Kontakte zu Verwandten oder Bekannten in Deutschland, an die Sie sich wenden konnten?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lzug08",
           "concept": "lzug08",
           "description": "Filter:\nASK ONLY IF Q800 : LZUG07=2\n\nRouting:\n*IF [Q9000,2] *GOTO 11000\n",
@@ -508,9 +521,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 13,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -519,8 +533,8 @@
       "question": "1000",
       "name": "1000",
       "label": "Sind Sie in den Ort in Deutschland gezogen, wo diese Verwandten bzw. Bekannten lebten?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lzug09",
           "concept": "lzug09",
           "description": "Filter:\nASK ONLY IF Q900 : LZUG08=1\n",
@@ -549,9 +563,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 14,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -560,8 +575,8 @@
       "question": "1100",
       "name": "1100",
       "label": "Haben Sie in Deutschland eine Schule besucht?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lzug10",
           "concept": "lzug10",
           "description": "Routing:\n*IF [Q11000,2] **GOTO BLOCK 1400\n",
@@ -590,9 +605,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 15,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -601,8 +617,8 @@
       "question": "1200",
       "name": "1200",
       "label": "In welche Klasse sind Sie in Deutschland in die Schule gekommen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lzug11",
           "description": "Researcher Notes:\nMaximum: 13\n\nFilter:\nASK ONLY IF Q1100 : LZUG10=1\n",
           "filter": "ASK ONLY IF Q1100 : LZUG10=1",
@@ -618,9 +634,10 @@
           "view_lft": 47410.0,
           "view_rgt": 47412.0,
           "view_sort_id": 21.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 16,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -629,8 +646,8 @@
       "question": "1300",
       "name": "1300",
       "label": "Haben sie vorher eine spezielle Vorbereitungsklasse f\u00fcr Ausl\u00e4nder in Deutschland besucht?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lzug12",
           "concept": "lzug12",
           "label": "Besuch Vorbereitungsklasse",
@@ -657,9 +674,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 17,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -668,8 +686,8 @@
       "question": "1401",
       "name": "1401",
       "label": "Es gibt ja unterschiedliche Gr\u00fcnde, nach Deutschland zu ziehen. \nWelche der folgenden Gr\u00fcnde spielten bei Ihnen eine Rolle?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "instruction": "Mehrfachnennungen m\u00f6glich!",
           "instruction_de": "Mehrfachnennungen m\u00f6glich!",
           "label": "Migartionsgr\u00fcnde",
@@ -685,11 +703,12 @@
           "view_lft": 47412.0,
           "view_rgt": 47422.0,
           "view_sort_id": 23.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "13.0": {
+        {
           "answer_list": "lzug xx 1",
-          "item": 13.0,
+          "item": "13.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "Ich wollte ein besseres Leben haben: Besser wohnen, mehr kaufen k\u00f6nnen usw.",
@@ -706,9 +725,9 @@
           ],
           "sn": 1
         },
-        "14.0": {
+        {
           "answer_list": "lzug xx 1",
-          "item": 14.0,
+          "item": "14.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "Ich wollte arbeiten und Geld verdienen in Deutschland, um meine Familie zu unterst\u00fctzen und Geld zu sparen",
@@ -725,9 +744,9 @@
           ],
           "sn": 2
         },
-        "15.0": {
+        {
           "answer_list": "lzug xx 1",
-          "item": 15.0,
+          "item": "15.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "Ich wollte in der Freiheit leben",
@@ -744,9 +763,9 @@
           ],
           "sn": 3
         },
-        "16.0": {
+        {
           "answer_list": "lzug xx 1",
-          "item": 16.0,
+          "item": "16.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "Ich wollte mit meiner Familie zusammenleben (Ehepartner, Eltern, Kinder)",
@@ -763,9 +782,9 @@
           ],
           "sn": 4
         },
-        "17.0": {
+        {
           "answer_list": "lzug xx 1",
-          "item": 17.0,
+          "item": "17.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "In meinem Heimatland herrschte Not und Armut",
@@ -782,9 +801,9 @@
           ],
           "sn": 5
         },
-        "18.0": {
+        {
           "answer_list": "lzug xx 1",
-          "item": 18.0,
+          "item": "18.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "In meinem Heimatland konnte ich nicht in Sicherheit leben (Verfolgung, Krieg)",
@@ -801,9 +820,9 @@
           ],
           "sn": 6
         },
-        "19.0": {
+        {
           "answer_list": "lzug xx 1",
-          "item": 19.0,
+          "item": "19.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "Ich wollte einfach in Deutschland leben",
@@ -820,9 +839,9 @@
           ],
           "sn": 7
         },
-        "20.0": {
+        {
           "answer_list": "lzug xx 1",
-          "item": 20.0,
+          "item": "20.0",
           "number": 1401.0,
           "scale": "cat",
           "text": "Sonstige Gr\u00fcnde",
@@ -839,7 +858,7 @@
           ],
           "sn": 8
         }
-      },
+      ],
       "sn": 18,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -848,8 +867,8 @@
       "question": "1402",
       "name": "1402",
       "label": "Und zwar:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lzug20x",
           "description": "Filter:\nASK ONLY IF Q1401 : LZUG XX 1 ST=20 & SC=1\n",
           "filter": "ASK ONLY IF Q1401 : LZUG XX 1 ST=20 & SC=1",
@@ -866,9 +885,10 @@
           "view_lft": 47413.0,
           "view_rgt": 47423.0,
           "view_sort_id": 32.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 19,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -877,8 +897,8 @@
       "question": "1501",
       "name": "1501",
       "label": "Haben sich Ihre Vorstellungen, mit denen Sie nach Deutschland gekommen sind, im gro\u00dfen und ganzen erf\u00fcllt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lzug21",
           "concept": "lzug21",
           "label": "Erf\u00fcllung Migrationserwartung",
@@ -911,9 +931,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 20,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -922,8 +943,8 @@
       "question": "1502",
       "name": "1502",
       "label": "Auf welchen Gebieten war es leichter oder schwerer, als Sie vorher gedacht hatten?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "label": "Migrationserfahrung Bereiche",
           "number": 1502.0,
           "scale": "txt",
@@ -937,11 +958,12 @@
           "view_lft": 47423.0,
           "view_rgt": 47428.0,
           "view_sort_id": 34.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "22.0": {
+        {
           "answer_list": "lzug xx 2",
-          "item": 22.0,
+          "item": "22.0",
           "number": 1502.0,
           "scale": "cat",
           "text": "Eine eigene Wohnung zu finden",
@@ -973,9 +995,9 @@
           ],
           "sn": 1
         },
-        "23.0": {
+        {
           "answer_list": "lzug xx 2",
-          "item": 23.0,
+          "item": "23.0",
           "number": 1502.0,
           "scale": "cat",
           "text": "Von den Arbeitskollegen akzeptiert zu werden",
@@ -1007,9 +1029,9 @@
           ],
           "sn": 2
         },
-        "24.0": {
+        {
           "answer_list": "lzug xx 2",
-          "item": 24.0,
+          "item": "24.0",
           "number": 1502.0,
           "scale": "cat",
           "text": "Von den Nachbarn akzeptiert zu werden",
@@ -1041,7 +1063,7 @@
           ],
           "sn": 3
         }
-      },
+      ],
       "sn": 21,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1050,8 +1072,8 @@
       "question": "1600",
       "name": "1600",
       "label": "Wo haben Sie vor der deutschen Wiedervereinigung, also vor 1989, gewohnt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lwied",
           "concept": "lwied",
           "label": "Wohnort vor 1989",
@@ -1088,9 +1110,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 22,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1099,8 +1122,8 @@
       "question": "1701",
       "name": "1701",
       "label": "Wo haben Sie den gr\u00f6\u00dften Teil Ihrer Kindheit bis zum 15. Lebensjahr verbracht?\nWar das...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lkh01",
           "concept": "lkh01",
           "label": "Wohnort Kindheit",
@@ -1138,9 +1161,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 23,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1149,8 +1173,8 @@
       "question": "1702",
       "name": "1702",
       "label": "Leben Sie heute noch in dieser Stadt oder dieser Gegend?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lkh02",
           "concept": "lkh02",
           "label": "Wohnort heute / Kindheit",
@@ -1183,9 +1207,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 24,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1194,8 +1219,8 @@
       "question": "1801",
       "name": "1801",
       "label": "Haben oder hatten Sie Geschwister?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lgesch1",
           "concept": "lgesch1",
           "label": "Geschwister",
@@ -1223,9 +1248,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 25,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1234,8 +1260,8 @@
       "question": "1802",
       "name": "1802",
       "label": "Falls ja: wie viele Br\u00fcder?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lgesch2",
           "description": "Researcher Notes:\nsinnvolles nummerisches Maximum\n\nFilter:\nASK ONLY IF Q1801 : LGESCH1=1\n",
           "filter": "ASK ONLY IF Q1801 : LGESCH1=1",
@@ -1252,9 +1278,10 @@
           "view_lft": 47431.0,
           "view_rgt": 47433.0,
           "view_sort_id": 42.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 26,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1263,8 +1290,8 @@
       "question": "1803",
       "name": "1803",
       "label": "Falls ja: und wie viele Schwestern?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lgesch3",
           "description": "Researcher Notes:\nsinnvolles nummerisches Maximum\n\nFilter:\nASK ONLY IF Q1801 : LGESCH1=1\n",
           "filter": "ASK ONLY IF Q1801 : LGESCH1=1",
@@ -1281,9 +1308,10 @@
           "view_lft": 47432.0,
           "view_rgt": 47434.0,
           "view_sort_id": 43.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 27,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1292,8 +1320,8 @@
       "question": "1804",
       "name": "1804",
       "label": "Ist eines davon Ihr Zwillingsbruder oder Ihre Zwillingsschwester?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lgesch4",
           "concept": "lgesch4",
           "description": "Filter:\nASK ONLY IF Q1801 : LGESCH1=1 and Q1802 : LGESCH2>=1 or Q1803 : LGESCH3>=1\n",
@@ -1328,9 +1356,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 28,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1338,8 +1367,8 @@
     "1805": {
       "question": "1805",
       "name": "1805",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lgeka",
           "concept": "lgeka",
           "description": "Researcher Notes:\nnachtr\u00e4glich generierte Variable\n",
@@ -1361,9 +1390,10 @@
               "value": 1
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 29,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1372,8 +1402,8 @@
       "question": "1901",
       "name": "1901",
       "label": "Wie viele von Ihren ersten 15 Lebensjahren haben Sie bei den folgenden Personen gelebt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nAntworten: numerische Werte\n**Weitere Angabe in CAPI: Summe der Jahre (bitte pr\u00fcfen!) > jedoch keine Variable\n**1 = LKH03\n**2 = LKH04\n**3 = LKH05\n**4 = LKH06\n**5 = LKH07\n**6 = LKH08\n**7 = LKH09\n**8 = LKH10\n",
           "instruction": "Bitte auf ganze Jahre runden!\n(Hinweis: Adoptiveltern gelten wie leibliche Eltern)",
           "instruction_de": "Bitte auf ganze Jahre runden!\n(Hinweis: Adoptiveltern gelten wie leibliche Eltern)",
@@ -1390,10 +1420,11 @@
           "view_lft": 47435.0,
           "view_rgt": 47445.0,
           "view_sort_id": 46.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
-          "item": 1.0,
+        {
+          "item": "1.0",
           "number": 1901.0,
           "scale": "bin",
           "text": "Bei Ihren beiden (leiblichen) Eltern",
@@ -1403,8 +1434,8 @@
           "view_sort_id": 47.0,
           "sn": 1
         },
-        "2.0": {
-          "item": 2.0,
+        {
+          "item": "2.0",
           "number": 1901.0,
           "scale": "bin",
           "text": "Bei Ihrer Mutter allein (ohne Partner)",
@@ -1414,8 +1445,8 @@
           "view_sort_id": 48.0,
           "sn": 2
         },
-        "3.0": {
-          "item": 3.0,
+        {
+          "item": "3.0",
           "number": 1901.0,
           "scale": "bin",
           "text": "Bei Ihrer Mutter mit (neuem) Partner",
@@ -1425,8 +1456,8 @@
           "view_sort_id": 49.0,
           "sn": 3
         },
-        "4.0": {
-          "item": 4.0,
+        {
+          "item": "4.0",
           "number": 1901.0,
           "scale": "bin",
           "text": "Bei Ihrem Vater allein (ohne Partnerin)",
@@ -1436,8 +1467,8 @@
           "view_sort_id": 50.0,
           "sn": 4
         },
-        "5.0": {
-          "item": 5.0,
+        {
+          "item": "5.0",
           "number": 1901.0,
           "scale": "bin",
           "text": "Bei Ihrem Vater mit (neuer) Partnerin",
@@ -1447,8 +1478,8 @@
           "view_sort_id": 51.0,
           "sn": 5
         },
-        "6.0": {
-          "item": 6.0,
+        {
+          "item": "6.0",
           "number": 1901.0,
           "scale": "bin",
           "text": "Bei anderen Verwandten",
@@ -1458,8 +1489,8 @@
           "view_sort_id": 52.0,
           "sn": 6
         },
-        "7.0": {
-          "item": 7.0,
+        {
+          "item": "7.0",
           "number": 1901.0,
           "scale": "bin",
           "text": "Bei Pflegeeltern",
@@ -1469,8 +1500,8 @@
           "view_sort_id": 53.0,
           "sn": 7
         },
-        "8.0": {
-          "item": 8.0,
+        {
+          "item": "8.0",
           "number": 1901.0,
           "scale": "bin",
           "text": "Im Heim",
@@ -1480,7 +1511,7 @@
           "view_sort_id": 54.0,
           "sn": 8
         }
-      },
+      ],
       "sn": 30,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1488,8 +1519,8 @@
     "1902": {
       "question": "1902",
       "name": "1902",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lkhka",
           "concept": "lkhka",
           "description": "Researcher Notes:\nnachtr\u00e4glich generierte Variable\n",
@@ -1511,9 +1542,10 @@
               "value": 1
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 31,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1522,8 +1554,8 @@
       "question": "2000",
       "name": "2000",
       "label": "Leben Ihr Vater und Ihre Mutter hier im Haushalt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lvm",
           "concept": "lvm",
           "description": "Researcher Notes:\nInstruktion:\n**if Q2000: LVM = 2,3 : Die folgenden Fragen 21-28 bitte nur f\u00fcr den Elternteil beantworten, der nicht im Haushalt lebt!\n**if Q2000: LVM = 4: Die folgenden Fragen 21-28 bitte getrennt f\u00fcr Vater und Mutter beantworten!\n\nRouting:\n*IF [Q20000,1] *GOTO 29000 \n*IF [Q20000,2] **GOTO BLOCK 2100 \n*IF [Q20000,3] **GOTO BLOCK 2100 \n*IF [Q20000,4] **GOTO BLOCK 2100\n",
@@ -1562,9 +1594,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 32,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1573,8 +1606,8 @@
       "question": "2101",
       "name": "2101",
       "label": "Lebt Ihr Vater noch?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv01 dummy",
           "description": "Filter:\nASK ONLY IF Q2000 : LVM=3,4\n",
           "filter": "ASK ONLY IF Q2000 : LVM=3,4",
@@ -1603,9 +1636,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 33,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1614,8 +1648,8 @@
       "question": "2102",
       "name": "2102",
       "label": "Wo lebt Ihr Vater?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv01",
           "concept": "lv01",
           "description": "Filter:\nASK ONLY IF Q2101 : LV01 Dummy=1\n",
@@ -1655,9 +1689,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 34,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1666,8 +1701,8 @@
       "question": "2103",
       "name": "2103",
       "label": "Ist verstorben, und zwar im Jahr:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lv02",
           "description": "Researcher Notes:\nMaximum: 2011\n\nFilter:\nASK ONLY IF Q2101 : LV01 Dummy=2\n",
           "filter": "ASK ONLY IF Q2101 : LV01 Dummy=2",
@@ -1684,9 +1719,10 @@
           "view_lft": 47448.0,
           "view_rgt": 47450.0,
           "view_sort_id": 59.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 35,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1695,8 +1731,8 @@
       "question": "2104",
       "name": "2104",
       "label": "Lebt Ihre Mutter noch?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lm01 dummy",
           "description": "Filter:\nASK ONLY IF Q2000 : LVM=2,4\n",
           "filter": "ASK ONLY IF Q2000 : LVM=2,4",
@@ -1725,9 +1761,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 36,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1736,8 +1773,8 @@
       "question": "2105",
       "name": "2105",
       "label": "Wo lebt Ihre Mutter?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lm01",
           "concept": "lm01",
           "description": "Filter:\nASK ONLY IF Q2104 : LM01 Dummy=1\n",
@@ -1777,9 +1814,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 37,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1788,8 +1826,8 @@
       "question": "2106",
       "name": "2106",
       "label": "Ist verstorben, und zwar im Jahr:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lm02",
           "description": "Researcher Notes:\nMaximum: 2011\n\nFilter:\nASK ONLY IF Q2104 : LM01 Dummy=2\n",
           "filter": "ASK ONLY IF Q2104 : LM01 Dummy=2",
@@ -1806,9 +1844,10 @@
           "view_lft": 47451.0,
           "view_rgt": 47453.0,
           "view_sort_id": 62.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 38,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1817,8 +1856,8 @@
       "question": "2201",
       "name": "2201",
       "label": "In welchem Jahr wurde Ihr Vater geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lv03",
           "description": "Researcher Notes:\nsinnvolles nummerisches Maximum\n\nFilter:\nASK ONLY IF Q2000 : LVM=3,4\n",
           "filter": "ASK ONLY IF Q2000 : LVM=3,4",
@@ -1835,9 +1874,10 @@
           "view_lft": 47452.0,
           "view_rgt": 47454.0,
           "view_sort_id": 63.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 39,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1846,8 +1886,8 @@
       "question": "2202",
       "name": "2202",
       "label": "In welchem Jahr wurde Ihre Mutter geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lm03",
           "description": "Researcher Notes:\nsinnvolles nummerisches Maximum\n\nFilter:\nASK ONLY IF Q2000 : LVM=2,4\n",
           "filter": "ASK ONLY IF Q2000 : LVM=2,4",
@@ -1864,9 +1904,10 @@
           "view_lft": 47453.0,
           "view_rgt": 47455.0,
           "view_sort_id": 64.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 40,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1875,8 +1916,8 @@
       "question": "2301",
       "name": "2301",
       "label": "Ist Ihr Vater in Deutschland geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv03a",
           "concept": "lv03a",
           "description": "Researcher Notes:\n\"Nein\" (Code: 2) als Antwortkategorie nicht in CAPI gegeben\n\nFilter:\nASK ONLY IF Q2000 : LVM=3,4\n",
@@ -1906,9 +1947,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 41,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1917,8 +1959,8 @@
       "question": "2302",
       "name": "2302",
       "label": "Bitte Geburtsland angeben",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv03b",
           "description": "Researcher Notes:\nZus\u00e4tzlich in CAPI: LV03BNR\n\nFilter:\nASK ONLY IF Q2301 : LV03A=2\n",
           "filter": "ASK ONLY IF Q2301 : LV03A=2",
@@ -1935,9 +1977,10 @@
           "view_lft": 47455.0,
           "view_rgt": 47457.0,
           "view_sort_id": 66.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 42,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1945,8 +1988,8 @@
     "2303": {
       "question": "2303",
       "name": "2303",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lv03bnr",
           "description": "Researcher Notes:\nnachtr\u00e4glich generiert\n\nFilter:\nASK ONLY IF Q2301 : LV03A=2\n",
           "filter": "ASK ONLY IF Q2301 : LV03A=2",
@@ -1961,9 +2004,10 @@
           "view_lft": 47456.0,
           "view_rgt": 47458.0,
           "view_sort_id": 67.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 43,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -1972,8 +2016,8 @@
       "question": "2304",
       "name": "2304",
       "label": "Ist Ihre Mutter in Deutschland geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lm03a",
           "concept": "lm03a",
           "description": "Researcher Notes:\n\"Nein\" (Code: 2) nicht als Antwortkategorie in CAPI gegeben\n\nFilter:\nASK ONLY IF Q2000 : LVM=2,4\n",
@@ -2003,9 +2047,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 44,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2014,8 +2059,8 @@
       "question": "2305",
       "name": "2305",
       "label": "Bitte Geburtsland angeben",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lm03b",
           "description": "Researcher Notes:\nZus\u00e4tzlich in CAPI: LM03BNR\n\nFilter:\nASK ONLY IF Q2304 : LM03A=2\n",
           "filter": "ASK ONLY IF Q2304 : LM03A=2",
@@ -2032,9 +2077,10 @@
           "view_lft": 47458.0,
           "view_rgt": 47460.0,
           "view_sort_id": 69.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 45,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2042,8 +2088,8 @@
     "2306": {
       "question": "2306",
       "name": "2306",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lm03bnr",
           "description": "Researcher Notes:\nnachtr\u00e4glich generierte Variable\n\nFilter:\nASK ONLY IF Q2304 : LM03A=2\n",
           "filter": "ASK ONLY IF Q2304 : LM03A=2",
@@ -2058,9 +2104,10 @@
           "view_lft": 47459.0,
           "view_rgt": 47461.0,
           "view_sort_id": 70.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 46,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2069,8 +2116,8 @@
       "question": "2307",
       "name": "2307",
       "label": "Hat (bzw. hatte) Ihr Vater die deutsche Staatsb\u00fcrgerschaft?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv04",
           "concept": "lv04",
           "description": "Filter:\nASK ONLY IF Q2000 : LVM=3,4\n",
@@ -2100,9 +2147,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 47,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2111,8 +2159,8 @@
       "question": "2308",
       "name": "2308",
       "label": "Hat (bzw. hatte) Ihre Mutter die deutsche Staatsb\u00fcrgerschaft?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lm04",
           "concept": "lm04",
           "description": "Filter:\nASK ONLY IF Q2000 : LVM=2,4\n",
@@ -2142,9 +2190,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 48,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2153,8 +2202,8 @@
       "question": "2401",
       "name": "2401",
       "label": "Welchen Schulabschluss hat Ihr Vater erworben?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv05",
           "concept": "lv05",
           "description": "Filter:\nASK ONLY IF Q2000 : LVM=3,4\n",
@@ -2204,9 +2253,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 49,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2215,8 +2265,8 @@
       "question": "2402",
       "name": "2402",
       "label": "Welchen Schulabschluss hat Ihre Mutter erworben?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lm05",
           "concept": "lm05",
           "description": "Filter:\nASK ONLY IF Q2000 : LVM=2,4\n",
@@ -2266,9 +2316,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 50,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2277,8 +2328,8 @@
       "question": "2501",
       "name": "2501",
       "label": "Hat Ihr Vater eine berufliche Ausbildung oder ein Studium abgeschlossen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv06",
           "concept": "lv06",
           "description": "Filter:\nASK ONLY IF Q2000 : LVM=3,4\n",
@@ -2318,9 +2369,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 51,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2329,8 +2381,8 @@
       "question": "2502",
       "name": "2502",
       "label": "Hat Ihre Mutter eine berufliche Ausbildung oder ein Studium abgeschlossen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lm06",
           "concept": "lm06",
           "description": "Filter:\nASK ONLY IF Q2000 : LVM=2,4\n",
@@ -2370,9 +2422,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 52,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2381,8 +2434,8 @@
       "question": "2601",
       "name": "2601",
       "label": "Falls zutreffend:\nWelche berufliche T\u00e4tigkeit \u00fcbte Ihr Vater aus, als Sie selbst 15 Jahre alt waren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv07",
           "description": "Filter:\nASK ONLY IF Q2000 : LVM=3,4\n",
           "filter": "ASK ONLY IF Q2000 : LVM=3,4",
@@ -2401,9 +2454,10 @@
           "view_lft": 47466.0,
           "view_rgt": 47468.0,
           "view_sort_id": 77.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 53,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2412,8 +2466,8 @@
       "question": "2602",
       "name": "2602",
       "label": "Falls zutreffend:\nWelche berufliche T\u00e4tigkeit \u00fcbte Ihre Mutter aus, als Sie selbst 15 Jahre alt waren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lm07",
           "description": "Filter:\nASK ONLY IF Q2000 : LVM=2,4\n",
           "filter": "ASK ONLY IF Q2000 : LVM=2,4",
@@ -2432,9 +2486,10 @@
           "view_lft": 47467.0,
           "view_rgt": 47469.0,
           "view_sort_id": 78.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 54,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2443,8 +2498,8 @@
       "question": "2701",
       "name": "2701",
       "label": "In welcher beruflichen Stellung war Ihr Vater damals t\u00e4tig, als Sie 15 Jahre alt waren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv dummy",
           "description": "Researcher Notes:\nFrage so in CAPI nicht vorhanden.\n**1 = wird gefiltert zu LV08\n**2 = wird gefiltert zu LV09\n**3 = wird gefiltert zu LV10\n**4 = wird gefiltert zu LV11\n**5 = wird gefiltert zu LV12\n**6 = wird gefiltert zu LV12\n\nFilter:\nASK ONLY IF Q2000 : LVM=3,4\n",
           "filter": "ASK ONLY IF Q2000 : LVM=3,4",
@@ -2488,9 +2543,10 @@
               "value": 5
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 55,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2499,8 +2555,8 @@
       "question": "2702",
       "name": "2702",
       "label": "In welcher beruflichen Stellung als Arbeiter war Ihr Vater damals t\u00e4tig, als Sie 15 Jahre alt waren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv08",
           "concept": "lv08",
           "description": "Filter:\nASK ONLY IF Q2701 : LV Dummy=1\n",
@@ -2545,9 +2601,10 @@
               "value": 5
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 56,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2556,8 +2613,8 @@
       "question": "2703",
       "name": "2703",
       "label": "In welcher beruflichen Stellung als Angestellter war Ihr Vater damals t\u00e4tig, als Sie 15 Jahre alt waren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv09",
           "concept": "lv09",
           "description": "Filter:\nASK ONLY IF Q2701 : LV Dummy=2\n",
@@ -2607,9 +2664,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 57,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2618,8 +2676,8 @@
       "question": "2704",
       "name": "2704",
       "label": "In welcher beruflichen Stellung als Beamter war Ihr Vater damals t\u00e4tig, als Sie 15 Jahre alt waren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv10",
           "concept": "lv10",
           "description": "Filter:\nASK ONLY IF Q2701 : LV Dummy=3\n",
@@ -2659,9 +2717,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 58,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2670,8 +2729,8 @@
       "question": "2705",
       "name": "2705",
       "label": "In welchem Bereich als Selbst\u00e4ndiger war Ihr Vater damals t\u00e4tig, als Sie 15 Jahre alt waren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv11",
           "concept": "lv11",
           "description": "Filter:\nASK ONLY IF Q2701 : LV Dummy=4\n",
@@ -2726,9 +2785,10 @@
               "value": 7
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 59,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2737,8 +2797,8 @@
       "question": "2706",
       "name": "2706",
       "label": "Ihr Vater ...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv12",
           "concept": "lv12",
           "description": "Filter:\nASK ONLY IF Q2701 : LV Dummy=5\n",
@@ -2768,9 +2828,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 60,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2779,8 +2840,8 @@
       "question": "2707",
       "name": "2707",
       "label": "In welcher beruflichen Stellung war Ihre Mutter damals t\u00e4tig, als Sie 15 Jahre alt waren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lm dummy",
           "description": "Researcher Notes:\nFrage in CAPI nicht vorhanden.\n**Frage so in CAPI nicht vorhanden.\n**1 = wird gefiltert zu LM08\n**2 = wird gefiltert zu LM09\n**3 = wird gefiltert zu LM10\n**4 = wird gefiltert zu LM11\n**5 = wird gefiltert zu LM12\n**6 = wird gefiltert zu LM12\n\nFilter:\nASK ONLY IF Q2000 : LVM=2,4\n",
           "filter": "ASK ONLY IF Q2000 : LVM=2,4",
@@ -2824,9 +2885,10 @@
               "value": 5
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 61,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2835,8 +2897,8 @@
       "question": "2708",
       "name": "2708",
       "label": "In welcher beruflichen Stellung als Arbeiter war Ihre Mutter damals t\u00e4tig, als Sie 15 Jahre alt waren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lm08",
           "concept": "lm08",
           "description": "Filter:\nASK ONLY IF Q2707 : LM Dummy=1\n",
@@ -2881,9 +2943,10 @@
               "value": 5
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 62,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2892,8 +2955,8 @@
       "question": "2709",
       "name": "2709",
       "label": "In welcher beruflichen Stellung als Angestellte war Ihre Mutter damals t\u00e4tig, als Sie 15 Jahre alt waren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lm09",
           "concept": "lm09",
           "description": "Filter:\nASK ONLY IF Q2707 : LM Dummy=2\n",
@@ -2943,9 +3006,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 63,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -2954,8 +3018,8 @@
       "question": "2710",
       "name": "2710",
       "label": "In welcher beruflichen Stellung als Beamte war Ihre Mutter damals t\u00e4tig, als Sie 15 Jahre alt waren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lm10",
           "concept": "lm10",
           "description": "Filter:\nASK ONLY IF Q2707 : LM Dummy=3\n",
@@ -2995,9 +3059,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 64,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -3006,8 +3071,8 @@
       "question": "2711",
       "name": "2711",
       "label": "In welchem Bereich als Selbst\u00e4ndige war Ihre Mutter damals t\u00e4tig, als Sie 15 Jahre alt waren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lm11",
           "concept": "lm11",
           "description": "Filter:\nASK ONLY IF Q2707 : LM Dummy=4\n",
@@ -3062,9 +3127,10 @@
               "value": 7
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 65,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -3073,8 +3139,8 @@
       "question": "2712",
       "name": "2712",
       "label": "Ihre Mutter ...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lm12",
           "concept": "lm12",
           "description": "Filter:\nASK ONLY IF Q2707 : LM Dummy=5\n",
@@ -3104,9 +3170,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 66,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -3115,8 +3182,8 @@
       "question": "2801",
       "name": "2801",
       "label": "Geh\u00f6rt bzw. geh\u00f6rte Ihr Vater einer Kirche oder Religionsgemeinschaft an?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lv13",
           "concept": "lv13",
           "description": "Filter:\nASK ONLY IF Q2000 : LVM=3,4\n",
@@ -3166,9 +3233,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 67,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -3177,8 +3245,8 @@
       "question": "2802",
       "name": "2802",
       "label": "Geh\u00f6rt bzw. geh\u00f6rte Ihre Mutter einer Kirche oder Religionsgemeinschaft an?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lm13",
           "concept": "lm13",
           "description": "Filter:\nASK ONLY IF Q2000 : LVM=2,4\n",
@@ -3228,9 +3296,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 68,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -3239,8 +3308,8 @@
       "question": "2900",
       "name": "2900",
       "label": "Wenn Sie sich einmal zur\u00fcckerinnern:\nWie stark haben sich Ihre Eltern um Ihre Leistungen in der Schule gek\u00fcmmert?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lleist",
           "concept": "lleist",
           "label": "Schulleistung Eltern",
@@ -3277,9 +3346,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 69,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -3288,8 +3358,8 @@
       "question": "3001",
       "name": "3001",
       "label": "K\u00f6nnen Sie sich an Ihr letztes Schulzeugnis erinnern?\nWelche Note hatten Sie in Ihrem letzten Zeugnis im Fach Deutsch?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsch1",
           "concept": "lsch1",
           "label": "Schulnote Deutsch",
@@ -3342,9 +3412,10 @@
               "value": 7
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 70,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -3353,8 +3424,8 @@
       "question": "3002",
       "name": "3002",
       "label": "Und welche Note hatten Sie in Ihrem letzten Zeugnis im Fach Mathematik?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsch2",
           "concept": "lsch2",
           "label": "Schulnote Mathematik",
@@ -3407,9 +3478,10 @@
               "value": 7
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 71,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -3418,8 +3490,8 @@
       "question": "3003",
       "name": "3003",
       "label": "Und welche Note hatten Sie in Ihrem letzten Zeugnis in Ihrer ersten Fremdsprache?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsch3",
           "concept": "lsch3",
           "label": "Schulnote Erste Fremdsprache",
@@ -3472,9 +3544,10 @@
               "value": 7
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 72,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -3483,8 +3556,8 @@
       "question": "3100",
       "name": "3100",
       "label": "Als Sie etwas 15 Jahre alt waren:\nWie oft kam es damals vor, dass Sie mit Ihren Eltern Streit hatten?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = LSTRV\n**Statement 2 = LSTRM\n",
           "instruction": "Bitte ein Kreuz pro Zeile!",
           "instruction_de": "Bitte ein Kreuz pro Zeile!",
@@ -3500,11 +3573,12 @@
           "view_lft": 47486.0,
           "view_rgt": 47490.0,
           "view_sort_id": 97.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "lstr x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 3100.0,
           "scale": "cat",
           "text": "Mit meinem Vater",
@@ -3545,9 +3619,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "lstr x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 3100.0,
           "scale": "cat",
           "text": "Mit meiner Mutter",
@@ -3588,7 +3662,7 @@
           ],
           "sn": 2
         }
-      },
+      ],
       "sn": 73,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -3597,8 +3671,8 @@
       "question": "3200",
       "name": "3200",
       "label": "Haben Sie in Ihrer Jugend aktiv Musik gemacht, gemeint ist Gesang oder Spielen eines Musikinstruments?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lmusi",
           "concept": "lmusi",
           "label": "Musikalische Ausbildung",
@@ -3625,9 +3699,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 74,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -3636,8 +3711,8 @@
       "question": "3300",
       "name": "3300",
       "label": "Haben Sie in Ihrer Jugend au\u00dferhalb der Schule Sport getrieben?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsp1",
           "concept": "lsp1",
           "description": "Routing:\n*IF [Q33000,2] **GOTO BLOCK 3600\n",
@@ -3666,9 +3741,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 75,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -3677,8 +3753,8 @@
       "question": "3401",
       "name": "3401",
       "label": "Was war f\u00fcr Sie die wichtigste Sportart, die Sie ausge\u00fcbt haben?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsp2",
           "label": "Sportart",
           "number": 3401.0,
@@ -3693,9 +3769,10 @@
           "view_lft": 47491.0,
           "view_rgt": 47493.0,
           "view_sort_id": 102.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 76,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -3703,8 +3780,8 @@
     "3402": {
       "question": "3402",
       "name": "3402",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lspcode",
           "description": "Researcher Notes:\nnachtr\u00e4glich generierte Variable\n",
           "label": "Listennummer Sportart",
@@ -3718,9 +3795,10 @@
           "view_lft": 47492.0,
           "view_rgt": 47494.0,
           "view_sort_id": 103.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 77,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -3729,8 +3807,8 @@
       "question": "3500",
       "name": "3500",
       "label": "Haben Sie in dieser Sportart auch an Wettk\u00e4mpfen teilgenommen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsp3",
           "concept": "lsp3",
           "label": "Sport Wettk\u00e4mpfe",
@@ -3757,9 +3835,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 78,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -3768,8 +3847,8 @@
       "question": "3601",
       "name": "3601",
       "label": "Wir bitten Sie nun um Angaben zu Ihrem eigenen Lebenslauf ab dem Alter von 15 Jahren.\n\nIm Alter von ...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nEs handelt sich um numerische Werte.\n**\n**Statement 1 = LJ01\n**Statement 2 = LJ02\n**Statement 3 = LJ03\n**Statement 4 = LJ04\n**Statement 5 = LJ05\n**Statement 6 = LJ06\n**Statement 7 = LJ07\n**Statement 8 = LJ08\n**Statement 9 = LJ09\n",
           "instruction": "Bitte f\u00fcllen Sie das Schema wie folgt aus:\n\n1) Tragen Sie in die \ngro\u00dfen K\u00e4stchen das Jahr ein, in dem Sie 15 Jahre alt wurden, das Jahr, \nin dem sie 20 wurden, 25 wurden usw. bis zu Ihrem heutigen Lebensalter.\n\n2)\n Kreuzen Sie dann bitte in den K\u00e4stchen darunter an, wie Ihr Leben seit \ndem 15. Lebensjahr verlaufen ist, von wann bis wann Sie in der Schule \nwaren, in der Berufsausbildung waren, berufst\u00e4tig waren usw.\nWichtig \nist, da\u00df f\u00fcr alle Jahre Ihres Lebens bis heute bzw. bis zu Ihrem 65. \nLebensjahr etwas angekreuzt ist. Wenn in einem Jahr mehreres zutraf, \nk\u00f6nnen Sie mehreres ankreuzen.",
           "instruction_de": "Bitte f\u00fcllen Sie das Schema wie folgt aus:\n\n1) Tragen Sie in die \ngro\u00dfen K\u00e4stchen das Jahr ein, in dem Sie 15 Jahre alt wurden, das Jahr, \nin dem sie 20 wurden, 25 wurden usw. bis zu Ihrem heutigen Lebensalter.\n\n2)\n Kreuzen Sie dann bitte in den K\u00e4stchen darunter an, wie Ihr Leben seit \ndem 15. Lebensjahr verlaufen ist, von wann bis wann Sie in der Schule \nwaren, in der Berufsausbildung waren, berufst\u00e4tig waren usw.\nWichtig \nist, da\u00df f\u00fcr alle Jahre Ihres Lebens bis heute bzw. bis zu Ihrem 65. \nLebensjahr etwas angekreuzt ist. Wenn in einem Jahr mehreres zutraf, \nk\u00f6nnen Sie mehreres ankreuzen.",
@@ -3786,11 +3865,12 @@
           "view_lft": 47494.0,
           "view_rgt": 47507.0,
           "view_sort_id": 105.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "lj xx",
-          "item": 1.0,
+          "item": "1.0",
           "number": 3601.0,
           "scale": "cat",
           "text": "15",
@@ -3807,9 +3887,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "lj xx",
-          "item": 2.0,
+          "item": "2.0",
           "number": 3601.0,
           "scale": "cat",
           "text": "20",
@@ -3826,9 +3906,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "lj xx",
-          "item": 3.0,
+          "item": "3.0",
           "number": 3601.0,
           "scale": "cat",
           "text": "25",
@@ -3845,9 +3925,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "lj xx",
-          "item": 4.0,
+          "item": "4.0",
           "number": 3601.0,
           "scale": "cat",
           "text": "30",
@@ -3864,9 +3944,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "lj xx",
-          "item": 5.0,
+          "item": "5.0",
           "number": 3601.0,
           "scale": "cat",
           "text": "35",
@@ -3883,9 +3963,9 @@
           ],
           "sn": 5
         },
-        "6.0": {
+        {
           "answer_list": "lj xx",
-          "item": 6.0,
+          "item": "6.0",
           "number": 3601.0,
           "scale": "cat",
           "text": "40",
@@ -3902,9 +3982,9 @@
           ],
           "sn": 6
         },
-        "7.0": {
+        {
           "answer_list": "lj xx",
-          "item": 7.0,
+          "item": "7.0",
           "number": 3601.0,
           "scale": "cat",
           "text": "45",
@@ -3921,9 +4001,9 @@
           ],
           "sn": 7
         },
-        "8.0": {
+        {
           "answer_list": "lj xx",
-          "item": 8.0,
+          "item": "8.0",
           "number": 3601.0,
           "scale": "cat",
           "text": "50",
@@ -3940,9 +4020,9 @@
           ],
           "sn": 8
         },
-        "9.0": {
+        {
           "answer_list": "lj xx",
-          "item": 9.0,
+          "item": "9.0",
           "number": 3601.0,
           "scale": "cat",
           "text": "55",
@@ -3959,9 +4039,9 @@
           ],
           "sn": 9
         },
-        "10.0": {
+        {
           "answer_list": "lj xx",
-          "item": 10.0,
+          "item": "10.0",
           "number": 3601.0,
           "scale": "cat",
           "text": "60",
@@ -3978,9 +4058,9 @@
           ],
           "sn": 10
         },
-        "11.0": {
+        {
           "answer_list": "lj xx",
-          "item": 11.0,
+          "item": "11.0",
           "number": 3601.0,
           "scale": "cat",
           "text": "65",
@@ -3997,7 +4077,7 @@
           ],
           "sn": 11
         }
-      },
+      ],
       "sn": 79,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -4006,8 +4086,8 @@
       "question": "3602",
       "name": "3602",
       "label": "Wir bitten Sie nun um Angaben zu Ihrem Lebenslauf ab dem Alter von 15 Jahren.\n\nIm Alter von .. war ich:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = LKAL1\n**Statement 2 = LKAL2\n**Statement 3 = LKAL3\n**Statement 4 = LKAL4\n**Statement 5 = LKAL5\n**Statement 6 = LKAL6\n**Statement 7 = LKAL7\n**Statement 8 = LKAL8\n**Statement 9 = LKAL9\n",
           "instruction": "Bitte f\u00fcllen Sie das Schema wie folgt aus:\n\n1) Tragen Sie in die gro\u00dfen K\u00e4stchen das Jahr ein, in dem Sie 15 Jahre alt wurden, das Jahr, in dem sie 20 wurden, 25 wurden usw. bis zu Ihrem heutigen Lebensalter.\n\n2) Kreuzen Sie dann bitte in den K\u00e4stchen darunter an, wie Ihr Leben seit dem 15. Lebensjahr verlaufen ist, von wann bis wann Sie in der Schule waren, in der Berufsausbildung waren, berufst\u00e4tig waren usw.\nWichtig ist, da\u00df f\u00fcr alle Jahre Ihres Lebens bis heute bzw. bis zu Ihrem 65. Lebensjahr etwas angekreuzt ist. Wenn in einem Jahr mehreres zutraf, k\u00f6nnen Sie mehreres ankreuzen.",
           "instruction_de": "Bitte f\u00fcllen Sie das Schema wie folgt aus:\n\n1) Tragen Sie in die gro\u00dfen K\u00e4stchen das Jahr ein, in dem Sie 15 Jahre alt wurden, das Jahr, in dem sie 20 wurden, 25 wurden usw. bis zu Ihrem heutigen Lebensalter.\n\n2) Kreuzen Sie dann bitte in den K\u00e4stchen darunter an, wie Ihr Leben seit dem 15. Lebensjahr verlaufen ist, von wann bis wann Sie in der Schule waren, in der Berufsausbildung waren, berufst\u00e4tig waren usw.\nWichtig ist, da\u00df f\u00fcr alle Jahre Ihres Lebens bis heute bzw. bis zu Ihrem 65. Lebensjahr etwas angekreuzt ist. Wenn in einem Jahr mehreres zutraf, k\u00f6nnen Sie mehreres ankreuzen.",
@@ -4024,11 +4104,12 @@
           "view_lft": 47495.0,
           "view_rgt": 47517.0,
           "view_sort_id": 117.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "lkal x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 3602.0,
           "scale": "cat",
           "text": "in Schule, Studium, Abendschule",
@@ -4295,9 +4376,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "lkal x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 3602.0,
           "scale": "cat",
           "text": "in Lehre, Berufsausbildung, Fortbildung, Umschulung",
@@ -4564,9 +4645,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "lkal x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 3602.0,
           "scale": "cat",
           "text": "beim Wehrdienst / Zivildienst, im Krieg / in Gefangenschaft",
@@ -4833,9 +4914,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "lkal x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 3602.0,
           "scale": "cat",
           "text": "voll berufst\u00e4tig (einschl. Zeit- / Berufssoldat)",
@@ -5102,9 +5183,9 @@
           ],
           "sn": 4
         },
-        "5.0": {
+        {
           "answer_list": "lkal x",
-          "item": 5.0,
+          "item": "5.0",
           "number": 3602.0,
           "scale": "cat",
           "text": "teilzeitbesch\u00e4ftigt oder geringf\u00fcgig erwerbst\u00e4tig",
@@ -5371,9 +5452,9 @@
           ],
           "sn": 5
         },
-        "6.0": {
+        {
           "answer_list": "lkal x",
-          "item": 6.0,
+          "item": "6.0",
           "number": 3602.0,
           "scale": "cat",
           "text": "arbeitslos",
@@ -5640,9 +5721,9 @@
           ],
           "sn": 6
         },
-        "7.0": {
+        {
           "answer_list": "lkal x",
-          "item": 7.0,
+          "item": "7.0",
           "number": 3602.0,
           "scale": "cat",
           "text": "Hausfrau / Hausmann",
@@ -5909,9 +5990,9 @@
           ],
           "sn": 7
         },
-        "8.0": {
+        {
           "answer_list": "lkal x",
-          "item": 8.0,
+          "item": "8.0",
           "number": 3602.0,
           "scale": "cat",
           "text": "im Ruhestand, Rentner / Pension\u00e4r (auch Vorruhestand)",
@@ -6178,9 +6259,9 @@
           ],
           "sn": 8
         },
-        "9.0": {
+        {
           "answer_list": "lkal x",
-          "item": 9.0,
+          "item": "9.0",
           "number": 3602.0,
           "scale": "cat",
           "text": "Sonstiges",
@@ -6447,7 +6528,7 @@
           ],
           "sn": 9
         }
-      },
+      ],
       "sn": 80,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -6455,8 +6536,8 @@
     "3603": {
       "question": "3603",
       "name": "3603",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "ka:9",
           "description": "Researcher Notes:\nnachtr\u00e4glich generierte Variable\n",
           "label": "Lebensalter T\u00e4tigkeit Gesamt KA",
@@ -6470,9 +6551,10 @@
           "view_lft": 47507.0,
           "view_rgt": 47518.0,
           "view_sort_id": 127.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 81,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -6481,8 +6563,8 @@
       "question": "3701",
       "name": "3701",
       "label": "In welchem Jahr haben Sie zuletzt die Schule besucht?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsab2",
           "concept": "lsab2",
           "description": "Researcher Notes:\nOption \"Jahr\" nicht zum ankreuzen, also kein Wert in den Daten vorhanden.\n\nRouting:\n*IF [Q37010,1] *GOTO 43000\n",
@@ -6512,9 +6594,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 82,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -6522,8 +6605,8 @@
     "3702": {
       "question": "3702",
       "name": "3702",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lsab1",
           "description": "Filter:\nASK ONLY IF Q3701 : LSAB2=2\n",
           "filter": "ASK ONLY IF Q3701 : LSAB2=2",
@@ -6538,9 +6621,10 @@
           "view_lft": 47519.0,
           "view_rgt": 47521.0,
           "view_sort_id": 130.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 83,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -6549,8 +6633,8 @@
       "question": "3800",
       "name": "3800",
       "label": "Wo haben Sie zuletzt die Schule besucht? War das ...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsab3",
           "concept": "lsab3",
           "description": "Routing:\n*IF [Q38000,1] *GOTO 41000 \n*IF [Q38000,2] **GOTO BLOCK 4200\n",
@@ -6584,9 +6668,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 84,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -6595,8 +6680,8 @@
       "question": "3900",
       "name": "3900",
       "label": "Wie viele Jahre haben Sie die Schule besucht?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lsab4",
           "description": "Researcher Notes:\nsinnvolles nummmerisches Maximum\n\nFilter:\nASK ONLY IF Q3800 : LSAB3=3\n",
           "filter": "ASK ONLY IF Q3800 : LSAB3=3",
@@ -6612,9 +6697,10 @@
           "view_lft": 47521.0,
           "view_rgt": 47523.0,
           "view_sort_id": 132.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 85,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -6623,8 +6709,8 @@
       "question": "4000",
       "name": "4000",
       "label": "Mit was f\u00fcr einem Abschluss haben Sie die Schule beendet?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsab5",
           "concept": "lsab5",
           "description": "Routing:\n*IF [Q40000,1] *GOTO 44000 \n*IF [Q40000,2] *GOTO 44000 \n*IF [Q40000,3] *GOTO 44000\n",
@@ -6658,9 +6744,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 86,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -6669,8 +6756,8 @@
       "question": "4100",
       "name": "4100",
       "label": "In welchem Bundesland haben Sie zuletzt die Schule besucht?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsab6",
           "description": "Researcher Notes:\nVariable LBUND wird generiert.\n",
           "label": "Bundesland Schulbesuch",
@@ -6685,9 +6772,10 @@
           "view_lft": 47523.0,
           "view_rgt": 47525.0,
           "view_sort_id": 134.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 87,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -6696,8 +6784,8 @@
       "question": "4201",
       "name": "4201",
       "label": "Welchen Schulabschluss haben Sie gemacht?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsab7",
           "concept": "lsab7",
           "label": "Schulabschluss (Deutschland)",
@@ -6745,9 +6833,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 88,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -6755,8 +6844,8 @@
     "4202": {
       "question": "4202",
       "name": "4202",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsab8",
           "description": "Filter:\nASK ONLY IF Q4201 : LSAB7=1\n",
           "filter": "ASK ONLY IF Q4201 : LSAB7=1",
@@ -6773,9 +6862,10 @@
           "view_lft": 47525.0,
           "view_rgt": 47527.0,
           "view_sort_id": 136.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 89,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -6783,8 +6873,8 @@
     "4203": {
       "question": "4203",
       "name": "4203",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsab9",
           "description": "Filter:\nASK ONLY IF Q4201 : LSAB7=6\n",
           "filter": "ASK ONLY IF Q4201 : LSAB7=6",
@@ -6801,9 +6891,10 @@
           "view_lft": 47526.0,
           "view_rgt": 47528.0,
           "view_sort_id": 137.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 90,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -6812,8 +6903,8 @@
       "question": "4300",
       "name": "4300",
       "label": "Wenn Sie einmal an die Schulklasse denken, die Sie zuletzt besucht haben:\nWie viele Ihrer Mitsch\u00fcler waren Ausl\u00e4nder oder nicht in Deutschland geboren?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsab10",
           "concept": "lsab10",
           "label": "Migrantenanteil Klasse",
@@ -6860,9 +6951,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 91,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -6871,8 +6963,8 @@
       "question": "4400",
       "name": "4400",
       "label": "Streben Sie in Zukunft noch einen Schulabschluss an?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsab11",
           "concept": "lsab11",
           "description": "Routing:\n*IF [Q44000,3] *GOTO 46000\n",
@@ -6906,9 +6998,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 92,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -6917,8 +7010,8 @@
       "question": "4500",
       "name": "4500",
       "label": "Welchen h\u00f6chsten Schulabschluss streben Sie an?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lsab12",
           "concept": "lsab12",
           "description": "Filter:\nASK ONLY IF Q4400 : LSAB11=1,2\n",
@@ -6957,9 +7050,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 93,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -6968,8 +7062,8 @@
       "question": "4600",
       "name": "4600",
       "label": "Haben Sie [u]in Deutschland[/u] eine Berufsausbildung oder ein Studium abgeschlossen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab01",
           "concept": "lab01",
           "description": "Routing:\n*IF [Q46000,2] *GOTO 49000\n",
@@ -6998,9 +7092,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 94,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7009,8 +7104,8 @@
       "question": "4701",
       "name": "4701",
       "label": "Was f\u00fcr ein Ausbildungs- oder Studienabschluss war das?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "instruction": "Mehrfachnennungen m\u00f6glich!",
           "instruction_de": "Mehrfachnennungen m\u00f6glich!",
           "label": "Art Berufsausbildungsabschluss",
@@ -7026,10 +7121,11 @@
           "view_lft": 47531.0,
           "view_rgt": 47540.0,
           "view_sort_id": 142.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "2.0": {
-          "item": 2.0,
+        {
+          "item": "2.0",
           "number": 4701.0,
           "scale": "bin",
           "text": "Lehre (DDR: Facharbeiterabschluss)",
@@ -7039,8 +7135,8 @@
           "view_sort_id": 143.0,
           "sn": 1
         },
-        "3.0": {
-          "item": 3.0,
+        {
+          "item": "3.0",
           "number": 4701.0,
           "scale": "bin",
           "text": "Berufsfachschule, Handelsschule, Schule des Gesundheitswesens",
@@ -7050,8 +7146,8 @@
           "view_sort_id": 144.0,
           "sn": 2
         },
-        "4.0": {
-          "item": 4.0,
+        {
+          "item": "4.0",
           "number": 4701.0,
           "scale": "bin",
           "text": "Fachschule, z.B. Meister-, Technikerabschluss",
@@ -7061,8 +7157,8 @@
           "view_sort_id": 145.0,
           "sn": 3
         },
-        "5.0": {
-          "item": 5.0,
+        {
+          "item": "5.0",
           "number": 4701.0,
           "scale": "bin",
           "text": "Beamtenausbildung",
@@ -7072,8 +7168,8 @@
           "view_sort_id": 146.0,
           "sn": 4
         },
-        "6.0": {
-          "item": 6.0,
+        {
+          "item": "6.0",
           "number": 4701.0,
           "scale": "bin",
           "text": "Fachhochschule, Berufsakademie (fr\u00fcher: auch Ingenieurschule, Lehrerbildung, DDR: Ingenieur- und Fachschulabschluss)",
@@ -7083,8 +7179,8 @@
           "view_sort_id": 147.0,
           "sn": 5
         },
-        "7.0": {
-          "item": 7.0,
+        {
+          "item": "7.0",
           "number": 4701.0,
           "scale": "bin",
           "text": "Universit\u00e4ts-, Hochschulabschluss",
@@ -7094,8 +7190,8 @@
           "view_sort_id": 148.0,
           "sn": 6
         },
-        "8.0": {
-          "item": 8.0,
+        {
+          "item": "8.0",
           "number": 4701.0,
           "scale": "bin",
           "text": "Sonstiger Abschluss",
@@ -7105,7 +7201,7 @@
           "view_sort_id": 149.0,
           "sn": 7
         }
-      },
+      ],
       "sn": 95,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7113,8 +7209,8 @@
     "4702": {
       "question": "4702",
       "name": "4702",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab02x",
           "description": "Filter:\nASK ONLY IF Q4701 : LAB XX 1=2\n",
           "filter": "ASK ONLY IF Q4701 : LAB XX 1=2",
@@ -7131,9 +7227,10 @@
           "view_lft": 47532.0,
           "view_rgt": 47541.0,
           "view_sort_id": 150.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 96,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7141,8 +7238,8 @@
     "4703": {
       "question": "4703",
       "name": "4703",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab03x",
           "description": "Filter:\nASK ONLY IF Q4701 : LAB XX 1=3\n",
           "filter": "ASK ONLY IF Q4701 : LAB XX 1=3",
@@ -7159,9 +7256,10 @@
           "view_lft": 47540.0,
           "view_rgt": 47542.0,
           "view_sort_id": 151.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 97,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7169,8 +7267,8 @@
     "4704": {
       "question": "4704",
       "name": "4704",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab04x",
           "description": "Filter:\nASK ONLY IF Q4701 : LAB XX 1=4\n",
           "filter": "ASK ONLY IF Q4701 : LAB XX 1=4",
@@ -7187,9 +7285,10 @@
           "view_lft": 47541.0,
           "view_rgt": 47543.0,
           "view_sort_id": 152.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 98,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7197,8 +7296,8 @@
     "4705": {
       "question": "4705",
       "name": "4705",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab05x1",
           "description": "Filter:\nASK ONLY IF Q4701 : LAB XX 1=5\n",
           "filter": "ASK ONLY IF Q4701 : LAB XX 1=5",
@@ -7215,9 +7314,10 @@
           "view_lft": 47542.0,
           "view_rgt": 47544.0,
           "view_sort_id": 153.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 99,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7225,8 +7325,8 @@
     "4706": {
       "question": "4706",
       "name": "4706",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab05x2",
           "description": "Filter:\nASK ONLY IF Q4701 : LAB XX 1=5\n",
           "filter": "ASK ONLY IF Q4701 : LAB XX 1=5",
@@ -7243,9 +7343,10 @@
           "view_lft": 47543.0,
           "view_rgt": 47545.0,
           "view_sort_id": 154.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 100,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7253,8 +7354,8 @@
     "4707": {
       "question": "4707",
       "name": "4707",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab06x1",
           "description": "Filter:\nASK ONLY IF Q4701 : LAB XX 1=6\n",
           "filter": "ASK ONLY IF Q4701 : LAB XX 1=6",
@@ -7271,9 +7372,10 @@
           "view_lft": 47544.0,
           "view_rgt": 47546.0,
           "view_sort_id": 155.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 101,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7281,8 +7383,8 @@
     "4708": {
       "question": "4708",
       "name": "4708",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab06x2",
           "description": "Filter:\nASK ONLY IF Q4701 : LAB XX 1=6\n",
           "filter": "ASK ONLY IF Q4701 : LAB XX 1=6",
@@ -7299,9 +7401,10 @@
           "view_lft": 47545.0,
           "view_rgt": 47547.0,
           "view_sort_id": 156.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 102,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7309,8 +7412,8 @@
     "4709": {
       "question": "4709",
       "name": "4709",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab07x1",
           "description": "Filter:\nASK ONLY IF Q4701 : LAB XX 1=7\n",
           "filter": "ASK ONLY IF Q4701 : LAB XX 1=7",
@@ -7327,9 +7430,10 @@
           "view_lft": 47546.0,
           "view_rgt": 47548.0,
           "view_sort_id": 157.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 103,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7337,8 +7441,8 @@
     "4710": {
       "question": "4710",
       "name": "4710",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab07x2",
           "description": "Filter:\nASK ONLY IF Q4701 : LAB XX 1=7\n",
           "filter": "ASK ONLY IF Q4701 : LAB XX 1=7",
@@ -7355,9 +7459,10 @@
           "view_lft": 47547.0,
           "view_rgt": 47549.0,
           "view_sort_id": 158.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 104,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7365,8 +7470,8 @@
     "4711": {
       "question": "4711",
       "name": "4711",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab08x",
           "description": "Filter:\nASK ONLY IF Q4701 : LAB XX 1=8\n",
           "filter": "ASK ONLY IF Q4701 : LAB XX 1=8",
@@ -7383,9 +7488,10 @@
           "view_lft": 47548.0,
           "view_rgt": 47550.0,
           "view_sort_id": 159.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 105,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7393,8 +7499,8 @@
     "4712": {
       "question": "4712",
       "name": "4712",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab08ka",
           "concept": "lab08ka",
           "description": "Researcher Notes:\nnachtr\u00e4glich generierte Vaariable\n",
@@ -7416,9 +7522,10 @@
               "value": 1
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 106,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7427,8 +7534,8 @@
       "question": "4800",
       "name": "4800",
       "label": "In welchem Jahr haben Sie diesen (letzten) Ausbildungs- oder Studienabschluss gemacht?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lab09",
           "label": "Jahr Ausbildungs-/Studienabschluss",
           "number": 4800.0,
@@ -7442,9 +7549,10 @@
           "view_lft": 47550.0,
           "view_rgt": 47552.0,
           "view_sort_id": 161.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 107,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7453,8 +7561,8 @@
       "question": "4900",
       "name": "4900",
       "label": "Haben Sie [u]in einem anderen Land[/u] als Deutschland eine berufliche Ausbildung oder ein Studium gemacht?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab10",
           "concept": "lab10",
           "description": "Routing:\n*IF [Q49000,2] *GOTO 53000\n",
@@ -7483,9 +7591,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 108,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7494,8 +7603,8 @@
       "question": "5001",
       "name": "5001",
       "label": "Was f\u00fcr eine Ausbildung war das?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1: LAB11\n**Statement 2: LAB12\n**Statement 3: LAB13\n**Statement 4: LAB14\n**Statement 5: LAB15\n**\n**Skala: \"Ja\" nicht im CAPI vorhanden, jedoch hat jede genannte Antwort den Code 1.\n",
           "instruction": "Mehrfachnennungen m\u00f6glich!\nIn diesem Fall beziehen sich die Fragen 51-52 auf den h\u00f6chsten Abschluss!",
           "instruction_de": "Mehrfachnennungen m\u00f6glich!\nIn diesem Fall beziehen sich die Fragen 51-52 auf den h\u00f6chsten Abschluss!",
@@ -7512,11 +7621,12 @@
           "view_lft": 47552.0,
           "view_rgt": 47559.0,
           "view_sort_id": 163.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "11.0": {
+        {
           "answer_list": "lab xx 2",
-          "item": 11.0,
+          "item": "11.0",
           "number": 5001.0,
           "scale": "cat",
           "text": "Ich wurde in einem Betrieb angelernt",
@@ -7533,9 +7643,9 @@
           ],
           "sn": 1
         },
-        "12.0": {
+        {
           "answer_list": "lab xx 2",
-          "item": 12.0,
+          "item": "12.0",
           "number": 5001.0,
           "scale": "cat",
           "text": "Ich habe in einem Betrieb eine l\u00e4ngere Ausbildung gemacht",
@@ -7552,9 +7662,9 @@
           ],
           "sn": 2
         },
-        "13.0": {
+        {
           "answer_list": "lab xx 2",
-          "item": 13.0,
+          "item": "13.0",
           "number": 5001.0,
           "scale": "cat",
           "text": "Ich habe eine berufsbildende Schule besucht",
@@ -7571,9 +7681,9 @@
           ],
           "sn": 3
         },
-        "14.0": {
+        {
           "answer_list": "lab xx 2",
-          "item": 14.0,
+          "item": "14.0",
           "number": 5001.0,
           "scale": "cat",
           "text": "Ich habe eine Hochschule besucht",
@@ -7590,9 +7700,9 @@
           ],
           "sn": 4
         },
-        "15.0": {
+        {
           "answer_list": "lab xx 2",
-          "item": 15.0,
+          "item": "15.0",
           "number": 5001.0,
           "scale": "cat",
           "text": "Sonstiges",
@@ -7609,7 +7719,7 @@
           ],
           "sn": 5
         }
-      },
+      ],
       "sn": 109,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7617,8 +7727,8 @@
     "5002": {
       "question": "5002",
       "name": "5002",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab15ka",
           "concept": "lab15ka",
           "description": "Researcher Notes:\nnachtr\u00e4glich generierte Variable\n",
@@ -7640,9 +7750,10 @@
               "value": 1
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 110,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7651,8 +7762,8 @@
       "question": "5100",
       "name": "5100",
       "label": "In welchem Jahr haben Sie diese Ausbildung beendet?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lab16",
           "description": "Researcher Notes:\nMaximum: 2011\n",
           "label": "Abschlussjahr Ausbildung Ausland",
@@ -7667,9 +7778,10 @@
           "view_lft": 47559.0,
           "view_rgt": 47561.0,
           "view_sort_id": 170.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 111,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7678,8 +7790,8 @@
       "question": "5201",
       "name": "5201",
       "label": "Haben Sie ein Zeugnis \u00fcber den erfolgreichen Abschluss dieser Ausbildung erhalten?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab17",
           "concept": "lab17",
           "label": "Zertifikat Ausbildungsabschluss Ausland",
@@ -7707,9 +7819,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 112,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7718,8 +7831,8 @@
       "question": "5202",
       "name": "5202",
       "label": "Wird dieser Abschluss hier in Deutschland anerkannt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab18",
           "concept": "lab18",
           "description": "Filter:\nASK ONLY IF Q5201 : LAB17=1\n",
@@ -7749,9 +7862,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 113,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7760,8 +7874,8 @@
       "question": "5300",
       "name": "5300",
       "label": "Streben Sie in der Zukunft noch einen beruflichen Ausbildungsabschluss oder Hochschulabschluss an?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab19",
           "concept": "lab19",
           "description": "Routing:\n*IF [Q53000,3] **GOTO BLOCK 5500\n",
@@ -7795,9 +7909,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 114,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7806,8 +7921,8 @@
       "question": "5401",
       "name": "5401",
       "label": "Welchen der folgenden Abschl\u00fcsse streben Sie an?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = LAB20\n**Statement 2 = LAB21\n**Statement 3 = LAB22\n**Statement 4 = LAB23\n**Statement 5 = LAB24\n**Statement 6 = LAB25\n**Statement 7 = LAB26\n**\n**Skala: \"Ja\" nicht im PAPI vorhanden, jedoch hat jede genannte Antwort den Code 1.\n",
           "instruction": "Mehrfachnennungen m\u00f6glich!",
           "instruction_de": "Mehrfachnennungen m\u00f6glich!",
@@ -7824,11 +7939,12 @@
           "view_lft": 47563.0,
           "view_rgt": 47572.0,
           "view_sort_id": 174.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "20.0": {
+        {
           "answer_list": "lab xx 3",
-          "item": 20.0,
+          "item": "20.0",
           "number": 5401.0,
           "scale": "cat",
           "text": "Abschluss einer Lehre",
@@ -7845,9 +7961,9 @@
           ],
           "sn": 1
         },
-        "21.0": {
+        {
           "answer_list": "lab xx 3",
-          "item": 21.0,
+          "item": "21.0",
           "number": 5401.0,
           "scale": "cat",
           "text": "Berufsfachschule oder Schule des Gesundheitswesens",
@@ -7864,9 +7980,9 @@
           ],
           "sn": 2
         },
-        "22.0": {
+        {
           "answer_list": "lab xx 3",
-          "item": 22.0,
+          "item": "22.0",
           "number": 5401.0,
           "scale": "cat",
           "text": "Fachschule (z.B. Meister-, Technikerschule)",
@@ -7883,9 +7999,9 @@
           ],
           "sn": 3
         },
-        "23.0": {
+        {
           "answer_list": "lab xx 3",
-          "item": 23.0,
+          "item": "23.0",
           "number": 5401.0,
           "scale": "cat",
           "text": "Beamtenausbildung",
@@ -7902,9 +8018,9 @@
           ],
           "sn": 4
         },
-        "24.0": {
+        {
           "answer_list": "lab xx 3",
-          "item": 24.0,
+          "item": "24.0",
           "number": 5401.0,
           "scale": "cat",
           "text": "Anerkannte Berufsakademie",
@@ -7921,9 +8037,9 @@
           ],
           "sn": 5
         },
-        "25.0": {
+        {
           "answer_list": "lab xx 3",
-          "item": 25.0,
+          "item": "25.0",
           "number": 5401.0,
           "scale": "cat",
           "text": "Fachhochschule",
@@ -7940,9 +8056,9 @@
           ],
           "sn": 6
         },
-        "26.0": {
+        {
           "answer_list": "lab xx 3",
-          "item": 26.0,
+          "item": "26.0",
           "number": 5401.0,
           "scale": "cat",
           "text": "Universit\u00e4t",
@@ -7959,7 +8075,7 @@
           ],
           "sn": 7
         }
-      },
+      ],
       "sn": 115,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -7967,8 +8083,8 @@
     "5402": {
       "question": "5402",
       "name": "5402",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lab26ka",
           "concept": "lab26ka",
           "description": "Researcher Notes:\nnachtr\u00e4glich generierte Variable\n",
@@ -7990,9 +8106,10 @@
               "value": 1
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 116,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8001,8 +8118,8 @@
       "question": "5501",
       "name": "5501",
       "label": "Falls Sie schon berufst\u00e4tig waren:\nWie alt waren Sie, als Sie erstmals eine berufliche T\u00e4tigkeit aufgenommen haben?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l1no",
           "concept": "l1no",
           "description": "Researcher Notes:\nOption \"Alter\" nicht anzukreuzen, hat also keinen Wert in den Daten.\n\nRouting:\n*IF [Q55010,1] *GOTO 68000\n",
@@ -8034,9 +8151,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 117,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8044,8 +8162,8 @@
     "5502": {
       "question": "5502",
       "name": "5502",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "l1erw",
           "description": "Filter:\nASK ONLY IF Q5501 : L1NO=2\n",
           "filter": "ASK ONLY IF Q5501 : L1NO=2",
@@ -8060,9 +8178,10 @@
           "view_lft": 47573.0,
           "view_rgt": 47575.0,
           "view_sort_id": 184.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 118,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8071,8 +8190,8 @@
       "question": "5600",
       "name": "5600",
       "label": "Sind Sie heute noch in derselben Stelle und beim selben Arbeitgeber t\u00e4tig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l1noch",
           "concept": "l1noch",
           "description": "Filter:\nASK ONLY IF Q5502 : L1ERW>=14\n\nRouting:\n*IF [Q56000,1] *GOTO 68000\n",
@@ -8102,9 +8221,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 119,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8113,8 +8233,8 @@
       "question": "5701",
       "name": "5701",
       "label": "In welcher beruflichen Stellung waren Sie damals in Ihrer ersten T\u00e4tigkeit besch\u00e4ftigt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l1 dummy",
           "description": "Researcher Notes:\nFrage so in PAPI nicht vorhanden.\n**1 = wird gefiltert zu L1ARB\n**2 = wird gefiltert zu L1ANG\n**3 = wird gefiltert zu L1SST X\n**4 = wird gefiltert zu L1AMT\n",
           "label": "Berufliche Stellung (1. Job)",
@@ -8152,9 +8272,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 120,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8163,8 +8284,8 @@
       "question": "5702",
       "name": "5702",
       "label": "In welcher beruflichen Stellung als Arbeiter waren Sie damals in Ihrer ersten T\u00e4tigkeit besch\u00e4ftigt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l1arb",
           "concept": "l1arb",
           "description": "Filter:\nASK ONLY IF Q5701 : L1 Dummy=1\n",
@@ -8199,9 +8320,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 121,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8210,8 +8332,8 @@
       "question": "5703",
       "name": "5703",
       "label": "In welchem Bereich als Selbst\u00e4ndiger waren Sie damals in Ihrer ersten T\u00e4tigkeit besch\u00e4ftigt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nCodes der Statements entsprechen der Variablenendung\n**Mithelfende Familienangeh\u00f6rige: nur Single Coded\n\nFilter:\nASK ONLY IF Q5701 : L1 Dummy=3\n",
           "filter": "ASK ONLY IF Q5701 : L1 Dummy=3",
           "label": "Berufliche Stellung (1. Job): Selbstst\u00e4ndige",
@@ -8227,11 +8349,12 @@
           "view_lft": 47577.0,
           "view_rgt": 47583.0,
           "view_sort_id": 188.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "l1sst x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 5703.0,
           "scale": "cat",
           "text": "Selbstst\u00e4ndige Landwirte",
@@ -8258,9 +8381,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "l1sst x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 5703.0,
           "scale": "cat",
           "text": "Freie Berufe, selbstst\u00e4ndige Akademiker",
@@ -8287,9 +8410,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "l1sst x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 5703.0,
           "scale": "cat",
           "text": "Sonstige Selbstst\u00e4ndige",
@@ -8316,9 +8439,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "l1sst x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 5703.0,
           "scale": "cat",
           "text": "Mithelfende Familienangeh\u00f6rige",
@@ -8345,7 +8468,7 @@
           ],
           "sn": 4
         }
-      },
+      ],
       "sn": 122,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8354,8 +8477,8 @@
       "question": "5704",
       "name": "5704",
       "label": "In welcher beruflichen Stellung als Angestellte waren Sie damals in Ihrer ersten T\u00e4tigkeit besch\u00e4ftigt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l1ang",
           "concept": "l1ang",
           "description": "Filter:\nASK ONLY IF Q5701 : L1 Dummy=2\n",
@@ -8395,9 +8518,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 123,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8406,8 +8530,8 @@
       "question": "5705",
       "name": "5705",
       "label": "In welcher beruflichen Stellung waren Sie damals in Ihrer ersten T\u00e4tigkeit als Beamter besch\u00e4ftigt?\n(einschlie\u00dflich Richter und Berufssoldaten)",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l1amt",
           "concept": "l1amt",
           "description": "Filter:\nASK ONLY IF Q5701 : L1 Dummy=4\n",
@@ -8447,9 +8571,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 124,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8457,8 +8582,8 @@
     "5706": {
       "question": "5706",
       "name": "5706",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l1ka",
           "concept": "l1ka",
           "label": "Berufliche Stellung (1. Job) Gesamt KA",
@@ -8479,9 +8604,10 @@
               "value": 1
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 125,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8490,8 +8616,8 @@
       "question": "5800",
       "name": "5800",
       "label": "Welche berufliche T\u00e4tigkeit haben Sie damals, in Ihrer [u]ersten Stelle[/u], ausge\u00fcbt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l1ber",
           "instruction": "Bitte geben Sie die genaue T\u00e4tigkeitsbezeichnung an, also z.B. nicht \"kaufm\u00e4nnischer Angestellter\", sondern: \"Speditionskaufmann\", nicht \"Arbeiter\", sondern: \"Maschinenschlosser\".\n\nBitte in Druckbuchstaben eintragen!",
           "instruction_de": "Bitte geben Sie die genaue T\u00e4tigkeitsbezeichnung an, also z.B. nicht \"kaufm\u00e4nnischer Angestellter\", sondern: \"Speditionskaufmann\", nicht \"Arbeiter\", sondern: \"Maschinenschlosser\".\n\nBitte in Druckbuchstaben eintragen!",
@@ -8507,9 +8633,10 @@
           "view_lft": 47585.0,
           "view_rgt": 47587.0,
           "view_sort_id": 196.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 126,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8518,8 +8645,8 @@
       "question": "5900",
       "name": "5900",
       "label": "Welche Art von Ausbildung war f\u00fcr diese T\u00e4tigkeit in der Regel erforderlich?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l1aus",
           "concept": "l1aus",
           "label": "erforderliche Ausbildung (1. Job)",
@@ -8556,9 +8683,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 127,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8567,8 +8695,8 @@
       "question": "6001",
       "name": "6001",
       "label": "Geh\u00f6rte der Betrieb, in dem Sie damals arbeiteten, zum \u00f6ffentlichen Dienst bzw. zur Staatsverwaltung?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l1oed",
           "concept": "l1oed",
           "label": "\u00d6ffentlicher Dienst (1. Job)",
@@ -8596,9 +8724,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 128,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8607,8 +8736,8 @@
       "question": "6002",
       "name": "6002",
       "label": "In welchem Wirtschaftszweig / welcher Branche / welchem Dienstleistungsbereich war das Unternehmen bzw. die Einrichtung \u00fcberwiegend t\u00e4tig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l1bra",
           "instruction": "Bitte geben Sie die genaue Berufsbezeichnung an, z.B. nicht \"Industrie\", sondern \"Elektroindustrie\", nicht \"Handel\", sondern \"Einzelhandel\", nicht \"\u00f6ffentlicher Dienst\", sondern \"Krankenhaus\".",
           "instruction_de": "Bitte geben Sie die genaue Berufsbezeichnung an, z.B. nicht \"Industrie\", sondern \"Elektroindustrie\", nicht \"Handel\", sondern \"Einzelhandel\", nicht \"\u00f6ffentlicher Dienst\", sondern \"Krankenhaus\".",
@@ -8625,9 +8754,10 @@
           "view_lft": 47588.0,
           "view_rgt": 47590.0,
           "view_sort_id": 199.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 129,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8636,8 +8766,8 @@
       "question": "6101",
       "name": "6101",
       "label": "Haben Sie seitdem ein- oder mehrmals den Beruf gewechselt, so dass sich die Art Ihrer T\u00e4tigkeit grundlegend ge\u00e4ndert hat?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lwexl1",
           "concept": "lwexl1",
           "label": "Berufswechsel",
@@ -8670,9 +8800,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 130,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8681,8 +8812,8 @@
       "question": "6102",
       "name": "6102",
       "label": "In welchem Jahr sind Sie dann in den Beruf gewechselt, den Sie heute aus\u00fcben bzw. zuletzt ausge\u00fcbt haben?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lwexl2",
           "description": "Researcher Notes:\nMaximum: 2011\n\nFilter:\nASK ONLY IF Q6101 : LWEXL1=1,2\n",
           "filter": "ASK ONLY IF Q6101 : LWEXL1=1,2",
@@ -8699,9 +8830,10 @@
           "view_lft": 47590.0,
           "view_rgt": 47592.0,
           "view_sort_id": 201.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 131,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8710,8 +8842,8 @@
       "question": "6200",
       "name": "6200",
       "label": "Sind Sie derzeit erwerbst\u00e4tig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lerw",
           "concept": "lerw",
           "description": "Routing:\n*IF [Q62000,1] *GOTO 68000\n",
@@ -8740,9 +8872,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 132,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8751,8 +8884,8 @@
       "question": "6300",
       "name": "6300",
       "label": "In welchem Jahr sind Sie [u]zuletzt[/u] erwerbst\u00e4tig gewesen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lend",
           "description": "Researcher Notes:\nMaximum: 2011\n\nFilter:\nASK ONLY IF Q6200 : LERW=2\n",
           "filter": "ASK ONLY IF Q6200 : LERW=2",
@@ -8768,9 +8901,10 @@
           "view_lft": 47592.0,
           "view_rgt": 47594.0,
           "view_sort_id": 203.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 133,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8779,8 +8913,8 @@
       "question": "6400",
       "name": "6400",
       "label": "Waren Sie zuletzt voll berufst\u00e4tig, teilzeitbesch\u00e4ftigt oder geringf\u00fcgig bzw. unregelm\u00e4\u00dfig erwerbst\u00e4tig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lstd",
           "concept": "lstd",
           "label": "Besch\u00e4ftigungsverh\u00e4ltnis (letzter Job)",
@@ -8812,9 +8946,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 134,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8823,8 +8958,8 @@
       "question": "6500",
       "name": "6500",
       "label": "Geh\u00f6rte der Betrieb, in dem Sie [u]zuletzt[/u] arbeiteten, zum \u00f6ffentlichen Dienst bzw. zur Staatsverwaltung?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "loed",
           "concept": "loed",
           "label": "\u00d6ffentlicher Dienst (letzter Job)",
@@ -8851,9 +8986,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 135,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8862,8 +8998,8 @@
       "question": "6600",
       "name": "6600",
       "label": "In welchem Wirtschaftszweig / welcher Branche / welchem Dienstleistungsbereich war das Unternehmen bzw. die Einrichtung \u00fcberwiegend t\u00e4tig?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lbra",
           "instruction": "Bitte geben Sie die genaue Berufsbezeichnung an, z.B. nicht \"Industrie\", sondern \"Elektroindustrie\", nicht \"Handel\", sondern \"Einzelhandel\", nicht \"\u00f6ffentlicher Dienst\", sondern \"Krankenhaus\".",
           "instruction_de": "Bitte geben Sie die genaue Berufsbezeichnung an, z.B. nicht \"Industrie\", sondern \"Elektroindustrie\", nicht \"Handel\", sondern \"Einzelhandel\", nicht \"\u00f6ffentlicher Dienst\", sondern \"Krankenhaus\".",
@@ -8879,9 +9015,10 @@
           "view_lft": 47595.0,
           "view_rgt": 47597.0,
           "view_sort_id": 206.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 136,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8890,8 +9027,8 @@
       "question": "6701",
       "name": "6701",
       "label": "In welcher beruflichen Stellung waren Sie zuletzt besch\u00e4ftigt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l xxx dummy",
           "description": "Researcher Notes:\nFrage so in CAPI nicht vorhanden.\n**1 = wird gefiltert zu LARB\n**2 = wird gefiltert zu LANG\n**3 = wird gefiltert zu LSST X\n**4 = wird gefiltert zu LAMT\n**5 = wird gefiltert zu LAZUBI\n**6 = LBERKA\n",
           "instruction": "Wenn Sie mehr als eine berufliche T\u00e4tigkeit aus\u00fcbten, beantworten Sie die folgenden Fragen bitte nur f\u00fcr Ihre damalige berufliche Hauptt\u00e4tigkeit!",
@@ -8936,9 +9073,10 @@
               "value": 5
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 137,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -8947,8 +9085,8 @@
       "question": "6702",
       "name": "6702",
       "label": "In welcher beruflichen Stellung waren Sie zuletzt als Arbeiter besch\u00e4ftigt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "larb",
           "concept": "larb",
           "description": "Filter:\nASK ONLY IF Q6701 : L XXX Dummy=1\n",
@@ -8993,9 +9131,10 @@
               "value": 5
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 138,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9004,8 +9143,8 @@
       "question": "6703",
       "name": "6703",
       "label": "In welcher beruflichen Stellung waren Sie zuletzt als Selbst\u00e4ndige besch\u00e4ftigt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nStatement 1 = LSST1\n**Statement 2 = LSST2\n**Statement 3 = LSST3\n**Statement 4 = LSST4\n**\n**Mithelfende Familienangeh\u00f6rige: nur Single Coded\n\nFilter:\nASK ONLY IF Q6701 : L XXX Dummy=3\n",
           "filter": "ASK ONLY IF Q6701 : L XXX Dummy=3",
           "label": "Berufliche Stellung (letzter Job): Selbstst\u00e4ndige",
@@ -9021,11 +9160,12 @@
           "view_lft": 47598.0,
           "view_rgt": 47604.0,
           "view_sort_id": 209.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "lsst x",
-          "item": 1.0,
+          "item": "1.0",
           "number": 6703.0,
           "scale": "cat",
           "text": "Selbstst\u00e4ndige Landwirte",
@@ -9052,9 +9192,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "lsst x",
-          "item": 2.0,
+          "item": "2.0",
           "number": 6703.0,
           "scale": "cat",
           "text": "Freie Berufe, selbstst\u00e4ndige Akademiker",
@@ -9081,9 +9221,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "lsst x",
-          "item": 3.0,
+          "item": "3.0",
           "number": 6703.0,
           "scale": "cat",
           "text": "Sonstige Selbstst\u00e4ndige",
@@ -9110,9 +9250,9 @@
           ],
           "sn": 3
         },
-        "4.0": {
+        {
           "answer_list": "lsst x",
-          "item": 4.0,
+          "item": "4.0",
           "number": 6703.0,
           "scale": "cat",
           "text": "Mithelfende Familienangeh\u00f6rige",
@@ -9139,7 +9279,7 @@
           ],
           "sn": 4
         }
-      },
+      ],
       "sn": 139,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9148,8 +9288,8 @@
       "question": "6704",
       "name": "6704",
       "label": "In welcher beruflichen Stellung waren Sie zuletzt als Auszubildende / Praktikanten besch\u00e4ftigt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lazubi",
           "concept": "lazubi",
           "description": "Filter:\nASK ONLY IF Q6701 : L XXX Dummy=5\n",
@@ -9179,9 +9319,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 140,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9190,8 +9331,8 @@
       "question": "6705",
       "name": "6705",
       "label": "In welcher beruflichen Stellung waren Sie zuletzt als Angestellte besch\u00e4ftigt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lang",
           "concept": "lang",
           "description": "Filter:\nASK ONLY IF Q6701 : L XXX Dummy=2\n",
@@ -9241,9 +9382,10 @@
               "value": 6
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 141,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9252,8 +9394,8 @@
       "question": "6706",
       "name": "6706",
       "label": "In welcher beruflichen Stellung waren Sie zuletzt als Beamte besch\u00e4ftigt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lamt",
           "concept": "lamt",
           "description": "Filter:\nASK ONLY IF Q6701 : L XXX Dummy=4\n",
@@ -9293,9 +9435,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 142,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9303,8 +9446,8 @@
     "6707": {
       "question": "6707",
       "name": "6707",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lberka",
           "concept": "lberka",
           "label": "Berufliche Stellung (letzter Job) Gesamt KA",
@@ -9325,9 +9468,10 @@
               "value": 1
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 143,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9336,8 +9480,8 @@
       "question": "6800",
       "name": "6800",
       "label": "Nun noch etwas ganz anderes:\nSeit welchem Jahr leben Sie pers\u00f6nlich schon in dieser Wohnung?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lwohnj",
           "description": "Researcher Notes:\nMaximum: 2011\n",
           "label": "Jahre Wohnung",
@@ -9352,9 +9496,10 @@
           "view_lft": 47607.0,
           "view_rgt": 47609.0,
           "view_sort_id": 218.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 144,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9363,8 +9508,8 @@
       "question": "6901",
       "name": "6901",
       "label": "Haben Sie au\u00dfer dieser Wohnung noch eine andere Wohnung, in der Sie selbst auch wohnen oder Ihren Urlaub verbringen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l2wohn1",
           "concept": "l2wohn1",
           "label": "Zweitwohnung",
@@ -9392,9 +9537,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 145,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9403,8 +9549,8 @@
       "question": "6902",
       "name": "6902",
       "label": "Liegt diese zweite Wohnung in Westdeutschland (alte L\u00e4nder und West-Berlin) oder in Ostdeutschland (neue L\u00e4nder und Ostberlin) oder im Ausland?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l2wohn2",
           "concept": "l2wohn2",
           "description": "Filter:\nASK ONLY IF Q6901 : L2WOHN1=1\n",
@@ -9439,9 +9585,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 146,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9450,8 +9597,8 @@
       "question": "6903",
       "name": "6903",
       "label": "Welche Wohnung benutzen Sie \u00fcberwiegend?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l2wohn3",
           "concept": "l2wohn3",
           "description": "Filter:\nASK ONLY IF Q6901 : L2WOHN1=1\n",
@@ -9486,9 +9633,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 147,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9497,8 +9645,8 @@
       "question": "6904",
       "name": "6904",
       "label": "Von welcher Wohnung gehen Sie \u00fcberwiegend zur Arbeit oder zur Schule / Hochschule?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "l2wohn4",
           "concept": "l2wohn4",
           "description": "Filter:\nASK ONLY IF Q6901 : L2WOHN1=1\n",
@@ -9533,9 +9681,10 @@
               "value": 3
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 148,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9544,8 +9693,8 @@
       "question": "7001",
       "name": "7001",
       "label": "Haben oder hatten sie Kinder?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lkno",
           "concept": "lkno",
           "description": "Researcher Notes:\nOption \"Ja\" nicht zum ankreuzen, es findet sich also kein Wert daf\u00fcr in den Daten.\n\nRouting:\n*IF [Q70010,1] *GOTO 71000\n",
@@ -9577,9 +9726,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 149,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9588,8 +9738,8 @@
       "question": "7002",
       "name": "7002",
       "label": "Wenn ja, wie viele?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "lkind",
           "description": "Researcher Notes:\nsinnvolles numerischer Maximum\n\nFilter:\nASK ONLY IF Q7001 : LKNO=2\n",
           "filter": "ASK ONLY IF Q7001 : LKNO=2",
@@ -9606,9 +9756,10 @@
           "view_lft": 47613.0,
           "view_rgt": 47615.0,
           "view_sort_id": 224.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 150,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9617,8 +9768,8 @@
       "question": "7003",
       "name": "7003",
       "label": "Bitte geben Sie f\u00fcr jedes dieser Kinder das Geburtsjahr an. Beginnen Sie mit dem \u00c4ltesten:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nProgrammierung: Schleife f\u00fcr zuvor genannte Anzahl an Kindern (CAPI 8 Kinder)\n",
           "label": "Geburtsjahr Kinder",
           "number": 7003.0,
@@ -9633,9 +9784,10 @@
           "view_lft": 47614.0,
           "view_rgt": 47616.0,
           "view_sort_id": 225.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 151,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9644,8 +9796,8 @@
       "question": "7004",
       "name": "7004",
       "label": "Bitte geben Sie f\u00fcr jedes dieser Kinder das Geschlecht an. Bitte beginnen Sie mit dem \u00c4ltesten:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nProgrammierung: Schleife f\u00fcr zuvor genannte Anzahl an Kindern (CAPI 8 Kinder)\n",
           "label": "Geschlecht Kinder",
           "number": 7004.0,
@@ -9660,11 +9812,12 @@
           "view_lft": 47615.0,
           "view_rgt": 47618.0,
           "view_sort_id": 226.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "lksex abcd",
-          "item": 1.0,
+          "item": "1.0",
           "number": 7004.0,
           "scale": "cat",
           "text": "X. Kind",
@@ -9686,7 +9839,7 @@
           ],
           "sn": 1
         }
-      },
+      ],
       "sn": 152,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9695,8 +9848,8 @@
       "question": "7005",
       "name": "7005",
       "label": "Bitte geben Sie f\u00fcr jedes dieser Kinder den heutigen Wohnort an. Bitte beginnen Sie mit dem \u00c4ltesten:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nProgrammierung: Schleife f\u00fcr zuvor genannte Anzahl an Kindern (CAPI 8 Kinder)\n",
           "label": "Wohnort Kinder",
           "number": 7005.0,
@@ -9711,11 +9864,12 @@
           "view_lft": 47616.0,
           "view_rgt": 47620.0,
           "view_sort_id": 228.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "lkwo abcd",
-          "item": 1.0,
+          "item": "1.0",
           "number": 7005.0,
           "scale": "cat",
           "text": "X. Kind",
@@ -9757,7 +9911,7 @@
           ],
           "sn": 1
         }
-      },
+      ],
       "sn": 153,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9766,8 +9920,8 @@
       "question": "7100",
       "name": "7100",
       "label": "Sind Sie heute oder waren Sie einmal verheiratet?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lehe",
           "concept": "lehe",
           "description": "Routing:\n*IF [Q71000,2] *GOTO 73000\n",
@@ -9796,9 +9950,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 154,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9807,8 +9962,8 @@
       "question": "7201",
       "name": "7201",
       "label": "Seit wann sind Sie bzw. von wann bis wann waren Sie verheiratet?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nProgrammierung: Numerische Antwort (Jahreszahl)\n",
           "instruction": "Falls Sie in zweiter oder weiterer Ehe verheiratet sind, machen Sie die Angaben bitte auch f\u00fcr Ihre fr\u00fchere(n) Ehe(n).",
           "instruction_de": "Falls Sie in zweiter oder weiterer Ehe verheiratet sind, machen Sie die Angaben bitte auch f\u00fcr Ihre fr\u00fchere(n) Ehe(n).",
@@ -9825,11 +9980,12 @@
           "view_lft": 47620.0,
           "view_rgt": 47623.0,
           "view_sort_id": 231.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "lehe1 abc",
-          "item": 1.0,
+          "item": "1.0",
           "number": 7201.0,
           "scale": "cat",
           "text": "Die Ehe wurde geschlossen im Jahr",
@@ -9856,7 +10012,7 @@
           ],
           "sn": 1
         }
-      },
+      ],
       "sn": 155,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9865,8 +10021,8 @@
       "question": "7202",
       "name": "7202",
       "label": "Besteht die Ehe heute noch?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nProgrammierung: Antworten haben alle Code 1.\n",
           "label": "Ehe Bestand",
           "number": 7202.0,
@@ -9881,11 +10037,12 @@
           "view_lft": 47621.0,
           "view_rgt": 47625.0,
           "view_sort_id": 233.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "lehe2 abc",
-          "item": 1.0,
+          "item": "1.0",
           "number": 7202.0,
           "scale": "cat",
           "text": "Sie besteht heute noch",
@@ -9912,7 +10069,7 @@
           ],
           "sn": 1
         }
-      },
+      ],
       "sn": 156,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -9921,8 +10078,8 @@
       "question": "7203",
       "name": "7203",
       "label": "Die Ehe endete ...",
-      "items": {
-        "root": {
+      "items": [
+        {
           "description": "Researcher Notes:\nProgrammierung: Erste Zeile numerische Antwort (Jahresangabe)\n",
           "label": "Ehe Ende",
           "number": 7203.0,
@@ -9937,11 +10094,12 @@
           "view_lft": 47623.0,
           "view_rgt": 47629.0,
           "view_sort_id": 235.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         },
-        "1.0": {
+        {
           "answer_list": "lehe3 abc",
-          "item": 1.0,
+          "item": "1.0",
           "number": 7203.0,
           "scale": "cat",
           "text": "Sie endete im Jahr",
@@ -9968,9 +10126,9 @@
           ],
           "sn": 1
         },
-        "2.0": {
+        {
           "answer_list": "lehe3 abc",
-          "item": 2.0,
+          "item": "2.0",
           "number": 7203.0,
           "scale": "cat",
           "text": "- durch Scheidung",
@@ -9997,9 +10155,9 @@
           ],
           "sn": 2
         },
-        "3.0": {
+        {
           "answer_list": "lehe3 abc",
-          "item": 3.0,
+          "item": "3.0",
           "number": 7203.0,
           "scale": "cat",
           "text": "- durch den Tod des Ehepartners",
@@ -10026,7 +10184,7 @@
           ],
           "sn": 3
         }
-      },
+      ],
       "sn": 157,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -10035,8 +10193,8 @@
       "question": "7300",
       "name": "7300",
       "label": "Haben Sie ein freiwilliges soziales Jahr abgeleistet?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lfsj",
           "concept": "lfsj",
           "label": "Freiwilliges soziales Jahr",
@@ -10063,9 +10221,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 158,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -10074,8 +10233,8 @@
       "question": "7401",
       "name": "7401",
       "label": "Haben Sie Wehr- oder Zivildienst geleistet?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lwehr1",
           "concept": "lwehr1",
           "description": "Researcher Notes:\nProgrammierung: Fragen nur an M\u00e4nner die 1992 oder fr\u00fcher geboren sind!\n",
@@ -10104,9 +10263,10 @@
               "value": 2
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 159,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -10115,8 +10275,8 @@
       "question": "7402",
       "name": "7402",
       "label": "In welcher der folgenden Formen?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lwehr2",
           "concept": "lwehr2",
           "description": "Filter:\nASK ONLY IF Q7401 : LWEHR1=1\n",
@@ -10156,9 +10316,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 160,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -10167,8 +10328,8 @@
       "question": "7403",
       "name": "7403",
       "label": "Aus welchen Gr\u00fcnden nicht?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lwehr3",
           "concept": "lwehr3",
           "description": "Filter:\nASK ONLY IF Q7401 : LWEHR1=2\n",
@@ -10208,9 +10369,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 161,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -10219,8 +10381,8 @@
       "question": "10001",
       "name": "10001",
       "label": "Wie wurde die Befragung durchgef\u00fchrt?",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "lform",
           "concept": "lform",
           "label": "Form Interview",
@@ -10258,9 +10420,10 @@
               "value": 4
             }
           ],
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 162,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -10269,8 +10432,8 @@
       "question": "10002",
       "name": "10002",
       "label": "Das m\u00fcndliche (Teil-)Interview dauerte: \n[in Minuten]",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "ldauer1",
           "label": "Interviewdauer",
           "number": 10002.0,
@@ -10285,9 +10448,10 @@
           "view_lft": 47633.0,
           "view_rgt": 47635.0,
           "view_sort_id": 244.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 163,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -10296,8 +10460,8 @@
       "question": "10003",
       "name": "10003",
       "label": "Befragter brauchte zum Selbstausf\u00fcllen:\n[in Minuten]",
-      "items": {
-        "root": {
+      "items": [
+        {
           "concept": "ldauer2",
           "label": "Interviewdauer",
           "number": 10003.0,
@@ -10312,9 +10476,10 @@
           "view_lft": 47634.0,
           "view_rgt": 47636.0,
           "view_sort_id": 245.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 164,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
@@ -10323,8 +10488,8 @@
       "question": "10004",
       "name": "10004",
       "label": "Sonstige Hinweise:",
-      "items": {
-        "root": {
+      "items": [
+        {
           "answer_list": "ltextp",
           "label": "Sonstiges zum Interview",
           "number": 10004.0,
@@ -10338,9 +10503,10 @@
           "view_import_type": "Numeric",
           "view_lft": 47635.0,
           "view_sort_id": 246.0,
-          "sn": 0
+          "sn": 0,
+          "item": "root"
         }
-      },
+      ],
       "sn": 165,
       "instrument": "soep-core-2007-ll",
       "study": "soep-core"
