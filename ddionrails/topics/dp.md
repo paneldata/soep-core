@@ -8,181 +8,181 @@ label: demography and population
 
 ## birth date / age / year of death [bad]
 
-- {gebjahr}: Year of Birth
-- {gebmonat}: Month of birth
-- {gebmoval}: Month Of Birth, Data Source
-- {geburt}: Year Of Birth
-- {item_3431}: Age Group HH-Head
-- {item_3642}: Birth Year, 4-digit
-- {item_3951}: Year Of Birth In Class Of HH Head
-- {item_3952}: Year Of Birth (Month/Year)
-- {item_4200}: Year of Birth
-- {item_4492}: Child - Month Of Birth
-- {item_4493}: Child - Year Of Birth
-- {item_4494}: Age Of Child At Time Of Survey
-- {item_5900}: Year Of Birth
-- {item_5979}: Year Of Birth
-- {item_6133}: Child year of birth
-- {item_6134}: Child month of birth
-- {item_6176}: Child age
-- {item_6525}: Year Of Birth, 1. sibling
-- {item_6529}: Year Of Birth, 2. sibling
-- {item_6533}: Year Of Birth, 3. sibling
-- {item_6537}: Year Of Birth, 4. sibling
-- {item_6541}: Year Of Birth, 5. sibling
-- {item_6545}: Year Of Birth, 6. sibling
-- {item_6549}: Year Of Birth, 7. sibling
-- {item_6553}: Year Of Birth, 8. sibling
-- {item_6557}: Year Of Birth, 9. sibling
-- {item_6561}: Year Of Birth, 10. sibling
-- {item_6565}: Year Of Birth, 11. sibling
+- {gebjahr}: year of birth
+- {gebmonat}: month of birth
+- {gebmoval}: month of birth, data source
+- {geburt}: year of birth
+- {item_3431}: age group hh-head
+- {item_3642}: birth year, 4-digit
+- {item_3951}: year of birth in class of hh head
+- {item_3952}: year of birth (month/year)
+- {item_4200}: year of birth
+- {item_4492}: child - month of birth
+- {item_4493}: child - year of birth
+- {item_4494}: age of child at time of survey
+- {item_5900}: year of birth
+- {item_5979}: year of birth
+- {item_6133}: child year of birth
+- {item_6134}: child month of birth
+- {item_6176}: child age
+- {item_6525}: year of birth, 1. sibling
+- {item_6529}: year of birth, 2. sibling
+- {item_6533}: year of birth, 3. sibling
+- {item_6537}: year of birth, 4. sibling
+- {item_6541}: year of birth, 5. sibling
+- {item_6545}: year of birth, 6. sibling
+- {item_6549}: year of birth, 7. sibling
+- {item_6553}: year of birth, 8. sibling
+- {item_6557}: year of birth, 9. sibling
+- {item_6561}: year of birth, 10. sibling
+- {item_6565}: year of birth, 11. sibling
 - {item_6739}: childs month of birth
 - {item_6740}: childs year of birth
 - {item_6741}: age (in months) of the child at the time of the survey
-- {item_6994}: Child month of birth
-- {item_6995}: Child year of birth
-- {item_6996}: Child age
-- {lgeb}: Year Of Birth
-- {lgebmo}: Month Of Birth
-- {lgebta}: Day Of Birth
-- {pbsj1}: 1. Sibling, Year of Birth
-- {pbsj10}: 10. Sibling, Year of Birth
-- {pbsj2}: 2. Sibling, Year of Birth
-- {pbsj3}: 3. Sibling, Year of Birth
-- {pbsj4}: 4. Sibling, Year of Birth
-- {pbsj5}: 5. Sibling, Year of Birth
-- {pbsj6}: 6. Sibling, Year of Birth
-- {pbsj7}: 7. Sibling, Year of Birth
-- {pbsj8}: 8. Sibling, Year of Birth
-- {pbsj9}: 9. Sibling, Year of Birth
-- {pbsmo1}: 1. Sibling, Month of Birth
-- {pbsmo10}: 10. Sibling, Month of Birth
-- {pbsmo2}: 2. Sibling, Month of Birth
-- {pbsmo3}: 3. Sibling, Month of Birth
-- {pbsmo4}: 4. Sibling, Month of Birth
-- {pbsmo5}: 5. Sibling, Month of Birth
-- {pbsmo6}: 6. Sibling, Month of Birth
-- {pbsmo7}: 7. Sibling, Month of Birth
-- {pbsmo8}: 8. Sibling, Month of Birth
-- {pbsmo9}: 9. Sibling, Month of Birth
-- {pgebd}: Birthplace United Germany
-- {pgebnr}: Native Country
-- {pla0001}: Birth Year Of Father
-- {pla0002}: Birth Year Of Mother
-- {pla0003}: Age Of Youngest Child
-- {pla0004}: Age Of Second Youngest Child
-- {pla0005}: Age Of Third Youngest Child
-- {pla0006}: Age Of Fourth Youngest Child
-- {pla0007}: Age Of Fifth Youngest Child
+- {item_6994}: child month of birth
+- {item_6995}: child year of birth
+- {item_6996}: child age
+- {lgeb}: year of birth
+- {lgebmo}: month of birth
+- {lgebta}: day of birth
+- {pbsj1}: 1. sibling, year of birth
+- {pbsj10}: 10. sibling, year of birth
+- {pbsj2}: 2. sibling, year of birth
+- {pbsj3}: 3. sibling, year of birth
+- {pbsj4}: 4. sibling, year of birth
+- {pbsj5}: 5. sibling, year of birth
+- {pbsj6}: 6. sibling, year of birth
+- {pbsj7}: 7. sibling, year of birth
+- {pbsj8}: 8. sibling, year of birth
+- {pbsj9}: 9. sibling, year of birth
+- {pbsmo1}: 1. sibling, month of birth
+- {pbsmo10}: 10. sibling, month of birth
+- {pbsmo2}: 2. sibling, month of birth
+- {pbsmo3}: 3. sibling, month of birth
+- {pbsmo4}: 4. sibling, month of birth
+- {pbsmo5}: 5. sibling, month of birth
+- {pbsmo6}: 6. sibling, month of birth
+- {pbsmo7}: 7. sibling, month of birth
+- {pbsmo8}: 8. sibling, month of birth
+- {pbsmo9}: 9. sibling, month of birth
+- {pgebd}: birthplace united germany
+- {pgebnr}: native country
+- {pla0001}: birth year of father
+- {pla0002}: birth year of mother
+- {pla0003}: age of youngest child
+- {pla0004}: age of second youngest child
+- {pla0005}: age of third youngest child
+- {pla0006}: age of fourth youngest child
+- {pla0007}: age of fifth youngest child
 
 ## household size and structure [hhs]
 
-- {_1552_p_hhs}: Multi Or Single Person Household
-- {_hhgr}: Household Size
-- {_kinhh}: Member Of Household
-- {_kstell}: Relationship To Head Of Household
-- {_kzahl}: Number Of Children In Household
-- {hhgr}: Number Of Persons In Household
-- {item_4504}: Newborn Is x Child
-- {item_4505}: Biological Child
+- {_1552_p_hhs}: multi or single person household
+- {_hhgr}: household size
+- {_kinhh}: member of household
+- {_kstell}: relationship to head of household
+- {_kzahl}: number of children in household
+- {hhgr}: number of persons in household
+- {item_4504}: newborn is x child
+- {item_4505}: biological child
 - {item_5969}: family status
 - {item_5970}: partnership
 - {item_5971}: persons in hh
 - {item_5972}: persons older than 16
-- {item_6188}: Biological parents
+- {item_6188}: biological parents
 - {item_6743}: newborn is 1st, 2nd, 3rd, etc. child
 - {item_6744}: biological child
-- {item_6998}: Biological parents
-- {pfs111}: Child Moved In
-- {pfs112}: Month Child Moved In Previous Year
-- {pfs113}: Month Child Moved In Previous Year
-- {pgesch1}: Siblings Yes, No
+- {item_6998}: biological parents
+- {pfs111}: child moved in
+- {pfs112}: month child moved in previous year
+- {pfs113}: month child moved in previous year
+- {pgesch1}: siblings yes, no
 
 ## birth history [bih]
 
-- {item_3321}: Birth Biography Information
-- {item_3322}: Year Of Biography Survey
+- {item_3321}: birth biography information
+- {item_3322}: year of biography survey
 - {item_3323}: bioage data set
-- {item_3324}: Total Number Of Births
-- {item_3325}: Number Of Births Since Biography
-- {item_3326}: PERSNR 1st. Child
-- {item_3327}: PERSNR 2nd. Child
-- {item_3328}: PERSNR 3rd. Child
-- {item_3329}: PERSNR 4th. Child
-- {item_3330}: PERSNR 5th. Child
-- {item_3331}: PERSNR 6th. Child
-- {item_3332}: PERSNR 7th. Child
-- {item_3333}: PERSNR 8th. Child
-- {item_3334}: PERSNR 9th. Child
-- {item_3335}: PERSNR 10th. Child
-- {item_3336}: PERSNR 11th. Child
-- {item_3337}: PERSNR 12th. Child
-- {item_3338}: PERSNR 13th. Child
-- {item_3339}: PERSNR 14th. Child
-- {item_3340}: PERSNR 15th. Child
-- {item_3341}: Year Of Birth 9th. Child
-- {item_3342}: Year Of Birth 10th. Child
-- {item_3343}: Year Of Birth 11th. Child
-- {item_3344}: Year Of Birth 12th. Child
-- {item_3345}: Year Of Birth 13th. Child
-- {item_3346}: Year Of Birth 14th. Child
-- {item_3347}: Year Of Birth 15th. Child
-- {item_3348}: Sex 9th. Child
-- {item_3349}: Sex 10th. Child
-- {item_3350}: Sex 11th. Child
-- {item_3351}: Sex 12th. Child
-- {item_3352}: Sex 13th. Child
-- {item_3353}: Sex 14th. Child
-- {item_3354}: Sex 15th. Child
-- {item_5344}: Month Of Birth 1st. Child
-- {item_5345}: Month Of Birth 2nd. Child
-- {item_5346}: Month Of Birth 3rd. Child
-- {item_5347}: Month Of Birth 4th. Child
-- {item_5348}: Month Of Birth 5th. Child
-- {item_5349}: Month Of Birth 6th. Child
-- {item_5350}: Month Of Birth 7th. Child
-- {item_5351}: Month Of Birth 8th. Child
-- {item_5352}: Month Of Birth 9th. Child
-- {item_5353}: Month Of Birth 10th. Child
-- {item_5354}: Month Of Birth 11th. Child
-- {item_5355}: Month Of Birth 12th. Child
-- {item_5356}: Month Of Birth 13th. Child
-- {item_5357}: Month Of Birth 14th. Child
-- {item_5358}: Month Of Birth 15th. Child
+- {item_3324}: total number of births
+- {item_3325}: number of births since biography
+- {item_3326}: persnr 1st. child
+- {item_3327}: persnr 2nd. child
+- {item_3328}: persnr 3rd. child
+- {item_3329}: persnr 4th. child
+- {item_3330}: persnr 5th. child
+- {item_3331}: persnr 6th. child
+- {item_3332}: persnr 7th. child
+- {item_3333}: persnr 8th. child
+- {item_3334}: persnr 9th. child
+- {item_3335}: persnr 10th. child
+- {item_3336}: persnr 11th. child
+- {item_3337}: persnr 12th. child
+- {item_3338}: persnr 13th. child
+- {item_3339}: persnr 14th. child
+- {item_3340}: persnr 15th. child
+- {item_3341}: year of birth 9th. child
+- {item_3342}: year of birth 10th. child
+- {item_3343}: year of birth 11th. child
+- {item_3344}: year of birth 12th. child
+- {item_3345}: year of birth 13th. child
+- {item_3346}: year of birth 14th. child
+- {item_3347}: year of birth 15th. child
+- {item_3348}: sex 9th. child
+- {item_3349}: sex 10th. child
+- {item_3350}: sex 11th. child
+- {item_3351}: sex 12th. child
+- {item_3352}: sex 13th. child
+- {item_3353}: sex 14th. child
+- {item_3354}: sex 15th. child
+- {item_5344}: month of birth 1st. child
+- {item_5345}: month of birth 2nd. child
+- {item_5346}: month of birth 3rd. child
+- {item_5347}: month of birth 4th. child
+- {item_5348}: month of birth 5th. child
+- {item_5349}: month of birth 6th. child
+- {item_5350}: month of birth 7th. child
+- {item_5351}: month of birth 8th. child
+- {item_5352}: month of birth 9th. child
+- {item_5353}: month of birth 10th. child
+- {item_5354}: month of birth 11th. child
+- {item_5355}: month of birth 12th. child
+- {item_5356}: month of birth 13th. child
+- {item_5357}: month of birth 14th. child
+- {item_5358}: month of birth 15th. child
 
 ## sex [sex]
 
-- {item_3430}: Gender HH-Head
-- {item_5899}: Sex
-- {item_6174}: Child gender
-- {item_6175}: Parent gender
-- {item_6524}: Sex, 1. sibling
-- {item_6528}: Sex, 2. sibling
-- {item_6532}: Sex, 3. sibling
-- {item_6536}: Sex, 4. sibling
-- {item_6540}: Sex, 5. sibling
-- {item_6544}: Sex, 6. sibling
-- {item_6548}: Sex, 7. sibling
-- {item_6552}: Sex, 8. sibling
-- {item_6556}: Sex, 9. sibling
-- {item_6560}: Sex, 10. sibling
-- {item_6564}: Sex, 11. sibling
+- {item_3430}: gender hh-head
+- {item_5899}: sex
+- {item_6174}: child gender
+- {item_6175}: parent gender
+- {item_6524}: sex, 1. sibling
+- {item_6528}: sex, 2. sibling
+- {item_6532}: sex, 3. sibling
+- {item_6536}: sex, 4. sibling
+- {item_6540}: sex, 5. sibling
+- {item_6544}: sex, 6. sibling
+- {item_6548}: sex, 7. sibling
+- {item_6552}: sex, 8. sibling
+- {item_6556}: sex, 9. sibling
+- {item_6560}: sex, 10. sibling
+- {item_6564}: sex, 11. sibling
 - {item_6742}: parents gender
-- {item_6997}: Child gender
-- {lsex}: Sex
-- {pbssex1}: 1. Sibling, Sex
-- {pbssex10}: 10. Sibling, Sex
-- {pbssex2}: 2. Sibling, Sex
-- {pbssex3}: 3. Sibling, Sex
-- {pbssex4}: 4. Sibling, Sex
-- {pbssex5}: 5. Sibling, Sex
-- {pbssex6}: 6. Sibling, Sex
-- {pbssex7}: 7. Sibling, Sex
-- {pbssex8}: 8. Sibling, Sex
-- {pbssex9}: 9. Sibling, Sex
-- {pla0008}: Sex
-- {psex}: Sex
-- {sex}: Sex
+- {item_6997}: child gender
+- {lsex}: sex
+- {pbssex1}: 1. sibling, sex
+- {pbssex10}: 10. sibling, sex
+- {pbssex2}: 2. sibling, sex
+- {pbssex3}: 3. sibling, sex
+- {pbssex4}: 4. sibling, sex
+- {pbssex5}: 5. sibling, sex
+- {pbssex6}: 6. sibling, sex
+- {pbssex7}: 7. sibling, sex
+- {pbssex8}: 8. sibling, sex
+- {pbssex9}: 9. sibling, sex
+- {pla0008}: sex
+- {psex}: sex
+- {sex}: sex
 - {vgebj}: year of birth person died
 - {vsex}: sex person died
 

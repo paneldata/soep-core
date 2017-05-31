@@ -11,96 +11,96 @@ label: family and social networks
 
 ### relationships with peers / other relatives [rpo]
 
-- {item_3556}: Pocket Money per Month
-- {item_3588}: Clique,Group Of Friends Important In Life
-- {item_3591}: Steady Boy-,Girlfriend Important In Life
-- {item_3605}: Other Relative Important In Life
-- {item_3626}: Argue Or Fight Steady Boy-,Girlfriend
-- {item_3739}: Argue Or Fight With Brother,Sister
-- {item_3762}: Best Friend Important In Life
-- {item_3811}: Teacher Important In Life
-- {item_3816}: Argue Or Fight With Best Friend
+- {item_3556}: pocket money per month
+- {item_3588}: clique,group of friends important in life
+- {item_3591}: steady boy-,girlfriend important in life
+- {item_3605}: other relative important in life
+- {item_3626}: argue or fight steady boy-,girlfriend
+- {item_3739}: argue or fight with brother,sister
+- {item_3762}: best friend important in life
+- {item_3811}: teacher important in life
+- {item_3816}: argue or fight with best friend
 
 ### socialization conditions [soc]
 
-- {item_3547}: Brother, Sister Important In Life
-- {item_3581}: Own Earnings
-- {item_3600}: Age At First Job
-- {item_3603}: Have Already Worked Before
-- {item_3628}: Pocket Money, Allowance
-- {item_3641}: Savings Irregular
-- {item_3646}: Money Saved
-- {item_3680}: Has Own Room
-- {item_3709}: Savings per Month
-- {item_3726}: Reason For Working
-- {item_3728}: Additional Room, Apartment
-- {item_3754}: Lives In Parental Household
-- {item_3781}: Pocket Money per Week
-- {item_3800}: Full-Time, Part-Time, Trainee
-- {item_4540}: Gender Combination Of Siblings
-- {pbs15j1}: 1. Sibling Lived Together up to Age of 15
-- {pbs15j10}: 10. Sibling Lived Together up to Age of 15
-- {pbs15j2}: 2. Sibling Lived Together up to Age of 15
-- {pbs15j3}: 3. Sibling Lived Together up to Age of 15
-- {pbs15j4}: 4. Sibling Lived Together up to Age of 15
-- {pbs15j5}: 5. Sibling Lived Together up to Age of 15
-- {pbs15j6}: 6. Sibling Lived Together up to Age of 15
-- {pbs15j7}: 7. Sibling Lived Together up to Age of 15
-- {pbs15j8}: 8. Sibling Lived Together up to Age of 15
-- {pbs15j9}: 9. Sibling Lived Together up to Age of 15
-- {pbs15n1}: 1. Sibling, Amt. Years Lived Together
-- {pbs15n10}: 10. Sibling, Amt. Year Lived Together
-- {pbs15n2}: 2. Sibling, Amt. Years Lived Together
-- {pbs15n3}: 3. Sibling, Amt. Year Lived Together
-- {pbs15n4}: 4. Sibling, Amt. Year Lived Together
-- {pbs15n5}: 5. Sibling, Amt. Year Lived Together
-- {pbs15n6}: 6. Sibling, Amt. Year Lived Together
-- {pbs15n7}: 7. Sibling, Amt. Year Lived Together
-- {pbs15n8}: 8. Sibling, Amt. Year Lived Together
-- {pbs15n9}: 9. Sibling, Amt. Year Lived Together
-- {pbsanz}: Number Of Siblings Not In Germany
-- {pbsart1}: 1. Sibling, Type
-- {pbsart10}: 10. Sibling, Type
-- {pbsart2}: 2. Sibling, Type
-- {pbsart3}: 3. Sibling, Type
-- {pbsart4}: 4. Sibling, Type
-- {pbsart5}: 5. Sibling, Type
-- {pbsart6}: 6. Sibling, Type
-- {pbsart7}: 7. Sibling, Type
-- {pbsart8}: 8. Sibling, Type
-- {pbsart9}: 9. Sibling, Type
-- {pbsno}: No Siblings
+- {item_3547}: brother, sister important in life
+- {item_3581}: own earnings
+- {item_3600}: age at first job
+- {item_3603}: have already worked before
+- {item_3628}: pocket money, allowance
+- {item_3641}: savings irregular
+- {item_3646}: money saved
+- {item_3680}: has own room
+- {item_3709}: savings per month
+- {item_3726}: reason for working
+- {item_3728}: additional room, apartment
+- {item_3754}: lives in parental household
+- {item_3781}: pocket money per week
+- {item_3800}: full-time, part-time, trainee
+- {item_4540}: gender combination of siblings
+- {pbs15j1}: 1. sibling lived together up to age of 15
+- {pbs15j10}: 10. sibling lived together up to age of 15
+- {pbs15j2}: 2. sibling lived together up to age of 15
+- {pbs15j3}: 3. sibling lived together up to age of 15
+- {pbs15j4}: 4. sibling lived together up to age of 15
+- {pbs15j5}: 5. sibling lived together up to age of 15
+- {pbs15j6}: 6. sibling lived together up to age of 15
+- {pbs15j7}: 7. sibling lived together up to age of 15
+- {pbs15j8}: 8. sibling lived together up to age of 15
+- {pbs15j9}: 9. sibling lived together up to age of 15
+- {pbs15n1}: 1. sibling, amt. years lived together
+- {pbs15n10}: 10. sibling, amt. year lived together
+- {pbs15n2}: 2. sibling, amt. years lived together
+- {pbs15n3}: 3. sibling, amt. year lived together
+- {pbs15n4}: 4. sibling, amt. year lived together
+- {pbs15n5}: 5. sibling, amt. year lived together
+- {pbs15n6}: 6. sibling, amt. year lived together
+- {pbs15n7}: 7. sibling, amt. year lived together
+- {pbs15n8}: 8. sibling, amt. year lived together
+- {pbs15n9}: 9. sibling, amt. year lived together
+- {pbsanz}: number of siblings not in germany
+- {pbsart1}: 1. sibling, type
+- {pbsart10}: 10. sibling, type
+- {pbsart2}: 2. sibling, type
+- {pbsart3}: 3. sibling, type
+- {pbsart4}: 4. sibling, type
+- {pbsart5}: 5. sibling, type
+- {pbsart6}: 6. sibling, type
+- {pbsart7}: 7. sibling, type
+- {pbsart8}: 8. sibling, type
+- {pbsart9}: 9. sibling, type
+- {pbsno}: no siblings
 
 ### generational relationships [ger]
 
-- {item_3566}: Mother Able To Solve Problems With You
-- {item_3568}: Mother Shows That She Loves You
-- {item_3571}: Father Asks You Prior To Making Decision
-- {item_3574}: Father Expresses Opinion On Smthng You Do
-- {item_3576}: Father Talks About Things That Worry You
-- {item_3578}: Father Talks About Things You Do
-- {item_3580}: Father Has Impression Of Trusting You
-- {item_3584}: Argue Or Fight With Mother
-- {item_3633}: Father Gives Reason For Making Decision
-- {item_3636}: Mother Asks You Prior To Making Decision
-- {item_3663}: Mother Has Impression Of Trusting You
-- {item_3667}: Mother Asks Your Opinion On Family Matter
-- {item_3671}: Father Able To Solve Problems With You
-- {item_3683}: Father Important In Life
-- {item_3684}: Father Asks Your Opinion On Family Matter
-- {item_3710}: Mother Talks About Things You Do
-- {item_3714}: Other Person Important In Life
-- {item_3723}: Mother Important In Life
-- {item_3737}: Mother Expresses Opinion On Smthng You Do
-- {item_3783}: Argue Or Fight With Father
-- {item_3790}: Father Shows That She Loves You
-- {item_3791}: Mother Gives Reason For Making Decision
-- {item_3795}: Mother Talks About Things That Worry You
+- {item_3566}: mother able to solve problems with you
+- {item_3568}: mother shows that she loves you
+- {item_3571}: father asks you prior to making decision
+- {item_3574}: father expresses opinion on smthng you do
+- {item_3576}: father talks about things that worry you
+- {item_3578}: father talks about things you do
+- {item_3580}: father has impression of trusting you
+- {item_3584}: argue or fight with mother
+- {item_3633}: father gives reason for making decision
+- {item_3636}: mother asks you prior to making decision
+- {item_3663}: mother has impression of trusting you
+- {item_3667}: mother asks your opinion on family matter
+- {item_3671}: father able to solve problems with you
+- {item_3683}: father important in life
+- {item_3684}: father asks your opinion on family matter
+- {item_3710}: mother talks about things you do
+- {item_3714}: other person important in life
+- {item_3723}: mother important in life
+- {item_3737}: mother expresses opinion on smthng you do
+- {item_3783}: argue or fight with father
+- {item_3790}: father shows that she loves you
+- {item_3791}: mother gives reason for making decision
+- {item_3795}: mother talks about things that worry you
 
 ### contexts shortly before death [sbd]
 
-- {item_6102}: Child age
-- {item_6114}: Biological parents
+- {item_6102}: child age
+- {item_6114}: biological parents
 - {valt}: age of person died
 - {vdok01}: left last will
 - {vdok02}: left living will
@@ -111,36 +111,36 @@ label: family and social networks
 - {vkont}: personal contact to deceased in last year
 - {vleb01}: domestic environment of deceased in last year alive
 - {vleb03}: focus of deceased person's life
-- {vlid}: person died was SOEP attendant
+- {vlid}: person died was soep attendant
 
 ## transfers and support [tas]
 
 
 ### regular gifts from friends / relatives from the frg [rgw]
 
-- {hld0006}: Presents Received From The FRG
-- {hld0007}: Value Of Presents From The FRG Per Year
-- {hld0008}: Value Of Presents From The FRG , unknown
+- {hld0006}: presents received from the frg
+- {hld0007}: value of presents from the frg per year
+- {hld0008}: value of presents from the frg , unknown
 
 ### financial support to persons [fsp]
 
 
 #### foreign-born respondents only [fbr]
 
-- {pcd0013}: Amount Sent To Native Country Prev Yr
-- {pcd0014}: Amount Of Money Given Family Prev Yr
-- {pcd0015}: Amount Of Money Towards Savings Prev Yr
-- {pcd0016}: Amount Of Money Given To Others Prev Yr
-- {pcd0017}: Amount To German Relatives Not In HH
-- {pld0120}: Sent Money To Native Country Prev Yr
-- {pld0121}: Amount Sent To Native Country Prev Yr
-- {pld0122}: Amount Of Money Given Family Prev Yr
-- {pld0123}: Amount Of Money Towards Savings Prev Yr
-- {pld0124}: Amount Of Money Given To Others Prev Yr
-- {pld0125}: German Relatives Not In HH
-- {pld0126}: Payments To German Relatives Not In HH
-- {pld0127}: Amount To German Relatives Not In HH
-- {pld0128}: Financial Transfers To Relatives
+- {pcd0013}: amount sent to native country prev yr
+- {pcd0014}: amount of money given family prev yr
+- {pcd0015}: amount of money towards savings prev yr
+- {pcd0016}: amount of money given to others prev yr
+- {pcd0017}: amount to german relatives not in hh
+- {pld0120}: sent money to native country prev yr
+- {pld0121}: amount sent to native country prev yr
+- {pld0122}: amount of money given family prev yr
+- {pld0123}: amount of money towards savings prev yr
+- {pld0124}: amount of money given to others prev yr
+- {pld0125}: german relatives not in hh
+- {pld0126}: payments to german relatives not in hh
+- {pld0127}: amount to german relatives not in hh
+- {pld0128}: financial transfers to relatives
 
 #### in general [ing]
 
@@ -155,57 +155,57 @@ label: family and social networks
 
 ## family networks - outside own household [fno]
 
-- {_1570_p_fno}: Where Does Father Live
-- {_1573_p_fno}: Where Does Mother Live
-- {p01v}: Current Spouse In Other HH Present
-- {p01vb}: Where Does Current Spouse Of Other HH Live
-- {p01vc}: Nature Of Relat To Current Spouse Oth HH
-- {p02v}: Previous Spouse Present
-- {p02vc}: Nature Of Relationship To Prev Spouse
-- {p03v}: Mother Present
-- {p03vc}: Nature Of Relationship To Mother
-- {p04v}: Father Present
-- {p04vc}: Nature Of Relationship To Father
-- {p07v}: Daughter-s Present
-- {p07va}: Number Of Daughters
-- {p07vc}: Nature Of Relationship To Daughter-s
-- {p08v}: Son-s Present
-- {p08va}: Number Of Sons
-- {p08vc}: Nature Of Relationship To Son-s
-- {p09v}: Sister Present
-- {p09va}: Number Of Sisters
-- {p09vc}: Nature Of Relationship To Sister-s
-- {p10v}: Brother Present
-- {p10va}: Number Of Brothers
-- {p10vc}: Nature Of Relationship To Brother-s
-- {p11_12v}: Grandparent-s Present
-- {p11_12va}: Number Of Grandparents
-- {p11_12vb}: Where Do Grandparents Live
-- {p11_12vc}: Nature Of Relationship To Grandparents
-- {p13v}: Grandchild Present
-- {p13va}: Number Of Grandchilds
-- {p13vc}: Nature Of Relationship To Grandchild-Ren
-- {p16v}: Other Relatives Present
-- {p16va}: Number Of Other Relatives
-- {p16vc}: Nature Of Relationship To Oth Relative-s
-- {pld0003}: Parents In Household
-- {pld0004}: Father In Germany
-- {pld0005}: Mother In Germany
-- {pvka}: Relatives, Item Nonresponse
+- {_1570_p_fno}: where does father live
+- {_1573_p_fno}: where does mother live
+- {p01v}: current spouse in other hh present
+- {p01vb}: where does current spouse of other hh live
+- {p01vc}: nature of relat to current spouse oth hh
+- {p02v}: previous spouse present
+- {p02vc}: nature of relationship to prev spouse
+- {p03v}: mother present
+- {p03vc}: nature of relationship to mother
+- {p04v}: father present
+- {p04vc}: nature of relationship to father
+- {p07v}: daughter-s present
+- {p07va}: number of daughters
+- {p07vc}: nature of relationship to daughter-s
+- {p08v}: son-s present
+- {p08va}: number of sons
+- {p08vc}: nature of relationship to son-s
+- {p09v}: sister present
+- {p09va}: number of sisters
+- {p09vc}: nature of relationship to sister-s
+- {p10v}: brother present
+- {p10va}: number of brothers
+- {p10vc}: nature of relationship to brother-s
+- {p11_12v}: grandparent-s present
+- {p11_12va}: number of grandparents
+- {p11_12vb}: where do grandparents live
+- {p11_12vc}: nature of relationship to grandparents
+- {p13v}: grandchild present
+- {p13va}: number of grandchilds
+- {p13vc}: nature of relationship to grandchild-ren
+- {p16v}: other relatives present
+- {p16va}: number of other relatives
+- {p16vc}: nature of relationship to oth relative-s
+- {pld0003}: parents in household
+- {pld0004}: father in germany
+- {pld0005}: mother in germany
+- {pvka}: relatives, item nonresponse
 
 ## marital status and family events [mse]
 
-- {item_6935}: Couple-ID
-- {item_6936}: Spell ends due to death of partner
-- {item_6937}: Spell ends due to separation from partner
-- {pfs141}: Got Together with a New Partner
-- {pfs142}: Got Together With A New Partner: Month In Last Year
-- {pfs143}: Got Together With A New Partner: Month In Present Year
+- {item_6935}: couple-id
+- {item_6936}: spell ends due to death of partner
+- {item_6937}: spell ends due to separation from partner
+- {pfs141}: got together with a new partner
+- {pfs142}: got together with a new partner: month in last year
+- {pfs143}: got together with a new partner: month in present year
 
 ### marital status [mst]
 
-- {_990_p_mst}: Have Relatives In Other Part Of Germany
-- {_991_p_mst}: Relationship With Relatives
+- {_990_p_mst}: have relatives in other part of germany
+- {_991_p_mst}: relationship with relatives
 
 ### family events and relationship history [feh]
 
@@ -251,212 +251,212 @@ label: family and social networks
 
 ### contact with neighbors [con]
 
-- {hkont}: Relationship With Neighbors
-- {hnach1}: Visit Neighbors
-- {hnach2}: Frequency Of Neighbor Visits
+- {hkont}: relationship with neighbors
+- {hnach1}: visit neighbors
+- {hnach2}: frequency of neighbor visits
 
 ### friends in east/west germany [frr]
 
-- {_992_p_frr}: Have Friends In Another Part Of Germany
-- {_993_p_frr}: Relationship With Friends
+- {_992_p_frr}: have friends in another part of germany
+- {_993_p_frr}: relationship with friends
 
 ### friendship networks that can be relied upon for help [fnw]
 
-- {_1270_p_fnw}: Help From Non-Relatives
-- {_1271_p_fnw}: Where Does First Person Live
-- {_1272_p_fnw}: Nature Of Relationship To First Person
-- {_1273_p_fnw}: Where Does Second Person Live
-- {_1274_p_fnw}: Nature Of Relationship To Second Person
-- {_1275_p_fnw}: Second Person Is Not Present
-- {_1276_p_fnw}: Where Does Third Person Live
-- {_1277_p_fnw}: Nature Of Relationship To Third Person
-- {_1278_p_fnw}: Third Person Is Not Present
+- {_1270_p_fnw}: help from non-relatives
+- {_1271_p_fnw}: where does first person live
+- {_1272_p_fnw}: nature of relationship to first person
+- {_1273_p_fnw}: where does second person live
+- {_1274_p_fnw}: nature of relationship to second person
+- {_1275_p_fnw}: second person is not present
+- {_1276_p_fnw}: where does third person live
+- {_1277_p_fnw}: nature of relationship to third person
+- {_1278_p_fnw}: third person is not present
 
 ### contact with friends, relatives abroad [cfa]
 
-- {pfrei18}: Contact To Friends, Relatives Abroad
+- {pfrei18}: contact to friends, relatives abroad
 
 ### number of friends [frn]
 
-- {item_7080}: Number Of Friends (Children)
-- {item_7081}: Number Of Friends (Adults)
+- {item_7080}: number of friends (children)
+- {item_7081}: number of friends (adults)
 - {item_7147}: number of frinds (children)
 - {item_7148}: number of friends (adults)
-- {pbez06}: Amount Of Closed Friends
-- {pbez07}: Freq. Lend Friends Pers. Belongings
-- {pbez08}: Freq. Lend Friends Money
-- {pbez09}: Freq. Leave Door Unlocked
-- {pbez10}: To Profit From Others Generosity
+- {pbez06}: amount of closed friends
+- {pbez07}: freq. lend friends pers. belongings
+- {pbez08}: freq. lend friends money
+- {pbez09}: freq. leave door unlocked
+- {pbez10}: to profit from others generosity
 
 ### networks - three friends [ntf]
 
-- {p02va}: Number Of Previous Spouse
-- {p05v}: Step Mother/ Foster Mother Present
-- {p06v}: Step Father/ Foster Father Present
-- {p11v}: Grandmother Present
-- {p11va}: Number Of Grandmothers
-- {p12v}: Grandfather Present
-- {p12va}: Number Of Grandfathers
-- {p12vb}: Where Do Grandfather-s Live
-- {p14v}: Aunt Present
-- {p14va}: Number Of Aunts
-- {p15v}: Uncle Present
-- {p15va}: Number of Uncles
-- {p1beka}: Related To First Person Befriended
-- {p1bekb}: Sex Of First Person Befriended
-- {p1bekc}: Age Of First Person Befriended
-- {p1beke}: Friend Number 1: Labor Force Status
-- {p1bekf}: Friend Number 1: Highest Degree Received
-- {p1ka}: Friend Number 1, Item Nonresponse
-- {p1pera}: First Important Person Is Confidante
-- {p1perb}: Who Supports Career? First Person
-- {p1perd}: First Important Person: burdensome argument, conflict
-- {p1pere}: First Important Person: Can tell even unpleasant truths
-- {p2beka}: Related To Second Person Befriended
-- {p2bekb}: Sex Of Second Person Befriended
-- {p2bekc}: Age Of Second Person Befriended
-- {p2beke}: Friend Number 1: Labor Force Status
-- {p2bekf}: Friend Number 2: Highest Degree Received
-- {p2ka}: Friend Number 2, Item Nonresponse
-- {p2pera}: Second Important Person Is Confidante
-- {p2perb}: Who Supports Career? Second Person
-- {p2perd}: Second Important Person: burdensome argument, conflict
-- {p2pere}: Second Important Person: Can tell even unpleasant truths
-- {p3beka}: Related To Third Person Befriended
-- {p3bekb}: Sex Of Third Person Befriended
-- {p3bekc}: Age Of Third Person Befriended
-- {p3beke}: Friend Number 1: Labor Force Status
-- {p3bekf}: Friend Number 3: Highest Degree Received
-- {p3ka}: Friend Number 3, Item Nonresponse
-- {p3pera}: Third Important Person Is Confidante
-- {p3perb}: Who Supports Career? Third Person
-- {p3perc}: Third Important Person: Asking for help when in need of care
-- {p3perd}: Third Important Person: burdensome argument, conflict
-- {p3pere}: Third Important Person: Can tell even unpleasant truths
-- {p4pera}: Fourth Important Person Is Confidante
-- {p4perb}: Who Supports Career? Fourth Person
-- {p4perc}: Fourth Important Person: Asking for help when in need of care
-- {p4perd}: Fourth Important Person: burdensome argument, conflict
-- {p4pere}: Fourth Important Person: Can tell even unpleasant truths
-- {p5pera}: Fifth Important Person Is Confidante
-- {p5perb}: Who Supports Career? Fifth Person
-- {p5perc}: Fifth Important Person: Asking for help when in need of care
-- {p5perd}: Fifth Important Person: burdensome argument, conflict
-- {p5pere}: Fifth Important Person: Can tell even unpleasant truths
-- {pld0059}: Nationality Of First Person Befriended
-- {pld0060}: Nationality Of Second Person Befriended
-- {pld0061}: Nationality Of Third Person Befriended
-- {pnoa}: No confidante
-- {pnob}: No One Supports Career, Education
-- {pnod}: No one: burdensome argument, conflict
-- {pnoe}: No one: Can tell even unpleasant truths
+- {p02va}: number of previous spouse
+- {p05v}: step mother/ foster mother present
+- {p06v}: step father/ foster father present
+- {p11v}: grandmother present
+- {p11va}: number of grandmothers
+- {p12v}: grandfather present
+- {p12va}: number of grandfathers
+- {p12vb}: where do grandfather-s live
+- {p14v}: aunt present
+- {p14va}: number of aunts
+- {p15v}: uncle present
+- {p15va}: number of uncles
+- {p1beka}: related to first person befriended
+- {p1bekb}: sex of first person befriended
+- {p1bekc}: age of first person befriended
+- {p1beke}: friend number 1: labor force status
+- {p1bekf}: friend number 1: highest degree received
+- {p1ka}: friend number 1, item nonresponse
+- {p1pera}: first important person is confidante
+- {p1perb}: who supports career? first person
+- {p1perd}: first important person: burdensome argument, conflict
+- {p1pere}: first important person: can tell even unpleasant truths
+- {p2beka}: related to second person befriended
+- {p2bekb}: sex of second person befriended
+- {p2bekc}: age of second person befriended
+- {p2beke}: friend number 1: labor force status
+- {p2bekf}: friend number 2: highest degree received
+- {p2ka}: friend number 2, item nonresponse
+- {p2pera}: second important person is confidante
+- {p2perb}: who supports career? second person
+- {p2perd}: second important person: burdensome argument, conflict
+- {p2pere}: second important person: can tell even unpleasant truths
+- {p3beka}: related to third person befriended
+- {p3bekb}: sex of third person befriended
+- {p3bekc}: age of third person befriended
+- {p3beke}: friend number 1: labor force status
+- {p3bekf}: friend number 3: highest degree received
+- {p3ka}: friend number 3, item nonresponse
+- {p3pera}: third important person is confidante
+- {p3perb}: who supports career? third person
+- {p3perc}: third important person: asking for help when in need of care
+- {p3perd}: third important person: burdensome argument, conflict
+- {p3pere}: third important person: can tell even unpleasant truths
+- {p4pera}: fourth important person is confidante
+- {p4perb}: who supports career? fourth person
+- {p4perc}: fourth important person: asking for help when in need of care
+- {p4perd}: fourth important person: burdensome argument, conflict
+- {p4pere}: fourth important person: can tell even unpleasant truths
+- {p5pera}: fifth important person is confidante
+- {p5perb}: who supports career? fifth person
+- {p5perc}: fifth important person: asking for help when in need of care
+- {p5perd}: fifth important person: burdensome argument, conflict
+- {p5pere}: fifth important person: can tell even unpleasant truths
+- {pld0059}: nationality of first person befriended
+- {pld0060}: nationality of second person befriended
+- {pld0061}: nationality of third person befriended
+- {pnoa}: no confidante
+- {pnob}: no one supports career, education
+- {pnod}: no one: burdensome argument, conflict
+- {pnoe}: no one: can tell even unpleasant truths
 
 ## socialization and relationships [scr]
 
-- {item_4214}: Argue Or Fight With Father when Respondent 15
-- {item_4215}: Argue Or Fight With Mother when Respondent 15
-- {item_6522}: Family counter
-- {item_6523}: Person ID, 1. sibling
-- {item_6526}: Sibling constellation, 1. sibling
-- {item_6527}: Person ID, 2. sibling
-- {item_6530}: Sibling constellation, 2. sibling
-- {item_6531}: Person ID, 3. sibling
-- {item_6534}: Sibling constellation, 3. sibling
-- {item_6535}: Person ID, 4. sibling
-- {item_6538}: Sibling constellation, 4. sibling
-- {item_6539}: Person ID, 5. sibling
-- {item_6542}: Sibling constellation, 5. sibling
-- {item_6543}: Person ID, 6. sibling
-- {item_6546}: Sibling constellation, 6. sibling
-- {item_6547}: Person ID, 7. sibling
-- {item_6550}: Sibling constellation, 7. sibling
-- {item_6551}: Person ID, 8. sibling
-- {item_6554}: Sibling constellation, 8. sibling
-- {item_6555}: Person ID, 9. sibling
-- {item_6558}: Sibling constellation, 9. sibling
-- {item_6559}: Person ID, 10. sibling
-- {item_6562}: Sibling constellation, 10. sibling
-- {item_6563}: Person ID, 11. sibling
-- {item_6566}: Sibling constellation, 11. sibling
-- {item_6567}: Position in birth order
-- {item_6568}: Number Of Siblings in SOEP
-- {pbspos}: Position in Birth Order
-- {pbsposa}: Other Position in Birth Order
+- {item_4214}: argue or fight with father when respondent 15
+- {item_4215}: argue or fight with mother when respondent 15
+- {item_6522}: family counter
+- {item_6523}: person id, 1. sibling
+- {item_6526}: sibling constellation, 1. sibling
+- {item_6527}: person id, 2. sibling
+- {item_6530}: sibling constellation, 2. sibling
+- {item_6531}: person id, 3. sibling
+- {item_6534}: sibling constellation, 3. sibling
+- {item_6535}: person id, 4. sibling
+- {item_6538}: sibling constellation, 4. sibling
+- {item_6539}: person id, 5. sibling
+- {item_6542}: sibling constellation, 5. sibling
+- {item_6543}: person id, 6. sibling
+- {item_6546}: sibling constellation, 6. sibling
+- {item_6547}: person id, 7. sibling
+- {item_6550}: sibling constellation, 7. sibling
+- {item_6551}: person id, 8. sibling
+- {item_6554}: sibling constellation, 8. sibling
+- {item_6555}: person id, 9. sibling
+- {item_6558}: sibling constellation, 9. sibling
+- {item_6559}: person id, 10. sibling
+- {item_6562}: sibling constellation, 10. sibling
+- {item_6563}: person id, 11. sibling
+- {item_6566}: sibling constellation, 11. sibling
+- {item_6567}: position in birth order
+- {item_6568}: number of siblings in soep
+- {pbspos}: position in birth order
+- {pbsposa}: other position in birth order
 
 ## family history - first waves - integrated into biography [fhf]
 
-- {_1461_p_fhf}: Year Moved In Together
-- {_1462_p_fhf}: Live Apart
-- {_1569_p_fhf}: Birth Year Of Father
-- {_1571_p_fhf}: What Year Did Father Die
-- {_1572_p_fhf}: Birth Year Of Mother
-- {_1574_p_fhf}: What Year Did Mother Die
-- {_1624_p_fhf}: Number Of Children
-- {_1625_p_fhf}: No Children
-- {_1626_p_fhf}: Birth Year Of First Child
-- {_1627_p_fhf}: Sex Of First Child
-- {_1628_p_fhf}: First Child In Household
-- {_1629_p_fhf}: Date First Child Moves Out
-- {_1630_p_fhf}: Birth Year Of Second Child
-- {_1631_p_fhf}: Sex Of Second Child
-- {_1632_p_fhf}: Second Child In Household
-- {_1633_p_fhf}: Date Second Child Moves Out
-- {_1634_p_fhf}: Birth Year Of Third Child
-- {_1635_p_fhf}: Sex Of Third Child
-- {_1636_p_fhf}: Third Child In Household
-- {_1637_p_fhf}: Date Third Child Moves Out
-- {_1638_p_fhf}: Birth Year Of Fourth Child
-- {_1639_p_fhf}: Sex Of Fourth Child
-- {_1640_p_fhf}: Fourth Child In Household
-- {_1641_p_fhf}: Date Fourth Child Moves Out
-- {_1642_p_fhf}: Birth Year Of Fifth Child
-- {_1643_p_fhf}: Sex Of Fifth Child
-- {_1644_p_fhf}: Fifth Child In Household
-- {_1645_p_fhf}: Date Fifth Child Moves Out
-- {_1646_p_fhf}: Birth Year Of Sixth Child
-- {_1647_p_fhf}: Sex Of Sixth Child
-- {_1648_p_fhf}: Sixth Child In Household
-- {_1649_p_fhf}: Date Sixth Child Moves Out
-- {_1650_p_fhf}: Birth Year Of Seventh Child
-- {_1651_p_fhf}: Sex Of Seventh Child
-- {_1652_p_fhf}: Seventh Child In Household
-- {_1653_p_fhf}: Date Seventh Child Moves Out
-- {_1654_p_fhf}: Birth Year Of Eighth Child
-- {_1655_p_fhf}: Sex Of Eighth Child
-- {_1656_p_fhf}: Eighth Child In Household
-- {_1657_p_fhf}: Date Eighth Child Moves Out
-- {_1658_p_fhf}: Marital Status
-- {_1659_p_fhf}: Beginning Of First Marriage
-- {_1660_p_fhf}: Status Of First Marriage
-- {_1661_p_fhf}: End Of First Marriage
-- {_1662_p_fhf}: Beginning Of Second Marriage
-- {_1663_p_fhf}: Status Of Second Marriage
-- {_1664_p_fhf}: End Of Second Marriage
-- {_1665_p_fhf}: Beginning Of Third Marriage
-- {_1666_p_fhf}: Status Of Third Marriage
-- {_1667_p_fhf}: End Of Third Marriage
+- {_1461_p_fhf}: year moved in together
+- {_1462_p_fhf}: live apart
+- {_1569_p_fhf}: birth year of father
+- {_1571_p_fhf}: what year did father die
+- {_1572_p_fhf}: birth year of mother
+- {_1574_p_fhf}: what year did mother die
+- {_1624_p_fhf}: number of children
+- {_1625_p_fhf}: no children
+- {_1626_p_fhf}: birth year of first child
+- {_1627_p_fhf}: sex of first child
+- {_1628_p_fhf}: first child in household
+- {_1629_p_fhf}: date first child moves out
+- {_1630_p_fhf}: birth year of second child
+- {_1631_p_fhf}: sex of second child
+- {_1632_p_fhf}: second child in household
+- {_1633_p_fhf}: date second child moves out
+- {_1634_p_fhf}: birth year of third child
+- {_1635_p_fhf}: sex of third child
+- {_1636_p_fhf}: third child in household
+- {_1637_p_fhf}: date third child moves out
+- {_1638_p_fhf}: birth year of fourth child
+- {_1639_p_fhf}: sex of fourth child
+- {_1640_p_fhf}: fourth child in household
+- {_1641_p_fhf}: date fourth child moves out
+- {_1642_p_fhf}: birth year of fifth child
+- {_1643_p_fhf}: sex of fifth child
+- {_1644_p_fhf}: fifth child in household
+- {_1645_p_fhf}: date fifth child moves out
+- {_1646_p_fhf}: birth year of sixth child
+- {_1647_p_fhf}: sex of sixth child
+- {_1648_p_fhf}: sixth child in household
+- {_1649_p_fhf}: date sixth child moves out
+- {_1650_p_fhf}: birth year of seventh child
+- {_1651_p_fhf}: sex of seventh child
+- {_1652_p_fhf}: seventh child in household
+- {_1653_p_fhf}: date seventh child moves out
+- {_1654_p_fhf}: birth year of eighth child
+- {_1655_p_fhf}: sex of eighth child
+- {_1656_p_fhf}: eighth child in household
+- {_1657_p_fhf}: date eighth child moves out
+- {_1658_p_fhf}: marital status
+- {_1659_p_fhf}: beginning of first marriage
+- {_1660_p_fhf}: status of first marriage
+- {_1661_p_fhf}: end of first marriage
+- {_1662_p_fhf}: beginning of second marriage
+- {_1663_p_fhf}: status of second marriage
+- {_1664_p_fhf}: end of second marriage
+- {_1665_p_fhf}: beginning of third marriage
+- {_1666_p_fhf}: status of third marriage
+- {_1667_p_fhf}: end of third marriage
 
 ## parenting [par]
 
 
 ### experiences with the birth of a child [exb]
 
-- {item_4506}: Planned, Unplanned Pregnancy
-- {item_4507}: Father Lives In Household
-- {item_4508}: Support From Partner
-- {item_4514}: Life Circumstances Have Greatly Changed
-- {item_4515}: Bringing Up Child Provides Happiness
-- {item_4516}: Often At The End Of My Strength
-- {item_4517}: Role As Mother Is Satisfying
-- {item_4518}: Feel Overdemanded
-- {item_4519}: Met New People Through Child
-- {item_4520}: Role As Mother Is Limiting
-- {item_4521}: Important To Provide Tenderness
+- {item_4506}: planned, unplanned pregnancy
+- {item_4507}: father lives in household
+- {item_4508}: support from partner
+- {item_4514}: life circumstances have greatly changed
+- {item_4515}: bringing up child provides happiness
+- {item_4516}: often at the end of my strength
+- {item_4517}: role as mother is satisfying
+- {item_4518}: feel overdemanded
+- {item_4519}: met new people through child
+- {item_4520}: role as mother is limiting
+- {item_4521}: important to provide tenderness
 
 ### parenting goal [pgo]
 
-- {item_6207}: Child year of birth
-- {item_6208}: Child month of birth
+- {item_6207}: child year of birth
+- {item_6208}: child month of birth
 
 #### parenting goal (bioage long, mother or father) [pgp]
 
@@ -481,101 +481,101 @@ label: family and social networks
 
 #### parenting goal of main caregiver (usually mother) [pgm]
 
-- {item_6115}: Education goal: be a good pupil
-- {item_6116}: Education goal: obey the parents
-- {item_6117}: Education goal: have good ability to judge
-- {item_6118}: Education goal: be clean and neat
-- {item_6119}: Education goal: strive to achieve aims
-- {item_6120}: Education goal: fit in well in groups
-- {item_6121}: Education goal: learn to fight obstacles
-- {item_6122}: Education goal: be satisfied with itself
-- {item_6123}: Education goal: learn to avoid risks
-- {item_6124}: Education goal: be lovable
-- {item_6125}: Education goal: get along with other kids
-- {item_6126}: Education goal: interested child
-- {item_6127}: Education goal: act like normal girl/boy
-- {item_6128}: Education goal: be honest
-- {item_6129}: Education goal: have good manners
-- {item_6130}: Education goal: have good self-control
-- {item_6131}: Education goal: be responsible
-- {item_6132}: Education goal: treat others with respect
+- {item_6115}: education goal: be a good pupil
+- {item_6116}: education goal: obey the parents
+- {item_6117}: education goal: have good ability to judge
+- {item_6118}: education goal: be clean and neat
+- {item_6119}: education goal: strive to achieve aims
+- {item_6120}: education goal: fit in well in groups
+- {item_6121}: education goal: learn to fight obstacles
+- {item_6122}: education goal: be satisfied with itself
+- {item_6123}: education goal: learn to avoid risks
+- {item_6124}: education goal: be lovable
+- {item_6125}: education goal: get along with other kids
+- {item_6126}: education goal: interested child
+- {item_6127}: education goal: act like normal girl/boy
+- {item_6128}: education goal: be honest
+- {item_6129}: education goal: have good manners
+- {item_6130}: education goal: have good self-control
+- {item_6131}: education goal: be responsible
+- {item_6132}: education goal: treat others with respect
 
 #### parenting goal of second caregiver (usually father) [pgs]
 
-- {item_6189}: Education goal: be a good pupil
-- {item_6190}: Education goal: obey the parents
-- {item_6191}: Education goal: have good ability to judge
-- {item_6192}: Education goal: be clean and neat
-- {item_6193}: Education goal: strive to achieve aims
-- {item_6194}: Education goal: fit in well in groups
-- {item_6195}: Education goal: learn to fight obstacles
-- {item_6196}: Education goal: be satisfied with itself
-- {item_6197}: Education goal: learn to avoid risks
-- {item_6198}: Education goal: be lovable
-- {item_6199}: Education goal: get along with other kids
-- {item_6200}: Education goal: interested child
-- {item_6201}: Education goal: act like normal girl/boy
-- {item_6202}: Education goal: be honest
-- {item_6203}: Education goal: have good manners
-- {item_6204}: Education goal: have good self-control
-- {item_6205}: Education goal: be responsible
-- {item_6206}: Education goal: treat others with respect
+- {item_6189}: education goal: be a good pupil
+- {item_6190}: education goal: obey the parents
+- {item_6191}: education goal: have good ability to judge
+- {item_6192}: education goal: be clean and neat
+- {item_6193}: education goal: strive to achieve aims
+- {item_6194}: education goal: fit in well in groups
+- {item_6195}: education goal: learn to fight obstacles
+- {item_6196}: education goal: be satisfied with itself
+- {item_6197}: education goal: learn to avoid risks
+- {item_6198}: education goal: be lovable
+- {item_6199}: education goal: get along with other kids
+- {item_6200}: education goal: interested child
+- {item_6201}: education goal: act like normal girl/boy
+- {item_6202}: education goal: be honest
+- {item_6203}: education goal: have good manners
+- {item_6204}: education goal: have good self-control
+- {item_6205}: education goal: be responsible
+- {item_6206}: education goal: treat others with respect
 
 ### experiences with the birth of a child [ebc]
 
-- {_hgen_hgtyp1hh}: Household Typology, One Digit
-- {_hgen_hgtyp2hh}: Household Typology, Two Digit
-- {_pequiv_d11104}: Marital Status of Individual
-- {_pgen_pgfamstd}: Marital Status
-- {item_26}: Serial Number Of The Event Per Person
-- {item_27}: Experiences with the birth of a child
-- {item_32}: Type Of Event
-- {item_3355}: Info to spell date
-- {item_3356}: Experiences with the birth of a child
-- {item_37}: Experiences with the birth of a child
-- {item_42}: Experiences with the birth of a child
-- {item_43}: Experiences with the birth of a child
-- {item_46}: Experiences with the birth of a child
-- {item_48}: Experiences with the birth of a child
-- {item_55}: Experiences with the birth of a child
-- {item_56}: Year Spell Ends
-- {item_5882}: Censor Variable
-- {item_7506}: Marital Status One
-- {item_7507}: Marital Status Two
-- {item_7508}: Marital Status Three
-- {item_8464}: Censor for time of event
-- {item_8465}: Source Of Information
-- {pfamst}: Marital Status
-- {pld0129}: Marital Status: Married
-- {pld0130}: Marital Status: Not Married
+- {_hgen_hgtyp1hh}: household typology, one digit
+- {_hgen_hgtyp2hh}: household typology, two digit
+- {_pequiv_d11104}: marital status of individual
+- {_pgen_pgfamstd}: marital status
+- {item_26}: serial number of the event per person
+- {item_27}: experiences with the birth of a child
+- {item_32}: type of event
+- {item_3355}: info to spell date
+- {item_3356}: experiences with the birth of a child
+- {item_37}: experiences with the birth of a child
+- {item_42}: experiences with the birth of a child
+- {item_43}: experiences with the birth of a child
+- {item_46}: experiences with the birth of a child
+- {item_48}: experiences with the birth of a child
+- {item_55}: experiences with the birth of a child
+- {item_56}: year spell ends
+- {item_5882}: censor variable
+- {item_7506}: marital status one
+- {item_7507}: marital status two
+- {item_7508}: marital status three
+- {item_8464}: censor for time of event
+- {item_8465}: source of information
+- {pfamst}: marital status
+- {pld0129}: marital status: married
+- {pld0130}: marital status: not married
 
 #### other family event [ofe]
 
-- {pfs101}: Other HH Comp Change
-- {pfs102}: Month Other HH Comp Change Previous Yr
+- {pfs101}: other hh comp change
+- {pfs102}: month other hh comp change previous yr
 - {pfs103}: other change in hh composition month, this year
 
 #### no family event [nfe]
 
-- {pfsno}: No Change In HH Composition
+- {pfsno}: no change in hh composition
 
 #### death of a close friend/relative [dcf]
 
 - {pfs131}: person living in hh died
-- {pfs132}: Month Person Living In Hh Died Prev. Year
-- {pfs133}: month person living in hh died prev. Year
+- {pfs132}: month person living in hh died prev. year
+- {pfs133}: month person living in hh died prev. year
 
 #### death of child [dch]
 
-- {pfs121}: Child Died
-- {pfs122}: Month Child Died Previous Year
-- {pfs123}: Month Child Died Survey Year
+- {pfs121}: child died
+- {pfs122}: month child died previous year
+- {pfs123}: month child died survey year
 
 #### divorce [dvr]
 
-- {pfs061}: Divorced
-- {pfs062}: Month Divorced Previous Year
-- {pfs063}: Month Divorced Survey Year
+- {pfs061}: divorced
+- {pfs062}: month divorced previous year
+- {pfs063}: month divorced survey year
 
 #### child left household [clh2]
 
@@ -585,57 +585,57 @@ label: family and social networks
 
 #### moved in together with partner [mwp]
 
-- {pfs021}: Moved In Together
-- {pfs022}: Month Moved In Together Previous Year
-- {pfs023}: Month Moved In Together Previous Year
+- {pfs021}: moved in together
+- {pfs022}: month moved in together previous year
+- {pfs023}: month moved in together previous year
 
 #### married [mas]
 
-- {pfs011}: Married
-- {pfs012}: Month Married Previous Year
-- {pfs013}: Month Married Survey Year
+- {pfs011}: married
+- {pfs012}: month married previous year
+- {pfs013}: month married survey year
 
 #### death of partner [dpa]
 
-- {pfs071}: Partner Died
-- {pfs072}: Month Partner Died Previous Year
-- {pfs073}: Month Partner Died Survey Year
+- {pfs071}: partner died
+- {pfs072}: month partner died previous year
+- {pfs073}: month partner died survey year
 
 #### death of parent [dfm]
 
-- {pfs081}: Father Died
-- {pfs082}: Father Died Previous Year
-- {pfs083}: Father Died Survey Year
-- {pfs091}: Mother Died
-- {pfs092}: Mother Died Previous Year
-- {pfs093}: Mother Died Survey Year
+- {pfs081}: father died
+- {pfs082}: father died previous year
+- {pfs083}: father died survey year
+- {pfs091}: mother died
+- {pfs092}: mother died previous year
+- {pfs093}: mother died survey year
 
 #### separation from partner [spa]
 
-- {pfs051}: Separated From Partner
-- {pfs052}: Month Separated Previous Year
-- {pfs053}: Month Separated Survey Year
+- {pfs051}: separated from partner
+- {pfs052}: month separated previous year
+- {pfs053}: month separated survey year
 
 #### cohabitating [coh]
 
-- {pp1}: Currently Have Steady Partner
-- {pp2}: Partner Lives In Household
+- {pp1}: currently have steady partner
+- {pp2}: partner lives in household
 
 ### parental role [prl]
 
 
 #### parental role of second caregiver (usually father) [prs]
 
-- {item_6232}: Be parents: Sacrifice own wishes
-- {item_6233}: Be parents: look forward to see child
-- {item_6234}: Be parents: a disobedient child wants to anger
-- {item_6235}: Be parents: child is purpose in life
-- {item_6236}: Be parents: captured in parental responsibility
-- {item_6237}: Be parents: problems in upbringing I blame on child
-- {item_6238}: Be parents: together with child is the best
-- {item_6239}: Be parents: would bear everything for child
-- {item_6240}: Be parents: child misconducts with intent
-- {item_6241}: Be parents: drop everything to support child
+- {item_6232}: be parents: sacrifice own wishes
+- {item_6233}: be parents: look forward to see child
+- {item_6234}: be parents: a disobedient child wants to anger
+- {item_6235}: be parents: child is purpose in life
+- {item_6236}: be parents: captured in parental responsibility
+- {item_6237}: be parents: problems in upbringing i blame on child
+- {item_6238}: be parents: together with child is the best
+- {item_6239}: be parents: would bear everything for child
+- {item_6240}: be parents: child misconducts with intent
+- {item_6241}: be parents: drop everything to support child
 
 #### parental role (bioage long, mother or father) [prp]
 
@@ -652,16 +652,16 @@ label: family and social networks
 
 #### parental role of main caregiver (usually mother) [prm]
 
-- {item_6158}: Be parents: Sacrifice own wishes
-- {item_6159}: Be parents: look forward to see child
-- {item_6160}: Be parents: a disobedient child wants to anger
-- {item_6161}: Be parents: child is purpose in life
-- {item_6162}: Be parents: captured in parental responsibility
-- {item_6163}: Be parents: problems in upbringing I blame on child
-- {item_6164}: Be parents: together with child is the best
-- {item_6165}: Be parents: would bear everything for child
-- {item_6166}: Be parents: child misconducts with intent
-- {item_6167}: Be parents: drop everything to support child
+- {item_6158}: be parents: sacrifice own wishes
+- {item_6159}: be parents: look forward to see child
+- {item_6160}: be parents: a disobedient child wants to anger
+- {item_6161}: be parents: child is purpose in life
+- {item_6162}: be parents: captured in parental responsibility
+- {item_6163}: be parents: problems in upbringing i blame on child
+- {item_6164}: be parents: together with child is the best
+- {item_6165}: be parents: would bear everything for child
+- {item_6166}: be parents: child misconducts with intent
+- {item_6167}: be parents: drop everything to support child
 
 ### parenting style [pst]
 
@@ -689,43 +689,43 @@ label: family and social networks
 
 #### parenting style, second caregiver (usually father) [pss]
 
-- {item_6214}: Education behavior: show love
-- {item_6215}: Education behavior: a disobedient child is ungrateful
-- {item_6216}: Education behavior: don’t talk to child for a while
-- {item_6217}: Education behavior: intimate not to act against
-- {item_6218}: Education behavior: compliment my child
-- {item_6219}: Education behavior: scold if angry
-- {item_6220}: Education behavior: try to affect circle of friends
-- {item_6221}: Education behavior: cut penalty short or cancel it
-- {item_6222}: Education behavior: disappointed about bad behavior
-- {item_6223}: Education behavior: hard to be consequent in upbringing
-- {item_6224}: Education behavior: criticize
-- {item_6225}: Education behavior: ask what it has experienced
-- {item_6226}: Education behavior: punishment
-- {item_6227}: Education behavior: threaten penalty, but don’t penalize
-- {item_6228}: Education behavior: knowing where child is
-- {item_6229}: Education behavior: rather strict to child
-- {item_6230}: Education behavior: comfort when child feels sad
-- {item_6231}: Education behavior: shouting when child makes mistakes
+- {item_6214}: education behavior: show love
+- {item_6215}: education behavior: a disobedient child is ungrateful
+- {item_6216}: education behavior: don’t talk to child for a while
+- {item_6217}: education behavior: intimate not to act against
+- {item_6218}: education behavior: compliment my child
+- {item_6219}: education behavior: scold if angry
+- {item_6220}: education behavior: try to affect circle of friends
+- {item_6221}: education behavior: cut penalty short or cancel it
+- {item_6222}: education behavior: disappointed about bad behavior
+- {item_6223}: education behavior: hard to be consequent in upbringing
+- {item_6224}: education behavior: criticize
+- {item_6225}: education behavior: ask what it has experienced
+- {item_6226}: education behavior: punishment
+- {item_6227}: education behavior: threaten penalty, but don’t penalize
+- {item_6228}: education behavior: knowing where child is
+- {item_6229}: education behavior: rather strict to child
+- {item_6230}: education behavior: comfort when child feels sad
+- {item_6231}: education behavior: shouting when child makes mistakes
 
 #### parenting style, main caregiver (usually mother) [psm]
 
-- {item_6140}: Education behavior: show love
-- {item_6141}: Education behavior: a disobedient child is ungrateful
-- {item_6142}: Education behavior: don’t talk to child for a while
-- {item_6143}: Education behavior: intimate not to act against
-- {item_6144}: Education behavior: compliment my child
-- {item_6145}: Education behavior: scold if angry
-- {item_6146}: Education behavior: try to affect circle of friends
-- {item_6147}: Education behavior: cut penalty short or cancel it
-- {item_6148}: Education behavior: disappointed about bad behavior
-- {item_6149}: Education behavior: hard to be consequent in upbringing
-- {item_6150}: Education behavior: criticize
-- {item_6151}: Education behavior: ask what it has experienced
-- {item_6152}: Education behavior: punishment
-- {item_6153}: Education behavior: threaten penalty, but don’t penalize
-- {item_6154}: Education behavior: knowing where child is
-- {item_6155}: Education behavior: rather strict to child
-- {item_6156}: Education behavior: comfort when child feels sad
-- {item_6157}: Education behavior: shouting when child makes mistakes
+- {item_6140}: education behavior: show love
+- {item_6141}: education behavior: a disobedient child is ungrateful
+- {item_6142}: education behavior: don’t talk to child for a while
+- {item_6143}: education behavior: intimate not to act against
+- {item_6144}: education behavior: compliment my child
+- {item_6145}: education behavior: scold if angry
+- {item_6146}: education behavior: try to affect circle of friends
+- {item_6147}: education behavior: cut penalty short or cancel it
+- {item_6148}: education behavior: disappointed about bad behavior
+- {item_6149}: education behavior: hard to be consequent in upbringing
+- {item_6150}: education behavior: criticize
+- {item_6151}: education behavior: ask what it has experienced
+- {item_6152}: education behavior: punishment
+- {item_6153}: education behavior: threaten penalty, but don’t penalize
+- {item_6154}: education behavior: knowing where child is
+- {item_6155}: education behavior: rather strict to child
+- {item_6156}: education behavior: comfort when child feels sad
+- {item_6157}: education behavior: shouting when child makes mistakes
 

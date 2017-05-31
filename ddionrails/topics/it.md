@@ -8,950 +8,950 @@ label: income, taxes, and social security
 
 ## transfers [trf]
 
-- {_1005_p_trf}: No Income At All Prev Yr
-- {_1249_p_trf}: Private Long Term Care Insurance
-- {_1250_p_trf}: Social Security For Non-Working Spouse
-- {_1553_p_trf}: Provisions For Surviving Dependents
-- {_1554_p_trf}: Health Insurance Contributions
-- {_1555_p_trf}: Pension Insurance Contributions
-- {_3847_p_trf}: None Of These Income Types In Prev. Yr
-- {_816_p_trf}: Financial Security When Sick
-- {_817_p_trf}: Financial Security When Unemployed
-- {_818_p_trf}: Financial Security When Elderly
-- {_819_p_trf}: Financial Security When Requiring Care
-- {_820_p_trf}: Social Security Contributions
-- {_821_p_trf}: Type Of Social Security System Chosen
-- {item_1923}: None Of These Income Prev Yr, Months
-- {item_2087}: None Of These Income Jan This Yr
-- {item_2088}: None Of These Income Feb This Yr
-- {item_2089}: None Of These Income Mar This Yr
-- {kal2n}: None Of These Income Jan-Dec Prev Yr
-- {kal2n001}: None Of These Income Jan Prev Yr
-- {kal2n002}: None Of These Income Feb Prev Yr
-- {kal2n003}: None Of These Income Mar Prev Yr
-- {kal2n004}: None Of These Income Apr Prev Yr
-- {kal2n005}: None Of These Income May Prev Yr
-- {kal2n006}: None Of These Income Jun Prev Yr
-- {kal2n007}: None Of These Income Jul Prev Yr
-- {kal2n008}: None Of These Income Aug Prev Yr
-- {kal2n009}: None Of These Income Sep Prev Yr
-- {kal2n01}: None Of These Income sources Previous Yr.
-- {kal2n010}: None Of These Income Oct Prev Yr
-- {kal2n011}: None Of These Income Nov Prev Yr
-- {kal2n012}: None Of These Income Dec Prev Yr
-- {pekno}: No Other Income Besides Earned Income
-- {plc0096}: No Income:Listed Sources May 90
-- {plc0103}: No Income:Listed Sources May 89
-- {psoz1}: Financial Secure When Sick
-- {psoz2}: Financial Secure When Unemployed
-- {psoz3}: Financial Secure In Old Age
-- {psoz4}: Financial Secure In Old Age
-- {psoz5}: Social Security Contributions
-- {pvekno}: None Of These Income Types In Prev. Yr
+- {_1005_p_trf}: no income at all prev yr
+- {_1249_p_trf}: private long term care insurance
+- {_1250_p_trf}: social security for non-working spouse
+- {_1553_p_trf}: provisions for surviving dependents
+- {_1554_p_trf}: health insurance contributions
+- {_1555_p_trf}: pension insurance contributions
+- {_3847_p_trf}: none of these income types in prev. yr
+- {_816_p_trf}: financial security when sick
+- {_817_p_trf}: financial security when unemployed
+- {_818_p_trf}: financial security when elderly
+- {_819_p_trf}: financial security when requiring care
+- {_820_p_trf}: social security contributions
+- {_821_p_trf}: type of social security system chosen
+- {item_1923}: none of these income prev yr, months
+- {item_2087}: none of these income jan this yr
+- {item_2088}: none of these income feb this yr
+- {item_2089}: none of these income mar this yr
+- {kal2n}: none of these income jan-dec prev yr
+- {kal2n001}: none of these income jan prev yr
+- {kal2n002}: none of these income feb prev yr
+- {kal2n003}: none of these income mar prev yr
+- {kal2n004}: none of these income apr prev yr
+- {kal2n005}: none of these income may prev yr
+- {kal2n006}: none of these income jun prev yr
+- {kal2n007}: none of these income jul prev yr
+- {kal2n008}: none of these income aug prev yr
+- {kal2n009}: none of these income sep prev yr
+- {kal2n01}: none of these income sources previous yr.
+- {kal2n010}: none of these income oct prev yr
+- {kal2n011}: none of these income nov prev yr
+- {kal2n012}: none of these income dec prev yr
+- {pekno}: no other income besides earned income
+- {plc0096}: no income:listed sources may 90
+- {plc0103}: no income:listed sources may 89
+- {psoz1}: financial secure when sick
+- {psoz2}: financial secure when unemployed
+- {psoz3}: financial secure in old age
+- {psoz4}: financial secure in old age
+- {psoz5}: social security contributions
+- {pvekno}: none of these income types in prev. yr
 
 ### household-related transfers [hht]
 
-- {_pequiv_chspt}: Child allowance
-- {_pequiv_fchspt}: Imp.flag:Child allowance
-- {_pequiv_fhouse}: Imp.flag:Housing benefit
-- {_pequiv_fhsup}: Imp.flag:Housing support f. owner-occupiers
-- {_pequiv_fnursh}: Imp.flag:Compuls. long term care insurance
-- {_pequiv_fsphlp}: Imp.flag:Soc. assist. for spec. circumstan.
-- {_pequiv_fsubst}: Imp.flag:Social assist.(living expenses ..)
-- {_pequiv_house}: Housing benefit
-- {_pequiv_hsup}: Housing support for owner-occupiers
-- {_pequiv_i11106}: HH Private Transfers
-- {_pequiv_i11107}: HH Public Transfers
-- {_pequiv_i11206}: Share of imputed HH Private Transfers
-- {_pequiv_i11207}: Share of imputed HH Public Transfers
-- {_pequiv_nursh}: Compulsory long term care insurance
-- {_pequiv_sphlp}: Social assistance f. spec. circumstances
-- {_pequiv_subst}: Social assistance(living expenses etc)
-- {hlos1}: Winnings, Inheritance, Etc. GT 500 EUR
-- {hlos2}: Inheritance
-- {hlos3}: Gift
-- {hlos4}: Lottery Winnings
-- {hlos5}: Amount Of Winnings, Inheritance, In euros
-- {hloska}: Winnings, Inheritance Item Nonresponse
+- {_pequiv_chspt}: child allowance
+- {_pequiv_fchspt}: imp.flag:child allowance
+- {_pequiv_fhouse}: imp.flag:housing benefit
+- {_pequiv_fhsup}: imp.flag:housing support f. owner-occupiers
+- {_pequiv_fnursh}: imp.flag:compuls. long term care insurance
+- {_pequiv_fsphlp}: imp.flag:soc. assist. for spec. circumstan.
+- {_pequiv_fsubst}: imp.flag:social assist.(living expenses ..)
+- {_pequiv_house}: housing benefit
+- {_pequiv_hsup}: housing support for owner-occupiers
+- {_pequiv_i11106}: hh private transfers
+- {_pequiv_i11107}: hh public transfers
+- {_pequiv_i11206}: share of imputed hh private transfers
+- {_pequiv_i11207}: share of imputed hh public transfers
+- {_pequiv_nursh}: compulsory long term care insurance
+- {_pequiv_sphlp}: social assistance f. spec. circumstances
+- {_pequiv_subst}: social assistance(living expenses etc)
+- {hlos1}: winnings, inheritance, etc. gt 500 eur
+- {hlos2}: inheritance
+- {hlos3}: gift
+- {hlos4}: lottery winnings
+- {hlos5}: amount of winnings, inheritance, in euros
+- {hloska}: winnings, inheritance item nonresponse
 
 #### child benefit / supplementary child benefit [cbe]
 
-- {_2740_h_cbe}: No Benefits
-- {_pequiv_adchb}: Additional child benefit
-- {_pequiv_fachm}: Imp.flag: Advance child maintenance payment
-- {_pequiv_fdchb}: Imp.flag: Additional child benefit
-- {_pequiv_iachm}: Advance child maintenance payment
-- {hdkg1}: Currently Receiving Child Benefit
-- {hdkg2}: Child Benefit, Amount
-- {hdkg3}: Number Children
+- {_2740_h_cbe}: no benefits
+- {_pequiv_adchb}: additional child benefit
+- {_pequiv_fachm}: imp.flag: advance child maintenance payment
+- {_pequiv_fdchb}: imp.flag: additional child benefit
+- {_pequiv_iachm}: advance child maintenance payment
+- {hdkg1}: currently receiving child benefit
+- {hdkg2}: child benefit, amount
+- {hdkg3}: number children
 - {hdkz1}: currently receiving children's allowance benefit
 - {hdkz2}: children's allowance benefit, amount
-- {hlkg1}: Child Allowance Previous Year
-- {hlkg2}: Child Allowance Previous Yr. Months
-- {hlkg3}: Child Allowance Previous Yr. Amt./Month
-- {plc0118}: Family Allowance Last Month
+- {hlkg1}: child allowance previous year
+- {hlkg2}: child allowance previous yr. months
+- {hlkg3}: child allowance previous yr. amt./month
+- {plc0118}: family allowance last month
 
 #### long-term care insurance [ltc]
 
-- {_2737_h_ltc}: Compulsory Long Term Care Insurance, Since Month
-- {_2738_h_ltc}: Compulsory Long Term Care Insurance, Since Year
-- {_2739_h_ltc}: Compulsory Long Term Care Insurance, Benefits In Kind
-- {_2741_h_ltc}: No Compulsory Long Term Care Insurance
-- {hdno}: Ill Family Members Support
-- {hdpg1}: Ill Family Members Support
-- {hdpg2}: Ill Family Members Support, Amount
-- {hdpv2}: Compulsory Long Term Care Insurance, Amount
+- {_2737_h_ltc}: compulsory long term care insurance, since month
+- {_2738_h_ltc}: compulsory long term care insurance, since year
+- {_2739_h_ltc}: compulsory long term care insurance, benefits in kind
+- {_2741_h_ltc}: no compulsory long term care insurance
+- {hdno}: ill family members support
+- {hdpg1}: ill family members support
+- {hdpg2}: ill family members support, amount
+- {hdpv2}: compulsory long term care insurance, amount
 
 #### housing allowance [hal]
 
-- {hdwg1}: Housing Assistance
-- {hdwg2}: Housing Assistance, Amount
-- {he11}: Homeowner Assistance Prev. Year, Tax Deductible
-- {he12}: Tax Deductible Amount Applied For Prev. Year
-- {he13}: Homeowner Assistance Prev Year, Total Assistance
+- {hdwg1}: housing assistance
+- {hdwg2}: housing assistance, amount
+- {he11}: homeowner assistance prev. year, tax deductible
+- {he12}: tax deductible amount applied for prev. year
+- {he13}: homeowner assistance prev year, total assistance
 - {he14}: amount total assistance applied prev year
-- {he15}: No Homeowner Assistance Prev. Year
-- {hlpg1}: Ill Family Members Support prev year
-- {hlpg2}: Compulsory Long Term Care Insurance, prev. year, Months
-- {hlpg3}: Ill Family Members Support prev year, Amt./Mo.
-- {hlwg1}: Housing Assistance prev year
-- {hlwg2}: Housing Assistance prev year, Months
-- {hlwg3}: Amount Of Housing Allowance prev year, Subsidy
+- {he15}: no homeowner assistance prev. year
+- {hlpg1}: ill family members support prev year
+- {hlpg2}: compulsory long term care insurance, prev. year, months
+- {hlpg3}: ill family members support prev year, amt./mo.
+- {hlwg1}: housing assistance prev year
+- {hlwg2}: housing assistance prev year, months
+- {hlwg3}: amount of housing allowance prev year, subsidy
 
 #### basic income support in old age [bis]
 
-- {hlgs1}: basic financial security in old age, prev. Year
+- {hlgs1}: basic financial security in old age, prev. year
 - {hlgs2}: basic financial security in old age prev year, months
 - {hlgs3}: basic financial security in old age prev year, per month
 
 #### alg ii / social assistance [sas]
 
-- {_pequiv_alg2}: Unemployment benefit II
-- {_pequiv_falg2}: Imp.flag: Unemployment benefit II
-- {_pequiv_i11108}: HH Social Security Pensions
-- {_pequiv_i11208}: Share of imputed HH Social Security Pensions
-- {hdag1}: Unemployment Subsidy II, Social Subsidy Today
-- {hdag2}: Unemployment Subsidy II, Social Subsidy, Amt.
-- {hdgs1}: Age / Reduced Earning Capacity Today
-- {hdgs2}: Age / Reduced Earning Capacity, Amt.
-- {hdsh1}: Social Assistance
-- {hdsh2}: Social Assistance, Amount
-- {hlag1}: Unemployment Subsidy II, Social Subsidy prev year
-- {hlag2}: Unemployment Subsidy II, Social Subsidy prev year, Months
-- {hlag3}: Unemployment Subsidy II, Social Subsidy prev year, Amt./ Months
+- {_pequiv_alg2}: unemployment benefit ii
+- {_pequiv_falg2}: imp.flag: unemployment benefit ii
+- {_pequiv_i11108}: hh social security pensions
+- {_pequiv_i11208}: share of imputed hh social security pensions
+- {hdag1}: unemployment subsidy ii, social subsidy today
+- {hdag2}: unemployment subsidy ii, social subsidy, amt.
+- {hdgs1}: age / reduced earning capacity today
+- {hdgs2}: age / reduced earning capacity, amt.
+- {hdsh1}: social assistance
+- {hdsh2}: social assistance, amount
+- {hlag1}: unemployment subsidy ii, social subsidy prev year
+- {hlag2}: unemployment subsidy ii, social subsidy prev year, months
+- {hlag3}: unemployment subsidy ii, social subsidy prev year, amt./ months
 - {hlkz1}: children's allowance prev year
 - {hlkz2}: children's allowance prev year, months
 - {hlkz3}: children's allowance prev year amt/mo
-- {hlsh}: Social Assistance Prev Year
-- {hlsh1}: Reg. Subsistence Support prev year
-- {hlsh2}: Reg. Subsistence Support prev year, months
-- {hlsh3}: Reg. Subsistence Support prev year, Amt./Mo.
-- {hlsha}: Regular Subsistence Assistance
-- {hlsha1}: Months Of Subsistence Assistance
-- {hlsha2}: Reg. Subsistence Support, Amt.
-- {hlshb}: Spec. Circumstances Assistance prev year
-- {hlshb1}: Spec. Circumstances Assistance prev year, Months
-- {hlshb2}: Spec. Circumstances Assistance prev year, Amt.
-- {hlshc}: One Time Assistance For Subsistence
-- {hlshka}: Social Assistance Item Nonresponse
-- {item_29}: ALG II / social assistance
-- {item_35}: ALG II / social assistance
-- {item_40}: ALG II / social assistance
-- {item_45}: ALG II / social assistance
-- {plc0119}: Social Welfare May 89
-- {plc0120}: Amount Of Social Welfare May 89
-- {plc0121}: Social Welfare May 90
-- {plc0122}: Amount Of Social Welfare May 90
+- {hlsh}: social assistance prev year
+- {hlsh1}: reg. subsistence support prev year
+- {hlsh2}: reg. subsistence support prev year, months
+- {hlsh3}: reg. subsistence support prev year, amt./mo.
+- {hlsha}: regular subsistence assistance
+- {hlsha1}: months of subsistence assistance
+- {hlsha2}: reg. subsistence support, amt.
+- {hlshb}: spec. circumstances assistance prev year
+- {hlshb1}: spec. circumstances assistance prev year, months
+- {hlshb2}: spec. circumstances assistance prev year, amt.
+- {hlshc}: one time assistance for subsistence
+- {hlshka}: social assistance item nonresponse
+- {item_29}: alg ii / social assistance
+- {item_35}: alg ii / social assistance
+- {item_40}: alg ii / social assistance
+- {item_45}: alg ii / social assistance
+- {plc0119}: social welfare may 89
+- {plc0120}: amount of social welfare may 89
+- {plc0121}: social welfare may 90
+- {plc0122}: amount of social welfare may 90
 
 ### personal transfers [ptr]
 
 
 #### parental, maternity, and child-raising allowance [pmc]
 
-- {_pequiv_fmaty}: Imp.flag:Maternity benefit
-- {_pequiv_imaty}: Maternity benefit
-- {item_2084}: Maternity Leave Prev Yr Jul-Jun
-- {item_2085}: Maternity Leave Prev Yr, Months
-- {item_2086}: Maternity Leave Prev Yr, Amount
-- {item_2090}: Maternity Leave Jul Prev Yr
-- {item_2091}: Maternity Leave Aug Prev Yr
-- {item_2092}: Maternity Leave Sep Prev Yr
-- {item_2093}: Maternity Leave Oct Prev Yr
-- {item_2094}: Maternity Leave Nov Prev Yr
-- {item_2095}: Maternity Leave Dec Prev Yr
-- {item_2096}: Maternity Leave Jan This Yr
-- {item_2097}: Maternity Leave Feb This Yr
-- {item_2098}: Maternity Leave Mar This Yr
-- {item_2100}: Maternity Leave Jul-Jun Prev Yr
-- {kal2j}: Maternity Benefit Jan-Dec Prev Yr
-- {kal2j001}: Maternity Benefit Jan Prev Yr
-- {kal2j002}: Maternity Benefit Feb Prev Yr
-- {kal2j003}: Maternity Benefit Mar Prev Yr
-- {kal2j004}: Maternity Benefit Apr Prev Yr
-- {kal2j005}: Maternity Benefit May Prev Yr
-- {kal2j006}: Maternity Benefit Jun Prev Yr
-- {kal2j007}: Maternity Benefit Jul Prev Yr
-- {kal2j008}: Maternity Benefit Aug Prev Yr
-- {kal2j009}: Maternity Benefit Sep Prev Yr
-- {kal2j01}: Maternity Benefit Previous Yr.
-- {kal2j010}: Maternity Benefit Oct Prev Yr
-- {kal2j011}: Maternity Benefit Nov Prev Yr
-- {kal2j012}: Maternity Benefit Dec Prev Yr
-- {kal2j02}: Maternity Benefit Months Previous Yr.
-- {kal2j03}: Maternity Benefit Amount Previous Yr.
-- {pek07}: Maternity Benefit
-- {pek071}: Gross Amount Of Maternity Benefit
-- {plc0143}: Amount Of Maternity Benefit May 89
-- {plc0144}: Maternity Benefit May 90
-- {plc0145}: Amount Of Maternity Benefit May 90
-- {plc0146}: Maternity Leave May 89
-- {plc0147}: Amount Of Maternity Leave May 89
-- {plc0148}: Maternity Leave May 90
-- {plc0149}: Amount Of Maternity Leave May 90
-- {plc0150}: Gross Amount Of Maternity Leave
-- {plc0151}: Maternity Benefit May 89
-- {pvek09}: Maternity Benefit Jan-Dec Prev Yr
-- {pvek091}: Mths Of Maternity Benefit Prev Yr
-- {pvek092}: Gross Amount Of Maternity Benefit
+- {_pequiv_fmaty}: imp.flag:maternity benefit
+- {_pequiv_imaty}: maternity benefit
+- {item_2084}: maternity leave prev yr jul-jun
+- {item_2085}: maternity leave prev yr, months
+- {item_2086}: maternity leave prev yr, amount
+- {item_2090}: maternity leave jul prev yr
+- {item_2091}: maternity leave aug prev yr
+- {item_2092}: maternity leave sep prev yr
+- {item_2093}: maternity leave oct prev yr
+- {item_2094}: maternity leave nov prev yr
+- {item_2095}: maternity leave dec prev yr
+- {item_2096}: maternity leave jan this yr
+- {item_2097}: maternity leave feb this yr
+- {item_2098}: maternity leave mar this yr
+- {item_2100}: maternity leave jul-jun prev yr
+- {kal2j}: maternity benefit jan-dec prev yr
+- {kal2j001}: maternity benefit jan prev yr
+- {kal2j002}: maternity benefit feb prev yr
+- {kal2j003}: maternity benefit mar prev yr
+- {kal2j004}: maternity benefit apr prev yr
+- {kal2j005}: maternity benefit may prev yr
+- {kal2j006}: maternity benefit jun prev yr
+- {kal2j007}: maternity benefit jul prev yr
+- {kal2j008}: maternity benefit aug prev yr
+- {kal2j009}: maternity benefit sep prev yr
+- {kal2j01}: maternity benefit previous yr.
+- {kal2j010}: maternity benefit oct prev yr
+- {kal2j011}: maternity benefit nov prev yr
+- {kal2j012}: maternity benefit dec prev yr
+- {kal2j02}: maternity benefit months previous yr.
+- {kal2j03}: maternity benefit amount previous yr.
+- {pek07}: maternity benefit
+- {pek071}: gross amount of maternity benefit
+- {plc0143}: amount of maternity benefit may 89
+- {plc0144}: maternity benefit may 90
+- {plc0145}: amount of maternity benefit may 90
+- {plc0146}: maternity leave may 89
+- {plc0147}: amount of maternity leave may 89
+- {plc0148}: maternity leave may 90
+- {plc0149}: amount of maternity leave may 90
+- {plc0150}: gross amount of maternity leave
+- {plc0151}: maternity benefit may 89
+- {pvek09}: maternity benefit jan-dec prev yr
+- {pvek091}: mths of maternity benefit prev yr
+- {pvek092}: gross amount of maternity benefit
 
 #### private transfers [prt]
 
-- {_1456_p_prt}: Gross Amount Of Income-Persons Not In HH
-- {_pequiv_falim}: Imp.flag:Alimony
-- {_pequiv_felse}: Imp.flag:Private Transfers received
-- {_pequiv_fsuby}: Imp.flag:Subsistence allowance
-- {_pequiv_ialim}: Alimony
-- {_pequiv_ielse}: Private Transfers received
-- {_pequiv_isuby}: Subsistence allowance
-- {hunt1}: receipt Alimony from relatives
-- {hunt2}: amount of Alimony from relatives
-- {kal2m}: Income-Persons Not In HH Jan-Dec Prev Yr
-- {kal2m001}: Income-Persons Not In HH Jan Prev Yr
-- {kal2m002}: Income-Persons Not In HH Feb Prev Yr
-- {kal2m003}: Income-Persons Not In HH Mar Prev Yr
-- {kal2m004}: Income-Persons Not In HH Apr Prev Yr
-- {kal2m005}: Income-Persons Not In HH May Prev Yr
-- {kal2m006}: Income-Persons Not In HH Jun Prev Yr
-- {kal2m007}: Income-Persons Not In HH Jul Prev Yr
-- {kal2m008}: Income-Persons Not In HH Aug Prev Yr
-- {kal2m009}: Income-Persons Not In HH Sep Prev Yr
-- {kal2m01}: Income-Persons Not In HH Previous Yr.
-- {kal2m010}: Income-Persons Not In HH Oct Prev Yr
-- {kal2m011}: Income-Persons Not In HH Nov Prev Yr
-- {kal2m012}: Income-Persons Not In HH Dec Prev Yr
-- {kal2m02}: Income-Persons Not In HH Months Previous Yr.
-- {kal2m03}: Income-Persons Not In HH Amount Previous Yr.
-- {pek10}: Alimony, Child Support From Ex-Partner
-- {pek101}: Gross Amt. Alimony, C Support Ex-Partner
-- {pek11}: Income From Persons Not In Household
-- {pek111}: Gross Amt. Income-Persons Not In HH,Mo
-- {plc0191}: Other Income May 89
-- {plc0192}: Amount Of Other Income May 89
-- {plc0193}: Other Income May 90
-- {plc0194}: Amount Of Other Income May 90
-- {plc0195}: Amount Of Income-Persons Not In HH May 89
-- {plc0196}: Income-Persons Not In HH May90
-- {plc0197}: Amount Of Income-Persons Not In HH May 90
-- {plc0199}: Income-Persons Not In HH May 89
-- {pvek13}: Income-Prsons Not In HH Jan-Dec Prev. Yr
-- {pvek131}: Mths Of Income-Prsons Not In HH Prev. Yr
-- {pvek132}: Gross Amount Of Income-Persons Not In HH
+- {_1456_p_prt}: gross amount of income-persons not in hh
+- {_pequiv_falim}: imp.flag:alimony
+- {_pequiv_felse}: imp.flag:private transfers received
+- {_pequiv_fsuby}: imp.flag:subsistence allowance
+- {_pequiv_ialim}: alimony
+- {_pequiv_ielse}: private transfers received
+- {_pequiv_isuby}: subsistence allowance
+- {hunt1}: receipt alimony from relatives
+- {hunt2}: amount of alimony from relatives
+- {kal2m}: income-persons not in hh jan-dec prev yr
+- {kal2m001}: income-persons not in hh jan prev yr
+- {kal2m002}: income-persons not in hh feb prev yr
+- {kal2m003}: income-persons not in hh mar prev yr
+- {kal2m004}: income-persons not in hh apr prev yr
+- {kal2m005}: income-persons not in hh may prev yr
+- {kal2m006}: income-persons not in hh jun prev yr
+- {kal2m007}: income-persons not in hh jul prev yr
+- {kal2m008}: income-persons not in hh aug prev yr
+- {kal2m009}: income-persons not in hh sep prev yr
+- {kal2m01}: income-persons not in hh previous yr.
+- {kal2m010}: income-persons not in hh oct prev yr
+- {kal2m011}: income-persons not in hh nov prev yr
+- {kal2m012}: income-persons not in hh dec prev yr
+- {kal2m02}: income-persons not in hh months previous yr.
+- {kal2m03}: income-persons not in hh amount previous yr.
+- {pek10}: alimony, child support from ex-partner
+- {pek101}: gross amt. alimony, c support ex-partner
+- {pek11}: income from persons not in household
+- {pek111}: gross amt. income-persons not in hh,mo
+- {plc0191}: other income may 89
+- {plc0192}: amount of other income may 89
+- {plc0193}: other income may 90
+- {plc0194}: amount of other income may 90
+- {plc0195}: amount of income-persons not in hh may 89
+- {plc0196}: income-persons not in hh may90
+- {plc0197}: amount of income-persons not in hh may 90
+- {plc0199}: income-persons not in hh may 89
+- {pvek13}: income-prsons not in hh jan-dec prev. yr
+- {pvek131}: mths of income-prsons not in hh prev. yr
+- {pvek132}: gross amount of income-persons not in hh
 
 #### early retirement benefits [erb]
 
-- {_pequiv_feret}: Imp.flag:Old-age transition benefit
-- {_pequiv_ieret}: Old-age transition benefit
-- {kal2i01}: Old-Age Transition Benefit Previous Yr.
-- {kal2i02}: Old-Age Transition Benefit Months Prev. Yr.
-- {kal2i03}: Old-Age Transition Benefit Amount Prev. Yr.
-- {pek051b}: Gross Amt. Of Transition Money, etc.
-- {pek05b}: Transition Money, etc.
-- {pek06}: Early Retirement Benefits
-- {pek061}: Gross Amt. Of Early Rtiremnt Benefits,Mo
-- {pvek081a}: Mths Transition Benefit Prev. Yr
-- {pvek082a}: Gross Amt Transition Benefit Prev. Yr
-- {pvek08a}: Transition Benefit Prev. Yr
+- {_pequiv_feret}: imp.flag:old-age transition benefit
+- {_pequiv_ieret}: old-age transition benefit
+- {kal2i01}: old-age transition benefit previous yr.
+- {kal2i02}: old-age transition benefit months prev. yr.
+- {kal2i03}: old-age transition benefit amount prev. yr.
+- {pek051b}: gross amt. of transition money, etc.
+- {pek05b}: transition money, etc.
+- {pek06}: early retirement benefits
+- {pek061}: gross amt. of early rtiremnt benefits,mo
+- {pvek081a}: mths transition benefit prev. yr
+- {pvek082a}: gross amt transition benefit prev. yr
+- {pvek08a}: transition benefit prev. yr
 
 #### spousal/child support payments [sup]
 
-- {kal2o01}: Alimony, Child Support Previous Year
-- {kal2o02}: Alimony, Child Support Months Prev. Yr.
-- {kal2o03}: Alimony, Child Support Amount Prev. Yr.
-- {kal2s01}: Alimony, Child Support Previous Year
-- {kal2s02}: Alimony, Child Support Months Prev. Yr.
-- {kal2s03}: Alimony, Child Support Amount Prev. Yr.
-- {kal2t01}: alimony from maintenance advance fund prev. Yr
-- {kal2t02}: alimony from maintenance advance fund months prev. Yr
-- {kal2t03}: alimony from maintenance advance fund amount prev. Yr
+- {kal2o01}: alimony, child support previous year
+- {kal2o02}: alimony, child support months prev. yr.
+- {kal2o03}: alimony, child support amount prev. yr.
+- {kal2s01}: alimony, child support previous year
+- {kal2s02}: alimony, child support months prev. yr.
+- {kal2s03}: alimony, child support amount prev. yr.
+- {kal2t01}: alimony from maintenance advance fund prev. yr
+- {kal2t02}: alimony from maintenance advance fund months prev. yr
+- {kal2t03}: alimony from maintenance advance fund amount prev. yr
 - {pek18}: alimony from maintenance advance fund
-- {pek181}: alimony from maintenance advance fund prev. Year
+- {pek181}: alimony from maintenance advance fund prev. year
 - {pek19}: alimony spousal/child support
-- {pek191}: gross amt. Alimiony spousal/child support per month
-- {pek20}: Child support
-- {pek201}: Gross amount child support, Mo.
-- {pek21}: Caregiver alimony
-- {pek211}: Gross amount caregiver alimony, Mo.
-- {pek22}: Alimony, Child Support From Ex-Partner
-- {pek221}: Gross Amt. Alimony, C Support Ex-Partner
-- {pvek12}: Alimony, Child Support From Ex-Partner
-- {pvek121}: Mths Of Alimony, Child Support Prev. Yr
-- {pvek122}: Gross Amt. Alimony, C Support Prev Year
-- {pvek18}: alimony from maintenance advance fund prev. Year
-- {pvek181}: months alimony from maintenance advance fund prev. Year
-- {pvek182}: gross amount alimony from maintenance advance fund prev. Year
+- {pek191}: gross amt. alimiony spousal/child support per month
+- {pek20}: child support
+- {pek201}: gross amount child support, mo.
+- {pek21}: caregiver alimony
+- {pek211}: gross amount caregiver alimony, mo.
+- {pek22}: alimony, child support from ex-partner
+- {pek221}: gross amt. alimony, c support ex-partner
+- {pvek12}: alimony, child support from ex-partner
+- {pvek121}: mths of alimony, child support prev. yr
+- {pvek122}: gross amt. alimony, c support prev year
+- {pvek18}: alimony from maintenance advance fund prev. year
+- {pvek181}: months alimony from maintenance advance fund prev. year
+- {pvek182}: gross amount alimony from maintenance advance fund prev. year
 - {pvek19}: alimony spousal/child support prev. year
-- {pvek191}: month alimony spousal/child support Prev. Yr.
+- {pvek191}: month alimony spousal/child support prev. yr.
 - {pvek192}: gross amount alimony spousal/child support prev. year
 
 #### unemployment benefits [ueb]
 
-- {_pequiv_funay}: Imp.flag:Unemployment assistance
-- {_pequiv_funby}: Imp.flag:Unemployment benefit
-- {_pequiv_iunay}: Unemployment assistance
-- {_pequiv_iunby}: Unemployment benefit
-- {kal2f}: Unemployment Benefit Jan-Dec Prev Yr
-- {kal2f001}: Unemployment Benefit Jan Prev Yr
-- {kal2f002}: Unemployment Benefit Feb Prev Yr
-- {kal2f003}: Unemployment Benefit Mar Prev Yr
-- {kal2f004}: Unemployment Benefit Apr Prev Yr
-- {kal2f005}: Unemployment Benefit May Prev Yr
-- {kal2f006}: Unemployment Benefit Jun Prev Yr
-- {kal2f007}: Unemployment Benefit Jul Prev Yr
-- {kal2f008}: Unemployment Benefit Aug Prev Yr
-- {kal2f009}: Unemployment Benefit Sep Prev Yr
-- {kal2f01}: Unemployment Benefit Previous Yr.
-- {kal2f010}: Unemployment Benefit Oct Prev Yr
-- {kal2f011}: Unemployment Benefit Nov Prev Yr
-- {kal2f012}: Unemployment Benefit Dec Prev Yr
-- {kal2f02}: Unemployment Benefit Months Previous Yr.
-- {kal2f03}: Unemployment Benefit Amount Previous Yr.
-- {kal2g}: Unemployment Relief Jan-Dec Prev Yr
-- {kal2g001}: Unemployment Relief Jan Prev Yr
-- {kal2g002}: Unemployment Relief Feb Prev Yr
-- {kal2g003}: Unemployment Relief Mar Prev Yr
-- {kal2g004}: Unemployment Relief Apr Prev Yr
-- {kal2g005}: Unemployment Relief May Prev Yr
-- {kal2g006}: Unemployment Relief Jun Prev Yr
-- {kal2g007}: Unemployment Relief Jul Prev Yr
-- {kal2g008}: Unemployment Relief Aug Prev Yr
-- {kal2g009}: Unemployment Relief Sep Prev Yr
-- {kal2g01}: Unemployment Relief Previous Yr.
-- {kal2g010}: Unemployment Relief Oct Prev Yr
-- {kal2g011}: Unemployment Relief Nov Prev Yr
-- {kal2g012}: Unemployment Relief Dec Prev Yr
-- {kal2g02}: Unemployment Relief Months Previous Yr.
-- {kal2g03}: Unemployment Relief Amount Previous Yr.
-- {kal2h}: Subsistence Allowance Jan-Dec Prev Yr
-- {kal2h001}: Subsistence Allowance Jan Prev Yr
-- {kal2h002}: Subsistence Allowance Feb Prev Yr
-- {kal2h003}: Subsistence Allowance Mar Prev Yr
-- {kal2h004}: Subsistence Allowance Apr Prev Yr
-- {kal2h005}: Subsistence Allowance May Prev Yr
-- {kal2h006}: Subsistence Allowance Jun Prev Yr
-- {kal2h007}: Subsistence Allowance Jul Prev Yr
-- {kal2h008}: Subsistence Allowance Aug Prev Yr
-- {kal2h009}: Subsistence Allowance Sep Prev Yr
-- {kal2h01}: Subsistence Allowance Previous Yr.
-- {kal2h010}: Subsistence Allowance Oct Prev Yr
-- {kal2h011}: Subsistence Allowance Nov Prev Yr
-- {kal2h012}: Subsistence Allowance Dec Prev Yr
-- {kal2h02}: Subsistence Allowance Months Previous Yr.
-- {kal2h03}: Subsistence Allowance Amount Previous Yr.
-- {kal2r01}: Unemployment Subsidy II, Social Subsidy Prev. Yr.
-- {kal2r02}: Unemployment Subsidy II, Social Subsidy, Amt. Prev. Yr.
-- {pek03}: Unemployment Benefit
-- {pek031}: Gross Amt.Of Unemployment Benefit,Mo
-- {pek04}: Unemployment Benefit II, Social Subsidy
-- {pek041}: Gross Amt.Of Unemployment Relief, Mo
-- {pek05}: Subsistence Allowance, Transition Money
-- {pek051}: Gross Amt. Of Subsistence, Transition Pay
-- {pek051a}: Gross Amt. Of Subsistence Allowance,Mo
-- {plc0123}: Amount Of Unemployment Benefit May 89
-- {plc0124}: Unemployment Benefit May 90
-- {plc0125}: Unemployment Benefit May 89
-- {plc0127}: Maternity Benefit Jan-Dec Prev Yr
-- {pvek06}: Unemployment Benefit Jan-Dec Prev Yr
-- {pvek061}: Mths Of Unemployment Benefit Prev Yr
-- {pvek062}: Gross Amt Unemployment Benefit Prev Yr
-- {pvek07}: Unemployment Subsidy II, Social Subsidy Prev Yr
-- {pvek071}: Mths Unemployment Subsidy II, Social Subsidy Prev Yr
-- {pvek072}: Gross Amt Unemployment Relief Prev.Yr
-- {pvek08}: Education Support, Transition Benefit Prev. Yr
-- {pvek081}: Mths Education Support, Transition Benefit Prev. Yr
-- {pvek082}: Gross Amt Edu Support, Transition Benefit Prev. Yr
+- {_pequiv_funay}: imp.flag:unemployment assistance
+- {_pequiv_funby}: imp.flag:unemployment benefit
+- {_pequiv_iunay}: unemployment assistance
+- {_pequiv_iunby}: unemployment benefit
+- {kal2f}: unemployment benefit jan-dec prev yr
+- {kal2f001}: unemployment benefit jan prev yr
+- {kal2f002}: unemployment benefit feb prev yr
+- {kal2f003}: unemployment benefit mar prev yr
+- {kal2f004}: unemployment benefit apr prev yr
+- {kal2f005}: unemployment benefit may prev yr
+- {kal2f006}: unemployment benefit jun prev yr
+- {kal2f007}: unemployment benefit jul prev yr
+- {kal2f008}: unemployment benefit aug prev yr
+- {kal2f009}: unemployment benefit sep prev yr
+- {kal2f01}: unemployment benefit previous yr.
+- {kal2f010}: unemployment benefit oct prev yr
+- {kal2f011}: unemployment benefit nov prev yr
+- {kal2f012}: unemployment benefit dec prev yr
+- {kal2f02}: unemployment benefit months previous yr.
+- {kal2f03}: unemployment benefit amount previous yr.
+- {kal2g}: unemployment relief jan-dec prev yr
+- {kal2g001}: unemployment relief jan prev yr
+- {kal2g002}: unemployment relief feb prev yr
+- {kal2g003}: unemployment relief mar prev yr
+- {kal2g004}: unemployment relief apr prev yr
+- {kal2g005}: unemployment relief may prev yr
+- {kal2g006}: unemployment relief jun prev yr
+- {kal2g007}: unemployment relief jul prev yr
+- {kal2g008}: unemployment relief aug prev yr
+- {kal2g009}: unemployment relief sep prev yr
+- {kal2g01}: unemployment relief previous yr.
+- {kal2g010}: unemployment relief oct prev yr
+- {kal2g011}: unemployment relief nov prev yr
+- {kal2g012}: unemployment relief dec prev yr
+- {kal2g02}: unemployment relief months previous yr.
+- {kal2g03}: unemployment relief amount previous yr.
+- {kal2h}: subsistence allowance jan-dec prev yr
+- {kal2h001}: subsistence allowance jan prev yr
+- {kal2h002}: subsistence allowance feb prev yr
+- {kal2h003}: subsistence allowance mar prev yr
+- {kal2h004}: subsistence allowance apr prev yr
+- {kal2h005}: subsistence allowance may prev yr
+- {kal2h006}: subsistence allowance jun prev yr
+- {kal2h007}: subsistence allowance jul prev yr
+- {kal2h008}: subsistence allowance aug prev yr
+- {kal2h009}: subsistence allowance sep prev yr
+- {kal2h01}: subsistence allowance previous yr.
+- {kal2h010}: subsistence allowance oct prev yr
+- {kal2h011}: subsistence allowance nov prev yr
+- {kal2h012}: subsistence allowance dec prev yr
+- {kal2h02}: subsistence allowance months previous yr.
+- {kal2h03}: subsistence allowance amount previous yr.
+- {kal2r01}: unemployment subsidy ii, social subsidy prev. yr.
+- {kal2r02}: unemployment subsidy ii, social subsidy, amt. prev. yr.
+- {pek03}: unemployment benefit
+- {pek031}: gross amt.of unemployment benefit,mo
+- {pek04}: unemployment benefit ii, social subsidy
+- {pek041}: gross amt.of unemployment relief, mo
+- {pek05}: subsistence allowance, transition money
+- {pek051}: gross amt. of subsistence, transition pay
+- {pek051a}: gross amt. of subsistence allowance,mo
+- {plc0123}: amount of unemployment benefit may 89
+- {plc0124}: unemployment benefit may 90
+- {plc0125}: unemployment benefit may 89
+- {plc0127}: maternity benefit jan-dec prev yr
+- {pvek06}: unemployment benefit jan-dec prev yr
+- {pvek061}: mths of unemployment benefit prev yr
+- {pvek062}: gross amt unemployment benefit prev yr
+- {pvek07}: unemployment subsidy ii, social subsidy prev yr
+- {pvek071}: mths unemployment subsidy ii, social subsidy prev yr
+- {pvek072}: gross amt unemployment relief prev.yr
+- {pvek08}: education support, transition benefit prev. yr
+- {pvek081}: mths education support, transition benefit prev. yr
+- {pvek082}: gross amt edu support, transition benefit prev. yr
 
 #### bafoeg student grants / scholarships [bfg]
 
-- {_pequiv_fstuy}: Imp.flag:Student grants
-- {_pequiv_istuy}: Student grants
-- {kal2k}: Student Grant Jan-Dec Prev Yr
-- {kal2k001}: Student Grant Jan Prev Yr
-- {kal2k002}: Student Grant Feb Prev Yr
-- {kal2k003}: Student Grant Mar Prev Yr
-- {kal2k004}: Student Grant Apr Prev Yr
-- {kal2k005}: Student Grant May Prev Yr
-- {kal2k006}: Student Grant Jun Prev Yr
-- {kal2k007}: Student Grant Jul Prev Yr
-- {kal2k008}: Student Grant Aug Prev Yr
-- {kal2k009}: Student Grant Sep Prev Yr
-- {kal2k01}: Student Grant Previous Yr.
-- {kal2k010}: Student Grant Oct Prev Yr
-- {kal2k011}: Student Grant Nov Prev Yr
-- {kal2k012}: Student Grant Dec Prev Yr
-- {kal2k02}: Student Grant Months Previous Yr.
-- {kal2k03}: Student Grant Amount Previous Yr.
-- {pek08}: Student Grant
-- {pek081}: Gross Amount Of Student Grant,Mo
-- {plc0163}: Amount Of Student Grant May 89
-- {plc0164}: Student Grant May 90
-- {plc0165}: Amount Of Student Grant May 90
-- {plc0166}: Student Grant May 89
-- {pvek10}: Student Grant Jan-Dec Prev. Yr
-- {pvek101}: Mths Of Student Grant Prev. Yr
-- {pvek102}: Gross Amount Of Student Grant
+- {_pequiv_fstuy}: imp.flag:student grants
+- {_pequiv_istuy}: student grants
+- {kal2k}: student grant jan-dec prev yr
+- {kal2k001}: student grant jan prev yr
+- {kal2k002}: student grant feb prev yr
+- {kal2k003}: student grant mar prev yr
+- {kal2k004}: student grant apr prev yr
+- {kal2k005}: student grant may prev yr
+- {kal2k006}: student grant jun prev yr
+- {kal2k007}: student grant jul prev yr
+- {kal2k008}: student grant aug prev yr
+- {kal2k009}: student grant sep prev yr
+- {kal2k01}: student grant previous yr.
+- {kal2k010}: student grant oct prev yr
+- {kal2k011}: student grant nov prev yr
+- {kal2k012}: student grant dec prev yr
+- {kal2k02}: student grant months previous yr.
+- {kal2k03}: student grant amount previous yr.
+- {pek08}: student grant
+- {pek081}: gross amount of student grant,mo
+- {plc0163}: amount of student grant may 89
+- {plc0164}: student grant may 90
+- {plc0165}: amount of student grant may 90
+- {plc0166}: student grant may 89
+- {pvek10}: student grant jan-dec prev. yr
+- {pvek101}: mths of student grant prev. yr
+- {pvek102}: gross amount of student grant
 
 ## pensions [pen]
 
-- {_1605_p_pen}: Pension
-- {_pequiv_iagr1}: Farmer Pension
-- {_pequiv_iagr2}: Widows farmer Pension
-- {_pequiv_iciv1}: Civil servant pension
-- {_pequiv_iciv2}: Widows civil servant pension
-- {_pequiv_icom1}: Company pension
-- {_pequiv_icom2}: Widows company pension
-- {_pequiv_iguv1}: Statutory accident insurance
-- {_pequiv_iguv2}: Widows statutory accident insurance
-- {_pequiv_iprv1}: Private pension
-- {_pequiv_iprv2}: Widows private pension
-- {_pequiv_ismp1}: Social miners insurance pension
-- {_pequiv_ismp2}: Widows social miners insurance pension
-- {_pequiv_ison1}: Other pension
-- {_pequiv_ison2}: Other widows pension
-- {_pequiv_ivbl1}: Supplementary benefits for civil servants
-- {_pequiv_ivbl2}: Widows supplement. benefits(civil servants)
-- {_pequiv_iwar1}: War victim pension
-- {_pequiv_iwar2}: Widows war victim pension
+- {_1605_p_pen}: pension
+- {_pequiv_iagr1}: farmer pension
+- {_pequiv_iagr2}: widows farmer pension
+- {_pequiv_iciv1}: civil servant pension
+- {_pequiv_iciv2}: widows civil servant pension
+- {_pequiv_icom1}: company pension
+- {_pequiv_icom2}: widows company pension
+- {_pequiv_iguv1}: statutory accident insurance
+- {_pequiv_iguv2}: widows statutory accident insurance
+- {_pequiv_iprv1}: private pension
+- {_pequiv_iprv2}: widows private pension
+- {_pequiv_ismp1}: social miners insurance pension
+- {_pequiv_ismp2}: widows social miners insurance pension
+- {_pequiv_ison1}: other pension
+- {_pequiv_ison2}: other widows pension
+- {_pequiv_ivbl1}: supplementary benefits for civil servants
+- {_pequiv_ivbl2}: widows supplement. benefits(civil servants)
+- {_pequiv_iwar1}: war victim pension
+- {_pequiv_iwar2}: widows war victim pension
 
 ### riester pension [rir]
 
-- {_pequiv_fprvp}: Imp.flag:Private pension(old-age,accid.)
-- {_pequiv_iprvp}: Private pension (old-age,accid.,disability)
-- {kal2q01}: Private Pension Previous Year
-- {kal2q02}: Private Pension Months Previous Year
-- {kal2q03}: Private Pension Amount Previous Year
-- {pek16}: Private Pension
-- {pek161}: Gross Amt Of Private Pension
-- {prr1}: Received Riester or Ruerup Pension
-- {prr2}: Payments for Pension
-- {prr3}: Month Payments for Pension
-- {pvek17}: Private Pension Jan-Dec Prv. Yr
-- {pvek171}: Mths Of Private Pension Prev. Yr
-- {pvek172}: Gross Amt Private Pension Prv. Yr
+- {_pequiv_fprvp}: imp.flag:private pension(old-age,accid.)
+- {_pequiv_iprvp}: private pension (old-age,accid.,disability)
+- {kal2q01}: private pension previous year
+- {kal2q02}: private pension months previous year
+- {kal2q03}: private pension amount previous year
+- {pek16}: private pension
+- {pek161}: gross amt of private pension
+- {prr1}: received riester or ruerup pension
+- {prr2}: payments for pension
+- {prr3}: month payments for pension
+- {pvek17}: private pension jan-dec prv. yr
+- {pvek171}: mths of private pension prev. yr
+- {pvek172}: gross amt private pension prv. yr
 
 ### old-age and disability pensions [old]
 
-- {_1179_p_old}: Amt. Miner Pension-Self
-- {_1606_p_old}: Pension-A
-- {_1607_p_old}: Start Of First Pension-A
-- {_1608_p_old}: Start Of Second Pension-A
-- {_1609_p_old}: Pension-B
-- {_1610_p_old}: Start Of First Pension-B
-- {_1611_p_old}: Start Of Second Pension-B
-- {_974_p_old}: Amt. Supplementary Pension-Self
-- {_pequiv_fcomp}: Imp.flag:Company pension
-- {_pequiv_fgrv1}: Imp.flag:retirement pay from stat.insurance
-- {_pequiv_foldy}: Imp.flag:old-age,civil serv. pensions
-- {_pequiv_fssold}: Imp.flag: Social assistance for elderly
-- {_pequiv_icomp}: Company pension (surviving dependants c.p.)
-- {_pequiv_igrv1}: Retirement pay: stat. pension insurance
+- {_1179_p_old}: amt. miner pension-self
+- {_1606_p_old}: pension-a
+- {_1607_p_old}: start of first pension-a
+- {_1608_p_old}: start of second pension-a
+- {_1609_p_old}: pension-b
+- {_1610_p_old}: start of first pension-b
+- {_1611_p_old}: start of second pension-b
+- {_974_p_old}: amt. supplementary pension-self
+- {_pequiv_fcomp}: imp.flag:company pension
+- {_pequiv_fgrv1}: imp.flag:retirement pay from stat.insurance
+- {_pequiv_foldy}: imp.flag:old-age,civil serv. pensions
+- {_pequiv_fssold}: imp.flag: social assistance for elderly
+- {_pequiv_icomp}: company pension (surviving dependants c.p.)
+- {_pequiv_igrv1}: retirement pay: stat. pension insurance
 - {_pequiv_ioldy}: old-age,disability and civil serv. pensions
-- {_pequiv_ssold}: Social assistance for elderly
-- {item_2104}: _D03: Additional Benefits Prev Yr, Amount
-- {kal2d}: Old-Age,Invalid Pension Jan-Dec Prev Yr
-- {kal2d001}: Old-Age,Invalid Pension Jan Prev Yr
-- {kal2d002}: Old-Age,Invalid Pension Feb Prev Yr
-- {kal2d003}: Old-Age,Invalid Pension Mar Prev Yr
-- {kal2d004}: Old-Age,Invalid Pension Apr Prev Yr
-- {kal2d005}: Old-Age,Invalid Pension May Prev Yr
-- {kal2d006}: Old-Age,Invalid Pension Jun Prev Yr
-- {kal2d007}: Old-Age,Invalid Pension Jul Prev Yr
-- {kal2d008}: Old-Age,Invalid Pension Aug Prev Yr
-- {kal2d009}: Old-Age,Invalid Pension Sep Prev Yr
-- {kal2d01}: Old-Age,Invalid Pension Previous Yr.
-- {kal2d010}: Old-Age,Invalid Pension Oct Prev Yr
-- {kal2d011}: Old-Age,Invalid Pension Nov Prev Yr
-- {kal2d012}: Old-Age,Invalid Pension Dec Prev Yr
-- {kal2d02}: Old-Age,Invalid Pension Months Prev. Yr.
-- {kal2d03}: Old-Age,Invalid Pension Amount Prev. Yr.
-- {kal2p01}: Company Pension Previous Year
-- {kal2p02}: Company Pension Months Previous Year
-- {kal2p03}: Company Pension Amount Previous Year
-- {par11}: Amt. Farmer Pension-Self
-- {par2}: Amt. Civil Servant Pension-Self
-- {par3}: Amt. War Victim Pension-Self
-- {par4}: Amt. Worker Accident Pension-Self
-- {par5}: Amt. Supp. Civil Servant Pension-Self
-- {par6}: Amt. Company Pension-Self
-- {par7}: Amt. Private Pension-Self
-- {par8}: Amt. Other Pension-Self
-- {parka}: Old-Age,Invalid Pension, Total Item Nonresponse
-- {pek01}: Old-Age,Invalid Pension
-- {pek011}: Gross Amt. Of Old-Age,Invalid Pension,Mo
-- {pek15}: Company Pension
-- {pek151}: Gross Amt Of Company Pension
-- {plc0207}: Amount Of Old-Age,Invalid Pension May 89
-- {plc0208}: Old-Age,Invalid Pension May 90
-- {plc0209}: Amount Of Old-Age,Invalid Pension May 90
-- {plc0210}: Drawing Old-Age,Invalid Pension
-- {plc0211}: Year Began Drawing Old-Age Pension
-- {plc0212}: Drawing Invalidity Benefit
-- {plc0213}: Year Began Drawing Invalidity Benefit
-- {plc0221}: Old-Age,Invalid Pension May 89
-- {prerwm}: Degree Of Disability
-- {pvek04}: Old-Age,Invalid Pension Jan-Dec Prev. Yr
-- {pvek041}: Mths Of Old-Age,Invalid Pension Prev. Yr
-- {pvek042}: Gross Amt. O-Age, Invlid Pension Prv. Yr
-- {pvek16}: Company Pension  Jan-Dec Prv. Yr
-- {pvek161}: Mths Of Company Pension Prev. Yr
-- {pvek162}: Gross Amt Company Pension Prv. Yr
+- {_pequiv_ssold}: social assistance for elderly
+- {item_2104}: _d03: additional benefits prev yr, amount
+- {kal2d}: old-age,invalid pension jan-dec prev yr
+- {kal2d001}: old-age,invalid pension jan prev yr
+- {kal2d002}: old-age,invalid pension feb prev yr
+- {kal2d003}: old-age,invalid pension mar prev yr
+- {kal2d004}: old-age,invalid pension apr prev yr
+- {kal2d005}: old-age,invalid pension may prev yr
+- {kal2d006}: old-age,invalid pension jun prev yr
+- {kal2d007}: old-age,invalid pension jul prev yr
+- {kal2d008}: old-age,invalid pension aug prev yr
+- {kal2d009}: old-age,invalid pension sep prev yr
+- {kal2d01}: old-age,invalid pension previous yr.
+- {kal2d010}: old-age,invalid pension oct prev yr
+- {kal2d011}: old-age,invalid pension nov prev yr
+- {kal2d012}: old-age,invalid pension dec prev yr
+- {kal2d02}: old-age,invalid pension months prev. yr.
+- {kal2d03}: old-age,invalid pension amount prev. yr.
+- {kal2p01}: company pension previous year
+- {kal2p02}: company pension months previous year
+- {kal2p03}: company pension amount previous year
+- {par11}: amt. farmer pension-self
+- {par2}: amt. civil servant pension-self
+- {par3}: amt. war victim pension-self
+- {par4}: amt. worker accident pension-self
+- {par5}: amt. supp. civil servant pension-self
+- {par6}: amt. company pension-self
+- {par7}: amt. private pension-self
+- {par8}: amt. other pension-self
+- {parka}: old-age,invalid pension, total item nonresponse
+- {pek01}: old-age,invalid pension
+- {pek011}: gross amt. of old-age,invalid pension,mo
+- {pek15}: company pension
+- {pek151}: gross amt of company pension
+- {plc0207}: amount of old-age,invalid pension may 89
+- {plc0208}: old-age,invalid pension may 90
+- {plc0209}: amount of old-age,invalid pension may 90
+- {plc0210}: drawing old-age,invalid pension
+- {plc0211}: year began drawing old-age pension
+- {plc0212}: drawing invalidity benefit
+- {plc0213}: year began drawing invalidity benefit
+- {plc0221}: old-age,invalid pension may 89
+- {prerwm}: degree of disability
+- {pvek04}: old-age,invalid pension jan-dec prev. yr
+- {pvek041}: mths of old-age,invalid pension prev. yr
+- {pvek042}: gross amt. o-age, invlid pension prv. yr
+- {pvek16}: company pension  jan-dec prv. yr
+- {pvek161}: mths of company pension prev. yr
+- {pvek162}: gross amt company pension prv. yr
 
 ### pension contribution [pcn]
 
-- {_1688_p_pcn}: Premiums For Voluntary Pension
-- {_1689_p_pcn}: No Contributions To Pension
-- {_284_p_pcn}: Employer Pays Social Security Benefits
-- {_911_p_pcn}: Premiums For Compulsory Pension
-- {_912_p_pcn}: Months Of Voluntary, Compulsory Pension
-- {_913_p_pcn}: Amount Of Voluntary, Compulsory Premium
-- {palt3}: Provision For Old Age
-- {palt4}: Support Yourself On Stat. Pension
-- {palt5}: Contribute More To Private Pension
-- {palt6}: Importance Of State Contributions
-- {pbav1}: Entitled to Receive Supplementary Benefits
-- {pbav2}: Type of Supplementary Old-Age Provision
-- {pbav3}: Deferred Compensation of Pension
-- {pbav4}: Entitled to Company Pension Scheme
-- {pbav6}: Entitled to Company Pension Scheme No Information
-- {pgrv1}: Entitled to Receive Pension
-- {pgrv2}: Pension Entitlement
-- {pgrv4}: Pension Entitlement No Information
-- {prent1}: Already retired
-- {prent2}: Support Yourself On Stat. Pension Only
-- {priest}: Riester Pension since 2002
-- {prrno}: No Riester or Ruerup Pension
-- {prup}: Ruerup Pension
+- {_1688_p_pcn}: premiums for voluntary pension
+- {_1689_p_pcn}: no contributions to pension
+- {_284_p_pcn}: employer pays social security benefits
+- {_911_p_pcn}: premiums for compulsory pension
+- {_912_p_pcn}: months of voluntary, compulsory pension
+- {_913_p_pcn}: amount of voluntary, compulsory premium
+- {palt3}: provision for old age
+- {palt4}: support yourself on stat. pension
+- {palt5}: contribute more to private pension
+- {palt6}: importance of state contributions
+- {pbav1}: entitled to receive supplementary benefits
+- {pbav2}: type of supplementary old-age provision
+- {pbav3}: deferred compensation of pension
+- {pbav4}: entitled to company pension scheme
+- {pbav6}: entitled to company pension scheme no information
+- {pgrv1}: entitled to receive pension
+- {pgrv2}: pension entitlement
+- {pgrv4}: pension entitlement no information
+- {prent1}: already retired
+- {prent2}: support yourself on stat. pension only
+- {priest}: riester pension since 2002
+- {prrno}: no riester or ruerup pension
+- {prup}: ruerup pension
 
 ### pension fund [pfd]
 
-- {_439_p_pfd}: Amt Of Miner Pension-C
-- {_445_p_pfd}: Amt Of Farmer Pension-C
-- {item_7509}: Amt. Pension Entitlement (EUR)
-- {item_7510}: Amt. Payments for Pension
-- {item_7511}: Amt. of Company Pension Scheme
-- {par10}: Amt. Miner Pension-Self
-- {parso}: Other Means: Self-Pension
-- {pwr1}: Amt. Widow's Pension (compulsory EUR)
-- {pwr2}: Amt. Civil Servant Pension-Dependent
-- {pwr3}: Amt. War Victim Pension-Dependent
-- {pwr4}: Amt. Worker Accident Pension-Dependent
-- {pwr5}: Amt. Supp. Civil Servant Pension-Dependent
-- {pwr6}: Amt. Company Pension-Dependent
-- {pwr8}: Amt. Other Pension-Dependent
-- {pwrso}: Other Means: Dependent-Pension
+- {_439_p_pfd}: amt of miner pension-c
+- {_445_p_pfd}: amt of farmer pension-c
+- {item_7509}: amt. pension entitlement (eur)
+- {item_7510}: amt. payments for pension
+- {item_7511}: amt. of company pension scheme
+- {par10}: amt. miner pension-self
+- {parso}: other means: self-pension
+- {pwr1}: amt. widow's pension (compulsory eur)
+- {pwr2}: amt. civil servant pension-dependent
+- {pwr3}: amt. war victim pension-dependent
+- {pwr4}: amt. worker accident pension-dependent
+- {pwr5}: amt. supp. civil servant pension-dependent
+- {pwr6}: amt. company pension-dependent
+- {pwr8}: amt. other pension-dependent
+- {pwrso}: other means: dependent-pension
 
 ### widow's / orphan's pension [wid]
 
-- {_1612_p_wid}: Pension Type-C
-- {_1613_p_wid}: Start Of First Pension-C
-- {_1614_p_wid}: Start Of Second Pension-C
-- {_975_p_wid}: Amt. Supplementary Pension-Dependent
-- {_pequiv_fgrv2}: Imp.flag:widows pension from stat.insurance
-- {_pequiv_fwidy}: Imp.flag:widows/orphans pension
-- {_pequiv_igrv2}: Widows pension: stat pension insurance
+- {_1612_p_wid}: pension type-c
+- {_1613_p_wid}: start of first pension-c
+- {_1614_p_wid}: start of second pension-c
+- {_975_p_wid}: amt. supplementary pension-dependent
+- {_pequiv_fgrv2}: imp.flag:widows pension from stat.insurance
+- {_pequiv_fwidy}: imp.flag:widows/orphans pension
+- {_pequiv_igrv2}: widows pension: stat pension insurance
 - {_pequiv_iwidy}: widows and/or orphans pension
-- {item_2105}: _E03: Additional Benefits Prev Yr, Amount
-- {kal2e}: Widow-Er,Orphan Benefit Jan-Dec Prev Yr
-- {kal2e001}: Widow-Er,Orphan Benefit Jan Prev Yr
-- {kal2e002}: Widow-Er,Orphan Benefit Feb Prev Yr
-- {kal2e003}: Widow-Er,Orphan Benefit Mar Prev Yr
-- {kal2e004}: Widow-Er,Orphan Benefit Apr Prev Yr
-- {kal2e005}: Widow-Er,Orphan Benefit May Prev Yr
-- {kal2e006}: Widow-Er,Orphan Benefit Jun Prev Yr
-- {kal2e007}: Widow-Er,Orphan Benefit Jul Prev Yr
-- {kal2e008}: Widow-Er,Orphan Benefit Aug Prev Yr
-- {kal2e009}: Widow-Er,Orphan Benefit Sep Prev Yr
-- {kal2e01}: Widow-Er,Orphan Benefit Previous Yr.
-- {kal2e010}: Widow-Er,Orphan Benefit Oct Prev Yr
-- {kal2e011}: Widow-Er,Orphan Benefit Nov Prev Yr
-- {kal2e012}: Widow-Er,Orphan Benefit Dec Prev Yr
-- {kal2e02}: Widow-Er,Orphan Benefit Months Prev. Yr.
-- {kal2e03}: Widow-Er,Orphan Benefit Amount Prev. Yr.
-- {par1}: Amt. Pension payments (EUR)
-- {pek02}: Widow-Er,Orphan Benefit
-- {pek021}: Gross Amt Of Widow-Er,Orphan Benefit,Mo
-- {plc0257}: Amount Of Widow-Er,Orphan Benefit May 89
-- {plc0258}: Widow-Er,Orphan Benefit May 90
-- {plc0259}: Amount Of Widow-Er,Orphan Benefit May 90
-- {plc0260}: Drawing Widow-Er,Orphan Benefit
-- {plc0261}: Year Began Drawing Widow-Er Orphan Benefit
-- {plc0262}: Drawing None Of These Benefits
-- {plc0266}: Widow-Er,Orphan Benefit May 89
-- {pvek05}: Widow-Er, Orphan Benefit Jan-Dec Prv. Yr
-- {pvek051}: Mths Of Widow-Er,Orphan Benefit Prev. Yr
-- {pvek052}: Gross Amt Widow-Er,Orphan Benft Prv. Yr
-- {pwr10}: Amt. Miner Pension-Dependent
-- {pwr11}: Amt. Farmer Pension-Dependent
-- {pwr7}: Amt. Private Pension-Dependent
-- {pwrka}: Widow-Er,Orphan Benefit, Total Item Nonresponse
+- {item_2105}: _e03: additional benefits prev yr, amount
+- {kal2e}: widow-er,orphan benefit jan-dec prev yr
+- {kal2e001}: widow-er,orphan benefit jan prev yr
+- {kal2e002}: widow-er,orphan benefit feb prev yr
+- {kal2e003}: widow-er,orphan benefit mar prev yr
+- {kal2e004}: widow-er,orphan benefit apr prev yr
+- {kal2e005}: widow-er,orphan benefit may prev yr
+- {kal2e006}: widow-er,orphan benefit jun prev yr
+- {kal2e007}: widow-er,orphan benefit jul prev yr
+- {kal2e008}: widow-er,orphan benefit aug prev yr
+- {kal2e009}: widow-er,orphan benefit sep prev yr
+- {kal2e01}: widow-er,orphan benefit previous yr.
+- {kal2e010}: widow-er,orphan benefit oct prev yr
+- {kal2e011}: widow-er,orphan benefit nov prev yr
+- {kal2e012}: widow-er,orphan benefit dec prev yr
+- {kal2e02}: widow-er,orphan benefit months prev. yr.
+- {kal2e03}: widow-er,orphan benefit amount prev. yr.
+- {par1}: amt. pension payments (eur)
+- {pek02}: widow-er,orphan benefit
+- {pek021}: gross amt of widow-er,orphan benefit,mo
+- {plc0257}: amount of widow-er,orphan benefit may 89
+- {plc0258}: widow-er,orphan benefit may 90
+- {plc0259}: amount of widow-er,orphan benefit may 90
+- {plc0260}: drawing widow-er,orphan benefit
+- {plc0261}: year began drawing widow-er orphan benefit
+- {plc0262}: drawing none of these benefits
+- {plc0266}: widow-er,orphan benefit may 89
+- {pvek05}: widow-er, orphan benefit jan-dec prv. yr
+- {pvek051}: mths of widow-er,orphan benefit prev. yr
+- {pvek052}: gross amt widow-er,orphan benft prv. yr
+- {pwr10}: amt. miner pension-dependent
+- {pwr11}: amt. farmer pension-dependent
+- {pwr7}: amt. private pension-dependent
+- {pwrka}: widow-er,orphan benefit, total item nonresponse
 
 ## assets [ass]
 
 
 ### asset categories [asc]
 
-- {hwa7}: No Securities Previous Yr
-- {hwa8}: Tax-Deductible Loan
-- {hwa9}: Tax-Deductible Loan, Amount
-- {hwaka}: Savings, Securities, Item Nonresponse
+- {hwa7}: no securities previous yr
+- {hwa8}: tax-deductible loan
+- {hwa9}: tax-deductible loan, amount
+- {hwaka}: savings, securities, item nonresponse
 
 #### business assets [bas]
 
-- {hwa6}: Operating Assets Previous Yr
-- {item_3190}: Owner Of Farm
-- {item_3191}: Hectars Agri. Used Land Total
-- {item_3192}: Hectars Agri. Used Own Land
-- {item_3193}: Hectars Agri. Used Land Leased
-- {item_3194}: Main Use Of Land
-- {item_3195}: Owner Of Business
-- {item_3196}: Single Proprietor
-- {item_3197}: Partner In Company
-- {item_3198}: Type Of Partnership
-- {item_3199}: Value Of Company
-- {item_3200}: Do Not Know Value Of Company
-- {item_5005}: HH Business Assets Market Value Imp. A
-- {item_5006}: HH Business Assets Market Value Imp. B
-- {item_5007}: HH Business Assets Market Value Imp. C
-- {item_5008}: HH Business Assets Market Value Imp. D
-- {item_5009}: HH Business Assets Market Value Imp. E
-- {item_5010}: HH Business Assets Market Value Flag
-- {item_5011}: HH Business Assets Filter
-- {item_5012}: HH Business Assets Filter Flag
-- {item_5103}: Business Assets Sole Owner
-- {item_5104}: Business Assets Sole Owner Flag
-- {item_5105}: Business Assets Market Value imp.a
-- {item_5106}: Business Assets Market Value imp.b
-- {item_5107}: Business Assets Market Value imp.c
-- {item_5108}: Business Assets Market Value imp.d
-- {item_5109}: Business Assets Market Value imp.e
-- {item_5110}: Business Assets Market Value Flag
-- {item_5111}: Business Assets Filter
-- {item_5112}: Business Assets Filter Flag
-- {item_8505}: Business Assets Sole Owner
-- {item_8506}: Business Assets Sole Owner Flag
+- {hwa6}: operating assets previous yr
+- {item_3190}: owner of farm
+- {item_3191}: hectars agri. used land total
+- {item_3192}: hectars agri. used own land
+- {item_3193}: hectars agri. used land leased
+- {item_3194}: main use of land
+- {item_3195}: owner of business
+- {item_3196}: single proprietor
+- {item_3197}: partner in company
+- {item_3198}: type of partnership
+- {item_3199}: value of company
+- {item_3200}: do not know value of company
+- {item_5005}: hh business assets market value imp. a
+- {item_5006}: hh business assets market value imp. b
+- {item_5007}: hh business assets market value imp. c
+- {item_5008}: hh business assets market value imp. d
+- {item_5009}: hh business assets market value imp. e
+- {item_5010}: hh business assets market value flag
+- {item_5011}: hh business assets filter
+- {item_5012}: hh business assets filter flag
+- {item_5103}: business assets sole owner
+- {item_5104}: business assets sole owner flag
+- {item_5105}: business assets market value imp.a
+- {item_5106}: business assets market value imp.b
+- {item_5107}: business assets market value imp.c
+- {item_5108}: business assets market value imp.d
+- {item_5109}: business assets market value imp.e
+- {item_5110}: business assets market value flag
+- {item_5111}: business assets filter
+- {item_5112}: business assets filter flag
+- {item_8505}: business assets sole owner
+- {item_8506}: business assets sole owner flag
 
 #### other properties [opr]
 
-- {hlc0099}: Other House Or Proporty Owned
-- {item_3174}: Ownership Of Other One Family House
-- {item_3175}: Ownership Of Other Multiple Family Dwelling
-- {item_3176}: Ownership Of Other Holiday Home
-- {item_3177}: Ownership Of Other Undeveloped Property
-- {item_3178}: Ownership Of Other
-- {item_3179}: Type Of Other Building Owned
-- {item_3180}: Market Price Of Other Building Owned
-- {item_3181}: Do Not Know Mrkt Price Of Other Building
-- {item_3182}: One Family House Owned In Cntry Of Origin
-- {item_3183}: Multi. Family House Owned Cntry Of Origin
-- {item_3184}: Holiday Home Owned In Cntry Of Origin
-- {item_3185}: Undevlpd. Prop. Owned In Cntry Of Origin
-- {item_3186}: Other Building Owned In Cntry Of Origin
-- {item_3187}: Type Other Building Owned Cntry Of Origin
-- {item_3188}: Mrkt Price Building Owned Cntry Of Origin
-- {item_3189}: Do Not Know Building Mrkt Price, Cntry Of Origin
-- {item_5027}: HH Other Real Estate Market Value Imp. A
-- {item_5028}: HH Other Real Estate Market Value Imp. B
-- {item_5029}: HH Other Real Estate Market Value Imp. C
-- {item_5030}: HH Other Real Estate Market Value Imp. D
-- {item_5031}: HH Other Real Estate Market Value Imp. E
-- {item_5032}: HH Other Real Estate Net Value Imp. A
-- {item_5033}: HH Other Real Estate Net Value Imp. B
-- {item_5034}: HH Other Real Estate Net Value Imp. C
-- {item_5035}: HH Other Real Estate Net Value Imp. D
-- {item_5036}: HH Other Real Estate Net Value Imp. E
-- {item_5037}: HH Other Real Estate Market Value Flag
-- {item_5038}: HH Other Real Estate Net Value Flag
-- {item_5039}: HH Other Real Estate Filter
-- {item_5040}: HH Other Real Estate Filter Flag
-- {item_5121}: Other Real Estate Type One Family House
-- {item_5122}: Oth. Real Estate Type Mult. Family House
-- {item_5123}: Other Real Estate Type Holiday Home
-- {item_5124}: Other Real Estate Type Undeveloped Land
-- {item_5125}: Other Real Estate Type Other Prop.
-- {item_5127}: Number Of Other Real Estate
-- {item_5128}: Other Real Estate Share
-- {item_5129}: Other Real Estate Share Flag
-- {item_5142}: Other Real Estate Market Value imp.a
-- {item_5143}: Other Real Estate Market Value imp.b
-- {item_5144}: Other Real Estate Market Value imp.c
-- {item_5145}: Other Real Estate Market Value imp.d
-- {item_5146}: Other Real Estate Market Value imp.e
-- {item_5147}: Other Real Estate Share of Value imp.a
-- {item_5148}: Other Real Estate Share of Value imp.b
-- {item_5149}: Other Real Estate Share of Value imp.c
-- {item_5150}: Other Real Estate Share of Value imp.d
-- {item_5151}: Other Real Estate Share of Value imp.e
-- {item_5152}: Other Real Estate Net Value imp.a
-- {item_5153}: Other Real Estate Net Value imp.b
-- {item_5154}: Other Real Estate Net Value imp.c
-- {item_5155}: Other Real Estate Net Value imp.d
-- {item_5156}: Other Real Estate Net Value imp.e
-- {item_5157}: Other Real Estate Share Net Value imp.a
-- {item_5158}: Other Real Estate Share Net Value imp.b
-- {item_5159}: Other Real Estate Share Net Value imp.c
-- {item_5160}: Other Real Estate Share Net Value imp.d
-- {item_5161}: Other Real Estate Share Net Value imp.e
-- {item_5162}: Other Real Estate Market Value Flag
-- {item_5163}: Other Real Estate Share of Value Flag
-- {item_5164}: Other Real Estate Net Value Flag
-- {item_5165}: Other Real Estate Share Net Value Flag
-- {item_5166}: Other Real Estate Filter
-- {item_5167}: Other Real Estate Filter Flag
-- {item_5732}: Oth. Real Estate Type Flag
-- {item_5733}: Oth. Real Estate Number Flag
-- {item_8507}: HH Other Real Estate Type One Family House
-- {item_8508}: HH Other Real Estate Type Mult. Family House
-- {item_8509}: HH Other Real Estate Type Holiday Home
-- {item_8510}: HH Other Real Estate Type Undeveloped Land
-- {item_8511}: HH Other Real Estate Type Other Prop.
-- {item_8512}: HH Other Real Estate Type
-- {item_8513}: HH Other Real Estate Number Flag
+- {hlc0099}: other house or proporty owned
+- {item_3174}: ownership of other one family house
+- {item_3175}: ownership of other multiple family dwelling
+- {item_3176}: ownership of other holiday home
+- {item_3177}: ownership of other undeveloped property
+- {item_3178}: ownership of other
+- {item_3179}: type of other building owned
+- {item_3180}: market price of other building owned
+- {item_3181}: do not know mrkt price of other building
+- {item_3182}: one family house owned in cntry of origin
+- {item_3183}: multi. family house owned cntry of origin
+- {item_3184}: holiday home owned in cntry of origin
+- {item_3185}: undevlpd. prop. owned in cntry of origin
+- {item_3186}: other building owned in cntry of origin
+- {item_3187}: type other building owned cntry of origin
+- {item_3188}: mrkt price building owned cntry of origin
+- {item_3189}: do not know building mrkt price, cntry of origin
+- {item_5027}: hh other real estate market value imp. a
+- {item_5028}: hh other real estate market value imp. b
+- {item_5029}: hh other real estate market value imp. c
+- {item_5030}: hh other real estate market value imp. d
+- {item_5031}: hh other real estate market value imp. e
+- {item_5032}: hh other real estate net value imp. a
+- {item_5033}: hh other real estate net value imp. b
+- {item_5034}: hh other real estate net value imp. c
+- {item_5035}: hh other real estate net value imp. d
+- {item_5036}: hh other real estate net value imp. e
+- {item_5037}: hh other real estate market value flag
+- {item_5038}: hh other real estate net value flag
+- {item_5039}: hh other real estate filter
+- {item_5040}: hh other real estate filter flag
+- {item_5121}: other real estate type one family house
+- {item_5122}: oth. real estate type mult. family house
+- {item_5123}: other real estate type holiday home
+- {item_5124}: other real estate type undeveloped land
+- {item_5125}: other real estate type other prop.
+- {item_5127}: number of other real estate
+- {item_5128}: other real estate share
+- {item_5129}: other real estate share flag
+- {item_5142}: other real estate market value imp.a
+- {item_5143}: other real estate market value imp.b
+- {item_5144}: other real estate market value imp.c
+- {item_5145}: other real estate market value imp.d
+- {item_5146}: other real estate market value imp.e
+- {item_5147}: other real estate share of value imp.a
+- {item_5148}: other real estate share of value imp.b
+- {item_5149}: other real estate share of value imp.c
+- {item_5150}: other real estate share of value imp.d
+- {item_5151}: other real estate share of value imp.e
+- {item_5152}: other real estate net value imp.a
+- {item_5153}: other real estate net value imp.b
+- {item_5154}: other real estate net value imp.c
+- {item_5155}: other real estate net value imp.d
+- {item_5156}: other real estate net value imp.e
+- {item_5157}: other real estate share net value imp.a
+- {item_5158}: other real estate share net value imp.b
+- {item_5159}: other real estate share net value imp.c
+- {item_5160}: other real estate share net value imp.d
+- {item_5161}: other real estate share net value imp.e
+- {item_5162}: other real estate market value flag
+- {item_5163}: other real estate share of value flag
+- {item_5164}: other real estate net value flag
+- {item_5165}: other real estate share net value flag
+- {item_5166}: other real estate filter
+- {item_5167}: other real estate filter flag
+- {item_5732}: oth. real estate type flag
+- {item_5733}: oth. real estate number flag
+- {item_8507}: hh other real estate type one family house
+- {item_8508}: hh other real estate type mult. family house
+- {item_8509}: hh other real estate type holiday home
+- {item_8510}: hh other real estate type undeveloped land
+- {item_8511}: hh other real estate type other prop.
+- {item_8512}: hh other real estate type
+- {item_8513}: hh other real estate number flag
 
 ##### claims for restitution of house/property rights [prr]
 
-- {_2468_h_prr}: Back Reparations Claims - House
-- {_2469_h_prr}: Back Reparations Claims - Property
-- {_2470_h_prr}: Back Reparations Claims - None
-- {_2471_h_prr}: Back Reparations Claims - Do Not Know
+- {_2468_h_prr}: back reparations claims - house
+- {_2469_h_prr}: back reparations claims - property
+- {_2470_h_prr}: back reparations claims - none
+- {_2471_h_prr}: back reparations claims - do not know
 
 #### monetary assets [asm]
 
-- {hlc0097}: Combined Savings,Checking Acct Prev Yr
-- {hwa1}: Savings Account Previous Yr
-- {item_3201}: Savings Account
-- {item_3204}: Known Amount In Savings Account
-- {item_3205}: Estimated Amount In Savings Account
-- {item_3206}: Do Not Know Amount In Savings Account
-- {item_5041}: HH Financial Assets Market Value Imp. A
-- {item_5042}: HH Financial Assets Market Value Imp. B
-- {item_5043}: HH Financial Assets Market Value Imp. C
-- {item_5044}: HH Financial Assets Market Value Imp. D
-- {item_5045}: HH Financial Assets Market Value Imp. E
-- {item_5046}: HH Financial Assets Market Value Flag
-- {item_5047}: HH Financial Assets Filter
-- {item_5048}: HH Financial Assets Filter Flag
-- {item_5168}: Financial Assets Share
-- {item_5169}: Financial Assets Share Flag
-- {item_5170}: Financial Assets Market Value imp.a
-- {item_5171}: Financial Assets Market Value imp.b
-- {item_5172}: Financial Assets Market Value imp.c
-- {item_5173}: Financial Assets Market Value imp.d
-- {item_5174}: Financial Assets Market Value imp.e
-- {item_5175}: Financial Assets Share of Value imp.a
-- {item_5176}: Financial Assets Share of Value imp.b
-- {item_5177}: Financial Assets Share of Value imp.c
-- {item_5178}: Financial Assets Share of Value imp.d
-- {item_5179}: Financial Assets Share of Value imp.e
-- {item_5180}: Financial Assets Market Value Flag
-- {item_5181}: Financial Assets Share of Value Flag
-- {item_5182}: Financial Assets Filter
-- {item_5183}: Financial Assets Filter Flag
-- {l8}: CAPI Total Value Of Tangible Assets Do Not Know
+- {hlc0097}: combined savings,checking acct prev yr
+- {hwa1}: savings account previous yr
+- {item_3201}: savings account
+- {item_3204}: known amount in savings account
+- {item_3205}: estimated amount in savings account
+- {item_3206}: do not know amount in savings account
+- {item_5041}: hh financial assets market value imp. a
+- {item_5042}: hh financial assets market value imp. b
+- {item_5043}: hh financial assets market value imp. c
+- {item_5044}: hh financial assets market value imp. d
+- {item_5045}: hh financial assets market value imp. e
+- {item_5046}: hh financial assets market value flag
+- {item_5047}: hh financial assets filter
+- {item_5048}: hh financial assets filter flag
+- {item_5168}: financial assets share
+- {item_5169}: financial assets share flag
+- {item_5170}: financial assets market value imp.a
+- {item_5171}: financial assets market value imp.b
+- {item_5172}: financial assets market value imp.c
+- {item_5173}: financial assets market value imp.d
+- {item_5174}: financial assets market value imp.e
+- {item_5175}: financial assets share of value imp.a
+- {item_5176}: financial assets share of value imp.b
+- {item_5177}: financial assets share of value imp.c
+- {item_5178}: financial assets share of value imp.d
+- {item_5179}: financial assets share of value imp.e
+- {item_5180}: financial assets market value flag
+- {item_5181}: financial assets share of value flag
+- {item_5182}: financial assets filter
+- {item_5183}: financial assets filter flag
+- {l8}: capi total value of tangible assets do not know
 
 #### other investments [oin]
 
-- {hwa4}: Fixed Interest Securities Previous Yr
-- {hwa5}: Other Securities
-- {item_3203}: Securities, Shares, etc.
-- {item_3210}: Known Amount In Securities, Shares, etc.
-- {item_3211}: Estimated Amount Securities, Shares, etc.
-- {item_3212}: Do Not Know Amt. Securities, Shares, etc.
-- {item_5077}: HH Tangible Assets Market Value Imp. A
-- {item_5078}: HH Tangible Assets Market Value Imp. B
-- {item_5079}: HH Tangible Assets Market Value Imp. C
-- {item_5080}: HH Tangible Assets Market Value Imp. D
-- {item_5081}: HH Tangible Assets Market Value Imp. E
-- {item_5082}: HH Tangible Assets Market Value Flag
-- {item_5083}: HH Tangible Assets Filter
-- {item_5084}: HH Tangible Assets Filter Flag
-- {item_5232}: Tangible Assets Market Value imp.a
-- {item_5233}: Tangible Assets Market Value imp.b
-- {item_5234}: Tangible Assets Market Value imp.c
-- {item_5235}: Tangible Assets Market Value imp.d
-- {item_5236}: Tangible Assets Market Value imp.e
-- {item_5237}: Tangible Assets Market Value Flag
-- {item_5238}: Tangible Assets Filter
-- {item_5239}: Tangible Assets Filter Flag
+- {hwa4}: fixed interest securities previous yr
+- {hwa5}: other securities
+- {item_3203}: securities, shares, etc.
+- {item_3210}: known amount in securities, shares, etc.
+- {item_3211}: estimated amount securities, shares, etc.
+- {item_3212}: do not know amt. securities, shares, etc.
+- {item_5077}: hh tangible assets market value imp. a
+- {item_5078}: hh tangible assets market value imp. b
+- {item_5079}: hh tangible assets market value imp. c
+- {item_5080}: hh tangible assets market value imp. d
+- {item_5081}: hh tangible assets market value imp. e
+- {item_5082}: hh tangible assets market value flag
+- {item_5083}: hh tangible assets filter
+- {item_5084}: hh tangible assets filter flag
+- {item_5232}: tangible assets market value imp.a
+- {item_5233}: tangible assets market value imp.b
+- {item_5234}: tangible assets market value imp.c
+- {item_5235}: tangible assets market value imp.d
+- {item_5236}: tangible assets market value imp.e
+- {item_5237}: tangible assets market value flag
+- {item_5238}: tangible assets filter
+- {item_5239}: tangible assets filter flag
 
 #### private insurance [pri]
 
-- {_1527_p_pri}: Life Insurance Previous Yr
-- {hwa3}: Life Insurance Previous Yr
-- {item_3213}: Private Life Insurance
-- {item_3214}: 1.Person Life Insurance In HH
-- {item_3215}: Age 1.Person At End Of Life Insurance
-- {item_3216}: Amount Insured For 1.Person
-- {item_3217}: Do Not Know Amount Insured For 1.Person
-- {item_3218}: Mntly. Premium, Life Ins. For 1.Person
-- {item_3219}: Do Not Know Mntly. Prem.,Life Ins.1.Pers.
-- {item_3220}: Age At Expiry, Life Ins. 1.P.
-- {item_3221}: Do Not Know Age At Expiry, Life Ins. 1.P.
-- {item_3222}: 2.Person Life Insurance In HH
-- {item_3223}: Age 2.Person At End Of Life Insurance
-- {item_3224}: Amount Insured For 2.Person
-- {item_3225}: Do Not Know Amount Insured For 2.Person
-- {item_3226}: Mntly. Premium, Life Ins. For 2.Person
-- {item_3227}: Do Not Know Mntly. Prem.,Life Ins.2.Pers.
-- {item_3228}: Age At Expiry, Life Ins. 2.P.
-- {item_3229}: Do Not Know Age At Expiry, Life Ins. 2.P.
-- {item_3230}: 3.Person Life Insurance In HH
-- {item_3231}: Age 3.Person At End Of Life Insurance
-- {item_3232}: Amount Insured For 3.Person
-- {item_3233}: Do Not Know Amount Insured For 3.Person
-- {item_3234}: Mntly. Premium, Life Ins. For 3.Person
-- {item_3235}: Do Not Know Mntly. Prem.,Life Ins.3.Pers.
-- {item_3236}: Age At Expiry, Life Ins. 3.P.
-- {item_3237}: Do Not Know Age At Expiry, Life Ins. 3.P.
-- {item_5049}: HH Private Insurances Market Value Imp. A
-- {item_5050}: HH Private Insurances Market Value Imp. B
-- {item_5051}: HH Private Insurances Market Value Imp. C
-- {item_5052}: HH Private Insurances Market Value Imp. D
-- {item_5053}: HH Private Insurances Market Value Imp. E
-- {item_5054}: HH Private Insurances Market Value Flag
-- {item_5055}: HH Private Insurances Filter
-- {item_5056}: HH Private Insurances Filter Flag
-- {item_5184}: Private Insurances Market Value imp.a
-- {item_5185}: Private Insurances Market Value imp.b
-- {item_5186}: Private Insurances Market Value imp.c
-- {item_5187}: Private Insurances Market Value imp.d
-- {item_5188}: Private Insurances Market Value imp.e
-- {item_5189}: Private Insurances Market Value Flag
-- {item_5190}: Private Insurances Filter
-- {item_5191}: Private Insurances Filter Flag
-- {item_5724}: Private Insurances Market Value imp.a
-- {item_5725}: Private Insurances Market Value imp.b
-- {item_5726}: Private Insurances Market Value imp.c
-- {item_5727}: Private Insurances Market Value imp.d
-- {item_5728}: Private Insurances Market Value imp.e
-- {item_5729}: Private Insurances Market Value Flag
-- {item_5730}: Private Insurances Filter
-- {item_5731}: Private Insurances Filter Flag
-- {item_5734}: HH-Building loan contract Market Value Imp. A
-- {item_5735}: HH-Building loan contract Market Value Imp. B
-- {item_5736}: HH-Building loan contract Market Value Imp. C
-- {item_5737}: HH-Building loan contract Market Value Imp. D
-- {item_5738}: HH-Building loan contract Market Value Imp. E
-- {item_5739}: HH-Building loan contract Market Value Flag
-- {item_5740}: HH-Building loan contract Filter
-- {item_5741}: HH-Building loan contract Filter Flag
+- {_1527_p_pri}: life insurance previous yr
+- {hwa3}: life insurance previous yr
+- {item_3213}: private life insurance
+- {item_3214}: 1.person life insurance in hh
+- {item_3215}: age 1.person at end of life insurance
+- {item_3216}: amount insured for 1.person
+- {item_3217}: do not know amount insured for 1.person
+- {item_3218}: mntly. premium, life ins. for 1.person
+- {item_3219}: do not know mntly. prem.,life ins.1.pers.
+- {item_3220}: age at expiry, life ins. 1.p.
+- {item_3221}: do not know age at expiry, life ins. 1.p.
+- {item_3222}: 2.person life insurance in hh
+- {item_3223}: age 2.person at end of life insurance
+- {item_3224}: amount insured for 2.person
+- {item_3225}: do not know amount insured for 2.person
+- {item_3226}: mntly. premium, life ins. for 2.person
+- {item_3227}: do not know mntly. prem.,life ins.2.pers.
+- {item_3228}: age at expiry, life ins. 2.p.
+- {item_3229}: do not know age at expiry, life ins. 2.p.
+- {item_3230}: 3.person life insurance in hh
+- {item_3231}: age 3.person at end of life insurance
+- {item_3232}: amount insured for 3.person
+- {item_3233}: do not know amount insured for 3.person
+- {item_3234}: mntly. premium, life ins. for 3.person
+- {item_3235}: do not know mntly. prem.,life ins.3.pers.
+- {item_3236}: age at expiry, life ins. 3.p.
+- {item_3237}: do not know age at expiry, life ins. 3.p.
+- {item_5049}: hh private insurances market value imp. a
+- {item_5050}: hh private insurances market value imp. b
+- {item_5051}: hh private insurances market value imp. c
+- {item_5052}: hh private insurances market value imp. d
+- {item_5053}: hh private insurances market value imp. e
+- {item_5054}: hh private insurances market value flag
+- {item_5055}: hh private insurances filter
+- {item_5056}: hh private insurances filter flag
+- {item_5184}: private insurances market value imp.a
+- {item_5185}: private insurances market value imp.b
+- {item_5186}: private insurances market value imp.c
+- {item_5187}: private insurances market value imp.d
+- {item_5188}: private insurances market value imp.e
+- {item_5189}: private insurances market value flag
+- {item_5190}: private insurances filter
+- {item_5191}: private insurances filter flag
+- {item_5724}: private insurances market value imp.a
+- {item_5725}: private insurances market value imp.b
+- {item_5726}: private insurances market value imp.c
+- {item_5727}: private insurances market value imp.d
+- {item_5728}: private insurances market value imp.e
+- {item_5729}: private insurances market value flag
+- {item_5730}: private insurances filter
+- {item_5731}: private insurances filter flag
+- {item_5734}: hh-building loan contract market value imp. a
+- {item_5735}: hh-building loan contract market value imp. b
+- {item_5736}: hh-building loan contract market value imp. c
+- {item_5737}: hh-building loan contract market value imp. d
+- {item_5738}: hh-building loan contract market value imp. e
+- {item_5739}: hh-building loan contract market value flag
+- {item_5740}: hh-building loan contract filter
+- {item_5741}: hh-building loan contract filter flag
 
 ##### investments in pension plans [ipp]
 
-- {_1530_p_ipp}: Insured By Pension And Other Assets
-- {_1531_p_ipp}: Assets For Subsistence
-- {_1532_p_ipp}: Assets For Retirement Years
-- {_1533_p_ipp}: Provisions Against Sickness And Hardship
-- {_1534_p_ipp}: Assets To Leave As Inheritance
+- {_1530_p_ipp}: insured by pension and other assets
+- {_1531_p_ipp}: assets for subsistence
+- {_1532_p_ipp}: assets for retirement years
+- {_1533_p_ipp}: provisions against sickness and hardship
+- {_1534_p_ipp}: assets to leave as inheritance
 
 #### investments in home savings [ihs]
 
-- {hwa2}: Savings: Building Society Previous Yr
-- {item_3207}: Known Amount Building Society Savings
-- {item_3208}: Estimated Amount Building Society Savings
-- {item_3209}: Do Not Know Amt. In Build. Soc. Sav. Acc.
-- {item_5716}: Building loan contract Market Value imp.a
-- {item_5717}: Building loan contract Market Value imp.b
-- {item_5718}: Building loan contract Market Value imp.c
-- {item_5719}: Building loan contract Market Value imp.d
-- {item_5720}: Building loan contract Market Value imp.e
-- {item_5721}: Building loan contract Market Value Flag
-- {item_5722}: Building loan contract Filter
-- {item_5723}: Building loan contract Filter Flag
-- {item_5742}: HH-Private Insurances Market Value Imp. A
-- {item_5743}: HH-Private Insurances Market Value Imp. B
-- {item_5744}: HH-Private Insurances Market Value Imp. C
-- {item_5745}: HH-Private Insurances Market Value Imp. D
-- {item_5746}: HH-Private Insurances Market Value Imp. E
-- {item_5747}: HH-Private Insurances Market Value Flag
-- {item_5748}: HH-Private Insurances Filter
-- {item_5749}: HH-Private Insurances Filter Flag
-- {pbau01}: Building Society Savings
-- {pbau02}: Value Of Savings Building Society
-- {pbau02a}: CAPI Value Of Savings Building Society Over 10.000 EURO
-- {pbau02b}: CAPI Value Of Savings Building Society Over 50.000 EURO
-- {pbau02c}: CAPI Value Of Savings Building Society Over 5.000 EURO
+- {hwa2}: savings: building society previous yr
+- {item_3207}: known amount building society savings
+- {item_3208}: estimated amount building society savings
+- {item_3209}: do not know amt. in build. soc. sav. acc.
+- {item_5716}: building loan contract market value imp.a
+- {item_5717}: building loan contract market value imp.b
+- {item_5718}: building loan contract market value imp.c
+- {item_5719}: building loan contract market value imp.d
+- {item_5720}: building loan contract market value imp.e
+- {item_5721}: building loan contract market value flag
+- {item_5722}: building loan contract filter
+- {item_5723}: building loan contract filter flag
+- {item_5742}: hh-private insurances market value imp. a
+- {item_5743}: hh-private insurances market value imp. b
+- {item_5744}: hh-private insurances market value imp. c
+- {item_5745}: hh-private insurances market value imp. d
+- {item_5746}: hh-private insurances market value imp. e
+- {item_5747}: hh-private insurances market value flag
+- {item_5748}: hh-private insurances filter
+- {item_5749}: hh-private insurances filter flag
+- {pbau01}: building society savings
+- {pbau02}: value of savings building society
+- {pbau02a}: capi value of savings building society over 10.000 euro
+- {pbau02b}: capi value of savings building society over 50.000 euro
+- {pbau02c}: capi value of savings building society over 5.000 euro
 
 #### debts / loans [dtl]
 
-- {_2560_h_dtl}: Interest Previous Year
-- {_2619_h_dtl}: Mortgage Payments Previous Yr
-- {hkred1}: Pay Off Loans
-- {hkred2}: Amount Of Loans Paid Off
-- {hkred3}: Charged with loan repayment
-- {hverm3}: operation, Maintenance Costs Previous Year
+- {_2560_h_dtl}: interest previous year
+- {_2619_h_dtl}: mortgage payments previous yr
+- {hkred1}: pay off loans
+- {hkred2}: amount of loans paid off
+- {hkred3}: charged with loan repayment
+- {hverm3}: operation, maintenance costs previous year
 - {hverm4}: interest and mortgage payment prev year
-- {item_3238}: Do Not Know Est. Amount. Fin. Obligation
-- {item_5013}: HH Consumer Debts Market Value Imp. A
-- {item_5014}: HH Consumer Debts Market Value Imp. B
-- {item_5015}: HH Consumer Debts Market Value Imp. C
-- {item_5016}: HH Consumer Debts Market Value Imp. D
-- {item_5017}: HH Consumer Debts Market Value Imp. E
-- {item_5018}: HH Consumer Debts Market Value Flag
-- {item_5019}: HH Consumer Debts Filter
-- {item_5020}: HH Consumer Debts Filter Flag
-- {item_5021}: HH Other Real Estate Debts Imp. A
-- {item_5022}: HH Other Real Estate Debts Imp. B
-- {item_5023}: HH Other Real Estate Debts Imp. C
-- {item_5024}: HH Other Real Estate Debts Imp. D
-- {item_5025}: HH Other Real Estate Debts Imp. E
-- {item_5026}: HH Other Real Estate Debts Flag
-- {item_5057}: HH Prop. Prim. Resid. Debts Imp. A
-- {item_5058}: HH Prop. Prim. Resid. Debts Imp. B
-- {item_5059}: HH Prop. Prim. Resid. Debts Imp. C
-- {item_5060}: HH Prop. Prim. Resid. Debts Imp. D
-- {item_5061}: HH Prop. Prim. Resid. Debts Imp. E
-- {item_5062}: HH Prop. Prim. Resid. Debts Flag
-- {item_5113}: Consumer Debts Market Value imp.a
-- {item_5114}: Consumer Debts Market Value imp.b
-- {item_5115}: Consumer Debts Market Value imp.c
-- {item_5116}: Consumer Debts Market Value imp.d
-- {item_5117}: Consumer Debts Market Value imp.e
-- {item_5118}: Consumer Debts Market Value Flag
-- {item_5119}: Consumer Debts Filter
-- {item_5120}: Consumer Debts Filter Flag
-- {item_5130}: Other Real Estate Debts imp.a
-- {item_5131}: Other Real Estate Debts imp.b
-- {item_5132}: Other Real Estate Debts imp.c
-- {item_5133}: Other Real Estate Debts imp.d
-- {item_5134}: Other Real Estate Debts imp.e
-- {item_5135}: Other Real Estate Share of Debts imp.a
-- {item_5136}: Other Real Estate Share of Debts imp.b
-- {item_5137}: Other Real Estate Share of Debts imp.c
-- {item_5138}: Other Real Estate Share of Debts imp.d
-- {item_5139}: Other Real Estate Share of Debts imp.e
-- {item_5140}: Other Real Estate Debts Flag
-- {item_5141}: Other Real Estate Share of Debts Flag
-- {item_5194}: Prop. Prim. Resid. Debts imp.a
-- {item_5195}: Prop. Prim. Resid. Debts imp.b
-- {item_5196}: Prop. Prim. Resid. Debts imp.c
-- {item_5197}: Prop. Prim. Resid. Debts imp.d
-- {item_5198}: Prop. Prim. Resid. Debts imp.e
-- {item_5199}: Prop. Prim. Resid. Share of Debts imp.a
-- {item_5200}: Prop. Prim. Resid. Share of Debts imp.b
-- {item_5201}: Prop. Prim. Resid. Share of Debts imp.c
-- {item_5202}: Prop. Prim. Resid. Share of Debts imp.d
-- {item_5203}: Prop. Prim. Resid. Share of Debts imp.e
-- {item_5204}: Prop. Prim. Resid. Debts Flag
-- {item_5205}: Prop. Prim. Resid. Share of Debts Flag
+- {item_3238}: do not know est. amount. fin. obligation
+- {item_5013}: hh consumer debts market value imp. a
+- {item_5014}: hh consumer debts market value imp. b
+- {item_5015}: hh consumer debts market value imp. c
+- {item_5016}: hh consumer debts market value imp. d
+- {item_5017}: hh consumer debts market value imp. e
+- {item_5018}: hh consumer debts market value flag
+- {item_5019}: hh consumer debts filter
+- {item_5020}: hh consumer debts filter flag
+- {item_5021}: hh other real estate debts imp. a
+- {item_5022}: hh other real estate debts imp. b
+- {item_5023}: hh other real estate debts imp. c
+- {item_5024}: hh other real estate debts imp. d
+- {item_5025}: hh other real estate debts imp. e
+- {item_5026}: hh other real estate debts flag
+- {item_5057}: hh prop. prim. resid. debts imp. a
+- {item_5058}: hh prop. prim. resid. debts imp. b
+- {item_5059}: hh prop. prim. resid. debts imp. c
+- {item_5060}: hh prop. prim. resid. debts imp. d
+- {item_5061}: hh prop. prim. resid. debts imp. e
+- {item_5062}: hh prop. prim. resid. debts flag
+- {item_5113}: consumer debts market value imp.a
+- {item_5114}: consumer debts market value imp.b
+- {item_5115}: consumer debts market value imp.c
+- {item_5116}: consumer debts market value imp.d
+- {item_5117}: consumer debts market value imp.e
+- {item_5118}: consumer debts market value flag
+- {item_5119}: consumer debts filter
+- {item_5120}: consumer debts filter flag
+- {item_5130}: other real estate debts imp.a
+- {item_5131}: other real estate debts imp.b
+- {item_5132}: other real estate debts imp.c
+- {item_5133}: other real estate debts imp.d
+- {item_5134}: other real estate debts imp.e
+- {item_5135}: other real estate share of debts imp.a
+- {item_5136}: other real estate share of debts imp.b
+- {item_5137}: other real estate share of debts imp.c
+- {item_5138}: other real estate share of debts imp.d
+- {item_5139}: other real estate share of debts imp.e
+- {item_5140}: other real estate debts flag
+- {item_5141}: other real estate share of debts flag
+- {item_5194}: prop. prim. resid. debts imp.a
+- {item_5195}: prop. prim. resid. debts imp.b
+- {item_5196}: prop. prim. resid. debts imp.c
+- {item_5197}: prop. prim. resid. debts imp.d
+- {item_5198}: prop. prim. resid. debts imp.e
+- {item_5199}: prop. prim. resid. share of debts imp.a
+- {item_5200}: prop. prim. resid. share of debts imp.b
+- {item_5201}: prop. prim. resid. share of debts imp.c
+- {item_5202}: prop. prim. resid. share of debts imp.d
+- {item_5203}: prop. prim. resid. share of debts imp.e
+- {item_5204}: prop. prim. resid. debts flag
+- {item_5205}: prop. prim. resid. share of debts flag
 - {item_7361}: flag: loans for consumer expenditures
 - {item_7362}: c: loans for consumer expenditures, vers. a
 - {item_7363}: c: loans for consumer expenditures, vers. b
@@ -961,481 +961,481 @@ label: income, taxes, and social security
 
 #### owner-occupied housing [ooh]
 
-- {item_3168}: House, Apartment Owner
-- {item_3169}: Assessed Value Of House, Apartment
-- {item_3170}: Do Not Know Assessed Value
-- {item_3171}: Market Price Of House, Apartment
-- {item_3172}: Do Not Know Market Price
-- {item_5063}: HH Prop. Prim. Resid. Market Value Imp. A
-- {item_5064}: HH Prop. Prim. Resid. Market Value Imp. B
-- {item_5065}: HH Prop. Prim. Resid. Market Value Imp. C
-- {item_5066}: HH Prop. Prim. Resid. Market Value Imp. D
-- {item_5067}: HH Prop. Prim. Resid. Market Value Imp. E
-- {item_5068}: HH Prop. Prim. Resid. Net Value Imp. A
-- {item_5069}: HH Prop. Prim. Resid. Net Value Imp. B
-- {item_5070}: HH Prop. Prim. Resid. Net Value Imp. C
-- {item_5071}: HH Prop. Prim. Resid. Net Value Imp. D
-- {item_5072}: HH Prop. Prim. Resid. Net Value Imp. E
-- {item_5073}: HH Prop. Prim. Resid. Market Value Flag
-- {item_5074}: HH Prop. Prim. Resid. Net Value Flag
-- {item_5075}: HH Prop. Prim. Resid. Filter
-- {item_5076}: HH Prop. Prim. Resid. Filter Flag
-- {item_5192}: Prop. Prim. Resid. Share
-- {item_5193}: Prop. Prim. Resid. Share Flag
-- {item_5206}: Prop. Prim. Resid. Market Value imp.a
-- {item_5207}: Prop. Prim. Resid. Market Value imp.b
-- {item_5208}: Prop. Prim. Resid. Market Value imp.c
-- {item_5209}: Prop. Prim. Resid. Market Value imp.d
-- {item_5210}: Prop. Prim. Resid. Market Value imp.e
-- {item_5211}: Prop. Prim. Resid. Share of Value imp.a
-- {item_5212}: Prop. Prim. Resid. Share of Value imp.b
-- {item_5213}: Prop. Prim. Resid. Share of Value imp.c
-- {item_5214}: Prop. Prim. Resid. Share of Value imp.d
-- {item_5215}: Prop. Prim. Resid. Share of Value imp.e
-- {item_5216}: Prop. Prim. Resid. Net Value imp.a
-- {item_5217}: Prop. Prim. Resid. Net Value imp.b
-- {item_5218}: Prop. Prim. Resid. Net Value imp.c
-- {item_5219}: Prop. Prim. Resid. Net Value imp.d
-- {item_5220}: Prop. Prim. Resid. Net Value imp.e
-- {item_5221}: Prop. Prim. Resid. Share Net Value imp.a
-- {item_5222}: Prop. Prim. Resid. Share Net Value imp.b
-- {item_5223}: Prop. Prim. Resid. Share Net Value imp.c
-- {item_5224}: Prop. Prim. Resid. Share Net Value imp.d
-- {item_5225}: Prop. Prim. Resid. Share Net Value imp.e
-- {item_5226}: Prop. Prim. Resid. Market Value Flag
-- {item_5227}: Prop. Prim. Resid. Share of Value Flag
-- {item_5228}: Prop. Prim. Resid. Net Value Flag
-- {item_5229}: Prop. Prim. Resid. Share Net Value Flag
-- {item_5230}: Prop. Prim. Resid. Filter
-- {item_5231}: Prop. Prim. Resid. Filter Flag
+- {item_3168}: house, apartment owner
+- {item_3169}: assessed value of house, apartment
+- {item_3170}: do not know assessed value
+- {item_3171}: market price of house, apartment
+- {item_3172}: do not know market price
+- {item_5063}: hh prop. prim. resid. market value imp. a
+- {item_5064}: hh prop. prim. resid. market value imp. b
+- {item_5065}: hh prop. prim. resid. market value imp. c
+- {item_5066}: hh prop. prim. resid. market value imp. d
+- {item_5067}: hh prop. prim. resid. market value imp. e
+- {item_5068}: hh prop. prim. resid. net value imp. a
+- {item_5069}: hh prop. prim. resid. net value imp. b
+- {item_5070}: hh prop. prim. resid. net value imp. c
+- {item_5071}: hh prop. prim. resid. net value imp. d
+- {item_5072}: hh prop. prim. resid. net value imp. e
+- {item_5073}: hh prop. prim. resid. market value flag
+- {item_5074}: hh prop. prim. resid. net value flag
+- {item_5075}: hh prop. prim. resid. filter
+- {item_5076}: hh prop. prim. resid. filter flag
+- {item_5192}: prop. prim. resid. share
+- {item_5193}: prop. prim. resid. share flag
+- {item_5206}: prop. prim. resid. market value imp.a
+- {item_5207}: prop. prim. resid. market value imp.b
+- {item_5208}: prop. prim. resid. market value imp.c
+- {item_5209}: prop. prim. resid. market value imp.d
+- {item_5210}: prop. prim. resid. market value imp.e
+- {item_5211}: prop. prim. resid. share of value imp.a
+- {item_5212}: prop. prim. resid. share of value imp.b
+- {item_5213}: prop. prim. resid. share of value imp.c
+- {item_5214}: prop. prim. resid. share of value imp.d
+- {item_5215}: prop. prim. resid. share of value imp.e
+- {item_5216}: prop. prim. resid. net value imp.a
+- {item_5217}: prop. prim. resid. net value imp.b
+- {item_5218}: prop. prim. resid. net value imp.c
+- {item_5219}: prop. prim. resid. net value imp.d
+- {item_5220}: prop. prim. resid. net value imp.e
+- {item_5221}: prop. prim. resid. share net value imp.a
+- {item_5222}: prop. prim. resid. share net value imp.b
+- {item_5223}: prop. prim. resid. share net value imp.c
+- {item_5224}: prop. prim. resid. share net value imp.d
+- {item_5225}: prop. prim. resid. share net value imp.e
+- {item_5226}: prop. prim. resid. market value flag
+- {item_5227}: prop. prim. resid. share of value flag
+- {item_5228}: prop. prim. resid. net value flag
+- {item_5229}: prop. prim. resid. share net value flag
+- {item_5230}: prop. prim. resid. filter
+- {item_5231}: prop. prim. resid. filter flag
 
 ### total assets [ast]
 
 
 #### personal assets [asp]
 
-- {item_5240}: Overall Debts imp.a
-- {item_5241}: Overall Debts imp.b
-- {item_5242}: Overall Debts imp.c
-- {item_5243}: Overall Debts imp.d
-- {item_5244}: Overall Debts imp.e
-- {item_5245}: Overall Debts Flag
-- {item_5246}: Gross Overall Wealth imp.a
-- {item_5247}: Gross Overall Wealth imp.b
-- {item_5248}: Gross Overall Wealth imp.c
-- {item_5249}: Gross Overall Wealth imp.d
-- {item_5250}: Gross Overall Wealth imp.e
-- {item_5251}: Net Overall Wealth imp.a
-- {item_5252}: Net Overall Wealth imp.b
-- {item_5253}: Net Overall Wealth imp.c
-- {item_5254}: Net Overall Wealth imp.d
-- {item_5255}: Net Overall Wealth imp.e
-- {item_5256}: Gross Overall Wealth Flag
-- {item_5257}: Net Overall Wealth Flag
+- {item_5240}: overall debts imp.a
+- {item_5241}: overall debts imp.b
+- {item_5242}: overall debts imp.c
+- {item_5243}: overall debts imp.d
+- {item_5244}: overall debts imp.e
+- {item_5245}: overall debts flag
+- {item_5246}: gross overall wealth imp.a
+- {item_5247}: gross overall wealth imp.b
+- {item_5248}: gross overall wealth imp.c
+- {item_5249}: gross overall wealth imp.d
+- {item_5250}: gross overall wealth imp.e
+- {item_5251}: net overall wealth imp.a
+- {item_5252}: net overall wealth imp.b
+- {item_5253}: net overall wealth imp.c
+- {item_5254}: net overall wealth imp.d
+- {item_5255}: net overall wealth imp.e
+- {item_5256}: gross overall wealth flag
+- {item_5257}: net overall wealth flag
 
 #### household assets [ash]
 
-- {item_3239}: Amt. HH Assets
-- {item_3240}: Do Not Know Amt. HH Assets
-- {item_3241}: Amt. HH Assets, Cntry Of Origin
-- {item_3242}: Do Not Know Amt.HH Assets,Cntry Of Origin
-- {item_5085}: HH Overall Debts Imp. A
-- {item_5086}: HH Overall Debts Imp. B
-- {item_5087}: HH Overall Debts Imp. C
-- {item_5088}: HH Overall Debts Imp. D
-- {item_5089}: HH Overall Debts Imp. E
-- {item_5090}: HH Overall Debts Flag
-- {item_5091}: HH Gross Overall Wealth Imp. A
-- {item_5092}: HH Gross Overall Wealth Imp. B
-- {item_5093}: HH Gross Overall Wealth Imp. C
-- {item_5094}: HH Gross Overall Wealth Imp. D
-- {item_5095}: HH Gross Overall Wealth Imp. E
-- {item_5096}: HH Net Overall Wealth Imp. A
-- {item_5097}: HH Net Overall Wealth Imp. B
-- {item_5098}: HH Net Overall Wealth Imp. C
-- {item_5099}: HH Net Overall Wealth Imp. D
-- {item_5100}: HH Net Overall Wealth Imp. E
-- {item_5101}: HH Gross Overall Wealth Flag
-- {item_5102}: HH Net Overall Wealth Flag
+- {item_3239}: amt. hh assets
+- {item_3240}: do not know amt. hh assets
+- {item_3241}: amt. hh assets, cntry of origin
+- {item_3242}: do not know amt.hh assets,cntry of origin
+- {item_5085}: hh overall debts imp. a
+- {item_5086}: hh overall debts imp. b
+- {item_5087}: hh overall debts imp. c
+- {item_5088}: hh overall debts imp. d
+- {item_5089}: hh overall debts imp. e
+- {item_5090}: hh overall debts flag
+- {item_5091}: hh gross overall wealth imp. a
+- {item_5092}: hh gross overall wealth imp. b
+- {item_5093}: hh gross overall wealth imp. c
+- {item_5094}: hh gross overall wealth imp. d
+- {item_5095}: hh gross overall wealth imp. e
+- {item_5096}: hh net overall wealth imp. a
+- {item_5097}: hh net overall wealth imp. b
+- {item_5098}: hh net overall wealth imp. c
+- {item_5099}: hh net overall wealth imp. d
+- {item_5100}: hh net overall wealth imp. e
+- {item_5101}: hh gross overall wealth flag
+- {item_5102}: hh net overall wealth flag
 
 ### original responses [ori]
 
-- {item_3265}: Legal Or Pre-Nuptial Separation Of Assets
-- {item_3266}: Other Separation Of Assets
-- {item_3267}: NA, Not Married
-- {item_3268}: Standard Of Life Contract With Partner
-- {l5}: CAPI Value Of Financial Assets Do Not Know
-- {l6}: CAPI Cash Surrender Value Do Not Know
-- {pleb02}: Cash Surrender Value Of Policies
-- {pleb02a}: CAPI Cash Surrender Value Over 20.000 EURO
-- {pleb02b}: CAPI Cash Surrender Value Over 100.000 EURO
-- {pleb02c}: CAPI Cash Surrender Value Over 20.000 EURO
-- {pspa01}: Financial Assets
-- {pspa02}: Value Of Financial Assets
-- {pspa02a}: CAPI Value Of Financial Assets Over 20.000 EURO
-- {pspa02b}: CAPI Value Of Financial Assets Over 100.000 EURO
-- {pspa02c}: CAPI Value Of Financial Assets Over 5.000 EURO
-- {pspa03}: Sole Owner Financial Assets
-- {pspa04}: Share Of Financial Assets
+- {item_3265}: legal or pre-nuptial separation of assets
+- {item_3266}: other separation of assets
+- {item_3267}: na, not married
+- {item_3268}: standard of life contract with partner
+- {l5}: capi value of financial assets do not know
+- {l6}: capi cash surrender value do not know
+- {pleb02}: cash surrender value of policies
+- {pleb02a}: capi cash surrender value over 20.000 euro
+- {pleb02b}: capi cash surrender value over 100.000 euro
+- {pleb02c}: capi cash surrender value over 20.000 euro
+- {pspa01}: financial assets
+- {pspa02}: value of financial assets
+- {pspa02a}: capi value of financial assets over 20.000 euro
+- {pspa02b}: capi value of financial assets over 100.000 euro
+- {pspa02c}: capi value of financial assets over 5.000 euro
+- {pspa03}: sole owner financial assets
+- {pspa04}: share of financial assets
 
 #### inheritances [inh]
 
-- {item_3243}: Inheritance After 1960
-- {item_3244}: Inheritance 1.Person
-- {item_3245}: Year Inheritance 1.Person
-- {item_3246}: House-Property Insurance 1.Person
-- {item_3247}: Shares, Securities Insurance 1.Person
-- {item_3248}: Cash, Bank Balance Insurance 1.Person
-- {item_3249}: Amount Inheritance 1.Person
-- {item_3250}: Do Not Know Amt. Inheritance 1.Person
-- {item_3251}: Inheritance 2.Person
-- {item_3252}: Year Inheritance 2.Person
-- {item_3253}: House-Property Insurance 2.Person
-- {item_3254}: Shares, Securities Insurance 2.Person
-- {item_3255}: Cash, Bank Balance Insurance 2.Person
-- {item_3256}: Amount Inheritance 2.Person
-- {item_3257}: Do Not Know Amt. Inheritance 2.Person
-- {item_3258}: Inheritance 3.Person
-- {item_3259}: Year Inheritance 3.Person
-- {item_3260}: House-Property Insurance 3.Person
-- {item_3261}: Shares, Securities Insurance 3.Person
-- {item_3262}: Cash, Bank Balance Insurance 3.Person
-- {item_3263}: Amount Inheritance 3.Person
-- {item_3264}: Do Not Know Amt. Inheritance 3.Person
-- {perb}: Have Received Inheritance Or Gift
-- {perba1}: Year Of Inheritance A
-- {perba2}: Year Of Inheritance B
-- {perba3}: Year Of Inheritance C
-- {perbb1}: Inheritance Or Gift A
-- {perbb2}: Inheritance Or Gift B
-- {perbb3}: Inheritance Or Gift C
-- {perbc11}: House, Land A
-- {perbc12}: Securities A
-- {perbc13}: Cash, Bank Deposits A
-- {perbc14}: Shares, Company Ownership A
-- {perbc15}: Other Wealth Or Gift A
-- {perbc21}: House, Land B
-- {perbc22}: Securities B
-- {perbc23}: Cash, Bank Deposits B
-- {perbc24}: Shares, Company Ownership B
-- {perbc25}: Other Wealth Or Gift B
-- {perbc31}: House, Land C
-- {perbc32}: Securities C
-- {perbc33}: Cash, Bank Deposits C
-- {perbc34}: Shares, Company Ownership C
-- {perbc35}: Other Wealth Or Gift C
-- {perbd1}: Value Of Inheritance Or Gift A At Time
-- {perbd11}: Value Of Inheritance Or Gift A Unknown
-- {perbd2}: Value Of Inheritance Or Gift B At Time
-- {perbd21}: Value Of Inheritance Or Gift B Unknown
-- {perbd3}: Value Of Inheritance Or Gift C At Time
-- {perbd31}: Value Of Inheritance Or Gift C Unknown
-- {perbdm}: Value Of Future Inheritance Or Gift
-- {perbe1}: From Whom Inheritance Or Gift A
-- {perbe2}: From Whom Inheritance Or Gift B
-- {perbe3}: From Whom Inheritance Or Gift C
-- {perbja}: Inheritance Or Gift In The Future
+- {item_3243}: inheritance after 1960
+- {item_3244}: inheritance 1.person
+- {item_3245}: year inheritance 1.person
+- {item_3246}: house-property insurance 1.person
+- {item_3247}: shares, securities insurance 1.person
+- {item_3248}: cash, bank balance insurance 1.person
+- {item_3249}: amount inheritance 1.person
+- {item_3250}: do not know amt. inheritance 1.person
+- {item_3251}: inheritance 2.person
+- {item_3252}: year inheritance 2.person
+- {item_3253}: house-property insurance 2.person
+- {item_3254}: shares, securities insurance 2.person
+- {item_3255}: cash, bank balance insurance 2.person
+- {item_3256}: amount inheritance 2.person
+- {item_3257}: do not know amt. inheritance 2.person
+- {item_3258}: inheritance 3.person
+- {item_3259}: year inheritance 3.person
+- {item_3260}: house-property insurance 3.person
+- {item_3261}: shares, securities insurance 3.person
+- {item_3262}: cash, bank balance insurance 3.person
+- {item_3263}: amount inheritance 3.person
+- {item_3264}: do not know amt. inheritance 3.person
+- {perb}: have received inheritance or gift
+- {perba1}: year of inheritance a
+- {perba2}: year of inheritance b
+- {perba3}: year of inheritance c
+- {perbb1}: inheritance or gift a
+- {perbb2}: inheritance or gift b
+- {perbb3}: inheritance or gift c
+- {perbc11}: house, land a
+- {perbc12}: securities a
+- {perbc13}: cash, bank deposits a
+- {perbc14}: shares, company ownership a
+- {perbc15}: other wealth or gift a
+- {perbc21}: house, land b
+- {perbc22}: securities b
+- {perbc23}: cash, bank deposits b
+- {perbc24}: shares, company ownership b
+- {perbc25}: other wealth or gift b
+- {perbc31}: house, land c
+- {perbc32}: securities c
+- {perbc33}: cash, bank deposits c
+- {perbc34}: shares, company ownership c
+- {perbc35}: other wealth or gift c
+- {perbd1}: value of inheritance or gift a at time
+- {perbd11}: value of inheritance or gift a unknown
+- {perbd2}: value of inheritance or gift b at time
+- {perbd21}: value of inheritance or gift b unknown
+- {perbd3}: value of inheritance or gift c at time
+- {perbd31}: value of inheritance or gift c unknown
+- {perbdm}: value of future inheritance or gift
+- {perbe1}: from whom inheritance or gift a
+- {perbe2}: from whom inheritance or gift b
+- {perbe3}: from whom inheritance or gift c
+- {perbja}: inheritance or gift in the future
 
 #### other investments xxxxxxxxxxxxxxx [oti]
 
-- {item_3173}: Ownership Of Other House, Property
-- {item_3202}: Building Society Savings
-- {item_3269}: Renovation In Country Of Origin
-- {item_3270}: Purch.New Building, House,Cntry Of Origin
-- {item_3271}: Purch.Plot of Land In Country Of Origin
-- {item_3272}: Purchase Furniture In Country Of Origin
-- {item_3273}: Purchase Of Property, Country Of Origin
-- {item_3274}: Purchase Of Machinery, Country Of Origin
-- {item_3275}: Invest. In Family Co., Country Of Origin
-- {item_3276}: Invest. In Arbtnehmrges., Country Of Origin
-- {item_3277}: Invest. In Own Company, Country Of Origin
-- {item_3278}: Other Investment In Country Of Origin
-- {item_3279}: No Large Investment In Country Of Origin
-- {l1}: CAPI Market Value Do Not Know
-- {l3}: CAPI
-- {l7}: CAPI Enterprise Value Do Not Know
-- {pet01}: Owner Of House, Apartment
-- {pet02}: Value Of House, Apartment
-- {pet02a}: CAPI Market Value Over 200.000 EURO
-- {pet02b}: CAPI Market Value Over 400.000 EURO
-- {pet02c}: CAPI Market Value Over 100.000 EURO
-- {pet05}: Sole Owner House, Apartment
-- {pet06}: Share Of House, Apartment
-- {pgew01}: Owner Of, Involved In Commercial Enterprise
-- {pgew02}: Sole Owner, Co-owner Of Commercial Enterprise
-- {pgew03}: Value Of Comm. Enterprise, Share Of
-- {pgew03a}: CAPI Enterprise Value Over 50.000 EURO
-- {pgew03b}: CAPI Enterprise Value Over 500.000 EURO
-- {pgew03c}: CAPI Enterprise Value Over 5.000 EURO
-- {pim01}: Another House Or Property
-- {pim02}: House, Apartment Not Used By Yourself
-- {pim03}: Multiple Family House, Apartment House
-- {pim04}: Holiday Home, Weekend Home
-- {pim05}: Undeveloped Land
-- {pim06}: Other Property
-- {pim07}: Number Of This Type Of Property
-- {pim08}: Value Of Property
-- {pim08a}: CAPI Market Value Over 150.000 EURO
-- {pim08b}: CAPI Market Value Over 500.000 EURO
-- {pim08c}: CAPI Market Value Over 20.000 EURO
-- {pim09}: Sole Owner House, Apartment
-- {pim10}: Share Of Property
-- {pimka}: Total Item Nonresponse, Property
-- {pleb01}: Possess Life Insurance, Private Pension, etc.
-- {psach01}: Tangible Assets
-- {psach02}: Total Value Of Tangible Assets
-- {psach02a}: CAPI Value Tangible Assets Over 20.000 EURO
-- {psach02b}: CAPI Value Tangible Assets Over 100.000 EURO
-- {psach02c}: CAPI Value Tangible Assets Over 5.000 EURO
+- {item_3173}: ownership of other house, property
+- {item_3202}: building society savings
+- {item_3269}: renovation in country of origin
+- {item_3270}: purch.new building, house,cntry of origin
+- {item_3271}: purch.plot of land in country of origin
+- {item_3272}: purchase furniture in country of origin
+- {item_3273}: purchase of property, country of origin
+- {item_3274}: purchase of machinery, country of origin
+- {item_3275}: invest. in family co., country of origin
+- {item_3276}: invest. in arbtnehmrges., country of origin
+- {item_3277}: invest. in own company, country of origin
+- {item_3278}: other investment in country of origin
+- {item_3279}: no large investment in country of origin
+- {l1}: capi market value do not know
+- {l3}: capi
+- {l7}: capi enterprise value do not know
+- {pet01}: owner of house, apartment
+- {pet02}: value of house, apartment
+- {pet02a}: capi market value over 200.000 euro
+- {pet02b}: capi market value over 400.000 euro
+- {pet02c}: capi market value over 100.000 euro
+- {pet05}: sole owner house, apartment
+- {pet06}: share of house, apartment
+- {pgew01}: owner of, involved in commercial enterprise
+- {pgew02}: sole owner, co-owner of commercial enterprise
+- {pgew03}: value of comm. enterprise, share of
+- {pgew03a}: capi enterprise value over 50.000 euro
+- {pgew03b}: capi enterprise value over 500.000 euro
+- {pgew03c}: capi enterprise value over 5.000 euro
+- {pim01}: another house or property
+- {pim02}: house, apartment not used by yourself
+- {pim03}: multiple family house, apartment house
+- {pim04}: holiday home, weekend home
+- {pim05}: undeveloped land
+- {pim06}: other property
+- {pim07}: number of this type of property
+- {pim08}: value of property
+- {pim08a}: capi market value over 150.000 euro
+- {pim08b}: capi market value over 500.000 euro
+- {pim08c}: capi market value over 20.000 euro
+- {pim09}: sole owner house, apartment
+- {pim10}: share of property
+- {pimka}: total item nonresponse, property
+- {pleb01}: possess life insurance, private pension, etc.
+- {psach01}: tangible assets
+- {psach02}: total value of tangible assets
+- {psach02a}: capi value tangible assets over 20.000 euro
+- {psach02b}: capi value tangible assets over 100.000 euro
+- {psach02c}: capi value tangible assets over 5.000 euro
 
 #### debts [dbt]
 
-- {l2}: CAPI Burden Do Not Know
-- {l4}: CAPI Burden Do Not Know
-- {l9}: CAPI Remaining Debt Do Not Know
-- {pet03}: Financial Burden Of House, Apartment
-- {pet03a}: CAPI Burden Over 50.000 EURO
-- {pet03b}: CAPI Burden Over 150.000 EURO
-- {pet03c}: CAPI Burden Over 20.000 EURO
-- {pet04}: No Financial Burden House, Apartment
-- {pim11}: Financial Burden OF Property
-- {pim11a}: CAPI Burden Over 100.000 EURO
-- {pim11b}: CAPI Burden Over 250.000 EURO
-- {pim11c}: CAPI Burden Over 10.000 EURO
-- {pim12}: No Financial Burden Property
-- {prest01}: Debt From Private Individual Credit
-- {prest02}: Value Of Debt From Private Individual Credit
-- {prest02a}: CAPI Remaining Debt Over 10.000 EURO
-- {prest02b}: CAPI Remaining Debt Over 50.000 EURO
-- {prest02c}: CAPI Remaining Debt Over 5.000 EURO
+- {l2}: capi burden do not know
+- {l4}: capi burden do not know
+- {l9}: capi remaining debt do not know
+- {pet03}: financial burden of house, apartment
+- {pet03a}: capi burden over 50.000 euro
+- {pet03b}: capi burden over 150.000 euro
+- {pet03c}: capi burden over 20.000 euro
+- {pet04}: no financial burden house, apartment
+- {pim11}: financial burden of property
+- {pim11a}: capi burden over 100.000 euro
+- {pim11b}: capi burden over 250.000 euro
+- {pim11c}: capi burden over 10.000 euro
+- {pim12}: no financial burden property
+- {prest01}: debt from private individual credit
+- {prest02}: value of debt from private individual credit
+- {prest02a}: capi remaining debt over 10.000 euro
+- {prest02b}: capi remaining debt over 50.000 euro
+- {prest02c}: capi remaining debt over 5.000 euro
 
 ## consumption and savings [cos]
 
 
 ### possession and purchase of consumer goods [ppc]
 
-- {_2411_h_ppc}: Telephone
-- {hi05}: DVD player In HH yes/no
-- {hi16}: DVD Recorder In HH yes/no
-- {hi17}: Internet Connection (No DSL) In HH yes/no
-- {hlf0198}: HH Has Weekend Property
-- {item_2530}: Possession and purchase of consumer goods
+- {_2411_h_ppc}: telephone
+- {hi05}: dvd player in hh yes/no
+- {hi16}: dvd recorder in hh yes/no
+- {hi17}: internet connection (no dsl) in hh yes/no
+- {hlf0198}: hh has weekend property
+- {item_2530}: possession and purchase of consumer goods
 
 ### regular expenditures [rex]
 
-- {_pequiv_fopery}: Imp.flag:Operation, maintenance costs
-- {_pequiv_opery}: Operation, maintenance costs
+- {_pequiv_fopery}: imp.flag:operation, maintenance costs
+- {_pequiv_opery}: operation, maintenance costs
 
 ### savings [sav]
 
-- {_1525_p_sav}: Indexed Savings Agreement Previous Yr
-- {_1526_p_sav}: Savings: Building Society Previous Yr
-- {_1528_p_sav}: Other Savings Previous Yr
-- {_1529_p_sav}: No Savings Previous Yr
-- {hspar1}: Monthly Savings
-- {hspar2}: Monthly Amount Of Savings
+- {_1525_p_sav}: indexed savings agreement previous yr
+- {_1526_p_sav}: savings: building society previous yr
+- {_1528_p_sav}: other savings previous yr
+- {_1529_p_sav}: no savings previous yr
+- {hspar1}: monthly savings
+- {hspar2}: monthly amount of savings
 
 ### financial transfers to persons outside hh [fto]
 
 
 ## income [inc]
 
-- {_pequiv_y11101}: Consumer Price Index
+- {_pequiv_y11101}: consumer price index
 
 ### personal income [pin]
 
-- {_pequiv_fdemy}: Imp.flag: indemnity
-- {_pequiv_ftray}: Imp.flag: Commuting, travel grant
-- {_pequiv_idemy}: Indemnity
-- {_pequiv_itray}: Commuting,travel grant
+- {_pequiv_fdemy}: imp.flag: indemnity
+- {_pequiv_ftray}: imp.flag: commuting, travel grant
+- {_pequiv_idemy}: indemnity
+- {_pequiv_itray}: commuting,travel grant
 
 #### self-employment [sem]
 
-- {_pequiv_fself}: Imp.flag:Income from self-employment
-- {_pequiv_iself}: Income from self-employment
-- {kal2b04}: Self-Employment Income Previous Yr. NET
-- {plc0071}: Amount Of Self-Employment Income May 89
-- {plc0072}: Amount Of Self-Employment Income May 90
-- {pvek02}: Self-Employment Income Jan-Dec Prev. Yr
-- {pvek021}: Mths Of Self-Employment Income Prev. Yr
-- {pvek023}: Net Amt. Of Self-Empl.Income Prv. Yr
+- {_pequiv_fself}: imp.flag:income from self-employment
+- {_pequiv_iself}: income from self-employment
+- {kal2b04}: self-employment income previous yr. net
+- {plc0071}: amount of self-employment income may 89
+- {plc0072}: amount of self-employment income may 90
+- {pvek02}: self-employment income jan-dec prev. yr
+- {pvek021}: mths of self-employment income prev. yr
+- {pvek023}: net amt. of self-empl.income prv. yr
 
 #### wages and salary [wsa]
 
-- {_956_p_wsa}: Salary Determnd By Collective Bargaining
-- {_pequiv_i11110}: Individual Labor Earnings
-- {_pequiv_i11210}: Share of imputed Individual Labor Earnings
-- {_pgen_pglabgro}: Current Gross Labor Income in Euro
-- {_pgen_pglabnet}: Current Net Labor Income in Euro
-- {kal2a03}: Wages,Salary Amount Previous Yr.
-- {kal2a04}: Wages,Salary Previous Yr. NET
-- {pbrut}: Gross Income Last Month
-- {pnett}: Net Income Last Month
-- {pvek01}: Wages, Salary Jan-Dec Prev. Yr
-- {pvek011}: Mths Of Wages,Salary Prev. Yr
-- {pvek013}: Net Amount Of Wages, Salary Prev. Yr
+- {_956_p_wsa}: salary determnd by collective bargaining
+- {_pequiv_i11110}: individual labor earnings
+- {_pequiv_i11210}: share of imputed individual labor earnings
+- {_pgen_pglabgro}: current gross labor income in euro
+- {_pgen_pglabnet}: current net labor income in euro
+- {kal2a03}: wages,salary amount previous yr.
+- {kal2a04}: wages,salary previous yr. net
+- {pbrut}: gross income last month
+- {pnett}: net income last month
+- {pvek01}: wages, salary jan-dec prev. yr
+- {pvek011}: mths of wages,salary prev. yr
+- {pvek013}: net amount of wages, salary prev. yr
 
 ##### side jobs [sij]
 
-- {_pequiv_fjob1}: Imp.flag:Wages,Salary from main job
-- {_pequiv_fjob2}: Imp.flag:Income from secondary job
-- {_pequiv_ijob1}: Wages,Salary from main job
-- {_pequiv_ijob2}: Income from secondary employment
-- {_pgen_pgimpsnd}: Imputation Flag For SNDJOBxx
-- {_pgen_pgsndjob}: Current Gross Secondary Income In Euro
-- {pek17}: Second Job, Earnings
-- {pjob15}: Second Job, Gross Income last Month
-- {plc0059}: Amount Of Second Job Income May 89
-- {plc0060}: Amount Of Second Job Income May 90
-- {pvek03}: Second Job Income Jan-Dec Prev. Yr
-- {pvek031}: Mths Of Second Job Income Prev. Yr
+- {_pequiv_fjob1}: imp.flag:wages,salary from main job
+- {_pequiv_fjob2}: imp.flag:income from secondary job
+- {_pequiv_ijob1}: wages,salary from main job
+- {_pequiv_ijob2}: income from secondary employment
+- {_pgen_pgimpsnd}: imputation flag for sndjobxx
+- {_pgen_pgsndjob}: current gross secondary income in euro
+- {pek17}: second job, earnings
+- {pjob15}: second job, gross income last month
+- {plc0059}: amount of second job income may 89
+- {plc0060}: amount of second job income may 90
+- {pvek03}: second job income jan-dec prev. yr
+- {pvek031}: mths of second job income prev. yr
 
 ##### military / civil service pay [mic]
 
-- {_pequiv_fmilt}: Imp.flag:Military/community service pay
-- {_pequiv_imilt}: Military/community service pay
-- {kal2l01}: Military,Comm. Serv. Pay Previous Yr.
-- {kal2l02}: Military,Comm. Serv. Pay Months Previous Yr.
-- {kal2l03}: Military,Comm. Serv. Pay Amount Previous Yr.
-- {pek09}: Expense Allowance vol. soc. y./ vol. eco. y., military payments
-- {pek091}: Gross Amt. of expense allowance vol. soc. y./ vol. eco. Y, military payments
-- {pvek11}: Military Service Pay Prev Yr
-- {pvek111}: Months Military Service Pay Prev Yr
-- {pvek112}: Amt. Military Service Pay  Prev Yr
+- {_pequiv_fmilt}: imp.flag:military/community service pay
+- {_pequiv_imilt}: military/community service pay
+- {kal2l01}: military,comm. serv. pay previous yr.
+- {kal2l02}: military,comm. serv. pay months previous yr.
+- {kal2l03}: military,comm. serv. pay amount previous yr.
+- {pek09}: expense allowance vol. soc. y./ vol. eco. y., military payments
+- {pek091}: gross amt. of expense allowance vol. soc. y./ vol. eco. y, military payments
+- {pvek11}: military service pay prev yr
+- {pvek111}: months military service pay prev yr
+- {pvek112}: amt. military service pay  prev yr
 
 ##### additional benefits [ads]
 
-- {_pequiv_f13ly}: Imp.flag:13th monthly salary
-- {_pequiv_f14ly}: Imp.flag:14th monthly salary
-- {_pequiv_fgray}: Imp.flag:Profit-sharing
-- {_pequiv_fholy}: Imp.flag:Vacation bonus
-- {_pequiv_fothy}: Imp.flag:Other bonuses
-- {_pequiv_fxmas}: Imp.flag:Christmas bonus
+- {_pequiv_f13ly}: imp.flag:13th monthly salary
+- {_pequiv_f14ly}: imp.flag:14th monthly salary
+- {_pequiv_fgray}: imp.flag:profit-sharing
+- {_pequiv_fholy}: imp.flag:vacation bonus
+- {_pequiv_fothy}: imp.flag:other bonuses
+- {_pequiv_fxmas}: imp.flag:christmas bonus
 - {_pequiv_i13ly}: 13th monthly salary
 - {_pequiv_i14ly}: 14th monthly salary
-- {_pequiv_igray}: Profit-sharing
-- {_pequiv_iholy}: Vacation bonus
-- {_pequiv_iothy}: Other bonuses
-- {_pequiv_ixmas}: Christmas bonus
-- {pend7}: Severance Package, Compensation
-- {pend8}: Amt. Of Severance Package, Compensation
-- {plc0018}: End Of Year Bonus
-- {plc0019}: Amount Of End Of Year Bonus
-- {plc0020}: Additional Bonuses
-- {plc0021}: Amount Of Additional Bonuses
-- {plc0022}: No Bonuses
-- {pson01}: Shift Premium/ Late or Weekend Work Bonus last month
+- {_pequiv_igray}: profit-sharing
+- {_pequiv_iholy}: vacation bonus
+- {_pequiv_iothy}: other bonuses
+- {_pequiv_ixmas}: christmas bonus
+- {pend7}: severance package, compensation
+- {pend8}: amt. of severance package, compensation
+- {plc0018}: end of year bonus
+- {plc0019}: amount of end of year bonus
+- {plc0020}: additional bonuses
+- {plc0021}: amount of additional bonuses
+- {plc0022}: no bonuses
+- {pson01}: shift premium/ late or weekend work bonus last month
 - {pson02}: overtime premium
-- {pson03}: Bonus For Work Under Difficult Conditions
-- {pson04}: Additional Regular Payment
+- {pson03}: bonus for work under difficult conditions
+- {pson04}: additional regular payment
 - {pson05}: tips
-- {pson06}: Other Additional Payments
-- {pson07}: No Additional Payments
-- {pson08}: Benefits From Employer: Meal Stipend
-- {pson09}: Benefits From Employer: Company car
-- {pson10}: Benefits From Employer: Cell Phone
-- {pson11}: Benefits From Employer: Expense Payments
-- {pson12}: Benefits From Employer: Personal Computer
-- {pson13}: Benefits From Employer: Other Benefits
-- {pson14}: Benefits From Employer: None
-- {pzus01}: 13th Month Pay Prev. Yr
-- {pzus011}: Amount Of 13th Month Pay Prev. Yr
-- {pzus02}: 14th Month Pay Prev. Yr
-- {pzus021}: Amount Of 14th Month Pay Prev. Yr
-- {pzus03}: Christmas Bonus Prev. Yr
-- {pzus031}: Amount Of Christmas Bonus Prev. Yr
-- {pzus04}: Vacation Bonus Prev. Yr
-- {pzus041}: Amount Of Vacation Bonus Prev. Yr
-- {pzus05}: Profit-Sharing Bonus Prev. Yr
-- {pzus051}: Amount Of Profit-Sharing Bonus Prev. Yr
-- {pzus06}: Other Bonuses Prev. Yr
-- {pzus061}: Amount Of Other Bonuses Prev. Yr
-- {pzus07}: No Bonuses,Perks Prev. Yr
-- {pzus08}: Short-Time Allowance
-- {pzus081}: Short-Time Allowance for x weeks
-- {pzus09}: Bad Weather Benefit Prev. Yr
-- {pzus091}: Weeks Of Bad Weather Benefit Prev. Yr
-- {pzus10}: No S.Time, Bad Weather Benefit Prev. Yr
-- {pzus11}: Bonus to cover travel expenses (public transport)
-- {pzus12}: Amt. of bonus to cover travel expenses (public transport EUR)
+- {pson06}: other additional payments
+- {pson07}: no additional payments
+- {pson08}: benefits from employer: meal stipend
+- {pson09}: benefits from employer: company car
+- {pson10}: benefits from employer: cell phone
+- {pson11}: benefits from employer: expense payments
+- {pson12}: benefits from employer: personal computer
+- {pson13}: benefits from employer: other benefits
+- {pson14}: benefits from employer: none
+- {pzus01}: 13th month pay prev. yr
+- {pzus011}: amount of 13th month pay prev. yr
+- {pzus02}: 14th month pay prev. yr
+- {pzus021}: amount of 14th month pay prev. yr
+- {pzus03}: christmas bonus prev. yr
+- {pzus031}: amount of christmas bonus prev. yr
+- {pzus04}: vacation bonus prev. yr
+- {pzus041}: amount of vacation bonus prev. yr
+- {pzus05}: profit-sharing bonus prev. yr
+- {pzus051}: amount of profit-sharing bonus prev. yr
+- {pzus06}: other bonuses prev. yr
+- {pzus061}: amount of other bonuses prev. yr
+- {pzus07}: no bonuses,perks prev. yr
+- {pzus08}: short-time allowance
+- {pzus081}: short-time allowance for x weeks
+- {pzus09}: bad weather benefit prev. yr
+- {pzus091}: weeks of bad weather benefit prev. yr
+- {pzus10}: no s.time, bad weather benefit prev. yr
+- {pzus11}: bonus to cover travel expenses (public transport)
+- {pzus12}: amt. of bonus to cover travel expenses (public transport eur)
 
 ### household income [hhi]
 
-- {_pequiv_i11101}: HH Pre-Government Income
-- {_pequiv_i11102}: HH Post-Government Income
-- {_pequiv_i11103}: HH Labor Income
-- {_pequiv_i11104}: HH Income From Asset Flows
-- {_pequiv_i11105}: HH Imputed Rent
-- {_pequiv_i11113}: HH Post-Government Income (TAXSIM)
-- {_pequiv_i11201}: Share of imputed HH Pre-Government Income
-- {_pequiv_i11202}: Share of imputed HH Post-Government Income
-- {_pequiv_i11203}: Share of imputed HH Labour Income
-- {_pequiv_i11204}: Share of imputed HH Income From Asset Flows
+- {_pequiv_i11101}: hh pre-government income
+- {_pequiv_i11102}: hh post-government income
+- {_pequiv_i11103}: hh labor income
+- {_pequiv_i11104}: hh income from asset flows
+- {_pequiv_i11105}: hh imputed rent
+- {_pequiv_i11113}: hh post-government income (taxsim)
+- {_pequiv_i11201}: share of imputed hh pre-government income
+- {_pequiv_i11202}: share of imputed hh post-government income
+- {_pequiv_i11203}: share of imputed hh labour income
+- {_pequiv_i11204}: share of imputed hh income from asset flows
 
 #### monthly income [moi]
 
-- {_2410_h_moi}: HH Net Income, Generated
-- {_2459_h_moi}: Expected Future Household Net Income
-- {_657_p_moi}: Minimum HH Monthly Income Amount
-- {_658_p_moi}: Minimum HH Monthly Income Do Not Know
-- {_hgen_hgahinc}: Adjusted Monthly Household Net Income (EUR)
-- {_hgen_hgfhinc}: Imputation Flag, Monthly Net Household Income
-- {_hgen_hghinc}: Monthly Household Net Income (EUR)
-- {_hgen_hgi1hinc}: 1. Imputed Monthly Net Household Income (EUR) [1/5]
-- {_hgen_hgi2hinc}: 2. Imputed Monthly Net Household Income (EUR) [2/5]
-- {_hgen_hgi3hinc}: 3. Imputed Monthly Net Household Income (EUR) [3/5]
-- {_hgen_hgi4hinc}: 4. Imputed Monthly Net Household Income (EUR) [4/5]
-- {_hgen_hgi5hinc}: 5. Imputed Monthly Net Household Income (EUR) [5/5]
-- {hnetto}: Household Net Income
-- {item_5556}: Observation Identifier
-- {item_5557}: Imputation Identifier
-- {item_5558}: Monthly Net Household Income (Imputed)
-- {item_5559}: Imputation Flag: 1If Ihinc Missing, 0 Otherwise
-- {znetto}: HH Net Income Group, CAPI Only
+- {_2410_h_moi}: hh net income, generated
+- {_2459_h_moi}: expected future household net income
+- {_657_p_moi}: minimum hh monthly income amount
+- {_658_p_moi}: minimum hh monthly income do not know
+- {_hgen_hgahinc}: adjusted monthly household net income (eur)
+- {_hgen_hgfhinc}: imputation flag, monthly net household income
+- {_hgen_hghinc}: monthly household net income (eur)
+- {_hgen_hgi1hinc}: 1. imputed monthly net household income (eur) [1/5]
+- {_hgen_hgi2hinc}: 2. imputed monthly net household income (eur) [2/5]
+- {_hgen_hgi3hinc}: 3. imputed monthly net household income (eur) [3/5]
+- {_hgen_hgi4hinc}: 4. imputed monthly net household income (eur) [4/5]
+- {_hgen_hgi5hinc}: 5. imputed monthly net household income (eur) [5/5]
+- {hnetto}: household net income
+- {item_5556}: observation identifier
+- {item_5557}: imputation identifier
+- {item_5558}: monthly net household income (imputed)
+- {item_5559}: imputation flag: 1if ihinc missing, 0 otherwise
+- {znetto}: hh net income group, capi only
 
 #### income in previous year [ipy]
 
-- {_pequiv_i11117}: HH Private Retirement Income
-- {_pequiv_i11118}: Household Windfall Income
-- {_pequiv_i11217}: Share of imputed HH Private Retirement Income
-- {_pequiv_i11218}: Impute Household Windfall Income
+- {_pequiv_i11117}: hh private retirement income
+- {_pequiv_i11118}: household windfall income
+- {_pequiv_i11217}: share of imputed hh private retirement income
+- {_pequiv_i11218}: impute household windfall income
 
 ##### income from rentals and leasing [irl]
 
-- {_pequiv_flossr}: Imp.flag: Losses from renting and leasing
-- {_pequiv_frenty}: Imp.flag:Income from rental and leasing
-- {_pequiv_lossr}: Losses from renting and leasing
-- {_pequiv_renty}: Income from rental and leasing
-- {hverm1}: Income From Rent Previous Year
-- {hverm2}: Amount Income From Rent Previous Year
-- {hverm5}: tax deductions Previous Year
-- {hverm6}: tax deductions, Amount Previous Year
+- {_pequiv_flossr}: imp.flag: losses from renting and leasing
+- {_pequiv_frenty}: imp.flag:income from rental and leasing
+- {_pequiv_lossr}: losses from renting and leasing
+- {_pequiv_renty}: income from rental and leasing
+- {hverm1}: income from rent previous year
+- {hverm2}: amount income from rent previous year
+- {hverm5}: tax deductions previous year
+- {hverm6}: tax deductions, amount previous year
 
 ##### money earned from domestic and livestock production [idl]
 
-- {hlc0015}: Income From Farming,Livestock
-- {hlc0016}: Amount Of Income From Farming,Livestock
+- {hlc0015}: income from farming,livestock
+- {hlc0016}: amount of income from farming,livestock
 
 ##### income from interest and dividends [iid]
 
-- {_2482_h_iid}: Est Interest,Dividend Income Prev Yr
-- {_2620_h_iid}: Interest,Dividend Income Prev Yr
-- {_pequiv_divdy}: Interest, dividend income
-- {_pequiv_fdivdy}: Imp.flag:Interest, dividend income
-- {_pequiv_flossc}: Imp.flag: Losses from capital investment
-- {_pequiv_lossc}: Losses from capital investment
-- {hzins1}: Amt. Interest, Dividend Income Prev Yr
-- {hzins2}: Est. Interest, Dividend Income Prev Yr
+- {_2482_h_iid}: est interest,dividend income prev yr
+- {_2620_h_iid}: interest,dividend income prev yr
+- {_pequiv_divdy}: interest, dividend income
+- {_pequiv_fdivdy}: imp.flag:interest, dividend income
+- {_pequiv_flossc}: imp.flag: losses from capital investment
+- {_pequiv_lossc}: losses from capital investment
+- {hzins1}: amt. interest, dividend income prev yr
+- {hzins2}: est. interest, dividend income prev yr
 
 #### subjective evaluation [sue]
 
-- {heink01}: Very Low Income
-- {heink02}: Low Income
-- {heink03}: Still Insufficient Income
-- {heink04}: Just Enough Income
-- {heink05}: Good Income
-- {heink06}: Very Good Income
-- {hlc0017}: Adequacy Of Household Net Income
+- {heink01}: very low income
+- {heink02}: low income
+- {heink03}: still insufficient income
+- {heink04}: just enough income
+- {heink05}: good income
+- {heink06}: very good income
+- {hlc0017}: adequacy of household net income
 - {hspar3}: ratio income/expences 09
 - {hspar4}: savings 09
 - {hspar5}: savings 09, do not know
@@ -1443,41 +1443,41 @@ label: income, taxes, and social security
 - {hspar7}: deficit 09, do not know
 - {hspar8}: coverage of deficit
 - {hsparka}: ratio income/expences 09, do not know
-- {peink}: Agreements with spouse/partner for dealing with income
-- {plc0003}: Income Corresponds To Work Done
-- {plc0004}: Income Corresponds To Education
-- {plc0005}: Income Corresponds To Work Load
-- {plc0006}: Income Corresponds To Co-Workers
-- {plc0007}: Income Corresponds To FRG Co-Workers
-- {pnet1}: Minimum Net Household Income
-- {pnet2}: Do Not Know
-- {pwort}: Last Word On Financial Decisions
-- {pzuf04}: Satisfaction With Household Income
+- {peink}: agreements with spouse/partner for dealing with income
+- {plc0003}: income corresponds to work done
+- {plc0004}: income corresponds to education
+- {plc0005}: income corresponds to work load
+- {plc0006}: income corresponds to co-workers
+- {plc0007}: income corresponds to frg co-workers
+- {pnet1}: minimum net household income
+- {pnet2}: do not know
+- {pwort}: last word on financial decisions
+- {pzuf04}: satisfaction with household income
 
 ### taxes [tax]
 
-- {_1196_p_tax}: Paid Income Tax Two Years Ago
-- {_1198_p_tax}: Tax Deduction On Second Income
-- {_1199_p_tax}: No Tax Deduction On Second Income
-- {_1200_p_tax}: Number Of Children Under Tax Deduction
-- {_1201_p_tax}: No Children Under Tax Deduction
-- {_1202_p_tax}: Income Tax Deduction Previous Yr
-- {_1203_p_tax}: Amount Of Income Tax Deduction Prev Yr
-- {_1457_p_tax}: Filed Jointly,Individually Two Years Ago
-- {_1458_p_tax}: Amount Of Income Tax Paid Two Years Ago
-- {_1459_p_tax}: Information Not Available Two Years Ago
-- {_1690_p_tax}: Total Amount
-- {_1691_p_tax}: Amount Jointly Assessed
-- {_1692_p_tax}: Amount Jointly To Be Refunded
-- {_1693_p_tax}: Amount Assessed Single
-- {_1694_p_tax}: Amount To Be Refunded Single
-- {_pequiv_i11109}: Total HH Taxes
-- {_pequiv_i11111}: HH Federal Taxes
-- {_pequiv_i11112}: HH Social Security Taxes
-- {_pequiv_i11114}: Total HH Taxes (TAXSIM)
-- {_pequiv_i11115}: HH State Taxes (TAXSIM)
-- {_pequiv_i11116}: HH Federal Taxes (TAXSIM)
-- {_pequiv_i11205}: Impute HH Imputed Rental Value
-- {_pequiv_i11209}: Impute Total HH Taxes
-- {psteu}: Wage Tax Classification
+- {_1196_p_tax}: paid income tax two years ago
+- {_1198_p_tax}: tax deduction on second income
+- {_1199_p_tax}: no tax deduction on second income
+- {_1200_p_tax}: number of children under tax deduction
+- {_1201_p_tax}: no children under tax deduction
+- {_1202_p_tax}: income tax deduction previous yr
+- {_1203_p_tax}: amount of income tax deduction prev yr
+- {_1457_p_tax}: filed jointly,individually two years ago
+- {_1458_p_tax}: amount of income tax paid two years ago
+- {_1459_p_tax}: information not available two years ago
+- {_1690_p_tax}: total amount
+- {_1691_p_tax}: amount jointly assessed
+- {_1692_p_tax}: amount jointly to be refunded
+- {_1693_p_tax}: amount assessed single
+- {_1694_p_tax}: amount to be refunded single
+- {_pequiv_i11109}: total hh taxes
+- {_pequiv_i11111}: hh federal taxes
+- {_pequiv_i11112}: hh social security taxes
+- {_pequiv_i11114}: total hh taxes (taxsim)
+- {_pequiv_i11115}: hh state taxes (taxsim)
+- {_pequiv_i11116}: hh federal taxes (taxsim)
+- {_pequiv_i11205}: impute hh imputed rental value
+- {_pequiv_i11209}: impute total hh taxes
+- {psteu}: wage tax classification
 
