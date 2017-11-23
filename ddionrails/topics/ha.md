@@ -11,21 +11,21 @@ label: home, amenities, and contributions of private hh
 
 ### condition of building / need for renovation [cbu]
 
-- {_hgen_hgcondit}: Condition Of House
-- {hzus}: Condition Of House
+- {_hgen_hgcondit}: condition of house
+- {hzus}: condition of house
 
 ### household amenities [hoa1]
 
 
 ### modernization measures in dwelling [mmd]
 
-- {_2481_h_mmd}: Modernized Dwelling Previous Year
-- {_2559_h_mmd}: Remodeled By Previous Tenant
-- {_2594_h_mmd}: Modernized Kitchen Previous Year
-- {_2595_h_mmd}: Modernized Bathroom Previous Year
-- {_2596_h_mmd}: Modernized Central Heating Previous Year
-- {_2597_h_mmd}: Modernized Windows Previous Year
-- {_2598_h_mmd}: No Modernization Previous Year
+- {_2481_h_mmd}: modernized dwelling previous year
+- {_2559_h_mmd}: remodeled by previous tenant
+- {_2594_h_mmd}: modernized kitchen previous year
+- {_2595_h_mmd}: modernized bathroom previous year
+- {_2596_h_mmd}: modernized central heating previous year
+- {_2597_h_mmd}: modernized windows previous year
+- {_2598_h_mmd}: no modernization previous year
 - {hbau1}: since prev year kitchen added
 - {hbau10}: since prev year age-based renovation
 - {hbau2}: since prev year bath, shower, toilet added
@@ -33,37 +33,37 @@ label: home, amenities, and contributions of private hh
 - {hbau4}: since prev year new windows added
 - {hbau5}: since prev year other renovations
 - {hbau6}: since prev year no renovations
-- {hbau7}: Who Paid For Renovations
-- {hbau8}: Who Did The Renovations
+- {hbau7}: who paid for renovations
+- {hbau8}: who did the renovations
 - {hbau9}: since prev year other thermal insulation
-- {hlf0038}: Year Of Modernization: Kitchen
-- {hlf0039}: Year Of Modernization: Bathroom, Toilet
-- {hlf0040}: Year Of Modernization: Heating
-- {hlf0041}: Year Of Modernization: Windows
+- {hlf0038}: year of modernization: kitchen
+- {hlf0039}: year of modernization: bathroom, toilet
+- {hlf0040}: year of modernization: heating
+- {hlf0041}: year of modernization: windows
 
 ### year of building construction [ybc]
 
-- {HGCNSTYRMAX}: Max. Year House Was Built
-- {HGCNSTYRMIN}: Min. Year House Was Built
-- {_hgen_hgcnstyr}: Year House Was Built
-- {hwohn09}: Year House Was Built
+- {_hgen_hgcnstyr}: year house was built
+- {hgcnstyrmax}: max. year house was built
+- {hgcnstyrmin}: min. year house was built
+- {hwohn09}: year house was built
 - {hwohn09a}: exact year house was build (since 1972)
 
 ### size of dwelling [sod]
 
-- {_hgen_hgroom}: Number Of Rooms Larger Than 6 Sq M
-- {_hgen_hgseval}: Adequacy Of Living Space In Housing Unit
-- {_hgen_hgsize}: Size Of Housing Unit In Sq M
-- {hqm}: Size Of Unit In Sq Meters
-- {hraum}: Number Of Rooms GE 6 Sq Meters
-- {humb}: Change In Size Of Dwelling
+- {_hgen_hgroom}: number of rooms larger than 6 sq m
+- {_hgen_hgseval}: adequacy of living space in housing unit
+- {_hgen_hgsize}: size of housing unit in sq m
+- {hqm}: size of unit in sq meters
+- {hraum}: number of rooms ge 6 sq meters
+- {humb}: change in size of dwelling
 
 ## contributions and expenditures of private households [cep]
 
 
 ### expenditures [exp]
 
-- {haus01a}: Expenditures 09 On Food at home yes/no
+- {haus01a}: expenditures 09 on food at home yes/no
 - {haus01b}: expenditures 09 on food at home amount per month
 - {haus01c}: expenditures 09 on food at home amount per year
 - {haus01ka}: expenditures 09 on food at home, do not know
@@ -103,10 +103,10 @@ label: home, amenities, and contributions of private hh
 - {haus10b}: expenditures 09 on holiday amount per month
 - {haus10c}: expenditures 09 on holiday amount per year
 - {haus10ka}: expenditures 09 on holiday do not know
-- {haus11a}: expenditures 09 on  Life/private pension Insurance yes/no
-- {haus11b}: expenditures 09 on  Life/private pension Insurance amount per month
-- {haus11c}: expenditures 09 on  Life/private pension Insurance amount per year
-- {haus11ka}: expenditures 09 on  Life/private pension Insurance do not know
+- {haus11a}: expenditures 09 on  life/private pension insurance yes/no
+- {haus11b}: expenditures 09 on  life/private pension insurance amount per month
+- {haus11c}: expenditures 09 on  life/private pension insurance amount per year
+- {haus11ka}: expenditures 09 on  life/private pension insurance do not know
 - {haus12a}: expenditures 09 on other insurances yes/no
 - {haus12b}: expenditures 09 on other insurances amount per month
 - {haus12c}: expenditures 09 on other insurances amont per year
@@ -229,7 +229,7 @@ label: home, amenities, and contributions of private hh
 
 ### own labor, care [olc]
 
-- {hputz}: Cleaning Lady, Household Help
+- {hputz}: cleaning lady, household help
 - {hputz2}: average costs per month
 - {item_7373}: c: cleaning/household help,  vers. a
 - {item_7374}: c: cleaning/household help,  vers. b
@@ -240,230 +240,230 @@ label: home, amenities, and contributions of private hh
 
 #### motives for own labor [olm]
 
-- {_1241_p_olm}: Enjoy Do-It-Yourself Work
-- {_1242_p_olm}: Do-It-Yourself Work Is Better Or Faster
-- {_1243_p_olm}: Save Money By Doing It Myself
-- {_1518_p_olm}: Savings Of Do-It-Yourself Work Prev Yr
-- {_1519_p_olm}: Savings Of Do-It-Yourself Work Unknown
-- {_1520_p_olm}: Expenses Of Do-It-Yourself Work Prev Yr
-- {_1521_p_olm}: Expenses Of Do-It-Yourself Work Unknown
-- {plf0035}: No Other Way
+- {_1241_p_olm}: enjoy do-it-yourself work
+- {_1242_p_olm}: do-it-yourself work is better or faster
+- {_1243_p_olm}: save money by doing it myself
+- {_1518_p_olm}: savings of do-it-yourself work prev yr
+- {_1519_p_olm}: savings of do-it-yourself work unknown
+- {_1520_p_olm}: expenses of do-it-yourself work prev yr
+- {_1521_p_olm}: expenses of do-it-yourself work unknown
+- {plf0035}: no other way
 
 #### own labor [ola]
 
-- {_1234_p_ola}: Craft Work
-- {_1235_p_ola}: Renovation
-- {_1236_p_ola}: Home Repair
-- {_1237_p_ola}: Auto Repair
-- {_1238_p_ola}: Garden Work
-- {_1239_p_ola}: Other Do-It-Yourself Work
-- {_1240_p_ola}: No Do-It-Yourself Work
+- {_1234_p_ola}: craft work
+- {_1235_p_ola}: renovation
+- {_1236_p_ola}: home repair
+- {_1237_p_ola}: auto repair
+- {_1238_p_ola}: garden work
+- {_1239_p_ola}: other do-it-yourself work
+- {_1240_p_ola}: no do-it-yourself work
 
 ### parenting and social support [pso]
 
 
 #### invalidity [inv]
 
-- {item_5755}: Payed Care
-- {item_5756}: Care Level
+- {item_5755}: payed care
+- {item_5756}: care level
 - {item_6457}: number of further persons req. help
 - {item_6458}: regular monthly costs for care
 
 ##### care for invalid hh member [ihc]
 
-- {_2422_h_ihc}: Main Carer In HH
-- {_2423_h_ihc}: No Special Help Needed Second Person
-- {hhbez}: Person Receives Payment
-- {hhnr}: Main Care Provider In HH
-- {hhvon1}: Help From Family In HH
-- {hhvon2}: Help From Nurse, Social Worker
-- {hhvon3}: Help From Private Care
-- {hhvon4}: Help From Friends
-- {hhvon5}: Help From Neighbors
-- {hhvon6}: Help From Family Outside HH
-- {hhvon7}: Help From Welfare Organiztion
-- {hhvon8}: Help From Other Regular Care Assistant
-- {hhvon9}: Help From Friends Neighbours
-- {hhvonka}: Help From, Item total Nonresponse
+- {_2422_h_ihc}: main carer in hh
+- {_2423_h_ihc}: no special help needed second person
+- {hhbez}: person receives payment
+- {hhnr}: main care provider in hh
+- {hhvon1}: help from family in hh
+- {hhvon2}: help from nurse, social worker
+- {hhvon3}: help from private care
+- {hhvon4}: help from friends
+- {hhvon5}: help from neighbors
+- {hhvon6}: help from family outside hh
+- {hhvon7}: help from welfare organiztion
+- {hhvon8}: help from other regular care assistant
+- {hhvon9}: help from friends neighbours
+- {hhvonka}: help from, item total nonresponse
 - {hpfleg2}: further person requiring help in hh
 - {hpfleg3}: number of further persons requiring help
-- {hzuf}: Satisfaction With Availability Of Care
-- {item_3320}: Person Providing Care
-- {item_4442}: PNR, Person Providing Care
+- {hzuf}: satisfaction with availability of care
+- {item_3320}: person providing care
+- {item_4442}: pnr, person providing care
 
 ##### invalid in hh [iih]
 
-- {_2473_h_iih}: Relatives,Acquaintances In Nursing Home
-- {_2510_h_iih}: Person Moved To Nursing Home
-- {_2511_h_iih}: Year Person Moved To Nursing Home
-- {_2756_h_iih}: PNR Of 2.Person Requiring Help
-- {hpfleg}: Person Requiring Help Present In HH
-- {hpnr}: PNR Of 1.Person Requiring Help
+- {_2473_h_iih}: relatives,acquaintances in nursing home
+- {_2510_h_iih}: person moved to nursing home
+- {_2511_h_iih}: year person moved to nursing home
+- {_2756_h_iih}: pnr of 2.person requiring help
+- {hpfleg}: person requiring help present in hh
+- {hpnr}: pnr of 1.person requiring help
 
 ##### strain on hh due to care for invalid [ins]
 
-- {_2564_h_ins}: Burden Due To Caring For Person
-- {_2565_h_ins}: District Nurse Cares For Person
-- {_2566_h_ins}: Paid Skilled Workers Care For Person
-- {_2567_h_ins}: Friends Or Neighbors Care For Person
-- {_2568_h_ins}: Relatives Outside HH Care For Person
-- {_2569_h_ins}: Others Care For Person
+- {_2564_h_ins}: burden due to caring for person
+- {_2565_h_ins}: district nurse cares for person
+- {_2566_h_ins}: paid skilled workers care for person
+- {_2567_h_ins}: friends or neighbors care for person
+- {_2568_h_ins}: relatives outside hh care for person
+- {_2569_h_ins}: others care for person
 - {hpfleg4}: regularly costs for care
 - {hpfleg5}: costs for care per month
 
 ##### monthly level and bearer of care costs [cac]
 
-- {_2570_h_cac}: Extra Care Costs
-- {_2571_h_cac}: Care Costs Per Month
-- {_2572_h_cac}: Income Of Person Needing Care
-- {_2573_h_cac}: Amount Of Income Spent On Care
-- {_2574_h_cac}: Household Members Pay For Care
-- {_2575_h_cac}: Amount Paid By Household Members
-- {_2576_h_cac}: Relatives Pay For Care
-- {_2577_h_cac}: Amount Paid By Relatives
-- {_2578_h_cac}: Pension,Health Insurance Pays For Care
-- {_2579_h_cac}: Amount Paid By Pension,Health Insurance
-- {_2580_h_cac}: Social Welfare Pays For Care
-- {_2581_h_cac}: Amount Paid By Social Welfare
-- {_2582_h_cac}: Church,Welfare Organizations Pay For Care
-- {_2583_h_cac}: Amt Paid By Church,Welfare Organizations
-- {_2584_h_cac}: Others Pay For Care
-- {_2585_h_cac}: Amount Others Paid
+- {_2570_h_cac}: extra care costs
+- {_2571_h_cac}: care costs per month
+- {_2572_h_cac}: income of person needing care
+- {_2573_h_cac}: amount of income spent on care
+- {_2574_h_cac}: household members pay for care
+- {_2575_h_cac}: amount paid by household members
+- {_2576_h_cac}: relatives pay for care
+- {_2577_h_cac}: amount paid by relatives
+- {_2578_h_cac}: pension,health insurance pays for care
+- {_2579_h_cac}: amount paid by pension,health insurance
+- {_2580_h_cac}: social welfare pays for care
+- {_2581_h_cac}: amount paid by social welfare
+- {_2582_h_cac}: church,welfare organizations pay for care
+- {_2583_h_cac}: amt paid by church,welfare organizations
+- {_2584_h_cac}: others pay for care
+- {_2585_h_cac}: amount others paid
 
 ##### support for the hh (wave 8 focus) [suh]
 
-- {_2490_h_suh}: Help With Errands
-- {_2491_h_suh}: Household Member Helps
-- {_2492_h_suh}: Other Person Helps
-- {_2493_h_suh}: Household Member Helps
-- {_2494_h_suh}: Other Person Helps
-- {_2495_h_suh}: Help With Household,Maintenance
-- {_2496_h_suh}: Household Member Helps
-- {_2497_h_suh}: Other Person Helps
-- {_2498_h_suh}: Household Member Helps
-- {_2499_h_suh}: Other Person Helps
-- {_2500_h_suh}: Help With Simpler Care Tasks
-- {_2501_h_suh}: Household Member Helps
-- {_2502_h_suh}: Other Person Helps
-- {_2503_h_suh}: Household Member Helps
-- {_2504_h_suh}: Other Person Helps
-- {_2505_h_suh}: Help With Difficult Care Tasks
-- {_2506_h_suh}: Household Member Helps
-- {_2507_h_suh}: Other Person Helps
-- {_2508_h_suh}: Household Member Helps
-- {_2509_h_suh}: Other Person Helps
-- {hpl}: Person Receives Nursing Assistance Care
-- {hpstuf}: Nursing Assistance Care Level
+- {_2490_h_suh}: help with errands
+- {_2491_h_suh}: household member helps
+- {_2492_h_suh}: other person helps
+- {_2493_h_suh}: household member helps
+- {_2494_h_suh}: other person helps
+- {_2495_h_suh}: help with household,maintenance
+- {_2496_h_suh}: household member helps
+- {_2497_h_suh}: other person helps
+- {_2498_h_suh}: household member helps
+- {_2499_h_suh}: other person helps
+- {_2500_h_suh}: help with simpler care tasks
+- {_2501_h_suh}: household member helps
+- {_2502_h_suh}: other person helps
+- {_2503_h_suh}: household member helps
+- {_2504_h_suh}: other person helps
+- {_2505_h_suh}: help with difficult care tasks
+- {_2506_h_suh}: household member helps
+- {_2507_h_suh}: other person helps
+- {_2508_h_suh}: household member helps
+- {_2509_h_suh}: other person helps
+- {hpl}: person receives nursing assistance care
+- {hpstuf}: nursing assistance care level
 
 ##### type of invalidity [ity]
 
-- {_2553_h_ity}: Type Of Care First Person Requires
-- {_2554_h_ity}: Type Of Care Second Person Requires
-- {_2757_h_ity}: Help On Tasks Outside HH, 2. Person
-- {_2758_h_ity}: Housework, 2. Person
-- {_2759_h_ity}: Minor Care, 2. Person
-- {_2760_h_ity}: Major Care, 2. Person
-- {_3892_h_ity}: Help, Does Not Apply, EMPTY
-- {hhil1}: Help On Tasks Outside HH, 1. Person
-- {hhil2}: Housework, 1. Person
-- {hhil3}: Minor Care, 1. Person
-- {hhil4}: Major Care, 1. Person
-- {hhilka}: Help, Item Nonresponse
-- {item_3318}: Level of long-term care
-- {item_3319}: Long-term care categories
+- {_2553_h_ity}: type of care first person requires
+- {_2554_h_ity}: type of care second person requires
+- {_2757_h_ity}: help on tasks outside hh, 2. person
+- {_2758_h_ity}: housework, 2. person
+- {_2759_h_ity}: minor care, 2. person
+- {_2760_h_ity}: major care, 2. person
+- {_3892_h_ity}: help, does not apply, empty
+- {hhil1}: help on tasks outside hh, 1. person
+- {hhil2}: housework, 1. person
+- {hhil3}: minor care, 1. person
+- {hhil4}: major care, 1. person
+- {hhilka}: help, item nonresponse
+- {item_3318}: level of long-term care
+- {item_3319}: long-term care categories
 
 #### assistance when requiring long-term care - who would one turn to [alt]
 
-- {p1perc}: First Important Person: Asking for help when in need of care
-- {p2perc}: Second Important Person: Asking for help when in need of care
-- {pnoc_a}: Nobody To Help With Long Term Care - S.P.
+- {p1perc}: first important person: asking for help when in need of care
+- {p2perc}: second important person: asking for help when in need of care
+- {pnoc_a}: nobody to help with long term care - s.p.
 
 #### childcare [chc]
 
-- {_2435_h_chc}: First Carer
-- {_2436_h_chc}: Second Carer
-- {_2437_h_chc}: Third Carer
-- {_2438_h_chc}: Morning Child Care
-- {_2439_h_chc}: Morning Child Care
-- {_2440_h_chc}: Morning Child Care
-- {_2441_h_chc}: Afternoon Child Care
-- {_2442_h_chc}: Afternoon Child Care
-- {_2443_h_chc}: Afternoon Child Care
-- {_2444_h_chc}: Evening Child Care
-- {_2445_h_chc}: Evening Child Care
-- {_2446_h_chc}: Evening Child Care
-- {_2447_h_chc}: First Carer Is Paid
-- {_2448_h_chc}: Second Carer Is Paid
-- {_2449_h_chc}: Third Carer Is Paid
-- {_2460_h_chc}: Weekday Child Care Necessary
-- {_2461_h_chc}: Child Care Inconvenient
-- {_2483_h_chc}: Weekday Morning Child Care Necessary
-- {_2484_h_chc}: Weekday Afternoon Child Care Necessary
-- {_2485_h_chc}: Weekday Evening Child Care Necessary
-- {_2486_h_chc}: No Child Care Necessary
-- {_2487_h_chc}: Child Care difficult: Morning
-- {_2488_h_chc}: Child Care difficult: Afternoon
-- {_2489_h_chc}: Child Care difficult: Evening
-- {hbet1}: Carer: Relatives
-- {hbet2}: Carer: Friends, etc.
-- {hbet3}: Carer: Paid Person in HH
-- {hbet4}: Carer: None
-- {hbet6}: External Care: Costs per Month
-- {hbet7}:  no costs
-- {item_2141}: Childcare
-- {item_4509}: Mother Is Main Person Providing Care
-- {item_4522}: Care From Spouse/Partner: Hrs Per Wk
-- {item_4523}: Care From Grandparents: Hrs Per Wk
-- {item_4524}: Care From Older Siblings: Hrs Per Wk
-- {item_4525}: Care From Other Relatives: Hrs Per Wk
-- {item_4526}: Care From Child Minder: Hrs Per Wk
-- {item_4527}: Care From Creche: Hrs Per Wk
-- {item_4528}: Care From Other Individuals: Hrs Per Wk
-- {item_4535}: No Other Care Apart From Mother
-- {item_4799}: Cared For By Spouse/Partner: (Hrs/Wk)
-- {item_4800}: Cared For By Childs Father (If Not Resident Of Same Household) (Hrs/Wk)
-- {item_4801}: Cared For By Grandparents: (Hrs/Wk)
-- {item_4802}: Cared For By Older Siblings: Hrs Per Wk
-- {item_4803}: Cared For By Other Relatives: Hrs Per Wk
-- {item_4804}: Cared for In Family Day Care (Hrs/Wk)
-- {item_4805}: Cared For By A Nanny or Other In-Home Daycare Provider (Hrs/Wk)
-- {item_4806}: Cared For At A Daycare Center (Hrs/Wk)
-- {item_4807}: Cared For By Others (Hrs/Wk)
-- {item_4808}: Cared For Solely By Respondent
-- {item_5666}: Cared For By Spouse/Partner: (Hrs/Wk)
-- {item_5667}: Cared For By Childs Father (If Not Resident Of  Same Household) (Hrs/Wk)
-- {item_5668}: Cared For By Grandparents: (Hrs/Wk)
-- {item_5669}: Cared For By Older Siblings: Hrs Per Wk
-- {item_5670}: Cared For By Other Relatives: Hrs Per Wk
-- {item_5671}: Cared For In Family Day Care (Hrs/Wk)
-- {item_5672}: Cared For By A Nanny Or Other In-Home Daycare Provider (Hrs/Wk)
-- {item_5673}: Cared For At A Daycare Center (Hrs/Wk)
-- {item_5674}: Cared For By Others (Hrs/Wk)
-- {item_5675}: Cared For Solely By Respondent
-- {item_6103}: Cared for by Spouse/Partner (hours/week)
-- {item_6104}: Cared for by social institution, center (hours/week)
-- {item_6105}: Cared for solely by respondent
-- {item_6106}: Cared for by Childs father/mother (hours/week)
-- {item_6107}: Cared for by grandparents (hours/week)
-- {item_6108}: Cared for by older siblings (hours/week)
-- {item_6109}: Cared for by other relatives (hours/week)
-- {item_6110}: Cared for by nanny or other (hours/week)
-- {item_6111}: Cared for by others (hours/week)
-- {item_6112}: Cared for by school (hours/week)
-- {item_6113}: Cared for by after-school care club (hours/week)
-- {item_6135}: Respondent is main provider of care
-- {item_6177}: Cared for by Spouse/Partner (hours/week)
-- {item_6178}: Cared for by social institution, center (hours/week)
-- {item_6179}: Cared for solely by respondent
-- {item_6180}: Cared for by Childs father/mother (hours/week)
-- {item_6181}: Cared for by grandparents (hours/week)
-- {item_6182}: Cared for by older siblings (hours/week)
-- {item_6183}: Cared for by other relatives (hours/week)
-- {item_6184}: Cared for by nanny or other (hours/week)
-- {item_6185}: Cared for by others (hours/week)
-- {item_6186}: Cared for by school (hours/week)
-- {item_6187}: Cared for by after-school care club (hours/week)
-- {item_6209}: Respondent is main provider of care
+- {_2435_h_chc}: first carer
+- {_2436_h_chc}: second carer
+- {_2437_h_chc}: third carer
+- {_2438_h_chc}: morning child care
+- {_2439_h_chc}: morning child care
+- {_2440_h_chc}: morning child care
+- {_2441_h_chc}: afternoon child care
+- {_2442_h_chc}: afternoon child care
+- {_2443_h_chc}: afternoon child care
+- {_2444_h_chc}: evening child care
+- {_2445_h_chc}: evening child care
+- {_2446_h_chc}: evening child care
+- {_2447_h_chc}: first carer is paid
+- {_2448_h_chc}: second carer is paid
+- {_2449_h_chc}: third carer is paid
+- {_2460_h_chc}: weekday child care necessary
+- {_2461_h_chc}: child care inconvenient
+- {_2483_h_chc}: weekday morning child care necessary
+- {_2484_h_chc}: weekday afternoon child care necessary
+- {_2485_h_chc}: weekday evening child care necessary
+- {_2486_h_chc}: no child care necessary
+- {_2487_h_chc}: child care difficult: morning
+- {_2488_h_chc}: child care difficult: afternoon
+- {_2489_h_chc}: child care difficult: evening
+- {hbet1}: carer: relatives
+- {hbet2}: carer: friends, etc.
+- {hbet3}: carer: paid person in hh
+- {hbet4}: carer: none
+- {hbet6}: external care: costs per month
+- {hbet7}: no costs
+- {item_2141}: childcare
+- {item_4509}: mother is main person providing care
+- {item_4522}: care from spouse/partner: hrs per wk
+- {item_4523}: care from grandparents: hrs per wk
+- {item_4524}: care from older siblings: hrs per wk
+- {item_4525}: care from other relatives: hrs per wk
+- {item_4526}: care from child minder: hrs per wk
+- {item_4527}: care from creche: hrs per wk
+- {item_4528}: care from other individuals: hrs per wk
+- {item_4535}: no other care apart from mother
+- {item_4799}: cared for by spouse/partner: (hrs/wk)
+- {item_4800}: cared for by childs father (if not resident of same household) (hrs/wk)
+- {item_4801}: cared for by grandparents: (hrs/wk)
+- {item_4802}: cared for by older siblings: hrs per wk
+- {item_4803}: cared for by other relatives: hrs per wk
+- {item_4804}: cared for in family day care (hrs/wk)
+- {item_4805}: cared for by a nanny or other in-home daycare provider (hrs/wk)
+- {item_4806}: cared for at a daycare center (hrs/wk)
+- {item_4807}: cared for by others (hrs/wk)
+- {item_4808}: cared for solely by respondent
+- {item_5666}: cared for by spouse/partner: (hrs/wk)
+- {item_5667}: cared for by childs father (if not resident of  same household) (hrs/wk)
+- {item_5668}: cared for by grandparents: (hrs/wk)
+- {item_5669}: cared for by older siblings: hrs per wk
+- {item_5670}: cared for by other relatives: hrs per wk
+- {item_5671}: cared for in family day care (hrs/wk)
+- {item_5672}: cared for by a nanny or other in-home daycare provider (hrs/wk)
+- {item_5673}: cared for at a daycare center (hrs/wk)
+- {item_5674}: cared for by others (hrs/wk)
+- {item_5675}: cared for solely by respondent
+- {item_6103}: cared for by spouse/partner (hours/week)
+- {item_6104}: cared for by social institution, center (hours/week)
+- {item_6105}: cared for solely by respondent
+- {item_6106}: cared for by childs father/mother (hours/week)
+- {item_6107}: cared for by grandparents (hours/week)
+- {item_6108}: cared for by older siblings (hours/week)
+- {item_6109}: cared for by other relatives (hours/week)
+- {item_6110}: cared for by nanny or other (hours/week)
+- {item_6111}: cared for by others (hours/week)
+- {item_6112}: cared for by school (hours/week)
+- {item_6113}: cared for by after-school care club (hours/week)
+- {item_6135}: respondent is main provider of care
+- {item_6177}: cared for by spouse/partner (hours/week)
+- {item_6178}: cared for by social institution, center (hours/week)
+- {item_6179}: cared for solely by respondent
+- {item_6180}: cared for by childs father/mother (hours/week)
+- {item_6181}: cared for by grandparents (hours/week)
+- {item_6182}: cared for by older siblings (hours/week)
+- {item_6183}: cared for by other relatives (hours/week)
+- {item_6184}: cared for by nanny or other (hours/week)
+- {item_6185}: cared for by others (hours/week)
+- {item_6186}: cared for by school (hours/week)
+- {item_6187}: cared for by after-school care club (hours/week)
+- {item_6209}: respondent is main provider of care
 - {item_6795}: mother is main caregiver
 - {item_6796}: cared for by partner (in h/week)
 - {item_6797}: cared for by childs father (if not resident of same household) (in h/week)
@@ -478,40 +478,40 @@ label: home, amenities, and contributions of private hh
 - {item_6806}: cared for by social institution, center (in h/week)
 - {item_6807}: cared for by others (in h/week)
 - {item_6808}: no use of temporary care/ cared for solely by respondent
-- {item_7100}: Respondent is main provider of care
-- {item_7101}: Cared for by Spouse/Partner (hours/week)
-- {item_7102}: Cared for by Childs father/mother (hours/week)
-- {item_7103}: Cared for by grandparents (hours/week)
-- {item_7104}: Cared for by older siblings (hours/week)
-- {item_7105}: Cared for by other relatives (hours/week)
-- {item_7106}: Cared for by nanny or other (hours/week)
-- {item_7107}: Cared for by others (hours/week)
-- {item_7108}: Cared for by school (hours/week)
-- {item_7109}: Cared for by after-school care club (hours/week)
-- {item_7110}: Cared for by social institution, center (hours/week)
-- {item_7111}: Cared for solely by respondent
+- {item_7100}: respondent is main provider of care
+- {item_7101}: cared for by spouse/partner (hours/week)
+- {item_7102}: cared for by childs father/mother (hours/week)
+- {item_7103}: cared for by grandparents (hours/week)
+- {item_7104}: cared for by older siblings (hours/week)
+- {item_7105}: cared for by other relatives (hours/week)
+- {item_7106}: cared for by nanny or other (hours/week)
+- {item_7107}: cared for by others (hours/week)
+- {item_7108}: cared for by school (hours/week)
+- {item_7109}: cared for by after-school care club (hours/week)
+- {item_7110}: cared for by social institution, center (hours/week)
+- {item_7111}: cared for solely by respondent
 
 #### assistance when ill with flu - who would one turn to [afl]
 
-- {philf1}: First Person To Help With Sickness
-- {philf2}: Nobody To Help With Sickness - First P.
-- {philf3}: Second Person To Help With Sickness
-- {philf4}: Nobody To Help With Sickness - Sec. P.
-- {pnoc}: No one: Asking for help when in need of care
+- {philf1}: first person to help with sickness
+- {philf2}: nobody to help with sickness - first p.
+- {philf3}: second person to help with sickness
+- {philf4}: nobody to help with sickness - sec. p.
+- {pnoc}: no one: asking for help when in need of care
 
 ### assistance with shopping [aws]
 
-- {_1301_p_aws}: Financed From Own Account
-- {_1302_p_aws}: Financed By HH-Member
-- {_1303_p_aws}: Financed By Relatives
-- {_1304_p_aws}: Financed By Bank Loan
-- {_1305_p_aws}: Financed By Other
-- {_314_p_aws}: Pay 3000 DM In 2 Weeks
-- {plf0051}: Help By Procuring,Buying Through Others
-- {plf0052}: Help By Procuring,Buying For Others
-- {plf0053}: Need Help Myself
-- {plf0054}: Ready To Help Out
-- {plf0055}: Financial Advantage
+- {_1301_p_aws}: financed from own account
+- {_1302_p_aws}: financed by hh-member
+- {_1303_p_aws}: financed by relatives
+- {_1304_p_aws}: financed by bank loan
+- {_1305_p_aws}: financed by other
+- {_314_p_aws}: pay 3000 dm in 2 weeks
+- {plf0051}: help by procuring,buying through others
+- {plf0052}: help by procuring,buying for others
+- {plf0053}: need help myself
+- {plf0054}: ready to help out
+- {plf0055}: financial advantage
 
 ## moving [mov]
 
@@ -519,216 +519,216 @@ label: home, amenities, and contributions of private hh
 ### subjective assessment of new dwelling compared to former dwelling [dcm]
 
 - {hwohn01}: compare old, new rent
-- {hwohn02}: Compare Old,New Size
-- {hwohn03}: Compare Old,New Layout
-- {hwohn04}: Compare Old,New Resid. Area
-- {hwohn05}: Compare Old,New Neighborhood
-- {hwohn06}: Compare Old,New Access To Pub. Trans.
-- {hwohn07}: Compare Old,New Contact With Neighbors
+- {hwohn02}: compare old,new size
+- {hwohn03}: compare old,new layout
+- {hwohn04}: compare old,new resid. area
+- {hwohn05}: compare old,new neighborhood
+- {hwohn06}: compare old,new access to pub. trans.
+- {hwohn07}: compare old,new contact with neighbors
 
 ### is anyone in the hh planning to move? [mpl]
 
-- {_1204_p_mpl}: Reason For Moving To Another Country
-- {_2590_h_mpl}: Moving Plans Within Next Year
-- {_2591_h_mpl}: Moving Plans Of Person One
-- {_2592_h_mpl}: Moving Plans Of Person Two
-- {_2593_h_mpl}: Moving Plans Of Person Three
-- {_763_p_mpl}: Go To Another Country
-- {_764_p_mpl}: Preference For A Country
+- {_1204_p_mpl}: reason for moving to another country
+- {_2590_h_mpl}: moving plans within next year
+- {_2591_h_mpl}: moving plans of person one
+- {_2592_h_mpl}: moving plans of person two
+- {_2593_h_mpl}: moving plans of person three
+- {_763_p_mpl}: go to another country
+- {_764_p_mpl}: preference for a country
 - {item_7313}: flag: rent (renter)
-- {item_7316}: Is anyone in the HH planning to move?
-- {item_7318}: Is anyone in the HH planning to move?
-- {item_7320}: Is anyone in the HH planning to move?
+- {item_7316}: is anyone in the hh planning to move?
+- {item_7318}: is anyone in the hh planning to move?
+- {item_7320}: is anyone in the hh planning to move?
 - {item_7321}: c: rent (renter), vers. d
-- {item_7324}: Is anyone in the HH planning to move?
+- {item_7324}: is anyone in the hh planning to move?
 
 ### reasons for moving [mre]
 
-- {humz01}: Why Changed- Notice Given
-- {humz02}: Why Changed- Bought House
-- {humz03}: Why Changed- Inheritance
-- {humz04}: Why Changed- Job
-- {humz05}: Why Changed- Married
-- {humz06}: Why Changed- Separated
-- {humz07}: Why Changed- Left Parents House
-- {humz08}: Why Changed- Other Family Reasons
-- {humz09}: Why Changed- Too Small
-- {humz10}: Why Changed- Too Big
-- {humz11}: Why Changed- High Housing Costs
-- {humz12}: Why Changed- Poor Furnishings
-- {humz13}: Why Changed- Poor Location
-- {humz14}: Why Changed- Poor Surroundings
-- {humz15}: Why Changed- Other Reasons
+- {humz01}: why changed- notice given
+- {humz02}: why changed- bought house
+- {humz03}: why changed- inheritance
+- {humz04}: why changed- job
+- {humz05}: why changed- married
+- {humz06}: why changed- separated
+- {humz07}: why changed- left parents house
+- {humz08}: why changed- other family reasons
+- {humz09}: why changed- too small
+- {humz10}: why changed- too big
+- {humz11}: why changed- high housing costs
+- {humz12}: why changed- poor furnishings
+- {humz13}: why changed- poor location
+- {humz14}: why changed- poor surroundings
+- {humz15}: why changed- other reasons
 - {humz16}: why changed - old/handicapped accessible
 - {humz17}: why changed - new, better surroundings
 
 ### moving date [mdt]
 
-- {_2556_h_mdt}: Year Moved Since Previous Survey
-- {_2557_h_mdt}: Month Moved Since Previous Survey
-- {_2558_h_mdt}: Year Moved Into Dwelling
-- {_hgen_hgmoveyr}: Year Moved Into Dwelling
-- {einzugm}: Month Moved Into Dwelling
-- {hlf0101}: Year Moved In
-- {hvj}: Lived Here One Year Ago
-- {hwj}: In This Dwelling Since, Year
-- {hwm}: In This Dwelling Since, Month
-- {item_5534}: Month Moved Into Dwelling
+- {_2556_h_mdt}: year moved since previous survey
+- {_2557_h_mdt}: month moved since previous survey
+- {_2558_h_mdt}: year moved into dwelling
+- {_hgen_hgmoveyr}: year moved into dwelling
+- {einzugm}: month moved into dwelling
+- {hlf0101}: year moved in
+- {hvj}: lived here one year ago
+- {hwj}: in this dwelling since, year
+- {hwm}: in this dwelling since, month
+- {item_5534}: month moved into dwelling
 - {item_5901}: month of moving away
 - {item_5902}: year of moving away
-- {yeinzugm}: Month Moved Into Dwelling
+- {yeinzugm}: month moved into dwelling
 
 ## household amenities [hoa2]
 
 
 ### consumer durables [cod]
 
-- {_2327_h_cod}: PC With Modem, ISDN In HH
-- {_2328_h_cod}: Bought PC With Modem In Last 12 Months
-- {_2339_h_cod}: Dryer in HH
-- {_2340_h_cod}: Bought Dryer In Last 12 Months
-- {_2430_h_cod}: Number Of Cars
-- {_2434_h_cod}: Washing Machine In HH yes/no
-- {_2466_h_cod}: HH Has Car - East, Existed Before 1,90
-- {_2467_h_cod}: HH Has Car - East, Existed After 1,90
-- {hi01a}: Car in HH bought prev year
-- {hi01b}: Car in HH bought 09, amount
-- {hi01c}: Car in HH bought 09, scrap bonus
-- {hi02a}: Motorcycle, Moped In HH bought prev year
-- {hi02b}: Motorcycle, Moped In HH bought 09 amount
-- {hi03a}: Colour TV In HH bought prev year
-- {hi03b}: Colour TV In HH bought 09 amount
-- {hi04}: Video Recorder In HH
-- {hi04a}: Video Recorder In HH
-- {hi05a}: DVD player In HH bought prev year
-- {hi05b}: DVD player In HH bought 09 amount
-- {hi06}: Stereo In HH yes/no
-- {hi06a}: Stereo In HH bought prev year
-- {hi06b}: Stereo In HH bought 09 amount
-- {hi07}: PC/Laptop in HH yes/no
-- {hi07a}: PC/Laptop in HH bought prev year
-- {hi07b}: PC/Laptop in HH bought 09 amount
-- {hi09}: Microwave In HH yes/no
-- {hi09a}: Microwave In HH bought prev year
-- {hi09b}: Microwave In HH yes/no bought 09 amount
-- {hi10}: Dishwascher In HH yes/no
-- {hi10a}: Dishwascher In HH bought prev year
-- {hi10b}: Dishwascher In HH bought 09 amount
-- {hi11}: Washing Machine In HH yes/no
-- {hi11a}: Washing Machine In HH bought prev year
-- {hi11b}: Washing Machine In HH bought 09 amount
-- {hi12}: Telephone In HH yes/no
-- {hi12a}: Telephone In HH bought prev year
-- {hi13}: Mobile Phone In HH yes/no
-- {hi13a}: Mobile Phone In HH bought prev year
-- {hi13b}: Mobile Phone In HH bought 09 amount
-- {hi14}: Fax Machin In HH yes/no
-- {hi14a}: Fax Machin In HH bought prev year
-- {hi14b}: Fax Machin In HH bought 09 amount
-- {hi15}: ISDN Connection In HH yes/no
-- {hi15a}: ISDN Connection In HH bought prev year
-- {hi15b}: ISDN Connection In HH bought 09 amount
-- {hi16b}: DVD Recorder In HH bought 09 amount
-- {hi18}: deep freezer in HH yes/no
-- {hi18a}: deep freezer in HH bought 09
-- {hi18b}: deep freezer in HH bought 09 amount
-- {hi19}: Dryer in HH yes/no
-- {hi19a}: Dryer in HH bought 09
-- {hi19b}: Dryer in HH bought 09 amount
-- {hi20}: holiday house/flat in HH yes/no
-- {hi20a}: holiday house/flat in HH bought 09
-- {hi20b}: holiday house/flat in HH bought 09 amount
+- {_2327_h_cod}: pc with modem, isdn in hh
+- {_2328_h_cod}: bought pc with modem in last 12 months
+- {_2339_h_cod}: dryer in hh
+- {_2340_h_cod}: bought dryer in last 12 months
+- {_2430_h_cod}: number of cars
+- {_2434_h_cod}: washing machine in hh yes/no
+- {_2466_h_cod}: hh has car - east, existed before 1,90
+- {_2467_h_cod}: hh has car - east, existed after 1,90
+- {hi01a}: car in hh bought prev year
+- {hi01b}: car in hh bought 09, amount
+- {hi01c}: car in hh bought 09, scrap bonus
+- {hi02a}: motorcycle, moped in hh bought prev year
+- {hi02b}: motorcycle, moped in hh bought 09 amount
+- {hi03a}: colour tv in hh bought prev year
+- {hi03b}: colour tv in hh bought 09 amount
+- {hi04}: video recorder in hh
+- {hi04a}: video recorder in hh
+- {hi05a}: dvd player in hh bought prev year
+- {hi05b}: dvd player in hh bought 09 amount
+- {hi06}: stereo in hh yes/no
+- {hi06a}: stereo in hh bought prev year
+- {hi06b}: stereo in hh bought 09 amount
+- {hi07}: pc/laptop in hh yes/no
+- {hi07a}: pc/laptop in hh bought prev year
+- {hi07b}: pc/laptop in hh bought 09 amount
+- {hi09}: microwave in hh yes/no
+- {hi09a}: microwave in hh bought prev year
+- {hi09b}: microwave in hh yes/no bought 09 amount
+- {hi10}: dishwascher in hh yes/no
+- {hi10a}: dishwascher in hh bought prev year
+- {hi10b}: dishwascher in hh bought 09 amount
+- {hi11}: washing machine in hh yes/no
+- {hi11a}: washing machine in hh bought prev year
+- {hi11b}: washing machine in hh bought 09 amount
+- {hi12}: telephone in hh yes/no
+- {hi12a}: telephone in hh bought prev year
+- {hi13}: mobile phone in hh yes/no
+- {hi13a}: mobile phone in hh bought prev year
+- {hi13b}: mobile phone in hh bought 09 amount
+- {hi14}: fax machin in hh yes/no
+- {hi14a}: fax machin in hh bought prev year
+- {hi14b}: fax machin in hh bought 09 amount
+- {hi15}: isdn connection in hh yes/no
+- {hi15a}: isdn connection in hh bought prev year
+- {hi15b}: isdn connection in hh bought 09 amount
+- {hi16b}: dvd recorder in hh bought 09 amount
+- {hi18}: deep freezer in hh yes/no
+- {hi18a}: deep freezer in hh bought 09
+- {hi18b}: deep freezer in hh bought 09 amount
+- {hi19}: dryer in hh yes/no
+- {hi19a}: dryer in hh bought 09
+- {hi19b}: dryer in hh bought 09 amount
+- {hi20}: holiday house/flat in hh yes/no
+- {hi20a}: holiday house/flat in hh bought 09
+- {hi20b}: holiday house/flat in hh bought 09 amount
 
 ### house pets [hop]
 
-- {_2450_h_hop}: Pets
-- {htier1}: Pets: Dog
-- {htier2}: Pets: Cat
-- {htier3}: Pets: Bird
-- {htier4}: Pets: fishes
-- {htier6}: Other Pets
-- {htier7}: No Pets
-- {ptier1}: Pets, Dog
-- {ptier2}: Pets, Cat
-- {ptier3}: Pets, Bird
-- {ptier4}: Pets, Fish
-- {ptier6}: Pets, Other
-- {ptier7}: No Pets
+- {_2450_h_hop}: pets
+- {htier1}: pets: dog
+- {htier2}: pets: cat
+- {htier3}: pets: bird
+- {htier4}: pets: fishes
+- {htier6}: other pets
+- {htier7}: no pets
+- {ptier1}: pets, dog
+- {ptier2}: pets, cat
+- {ptier3}: pets, bird
+- {ptier4}: pets, fish
+- {ptier6}: pets, other
+- {ptier7}: no pets
 
 ## home ownership status [hos]
 
 
 ### tenant [ten]
 
-- {_3564_h_ten}: Building Management
+- {_3564_h_ten}: building management
 
 ### property management of building [pmb]
 
-- {_hgen_hgrsubs}: Government Subsidized Housing
-- {hm03}: Government Subsidized Housing
-- {hm13}: Owner Of The Dwelling
+- {_hgen_hgrsubs}: government subsidized housing
+- {hm03}: government subsidized housing
+- {hm13}: owner of the dwelling
 
 ### owner of building [oob]
 
-- {_2415_h_oob}: Owner In Previous Year
-- {hew2}: Type Of Change In Ownership
-- {hkauf}: Means Of Acquiring Dwelling
+- {_2415_h_oob}: owner in previous year
+- {hew2}: type of change in ownership
+- {hkauf}: means of acquiring dwelling
 
 ### owner / tenant [own]
 
-- {_hgen_hgowner}: Tenant Or Owner Of Dwelling
+- {_hgen_hgowner}: tenant or owner of dwelling
 - {hew1}: change in ownership last year
-- {hew2a}: No Longer Owner
-- {hew3}: Means Of Ownership
-- {hew4}: Type Of Ownership Transfer
-- {hew6}: Still Tenant, New Owner
-- {hm01}: Tenant Or Owner Of Dwelling, Home Occupant
-- {hmiet}: Tenant Or Owner Of Dwelling
+- {hew2a}: no longer owner
+- {hew3}: means of ownership
+- {hew4}: type of ownership transfer
+- {hew6}: still tenant, new owner
+- {hm01}: tenant or owner of dwelling, home occupant
+- {hmiet}: tenant or owner of dwelling
 
 ## residence: region [rer]
 
-- {_1232_p_rer}: Moved Between East And West Germany
-- {_2464_h_rer}: Moved Between East And West Germany
-- {_hgen_hgnuts1}: NUTS-Systematic-1 (Federal State)
-- {htyp}: Household Type
-- {item_2251}: 1984 City, District Type, Boustedt Class. West
-- {item_2412}: 2004 City, District Size, RECODED In EAST
-- {item_3152}: Quasi Boustedt Region, ONLY East
-- {item_5686}: Counties' Structure Of Urban Development
-- {loc1989}: Where did you live in 1989?
-- {lwied}: Place Of Res. Before Reunification
-- {umzug}: Move From East To West
+- {_1232_p_rer}: moved between east and west germany
+- {_2464_h_rer}: moved between east and west germany
+- {_hgen_hgnuts1}: nuts-systematic-1 (federal state)
+- {htyp}: household type
+- {item_2251}: 1984 city, district type, boustedt class. west
+- {item_2412}: 2004 city, district size, recoded in east
+- {item_3152}: quasi boustedt region, only east
+- {item_5686}: counties' structure of urban development
+- {loc1989}: where did you live in 1989?
+- {lwied}: place of res. before reunification
+- {umzug}: move from east to west
 
 ## type of dwelling [tod]
 
 
 ### private household - type of institution [prh]
 
-- {email}: HH With Email Access
-- {hheim}: Private Household, Institution
-- {hhtyp}: Type Of Dwelling
-- {wum1}: Residential Area 1: Type Of House
-- {wum2}: Residential Area 2: Private,Institution
+- {email}: hh with email access
+- {hheim}: private household, institution
+- {hhtyp}: type of dwelling
+- {wum1}: residential area 1: type of house
+- {wum2}: residential area 2: private,institution
 
 ### second home [seh]
 
-- {_1224_p_seh}: Location of Second Residence
-- {_1225_p_seh}: Registered 2. Residence
-- {_1226_p_seh}: Dwelling Used Predominantly
-- {_1227_p_seh}: From Which Dwelling To Work
-- {h2wohn1}: Second Residence
-- {h2wohn2}: Location of Second Residence
-- {h2wohn3}: Dwelling Used Predominantly
-- {item_4485}: Second Home
-- {item_4486}: Second Home In W./E. Germany, Abroad
-- {item_4487}: Use Of Second Home
-- {item_4488}: Second Home At Place Of Work
-- {item_5527}: Second Residence Previous Year
-- {plf0014}: Second Residence
-- {plf0015}: Dwelling Used Predominantly
-- {plf0016}: From Which Dwelling To Work
-- {pzweitv}: Second Residence Previous Year
-- {ypzweitv}: Second Residence Previous Year
+- {_1224_p_seh}: location of second residence
+- {_1225_p_seh}: registered 2. residence
+- {_1226_p_seh}: dwelling used predominantly
+- {_1227_p_seh}: from which dwelling to work
+- {h2wohn1}: second residence
+- {h2wohn2}: location of second residence
+- {h2wohn3}: dwelling used predominantly
+- {item_4485}: second home
+- {item_4486}: second home in w./e. germany, abroad
+- {item_4487}: use of second home
+- {item_4488}: second home at place of work
+- {item_5527}: second residence previous year
+- {plf0014}: second residence
+- {plf0015}: dwelling used predominantly
+- {plf0016}: from which dwelling to work
+- {pzweitv}: second residence previous year
+- {ypzweitv}: second residence previous year
 
 ### nan [dwc]
 
@@ -741,151 +741,151 @@ label: home, amenities, and contributions of private hh
 
 ### type of locality [tol]
 
-- {_1620_p_tol}: Grew Up Where
-- {_1621_p_tol}: Lives Now In Same Area Where Grew Up
-- {lkh01}: Main Residence During Childhood
-- {lkh02}: Still Lives In Main Residence During Childhood
-- {lkh03}: Years Lived With Both Parents In Childhood
-- {lkh04}: Years Lived With Mother (Without Partner) In Childhood
-- {lkh05}: Years Lived With Mother (With Partner) In Childhood
-- {lkh06}: Years Lived With Father (Without Partner) In Childhood
-- {lkh07}: Years Lived With Father (With Partner) In Childhood
-- {lkh08}: Years Lived With Other Relatives In Childhood
-- {lkh09}: Years Lived With Foster Parents In Childhood
-- {lkh10}: Years Lived In Children's Home In Childhood
-- {lkhka}: Years Lived In Childhood N/A
+- {_1620_p_tol}: grew up where
+- {_1621_p_tol}: lives now in same area where grew up
+- {lkh01}: main residence during childhood
+- {lkh02}: still lives in main residence during childhood
+- {lkh03}: years lived with both parents in childhood
+- {lkh04}: years lived with mother (without partner) in childhood
+- {lkh05}: years lived with mother (with partner) in childhood
+- {lkh06}: years lived with father (without partner) in childhood
+- {lkh07}: years lived with father (with partner) in childhood
+- {lkh08}: years lived with other relatives in childhood
+- {lkh09}: years lived with foster parents in childhood
+- {lkh10}: years lived in children's home in childhood
+- {lkhka}: years lived in childhood n/a
 
 ### year of move out of parental home [ymo]
 
-- {_1622_p_ymo}: Year Moved Out Of Parents Home
-- {_1623_p_ymo}: Still Lives With Parents
+- {_1622_p_ymo}: year moved out of parents home
+- {_1623_p_ymo}: still lives with parents
 
 ### country of birth [cob]
 
-- {plf0011}: Country Born In
-- {psta6nr}: Other Country Of Birth
+- {plf0011}: country born in
+- {psta6nr}: other country of birth
 
 ## neighborhood surroundings and residential environment [nsr]
 
-- {item_3424}: Residence Situated
-- {item_3425}: Residence Type Of Building
-- {item_3426}: Residence Surrounding Environment
-- {item_3427}: Residence Occupants
+- {item_3424}: residence situated
+- {item_3425}: residence type of building
+- {item_3426}: residence surrounding environment
+- {item_3427}: residence occupants
 
 ### region [reg]
 
-- {_2587_h_reg}: HH Income Vs Neighbors
-- {_2588_h_reg}: HH Occupational Status Vs Neighbors
-- {_pequiv_l11101}: State of Residence
-- {_pequiv_l11102}: Region
-- {bula}: Federal State
-- {bulaold}: Old Federal Lands-West German States
-- {hcity}: Distance To Nearest City Centre
-- {hfuss01}: Walking Distance To Shops
-- {hfuss02}: Walking Distance To Pubs, Bars, ETC.
-- {hfuss03}: Walking Distance To Bank
-- {hfuss04}: Walking Distance To Doctor
-- {hfuss05}: Walking Distance To Nursery, Kindergarten
-- {hfuss06}: Walking Distance To Primary School
-- {hfuss07}: Walking Distance To Grammar School
-- {hfuss08}: Walking Distance To Youth Meeting Place
-- {hfuss09}: Walking Distance To Elderly Facility
-- {hfuss10}: Walking Distance To Public Park, Space
-- {hfuss11}: Walking Distance To Sporting Facilities
-- {hfuss12}: Walking Distance To Public Transport
-- {hkrim}: Worried About Crime In Neighbourhood
-- {hleut}: Relationship Of Neighbors To Each Other
-- {humw1}: Bothersome Noise Pollution
-- {humw2}: Bothersome Air Pollution
-- {humw3}: Shortage of Green Areas
-- {hwohn08}: Neighborhood Of Household
-- {item_3146}: 2003 City, District Type BIK, RECODED In EAST
-- {item_3950}: Federal State
-- {item_6625}: Residential Area 1
-- {item_6626}: Residential Area 2
-- {item_6627}: Residential Area 3
-- {item_6628}: Residential Area 4 item 1
-- {item_6629}: Residential Area 4 item 2
-- {item_6630}: Residential Area 4 item 3
-- {item_6631}: Residential Area 4 item 4
-- {item_6632}: Residential Area Apro 4 N.A.
-- {item_6633}: Residential Area Apro 4 Open Answer
-- {item_6634}: Residential Area 5
-- {item_6635}: Residential Area 6
-- {item_6636}: Residential Area 7
-- {item_6986}: Residential Area, Non Response
-- {item_6987}: Result Residential Area
-- {pwied}: Place Of Res. Before Reunification
-- {regtyp}: Spatial category by BBSR
-- {sampreg}: Current Sample Region
-- {wum3}: Residential Area 3: Rental Housing
-- {wum4}: Residential Area 4 - Type Of Estate
+- {_2587_h_reg}: hh income vs neighbors
+- {_2588_h_reg}: hh occupational status vs neighbors
+- {_pequiv_l11101}: state of residence
+- {_pequiv_l11102}: region
+- {bula}: federal state
+- {bulaold}: old federal lands-west german states
+- {hcity}: distance to nearest city centre
+- {hfuss01}: walking distance to shops
+- {hfuss02}: walking distance to pubs, bars, etc.
+- {hfuss03}: walking distance to bank
+- {hfuss04}: walking distance to doctor
+- {hfuss05}: walking distance to nursery, kindergarten
+- {hfuss06}: walking distance to primary school
+- {hfuss07}: walking distance to grammar school
+- {hfuss08}: walking distance to youth meeting place
+- {hfuss09}: walking distance to elderly facility
+- {hfuss10}: walking distance to public park, space
+- {hfuss11}: walking distance to sporting facilities
+- {hfuss12}: walking distance to public transport
+- {hkrim}: worried about crime in neighbourhood
+- {hleut}: relationship of neighbors to each other
+- {humw1}: bothersome noise pollution
+- {humw2}: bothersome air pollution
+- {humw3}: shortage of green areas
+- {hwohn08}: neighborhood of household
+- {item_3146}: 2003 city, district type bik, recoded in east
+- {item_3950}: federal state
+- {item_6625}: residential area 1
+- {item_6626}: residential area 2
+- {item_6627}: residential area 3
+- {item_6628}: residential area 4 item 1
+- {item_6629}: residential area 4 item 2
+- {item_6630}: residential area 4 item 3
+- {item_6631}: residential area 4 item 4
+- {item_6632}: residential area apro 4 n.a.
+- {item_6633}: residential area apro 4 open answer
+- {item_6634}: residential area 5
+- {item_6635}: residential area 6
+- {item_6636}: residential area 7
+- {item_6986}: residential area, non response
+- {item_6987}: result residential area
+- {pwied}: place of res. before reunification
+- {regtyp}: spatial category by bbsr
+- {sampreg}: current sample region
+- {wum3}: residential area 3: rental housing
+- {wum4}: residential area 4 - type of estate
 
 ## housing costs [hoc]
 
-- {HGF2RENT}: Detailed Imputation Flag, Rent Minus Heating Costs
-- {HGUTILINFO}: Reason for Missing Additional Utility Costs
-- {_hgen_hgfheat}: Imputation Flag, Costs Of Heating And Warm Water
-- {_hgen_hgfrent}: Imputation Flag, Amount Of Rent Minus Heating Costs
-- {_hgen_hgfroom}: Imputation Flag, Number Of Rooms Lager Than 6 Sq M
-- {_hgen_hgfsize}: Imputation Flag, Size Of Housing
-- {_hgen_hgfutil}: Imputation Flag, Cost Allocation
-- {_hgen_hgutil}: Cost Allocation
+- {_hgen_hgfheat}: imputation flag, costs of heating and warm water
+- {_hgen_hgfrent}: imputation flag, amount of rent minus heating costs
+- {_hgen_hgfroom}: imputation flag, number of rooms lager than 6 sq m
+- {_hgen_hgfsize}: imputation flag, size of housing
+- {_hgen_hgfutil}: imputation flag, cost allocation
+- {_hgen_hgutil}: cost allocation
+- {hgf2rent}: detailed imputation flag, rent minus heating costs
+- {hgutilinfo}: reason for missing additional utility costs
 
 ### for tenants [fte]
 
-- {HGELECTRINFO}: Reason for Missing Electricty Costs
-- {HGGAS}: Costs of Gas (EUR)
-- {HGGASINFO}: Reason for Missing Gas Costs
-- {HGHEATINFO}: Reason for Missing Heating Costs
-- {HGRENTINFO}: Pays Rent and/or Utilities
-- {_1681_p_fte}: Worked For Pay In Previous Week
-- {_1682_p_fte}: Hours Per Week
-- {_2317_h_fte}: Adequacy Of Living Space In Unit
-- {_2426_h_fte}: Cost Of Heat And Hot Water Per Month
-- {_2538_h_fte}: Amount Of Rent Per Month
-- {_2539_h_fte}: Pays No Rent
-- {_2543_h_fte}: Rent Of Dwelling Vs Comparable Dwellings
-- {_2555_h_fte}: Cost Of Heat And Hot Water Per Month
-- {_2589_h_fte}: Dwelling Rent Reduced By Landlord
-- {_hgen_hgelectr}: Costs of Electricity (gen)
-- {_hgen_hgfelectr}: Imputation Flag, Costs of Electricity
-- {_hgen_hgheat}: Costs Of Warm Water, Gen
-- {_hgen_hgnorent}: Does Not Pay Rent
-- {_hgen_hgreduc}: Dwelling At A Reduced Prize
-- {_hgen_hgrent}: Amount Of Rent Minus Heating Costs
-- {_hgen_hgreval}: Rent Of Dwelling Vs Comparable Dwellings
-- {hbau11}: exp. Renovation
-- {hcf0013}: Cost Of heat Per Month unknown
-- {hcf0014}: Ammount Of Rent Reduction Per Month
+- {_1681_p_fte}: worked for pay in previous week
+- {_1682_p_fte}: hours per week
+- {_2317_h_fte}: adequacy of living space in unit
+- {_2426_h_fte}: cost of heat and hot water per month
+- {_2538_h_fte}: amount of rent per month
+- {_2539_h_fte}: pays no rent
+- {_2543_h_fte}: rent of dwelling vs comparable dwellings
+- {_2555_h_fte}: cost of heat and hot water per month
+- {_2589_h_fte}: dwelling rent reduced by landlord
+- {_hgen_hgelectr}: costs of electricity (gen)
+- {_hgen_hgfelectr}: imputation flag, costs of electricity
+- {_hgen_hgheat}: costs of warm water, gen
+- {_hgen_hgnorent}: does not pay rent
+- {_hgen_hgreduc}: dwelling at a reduced prize
+- {_hgen_hgrent}: amount of rent minus heating costs
+- {_hgen_hgreval}: rent of dwelling vs comparable dwellings
+- {hbau11}: exp. renovation
+- {hcf0013}: cost of heat per month unknown
+- {hcf0014}: ammount of rent reduction per month
 - {he16}: electricity costs precious year
-- {hgr}: Adequacy Of Living Space In Housing Unit
-- {hlf0060}: Cost Of heat Per Month unknown
-- {hlf0061}: Ammount Of Rent Reduction
-- {hlf0062}: Ammount Of Rent Reduction Per Month
-- {hm02}: Rent Reduced By Landlord
-- {hm04}: Amount Of Monthly Rent
-- {hm05}: Does Not Pay Rent
-- {hm06}: Heat, Hot Water Costs Incl. In Rent
-- {hm07}: Cost Of Heat And Hot Water Per Month
-- {hm08}: Cost Of Heat And Hot Water Do Not Know
-- {hm09}: Other Costs Included In Rent
-- {hm10}: Cost Of Water, Etc. Per Month
-- {hm11}: Cost Of Water, Etc. Do Not Know
-- {hm12}: Rent Of Dwelling Vs Comparable Dwellings
-- {hm14}: Cost Of Electricity  Per Month
-- {hm15}: Cost Of Electricity  Do Not Know
+- {hgelectrinfo}: reason for missing electricty costs
+- {hggas}: costs of gas (eur)
+- {hggasinfo}: reason for missing gas costs
+- {hgheatinfo}: reason for missing heating costs
+- {hgr}: adequacy of living space in housing unit
+- {hgrentinfo}: pays rent and/or utilities
+- {hlf0060}: cost of heat per month unknown
+- {hlf0061}: ammount of rent reduction
+- {hlf0062}: ammount of rent reduction per month
+- {hm02}: rent reduced by landlord
+- {hm04}: amount of monthly rent
+- {hm05}: does not pay rent
+- {hm06}: heat, hot water costs incl. in rent
+- {hm07}: cost of heat and hot water per month
+- {hm08}: cost of heat and hot water do not know
+- {hm09}: other costs included in rent
+- {hm10}: cost of water, etc. per month
+- {hm11}: cost of water, etc. do not know
+- {hm12}: rent of dwelling vs comparable dwellings
+- {hm14}: cost of electricity  per month
+- {hm15}: cost of electricity  do not know
 - {item_7307}: flag: heating/warm water (renter)
 - {item_7308}: c: heating/warm water (renter), vers. a
 - {item_7309}: c: heating/warm water (renter), vers. b
 - {item_7310}: c: heating/warm water (renter), vers. c
 - {item_7311}: c: heating/warm water (renter), vers. d
 - {item_7312}: c: heating/warm water (renter), vers. e
-- {item_7314}: For tenants
+- {item_7314}: for tenants
 - {item_7315}: c: rent (renter), vers. a
 - {item_7317}: c: rent (renter), vers. b
 - {item_7319}: c: rent (renter), vers. c
-- {item_7322}: For tenants
+- {item_7322}: for tenants
 - {item_7323}: c: rent (renter), vers. e
 - {item_7325}: flag: electricity (renter)
 - {item_7326}: c: electricity (renter), vers. a
@@ -902,22 +902,22 @@ label: home, amenities, and contributions of private hh
 
 ### for owners [fow]
 
-- {_2472_h_fow}: Mortgage Payments, Interest Previous Year
-- {_2634_h_fow}: Govt. Subsidizes Housing Payments
-- {_hgen_hgacquis}: Means Of Acquiring Dwelling
-- {_hgen_hgeqpnrj}: Dwelling Has Alternative Energy Source
-- {_hgen_hgosubs}: Amount Of Subsidies Last Year
-- {_hgen_hgsubsid}: Government Subsidizes Housing Payments
-- {he01}: Interest, Mortgage Payment For Dwelling
-- {he02}: Interest And Mortgage Payment Per Month
-- {he03}: Maintenance Costs Previous Year
-- {he04}: Heat And Hot Water Costs Previous Year
-- {he05}: Other Costs Per Year
-- {he06}: Housing Costs For Owner
-- {he07}: Housing Costs Per Month
-- {he08}: Housing Costs Vs Comparable Dwellings
-- {he09}: Estimated Amount Of Rent
-- {he10}: Est. Amount Of Rent Do Not Know
+- {_2472_h_fow}: mortgage payments, interest previous year
+- {_2634_h_fow}: govt. subsidizes housing payments
+- {_hgen_hgacquis}: means of acquiring dwelling
+- {_hgen_hgeqpnrj}: dwelling has alternative energy source
+- {_hgen_hgosubs}: amount of subsidies last year
+- {_hgen_hgsubsid}: government subsidizes housing payments
+- {he01}: interest, mortgage payment for dwelling
+- {he02}: interest and mortgage payment per month
+- {he03}: maintenance costs previous year
+- {he04}: heat and hot water costs previous year
+- {he05}: other costs per year
+- {he06}: housing costs for owner
+- {he07}: housing costs per month
+- {he08}: housing costs vs comparable dwellings
+- {he09}: estimated amount of rent
+- {he10}: est. amount of rent do not know
 - {item_7331}: flag: heating (owner)
 - {item_7332}: c: heating (owner), vers. a
 - {item_7333}: c: heating (owner), vers. b

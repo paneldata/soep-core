@@ -11,214 +11,214 @@ label: integration, migration, transnationalization
 
 ### cultural integration / language [cil]
 
-- {_769_p_cil}: Music From Country Of Origin
-- {_770_p_cil}: Food From Country Of Origin
-- {item_3433}: Language Ability HH-Head
-- {item_5382}: Oral Ability: German
-- {item_5383}: Written Ability: German
-- {item_6459}: reading ability: German
-- {item_7539}: Oral ability: Language Country of Origin
-- {item_7540}: Written ability: Language Country of Origin
-- {item_7541}: reading ability: Language Country of Origin
-- {pmusp2}: Oral Ability: German
-- {pmusp3}: Written Ability: German
-- {pmusp4}: Oral ability: Language Country of Origin
-- {pmusp5}: Written ability: Language Country of Origin
-- {pmusp6}: reading ability: German
-- {pmusp7}: reading ability: Language Country of Origin
-- {pna04}: Usual Language Spoken
-- {pna05}: Own Opinion of Spoken German
-- {pna06}: Own Opinion of Written German
-- {pna07}: Spoken Language Country of Origin
-- {pna08}: Written Language Country of Origin
+- {_769_p_cil}: music from country of origin
+- {_770_p_cil}: food from country of origin
+- {item_3433}: language ability hh-head
+- {item_5382}: oral ability: german
+- {item_5383}: written ability: german
+- {item_6459}: reading ability: german
+- {item_7539}: oral ability: language country of origin
+- {item_7540}: written ability: language country of origin
+- {item_7541}: reading ability: language country of origin
+- {pmusp2}: oral ability: german
+- {pmusp3}: written ability: german
+- {pmusp4}: oral ability: language country of origin
+- {pmusp5}: written ability: language country of origin
+- {pmusp6}: reading ability: german
+- {pmusp7}: reading ability: language country of origin
+- {pna04}: usual language spoken
+- {pna05}: own opinion of spoken german
+- {pna06}: own opinion of written german
+- {pna07}: spoken language country of origin
+- {pna08}: written language country of origin
 - {pnat05}: newspapers from germany-country of origin
-- {psparb}: Language Used at Workplace
-- {pspfam}: Language Used In Family
-- {pspfr}: Further Foreign Languages
-- {pspfreu}: Language Used With Friends
-- {pspkurs}: Attended German Language Course
-- {pspzug1}: Language Skills Speaking German Before Migration
-- {pspzug2}: Language Sklls Writing German Before Migration
-- {pspzug3}: Language Skills Reading German Before Migration
+- {psparb}: language used at workplace
+- {pspfam}: language used in family
+- {pspfr}: further foreign languages
+- {pspfreu}: language used with friends
+- {pspkurs}: attended german language course
+- {pspzug1}: language skills speaking german before migration
+- {pspzug2}: language sklls writing german before migration
+- {pspzug3}: language skills reading german before migration
 
 ### education in country of origin [eco]
 
-- {_pgen_pgbbila}: Vocational Degree Outside Germany
-- {item_4236}: Vocational Degree Completed Abroad
-- {item_4237}: On The Job Training Abroad
-- {item_4238}: Long Term Vocational Training Abroad
-- {item_4239}: Vocational Training Abroad
-- {item_4240}: School-Leaving Degree Abroad
-- {item_4241}: Other Vocational Training Abroad
-- {item_4242}: Apprenticeship
-- {item_4243}: Certificate For Voc. Degree Completed Abroad
-- {item_4244}: Foreign Certificate Accepted In Germany
-- {l1ab17}: Leaving Certificate 1. Training/Qualification
-- {l1aner}: Applied for Recognition of 1. Leaving Certificate
-- {l1anerab}: 1. Recognition equals Leaving Certificate/University Degree
-- {l1anerj}: Applied for Recognition of 1. Leaving Certificate, Year
-- {l1anerm}: Applied for Recognition of 1. Leaving Certificate, Month
-- {l1anerno}: Not Applied for 1. Recognition, Reason
-- {l1bes}: Application Process Not Yet Finished
-- {l1besj}: Decision on 1. Recognition/Rejection, Year
-- {l1besm}: Decision on 1. Recognition/Rejection, Month
-- {l1inst}: Institution Responsible for Recognition 1. Leaving Certificate
-- {l1naq1}: 1. Decision Suggests Further Qualification
-- {l1naq2}: 1. Further Qualification Completed
-- {l1naq3}: 1. Further Qualification Provider
-- {l1resul}: Result Recognition 1. Leaving Certificate
-- {l2ab17}: Leaving Certificate 2. Training/Qualification
-- {l2aner}: Applied for Recognition of 2. Leaving Certificate
-- {l2anerab}: 2. Recognition equals Leaving Certificate/University Degree
-- {l2anerj}: Applied for Recognition of 2. Leaving Certificate, Year
-- {l2anerm}: Applied for Recognition of 2. Leaving Certificate, Month
-- {l2anerno}: Not Applied for 2. Recognition, Reason
-- {l2bes}: Application Process Not Yet Finished
-- {l2besj}: Decision on 2. Recognition/Rejection, Year
-- {l2besm}: Decision on 2. Recognition/Rejection, Month
-- {l2inst}: Institution Responsible for Recognition 2. Leaving Certificate
-- {l2naq1}: 2. Decision Suggests Further Qualification
-- {l2naq2}: 2. Further Qualification Completed
-- {l2naq3}: 2. Further Qualification Provider
-- {l2resul}: Result Recognition 2. Leaving Certificate
-- {l3ab17}: Leaving Certificate 3. Training/Qualification
-- {l3aner}: Applied for Recognition of 3. Leaving Certificate
-- {l3anerab}: 3. Recognition equals Leaving Certificate/University Degree
-- {l3anerj}: Applied for Recognition of 3. Leaving Certificate, Year
-- {l3anerm}: Applied for Recognition of 3. Leaving Certificate, Month
-- {l3anerno}: Not Applied for 3. Recognition, Reason
-- {l3bes}: Application Process Not Yet Finished
-- {l3besj}: Decision on 3. Recognition/Rejection, Year
-- {l3besm}: Decision on 3. Recognition/Rejection, Month
-- {l3inst}: Institution Responsible for Recognition 3. Leaving Certificate
-- {l3naq1}: 3. Decision Suggests Further Qualification
-- {l3naq2}: 3. Further Qualification Completed
-- {l3naq3}: 3. Further Qualification Provider
-- {l3resul}: Result Recognition 3. Leaving Certificate
-- {l4ab17}: Leaving Certificate 4. Training/Qualification
-- {l4aner}: Applied for Recognition of 4. Leaving Certificate
-- {l4anerab}: 4. Recognition equals Leaving Certificate/University Degree
-- {l4anerj}: Applied for Recognition of 4. Leaving Certificate, Year
-- {l4anerm}: Applied for Recognition of 4. Leaving Certificate, Month
-- {l4anerno}: Not Applied for 4. Recognition, Reason
-- {l4bes}: Application Process Not Yet Finished
-- {l4besj}: Decision on 4. Recognition/Rejection, Year
-- {l4besm}: Decision on 4. Recognition/Rejection, Month
-- {l4inst}: Institution Responsible for Recognition 4. Leaving Certificate
-- {l4naq1}: 4. Decision Suggests Further Qualification
-- {l4naq2}: 4. Further Qualification Completed
-- {l4naq3}: 4. Further Qualification Provider
-- {l4resul}: Result Recognition 4. Leaving Certificate
-- {l5ab17}: Leaving Certificate 5. Training/Qualification
-- {l5aner}: Applied for Recognition of 5. Leaving Certificate
-- {l5anerab}: 5. Recognition equals Leaving Certificate/University Degree
-- {l5anerj}: Applied for Recognition of 5. Leaving Certificate, Year
-- {l5anerm}: Applied for Recognition of 5. Leaving Certificate, Month
-- {l5anerno}: Not Applied for 5. Recognition, Reason
-- {l5bes}: Application Process Not Yet Finished
-- {l5besj}: Decision on 5. Recognition/Rejection, Year
-- {l5besm}: Decision on 5. Recognition/Rejection, Month
-- {l5inst}: Institution Responsible for Recognition 5. Leaving Certificate
-- {l5naq1}: 5. Decision Suggests Further Qualification
-- {l5naq2}: 5. Further Qualification Completed
-- {l5naq3}: 5. Further Qualification Provider
-- {l5resul}: Result Recognition 5. Leaving Certificate
-- {l6ab17}: Leaving Certificate 6. Training/Qualification
-- {l6aner}: Applied for Recognition of 6. Leaving Certificate
-- {l6anerab}: 6. Recognition equals Leaving Certificate/University Degree
-- {l6anerj}: Applied for Recognition of 6. Leaving Certificate, Year
-- {l6anerm}: Applied for Recognition of 6. Leaving Certificate, Month
-- {l6anerno}: Not Applied for 6. Recognition, Reason
-- {l6bes}: Application Process Not Yet Finished
-- {l6besj}: Decision on 6. Recognition/Rejection, Year
-- {l6besm}: Decision on 6. Recognition/Rejection, Month
-- {l6inst}: Institution Responsible for Recognition 6. Leaving Certificate
-- {l6naq1}: 6. Decision Suggests Further Qualification
-- {l6naq2}: 6. Further Qualification Completed
-- {l6naq3}: 6. Further Qualification Provider
-- {l6resul}: Result Recognition 6. Leaving Certificate
-- {l7ab17}: Leaving Certificate 7. Training/Qualification
-- {l7aner}: Applied for Recognition of 7. Leaving Certificate
-- {l7anerab}: 7. Recognition equals Leaving Certificate/University Degree
-- {l7anerj}: Applied for Recognition of 7. Leaving Certificate, Year
-- {l7anerm}: Applied for Recognition of 7. Leaving Certificate, Month
-- {l7anerno}: Not Applied for 7. Recognition, Reason
-- {l7bes}: Application Process Not Yet Finished
-- {l7besj}: Decision on 7. Recognition/Rejection, Year
-- {l7besm}: Decision on 7. Recognition/Rejection, Month
-- {l7inst}: Institution Responsible for Recognition 7. Leaving Certificate
-- {l7naq1}: 7. Decision Suggests Further Qualification
-- {l7naq2}: 7. Further Qualification Completed
-- {l7naq3}: 7. Further Qualification Provider
-- {l7resul}: Result Recognition 7. Leaving Certificate
-- {l8ab17}: Leaving Certificate 8. Training/Qualification
-- {l8aner}: Applied for Recognition of 8. Leaving Certificate
-- {l8anerab}: 8. Recognition equals Leaving Certificate/University Degree
-- {l8anerj}: Applied for Recognition of 8. Leaving Certificate, Year
-- {l8anerm}: Applied for Recognition of 8. Leaving Certificate, Month
-- {l8anerno}: Not Applied for 8. Recognition, Reason
-- {l8bes}: Application Process Not Yet Finished
-- {l8besj}: Decision on 8. Recognition/Rejection, Year
-- {l8besm}: Decision on 8. Recognition/Rejection, Month
-- {l8inst}: Institution Responsible for Recognition 8. Leaving Certificate
-- {l8naq1}: 8. Decision Suggests Further Qualification
-- {l8naq2}: 8. Further Qualification Completed
-- {l8naq3}: 8. Further Qualification Provider
-- {l8resul}: Result Recognition 8. Leaving Certificate
-- {lab10}: Training, Study Abroad
-- {lab11}: Apprenticed
-- {lab11j}: In-House Training At A Company, Year of Completion
-- {lab12}: Apprenticeship
-- {lab12j}: Apprenticeship, Year of Completion
-- {lab13}: Attend Vocational School
-- {lab13j}: Vocational School, Year of Completion
-- {lab141}: University/College Rather Practical
-- {lab141j}: University/College Rather Practical, Year of Degree
-- {lab142}: University/College Rather Theoretical
-- {lab142j}: University/College Rather Theoretical, Year of Degree
-- {lab143}: Completed Doctoral Studies
-- {lab143j}: Doctoral Studies,Year of Completion
-- {lab15}: Other Education,Training
-- {lab15j}: Other Training Year of Completion
-- {lab15ka}: Training - Item Nonresponse
+- {_pgen_pgbbila}: vocational degree outside germany
+- {item_4236}: vocational degree completed abroad
+- {item_4237}: on the job training abroad
+- {item_4238}: long term vocational training abroad
+- {item_4239}: vocational training abroad
+- {item_4240}: school-leaving degree abroad
+- {item_4241}: other vocational training abroad
+- {item_4242}: apprenticeship
+- {item_4243}: certificate for voc. degree completed abroad
+- {item_4244}: foreign certificate accepted in germany
+- {l1ab17}: leaving certificate 1. training/qualification
+- {l1aner}: applied for recognition of 1. leaving certificate
+- {l1anerab}: 1. recognition equals leaving certificate/university degree
+- {l1anerj}: applied for recognition of 1. leaving certificate, year
+- {l1anerm}: applied for recognition of 1. leaving certificate, month
+- {l1anerno}: not applied for 1. recognition, reason
+- {l1bes}: application process not yet finished
+- {l1besj}: decision on 1. recognition/rejection, year
+- {l1besm}: decision on 1. recognition/rejection, month
+- {l1inst}: institution responsible for recognition 1. leaving certificate
+- {l1naq1}: 1. decision suggests further qualification
+- {l1naq2}: 1. further qualification completed
+- {l1naq3}: 1. further qualification provider
+- {l1resul}: result recognition 1. leaving certificate
+- {l2ab17}: leaving certificate 2. training/qualification
+- {l2aner}: applied for recognition of 2. leaving certificate
+- {l2anerab}: 2. recognition equals leaving certificate/university degree
+- {l2anerj}: applied for recognition of 2. leaving certificate, year
+- {l2anerm}: applied for recognition of 2. leaving certificate, month
+- {l2anerno}: not applied for 2. recognition, reason
+- {l2bes}: application process not yet finished
+- {l2besj}: decision on 2. recognition/rejection, year
+- {l2besm}: decision on 2. recognition/rejection, month
+- {l2inst}: institution responsible for recognition 2. leaving certificate
+- {l2naq1}: 2. decision suggests further qualification
+- {l2naq2}: 2. further qualification completed
+- {l2naq3}: 2. further qualification provider
+- {l2resul}: result recognition 2. leaving certificate
+- {l3ab17}: leaving certificate 3. training/qualification
+- {l3aner}: applied for recognition of 3. leaving certificate
+- {l3anerab}: 3. recognition equals leaving certificate/university degree
+- {l3anerj}: applied for recognition of 3. leaving certificate, year
+- {l3anerm}: applied for recognition of 3. leaving certificate, month
+- {l3anerno}: not applied for 3. recognition, reason
+- {l3bes}: application process not yet finished
+- {l3besj}: decision on 3. recognition/rejection, year
+- {l3besm}: decision on 3. recognition/rejection, month
+- {l3inst}: institution responsible for recognition 3. leaving certificate
+- {l3naq1}: 3. decision suggests further qualification
+- {l3naq2}: 3. further qualification completed
+- {l3naq3}: 3. further qualification provider
+- {l3resul}: result recognition 3. leaving certificate
+- {l4ab17}: leaving certificate 4. training/qualification
+- {l4aner}: applied for recognition of 4. leaving certificate
+- {l4anerab}: 4. recognition equals leaving certificate/university degree
+- {l4anerj}: applied for recognition of 4. leaving certificate, year
+- {l4anerm}: applied for recognition of 4. leaving certificate, month
+- {l4anerno}: not applied for 4. recognition, reason
+- {l4bes}: application process not yet finished
+- {l4besj}: decision on 4. recognition/rejection, year
+- {l4besm}: decision on 4. recognition/rejection, month
+- {l4inst}: institution responsible for recognition 4. leaving certificate
+- {l4naq1}: 4. decision suggests further qualification
+- {l4naq2}: 4. further qualification completed
+- {l4naq3}: 4. further qualification provider
+- {l4resul}: result recognition 4. leaving certificate
+- {l5ab17}: leaving certificate 5. training/qualification
+- {l5aner}: applied for recognition of 5. leaving certificate
+- {l5anerab}: 5. recognition equals leaving certificate/university degree
+- {l5anerj}: applied for recognition of 5. leaving certificate, year
+- {l5anerm}: applied for recognition of 5. leaving certificate, month
+- {l5anerno}: not applied for 5. recognition, reason
+- {l5bes}: application process not yet finished
+- {l5besj}: decision on 5. recognition/rejection, year
+- {l5besm}: decision on 5. recognition/rejection, month
+- {l5inst}: institution responsible for recognition 5. leaving certificate
+- {l5naq1}: 5. decision suggests further qualification
+- {l5naq2}: 5. further qualification completed
+- {l5naq3}: 5. further qualification provider
+- {l5resul}: result recognition 5. leaving certificate
+- {l6ab17}: leaving certificate 6. training/qualification
+- {l6aner}: applied for recognition of 6. leaving certificate
+- {l6anerab}: 6. recognition equals leaving certificate/university degree
+- {l6anerj}: applied for recognition of 6. leaving certificate, year
+- {l6anerm}: applied for recognition of 6. leaving certificate, month
+- {l6anerno}: not applied for 6. recognition, reason
+- {l6bes}: application process not yet finished
+- {l6besj}: decision on 6. recognition/rejection, year
+- {l6besm}: decision on 6. recognition/rejection, month
+- {l6inst}: institution responsible for recognition 6. leaving certificate
+- {l6naq1}: 6. decision suggests further qualification
+- {l6naq2}: 6. further qualification completed
+- {l6naq3}: 6. further qualification provider
+- {l6resul}: result recognition 6. leaving certificate
+- {l7ab17}: leaving certificate 7. training/qualification
+- {l7aner}: applied for recognition of 7. leaving certificate
+- {l7anerab}: 7. recognition equals leaving certificate/university degree
+- {l7anerj}: applied for recognition of 7. leaving certificate, year
+- {l7anerm}: applied for recognition of 7. leaving certificate, month
+- {l7anerno}: not applied for 7. recognition, reason
+- {l7bes}: application process not yet finished
+- {l7besj}: decision on 7. recognition/rejection, year
+- {l7besm}: decision on 7. recognition/rejection, month
+- {l7inst}: institution responsible for recognition 7. leaving certificate
+- {l7naq1}: 7. decision suggests further qualification
+- {l7naq2}: 7. further qualification completed
+- {l7naq3}: 7. further qualification provider
+- {l7resul}: result recognition 7. leaving certificate
+- {l8ab17}: leaving certificate 8. training/qualification
+- {l8aner}: applied for recognition of 8. leaving certificate
+- {l8anerab}: 8. recognition equals leaving certificate/university degree
+- {l8anerj}: applied for recognition of 8. leaving certificate, year
+- {l8anerm}: applied for recognition of 8. leaving certificate, month
+- {l8anerno}: not applied for 8. recognition, reason
+- {l8bes}: application process not yet finished
+- {l8besj}: decision on 8. recognition/rejection, year
+- {l8besm}: decision on 8. recognition/rejection, month
+- {l8inst}: institution responsible for recognition 8. leaving certificate
+- {l8naq1}: 8. decision suggests further qualification
+- {l8naq2}: 8. further qualification completed
+- {l8naq3}: 8. further qualification provider
+- {l8resul}: result recognition 8. leaving certificate
+- {lab10}: training, study abroad
+- {lab11}: apprenticed
+- {lab11j}: in-house training at a company, year of completion
+- {lab12}: apprenticeship
+- {lab12j}: apprenticeship, year of completion
+- {lab13}: attend vocational school
+- {lab13j}: vocational school, year of completion
+- {lab141}: university/college rather practical
+- {lab141j}: university/college rather practical, year of degree
+- {lab142}: university/college rather theoretical
+- {lab142j}: university/college rather theoretical, year of degree
+- {lab143}: completed doctoral studies
+- {lab143j}: doctoral studies,year of completion
+- {lab15}: other education,training
+- {lab15j}: other training year of completion
+- {lab15ka}: training - item nonresponse
 
 ### interethnic contacts / segregation [ics]
 
-- {_2463_h_ics}: Are The Other Residents Your Country-Men
-- {_544_p_ics}: Contact To Germans
-- {hausl}: Foreigners Living In Residential Area
-- {item_3716}: Number Of Foreign Students
-- {item_4224}: Number Of Foreign Students, Last School Attended
-- {lsab10}: Foreigners in Last Class
-- {p1bekd}: Nationality Of First Person Befriended
-- {p1bekd1}: Friend Number 1: From The Same Country
-- {p2bekd}: Nationality Of Second Person Befriended
-- {p2bekd1}: Friend Number 2: From The Same Country
-- {p3bekd}: Nationality Of Third Person Befriended
-- {p3bekd1}: Friend Number 3: From The Same Country
-- {pbetr}: Foreigners in Company
-- {pfreun1}: Foreigners In Circle Of Friends
-- {pher1}: Visited Germans Previous Yr
-- {pher2}: Visited Foreigners Previous Yr
-- {pher3}: Received Visits from Germans Previous Yr
-- {pher4}: Received Visits from Foreigners Previous Yr
-- {plj0049}: Previous Class Had German Students
-- {plj0050}: Number Of Foreign Classmates
-- {pna02}: Visited Germans Previous Yr
-- {pna03}: Received Visits from Germans Previous Yr
+- {_2463_h_ics}: are the other residents your country-men
+- {_544_p_ics}: contact to germans
+- {hausl}: foreigners living in residential area
+- {item_3716}: number of foreign students
+- {item_4224}: number of foreign students, last school attended
+- {lsab10}: foreigners in last class
+- {p1bekd}: nationality of first person befriended
+- {p1bekd1}: friend number 1: from the same country
+- {p2bekd}: nationality of second person befriended
+- {p2bekd1}: friend number 2: from the same country
+- {p3bekd}: nationality of third person befriended
+- {p3bekd1}: friend number 3: from the same country
+- {pbetr}: foreigners in company
+- {pfreun1}: foreigners in circle of friends
+- {pher1}: visited germans previous yr
+- {pher2}: visited foreigners previous yr
+- {pher3}: received visits from germans previous yr
+- {pher4}: received visits from foreigners previous yr
+- {plj0049}: previous class had german students
+- {plj0050}: number of foreign classmates
+- {pna02}: visited germans previous yr
+- {pna03}: received visits from germans previous yr
 
 ### discrimination / attitude toward migrants [dis]
 
-- {pna09}: Disadvantages Due To Origin
-- {pna09b1}: Disadvantages Looking For a Appartment
-- {pna09b2}: Disadvantages Finding A Job
-- {pna09b3}: Disadvantages At Offices and Agencies
-- {pna09b4}: Disadvantages Police
-- {pna09b5}: Disadvantages School (In Germany)
-- {pna09b6}: Disadvantages Everyday Life
-- {pna09b7}: Disadvantages Workplace
-- {psor08}: Worried About Immigration To Germany
-- {psor09}: Worried About Hostility To Foreigners
+- {pna09}: disadvantages due to origin
+- {pna09b1}: disadvantages looking for a appartment
+- {pna09b2}: disadvantages finding a job
+- {pna09b3}: disadvantages at offices and agencies
+- {pna09b4}: disadvantages police
+- {pna09b5}: disadvantages school (in germany)
+- {pna09b6}: disadvantages everyday life
+- {pna09b7}: disadvantages workplace
+- {psor08}: worried about immigration to germany
+- {psor09}: worried about hostility to foreigners
 
 ## migration [mig]
 
@@ -281,603 +281,603 @@ label: integration, migration, transnationalization
 
 ### migration background [mib]
 
-- {lfluel}: Both Parents Came As Displaced Persons
-- {lgebd}: Location Place Of Birth
-- {lgebnr}: Born Outside Germany, No.
-- {lgrola1}: Country Of Origin Grandpartens: Italy
-- {lgrola2}: Country Of Origin Grandpartens: Spain
-- {lgrola3}: Country Of Origin Grandpartens: Greece
-- {lgrola4}: Country Of Origin Grandpartens:
-- {lgrola5}: Country Of Origin Grandpartens: Turkey
-- {lgrozug}: At Least One Grandparent From Italy etc.
-- {lm03a}: Mother Born In Germany
-- {lm03bnr}: Country of Birth mother Abroad, no.
-- {lm03c}: Year Mother Moved To Germany
-- {lv03a}: Father Born In Germany
-- {lv03bnr}: Country of Birth Father Abroad, No.
-- {lv03c}: Year Father Moved To Germany
-- {pstaelt}: Both Parents Born In Germany
+- {lfluel}: both parents came as displaced persons
+- {lgebd}: location place of birth
+- {lgebnr}: born outside germany, no.
+- {lgrola1}: country of origin grandpartens: italy
+- {lgrola2}: country of origin grandpartens: spain
+- {lgrola3}: country of origin grandpartens: greece
+- {lgrola4}: country of origin grandpartens:
+- {lgrola5}: country of origin grandpartens: turkey
+- {lgrozug}: at least one grandparent from italy etc.
+- {lm03a}: mother born in germany
+- {lm03bnr}: country of birth mother abroad, no.
+- {lm03c}: year mother moved to germany
+- {lv03a}: father born in germany
+- {lv03bnr}: country of birth father abroad, no.
+- {lv03c}: year father moved to germany
+- {pstaelt}: both parents born in germany
 
 #### own nationality [ona]
 
-- {_1228_p_ona}: Nationality
-- {_1508_p_ona}: Changed Nationality Since Prev.Year
-- {_1509_p_ona}: Nationality
-- {_2139_kind_ona}: Nationality
-- {_6505_p_ona}: Previous Nationality
-- {_6506_p_ona}: German Nationality Since When (Year)
-- {_924_p_ona}: Application For German Citizenship
-- {_925_p_ona}: Have Multiple Citizenships
-- {_pgen_pgnation}: Nationality
-- {hgruppe}: Group Member
-- {item_2140}: Month Of Birth
-- {item_2248}: Where From
-- {item_5375}: Have German Nationality?
-- {item_5376}: Have Second Nationality
+- {_1228_p_ona}: nationality
+- {_1508_p_ona}: changed nationality since prev.year
+- {_1509_p_ona}: nationality
+- {_2139_kind_ona}: nationality
+- {_6505_p_ona}: previous nationality
+- {_6506_p_ona}: german nationality since when (year)
+- {_924_p_ona}: application for german citizenship
+- {_925_p_ona}: have multiple citizenships
+- {_pgen_pgnation}: nationality
+- {hgruppe}: group member
+- {item_2140}: month of birth
+- {item_2248}: where from
+- {item_5375}: have german nationality?
+- {item_5376}: have second nationality
 - {item_5377}: second nationality (code)
-- {item_5378}: German nationality since birth or applied for later
+- {item_5378}: german nationality since birth or applied for later
 - {item_5379}: which nationality (code)
 - {item_5505}: nationality
-- {item_5903}: German Nationality
+- {item_5903}: german nationality
 - {item_5904}: other nationality
 - {item_5905}: mentioned other nationality
-- {item_7197}: German nationality since
-- {item_7198}: Which Nationality (Code)
-- {plj0013}: Nationality
-- {pnat}: Nationality
-- {pnat0}: Nationality
-- {pnat02}: Applied for German Citizenship
-- {pnat03}: Apply For German Citizenship In Addition
-- {pnatnr}: Nationality
-- {psta1}: German Nationality
-- {psta2}: 2. Nationality
-- {psta2nr}: Country of 2. Nationality
-- {psta3}: German Nationality Since When
-- {psta3nr}: Previous Citizenship No.
-- {psta4}: Citizenship Since Year
-- {ypnat}: Nationality
+- {item_7197}: german nationality since
+- {item_7198}: which nationality (code)
+- {plj0013}: nationality
+- {pnat}: nationality
+- {pnat0}: nationality
+- {pnat02}: applied for german citizenship
+- {pnat03}: apply for german citizenship in addition
+- {pnatnr}: nationality
+- {psta1}: german nationality
+- {psta2}: 2. nationality
+- {psta2nr}: country of 2. nationality
+- {psta3}: german nationality since when
+- {psta3nr}: previous citizenship no.
+- {psta4}: citizenship since year
+- {ypnat}: nationality
 
 #### broad definition of migration background [bmi]
 
-- {_1229_p_bmi}: Since when in East,West Germany ... Filter
-- {_1230_p_bmi}: Since when in East,West Germany ... Year
-- {_1231_p_bmi}: Area Of Origin
-- {_923_p_bmi}: Emigrant Of German Descent
-- {_pequiv_d11103}: Race of HH Head
-- {_pequiv_d11112ll}: Race of individual
-- {corigin}: Country Of Origin
-- {germborn}: Born In Germany
-- {immiyear}: Year Moved To Germany
-- {item_2249}: Country Born In
-- {item_3378}: BI: Immigration Group
-- {item_3383}: BI: Already Had Family In Country
-- {item_3432}: Nationality HH-Head
-- {item_3900}: Nationality of Father
-- {item_3901}: Nationality of Mother
-- {item_5371}: born in Germany
-- {item_5372}: Country Of Birth
-- {item_5373}: Migrant To Germany
-- {item_5374}: Status Upon Migration To Germany
-- {item_5381}: Mother Tongue German: Both Parents
-- {migback}: Migration background
-- {miginfo}: Information source of MIGBACK
-- {plj0004}: Year Moved To Germany
-- {plj0005}: Month Moved To Germany
-- {pmusp1}: Mother Tongue German: Both Parents
-- {pnat01}: Born In Germany
-- {psta5}: 1984 Already In Germany
-- {psta6}: Born In Germany
+- {_1229_p_bmi}: since when in east,west germany ... filter
+- {_1230_p_bmi}: since when in east,west germany ... year
+- {_1231_p_bmi}: area of origin
+- {_923_p_bmi}: emigrant of german descent
+- {_pequiv_d11103}: race of hh head
+- {_pequiv_d11112ll}: race of individual
+- {corigin}: country of origin
+- {germborn}: born in germany
+- {immiyear}: year moved to germany
+- {item_2249}: country born in
+- {item_3378}: bi: immigration group
+- {item_3383}: bi: already had family in country
+- {item_3432}: nationality hh-head
+- {item_3900}: nationality of father
+- {item_3901}: nationality of mother
+- {item_5371}: born in germany
+- {item_5372}: country of birth
+- {item_5373}: migrant to germany
+- {item_5374}: status upon migration to germany
+- {item_5381}: mother tongue german: both parents
+- {migback}: migration background
+- {miginfo}: information source of migback
+- {plj0004}: year moved to germany
+- {plj0005}: month moved to germany
+- {pmusp1}: mother tongue german: both parents
+- {pnat01}: born in germany
+- {psta5}: 1984 already in germany
+- {psta6}: born in germany
 
 ### inner-german migration [igm]
 
-- {_533_p_igm}: Ties To Local Area
-- {_534_p_igm}: Move Away Due To Family Or Job
-- {_535_p_igm}: Move To Another Part Of Germany
-- {_987_p_igm}: Standard Of Living Here In The Region
-- {_988_p_igm}: Standard Of Living In The Old FRG
-- {_989_p_igm}: Standard Of Living In The Old GDR
-- {hlj0001}: Move Planned To The FRG
-- {hlj0002}: Relatives Or Friends In The FRG
-- {plj0032}: No Relatives,Friends Moved From GDR
-- {plj0033}: Close Relatives Moved To FRG
-- {plj0034}: Close Friends Moved To FRG
-- {plj0035}: Acquaintenences Moved To FRG
-- {plj0036}: Know Persons Who Moved To The West
-- {pzug01}: Ties To Local Area
-- {pzug02}: Move Away Due To Family Or Job
-- {pzug03}: Move To Another Part Of Germany
+- {_533_p_igm}: ties to local area
+- {_534_p_igm}: move away due to family or job
+- {_535_p_igm}: move to another part of germany
+- {_987_p_igm}: standard of living here in the region
+- {_988_p_igm}: standard of living in the old frg
+- {_989_p_igm}: standard of living in the old gdr
+- {hlj0001}: move planned to the frg
+- {hlj0002}: relatives or friends in the frg
+- {plj0032}: no relatives,friends moved from gdr
+- {plj0033}: close relatives moved to frg
+- {plj0034}: close friends moved to frg
+- {plj0035}: acquaintenences moved to frg
+- {plj0036}: know persons who moved to the west
+- {pzug01}: ties to local area
+- {pzug02}: move away due to family or job
+- {pzug03}: move to another part of germany
 
 ### migration history [mgh]
 
-- {item_3379}: BI: Residence Status
-- {item_3380}: BI: Refugee Residence Y,N
-- {item_3381}: BI: Refugee Residence: Weeks
-- {item_3382}: BI: Refugee Residence: Months
-- {item_3384}: BI: Contacts With Family In Germany
-- {item_3385}: BI: Moved To Same City,Town As Family
-- {item_3386}: BI: Reason Migrate: Better
-- {item_3387}: BI: Reason Migrate: Money
-- {item_3388}: BI: Reason Migrate: Freedom
-- {item_3389}: BI: Reason Migrate: Family
-- {item_3390}: BI: Reason Migrate: Poor
-- {item_3391}: BI: Reason Migrate: War
-- {item_3392}: BI: Reason Migrate: Just So
-- {item_3393}: BI: Reason Migrate: Other
-- {item_3394}: BI: Expectations In Germany
-- {item_3395}: BI: Expectations: Find Apt
-- {item_3396}: BI: Expectations: Accepted by Coworker
-- {item_3397}: BI: Expectations: Accepted by Neighbor
-- {item_4222}: Country  Last Attended School
-- {item_5380}: Status Residence Permit
-- {item_7744}: After 1. Stay Abroad to Germany, Year
-- {item_7745}: After 1. Stay Abroad to Germany, Month
-- {item_7753}: After 2. Stay Abroad to Germany, Year
-- {item_7754}: After 2. Stay Abroad to Germany, Month
-- {item_7762}: After 3. Stay Abroad to Germany, Year
-- {item_7763}: After 3. Stay Abroad to Germany, Month
-- {item_7771}: After 4. Stay Abroad to Germany, Year
-- {item_7772}: After 4. Stay Abroad to Germany, Month
-- {item_7780}: After 5. Stay Abroad to Germany, Year
-- {item_7781}: After 5. Stay Abroad to Germany, Month
-- {item_7789}: After 6. Stay Abroad to Germany, Year
-- {item_7790}: After 6. Stay Abroad to Germany, Month
-- {item_7798}: After 7. Stay Abroad to Germany, Year
-- {item_7799}: After 7. Stay Abroad to Germany, Month
-- {item_7807}: After 8. Stay Abroad to Germany, Year
-- {item_7808}: After 8. Stay Abroad to Germany, Month
-- {item_7816}: After 9. Stay Abroad to Germany, Year
-- {item_7817}: After 9. Stay Abroad to Germany, Month
-- {item_7825}: After 10. Stay Abroad to Germany, Year
-- {item_7826}: After 10. Stay Abroad to Germany, Month
-- {item_7834}: After 11. Stay Abroad to Germany, Year
-- {item_7835}: After 11. Stay Abroad to Germany, Month
-- {item_7843}: After 12. Stay Abroad to Germany, Year
-- {item_7844}: After 12. Stay Abroad to Germany, Month
-- {item_7852}: After 13. Stay Abroad to Germany, Year
-- {item_7853}: After 13. Stay Abroad to Germany, Month
-- {item_7861}: After 14. Stay Abroad to Germany, Year
-- {item_7862}: After 14. Stay Abroad to Germany, Month
-- {item_7870}: After 15. Stay Abroad to Germany, Year
-- {item_7871}: After 15. Stay Abroad to Germany, Month
-- {item_8518}: Spell number
-- {item_8519}: Total number of spells per person
-- {item_8520}: Month of migration – Imputed
-- {item_8521}: Begin of stay, year and month
-- {item_8522}: Migration to Germany and other countries under which way
-- {item_8523}: Migration to Germany and other countries under which other way
-- {item_8524}: Migration to Germany under which other way
-- {item_8525}: Migration to another country under which other way
-- {item_8526}: Year of the last migration to Germany
-- {item_8527}: Length of stay in months
-- {item_8528}: Imputation flag
-- {l10a01j}: 10. Stay Abroad, Year
-- {l10a01m}: 10. Stay Abroad, Month
-- {l10a01w}: 10. Stay Abroad, In What Way
-- {l10a02}: After 10. Stay Abroad Via Other Country
-- {l10a02nr}: After 10. Stay Abroad Country No.
-- {l10a03}: After 10. Stay Abroad Moved Away Again
-- {l10a03nr}: 11. Stay Abroad, Country No.
-- {l10z02}: 10 . Migration from Germany, yes/no
-- {l10z02j}: 10 . Migration from Germany, Year
-- {l10z02m}: 10 . Migration from Germany, Month
-- {l10z02nr}: 10 . Migration to Country, No.
-- {l10z02w}: 10 . Migration from Germany, In What Way
-- {l10z03}: After 10 . Migration Via Other Country
-- {l10z03e}: After 10 . Migration to Germany Employment Group
-- {l10z03j}: After 10 . Migration to Germany, Year
-- {l10z03m}: After 10 . Migration to Germany, Month
-- {l10z03nr}: After 10 . Migration to Country, No.
-- {l10z03w}: After 10 . Migration to Germany, In What Way
-- {l11a01j}: 11. Stay Abroad, Year
-- {l11a01m}: 11. Stay Abroad, Month
-- {l11a01w}: 11. Stay Abroad, In What Way
-- {l11a02}: After 11. Stay Abroad Via Other Country
-- {l11a02nr}: After 11. Stay Abroad Country No.
-- {l11a03}: After 11. Stay Abroad Moved Away Again
-- {l11a03nr}: 12. Stay Abroad, Country No.
-- {l11z02}: 11 . Migration from Germany, yes/no
-- {l11z02j}: 11 . Migration from Germany, Year
-- {l11z02m}: 11 . Migration from Germany, Month
-- {l11z02nr}: 11 . Migration to Country, No.
-- {l11z02w}: 11 . Migration from Germany, In What Way
-- {l11z03}: After 11 . Migration Via Other Country
-- {l11z03e}: After 11 . Migration to Germany Employment Group
-- {l11z03j}: After 11 . Migration to Germany, Year
-- {l11z03m}: After 11 . Migration to Germany, Month
-- {l11z03nr}: After 11 . Migration to Country, No.
-- {l11z03w}: After 11 . Migration to Germany, In What Way
-- {l12a01j}: 12. Stay Abroad, Year
-- {l12a01m}: 12. Stay Abroad, Month
-- {l12a01w}: 12. Stay Abroad, In What Way
-- {l12a02}: After 12. Stay Abroad Via Other Country
-- {l12a02nr}: After 12. Stay Abroad Country No.
-- {l12a03}: After 12. Stay Abroad Moved Away Again
-- {l12a03nr}: 13. Stay Abroad, Country No.
-- {l12z02}: 12 . Migration from Germany, yes/no
-- {l12z02j}: 12 . Migration from Germany, Year
-- {l12z02m}: 12 . Migration from Germany, Month
-- {l12z02nr}: 12 . Migration to Country, No.
-- {l12z02w}: 12 . Migration from Germany, In What Way
-- {l12z03}: After 12 . Migration Via Other Country
-- {l12z03e}: After 12 . Migration to Germany Employment Group
-- {l12z03j}: After 12 . Migration to Germany, Year
-- {l12z03m}: After 12 . Migration to Germany, Month
-- {l12z03nr}: After 12 . Migration to Country, No.
-- {l12z03w}: After 12 . Migration to Germany, In What Way
-- {l13a01j}: 13. Stay Abroad, Year
-- {l13a01m}: 13. Stay Abroad, Month
-- {l13a01w}: 13. Stay Abroad, In What Way
-- {l13a02}: After 13. Stay Abroad Via Other Country
-- {l13a02nr}: After 13. Stay Abroad Country No.
-- {l13a03}: After 13. Stay Abroad Moved Away Again
-- {l13a03nr}: 14. Stay Abroad, Country No.
-- {l13z02}: 13 . Migration from Germany, yes/no
-- {l13z02j}: 13 . Migration from Germany, Year
-- {l13z02m}: 13 . Migration from Germany, Month
-- {l13z02nr}: 13 . Migration to Country, No.
-- {l13z02w}: 13 . Migration from Germany, In What Way
-- {l13z03}: After 13 . Migration Via Other Country
-- {l13z03e}: After 13 . Migration to Germany Employment Group
-- {l13z03j}: After 13 . Migration to Germany, Year
-- {l13z03m}: After 13 . Migration to Germany, Month
-- {l13z03nr}: After 13 . Migration to Country, No.
-- {l13z03w}: After 13 . Migration to Germany, In What Way
-- {l14a01j}: 14. Stay Abroad, Year
-- {l14a01m}: 14. Stay Abroad, Month
-- {l14a01w}: 14. Stay Abroad, In What Way
-- {l14a02}: After 14. Stay Abroad Via Other Country
-- {l14a02nr}: After 14. Stay Abroad Country No.
-- {l14a03}: After 14. Stay Abroad Moved Away Again
-- {l14a03nr}: 15. Stay Abroad, Country No.
-- {l14z02}: 14 . Migration from Germany, yes/no
-- {l14z02j}: 14 . Migration from Germany, Year
-- {l14z02m}: 14 . Migration from Germany, Month
-- {l14z02nr}: 14 . Migration to Country, No.
-- {l14z02w}: 14 . Migration from Germany, In What Way
-- {l14z03}: After 14 . Migration Via Other Country
-- {l14z03e}: After 14 . Migration to Germany Employment Group
-- {l14z03j}: After 14 . Migration to Germany, Year
-- {l14z03m}: After 14 . Migration to Germany, Month
-- {l14z03nr}: After 14 . Migration to Country, No.
-- {l14z03w}: After 14 . Migration to Germany, In What Way
-- {l15a01j}: 15. Stay Abroad, Year
-- {l15a01m}: 15. Stay Abroad, Month
-- {l15a01w}: 15. Stay Abroad, In What Way
-- {l15a02}: After 15. Stay Abroad Via Other Country
-- {l15a02nr}: After 15. Stay Abroad Country No.
-- {l15a03}: After 15. Stay Abroad Moved Away Again
-- {l15a03nr}: 16. Stay Abroad Country No.
-- {l15z02}: 15 . Migration from Germany, yes/no
-- {l15z02j}: 15 . Migration from Germany, Year
-- {l15z02m}: 15 . Migration from Germany, Month
-- {l15z02nr}: 15 . Migration to Country, No.
-- {l15z02w}: 15 . Migration from Germany, In What Way
-- {l15z03}: After 15 . Migration Via Other Country
-- {l15z03e}: After 15 . Migration to Germany Employment Group
-- {l15z03j}: After 15 . Migration to Germany, Year
-- {l15z03m}: After 15 . Migration to Germany, Month
-- {l15z03nr}: After 15 . Migration to Country, No.
-- {l15z03w}: After 15 . Migration to Germany, In What Way
-- {l1a01j}: 1. Stay Abroad, Year
-- {l1a01m}: 1. Stay Abroad, Month
-- {l1a01nr}: 1. Stay Abroad, Country No.
-- {l1a01w}: 1. Stay Abroad, In What Way
-- {l1a02}: After 1. Stay Abroad Via Other Country
-- {l1a02nr}: After 1. Stay Abroad Country No.
-- {l1a03}: After 1. Stay Abroad Moved Away Again
-- {l1a03nr}: 2. Stay Abroad, Country No.
-- {l1z01}: 1. Migration to Germany or Other Country
-- {l1z01e}: 1. Migration to Germany Employment Group
-- {l1z01j}: 1. Migration from Country of Birth, Year
-- {l1z01m}: 1. Migration from Country of Birth, Month
-- {l1z01nr}: 1. Migration from Germany Country, No.
-- {l1z01w}: 1. Migration to Germany, In What Way
-- {l1z02}: 1. Migration from Germany, yes/no
-- {l1z02j}: 1. Migration from Germany, Year
-- {l1z02m}: 1. Migration from Germany, Month
-- {l1z02nr}: 1. Migration to Country, No.
-- {l1z02w}: 1. Migration from Germany, In What Way
-- {l1z03}: After 1. Migration Via Other Country
-- {l1z03e}: After 1. Migration to Germany Employment Group
-- {l1z03j}: After 1. Migration to Germany, Year
-- {l1z03m}: After 1. Migration to Germany, Month
-- {l1z03nr}: After 1. Migration to Country, No.
-- {l1z03w}: After 1. Migration to Germany, In What Way
-- {l2a01j}: 2. Stay Abroad, Year
-- {l2a01m}: 2. Stay Abroad, Month
-- {l2a01w}: 2. Stay Abroad, In What Way
-- {l2a02}: After 2. Stay Abroad Via Other Country
-- {l2a02nr}: After 2. Stay Abroad Country No.
-- {l2a03}: After 2. Stay Abroad Moved Away Again
-- {l2a03nr}: 3. Stay Abroad, Country No.
-- {l2z02}: 2. Migration from Germany, yes/no
-- {l2z02j}: 2. Migration from Germany, Year
-- {l2z02m}: 2. Migration from Germany, Month
-- {l2z02nr}: 2. Migration to Country, No.
-- {l2z02w}: 2. Migration from Germany, In What Way
-- {l2z03}: After 2. Migration Via Other Country
-- {l2z03e}: After 2. Migration to Germany Employment Group
-- {l2z03j}: After 2. Migration to Germany, Year
-- {l2z03m}: After 2. Migration to Germany, Month
-- {l2z03nr}: After 2. Migration to Country, No.
-- {l2z03w}: After 2. Migration to Germany, In What Way
-- {l3a01j}: 3. Stay Abroad, Year
-- {l3a01m}: 3. Stay Abroad, Month
-- {l3a01w}: 3. Stay Abroad, In What Way
-- {l3a02}: After 3. Stay Abroad Via Other Country
-- {l3a02nr}: After 3. Stay Abroad Country No.
-- {l3a03}: After 3. Stay Abroad Moved Away Again
-- {l3a03nr}: 4. Stay Abroad, Country No.
-- {l3z02}: 3. Migration from Germany, yes/no
-- {l3z02j}: 3. Migration from Germany, Year
-- {l3z02m}: 3. Migration from Germany, Month
-- {l3z02nr}: 3. Migration to Country, No.
-- {l3z02w}: 3. Migration from Germany, In What Way
-- {l3z03}: After 3. Migration Via Other Country
-- {l3z03e}: After 3. Migration to Germany Employment Group
-- {l3z03j}: After 3. Migration to Germany, Year
-- {l3z03m}: After 3. Migration to Germany, Month
-- {l3z03nr}: After 3. Migration to Country, No.
-- {l3z03w}: After 3. Migration to Germany, In What Way
-- {l4a01j}: 4. Stay Abroad, Year
-- {l4a01m}: 4. Stay Abroad, Month
-- {l4a01w}: 4. Stay Abroad, In What Way
-- {l4a02}: After 4. Stay Abroad Via Other Country
-- {l4a02nr}: After 4. Stay Abroad Country No.
-- {l4a03}: After 4. Stay Abroad Moved Away Again
-- {l4a03nr}: 5. Stay Abroad, Country No.
-- {l4z02}: 4 . Migration from Germany, yes/no
-- {l4z02j}: 4 . Migration from Germany, Year
-- {l4z02m}: 4 . Migration from Germany, Month
-- {l4z02nr}: 4 . Migration to Country, No.
-- {l4z02w}: 4 . Migration from Germany, In What Way
-- {l4z03}: After 4 . Migration Via Other Country
-- {l4z03e}: After 4 . Migration to Germany Employment Group
-- {l4z03j}: After 4 . Migration to Germany, Year
-- {l4z03m}: After 4 . Migration to Germany, Month
-- {l4z03nr}: After 4 . Migration to Country, No.
-- {l4z03w}: After 4 . Migration to Germany, In What Way
-- {l5a01j}: 5. Stay Abroad, Year
-- {l5a01m}: 5. Stay Abroad, Month
-- {l5a01w}: 5. Stay Abroad, In What Way
-- {l5a02}: After 5. Stay Abroad Via Other Country
-- {l5a02nr}: After 5. Stay Abroad Country No.
-- {l5a03}: After 5. Stay Abroad Moved Away Again
-- {l5a03nr}: 6. Stay Abroad, Country No.
-- {l5z02}: 5 . Migration from Germany, yes/no
-- {l5z02j}: 5 . Migration from Germany, Year
-- {l5z02m}: 5 . Migration from Germany, Month
-- {l5z02nr}: 5 . Migration to Country, No.
-- {l5z02w}: 5 . Migration from Germany, In What Way
-- {l5z03}: After 5 . Migration Via Other Country
-- {l5z03e}: After 5 . Migration to Germany Employment Group
-- {l5z03j}: After 5 . Migration to Germany, Year
-- {l5z03m}: After 5 . Migration to Germany, Month
-- {l5z03nr}: After 5 . Migration to Country, No.
-- {l5z03w}: After 5 . Migration to Germany, In What Way
-- {l6a01j}: 6. Stay Abroad, Year
-- {l6a01m}: 6. Stay Abroad, Month
-- {l6a01w}: 6. Stay Abroad, In What Way
-- {l6a02}: After 6. Stay Abroad Via Other Country
-- {l6a02nr}: After 6. Stay Abroad Country No.
-- {l6a03}: After 6. Stay Abroad Moved Away Again
-- {l6a03nr}: 7. Stay Abroad, Country No.
-- {l6z02}: 6 . Migration from Germany, yes/no
-- {l6z02j}: 6 . Migration from Germany, Year
-- {l6z02m}: 6 . Migration from Germany, Month
-- {l6z02nr}: 6 . Migration to Country, No.
-- {l6z02w}: 6 . Migration from Germany, In What Way
-- {l6z03}: After 6 . Migration Via Other Country
-- {l6z03e}: After 6 . Migration to Germany Employment Group
-- {l6z03j}: After 6 . Migration to Germany, Year
-- {l6z03m}: After 6 . Migration to Germany, Month
-- {l6z03nr}: After 6 . Migration to Country, No.
-- {l6z03w}: After 6 . Migration to Germany, In What Way
-- {l7a01j}: 7. Stay Abroad, Year
-- {l7a01m}: 7. Stay Abroad, Month
-- {l7a01w}: 7. Stay Abroad, In What Way
-- {l7a02}: After 7. Stay Abroad Via Other Country
-- {l7a02nr}: After 7. Stay Abroad Country No.
-- {l7a03}: After 7. Stay Abroad Moved Away Again
-- {l7a03nr}: 8. Stay Abroad, Country No.
-- {l7z02}: 7 . Migration from Germany, yes/no
-- {l7z02j}: 7 . Migration from Germany, Year
-- {l7z02m}: 7 . Migration from Germany, Month
-- {l7z02nr}: 7 . Migration to Country, No.
-- {l7z02w}: 7 . Migration from Germany, In What Way
-- {l7z03}: After 7 . Migration Via Other Country
-- {l7z03e}: After 7 . Migration to Germany Employment Group
-- {l7z03j}: After 7 . Migration to Germany, Year
-- {l7z03m}: After 7 . Migration to Germany, Month
-- {l7z03nr}: After 7 . Migration to Country, No.
-- {l7z03w}: After 7 . Migration to Germany, In What Way
-- {l8a01j}: 8. Stay Abroad, Year
-- {l8a01m}: 8. Stay Abroad, Month
-- {l8a01w}: 8. Stay Abroad, In What Way
-- {l8a02}: After 8. Stay Abroad Via Other Country
-- {l8a02nr}: After 8. Stay Abroad Country No.
-- {l8a03}: After 8. Stay Abroad Moved Away Again
-- {l8a03nr}: 9. Stay Abroad, Country No.
-- {l8z02}: 8 . Migration from Germany, yes/no
-- {l8z02j}: 8 . Migration from Germany, Year
-- {l8z02m}: 8 . Migration from Germany, Month
-- {l8z02nr}: 8 . Migration to Country, No.
-- {l8z02w}: 8 . Migration from Germany, In What Way
-- {l8z03}: After 8 . Migration Via Other Country
-- {l8z03e}: After 8 . Migration to Germany Employment Group
-- {l8z03j}: After 8 . Migration to Germany, Year
-- {l8z03m}: After 8 . Migration to Germany, Month
-- {l8z03nr}: After 8 . Migration to Country, No.
-- {l8z03w}: After 8 . Migration to Germany, In What Way
-- {l9a01j}: 9. Stay Abroad, Year
-- {l9a01m}: 9. Stay Abroad, Month
-- {l9a01w}: 9. Stay Abroad, In What Way
-- {l9a02}: After 9. Stay Abroad Via Other Country
-- {l9a02nr}: After 9. Stay Abroad Country No.
-- {l9a03}: After 9. Stay Abroad Moved Away Again
-- {l9a03nr}: 10. Stay Abroad, Country No.
-- {l9z02}: 9 . Migration from Germany, yes/no
-- {l9z02j}: 9 . Migration from Germany, Year
-- {l9z02m}: 9 . Migration from Germany, Month
-- {l9z02nr}: 9 . Migration to Country, No.
-- {l9z02w}: 9 . Migration from Germany, In What Way
-- {l9z03}: After 9 . Migration Via Other Country
-- {l9z03e}: After 9 . Migration to Germany Employment Group
-- {l9z03j}: After 9 . Migration to Germany, Year
-- {l9z03m}: After 9 . Migration to Germany, Month
-- {l9z03nr}: After 9 . Migration to Country, No.
-- {l9z03w}: After 9 . Migration to Germany, In What Way
-- {lsaison}: Short Stay
-- {lstat}: Residence Status
-- {lzug95}: Migrationt before, later than 1995
-- {lzugunt}: Got Support fro Migration
-- {pdbez1}: Relationship Existed Before Migration
-- {pdbez2}: Steady Relationship Before Migration
-- {pdbez3}: Steady Relationship Continued After Migration
-- {pdbez4}: Who Moved to Germany First, Together
-- {pdbez5}: Partner Migration Year
-- {pdbez6}: Who Started Working First
-- {pdbez7}: Time Partner Employed
+- {item_3379}: bi: residence status
+- {item_3380}: bi: refugee residence y,n
+- {item_3381}: bi: refugee residence: weeks
+- {item_3382}: bi: refugee residence: months
+- {item_3384}: bi: contacts with family in germany
+- {item_3385}: bi: moved to same city,town as family
+- {item_3386}: bi: reason migrate: better
+- {item_3387}: bi: reason migrate: money
+- {item_3388}: bi: reason migrate: freedom
+- {item_3389}: bi: reason migrate: family
+- {item_3390}: bi: reason migrate: poor
+- {item_3391}: bi: reason migrate: war
+- {item_3392}: bi: reason migrate: just so
+- {item_3393}: bi: reason migrate: other
+- {item_3394}: bi: expectations in germany
+- {item_3395}: bi: expectations: find apt
+- {item_3396}: bi: expectations: accepted by coworker
+- {item_3397}: bi: expectations: accepted by neighbor
+- {item_4222}: country  last attended school
+- {item_5380}: status residence permit
+- {item_7744}: after 1. stay abroad to germany, year
+- {item_7745}: after 1. stay abroad to germany, month
+- {item_7753}: after 2. stay abroad to germany, year
+- {item_7754}: after 2. stay abroad to germany, month
+- {item_7762}: after 3. stay abroad to germany, year
+- {item_7763}: after 3. stay abroad to germany, month
+- {item_7771}: after 4. stay abroad to germany, year
+- {item_7772}: after 4. stay abroad to germany, month
+- {item_7780}: after 5. stay abroad to germany, year
+- {item_7781}: after 5. stay abroad to germany, month
+- {item_7789}: after 6. stay abroad to germany, year
+- {item_7790}: after 6. stay abroad to germany, month
+- {item_7798}: after 7. stay abroad to germany, year
+- {item_7799}: after 7. stay abroad to germany, month
+- {item_7807}: after 8. stay abroad to germany, year
+- {item_7808}: after 8. stay abroad to germany, month
+- {item_7816}: after 9. stay abroad to germany, year
+- {item_7817}: after 9. stay abroad to germany, month
+- {item_7825}: after 10. stay abroad to germany, year
+- {item_7826}: after 10. stay abroad to germany, month
+- {item_7834}: after 11. stay abroad to germany, year
+- {item_7835}: after 11. stay abroad to germany, month
+- {item_7843}: after 12. stay abroad to germany, year
+- {item_7844}: after 12. stay abroad to germany, month
+- {item_7852}: after 13. stay abroad to germany, year
+- {item_7853}: after 13. stay abroad to germany, month
+- {item_7861}: after 14. stay abroad to germany, year
+- {item_7862}: after 14. stay abroad to germany, month
+- {item_7870}: after 15. stay abroad to germany, year
+- {item_7871}: after 15. stay abroad to germany, month
+- {item_8518}: spell number
+- {item_8519}: total number of spells per person
+- {item_8520}: month of migration – imputed
+- {item_8521}: begin of stay, year and month
+- {item_8522}: migration to germany and other countries under which way
+- {item_8523}: migration to germany and other countries under which other way
+- {item_8524}: migration to germany under which other way
+- {item_8525}: migration to another country under which other way
+- {item_8526}: year of the last migration to germany
+- {item_8527}: length of stay in months
+- {item_8528}: imputation flag
+- {l10a01j}: 10. stay abroad, year
+- {l10a01m}: 10. stay abroad, month
+- {l10a01w}: 10. stay abroad, in what way
+- {l10a02}: after 10. stay abroad via other country
+- {l10a02nr}: after 10. stay abroad country no.
+- {l10a03}: after 10. stay abroad moved away again
+- {l10a03nr}: 11. stay abroad, country no.
+- {l10z02}: 10 . migration from germany, yes/no
+- {l10z02j}: 10 . migration from germany, year
+- {l10z02m}: 10 . migration from germany, month
+- {l10z02nr}: 10 . migration to country, no.
+- {l10z02w}: 10 . migration from germany, in what way
+- {l10z03}: after 10 . migration via other country
+- {l10z03e}: after 10 . migration to germany employment group
+- {l10z03j}: after 10 . migration to germany, year
+- {l10z03m}: after 10 . migration to germany, month
+- {l10z03nr}: after 10 . migration to country, no.
+- {l10z03w}: after 10 . migration to germany, in what way
+- {l11a01j}: 11. stay abroad, year
+- {l11a01m}: 11. stay abroad, month
+- {l11a01w}: 11. stay abroad, in what way
+- {l11a02}: after 11. stay abroad via other country
+- {l11a02nr}: after 11. stay abroad country no.
+- {l11a03}: after 11. stay abroad moved away again
+- {l11a03nr}: 12. stay abroad, country no.
+- {l11z02}: 11 . migration from germany, yes/no
+- {l11z02j}: 11 . migration from germany, year
+- {l11z02m}: 11 . migration from germany, month
+- {l11z02nr}: 11 . migration to country, no.
+- {l11z02w}: 11 . migration from germany, in what way
+- {l11z03}: after 11 . migration via other country
+- {l11z03e}: after 11 . migration to germany employment group
+- {l11z03j}: after 11 . migration to germany, year
+- {l11z03m}: after 11 . migration to germany, month
+- {l11z03nr}: after 11 . migration to country, no.
+- {l11z03w}: after 11 . migration to germany, in what way
+- {l12a01j}: 12. stay abroad, year
+- {l12a01m}: 12. stay abroad, month
+- {l12a01w}: 12. stay abroad, in what way
+- {l12a02}: after 12. stay abroad via other country
+- {l12a02nr}: after 12. stay abroad country no.
+- {l12a03}: after 12. stay abroad moved away again
+- {l12a03nr}: 13. stay abroad, country no.
+- {l12z02}: 12 . migration from germany, yes/no
+- {l12z02j}: 12 . migration from germany, year
+- {l12z02m}: 12 . migration from germany, month
+- {l12z02nr}: 12 . migration to country, no.
+- {l12z02w}: 12 . migration from germany, in what way
+- {l12z03}: after 12 . migration via other country
+- {l12z03e}: after 12 . migration to germany employment group
+- {l12z03j}: after 12 . migration to germany, year
+- {l12z03m}: after 12 . migration to germany, month
+- {l12z03nr}: after 12 . migration to country, no.
+- {l12z03w}: after 12 . migration to germany, in what way
+- {l13a01j}: 13. stay abroad, year
+- {l13a01m}: 13. stay abroad, month
+- {l13a01w}: 13. stay abroad, in what way
+- {l13a02}: after 13. stay abroad via other country
+- {l13a02nr}: after 13. stay abroad country no.
+- {l13a03}: after 13. stay abroad moved away again
+- {l13a03nr}: 14. stay abroad, country no.
+- {l13z02}: 13 . migration from germany, yes/no
+- {l13z02j}: 13 . migration from germany, year
+- {l13z02m}: 13 . migration from germany, month
+- {l13z02nr}: 13 . migration to country, no.
+- {l13z02w}: 13 . migration from germany, in what way
+- {l13z03}: after 13 . migration via other country
+- {l13z03e}: after 13 . migration to germany employment group
+- {l13z03j}: after 13 . migration to germany, year
+- {l13z03m}: after 13 . migration to germany, month
+- {l13z03nr}: after 13 . migration to country, no.
+- {l13z03w}: after 13 . migration to germany, in what way
+- {l14a01j}: 14. stay abroad, year
+- {l14a01m}: 14. stay abroad, month
+- {l14a01w}: 14. stay abroad, in what way
+- {l14a02}: after 14. stay abroad via other country
+- {l14a02nr}: after 14. stay abroad country no.
+- {l14a03}: after 14. stay abroad moved away again
+- {l14a03nr}: 15. stay abroad, country no.
+- {l14z02}: 14 . migration from germany, yes/no
+- {l14z02j}: 14 . migration from germany, year
+- {l14z02m}: 14 . migration from germany, month
+- {l14z02nr}: 14 . migration to country, no.
+- {l14z02w}: 14 . migration from germany, in what way
+- {l14z03}: after 14 . migration via other country
+- {l14z03e}: after 14 . migration to germany employment group
+- {l14z03j}: after 14 . migration to germany, year
+- {l14z03m}: after 14 . migration to germany, month
+- {l14z03nr}: after 14 . migration to country, no.
+- {l14z03w}: after 14 . migration to germany, in what way
+- {l15a01j}: 15. stay abroad, year
+- {l15a01m}: 15. stay abroad, month
+- {l15a01w}: 15. stay abroad, in what way
+- {l15a02}: after 15. stay abroad via other country
+- {l15a02nr}: after 15. stay abroad country no.
+- {l15a03}: after 15. stay abroad moved away again
+- {l15a03nr}: 16. stay abroad country no.
+- {l15z02}: 15 . migration from germany, yes/no
+- {l15z02j}: 15 . migration from germany, year
+- {l15z02m}: 15 . migration from germany, month
+- {l15z02nr}: 15 . migration to country, no.
+- {l15z02w}: 15 . migration from germany, in what way
+- {l15z03}: after 15 . migration via other country
+- {l15z03e}: after 15 . migration to germany employment group
+- {l15z03j}: after 15 . migration to germany, year
+- {l15z03m}: after 15 . migration to germany, month
+- {l15z03nr}: after 15 . migration to country, no.
+- {l15z03w}: after 15 . migration to germany, in what way
+- {l1a01j}: 1. stay abroad, year
+- {l1a01m}: 1. stay abroad, month
+- {l1a01nr}: 1. stay abroad, country no.
+- {l1a01w}: 1. stay abroad, in what way
+- {l1a02}: after 1. stay abroad via other country
+- {l1a02nr}: after 1. stay abroad country no.
+- {l1a03}: after 1. stay abroad moved away again
+- {l1a03nr}: 2. stay abroad, country no.
+- {l1z01}: 1. migration to germany or other country
+- {l1z01e}: 1. migration to germany employment group
+- {l1z01j}: 1. migration from country of birth, year
+- {l1z01m}: 1. migration from country of birth, month
+- {l1z01nr}: 1. migration from germany country, no.
+- {l1z01w}: 1. migration to germany, in what way
+- {l1z02}: 1. migration from germany, yes/no
+- {l1z02j}: 1. migration from germany, year
+- {l1z02m}: 1. migration from germany, month
+- {l1z02nr}: 1. migration to country, no.
+- {l1z02w}: 1. migration from germany, in what way
+- {l1z03}: after 1. migration via other country
+- {l1z03e}: after 1. migration to germany employment group
+- {l1z03j}: after 1. migration to germany, year
+- {l1z03m}: after 1. migration to germany, month
+- {l1z03nr}: after 1. migration to country, no.
+- {l1z03w}: after 1. migration to germany, in what way
+- {l2a01j}: 2. stay abroad, year
+- {l2a01m}: 2. stay abroad, month
+- {l2a01w}: 2. stay abroad, in what way
+- {l2a02}: after 2. stay abroad via other country
+- {l2a02nr}: after 2. stay abroad country no.
+- {l2a03}: after 2. stay abroad moved away again
+- {l2a03nr}: 3. stay abroad, country no.
+- {l2z02}: 2. migration from germany, yes/no
+- {l2z02j}: 2. migration from germany, year
+- {l2z02m}: 2. migration from germany, month
+- {l2z02nr}: 2. migration to country, no.
+- {l2z02w}: 2. migration from germany, in what way
+- {l2z03}: after 2. migration via other country
+- {l2z03e}: after 2. migration to germany employment group
+- {l2z03j}: after 2. migration to germany, year
+- {l2z03m}: after 2. migration to germany, month
+- {l2z03nr}: after 2. migration to country, no.
+- {l2z03w}: after 2. migration to germany, in what way
+- {l3a01j}: 3. stay abroad, year
+- {l3a01m}: 3. stay abroad, month
+- {l3a01w}: 3. stay abroad, in what way
+- {l3a02}: after 3. stay abroad via other country
+- {l3a02nr}: after 3. stay abroad country no.
+- {l3a03}: after 3. stay abroad moved away again
+- {l3a03nr}: 4. stay abroad, country no.
+- {l3z02}: 3. migration from germany, yes/no
+- {l3z02j}: 3. migration from germany, year
+- {l3z02m}: 3. migration from germany, month
+- {l3z02nr}: 3. migration to country, no.
+- {l3z02w}: 3. migration from germany, in what way
+- {l3z03}: after 3. migration via other country
+- {l3z03e}: after 3. migration to germany employment group
+- {l3z03j}: after 3. migration to germany, year
+- {l3z03m}: after 3. migration to germany, month
+- {l3z03nr}: after 3. migration to country, no.
+- {l3z03w}: after 3. migration to germany, in what way
+- {l4a01j}: 4. stay abroad, year
+- {l4a01m}: 4. stay abroad, month
+- {l4a01w}: 4. stay abroad, in what way
+- {l4a02}: after 4. stay abroad via other country
+- {l4a02nr}: after 4. stay abroad country no.
+- {l4a03}: after 4. stay abroad moved away again
+- {l4a03nr}: 5. stay abroad, country no.
+- {l4z02}: 4 . migration from germany, yes/no
+- {l4z02j}: 4 . migration from germany, year
+- {l4z02m}: 4 . migration from germany, month
+- {l4z02nr}: 4 . migration to country, no.
+- {l4z02w}: 4 . migration from germany, in what way
+- {l4z03}: after 4 . migration via other country
+- {l4z03e}: after 4 . migration to germany employment group
+- {l4z03j}: after 4 . migration to germany, year
+- {l4z03m}: after 4 . migration to germany, month
+- {l4z03nr}: after 4 . migration to country, no.
+- {l4z03w}: after 4 . migration to germany, in what way
+- {l5a01j}: 5. stay abroad, year
+- {l5a01m}: 5. stay abroad, month
+- {l5a01w}: 5. stay abroad, in what way
+- {l5a02}: after 5. stay abroad via other country
+- {l5a02nr}: after 5. stay abroad country no.
+- {l5a03}: after 5. stay abroad moved away again
+- {l5a03nr}: 6. stay abroad, country no.
+- {l5z02}: 5 . migration from germany, yes/no
+- {l5z02j}: 5 . migration from germany, year
+- {l5z02m}: 5 . migration from germany, month
+- {l5z02nr}: 5 . migration to country, no.
+- {l5z02w}: 5 . migration from germany, in what way
+- {l5z03}: after 5 . migration via other country
+- {l5z03e}: after 5 . migration to germany employment group
+- {l5z03j}: after 5 . migration to germany, year
+- {l5z03m}: after 5 . migration to germany, month
+- {l5z03nr}: after 5 . migration to country, no.
+- {l5z03w}: after 5 . migration to germany, in what way
+- {l6a01j}: 6. stay abroad, year
+- {l6a01m}: 6. stay abroad, month
+- {l6a01w}: 6. stay abroad, in what way
+- {l6a02}: after 6. stay abroad via other country
+- {l6a02nr}: after 6. stay abroad country no.
+- {l6a03}: after 6. stay abroad moved away again
+- {l6a03nr}: 7. stay abroad, country no.
+- {l6z02}: 6 . migration from germany, yes/no
+- {l6z02j}: 6 . migration from germany, year
+- {l6z02m}: 6 . migration from germany, month
+- {l6z02nr}: 6 . migration to country, no.
+- {l6z02w}: 6 . migration from germany, in what way
+- {l6z03}: after 6 . migration via other country
+- {l6z03e}: after 6 . migration to germany employment group
+- {l6z03j}: after 6 . migration to germany, year
+- {l6z03m}: after 6 . migration to germany, month
+- {l6z03nr}: after 6 . migration to country, no.
+- {l6z03w}: after 6 . migration to germany, in what way
+- {l7a01j}: 7. stay abroad, year
+- {l7a01m}: 7. stay abroad, month
+- {l7a01w}: 7. stay abroad, in what way
+- {l7a02}: after 7. stay abroad via other country
+- {l7a02nr}: after 7. stay abroad country no.
+- {l7a03}: after 7. stay abroad moved away again
+- {l7a03nr}: 8. stay abroad, country no.
+- {l7z02}: 7 . migration from germany, yes/no
+- {l7z02j}: 7 . migration from germany, year
+- {l7z02m}: 7 . migration from germany, month
+- {l7z02nr}: 7 . migration to country, no.
+- {l7z02w}: 7 . migration from germany, in what way
+- {l7z03}: after 7 . migration via other country
+- {l7z03e}: after 7 . migration to germany employment group
+- {l7z03j}: after 7 . migration to germany, year
+- {l7z03m}: after 7 . migration to germany, month
+- {l7z03nr}: after 7 . migration to country, no.
+- {l7z03w}: after 7 . migration to germany, in what way
+- {l8a01j}: 8. stay abroad, year
+- {l8a01m}: 8. stay abroad, month
+- {l8a01w}: 8. stay abroad, in what way
+- {l8a02}: after 8. stay abroad via other country
+- {l8a02nr}: after 8. stay abroad country no.
+- {l8a03}: after 8. stay abroad moved away again
+- {l8a03nr}: 9. stay abroad, country no.
+- {l8z02}: 8 . migration from germany, yes/no
+- {l8z02j}: 8 . migration from germany, year
+- {l8z02m}: 8 . migration from germany, month
+- {l8z02nr}: 8 . migration to country, no.
+- {l8z02w}: 8 . migration from germany, in what way
+- {l8z03}: after 8 . migration via other country
+- {l8z03e}: after 8 . migration to germany employment group
+- {l8z03j}: after 8 . migration to germany, year
+- {l8z03m}: after 8 . migration to germany, month
+- {l8z03nr}: after 8 . migration to country, no.
+- {l8z03w}: after 8 . migration to germany, in what way
+- {l9a01j}: 9. stay abroad, year
+- {l9a01m}: 9. stay abroad, month
+- {l9a01w}: 9. stay abroad, in what way
+- {l9a02}: after 9. stay abroad via other country
+- {l9a02nr}: after 9. stay abroad country no.
+- {l9a03}: after 9. stay abroad moved away again
+- {l9a03nr}: 10. stay abroad, country no.
+- {l9z02}: 9 . migration from germany, yes/no
+- {l9z02j}: 9 . migration from germany, year
+- {l9z02m}: 9 . migration from germany, month
+- {l9z02nr}: 9 . migration to country, no.
+- {l9z02w}: 9 . migration from germany, in what way
+- {l9z03}: after 9 . migration via other country
+- {l9z03e}: after 9 . migration to germany employment group
+- {l9z03j}: after 9 . migration to germany, year
+- {l9z03m}: after 9 . migration to germany, month
+- {l9z03nr}: after 9 . migration to country, no.
+- {l9z03w}: after 9 . migration to germany, in what way
+- {lsaison}: short stay
+- {lstat}: residence status
+- {lzug95}: migrationt before, later than 1995
+- {lzugunt}: got support fro migration
+- {pdbez1}: relationship existed before migration
+- {pdbez2}: steady relationship before migration
+- {pdbez3}: steady relationship continued after migration
+- {pdbez4}: who moved to germany first, together
+- {pdbez5}: partner migration year
+- {pdbez6}: who started working first
+- {pdbez7}: time partner employed
 
 ## transnationalization [trn]
 
 
 ### general intentions to emigrate [gie]
 
-- {pzug06}: Thoughts About Stay Abroad
-- {pzug07}: Lengths Of Stay Abroad
-- {pzug09}: Migration/move Abroad In Next 12 Months
-- {pzugnr}: Migration/move To Which Country?
+- {pzug06}: thoughts about stay abroad
+- {pzug07}: lengths of stay abroad
+- {pzug09}: migration/move abroad in next 12 months
+- {pzugnr}: migration/move to which country?
 
 ### transnational relationships [trr]
 
-- {_559_p_trr}: Mother Not In Germany
-- {_560_p_trr}: Father Not In Germany
-- {_561_p_trr}: Current Spouse Not In Germany
-- {_563_p_trr}: Number Of Children LT 18
-- {_564_p_trr}: Children GE 18 Not In Germany
-- {_565_p_trr}: Number Of Children GE 18
-- {_566_p_trr}: Siblings Not In Germany
-- {_567_p_trr}: Number Of Siblings Not In Germany
-- {_568_p_trr}: No, None Of Above Mentioned
-- {_833_p_trr}: Children LT 18 Not In Germany
-- {item_3359}: Place Of Residence Father 01
-- {item_3360}: Place Of Residence Mother 01
-- {item_3398}: BI: Family Abroad
-- {item_3399}: BI: Family Abroad: Parents
-- {item_3400}: BI: Family Abroad: Grandparents
-- {item_3401}: BI: Family Abroad: Children
-- {item_3402}: BI: Family Abroad: Brother,Sister
-- {item_3403}: BI: Family Abroad: Distant Relatives
-- {item_3404}: BI: Family Abroad: Spouse, Partner
-- {item_3405}: BI: Family Abroad: Friends
-- {item_3406}: BI: Persons Abroad Bring To Germany
-- {item_3649}: Probability Of Working Abroad
-- {item_3664}: School Participation Abroad
-- {p02vb}: Where Does Previous Spouse Live
-- {p03vb}: Where Does Mother Live
-- {p04vb}: Where Does Father Live
-- {p05vb}: Where Does Step Mother/ Foster Mother Live
-- {p06vb}: Where Does Step Father/ Foster Father Live
-- {p07vb}: Where Do Daughter-s Live
-- {p08vb}: Where Do Son-s Live
-- {p09vb}: Where Do Sister-s Live
-- {p10vb}: Where Do Brother-s Live
-- {p11vb}: Where Do Grandmother-s Live
-- {p13vb}: Where Do Grandchild-s Live
-- {p14vb}: Where Do Aunt-s Live
-- {p15vb}: Where Do Uncle-s Live
-- {p16vb}: Where Do Other Relatives Live
-- {pfreun2}: Contact To Friends, Relatives Abroad
-- {pherb}: Never Visited Country of Origin Last 2 Years
-- {pherba}: No. Visits to Country of Origin Last 2 Years
-- {plj0093}: Spouse In Germany
-- {pnat14}: Visits Country Of Origin
-- {pnat15}: Length Of Visit To Country Of Origin
+- {_559_p_trr}: mother not in germany
+- {_560_p_trr}: father not in germany
+- {_561_p_trr}: current spouse not in germany
+- {_563_p_trr}: number of children lt 18
+- {_564_p_trr}: children ge 18 not in germany
+- {_565_p_trr}: number of children ge 18
+- {_566_p_trr}: siblings not in germany
+- {_567_p_trr}: number of siblings not in germany
+- {_568_p_trr}: no, none of above mentioned
+- {_833_p_trr}: children lt 18 not in germany
+- {item_3359}: place of residence father 01
+- {item_3360}: place of residence mother 01
+- {item_3398}: bi: family abroad
+- {item_3399}: bi: family abroad: parents
+- {item_3400}: bi: family abroad: grandparents
+- {item_3401}: bi: family abroad: children
+- {item_3402}: bi: family abroad: brother,sister
+- {item_3403}: bi: family abroad: distant relatives
+- {item_3404}: bi: family abroad: spouse, partner
+- {item_3405}: bi: family abroad: friends
+- {item_3406}: bi: persons abroad bring to germany
+- {item_3649}: probability of working abroad
+- {item_3664}: school participation abroad
+- {p02vb}: where does previous spouse live
+- {p03vb}: where does mother live
+- {p04vb}: where does father live
+- {p05vb}: where does step mother/ foster mother live
+- {p06vb}: where does step father/ foster father live
+- {p07vb}: where do daughter-s live
+- {p08vb}: where do son-s live
+- {p09vb}: where do sister-s live
+- {p10vb}: where do brother-s live
+- {p11vb}: where do grandmother-s live
+- {p13vb}: where do grandchild-s live
+- {p14vb}: where do aunt-s live
+- {p15vb}: where do uncle-s live
+- {p16vb}: where do other relatives live
+- {pfreun2}: contact to friends, relatives abroad
+- {pherb}: never visited country of origin last 2 years
+- {pherba}: no. visits to country of origin last 2 years
+- {plj0093}: spouse in germany
+- {pnat14}: visits country of origin
+- {pnat15}: length of visit to country of origin
 - {psach11}: gave support, benefits in kind
 - {psach12}: value of benefits in kind
-- {psach13}: receiver lives in Germany
+- {psach13}: receiver lives in germany
 - {psach14}: receiver lives abroad
 - {psach21}: received support, benefits in kind
 - {psach22}: value of all benefits in kind
-- {psach23}: doner lives in Germany
+- {psach23}: doner lives in germany
 - {psach24}: doner lives abroad
-- {punt101}: Payments From Unrelated Persons
-- {punt102}: Amount Of Payments From Unrelated Persons
-- {punt103}: Unrelated Persons Live In Germany
-- {punt104}: Unrelated Persons Live Abroad
-- {punt11}: Payments To Parents,-Inlaw Previous Yr
-- {punt12}: Amount Of Pay To Parents,-Inlaw Pr Yr
-- {punt13}: Parents Live In Germany
-- {punt14}: Parents Live In Foreign Country
-- {punt21}: Payments To Children Previous Yr
-- {punt22}: Amount Of Payments To Children Prev. Yr
-- {punt23}: Children Live In Germany
-- {punt24}: Children Live In Foreign Country
-- {punt31}: Payments To Spouse Previous Yr
-- {punt32}: Amount Of Payments To Spouse Prev. Yr
-- {punt33}: Spouse Lives In Germany
-- {punt34}: Spouse Lives In Foreign Country
-- {punt41}: Payments To Relatives Previous Yr
-- {punt42}: Amt. Of Payments To Relatives Prev. Yr
-- {punt43}: Relatives Live In Germany
-- {punt44}: Relatives Live In Foreign Country
-- {punt51}: Payments To Others Previous Yr
-- {punt52}: Amount Of Payments To Others Prev. Yr
-- {punt53}: Others Live In Germany
-- {punt54}: Others Live In Foreign Country
-- {punt61}: Payments From Parents/in-laws
-- {punt62}: Amount Of Payments From Parents/in-laws
-- {punt63}: Parents/in-laws Live In Germany
-- {punt64}: Parents/in-laws Live Abroad
-- {punt71}: Payments From Children (also In-laws)
-- {punt72}: Amount Of Payments From Children (also In-laws)
-- {punt73}: Children (also In-laws) Live In Germany
-- {punt74}: Children (also In-laws) Live Abroad
-- {punt81}: Payments From Spouse (also Divorved)
-- {punt82}: Amount From Spouse (also Divorced)
-- {punt83}: Spouse (also Divorced) Lives In Germany
-- {punt84}: Spouse (also Divorced) Lives Abroad
-- {punt91}: Payments From Other Relatives
-- {punt92}: Amount Of Payments From Other Relatives
-- {punt93}: Other Relatives Live In Germany
-- {punt94}: Other Relatives Live Abroad
-- {puntge1}: Fees 1. Payment in Percent
-- {puntge2}: Fees 2. Payment in Percent
-- {puntge3}: Fees 3. Payment in Percent
-- {puntge4}: Fees 4. Payment in Percent
-- {puntge5}: Fees 5. Payment in Percent
-- {puntno}: No Payments Previous Yr
-- {puntno2}: No Such Payments
-- {puntwe1}: Way 1. Payment Abroad
-- {puntwe2}: Way 2. Payment Abroad
-- {puntwe3}: Way 3. Payment Abroad
-- {puntwe4}: Way 4. Payment Abroad
-- {puntwe5}: Way 5. Payment Abroad
-- {puntzw1}: Aim 1. Payment
-- {puntzw2}: Aim 2. Payment
-- {puntzw3}: Aim 3. Payment
-- {puntzw4}: Aim 4. Payment
-- {puntzw5}: Aim 5. Payment
-- {pwohn2}: Job In Old, New Bundesland, Abroad
-- {pzug04}: Contact To Friends, Relatives Abroad
-- {pzug05}: Stays >3 Months Abroad
+- {punt101}: payments from unrelated persons
+- {punt102}: amount of payments from unrelated persons
+- {punt103}: unrelated persons live in germany
+- {punt104}: unrelated persons live abroad
+- {punt11}: payments to parents,-inlaw previous yr
+- {punt12}: amount of pay to parents,-inlaw pr yr
+- {punt13}: parents live in germany
+- {punt14}: parents live in foreign country
+- {punt21}: payments to children previous yr
+- {punt22}: amount of payments to children prev. yr
+- {punt23}: children live in germany
+- {punt24}: children live in foreign country
+- {punt31}: payments to spouse previous yr
+- {punt32}: amount of payments to spouse prev. yr
+- {punt33}: spouse lives in germany
+- {punt34}: spouse lives in foreign country
+- {punt41}: payments to relatives previous yr
+- {punt42}: amt. of payments to relatives prev. yr
+- {punt43}: relatives live in germany
+- {punt44}: relatives live in foreign country
+- {punt51}: payments to others previous yr
+- {punt52}: amount of payments to others prev. yr
+- {punt53}: others live in germany
+- {punt54}: others live in foreign country
+- {punt61}: payments from parents/in-laws
+- {punt62}: amount of payments from parents/in-laws
+- {punt63}: parents/in-laws live in germany
+- {punt64}: parents/in-laws live abroad
+- {punt71}: payments from children (also in-laws)
+- {punt72}: amount of payments from children (also in-laws)
+- {punt73}: children (also in-laws) live in germany
+- {punt74}: children (also in-laws) live abroad
+- {punt81}: payments from spouse (also divorved)
+- {punt82}: amount from spouse (also divorced)
+- {punt83}: spouse (also divorced) lives in germany
+- {punt84}: spouse (also divorced) lives abroad
+- {punt91}: payments from other relatives
+- {punt92}: amount of payments from other relatives
+- {punt93}: other relatives live in germany
+- {punt94}: other relatives live abroad
+- {puntge1}: fees 1. payment in percent
+- {puntge2}: fees 2. payment in percent
+- {puntge3}: fees 3. payment in percent
+- {puntge4}: fees 4. payment in percent
+- {puntge5}: fees 5. payment in percent
+- {puntno}: no payments previous yr
+- {puntno2}: no such payments
+- {puntwe1}: way 1. payment abroad
+- {puntwe2}: way 2. payment abroad
+- {puntwe3}: way 3. payment abroad
+- {puntwe4}: way 4. payment abroad
+- {puntwe5}: way 5. payment abroad
+- {puntzw1}: aim 1. payment
+- {puntzw2}: aim 2. payment
+- {puntzw3}: aim 3. payment
+- {puntzw4}: aim 4. payment
+- {puntzw5}: aim 5. payment
+- {pwohn2}: job in old, new bundesland, abroad
+- {pzug04}: contact to friends, relatives abroad
+- {pzug05}: stays >3 months abroad
 
 ### identification [idn]
 
-- {pheim}: Feel At Home In Country Of Origin
-- {pideu}: Feel European
-- {pna14}: Feel German
-- {pna15}: Connected With Country Of Origin
-- {pnat09}: frequency of Feeling Of Not Belonging
-- {pnat16}: Feel At Home in Country Of Origin
+- {pheim}: feel at home in country of origin
+- {pideu}: feel european
+- {pna14}: feel german
+- {pna15}: connected with country of origin
+- {pnat09}: frequency of feeling of not belonging
+- {pnat16}: feel at home in country of origin
 
 ### intentions to stay / desires to return [its]
 
-- {item_3407}: BI: Go Back Home
-- {plj0084}: Plans To Return To Native Country
-- {pnat10}: Wish To Remain Germany Permanently
-- {pnat11}: How Long Wish To Remain Germany
-- {pnat12}: How Long Wish To Remain Germany
-- {pnat13}: Do Not Know
+- {item_3407}: bi: go back home
+- {plj0084}: plans to return to native country
+- {pnat10}: wish to remain germany permanently
+- {pnat11}: how long wish to remain germany
+- {pnat12}: how long wish to remain germany
+- {pnat13}: do not know
 

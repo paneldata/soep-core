@@ -8,285 +8,285 @@ label: time use and environmental behavior
 
 ## energy use [enu]
 
-- {_2387_h_enu}: Cook With District Heating
-- {hen0ka}: Oil Item Nonresponse
-- {hen1ka}: Gas Item Nonresponse
-- {hen2ka}: District Heating Item Nonresponse
-- {hen3ka}: Electricity, Item Nonresponse
-- {hen4ka}: Solar Energy, Item Nonresponse
-- {hen5ka}: Coal, Wood, Item Nonresponse
-- {hen6ka}: Other, Item Nonresponse
-- {hena01}: Heat With Oil
-- {hena02}: Heat Water With Oil
-- {hena03}: Cook With Oil
-- {hena11}: Heat With Gas
-- {hena12}: Heat Water With Gas
-- {hena13}: Cook With Gas
-- {hena21}: Heat With District Heating
-- {hena22}: Heat Water With District Heating
-- {hena31}: Heat With Electricity
-- {hena32}: Heat Water With Electricity
-- {hena33}: Cook With Electricity
-- {hena34}: Lights,Appliances With Electricity
-- {hena41}: Heat With Solar Energy
-- {hena42}: Heat Water With Solar Energy
-- {hena43}: Cook With Solar Energy
-- {hena44}: Lights, Appliances With Solar Energy
-- {hena51}: Heat With Coal, Wood
-- {hena52}: Heat Water With Coal, Wood
-- {hena53}: Cook With Coal, Wood
-- {hena61}: Heat With Other
-- {hena62}: Heat Water With Other
-- {hena63}: Cook With Other
-- {henb01}: Monthly Exp. Oil
-- {henb02}: Annual Exp. Oil
-- {henb11}: Monthly Exp-Gas
-- {henb12}: Annual Exp-Gas
-- {henb21}: Monthly Exp. District Heating
-- {henb22}: Annual Exp. District Heating
-- {henb31}: Monthly Exp. Electricity
-- {henb32}: Annual Exp. Electricity
-- {henb51}: Monthly Exp. Coal, Wood
-- {henb52}: Annual Exp. Coal, Wood
-- {henb61}: Monthly Exp. Other
-- {henb62}: Annual Exp. Other
-- {hheizka}: Heating All, Item Nonresponse
-- {hkochka}: Cooking All, Item Nonresponse
-- {hlichka}: Lights, Appliances All, Item Nonresponse
-- {hwasska}: Warm Water All, Item Nonresponse
+- {_2387_h_enu}: cook with district heating
+- {hen0ka}: oil item nonresponse
+- {hen1ka}: gas item nonresponse
+- {hen2ka}: district heating item nonresponse
+- {hen3ka}: electricity, item nonresponse
+- {hen4ka}: solar energy, item nonresponse
+- {hen5ka}: coal, wood, item nonresponse
+- {hen6ka}: other, item nonresponse
+- {hena01}: heat with oil
+- {hena02}: heat water with oil
+- {hena03}: cook with oil
+- {hena11}: heat with gas
+- {hena12}: heat water with gas
+- {hena13}: cook with gas
+- {hena21}: heat with district heating
+- {hena22}: heat water with district heating
+- {hena31}: heat with electricity
+- {hena32}: heat water with electricity
+- {hena33}: cook with electricity
+- {hena34}: lights,appliances with electricity
+- {hena41}: heat with solar energy
+- {hena42}: heat water with solar energy
+- {hena43}: cook with solar energy
+- {hena44}: lights, appliances with solar energy
+- {hena51}: heat with coal, wood
+- {hena52}: heat water with coal, wood
+- {hena53}: cook with coal, wood
+- {hena61}: heat with other
+- {hena62}: heat water with other
+- {hena63}: cook with other
+- {henb01}: monthly exp. oil
+- {henb02}: annual exp. oil
+- {henb11}: monthly exp-gas
+- {henb12}: annual exp-gas
+- {henb21}: monthly exp. district heating
+- {henb22}: annual exp. district heating
+- {henb31}: monthly exp. electricity
+- {henb32}: annual exp. electricity
+- {henb51}: monthly exp. coal, wood
+- {henb52}: annual exp. coal, wood
+- {henb61}: monthly exp. other
+- {henb62}: annual exp. other
+- {hheizka}: heating all, item nonresponse
+- {hkochka}: cooking all, item nonresponse
+- {hlichka}: lights, appliances all, item nonresponse
+- {hwasska}: warm water all, item nonresponse
 
 ## time use [tim]
 
-- {_100_p_tim}: Hours Sunday Job, Training
-- {_101_p_tim}: Hours Sunday On Handicraft Work
-- {_107_p_tim}: Hours Sunday Running Errands
-- {_113_p_tim}: Hours Saturday On Housework,Errands
-- {_114_p_tim}: Hours Saturday On Housework,Errands
-- {_116_p_tim}: Hours Sunday On Housework,Errands
-- {_117_p_tim}: Hours Sunday On Housework,Errands
-- {_121_p_tim}: Hours Saturday On Child Care
-- {_122_p_tim}: Hours Saturday On Child Care
-- {_124_p_tim}: Hours Sunday On Child Care
-- {_125_p_tim}: Hours Sunday On Child Care
-- {_129_p_tim}: Hours Saturday On Education
-- {_130_p_tim}: Hours Sunday On Education
-- {_132_p_tim}: Hours Sunday On Education
-- {_133_p_tim}: Hours Sunday On Education
-- {_136_p_tim}: Hours Saturday Repairs,Garden Work
-- {_137_p_tim}: Hours Saturday On Handicraft Work
-- {_139_p_tim}: Hours Sunday On Handicraft Work
-- {_140_p_tim}: Hours Sunday On Handicraft Work
-- {_1464_p_tim}: Hours Per Weekday On TV
-- {_1468_p_ltm}: Hours Sunday Other Hobbies
-- {_94_p_tim}: Hours Saturday Job, Training
-- {_96_p_tim}: Hours Saturday On Second Job
-- {_97_p_tim}: Hours Saturday On Second Job
-- {_99_p_tim}: Hours Sunday On Main Job
-- {pci0003}: Hours Sunday On Other Activities
-- {pci0011}: Hours Saturdays Leisure, Hobbies
-- {psa1}: Hours Saturday Job, Training
-- {psa2}: Hours Saturday Running Errands
-- {psa3}: Hours Saturday Housework
-- {psa4}: Hours Saturday Child Care
-- {psa5}: Support Persons In Care, Saturday
-- {psa6}: Hours Saturdays Training, Education
-- {psa7}: Hours Saturday Repairs
-- {psa8}: Hours Saturday Other Hobbies
-- {psa9}: Hours Saturday Physical Activities
-- {psaka}: Total Item Nonresponse, Saturday
-- {pschl1}: Hours of Sleep, Week
+- {_100_p_tim}: hours sunday job, training
+- {_101_p_tim}: hours sunday on handicraft work
+- {_107_p_tim}: hours sunday running errands
+- {_113_p_tim}: hours saturday on housework,errands
+- {_114_p_tim}: hours saturday on housework,errands
+- {_116_p_tim}: hours sunday on housework,errands
+- {_117_p_tim}: hours sunday on housework,errands
+- {_121_p_tim}: hours saturday on child care
+- {_122_p_tim}: hours saturday on child care
+- {_124_p_tim}: hours sunday on child care
+- {_125_p_tim}: hours sunday on child care
+- {_129_p_tim}: hours saturday on education
+- {_130_p_tim}: hours sunday on education
+- {_132_p_tim}: hours sunday on education
+- {_133_p_tim}: hours sunday on education
+- {_136_p_tim}: hours saturday repairs,garden work
+- {_137_p_tim}: hours saturday on handicraft work
+- {_139_p_tim}: hours sunday on handicraft work
+- {_140_p_tim}: hours sunday on handicraft work
+- {_1464_p_tim}: hours per weekday on tv
+- {_1468_p_ltm}: hours sunday other hobbies
+- {_94_p_tim}: hours saturday job, training
+- {_96_p_tim}: hours saturday on second job
+- {_97_p_tim}: hours saturday on second job
+- {_99_p_tim}: hours sunday on main job
+- {pci0003}: hours sunday on other activities
+- {pci0011}: hours saturdays leisure, hobbies
+- {psa1}: hours saturday job, training
+- {psa2}: hours saturday running errands
+- {psa3}: hours saturday housework
+- {psa4}: hours saturday child care
+- {psa5}: support persons in care, saturday
+- {psa6}: hours saturdays training, education
+- {psa7}: hours saturday repairs
+- {psa8}: hours saturday other hobbies
+- {psa9}: hours saturday physical activities
+- {psaka}: total item nonresponse, saturday
+- {pschl1}: hours of sleep, week
 - {pschl2}: hours of sleep, weekend
-- {pso1}: Hours Sunday Job, Training
-- {pso2}: Hours Sunday On Errands
-- {pso3}: Hours Sunday On Housework
-- {pso4}: Hours Sunday Child Care
-- {pso5}: Support Persons In Care, Sunday
-- {pso6}: Hours Sundays Training, Education
-- {pso7}: Hours Sunday Repairs
-- {pso8}: Hours Sunday Leisure, Hobbies
-- {pso9}: Hours Sunday Physical Activities
-- {psoka}: Total Item Nonresponse, Sunday
-- {pwerk1}: Hours Weekdays Job, Training
-- {pwerk2}: Hours Weekdays Running Errands
-- {pwerk3}: Hours Weekday Housework
-- {pwerk4}: Hours Weekday Child Care
-- {pwerk5}: Support Persons In Care, Weekday
-- {pwerk6}: Hours Weekdays Training, Education
-- {pwerk7}: Hours Weekday Repairs
-- {pwerk8}: Hours Weekdays Other Hobbies
-- {pwerk9}: Hours Weekdays Physical Activities
-- {pwerkka}: Total Item Nonresponse, Weekday
+- {pso1}: hours sunday job, training
+- {pso2}: hours sunday on errands
+- {pso3}: hours sunday on housework
+- {pso4}: hours sunday child care
+- {pso5}: support persons in care, sunday
+- {pso6}: hours sundays training, education
+- {pso7}: hours sunday repairs
+- {pso8}: hours sunday leisure, hobbies
+- {pso9}: hours sunday physical activities
+- {psoka}: total item nonresponse, sunday
+- {pwerk1}: hours weekdays job, training
+- {pwerk2}: hours weekdays running errands
+- {pwerk3}: hours weekday housework
+- {pwerk4}: hours weekday child care
+- {pwerk5}: support persons in care, weekday
+- {pwerk6}: hours weekdays training, education
+- {pwerk7}: hours weekday repairs
+- {pwerk8}: hours weekdays other hobbies
+- {pwerk9}: hours weekdays physical activities
+- {pwerkka}: total item nonresponse, weekday
 
 ## mobility [mob]
 
-- {_2352_h_mob}: Acquired In Last 12 Months-1st Vehicle
-- {_2358_h_mob}: Acquired In Last 12 Months-2nd Vehicle
-- {_2364_h_mob}: Acquired In Last 12 Months-3rd Vehicle
-- {_2370_h_mob}: Acquired In Last 12 Months-4th Vehicle
-- {_688_p_mob}: Train Pass
-- {_706_p_mob}: Type Personal Vehicle Use
-- {hkfz}: Number Of Vehicles In HH
-- {hkfza1}: Type 1st Vehicle
-- {hkfza2}: Type 2nd Vehicle
-- {hkfza3}: Type 3rd Vehicle
-- {hkfza4}: Type 4th Vehicle
-- {hkfzb1}: Acquired In Year-1st Vehicle
-- {hkfzb2}: Acquired In Year-2nd Vehicle
-- {hkfzb3}: Acquired In Year-3rd Vehicle
-- {hkfzb4}: Acquired In Year-4th Vehicle
-- {hkfzc1}: Km Per Year-1st Vehicle
-- {hkfzc2}: Km Per Year-2nd Vehicle
-- {hkfzc3}: Km Per Year-3rd Vehicle
-- {hkfzc4}: Km Per Year-4th Vehicle
-- {hkfzd1}: Fuel Consumption Per 100Km-1st Vehicle
-- {hkfzd2}: Fuel Consumption Per 100Km-2nd Vehicle
-- {hkfzd3}: Fuel Consumption Per 100Km-3rd Vehicle
-- {hkfzd4}: Fuel Consumption Per 100Km-4th Vehicle
-- {hkfze1}: Type Fuel-1st Vehicle
-- {hkfze2}: Type Fuel-2nd Vehicle
-- {hkfze3}: Type Fuel-3rd Vehicle
-- {hkfze4}: Type Fuel-1st Vehicle
-- {hkfzno}: No Vehicle In HH
-- {pfahr1}: Bus Service Available
-- {pfahr1a}: Accessibility Bus
-- {pfahr1b}: Use Bus
-- {pfahr2}: Subway, Metro Train Service Available
-- {pfahr2a}: Accessibility Subway, Metro Train
-- {pfahr2b}: Use Subway, Metro Train
-- {pfahr3}: Tram Service Available
-- {pfahr3a}: Tram Service Available
-- {pfahr3b}: Use Tram
-- {pfahr4}: Train Service Available
-- {pfahr4a}: Accessibility Train
-- {pfahr4b}: Use Train
-- {pfahr5}: Shared Taxi Service Available
-- {pfahr5a}: Accessibility Shared Taxi
-- {pfahr5b}: Use Shared Taxi
-- {pliz1}: Moped-License
-- {pliz2}: Motorcycle-License
-- {pliz3}: Car-License
-- {pliz4}: Truck-License
-- {pliz5}: No License
-- {pnah}: Own A Travel Pass
-- {ppkw}: Car Available
-- {prad}: Own A Bicycle
-- {pstat1}: Go To Public Trans. Stop Pers. Vehicle
-- {pstat2}: With Car Or Motorcycle To Public Trans.
-- {pstat3}: With Bicycle To Public Trans.
-- {pstat4}: With Other, Taxi To Public Trans.
-- {pweg11}: Go To Work With-Public Transport
-- {pweg12}: Go To Work With-Auto
-- {pweg13}: Go To Work With-Motorcyle, Etc
-- {pweg14}: Go To Work With-Bicycle
-- {pweg15}: Go To Work With-On Foot
-- {pweg16}: Got To Work - Does Not Apply
-- {pweg21}: Shopping-Public Transport
-- {pweg22}: Shopping-Car
-- {pweg23}: Shopping-Motorcyle, Etc
-- {pweg24}: Shopping-Bicycle
-- {pweg25}: Shopping-On Foot
-- {pweg26}: Does Not Apply
-- {pweg31}: Excursions-Public Transport
-- {pweg32}: Excursions-Car
-- {pweg33}: Excursions-Motorcyle, Etc
-- {pweg34}: Excursions-Bicycle
-- {pweg35}: Excursions-On Foot
-- {pweg36}: Does Not Apply
-- {pweg41}: Leisure Activities-Public Transport
-- {pweg42}: Leisure Activities-Car
-- {pweg43}: Leisure Activities-Motorcyle, Etc
-- {pweg44}: Leisure Activities-Bicycle
-- {pweg45}: Leisure Activities-On Foot
-- {pweg46}: Does Not Apply
-- {pweg51}: Take Children (School)-Public Transport
-- {pweg52}: Take Children (School)-Car
-- {pweg53}: Take Children (School)-Motorcyle, Etc
-- {pweg54}: Take Children (School)-Bicycle
-- {pweg55}: Take Children (School)-On Foot
-- {pweg56}: Does Not Apply
-- {pweg6}: Enjoy Driving
-- {pweg7}: Dislike Public Transport
-- {pweg8}: Leisure Activities At Home
-- {pweg9}: Environmentally Conscious
+- {_2352_h_mob}: acquired in last 12 months-1st vehicle
+- {_2358_h_mob}: acquired in last 12 months-2nd vehicle
+- {_2364_h_mob}: acquired in last 12 months-3rd vehicle
+- {_2370_h_mob}: acquired in last 12 months-4th vehicle
+- {_688_p_mob}: train pass
+- {_706_p_mob}: type personal vehicle use
+- {hkfz}: number of vehicles in hh
+- {hkfza1}: type 1st vehicle
+- {hkfza2}: type 2nd vehicle
+- {hkfza3}: type 3rd vehicle
+- {hkfza4}: type 4th vehicle
+- {hkfzb1}: acquired in year-1st vehicle
+- {hkfzb2}: acquired in year-2nd vehicle
+- {hkfzb3}: acquired in year-3rd vehicle
+- {hkfzb4}: acquired in year-4th vehicle
+- {hkfzc1}: km per year-1st vehicle
+- {hkfzc2}: km per year-2nd vehicle
+- {hkfzc3}: km per year-3rd vehicle
+- {hkfzc4}: km per year-4th vehicle
+- {hkfzd1}: fuel consumption per 100km-1st vehicle
+- {hkfzd2}: fuel consumption per 100km-2nd vehicle
+- {hkfzd3}: fuel consumption per 100km-3rd vehicle
+- {hkfzd4}: fuel consumption per 100km-4th vehicle
+- {hkfze1}: type fuel-1st vehicle
+- {hkfze2}: type fuel-2nd vehicle
+- {hkfze3}: type fuel-3rd vehicle
+- {hkfze4}: type fuel-1st vehicle
+- {hkfzno}: no vehicle in hh
+- {pfahr1}: bus service available
+- {pfahr1a}: accessibility bus
+- {pfahr1b}: use bus
+- {pfahr2}: subway, metro train service available
+- {pfahr2a}: accessibility subway, metro train
+- {pfahr2b}: use subway, metro train
+- {pfahr3}: tram service available
+- {pfahr3a}: tram service available
+- {pfahr3b}: use tram
+- {pfahr4}: train service available
+- {pfahr4a}: accessibility train
+- {pfahr4b}: use train
+- {pfahr5}: shared taxi service available
+- {pfahr5a}: accessibility shared taxi
+- {pfahr5b}: use shared taxi
+- {pliz1}: moped-license
+- {pliz2}: motorcycle-license
+- {pliz3}: car-license
+- {pliz4}: truck-license
+- {pliz5}: no license
+- {pnah}: own a travel pass
+- {ppkw}: car available
+- {prad}: own a bicycle
+- {pstat1}: go to public trans. stop pers. vehicle
+- {pstat2}: with car or motorcycle to public trans.
+- {pstat3}: with bicycle to public trans.
+- {pstat4}: with other, taxi to public trans.
+- {pweg11}: go to work with-public transport
+- {pweg12}: go to work with-auto
+- {pweg13}: go to work with-motorcyle, etc
+- {pweg14}: go to work with-bicycle
+- {pweg15}: go to work with-on foot
+- {pweg16}: got to work - does not apply
+- {pweg21}: shopping-public transport
+- {pweg22}: shopping-car
+- {pweg23}: shopping-motorcyle, etc
+- {pweg24}: shopping-bicycle
+- {pweg25}: shopping-on foot
+- {pweg26}: does not apply
+- {pweg31}: excursions-public transport
+- {pweg32}: excursions-car
+- {pweg33}: excursions-motorcyle, etc
+- {pweg34}: excursions-bicycle
+- {pweg35}: excursions-on foot
+- {pweg36}: does not apply
+- {pweg41}: leisure activities-public transport
+- {pweg42}: leisure activities-car
+- {pweg43}: leisure activities-motorcyle, etc
+- {pweg44}: leisure activities-bicycle
+- {pweg45}: leisure activities-on foot
+- {pweg46}: does not apply
+- {pweg51}: take children (school)-public transport
+- {pweg52}: take children (school)-car
+- {pweg53}: take children (school)-motorcyle, etc
+- {pweg54}: take children (school)-bicycle
+- {pweg55}: take children (school)-on foot
+- {pweg56}: does not apply
+- {pweg6}: enjoy driving
+- {pweg7}: dislike public transport
+- {pweg8}: leisure activities at home
+- {pweg9}: environmentally conscious
 
 ## leisure time [ltm]
 
-- {_280_p_ltm}: Work Internet Usage
-- {_4865_p_ltm}: Frequency Of Internet-Usage
-- {_4866_p_ltm}: Internet At Home
-- {_4867_p_ltm}: Internet At Work
-- {_4868_p_ltm}: Internet Cafe
-- {_4869_p_ltm}: Internet Somewhere Else
-- {_781_p_ltm}: No PC Usage
-- {_782_p_ltm}: No Internet Usage
-- {_930_p_ltm}: Play Card And Board Games
-- {_931_p_ltm}: Read Non-Fiction And Fiction
-- {item_3552}: Age When Starting This Sport
-- {item_3560}: How Often Spend Time Best Friend
-- {item_3565}: How Often Watch TV, Video
-- {item_3569}: Most Important Sport
-- {item_3575}: Musically Active Alone Or In Group
-- {item_3598}: How Often Play Music Or Sing
-- {item_3609}: How Often Read
-- {item_3617}: Where And With Whom Sport
-- {item_3620}: Type Of Music
-- {item_3623}: Musical Lessons Outside Of School
-- {item_3647}: How Often Do Nothing
-- {item_3666}: How Often Listen To Music
-- {item_3672}: How Often Do Volunteer Work
-- {item_3712}: How Often Dance Or Act
-- {item_3715}: How Often Spend Time Steady Boy-,Girlfriend
-- {item_3724}: How Often Do Tech. Activities
-- {item_3727}: Musically Active
-- {item_3731}: Sports Played
-- {item_3755}: How Often Do Sports
-- {item_3774}: Take Part In Competitions In This Sport
-- {item_3782}: How Often Play Computer Games
-- {item_3801}: How Old When First Musically Active
-- {item_3818}: How Often Spend Time Clique
-- {item_4216}: Do Sports During Youth
-- {item_4217}: What Kind of Sport Done During Youth
-- {item_4218}: Competition: 1st Type of Sport
-- {item_4219}: Active In Music During Youth
-- {item_5363}: How Often Spend Time Being Online, Chatting (since 2006)
-- {item_5364}: How Often Spend Time in youth centre, recreation centre (since 2006)
-- {item_5365}: How Often Spend Time in Church, attending religious events (since 2006)
-- {item_8454}: How Often Spend Time Being Online in Social Networks (since 2013)
-- {pbetanz}: Frequency Praying
-- {pcomb}: Computer Usage Work
-- {pcomb1}: Computer Usage Work SinceYear
-- {pcomp}: Private PC Usage
-- {pcomp1}: Private PC Usage SinceYear
-- {pfrei01}: Go Eating, Drinking
-- {pfrei02}: Visit Neighbors, Friends
-- {pfrei03}: Visit Family, Relatives
-- {pfrei04}: Excursions, Short Trips
-- {pfrei05}: Participate In Local Politics
-- {pfrei06}: Perform Volunteer Work
-- {pfrei07}: Attend Church Or Other Religious Events
-- {pfrei08}: Hours Per Weekday On TV
-- {pfrei09}: Private PC Usage
-- {pfrei10}: Private Internet Usage
-- {pfrei11}: Artistic Activities
-- {pfrei12}: Tinkering, Garden Work
-- {pfrei13}: Auto Repair
-- {pfrei14}: Participate In Sports
-- {pfrei15}: Visit Sport Events
-- {pfrei16}: Attend Cinema, Pop Concerts, Disco
-- {pfrei17}: Attend Opera, Classcl Concerts, Theater
-- {pfrei19}: Use of Social Networks (online)
-- {pfz1}: Attend Cultural Events
-- {pfz2}: Attend Cinema,Pop,Jazz Concerts
-- {pfz3}: Participate In Sports
-- {pfz4}: Artistic Activities
-- {pfz5}: Attend Social Gatherings
-- {pfz6}: Helping Relatives, Friends
-- {pfz7}: Perform Volunteer Work
-- {pfz8}: Participate In Local Politics
-- {pfz9}: Attend Church Or Other Religious Events
-- {pnetb}: Internet Usage At Work
-- {pnetb1}: Internet Usage At Work SinceYear
-- {pnetp}: Private Internet Usage
-- {pnetp1}: Private Internet Usage SinceYear
-- {pveran}: Frequency Visit to Religious Events/Meetings
+- {_280_p_ltm}: work internet usage
+- {_4865_p_ltm}: frequency of internet-usage
+- {_4866_p_ltm}: internet at home
+- {_4867_p_ltm}: internet at work
+- {_4868_p_ltm}: internet cafe
+- {_4869_p_ltm}: internet somewhere else
+- {_781_p_ltm}: no pc usage
+- {_782_p_ltm}: no internet usage
+- {_930_p_ltm}: play card and board games
+- {_931_p_ltm}: read non-fiction and fiction
+- {item_3552}: age when starting this sport
+- {item_3560}: how often spend time best friend
+- {item_3565}: how often watch tv, video
+- {item_3569}: most important sport
+- {item_3575}: musically active alone or in group
+- {item_3598}: how often play music or sing
+- {item_3609}: how often read
+- {item_3617}: where and with whom sport
+- {item_3620}: type of music
+- {item_3623}: musical lessons outside of school
+- {item_3647}: how often do nothing
+- {item_3666}: how often listen to music
+- {item_3672}: how often do volunteer work
+- {item_3712}: how often dance or act
+- {item_3715}: how often spend time steady boy-,girlfriend
+- {item_3724}: how often do tech. activities
+- {item_3727}: musically active
+- {item_3731}: sports played
+- {item_3755}: how often do sports
+- {item_3774}: take part in competitions in this sport
+- {item_3782}: how often play computer games
+- {item_3801}: how old when first musically active
+- {item_3818}: how often spend time clique
+- {item_4216}: do sports during youth
+- {item_4217}: what kind of sport done during youth
+- {item_4218}: competition: 1st type of sport
+- {item_4219}: active in music during youth
+- {item_5363}: how often spend time being online, chatting (since 2006)
+- {item_5364}: how often spend time in youth centre, recreation centre (since 2006)
+- {item_5365}: how often spend time in church, attending religious events (since 2006)
+- {item_8454}: how often spend time being online in social networks (since 2013)
+- {pbetanz}: frequency praying
+- {pcomb}: computer usage work
+- {pcomb1}: computer usage work sinceyear
+- {pcomp}: private pc usage
+- {pcomp1}: private pc usage sinceyear
+- {pfrei01}: go eating, drinking
+- {pfrei02}: visit neighbors, friends
+- {pfrei03}: visit family, relatives
+- {pfrei04}: excursions, short trips
+- {pfrei05}: participate in local politics
+- {pfrei06}: perform volunteer work
+- {pfrei07}: attend church or other religious events
+- {pfrei08}: hours per weekday on tv
+- {pfrei09}: private pc usage
+- {pfrei10}: private internet usage
+- {pfrei11}: artistic activities
+- {pfrei12}: tinkering, garden work
+- {pfrei13}: auto repair
+- {pfrei14}: participate in sports
+- {pfrei15}: visit sport events
+- {pfrei16}: attend cinema, pop concerts, disco
+- {pfrei17}: attend opera, classcl concerts, theater
+- {pfrei19}: use of social networks (online)
+- {pfz1}: attend cultural events
+- {pfz2}: attend cinema,pop,jazz concerts
+- {pfz3}: participate in sports
+- {pfz4}: artistic activities
+- {pfz5}: attend social gatherings
+- {pfz6}: helping relatives, friends
+- {pfz7}: perform volunteer work
+- {pfz8}: participate in local politics
+- {pfz9}: attend church or other religious events
+- {pnetb}: internet usage at work
+- {pnetb1}: internet usage at work sinceyear
+- {pnetp}: private internet usage
+- {pnetp1}: private internet usage sinceyear
+- {pveran}: frequency visit to religious events/meetings
 
