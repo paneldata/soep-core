@@ -86,7 +86,7 @@ def main():
     questions_variables()
     convert_r2ddi.Parser("soep-core", version="v33").write_json()
     merge_instruments.main()
-    copy.bibtex()
+    copy.bibtex(input_format="latin1")
     topics.Topic.import_all()
 
 if __name__ == "__main__":
