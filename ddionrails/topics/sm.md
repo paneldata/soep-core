@@ -28,13 +28,10 @@ label: survey methodology
 
 ## identifiers [ide]
 
-- {_6453_h_ide}: year of interview
 - {_6454_h_ide}: wave (sample i), first census
 - {_cid}: original household number
 - {_hid}: current wave hh number (=bdhhnr)
 - {_intid}: interviewer id
-- {_intv_year}: year of interview
-- {_iv_year}: year of interview
 - {_pequiv_x11101ll}: person identification number
 - {_pequiv_x11102}: hh identification number
 - {_pequiv_x11104ll}: subsample identifier
@@ -50,7 +47,6 @@ label: survey methodology
 - {ausk}: person providing info
 - {auskv}: person number providing info prev yr
 - {casemat}: case match, combined panel households
-- {datumy}: calendar year of interview
 - {hd}: subsample
 - {hhnrold}: hh number previous year with person id
 - {hknr}: serial number of child
@@ -89,12 +85,12 @@ label: survey methodology
 - {item_5502}: serial person number
 - {item_5516}: old household and person number
 - {item_5617}: survey year
-- {item_5881}: calendar year of interview
 - {item_6173}: never changing person id mother
 - {item_6988}: identifiers
 - {item_7115}: identifiers
 - {item_7116}: survey year
 - {item_8498}: person number person providing info
+- {iyear}: calendar year of interview
 - {jahr}: survey year
 - {k_samp}: sample membership
 - {listl}: lists in current year
