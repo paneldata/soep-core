@@ -71,7 +71,7 @@ def questions_variables():
 def concepts():
     x = pd.read_csv("metadata/concepts.csv")
     x.rename(columns={
-        "concept":"concept_name",
+        #"concept":"concept_name",
         "topic_prefix":"topic_name",
     }, inplace=True)
     valid = x.ix[ : , "concept_name"].duplicated() == False
