@@ -88,7 +88,7 @@ def main():
     questions_variables()
     convert_r2ddi.Parser("soep-core", version="v33").write_json()
     merge_instruments.main()
-    copy.bibtex(input_format="latin1")
+    copy.f("publications.csv")
     copy.f("topics.csv")
     TopicParser(
         topics_input_csv="ddionrails/topics.csv",
