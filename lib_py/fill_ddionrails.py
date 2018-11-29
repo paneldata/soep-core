@@ -7,6 +7,7 @@ Q_IN_V_RE = re.compile(r'^[a-z]*([0-9]{2})')
 I_IN_V_RE = re.compile(r'^([a-z]{1,2})([hp])')
 
 from ddi.onrails.repos import merge_instruments, dor1, copy, convert_r2ddi, topics
+from ddi.onrails.repos.topics import TopicParser
 
 def datasets():
     x = pd.read_csv("metadata/datasets.csv")
@@ -88,7 +89,11 @@ def main():
     convert_r2ddi.Parser("soep-core", version="v33").write_json()
     merge_instruments.main()
     copy.bibtex(input_format="latin1")
-    topics.Topic.import_all()
+    copy.f("topics.csv")
+    TopicParser(
+        topics_input_csv="ddionrails/topics.csv",
+        concepts_input_csv="ddionrails/concepts.csv",
+    ).to_json()
 
 if __name__ == "__main__":
     main()
