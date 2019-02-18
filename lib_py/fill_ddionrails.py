@@ -8,6 +8,7 @@ I_IN_V_RE = re.compile(r'^([a-z]{1,2})([hp])')
 
 from ddi.onrails.repos import merge_instruments, dor1, copy, convert_r2ddi, topics
 from ddi.onrails.repos.topics import TopicParser
+from concepts_questions import create_concepts_questions
 
 def datasets():
     x = pd.read_csv("metadata/datasets.csv")
@@ -94,6 +95,7 @@ def main():
         topics_input_csv="ddionrails/topics.csv",
         concepts_input_csv="ddionrails/concepts.csv",
     ).to_json()
+    create_concepts_questions()
 
 if __name__ == "__main__":
     main()
