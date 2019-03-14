@@ -1,13 +1,9 @@
-import os
 import re
-import sys
 
 import pandas as pd
 from concepts_questions import create_concepts_questions
-from ddi.onrails.repos import convert_r2ddi, copy, dor1, merge_instruments, topics
+from ddi.onrails.repos import convert_r2ddi, copy, dor1, merge_instruments
 from ddi.onrails.repos.topics import TopicParser
-
-sys.path.append(os.path.expanduser("~/github/ddi.py/"))
 
 Q_IN_V_RE = re.compile(r"^[a-z]*([0-9]{2})")
 I_IN_V_RE = re.compile(r"^([a-z]{1,2})([hp])")
