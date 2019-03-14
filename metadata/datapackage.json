@@ -354,12 +354,16 @@
       "schema": {
         "fields": [
           {
-            "name": "study_name",
+            "name": "study",
             "type": "string",
             "format": "default",
-            "enum": [
-              "soep-core"
-            ]
+            "constraints": {
+              "required": true,
+              "maxLength": 255,
+              "enum": [
+                "soep-core"
+              ]
+            }
           },
           {
             "name": "questionnaire",
@@ -694,7 +698,107 @@
       "name": "logical_variables"
     },
     {
-      "name": "questions"
+      "path": "questions.csv",
+      "profile": "tabular-data-resource",
+      "name": "questions",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "study",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255,
+              "enum": [
+                "soep-core"
+              ]
+            }
+          },
+          {
+            "name": "questionnaire",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "question",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "item",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "template.id",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "text_de",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "instruction_de",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "text",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "instruction",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "scale",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "answer_list",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "concept",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "filter",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "goto",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "number",
+            "type": "string",
+            "format": "default"
+          }
+        ]
+      }
     }
   ]
 }
