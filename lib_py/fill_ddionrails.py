@@ -77,7 +77,12 @@ def main():
         concepts_input_csv="ddionrails/concepts.csv",
     ).to_json()
     create_concepts_questions()
+    shutil.copy("metadata/analysis_units.csv", "ddionrails/analysis_units.csv")
     shutil.copy("metadata/attachments.csv", "ddionrails/attachments.csv")
+    shutil.copy(
+        "metadata/conceptual_datasets.csv", "ddionrails/conceptual_datasets.csv"
+    )
+    shutil.copy("metadata/periods.csv", "ddionrails/periods.csv")
 
 
 if __name__ == "__main__":
