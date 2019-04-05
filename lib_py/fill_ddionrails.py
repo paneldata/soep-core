@@ -1,5 +1,3 @@
-import re
-
 import pandas as pd
 from ddi.onrails.repos import convert_r2ddi, copy, dor1, merge_instruments
 from ddi.onrails.repos.topics import TopicParser
