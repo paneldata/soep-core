@@ -3,7 +3,7 @@
 
  ### Clone the metadata repository
 ```console
-$ git clone https://github.com/paneldata/soep-core.git
+$ git clone --depth=1 https://github.com/paneldata/soep-core.git
 $ cd soep-core/
 ```
 
