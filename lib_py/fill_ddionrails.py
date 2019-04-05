@@ -1,3 +1,5 @@
+import shutil
+
 import pandas as pd
 from ddi.onrails.repos import convert_r2ddi, copy, dor1, merge_instruments
 from ddi.onrails.repos.topics import TopicParser
@@ -75,6 +77,7 @@ def main():
         concepts_input_csv="ddionrails/concepts.csv",
     ).to_json()
     create_concepts_questions()
+    shutil.copy("metadata/attachments.csv", "ddionrails/attachments.csv")
 
 
 if __name__ == "__main__":
