@@ -83,6 +83,7 @@ def main():
         "metadata/conceptual_datasets.csv", "ddionrails/conceptual_datasets.csv"
     )
     shutil.copy("metadata/periods.csv", "ddionrails/periods.csv")
+    dor1.transformations()
 
 
 if __name__ == "__main__":
