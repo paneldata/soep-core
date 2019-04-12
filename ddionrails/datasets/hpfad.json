@@ -1,9 +1,9 @@
 {
-  "hhnr": {
+  "cid": {
     "study": "soep-core",
-    "name": "hhnr",
-    "name_cs": "hhnr",
-    "variable": "hhnr",
+    "name": "cid",
+    "name_cs": "cid",
+    "variable": "cid",
     "dataset": "hpfad",
     "label": "Original Household Number",
     "categories": {
@@ -26,64 +26,21 @@
       ],
       "values": [
         "19",
-        "268200",
-        "865800",
-        "1628000",
-        "3263000",
-        "3865000",
-        "58534",
+        "521033",
+        "3015632",
+        "2174366.71413744",
+        "3472224.75",
+        "3923894",
+        "135852",
         "0"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Ursprungshaushaltsnummer"
-  },
-  "hhnrakt": {
-    "study": "soep-core",
-    "name": "hhnrakt",
-    "name_cs": "hhnrakt",
-    "variable": "hhnrakt",
-    "dataset": "hpfad",
-    "label": "Current Household Number",
-    "categories": {
-      "frequencies": [],
-      "labels": [],
-      "missings": [],
-      "values": [],
-      "labels_de": []
-    },
-    "statistics": {
-      "names": [
-        "Min.",
-        "1st Qu.",
-        "Median",
-        "Mean",
-        "3rd Qu.",
-        "Max.",
-        "valid",
-        "invalid"
-      ],
-      "values": [
-        "19",
-        "250700",
-        "859300",
-        "1617000",
-        "3303000",
-        "3865000",
-        "58534",
-        "0"
-      ]
-    },
-    "scale": "",
-    "analysis_unit": "h",
-    "sub_type": "track",
-    "boost": "1",
-    "period": "0",
-    "label_de": "Haushaltsnummer"
   },
   "ahhnr": {
     "study": "soep-core",
@@ -113,19 +70,19 @@
       ],
       "values": [
         "19",
-        "14820",
-        "29720",
-        "29760",
-        "44680",
-        "59690",
-        "52613",
-        "5921",
-        "52613"
+        "26022",
+        "52248",
+        "44946.6850332915",
+        "62048.5",
+        "74717",
+        "125489",
+        "10363",
+        "125489"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1984"
@@ -143,10 +100,11 @@
         0,
         0,
         0,
-        52613,
+        125489,
         0,
         5921,
-        0
+        0,
+        4442
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -156,15 +114,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -176,7 +136,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -186,7 +147,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -195,13 +157,13 @@
         "invalid"
       ],
       "values": [
-        "5921",
-        "52613"
+        "10363",
+        "125489"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1984"
@@ -234,19 +196,19 @@
       ],
       "values": [
         "19",
-        "15370",
+        "15371",
         "30860",
-        "30890",
-        "46340",
+        "30893.6116900033",
+        "46343",
         "63380",
-        "52392",
+        "129710",
         "6142",
-        "52392"
+        "129710"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1985"
@@ -264,10 +226,11 @@
         0,
         0,
         0,
-        52392,
+        129710,
         0,
         5322,
-        820
+        820,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -277,15 +240,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -297,7 +262,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -307,7 +273,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -317,12 +284,12 @@
       ],
       "values": [
         "6142",
-        "52392"
+        "129710"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1985"
@@ -355,19 +322,19 @@
       ],
       "values": [
         "19",
-        "15870",
-        "31860",
-        "32170",
-        "48070",
-        "68610",
-        "52656",
+        "15867",
+        "31856",
+        "32167.3382102756",
+        "48068",
+        "68608",
+        "129974",
         "5878",
-        "52656"
+        "129974"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1986"
@@ -385,10 +352,11 @@
         0,
         0,
         0,
-        52656,
+        129974,
         0,
         5090,
-        788
+        788,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -398,15 +366,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -418,7 +388,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -428,7 +399,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -438,12 +410,12 @@
       ],
       "values": [
         "5878",
-        "52656"
+        "129974"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1986"
@@ -476,19 +448,19 @@
       ],
       "values": [
         "19",
-        "16310",
-        "32640",
-        "33320",
-        "49450",
-        "73480",
-        "53022",
+        "16312",
+        "32642",
+        "33319.5524310595",
+        "49447.75",
+        "73482",
+        "130340",
         "5512",
-        "53022"
+        "130340"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1987"
@@ -506,10 +478,11 @@
         0,
         0,
         0,
-        53022,
+        130340,
         0,
         5026,
-        486
+        486,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -519,15 +492,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -539,7 +514,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -549,7 +525,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -559,12 +536,12 @@
       ],
       "values": [
         "5512",
-        "53022"
+        "130340"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1987"
@@ -597,19 +574,19 @@
       ],
       "values": [
         "19",
-        "16790",
-        "33680",
-        "34710",
-        "51270",
-        "78650",
-        "53131",
+        "16789.5",
+        "33677",
+        "34713.420692208",
+        "51272",
+        "78646",
+        "130449",
         "5403",
-        "53131"
+        "130449"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1988"
@@ -627,10 +604,11 @@
         0,
         0,
         0,
-        53131,
+        130449,
         0,
         4814,
-        589
+        589,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -640,15 +618,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -660,7 +640,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -670,7 +651,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -680,12 +662,12 @@
       ],
       "values": [
         "5403",
-        "53131"
+        "130449"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1988"
@@ -719,18 +701,18 @@
       "values": [
         "19",
         "17280",
-        "34580",
-        "36180",
-        "52800",
-        "81520",
-        "53321",
+        "34576",
+        "36181.166698638",
+        "52795",
+        "81523",
+        "130639",
         "5213",
-        "53321"
+        "130639"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1989"
@@ -748,10 +730,11 @@
         0,
         0,
         0,
-        53321,
+        130639,
         0,
         4690,
-        523
+        523,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -761,15 +744,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -781,7 +766,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -791,7 +777,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -801,12 +788,12 @@
       ],
       "values": [
         "5213",
-        "53321"
+        "130639"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1989"
@@ -839,19 +826,19 @@
       ],
       "values": [
         "19",
-        "25450",
-        "52270",
-        "179700",
-        "503600",
-        "521800",
-        "51264",
+        "25447",
+        "52268",
+        "179697.728335626",
+        "503620",
+        "521795",
+        "128582",
         "7270",
-        "51264"
+        "128582"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1990"
@@ -869,10 +856,11 @@
         0,
         0,
         0,
-        51264,
+        128582,
         0,
         6819,
-        451
+        451,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -882,15 +870,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -902,7 +892,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -912,7 +903,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -922,12 +914,12 @@
       ],
       "values": [
         "7270",
-        "51264"
+        "128582"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1990"
@@ -960,19 +952,19 @@
       ],
       "values": [
         "27",
-        "26840",
-        "55260",
-        "185300",
-        "504300",
-        "530900",
-        "51199",
+        "26836",
+        "55263",
+        "185290.144239945",
+        "504279.5",
+        "530867",
+        "128517",
         "7335",
-        "51199"
+        "128517"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1991"
@@ -990,10 +982,11 @@
         0,
         0,
         0,
-        51199,
+        128517,
         0,
         6699,
-        636
+        636,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -1003,15 +996,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -1023,7 +1018,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1033,7 +1029,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -1043,12 +1040,12 @@
       ],
       "values": [
         "7335",
-        "51199"
+        "128517"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1991"
@@ -1066,7 +1063,7 @@
         0,
         0,
         0,
-        51199,
+        128517,
         0,
         5106,
         2229
@@ -1082,12 +1079,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -1119,12 +1116,12 @@
       ],
       "values": [
         "7335",
-        "51199"
+        "128517"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 1991"
@@ -1157,19 +1154,19 @@
       ],
       "values": [
         "27",
-        "27830",
+        "27825.5",
         "57800",
-        "189500",
-        "504800",
-        "541100",
-        "51175",
+        "189478.465960049",
+        "504835.5",
+        "541141",
+        "128493",
         "7359",
-        "51175"
+        "128493"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1992"
@@ -1187,10 +1184,11 @@
         0,
         0,
         0,
-        51175,
+        128493,
         0,
         6665,
-        694
+        694,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -1200,15 +1198,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -1220,7 +1220,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1230,7 +1231,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -1240,12 +1242,12 @@
       ],
       "values": [
         "7359",
-        "51175"
+        "128493"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1992"
@@ -1263,7 +1265,7 @@
         0,
         0,
         0,
-        51175,
+        128493,
         0,
         5127,
         2232
@@ -1279,12 +1281,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -1316,12 +1318,12 @@
       ],
       "values": [
         "7359",
-        "51175"
+        "128493"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 1992"
@@ -1354,19 +1356,19 @@
       ],
       "values": [
         "27",
-        "28570",
-        "60130",
-        "187500",
-        "504500",
-        "550800",
-        "51200",
+        "28572",
+        "60127",
+        "187471.61317153",
+        "504481",
+        "550825",
+        "128518",
         "7334",
-        "51200"
+        "128518"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1993"
@@ -1384,10 +1386,11 @@
         0,
         0,
         0,
-        51200,
+        128518,
         0,
         6637,
-        697
+        697,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -1397,15 +1400,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -1417,7 +1422,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1427,7 +1433,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -1437,12 +1444,12 @@
       ],
       "values": [
         "7334",
-        "51200"
+        "128518"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1993"
@@ -1460,7 +1467,7 @@
         0,
         0,
         0,
-        51200,
+        128518,
         0,
         5185,
         2149
@@ -1476,12 +1483,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -1513,12 +1520,12 @@
       ],
       "values": [
         "7334",
-        "51200"
+        "128518"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 1993"
@@ -1551,19 +1558,19 @@
       ],
       "values": [
         "27",
-        "30040",
-        "68040",
-        "201900",
-        "506200",
-        "702400",
-        "51103",
+        "30035.5",
+        "68039",
+        "201863.068227695",
+        "506199",
+        "702366",
+        "128421",
         "7431",
-        "51103"
+        "128421"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1994"
@@ -1581,10 +1588,11 @@
         0,
         0,
         0,
-        51103,
+        128421,
         0,
         6795,
-        636
+        636,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -1594,15 +1602,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -1614,7 +1624,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1624,7 +1635,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -1634,12 +1646,12 @@
       ],
       "values": [
         "7431",
-        "51103"
+        "128421"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1994"
@@ -1657,7 +1669,7 @@
         0,
         0,
         0,
-        51103,
+        128421,
         0,
         5392,
         2039
@@ -1673,12 +1685,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -1710,12 +1722,12 @@
       ],
       "values": [
         "7431",
-        "51103"
+        "128421"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 1994"
@@ -1748,19 +1760,19 @@
       ],
       "values": [
         "27",
-        "32430",
-        "79590",
-        "225700",
-        "509500",
-        "724000",
-        "50922",
-        "7612",
-        "50922"
+        "32891",
+        "80322",
+        "232465.356356097",
+        "510459",
+        "724009",
+        "128135",
+        "7717",
+        "128135"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1995"
@@ -1778,10 +1790,11 @@
         0,
         0,
         0,
-        50922,
+        128135,
         0,
         6968,
-        644
+        644,
+        105
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -1791,15 +1804,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -1811,7 +1826,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1821,7 +1837,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -1830,13 +1847,13 @@
         "invalid"
       ],
       "values": [
-        "7612",
-        "50922"
+        "7717",
+        "128135"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1995"
@@ -1854,7 +1871,7 @@
         0,
         0,
         0,
-        50922,
+        128240,
         0,
         5598,
         2014
@@ -1870,12 +1887,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -1907,12 +1924,12 @@
       ],
       "values": [
         "7612",
-        "50922"
+        "128240"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 1995"
@@ -1932,25 +1949,26 @@
         0,
         0,
         0,
-        8309,
-        2648,
-        4101,
-        891,
-        1395,
-        7897,
-        1736,
-        1760,
-        1756,
-        3493,
-        1692,
-        2273,
-        3079,
-        1095,
-        3052,
-        10021,
-        1698,
-        1638,
-        0
+        11567,
+        3906,
+        4121,
+        1003,
+        2369,
+        14388,
+        6189,
+        4197,
+        5004,
+        10224,
+        4734,
+        5595,
+        3827,
+        1322,
+        13384,
+        10039,
+        14907,
+        10879,
+        5390,
+        2807
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -1977,15 +1995,17 @@
         "[16] M2 2015 Migration (2009-2013)",
         "[17] M3 2016 Refugee (2013-2015)",
         "[18] M4 2016 Refugee/family (2013-2015)",
-        "[19] M5 2017 Refugee (2013-2016)"
+        "[19] M5 2017 Refugee (2013-2016)",
+        "[20] N 2017 Refreshment (PIAAC-L)"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -2031,7 +2051,8 @@
         "16",
         "17",
         "18",
-        "19"
+        "19",
+        "20"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2058,7 +2079,8 @@
         "[16] M2 2015 Migration (2009-2013)",
         "[17] M3 2016 Flucht (2013-2015)",
         "[18] M4 2016 Flucht/Familie (2013-2015)",
-        "[19] M5 2017 Flucht (2013-2016)"
+        "[19] M5 2017 Flucht (2013-2016)",
+        "[20] N 2017 Aufstockung (PIAAC-L)"
       ]
     },
     "statistics": {
@@ -2067,13 +2089,13 @@
         "invalid"
       ],
       "values": [
-        "58534",
+        "135852",
         "0"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Stichprobenart"
@@ -2106,19 +2128,19 @@
       ],
       "values": [
         "27",
-        "33470",
-        "82730",
-        "229600",
-        "510300",
-        "725200",
-        "51005",
+        "33472",
+        "82732",
+        "229635.914596892",
+        "510343",
+        "725218",
+        "128323",
         "7529",
-        "51005"
+        "128323"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1996"
@@ -2136,10 +2158,11 @@
         0,
         0,
         0,
-        51005,
+        128323,
         0,
         6894,
-        635
+        635,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -2149,15 +2172,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -2169,7 +2194,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2179,7 +2205,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -2189,12 +2216,12 @@
       ],
       "values": [
         "7529",
-        "51005"
+        "128323"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1996"
@@ -2212,7 +2239,7 @@
         0,
         0,
         0,
-        51005,
+        128323,
         0,
         5528,
         2001
@@ -2228,12 +2255,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -2265,12 +2292,12 @@
       ],
       "values": [
         "7529",
-        "51005"
+        "128323"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 1996"
@@ -2303,19 +2330,19 @@
       ],
       "values": [
         "27",
-        "34910",
+        "34909",
         "85740",
-        "233000",
-        "510900",
-        "725900",
-        "51111",
+        "233010.96685976",
+        "510870",
+        "725862",
+        "128429",
         "7423",
-        "51111"
+        "128429"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1997"
@@ -2333,10 +2360,11 @@
         0,
         0,
         0,
-        51111,
+        128429,
         0,
         6810,
-        613
+        613,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -2346,15 +2374,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -2366,7 +2396,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2376,7 +2407,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -2386,12 +2418,12 @@
       ],
       "values": [
         "7423",
-        "51111"
+        "128429"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1997"
@@ -2409,7 +2441,7 @@
         0,
         0,
         0,
-        51111,
+        128429,
         0,
         5431,
         1992
@@ -2425,12 +2457,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -2462,12 +2494,12 @@
       ],
       "values": [
         "7423",
-        "51111"
+        "128429"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 1997"
@@ -2500,19 +2532,19 @@
       ],
       "values": [
         "27",
-        "41200",
-        "99330",
-        "231200",
-        "507500",
-        "726300",
-        "50108",
-        "8426",
-        "50108"
+        "46217",
+        "109177",
+        "229078.963506756",
+        "504084",
+        "726290",
+        "126453",
+        "9399",
+        "126453"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1998"
@@ -2530,10 +2562,11 @@
         0,
         0,
         4,
-        50104,
+        126449,
         0,
         7668,
-        758
+        758,
+        973
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -2543,15 +2576,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -2563,7 +2598,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2573,7 +2609,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -2582,13 +2619,13 @@
         "invalid"
       ],
       "values": [
-        "8426",
-        "50108"
+        "9399",
+        "126453"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1998"
@@ -2606,7 +2643,7 @@
         0,
         0,
         4,
-        50104,
+        127422,
         0,
         6253,
         2173
@@ -2622,12 +2659,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -2659,12 +2696,12 @@
       ],
       "values": [
         "8426",
-        "50108"
+        "127426"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 1998"
@@ -2697,19 +2734,19 @@
       ],
       "values": [
         "27",
-        "42390",
-        "105000",
-        "230800",
-        "507200",
-        "726500",
-        "50235",
+        "42386",
+        "105031",
+        "230805.586938185",
+        "507219.5",
+        "726532",
+        "127553",
         "8299",
-        "50235"
+        "127553"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 1999"
@@ -2727,10 +2764,11 @@
         0,
         0,
         4,
-        50231,
+        127549,
         0,
         7388,
-        911
+        911,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -2740,15 +2778,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -2760,7 +2800,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2770,7 +2811,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -2780,12 +2822,12 @@
       ],
       "values": [
         "8299",
-        "50235"
+        "127553"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 1999"
@@ -2803,7 +2845,7 @@
         0,
         0,
         4,
-        50231,
+        127549,
         0,
         6173,
         2126
@@ -2819,12 +2861,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -2856,12 +2898,12 @@
       ],
       "values": [
         "8299",
-        "50235"
+        "127553"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 1999"
@@ -2894,19 +2936,19 @@
       ],
       "values": [
         "27",
-        "93290",
-        "265100",
-        "252500",
-        "300300",
-        "726500",
-        "44481",
-        "14053",
-        "44481"
+        "212644",
+        "297356",
+        "595287.606283846",
+        "1323802",
+        "1375047",
+        "115355",
+        "20497",
+        "115355"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2000"
@@ -2924,10 +2966,11 @@
         0,
         0,
         0,
-        44481,
+        115355,
         0,
         13249,
-        804
+        804,
+        6444
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -2937,15 +2980,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -2957,7 +3002,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2967,7 +3013,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -2976,13 +3023,13 @@
         "invalid"
       ],
       "values": [
-        "14053",
-        "44481"
+        "20497",
+        "115355"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2000"
@@ -3000,7 +3047,7 @@
         0,
         0,
         0,
-        44481,
+        121799,
         0,
         10791,
         3262
@@ -3016,12 +3063,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -3053,12 +3100,12 @@
       ],
       "values": [
         "14053",
-        "44481"
+        "121799"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2000"
@@ -3091,19 +3138,19 @@
       ],
       "values": [
         "27",
-        "97300",
-        "266600",
-        "255700",
-        "301700",
-        "726500",
-        "44499",
+        "97299",
+        "266639",
+        "255673.252226576",
+        "301719",
+        "726524",
+        "121817",
         "14035",
-        "44499"
+        "121817"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2001"
@@ -3121,10 +3168,11 @@
         0,
         0,
         0,
-        44499,
+        121817,
         0,
         11947,
-        2088
+        2088,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -3134,15 +3182,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -3154,7 +3204,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -3164,7 +3215,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -3174,12 +3226,12 @@
       ],
       "values": [
         "14035",
-        "44499"
+        "121817"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2001"
@@ -3197,7 +3249,7 @@
         0,
         0,
         0,
-        44499,
+        121817,
         0,
         10760,
         3275
@@ -3213,12 +3265,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -3250,12 +3302,12 @@
       ],
       "values": [
         "14035",
-        "44499"
+        "121817"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2001"
@@ -3288,19 +3340,19 @@
       ],
       "values": [
         "27",
-        "105800",
-        "271300",
-        "300100",
-        "382900",
-        "825000",
-        "44158",
-        "14376",
-        "44158"
+        "205406.5",
+        "297585",
+        "424407.368642041",
+        "809601",
+        "835662",
+        "117037",
+        "18815",
+        "117037"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2002"
@@ -3318,10 +3370,11 @@
         0,
         0,
         0,
-        44158,
+        117037,
         0,
         12692,
-        1684
+        1684,
+        4439
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -3331,15 +3384,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -3351,7 +3406,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -3361,7 +3417,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -3370,13 +3427,13 @@
         "invalid"
       ],
       "values": [
-        "14376",
-        "44158"
+        "18815",
+        "117037"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2002"
@@ -3394,7 +3451,7 @@
         0,
         0,
         0,
-        44158,
+        121476,
         0,
         11137,
         3239
@@ -3410,12 +3467,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -3447,12 +3504,12 @@
       ],
       "values": [
         "14376",
-        "44158"
+        "121476"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2002"
@@ -3470,7 +3527,7 @@
         0,
         0,
         0,
-        52613,
+        129931,
         0,
         4513,
         1350,
@@ -3490,12 +3547,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -3533,12 +3590,12 @@
       ],
       "values": [
         "5921",
-        "52613"
+        "129931"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1984"
@@ -3556,7 +3613,7 @@
         0,
         0,
         0,
-        52483,
+        129801,
         0,
         4603,
         1387,
@@ -3576,12 +3633,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -3619,12 +3676,12 @@
       ],
       "values": [
         "6051",
-        "52483"
+        "129801"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1985"
@@ -3642,7 +3699,7 @@
         0,
         0,
         0,
-        52723,
+        130041,
         0,
         4403,
         1336,
@@ -3662,12 +3719,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -3705,12 +3762,12 @@
       ],
       "values": [
         "5811",
-        "52723"
+        "130041"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1986"
@@ -3728,7 +3785,7 @@
         0,
         0,
         0,
-        53082,
+        130400,
         0,
         4168,
         1221,
@@ -3748,12 +3805,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -3791,12 +3848,12 @@
       ],
       "values": [
         "5452",
-        "53082"
+        "130400"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1987"
@@ -3814,7 +3871,7 @@
         0,
         0,
         0,
-        53203,
+        130521,
         0,
         4087,
         1187,
@@ -3834,12 +3891,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -3877,12 +3934,12 @@
       ],
       "values": [
         "5331",
-        "53203"
+        "130521"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1988"
@@ -3900,7 +3957,7 @@
         0,
         0,
         0,
-        53393,
+        130711,
         0,
         3945,
         1144,
@@ -3920,12 +3977,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -3963,12 +4020,12 @@
       ],
       "values": [
         "5141",
-        "53393"
+        "130711"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1989"
@@ -3986,7 +4043,7 @@
         0,
         0,
         0,
-        51329,
+        128647,
         0,
         6012,
         1107,
@@ -4006,12 +4063,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -4049,12 +4106,12 @@
       ],
       "values": [
         "7205",
-        "51329"
+        "128647"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1990"
@@ -4072,7 +4129,7 @@
         0,
         0,
         0,
-        51274,
+        128592,
         0,
         6059,
         1124,
@@ -4092,12 +4149,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -4135,12 +4192,12 @@
       ],
       "values": [
         "7260",
-        "51274"
+        "128592"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1991"
@@ -4158,7 +4215,7 @@
         0,
         0,
         0,
-        51234,
+        128552,
         0,
         6103,
         1118,
@@ -4178,12 +4235,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -4221,12 +4278,12 @@
       ],
       "values": [
         "7300",
-        "51234"
+        "128552"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1992"
@@ -4244,7 +4301,7 @@
         0,
         0,
         0,
-        51264,
+        128582,
         0,
         6055,
         1130,
@@ -4264,12 +4321,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -4307,12 +4364,12 @@
       ],
       "values": [
         "7270",
-        "51264"
+        "128582"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1993"
@@ -4330,7 +4387,7 @@
         0,
         0,
         0,
-        51165,
+        128483,
         0,
         6181,
         1114,
@@ -4350,12 +4407,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -4393,12 +4450,12 @@
       ],
       "values": [
         "7369",
-        "51165"
+        "128483"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1994"
@@ -4416,7 +4473,7 @@
         0,
         0,
         0,
-        50992,
+        128310,
         0,
         6306,
         1153,
@@ -4436,12 +4493,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -4479,12 +4536,12 @@
       ],
       "values": [
         "7542",
-        "50992"
+        "128310"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1995"
@@ -4502,7 +4559,7 @@
         0,
         0,
         0,
-        51071,
+        128389,
         0,
         6279,
         1101,
@@ -4522,12 +4579,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -4565,12 +4622,12 @@
       ],
       "values": [
         "7463",
-        "51071"
+        "128389"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1996"
@@ -4588,7 +4645,7 @@
         0,
         0,
         0,
-        51177,
+        128495,
         0,
         6223,
         1051,
@@ -4608,12 +4665,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -4651,12 +4708,12 @@
       ],
       "values": [
         "7357",
-        "51177"
+        "128495"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1997"
@@ -4674,7 +4731,7 @@
         0,
         0,
         0,
-        50185,
+        127503,
         0,
         7236,
         1029,
@@ -4694,12 +4751,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -4737,12 +4794,12 @@
       ],
       "values": [
         "8349",
-        "50185"
+        "127503"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1998"
@@ -4760,7 +4817,7 @@
         0,
         0,
         0,
-        50302,
+        127620,
         0,
         7172,
         968,
@@ -4780,12 +4837,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -4823,12 +4880,12 @@
       ],
       "values": [
         "8232",
-        "50302"
+        "127620"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 1999"
@@ -4846,7 +4903,7 @@
         0,
         0,
         0,
-        44548,
+        121866,
         0,
         12637,
         1208,
@@ -4866,12 +4923,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -4909,12 +4966,12 @@
       ],
       "values": [
         "13986",
-        "44548"
+        "121866"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2000"
@@ -4932,7 +4989,7 @@
         0,
         0,
         0,
-        44506,
+        121824,
         0,
         12710,
         1168,
@@ -4952,12 +5009,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -4995,12 +5052,12 @@
       ],
       "values": [
         "14028",
-        "44506"
+        "121824"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2001"
@@ -5018,7 +5075,7 @@
         0,
         0,
         0,
-        44252,
+        121570,
         0,
         13088,
         1060,
@@ -5038,12 +5095,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -5081,12 +5138,12 @@
       ],
       "values": [
         "14282",
-        "44252"
+        "121570"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2002"
@@ -5104,7 +5161,7 @@
         0,
         0,
         0,
-        51264,
+        128582,
         0,
         5091,
         2179
@@ -5120,12 +5177,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -5157,12 +5214,12 @@
       ],
       "values": [
         "7270",
-        "51264"
+        "128582"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion"
@@ -5195,19 +5252,19 @@
       ],
       "values": [
         "27",
-        "106200",
-        "271200",
-        "302900",
-        "500800",
-        "825500",
-        "44778",
+        "106202.5",
+        "271206",
+        "302949.725574295",
+        "500814.5",
+        "825549",
+        "122096",
         "13756",
-        "44778"
+        "122096"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2003"
@@ -5225,10 +5282,11 @@
         0,
         0,
         0,
-        44778,
+        122096,
         0,
         12061,
-        1695
+        1695,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -5238,15 +5296,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -5258,7 +5318,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -5268,7 +5329,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -5278,12 +5340,12 @@
       ],
       "values": [
         "13756",
-        "44778"
+        "122096"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2003"
@@ -5301,7 +5363,7 @@
         0,
         0,
         0,
-        44778,
+        122096,
         0,
         10608,
         3148
@@ -5317,12 +5379,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -5354,12 +5416,12 @@
       ],
       "values": [
         "13756",
-        "44778"
+        "122096"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2003"
@@ -5377,7 +5439,7 @@
         0,
         0,
         0,
-        45093,
+        122411,
         0,
         12334,
         976,
@@ -5397,12 +5459,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -5440,12 +5502,12 @@
       ],
       "values": [
         "13441",
-        "45093"
+        "122411"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2003"
@@ -5478,19 +5540,19 @@
       ],
       "values": [
         "27",
-        "106100",
-        "269100",
-        "293500",
-        "385000",
-        "825900",
-        "45417",
+        "106089",
+        "269107",
+        "293457.760311047",
+        "385026",
+        "825859",
+        "122735",
         "13117",
-        "45417"
+        "122735"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2004"
@@ -5508,10 +5570,11 @@
         0,
         0,
         0,
-        45417,
+        122735,
         0,
         11796,
-        1321
+        1321,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -5521,15 +5584,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -5541,7 +5606,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -5551,7 +5617,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -5561,12 +5628,12 @@
       ],
       "values": [
         "13117",
-        "45417"
+        "122735"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2004"
@@ -5584,7 +5651,7 @@
         0,
         0,
         0,
-        45417,
+        122735,
         0,
         10058,
         3059
@@ -5600,12 +5667,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -5637,12 +5704,12 @@
       ],
       "values": [
         "13117",
-        "45417"
+        "122735"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2004"
@@ -5660,7 +5727,7 @@
         0,
         0,
         0,
-        45529,
+        122847,
         0,
         11997,
         885,
@@ -5680,12 +5747,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -5723,12 +5790,12 @@
       ],
       "values": [
         "13005",
-        "45529"
+        "122847"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2004"
@@ -5761,19 +5828,19 @@
       ],
       "values": [
         "27",
-        "108200",
-        "268300",
-        "293100",
-        "386500",
-        "826400",
-        "45698",
+        "108239",
+        "268339",
+        "293068.989560611",
+        "386539",
+        "826405",
+        "123016",
         "12836",
-        "45698"
+        "123016"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2005"
@@ -5791,10 +5858,11 @@
         0,
         0,
         0,
-        45698,
+        123016,
         0,
         11440,
-        1396
+        1396,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -5804,15 +5872,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -5824,7 +5894,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -5834,7 +5905,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -5844,12 +5916,12 @@
       ],
       "values": [
         "12836",
-        "45698"
+        "123016"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2005"
@@ -5867,7 +5939,7 @@
         0,
         0,
         0,
-        45698,
+        123016,
         0,
         9829,
         3007
@@ -5883,12 +5955,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -5920,12 +5992,12 @@
       ],
       "values": [
         "12836",
-        "45698"
+        "123016"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2005"
@@ -5943,7 +6015,7 @@
         0,
         0,
         0,
-        45786,
+        123104,
         0,
         11778,
         853,
@@ -5963,12 +6035,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -6006,12 +6078,12 @@
       ],
       "values": [
         "12748",
-        "45786"
+        "123104"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2005"
@@ -6044,19 +6116,19 @@
       ],
       "values": [
         "27",
-        "116600",
-        "279900",
-        "296700",
-        "381300",
-        "826900",
-        "44475",
-        "14059",
-        "44475"
+        "125164",
+        "299871",
+        "301554.048176688",
+        "344346",
+        "826871",
+        "119371",
+        "16481",
+        "119371"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2006"
@@ -6074,10 +6146,11 @@
         0,
         0,
         0,
-        44475,
+        119371,
         0,
         12499,
-        1560
+        1560,
+        2422
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -6087,15 +6160,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -6107,7 +6182,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -6117,7 +6193,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -6126,13 +6203,13 @@
         "invalid"
       ],
       "values": [
-        "14059",
-        "44475"
+        "16481",
+        "119371"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2006"
@@ -6150,7 +6227,7 @@
         0,
         0,
         0,
-        44475,
+        121793,
         0,
         10774,
         3285
@@ -6166,12 +6243,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -6203,12 +6280,12 @@
       ],
       "values": [
         "14059",
-        "44475"
+        "121793"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2006"
@@ -6226,7 +6303,7 @@
         0,
         0,
         0,
-        44583,
+        121901,
         0,
         12987,
         841,
@@ -6246,12 +6323,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -6289,12 +6366,12 @@
       ],
       "values": [
         "13951",
-        "44583"
+        "121901"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2006"
@@ -6327,19 +6404,19 @@
       ],
       "values": [
         "27",
-        "117800",
-        "281000",
-        "296200",
-        "381600",
-        "827300",
-        "45124",
+        "117805",
+        "280996",
+        "296159.602982849",
+        "381620.5",
+        "827282",
+        "122442",
         "13410",
-        "45124"
+        "122442"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2007"
@@ -6357,10 +6434,11 @@
         0,
         0,
         0,
-        45124,
+        122442,
         0,
         11689,
-        1721
+        1721,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -6370,15 +6448,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -6390,7 +6470,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -6400,7 +6481,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -6410,12 +6492,12 @@
       ],
       "values": [
         "13410",
-        "45124"
+        "122442"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2007"
@@ -6433,7 +6515,7 @@
         0,
         0,
         0,
-        45124,
+        122442,
         0,
         10270,
         3140
@@ -6449,12 +6531,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -6486,12 +6568,12 @@
       ],
       "values": [
         "13410",
-        "45124"
+        "122442"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2007"
@@ -6509,7 +6591,7 @@
         0,
         0,
         0,
-        45143,
+        122461,
         0,
         12470,
         783,
@@ -6529,12 +6611,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -6572,12 +6654,12 @@
       ],
       "values": [
         "13391",
-        "45143"
+        "122461"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2007"
@@ -6610,19 +6692,19 @@
       ],
       "values": [
         "27",
-        "118400",
-        "280200",
-        "296500",
-        "383600",
-        "827700",
-        "45883",
+        "118423",
+        "280160",
+        "296457.325745",
+        "383630",
+        "827711",
+        "123201",
         "12651",
-        "45883"
+        "123201"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2008"
@@ -6640,10 +6722,11 @@
         0,
         0,
         0,
-        45883,
+        123201,
         0,
         11058,
-        1593
+        1593,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -6653,15 +6736,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -6673,7 +6758,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -6683,7 +6769,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -6693,12 +6780,12 @@
       ],
       "values": [
         "12651",
-        "45883"
+        "123201"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2008"
@@ -6716,7 +6803,7 @@
         0,
         0,
         0,
-        45883,
+        123201,
         0,
         9651,
         3000
@@ -6732,12 +6819,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -6769,12 +6856,12 @@
       ],
       "values": [
         "12651",
-        "45883"
+        "123201"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2008"
@@ -6792,7 +6879,7 @@
         0,
         0,
         0,
-        45895,
+        123213,
         0,
         11813,
         702,
@@ -6812,12 +6899,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -6855,12 +6942,12 @@
       ],
       "values": [
         "12639",
-        "45895"
+        "123213"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2008"
@@ -6893,19 +6980,19 @@
       ],
       "values": [
         "27",
-        "126200",
-        "294800",
-        "361200",
-        "513600",
-        "9e+05",
-        "45140",
-        "13394",
-        "45140"
+        "207944",
+        "338935.5",
+        "461441.409145535",
+        "856113.5",
+        "900001",
+        "119210",
+        "16642",
+        "119210"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2009"
@@ -6923,10 +7010,11 @@
         0,
         0,
         0,
-        45140,
+        119210,
         0,
         11889,
-        1505
+        1505,
+        3248
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -6936,15 +7024,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -6956,7 +7046,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -6966,7 +7057,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -6975,13 +7067,13 @@
         "invalid"
       ],
       "values": [
-        "13394",
-        "45140"
+        "16642",
+        "119210"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2009"
@@ -6999,7 +7091,7 @@
         0,
         0,
         0,
-        45140,
+        122458,
         0,
         10246,
         3148
@@ -7015,12 +7107,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -7052,12 +7144,12 @@
       ],
       "values": [
         "13394",
-        "45140"
+        "122458"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2009"
@@ -7075,7 +7167,7 @@
         0,
         0,
         0,
-        45153,
+        122471,
         0,
         12550,
         701,
@@ -7095,12 +7187,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -7138,12 +7230,12 @@
       ],
       "values": [
         "13381",
-        "45153"
+        "122471"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2009"
@@ -7176,19 +7268,19 @@
       ],
       "values": [
         "60",
-        "252100",
-        "391100",
-        "815400",
-        "2003000",
-        "2154000",
-        "40996",
-        "17538",
-        "40996"
+        "273302",
+        "813052",
+        "1052550.40150845",
+        "2032577",
+        "2153664",
+        "114373",
+        "21479",
+        "114373"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2010"
@@ -7206,10 +7298,11 @@
         0,
         0,
         0,
-        40996,
+        114373,
         0,
         15414,
-        2124
+        2124,
+        3941
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -7219,15 +7312,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -7239,7 +7334,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -7249,7 +7345,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -7258,13 +7355,13 @@
         "invalid"
       ],
       "values": [
-        "17538",
-        "40996"
+        "21479",
+        "114373"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2010"
@@ -7282,7 +7379,7 @@
         0,
         0,
         0,
-        41002,
+        118320,
         0,
         13639,
         3893
@@ -7298,12 +7395,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -7335,12 +7432,12 @@
       ],
       "values": [
         "17532",
-        "41002"
+        "118320"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2010"
@@ -7358,7 +7455,7 @@
         0,
         0,
         0,
-        41138,
+        118456,
         0,
         16256,
         1016,
@@ -7378,12 +7475,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -7421,12 +7518,12 @@
       ],
       "values": [
         "17396",
-        "41138"
+        "118456"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2010"
@@ -7459,19 +7556,19 @@
       ],
       "values": [
         "60",
-        "262700",
-        "567000",
-        "1246000",
-        "2114000",
-        "3098000",
-        "39495",
-        "19039",
-        "39495"
+        "303228",
+        "2034079",
+        "1715392.63901761",
+        "3033310",
+        "3098043",
+        "109956",
+        "25896",
+        "109956"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2011"
@@ -7489,10 +7586,11 @@
         0,
         0,
         0,
-        39495,
+        109956,
         0,
         16819,
-        2220
+        2220,
+        6857
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -7502,15 +7600,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -7522,7 +7622,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -7532,7 +7633,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -7541,13 +7643,13 @@
         "invalid"
       ],
       "values": [
-        "19039",
-        "39495"
+        "25896",
+        "109956"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2011"
@@ -7565,7 +7667,7 @@
         0,
         0,
         0,
-        39518,
+        116836,
         0,
         14784,
         4232
@@ -7581,12 +7683,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -7618,12 +7720,12 @@
       ],
       "values": [
         "19016",
-        "39518"
+        "116836"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2011"
@@ -7641,7 +7743,7 @@
         0,
         0,
         0,
-        39518,
+        116836,
         0,
         17822,
         1066,
@@ -7661,12 +7763,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -7704,12 +7806,12 @@
       ],
       "values": [
         "19016",
-        "39518"
+        "116836"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2011"
@@ -7742,19 +7844,19 @@
       ],
       "values": [
         "60",
-        "280500",
-        "2004000",
-        "1449000",
-        "2153000",
-        "3501000",
-        "39213",
-        "19321",
-        "39213"
+        "300229",
+        "2026727",
+        "1674353.23281537",
+        "3071267.5",
+        "3500941",
+        "113521",
+        "22331",
+        "113521"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2012"
@@ -7772,10 +7874,11 @@
         0,
         0,
         0,
-        39213,
+        113521,
         0,
         16508,
-        2813
+        2813,
+        3010
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -7785,15 +7888,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -7805,7 +7910,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -7815,7 +7921,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -7824,13 +7931,13 @@
         "invalid"
       ],
       "values": [
-        "19321",
-        "39213"
+        "22331",
+        "113521"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2012"
@@ -7848,7 +7955,7 @@
         0,
         0,
         0,
-        39244,
+        116562,
         0,
         15023,
         4267
@@ -7864,12 +7971,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -7901,12 +8008,12 @@
       ],
       "values": [
         "19290",
-        "39244"
+        "116562"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2012"
@@ -7924,7 +8031,7 @@
         0,
         0,
         0,
-        39229,
+        116547,
         0,
         18151,
         1028,
@@ -7944,12 +8051,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -7987,12 +8094,12 @@
       ],
       "values": [
         "19305",
-        "39229"
+        "116547"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2012"
@@ -8025,19 +8132,19 @@
       ],
       "values": [
         "60",
-        "298400",
-        "2026000",
-        "1684000",
-        "3073000",
-        "3502000",
-        "37572",
-        "20962",
-        "37572"
+        "530533",
+        "3070009",
+        "2196143.74618168",
+        "3226215.5",
+        "3502227",
+        "104621",
+        "31231",
+        "104621"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2013"
@@ -8055,10 +8162,11 @@
         0,
         0,
         0,
-        37572,
+        104621,
         0,
         18093,
-        2869
+        2869,
+        10269
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -8068,15 +8176,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -8088,7 +8198,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -8098,7 +8209,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -8107,13 +8219,13 @@
         "invalid"
       ],
       "values": [
-        "20962",
-        "37572"
+        "31231",
+        "104621"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2013"
@@ -8131,7 +8243,7 @@
         0,
         0,
         0,
-        37604,
+        114922,
         0,
         16651,
         4279
@@ -8147,12 +8259,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -8184,12 +8296,12 @@
       ],
       "values": [
         "20930",
-        "37604"
+        "114922"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2013"
@@ -8207,7 +8319,7 @@
         0,
         0,
         0,
-        37591,
+        114909,
         0,
         18431,
         2370,
@@ -8227,12 +8339,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -8270,12 +8382,12 @@
       ],
       "values": [
         "20943",
-        "37591"
+        "114909"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2013"
@@ -8308,19 +8420,19 @@
       ],
       "values": [
         "94",
-        "295500",
-        "2026000",
-        "1683000",
-        "3084000",
-        "3503000",
-        "38835",
+        "295459.5",
+        "2025844",
+        "1683356.58667953",
+        "3083819",
+        "3503487",
+        "116153",
         "19699",
-        "38835"
+        "116153"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2014"
@@ -8338,10 +8450,11 @@
         0,
         0,
         0,
-        38835,
+        116153,
         0,
         16037,
-        3662
+        3662,
+        0
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -8351,15 +8464,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -8371,7 +8486,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -8381,7 +8497,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -8391,12 +8508,12 @@
       ],
       "values": [
         "19699",
-        "38835"
+        "116153"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2014"
@@ -8414,7 +8531,7 @@
         0,
         0,
         0,
-        38835,
+        116153,
         0,
         15682,
         4017
@@ -8430,12 +8547,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -8467,12 +8584,12 @@
       ],
       "values": [
         "19699",
-        "38835"
+        "116153"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2014"
@@ -8490,7 +8607,7 @@
         0,
         0,
         0,
-        38859,
+        116177,
         0,
         17290,
         2237,
@@ -8510,12 +8627,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -8553,12 +8670,12 @@
       ],
       "values": [
         "19675",
-        "38859"
+        "116177"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2014"
@@ -8569,7 +8686,7 @@
     "name_cs": "bfhhnr",
     "variable": "bfhhnr",
     "dataset": "hpfad",
-    "label": "Aktuelle Haushaltsnummer 2015",
+    "label": "Current Wave Household Number 2015",
     "categories": {
       "frequencies": [],
       "labels": [],
@@ -8591,19 +8708,19 @@
       ],
       "values": [
         "94",
-        "294200",
-        "2031000",
-        "1730000",
-        "3103000",
-        "3503000",
-        "39144",
+        "294235.75",
+        "2030558",
+        "1729845.35843218",
+        "3103129.5",
+        "3503452",
+        "116462",
         "19390",
-        "39144"
+        "116462"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2015"
@@ -8621,10 +8738,11 @@
         0,
         0,
         0,
-        39144,
+        107559,
         0,
         15991,
-        3399
+        3399,
+        8903
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -8634,15 +8752,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -8654,7 +8774,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -8664,7 +8785,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -8673,13 +8795,13 @@
         "invalid"
       ],
       "values": [
-        "19390",
-        "39144"
+        "28293",
+        "107559"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2015"
@@ -8697,7 +8819,7 @@
         0,
         0,
         0,
-        39144,
+        116462,
         0,
         15485,
         3905
@@ -8713,12 +8835,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -8750,12 +8872,12 @@
       ],
       "values": [
         "19390",
-        "39144"
+        "116462"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2015"
@@ -8773,7 +8895,7 @@
         0,
         0,
         0,
-        39179,
+        116497,
         0,
         16279,
         2905,
@@ -8793,12 +8915,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -8836,12 +8958,12 @@
       ],
       "values": [
         "19355",
-        "39179"
+        "116497"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2015"
@@ -8852,7 +8974,7 @@
     "name_cs": "bghhnr",
     "variable": "bghhnr",
     "dataset": "hpfad",
-    "label": "Aktuelle Haushaltsnummer 2016",
+    "label": "Current Wave Household Number 2016",
     "categories": {
       "frequencies": [],
       "labels": [],
@@ -8874,19 +8996,19 @@
       ],
       "values": [
         "94",
-        "320700",
-        "2120000",
-        "2027000",
-        "3300000",
-        "3865000",
-        "37265",
-        "21269",
-        "37265"
+        "2129193",
+        "3642852",
+        "2896443.19670996",
+        "3754770",
+        "3864960",
+        "92509",
+        "43343",
+        "92509"
       ]
     },
     "scale": "",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Haushaltsnummer 2016"
@@ -8904,10 +9026,11 @@
         0,
         0,
         0,
-        37265,
+        92509,
         0,
-        17822,
-        3447
+        17775,
+        3447,
+        22121
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -8917,15 +9040,17 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Successful HH Interview",
-        "[2] HH In Brutto Only"
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -8937,7 +9062,8 @@
         "-2",
         "-1",
         "1",
-        "2"
+        "2",
+        "3"
       ],
       "labels_de": [
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -8947,7 +9073,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Realisiertes Haushaltsinterview",
-        "[2] HH nur in Brutto-Bestand"
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
       ]
     },
     "statistics": {
@@ -8956,13 +9083,13 @@
         "invalid"
       ],
       "values": [
-        "21269",
-        "37265"
+        "43343",
+        "92509"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Befragungsstatus 2016"
@@ -8980,9 +9107,9 @@
         0,
         0,
         0,
-        37265,
+        114630,
         0,
-        16978,
+        16931,
         4291
       ],
       "labels": [
@@ -8996,12 +9123,12 @@
         "[2] East-Germany"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false
       ],
@@ -9032,13 +9159,13 @@
         "invalid"
       ],
       "values": [
-        "21269",
-        "37265"
+        "21222",
+        "114630"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Aktuelle Stichprobenregion 2016"
@@ -9056,12 +9183,12 @@
         0,
         0,
         0,
-        37302,
+        114667,
         0,
         15067,
-        4794,
+        4776,
         131,
-        1240
+        1211
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -9076,12 +9203,12 @@
         "[4] Institutionalized HH, Foreign HH-Head"
       ],
       "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -9118,15 +9245,432 @@
         "invalid"
       ],
       "values": [
-        "21232",
-        "37302"
+        "21185",
+        "114667"
       ]
     },
     "scale": "cat",
     "analysis_unit": "h",
-    "sub_type": "track",
+    "sub_type": "raw-track",
     "boost": "1",
     "period": "0",
     "label_de": "Populationszugehoerigkeit 2016"
+  },
+  "hid": {
+    "study": "soep-core",
+    "name": "hid",
+    "name_cs": "hid",
+    "variable": "hid",
+    "dataset": "hpfad",
+    "label": "Current Household Number (Household ID)",
+    "categories": {
+      "frequencies": [],
+      "labels": [],
+      "missings": [],
+      "values": [],
+      "labels_de": []
+    },
+    "statistics": {
+      "names": [
+        "Min.",
+        "1st Qu.",
+        "Median",
+        "Mean",
+        "3rd Qu.",
+        "Max.",
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "19",
+        "530439",
+        "3013499.5",
+        "2167503.65918058",
+        "3475477",
+        "3923894",
+        "135852",
+        "0"
+      ]
+    },
+    "scale": "",
+    "analysis_unit": "h",
+    "sub_type": "raw-track",
+    "boost": "1",
+    "period": "0",
+    "label_de": "Haushaltsnummer"
+  },
+  "bhhhnr": {
+    "study": "soep-core",
+    "name": "bhhhnr",
+    "name_cs": "bhhhnr",
+    "variable": "bhhhnr",
+    "dataset": "hpfad",
+    "label": "Current Wave Household Number 2017",
+    "categories": {
+      "frequencies": [],
+      "labels": [],
+      "missings": [],
+      "values": [],
+      "labels_de": []
+    },
+    "statistics": {
+      "names": [
+        "Min.",
+        "1st Qu.",
+        "Median",
+        "Mean",
+        "3rd Qu.",
+        "Max.",
+        "NA's",
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "94",
+        "819398.5",
+        "3038807.5",
+        "2417114.2414135",
+        "3764331.75",
+        "3923894",
+        "107610",
+        "28242",
+        "107610"
+      ]
+    },
+    "scale": "",
+    "analysis_unit": "h",
+    "sub_type": "raw-track",
+    "boost": "1",
+    "period": "0",
+    "label_de": "Aktuelle Haushaltsnummer 2017"
+  },
+  "bhhnetto": {
+    "study": "soep-core",
+    "name": "bhhnetto",
+    "name_cs": "bhhnetto",
+    "variable": "bhhnetto",
+    "dataset": "hpfad",
+    "label": "Survey Status 2017",
+    "categories": {
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        107610,
+        0,
+        19701,
+        4071,
+        4470
+      ],
+      "labels": [
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Successful HH Interview",
+        "[2] HH In Brutto Only",
+        "[3] unsuccessful, initial gross sample"
+      ],
+      "missings": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "values": [
+        "-6",
+        "-5",
+        "-4",
+        "-3",
+        "-2",
+        "-1",
+        "1",
+        "2",
+        "3"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Realisiertes Haushaltsinterview",
+        "[2] HH nur in Brutto-Bestand",
+        "[3] nicht realisiert, Ursprungssample"
+      ]
+    },
+    "statistics": {
+      "names": [
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "28242",
+        "107610"
+      ]
+    },
+    "scale": "cat",
+    "analysis_unit": "h",
+    "sub_type": "raw-track",
+    "boost": "1",
+    "period": "0",
+    "label_de": "Befragungsstatus 2017"
+  },
+  "bhsampreg": {
+    "study": "soep-core",
+    "name": "bhsampreg",
+    "name_cs": "bhsampreg",
+    "variable": "bhsampreg",
+    "dataset": "hpfad",
+    "label": "Current Sample Region",
+    "categories": {
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        107716,
+        0,
+        23062,
+        5074
+      ],
+      "labels": [
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] West Germany",
+        "[2] East Germany"
+      ],
+      "missings": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "values": [
+        "-6",
+        "-5",
+        "-4",
+        "-3",
+        "-2",
+        "-1",
+        "1",
+        "2"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Westdeutschland",
+        "[2] Ostdeutschland"
+      ]
+    },
+    "statistics": {
+      "names": [
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "28136",
+        "107716"
+      ]
+    },
+    "scale": "cat",
+    "analysis_unit": "h",
+    "sub_type": "raw-track",
+    "boost": "1",
+    "period": "0",
+    "label_de": "Aktuelle Stichprobenregion"
+  },
+  "bhhpop": {
+    "study": "soep-core",
+    "name": "bhhpop",
+    "name_cs": "bhhpop",
+    "variable": "bhhpop",
+    "dataset": "hpfad",
+    "label": "Sample Membership 2017",
+    "categories": {
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        112313,
+        0,
+        16095,
+        6050,
+        148,
+        1246
+      ],
+      "labels": [
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Private HH, German HH-Head",
+        "[2] Private HH, Foreign HH-Head",
+        "[3] Institutionalized HH, German HH-Head",
+        "[4] Institutionalized HH, Foreign HH-Head"
+      ],
+      "missings": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "values": [
+        "-6",
+        "-5",
+        "-4",
+        "-3",
+        "-2",
+        "-1",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Privat_HH,deut.HV",
+        "[2] Privat_HH,ausl.HV",
+        "[3] Anstalts_HH,deut.HV",
+        "[4] Anstalts_HH,ausl.HV"
+      ]
+    },
+    "statistics": {
+      "names": [
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "23539",
+        "112313"
+      ]
+    },
+    "scale": "cat",
+    "analysis_unit": "h",
+    "sub_type": "raw-track",
+    "boost": "1",
+    "period": "0",
+    "label_de": "Populationszugehoerigkeit 2017"
+  },
+  "hhnrakt": {
+    "study": "soep-core",
+    "name": "hhnrakt",
+    "name_cs": "hhnrakt",
+    "variable": "hhnrakt",
+    "dataset": "hpfad",
+    "label": "Current Household Number (Household ID)",
+    "categories": {
+      "frequencies": [],
+      "labels": [],
+      "missings": [],
+      "values": [],
+      "labels_de": []
+    },
+    "statistics": {
+      "names": [
+        "Min.",
+        "1st Qu.",
+        "Median",
+        "Mean",
+        "3rd Qu.",
+        "Max.",
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "19",
+        "530439",
+        "3013499.5",
+        "2167503.65918058",
+        "3475477",
+        "3923894",
+        "135852",
+        "0"
+      ]
+    },
+    "scale": "",
+    "analysis_unit": "h",
+    "sub_type": "raw-track",
+    "boost": "1",
+    "period": "0",
+    "label_de": "Haushaltsnummer"
+  },
+  "hhnr": {
+    "study": "soep-core",
+    "name": "hhnr",
+    "name_cs": "hhnr",
+    "variable": "hhnr",
+    "dataset": "hpfad",
+    "label": "Original Household Number",
+    "categories": {
+      "frequencies": [],
+      "labels": [],
+      "missings": [],
+      "values": [],
+      "labels_de": []
+    },
+    "statistics": {
+      "names": [
+        "Min.",
+        "1st Qu.",
+        "Median",
+        "Mean",
+        "3rd Qu.",
+        "Max.",
+        "valid",
+        "invalid"
+      ],
+      "values": [
+        "19",
+        "521033",
+        "3015632",
+        "2174366.71413744",
+        "3472224.75",
+        "3923894",
+        "135852",
+        "0"
+      ]
+    },
+    "scale": "",
+    "analysis_unit": "h",
+    "sub_type": "raw-track",
+    "boost": "1",
+    "period": "0",
+    "label_de": "Ursprungshaushaltsnummer"
   }
 }
