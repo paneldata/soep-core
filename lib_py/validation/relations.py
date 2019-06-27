@@ -1,5 +1,4 @@
 import click
-
 from datapackage import Package
 from tableschema.exceptions import RelationError
 
