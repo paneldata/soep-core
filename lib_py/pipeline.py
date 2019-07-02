@@ -9,7 +9,8 @@ from ddi.onrails.repos.topics import TopicParser
 
 from convert_r2ddi import Parser as XmlParser
 from helpers import add_columns, extract_unique_values, link_to, preprocess
-from questions_variables import questions_from_generations
+from steps.questions_variables import questions_from_generations
+from steps.transformations import preprocess_transformations
 
 STUDY = "soep-core"
 VERSION = "v34"
@@ -386,7 +387,13 @@ def run():
     preprocess_publications()
     preprocess_variables()
     preprocess_topics()
-    dor1.transformations()
+
+    transformations = preprocess_transformations(
+        INPUT_DIRECTORY.joinpath("generations.csv"), STUDY, VERSION
+    )
+    transformations.to_csv(
+        OUTPUT_DIRECTORY.joinpath("transformations.csv"), index=False
+    )
 
 
 if __name__ == "__main__":

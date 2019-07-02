@@ -5,9 +5,8 @@ import os
 import re
 from collections import OrderedDict
 
-from lxml import etree
-
 import pandas as pd
+from lxml import etree
 
 LANG_RE = re.compile(r"(\w{2})/[\w\d\-_]+.xml$", flags=re.IGNORECASE)
 

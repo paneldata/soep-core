@@ -85,15 +85,24 @@ def create_questions_from_generations(
     # variable1 <relates to> question1
 
     logical_variables = pd.read_csv(logical_variables_path)
+    print(logical_variables.head())
+    print()
+
     RENAME_COLUMNS = {
-        "study": "study_name",
-        "dataset": "dataset_name",
-        "variable": "variable_name",
-        "questionnaire": "instrument_name",
-        "question": "question_name",
+        # "study": "study_name",
+        # "dataset": "dataset_name",
+        # "variable": "variable_name",
+        "questionnaire": "instrument",
+        # "question": "question_name",
     }
     logical_variables.rename(columns=RENAME_COLUMNS, inplace=True)
-    logical_variables = logical_variables[RENAME_COLUMNS.values()]
+
+    WANTED_COLUMNS = ["study", "dataset", "variable", "instrument", "question"]
+
+    logical_variables = logical_variables[WANTED_COLUMNS]
+
+    print(logical_variables.head())
+    print()
 
     # There are indirect links between variables and questions if we look into "generations.csv".
     # A variable name can be the output of another variable name, which is related to a question.
@@ -106,7 +115,7 @@ def create_questions_from_generations(
     generations = pd.read_csv(generations_path, dtype=DTYPE_SETTINGS)
     updated_generations = create_indirect_links_recursive(generations)
 
-    print(updated_generations)
+    print(updated_generations.head())
 
     # Remove rows when output version is not the specified version
     updated_generations = updated_generations[
@@ -116,24 +125,24 @@ def create_questions_from_generations(
     indirect_relations = updated_generations.merge(
         logical_variables,
         left_on=("input_dataset", "input_variable"),
-        right_on=("dataset_name", "variable_name"),
+        right_on=("instrument", "variable"),
     )
 
     WANTED_COLUMNS = [
         "output_study",
         "output_dataset",
         "output_variable",
-        "instrument_name",
-        "question_name",
+        "instrument",
+        "question",
     ]
     indirect_relations = indirect_relations[WANTED_COLUMNS]
 
     RENAME_COLUMNS = {
-        "output_study": "study_name",
-        "output_dataset": "dataset_name",
-        "output_variable": "variable_name",
-        "questionnaire": "instrument_name",
-        "question": "question_name",
+        "output_study": "study",
+        "output_dataset": "dataset",
+        "output_variable": "variable",
+        "questionnaire": "instrument",
+        "question": "question",
     }
 
     indirect_relations.rename(columns=RENAME_COLUMNS, inplace=True)
@@ -142,13 +151,7 @@ def create_questions_from_generations(
     questions_variables.dropna(inplace=True)
     questions_variables.drop_duplicates(inplace=True)
 
-    SORT_COLUMNS = [
-        "study_name",
-        "dataset_name",
-        "variable_name",
-        "instrument_name",
-        "question_name",
-    ]
+    SORT_COLUMNS = ["study", "dataset", "variable", "instrument", "question"]
 
     questions_variables.sort_values(by=SORT_COLUMNS, inplace=True)
     return questions_variables.reset_index(drop=True)
@@ -159,9 +162,12 @@ def questions_from_generations(version):
 
     # keep only variables from datasets defined in datasets.csv
 
-    # print(questions_variables)
+    print("here")
+    print()
+    print(questions_variables.head())
 
     datasets = pd.read_csv("ddionrails/datasets.csv")
-    mask = questions_variables["dataset_name"].isin(datasets["dataset_name"].unique())
-    questions_variables = questions_variables[mask]
+    mask = questions_variables["dataset"].isin(datasets["name"].unique())
+    # questions_variables = questions_variables[mask]
+    # print(questions_variables.head())
     questions_variables.to_csv("ddionrails/questions_variables.csv", index=False)
