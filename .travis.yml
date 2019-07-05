@@ -1,6 +1,6 @@
 dist: xenial
 language: python
-python: "3.6"
+python: "3.7"
 git:
   depth: 1 # clone only latest revision of repository
 cache:
@@ -8,7 +8,6 @@ cache:
 install:
   - pip install pipenv
   - pipenv install --dev
-  - pipenv graph
 script:
   - goodtables metadata/datapackage.json # structure and schema validation
-  - python lib_py/validation/relations.py datasets # relation validation
+  - goodtables ddionrails/datapackage.json # structure and schema validation
