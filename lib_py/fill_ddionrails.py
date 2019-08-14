@@ -1,3 +1,4 @@
+import pathlib
 import shutil
 
 import pandas as pd
@@ -6,9 +7,13 @@ from ddi.onrails.repos.topics import TopicParser
 
 from concepts_questions import create_concepts_questions
 from questions_variables import questions_from_generations
+from transformations import preprocess_transformations
 
 STUDY = "soep-core"
 VERSION = "v34"
+
+INPUT_DIRECTORY = pathlib.Path("metadata")
+OUTPUT_DIRECTORY = pathlib.Path("ddionrails")
 
 
 def datasets():
@@ -53,9 +58,7 @@ def variables():
 
 def concepts():
     x = pd.read_csv("metadata/concepts.csv")
-    x.rename(
-        columns={"concept": "name", "topic_prefix": "topic_name"}, inplace=True
-    )
+    x.rename(columns={"concept": "name", "topic_prefix": "topic_name"}, inplace=True)
     valid = x.ix[:, "name"].duplicated() == False
     x = x.ix[valid]
     dor1.lower_all_names(x)
@@ -83,7 +86,12 @@ def main():
         "metadata/conceptual_datasets.csv", "ddionrails/conceptual_datasets.csv"
     )
     shutil.copy("metadata/periods.csv", "ddionrails/periods.csv")
-    dor1.transformations()
+    transformations = preprocess_transformations(
+        INPUT_DIRECTORY.joinpath("generations.csv"), STUDY, VERSION
+    )
+    transformations.to_csv(
+        OUTPUT_DIRECTORY.joinpath("transformations.csv"), index=False
+    )
 
 
 if __name__ == "__main__":
