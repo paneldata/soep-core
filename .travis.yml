@@ -10,5 +10,5 @@ install:
   - pipenv install --dev
   - pipenv graph
 script:
-  - goodtables metadata/datapackage.json # structure and schema validation
+  - goodtables metadata/datapackage.json --row-limit=100 --order-fields false # structure and schema validation
   - python lib_py/validation/relations.py datasets # relation validation
