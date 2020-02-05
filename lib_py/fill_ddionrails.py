@@ -43,9 +43,7 @@ def read_variables():
         },
         inplace=True,
     )
-    valid = (
-        x.ix[:, ("study_name", "dataset_name", "variable_name")].duplicated() == False
-    )
+    valid = x.ix[:, ("study_name", "dataset_name", "variable_name")].duplicated() == False
     x = x.ix[valid]
     dor1.lower_all_names(x)
     return x
@@ -82,16 +80,12 @@ def main():
     create_concepts_questions()
     shutil.copy("metadata/analysis_units.csv", "ddionrails/analysis_units.csv")
     shutil.copy("metadata/attachments.csv", "ddionrails/attachments.csv")
-    shutil.copy(
-        "metadata/conceptual_datasets.csv", "ddionrails/conceptual_datasets.csv"
-    )
+    shutil.copy("metadata/conceptual_datasets.csv", "ddionrails/conceptual_datasets.csv")
     shutil.copy("metadata/periods.csv", "ddionrails/periods.csv")
     transformations = preprocess_transformations(
         INPUT_DIRECTORY.joinpath("generations.csv"), STUDY, VERSION
     )
-    transformations.to_csv(
-        OUTPUT_DIRECTORY.joinpath("transformations.csv"), index=False
-    )
+    transformations.to_csv(OUTPUT_DIRECTORY.joinpath("transformations.csv"), index=False)
 
 
 if __name__ == "__main__":
