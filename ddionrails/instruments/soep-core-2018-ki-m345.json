@@ -2,6 +2,7 @@
   "study": "soep-core",
   "questionnaire": "soep-core-2018-ki-m345",
   "label": "Childhood (0-10-year-olds M345, CAPI) 2018",
+  "analysis_unit": "p",
   "period": 2018,
   "author": "SOEP Group",
   "label_de": "Kindheit (0-10 Jahre M345, CAPI) 2018",
@@ -911,7 +912,7 @@
           "text_de": "K\u00f6rpergr\u00f6\u00dfe in cm",
           "text": "Height in centimeters",
           "scale": "int",
-          "concept": "agro",
+          "concept": "ggro",
           "number": "A20",
           "sn": 1
         },
@@ -2622,7 +2623,6 @@
           "text_de": "Welche Klassenstufe hat dieses Kind zuerst in Deutschland besucht?",
           "text": "Which class did this child visit first in Germany?",
           "scale": "txt",
-          "concept": "schkstd",
           "filter": "Nur f\u00fcr Jahrgang = 2010, 2008 & 55:1=1:2,-1",
           "number": "DE161",
           "sn": 0
@@ -2632,6 +2632,7 @@
           "text_de": "Klassenstufe:",
           "text": "Class level:",
           "scale": "int",
+          "concept": "schkstd",
           "number": "DE161",
           "sn": 1
         },
@@ -2658,7 +2659,6 @@
           "text_de": "Welche Klassenstufe besucht bzw. besuchte dieses Kind im Schuljahr 2017/2018?",
           "text": "Which class level is this child attending / did this child attend in the 2017/2018 school year?",
           "scale": "txt",
-          "concept": "schkstakt",
           "filter": "Nur f\u00fcr Jahrgang = 2010, 2008 & [(56:1=2:3,-1) | (56:1=1 & 57:1=1:2,-1)]",
           "number": "DE162",
           "sn": 0
@@ -2668,6 +2668,7 @@
           "text_de": "Klassenstufe:",
           "text": "Class level:",
           "scale": "int",
+          "concept": "schkstakt",
           "number": "DE162",
           "sn": 1
         },
@@ -2695,6 +2696,7 @@
           "text": "Does this child receive special language assistance at school?",
           "scale": "cat",
           "answer_list": "1+16",
+          "concept": "schspsp",
           "filter": "46:1=1",
           "number": "H85",
           "answers": [
@@ -2732,6 +2734,7 @@
           "text": "Does this child usually attend school all day?",
           "scale": "cat",
           "answer_list": "1+16",
+          "concept": "schgtag",
           "filter": "46:1=1",
           "number": "H86",
           "answers": [
@@ -2777,6 +2780,7 @@
           "text_de": "Stunden",
           "text": "Hours",
           "scale": "int",
+          "concept": "schbetst",
           "number": "CDE72",
           "sn": 1
         },
@@ -2804,6 +2808,7 @@
           "text": "Get the child, if you want, a meal at lunchtime?",
           "scale": "cat",
           "answer_list": "1+16",
+          "concept": "schmess",
           "filter": "46:1=1",
           "number": "Hy86",
           "answers": [
@@ -2841,6 +2846,7 @@
           "text": "Who is the sponsor of this institution? Is it ...",
           "scale": "cat",
           "answer_list": "3204+16",
+          "concept": "schtrag",
           "filter": "46:1=1",
           "number": "Hy87",
           "answers": [
@@ -2934,6 +2940,7 @@
           "text": "Does this child attend a day care group or similar care facility at school?",
           "scale": "cat",
           "answer_list": "1+16",
+          "concept": "schhort",
           "filter": "46:1=1",
           "number": "H87",
           "answers": [
@@ -2979,6 +2986,7 @@
           "text_de": "Stunden",
           "text": "Hours",
           "scale": "int",
+          "concept": "schhortst",
           "number": "CDE73",
           "sn": 1
         },
@@ -3016,6 +3024,7 @@
           "text_de": "Sprachf\u00f6rderung",
           "text": "Language assistance",
           "scale": "bin",
+          "concept": "schakta1",
           "number": "H89",
           "sn": 1
         },
@@ -3024,6 +3033,7 @@
           "text_de": "Sport, Tanzen, Gymnastik, Ballett",
           "text": "Sport, dancing, gymnastics, ballet",
           "scale": "bin",
+          "concept": "schakta2",
           "number": "H89",
           "sn": 2
         },
@@ -3032,6 +3042,7 @@
           "text_de": "Musikunterricht oder Gesangsunterricht",
           "text": "Music lessons or singing lessons",
           "scale": "bin",
+          "concept": "schakta3",
           "number": "H89",
           "sn": 3
         },
@@ -3040,6 +3051,7 @@
           "text_de": "Kunsterziehung / Malen",
           "text": "Art classes / painting",
           "scale": "bin",
+          "concept": "schakta4",
           "number": "H89",
           "sn": 4
         },
@@ -3048,6 +3060,7 @@
           "text_de": "Nein, nichts davon",
           "text": "No, none of the above",
           "scale": "bin",
+          "concept": "schakta5",
           "number": "H89",
           "sn": 5
         },
@@ -3056,6 +3069,7 @@
           "text_de": "Keine Angabe",
           "text": "No Answer",
           "scale": "bin",
+          "concept": "schaktaka",
           "number": "H89",
           "sn": 6
         }
@@ -3083,6 +3097,7 @@
           "text_de": "Stunden",
           "text": "Hours",
           "scale": "int",
+          "concept": "schspdst",
           "number": "CDE112",
           "sn": 1
         },
@@ -3148,6 +3163,7 @@
           "text": "Music lessons, theatre classes, painting, sports, ballet, dancing.9",
           "scale": "cat",
           "answer_list": "3282+173",
+          "concept": "kkteil1",
           "number": "Em p21",
           "answers": [
             {
@@ -3204,6 +3220,7 @@
           "text": "Extra classes or tutoring in German.",
           "scale": "cat",
           "answer_list": "3282+173",
+          "concept": "kkteil2",
           "number": "Em p21",
           "answers": [
             {
@@ -3260,6 +3277,7 @@
           "text": "Tutoring in calculus or mathematics.",
           "scale": "cat",
           "answer_list": "3282+173",
+          "concept": "kkteil3",
           "number": "Em p21",
           "answers": [
             {
@@ -3316,6 +3334,7 @@
           "text": "Additional program for high-performing students.",
           "scale": "cat",
           "answer_list": "3282+173",
+          "concept": "kkteil4",
           "number": "Em p21",
           "answers": [
             {
@@ -3372,6 +3391,7 @@
           "text": "Other classes.",
           "scale": "cat",
           "answer_list": "3282+173",
+          "concept": "kkteil5",
           "number": "Em p21",
           "answers": [
             {
@@ -3436,6 +3456,7 @@
           "text_de": "Monat",
           "text": "Month",
           "scale": "int",
+          "concept": "einschm",
           "number": "C78",
           "sn": 1
         },
@@ -3444,6 +3465,7 @@
           "text_de": "Jahr",
           "text": "Year",
           "scale": "int",
+          "concept": "einschj",
           "number": "C78",
           "sn": 2
         },
@@ -5681,6 +5703,7 @@
           "text": "Has this child already received a certificate in Germany?",
           "scale": "cat",
           "answer_list": "1+16",
+          "concept": "dzeug",
           "filter": "Nur f\u00fcr Jahrgang 2008",
           "number": "E167",
           "answers": [
@@ -5728,6 +5751,7 @@
           "text_de": "Schulnote",
           "text": "Grade",
           "scale": "int",
+          "concept": "not1",
           "number": "E168",
           "sn": 1
         },
@@ -5776,6 +5800,7 @@
           "text_de": "Schulnote",
           "text": "Grade",
           "scale": "int",
+          "concept": "not2",
           "number": "E169",
           "sn": 1
         },
@@ -5843,6 +5868,7 @@
           "text_de": "Regelm\u00e4\u00dfige Teilnahme am Elternabend.",
           "text": "Attend parent evenings at the school on a regular basis",
           "scale": "bin",
+          "concept": "elt11",
           "number": "E170",
           "sn": 1
         },
@@ -5851,6 +5877,7 @@
           "text_de": "Regelm\u00e4\u00dfige Besuche von Elternsprechtagen.",
           "text": "Attend parent-teacher conference days on a regular basis",
           "scale": "bin",
+          "concept": "elt12",
           "number": "E170",
           "sn": 2
         },
@@ -5859,6 +5886,7 @@
           "text_de": "Aufsuchen des Lehrers / der Lehrerin auch au\u00dferhalb von Sprechtagen.",
           "text": "Meet with teacher outside of parent-teacher conference days",
           "scale": "bin",
+          "concept": "elt13",
           "number": "E170",
           "sn": 3
         },
@@ -5867,6 +5895,7 @@
           "text_de": "Engagement als Elternvertreter.",
           "text": "Serve as a parent representative in the parent-teacher association",
           "scale": "bin",
+          "concept": "elt14",
           "number": "E170",
           "sn": 4
         },
@@ -5875,6 +5904,7 @@
           "text_de": "Sonstige Unterst\u00fctzung der Lehrer / Schule (wie Unterst\u00fctzung bei Schulfesten, Ausfl\u00fcgen, Pausenraumgestaltung etc.).",
           "text": "Provide support to teacher / school in other ways (school parties or school trips)",
           "scale": "bin",
+          "concept": "elt16",
           "number": "E170",
           "sn": 5
         },
@@ -5883,6 +5913,7 @@
           "text_de": "Mitglied im F\u00f6rderverein.",
           "text": "Member of booster club",
           "scale": "bin",
+          "concept": "elt17",
           "number": "E170",
           "sn": 6
         },
@@ -5891,6 +5922,7 @@
           "text_de": "Eine andere Person k\u00fcmmert sich um schulische Angelegenheiten.",
           "text": "Another person takes care of school affairs.",
           "scale": "bin",
+          "concept": "elt18",
           "number": "E170",
           "sn": 7
         },
@@ -5899,6 +5931,7 @@
           "text_de": "Nichts davon.",
           "text": "None of the above",
           "scale": "bin",
+          "concept": "elt1no",
           "number": "E170",
           "sn": 8
         },
@@ -5926,6 +5959,7 @@
           "text": "How often do you interact with other parents about classmates of this child about school matters?",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "eltkla",
           "filter": "Nur f\u00fcr Jahrgang = 2008 & 46:1=1 \n",
           "number": "E171",
           "answers": [
@@ -5978,6 +6012,7 @@
           "text": "How often do the following people help you with your homework and studying for school?",
           "scale": "cat",
           "answer_list": "211+16",
+          "concept": "haus3",
           "filter": "Nur f\u00fcr Jahrgang = 2008 & 46:1=1 \n",
           "number": "E172",
           "answers": [
@@ -6030,6 +6065,7 @@
           "text": "How often do your father help you with your homework and studying for school?",
           "scale": "cat",
           "answer_list": "3020+16",
+          "concept": "haus4",
           "filter": "Nur f\u00fcr Jahrgang = 2008 & 46:1=1 \n",
           "number": "E173",
           "answers": [
@@ -6087,6 +6123,7 @@
           "text": "How often do other relatives help you with your homework and studying for school?",
           "scale": "cat",
           "answer_list": "2390+16",
+          "concept": "haus10",
           "filter": "Nur f\u00fcr Jahrgang = 2008 & 46:1=1 \n",
           "number": "E175",
           "answers": [
@@ -6144,6 +6181,7 @@
           "text": "How often do your siblings help you with your homework and studying for school?",
           "scale": "cat",
           "answer_list": "2390+16",
+          "concept": "haus6",
           "filter": "Nur f\u00fcr Jahrgang = 2008 & 46:1=1 \n",
           "number": "E174",
           "answers": [
@@ -6201,6 +6239,7 @@
           "text": "How often do friends or classmates help this child with homework or school learning?",
           "scale": "cat",
           "answer_list": "2390+16",
+          "concept": "haus7",
           "filter": "Nur f\u00fcr Jahrgang = 2008 & 46:1=1 \n",
           "number": "E176",
           "answers": [
@@ -6258,6 +6297,7 @@
           "text": "How often does a tutor help a child with homework or school learning?",
           "scale": "cat",
           "answer_list": "2390+16",
+          "concept": "haus8",
           "filter": "Nur f\u00fcr Jahrgang = 2008 & 46:1=1 \n",
           "number": "E177",
           "answers": [
@@ -6315,6 +6355,7 @@
           "text": "How often does homework help (for example, at school, youth center or community meeting) help this child with homework or school learning?",
           "scale": "cat",
           "answer_list": "2390+16",
+          "concept": "haus9",
           "filter": "Nur f\u00fcr Jahrgang = 2008 & 46:1=1 \n",
           "number": "E178",
           "answers": [
@@ -6381,6 +6422,7 @@
           "text": "This child likes to go to school.",
           "scale": "cat",
           "answer_list": "3207+16",
+          "concept": "sch22",
           "filter": "Nur f\u00fcr Jahrgang = 2008 & 46:1=1 \n",
           "number": "E179",
           "answers": [
@@ -6433,6 +6475,7 @@
           "text": "This kid gets on well with his classmates.",
           "scale": "cat",
           "answer_list": "3207+16",
+          "concept": "sch26",
           "filter": "Nur f\u00fcr Jahrgang = 2008 & 46:1=1 \n",
           "number": "E180",
           "answers": [
@@ -6485,6 +6528,7 @@
           "text": "This child thinks school is a waste of time.",
           "scale": "cat",
           "answer_list": "3207+16",
+          "concept": "sch27",
           "filter": "Nur f\u00fcr Jahrgang = 2008 & 46:1=1 \n",
           "number": "E181",
           "answers": [
@@ -6537,6 +6581,7 @@
           "text": "Does not take school seriously.",
           "scale": "cat",
           "answer_list": "3207+16",
+          "concept": "sch28",
           "filter": "Nur f\u00fcr Jahrgang = 2008 & 46:1=1 \n",
           "number": "E182",
           "answers": [
@@ -6589,6 +6634,7 @@
           "text": "This kid comes along well in class.",
           "scale": "cat",
           "answer_list": "3207+16",
+          "concept": "sch23",
           "filter": "Nur f\u00fcr Jahrgang = 2008 & 46:1=1 \n",
           "number": "E183",
           "answers": [
@@ -6641,6 +6687,7 @@
           "text": "Does not get along well with the teacher.",
           "scale": "cat",
           "answer_list": "3207+16",
+          "concept": "sch29",
           "filter": "Nur f\u00fcr Jahrgang = 2008 & 46:1=1 \n",
           "number": "E184",
           "answers": [
@@ -6693,6 +6740,7 @@
           "text": "This kid likes to learn.",
           "scale": "cat",
           "answer_list": "3207+16",
+          "concept": "sch25",
           "filter": "Nur f\u00fcr Jahrgang = 2008 & 46:1=1 \n",
           "number": "E185",
           "answers": [
@@ -6942,6 +6990,7 @@
           "text_de": "Ich m\u00f6chte, dass es meinem Kind besser geht als mir. ",
           "text": "I want my child to be better off than I am.",
           "scale": "bin",
+          "concept": "wbab1",
           "sn": 1,
           "number": ""
         },
@@ -6950,6 +6999,7 @@
           "text_de": "Ich m\u00f6chte, dass mein Kind in die Gesellschaft integriert wird. ",
           "text": "I want my child to integrate in society.",
           "scale": "bin",
+          "concept": "wbab2",
           "sn": 2,
           "number": ""
         },
@@ -6958,6 +7008,7 @@
           "text_de": "Ich m\u00f6chte, dass mein Kind ein gutes Einkommen hat. ",
           "text": "I want my child to have a good income.",
           "scale": "bin",
+          "concept": "wbab3",
           "sn": 3,
           "number": ""
         },
@@ -6966,6 +7017,7 @@
           "text_de": "Die meisten Leute, die ich kenne haben diesen Abschluss. ",
           "text": "That\u2019s the educational level that most people I know have attained.",
           "scale": "bin",
+          "concept": "wbab4",
           "sn": 4,
           "number": ""
         },
@@ -6974,6 +7026,7 @@
           "text_de": "Dieses w\u00fcrde unser Leben in Deutschland besser machen.",
           "text": "It would make our lives in Germany better.",
           "scale": "bin",
+          "concept": "wbab5",
           "sn": 5,
           "number": ""
         },
@@ -6982,6 +7035,7 @@
           "text_de": "keine Angabe",
           "text": "No Answer",
           "scale": "bin",
+          "concept": "wbabka",
           "sn": 6,
           "number": ""
         }
@@ -7060,6 +7114,7 @@
           "instruction": "Please use a scale to indicate your answer.\nValue 0 means Completely disagree.\nValue 10 means Completely agree.\u00a0\nYou may use the values between 0 and 10 to show the extent to which you agree.",
           "scale": "cat",
           "answer_list": "3285+173",
+          "concept": "schbb1",
           "description": "was ist mit ka? zus\u00e4tzlich oder anstatt wei\u00df nicht? Wei\u00df nicht wird im Soep nur in Ausnahmen eingesetzt; Externes Modul",
           "number": "EM",
           "answers": [
@@ -7144,6 +7199,7 @@
           "instruction": "Please use a scale to indicate your answer.\nValue 0 means Completely disagree.\nValue 10 means Completely agree.\u00a0\nYou may use the values between 0 and 10 to show the extent to which you agree.",
           "scale": "cat",
           "answer_list": "3285+173",
+          "concept": "schbb2",
           "description": "Externes Modul",
           "number": "EM",
           "answers": [
@@ -7228,6 +7284,7 @@
           "instruction": "Please use a scale to indicate your answer.\nValue 0 means Completely disagree.\nValue 10 means Completely agree.\u00a0\nYou may use the values between 0 and 10 to show the extent to which you agree.",
           "scale": "cat",
           "answer_list": "3285+173",
+          "concept": "schbb3",
           "description": "Externes Modul",
           "number": "EM",
           "answers": [
@@ -7321,6 +7378,7 @@
           "text_de": "Mehr Geld",
           "text": "More money.",
           "scale": "bin",
+          "concept": "abunt1",
           "filter": "Nur f\u00fcr Jahrgang = 2010, 2008",
           "sn": 1,
           "number": ""
@@ -7330,6 +7388,7 @@
           "text_de": "Mehr Zeit",
           "text": "More time.",
           "scale": "bin",
+          "concept": "abunt2",
           "filter": "Nur f\u00fcr Jahrgang = 2010, 2008",
           "sn": 2,
           "number": ""
@@ -7339,6 +7398,7 @@
           "text_de": "Mehr Wissen in den Schulf\u00e4chern",
           "text": "Better understanding of the school subjects.",
           "scale": "bin",
+          "concept": "abunt3",
           "filter": "Nur f\u00fcr Jahrgang = 2010, 2008",
           "sn": 3,
           "number": ""
@@ -7348,6 +7408,7 @@
           "text_de": "Bessere Kenntnisse \u00fcber das Schulsystem",
           "text": "Better knowledge about the school system.",
           "scale": "bin",
+          "concept": "abunt4",
           "filter": "Nur f\u00fcr Jahrgang = 2010, 2008",
           "sn": 4,
           "number": ""
@@ -7357,6 +7418,7 @@
           "text_de": "Besseres allgemeines Wohlbefinden",
           "text": "A generally better state of well-being",
           "scale": "bin",
+          "concept": "abunt5",
           "sn": 5,
           "number": ""
         },
@@ -7365,6 +7427,7 @@
           "text_de": "keine Angabe",
           "text": "No Answer",
           "scale": "bin",
+          "concept": "abuntka",
           "sn": 6,
           "number": ""
         }
@@ -9257,6 +9320,7 @@
           "text": "My child shows empathy when others are sad",
           "scale": "cat",
           "answer_list": "250+173",
+          "concept": "akt6",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B119",
           "answers": [
@@ -9304,6 +9368,7 @@
           "text": "I'm worried about the health of my child",
           "scale": "cat",
           "answer_list": "250+173",
+          "concept": "akt7",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B120",
           "answers": [
@@ -9457,6 +9522,7 @@
           "text": "How would you describe your child's current state of health?",
           "scale": "cat",
           "answer_list": "3213+173",
+          "concept": "ges01",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E36",
           "answers": [
@@ -9509,6 +9575,7 @@
           "text": "Has this child ever been examined by a doctor in Germany?",
           "scale": "cat",
           "answer_list": "1+16",
+          "concept": "arztd",
           "filter": "F\u00fcr Jahrg\u00e4nge 2010, 2008 | ((2018 / 2017 & (187:1=2:3, -1 | 188:1=2, -1))",
           "number": "DE30",
           "answers": [
@@ -9556,6 +9623,7 @@
           "text_de": "Wahrnehmung (Sehen, H\u00f6ren)",
           "text": "sensory (sight, hearing)",
           "scale": "bin",
+          "concept": "astor1",
           "number": "A31",
           "sn": 1
         },
@@ -9564,6 +9632,7 @@
           "text_de": "Motorik (Greifen, Krabbeln, Laufen)",
           "text": "motor functions (grasping, crawling, walking)",
           "scale": "bin",
+          "concept": "astor2",
           "number": "A31",
           "sn": 2
         },
@@ -9572,6 +9641,7 @@
           "text_de": "Neurologische St\u00f6rung (Kr\u00e4mpfe und \u00c4hnliches)",
           "text": "neurological disorders (including cramps)",
           "scale": "bin",
+          "concept": "astor3",
           "number": "A31",
           "sn": 3
         },
@@ -9580,6 +9650,7 @@
           "text_de": "Sprache (Lautbildung, Spracherwerbsst\u00f6rung)",
           "text": "speech (pronunciation, speech acquisition disorders)",
           "scale": "bin",
+          "concept": "astor4",
           "number": "A31",
           "sn": 4
         },
@@ -9588,6 +9659,7 @@
           "text_de": "Regulation (untr\u00f6stbares Schreien, dauerhafte Schlaf- oder Essst\u00f6rung)",
           "text": "regulatory system (inconsolable crying, ongoing sleeping or eating disorders)",
           "scale": "bin",
+          "concept": "astor5",
           "number": "A31",
           "sn": 5
         },
@@ -9596,6 +9668,7 @@
           "text_de": "Chronische Krankheit",
           "text": "chronic illness",
           "scale": "bin",
+          "concept": "astor6",
           "number": "A31",
           "sn": 6
         },
@@ -9604,6 +9677,7 @@
           "text_de": "K\u00f6rperliche Behinderung",
           "text": "physical disability",
           "scale": "bin",
+          "concept": "astor7",
           "number": "A31",
           "sn": 7
         },
@@ -9612,6 +9686,7 @@
           "text_de": "Geistige Behinderung",
           "text": "mental disability",
           "scale": "bin",
+          "concept": "astor8",
           "number": "A31",
           "sn": 8
         },
@@ -9620,6 +9695,7 @@
           "text_de": "Sonstiges",
           "text": "other",
           "scale": "bin",
+          "concept": "astor9",
           "number": "A31",
           "sn": 9
         },
@@ -9628,6 +9704,7 @@
           "text_de": "Nein, nichts davon",
           "text": "No, no none of these",
           "scale": "bin",
+          "concept": "astorno",
           "number": "A31",
           "sn": 10
         },
@@ -10698,6 +10775,7 @@
           "text": "How many times in the last 14 days have you or the main caregiver watch picture books with your child?",
           "scale": "cat",
           "answer_list": "3214+173",
+          "concept": "aktiv14",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "BC278",
           "answers": [
@@ -10765,6 +10843,7 @@
           "text": "Make sure s/he does his/her homework.",
           "scale": "cat",
           "answer_list": "3282+173",
+          "concept": "l3m1",
           "filter": "Nur am 2012, 2010, 2008 und nur wenn 46:1=1 ",
           "answers": [
             {
@@ -10822,6 +10901,7 @@
           "text": "Go to a concert, visit a museum, an exposition or a theatre play.",
           "scale": "cat",
           "answer_list": "3282+173",
+          "concept": "l3m2",
           "filter": "Nur am 2012, 2010, 2008 und nur wenn 46:1=1 ",
           "description": "Externes Modul",
           "number": "EM",
@@ -10880,6 +10960,7 @@
           "text": "Exercise sports or go on an excursion.",
           "scale": "cat",
           "answer_list": "3282+173",
+          "concept": "l3m3",
           "filter": "Nur am 2012, 2010, 2008 und nur wenn 46:1=1 ",
           "description": "Externes Modul",
           "number": "EM",
@@ -10938,6 +11019,7 @@
           "text": "Done cooking or gardening together or engaged in other communal activities.",
           "scale": "cat",
           "answer_list": "3282+173",
+          "concept": "l3m4",
           "filter": "Nur am 2012, 2010, 2008 und nur wenn 46:1=1 ",
           "description": "Externes Modul",
           "number": "EM",
@@ -10996,6 +11078,7 @@
           "text": "Played board games or video games.",
           "scale": "cat",
           "answer_list": "3282+173",
+          "concept": "l3m5",
           "filter": "Nur am 2012, 2010, 2008 und nur wenn 46:1=1 ",
           "description": "Externes Modul",
           "number": "EM",
@@ -11858,6 +11941,7 @@
           "text": "Speaks in full sentences (with four or more words)",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "spr3",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B132",
           "answers": [
@@ -11900,6 +11984,7 @@
           "text": "Follows instructions, five minutes after hearing them.",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "spr6",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B133",
           "answers": [
@@ -11942,6 +12027,7 @@
           "text": "Can state his/her first and last name if someone asks for it.",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "spr7",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B134",
           "answers": [
@@ -11984,6 +12070,7 @@
           "text": "Listens attentively to a story for 15 minutes or longer",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "spr4",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B135",
           "answers": [
@@ -12026,6 +12113,7 @@
           "text": "Passes on simple messages such as \u201cdinner is ready\u201d",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "spr5",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B136",
           "answers": [
@@ -12068,6 +12156,7 @@
           "text": "Uses a spoon to eat, without assistance and without dripping",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "all1",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B137",
           "answers": [
@@ -12110,6 +12199,7 @@
           "text": "Blows his/her nose without assistance",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "all2",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B138",
           "answers": [
@@ -12152,6 +12242,7 @@
           "text": "Uses the toilet to do \u201cnumber two\u201d",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "all3",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B139",
           "answers": [
@@ -12194,6 +12285,7 @@
           "text": "Put on pants and underpants the right way around",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "all4",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B140",
           "answers": [
@@ -12236,6 +12328,7 @@
           "text": "Brushes his/her teeth without assistance",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "all5",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B141",
           "answers": [
@@ -12278,6 +12371,7 @@
           "text": "Walks forwards down the stairs",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "bew1",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B142",
           "answers": [
@@ -12320,6 +12414,7 @@
           "text": "Climbs up playground climbing equipment and other high playground structures",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "bew3",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B143",
           "answers": [
@@ -12362,6 +12457,7 @@
           "text": "Cuts paper with scissors",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "bew4",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B144",
           "answers": [
@@ -12404,6 +12500,7 @@
           "text": "Paints/draws recognizable shapes on paper",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "bew5",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B145",
           "answers": [
@@ -12446,6 +12543,7 @@
           "text": "Can hold a pencil correctly",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "bew7",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B146",
           "answers": [
@@ -12488,6 +12586,7 @@
           "text": "Participates in games with other children",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "soz2",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B147",
           "answers": [
@@ -12530,6 +12629,7 @@
           "text": "Gets involved in role-playing games (\u201cplaying pretend\u201d)",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "soz3",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B148",
           "answers": [
@@ -12572,6 +12672,7 @@
           "text": "Shows a special liking for particular playmates or friends",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "soz4",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B149",
           "answers": [
@@ -12614,6 +12715,7 @@
           "text": "Is able to name his/her own feelings, e.g., \u201csad\u201d, \u201chappy\u201d, \u201cscared\u201d",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "soz5",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B150",
           "answers": [
@@ -12656,6 +12758,7 @@
           "text": "Takes turns when playing playing without being asked.",
           "scale": "cat",
           "answer_list": "815+173",
+          "concept": "soz7",
           "filter": "Nur f\u00fcr Jahrgang = 2015",
           "number": "B151",
           "answers": [
@@ -13927,6 +14030,7 @@
           "text": "How important is it for you that this child is a good pupil?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz01",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "description": "Fragetext ver\u00e4ndert (eine gute Sch\u00fclerin erg\u00e4nzt)",
           "number": "D186",
@@ -13980,6 +14084,7 @@
           "text": "How important do you personally think that this child gets on well with other children?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz02",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D187",
           "answers": [
@@ -14032,6 +14137,7 @@
           "text": "How important do you personally think that this child is interested in how and why certain things happen?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz03",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D188",
           "answers": [
@@ -14084,6 +14190,7 @@
           "text": "How important do you personally think that this child behaves like a normal girl or a normal boy?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz04",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D189",
           "answers": [
@@ -14136,6 +14243,7 @@
           "text": "How important do you personally think that this child is honest?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz05",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D190",
           "answers": [
@@ -14188,6 +14296,7 @@
           "text": "How important do you personally think that this child has good manners?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz06",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D191",
           "answers": [
@@ -14240,6 +14349,7 @@
           "text": "How important do you personally think that this child has self-control?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz07",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D192",
           "answers": [
@@ -14292,6 +14402,7 @@
           "text": "How important do you personally think that this child is responsible?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz08",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D193",
           "answers": [
@@ -14344,6 +14455,7 @@
           "text": "How important do you personally think that this child takes care of others?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz09",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D194",
           "answers": [
@@ -14396,6 +14508,7 @@
           "text": "How important do you think that this child obey his/her parents?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz10",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D195",
           "answers": [
@@ -14448,6 +14561,7 @@
           "text": "How important do you think that this child has a good judgment?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz11",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D196",
           "answers": [
@@ -14500,6 +14614,7 @@
           "text": "How important do you think that this child is neat and proper?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz12",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D197",
           "answers": [
@@ -14552,6 +14667,7 @@
           "text": "How important do you think that this child will reach their aims?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz13",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D198",
           "answers": [
@@ -14604,6 +14720,7 @@
           "text": "How important do you think that this child can integrate in groups?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz14",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D199",
           "answers": [
@@ -14656,6 +14773,7 @@
           "text": "How important do you personally think that this child learns to prevail in life against resistance?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz15",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D200",
           "answers": [
@@ -14708,6 +14826,7 @@
           "text": "#How important do you personally think that this child is satisfied with what it has and can do?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz16",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D201",
           "answers": [
@@ -14760,6 +14879,7 @@
           "text": "How important do you personally think that this child learns to avoid risks in life?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz17",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D202",
           "answers": [
@@ -14812,6 +14932,7 @@
           "text": "How important do you personally think that this child is liked by others, is adorable?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz18",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D203",
           "answers": [
@@ -14864,6 +14985,7 @@
           "text": "How important do you personally think that this child obeys religious rules?",
           "scale": "cat",
           "answer_list": "3225+173",
+          "concept": "erz19",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D204a",
           "answers": [
@@ -14935,6 +15057,7 @@
           "text": "I am willing to put my child's desires ahead of my own.",
           "scale": "cat",
           "answer_list": "3226+173",
+          "concept": "elt01",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D204",
           "answers": [
@@ -14987,6 +15110,7 @@
           "text": "When my child refuses to obey or does something she/he is not supposed to, it's because he/she is trying to annoy me.",
           "scale": "cat",
           "answer_list": "3226+173",
+          "concept": "elt02",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D205",
           "answers": [
@@ -15039,6 +15163,7 @@
           "text": "I feel that childcare and bringing takes up all of my time and dominates my life.",
           "scale": "cat",
           "answer_list": "3226+173",
+          "concept": "elt03",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D206",
           "answers": [
@@ -15091,6 +15216,7 @@
           "text": "I wish my parental responsibilities didn't tie me up so much.",
           "scale": "cat",
           "answer_list": "3226+173",
+          "concept": "elt04",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D207",
           "answers": [
@@ -15143,6 +15269,7 @@
           "text": "When there are problems with childrearing, my child is to blame.",
           "scale": "cat",
           "answer_list": "3226+173",
+          "concept": "elt05",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D208",
           "answers": [
@@ -15195,6 +15322,7 @@
           "text": "When I am with my child, there\u2019s nothing I would rather be doing.",
           "scale": "cat",
           "answer_list": "3226+173",
+          "concept": "elt06",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D209",
           "answers": [
@@ -15247,6 +15375,7 @@
           "text": "I would put up with anything in my child's best interests.",
           "scale": "cat",
           "answer_list": "3226+173",
+          "concept": "elt07",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D210",
           "answers": [
@@ -15299,6 +15428,7 @@
           "text": "I think when my child misbehaves he/she is doing it intentionally",
           "scale": "cat",
           "answer_list": "3226+173",
+          "concept": "elt08",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D211",
           "answers": [
@@ -15351,6 +15481,7 @@
           "text": "I often drop everything to help my child",
           "scale": "cat",
           "answer_list": "3226+173",
+          "concept": "elt09",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D212",
           "answers": [
@@ -15403,6 +15534,7 @@
           "text": "I look forward to being with my child",
           "scale": "cat",
           "answer_list": "3226+173",
+          "concept": "elt10",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D213",
           "answers": [
@@ -15474,6 +15606,7 @@
           "text": "I use words and gestures to show my child that I love him/her",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz21",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D214",
           "answers": [
@@ -15526,6 +15659,7 @@
           "text": "I criticize my child",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz22",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D215",
           "answers": [
@@ -15578,6 +15712,7 @@
           "text": "I talk to my child about things he/she has done, seen, or experienced when he/she was out.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz23",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D216",
           "answers": [
@@ -15630,6 +15765,7 @@
           "text": "I punish my child when he/she is disobedient.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz24",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D217",
           "answers": [
@@ -15682,6 +15818,7 @@
           "text": "I threaten my child with punishment, but don't actually follow through with it.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz25",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D218",
           "answers": [
@@ -15734,6 +15871,7 @@
           "text": "When my child is outside the home, I know exactly where he/she is.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz26",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D219",
           "answers": [
@@ -15786,6 +15924,7 @@
           "text": "I tend to be strict with my child.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz27",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D220",
           "answers": [
@@ -15838,6 +15977,7 @@
           "text": "I comfort my child when he/she feels sad.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz28",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D221",
           "answers": [
@@ -15890,6 +16030,7 @@
           "text": "I shout at my child when he/she did something wrong.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz29",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D222",
           "answers": [
@@ -15942,6 +16083,7 @@
           "text": "I feel that my child is ungrateful because he/she disobeys.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz30",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D223",
           "answers": [
@@ -15994,6 +16136,7 @@
           "text": "I stop talking to my child for a while when he/she did something wrong.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz31",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D224",
           "answers": [
@@ -16046,6 +16189,7 @@
           "text": "I make it clear to my child that he/she should not oppose orders and decisions.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz32",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D225",
           "answers": [
@@ -16098,6 +16242,7 @@
           "text": "I praise my child.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz33",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D226",
           "answers": [
@@ -16150,6 +16295,7 @@
           "text": "I scold my child when I am angry at him/her.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz34",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D227",
           "answers": [
@@ -16202,6 +16348,7 @@
           "text": "I try to actively influence my child's circle of friends.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz35",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D228",
           "answers": [
@@ -16254,6 +16401,7 @@
           "text": "I reduce punishments or lift them ahead of time.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz36",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D229",
           "answers": [
@@ -16306,6 +16454,7 @@
           "text": "I am disappointed and sad when my child misbehaves.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz37",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D230",
           "answers": [
@@ -16358,6 +16507,7 @@
           "text": "It is hard for me to be consistent in my childrearing.",
           "scale": "cat",
           "answer_list": "3206+16",
+          "concept": "erz38",
           "filter": "Nur f\u00fcr Jahrgang = 2010",
           "number": "D231",
           "answers": [
@@ -16428,6 +16578,7 @@
           "text": "\nHow often does this kid watch TV, DVDs or Internet streams (like YouTube) in German?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz01d",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E241",
           "answers": [
@@ -16480,6 +16631,7 @@
           "text": "How often does this kid watch TV, DVDs, or Internet streams (such as YouTube) in one or more other languages?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz01a",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E241a",
           "answers": [
@@ -16532,6 +16684,7 @@
           "text": "How often does child use computer- /Online- /console- or smart phone games?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz02",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E242",
           "answers": [
@@ -16584,6 +16737,7 @@
           "text": "How often does this kid use social online networks?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz21",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E243",
           "answers": [
@@ -16636,6 +16790,7 @@
           "text": "\nHow many times is this child on the phone (including Skype or similar)?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz22",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E244",
           "answers": [
@@ -16688,6 +16843,7 @@
           "text": "How often does this child exchange text messages or messengers?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz23",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E245",
           "answers": [
@@ -16740,6 +16896,7 @@
           "text": "How often does this child surf the internet?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz14",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E246",
           "answers": [
@@ -16792,6 +16949,7 @@
           "text": "How often does this child listen music?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz03",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E247",
           "answers": [
@@ -16844,6 +17002,7 @@
           "text": "How often does this child make music?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz04",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E248",
           "answers": [
@@ -16896,6 +17055,7 @@
           "text": "How often do this child sport?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz05",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E249",
           "answers": [
@@ -16948,6 +17108,7 @@
           "text": "How often does this child do something with the family (for example, trips or similar)?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz17",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E250",
           "answers": [
@@ -17000,6 +17161,7 @@
           "text": "How often is this child with friends?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz19",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E251",
           "answers": [
@@ -17052,6 +17214,7 @@
           "text": "How often does this child practice dance, theater or something else?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz06",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E252",
           "answers": [
@@ -17104,6 +17267,7 @@
           "text": "How often does this child do technical work and work?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz07",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E253",
           "answers": [
@@ -17156,6 +17320,7 @@
           "text": "How often does this child paint or make things with hands?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz18",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E254",
           "answers": [
@@ -17208,6 +17373,7 @@
           "text": "How often does this child read?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz08",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E255",
           "answers": [
@@ -17260,6 +17426,7 @@
           "text": "How often does this child just do nothing, hang or dream?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz10",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E256",
           "answers": [
@@ -17312,6 +17479,7 @@
           "text": "How often does  this child visit \nextracurricular religious education?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz26",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E261",
           "answers": [
@@ -17364,6 +17532,7 @@
           "text": "How often does this child visit other religious events?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz16",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E257",
           "answers": [
@@ -17416,6 +17585,7 @@
           "text": "How often does this child go in youth group?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz20",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E258",
           "answers": [
@@ -17468,6 +17638,7 @@
           "text": "How often does this child involved social or support aid projects?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz25",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E259",
           "answers": [
@@ -17520,6 +17691,7 @@
           "text": "How often does this child take care about pets?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz24",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E260",
           "answers": [
@@ -17572,6 +17744,7 @@
           "text": "How often does this child visit a culture association?",
           "scale": "cat",
           "answer_list": "293+173",
+          "concept": "fz27",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E262",
           "answers": [
@@ -17632,6 +17805,7 @@
           "text_de": "Anzahl",
           "text": "Number",
           "scale": "int",
+          "concept": "freud",
           "number": "E263",
           "sn": 1
         },
@@ -17669,6 +17843,7 @@
           "text_de": "Aus Deutschland",
           "text": "From Germany",
           "scale": "bin",
+          "concept": "frher1",
           "number": "E264a",
           "sn": 1
         },
@@ -17677,6 +17852,7 @@
           "text_de": "Aus dem Herkunftsland dieses Kindes",
           "text": "From the country of origin of this child",
           "scale": "bin",
+          "concept": "frher2",
           "number": "E264a",
           "sn": 2
         },
@@ -17685,6 +17861,7 @@
           "text_de": "Aus einem anderen Land, und zwar",
           "text": "[To another country] please state:",
           "scale": "chr",
+          "concept": "frher3",
           "number": "E264a",
           "sn": 3
         },
@@ -17693,6 +17870,7 @@
           "text_de": "keine Angabe",
           "text": "No Answer",
           "scale": "bin",
+          "concept": "frherka",
           "number": "E264a",
           "sn": 4
         }
@@ -17712,6 +17890,7 @@
           "text": "How often does this child spend time in his / her free time with persons from his/her country of origin who not related with him or her?",
           "scale": "cat",
           "answer_list": "2921+173",
+          "concept": "freiznv",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E264",
           "answers": [
@@ -17769,6 +17948,7 @@
           "text": "How often does this child spend time in his / her free time with persons from Germany?",
           "scale": "cat",
           "answer_list": "2921+173",
+          "concept": "freizd",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E265",
           "answers": [
@@ -17826,6 +18006,7 @@
           "text": "How often does this child spend time in his/her free time with persons from other countries?",
           "scale": "cat",
           "answer_list": "2921+173",
+          "concept": "freiza",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E266",
           "answers": [
@@ -17883,6 +18064,7 @@
           "text": "Gets your child pocket money?",
           "scale": "cat",
           "answer_list": "1+16",
+          "concept": "tg1",
           "filter": "Nur f\u00fcr Jahrgang = 2008",
           "number": "E280",
           "answers": [
@@ -17930,6 +18112,7 @@
           "text_de": "pro Woche",
           "text": "per week",
           "scale": "chr",
+          "concept": "tg2",
           "number": "E281",
           "sn": 1
         },
@@ -17938,6 +18121,7 @@
           "text_de": "pro Monat",
           "text": "per month",
           "scale": "chr",
+          "concept": "tg3",
           "number": "E281",
           "sn": 2
         },
