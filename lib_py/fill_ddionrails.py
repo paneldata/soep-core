@@ -1,7 +1,8 @@
 import pathlib
 import shutil
+from collections import OrderedDict
 
-import pandas as pd
+import pandas
 from ddi.onrails.repos import convert_r2ddi, copy, dor1, merge_instruments
 from ddi.onrails.repos.topics import TopicParser
 
@@ -10,52 +11,56 @@ from questions_variables import questions_from_generations
 from transformations import preprocess_transformations
 
 STUDY = "soep-core"
-VERSION = "v34"
+VERSION = "v35"
 
 INPUT_DIRECTORY = pathlib.Path("metadata")
 OUTPUT_DIRECTORY = pathlib.Path("ddionrails")
 
 
 def datasets():
-    x = pd.read_csv("metadata/datasets.csv")
-    x.rename(
-        columns={
-            "study": "study_name",
-            "dataset": "dataset_name",
-            "period": "period_name",
-            "analysis_unit": "analysis_unit_name",
-            "conceptual_dataset": "conceptual_dataset_name",
-        },
-        inplace=True,
+    _datasets = pandas.read_csv("metadata/datasets.csv")
+    columns = OrderedDict(
+        [
+            ("study", "study_name"),
+            ("dataset", "dataset_name"),
+            ("period", "period_name"),
+            ("analysis_unit", "analysis_unit_name"),
+            ("conceptual_dataset", "conceptual_dataset_name"),
+        ]
     )
-    dor1.lower_all_names(x)
-    x.to_csv("ddionrails/datasets.csv", index=False)
+    _datasets.rename(
+        columns=columns, inplace=True,
+    )
+    _datasets.rename(columns={"name": "dataset_name"}, inplace=True)
+    _datasets.to_csv("ddionrails/datasets.csv", index=False)
 
 
 def read_variables():
-    x = pd.read_csv("metadata/variables.csv")
-    x.rename(
-        columns={
-            "study": "study_name",
-            "dataset": "dataset_name",
-            "varname": "variable_name",
-            "concept": "concept_name",
-        },
-        inplace=True,
+    variables = pandas.read_csv("metadata/variables.csv")
+    columns = OrderedDict(
+        [
+            ("study", "study_name"),
+            ("dataset", "dataset_name"),
+            ("variable", "variable_name"),
+            ("concept", "concept_name"),
+            ("description", "description"),
+        ]
     )
-    valid = x.ix[:, ("study_name", "dataset_name", "variable_name")].duplicated() == False
-    x = x.ix[valid]
-    dor1.lower_all_names(x)
-    return x
+    variables.rename(
+        columns=columns, inplace=True,
+    )
+    variables.rename(columns={"name": "variable_name"}, inplace=True)
+    variables = variables.loc[:, list(columns.values())]
+    return variables.drop_duplicates()
 
 
 def variables():
-    x = read_variables()
-    x.to_csv("ddionrails/variables.csv", index=False)
+    variables = read_variables()
+    variables.to_csv("ddionrails/variables.csv", index=False)
 
 
 def concepts():
-    x = pd.read_csv("metadata/concepts.csv")
+    x = pandas.read_csv("metadata/concepts.csv")
     x.rename(columns={"concept": "name", "topic_prefix": "topic_name"}, inplace=True)
     valid = x.ix[:, "name"].duplicated() == False
     x = x.ix[valid]
@@ -69,7 +74,6 @@ def main():
     datasets()
     variables()
     questions_from_generations(VERSION)
-    convert_r2ddi.Parser(STUDY, version=VERSION).write_json()
     merge_instruments.main()
     copy.f("publications.csv")
     copy.f("topics.csv")
@@ -79,7 +83,6 @@ def main():
     ).to_json()
     create_concepts_questions()
     shutil.copy("metadata/analysis_units.csv", "ddionrails/analysis_units.csv")
-    shutil.copy("metadata/attachments.csv", "ddionrails/attachments.csv")
     shutil.copy("metadata/conceptual_datasets.csv", "ddionrails/conceptual_datasets.csv")
     shutil.copy("metadata/periods.csv", "ddionrails/periods.csv")
     transformations = preprocess_transformations(
