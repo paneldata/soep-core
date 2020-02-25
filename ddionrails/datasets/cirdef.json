@@ -1,84 +1,105 @@
-{
-  "cid": {
-    "study": "soep-core",
-    "name": "cid",
-    "name_cs": "cid",
-    "variable": "cid",
+[
+  {
+    "name": "hhnr",
     "dataset": "cirdef",
     "label": "Original Household Number",
     "categories": {
-      "frequencies": [],
-      "labels": [],
-      "missings": [],
       "values": [],
-      "labels_de": []
+      "labels": []
     },
-    "statistics": {
-      "names": [
-        "Min.",
-        "1st Qu.",
-        "Median",
-        "Mean",
-        "3rd Qu.",
-        "Max.",
-        "valid",
-        "invalid"
-      ],
-      "values": [
-        "19",
-        "891890",
-        "2161624",
-        "2177266.51879939",
-        "3457430",
-        "3923894",
-        "141095",
-        "0"
-      ]
-    },
-    "scale": "",
-    "analysis_unit": "h",
-    "sub_type": "raw-survey",
-    "boost": "1",
-    "period": "0",
-    "label_de": "Ursprungshaushaltsnummer"
-  },
-  "hsample": {
+    "scale": "number",
+    "label_de": "Ursprungshaushaltsnummer",
     "study": "soep-core",
+    "statistics": {
+      "Min.": 19.0,
+      "1st Qu.": 1101143.5,
+      "Median": 2244076.0,
+      "Mean": 2183345.2751150825,
+      "3rd Qu.": 3440870.0,
+      "Max.": 3923894.0,
+      "valid": 147720,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "cid",
+    "dataset": "cirdef",
+    "label": "Original Household Number",
+    "categories": {
+      "values": [],
+      "labels": []
+    },
+    "scale": "number",
+    "label_de": "Ursprungshaushaltsnummer",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 19.0,
+      "1st Qu.": 1101143.5,
+      "Median": 2244076.0,
+      "Mean": 2183345.2751150825,
+      "3rd Qu.": 3440870.0,
+      "Max.": 3923894.0,
+      "valid": 147720,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "rgroup20",
+    "dataset": "cirdef",
+    "label": "95% Sample",
+    "categories": {
+      "values": [],
+      "labels": []
+    },
+    "scale": "number",
+    "label_de": "95% Sample",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 5.0,
+      "Median": 10.0,
+      "Mean": 10.464007508212108,
+      "3rd Qu.": 15.0,
+      "Max.": 20.0,
+      "valid": 74585,
+      "invalid": 73135
+    }
+  },
+  {
     "name": "hsample",
-    "name_cs": "hsample",
-    "variable": "hsample",
     "dataset": "cirdef",
     "label": "Subsample",
     "categories": {
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        7971,
-        2659,
-        2179,
-        636,
-        2033,
-        12487,
-        5663,
-        3928,
-        4964,
-        9804,
-        4536,
-        5366,
-        13653,
-        8400,
-        12992,
-        9999,
-        14829,
-        10799,
-        5390,
-        2807,
-        0,
-        0
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        90,
+        91,
+        21,
+        20
       ],
       "labels": [
         "[-6] Version of questionnaire with modified filtering",
@@ -106,9 +127,39 @@
         "[17] M3 2016 Refugee (2013-2015)",
         "[18] M4 2016 Refugee/family (2013-2015)",
         "[19] M5 2017 Refugee (2013-2016)",
-        "20",
         "[90] Int Interviewer (since 1984)",
-        "[91] Fak Fake"
+        "[91] Fak Fake",
+        "21",
+        "20"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] A 1984 Ausgangs-Sample (D-West)",
+        "[2] B 1984 Migration (bis 1983, D-West)",
+        "[3] C 1990 Ausgangs-Sample (D-Ost)",
+        "[4] D 1994/5 Migration (1984-92/4 D-West)",
+        "[5] E 1998 Aufstockung",
+        "[6] F 2000 Aufstockung",
+        "[7] G 2002 Hoch-Einkommen",
+        "[8] H 2006 Aufstockung",
+        "[9] I 2009 Innovation Sample",
+        "[10] J 2011 Aufstockung",
+        "[11] K 2012 Aufstockung",
+        "[12] L1 2010 Geburtskohorten (2007-2009)",
+        "[13] L2 2010 Familientypen",
+        "[14] L3 2011 Familientypen",
+        "[15] M1 2013 Migration (1995-2010)",
+        "[16] M2 2015 Migration (2011-2015)",
+        "[17] M3 2016 Flucht (2013-2015)",
+        "[18] M4 2016 Flucht/Familie (2013-2015)",
+        "[19] M5 2017 Flucht (2013-2016)",
+        "[90] Int Interviewer (seit 1984)",
+        "[91] Fak Faelschungen"
       ],
       "missings": [
         true,
@@ -138,172 +189,47 @@
         false,
         false,
         false,
+        false,
         false
       ],
-      "values": [
-        "-6",
-        "-5",
-        "-4",
-        "-3",
-        "-2",
-        "-1",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17",
-        "18",
-        "19",
-        "20",
-        "90",
-        "91"
-      ],
-      "labels_de": [
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] A 1984 Ausgangs-Sample (D-West)",
-        "[2] B 1984 Migration (bis 1983, D-West)",
-        "[3] C 1990 Ausgangs-Sample (D-Ost)",
-        "[4] D 1994/5 Migration (1984-92/4 D-West)",
-        "[5] E 1998 Aufstockung",
-        "[6] F 2000 Aufstockung",
-        "[7] G 2002 Hoch-Einkommen",
-        "[8] H 2006 Aufstockung",
-        "[9] I 2009 Innovation Sample",
-        "[10] J 2011 Aufstockung",
-        "[11] K 2012 Aufstockung",
-        "[12] L1 2010 Geburtskohorten (2007-2009)",
-        "[13] L2 2010 Familientypen",
-        "[14] L3 2011 Familientypen",
-        "[15] M1 2013 Migration (1995-2010)",
-        "[16] M2 2015 Migration (2011-2015)",
-        "[17] M3 2016 Flucht (2013-2015)",
-        "[18] M4 2016 Flucht/Familie (2013-2015)",
-        "[19] M5 2017 Flucht (2013-2016)",
-        "20",
-        "[90] Int Interviewer (seit 1984)",
-        "[91] Fak Faelschungen"
-      ]
-    },
-    "statistics": {
-      "names": [
-        "valid",
-        "invalid"
-      ],
-      "values": [
-        "141095",
-        "0"
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        7971,
+        2659,
+        2179,
+        636,
+        2033,
+        12487,
+        5663,
+        3928,
+        4964,
+        9804,
+        4536,
+        5366,
+        13653,
+        8400,
+        12992,
+        9999,
+        14829,
+        10799,
+        5390,
+        0,
+        0,
+        6625,
+        2807
       ]
     },
     "scale": "cat",
-    "analysis_unit": "h",
-    "sub_type": "raw-survey",
-    "boost": "1",
-    "period": "0",
-    "label_de": "Stichprobenart"
-  },
-  "hhnr": {
+    "label_de": "Stichprobenart",
     "study": "soep-core",
-    "name": "hhnr",
-    "name_cs": "hhnr",
-    "variable": "hhnr",
-    "dataset": "cirdef",
-    "label": "Original Household Number",
-    "categories": {
-      "frequencies": [],
-      "labels": [],
-      "missings": [],
-      "values": [],
-      "labels_de": []
-    },
     "statistics": {
-      "names": [
-        "Min.",
-        "1st Qu.",
-        "Median",
-        "Mean",
-        "3rd Qu.",
-        "Max.",
-        "valid",
-        "invalid"
-      ],
-      "values": [
-        "19",
-        "891890",
-        "2161624",
-        "2177266.51879939",
-        "3457430",
-        "3923894",
-        "141095",
-        "0"
-      ]
-    },
-    "scale": "",
-    "analysis_unit": "h",
-    "sub_type": "raw-survey",
-    "boost": "1",
-    "period": "0",
-    "label_de": "Ursprungshaushaltsnummer"
-  },
-  "rgroup20": {
-    "study": "soep-core",
-    "name": "rgroup20",
-    "name_cs": "rgroup20",
-    "variable": "rgroup20",
-    "dataset": "cirdef",
-    "label": "95% Sample",
-    "categories": {
-      "frequencies": [],
-      "labels": [],
-      "missings": [],
-      "values": [],
-      "labels_de": []
-    },
-    "statistics": {
-      "names": [
-        "Min.",
-        "1st Qu.",
-        "Median",
-        "Mean",
-        "3rd Qu.",
-        "Max.",
-        "NA's",
-        "valid",
-        "invalid"
-      ],
-      "values": [
-        "1",
-        "5",
-        "10",
-        "10.4605061801059",
-        "15",
-        "20",
-        "73135",
-        "67960",
-        "73135"
-      ]
-    },
-    "scale": "",
-    "analysis_unit": "h",
-    "sub_type": "raw-survey",
-    "boost": "1",
-    "period": "0",
-    "label_de": "95% Sample"
+      "valid": 147720,
+      "invalid": 0
+    }
   }
-}
+]

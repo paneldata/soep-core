@@ -3,6 +3,7 @@
 """ Preprocessing step for transformations """
 
 import pathlib
+from collections import OrderedDict
 
 import pandas as pd
 
@@ -10,11 +11,24 @@ from questions_variables import create_indirect_links_recursive
 
 # load variables for filtering
 variables = pd.read_csv("ddionrails/variables.csv")
-variables["compare"] = variables["dataset_name"].astype(str) + variables["variable_name"].astype(str)
+variables["compare"] = variables["dataset_name"].astype(str) + variables[
+    "variable_name"
+].astype(str)
+
 
 def preprocess_transformations(
     filename: pathlib.Path, study: str, version: str, verbose: bool = False
 ) -> pd.DataFrame:
+    columns = OrderedDict(
+        [
+            ("input_study", "origin_study_name"),
+            ("input_dataset", "origin_dataset_name"),
+            ("input_variable", "origin_variable_name"),
+            ("output_study", "target_study_name"),
+            ("output_dataset", "target_dataset_name"),
+            ("output_variable", "target_variable_name"),
+        ]
+    )
     DTYPE_SETTINGS = {"input_version": str, "output_version": str}
     generations = pd.read_csv(filename, dtype=DTYPE_SETTINGS)
     if verbose:
@@ -93,4 +107,5 @@ def preprocess_transformations(
     if verbose:
         print(generations_with_indirect_links.shape)
         print(generations_with_indirect_links.head())
+    transformations.rename(columns=columns, inplace=True)
     return transformations
