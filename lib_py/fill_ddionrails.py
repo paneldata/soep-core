@@ -75,8 +75,6 @@ def main():
     variables()
     questions_from_generations(VERSION)
     merge_instruments.main()
-    copy.f("publications.csv")
-    copy.f("topics.csv")
     TopicParser(
         topics_input_csv="ddionrails/topics.csv",
         concepts_input_csv="ddionrails/concepts.csv",
