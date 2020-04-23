@@ -5,11 +5,17 @@ verify_ssl = true
 
 [dev-packages]
 pytest = "*"
+black = "*"
 
 [packages]
 click = "*"
 ddi = {editable = true,git = "https://github.com/ddionrails/ddi.py.git",ref = "master"}
 goodtables = "*"
+pandas = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.6"
+
+[pipenv]
+allow_prereleases = true

@@ -106,8 +106,6 @@ def create_questions_from_generations(
     generations = pd.read_csv(generations_path, dtype=DTYPE_SETTINGS)
     updated_generations = create_indirect_links_recursive(generations)
 
-    print(updated_generations)
-
     # Remove rows when output version is not the specified version
     updated_generations = updated_generations[
         updated_generations["output_version"] == version
