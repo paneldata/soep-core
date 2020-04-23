@@ -3,7 +3,7 @@ import shutil
 from collections import OrderedDict
 
 import pandas
-from ddi.onrails.repos import convert_r2ddi, copy, dor1, merge_instruments
+from ddi.onrails.repos import merge_instruments
 from ddi.onrails.repos.topics import TopicParser
 
 from concepts_questions import create_concepts_questions
@@ -36,7 +36,7 @@ def datasets():
 
 
 def read_variables():
-    variables = pandas.read_csv("metadata/variables.csv")
+    _variables = pandas.read_csv("metadata/variables.csv")
     columns = OrderedDict(
         [
             ("study", "study_name"),
@@ -46,12 +46,12 @@ def read_variables():
             ("description", "description"),
         ]
     )
-    variables.rename(
+    _variables.rename(
         columns=columns, inplace=True,
     )
-    variables.rename(columns={"name": "variable_name"}, inplace=True)
-    variables = variables.loc[:, list(columns.values())]
-    return variables.drop_duplicates()
+    _variables.rename(columns={"name": "variable_name"}, inplace=True)
+    _variables = _variables.loc[:, list(columns.values())]
+    return _variables.drop_duplicates()
 
 
 def variables():
@@ -60,23 +60,20 @@ def variables():
 
 
 def concepts():
-    x = pandas.read_csv("metadata/concepts.csv")
-    x.rename(columns={"concept": "name", "topic_prefix": "topic_name"}, inplace=True)
-    valid = x.ix[:, "name"].duplicated() == False
-    x = x.ix[valid]
-    dor1.lower_all_names(x)
-    x.to_csv("ddionrails/concepts.csv", index=False)
+    _concepts = pandas.read_csv("metadata/concepts.csv")
+    _concepts.rename(
+        columns={"concept": "name", "topic_prefix": "topic_name"}, inplace=True
+    )
+    _concepts.drop_duplicates("name")
+    _concepts.to_csv("ddionrails/concepts.csv", index=False)
 
 
 def main():
-    copy.study()
     concepts()
     datasets()
     variables()
     questions_from_generations(VERSION)
     merge_instruments.main()
-    copy.f("publications.csv")
-    copy.f("topics.csv")
     TopicParser(
         topics_input_csv="ddionrails/topics.csv",
         concepts_input_csv="ddionrails/concepts.csv",
