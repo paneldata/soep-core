@@ -15,3 +15,10 @@ Before we can throw away old relationships, we have to create the transitive clo
 for all relations.
 Otherwise we would loose relationships when we remove relationships to old variables.
 """
+
+
+import networkx
+
+
+class VariableGraph:
+    pass
