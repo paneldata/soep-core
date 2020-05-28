@@ -18,7 +18,20 @@ Otherwise we would loose relationships when we remove relationships to old varia
 
 
 import networkx
+import pandas
 
 
 class VariableGraph:
-    pass
+    def __init__(self, generations: pandas.DataFrame, variables: pandas.DataFrame):
+        self._generations = generations
+        self._variables = variables
+        self._graph = networkx.Graph()
+        self._filled = False
+
+    @property
+    def graph(self):
+        return self._graph.copy()
+
+    @property
+    def filled(self):
+        return self._filled
