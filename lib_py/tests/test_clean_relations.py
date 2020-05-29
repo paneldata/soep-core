@@ -34,6 +34,14 @@ class TestVariableGraph(unittest.TestCase):
             graph.has_node(node), msg=f"Node {node} is not in Graph",
         )
 
+    def assertHasEdge(self, from_node, to_node, graph):
+        """Assertion to test presence of an edge in a networkx graph"""
+
+        self.assertTrue(
+            graph.has_edge(from_node, to_node),
+            msg=f"Edge from {from_node} to {to_node} is not in graph.",
+        )
+
     def test_graph_instance(self):
         graph = VariableGraph(self.generations, self.variables)
         self.assertIsInstance(graph, VariableGraph)
@@ -60,7 +68,4 @@ class TestVariableGraph(unittest.TestCase):
         )
         networkx_graph: Graph = graph.graph
         self.assertIsInGraph(expected_node, networkx_graph)
-        self.assertTrue(
-            networkx_graph.has_edge(expected_node, excepted_related_node),
-            msg=f"Edge from {expected_node} to {excepted_related_node} is not in graph.",
-        )
+        self.assertHasEdge(expected_node, excepted_related_node, networkx_graph)
