@@ -25,7 +25,7 @@ class VariableGraph:
     def __init__(self, generations: pandas.DataFrame, variables: pandas.DataFrame):
         self._generations = generations
         self._variables = variables
-        self._graph = networkx.Graph()
+        self._graph = networkx.DiGraph()
         self._filled = False
 
     @property
@@ -51,4 +51,5 @@ class VariableGraph:
                 row["output_variable"],
             )
             self._graph.add_edge(input_node, output_node)
+        self._graph = networkx.algorithms.dag.transitive_closure(self._graph)
         self._filled = True

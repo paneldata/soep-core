@@ -4,7 +4,7 @@ from shutil import copytree, rmtree
 from tempfile import mkdtemp
 
 import pandas
-from networkx import Graph
+from networkx import DiGraph
 
 from ..clean_relations import VariableGraph
 
@@ -28,7 +28,7 @@ class TestVariableGraph(unittest.TestCase):
         rmtree(self.tmpdir_path)
         return super().tearDown()
 
-    def assertIsInGraph(self, node, graph: Graph):
+    def assertIsInGraph(self, node, graph: DiGraph):
         """Assertion to test presence of a node in a networkx graph"""
         self.assertTrue(
             graph.has_node(node), msg=f"Node {node} is not in Graph",
@@ -47,7 +47,7 @@ class TestVariableGraph(unittest.TestCase):
         self.assertIsInstance(graph, VariableGraph)
         self.assertIs(self.generations, graph._generations)
         self.assertIs(self.variables, graph._variables)
-        self.assertIsInstance(graph.graph, Graph)
+        self.assertIsInstance(graph.graph, DiGraph)
         self.assertFalse(graph.filled)
 
     def test_filled_graph(self):
@@ -66,6 +66,15 @@ class TestVariableGraph(unittest.TestCase):
             self.generations["output_version"][0],
             self.generations["output_variable"][0],
         )
+        expected_transitive_node = (
+            self.generations["output_study"][1],
+            self.generations["output_dataset"][1],
+            self.generations["output_version"][1],
+            self.generations["output_variable"][1],
+        )
+
         networkx_graph: Graph = graph.graph
         self.assertIsInGraph(expected_node, networkx_graph)
         self.assertHasEdge(expected_node, excepted_related_node, networkx_graph)
+        self.assertHasEdge(expected_node, excepted_related_node, networkx_graph)
+        self.assertHasEdge(expected_node, expected_transitive_node, networkx_graph)
