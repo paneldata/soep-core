@@ -28,6 +28,12 @@ class TestVariableGraph(unittest.TestCase):
         rmtree(self.tmpdir_path)
         return super().tearDown()
 
+    def assertIsInGraph(self, node, graph: Graph):
+        """Assertion to test presence of a node in a networkx graph"""
+        self.assertTrue(
+            graph.has_node(node), msg=f"Node {node} is not in Graph",
+        )
+
     def test_graph_instance(self):
         graph = VariableGraph(self.generations, self.variables)
         self.assertIsInstance(graph, VariableGraph)
@@ -46,5 +52,11 @@ class TestVariableGraph(unittest.TestCase):
             self.generations["input_version"][0],
             self.generations["input_variable"][0],
         )
+        excepted_related_node = (
+            self.generations["output_study"][0],
+            self.generations["output_dataset"][0],
+            self.generations["output_version"][0],
+            self.generations["output_variable"][0],
+        )
         networkx_graph: Graph = graph.graph
-        self.assertTrue(networkx_graph.has_node(expected_node))
+        self.assertIsInGraph(expected_node, networkx_graph)
