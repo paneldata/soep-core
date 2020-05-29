@@ -78,3 +78,38 @@ class TestVariableGraph(unittest.TestCase):
         self.assertHasEdge(expected_node, excepted_related_node, networkx_graph)
         self.assertHasEdge(expected_node, excepted_related_node, networkx_graph)
         self.assertHasEdge(expected_node, expected_transitive_node, networkx_graph)
+
+    def test_get_transformations(self):
+        graph = VariableGraph(self.generations, self.variables)
+        version = self.generations["input_version"][1]
+
+        transformations = graph.get_transformations(version=version)
+        self.assertListEqual(
+            [
+                "origin_study_name",
+                "origin_dataset_name",
+                "origin_variable_name",
+                "target_study_name",
+                "target_dataset_name",
+                "target_variable_name",
+            ],
+            list(transformations.columns.values),
+        )
+        self.assertListEqual(
+            [
+                "some-study",
+                "some-dataset",
+                "some-other-variable",
+                "some-study",
+                "some-dataset",
+                "final-variable",
+            ],
+            [
+                transformations["origin_study_name"][0],
+                transformations["origin_dataset_name"][0],
+                transformations["origin_variable_name"][0],
+                transformations["target_study_name"][0],
+                transformations["target_dataset_name"][0],
+                transformations["target_variable_name"][0],
+            ],
+        )
