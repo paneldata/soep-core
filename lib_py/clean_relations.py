@@ -35,3 +35,14 @@ class VariableGraph:
     @property
     def filled(self):
         return self._filled
+
+    def fill(self):
+        for _, row in self._generations.iterrows():
+            input_node = (
+                row["input_study"],
+                row["input_dataset"],
+                row["input_version"],
+                row["input_variable"],
+            )
+            self._graph.add_node(input_node)
+        self._filled = True
