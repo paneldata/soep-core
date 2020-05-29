@@ -60,3 +60,7 @@ class TestVariableGraph(unittest.TestCase):
         )
         networkx_graph: Graph = graph.graph
         self.assertIsInGraph(expected_node, networkx_graph)
+        self.assertTrue(
+            networkx_graph.has_edge(expected_node, excepted_related_node),
+            msg=f"Edge from {expected_node} to {excepted_related_node} is not in graph.",
+        )

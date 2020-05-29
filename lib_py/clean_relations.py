@@ -44,5 +44,11 @@ class VariableGraph:
                 row["input_version"],
                 row["input_variable"],
             )
-            self._graph.add_node(input_node)
+            output_node = (
+                row["output_study"],
+                row["output_dataset"],
+                row["output_version"],
+                row["output_variable"],
+            )
+            self._graph.add_edge(input_node, output_node)
         self._filled = True
