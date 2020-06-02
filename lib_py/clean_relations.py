@@ -19,10 +19,11 @@ Otherwise we would loose relationships when we remove relationships to old varia
 
 import networkx
 import pandas
+from typing import Set
 
 
 class VariableGraph:
-    def __init__(self, generations: pandas.DataFrame, variables: pandas.DataFrame):
+    def __init__(self, generations: pandas.DataFrame, variables: Set[str]):
         self._generations = generations
         self._variables = variables
         self._graph = networkx.DiGraph()
@@ -30,13 +31,16 @@ class VariableGraph:
 
     @property
     def graph(self) -> networkx.DiGraph:
+        """Return a flat copy of the networkx DiGraph"""
         return self._graph.copy()
 
     @property
     def filled(self):
+        """Return boolean flag, if graph is already filled."""
         return self._filled
 
     def fill(self):
+        """Fill the graph with variables defined in the input file."""
         if self.filled:
             return
         for _, row in self._generations.iterrows():
@@ -71,10 +75,10 @@ class VariableGraph:
         )
 
         for node in self._graph.nodes(data=False):
-            if node[2] != version:
+            if not self._is_current_variable(node, version):
                 continue
             for related_node in self._graph.neighbors(node):
-                if related_node[2] != version:
+                if not self._is_current_variable(related_node, version):
                     continue
                 transformations = transformations.append(
                     pandas.Series(
@@ -85,6 +89,13 @@ class VariableGraph:
                 )
 
         return transformations
+
+    def _is_current_variable(self, node, version):
+        if node[2] != version:
+            return False
+        if self._remove_version(node) not in self._variables:
+            return False
+        return True
 
     @classmethod
     def _create_transformations_row(cls, origin, target):

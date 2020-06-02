@@ -18,9 +18,13 @@ class TestVariableGraph(unittest.TestCase):
         self.generations = pandas.read_csv(
             self.tmp_project_path.joinpath("metadata/generations.csv")
         )
-        self.variables = pandas.read_csv(
+        _variables = pandas.read_csv(
             self.tmp_project_path.joinpath("metadata/variables.csv")
         )
+        self.variables = {
+            (row["study"], row["dataset"], row.get("name", row.get("variable")))
+            for _, row in _variables.iterrows()
+        }
 
         return super().setUp()
 
@@ -112,4 +116,7 @@ class TestVariableGraph(unittest.TestCase):
                 transformations["target_dataset_name"][0],
                 transformations["target_variable_name"][0],
             ],
+        )
+        self.assertNotIn(
+            "some-irrelevant-variable", transformations["origin_variable_name"]
         )
