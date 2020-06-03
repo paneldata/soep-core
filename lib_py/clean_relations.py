@@ -105,6 +105,16 @@ class VariableGraph:
     def _remove_version(node):
         return node[0:2] + node[3:]
 
+    def __add__(self, graph):
+        if type(graph) not in (QuestionsVariablesGraph, VariableGraph):
+            raise TypeError(
+                (
+                    "unsupported operand type(s) for + : "
+                    f"'{type(self)}' and '{type(graph)}')"
+                )
+            )
+        return networkx.compose(self._graph, graph.graph)
+
 
 class QuestionsVariablesGraph:
     def __init__(self, question_to_variable_relations: pandas.DataFrame):
@@ -138,3 +148,13 @@ class QuestionsVariablesGraph:
             self._graph.add_edge(question_node, variable_node)
         self._graph = networkx.algorithms.dag.transitive_closure(self._graph)
         self._filled = True
+
+    def __add__(self, graph):
+        if not isinstance(graph, VariableGraph):
+            raise TypeError(
+                (
+                    "unsupported operand type(s) for + : "
+                    f"'{type(self)}' and '{type(graph)}')"
+                )
+            )
+        return graph + self

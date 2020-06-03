@@ -11,6 +11,16 @@ from ..clean_relations import VariableGraph, QuestionsVariablesGraph
 
 
 class GraphTestCase(unittest.TestCase):
+    def setUp(self):
+        self.tmpdir_path = Path(mkdtemp())
+        self.tmp_project_path = self.tmpdir_path.joinpath("test-study")
+        test_data = Path("lib_py/test_data/")
+        copytree(test_data, self.tmp_project_path)
+
+    def tearDown(self):
+        rmtree(self.tmpdir_path)
+        return super().tearDown()
+
     def assertIsInGraph(self, node: Tuple[str], graph: DiGraph):
         """Assertion to test presence of a node in a networkx graph.
         
@@ -40,10 +50,7 @@ class GraphTestCase(unittest.TestCase):
 
 class TestVariableGraph(GraphTestCase):
     def setUp(self):
-        self.tmpdir_path = Path(mkdtemp())
-        self.tmp_project_path = self.tmpdir_path.joinpath("test-study")
-        test_data = Path("lib_py/test_data/")
-        copytree(test_data, self.tmp_project_path)
+        super().setUp()
         self.generations = pandas.read_csv(
             self.tmp_project_path.joinpath("metadata/generations.csv")
         )
@@ -56,10 +63,6 @@ class TestVariableGraph(GraphTestCase):
         }
 
         return super().setUp()
-
-    def tearDown(self):
-        rmtree(self.tmpdir_path)
-        return super().tearDown()
 
     def test_graph_instance(self):
         graph = VariableGraph(self.generations, self.variables)
@@ -139,19 +142,12 @@ class TestVariableGraph(GraphTestCase):
 
 class TestQuestionsVariablesGraph(GraphTestCase):
     def setUp(self):
-        self.tmpdir_path = Path(mkdtemp())
-        self.tmp_project_path = self.tmpdir_path.joinpath("test-study")
-        test_data = Path("lib_py/test_data/")
-        copytree(test_data, self.tmp_project_path)
+        super().setUp()
         self.logical_variables = pandas.read_csv(
             self.tmp_project_path.joinpath("metadata/logical_variables.csv")
         )
 
         return super().setUp()
-
-    def tearDown(self):
-        rmtree(self.tmpdir_path)
-        return super().tearDown()
 
     def test_questions_variables_graph_instance(self):
         graph = QuestionsVariablesGraph(
@@ -172,3 +168,30 @@ class TestQuestionsVariablesGraph(GraphTestCase):
         self.assertIsInGraph(question, graph)
         self.assertIsInGraph(variable, graph)
         self.assertHasEdge(question, variable, graph)
+
+
+class TestGraphAddition(GraphTestCase):
+    def setUp(self):
+        super().setUp()
+        self.logical_variables = pandas.read_csv(
+            self.tmp_project_path.joinpath("metadata/logical_variables.csv")
+        )
+        self.generations = pandas.read_csv(
+            self.tmp_project_path.joinpath("metadata/generations.csv")
+        )
+        _variables = pandas.read_csv(
+            self.tmp_project_path.joinpath("metadata/variables.csv")
+        )
+        self.variables = {
+            (row["study"], row["dataset"], row.get("name", row.get("variable")))
+            for _, row in _variables.iterrows()
+        }
+        self.variables_graph = VariableGraph(self.generations, self.variables)
+        self.questions_variables_graph = QuestionsVariablesGraph(self.logical_variables)
+        self.variables_graph.fill()
+        self.questions_variables_graph.fill()
+
+    def test_addition(self):
+        combined_graph = self.variables_graph + self.questions_variables_graph
+        self.assertIsInstance(combined_graph, DiGraph)
+        combined_graph = self.questions_variables_graph + self.variables_graph
