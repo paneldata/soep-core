@@ -171,4 +171,4 @@ class TestQuestionsVariablesGraph(GraphTestCase):
         )
         self.assertIsInGraph(question, graph)
         self.assertIsInGraph(variable, graph)
-        self.assertHasEdge(variable, question, graph)
+        self.assertHasEdge(question, variable, graph)

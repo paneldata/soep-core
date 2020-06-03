@@ -135,6 +135,6 @@ class QuestionsVariablesGraph:
                 row["dataset"],
                 row["variable"],
             )
-            self._graph.add_edge(variable_node, question_node)
+            self._graph.add_edge(question_node, variable_node)
         self._graph = networkx.algorithms.dag.transitive_closure(self._graph)
         self._filled = True
