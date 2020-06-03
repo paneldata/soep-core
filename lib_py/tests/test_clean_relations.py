@@ -2,6 +2,7 @@ import unittest
 from pathlib import Path
 from shutil import copytree, rmtree
 from tempfile import mkdtemp
+from typing import Tuple
 
 import pandas
 from networkx import DiGraph
@@ -9,7 +10,35 @@ from networkx import DiGraph
 from ..clean_relations import VariableGraph
 
 
-class TestVariableGraph(unittest.TestCase):
+class GraphTestCase(unittest.TestCase):
+    def assertIsInGraph(self, node: Tuple[str], graph: DiGraph):
+        """Assertion to test presence of a node in a networkx graph.
+        
+        Args:
+            node: Node to test existence for.
+            graph: Node must exist in this graph.
+
+        """
+        self.assertTrue(
+            graph.has_node(node), msg=f"Node {node} is not in Graph",
+        )
+
+    def assertHasEdge(self, from_node: Tuple[str], to_node: Tuple[str], graph: DiGraph):
+        """Assertion to test presence of an edge in a networkx graph
+        
+        Args:
+            from_node: Node from wich the edge must originate.
+            to_node: Node to which the edge must point.
+            graph: Graph in which this relation must exist.
+        """
+
+        self.assertTrue(
+            graph.has_edge(from_node, to_node),
+            msg=f"Edge from {from_node} to {to_node} is not in graph.",
+        )
+
+
+class TestVariableGraph(GraphTestCase):
     def setUp(self):
         self.tmpdir_path = Path(mkdtemp())
         self.tmp_project_path = self.tmpdir_path.joinpath("test-study")
@@ -31,20 +60,6 @@ class TestVariableGraph(unittest.TestCase):
     def tearDown(self):
         rmtree(self.tmpdir_path)
         return super().tearDown()
-
-    def assertIsInGraph(self, node, graph: DiGraph):
-        """Assertion to test presence of a node in a networkx graph"""
-        self.assertTrue(
-            graph.has_node(node), msg=f"Node {node} is not in Graph",
-        )
-
-    def assertHasEdge(self, from_node, to_node, graph):
-        """Assertion to test presence of an edge in a networkx graph"""
-
-        self.assertTrue(
-            graph.has_edge(from_node, to_node),
-            msg=f"Edge from {from_node} to {to_node} is not in graph.",
-        )
 
     def test_graph_instance(self):
         graph = VariableGraph(self.generations, self.variables)
