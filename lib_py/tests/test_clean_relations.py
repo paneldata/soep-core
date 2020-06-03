@@ -7,7 +7,7 @@ from typing import Tuple
 import pandas
 from networkx import DiGraph
 
-from ..clean_relations import VariableGraph
+from ..clean_relations import VariableGraph, QuestionsVariablesGraph
 
 
 class GraphTestCase(unittest.TestCase):
@@ -135,3 +135,40 @@ class TestVariableGraph(GraphTestCase):
         self.assertNotIn(
             "some-irrelevant-variable", transformations["origin_variable_name"]
         )
+
+
+class TestQuestionsVariablesGraph(GraphTestCase):
+    def setUp(self):
+        self.tmpdir_path = Path(mkdtemp())
+        self.tmp_project_path = self.tmpdir_path.joinpath("test-study")
+        test_data = Path("lib_py/test_data/")
+        copytree(test_data, self.tmp_project_path)
+        self.logical_variables = pandas.read_csv(
+            self.tmp_project_path.joinpath("metadata/logical_variables.csv")
+        )
+
+        return super().setUp()
+
+    def tearDown(self):
+        rmtree(self.tmpdir_path)
+        return super().tearDown()
+
+    def test_questions_variables_graph_instance(self):
+        graph = QuestionsVariablesGraph(
+            question_to_variable_relations=self.logical_variables
+        ).graph
+        self.assertIsInstance(graph, DiGraph)
+        question = (
+            self.logical_variables["study"][0],
+            self.logical_variables["questionnaire"][0],
+            self.logical_variables["question"][0],
+            self.logical_variables["item"][0],
+        )
+        variable = (
+            self.logical_variables["study"][0],
+            self.logical_variables["dataset"][0],
+            self.logical_variables["variable"][0],
+        )
+        self.assertIsInGraph(question, graph)
+        self.assertIsInGraph(variable, graph)
+        self.assertHasEdge(variable, question, graph)

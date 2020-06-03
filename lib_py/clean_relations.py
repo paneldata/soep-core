@@ -104,3 +104,37 @@ class VariableGraph:
     @staticmethod
     def _remove_version(node):
         return node[0:2] + node[3:]
+
+
+class QuestionsVariablesGraph:
+    def __init__(self, question_to_variable_relations: pandas.DataFrame):
+        self._filled = False
+        self._relations_table = question_to_variable_relations
+        self._graph = networkx.DiGraph()
+
+    @property
+    def graph(self):
+        if not self._filled:
+            self.fill()
+        return self._graph.copy()
+
+    @property
+    def filled(self):
+        return self._filled()
+
+    def fill(self):
+        for _, row in self._relations_table.iterrows():
+            question_node = (
+                row["study"],
+                row["questionnaire"],
+                row["question"],
+                row["item"],
+            )
+            variable_node = (
+                row["study"],
+                row["dataset"],
+                row["variable"],
+            )
+            self._graph.add_edge(variable_node, question_node)
+        self._graph = networkx.algorithms.dag.transitive_closure(self._graph)
+        self._filled = True
