@@ -35,15 +35,19 @@ def preprocess_transformations(
         print(generations.shape)
         print(generations.head())
 
-    # follow transitive relations in the generations file
-    generations_with_indirect_links = create_indirect_links_recursive(generations)
-    if verbose:
-        print(generations_with_indirect_links.shape)
-        print(generations_with_indirect_links.head())
-
     # remove rows without the given version as "output_version"
-    mask = generations_with_indirect_links["output_version"] == version
-    generations_with_indirect_links = generations_with_indirect_links[mask]
+    filtered_generations = generations[
+        (generations["output_version"] == version)
+        & (generations["input_version"] == version)
+    ]
+    if verbose:
+        print(filtered_generations.shape)
+        print(filtered_generations.head())
+
+    # follow transitive relations in the generations file
+    generations_with_indirect_links = create_indirect_links_recursive(
+        filtered_generations
+    )
     if verbose:
         print(generations_with_indirect_links.shape)
         print(generations_with_indirect_links.head())
@@ -89,13 +93,7 @@ def preprocess_transformations(
     transformations = transformations[
         transformations["compare"].isin(variables["compare"])
     ]
-    # drop helper column
-    transformations.drop("compare", 1, inplace=True)
-    if verbose:
-        print(generations_with_indirect_links.shape)
-        print(generations_with_indirect_links.head())
 
-    # remove rows where output dataset and variable are not defined in variables.csv
     transformations["compare"] = transformations["output_dataset"].astype(
         str
     ) + transformations["output_variable"].astype(str)
