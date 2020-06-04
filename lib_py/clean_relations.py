@@ -1,33 +1,36 @@
 """Create cleaned up relational files
 
-There are two files that define relationships beetween variables and 
+There are two files that define relationships beetween variables and
 between variables and questions.
 
 * generations.csv defines relationships beetween variables
-* logical_variables.csv defines relationships between questions and variables 
+* logical_variables.csv defines relationships between questions and variables
 
 These relationships are not "clean", they contain relationships with entities
 that are not part of the actual data.
 The unclean relations are needed to establish the relationship between questions
-and variables. 
+and variables.
 The relationships are transitive.
 Before we can throw away old relationships, we have to create the transitive closure
 for all relations.
 Otherwise we would loose relationships when we remove relationships to old variables.
 """
 
+import copy
+from typing import Set
 
 import networkx
 import pandas
-from typing import Set
 
 
 class VariableGraph:
-    def __init__(self, generations: pandas.DataFrame, variables: Set[str]):
+    def __init__(self, generations: pandas.DataFrame, variables: Set[str], version):
         self._generations = generations
         self._variables = variables
         self._graph = networkx.DiGraph()
         self._filled = False
+        self._version = version
+        self._version_variables = set()
 
     @property
     def graph(self) -> networkx.DiGraph:
@@ -56,11 +59,15 @@ class VariableGraph:
                 row["output_version"],
                 row["output_variable"],
             )
+            if input_node[2] == self._version:
+                self._version_variables.add(input_node)
+
             self._graph.add_edge(input_node, output_node)
         self._graph = networkx.algorithms.dag.transitive_closure(self._graph)
         self._filled = True
 
-    def get_transformations(self, version):
+    def get_transformations(self):
+        version = self._version
         if not self.filled:
             self.fill()
         transformations = pandas.DataFrame(
@@ -74,9 +81,7 @@ class VariableGraph:
             ]
         )
 
-        for node in self._graph.nodes(data=False):
-            if not self._is_current_variable(node, version):
-                continue
+        for node in self._version_variables:
             for related_node in self._graph.neighbors(node):
                 if not self._is_current_variable(related_node, version):
                     continue
@@ -106,14 +111,14 @@ class VariableGraph:
         return node[0:2] + node[3:]
 
     def __add__(self, graph):
-        if type(graph) not in (QuestionsVariablesGraph, VariableGraph):
-            raise TypeError(
-                (
-                    "unsupported operand type(s) for + : "
-                    f"'{type(self)}' and '{type(graph)}')"
-                )
+        if isinstance(graph, QuestionsVariablesGraph):
+            return graph + self
+        raise TypeError(
+            (
+                "unsupported operand type(s) for + : "
+                f"'{type(self)}' and '{type(graph)}')"
             )
-        return networkx.compose(self._graph, graph.graph)
+        )
 
 
 class QuestionsVariablesGraph:
@@ -130,7 +135,7 @@ class QuestionsVariablesGraph:
 
     @property
     def filled(self):
-        return self._filled()
+        return self._filled
 
     def fill(self):
         for _, row in self._relations_table.iterrows():
@@ -157,4 +162,11 @@ class QuestionsVariablesGraph:
                     f"'{type(self)}' and '{type(graph)}')"
                 )
             )
-        return graph + self
+        if not self.filled:
+            self.fill()
+        if not graph.filled:
+            graph.fill()
+        _graph = networkx.compose(graph.graph, self._graph)
+        question_variables_graph = copy.copy(self)
+        question_variables_graph._graph = networkx.transitive_closure(_graph)
+        return question_variables_graph

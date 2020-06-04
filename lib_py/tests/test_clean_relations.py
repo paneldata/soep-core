@@ -1,3 +1,4 @@
+import copy
 import unittest
 from pathlib import Path
 from shutil import copytree, rmtree
@@ -65,7 +66,7 @@ class TestVariableGraph(GraphTestCase):
         return super().setUp()
 
     def test_graph_instance(self):
-        graph = VariableGraph(self.generations, self.variables)
+        graph = VariableGraph(self.generations, self.variables, "v35")
         self.assertIsInstance(graph, VariableGraph)
         self.assertIs(self.generations, graph._generations)
         self.assertIs(self.variables, graph._variables)
@@ -73,7 +74,7 @@ class TestVariableGraph(GraphTestCase):
         self.assertFalse(graph.filled)
 
     def test_filled_graph(self):
-        graph = VariableGraph(self.generations, self.variables)
+        graph = VariableGraph(self.generations, self.variables, version="v35")
         graph.fill()
         self.assertTrue(graph.filled)
         expected_node = (
@@ -102,10 +103,10 @@ class TestVariableGraph(GraphTestCase):
         self.assertHasEdge(expected_node, expected_transitive_node, networkx_graph)
 
     def test_get_transformations(self):
-        graph = VariableGraph(self.generations, self.variables)
         version = self.generations["input_version"][1]
+        graph = VariableGraph(self.generations, self.variables, version=version)
 
-        transformations = graph.get_transformations(version=version)
+        transformations = graph.get_transformations()
         self.assertListEqual(
             [
                 "origin_study_name",
@@ -186,12 +187,46 @@ class TestGraphAddition(GraphTestCase):
             (row["study"], row["dataset"], row.get("name", row.get("variable")))
             for _, row in _variables.iterrows()
         }
-        self.variables_graph = VariableGraph(self.generations, self.variables)
+        self.variables_graph = VariableGraph(self.generations, self.variables, "v35")
         self.questions_variables_graph = QuestionsVariablesGraph(self.logical_variables)
         self.variables_graph.fill()
         self.questions_variables_graph.fill()
 
     def test_addition(self):
+        questions_variables_graph = self.questions_variables_graph._graph
         combined_graph = self.variables_graph + self.questions_variables_graph
-        self.assertIsInstance(combined_graph, DiGraph)
+        self.assertIsInstance(combined_graph, QuestionsVariablesGraph)
         combined_graph = self.questions_variables_graph + self.variables_graph
+        self.assertIsInstance(combined_graph, QuestionsVariablesGraph)
+        self.assertEqual(questions_variables_graph, self.questions_variables_graph._graph)
+
+        question = (
+            self.logical_variables["study"][0],
+            self.logical_variables["questionnaire"][0],
+            self.logical_variables["question"][0],
+            self.logical_variables["item"][0],
+        )
+        variable = (
+            self.logical_variables["study"][0],
+            self.logical_variables["dataset"][0],
+            self.logical_variables["variable"][0],
+        )
+
+        expected_node = (
+            self.generations["input_study"][0],
+            self.generations["input_dataset"][0],
+            self.generations["input_version"][0],
+            self.generations["input_variable"][0],
+        )
+        excepted_related_node = (
+            self.generations["output_study"][0],
+            self.generations["output_dataset"][0],
+            self.generations["output_version"][0],
+            self.generations["output_variable"][0],
+        )
+        expected_transitive_node = (
+            self.generations["output_study"][1],
+            self.generations["output_dataset"][1],
+            self.generations["output_version"][1],
+            self.generations["output_variable"][1],
+        )
