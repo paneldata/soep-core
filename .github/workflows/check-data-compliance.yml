@@ -1,0 +1,19 @@
+name: Check-Data-Compliance
+
+on:
+    push:
+    pull_request:
+
+jobs:
+    run-tests:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+            - name: Install
+              run: |
+                python3 -m pip install setuptools
+                python3 -m pip install goodtables
+            - name: Test
+              run: |
+                python3 -m goodtables metadata/datapackage.json
