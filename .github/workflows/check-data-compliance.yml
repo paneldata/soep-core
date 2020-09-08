@@ -1,0 +1,19 @@
+name: Check-Data-Compliance
+
+on:
+    push:
+    pull_request:
+
+jobs:
+    run-pipeline:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Install
+              run: |
+                pip3 install pipenv
+                python3 -m pipenv install --dev
+                python3 -m pipenv graph
+            - name: Test
+              run: |
+                python3 -m goodtables metadata/datapackage.json
