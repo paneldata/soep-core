@@ -1,18 +1,25 @@
 {
-  "name": "soep-core",
-  "schema": "tabular-data-package",
   "profile": "tabular-data-package",
+  "name": "soep-core",
+  "id": "10.5684/soep.v34",
   "resources": [
     {
-      "path": "analysis_units.csv",
-      "profile": "tabular-data-resource",
       "name": "analysis_units",
+      "path": "analysis_units.csv",
       "title": "Analysis units",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "description": "A description about the analysis_units.csv file",
       "schema": {
         "fields": [
+          {
+            "name": "study",
+            "title": "Foreign key to Study",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
           {
             "name": "name",
             "title": "Name of the analysis unit",
@@ -25,44 +32,275 @@
           },
           {
             "name": "label",
-            "title": "Label (English) of the analysis unit",
+            "title": "Label of the analysis unit (English)",
             "type": "string",
-            "format": "default",
-            "constraints": {
-              "maxLength": 255
-            }
+            "format": "default"
           },
           {
             "name": "label_de",
-            "title": "Label (German) of the analysis unit",
+            "title": "Label of the analysis unit (German)",
             "type": "string",
-            "format": "default",
-            "constraints": {
-              "maxLength": 255
-            }
+            "format": "default"
           },
           {
             "name": "description",
-            "title": "Description of the analysis unit using Markdown",
+            "title": "Description of the analysis unit (Markdown, English)",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "description_de",
+            "title": "Description of the analysis unit (Markdown, German)",
             "type": "string",
             "format": "default"
           }
         ],
-        "primaryKey": [
-          "name"
+        "missingValues": [
+          ""
         ]
-      }
-    },
-    {
-      "path": "conceptual_datasets.csv",
+      },
       "profile": "tabular-data-resource",
-      "name": "conceptual_datasets",
-      "title": "Conceptual datasets",
       "format": "csv",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "attachments",
+      "path": "attachments.csv",
+      "title": "Attachments",
+      "description": "A description about the attachments.csv file",
       "schema": {
         "fields": [
+          {
+            "name": "type",
+            "title": "Type of the attachment",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255,
+              "enum": [
+                "study",
+                "dataset",
+                "variable",
+                "instrument",
+                "question"
+              ]
+            }
+          },
+          {
+            "name": "study",
+            "title": "Foreign key to Study",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "dataset",
+            "title": "Foreign key to Dataset",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "variable",
+            "title": "Foreign key to Variable",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "instrument",
+            "title": "Foreign key to Instrument",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "question",
+            "title": "Foreign key to Question",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "format": "uri",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "url_text",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 40
+            }
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "concepts",
+      "path": "concepts.csv",
+      "title": "Concepts",
+      "description": "A description about the concepts.csv file",
+      "schema": {
+        "fields": [
+          {
+            "name": "study",
+            "title": "Foreign key to Study",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "name",
+            "title": "Name of the Concept",
+            "description": "The name of the concept is used as the primary key in this table. It is imported into the database and search engine.",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "label",
+            "title": "Label of the Concept (English)",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "label_de",
+            "title": "Label of the Concept (German)",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "description",
+            "title": "Description of the Concept (Markdown, English)",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "description_de",
+            "title": "Description of the Concept (Markdown, German)",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "topic",
+            "title": "Foreign key to Topic",
+            "type": "string",
+            "format": "default"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "concepts_questions",
+      "path": "concepts_questions.csv",
+      "title": "Concepts questions",
+      "description": "A description about the concepts_questions.csv file",
+      "schema": {
+        "fields": [
+          {
+            "name": "study",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "instrument",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "question",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "concept",
+            "title": "Foreign key to Concept",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "conceptual_datasets",
+      "path": "conceptual_datasets.csv",
+      "title": "Conceptual datasets",
+      "description": "A description about the conceptual_datasets.csv file",
+      "schema": {
+        "fields": [
+          {
+            "name": "study",
+            "title": "Foreign key to Study",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
           {
             "name": "name",
             "title": "Name of the conceptual dataset",
@@ -75,230 +313,152 @@
           },
           {
             "name": "label",
-            "title": "Label (English) of the conceptual_dataset",
+            "title": "Label of the conceptual dataset (English)",
             "type": "string",
-            "format": "default",
-            "constraints": {
-              "maxLength": 255
-            }
+            "format": "default"
           },
           {
             "name": "label_de",
-            "title": "Label (German) of the conceptual_dataset",
+            "title": "Label of the conceptual dataset (German)",
             "type": "string",
-            "format": "default",
-            "constraints": {
-              "maxLength": 255
-            }
+            "format": "default"
           },
           {
             "name": "description",
-            "title": "Description of the conceptual_dataset using Markdown",
+            "title": "Description of the conceptual dataset (Markdown, English)",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "description_de",
+            "title": "Description of the conceptual dataset (Markdown, German)",
             "type": "string",
             "format": "default"
           }
         ],
-        "primaryKey": [
-          "name"
+        "missingValues": [
+          ""
         ]
-      }
+      },
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
     },
     {
-      "path": "datasets.csv",
-      "profile": "tabular-data-resource",
       "name": "datasets",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "study_name",
-            "title": "Name of the study",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255,
-              "enum": [
-                "soep-core"
-              ]
-            }
-          },
-          {
-            "name": "name",
-            "title": "Name of the dataset",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255
-            }
-          },
-          {
-            "name": "label",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": false,
-              "maxLength": 255
-            }
-          },
-          {
-            "name": "conceptual_dataset_name",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "analysis_unit_name",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "period_name",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "label_de",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": false,
-              "maxLength": 255
-            }
-          },
-          {
-            "name": "description",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": false
-            }
-          }
-        ],
-        "primaryKey": [
-          "study_name",
-          "name"
-        ],
-        "foreignKeys": [
-          {
-            "fields": "analysis_unit_name",
-            "reference": {
-              "resource": "analysis_units",
-              "fields": "name"
-            }
-          },
-          {
-            "fields": "conceptual_dataset_name",
-            "reference": {
-              "resource": "conceptual_datasets",
-              "fields": "name"
-            }
-          },
-          {
-            "fields": "period_name",
-            "reference": {
-              "resource": "periods",
-              "fields": "name"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "path": "periods.csv",
-      "profile": "tabular-data-resource",
-      "name": "periods",
-      "title": "Periods",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "study_name",
-            "title": "Name of the study",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255,
-              "enum": [
-                "soep-core"
-              ]
-            }
-          },
-          {
-            "name": "name",
-            "title": "Name of the period",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255
-            }
-          },
-          {
-            "name": "label",
-            "title": "Label (English) of the period",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "maxLength": 255
-            }
-          },
-          {
-            "name": "label_de",
-            "title": "Label (German) of the period",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "maxLength": 255
-            }
-          },
-          {
-            "name": "description",
-            "title": "Description of the period using Markdown",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "definition",
-            "type": "string",
-            "format": "default"
-          }
-        ],
-        "primaryKey": [
-          "study_name",
-          "name"
-        ]
-      }
-    },
-    {
-      "path": "publications.csv",
-      "profile": "tabular-data-resource",
-      "name": "publications",
-      "title": "Publications",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "path": "datasets.csv",
+      "title": "Datasets",
+      "description": "A description about the datasets.csv file",
       "schema": {
         "fields": [
           {
             "name": "study",
+            "title": "Foreign key to Study",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
           },
           {
             "name": "name",
+            "title": "Name of the Dataset",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "label",
+            "title": "Label of the Dataset (English)",
             "type": "string",
             "format": "default"
           },
           {
-            "name": "title",
+            "name": "label_de",
+            "title": "Label of the Dataset (German)",
             "type": "string",
             "format": "default"
+          },
+          {
+            "name": "description",
+            "title": "Description of the Dataset (Markdown, English)",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "description_de",
+            "title": "Description of the Dataset (Markdown, German)",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "analysis_unit",
+            "title": "Foreign key to analysis_unit",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "conceptual_dataset",
+            "title": "Foreign key to conceptual_dataset",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "period",
+            "title": "Foreign key to Period",
+            "type": "string",
+            "format": "default"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "publications",
+      "path": "publications.csv",
+      "title": "Publications",
+      "description": "A description about the publications.csv file",
+      "schema": {
+        "fields": [
+          {
+            "name": "study",
+            "title": "Foreign key to Study",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "name",
+            "title": "Name of the Publication",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "title",
+            "title": "Title of the Publication",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true
+            }
           },
           {
             "name": "author",
@@ -307,7 +467,7 @@
           },
           {
             "name": "year",
-            "type": "integer",
+            "type": "year",
             "format": "default"
           },
           {
@@ -333,107 +493,36 @@
           {
             "name": "url",
             "type": "string",
-            "format": "default"
+            "format": "uri"
           },
           {
             "name": "doi",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "constraints": {
+              "pattern": "^10.\\d{4,9}/[-._;()/:A-z0-9]+$"
+            }
           }
+        ],
+        "missingValues": [
+          ""
         ]
-      }
-    },
-    {
-      "path": "questionnaires.csv",
+      },
       "profile": "tabular-data-resource",
-      "name": "questionnaires",
-      "title": "Questionnaires",
       "format": "csv",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "periods",
+      "path": "periods.csv",
+      "title": "Periods",
+      "description": "A description about the periods.csv file",
       "schema": {
         "fields": [
           {
             "name": "study",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255,
-              "enum": [
-                "soep-core"
-              ]
-            }
-          },
-          {
-            "name": "questionnaire",
-            "title": "Name of the questionnaire",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "label",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "description",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "analysis_unit_name",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "period_name",
-            "type": "integer",
-            "format": "default"
-          },
-          {
-            "name": "label_de",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "description_de",
-            "type": "string",
-            "format": "default"
-          }
-        ],
-        "primaryKey": [
-          "study_name",
-          "questionnaire"
-        ]
-      }
-    },
-    {
-      "path": "variables.csv",
-      "profile": "tabular-data-resource",
-      "name": "variables",
-      "title": "Variables",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "study_name",
-            "title": "Name of the study",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255,
-              "enum": [
-                "soep-core"
-              ]
-            }
-          },
-          {
-            "name": "dataset_name",
-            "title": "Name of the dataset",
+            "title": "Foreign key to Study",
             "type": "string",
             "format": "default",
             "constraints": {
@@ -443,57 +532,66 @@
           },
           {
             "name": "name",
-            "title": "Name of the variable",
+            "title": "Name of the Period",
+            "description": "It is used in the faceted search and the tables for questionnaires and datasets. In the faceted search, the list of periods of all studies is unique by name. Period is a foreign key in questionnaires and datasets.",
             "type": "string",
             "format": "default",
             "constraints": {
               "required": true,
-              "maxLength": 255
+              "maxLength": 20
             }
           },
           {
             "name": "label",
-            "title": "Label (English) of the variable",
+            "title": "Label of the Period (English)",
+            "description": "This label is displayed where period is used in the english UI.",
             "type": "string",
             "format": "default",
             "constraints": {
-              "maxLength": 255
+              "required": true,
+              "maxLength": 20
             }
           },
           {
             "name": "label_de",
-            "title": "Label (German) of the variable",
+            "title": "Label of the Period (German)",
+            "description": "Not used at the moment. This label will be displayed in the german UI, when it becomes available, where period is used.",
             "type": "string",
             "format": "default",
             "constraints": {
-              "maxLength": 255
+              "required": true,
+              "maxLength": 20
             }
-          }
-        ],
-        "primaryKey": [
-          "study_name",
-          "dataset_name",
-          "name"
-        ],
-        "foreignKeys": [
+          },
           {
-            "fields": "dataset_name",
-            "reference": {
-              "resource": "datasets",
-              "fields": "name"
-            }
+            "name": "description",
+            "title": "Description of the Period (Markdown, English)",
+            "description": "Not used at the moment.",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "description_de",
+            "title": "Description of the Period (Markdown, German)",
+            "description": "Not used at the moment.",
+            "type": "string",
+            "format": "default"
           }
+        ],
+        "missingValues": [
+          ""
         ]
-      }
-    },
-    {
-      "path": "answers.csv",
+      },
       "profile": "tabular-data-resource",
-      "name": "answers",
-      "title": "Answers",
       "format": "csv",
       "mediatype": "text/csv",
-      "encoding": "utf-8",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "questions_variables",
+      "path": "questions_variables.csv",
+      "title": "Questions variables",
+      "description": "A description about the questions_variables.csv file",
       "schema": {
         "fields": [
           {
@@ -502,14 +600,11 @@
             "format": "default",
             "constraints": {
               "required": true,
-              "maxLength": 255,
-              "enum": [
-                "soep-core"
-              ]
+              "maxLength": 255
             }
           },
           {
-            "name": "questionnaire",
+            "name": "dataset",
             "type": "string",
             "format": "default",
             "constraints": {
@@ -518,7 +613,7 @@
             }
           },
           {
-            "name": "answer_list",
+            "name": "variable",
             "type": "string",
             "format": "default",
             "constraints": {
@@ -527,199 +622,7 @@
             }
           },
           {
-            "name": "value",
-            "type": "integer",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255
-            }
-          },
-          {
-            "name": "label_de",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "label",
-            "type": "string",
-            "format": "default"
-          }
-        ],
-        "primaryKey": [
-          "study",
-          "questionnaire",
-          "answer_list",
-          "value"
-        ],
-        "foreignKeys": [
-          {
-            "fields": [
-              "study",
-              "questionnaire"
-            ],
-            "reference": {
-              "resource": "questionnaires",
-              "fields": [
-                "study",
-                "questionnaire"
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "name": "topics"
-    },
-    {
-      "path": "generations.csv",
-      "profile": "tabular-data-resource",
-      "name": "generations",
-      "title": "Generations",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "input_study",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255
-            }
-          },
-          {
-            "name": "input_dataset",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255
-            }
-          },
-          {
-            "name": "input_version",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255
-            }
-          },
-          {
-            "name": "input_variable",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255
-            }
-          },
-          {
-            "name": "output_study",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255
-            }
-          },
-          {
-            "name": "output_dataset",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255
-            }
-          },
-          {
-            "name": "output_version",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255
-            }
-          },
-          {
-            "name": "output_variable",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255
-            }
-          }
-        ]
-      }
-    },
-    {
-      "path": "concepts.csv",
-      "profile": "tabular-data-resource",
-      "name": "concepts",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "concept",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "topic",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "topic_prefix",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "label_de",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "label",
-            "type": "string",
-            "format": "default"
-          }
-        ]
-      }
-    },
-    {
-      "name": "logical_variables"
-    },
-    {
-      "path": "questions.csv",
-      "profile": "tabular-data-resource",
-      "name": "questions",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "study",
-            "type": "string",
-            "format": "default",
-            "constraints": {
-              "required": true,
-              "maxLength": 255,
-              "enum": [
-                "soep-core"
-              ]
-            }
-          },
-          {
-            "name": "questionnaire",
+            "name": "instrument",
             "type": "string",
             "format": "default",
             "constraints": {
@@ -730,75 +633,213 @@
           {
             "name": "question",
             "type": "string",
-            "format": "default"
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "topics",
+      "path": "topics.csv",
+      "title": "Topics",
+      "description": "A description about the topics.csv file",
+      "schema": {
+        "fields": [
+          {
+            "name": "study",
+            "title": "Foreign key to Study",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
           },
           {
-            "name": "item",
+            "name": "name",
+            "title": "Name of the Topic",
+            "description": "The name of the topic is used as the primary key in this table. It is imported into the database and search engine.",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "label",
+            "title": "Label of the Topic (English)",
             "type": "string",
             "format": "default"
           },
           {
-            "name": "template.id",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "text_de",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "instruction_de",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "text",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "instruction",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "scale",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "answer_list",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "concept",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "filter",
-            "type": "string",
-            "format": "default"
-          },
-          {
-            "name": "goto",
+            "name": "label_de",
+            "title": "Label of the Topic (German)",
             "type": "string",
             "format": "default"
           },
           {
             "name": "description",
+            "title": "Description of the topic (Markdown, English)",
             "type": "string",
             "format": "default"
           },
           {
-            "name": "number",
+            "name": "description_de",
+            "title": "Description of the topic (Markdown, German)",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "parent",
+            "title": "Foreign key to parent (Topic)",
             "type": "string",
             "format": "default"
           }
+        ],
+        "missingValues": [
+          ""
         ]
-      }
+      },
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "transformations",
+      "path": "transformations.csv",
+      "title": "Transformations",
+      "description": "A description about the transformations.csv file",
+      "schema": {
+        "fields": [
+          {
+            "name": "origin_study",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "origin_dataset",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "origin_variable",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "target_study",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "target_dataset",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "target_variable",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "variables",
+      "path": "variables.csv",
+      "title": "Variables",
+      "description": "A description about the variables.csv file",
+      "schema": {
+        "fields": [
+          {
+            "name": "study",
+            "title": "Foreign key to Study",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "dataset",
+            "title": "Foreign key to Dataset",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "name",
+            "title": "Name of the Variable",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": true,
+              "maxLength": 255
+            }
+          },
+          {
+            "name": "concept",
+            "title": "Foreign key to Concept",
+            "type": "string",
+            "format": "default"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
     }
   ]
 }
