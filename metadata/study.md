@@ -33,10 +33,10 @@ The German Socio-Economic Panel (SOEP-Core) study is a wide-ranging annual repre
 
 A more detailled overview can be found in the [SOEP Companion](http://companion.soep.de/) with the following chapters:
 
-* [Contents of SOEP-Core](http://companion.soep.de/Contents%20of%20SOEPcore/)
+* [Topics of SOEP-Core](http://companion.soep.de/Topics%20of%20SOEPcore/index.html)
 * [Survey Design](http://companion.soep.de/Survey%20Design/)
 * [Target Population and Samples](http://companion.soep.de/Target%20Population%20and%20Samples/)
-* [Data Structure of SOEP-Core](http://companion.soep.de/Data%20Structure%20of%20SOEP-Core/)
+* [Data Structure of SOEP-Core](http://companion.soep.de/Data%20Structure%20of%20SOEPcore/index.html)
 * [Working with SOEP Data](http://companion.soep.de/Working%20with%20SOEP%20Data/)
 * [Working with SOEP Documentation](http://companion.soep.de/Working%20with%20SOEP%20Documentation/)
 
