@@ -1,0 +1,57 @@
+name: Run-Data-Pipeline
+
+on:
+    push:
+        branches-ignore:
+            - "master"
+
+jobs:
+    run-pipeline:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+            - name: Install data pipeline
+              run: |
+                sudo apt install python3.8
+                python3.8 -m pip install setuptools
+                python3.8 -m pip install git+https://github.com/ddionrails/paneldata_pipeline@master#egg=paneldata_pipeline
+            - name: Process Data
+              run: |
+                python3.8 -m paneldata_pipeline -i metadata/ -o ddionrails/ -s soep-core -w ${{ secrets.study_version }} -g -u -r -q
+            - name: Install data compliance check
+              run: |
+                python3 -m pip install setuptools
+                python3 -m pip install goodtables
+            - name: Test Structure
+              run: |
+                python3 -m goodtables validate --skip-checks extra-header ddionrails/datapackage.json
+            - name: Update file and push to remote
+              run: |
+                echo "Stage new files."
+                (IFS=$'\n'
+                for file in $(git ls-files --others --exclude-standard)
+                  do
+                    git add $file
+                    echo "Staging " $file 
+                done)
+                echo "Stage changed files."
+                (IFS=$'\n'
+                for file in $(git diff-index --name-only HEAD)
+                  do
+                    git add $file
+                    echo "Staging " $file 
+                done)
+                CHANGES_TO_COMMIT=$(git diff --name-only --cached | wc -w)
+                if [ "$CHANGES_TO_COMMIT" -gt 0 ]
+                then 
+                  echo "Commit changes."
+                  git config --global user.name "GitHub Action"
+                  git config --global user.email "github-actions@users.noreply.github.com"
+
+                  git commit -m "Update generated data with data-pipeline"
+                  git push
+                else
+                  echo "No changes to commit."
+                  exit 0
+                fi
