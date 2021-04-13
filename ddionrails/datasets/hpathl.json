@@ -5,21 +5,19 @@
     "label": "Case-ID, Original Household Number",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Case ID, Ursprungshaushaltsnummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 19.0,
-      "1st Qu.": 52353.0,
-      "Median": 502367.0,
-      "Mean": 1164469.011559186,
-      "3rd Qu.": 2147435.0,
+      "1st Qu.": 57118.0,
+      "Median": 509892.0,
+      "Mean": 1263800.0720074293,
+      "3rd Qu.": 2522959.0,
       "Max.": 3923894.0,
-      "valid": 517597,
+      "valid": 563178,
       "invalid": 0
     }
   },
@@ -29,21 +27,19 @@
     "label": "Current Household Number (Household ID)",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Haushaltsnummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 19.0,
-      "1st Qu.": 97403.0,
-      "Median": 388297.0,
-      "Mean": 1162271.3212422018,
-      "3rd Qu.": 2145807.0,
-      "Max.": 3923894.0,
-      "valid": 517597,
+      "1st Qu.": 112518.0,
+      "Median": 508730.0,
+      "Mean": 1259469.303951859,
+      "3rd Qu.": 2509243.5,
+      "Max.": 3923967.0,
+      "valid": 563178,
       "invalid": 0
     }
   },
@@ -53,21 +49,19 @@
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Erhebungsjahr",
     "study": "soep-core",
     "statistics": {
       "Min.": 1984.0,
-      "1st Qu.": 2000.0,
-      "Median": 2009.0,
-      "Mean": 2006.339248488689,
-      "3rd Qu.": 2014.0,
-      "Max.": 2018.0,
-      "valid": 517597,
+      "1st Qu.": 2001.0,
+      "Median": 2010.0,
+      "Mean": 2007.3639506514814,
+      "3rd Qu.": 2016.0,
+      "Max.": 2019.0,
+      "valid": 563178,
       "invalid": 0
     }
   },
@@ -78,6 +72,7 @@
     "categories": {
       "values": [
         -8,
+        -7,
         -6,
         -5,
         -4,
@@ -104,10 +99,13 @@
         18,
         19,
         20,
-        21
+        21,
+        22,
+        23
       ],
       "labels": [
         "[-8] Question this year not part of Survey program",
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -134,10 +132,13 @@
         "[18] M4 2016 Refugee/family (2013-2015)",
         "[19] M5 2017 Refugee (2013-2016)",
         "[20] N 2017 Refreshment (PIAAC-L)",
-        "[21] O 2018 Social City"
+        "[21] O 2018 Social City",
+        "[22] P 2019 Top-Shareholder",
+        "[23] Q 2019 Lesbian-Gay-Bisexual (LGB) persons"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprograms",
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -164,7 +165,9 @@
         "[18] M4 2016 Flucht/Familie (2013-2015)",
         "[19] M5 2017 Flucht (2013-2016)",
         "[20] N 2017 Aufstockung (PIAAC-L)",
-        "[21] O 2018 Soziale Stadt"
+        "[21] O 2018 Soziale Stadt",
+        "[22] P 2019 Top-Gesellschafter",
+        "[23] Q 2019 Lesbische-Schwule-Bisexuelle (LGB) Personen"
       ],
       "missings": [
         true,
@@ -174,6 +177,9 @@
         true,
         true,
         true,
+        true,
+        false,
+        false,
         false,
         false,
         false,
@@ -204,34 +210,37 @@
         0,
         0,
         0,
-        118816,
-        31656,
-        53113,
-        9523,
-        13015,
-        80062,
-        19165,
-        15527,
+        0,
+        120323,
+        31859,
+        54104,
+        9680,
+        13080,
+        82031,
+        19740,
+        16123,
         6499,
-        26891,
-        12288,
-        17708,
-        18709,
-        6685,
-        23874,
-        12774,
-        18130,
-        14088,
-        6994,
-        5455,
-        6625
+        28709,
+        13287,
+        18796,
+        20163,
+        7310,
+        25298,
+        13365,
+        19402,
+        15447,
+        8496,
+        7795,
+        7577,
+        23259,
+        835
       ]
     },
     "scale": "cat",
     "label_de": "Stichprobenart",
     "study": "soep-core",
     "statistics": {
-      "valid": 517597,
+      "valid": 563178,
       "invalid": 0
     }
   },
@@ -242,6 +251,7 @@
     "categories": {
       "values": [
         -8,
+        -7,
         -6,
         -5,
         -4,
@@ -254,6 +264,7 @@
       ],
       "labels": [
         "[-8] Question this year not part of Survey program",
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -266,6 +277,7 @@
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprograms",
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -284,6 +296,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false
@@ -293,19 +306,20 @@
         0,
         0,
         0,
+        0,
         8,
         0,
         0,
-        375546,
-        54709,
-        87334
+        394578,
+        59601,
+        108991
       ]
     },
     "scale": "cat",
     "label_de": "Aktueller Befragungsstatus",
     "study": "soep-core",
     "statistics": {
-      "valid": 517589,
+      "valid": 563170,
       "invalid": 8
     }
   },
@@ -316,6 +330,7 @@
     "categories": {
       "values": [
         -8,
+        -7,
         -6,
         -5,
         -4,
@@ -327,6 +342,7 @@
       ],
       "labels": [
         "[-8] Question this year not part of Survey program",
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -338,6 +354,7 @@
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprograms",
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -355,6 +372,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -363,19 +381,20 @@
         0,
         0,
         0,
-        8,
-        72930,
         0,
-        351906,
-        92753
+        8,
+        73018,
+        0,
+        387806,
+        102346
       ]
     },
     "scale": "cat",
     "label_de": "Aktuelle Stichprobenregion",
     "study": "soep-core",
     "statistics": {
-      "valid": 444659,
-      "invalid": 72938
+      "valid": 490152,
+      "invalid": 73026
     }
   },
   {
@@ -385,6 +404,7 @@
     "categories": {
       "values": [
         -8,
+        -7,
         -6,
         -5,
         -4,
@@ -398,6 +418,7 @@
       ],
       "labels": [
         "[-8] Question this year not part of Survey program",
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -411,6 +432,7 @@
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprograms",
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -430,6 +452,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -441,20 +464,43 @@
         0,
         0,
         0,
-        89932,
         0,
-        365420,
-        55391,
-        3177,
-        3677
+        111733,
+        0,
+        383163,
+        60756,
+        3246,
+        4280
       ]
     },
     "scale": "cat",
     "label_de": "Aktuelle Populationszugehoerigkeit",
     "study": "soep-core",
     "statistics": {
-      "valid": 427665,
-      "invalid": 89932
+      "valid": 451445,
+      "invalid": 111733
+    }
+  },
+  {
+    "name": "hrgroup",
+    "dataset": "hpathl",
+    "label": "Random Groups",
+    "categories": {
+      "values": [],
+      "labels": []
+    },
+    "scale": "number",
+    "label_de": "Random Groups",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 1.0,
+      "Median": 4.0,
+      "Mean": 3.6426813547404198,
+      "3rd Qu.": 6.0,
+      "Max.": 8.0,
+      "valid": 563178,
+      "invalid": 0
     }
   },
   {
@@ -463,9 +509,7 @@
     "label": "Inverse Staying Probability",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Inverse Bleibewahrscheinlichkeit",
@@ -474,10 +518,10 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 1.02,
-      "Mean": 0.7339804133331529,
+      "Mean": 0.712775214940925,
       "3rd Qu.": 1.08,
       "Max.": 18.33,
-      "valid": 517597,
+      "valid": 563178,
       "invalid": 0
     }
   },
@@ -487,9 +531,7 @@
     "label": "Weighting factor",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Hochrechnungsfaktor",
@@ -497,11 +539,11 @@
     "statistics": {
       "Min.": 0.0,
       "1st Qu.": 0.0,
-      "Median": 1225.84,
-      "Mean": 2511.8363477377184,
-      "3rd Qu.": 3720.64,
-      "Max.": 36604.06,
-      "valid": 517597,
+      "Median": 1046.4050000000002,
+      "Mean": 2382.90738849884,
+      "3rd Qu.": 3512.2325,
+      "Max.": 36608.25,
+      "valid": 563178,
       "invalid": 0
     }
   },
@@ -511,9 +553,7 @@
     "label": "Weighting factor for new samples (wave 1 of new sample)",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Hochrechnungsfaktor, nur fuer neue Stichproben (Welle 1)",
@@ -522,10 +562,10 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 474.5877030971973,
+      "Mean": 439.9737957981313,
       "3rd Qu.": 0.0,
       "Max.": 205099.22,
-      "valid": 517597,
+      "valid": 563178,
       "invalid": 0
     }
   },
@@ -535,9 +575,7 @@
     "label": "Weighting factor without new samples (wave 1)",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Hochrechnungsfaktor ohne neue Stichproben (Welle 1)",
@@ -545,11 +583,11 @@
     "statistics": {
       "Min.": 0.0,
       "1st Qu.": 0.0,
-      "Median": 1047.16,
-      "Mean": 2512.6506609582366,
-      "3rd Qu.": 3767.95,
-      "Max.": 58738.6,
-      "valid": 517597,
+      "Median": 875.22,
+      "Mean": 2383.5851584578936,
+      "3rd Qu.": 3540.9825,
+      "Max.": 58785.93,
+      "valid": 563178,
       "invalid": 0
     }
   },
@@ -559,22 +597,20 @@
     "label": "Interviewjahr (InterviewYear)",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Interviewjahr (InterviewYear)",
     "study": "soep-core",
     "statistics": {
       "Min.": 1984.0,
-      "1st Qu.": 1999.0,
-      "Median": 2007.0,
-      "Mean": 2005.4873993360325,
+      "1st Qu.": 2000.0,
+      "Median": 2008.0,
+      "Mean": 2006.203560950354,
       "3rd Qu.": 2014.0,
-      "Max.": 2019.0,
-      "valid": 428033,
-      "invalid": 89564
+      "Max.": 2020.0,
+      "valid": 451958,
+      "invalid": 111220
     }
   }
 ]

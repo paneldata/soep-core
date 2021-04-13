@@ -5,21 +5,19 @@
     "label": "Original Household Number",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 19.0,
-      "1st Qu.": 274372.0,
-      "Median": 867918.0,
-      "Mean": 1524320.4440255254,
-      "3rd Qu.": 3040614.0,
+      "1st Qu.": 279064.0,
+      "Median": 2001430.0,
+      "Mean": 1578689.226688396,
+      "3rd Qu.": 3034509.0,
       "Max.": 3923878.0,
-      "valid": 88853,
+      "valid": 93269,
       "invalid": 0
     }
   },
@@ -29,21 +27,19 @@
     "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Unveraenderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 102.0,
-      "1st Qu.": 2722204.0,
-      "Median": 8660802.0,
-      "Mean": 15231040.131914511,
-      "3rd Qu.": 30403902.0,
+      "1st Qu.": 2770901.0,
+      "Median": 20010202.0,
+      "Mean": 15765818.560111076,
+      "3rd Qu.": 30341003.0,
       "Max.": 39238701.0,
-      "valid": 88853,
+      "valid": 93269,
       "invalid": 0
     }
   },
@@ -53,21 +49,19 @@
     "label": "Original Household Number",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 19.0,
-      "1st Qu.": 274372.0,
-      "Median": 867918.0,
-      "Mean": 1524320.4440255254,
-      "3rd Qu.": 3040614.0,
+      "1st Qu.": 279064.0,
+      "Median": 2001430.0,
+      "Mean": 1578689.226688396,
+      "3rd Qu.": 3034509.0,
       "Max.": 3923878.0,
-      "valid": 88853,
+      "valid": 93269,
       "invalid": 0
     }
   },
@@ -77,21 +71,19 @@
     "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Unveraenderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 102.0,
-      "1st Qu.": 2722204.0,
-      "Median": 8660802.0,
-      "Mean": 15231040.131914511,
-      "3rd Qu.": 30403902.0,
+      "1st Qu.": 2770901.0,
+      "Median": 20010202.0,
+      "Mean": 15765818.560111076,
+      "3rd Qu.": 30341003.0,
       "Max.": 39238701.0,
-      "valid": 88853,
+      "valid": 93269,
       "invalid": 0
     }
   },
@@ -101,6 +93,7 @@
     "label": "Sex",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -108,9 +101,11 @@
         -2,
         -1,
         1,
-        2
+        2,
+        3
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -118,9 +113,11 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Male",
-        "[2] Female"
+        "[2] Female",
+        "[3] Various"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -128,7 +125,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] maennlich",
-        "[2] weiblich"
+        "[2] weiblich",
+        "[3] divers"
       ],
       "missings": [
         true,
@@ -137,6 +135,8 @@
         true,
         true,
         true,
+        true,
+        false,
         false,
         false
       ],
@@ -147,16 +147,18 @@
         0,
         0,
         0,
-        39589,
-        49264
+        1,
+        42168,
+        51092,
+        8
       ]
     },
     "scale": "cat",
     "label_de": "Geschlecht",
     "study": "soep-core",
     "statistics": {
-      "valid": 88853,
-      "invalid": 0
+      "valid": 93268,
+      "invalid": 1
     }
   },
   {
@@ -165,21 +167,19 @@
     "label": "Year of Birth, 4-digit",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr -4Steller-",
     "study": "soep-core",
     "statistics": {
       "Min.": 1892.0,
-      "1st Qu.": 1953.0,
+      "1st Qu.": 1954.0,
       "Median": 1969.0,
-      "Mean": 1966.485777642702,
+      "Mean": 1966.9100638035495,
       "3rd Qu.": 1982.0,
-      "Max.": 2002.0,
-      "valid": 88839,
+      "Max.": 2007.0,
+      "valid": 93255,
       "invalid": 14
     }
   },
@@ -189,6 +189,7 @@
     "label": "Birth Biography Information",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -205,6 +206,7 @@
         51
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -221,6 +223,7 @@
         "[51] (51) FiD: Birthbio (With Children)"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -243,6 +246,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -259,10 +263,11 @@
         0,
         0,
         0,
-        11254,
-        7204,
-        23513,
-        35872,
+        0,
+        11251,
+        7943,
+        24684,
+        38381,
         1063,
         855,
         642,
@@ -273,7 +278,7 @@
     "label_de": "Geburtsbiographie-Information",
     "study": "soep-core",
     "statistics": {
-      "valid": 88853,
+      "valid": 93269,
       "invalid": 0
     }
   },
@@ -283,9 +288,7 @@
     "label": "Year Of Biography Survey",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Jahr der Erhebung der Geburtsbiographie",
@@ -294,11 +297,11 @@
       "Min.": 1985.0,
       "1st Qu.": 2001.0,
       "Median": 2010.0,
-      "Mean": 2006.665001783803,
-      "3rd Qu.": 2014.0,
-      "Max.": 2018.0,
-      "valid": 75681,
-      "invalid": 13172
+      "Mean": 2007.3455181023721,
+      "3rd Qu.": 2016.0,
+      "Max.": 2019.0,
+      "valid": 80100,
+      "invalid": 13169
     }
   },
   {
@@ -307,22 +310,20 @@
     "label": "Age When Surveyed Biography",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Alter zum Zeitpunkt der Bio.erhebung",
     "study": "soep-core",
     "statistics": {
-      "Min.": 16.0,
+      "Min.": 12.0,
       "1st Qu.": 25.0,
-      "Median": 37.0,
-      "Mean": 39.49193974630021,
+      "Median": 38.0,
+      "Mean": 39.70837338793243,
       "3rd Qu.": 51.0,
       "Max.": 99.0,
-      "valid": 75680,
-      "invalid": 13173
+      "valid": 80099,
+      "invalid": 13170
     }
   },
   {
@@ -331,9 +332,7 @@
     "label": "Number Of Births From Biography",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Zahl der Geburten aus der Biographie",
@@ -342,11 +341,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 1.0,
-      "Mean": 1.3640147461053633,
+      "Mean": 1.3576404494382022,
       "3rd Qu.": 2.0,
       "Max.": 19.0,
-      "valid": 75681,
-      "invalid": 13172
+      "valid": 80100,
+      "invalid": 13169
     }
   },
   {
@@ -355,9 +354,7 @@
     "label": "Total Number Of Births",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Zahl der Geburten insgesamt",
@@ -366,10 +363,10 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 1.0,
-      "Mean": 1.406908039120795,
+      "Mean": 1.4096752404335846,
       "3rd Qu.": 2.0,
       "Max.": 19.0,
-      "valid": 88853,
+      "valid": 93269,
       "invalid": 0
     }
   },
@@ -379,22 +376,20 @@
     "label": "PERSNR 1st. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "PERSNR 1. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 202.0,
-      "1st Qu.": 2792628.0,
-      "Median": 20132752.0,
-      "Mean": 16297447.976709401,
-      "3rd Qu.": 30369903.0,
+      "1st Qu.": 2833203.0,
+      "Median": 20181503.0,
+      "Mean": 16646973.981551243,
+      "3rd Qu.": 30383803.0,
       "Max.": 39238003.0,
-      "valid": 37440,
-      "invalid": 51413
+      "valid": 38756,
+      "invalid": 54513
     }
   },
   {
@@ -403,22 +398,20 @@
     "label": "PERSNR 2nd. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "PERSNR 2. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 103.0,
-      "1st Qu.": 2898954.0,
-      "Median": 20207554.0,
-      "Mean": 17049547.767324623,
-      "3rd Qu.": 30636304.0,
+      "1st Qu.": 2947804.0,
+      "Median": 20248603.0,
+      "Mean": 17432817.63926083,
+      "3rd Qu.": 30644079.0,
       "Max.": 39238004.0,
-      "valid": 28168,
-      "invalid": 60685
+      "valid": 29276,
+      "invalid": 63993
     }
   },
   {
@@ -427,22 +420,20 @@
     "label": "PERSNR 3rd. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "PERSNR 3. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 5303.0,
-      "1st Qu.": 5025603.0,
-      "Median": 20406305.0,
-      "Mean": 19899148.03030063,
-      "3rd Qu.": 32413605.0,
+      "1st Qu.": 5108606.5,
+      "Median": 20431505.0,
+      "Mean": 20300988.41193894,
+      "3rd Qu.": 32545205.0,
       "Max.": 39238005.0,
-      "valid": 12607,
-      "invalid": 76246
+      "valid": 13167,
+      "invalid": 80102
     }
   },
   {
@@ -451,22 +442,20 @@
     "label": "PERSNR 4th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "PERSNR 4. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 8004.0,
-      "1st Qu.": 8044804.0,
-      "Median": 21277006.0,
-      "Mean": 22622587.4971561,
-      "3rd Qu.": 37272906.0,
+      "1st Qu.": 8234456.0,
+      "Median": 21432305.5,
+      "Mean": 23095669.948496994,
+      "3rd Qu.": 37402006.0,
       "Max.": 39237606.0,
-      "valid": 4747,
-      "invalid": 84106
+      "valid": 4990,
+      "invalid": 88279
     }
   },
   {
@@ -475,22 +464,20 @@
     "label": "PERSNR 5th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "PERSNR 5. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 10303.0,
-      "1st Qu.": 20033755.5,
-      "Median": 31136656.0,
-      "Mean": 24828336.958896983,
-      "3rd Qu.": 38117880.5,
+      "1st Qu.": 20069305.0,
+      "Median": 31811203.0,
+      "Mean": 25481708.313687287,
+      "3rd Qu.": 38187607.0,
       "Max.": 39236407.0,
-      "valid": 1922,
-      "invalid": 86931
+      "valid": 2053,
+      "invalid": 91216
     }
   },
   {
@@ -499,22 +486,20 @@
     "label": "PERSNR 6th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "PERSNR 6. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 14003.0,
-      "1st Qu.": 20115681.75,
-      "Median": 32315007.0,
-      "Mean": 26295235.404282115,
-      "3rd Qu.": 38249308.0,
+      "1st Qu.": 20211510.0,
+      "Median": 32700955.0,
+      "Mean": 26965034.383449882,
+      "3rd Qu.": 38284408.0,
       "Max.": 39236408.0,
-      "valid": 794,
-      "invalid": 88059
+      "valid": 858,
+      "invalid": 92411
     }
   },
   {
@@ -523,22 +508,20 @@
     "label": "PERSNR 7th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "PERSNR 7. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 103301.0,
-      "1st Qu.": 20415409.0,
-      "Median": 36329608.0,
-      "Mean": 28008033.885644767,
-      "3rd Qu.": 38320809.0,
+      "1st Qu.": 20425106.0,
+      "Median": 36414509.0,
+      "Mean": 28349894.285714287,
+      "3rd Qu.": 38336403.0,
       "Max.": 39237903.0,
-      "valid": 411,
-      "invalid": 88442
+      "valid": 441,
+      "invalid": 92828
     }
   },
   {
@@ -547,22 +530,20 @@
     "label": "PERSNR 8th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "PERSNR 8. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 25603.0,
-      "1st Qu.": 20292309.0,
-      "Median": 36144603.0,
-      "Mean": 27607983.23115578,
-      "3rd Qu.": 38309207.5,
+      "1st Qu.": 20432003.0,
+      "Median": 36299110.0,
+      "Mean": 27978419.629107982,
+      "3rd Qu.": 38311106.0,
       "Max.": 39237904.0,
-      "valid": 199,
-      "invalid": 88654
+      "valid": 213,
+      "invalid": 93056
     }
   },
   {
@@ -571,22 +552,20 @@
     "label": "PERSNR 9th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "PERSNR 9. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 257904.0,
-      "1st Qu.": 20046511.0,
-      "Median": 32427309.0,
-      "Mean": 27006613.54954955,
-      "3rd Qu.": 38297909.0,
+      "1st Qu.": 20075402.0,
+      "Median": 34147905.0,
+      "Mean": 27577584.17948718,
+      "3rd Qu.": 38310505.0,
       "Max.": 39200804.0,
-      "valid": 111,
-      "invalid": 88742
+      "valid": 117,
+      "invalid": 93152
     }
   },
   {
@@ -595,22 +574,20 @@
     "label": "PERSNR 10th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "PERSNR 10. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 371503.0,
-      "1st Qu.": 20019211.5,
-      "Median": 32340609.5,
-      "Mean": 25818282.603448275,
-      "3rd Qu.": 37947880.0,
+      "1st Qu.": 20031208.5,
+      "Median": 32343708.0,
+      "Mean": 26200526.866666667,
+      "3rd Qu.": 38090229.5,
       "Max.": 39139502.0,
-      "valid": 58,
-      "invalid": 88795
+      "valid": 60,
+      "invalid": 93209
     }
   },
   {
@@ -619,22 +596,20 @@
     "label": "PERSNR 11th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "PERSNR 11. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 401503.0,
-      "1st Qu.": 20038958.5,
-      "Median": 33238456.5,
-      "Mean": 27374031.633333333,
-      "3rd Qu.": 38310728.75,
+      "1st Qu.": 20042459.5,
+      "Median": 32343709.0,
+      "Mean": 27622186.71875,
+      "3rd Qu.": 37898580.25,
       "Max.": 39203203.0,
-      "valid": 30,
-      "invalid": 88823
+      "valid": 32,
+      "invalid": 93237
     }
   },
   {
@@ -643,22 +618,20 @@
     "label": "PERSNR 12th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "PERSNR 12. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 2979814.0,
-      "1st Qu.": 7002258.5,
-      "Median": 20013215.0,
-      "Mean": 22826537.0,
-      "3rd Qu.": 38234210.5,
+      "1st Qu.": 7002636.25,
+      "Median": 28258810.5,
+      "Mean": 24191059.5,
+      "3rd Qu.": 38813259.25,
       "Max.": 39203204.0,
-      "valid": 11,
-      "invalid": 88842
+      "valid": 12,
+      "invalid": 93257
     }
   },
   {
@@ -667,22 +640,20 @@
     "label": "PERSNR 13th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "PERSNR 13. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 34133201.0,
-      "1st Qu.": 35023028.25,
-      "Median": 35912855.5,
-      "Mean": 35912855.5,
-      "3rd Qu.": 36802682.75,
-      "Max.": 37692510.0,
-      "valid": 2,
-      "invalid": 88851
+      "1st Qu.": 35912855.5,
+      "Median": 37692510.0,
+      "Mean": 37008839.666666664,
+      "3rd Qu.": 38446659.0,
+      "Max.": 39200808.0,
+      "valid": 3,
+      "invalid": 93266
     }
   },
   {
@@ -691,9 +662,7 @@
     "label": "PERSNR 14th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "PERSNR 14. Kind",
@@ -706,7 +675,7 @@
       "3rd Qu.": 36802685.25,
       "Max.": 37692512.0,
       "valid": 2,
-      "invalid": 88851
+      "invalid": 93267
     }
   },
   {
@@ -715,9 +684,7 @@
     "label": "PERSNR 15th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "PERSNR 15. Kind",
@@ -730,7 +697,7 @@
       "3rd Qu.": 37960603.75,
       "Max.": 39236403.0,
       "valid": 2,
-      "invalid": 88851
+      "invalid": 93267
     }
   },
   {
@@ -739,9 +706,7 @@
     "label": "Year Of Birth 1st. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr 1. Kind",
@@ -750,11 +715,11 @@
       "Min.": 1913.0,
       "1st Qu.": 1976.0,
       "Median": 1992.0,
-      "Mean": 1988.2741538737769,
+      "Mean": 1988.6616902660921,
       "3rd Qu.": 2003.0,
       "Max.": 2019.0,
-      "valid": 55695,
-      "invalid": 33158
+      "valid": 58476,
+      "invalid": 34793
     }
   },
   {
@@ -763,22 +728,20 @@
     "label": "Year Of Birth 2nd. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr 2. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 1919.0,
-      "1st Qu.": 1979.0,
+      "1st Qu.": 1980.0,
       "Median": 1995.0,
-      "Mean": 1990.7116174261391,
-      "3rd Qu.": 2005.0,
+      "Mean": 1991.1015236872756,
+      "3rd Qu.": 2006.0,
       "Max.": 2019.0,
-      "valid": 39940,
-      "invalid": 48913
+      "valid": 42069,
+      "invalid": 51200
     }
   },
   {
@@ -787,22 +750,20 @@
     "label": "Year Of Birth 3rd. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr 3. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 1922.0,
-      "1st Qu.": 1982.0,
-      "Median": 1998.0,
-      "Mean": 1993.0340032717925,
-      "3rd Qu.": 2007.0,
-      "Max.": 2018.0,
-      "valid": 17116,
-      "invalid": 71737
+      "1st Qu.": 1983.0,
+      "Median": 1999.0,
+      "Mean": 1993.47562670224,
+      "3rd Qu.": 2008.0,
+      "Max.": 2019.0,
+      "valid": 17991,
+      "invalid": 75278
     }
   },
   {
@@ -811,22 +772,20 @@
     "label": "Year Of Birth 4th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr 4. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 1929.0,
-      "1st Qu.": 1982.0,
+      "1st Qu.": 1983.0,
       "Median": 2001.0,
-      "Mean": 1994.1670795912048,
+      "Mean": 1994.7806888430969,
       "3rd Qu.": 2009.0,
-      "Max.": 2018.0,
-      "valid": 6458,
-      "invalid": 82395
+      "Max.": 2019.0,
+      "valid": 6794,
+      "invalid": 86475
     }
   },
   {
@@ -835,22 +794,20 @@
     "label": "Year Of Birth 5th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr 5. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 1931.0,
-      "1st Qu.": 1982.0,
-      "Median": 2001.0,
-      "Mean": 1994.8957055214723,
-      "3rd Qu.": 2010.0,
-      "Max.": 2018.0,
-      "valid": 2608,
-      "invalid": 86245
+      "1st Qu.": 1984.0,
+      "Median": 2002.0,
+      "Mean": 1995.7363834422658,
+      "3rd Qu.": 2011.0,
+      "Max.": 2019.0,
+      "valid": 2754,
+      "invalid": 90515
     }
   },
   {
@@ -859,22 +816,20 @@
     "label": "Year Of Birth 6th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr 6. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 1933.0,
-      "1st Qu.": 1981.0,
-      "Median": 2001.0,
-      "Mean": 1994.347331583552,
-      "3rd Qu.": 2009.0,
-      "Max.": 2018.0,
-      "valid": 1143,
-      "invalid": 87710
+      "1st Qu.": 1983.0,
+      "Median": 2001.5,
+      "Mean": 1995.342927631579,
+      "3rd Qu.": 2010.0,
+      "Max.": 2019.0,
+      "valid": 1216,
+      "invalid": 92053
     }
   },
   {
@@ -883,22 +838,20 @@
     "label": "Year Of Birth 7th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr 7. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 1935.0,
-      "1st Qu.": 1982.0,
-      "Median": 2000.0,
-      "Mean": 1994.1440677966102,
-      "3rd Qu.": 2009.0,
-      "Max.": 2018.0,
-      "valid": 590,
-      "invalid": 88263
+      "1st Qu.": 1983.0,
+      "Median": 2001.0,
+      "Mean": 1995.0288461538462,
+      "3rd Qu.": 2010.0,
+      "Max.": 2019.0,
+      "valid": 624,
+      "invalid": 92645
     }
   },
   {
@@ -907,9 +860,7 @@
     "label": "Year Of Birth 8th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr 8. Kind",
@@ -917,12 +868,12 @@
     "statistics": {
       "Min.": 1939.0,
       "1st Qu.": 1977.0,
-      "Median": 1998.0,
-      "Mean": 1992.0033333333333,
-      "3rd Qu.": 2006.0,
-      "Max.": 2018.0,
-      "valid": 300,
-      "invalid": 88553
+      "Median": 1999.0,
+      "Mean": 1992.8296529968454,
+      "3rd Qu.": 2007.0,
+      "Max.": 2019.0,
+      "valid": 317,
+      "invalid": 92952
     }
   },
   {
@@ -931,9 +882,7 @@
     "label": "Year Of Birth 9th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr 9. Kind",
@@ -942,11 +891,11 @@
       "Min.": 1942.0,
       "1st Qu.": 1987.0,
       "Median": 1999.0,
-      "Mean": 1994.6645962732919,
+      "Mean": 1995.1420118343194,
       "3rd Qu.": 2006.0,
-      "Max.": 2018.0,
-      "valid": 161,
-      "invalid": 88692
+      "Max.": 2019.0,
+      "valid": 169,
+      "invalid": 93100
     }
   },
   {
@@ -955,22 +904,20 @@
     "label": "Year Of Birth 10th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr 10. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 1949.0,
-      "1st Qu.": 1988.0,
+      "1st Qu.": 1988.5,
       "Median": 1998.0,
-      "Mean": 1995.314606741573,
-      "3rd Qu.": 2006.0,
-      "Max.": 2017.0,
-      "valid": 89,
-      "invalid": 88764
+      "Mean": 1995.7142857142858,
+      "3rd Qu.": 2007.5,
+      "Max.": 2019.0,
+      "valid": 91,
+      "invalid": 93178
     }
   },
   {
@@ -979,9 +926,7 @@
     "label": "Year Of Birth 11th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr 11. Kind",
@@ -990,11 +935,11 @@
       "Min.": 1957.0,
       "1st Qu.": 1993.0,
       "Median": 1999.0,
-      "Mean": 1997.0697674418604,
+      "Mean": 1997.9555555555555,
       "3rd Qu.": 2006.0,
       "Max.": 2018.0,
-      "valid": 43,
-      "invalid": 88810
+      "valid": 45,
+      "invalid": 93224
     }
   },
   {
@@ -1003,22 +948,20 @@
     "label": "Year Of Birth 12th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr 12. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 1959.0,
-      "1st Qu.": 1990.5,
-      "Median": 1995.5,
-      "Mean": 1994.95,
+      "1st Qu.": 1991.0,
+      "Median": 1996.0,
+      "Mean": 1996.0,
       "3rd Qu.": 2008.0,
-      "Max.": 2010.0,
-      "valid": 20,
-      "invalid": 88833
+      "Max.": 2017.0,
+      "valid": 21,
+      "invalid": 93248
     }
   },
   {
@@ -1027,22 +970,20 @@
     "label": "Year Of Birth 13th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr 13. Kind",
     "study": "soep-core",
     "statistics": {
       "Min.": 1978.0,
-      "1st Qu.": 1988.25,
-      "Median": 1995.5,
-      "Mean": 1994.125,
-      "3rd Qu.": 1999.25,
-      "Max.": 2012.0,
-      "valid": 8,
-      "invalid": 88845
+      "1st Qu.": 1991.0,
+      "Median": 1996.0,
+      "Mean": 1996.888888888889,
+      "3rd Qu.": 2003.0,
+      "Max.": 2019.0,
+      "valid": 9,
+      "invalid": 93260
     }
   },
   {
@@ -1051,9 +992,7 @@
     "label": "Year Of Birth 14th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr 14. Kind",
@@ -1066,7 +1005,7 @@
       "3rd Qu.": 2001.5,
       "Max.": 2018.0,
       "valid": 7,
-      "invalid": 88846
+      "invalid": 93262
     }
   },
   {
@@ -1075,9 +1014,7 @@
     "label": "Year Of Birth 15th. Child",
     "categories": {
       "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "labels": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr 15. Kind",
@@ -1090,7 +1027,7 @@
       "3rd Qu.": 2000.75,
       "Max.": 2003.0,
       "valid": 6,
-      "invalid": 88847
+      "invalid": 93263
     }
   },
   {
@@ -1099,6 +1036,7 @@
     "label": "Sex 1st. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -1109,6 +1047,7 @@
         2
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -1119,6 +1058,7 @@
         "[2] Female"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -1135,6 +1075,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -1143,18 +1084,19 @@
         0,
         0,
         0,
-        32820,
-        285,
-        28901,
-        26847
+        0,
+        34420,
+        305,
+        30351,
+        28193
       ]
     },
     "scale": "cat",
     "label_de": "Geschlecht 1. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 55748,
-      "invalid": 33105
+      "valid": 58544,
+      "invalid": 34725
     }
   },
   {
@@ -1163,6 +1105,7 @@
     "label": "Sex 2nd. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -1170,9 +1113,11 @@
         -2,
         -1,
         1,
-        2
+        2,
+        3
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -1180,9 +1125,11 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Male",
-        "[2] Female"
+        "[2] Female",
+        "[3] various"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -1190,7 +1137,8 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] maennlich",
-        "[2] weiblich"
+        "[2] weiblich",
+        "[3] divers"
       ],
       "missings": [
         true,
@@ -1199,6 +1147,8 @@
         true,
         true,
         true,
+        true,
+        false,
         false,
         false
       ],
@@ -1207,18 +1157,20 @@
         0,
         0,
         0,
-        48728,
-        160,
-        20238,
-        19727
+        0,
+        50995,
+        171,
+        21304,
+        20798,
+        1
       ]
     },
     "scale": "cat",
     "label_de": "Geschlecht 2. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 39965,
-      "invalid": 48888
+      "valid": 42103,
+      "invalid": 51166
     }
   },
   {
@@ -1227,6 +1179,7 @@
     "label": "Sex 3rd. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -1237,6 +1190,7 @@
         2
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -1247,6 +1201,7 @@
         "[2] Female"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -1263,6 +1218,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -1271,18 +1227,19 @@
         0,
         0,
         0,
-        71630,
-        97,
-        8901,
-        8225
+        0,
+        75163,
+        101,
+        9353,
+        8652
       ]
     },
     "scale": "cat",
     "label_de": "Geschlecht 3. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 17126,
-      "invalid": 71727
+      "valid": 18005,
+      "invalid": 75264
     }
   },
   {
@@ -1291,6 +1248,7 @@
     "label": "Sex 4th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -1301,6 +1259,7 @@
         2
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -1311,6 +1270,7 @@
         "[2] Female"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -1327,6 +1287,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -1335,18 +1296,19 @@
         0,
         0,
         0,
-        82334,
-        46,
-        3261,
-        3212
+        0,
+        86412,
+        48,
+        3425,
+        3384
       ]
     },
     "scale": "cat",
     "label_de": "Geschlecht 4. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 6473,
-      "invalid": 82380
+      "valid": 6809,
+      "invalid": 86460
     }
   },
   {
@@ -1355,6 +1317,7 @@
     "label": "Sex 5th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -1365,6 +1328,7 @@
         2
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -1375,6 +1339,7 @@
         "[2] Female"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -1391,6 +1356,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -1399,18 +1365,19 @@
         0,
         0,
         0,
-        86204,
-        24,
-        1397,
-        1228
+        0,
+        90473,
+        25,
+        1474,
+        1297
       ]
     },
     "scale": "cat",
     "label_de": "Geschlecht 5. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 2625,
-      "invalid": 86228
+      "valid": 2771,
+      "invalid": 90498
     }
   },
   {
@@ -1419,6 +1386,7 @@
     "label": "Sex 6th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -1429,6 +1397,7 @@
         2
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -1439,6 +1408,7 @@
         "[2] Female"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -1455,6 +1425,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -1463,18 +1434,19 @@
         0,
         0,
         0,
-        87680,
+        0,
+        92023,
         16,
-        575,
-        582
+        612,
+        618
       ]
     },
     "scale": "cat",
     "label_de": "Geschlecht 6. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 1157,
-      "invalid": 87696
+      "valid": 1230,
+      "invalid": 92039
     }
   },
   {
@@ -1483,6 +1455,7 @@
     "label": "Sex 7th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -1493,6 +1466,7 @@
         2
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -1503,6 +1477,7 @@
         "[2] Female"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -1519,6 +1494,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -1527,18 +1503,19 @@
         0,
         0,
         0,
-        88239,
+        0,
+        92621,
         12,
-        315,
-        287
+        326,
+        310
       ]
     },
     "scale": "cat",
     "label_de": "Geschlecht 7. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 602,
-      "invalid": 88251
+      "valid": 636,
+      "invalid": 92633
     }
   },
   {
@@ -1547,6 +1524,7 @@
     "label": "Sex 8th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -1557,6 +1535,7 @@
         2
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -1567,6 +1546,7 @@
         "[2] Female"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -1583,6 +1563,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -1591,18 +1572,19 @@
         0,
         0,
         0,
-        88543,
+        0,
+        92942,
         4,
-        146,
-        160
+        153,
+        170
       ]
     },
     "scale": "cat",
     "label_de": "Geschlecht 8. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 306,
-      "invalid": 88547
+      "valid": 323,
+      "invalid": 92946
     }
   },
   {
@@ -1611,6 +1593,7 @@
     "label": "Sex 9th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -1621,6 +1604,7 @@
         2
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -1631,6 +1615,7 @@
         "[2] Female"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -1647,6 +1632,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -1655,18 +1641,19 @@
         0,
         0,
         0,
-        88683,
+        0,
+        93091,
         2,
-        76,
-        92
+        80,
+        96
       ]
     },
     "scale": "cat",
     "label_de": "Geschlecht 9. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 168,
-      "invalid": 88685
+      "valid": 176,
+      "invalid": 93093
     }
   },
   {
@@ -1675,6 +1662,7 @@
     "label": "Sex 10th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -1685,6 +1673,7 @@
         2
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -1695,6 +1684,7 @@
         "[2] Female"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -1711,6 +1701,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -1719,18 +1710,19 @@
         0,
         0,
         0,
-        88758,
+        0,
+        93172,
         2,
-        37,
-        56
+        38,
+        57
       ]
     },
     "scale": "cat",
     "label_de": "Geschlecht 10. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 93,
-      "invalid": 88760
+      "valid": 95,
+      "invalid": 93174
     }
   },
   {
@@ -1739,6 +1731,7 @@
     "label": "Sex 11th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -1749,6 +1742,7 @@
         2
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -1759,6 +1753,7 @@
         "[2] Female"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -1775,6 +1770,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -1783,9 +1779,10 @@
         0,
         0,
         0,
-        88807,
         0,
-        16,
+        93221,
+        0,
+        18,
         30
       ]
     },
@@ -1793,8 +1790,8 @@
     "label_de": "Geschlecht 11. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 46,
-      "invalid": 88807
+      "valid": 48,
+      "invalid": 93221
     }
   },
   {
@@ -1803,6 +1800,7 @@
     "label": "Sex 12th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -1813,6 +1811,7 @@
         2
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -1823,6 +1822,7 @@
         "[2] Female"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -1839,6 +1839,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -1847,9 +1848,10 @@
         0,
         0,
         0,
-        88832,
         0,
-        5,
+        93247,
+        0,
+        6,
         16
       ]
     },
@@ -1857,8 +1859,8 @@
     "label_de": "Geschlecht 12. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 21,
-      "invalid": 88832
+      "valid": 22,
+      "invalid": 93247
     }
   },
   {
@@ -1867,6 +1869,7 @@
     "label": "Sex 13th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -1877,6 +1880,7 @@
         2
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -1887,6 +1891,7 @@
         "[2] Female"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -1903,6 +1908,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -1911,9 +1917,10 @@
         0,
         0,
         0,
-        88845,
         0,
-        5,
+        93260,
+        0,
+        6,
         3
       ]
     },
@@ -1921,8 +1928,8 @@
     "label_de": "Geschlecht 13. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 8,
-      "invalid": 88845
+      "valid": 9,
+      "invalid": 93260
     }
   },
   {
@@ -1931,6 +1938,7 @@
     "label": "Sex 14th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -1941,6 +1949,7 @@
         2
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -1951,6 +1960,7 @@
         "[2] Female"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -1967,6 +1977,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -1975,7 +1986,8 @@
         0,
         0,
         0,
-        88846,
+        0,
+        93262,
         0,
         2,
         5
@@ -1986,7 +1998,7 @@
     "study": "soep-core",
     "statistics": {
       "valid": 7,
-      "invalid": 88846
+      "invalid": 93262
     }
   },
   {
@@ -1995,6 +2007,7 @@
     "label": "Sex 15th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -2005,6 +2018,7 @@
         2
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -2015,6 +2029,7 @@
         "[2] Female"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -2031,6 +2046,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -2039,7 +2055,8 @@
         0,
         0,
         0,
-        88847,
+        0,
+        93263,
         0,
         3,
         3
@@ -2050,7 +2067,7 @@
     "study": "soep-core",
     "statistics": {
       "valid": 6,
-      "invalid": 88847
+      "invalid": 93263
     }
   },
   {
@@ -2059,6 +2076,7 @@
     "label": "Month Of Birth 1st. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -2079,6 +2097,7 @@
         12
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -2099,6 +2118,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -2125,6 +2145,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -2143,28 +2164,29 @@
         0,
         0,
         0,
-        32820,
-        27087,
-        2923,
-        2374,
-        2513,
-        2171,
-        2400,
-        2390,
-        2535,
-        2556,
-        2486,
-        2345,
-        2110,
-        2143
+        0,
+        34420,
+        29020,
+        3035,
+        2418,
+        2590,
+        2250,
+        2479,
+        2467,
+        2622,
+        2626,
+        2540,
+        2405,
+        2194,
+        2203
       ]
     },
     "scale": "cat",
     "label_de": "Geburtsmonat 1. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 28946,
-      "invalid": 59907
+      "valid": 29829,
+      "invalid": 63440
     }
   },
   {
@@ -2173,6 +2195,7 @@
     "label": "Month Of Birth 2nd. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -2193,6 +2216,7 @@
         12
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -2213,6 +2237,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -2239,6 +2264,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -2257,28 +2283,29 @@
         0,
         0,
         0,
-        48728,
-        18297,
-        2250,
-        1778,
-        1984,
-        1696,
-        1808,
-        1827,
-        1825,
-        1845,
-        1875,
-        1709,
-        1565,
-        1666
+        0,
+        50995,
+        19742,
+        2349,
+        1830,
+        2069,
+        1748,
+        1852,
+        1861,
+        1885,
+        1904,
+        1929,
+        1781,
+        1619,
+        1705
       ]
     },
     "scale": "cat",
     "label_de": "Geburtsmonat 2. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 21828,
-      "invalid": 67025
+      "valid": 22532,
+      "invalid": 70737
     }
   },
   {
@@ -2287,6 +2314,7 @@
     "label": "Month Of Birth 3rd. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -2307,6 +2335,7 @@
         12
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -2327,6 +2356,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -2353,6 +2383,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -2371,28 +2402,29 @@
         0,
         0,
         0,
-        71630,
-        7455,
-        1106,
-        812,
-        865,
-        769,
-        814,
-        807,
-        851,
-        811,
+        0,
+        75163,
+        7987,
+        1175,
+        842,
+        905,
         796,
-        764,
-        687,
-        686
+        840,
+        829,
+        894,
+        822,
+        820,
+        785,
+        699,
+        712
       ]
     },
     "scale": "cat",
     "label_de": "Geburtsmonat 3. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 9768,
-      "invalid": 79085
+      "valid": 10119,
+      "invalid": 83150
     }
   },
   {
@@ -2401,6 +2433,7 @@
     "label": "Month Of Birth 4th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -2421,6 +2454,7 @@
         12
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -2441,6 +2475,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -2467,6 +2502,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -2485,28 +2521,29 @@
         0,
         0,
         0,
-        82334,
-        2974,
-        468,
-        269,
-        280,
-        253,
-        267,
-        272,
-        309,
-        331,
-        295,
-        302,
-        278,
-        221
+        0,
+        86412,
+        3136,
+        506,
+        276,
+        301,
+        265,
+        286,
+        284,
+        323,
+        340,
+        308,
+        315,
+        284,
+        233
       ]
     },
     "scale": "cat",
     "label_de": "Geburtsmonat 4. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 3545,
-      "invalid": 85308
+      "valid": 3721,
+      "invalid": 89548
     }
   },
   {
@@ -2515,6 +2552,7 @@
     "label": "Month Of Birth 5th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -2535,6 +2573,7 @@
         12
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -2555,6 +2594,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -2581,6 +2621,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -2599,28 +2640,29 @@
         0,
         0,
         0,
-        86204,
-        1301,
-        197,
-        80,
-        123,
-        121,
-        98,
+        0,
+        90473,
+        1335,
+        226,
+        91,
+        128,
+        134,
+        111,
+        120,
+        132,
+        105,
+        109,
         114,
-        129,
-        100,
-        103,
-        99,
-        88,
-        96
+        92,
+        99
       ]
     },
     "scale": "cat",
     "label_de": "Geburtsmonat 5. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 1348,
-      "invalid": 87505
+      "valid": 1461,
+      "invalid": 91808
     }
   },
   {
@@ -2629,6 +2671,7 @@
     "label": "Month Of Birth 6th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -2649,6 +2692,7 @@
         12
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -2669,6 +2713,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -2695,6 +2740,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -2713,28 +2759,29 @@
         0,
         0,
         0,
-        87680,
-        645,
-        76,
-        33,
-        41,
-        33,
-        43,
-        43,
-        49,
-        51,
+        0,
+        92023,
+        654,
+        88,
+        37,
         49,
         36,
-        30,
-        44
+        52,
+        46,
+        53,
+        55,
+        52,
+        43,
+        34,
+        47
       ]
     },
     "scale": "cat",
     "label_de": "Geburtsmonat 6. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 528,
-      "invalid": 88325
+      "valid": 592,
+      "invalid": 92677
     }
   },
   {
@@ -2743,6 +2790,7 @@
     "label": "Month Of Birth 7th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -2763,6 +2811,7 @@
         12
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -2783,6 +2832,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -2809,6 +2859,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -2827,28 +2878,29 @@
         0,
         0,
         0,
-        88239,
-        342,
-        67,
+        0,
+        92621,
+        348,
+        71,
         17,
-        16,
-        14,
-        30,
-        20,
-        33,
         19,
-        9,
-        12,
+        20,
+        31,
+        23,
+        36,
+        23,
+        10,
+        13,
         15,
-        20
+        22
       ]
     },
     "scale": "cat",
     "label_de": "Geburtsmonat 7. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 272,
-      "invalid": 88581
+      "valid": 300,
+      "invalid": 92969
     }
   },
   {
@@ -2857,6 +2909,7 @@
     "label": "Month Of Birth 8th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -2877,6 +2930,7 @@
         12
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -2897,6 +2951,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -2923,6 +2978,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -2941,28 +2997,29 @@
         0,
         0,
         0,
-        88543,
-        185,
-        34,
+        0,
+        92942,
+        187,
+        35,
         4,
         17,
-        6,
-        6,
-        5,
-        3,
-        15,
-        13,
         8,
+        11,
         5,
-        9
+        5,
+        15,
+        14,
+        8,
+        7,
+        11
       ]
     },
     "scale": "cat",
     "label_de": "Geburtsmonat 8. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 125,
-      "invalid": 88728
+      "valid": 140,
+      "invalid": 93129
     }
   },
   {
@@ -2971,6 +3028,7 @@
     "label": "Month Of Birth 9th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -2991,6 +3049,7 @@
         12
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -3011,6 +3070,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -3037,6 +3097,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -3055,28 +3116,29 @@
         0,
         0,
         0,
-        88683,
-        99,
-        15,
+        0,
+        93091,
+        102,
+        16,
         10,
         2,
-        11,
-        3,
+        12,
+        4,
         4,
         8,
-        5,
+        6,
         2,
         4,
         1,
-        6
+        7
       ]
     },
     "scale": "cat",
     "label_de": "Geburtsmonat 9. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 71,
-      "invalid": 88782
+      "valid": 76,
+      "invalid": 93193
     }
   },
   {
@@ -3085,6 +3147,7 @@
     "label": "Month Of Birth 11th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -3105,6 +3168,7 @@
         12
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -3125,6 +3189,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -3151,6 +3216,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -3169,11 +3235,12 @@
         0,
         0,
         0,
-        88807,
+        0,
+        93221,
         24,
         5,
         0,
-        6,
+        8,
         0,
         1,
         3,
@@ -3189,8 +3256,8 @@
     "label_de": "Geburtsmonat 11. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 22,
-      "invalid": 88831
+      "valid": 24,
+      "invalid": 93245
     }
   },
   {
@@ -3199,6 +3266,7 @@
     "label": "Month Of Birth 10th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -3219,6 +3287,7 @@
         12
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -3239,6 +3308,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -3265,6 +3335,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -3283,15 +3354,16 @@
         0,
         0,
         0,
-        88758,
-        57,
-        9,
-        3,
+        0,
+        93172,
+        55,
+        11,
+        4,
         2,
         6,
         2,
         4,
-        4,
+        5,
         4,
         3,
         1,
@@ -3303,8 +3375,8 @@
     "label_de": "Geburtsmonat 10. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 38,
-      "invalid": 88815
+      "valid": 42,
+      "invalid": 93227
     }
   },
   {
@@ -3313,6 +3385,7 @@
     "label": "Month Of Birth 12th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -3333,6 +3406,7 @@
         12
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -3353,6 +3427,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -3379,6 +3454,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -3397,9 +3473,10 @@
         0,
         0,
         0,
-        88832,
-        11,
-        2,
+        0,
+        93247,
+        10,
+        3,
         1,
         1,
         2,
@@ -3408,7 +3485,7 @@
         1,
         0,
         3,
-        0,
+        1,
         0,
         0
       ]
@@ -3417,8 +3494,8 @@
     "label_de": "Geburtsmonat 12. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 10,
-      "invalid": 88843
+      "valid": 12,
+      "invalid": 93257
     }
   },
   {
@@ -3427,6 +3504,7 @@
     "label": "Month Of Birth 13th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -3447,6 +3525,7 @@
         12
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -3467,6 +3546,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -3493,6 +3573,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -3511,10 +3592,11 @@
         0,
         0,
         0,
-        88845,
+        0,
+        93260,
         6,
         2,
-        0,
+        1,
         0,
         0,
         0,
@@ -3531,8 +3613,8 @@
     "label_de": "Geburtsmonat 13. Kind",
     "study": "soep-core",
     "statistics": {
-      "valid": 2,
-      "invalid": 88851
+      "valid": 3,
+      "invalid": 93266
     }
   },
   {
@@ -3541,6 +3623,7 @@
     "label": "Month Of Birth 14th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -3561,6 +3644,7 @@
         12
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -3581,6 +3665,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -3607,6 +3692,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -3625,7 +3711,8 @@
         0,
         0,
         0,
-        88846,
+        0,
+        93262,
         5,
         0,
         0,
@@ -3646,7 +3733,7 @@
     "study": "soep-core",
     "statistics": {
       "valid": 2,
-      "invalid": 88851
+      "invalid": 93267
     }
   },
   {
@@ -3655,6 +3742,7 @@
     "label": "Month Of Birth 15th. Child",
     "categories": {
       "values": [
+        -7,
         -6,
         -5,
         -4,
@@ -3675,6 +3763,7 @@
         12
       ],
       "labels": [
+        "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
         "[-5] Not included in this version of the questionnaire",
         "[-4] Inadmissible multiple response",
@@ -3695,6 +3784,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
@@ -3721,6 +3811,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -3739,7 +3830,8 @@
         0,
         0,
         0,
-        88847,
+        0,
+        93263,
         5,
         1,
         0,
@@ -3760,7 +3852,7 @@
     "study": "soep-core",
     "statistics": {
       "valid": 1,
-      "invalid": 88852
+      "invalid": 93268
     }
   }
 ]
