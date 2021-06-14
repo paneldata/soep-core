@@ -61,9 +61,9 @@ An overview about the instruments in SOEP is available in the [SOEP Companion](h
 
 The most current instruments (survey year 2018) are: 
 
-| paneldata.org                                                                                    | Field version                                                                                   | Version with variable names                                                                                                                                                                |
-| ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Address/contact protocol and supporting instruments 2018                                         |                                                                                                 |                                                                                                                                                                                            |
+| paneldata.org                                                                                         | Field version                                                                                   | Version with variable names                                                                                                                                                                |
+|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Address/contact protocol and supporting instruments 2018                                              |                                                                                                 |                                                                                                                                                                                            |
 | [Household 2018](https://paneldata.org/soep-core/inst/soep-core-2018-hh)                         | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.619055.de/diw_ssp0607.pdf) | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741263.de/diw_ssp0804.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740865.de/diw_ssp0779.pdf) |
 | [Individual 2018](https://paneldata.org/soep-core/inst/soep-core-2018-pe)                        | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.622046.de/diw_ssp0608.pdf) | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741437.de/diw_ssp0816.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740954.de/diw_ssp0791.pdf) |
 | [Biography 2018](https://paneldata.org/soep-core/inst/soep-core-2018-ll)                         | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622048.de/diw_ssp0609.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741394.de/diw_ssp0811.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740897.de/diw_ssp0786.pdf) |
@@ -76,9 +76,9 @@ The most current instruments (survey year 2018) are:
 | [Pre-teen (11-12-year-olds) 2018](https://paneldata.org/soep-core/inst/soep-core-2018-s)         | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622208.de/diw_ssp0617.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741441.de/diw_ssp0818.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740958.de/diw_ssp0793.pdf) |
 | [Early Youth (13-14-year-olds) 2018](https://paneldata.org/soep-core/inst/soep-core-2018-s2)     | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622210.de/diw_ssp0618.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741443.de/diw_ssp0819.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740960.de/diw_ssp0794.pdf) |
 | [Youth (16-17-year-olds) 2018](https://paneldata.org/soep-core/inst/soep-core-2018-ju)           | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622212.de/diw_ssp0619.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741279.de/diw_ssp0807.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740871.de/diw_ssp0782.pdf) |
-| [Grip Strength 2018](https://paneldata.org/soep-core/inst/soep-core-2018-gk)                     | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622214.de/diw_ssp0620.pdf)    |                                                                                                                                                                                            |
+| [Grip Strength 2018](https://paneldata.org/soep-core/inst/soep-core-2018-gk)                     | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622214.de/diw_ssp0620.pdf)    |   |
 | [Deceased Individual 2018](https://paneldata.org/soep-core/inst/soep-core-2018-vp)               | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622052.de/diw_ssp0611.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741457.de/diw_ssp0820.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740962.de/diw_ssp0795.pdf) |
-| [Life in the former GDR 2018](https://paneldata.org/soep-core/inst/soep-core-2018-pb)            | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622216.de/diw_ssp0676.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741396.de/diw_ssp0812.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740899.de/diw_ssp0787.pdf) |
+| [Life in the former GDR 2018](https://paneldata.org/soep-core/inst/soep-core-2018-pb)           | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622216.de/diw_ssp0676.pdf)    |   [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741396.de/diw_ssp0812.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740899.de/diw_ssp0787.pdf)|
 
 
 
@@ -121,15 +121,15 @@ A comprehensive description of the [data structure](http://companion.soep.de/Dat
 
 Survey variables might be missing, that is, lacking a valid code or value for different reasons. In the SOEP, negative values are not valid for any variable, but are used instead to code different reasons for missing information. There are two distinctions for missing values: they may originate in the respondent’s answer or in the survey design. The respondent may refuse or not know an answer or she may report invalid values on the one hand, and the interview design may exclude respondents with certain characteristics from some questions on the other (e.g., men will never be asked if they are pregnant). The following codes apply:
 
-| Code  | Meaning                                             |
-| :---: | --------------------------------------------------- |
-|  -1   | no answer /don`t know                               |
-|  -2   | does not apply                                      |
-|  -3   | implausible value                                   |
-|  -4   | inadmissible multiple response                      |
-|  -5   | not included in this version of the questionnaire   |
-|  -6   | version of questionnaire with modified filtering    |
-|  -8   | question not part of the survey programm this year* |
+| Code | Meaning |
+|:----:|---------|
+| -1 | no answer /don`t know |
+| -2 | does not apply |
+| -3 | implausible value |
+| -4 | inadmissible multiple response |
+| -5 | not included in this version of the questionnaire |
+| -6 | version of questionnaire with modified filtering |
+| -8 | question not part of the survey programm this year* |
 
 *Only applicable for datasets in long format.
 
