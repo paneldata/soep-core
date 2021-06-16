@@ -3,19 +3,10 @@ name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
 
-[dev-packages]
-pytest = "*"
-black = "*"
-
 [packages]
-click = "*"
-ddi = {editable = true,git = "https://github.com/ddionrails/ddi.py.git",ref = "master"}
+paneldata_pipeline = {git = "git+https://github.com/ddionrails/paneldata_pipeline", ref="master"}
+ddionrails_datapackage = {git = "git+https://github.com/paneldata/data-specification", ref="master"}
 goodtables = "*"
-pandas = "*"
-pylint = "*"
-
-[requires]
-python_version = "3.6"
 
 [pipenv]
 allow_prereleases = true
