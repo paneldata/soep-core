@@ -59,6 +59,13 @@
         ],
         "relations_from": [
             {
+                "file": "attachments.csv",
+                "fields": [
+                    "study",
+                    "dataset"
+                ]
+            },
+            {
                 "file": "variables.csv",
                 "fields": [
                     "study",
@@ -104,6 +111,24 @@
         ]
     },
     {
+        "file": "questions.csv",
+        "fields": [
+            "study",
+            "instrument",
+            "name"
+        ],
+        "relations_from": [
+            {
+                "file": "attachments.csv",
+                "fields": [
+                    "study",
+                    "instrument",
+                    "question"
+                ]
+            }
+        ]
+    },
+    {
         "file": "questions_images.csv",
         "fields": [
             "study",
@@ -133,6 +158,24 @@
                 "fields": [
                     "study",
                     "topic"
+                ]
+            }
+        ]
+    },
+    {
+        "file": "variables.csv",
+        "fields": [
+            "study",
+            "dataset",
+            "name"
+        ],
+        "relations_from": [
+            {
+                "file": "attachments.csv",
+                "fields": [
+                    "study",
+                    "dataset",
+                    "variable"
                 ]
             }
         ]
