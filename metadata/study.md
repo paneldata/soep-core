@@ -1,7 +1,7 @@
 ---
 name: soep-core
 label: SOEP-Core
-doi: 10.5684/soep-core.v35
+doi: 10.5684/soep.core.v36eu
 config:
     variables:
         label_table: True
@@ -16,12 +16,12 @@ config:
 ## Citation
 
 * **Title:** German Socio-Economic Panel Study (SOEP-Core)
-* **DOI:** 10.5684/soep-core.v35
+* **DOI:** 10.5684/soep-core.v36eu
 * **Authors:** Stefan Liebig; Jan Goebel; David Richter; Carsten Schröder; Jürgen Schupp; Charlotte Bartels; Alexandra Fedorets; Andreas Franken; Marco Giesselmann; Markus Grabka; Jannes Jacobsen; Selin Kara; Peter Krause; Martin Kroh; Hannes Kröger; Maria Metzing; Jana Nebelin; Diana Schacht; Paul Schmelzer; Christian Schmitt; Daniel Schnitzlein; Rainer Siegers; Knut Wenzig; Stefan Zimmermann 
-* **URL:** https://doi.org/10.5684/soep-core.v35
+* **URL:** https://doi.org/10.5684/soep.core.v36eu
 
 
-Publications using these data should cite the DOI (doi:10.5684/soep-core.v35) and include one of the following references:
+Publications using these data should cite the DOI (doi:10.5684/soep-core.v36eu) and include one of the following references:
 
 * Jan Goebel, Markus M. Grabka, Stefan Liebig, Martin Kroh, David Richter, Carsten Schröder, Jürgen Schupp (2018) [The German Socio-Economic Panel Study (SOEP)](https://doi.org/10.1515/jbnst-2018-0022). Jahrbücher für Nationalökonomie und Statistik / Journal of Economics and Statistics (online first), doi: 10.1515/jbnst-2018-0022
 * Gert G. Wagner, Jan Göbel, Peter Krause, Rainer Pischner, and Ingo Sieber (2008) [Das Sozio-oekonomische Panel (SOEP): Multidisziplinäres Haushaltspanel und Kohortenstudie für Deutschland - Eine Einführung (für neue Datennutzer) mit einem Ausblick (für erfahrene Anwender)](https://doi.org/10.1007/s11943-008-0050-y), AStA Wirtschafts- und Sozialstatistisches Archiv 2 (4), 301-328.
@@ -29,59 +29,41 @@ Publications using these data should cite the DOI (doi:10.5684/soep-core.v35) an
 
 ## Study Info
 
-The German Socio-Economic Panel (SOEP-Core) study is a wide-ranging annual representative longitudinal study of private households, located at the German Institute for Economic Research, DIW Berlin. In 2018 more than 32,000 individuals im more than 18,000 households have been interviewed by the fieldwork organization Kantar Public. The data provide information on all household members, consisting of Germans living in the Eastern and Western German States, foreigners, and immigrants to Germany. The Panel was started in 1984. Some of the many topics include household composition, occupational biographies, employment, earnings, health and satisfaction indicators. As early as June 1990—even before the Economic, Social and Monetary Union—SOEP expanded to include the states of the former German Democratic Republic (GDR), thus seizing the rare opportunity to observe the transformation of an entire society. Also immigrant samples were added in 1994/95 and 2013/2015 to account for the changes that took place in Germany society. Two samples of refugees were introduced in 2016, another one in 2017. In 2018 Sample O includes nearly 1000 households located primariyly in bigger cities. Further new samples were added in 1998, 2000, 2002, 2006, 2009, 2010, 2011, 2012, and 2017. The survey is constantly being adapted and developed in response to current social developments. The international version contains 95% of all cases surveyed (for citation please use the corresponding DOI 10.5684/soep-core.v35i).
+The German Socio-Economic Panel (SOEP-Core) study is a wide-ranging annual representative longitudinal study of private households, located at the German Institute for Economic Research, DIW Berlin. In 2018 more than 32,000 individuals im more than 18,000 households have been interviewed by the fieldwork organization Kantar Public. The data provide information on all household members, consisting of Germans living in the Eastern and Western German States, foreigners, and immigrants to Germany. The Panel was started in 1984. Some of the many topics include household composition, occupational biographies, employment, earnings, health and satisfaction indicators. As early as June 1990—even before the Economic, Social and Monetary Union—SOEP expanded to include the states of the former German Democratic Republic (GDR), thus seizing the rare opportunity to observe the transformation of an entire society. Also immigrant samples were added in 1994/95 and 2013/2015 to account for the changes that took place in Germany society. Two samples of refugees were introduced in 2016, another one in 2017. In 2018 Sample O includes nearly 1000 households located primariyly in bigger cities. In 2019 the Sample P “Top Shareholder Sample” and Sample Q “LGB*” were added. Further new samples were added in 1998, 2000, 2002, 2006, 2009, 2010, 2011, 2012, and 2017. The survey is constantly being adapted and developed in response to current social developments. The international version contains 95% of all cases surveyed (for citation please use the corresponding DOI [10.5684/soep.core.v36i](https://doi.org/10.5684/soep.core.v36i).
 
 A more detailled overview can be found in the [SOEP Companion](http://companion.soep.de/) with the following chapters:
 
 * [Topics of SOEP-Core](http://companion.soep.de/Topics%20of%20SOEPcore/index.html)
 * [Survey Design](http://companion.soep.de/Survey%20Design/)
 * [Target Population and Samples](http://companion.soep.de/Target%20Population%20and%20Samples/)
+* [Development of Sample Sizes](http://companion.soep.de/Target%20Population%20and%20Samples/Development%20of%20Sample%20Sizes.html).
+* [Instruments and Questionnaires in SOEP](http://companion.soep.de/Survey%20Design/SOEP%20Questionnaires.html)
 * [Data Structure of SOEP-Core](http://companion.soep.de/Data%20Structure%20of%20SOEPcore/index.html)
 * [Working with SOEP Data](http://companion.soep.de/Working%20with%20SOEP%20Data/)
 * [Working with SOEP Documentation](http://companion.soep.de/Working%20with%20SOEP%20Documentation/)
 
+## Current Instruments
 
-## Method
+The SOEP is presented to respondents and interviewers under the easy-to-remember name “Living in Germany”. This umbrella term covers in survey year 2019 a total of 59 field instruments, one contact protocol, and 58 questionnaires, many of them adapted for special samples and processed with PAPI as well as CAPI or CAWI.
 
-Data collector:  Kantar Public.
+The most current instruments (survey year 2019) are for our main samples (PDF documentation will be completed shortly): 
 
-Population: Persons living in private households in Germany.
-
-Selection method: All samples of SOEP are multi-stage random samples which are regionally clustered.
-
-Collection mode: The interview methodology of the SOEP is based on a set of pre-tested questionnaires for households and individuals. Generally an interviewer tries to obtain face-to-face interviews with all members of a given survey household aged 16 years and over. Additionally one person (head of household) is asked to answer a household related questionnaire covering information on housing, housing costs, and different sources of income. This covers also some questions on children in the household up to 16 years of age, mainly concerning their enrollment in educational institutions (kindergarten, elementary school, etc.).
-
-An overview of the sample sizes can be found in our Comapnion: ["Development of Sample Sizes"](http://companion.soep.de/Target%20Population%20and%20Samples/Development%20of%20Sample%20Sizes.html).
-
-### Current Instruments
-
-The SOEP is presented to respondents and interviewers under the easy-to-remember name “Living in Germany.” This umbrella term covers a total of 13 different field instruments, one contact protocol, and 12 questionnaires, most of them processed with PAPI as well as CAPI or CAWI.
-
-An overview about the instruments in SOEP is available in the [SOEP Companion](http://companion.soep.de/Survey%20Design/SOEP%20Questionnaires.html) 
-
-The most current instruments (survey year 2018) are: 
-
-| paneldata.org                                                                                         | Field version                                                                                   | Version with variable names                                                                                                                                                                |
-|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Address/contact protocol and supporting instruments 2018                                              |                                                                                                 |                                                                                                                                                                                            |
-| [Household 2018](https://paneldata.org/soep-core/inst/soep-core-2018-hh)                         | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.619055.de/diw_ssp0607.pdf) | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741263.de/diw_ssp0804.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740865.de/diw_ssp0779.pdf) |
-| [Individual 2018](https://paneldata.org/soep-core/inst/soep-core-2018-pe)                        | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.622046.de/diw_ssp0608.pdf) | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741437.de/diw_ssp0816.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740954.de/diw_ssp0791.pdf) |
-| [Biography 2018](https://paneldata.org/soep-core/inst/soep-core-2018-ll)                         | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622048.de/diw_ssp0609.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741394.de/diw_ssp0811.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740897.de/diw_ssp0786.pdf) |
-| [Catch-up Individual 2018](https://paneldata.org/soep-core/inst/soep-core-2018-l)                | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622050.de/diw_ssp0610.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741285.de/diw_ssp0810.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740877.de/diw_ssp0785.pdf) |
-| [Mother and Child (Newborns) 2018](https://paneldata.org/soep-core/inst/soep-core-2018-e1)       | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.619055.de/diw_ssp0607.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741023.de/diw_ssp0799.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740797.de/diw_ssp0773.pdf) |
-| [Mother and Child (2-3-year-olds) 2018](https://paneldata.org/soep-core/inst/soep-core-2018-e2)  | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622056.de/diw_ssp0613.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741025.de/diw_ssp0800.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740799.de/diw_ssp0774.pdf) |
-| [Mother and Child (5-6-year-olds) 2018](https://paneldata.org/soep-core/inst/soep-core-2018-e3)  | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622058.de/diw_ssp0614.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741257.de/diw_ssp0801.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740801.de/diw_ssp0776.pdf) |
-| [Parents and Child (7-8-year-olds) 2018](https://paneldata.org/soep-core/inst/soep-core-2018-e4) | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622060.de/diw_ssp0615.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741259.de/diw_ssp0802.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740861.de/diw_ssp0777.pdf) |
-| [Mother and Child (9-10-year-olds) 2018](https://paneldata.org/soep-core/inst/soep-core-2018-e5) | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622063.de/diw_ssp0616.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741261.de/diw_ssp0803.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740863.de/diw_ssp0778.pdf) |
-| [Pre-teen (11-12-year-olds) 2018](https://paneldata.org/soep-core/inst/soep-core-2018-s)         | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622208.de/diw_ssp0617.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741441.de/diw_ssp0818.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740958.de/diw_ssp0793.pdf) |
-| [Early Youth (13-14-year-olds) 2018](https://paneldata.org/soep-core/inst/soep-core-2018-s2)     | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622210.de/diw_ssp0618.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741443.de/diw_ssp0819.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740960.de/diw_ssp0794.pdf) |
-| [Youth (16-17-year-olds) 2018](https://paneldata.org/soep-core/inst/soep-core-2018-ju)           | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622212.de/diw_ssp0619.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741279.de/diw_ssp0807.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740871.de/diw_ssp0782.pdf) |
-| [Grip Strength 2018](https://paneldata.org/soep-core/inst/soep-core-2018-gk)                     | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622214.de/diw_ssp0620.pdf)    |   |
-| [Deceased Individual 2018](https://paneldata.org/soep-core/inst/soep-core-2018-vp)               | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622052.de/diw_ssp0611.pdf)    | [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741457.de/diw_ssp0820.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740962.de/diw_ssp0795.pdf) |
-| [Life in the former GDR 2018](https://paneldata.org/soep-core/inst/soep-core-2018-pb)           | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.622216.de/diw_ssp0676.pdf)    |   [PDF (en)](https://www.diw.de/documents/publikationen/73/diw_01.c.741396.de/diw_ssp0812.pdf), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.740899.de/diw_ssp0787.pdf)|
-
-
-
+| paneldata.org                                                      | Field version | Version with variable names |
+| ------------------------------------------------------------------ | ------------- | --------------------------- |
+| Address/contact protocol and supporting instruments 2019           |               |                             |
+| [Household 2019](inst/soep-core-2019-hh2)                          | PDF (de/en)   | PDF (en), PDF (de)          |
+| [Individual 2019](inst/soep-core-2019-pe2)                         | PDF (de/en)   | PDF (en), PDF (de)          |
+| [Biography 2019](inst/soep-core-2019-ll2)                          | PDF (de/en)   | PDF (en), PDF (de)          |
+| [Catch-up Individual 2019](inst/soep-core-2019-l2)                 | PDF (de/en)   | PDF (en), PDF (de)          |
+| [Mother and Child (Newborns) 2019](inst/soep-core-2019-e1-2)       | PDF (de/en)   | PDF (en), PDF (de)          |
+| [Mother and Child (2-3-year-olds) 2019](inst/soep-core-2019-e2-2)  | PDF (de/en)   | PDF (en), PDF (de)          |
+| [Mother and Child (5-6-year-olds) 2019](inst/soep-core-2019-e3-2)  | PDF (de/en)   | PDF (en), PDF (de)          |
+| [Parents and Child (7-8-year-olds) 2019](inst/soep-core-2019-e4-2) | PDF (de/en)   | PDF (en), PDF (de)          |
+| [Mother and Child (9-10-year-olds) 2019](inst/soep-core-2019-e5-2) | PDF (de/en)   | PDF (en), PDF (de)          |
+| [Pre-teen (11-12-year-olds) 2019](inst/soep-core-2019-s-2)         | PDF (de/en)   | PDF (en), PDF (de)          |
+| [Early Youth (13-14-year-olds) 2019](inst/soep-core-2019-s2-2)     | PDF (de/en)   | PDF (en), PDF (de)          |
+| [Youth (16-17-year-olds) 2019](inst/soep-core-2019-ju2)            | PDF (de/en)   | PDF (en), PDF (de)          |
+| [Deceased Individual 2019](inst/soep-core-2019-vp2)                | PDF (de/en)   | PDF (en), PDF (de)          |
 
 ## Data access
 
@@ -109,7 +91,7 @@ In our SOEP Companion you will find also an [introduction to the different topic
 
 ## Data Structure
 
-SOEP-Core contains a multitude of different datasets (there were over 536 different files in the data distribution, v35). The following simplified categorization gives a general picture of the data: there are datafiles that describe the development of the sample such that the user knows which person or household was part of the interviewed sample in any given year (PATH files). Then there is on big file, including all data from the wave-specific original data files, that contain the data from each year’s questionnaires without any changes except for very basic consistency checks (PL file). To help the user with the data, there are also additional generated data. These contain consistently coded variables at the household level (HGEN) and at the individual level (PGEN). The SOEP also provides various data on the respondent's background, refeered to as biographical data (BIO files). These can be separated conceptually into unchanging biographical data (such as information on parental education or data from the mother-child questionnaires) and regularly updated data when changes take place in a respondent's life (birth, children recorded in the respondent's birh biography, job changes recorded in the job history). Finally, there are some files that cannot be easily categorized: some are datasets collected only once, some provide information about the interviewers, some about respondents outside of Germany.
+SOEP-Core contains a multitude of different datasets (there were over 665 different files in the data distribution, v36). The following simplified categorization gives a general picture of the data: there are datafiles that describe the development of the sample such that the user knows which person or household was part of the interviewed sample in any given year (PATH files). Then there is on big file, including all data from the wave-specific original data files, that contain the data from each year’s questionnaires without any changes except for very basic consistency checks (PL file). To help the user with the data, there are also additional generated data. These contain consistently coded variables at the household level (HGEN) and at the individual level (PGEN). The SOEP also provides various data on the respondent's background, refeered to as biographical data (BIO files). These can be separated conceptually into unchanging biographical data (such as information on parental education or data from the mother-child questionnaires) and regularly updated data when changes take place in a respondent's life (birth, children recorded in the respondent's birh biography, job changes recorded in the job history). Finally, there are some files that cannot be easily categorized: some are datasets collected only once, some provide information about the interviewers, some about respondents outside of Germany.
 
 For a more detailed view on the different datasets and in which directory you will find which dataset, please have a look in the [section about the data distribution file](http://companion.soep.de/Data%20Structure%20of%20SOEPcore/index.html#data-distribution-file) in our SOEP companion.
 
@@ -121,19 +103,31 @@ A comprehensive description of the [data structure](http://companion.soep.de/Dat
 
 Survey variables might be missing, that is, lacking a valid code or value for different reasons. In the SOEP, negative values are not valid for any variable, but are used instead to code different reasons for missing information. There are two distinctions for missing values: they may originate in the respondent’s answer or in the survey design. The respondent may refuse or not know an answer or she may report invalid values on the one hand, and the interview design may exclude respondents with certain characteristics from some questions on the other (e.g., men will never be asked if they are pregnant). The following codes apply:
 
-| Code | Meaning |
-|:----:|---------|
-| -1 | no answer /don`t know |
-| -2 | does not apply |
-| -3 | implausible value |
-| -4 | inadmissible multiple response |
-| -5 | not included in this version of the questionnaire |
-| -6 | version of questionnaire with modified filtering |
-| -8 | question not part of the survey programm this year* |
+| Code | Meaning                                             |
+| :--: | --------------------------------------------------- |
+|  -1  | no answer /don`t know                               |
+|  -2  | does not apply                                      |
+|  -3  | implausible value                                   |
+|  -4  | inadmissible multiple response                      |
+|  -5  | not included in this version of the questionnaire   |
+|  -6  | version of questionnaire with modified filtering    |
+|  -7  | Only available in less restricted edition           |
+|  -8  | question not part of the survey programm this year* |
 
 *Only applicable for datasets in long format.
 
+## Field Work and Method
+
+Data collector: Kantar Public.
+
+Population: Persons living in private households in Germany.
+
+Selection method: All samples of SOEP are multi-stage random samples which are regionally clustered.
+
+Collection mode: The interview methodology of the SOEP is based on a set of pre-tested questionnaires for households and individuals. Generally an interviewer tries to obtain face-to-face interviews with all members of a given survey household aged 16 years and over. Additionally one person (head of household) is asked to answer a household related questionnaire covering information on housing, housing costs, and different sources of income. This covers also some questions on children in the household up to 16 years of age, mainly concerning their enrollment in educational institutions (kindergarten, elementary school, etc.).
+
+
 ## Other material and Notes
 
-More detailed documentation is [available online](https://www.diw.de/sixcms/detail.php?id=diw_01.c.616136.en).
+More detailed documentation is [available online](https://doi.org/10.5684/soep.core.v36eu).
 
