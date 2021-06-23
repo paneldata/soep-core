@@ -48,22 +48,49 @@ The SOEP is presented to respondents and interviewers under the easy-to-remember
 
 The most current instruments (survey year 2019) are for our main samples (PDF documentation will be completed shortly): 
 
-| paneldata.org                                                      | Field version | Version with variable names |
-| ------------------------------------------------------------------ | ------------- | --------------------------- |
-| Address/contact protocol and supporting instruments 2019           |               |                             |
-| [Household 2019](inst/soep-core-2019-hh2)                          | PDF (de/en)   | PDF (en), PDF (de)          |
-| [Individual 2019](inst/soep-core-2019-pe2)                         | PDF (de/en)   | PDF (en), PDF (de)          |
-| [Biography 2019](inst/soep-core-2019-ll2)                          | PDF (de/en)   | PDF (en), PDF (de)          |
-| [Catch-up Individual 2019](inst/soep-core-2019-l2)                 | PDF (de/en)   | PDF (en), PDF (de)          |
-| [Mother and Child (Newborns) 2019](inst/soep-core-2019-e1-2)       | PDF (de/en)   | PDF (en), PDF (de)          |
-| [Mother and Child (2-3-year-olds) 2019](inst/soep-core-2019-e2-2)  | PDF (de/en)   | PDF (en), PDF (de)          |
-| [Mother and Child (5-6-year-olds) 2019](inst/soep-core-2019-e3-2)  | PDF (de/en)   | PDF (en), PDF (de)          |
-| [Parents and Child (7-8-year-olds) 2019](inst/soep-core-2019-e4-2) | PDF (de/en)   | PDF (en), PDF (de)          |
-| [Mother and Child (9-10-year-olds) 2019](inst/soep-core-2019-e5-2) | PDF (de/en)   | PDF (en), PDF (de)          |
-| [Pre-teen (11-12-year-olds) 2019](inst/soep-core-2019-s-2)         | PDF (de/en)   | PDF (en), PDF (de)          |
-| [Early Youth (13-14-year-olds) 2019](inst/soep-core-2019-s2-2)     | PDF (de/en)   | PDF (en), PDF (de)          |
-| [Youth (16-17-year-olds) 2019](inst/soep-core-2019-ju2)            | PDF (de/en)   | PDF (en), PDF (de)          |
-| [Deceased Individual 2019](inst/soep-core-2019-vp2)                | PDF (de/en)   | PDF (en), PDF (de)          |
+| paneldata.org (Links to CAPI-Versions)                             | Field version (PAPI)                                                                            | Version with variable names |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- | --------------------------- |
+| Address/contact protocol and supporting instruments 2019           |                                                                                                 |                             |
+| [Household 2019](inst/soep-core-2019-hh2)                          | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.807936.de/diw_ssp0908.pdf) | PDF (en), PDF (de)          |
+| [Individual 2019](inst/soep-core-2019-pe2)                         | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.807938.de/diw_ssp0909.pdf) | PDF (en), PDF (de)          |
+| [Biography 2019](inst/soep-core-2019-ll2)                          | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.807940.de/diw_ssp0910.pdf) | PDF (en), PDF (de)          |
+| [Catch-up Individual 2019](inst/soep-core-2019-l2)                 | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808507.de/diw_ssp0911.pdf)    | PDF (en), PDF (de)          |
+| [Mother and Child (Newborns) 2019](inst/soep-core-2019-e1-2)       | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808513.de/diw_ssp0913.pdf)    | PDF (en), PDF (de)          |
+| [Mother and Child (2-3-year-olds) 2019](inst/soep-core-2019-e2-2)  | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808515.de/diw_ssp0914.pdf)    | PDF (en), PDF (de)          |
+| [Mother and Child (5-6-year-olds) 2019](inst/soep-core-2019-e3-2)  | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808518.de/diw_ssp0915.pdf)    | PDF (en), PDF (de)          |
+| [Parents and Child (7-8-year-olds) 2019](inst/soep-core-2019-e4-2) | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808520.de/diw_ssp0916.pdf)    | PDF (en), PDF (de)          |
+| [Mother and Child (9-10-year-olds) 2019](inst/soep-core-2019-e5-2) | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808522.de/diw_ssp0917.pdf)    | PDF (en), PDF (de)          |
+| [Pre-teen (11-12-year-olds) 2019](inst/soep-core-2019-s-2)         | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808524.de/diw_ssp0918.pdf)    | PDF (en), PDF (de)          |
+| [Early Youth (13-14-year-olds) 2019](inst/soep-core-2019-s2-2)     | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808530.de/diw_ssp0919.pdf)    | PDF (en), PDF (de)          |
+| [Youth (16-17-year-olds) 2019](inst/soep-core-2019-ju2)            | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808532.de/diw_ssp0920.pdf)    | PDF (en), PDF (de)          |
+| [Deceased Individual 2019](inst/soep-core-2019-vp2)                | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808511.de/diw_ssp0912.pdf)    | PDF (en), PDF (de)          |
+
+In some samples adapted versions of the instruments were used:
+
+| paneldata.org (Links to CAPI-Versions)                                               | Field version (PAPI)                                                                            | Version with variable names |
+| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- | --------------------------- |
+| Samples M3-M5 (“Refugee Samples”)                                                    |                                                                                                 |                             |
+| [Household 2019](inst/soep-core-2019-hh-m345)                                        | PDF (de/en)                                                                                     | PDF (en), PDF (de)          |
+| [Individual and Biography, Follow-up 2019](inst/soep-core-2019-p-m345-wieder)        | PDF (de/en)                                                                                     | PDF (en), PDF (de)          |
+| [Individual and Biography, Initial Interview 2019](inst/soep-core-2019-pb-m345-erst) | PDF (de/en)                                                                                     | PDF (en), PDF (de)          |
+| [Childhood, 0-10-year-olds 2019](inst/soep-core-2019-ki-m345)                        | PDF (de/en)                                                                                     | PDF (en), PDF (de)          |
+| [Youth (16-17-year-olds) 2019](inst/soep-core-2019-m345)                             | PDF (de)                                                                                        | PDF (en), PDF (de)          |
+| Sample P (“Top Shareholder Sample”)                                                  |                                                                                                 |                             |
+| [Household 2019](inst/soep-core-2019-hh4)                                            | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.809789.de/diw_ssp0921.pdf) | PDF (en), PDF (de)          |
+| [Residential Environment 2019](inst/soep-core-2019-wuma-p)                           | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.809679.de/diw_ssp0924.pdf)    | PDF (en), PDF (de)          |
+| Sample Q (“LGB*”)                                                                    |                                                                                                 |                             |
+| [Household 2019](inst/soep-core-2019-hh-lgb)                                         | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.810670.de/diw_ssp0928.pdf) | PDF (en), PDF (de)          |
+| [Individual 2019](inst/soep-core-2019-pe-lgb)                                        | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.809693.de/diw_ssp0929.pdf) | PDF (en), PDF (de)          |
+| [Biography 2019](inst/soep-core-2019-ll-lgb)                                         | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.809695.de/diw_ssp0930.pdf) | PDF (en), PDF (de)          |
+| [Mother and Child (Newborns) 2019](inst/soep-core-2019-e1-lgb)                       | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.809697.de/diw_ssp0931.pdf)    | PDF (en), PDF (de)          |
+| [Mother and Child (2-3-year-olds) 2019](inst/soep-core-2019-e2-lgb)                  | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810672.de/diw_ssp0932.pdf)    | PDF (en), PDF (de)          |
+| [Mother and Child (5-6-year-olds) 2019](inst/soep-core-2019-e3-lgb)                  | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810674.de/diw_ssp0933.pdf)    | PDF (en), PDF (de)          |
+| [Parents and Child (7-8-year-olds) 2019](inst/soep-core-2019-e4-lgb)                 | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810676.de/diw_ssp0934.pdf)    | PDF (en), PDF (de)          |
+| [Mother and Child (9-10-year-olds) 2019](inst/soep-core-2019-e5-lgb)                 | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810678.de/diw_ssp0935.pdf)    | PDF (en), PDF (de)          |
+| [Pre-teen (11-12-year-olds) 2019](inst/soep-core-2019-s-lgb)                         | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810680.de/diw_ssp0936.pdf)    | PDF (en), PDF (de)          |
+| [Early Youth (13-14-year-olds) 2019](inst/soep-core-2019-s2-lgb)                     | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810682.de/diw_ssp0937.pdf)    | PDF (en), PDF (de)          |
+| [Youth (16-17-year-olds) 2019](inst/soep-core-2019-ju-lgb)                           | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810684.de/diw_ssp0938.pdf)    | PDF (en), PDF (de)          |
+| [Residential Environment 2019](inst/soep-core-2019-wuma-q)                           | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.809677.de/diw_ssp0923.pdf)    | PDF (en), PDF (de)          |
 
 ## Data access
 
@@ -91,7 +118,7 @@ In our SOEP Companion you will find also an [introduction to the different topic
 
 ## Data Structure
 
-SOEP-Core contains a multitude of different datasets (there were over 665 different files in the data distribution, v36). The following simplified categorization gives a general picture of the data: there are datafiles that describe the development of the sample such that the user knows which person or household was part of the interviewed sample in any given year (PATH files). Then there is on big file, including all data from the wave-specific original data files, that contain the data from each year’s questionnaires without any changes except for very basic consistency checks (PL file). To help the user with the data, there are also additional generated data. These contain consistently coded variables at the household level (HGEN) and at the individual level (PGEN). The SOEP also provides various data on the respondent's background, refeered to as biographical data (BIO files). These can be separated conceptually into unchanging biographical data (such as information on parental education or data from the mother-child questionnaires) and regularly updated data when changes take place in a respondent's life (birth, children recorded in the respondent's birh biography, job changes recorded in the job history). Finally, there are some files that cannot be easily categorized: some are datasets collected only once, some provide information about the interviewers, some about respondents outside of Germany.
+SOEP-Core contains a multitude of different datasets (there were over 506 different files in the data distribution, v36, Onsite Edition). The following simplified categorization gives a general picture of the data: there are datafiles that describe the development of the sample such that the user knows which person or household was part of the interviewed sample in any given year (PATH files). Then there is on big file, including all data from the wave-specific original data files, that contain the data from each year’s questionnaires without any changes except for very basic consistency checks (PL file). To help the user with the data, there are also additional generated data. These contain consistently coded variables at the household level (HGEN) and at the individual level (PGEN). The SOEP also provides various data on the respondent's background, refeered to as biographical data (BIO files). These can be separated conceptually into unchanging biographical data (such as information on parental education or data from the mother-child questionnaires) and regularly updated data when changes take place in a respondent's life (birth, children recorded in the respondent's birh biography, job changes recorded in the job history). Finally, there are some files that cannot be easily categorized: some are datasets collected only once, some provide information about the interviewers, some about respondents outside of Germany.
 
 For a more detailed view on the different datasets and in which directory you will find which dataset, please have a look in the [section about the data distribution file](http://companion.soep.de/Data%20Structure%20of%20SOEPcore/index.html#data-distribution-file) in our SOEP companion.
 
