@@ -10,12 +10,12 @@
     "Intro": {
       "question": "Intro",
       "name": "Intro",
-      "label": "\n The questions contained in this questionnaire deal with the household as a whole and not with the individuals in the household. The questionnaire should be completed by the same person in the household who did it last year if possible.\n\nYour participation is voluntary, but the scientific relevance of this study depends crucially on the participation of every household.\n\nWe therefore cordially request that you either: \n\n- allow our staff member to interview you\n\n- or carefully fill out this questionnaire yourself.",
+      "label": "The questions contained in this questionnaire deal with the household as a whole and not with the individuals in the household. The questionnaire should be completed by the same person in the household who did it last year if possible.\n\nYour participation is voluntary, but the scientific relevance of this study depends crucially on the participation of every household.\n\nWe therefore cordially request that you either: \n\n- allow our staff member to interview you\n\n- or carefully fill out this questionnaire yourself.",
       "label_de": "In diesem Fragebogen geht es um Fragen, die sich nicht auf die einzelnen Personen Ihres Haushalts, sondern auf den Haushalt als ganzen beziehen. Der Fragebogen soll nach Möglichkeit von der Person beantwortet werden, die diese Haushaltsfragen auch beim letzten Mal beantwortet hat.\n\nIhre Mitarbeit ist freiwillig. Die wissenschaftliche Aussagekraft dieser Untersuchung hängt aber entscheidend\ndavon ab, dass alle Haushalte mitmachen.\n\nDarum bitten wir Sie herzlich,\n\n- unserem Mitarbeiter dieses Interview zu gewähren\n\n- oder den Fragebogen sorgfältig selbst auszufüllen.",
       "items": [
         {
           "item": "1",
-          "text": "\n The questions contained in this questionnaire deal with the household as a whole and not with the individuals in the household. The questionnaire should be completed by the same person in the household who did it last year if possible.\n\nYour participation is voluntary, but the scientific relevance of this study depends crucially on the participation of every household.\n\nWe therefore cordially request that you either: \n\n- allow our staff member to interview you\n\n- or carefully fill out this questionnaire yourself.",
+          "text": "The questions contained in this questionnaire deal with the household as a whole and not with the individuals in the household. The questionnaire should be completed by the same person in the household who did it last year if possible.\n\nYour participation is voluntary, but the scientific relevance of this study depends crucially on the participation of every household.\n\nWe therefore cordially request that you either: \n\n- allow our staff member to interview you\n\n- or carefully fill out this questionnaire yourself.",
           "text_de": "In diesem Fragebogen geht es um Fragen, die sich nicht auf die einzelnen Personen Ihres Haushalts, sondern auf den Haushalt als ganzen beziehen. Der Fragebogen soll nach Möglichkeit von der Person beantwortet werden, die diese Haushaltsfragen auch beim letzten Mal beantwortet hat.\n\nIhre Mitarbeit ist freiwillig. Die wissenschaftliche Aussagekraft dieser Untersuchung hängt aber entscheidend\ndavon ab, dass alle Haushalte mitmachen.\n\nDarum bitten wir Sie herzlich,\n\n- unserem Mitarbeiter dieses Interview zu gewähren\n\n- oder den Fragebogen sorgfältig selbst auszufüllen.",
           "sn": 0,
           "number": ""
@@ -77,12 +77,12 @@
     "2": {
       "question": "2",
       "name": "2",
-      "label": "When did this change occur—in other words, when did you move into this new dwelling after a move / after moving out of an existing household? ",
+      "label": "Since what month/year have you personally been living in this dwelling?",
       "label_de": "Seit wann leben Sie in dieser Wohnung?",
       "items": [
         {
           "item": "1",
-          "text": "When did this change occur—in other words, when did you move into this new dwelling after a move / after moving out of an existing household? ",
+          "text": "Since what month/year have you personally been living in this dwelling?",
           "text_de": "Seit wann leben Sie in dieser Wohnung?",
           "sn": 0,
           "number": ""
@@ -141,8 +141,9 @@
               "label_de": "Ein Geschäftszentrum (Läden, Banken, Verwaltungen) mit wenigen Wohnungen"
             },
             {
-              "value": -1,
-              "label_de": "keine Angabe"
+              "value": 5,
+              "label": "An industrial area with few residential dwellings",
+              "label_de": "Ein Gewerbe- bzw. Industriegebiet mit wenigen Wohnungen"
             }
           ],
           "sn": 0,
@@ -199,10 +200,6 @@
               "value": 7,
               "label": "High-rise building (9 or more stories)",
               "label_de": "Hochhaus (9 und mehr Stockwerke)"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
             }
           ],
           "sn": 0,
@@ -216,15 +213,15 @@
     "7": {
       "question": "7",
       "name": "7",
-      "label": "When, approximately, was the building in which your dwelling is located built? ",
-      "label_de": "Wann wurde das Haus, in dem Ihre Wohnung liegt, etwa erbaut? ",
+      "label": "When, approximately, was the building in which your dwelling is located built?",
+      "label_de": "Wann wurde das Haus, in dem Ihre Wohnung liegt, etwa erbaut?",
       "items": [
         {
           "item": "hwohn09",
-          "text": "When, approximately, was the building in which your dwelling is located built? ",
-          "text_de": "Wann wurde das Haus, in dem Ihre Wohnung liegt, etwa erbaut? ",
+          "text": "When, approximately, was the building in which your dwelling is located built?",
+          "text_de": "Wann wurde das Haus, in dem Ihre Wohnung liegt, etwa erbaut?",
           "goto": "4:8 @ 8",
-          "concept": "hwohn09",
+          "concept": "hwohn9",
           "answers": [
             {
               "value": 1,
@@ -265,10 +262,6 @@
               "value": 8,
               "label": "2011 and later",
               "label_de": "2011 und später"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
             }
           ],
           "sn": 0,
@@ -336,6 +329,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -360,22 +354,27 @@
           "answers": [
             {
               "value": 1,
+              "label": "School dormitory / residence for teenagers / Student residence",
               "label_de": "Schüler- / Jugendlichen- / Studentenwohnheim"
             },
             {
               "value": 2,
+              "label": "Dorm for professionals",
               "label_de": "Wohnheim für Berufstätige"
             },
             {
               "value": 3,
+              "label": "Nursing home / Nursing home / Senior residence",
               "label_de": "Altenheim / Pflegeheim / Seniorenresidenz"
             },
             {
               "value": 4,
+              "label": "Other home / residence",
               "label_de": "Sonstiges Heim / Unterkunft"
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -416,10 +415,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -618,13 +613,13 @@
     "14": {
       "question": "14",
       "name": "14",
-      "label": "What do you think about the total size of your dwelling? For the size of your household, is it ...",
-      "label_de": "Wie beurteilen Sie insgesamt die Größe Ihrer Wohnung?\nIst sie für Ihren Haushalt  ... ",
+      "label": "What do you think about the total size of your dwelling? For the size of your household, is it …",
+      "label_de": "Wie beurteilen Sie insgesamt die Größe Ihrer Wohnung?\nIst sie für Ihren Haushalt ...",
       "items": [
         {
           "item": "hgr",
-          "text": "What do you think about the total size of your dwelling? For the size of your household, is it ...",
-          "text_de": "Wie beurteilen Sie insgesamt die Größe Ihrer Wohnung?\nIst sie für Ihren Haushalt  ... ",
+          "text": "What do you think about the total size of your dwelling? For the size of your household, is it …",
+          "text_de": "Wie beurteilen Sie insgesamt die Größe Ihrer Wohnung?\nIst sie für Ihren Haushalt ...",
           "concept": "hgr",
           "answers": [
             {
@@ -651,10 +646,6 @@
               "value": 5,
               "label": "much too large?",
               "label_de": "viel zu groß?"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
             }
           ],
           "sn": 0,
@@ -737,6 +728,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -761,6 +753,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -786,6 +779,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -818,6 +812,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -842,6 +837,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -865,6 +861,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -889,6 +886,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -913,6 +911,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -937,6 +936,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -961,6 +961,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -985,6 +986,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -1009,6 +1011,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -1033,6 +1036,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -1057,6 +1061,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -1081,6 +1086,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -1105,6 +1111,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -1129,6 +1136,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -1153,6 +1161,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -1177,6 +1186,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -1201,6 +1211,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -1225,6 +1236,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -1249,6 +1261,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -1273,6 +1286,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -1306,10 +1320,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -1324,12 +1334,19 @@
       "question": "18",
       "name": "18",
       "label": "What kind of change in ownership occurred? I am / we are ...",
-      "label_de": "Welcher Art war dieser Wechsel?\nIch bin / wir sind  ... ",
+      "label_de": "Welcher Art war dieser Wechsel?",
       "items": [
         {
           "item": "hew2",
           "text": "What kind of change in ownership occurred? I am / we are ...",
-          "text_de": "Welcher Art war dieser Wechsel?\nIch bin / wir sind  ... ",
+          "text_de": "Welcher Art war dieser Wechsel?",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "hew3",
+          "text": "[now owner(s)] because I / we ... .",
+          "text_de": "Ich bin/wir sind…",
           "concept": "hew2",
           "answers": [
             {
@@ -1346,19 +1363,15 @@
               "value": 3,
               "label": "still tenants, but it is now owned by someone else",
               "label_de": "weiterhin Mieter, aber die Wohnung hat einen neuen Eigentümer"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
             }
           ],
-          "sn": 0,
+          "sn": 1,
           "number": ""
         },
         {
-          "item": "hew3",
-          "text": "[now owner(s)] because I / we ... .",
-          "text_de": "[jetzt Eigentümer] und zwar durch ...",
+          "item": "hew4",
+          "text": "[no longer owner(s)] because ...",
+          "text_de": "[Ich bin/wir sind jetzt Eigentümer] und zwar durch -",
           "concept": "hew3",
           "answers": [
             {
@@ -1369,35 +1382,7 @@
             {
               "value": 2,
               "label": "inherited or was/were given the dwelling",
-              "label_de": "Erbschaft / Schenkung / Überschreibung"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
-            }
-          ],
-          "sn": 1,
-          "number": ""
-        },
-        {
-          "item": "hew4",
-          "text": "[no longer owner(s)] because ...",
-          "text_de": "[jetzt nicht mehr Eigentümer] und zwar wegen ...",
-          "concept": "hew4",
-          "answers": [
-            {
-              "value": 1,
-              "label": "I / we sold the dwelling",
-              "label_de": "Verkauf der Wohnung"
-            },
-            {
-              "value": 2,
-              "label": "gave / bequeathed it / other",
-              "label_de": "Schenkung / Überschreibung / Sonstiges"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
+              "label_de": "Erbschaft/Schenkung/Überschreibung"
             }
           ],
           "sn": 2,
@@ -1405,7 +1390,18 @@
         },
         {
           "item": "1",
-          "text_de": "keine Angabe",
+          "text_de": "[Ich bin/wir sind jetzt nicht mehr Eigentümer] und zwar wegen…",
+          "concept": "hew4",
+          "answers": [
+            {
+              "value": 1,
+              "label_de": "Verkauf der Wohnung"
+            },
+            {
+              "value": 2,
+              "label_de": "Schenkung/ Überschreibung/ sonstiges"
+            }
+          ],
           "sn": 3,
           "number": ""
         }
@@ -1424,7 +1420,6 @@
           "item": "hm01",
           "text": "The next questions deal with the costs of living in your dwelling. First the question: Are you the main tenant, subletter, or owner?",
           "text_de": "Die folgenden Fragen beziehen sich auf die Kosten des Wohnens. Zunächst die Frage: Bewohnen Sie diese Wohnung als Hauptmieter, Untermieter oder Eigentümer?",
-          "instruction_de": "Mietfreies Wohnrecht oder Nießbrauch tragen Sie bitte bei Hauptmieter ein.",
           "goto": "1,2 @ 29",
           "concept": "hm01",
           "answers": [
@@ -1447,10 +1442,6 @@
               "value": 4,
               "label": "Nursing Home/ Retirement Community",
               "label_de": "Altersheim/ Seniorenwohnheim"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
             }
           ],
           "sn": 0,
@@ -1483,10 +1474,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -1551,11 +1538,12 @@
     "22": {
       "question": "22",
       "name": "22",
-      "label": "",
+      "label": "Did you have to pay for maintenance or modernization of this dwelling / building where you\nlive in the last calendar year?",
       "label_de": "Sind für diese selbstgenutzte Wohnung / dieses selbstgenutzte Haus im letzten Kalenderjahr Kosten für Instandhaltung und Modernisierung entstanden?",
       "items": [
         {
           "item": "he17",
+          "text": "Did you have to pay for maintenance or modernization of this dwelling / building where you\nlive in the last calendar year?",
           "text_de": "Sind für diese selbstgenutzte Wohnung / dieses selbstgenutzte Haus im letzten Kalenderjahr Kosten für Instandhaltung und Modernisierung entstanden?",
           "goto": "2 @ 23",
           "concept": "he17",
@@ -1569,10 +1557,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -1890,6 +1874,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -1904,11 +1889,12 @@
     "Intro1": {
       "question": "Intro1",
       "name": "Intro1",
-      "label": "",
+      "label": "For tenants only:",
       "label_de": "Nur an Mieter",
       "items": [
         {
           "item": "1",
+          "text": "For tenants only:",
           "text_de": "Nur an Mieter",
           "sn": 0,
           "number": ""
@@ -1921,11 +1907,12 @@
     "29": {
       "question": "29",
       "name": "29",
-      "label": "",
+      "label": "Is this dwelling government-subsidized housing (Sozialwohnung)?",
       "label_de": "Handelt es sich um eine Sozialwohnung?",
       "items": [
         {
           "item": "hm03",
+          "text": "Is this dwelling government-subsidized housing (Sozialwohnung)?",
           "text_de": "Handelt es sich um eine Sozialwohnung?",
           "concept": "hm03",
           "answers": [
@@ -1938,10 +1925,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -1975,10 +1958,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -1992,41 +1971,44 @@
     "31": {
       "question": "31",
       "name": "31",
-      "label": "",
+      "label": "Who is the owner of the dwelling?",
       "label_de": "Wer oder welche Institution ist der Eigentümer der Wohnung?",
       "items": [
         {
           "item": "hm13",
+          "text": "Who is the owner of the dwelling?",
           "text_de": "Wer oder welche Institution ist der Eigentümer der Wohnung?",
           "concept": "hm13",
           "answers": [
             {
               "value": 1,
+              "label": "Private owner",
               "label_de": "Private(r) Eigentümer"
             },
             {
               "value": 2,
+              "label": "Private company",
               "label_de": "Privates Unternehmen"
             },
             {
               "value": 3,
+              "label": "Professional organization or union",
               "label_de": "Genossenschaftliche Wohnung"
             },
             {
               "value": 4,
+              "label": "Non-profit organization\n(church, foundations, etc.)..",
               "label_de": "Gemeinnützige Organisation (Kirche, Stiftungen o.ä.)"
             },
             {
               "value": 5,
+              "label": "Municipal government .",
               "label_de": "Kommunale Wohnung"
             },
             {
               "value": 6,
+              "label": "My employer",
               "label_de": "Betriebs- / Werkswohnung"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
             }
           ],
           "sn": 0,
@@ -2102,13 +2084,13 @@
     "33": {
       "question": "33",
       "name": "33",
-      "label": "",
+      "label": "Are the monthly costs for heat included in your rent?",
       "label_de": "Sind die Heizkosten in dem eben genannten Mietpreis enthalten?",
       "items": [
         {
           "item": "hheizink",
+          "text": "Are the monthly costs for heat included in your rent?",
           "text_de": "Sind die Heizkosten in dem eben genannten Mietpreis enthalten?",
-          "instruction_de": "Falls Miete angegeben!",
           "concept": "hheizink",
           "answers": [
             {
@@ -2120,10 +2102,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -2213,6 +2191,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -2303,6 +2282,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -2411,10 +2391,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -2479,11 +2455,12 @@
     "41": {
       "question": "41",
       "name": "41",
-      "label": "",
+      "label": "Did you have any expenses for maintenance or modernization of the properties you let\nor leased in the last calendar year?",
       "label_de": "Sind für diese vermieteten oder verpachteten Objekte im letzten Kalenderjahr Kosten für Instandhaltung und Modernisierung entstanden?",
       "items": [
         {
           "item": "hverm3a",
+          "text": "Did you have any expenses for maintenance or modernization of the properties you let\nor leased in the last calendar year?",
           "text_de": "Sind für diese vermieteten oder verpachteten Objekte im letzten Kalenderjahr Kosten für Instandhaltung und Modernisierung entstanden?",
           "goto": "1 @ 42",
           "concept": "hverm3a",
@@ -2497,10 +2474,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -2583,6 +2556,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -2645,11 +2619,12 @@
     "45": {
       "question": "45",
       "name": "45",
-      "label": "",
+      "label": "Will you be able to deduct these expenses from the last year\nfrom your taxes or declare them as losses?",
       "label_de": "Können Sie von diesen Ausgaben des letzten Kalenderjahres einen Teil steuerlich absetzen bzw. als Verlust geltend machen?",
       "items": [
         {
           "item": "hverm5",
+          "text": "Will you be able to deduct these expenses from the last year\nfrom your taxes or declare them as losses?",
           "text_de": "Können Sie von diesen Ausgaben des letzten Kalenderjahres einen Teil steuerlich absetzen bzw. als Verlust geltend machen?",
           "concept": "hverm5",
           "answers": [
@@ -2662,10 +2637,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -2734,6 +2705,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -2799,13 +2771,13 @@
     "49": {
       "question": "49",
       "name": "49",
-      "label": "",
+      "label": "Did you or another member of the household receive a large sum of money or other assets\n(house, car, etc.) as an inheritance in the last calendar year?",
       "label_de": "Haben Sie oder ein anderes Haushaltsmitglied im letzten Kalenderjahr einen größeren Geldbetrag oder entsprechende Vermögenswerte (z.B. Immobilien, Auto) durch Erbschaft erhalten?",
       "items": [
         {
           "item": "hvw1",
+          "text": "Did you or another member of the household receive a large sum of money or other assets\n(house, car, etc.) as an inheritance in the last calendar year?",
           "text_de": "Haben Sie oder ein anderes Haushaltsmitglied im letzten Kalenderjahr einen größeren Geldbetrag oder entsprechende Vermögenswerte (z.B. Immobilien, Auto) durch Erbschaft erhalten?",
-          "instruction_de": "Damit sind nur Geldbeträge oder Sachwerte ab 500 Euro gemeint!",
           "goto": "1 @ 50",
           "concept": "hvw1",
           "answers": [
@@ -2818,10 +2790,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -2866,13 +2834,13 @@
     "51": {
       "question": "51",
       "name": "51",
-      "label": "",
+      "label": "Did you or another member of the household receive a large sum of money or other assets\n(house, car, etc.) as a gift in the last calendar year?",
       "label_de": "Haben Sie oder ein anderes Haushaltsmitglied im letzten Kalenderjahr einen größeren Geldbetrag oder entsprechende Vermögenswerte (z.B. Immobilien, Auto) als Geschenk erhalten?",
       "items": [
         {
           "item": "hvw2",
+          "text": "Did you or another member of the household receive a large sum of money or other assets\n(house, car, etc.) as a gift in the last calendar year?",
           "text_de": "Haben Sie oder ein anderes Haushaltsmitglied im letzten Kalenderjahr einen größeren Geldbetrag oder entsprechende Vermögenswerte (z.B. Immobilien, Auto) als Geschenk erhalten?",
-          "instruction_de": "Damit sind nur Geldbeträge oder Sachwerte ab 500 Euro gemeint!",
           "goto": "1 @ 52",
           "concept": "hvw2",
           "answers": [
@@ -2885,10 +2853,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -2933,13 +2897,13 @@
     "53": {
       "question": "53",
       "name": "53",
-      "label": "",
+      "label": "Did you or another member of the household receive a large sum of money or other assets\n(house, car, etc.) as lottery winnings in the last calendar year?",
       "label_de": "Haben Sie oder ein anderes Haushaltsmitglied im letzten Kalenderjahr einen größeren Geldbetrag oder entsprechende Vermögenswerte (z.B. Immobilien, Auto) als Lotteriegewinn erhalten?",
       "items": [
         {
           "item": "hvw3",
+          "text": "Did you or another member of the household receive a large sum of money or other assets\n(house, car, etc.) as lottery winnings in the last calendar year?",
           "text_de": "Haben Sie oder ein anderes Haushaltsmitglied im letzten Kalenderjahr einen größeren Geldbetrag oder entsprechende Vermögenswerte (z.B. Immobilien, Auto) als Lotteriegewinn erhalten?",
-          "instruction_de": "Damit sind nur Geldbeträge oder Sachwerte ab 500 Euro gemeint!",
           "goto": "1 @ 54",
           "concept": "hvw3",
           "answers": [
@@ -2952,10 +2916,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -3108,6 +3068,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -3191,11 +3152,12 @@
     "58": {
       "question": "58",
       "name": "58",
-      "label": "",
+      "label": "Please estimate the amount from this list.",
       "label_de": "Bitte schätzen Sie den Betrag anhand dieser Liste.",
       "items": [
         {
           "item": "hzins2",
+          "text": "Please estimate the amount from this list.",
           "text_de": "Bitte schätzen Sie den Betrag anhand dieser Liste.",
           "concept": "hzins2",
           "answers": [
@@ -3228,10 +3190,6 @@
               "value": 6,
               "label": "10,000 euros and more",
               "label_de": "10.000 Euro und mehr"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
             }
           ],
           "sn": 0,
@@ -3282,6 +3240,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -3344,6 +3303,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -3403,6 +3363,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -3462,6 +3423,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -3521,6 +3483,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -3581,6 +3544,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -3642,6 +3606,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -3705,6 +3670,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -4070,6 +4036,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -4132,6 +4099,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -4177,6 +4145,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -4222,6 +4191,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -4267,6 +4237,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -4312,6 +4283,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -4359,6 +4331,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -4408,6 +4381,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -5032,6 +5006,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -5144,6 +5119,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -5173,6 +5149,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -5202,6 +5179,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -5231,6 +5209,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -5260,6 +5239,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -5289,6 +5269,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -5312,6 +5293,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -5335,6 +5317,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -5358,6 +5341,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -5381,6 +5365,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -5433,10 +5418,6 @@
               "value": 6,
               "label": "60 km or more",
               "label_de": "60 km und mehr"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
             }
           ],
           "sn": 0,
@@ -5451,13 +5432,13 @@
       "question": "67",
       "name": "67",
       "label": "How long does it take to reach the following places in your neighborhood on foot?",
-      "label_de": "Wie lange brauchen Sie, um zu Fuß die folgenden Einrichtungen in Ihrem Wohngebiet zu erreichen? ",
+      "label_de": "Wie lange brauchen Sie, um zu Fuß die folgenden Einrichtungen in Ihrem Wohngebiet zu erreichen?",
       "items": [
         {
           "text": "How long does it take to reach the following places in your neighborhood on foot?",
-          "text_de": "Wie lange brauchen Sie, um zu Fuß die folgenden Einrichtungen in Ihrem Wohngebiet zu erreichen? ",
+          "text_de": "Wie lange brauchen Sie, um zu Fuß die folgenden Einrichtungen in Ihrem Wohngebiet zu erreichen?",
           "instruction": "If you don’t use one of the following facilities, please state how much time you *would* need!",
-          "instruction_de": "Falls Sie eine der genannten Einrichtungen nicht nutzen, \ngeben Sie bitte an, wie lange Sie brauchen würden! ",
+          "instruction_de": "Falls Sie eine der genannten Einrichtungen nicht nutzen, \ngeben Sie bitte an, wie lange Sie brauchen würden!",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -5486,11 +5467,7 @@
             {
               "value": 4,
               "label": "Not available/ not reachable on foot",
-              "label_de": "Nicht vorhanden/  zu Fuß nicht erreichbar"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
+              "label_de": "Nicht vorhanden/ zu Fuß nicht erreichbar"
             }
           ],
           "sn": 1,
@@ -5499,7 +5476,7 @@
         {
           "item": "hfuss02",
           "text": "Restaurants, bars",
-          "text_de": "Gaststätte, Kneipe, Restaurant ",
+          "text_de": "Gaststätte, Kneipe, Restaurant",
           "concept": "hfuss02",
           "answers": [
             {
@@ -5520,11 +5497,7 @@
             {
               "value": 4,
               "label": "Not available/ not reachable on foot",
-              "label_de": "Nicht vorhanden/  zu Fuß nicht erreichbar"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
+              "label_de": "Nicht vorhanden/ zu Fuß nicht erreichbar"
             }
           ],
           "sn": 2,
@@ -5554,11 +5527,7 @@
             {
               "value": 4,
               "label": "Not available/ not reachable on foot",
-              "label_de": "Nicht vorhanden/  zu Fuß nicht erreichbar"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
+              "label_de": "Nicht vorhanden/ zu Fuß nicht erreichbar"
             }
           ],
           "sn": 3,
@@ -5588,11 +5557,7 @@
             {
               "value": 4,
               "label": "Not available/ not reachable on foot",
-              "label_de": "Nicht vorhanden/  zu Fuß nicht erreichbar"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
+              "label_de": "Nicht vorhanden/ zu Fuß nicht erreichbar"
             }
           ],
           "sn": 4,
@@ -5622,11 +5587,7 @@
             {
               "value": 4,
               "label": "Not available/ not reachable on foot",
-              "label_de": "Nicht vorhanden/  zu Fuß nicht erreichbar"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
+              "label_de": "Nicht vorhanden/ zu Fuß nicht erreichbar"
             }
           ],
           "sn": 5,
@@ -5656,11 +5617,7 @@
             {
               "value": 4,
               "label": "Not available/ not reachable on foot",
-              "label_de": "Nicht vorhanden/  zu Fuß nicht erreichbar"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
+              "label_de": "Nicht vorhanden/ zu Fuß nicht erreichbar"
             }
           ],
           "sn": 6,
@@ -5690,11 +5647,7 @@
             {
               "value": 4,
               "label": "Not available/ not reachable on foot",
-              "label_de": "Nicht vorhanden/  zu Fuß nicht erreichbar"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
+              "label_de": "Nicht vorhanden/ zu Fuß nicht erreichbar"
             }
           ],
           "sn": 7,
@@ -5724,11 +5677,7 @@
             {
               "value": 4,
               "label": "Not available/ not reachable on foot",
-              "label_de": "Nicht vorhanden/  zu Fuß nicht erreichbar"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
+              "label_de": "Nicht vorhanden/ zu Fuß nicht erreichbar"
             }
           ],
           "sn": 8,
@@ -5737,7 +5686,7 @@
         {
           "item": "hfuss09",
           "text": "Senior center",
-          "text_de": "Tagesstätte für Senioren, ältere Menschen ",
+          "text_de": "Tagesstätte für Senioren, ältere Menschen",
           "concept": "hfuss09",
           "answers": [
             {
@@ -5758,11 +5707,7 @@
             {
               "value": 4,
               "label": "Not available/ not reachable on foot",
-              "label_de": "Nicht vorhanden/  zu Fuß nicht erreichbar"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
+              "label_de": "Nicht vorhanden/ zu Fuß nicht erreichbar"
             }
           ],
           "sn": 9,
@@ -5792,11 +5737,7 @@
             {
               "value": 4,
               "label": "Not available/ not reachable on foot",
-              "label_de": "Nicht vorhanden/  zu Fuß nicht erreichbar"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
+              "label_de": "Nicht vorhanden/ zu Fuß nicht erreichbar"
             }
           ],
           "sn": 10,
@@ -5826,11 +5767,7 @@
             {
               "value": 4,
               "label": "Not available/ not reachable on foot",
-              "label_de": "Nicht vorhanden/  zu Fuß nicht erreichbar"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
+              "label_de": "Nicht vorhanden/ zu Fuß nicht erreichbar"
             }
           ],
           "sn": 11,
@@ -5860,11 +5797,7 @@
             {
               "value": 4,
               "label": "Not available/ not reachable on foot",
-              "label_de": "Nicht vorhanden/  zu Fuß nicht erreichbar"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
+              "label_de": "Nicht vorhanden/ zu Fuß nicht erreichbar"
             }
           ],
           "sn": 12,
@@ -6058,26 +5991,32 @@
           "answers": [
             {
               "value": 1,
+              "label": "Very good",
               "label_de": "Sehr gut"
             },
             {
               "value": 2,
+              "label": "Rather good",
               "label_de": "Eher gut"
             },
             {
               "value": 3,
+              "label": "Satisfactory",
               "label_de": "Zufriedenstellend"
             },
             {
               "value": 4,
+              "label": "Rather bad",
               "label_de": "Eher schlecht"
             },
             {
               "value": 5,
+              "label": "Very bad",
               "label_de": "Sehr schlecht"
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -6091,26 +6030,32 @@
           "answers": [
             {
               "value": 1,
+              "label": "Very good",
               "label_de": "Sehr gut"
             },
             {
               "value": 2,
+              "label": "Rather good",
               "label_de": "Eher gut"
             },
             {
               "value": 3,
+              "label": "Satisfactory",
               "label_de": "Zufriedenstellend"
             },
             {
               "value": 4,
+              "label": "Rather bad",
               "label_de": "Eher schlecht"
             },
             {
               "value": 5,
+              "label": "Very bad",
               "label_de": "Sehr schlecht"
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -6126,12 +6071,12 @@
       "question": "71",
       "name": "71",
       "label": "How would you evaluate the relationships among people in this neighborhood?\nWhich statement fits best?",
-      "label_de": "Wie beurteilen Sie das Verhältnis der Leute hier in der Wohngegend zueinander? \nWelche Aussage trifft am ehesten zu? ",
+      "label_de": "Wie beurteilen Sie das Verhältnis der Leute hier in der Wohngegend zueinander? \nWelche Aussage trifft am ehesten zu?",
       "items": [
         {
           "item": "hleut",
           "text": "How would you evaluate the relationships among people in this neighborhood?\nWhich statement fits best?",
-          "text_de": "Wie beurteilen Sie das Verhältnis der Leute hier in der Wohngegend zueinander? \nWelche Aussage trifft am ehesten zu? ",
+          "text_de": "Wie beurteilen Sie das Verhältnis der Leute hier in der Wohngegend zueinander? \nWelche Aussage trifft am ehesten zu?",
           "concept": "hleut",
           "answers": [
             {
@@ -6152,7 +6097,7 @@
             {
               "value": 4,
               "label": "It varies widely/ unable to comment on this",
-              "label_de": "Ist ganz unterschiedlich/  dazu kann ich nichts sagen"
+              "label_de": "Ist ganz unterschiedlich/ dazu kann ich nichts sagen"
             }
           ],
           "sn": 0,
@@ -6284,6 +6229,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -6341,12 +6287,12 @@
       "question": "Intro3",
       "name": "Intro3",
       "label": "Does your household have ...?",
-      "label_de": "Gibt es in Ihrem Haushalt ... ?",
+      "label_de": "Gibt es in Ihrem Haushalt … ?",
       "items": [
         {
           "item": "1",
           "text": "Does your household have ...?",
-          "text_de": "Gibt es in Ihrem Haushalt ... ?",
+          "text_de": "Gibt es in Ihrem Haushalt … ?",
           "sn": 0,
           "number": ""
         }
@@ -6377,10 +6323,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -6564,10 +6506,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -6581,37 +6519,39 @@
     "80": {
       "question": "80",
       "name": "80",
-      "label": "",
+      "label": "What is the level of care for that person as it is approved by the nursing care insurance?",
       "label_de": "Welcher Pflegegrad wurde für die hilfebedürftige Person anerkannt?",
       "items": [
         {
           "item": "hpgrad",
+          "text": "What is the level of care for that person as it is approved by the nursing care insurance?",
           "text_de": "Welcher Pflegegrad wurde für die hilfebedürftige Person anerkannt?",
-          "concept": "hpgrad",
+          "concept": "hpstuf",
           "answers": [
             {
               "value": 1,
+              "label": "level of care 1",
               "label_de": "Pflegegrad 1"
             },
             {
               "value": 2,
+              "label": "level of care 2",
               "label_de": "Pflegegrad 2"
             },
             {
               "value": 3,
+              "label": "level of care 3",
               "label_de": "Pflegegrad 3"
             },
             {
               "value": 4,
+              "label": "level of care 4",
               "label_de": "Pflegegrad 4"
             },
             {
               "value": 5,
+              "label": "level of care 5",
               "label_de": "Pflegegrad 5"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
             }
           ],
           "sn": 0,
@@ -6643,10 +6583,6 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
-            },
-            {
-              "value": -1,
-              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
@@ -6768,6 +6704,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -6805,6 +6742,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -6887,6 +6825,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -6970,6 +6909,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -7120,14 +7060,17 @@
           "answers": [
             {
               "value": 1,
+              "label": "Does not attend school",
               "label_de": "Besucht keine Schule mehr"
             },
             {
               "value": 2,
+              "label": "Does not attend school",
               "label_de": "Besucht noch keine Schule"
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7142,14 +7085,17 @@
           "answers": [
             {
               "value": 1,
+              "label": "Does not attend school",
               "label_de": "Besucht keine Schule mehr"
             },
             {
               "value": 2,
+              "label": "Does not attend school",
               "label_de": "Besucht noch keine Schule"
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7164,14 +7110,17 @@
           "answers": [
             {
               "value": 1,
+              "label": "Does not attend school",
               "label_de": "Besucht keine Schule mehr"
             },
             {
               "value": 2,
+              "label": "Does not attend school",
               "label_de": "Besucht noch keine Schule"
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7186,14 +7135,17 @@
           "answers": [
             {
               "value": 1,
+              "label": "Does not attend school",
               "label_de": "Besucht keine Schule mehr"
             },
             {
               "value": 2,
+              "label": "Does not attend school",
               "label_de": "Besucht noch keine Schule"
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7242,6 +7194,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7290,6 +7243,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7338,6 +7292,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7386,6 +7341,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7444,18 +7400,22 @@
           "answers": [
             {
               "value": 1,
+              "label": "Waldorf school, Montessori school, etc",
               "label_de": "Waldorfschule, Montessorischule, o.Ä."
             },
             {
               "value": 2,
+              "label": "School for children with learn difficulties (Förderschule, Sonderschule, Sprachheilschule)",
               "label_de": "Förder-, Sonder-, Sprachheilschule."
             },
             {
               "value": 3,
+              "label": "No, I received none of these",
               "label_de": "Nein, nichts davon."
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7469,18 +7429,22 @@
           "answers": [
             {
               "value": 1,
+              "label": "Waldorf school, Montessori school, etc",
               "label_de": "Waldorfschule, Montessorischule, o.Ä."
             },
             {
               "value": 2,
+              "label": "School for children with learn difficulties (Förderschule, Sonderschule, Sprachheilschule)",
               "label_de": "Förder-, Sonder-, Sprachheilschule."
             },
             {
               "value": 3,
+              "label": "No, I received none of these",
               "label_de": "Nein, nichts davon."
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7494,18 +7458,22 @@
           "answers": [
             {
               "value": 1,
+              "label": "Waldorf school, Montessori school, etc",
               "label_de": "Waldorfschule, Montessorischule, o.Ä."
             },
             {
               "value": 2,
+              "label": "School for children with learn difficulties (Förderschule, Sonderschule, Sprachheilschule)",
               "label_de": "Förder-, Sonder-, Sprachheilschule."
             },
             {
               "value": 3,
+              "label": "No, I received none of these",
               "label_de": "Nein, nichts davon."
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7519,18 +7487,22 @@
           "answers": [
             {
               "value": 1,
+              "label": "Waldorf school, Montessori school, etc",
               "label_de": "Waldorfschule, Montessorischule, o.Ä."
             },
             {
               "value": 2,
+              "label": "School for children with learn difficulties (Förderschule, Sonderschule, Sprachheilschule)",
               "label_de": "Förder-, Sonder-, Sprachheilschule."
             },
             {
               "value": 3,
+              "label": "No, I received none of these",
               "label_de": "Nein, nichts davon."
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7566,6 +7538,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -7589,6 +7562,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -7612,6 +7586,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -7635,6 +7610,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -7670,6 +7646,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -7693,6 +7670,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -7716,6 +7694,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -7739,6 +7718,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -7784,6 +7764,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7817,6 +7798,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7850,6 +7832,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7883,6 +7866,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -7917,6 +7901,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -7940,6 +7925,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -7963,6 +7949,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -7986,6 +7973,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -8259,6 +8247,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -8282,6 +8271,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -8305,6 +8295,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -8328,6 +8319,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "Kein Angabe"
             }
           ],
@@ -8378,6 +8370,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -8416,6 +8409,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -8454,6 +8448,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -8492,6 +8487,7 @@
             },
             {
               "value": -1,
+              "label": "No answer",
               "label_de": "keine Angabe"
             }
           ],
@@ -9011,10 +9007,6 @@
               "value": 4,
               "label": "Partly as an oral interview, partly him/herself",
               "label_de": "Teils mündlich, teils selbst ausgefüllt"
-            },
-            {
-              "value": -1,
-              "label_de": "keine Angabe"
             }
           ],
           "sn": 0,
@@ -9035,12 +9027,12 @@
     "C": {
       "question": "C",
       "name": "C",
-      "label": "in the presence of the interviewer ... minutes",
+      "label": "in the presence of the interviewer … minutes",
       "label_de": "Das mündliche (Teil-)Interview dauerte ... Minuten",
       "items": [
         {
           "item": "hdauer1",
-          "text": "in the presence of the interviewer ... minutes",
+          "text": "in the presence of the interviewer … minutes",
           "text_de": "Das mündliche (Teil-)Interview dauerte ... Minuten",
           "concept": "hdauer1",
           "sn": 0,
@@ -9048,7 +9040,7 @@
         },
         {
           "item": "hdauer2",
-          "text": "in the absence of the interviewer  ...  minutes",
+          "text": "in the absence of the interviewer ... minutes",
           "text_de": "Befragter brauchte zum Selbstausfüllen .. in Minuten",
           "concept": "hdauer2",
           "sn": 1,
@@ -9069,7 +9061,7 @@
           "item": "htext",
           "text": "Other notes:",
           "text_de": "Sonstige Hinweise:",
-          "concept": "htext",
+          "concept": "htextp",
           "sn": 0,
           "number": ""
         },
