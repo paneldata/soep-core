@@ -19,6 +19,7 @@
           "text_de": "Plausibilisierungsfrage: Welche Person im Haushalt <HNR> wollen Sie befragen?",
           "instruction": "Please show all persons in household they are born in 2000, 2003 or 2005. If \"Other persons in household\", Change to \"My Infratest\" to create new person.",
           "instruction_de": "Bitte alle im Haushalt vorhandenen Personen mit Jahrgang 2000, 2003 oder 2005 einblenden.\nWenn \"Andere Person im Haushalt\", Wechsel zu Mein Infratest zum Anlegen der neuen Person.",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -26,6 +27,7 @@
           "item": "2",
           "text": "< PNR / NAME / GEBT GEBM GEBJ / SEX >",
           "text_de": "< PNR / NAME / GEBT GEBM GEBJ / SEX >",
+          "scale": "bin",
           "sn": 1,
           "number": ""
         },
@@ -33,6 +35,7 @@
           "item": "3",
           "text": "Other person ion household",
           "text_de": "Andere Person im Haushalt",
+          "scale": "bin",
           "sn": 2,
           "number": ""
         },
@@ -40,6 +43,7 @@
           "item": "4",
           "text": "Wrong household screen out",
           "text_de": "Falscher Haushalt Screen out",
+          "scale": "bin",
           "sn": 3,
           "number": ""
         }
@@ -59,6 +63,7 @@
           "text": "Plausibility question: Which language version should be used?",
           "text_de": "Plausibilisierungsfrage: Welche Sprachversion soll verwendet werden?",
           "concept": "pspvers",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -111,6 +116,7 @@
           "text_de": "Plausibilisierungsfrage: Die Befragung von darf nur mit dem Einverständnis der Eltern / Erziehungsberechtigten durchgeführt werden!",
           "instruction": "<NAME> should be given the opportunity to answer the questions without parental influence!",
           "instruction_de": "<NAME> sollte aber die Gelegenheit gegeben werden, die Fragen ohne Einflussnahme der Eltern zu beantworten!",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -141,6 +147,7 @@
           "item": "1",
           "text": "In which country were you born?",
           "text_de": "In welchem Land bist Du geboren?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -150,6 +157,7 @@
           "text_de": "Deutschland",
           "goto": "1@16",
           "concept": "jsta1",
+          "scale": "bin",
           "sn": 1,
           "number": ""
         },
@@ -158,6 +166,7 @@
           "text": "Another country (specify):",
           "text_de": "Anderes Land, und zwar…",
           "concept": "jsta2",
+          "scale": "chr",
           "sn": 2,
           "number": ""
         }
@@ -177,6 +186,7 @@
           "text": "With whom did you come to Germany?",
           "text_de": "Mit wem bist Du nach Deutschland gekommen?",
           "concept": "jwnd",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -217,6 +227,7 @@
           "item": "1",
           "text": "When did this you leave country of birth?",
           "text_de": "Wann hast Du dein Geburtsland verlassen?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -225,6 +236,7 @@
           "text": "Month",
           "text_de": "Monat",
           "concept": "jglverlm",
+          "scale": "int",
           "sn": 1,
           "number": ""
         },
@@ -233,6 +245,7 @@
           "text": "Year",
           "text_de": "Jahr",
           "concept": "jglverlj",
+          "scale": "int",
           "sn": 2,
           "number": ""
         }
@@ -251,6 +264,7 @@
           "item": "1",
           "text": "When did you arrive in Germany?",
           "text_de": "Wann bist Du in Deutschland angekommen?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -259,6 +273,7 @@
           "text": "Month",
           "text_de": "Monat",
           "concept": "jdankm",
+          "scale": "int",
           "sn": 1,
           "number": ""
         },
@@ -267,6 +282,7 @@
           "text": "Year",
           "text_de": "Jahr",
           "concept": "jdankj",
+          "scale": "int",
           "sn": 2,
           "number": ""
         }
@@ -286,6 +302,7 @@
           "text": "Could you imagine to stay in Germany forever?",
           "text_de": "Kannst Du Dir vorstellen, für immer in Deutschland zu bleiben?",
           "concept": "jnat10",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -317,6 +334,7 @@
           "text": "How long do you want to stay in Germany?",
           "text_de": "Wie lange willst Du in Deutschland bleiben?",
           "concept": "jnat11",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -347,6 +365,7 @@
           "item": "1",
           "text": "How long do you want to stay in Germany?",
           "text_de": "Wie viele Jahre willst Du in Deutschland bleiben?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -355,6 +374,7 @@
           "text": "Year",
           "text_de": "Jahre",
           "concept": "jnat12",
+          "scale": "int",
           "sn": 1,
           "number": ""
         },
@@ -363,6 +383,7 @@
           "text": "Do not know",
           "text_de": "Weiß nicht",
           "concept": "jnat13",
+          "scale": "bin",
           "sn": 2,
           "number": ""
         }
@@ -382,6 +403,7 @@
           "text": "Do you intend to apply for German citizenship?",
           "text_de": "Beabsichtigst Du, die deutsche Staatsangehörigkeit zu beantragen?",
           "concept": "jnatda",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -422,6 +444,7 @@
           "item": "Intro1",
           "text": "Speaking",
           "text_de": "Sprachen",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         }
@@ -441,6 +464,7 @@
           "text": "How well could you speak German before you moved to Germany?",
           "text_de": "Wie gut konntest Du vor Deinem Zuzug nach Deutschland die deutsche Sprache sprechen?",
           "concept": "jspzug1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -487,6 +511,7 @@
           "text": "How well could this child speak German at the time of his / her beginning in Germany?",
           "text_de": "Wie gut konntest Du zum Zeitpunkt Deines Schulbeginns in Deutschland die deutsche Sprache sprechen?",
           "concept": "jkdspsb",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -533,6 +558,7 @@
           "text": "How well can you speak German now?",
           "text_de": "Wie gut kannst Du mittlerweile Deutsch sprechen?",
           "concept": "jkdspspr",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -579,6 +605,7 @@
           "text": "How well can you write in German now?",
           "text_de": "Wie gut kannst Du mittlerweile Deutsch schreiben?",
           "concept": "jkdspsch",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -625,6 +652,7 @@
           "text": "How well can you read German now?",
           "text_de": "Wie gut kannst Du mittlerweile Deutsch lesen?",
           "concept": "jkdsples",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -671,6 +699,7 @@
           "text": "Are you taking part in a special language course so you can learn German?",
           "text_de": "Nimmst Du an einer speziellen Sprachförderung teil, um Deutsch zu lernen?",
           "concept": "jspf",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -706,6 +735,7 @@
           "item": "1",
           "text": "How many hours per week do you participate in this special language program?",
           "text_de": "Wie viele Stunden pro Woche nimmst Du an dieser speziellen Sprachförderung teil?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -714,6 +744,7 @@
           "text": "Hours per week",
           "text_de": "Stunden pro Woche",
           "concept": "jspfstd",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -732,6 +763,7 @@
           "item": "1",
           "text": "Which languages <U+200B><U+200B>can you speak apart from German?",
           "text_de": "Welche Sprache(n) sprichst Du noch außer Deutsch?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -740,6 +772,7 @@
           "text": "Albanian",
           "text_de": "Albanisch",
           "concept": "jwspad1",
+          "scale": "bin",
           "sn": 1,
           "number": ""
         },
@@ -748,6 +781,7 @@
           "text": "Arabic",
           "text_de": "Arabisch",
           "concept": "jwspad2",
+          "scale": "bin",
           "sn": 2,
           "number": ""
         },
@@ -756,6 +790,7 @@
           "text": "Aramaic",
           "text_de": "Aramäisch",
           "concept": "jwspad3",
+          "scale": "bin",
           "sn": 3,
           "number": ""
         },
@@ -764,6 +799,7 @@
           "text": "Armenian",
           "text_de": "Armenisch",
           "concept": "jwspad4",
+          "scale": "bin",
           "sn": 4,
           "number": ""
         },
@@ -772,6 +808,7 @@
           "text": "Bengali",
           "text_de": "Bengalisch",
           "concept": "jwspad5",
+          "scale": "bin",
           "sn": 5,
           "number": ""
         },
@@ -780,6 +817,7 @@
           "text": "Bosnian",
           "text_de": "Bosnisch",
           "concept": "jwspad6",
+          "scale": "bin",
           "sn": 6,
           "number": ""
         },
@@ -788,6 +826,7 @@
           "text": "Dari",
           "text_de": "Dari",
           "concept": "jwspad7",
+          "scale": "bin",
           "sn": 7,
           "number": ""
         },
@@ -796,6 +835,7 @@
           "text": "English",
           "text_de": "Englisch",
           "concept": "jwspad8",
+          "scale": "bin",
           "sn": 8,
           "number": ""
         },
@@ -804,6 +844,7 @@
           "text": "Farsi",
           "text_de": "Farsi",
           "concept": "jwspad9",
+          "scale": "bin",
           "sn": 9,
           "number": ""
         },
@@ -812,6 +853,7 @@
           "text": "French",
           "text_de": "Französisch",
           "concept": "jwspad10",
+          "scale": "bin",
           "sn": 10,
           "number": ""
         },
@@ -820,6 +862,7 @@
           "text": "Fula",
           "text_de": "Fula",
           "concept": "jwspad11",
+          "scale": "bin",
           "sn": 11,
           "number": ""
         },
@@ -828,6 +871,7 @@
           "text": "Georgian",
           "text_de": "Georgisch",
           "concept": "jwspad12",
+          "scale": "bin",
           "sn": 12,
           "number": ""
         },
@@ -836,6 +880,7 @@
           "text": "Haussa",
           "text_de": "Haussa",
           "concept": "jwspad13",
+          "scale": "bin",
           "sn": 13,
           "number": ""
         },
@@ -844,6 +889,7 @@
           "text": "Hindi",
           "text_de": "Hind",
           "concept": "jwspad14",
+          "scale": "bin",
           "sn": 14,
           "number": ""
         },
@@ -852,6 +898,7 @@
           "text": "Igbo",
           "text_de": "Igbo",
           "concept": "jwspad15",
+          "scale": "bin",
           "sn": 15,
           "number": ""
         },
@@ -860,6 +907,7 @@
           "text": "Croatian",
           "text_de": "Kroatisch",
           "concept": "jwspad16",
+          "scale": "bin",
           "sn": 16,
           "number": ""
         },
@@ -868,6 +916,7 @@
           "text": "Kurdish-Kurmanji",
           "text_de": "Kurdisch-Kurmandschl",
           "concept": "jwspad17",
+          "scale": "bin",
           "sn": 17,
           "number": ""
         },
@@ -876,6 +925,7 @@
           "text": "Kurdish-Sorani",
           "text_de": "Kurdisch-Soran",
           "concept": "jwspad18",
+          "scale": "bin",
           "sn": 18,
           "number": ""
         },
@@ -884,6 +934,7 @@
           "text": "Kurdish-Southern Kurdish",
           "text_de": "Kurdisch-Südkurdisch",
           "concept": "jwspad19",
+          "scale": "bin",
           "sn": 19,
           "number": ""
         },
@@ -892,6 +943,7 @@
           "text": "Mandinka",
           "text_de": "Mandinka",
           "concept": "jwspad20",
+          "scale": "bin",
           "sn": 20,
           "number": ""
         },
@@ -900,6 +952,7 @@
           "text": "Macedonian",
           "text_de": "Mazedonisch",
           "concept": "jwspad21",
+          "scale": "bin",
           "sn": 21,
           "number": ""
         },
@@ -908,6 +961,7 @@
           "text": "Pashto",
           "text_de": "Paschto",
           "concept": "jwspad22",
+          "scale": "bin",
           "sn": 22,
           "number": ""
         },
@@ -916,6 +970,7 @@
           "text": "Punjab",
           "text_de": "Punjabi",
           "concept": "jwspad23",
+          "scale": "bin",
           "sn": 23,
           "number": ""
         },
@@ -924,6 +979,7 @@
           "text": "Romanian",
           "text_de": "Rumänisch",
           "concept": "jwspad24",
+          "scale": "bin",
           "sn": 24,
           "number": ""
         },
@@ -932,6 +988,7 @@
           "text": "Russian",
           "text_de": "Russisch",
           "concept": "jwspad25",
+          "scale": "bin",
           "sn": 25,
           "number": ""
         },
@@ -940,6 +997,7 @@
           "text": "Saraiki",
           "text_de": "Saraiki",
           "concept": "jwspad26",
+          "scale": "bin",
           "sn": 26,
           "number": ""
         },
@@ -948,6 +1006,7 @@
           "text": "Serbian",
           "text_de": "Serbisch",
           "concept": "jwspad27",
+          "scale": "bin",
           "sn": 27,
           "number": ""
         },
@@ -956,6 +1015,7 @@
           "text": "Somalia",
           "text_de": "Somali",
           "concept": "jwspad28",
+          "scale": "bin",
           "sn": 28,
           "number": ""
         },
@@ -964,6 +1024,7 @@
           "text": "Central Atlas Tamazight",
           "text_de": "Tamazight",
           "concept": "jwspad29",
+          "scale": "bin",
           "sn": 29,
           "number": ""
         },
@@ -972,6 +1033,7 @@
           "text": "Tamil",
           "text_de": "Tamil",
           "concept": "jwspad30",
+          "scale": "bin",
           "sn": 30,
           "number": ""
         },
@@ -980,6 +1042,7 @@
           "text": "Tigrinya",
           "text_de": "Tigrinya",
           "concept": "jwspad31",
+          "scale": "bin",
           "sn": 31,
           "number": ""
         },
@@ -988,6 +1051,7 @@
           "text": "Turkish",
           "text_de": "Türkisch",
           "concept": "jwspad32",
+          "scale": "bin",
           "sn": 32,
           "number": ""
         },
@@ -996,6 +1060,7 @@
           "text": "Ukrainian",
           "text_de": "Ukrainisch",
           "concept": "jwspad33",
+          "scale": "bin",
           "sn": 33,
           "number": ""
         },
@@ -1004,6 +1069,7 @@
           "text": "Urdu",
           "text_de": "Urdu",
           "concept": "jwspad34",
+          "scale": "bin",
           "sn": 34,
           "number": ""
         },
@@ -1012,6 +1078,7 @@
           "text": "Wolof",
           "text_de": "Wolof",
           "concept": "jwspad35",
+          "scale": "bin",
           "sn": 35,
           "number": ""
         },
@@ -1020,6 +1087,7 @@
           "text": "Yoruba",
           "text_de": "Yoruba",
           "concept": "jwspad36",
+          "scale": "bin",
           "sn": 36,
           "number": ""
         },
@@ -1028,6 +1096,7 @@
           "text": "Other language, namely ...",
           "text_de": "Andere Sprache und zwar",
           "concept": "jwspad37",
+          "scale": "chr",
           "sn": 37,
           "number": ""
         },
@@ -1036,6 +1105,7 @@
           "text": "No second language",
           "text_de": "Keine weitere Sprache",
           "concept": "jwspad38",
+          "scale": "bin",
           "sn": 38,
           "number": ""
         }
@@ -1055,6 +1125,7 @@
           "text": "Which language do you speak the best of it?",
           "text_de": "Welche Sprache sprichst Du davon am besten?",
           "concept": "jkbsp",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -1244,6 +1315,7 @@
           "item": "1",
           "text": "Other language, namely ...",
           "text_de": "Andere Sprache und zwar",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
@@ -1263,6 +1335,7 @@
           "text": "How well can you speak that language?",
           "text_de": "Wie gut kannst Du diese Sprache sprechen?",
           "concept": "jkbspspr",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -1309,6 +1382,7 @@
           "text": "How well can you write in German ?",
           "text_de": "Wie gut kannst Du diese Sprache schreiben?",
           "concept": "jkbspsch",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -1355,6 +1429,7 @@
           "text": "How well can you read in German ?",
           "text_de": "Wie gut kannst Du diese Sprache lesen?",
           "concept": "jkbsples",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -1402,6 +1477,7 @@
           "text_de": "Welche Sprachen sprechen alle, die hier im Haushalt wohnen, mit Dir?",
           "goto": "2,3@21:jgspda3",
           "concept": "jgspd3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -1427,6 +1503,7 @@
           "text": "Open statements",
           "text_de": "<Offene Angabe>",
           "concept": "jgspda3",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
@@ -1446,6 +1523,7 @@
           "text": "Do you speak here in Germany with his family members ...",
           "text_de": "Sprichst Du hier in Deutschland mit Deinen Familienmitgliedern…",
           "concept": "jgspd4",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -1482,6 +1560,7 @@
           "text": "Do you talk to his friends here in Germany ...",
           "text_de": "Sprichst Du hier in Deutschland mit Deinen Freunden…",
           "concept": "jgspd5",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -1518,6 +1597,7 @@
           "text": "Do you speak here in Germany at school ...",
           "text_de": "Sprichst Du hier in Deutschland in der Schule…",
           "concept": "jgspd6",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -1556,6 +1636,7 @@
           "instruction": "Read books, magazines or newspapers",
           "instruction_de": "Bücher, Zeitschriften oder Zeitungen lesen",
           "concept": "jbuch",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -1599,6 +1680,7 @@
           "instruction": "Watching TV or films",
           "instruction_de": "Fernsehen oder Filme ansehen",
           "concept": "jfern",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -1642,6 +1724,7 @@
           "instruction": "Surf the internet",
           "instruction_de": "Im Internet surfen",
           "concept": "jint",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -1685,6 +1768,7 @@
           "instruction": "Writing e-mails or letters",
           "instruction_de": "E-Mails oder Briefe schreiben",
           "concept": "jmails",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -1725,6 +1809,7 @@
           "item": "1",
           "text": "School",
           "text_de": "Schule",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         }
@@ -1743,6 +1828,7 @@
           "item": "1",
           "text": "When did you first go to school?",
           "text_de": "Wann bist Du das erste Mal zur Schule gegangen?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -1751,6 +1837,7 @@
           "text": "Month",
           "text_de": "Monat",
           "concept": "jschm",
+          "scale": "int",
           "sn": 1,
           "number": ""
         },
@@ -1759,6 +1846,7 @@
           "text": "Year",
           "text_de": "Jahr",
           "concept": "jschj",
+          "scale": "int",
           "sn": 2,
           "number": ""
         },
@@ -1767,6 +1855,7 @@
           "text": "I have never gone to school",
           "text_de": "Bin noch nie zur Schule gegangen",
           "concept": "jschno",
+          "scale": "bin",
           "sn": 3,
           "number": ""
         }
@@ -1787,6 +1876,7 @@
           "text_de": "In welchem Land bist Du zum ersten Mal in die Schule gegangen?",
           "goto": "3@30:jschlandso",
           "concept": "jschland",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -1812,6 +1902,7 @@
           "text": "[To another country] please state:",
           "text_de": "In einem anderen Land, und zwar:",
           "concept": "jschlandso",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
@@ -1830,6 +1921,7 @@
           "item": "1",
           "text": "How long did you go to school?",
           "text_de": "Wie lange bist Du dort zur Schule gegangen?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -1838,6 +1930,7 @@
           "text": "Year",
           "text_de": "Jahre",
           "concept": "jschdauj",
+          "scale": "int",
           "sn": 1,
           "number": ""
         },
@@ -1845,6 +1938,7 @@
           "item": "2",
           "text": "or",
           "text_de": "oder",
+          "scale": "txt",
           "sn": 2,
           "number": ""
         },
@@ -1853,6 +1947,7 @@
           "text": "Months",
           "text_de": "Monate",
           "concept": "jschdaum",
+          "scale": "int",
           "sn": 3,
           "number": ""
         }
@@ -1872,6 +1967,7 @@
           "text": "What kind of school did you last attend in this country?",
           "text_de": "Was für eine Schule hast Du dort zuletzt besucht?",
           "concept": "jlschaloe",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -1918,6 +2014,7 @@
           "text": "What type of school-leaving certificate did you attain?",
           "text_de": "Mit was für einem Abschluss hast Du die Schule verlassen?",
           "concept": "jschable",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -1964,6 +2061,7 @@
           "text": "Please tell us what kind of degree this was?",
           "text_de": "Bitte sag uns noch, was für eine Art des Abschlusses das war?",
           "concept": "jschableso",
+          "scale": "chr",
           "sn": 0,
           "number": ""
         }
@@ -1983,6 +2081,7 @@
           "text": "Did you go to school in another country (except Germany)?",
           "text_de": "Bist Du noch in einem weiteren Land (außer Deutschland) zur Schule gegangen?",
           "concept": "jschaland01",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -2003,6 +2102,7 @@
           "text": "Yes: open statements",
           "text_de": "Ja, und zwar: <Offene Angabe>",
           "concept": "jschalandso01",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
@@ -2021,6 +2121,7 @@
           "item": "1",
           "text": "How long did you go to school?",
           "text_de": "Wie lange bist Du dort zur Schule gegangen?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -2029,6 +2130,7 @@
           "text": "Year",
           "text_de": "Jahre",
           "concept": "jschadauj01",
+          "scale": "int",
           "sn": 1,
           "number": ""
         },
@@ -2036,6 +2138,7 @@
           "item": "2",
           "text": "or",
           "text_de": "oder",
+          "scale": "txt",
           "sn": 2,
           "number": ""
         },
@@ -2044,6 +2147,7 @@
           "text": "Months",
           "text_de": "Monate",
           "concept": "jschadaum01",
+          "scale": "int",
           "sn": 3,
           "number": ""
         }
@@ -2063,6 +2167,7 @@
           "text": "What kind of school did you last attend in this country?",
           "text_de": "Was für eine Schule hast Du dort zuletzt besucht?",
           "concept": "jzlschal01",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -2109,6 +2214,7 @@
           "text": "What type of school-leaving certificate did you attain?",
           "text_de": "Mit was für einem Abschluss hast Du diese Schule verlassen?",
           "concept": "jzlschalab01",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -2159,6 +2265,7 @@
           "item": "1",
           "text": "When did you first go to school in Germany?",
           "text_de": "Wann bist Du das erste Mal in Deutschland zur Schule gegangen?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -2167,6 +2274,7 @@
           "text": "Month",
           "text_de": "Monat",
           "concept": "jschdm",
+          "scale": "int",
           "sn": 1,
           "number": ""
         },
@@ -2175,6 +2283,7 @@
           "text": "Year",
           "text_de": "Jahr",
           "concept": "jschdj",
+          "scale": "int",
           "sn": 2,
           "number": ""
         },
@@ -2183,6 +2292,7 @@
           "text": "Never went to school in Germany",
           "text_de": "Bin noch nie in Deutschland zur Schule gegangen",
           "concept": "jschdno",
+          "scale": "bin",
           "sn": 3,
           "number": ""
         }
@@ -2202,6 +2312,7 @@
           "text": "Do you currently attend a special class for refugee children (for example, welcome class, preparatory class or transition class)?",
           "text_de": "Hast Du zunächst eine spezielle Klasse für geflüchtete Kinder (zum Beispiel Willkommensklasse, Vorbereitungsklasse oder Übergangsklasse) besucht?",
           "concept": "jschfsp",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -2237,6 +2348,7 @@
           "item": "1",
           "text": "How long did this child visit a special class for refugees?",
           "text_de": "Wie lange hast Du auch eine spezielle Klasse für Geflüchtete besucht?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -2245,6 +2357,7 @@
           "text": "Months",
           "text_de": "Monate",
           "concept": "jschfspam",
+          "scale": "int",
           "sn": 1,
           "number": ""
         },
@@ -2252,6 +2365,7 @@
           "item": "3",
           "text": "or",
           "text_de": "oder",
+          "scale": "txt",
           "sn": 2,
           "number": ""
         },
@@ -2260,6 +2374,7 @@
           "text": "Year",
           "text_de": "Jahre",
           "concept": "jschfspaj",
+          "scale": "int",
           "sn": 3,
           "number": ""
         },
@@ -2268,6 +2383,7 @@
           "text": "still attends special class",
           "text_de": "besuche immer noch spezielle Klasse",
           "concept": "jschfspa",
+          "scale": "bin",
           "sn": 4,
           "number": ""
         }
@@ -2286,6 +2402,7 @@
           "item": "1",
           "text": "How long has this child only visited a special class for refugees?",
           "text_de": "Wie lange hast Du ausschließlich eine spezielle Klasse für Geflüchtete besucht?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -2294,6 +2411,7 @@
           "text": "Months",
           "text_de": "Monate",
           "concept": "jschfspm",
+          "scale": "int",
           "sn": 1,
           "number": ""
         },
@@ -2301,6 +2419,7 @@
           "item": "2",
           "text": "or",
           "text_de": "oder",
+          "scale": "txt",
           "sn": 2,
           "number": ""
         },
@@ -2309,6 +2428,7 @@
           "text": "Years",
           "text_de": "Jahre",
           "concept": "jschfspj",
+          "scale": "int",
           "sn": 3,
           "number": ""
         },
@@ -2317,6 +2437,7 @@
           "text": "still attends special class",
           "text_de": "besuche immer noch spezielle Klasse",
           "concept": "jschfspin",
+          "scale": "bin",
           "sn": 4,
           "number": ""
         }
@@ -2335,6 +2456,7 @@
           "item": "1",
           "text": "Which class did you visit first in Germany?",
           "text_de": "Welche Klassenstufe hast Du zuerst in Deutschland besucht?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -2343,6 +2465,7 @@
           "text": "Class",
           "text_de": "Klasse",
           "concept": "jschkstd",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -2362,6 +2485,7 @@
           "text": "Which general education school did you attend in the 2016/2017 school year?",
           "text_de": "Welche allgemeinbildende Schule hast Du im Schuljahr 2016/2017 besucht?",
           "concept": "jschu",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -2433,6 +2557,7 @@
           "text": "And which general education school are you currently attending, ie in the school year 2017/2018?",
           "text_de": "Und welche allgemeinbildende Schule besuchst Du gerade, also im Schuljahr 2017/2018?",
           "concept": "jschul",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -2503,6 +2628,7 @@
           "item": "1",
           "text": "In how many classes were you in the school year 2016/2017?",
           "text_de": "In der wie vielten Klasse warst Du im Schuljahr 2016/2017?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -2511,6 +2637,7 @@
           "text": "Class",
           "text_de": "Klasse",
           "concept": "jschkstakt",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -2529,6 +2656,7 @@
           "item": "1",
           "text": "In how many classes were you in the school year 2016/2017?",
           "text_de": "Und in der wie vielten Klasse bist Du gerade, also im Schuljahr 2017/2018?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -2537,6 +2665,7 @@
           "text": "Class",
           "text_de": "Klasse",
           "concept": "jkl",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -2555,6 +2684,7 @@
           "item": "1",
           "text": "Are you currently doing one or more of the following?",
           "text_de": "Machst Du derzeit eines oder mehrere der folgenden Dinge?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -2563,6 +2693,7 @@
           "text": "Waiting to start school or training",
           "text_de": "Warte auf den Schulbeginn",
           "concept": "jkderz1",
+          "scale": "bin",
           "sn": 1,
           "number": ""
         },
@@ -2571,6 +2702,7 @@
           "text": "Waiting vocational training to start",
           "text_de": "Warte auf den Berufsausbildungsbeginn",
           "concept": "jkderz2",
+          "scale": "bin",
           "sn": 2,
           "number": ""
         },
@@ -2579,6 +2711,7 @@
           "text": "Doing a vocational integration course for immigrants and asylum-seekers",
           "text_de": "Bin in einem beruflichen Eingliederungslehrgang",
           "concept": "jkderz9",
+          "scale": "bin",
           "sn": 3,
           "number": ""
         },
@@ -2587,6 +2720,7 @@
           "text": "Doing a vocational preparation year, pre-vocational training year",
           "text_de": "Bin in einem Berufsvorbereitungsjahr, Berufsgrundbildungsjahr",
           "concept": "jkderz3",
+          "scale": "bin",
           "sn": 4,
           "number": ""
         },
@@ -2595,6 +2729,7 @@
           "text": "Attending a vocational training school",
           "text_de": "Besuche eine berufsbildende Schule",
           "concept": "jkderz4",
+          "scale": "bin",
           "sn": 5,
           "number": ""
         },
@@ -2603,6 +2738,7 @@
           "text": "Doing vocational training/an apprenticeship",
           "text_de": "Bin in einer beruflichen Ausbildung / Lehre",
           "concept": "jkderz10",
+          "scale": "bin",
           "sn": 6,
           "number": ""
         },
@@ -2611,6 +2747,7 @@
           "text": "Doing in-house training, an unpaid work placement",
           "text_de": "Bin in einem Praktikum, Volontariat",
           "concept": "jkderz11",
+          "scale": "bin",
           "sn": 7,
           "number": ""
         },
@@ -2619,6 +2756,7 @@
           "text": "I'm employed",
           "text_de": "Bin erwerbstätig",
           "concept": "jkderz6",
+          "scale": "bin",
           "sn": 8,
           "number": ""
         },
@@ -2627,6 +2765,7 @@
           "text": "None of these",
           "text_de": "Nichts davon",
           "concept": "jkderz8",
+          "scale": "bin",
           "sn": 9,
           "number": ""
         },
@@ -2635,6 +2774,7 @@
           "text": "No details",
           "text_de": "Keine Angabe",
           "concept": "jkderzka",
+          "scale": "bin",
           "sn": 10,
           "number": ""
         }
@@ -2655,6 +2795,7 @@
           "text_de": "Wie viele Schüler bzw. Schülerinnen sind insgesamt in Deiner Schulklasse?",
           "instruction": "If you are not attending school at the moment, please think of your last school year when answering this question.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung dieser Frage bitte an Dein letztes Schuljahr.",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -2663,6 +2804,7 @@
           "text": "Total number of pupils",
           "text_de": "Schüler bzw. Schülerinnen insgesamt",
           "concept": "jklanz",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -2683,6 +2825,7 @@
           "text_de": "Und wie viele von diesen Schülern bzw. Schülerinnen stammen nicht aus Deutschland oder haben Eltern, die nicht aus Deutschland stammen? \nWenn Du es nicht genau weißt, kannst Du es auch ungefähr angeben!",
           "instruction": "If you are not currently attending school, please think about the last school year you attended when you answer these questions.If you are not attending school at the moment, please think of your last school year when answering this question.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung dieser Frage bitte an Dein letztes Schuljahr.",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -2691,6 +2834,7 @@
           "text": "Total number of pupils",
           "text_de": "Schüler bzw. Schülerinnen",
           "concept": "jklaus",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -2712,6 +2856,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jlehr01",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -2745,6 +2890,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jlehr02",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -2778,6 +2924,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jlehr03",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -2811,6 +2958,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jlehr04",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -2844,6 +2992,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jdzeug",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -2877,6 +3026,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jnot1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -2935,6 +3085,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jnot2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -2993,6 +3144,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jnot4",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3051,6 +3203,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jhaus3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3104,6 +3257,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jhaus4",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3157,6 +3311,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jhaus10",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3210,6 +3365,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jhaus6",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3263,6 +3419,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jhaus7",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3316,6 +3473,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jhaus8",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3369,6 +3527,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jhaus9",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3422,6 +3581,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jhaus2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3472,6 +3632,7 @@
           "item": "1",
           "text": "School Belonging Scale PISA",
           "text_de": "School Belonging Scale PISA",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         }
@@ -3493,6 +3654,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jpisa1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3536,6 +3698,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jpisa2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3579,6 +3742,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jpisa3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3622,6 +3786,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jpisa4",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3665,6 +3830,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jpisa5",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3708,6 +3874,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jpisa6",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3751,6 +3918,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jpisa7",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3794,6 +3962,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jpisa8",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3837,6 +4006,7 @@
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "concept": "jpisa9",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -3879,6 +4049,7 @@
           "text_de": "Neben dem normalen Unterricht gibt es ja auch andere Möglichkeiten, sich in der Schule zu engagieren, sich also aktiv an etwas zu beteiligen. \nEngagierst Du dich derzeit in einem oder mehreren der folgenden Bereiche? \nBitte alles Zutreffende angeben!",
           "instruction": "If you are not attending school at the moment, please remember your last school year when answering the next questions.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -3887,6 +4058,7 @@
           "text": "I'm a class representative",
           "text_de": "als Klassensprecher/-in",
           "concept": "jeng1",
+          "scale": "bin",
           "sn": 1,
           "number": ""
         },
@@ -3895,6 +4067,7 @@
           "text": "I'm a student representative /head boy or girl",
           "text_de": "als Schulsprecher/-in",
           "concept": "jeng2",
+          "scale": "bin",
           "sn": 2,
           "number": ""
         },
@@ -3903,6 +4076,7 @@
           "text": "I'm a school first aider",
           "text_de": "als Schulsanitäter/-in",
           "concept": "jeng9",
+          "scale": "bin",
           "sn": 3,
           "number": ""
         },
@@ -3911,6 +4085,7 @@
           "text": "Involved with school newspaper",
           "text_de": "beim Erstellen einer Schülerzeitung",
           "concept": "jeng3",
+          "scale": "bin",
           "sn": 4,
           "number": ""
         },
@@ -3919,6 +4094,7 @@
           "text": "I'm in a drama group/ dance group",
           "text_de": "in Theatergruppe / Tanzgruppe",
           "concept": "jeng4",
+          "scale": "bin",
           "sn": 5,
           "number": ""
         },
@@ -3927,6 +4103,7 @@
           "text": "I sing in the choir / play in the orchestra / belong to a music club",
           "text_de": "in Chor / Orchester / Musikgruppe",
           "concept": "jeng5",
+          "scale": "bin",
           "sn": 6,
           "number": ""
         },
@@ -3935,6 +4112,7 @@
           "text": "Belong to volunteer sport group",
           "text_de": "in freiwilliger Sport-AG",
           "concept": "jeng6",
+          "scale": "bin",
           "sn": 7,
           "number": ""
         },
@@ -3943,6 +4121,7 @@
           "text": "I'm in another club or special interest group (specify):",
           "text_de": "in sonstiger AG oder Neigungsgruppe, und zwar:",
           "concept": "jeng7",
+          "scale": "chr",
           "sn": 8,
           "number": ""
         },
@@ -3951,6 +4130,7 @@
           "text": "No, none of the above",
           "text_de": "Nein, nichts davon",
           "concept": "jeng8",
+          "scale": "bin",
           "sn": 9,
           "number": ""
         }
@@ -3970,6 +4150,7 @@
           "text": "Are you aiming to get a German school leaver's certificate in the future?",
           "text_de": "Strebst Du in der Zukunft einen Schulabschluss in Deutschland an?",
           "concept": "jschabd",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -4006,6 +4187,7 @@
           "text": "What type of secondary school do you want to graduate from—that is, what school-leaving certificate do you want to obtain?",
           "text_de": "Welchen Schulabschluss willst Du persönlich einmal erreichen?",
           "concept": "jschabe",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -4047,6 +4229,7 @@
           "text": "How important is it for you to get this school-leaving certificate?",
           "text_de": "Wie wichtig ist es Dir, diesen Schulabschluss zu erreichen?",
           "concept": "jschabw",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -4093,6 +4276,7 @@
           "text": "And what do you think, which degree will you actually achieve?",
           "text_de": "Und was denkst Du, welchen Schulabschluss wirst Du tatsächlich einmal erreichen?",
           "concept": "jschabt",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -4133,6 +4317,7 @@
           "text": "Have you been in vocational training in a country other than Germany?",
           "text_de": "Warst Du in einem anderen Land als Deutschland in einer beruflichen Ausbildung?",
           "concept": "jlab10",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -4166,6 +4351,7 @@
           "text_de": "Was für eine berufliche Ausbildung war das?",
           "instruction": "Please select all responses that apply.",
           "instruction_de": "Bitte gib alles Zutreffende an!",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -4174,6 +4360,7 @@
           "text": "I was trained in a company",
           "text_de": "Ich wurde in einem Betrieb angelernt",
           "concept": "jlab11",
+          "scale": "bin",
           "sn": 1,
           "number": ""
         },
@@ -4182,6 +4369,7 @@
           "text": "I completed an extended apprenticeship at a company",
           "text_de": "Ich habe in einem Betrieb eine längere Ausbildung gemacht",
           "concept": "jlab12",
+          "scale": "bin",
           "sn": 2,
           "number": ""
         },
@@ -4190,6 +4378,7 @@
           "text": "I attended a vocational training school",
           "text_de": "Ich habe eine berufsbildende Schule besucht",
           "concept": "jlab13",
+          "scale": "bin",
           "sn": 3,
           "number": ""
         },
@@ -4198,6 +4387,7 @@
           "text": "Other training",
           "text_de": "Sonstige Ausbildung",
           "concept": "jlab15",
+          "scale": "bin",
           "sn": 4,
           "number": ""
         }
@@ -4219,6 +4409,7 @@
           "instruction": "I was trained in a company",
           "instruction_de": "In einem Betrieb angelernt",
           "concept": "jlab11a",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -4252,6 +4443,7 @@
           "instruction": "I did a longer form of training in a company",
           "instruction_de": "In einem Betrieb eine längere Ausbildung gemacht",
           "concept": "jlab12a",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -4285,6 +4477,7 @@
           "instruction": "I attended a vocational school",
           "instruction_de": "Eine berufsbildende Schule besucht",
           "concept": "jlab13a",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -4318,6 +4511,7 @@
           "instruction": "Other training",
           "instruction_de": "Sonstige Ausbildung",
           "concept": "jlab15a",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -4349,6 +4543,7 @@
           "text": "Do you intend to complete vocational / occupational training or attain a university degree in the future?",
           "text_de": "Strebst Du in der Zukunft einen beruflichen Ausbildungsabschluss oder Hochschulabschluss an?",
           "concept": "jaus07",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -4385,6 +4580,7 @@
           "text": "Which of the following vocational qualifications or degrees do you aspire to?",
           "text_de": "Welchen der folgenden beruflichen Ausbildungsabschlüsse oder Hochschulabschlüsse strebst Du an?",
           "concept": "jausb",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -4451,6 +4647,7 @@
           "text": "Would you like to study?",
           "text_de": "Möchtest Du gerne studieren?",
           "concept": "jstug",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -4486,6 +4683,7 @@
           "item": "1",
           "text": "Work / acquisition",
           "text_de": "Arbeit / Erwerb",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         }
@@ -4505,6 +4703,7 @@
           "text": "Have you already had a paid job?",
           "text_de": "Hast Du schon einmal für Geld gearbeitet?",
           "concept": "jjob3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -4535,6 +4734,7 @@
           "item": "1",
           "text": "How old were you when you had your first ever paid job?",
           "text_de": "Wie alt warst du, als Du das erste Mal in Deinem Leben für Geld gearbeitet hast?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -4545,6 +4745,7 @@
           "instruction": "We are not referring to vocational training but to your first job after you completed your training!",
           "instruction_de": "Gemeint ist nicht die Berufsausbildung, sondern gegebenenfalls die erste Tätigkeit danach!",
           "concept": "jjob4",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -4565,6 +4766,7 @@
           "text_de": "Welche berufliche Tätigkeit hast Du in Deinem Herkunftsland zuletzt ausgeübt?",
           "instruction": "Please state the exact name of the job or work you did there, e.g.: not 'business administrator' but 'freight forwarder', not 'worker' but 'machinist'.",
           "instruction_de": "Bitte gib die genaue Tätigkeitsbezeichnung an, also z.B. nicht \"kaufmännischer Angestellter\", sondern: \"Speditionskaufmann\", nicht \"Arbeiter\", sondern: \"Maschinenschlosser\".",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -4573,6 +4775,7 @@
           "text": "Job:",
           "text_de": "Berufliche Tätigkeit:",
           "concept": "jlh1ber",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         },
@@ -4581,6 +4784,7 @@
           "text": "I never had a job in my country of origin",
           "text_de": "Ich war in meinem Herkunftsland nicht berufstätig",
           "concept": "jlh1berno",
+          "scale": "bin",
           "sn": 2,
           "number": ""
         }
@@ -4600,6 +4804,7 @@
           "text": "Which industry, branch or service sector did the company or institution operate in there?",
           "text_de": "In welchem Wirtschaftszweig, welcher Branche oder welchem Dienstleistungsbereich war das Unternehmen bzw. die Einrichtung tätig?",
           "concept": "jlh1branr",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -4730,6 +4935,7 @@
           "item": "1",
           "text": "How many hours per week did you work in this job, on average?",
           "text_de": "Wie viele Stunden betrug in dieser Stelle, im Durchschnitt, Deine Arbeitszeit pro Woche?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -4738,6 +4944,7 @@
           "text": "Hours per week",
           "text_de": "Stunden pro Woche",
           "concept": "jlh1stdw",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -4758,6 +4965,7 @@
           "text_de": "Welche berufliche Tätigkeit übst Du derzeit aus?",
           "instruction": "Please state the exact name of the job or work you did there, e.g.: not 'business administrator' but 'freight forwarder', not 'worker' but 'machinist'.",
           "instruction_de": "Bitte gib die genaue Tätigkeitsbezeichnung an, also z.B. nicht \"kaufmännischer Angestellter\", sondern: \"Speditionskaufmann\", nicht \"Arbeiter\", sondern: \"Maschinenschlosser\".",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -4766,6 +4974,7 @@
           "text": "Job:",
           "text_de": "Berufliche Tätigkeit:",
           "concept": "jber",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
@@ -4785,6 +4994,7 @@
           "text": "Which industry, branch or service sector does the company or institution work in?",
           "text_de": "In welchem Wirtschaftszweig, welcher Branche oder welchem Dienstleistungsbereich ist das Unternehmen bzw. die Einrichtung tätig?",
           "concept": "jbraco",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -4915,6 +5125,7 @@
           "item": "1",
           "text": "How many hours per week did you work in this job, on average?",
           "text_de": "Wie viele Stunden beträgt in dieser Stelle, im Durchschnitt, Deine Arbeitszeit pro Woche?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -4923,6 +5134,7 @@
           "text": "Hours per week",
           "text_de": "Stunden pro Woche",
           "concept": "jazstdw",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -4941,6 +5153,7 @@
           "item": "1",
           "text": "Self-assessment",
           "text_de": "Selbsteinschätzung",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         }
@@ -4958,6 +5171,7 @@
         {
           "text": "We'll start with some statements beginning with phrases like “I am” or “I have” or “I try”. You might think a statement is completely true of you (“completely true of me”) or that it isn't true of you at all (“not true of me at all”). It might also be partially true of you.\n\nPlease answer all the questions as well as you can, even if you're not sure or if the question seems strange to you.",
           "text_de": "Jetzt kommen ein paar Aussagen, die zum Beispiel mit: \n\"Ich bin ...\", \"Ich habe ...\" oder \"Ich versuche ...\" anfangen und bei denen Du denken kannst, dass es bei Dir genau so ist - also, dass es \"voll zutrifft\", oder dass es bei Dir gar nicht so ist - also \"gar nicht zutrifft\", oder dass es nur \"zum Teil zutrifft\". \nBeantworte bitte alle Fragen so gut Du kannst, selbst wenn Du Dir nicht ganz sicher bist oder Dir eine Frage merkwürdig vorkommt.",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -4978,6 +5192,7 @@
           "text": "I try to be nice to others. Their feelings are important to me",
           "text_de": "Ich versuche, nett zu anderen Menschen zu sein, ihre Gefühle sind mir wichtig.",
           "concept": "jbhv01",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5014,6 +5229,7 @@
           "text": "I'm often restless and can’t sit still for long",
           "text_de": "Ich bin oft unruhig, ich kann nicht lange stillsitzen.",
           "concept": "jbhv02",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5050,6 +5266,7 @@
           "text": "I often have headaches or stomach aches or feel nauseous",
           "text_de": "Ich habe häufig Kopfschmerzen oder Bauchschmerzen oder mir wird oft schlecht.",
           "concept": "jbhv03",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5086,6 +5303,7 @@
           "text": "I like to share with others",
           "text_de": "Ich teile gerne mit anderen.",
           "concept": "jbhv04",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5122,6 +5340,7 @@
           "text": "I'm easily irritated and often lose my temper",
           "text_de": "Ich werde leicht wütend; ich verliere oft meine Beherrschung.",
           "concept": "jbhv05",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5158,6 +5377,7 @@
           "text": "I spend most of my time alone",
           "text_de": "Ich bin meistens für mich allein; ich beschäftige mich lieber mit mir selbst.",
           "concept": "jbhv06",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5194,6 +5414,7 @@
           "text": "I usually do what I'm told",
           "text_de": "Normalerweise tue ich, was man mir sagt.",
           "concept": "jbhv07",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5230,6 +5451,7 @@
           "text": "I worry a lot.",
           "text_de": "Ich mache mir häufig Sorgen.",
           "concept": "jbhv08",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5266,6 +5488,7 @@
           "text": "I'm ready to help when others are hurt, sick, or sad",
           "text_de": "Ich bin hilfsbereit, wenn andere verletzt, krank oder traurig sind.",
           "concept": "jbhv09",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5302,6 +5525,7 @@
           "text": "I'm always moving and fidgeting",
           "text_de": "Ich bin dauernd in Bewegung und zappelig.",
           "concept": "jbhv10",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5338,6 +5562,7 @@
           "text": "I have one or several close friends",
           "text_de": "Ich habe einen oder mehrere gute Freunde oder Freundinnen.",
           "concept": "jbhv11",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5374,6 +5599,7 @@
           "text": "I often get into fights",
           "text_de": "Ich schlage mich häufig mit anderen.",
           "concept": "jbhv12",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5410,6 +5636,7 @@
           "text": "I can force other people to do what I want.",
           "text_de": "Ich kann andere zwingen zu tun, was ich will.",
           "concept": "jbhv13",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5446,6 +5673,7 @@
           "text": "I'm often unhappy or down. I cry a lot.",
           "text_de": "Ich bin oft unglücklich oder niedergeschlagen; ich muss häufig weinen.",
           "concept": "jbhv14",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5482,6 +5710,7 @@
           "text": "I'm generally popular among kids my age",
           "text_de": "Im Allgemeinen bin ich bei Gleichaltrigen beliebt.",
           "concept": "jbhv15",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5518,6 +5747,7 @@
           "text": "I'm easily distracted and have a hard time concentrating",
           "text_de": "Ich lasse mich leicht ablenken; ich finde es schwer, mich zu konzentrieren.",
           "concept": "jbhv16",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5554,6 +5784,7 @@
           "text": "New situations make me nervous; I lose my self-confidence easily.",
           "text_de": "Neue Situationen machen mich nervös; ich verliere leicht das Selbstvertrauen.",
           "concept": "jbhv17",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5590,6 +5821,7 @@
           "text": "I'm nice to younger children",
           "text_de": "Ich bin nett zu jüngeren Kindern.",
           "concept": "jbhv18",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5626,6 +5858,7 @@
           "text": "Others often say that I lie or cheat.",
           "text_de": "Andere behaupten oft, dass ich lüge oder mogle.",
           "concept": "jbhv19",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5662,6 +5895,7 @@
           "text": "I'm often teased or picked on by others",
           "text_de": "Ich werde von anderen gehänselt oder schikaniert.",
           "concept": "jbhv20",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5698,6 +5932,7 @@
           "text": "I often help others of my own accord (parents, teachers, other children)",
           "text_de": "Ich helfe anderen oft freiwillig (Eltern, Lehrern oder Gleichaltrigen).",
           "concept": "jbhv21",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5734,6 +5969,7 @@
           "text": "I think before acting",
           "text_de": "Ich denke nach, bevor ich etwas tue.",
           "concept": "jbhv22",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5770,6 +6006,7 @@
           "text": "I take things that don't belong to me (at home, in school, or elsewhere)",
           "text_de": "Ich nehme Dinge, die mir nicht gehören (von zu Hause, in der Schule oder anderswo).",
           "concept": "jbhv23",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5806,6 +6043,7 @@
           "text": "I get on better with adults than with children of my age.",
           "text_de": "Ich komme besser mit Erwachsenen aus als mit Gleichaltrigen.",
           "concept": "jbhv24",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5842,6 +6080,7 @@
           "text": "I have a lot of fears and get scared easily",
           "text_de": "Ich habe viele Ängste; ich fürchte mich leicht.",
           "concept": "jbhv25",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5878,6 +6117,7 @@
           "text": "I finish what I start, I can concentrate for a long time",
           "text_de": "Was ich angefangen habe, mache ich zu Ende; ich kann mich lange genug konzentrieren.",
           "concept": "jbhv26",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -5913,6 +6153,7 @@
           "item": "1",
           "text": "Own attitude",
           "text_de": "Eigenes Verhalten",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         }
@@ -5932,6 +6173,7 @@
           "text_de": "Es gibt unterschiedliche Eigenschaften, die Menschen haben können. Wir haben hier einige davon \naufgelistet. Wahrscheinlich wirst Du Dir bei manchen dieser Eigenschaften denken, dass sie voll auf \nDich zutreffen. Andere werden wahrscheinlich überhaupt nicht auf Dich zutreffen. Und bei wieder \nanderen bist Du Dir vielleicht nicht sicher, ob sie auf Dich zutreffen oder nicht.",
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -5954,6 +6196,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego01",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6012,6 +6255,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego02",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6070,6 +6314,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego03",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6128,6 +6373,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego04",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6186,6 +6432,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego05",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6244,6 +6491,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego06",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6302,6 +6550,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego07",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6360,6 +6609,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego08",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6418,6 +6668,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego09",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6476,6 +6727,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego10",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6534,6 +6786,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego11",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6592,6 +6845,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego12",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6650,6 +6904,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego13",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6708,6 +6963,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego14",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6766,6 +7022,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego15",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6824,6 +7081,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego16",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6882,6 +7140,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego17",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6940,6 +7199,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego18",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -6998,6 +7258,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego19",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7056,6 +7317,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jego20",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7111,6 +7373,7 @@
           "item": "1",
           "text": "To be present of ... at home",
           "text_de": "Vorhanden sein von ... zuhause",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         }
@@ -7130,6 +7393,7 @@
           "text": "Do you have somewhere quiet at home where you can study?",
           "text_de": "Hast Du bei Dir zu Hause einen ruhigen Platz zum Lernen?",
           "concept": "jpll",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7161,6 +7425,7 @@
           "text": "Do you have a desk at home for studying?",
           "text_de": "Hast Du bei Dir zu Hause einen Schreibtisch zum Lernen?",
           "concept": "jzh1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7192,6 +7457,7 @@
           "text": "Do you have schoolbooks or textbooks at home?",
           "text_de": "Hast Du bei Dir zu Hause Schulbücher bzw. Lehrbücher?",
           "concept": "jzh9",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7223,6 +7489,7 @@
           "text": "Do you have a dictionary at home?",
           "text_de": "Hast Du bei Dir zu Hause ein Wörterbuch?",
           "concept": "jzh10",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7254,6 +7521,7 @@
           "text": "Do you have your own room at home?",
           "text_de": "Hast Du bei Dir zu Hause ein Zimmer für Dich allein?",
           "concept": "jzh2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7285,6 +7553,7 @@
           "text": "Do you have books at home that completely belong to you (apart from schoolbooks or textbooks)?",
           "text_de": "Hast Du bei Dir zu Hause Bücher, die Dir ganz allein gehören (außer Deinen Schulbüchern bzw. Lehrbüchern)?",
           "concept": "jzh3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7316,6 +7585,7 @@
           "text": "Are there any books at home that help you when you're doing your homework (apart from schoolbooks and textbooks)?",
           "text_de": "Gibt es bei Dir zu Hause Bücher, die bei den Hausaufgaben hilfreich sind (außer Deinen Schulbüchern bzw. Lehrbüchern)?",
           "concept": "jzh5",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7347,6 +7617,7 @@
           "text": "Do you have any learning software at home (e.g.: for a computer, tablet or games console)?",
           "text_de": "Gibt es bei Dir zu Hause Lern-Software (z.B. für Computer, Tablet, Konsole)?",
           "concept": "jzh4",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7378,6 +7649,7 @@
           "text": "Do you have any classical literature books at home (e.g.: books containing poetry)?",
           "text_de": "Gibt es bei Dir zu Hause klassische Literatur (z.B. Bücher mit Gedichten)?",
           "concept": "jzh6",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7409,6 +7681,7 @@
           "text": "Do you have any musical instruments at home (e.g.: a piano)?",
           "text_de": "Gibt es bei Dir zu Hause Musikinstrumente (z.B. Klavier)?",
           "concept": "jzh7",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7440,6 +7713,7 @@
           "text": "Do you have any works of art at home (e.g.: paintings)?",
           "text_de": "Gibt es bei Dir zu Hause Kunstwerke (z.B. Gemälde)?",
           "concept": "jzh8",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7469,6 +7743,7 @@
         {
           "text": "Application of device at home",
           "text_de": "Gerätenutzung zuhause",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -7487,6 +7762,7 @@
         {
           "text": "At home, can you use the following equipment?\nIf so, please indicate whether this equipment is exclusively for you to use, or whether you share it with other family members.",
           "text_de": "Kannst Du bei Dir zu Hause folgende Geräte nutzen? \nWenn ja, gib bitte auch an, ob Du diese Geräte für Dich allein hast oder ob Du sie gemeinsam mit anderen Familienangehörigen nutzt.",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -7507,6 +7783,7 @@
           "text": "Can you use a tablet at your home?",
           "text_de": "Kannst Du bei Dir zu Hause ein Tablet nutzen?",
           "concept": "jzhg1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7543,6 +7820,7 @@
           "text": "Can you use a PC/Laptop at your home?",
           "text_de": "Kannst Du bei Dir zu Hause einen Computer / Laptop nutzen?",
           "concept": "jzhg2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7579,6 +7857,7 @@
           "text": "Can you use a game console at your home?",
           "text_de": "Kannst Du bei Dir zu Hause eine (Spiele-)Konsole nutzen?",
           "concept": "jzhg3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7615,6 +7894,7 @@
           "text": "Can you use a smartphone at your home?",
           "text_de": "Kannst Du bei Dir zu Hause ein Smartphone nutzen?",
           "concept": "jzhg4",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7651,6 +7931,7 @@
           "text": "Can you use an other mobile phone at your home?",
           "text_de": "Kannst Du bei Dir zu Hause ein anderes Handy nutzen?",
           "concept": "jzhg5",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7685,6 +7966,7 @@
         {
           "text": "Permission of parents",
           "text_de": "Erlaubnis der Eltern",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -7705,6 +7987,7 @@
           "text": "When you don't have school the next morning, or at weekends, until what time do your parents let you stay out by yourself?\nUntil…",
           "text_de": "Bis wann erlauben Dir Deine Eltern, an Abenden vor Schultagen / an Wochentagen alleine unterwegs zu sein? \nBis spätestens…",
           "concept": "jerl1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7771,6 +8054,7 @@
           "text": "When you don't have school the next morning, or at weekends, until what time do your parents let you stay out by yourself?\nUntil…",
           "text_de": "Bis wann erlauben Dir Deine Eltern, an Abenden vor schulfreien Tagen / am Wochenende alleine unterwegs zu sein? \nBis spätestens…",
           "concept": "jerl2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7837,6 +8121,7 @@
           "text": "When you have school the next morning, until what time do your parents let you stay up during the week?\nUntil…",
           "text_de": "Bis wann erlauben Dir Deine Eltern, an Abenden vor Schultagen / an Wochentagen zuhause aufzubleiben? \nBis spätestens…",
           "concept": "jerl3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7903,6 +8188,7 @@
           "text": "When you don't have school the next morning, or at weekends, until what time do your parents let you stay up?\nUntil…",
           "text_de": "Bis wann erlauben Dir Deine Eltern an Abenden vor schulfreien Tagen / am Wochenende zuhause aufzubleiben? \nBis spätestens…",
           "concept": "jerl4",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -7967,6 +8253,7 @@
         {
           "text": "Do things without parents",
           "text_de": "Dinge ohne Eltern gemacht",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -7987,6 +8274,7 @@
           "text_de": "Was von den folgenden Dingen hast Du schon mal ohne Deine Eltern gemacht?",
           "instruction": "For each activity, please say whether you have done them with adults, e.g.: aunt/uncle, grandparents, friend's parents, youth leader on holiday, and also whether you have done them without adults, i.e.: alone, just with friends, or with siblings who are still minors.",
           "instruction_de": "Sag bitte bei jeder Tätigkeit, ob Du sie mit Erwachsenen, zum Beispiel Onkel/Tante, Großeltern, Eltern von Freunden, Ferienfreizeitbetreuer, gemacht hast und ob Du sie schon ohne Erwachsene, also ganz alleine oder nur mit Freunden oder noch nicht erwachsenen Geschwistern, gemacht hast.",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -8007,6 +8295,7 @@
           "text": "I have been on holiday without my parents.",
           "text_de": "Ich habe schon mal ohne Eltern Urlaub gemacht.",
           "concept": "jmoelt1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8043,6 +8332,7 @@
           "text": "I have traveled by train or by plane without my parents.",
           "text_de": "Ich habe schon mal ohne Eltern eine Zug- oder Flugreise gemacht.",
           "concept": "jmoelt2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8079,6 +8369,7 @@
           "text": "I have been to see a doctor without my parents.",
           "text_de": "Ich bin schon mal ohne Eltern zum Arzt gegangen.",
           "concept": "jmoelt3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8115,6 +8406,7 @@
           "text": "I have bought my own clothes without my parents.",
           "text_de": "Ich habe schon mal ohne Eltern Kleidung für mich gekauft.",
           "concept": "jmoelt4",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8151,6 +8443,7 @@
           "text": "I have cooked or baked on my own without my parents.",
           "text_de": "Ich habe schon mal ohne Eltern selbst gekocht oder gebacken.",
           "concept": "jmoelt5",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8187,6 +8480,7 @@
           "text": "I have exchanged goods in a shop without my parents.",
           "text_de": "Ich habe schon mal ohne Eltern im Laden etwas umgetauscht.",
           "concept": "jmoelt6",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8223,6 +8517,7 @@
           "text": "I have been to the cinema without my parents.",
           "text_de": "Ich bin schon mal ohne Eltern ins Kino gegangen.",
           "concept": "jmoelt7",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8259,6 +8554,7 @@
           "text": "I have drunk alcohol without my parents.",
           "text_de": "Ich habe schon mal ohne Eltern Alkohol getrunken.",
           "concept": "jmoelt8",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8295,6 +8591,7 @@
           "text": "I have smoked cigarettes without my parents.",
           "text_de": "Ich habe schon mal ohne Eltern Zigaretten geraucht.",
           "concept": "jmoelt9",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8331,6 +8628,7 @@
           "text": "I used to smoke hookah / shisha without a parent.",
           "text_de": "Ich habe schon mal ohne Eltern Wasserpfeife / Shisha geraucht.",
           "concept": "jmoelt10",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8365,6 +8663,7 @@
         {
           "text": "Questions about family relationships",
           "text_de": "Fragen zu Familienbeziehungen",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -8385,6 +8684,7 @@
           "text": "How often do your parents try to have a say in who you spend your time with or who your friends are?",
           "text_de": "Wie oft mischen sich Deine Eltern dabei ein, mit wem Du Deine Zeit verbringst beziehungsweise wer Deine Freunde sind?",
           "concept": "jfrelt",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8431,6 +8731,7 @@
           "text": "How interested are your parents in your performance at school?",
           "text_de": "Wie sehr interessieren sich Deine Eltern für Deine Leistungen in der Schule?",
           "concept": "selt1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8472,6 +8773,7 @@
           "text_de": "Bei der nächsten Frage geht es darum, wie sich Deine Freunde, Deine Geschwister und Deine Eltern Dir gegenüber verhalten.",
           "instruction": "If you don't have anyone in a particular category (for example, if you don't have any siblings), please select „Persons are not available“.",
           "instruction_de": "Wenn es eine Person für Dich nicht gibt, z.B. wenn Du keine Geschwister hast, gib bitte \"Person ist nicht vorhanden\" an.",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -8492,6 +8794,7 @@
           "text": "How often do you turn to your friends when you're worried about something?",
           "text_de": "Wie oft wendest Du Dich an Deine Freunde, wenn Du Sorgen hast?",
           "concept": "jvsor1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8543,6 +8846,7 @@
           "text": "How often do you turn to your siblings when you're worried about something?",
           "text_de": "Wie oft wendest Du Dich an Deine Geschwister, wenn Du Sorgen hast?",
           "concept": "jvsor2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8594,6 +8898,7 @@
           "text": "How often do you turn to the following people when you're worried about something?",
           "text_de": "Wie oft wendest Du Dich an Deine Mutter, wenn Du Sorgen hast?",
           "concept": "jvsor3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8645,6 +8950,7 @@
           "text": "How often do you turn to your father when you're worried about something?",
           "text_de": "Wie oft wendest Du Dich an Deinen Vater, wenn Du Sorgen hast?",
           "concept": "jvsor4",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8696,6 +9002,7 @@
           "text": "How often do you turn to your relatives people when you're worried about something?",
           "text_de": "Wie oft wendest Du Dich an andere Verwandte, wenn Du Sorgen hast?",
           "concept": "jvsor6",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8747,6 +9054,7 @@
           "text": "How often do your friends help or support you when something is important to you?",
           "text_de": "Wie oft bestärken Dich oder helfen Dir Deine Freunde, wenn Dir etwas wichtig ist?",
           "concept": "jvwich1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8798,6 +9106,7 @@
           "text": "How often do your siblings help or support you when something is important to you?",
           "text_de": "Wie oft bestärken Dich oder helfen Dir Deine Geschwister, wenn Dir etwas wichtig ist?",
           "concept": "jvwich2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8849,6 +9158,7 @@
           "text": "How often does your mother help or support you when something is important to you?",
           "text_de": "Wie oft bestärkt Dich oder hilft Dir Deine Mutter, wenn Dir etwas wichtig ist?",
           "concept": "jvwich3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8900,6 +9210,7 @@
           "text": "How often does your father help or support you when something is important to you?",
           "text_de": "Wie oft bestärkt Dich oder hilft Dir Dein Vater, wenn Dir etwas wichtig ist?",
           "concept": "jvwich4",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -8951,6 +9262,7 @@
           "text": "How often do other relatives help or support you when something is important to you?",
           "text_de": "Wie oft bestärken Dich oder helfen Dir andere Verwandte, wenn Dir etwas wichtig ist?",
           "concept": "jvwich6",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9002,6 +9314,7 @@
           "text": "How often do your friends order you around?",
           "text_de": "Wie oft kommandieren Dich Deine Freunde herum?",
           "concept": "jvkom1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9053,6 +9366,7 @@
           "text": "How often do your siblings order you around?",
           "text_de": "Wie oft kommandieren Dich Deine Geschwister herum?",
           "concept": "jvkom2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9104,6 +9418,7 @@
           "text": "How often do your mother order you around?",
           "text_de": "Wie oft kommandiert Dich Deine Mutter herum?",
           "concept": "jvkom3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9155,6 +9470,7 @@
           "text": "How often does your father order you?",
           "text_de": "Wie oft kommandiert Dich Dein Vater herum?",
           "concept": "jvkom4",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9206,6 +9522,7 @@
           "text": "How often do other relatives order you around?",
           "text_de": "Wie oft kommandieren Dich andere Verwandte herum?",
           "concept": "jvkom6",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9257,6 +9574,7 @@
           "text": "How often do your friends tell you that it's important that you perform well at school and learn a lot?",
           "text_de": "Wie oft sagen Dir Deine Freunde, dass es wichtig ist, dass Du in der Schule gut bist, viel lernst?",
           "concept": "jvlob1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9308,6 +9626,7 @@
           "text": "How often do your siblings tell you that it's important that you perform well at school and learn a lot?",
           "text_de": "Wie oft sagen Dir Deine Geschwister, dass es wichtig ist, dass Du in der Schule gut bist, viel lernst?",
           "concept": "jvlob2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9359,6 +9678,7 @@
           "text": "How often do your mother tell you that it's important that you perform well at school and learn a lot?",
           "text_de": "Wie oft sagt Dir Deine Mutter, dass es wichtig ist, dass Du in der Schule gut bist, viel lernst?",
           "concept": "jvlob3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9410,6 +9730,7 @@
           "text": "How often do your father tell you that it's important that you perform well at school and learn a lot?",
           "text_de": "Wie oft sagt Dir Dein Vater, dass es wichtig ist, dass Du in der Schule gut bist, viel lernst?",
           "concept": "jvlob4",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9461,6 +9782,7 @@
           "text": "How often do your relatives tell you that it's important that you perform well at school and learn a lot?",
           "text_de": "Wie oft sagen Dir andere Verwandte, dass es wichtig ist, dass Du in der Schule gut bist, viel lernst?",
           "concept": "jvlob6",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9512,6 +9834,7 @@
           "text": "How often do you argue with your friends?",
           "text_de": "Wie oft kommt es vor, dass Du Dich mit Deinen Freunden streitest?",
           "concept": "jstr6",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9563,6 +9886,7 @@
           "text": "How often do you argue with your siblings?",
           "text_de": "Wie oft kommt es vor, dass Du Dich mit Deinen Geschwistern streitest?",
           "concept": "jstr3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9614,6 +9938,7 @@
           "text": "How often do you argue with your mother?",
           "text_de": "Wie oft kommt es vor, dass Du Dich mit Deiner Mutter streitest?",
           "concept": "jstr2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9665,6 +9990,7 @@
           "text": "How often do you argue with your father?",
           "text_de": "Wie oft kommt es vor, dass Du Dich mit Deinem Vater streitest?",
           "concept": "jstr1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9716,6 +10042,7 @@
           "text": "How often do you argue with other relatives?",
           "text_de": "Wie oft kommt es vor, dass Du Dich mit anderen Verwandten streitest?",
           "concept": "jstr8",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9767,6 +10094,7 @@
           "text": "How important is your father for your life currently?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit Dein Vater?",
           "concept": "jwich1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9813,6 +10141,7 @@
           "text": "How important for your life is your mother currently?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit Deine Mutter?",
           "concept": "jwich2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9859,6 +10188,7 @@
           "text": "How important for your life is your siblings currently?",
           "text_de": "Wie wichtig für Dein Leben sind derzeit Deine Geschwister?",
           "concept": "jwich3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9905,6 +10235,7 @@
           "text": "How important for your life is other relatives currently?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit eine andere verwandte Person?",
           "concept": "jwich4",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9951,6 +10282,7 @@
           "text": "How important for your life is your boy-/girlfriend currently?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit Deine feste Freundin / Dein fester Freund?",
           "concept": "jwich5",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -9997,6 +10329,7 @@
           "text": "How important for your life is your best friend currently?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit Deine beste Freundin / Dein bester Freund?",
           "concept": "jwich6",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10043,6 +10376,7 @@
           "text": "How important for your life is currently your group to which you belong?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit Deine Gruppe, der Du angehörst?",
           "concept": "jwich8",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10089,6 +10423,7 @@
           "text": "How important for your life is currently a teacher?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit ein Lehrer oder eine Lehrerin?",
           "concept": "jwich7",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10135,6 +10470,7 @@
           "text": "How important for your life is currently another person?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit eine andere Person?",
           "concept": "jwich9",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10181,6 +10517,7 @@
           "text": "Do you have older siblings who go to school in Germany?",
           "text_de": "Hast Du ältere Geschwister, die in Deutschland in die Schule gehen?",
           "concept": "saebsd",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10213,6 +10550,7 @@
           "text_de": "Jetzt haben wir Fragen zu drei Deiner älteren Geschwister, die in Deutschland zur Schule gehen.",
           "instruction": "If you have more than three older siblings who currently go to school in Germany, please answer for your three eldest, starting with the oldest.\nIf you have fewer than three older siblings who currently go to school in Germany, please answer for one or two of them.\nIf you're not sure how to answer, just indicate what you think.",
           "instruction_de": "Wenn Du mehr als drei ältere Geschwister hast, die in Deutschland zur Schule gehen, dann gib die Antworten bitte der Reihe nach für die drei ältesten - also den ältesten Bruder oder die älteste Schwester zuerst. \nWenn Du weniger als drei ältere Geschwister hast, die in Deutschland zur Schule gehen, gib es für ein oder zwei an. \nWenn Du Dir bei den Antworten nicht sicher bist, gib an, was Du denkst.",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         }
@@ -10232,6 +10570,7 @@
           "text": "Now about your oldest sibling:\n\nWhat is the first name of your oldest sibling?",
           "text_de": "Jetzt zu Deinem ältesten Geschwister: \nGib bitte den Vornamen Deines Bruders oder Deiner Schwester an!",
           "concept": "sbsnam1",
+          "scale": "chr",
           "sn": 0,
           "number": ""
         }
@@ -10251,6 +10590,7 @@
           "text": "What do you think, what degree will your oldest brother or oldest sister reach?",
           "text_de": "Was denkst Du, welchen Schulabschluss will Dein ältester Bruder oder Deine älteste Schwester erreichen?",
           "concept": "sbss1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10292,6 +10632,7 @@
           "text": "Do you have more older siblings?",
           "text_de": "Hast Du weitere ältere Geschwister?",
           "concept": "saebsw1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10323,6 +10664,7 @@
           "text": "Now to your second oldest sibling:\nPlease enter the first name of your brother or sister!",
           "text_de": "Jetzt zu Deinem zweitältesten Geschwister: \nGib bitte den Vornamen Deines Bruders oder Deiner Schwester an!",
           "concept": "sbsnam2",
+          "scale": "chr",
           "sn": 0,
           "number": ""
         }
@@ -10342,6 +10684,7 @@
           "text": "What do you think, what degree does your second oldest brother or your second oldest sister want to achieve?",
           "text_de": "Was denkst Du, welchen Schulabschluss will Dein zweitältester Bruder oder Deine zweitälteste Schwester erreichen?",
           "concept": "sbss2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10383,6 +10726,7 @@
           "text": "Do you have more older siblings?",
           "text_de": "Hast Du weitere ältere Geschwister?",
           "concept": "saebsw2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10414,6 +10758,7 @@
           "text": "Now to your third oldest sibling: Please state the first name of your brother or sister!",
           "text_de": "Jetzt zu Deinem drittältesten Geschwister: \nGib bitte den Vornamen Deines Bruders oder Deiner Schwester an!",
           "concept": "sbsnam3",
+          "scale": "chr",
           "sn": 0,
           "number": ""
         }
@@ -10433,6 +10778,7 @@
           "text": "What do you think, which school degree will reach your third oldest brother or sister?",
           "text_de": "Was denkst Du, welchen Schulabschluss will Dein drittältester Bruder oder Deine drittälteste Schwester erreichen?",
           "concept": "sbss3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10472,6 +10818,7 @@
         {
           "text": "Frequency of certain recreational activities",
           "text_de": "Häufigkeit bestimmter Freizeitbeschäftigungen",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -10492,6 +10839,7 @@
           "text": "How often do you watch TV, DVDs or Internet streams (like YouTube) in German?",
           "text_de": "Wie oft schaust Du Fernsehen, DVDs oder Internet-Streams (z.B. YouTube) auf Deutsch?",
           "concept": "jfz01d",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10538,6 +10886,7 @@
           "text": "How often do you watch TV, DVDs, or Internet streams (such as YouTube) in one or more other languages?",
           "text_de": "Wie oft schaust Du Fernsehen, DVDs oder Internet-Streams (z.B. YouTube) auf einer oder mehreren anderen Sprachen?",
           "concept": "jfz01a",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10584,6 +10933,7 @@
           "text": "How often do you use computer- /Online- /console- or smart phone games?",
           "text_de": "Wie oft nutzt Du Computer- / Online- / Konsolen- oder Smartphonespiele?",
           "concept": "jfz02",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10630,6 +10980,7 @@
           "text": "How often do you use social online networks?",
           "text_de": "Wie oft nutzt Du soziale Online-Netzwerke?",
           "concept": "jfz21",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10676,6 +11027,7 @@
           "text": "How many times are you on the phone (including Skype or similar)?",
           "text_de": "Wie oft telefonierst Du (einschließlich Skype o.Ä.)?",
           "concept": "jfz22",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10722,6 +11074,7 @@
           "text": "How often do you exchange text messages or messengers?",
           "text_de": "Wie oft tauscht Du Dich per SMS oder Messenger aus?",
           "concept": "jfz23",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10768,6 +11121,7 @@
           "text": "How often do you surf on the internet?",
           "text_de": "Wie oft surfst Du ansonsten im Internet?",
           "concept": "jfz14",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10814,6 +11168,7 @@
           "text": "How often do you listen to music?",
           "text_de": "Wie oft hörst Du Musik?",
           "concept": "jfz03",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10860,6 +11215,7 @@
           "text": "How often do you make music?",
           "text_de": "Wie oft machst Du selbst Musik?",
           "concept": "jfz04",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10906,6 +11262,7 @@
           "text": "How often do you make sport?",
           "text_de": "Wie oft treibst Du Sport?",
           "concept": "jfz05",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10952,6 +11309,7 @@
           "text": "How often do you do something with the family (for example, trips or similar)?",
           "text_de": "Wie oft unternimmst Du etwas mit der Familie (z.B. Ausflüge oder Ähnliches)?",
           "concept": "jfz17",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -10998,6 +11356,7 @@
           "text": "How often are you with friends?",
           "text_de": "Wie oft bist Du mit Freunden zusammen?",
           "concept": "jfz19",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -11044,6 +11403,7 @@
           "text": "How often do you practice dance, theater or something else?",
           "text_de": "Wie oft betreibst Du Tanz, Theater oder Ähnliches?",
           "concept": "jfz06",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -11090,6 +11450,7 @@
           "text": "How often do you do technical work and work?",
           "text_de": "Wie oft betreibst Du technisches Werken und Arbeiten?",
           "concept": "jfz07",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -11136,6 +11497,7 @@
           "text": "How often do you paint or make?",
           "text_de": "Wie oft malst oder bastelst Du?",
           "concept": "jfz18",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -11182,6 +11544,7 @@
           "text": "How often do you read?",
           "text_de": "Wie oft liest Du?",
           "concept": "jfz08",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -11228,6 +11591,7 @@
           "text": "How often do you just do nothing, hang or dream?",
           "text_de": "Wie oft tust Du einfach nichts, hängst ab oder träumst?",
           "concept": "jfz10",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -11274,6 +11638,7 @@
           "text": "How often do you involved social or support aid projects?",
           "text_de": "Wie oft engagierst Du Dich sozial oder unterstützt Hilfsprojekte?",
           "concept": "jfz25",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -11320,6 +11685,7 @@
           "text": "How often do you go in youth group?",
           "text_de": "Wie oft gehst Du in eine Jugendgruppe?",
           "concept": "jfz20",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -11366,6 +11732,7 @@
           "text": "How often do you take care of pets?",
           "text_de": "Wie oft kümmerst Du Dich um Haustiere?",
           "concept": "jfz24",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -11412,6 +11779,7 @@
           "text": "How often do you visit \nextracurricular religious education?",
           "text_de": "Wie oft besuchst Du außerschulischen Religionsunterricht?",
           "concept": "jfz28",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -11458,6 +11826,7 @@
           "text": "How often do you visit other religious events?",
           "text_de": "Wie oft besuchst Du andere religiöse Veranstaltungen?",
           "concept": "jfz16",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -11504,6 +11873,7 @@
           "text": "How often do you visit a culture association?",
           "text_de": "Wie oft besuchst Du einen Kulturverein?",
           "concept": "jfz27",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -11548,6 +11918,7 @@
         {
           "text": "Hours stay in different facilities",
           "text_de": "Stunden Aufenthalt in verschiedenen Einrichtungen",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -11566,6 +11937,7 @@
         {
           "text": "Now it's about whether you're in the following places after school.",
           "text_de": "Jetzt geht es darum, ob Du Dich nach der Schule an den folgenden Orten aufhältst.",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -11587,6 +11959,7 @@
           "text_de": "Wie viele Stunden bist Du unter der Woche im Hort?",
           "instruction": "Please only give the number of full hours you spend there.\nIf this doesn't apply, please enter '0'.",
           "instruction_de": "Bitte nur ganze Stunden angeben! \nFalls nicht zutreffend, bitte \"0\" eintragen!",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -11595,6 +11968,7 @@
           "text": "Total hours Monday to Friday",
           "text_de": "Gesamtstunden von Montag bis Freitag",
           "concept": "sstd11",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -11614,6 +11988,7 @@
           "text_de": "Wie viele Stunden bist Du am Wochende im Hort?",
           "instruction": "Please only give the number of full hours you spend there.\nIf this doesn't apply, please enter '0'.",
           "instruction_de": "Bitte nur ganze Stunden angeben! \nFalls nicht zutreffend, bitte \"0\" eintragen!",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -11623,6 +11998,7 @@
           "text": "Total hours saturdays and sundays",
           "text_de": "Gesamtstunden Samstag und Sonntag",
           "concept": "sstd11s",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -11642,6 +12018,7 @@
           "text_de": "Wie viele Stunden bist Du unter der Woche in einem Jugendzentrum oder Gemeindetreff?",
           "instruction": "Please only give the number of full hours you spend there.\nIf this doesn't apply, please enter '0'.",
           "instruction_de": "Bitte nur ganze Stunden angeben! \nFalls nicht zutreffend, bitte \"0\" eintragen!",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -11651,6 +12028,7 @@
           "text": "Total hours Monday to Friday",
           "text_de": "Gesamtstunden von Montag bis Freitag",
           "concept": "sstd13",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -11670,6 +12048,7 @@
           "text_de": "Wie viele Stunden bist Du am Wochenende in einem Jugendzentrum oder Gemeindetreff?",
           "instruction": "Please only give the number of full hours you spend there.\nIf this doesn't apply, please enter '0'.",
           "instruction_de": "Bitte nur ganze Stunden angeben! \nFalls nicht zutreffend, bitte \"0\" eintragen!",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -11679,6 +12058,7 @@
           "text": "Total hours saturdays and sundays",
           "text_de": "Gesamtstunden Samstag und Sonntag",
           "concept": "sstd13s",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -11698,6 +12078,7 @@
           "text_de": "Wie viele Stunden bist Du unter der Woche in einem Sportverein oder einer anderen Freizeiteinrichtung?",
           "instruction": "Please only give the number of full hours you spend there.\nIf this doesn't apply, please enter '0'.",
           "instruction_de": "Bitte nur ganze Stunden angeben! \nFalls nicht zutreffend, bitte \"0\" eintragen!",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -11707,6 +12088,7 @@
           "text": "Total hours Monday to Friday",
           "text_de": "Gesamtstunden von Montag bis Freitag",
           "concept": "sstd14",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -11724,6 +12106,7 @@
         {
           "text": "How many hours do you spend in the weekend at a sports club or other recreational facility?",
           "text_de": "Wie viele Stunden bist Du am Wochenende in einem Sportverein oder einer anderen Freizeiteinrichtung?",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -11733,6 +12116,7 @@
           "text": "Total hours saturdays and sundays",
           "text_de": "Gesamtstunden Samstag und Sonntag",
           "concept": "sstd14s",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -11750,6 +12134,7 @@
         {
           "text": "Hours per day occupations",
           "text_de": "Stunden pro Tag Beschäftigungen",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -11768,6 +12153,7 @@
         {
           "text": "Now, we'd like to know more precisely how many hours you spend doing specific things on your average weekday or on an average weekend.",
           "text_de": "Nun möchten wir noch etwas genauer wissen, wie viele Stunden Du Dich an einem durchschnittlichen Wochentag bzw. an einem durchschnittlichen Wochenende mit bestimmten Dingen beschäftigst.",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -11787,6 +12173,7 @@
           "item": "1",
           "text": "How many hours per day do you watch television, DVDs or internet streams (eg Youtube) on a school day / day?",
           "text_de": "Wie viele Stunden pro Tag schaust Du an einem Schultag / an einem Wochentag Fernsehen, DVDs oder Internet-Streams (z.B. Youtube)?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -11795,6 +12182,7 @@
           "text": "Hours per day",
           "text_de": "Stunden pro Tag",
           "concept": "jtstd1",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -11813,6 +12201,7 @@
           "item": "1",
           "text": "How many hours per day do you spend watching TV, DVDs or internet streams, such as YouTube, at the weekend?",
           "text_de": "Und wie viele Stunden pro Tag schaust Du am Wochenende Fernsehen, DVDs oder Internet-Streams (z.B. Youtube)?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -11821,6 +12210,7 @@
           "text": "Hours per day",
           "text_de": "Stunden pro Tag",
           "concept": "jwstd1",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -11839,6 +12229,7 @@
           "item": "1",
           "text": "How many hours a day do you spend  with computer, online, console or smartphone games on a school day / weekday?",
           "text_de": "Wie viele Stunden pro Tag verbringst Du an einem Schultag / an einem Wochentag mit Computer-, Online-, Konsolen- oder Smartphonespielen?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -11847,6 +12238,7 @@
           "text": "Hours per day",
           "text_de": "Stunden pro Tag",
           "concept": "jtstd2",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -11865,6 +12257,7 @@
           "item": "1",
           "text": "And how many hours per day do you spend  with computer, online, console or smartphone games on the weekend?",
           "text_de": "Und wie viele Stunden pro Tag verbringst Du am Wochenende mit Computer-, Online-, Konsolen- oder Smartphonespielen?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -11873,6 +12266,7 @@
           "text": "Hours per day",
           "text_de": "Stunden pro Tag",
           "concept": "jwstd2",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -11891,6 +12285,7 @@
           "item": "1",
           "text": "How many hours per day do you spend on a school day / day with the benefit of online social networking or surfing the Internet?",
           "text_de": "Wie viele Stunden pro Tag verbringst Du an einem Schultag / an einem Wochentag mit Nutzen von sozialen Online-Netzwerken oder sonstigem Surfen im Internet?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -11899,6 +12294,7 @@
           "text": "Hours per day",
           "text_de": "Stunden pro Tag",
           "concept": "jtstd3",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -11917,6 +12313,7 @@
           "item": "1",
           "text": "And how many hours a day do you spend the weekend using social networking online or surfing the internet?",
           "text_de": "Und wie viele Stunden pro Tag verbringst Du am Wochenende mit Nutzen von sozialen Online-Netzwerken oder sonstigem Surfen im Internet?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -11925,6 +12322,7 @@
           "text": "Hours per day",
           "text_de": "Stunden pro Tag",
           "concept": "jwstd3",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -11943,6 +12341,7 @@
           "item": "1",
           "text": "How many hours a day do you spend doing music on a school day?",
           "text_de": "Wie viele Stunden pro Tag verbringst Du an einem Schultag / an einem Wochentag mit Musik machen?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -11951,6 +12350,7 @@
           "text": "Hours per day",
           "text_de": "Stunden pro Tag",
           "concept": "jtstd4",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -11969,6 +12369,7 @@
           "item": "1",
           "text": "And how many hours a day do you spend making music on the weekend?",
           "text_de": "Und wie viele Stunden pro Tag verbringst Du am Wochenende mit Musik machen?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -11977,6 +12378,7 @@
           "text": "Hours per day",
           "text_de": "Stunden pro Tag",
           "concept": "jwstd4",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -11995,6 +12397,7 @@
           "item": "1",
           "text": "How many hours a day do you play sports on a school day / weekday?",
           "text_de": "Wie viele Stunden pro Tag treibst Du an einem Schultag / an einem Wochentag Sport?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -12003,6 +12406,7 @@
           "text": "Hours per day",
           "text_de": "Stunden pro Tag",
           "concept": "jtstd5",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -12021,6 +12425,7 @@
           "item": "1",
           "text": "And how many hours per day do you play sports at the weekend?",
           "text_de": "Und wie viele Stunden pro Tag treibst Du am Wochenende Sport?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -12029,6 +12434,7 @@
           "text": "Hours per day",
           "text_de": "Stunden pro Tag",
           "concept": "jwstd5",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -12046,6 +12452,7 @@
         {
           "text": "close friends",
           "text_de": "Enge Freunde",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -12065,6 +12472,7 @@
           "item": "1",
           "text": "How many close friends do you have?",
           "text_de": "Wie viele enge Freunde hast Du?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -12073,6 +12481,7 @@
           "text": "Number",
           "text_de": "Anzahl",
           "concept": "jbez06",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -12091,6 +12500,7 @@
           "item": "1",
           "text": "How many of your close friends live in your country of origin?",
           "text_de": "Wie viele Deiner engen Freunde leben in Deinem Herkunftsland?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -12099,6 +12509,7 @@
           "text": "Number",
           "text_de": "Anzahl",
           "concept": "jfreuh",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -12117,6 +12528,7 @@
           "item": "1",
           "text": "How many of your closed friends live in Germany?",
           "text_de": "Wie viele Deiner engen Freunde leben in Deutschland?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -12125,6 +12537,7 @@
           "text": "Number",
           "text_de": "Anzahl",
           "concept": "jfreud",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -12143,6 +12556,7 @@
           "item": "1",
           "text": "How many of your closed friends live in another country?",
           "text_de": "Wie viele Deiner engen Freunde leben in einem anderen Land?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -12151,6 +12565,7 @@
           "text": "Number",
           "text_de": "Anzahl",
           "concept": "jfreual",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -12171,6 +12586,7 @@
           "text_de": "Wie viele Deiner Freunde, die in Deutschland leben, kommen aus Deutschland, wie viele kommen aus Deinem Herkunftsland und wie viele kommen aus einem anderen Land?",
           "instruction": "Number of my friends",
           "instruction_de": "Bitte gib jeweils die Anzahl Deiner Freunde an.",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -12179,6 +12595,7 @@
           "text": "Number of my friends coming from Germany",
           "text_de": "Anzahl meiner Freunde aus Deutschland kommend",
           "concept": "jfreuher1",
+          "scale": "int",
           "sn": 1,
           "number": ""
         },
@@ -12187,6 +12604,7 @@
           "text": "Number of my friends coming from my country of origin",
           "text_de": "Anzahl meiner Freunde aus meinem Herkunftsland kommend",
           "concept": "jfreuher2",
+          "scale": "int",
           "sn": 2,
           "number": ""
         },
@@ -12195,6 +12613,7 @@
           "text": "Number of my friends coming from another country",
           "text_de": "Anzahl meiner Freunde aus einem anderen Land kommend",
           "concept": "jfreuher3",
+          "scale": "int",
           "sn": 3,
           "number": ""
         }
@@ -12214,6 +12633,7 @@
           "text": "Where does your best friend or your best friend come from?",
           "text_de": "Woher kommt Dein bester Freund oder Deine beste Freundin?",
           "concept": "jfreu1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -12257,6 +12677,7 @@
           "instruction": "If you are not sure about the answer, state what you think.",
           "instruction_de": "Wenn Du Dir bei der Antwort nicht sicher bist, gib an, was Du denkst.",
           "concept": "jfrs1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -12303,6 +12724,7 @@
           "text": "Where does your second best friend or your second best friend come from?",
           "text_de": "Woher kommt Dein zweitbester Freund oder Deine zweitbeste Freundin?",
           "concept": "jfreu2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -12346,6 +12768,7 @@
           "instruction": "If you are not sure about the answer, state what you think.",
           "instruction_de": "Wenn Du Dir bei der Antwort nicht sicher bist, gib an was Du denkst.",
           "concept": "jfrs2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -12392,6 +12815,7 @@
           "text": "Where does your third best friend or your third best friend come from?",
           "text_de": "Woher kommt Dein drittbester Freund oder Deine drittbeste Freundin?",
           "concept": "jfreu3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -12435,6 +12859,7 @@
           "instruction": "If you are not sure about the answer, give what you think.",
           "instruction_de": "Wenn Du Dir bei der Antwort nicht sicher bist, gib an was Du denkst.",
           "concept": "jfrs3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -12481,6 +12906,7 @@
           "text": "How often does this child spend time in his / her free time with persons from his/her country of origin who not related with him or her?",
           "text_de": "Wie oft verbringst Du in Deiner Freizeit Zeit mit Personen aus Deinem Herkunftsland, die nicht mit Dir verwandt sind?",
           "concept": "jfreiznv",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -12532,6 +12958,7 @@
           "text": "How often does this child spend time in his / her free time with persons from Germany?",
           "text_de": "Wie oft verbringst Du in Deiner Freizeit Zeit mit Personen aus Deutschland?",
           "concept": "jfreizd",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -12583,6 +13010,7 @@
           "text": "How often does this child spend time in his/her free time with persons from other countries?",
           "text_de": "Wie oft verbringst Du in Deiner Freizeit Zeit mit Personen aus anderen Ländern?",
           "concept": "jfreiza",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -12633,6 +13061,7 @@
           "item": "1",
           "text": "How many people from your native country have you met, with whom you have regular contact, since you arrived in Germany?",
           "text_de": "Wie viele Personen aus Deinem Herkunftsland, mit denen Du regelmäßig Kontakt hast, hast Du seit Deiner Ankunft in Deutschland schon kennengelernt?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -12641,6 +13070,7 @@
           "text": "Number",
           "text_de": "Anzahl",
           "concept": "jpregk1",
+          "scale": "int",
           "sn": 1,
           "number": ""
         },
@@ -12649,6 +13079,7 @@
           "text": "Nobody",
           "text_de": "Niemand",
           "concept": "jpregk1no",
+          "scale": "bin",
           "sn": 2,
           "number": ""
         }
@@ -12667,6 +13098,7 @@
           "item": "1",
           "text": "How many German people have you met since your arrival in Germany with whom you have regular contact?",
           "text_de": "Wie viele Deutsche, mit denen Du regelmäßig Kontakt hast, hast Du seit Deiner Ankunft in Deutschland schon kennengelernt?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -12675,6 +13107,7 @@
           "text": "Number",
           "text_de": "Anzahl",
           "concept": "jpregk2",
+          "scale": "int",
           "sn": 1,
           "number": ""
         },
@@ -12683,6 +13116,7 @@
           "text": "Nobody",
           "text_de": "Niemand",
           "concept": "jpregk2no",
+          "scale": "bin",
           "sn": 2,
           "number": ""
         }
@@ -12701,6 +13135,7 @@
           "text": "How is it today? Do you get pocket money or a regular financial support from your parents or other relatives?",
           "text_de": "Erhältst Du Taschengeld oder einen regelmäßigen Zuschuss von Deinen Eltern oder anderen Verwandten?",
           "concept": "jtg1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -12734,6 +13169,7 @@
           "text_de": "Wie viel Taschengeld oder Zuschuss erhältst Du regelmäßig pro Woche oder pro Monat?",
           "instruction": "Please indicate the amount per week or per month.",
           "instruction_de": "Bitte gib den Betrag entweder pro Woche oder pro Monat an!",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -12742,6 +13178,7 @@
           "text": "per week",
           "text_de": "Pro Woche",
           "concept": "jtg2",
+          "scale": "bin",
           "sn": 1,
           "number": ""
         },
@@ -12749,6 +13186,7 @@
           "text": "per month",
           "text_de": "Pro Monat",
           "concept": "jtg3",
+          "scale": "bin",
           "sn": 2,
           "item": "root",
           "number": ""
@@ -12768,6 +13206,7 @@
           "text": "Are you able to save some money on occasional or regular basis? (e.g. for holidays or larger purchase)",
           "text_de": "Kannst Du gelegentlich oder regelmäßig etwas Geld sparen, z.B. für eigene Anschaffungen oder Freizeitaktivitäten?",
           "concept": "jspar1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -12804,6 +13243,7 @@
           "item": "1",
           "text": "How much do you save per month?",
           "text_de": "Wie viel sparst Du ungefähr pro Monat?",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -12812,6 +13252,7 @@
           "text": "Euros per month",
           "text_de": "Euro pro Monat",
           "concept": "jspar2",
+          "scale": "int",
           "sn": 1,
           "number": ""
         },
@@ -12820,6 +13261,7 @@
           "text": "Can not say, it is very irregular",
           "text_de": "Nicht zu sagen, ganz unregelmäßig",
           "concept": "jspar3",
+          "scale": "bin",
           "sn": 2,
           "number": ""
         }
@@ -12837,6 +13279,7 @@
         {
           "text": "Health, height, depression etc.",
           "text_de": "Gesundheit, Körpergröße, Depressivität etc.",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -12857,6 +13300,7 @@
           "text": "How would you describe your current health?",
           "text_de": "Wie würdest Du Deinen gegenwärtigen Gesundheitszustand beschreiben?",
           "concept": "jges",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -12904,6 +13348,7 @@
           "text_de": "Wie groß bist Du (Körpergröße in cm)?",
           "instruction": "If you're not sure, please estimate.",
           "instruction_de": "Wenn Du es nicht genau weißt, schätze bitte.",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -12912,6 +13357,7 @@
           "text": "cm",
           "text_de": "cm",
           "concept": "jgr",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -12932,6 +13378,7 @@
           "text_de": "Wie viel Kilogramm wiegst Du gegenwärtig?",
           "instruction": "If you're not sure, please estimate.",
           "instruction_de": "Wenn Du es nicht genau weißt, schätze bitte.",
+          "scale": "txt",
           "sn": 0,
           "number": ""
         },
@@ -12940,6 +13387,7 @@
           "text": "kg",
           "text_de": "kg",
           "concept": "jkilo",
+          "scale": "int",
           "sn": 1,
           "number": ""
         }
@@ -12957,6 +13405,7 @@
         {
           "text": "Now, we're going to talk about the last two weeks. How often in the last two weeks have you been affected by the following problems?",
           "text_de": "Jetzt geht es um die letzten zwei Wochen. Wie oft hast Du Dich in den letzten zwei Wochen durch die folgenden Beschwerden beeinträchtigt gefühlt?",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -12977,6 +13426,7 @@
           "text": "Little interest or pleasure in your activities?",
           "text_de": "Wenig Interesse oder Freude an Deinen Tätigkeiten?",
           "concept": "jdepri1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13018,6 +13468,7 @@
           "text": "Low spirits, melancholy or hopelessness?",
           "text_de": "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit?",
           "concept": "jdepri2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13059,6 +13510,7 @@
           "text": "Nervousness, anxiety or tension?",
           "text_de": "Nervosität, Ängstlichkeit oder Anspannung?",
           "concept": "jdepri3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13100,6 +13552,7 @@
           "text": "Unable to stop or control worrying?",
           "text_de": "Nicht in der Lage sein, Sorgen zu stoppen oder zu kontrollieren?",
           "concept": "jdepri4",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13139,6 +13592,7 @@
         {
           "text": "Politics, religion, roles, attitudes and feelings",
           "text_de": "Politik, Religion, Rollenverteilung, Einstellungen und Gefühle",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -13159,6 +13613,7 @@
           "text": "Generally speaking, how interested are you in politics?",
           "text_de": "Einmal ganz allgemein gesprochen: \nWie stark interessierst Du Dich für Politik?",
           "concept": "jpol1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13200,6 +13655,7 @@
           "text": "Many people in Germany tend to identify with a specific political party over time, even if they sometimes vote for a different party, don't actually vote or are not allowed to vote.\nHow is it for you in this case? Do you tend to identify with a specific political party in Germany?",
           "text_de": "Viele Leute in Deutschland neigen längere Zeit einer bestimmten Partei zu, \nauch wenn sie ab und zu eine andere Partei wählen, nicht wählen oder nicht wahlberechtigt sind. \nWie ist das bei Dir: Neigst Du einer bestimmten Partei in Deutschland zu?",
           "concept": "jpol2",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13231,6 +13687,7 @@
           "text": "Which party do you tend to identify with?",
           "text_de": "Welcher Partei neigst Du zu?",
           "concept": "jpol3",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13302,6 +13759,7 @@
           "text": "Do you belong to a church, religious community or faith?",
           "text_de": "Gehörst Du einer Kirche, Religionsgemeinschaft oder Glaubensrichtung an?",
           "concept": "jrel",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13343,6 +13801,7 @@
           "text": "Which Christian religious community do you belong to?",
           "text_de": "Welcher christlichen Religionsgemeinschaft gehörst Du an?",
           "concept": "jrelch",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13389,6 +13848,7 @@
           "text": "Which Islamic denomination do you belong to?",
           "text_de": "Welcher islamischen Glaubensrichtung gehörst Du an?",
           "concept": "jrelis",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13435,6 +13895,7 @@
           "text": "Which religious community do you belong to?",
           "text_de": "Welcher Religionsgemeinschaft gehörst Du an?",
           "concept": "jrelso",
+          "scale": "chr",
           "sn": 0,
           "number": ""
         }
@@ -13454,6 +13915,7 @@
           "text": "Somebody can be religious, whether they belong to a religious community or not.\nHow important are your beliefs and/or your religion for your sense of well-being and happiness?",
           "text_de": "Unabhängig davon, ob man einer Religionsgemeinschaft angehört oder nicht, kann man religiös sein. \nWie wichtig ist Dir der Glaube beziehungsweise die Religion für Dein Wohlbefinden und Deine Zufriedenheit?",
           "concept": "jrelwz",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13495,6 +13957,7 @@
           "text": "How many times do you pray?",
           "text_de": "Wie oft betest Du in etwa?",
           "concept": "jrelhb",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13539,6 +14002,7 @@
         {
           "text": "The following is about your opinion, certain things in a family should be done more by a man or a woman.",
           "text_de": "Im Folgenden geht es darum, ob Deiner Meinung nach bestimmte Dinge in einer Familie eher vom Mann oder von der Frau erledigt werden sollten.",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -13559,6 +14023,7 @@
           "text": "Who should look after the children in a family?",
           "text_de": "Wer sollte in einer Familie auf die Kinder aufpassen?",
           "concept": "jkinda",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13605,6 +14070,7 @@
           "text": "Who should cook in a family?",
           "text_de": "Wer sollte in einer Familie kochen?",
           "concept": "jkoch",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13651,6 +14117,7 @@
           "text": "Who should earn money in a family?",
           "text_de": "Wer sollte in einer Familie Geld verdienen?",
           "concept": "jgeld",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13697,6 +14164,7 @@
           "text": "Who should clean in a family?",
           "text_de": "Wer sollte in einer Familie putzen?",
           "concept": "jputzfam",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13743,6 +14211,7 @@
           "text": "Who should make important family decisions?",
           "text_de": "Wer sollte wichtige Entscheidungen für die Familie treffen?",
           "concept": "jentsch",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13789,6 +14258,7 @@
           "text_de": "Wie ist Deine Einstellung zu den folgenden Themen?",
           "instruction": "Please use the following scale when giving your answer. Value 1 means you think it's completely OK. Value 7 means you don't think it's OK at all. \nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Bitte antworte anhand der folgenden Skala. 1 bedeutet, Du findest das völlig in Ordnung, 7 bedeutet, Du findest das gar nicht in Ordnung. \nMit den Werten dazwischen kannst Du Deine Meinung abstufen.",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -13809,6 +14279,7 @@
           "text": "What is your attitude to living together as a couple without being married?",
           "text_de": "Wie ist Deine Einstellung dazu, als Paar zusammenzuleben, ohne verheiratet zu sein?",
           "concept": "jhanok14",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13865,6 +14336,7 @@
           "text": "What is your attitude towards divorce?",
           "text_de": "Wie ist Deine Einstellung zum Thema Scheidung?",
           "concept": "jhanok8",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13921,6 +14393,7 @@
           "text": "What is your attitude towards abortion?",
           "text_de": "Wie ist Deine Einstellung zum Thema Abtreibung?",
           "concept": "jhanok7",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -13977,6 +14450,7 @@
           "text": "What is your attitude towards homosexuality?",
           "text_de": "Wie ist Deine Einstellung zum Thema Homosexualität?",
           "concept": "jhanok5",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14033,6 +14507,7 @@
           "text": "Let's return to how things were when you arrived in Germany.\n\nWhen you arrived in Germany, did you feel welcome?",
           "text_de": "Kommen wir noch einmal darauf zurück, wie es war, als Du in Deutschland angekommen bist:\n \nHattest Du bei Deiner Ankunft in Deutschland das Gefühl, willkommen zu sein?",
           "concept": "jgef15",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14079,6 +14554,7 @@
           "text": "And how is it now: Do you feel welcome in Germany now?",
           "text_de": "Und wie ist das jetzt: Fühlst Du Dich heute in Deutschland willkommen?",
           "concept": "jgef16",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14125,6 +14601,7 @@
           "text": "How strongly do you feel connected to your native country?",
           "text_de": "Wie stark fühlst Du Dich mit Deinem Herkunftsland verbunden?",
           "concept": "jna15",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14173,6 +14650,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jvposvz",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14231,6 +14709,7 @@
           "instruction": "Please use the following scale when giving your answer.\nValue 1 means 'Completely disagree'. Value 7 means 'Completely agree'.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jvnegvz",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14287,6 +14766,7 @@
           "text": "How often do you feel that you miss people from your native country?",
           "text_de": "Wie oft hast Du das Gefühl, dass Du Menschen aus Deinem Herkunftsland vermisst?",
           "concept": "jgef14",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14333,6 +14813,7 @@
           "text": "How often do you feel that you miss the company of others?",
           "text_de": "Wie oft hast Du das Gefühl, dass Dir die Gesellschaft anderer fehlt?",
           "concept": "jgef11",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14379,6 +14860,7 @@
           "text": "How often do you feel like an outsider?",
           "text_de": "Wie oft hast Du das Gefühl, außen vor zu sein?",
           "concept": "jgef12",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14425,6 +14907,7 @@
           "text": "How often do you feel social isolated?",
           "text_de": "Wie oft hast Du das Gefühl, sozial isoliert zu sein?",
           "concept": "jgef13",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14473,6 +14956,7 @@
           "instruction": "Please provide your answers using the scale provided.\n1 means “I totally disagree\".\n7 means “I totally agree\".\nYou can use the in-between ratings to tailor your response.",
           "instruction_de": "Der Wert 1 bedeutet: trifft überhaupt nicht zu. \nDer Wert 7 bedeutet: trifft voll zu. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
           "concept": "jmas11",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14531,6 +15015,7 @@
           "instruction": "Please provide your answers using the scale provided.\n1 means “I totally disagree\".\n7 means “I totally agree\".\nYou can use the in-between ratings to tailor your response.",
           "instruction_de": "Der Wert 1 bedeutet: trifft überhaupt nicht zu. \nDer Wert 7 bedeutet: trifft voll zu. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
           "concept": "jmas16",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14589,6 +15074,7 @@
           "instruction": "Please provide your answers using the scale provided.\n1 means “I totally disagree\".\n7 means “I totally agree\".\nYou can use the in-between ratings to tailor your response.",
           "instruction_de": "Der Wert 1 bedeutet: trifft überhaupt nicht zu. \nDer Wert 7 bedeutet: trifft voll zu. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
           "concept": "jmas17",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14647,6 +15133,7 @@
           "instruction": "Please provide your answers using the scale provided.\n1 means “I totally disagree\".\n7 means “I totally agree\".\nYou can use the in-between ratings to tailor your response.",
           "instruction_de": "Der Wert 1 bedeutet: trifft überhaupt nicht zu. \nDer Wert 7 bedeutet: trifft voll zu. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
           "concept": "jmas18",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14705,6 +15192,7 @@
           "instruction": "Please provide your answers using the scale provided.\n1 means “I totally disagree\".\n7 means “I totally agree\".\nYou can use the in-between ratings to tailor your response.",
           "instruction_de": "Der Wert 1 bedeutet: trifft überhaupt nicht zu. \nDer Wert 7 bedeutet: trifft voll zu. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
           "concept": "jmas19",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14759,6 +15247,7 @@
         {
           "text": "Attitudes to life and future",
           "text_de": "Einstellungen zu Leben und Zukunft",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -14779,6 +15268,7 @@
           "text_de": "Die folgenden Aussagen kennzeichnen verschiedene Einstellungen zum Leben und zur Zukunft. \nBitte sag uns, inwieweit Du jeweils zustimmst.",
           "instruction": "Please answer on a scale from 1 to 7, where 1 means \"not true of me at all\", and 7 means \"completely true of me\".",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: Stimme überhaupt nicht zu. \nDer Wert 7 bedeutet: Stimme voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
+          "scale": "txt",
           "sn": 0,
           "item": "root",
           "number": ""
@@ -14801,6 +15291,7 @@
           "instruction": "Please answer on a scale from 1 to 7, where 1 means \"not true of me at all\", and 7 means \"completely true of me\".",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: Stimme überhaupt nicht zu. \nDer Wert 7 bedeutet: Stimme voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jzu03",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14859,6 +15350,7 @@
           "instruction": "Please answer on a scale from 1 to 7, where 1 means \"not true of me at all\", and 7 means \"completely true of me\".",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: Stimme überhaupt nicht zu. \nDer Wert 7 bedeutet: Stimme voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "concept": "jzu05",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14917,6 +15409,7 @@
           "instruction": "Please provide your answers using the scale provided again. 0 means “Not prepared to take risks at all”. 10 means “Prepared to take risks”. You can use the in-between ratings to tailor your response.",
           "instruction_de": "Antworte bitte wieder anhand einer Skala. \nDer Wert 0 bedeutet: gar nicht risikobereit. \nDer Wert 10 bedeutet: sehr risikobereit. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
           "concept": "jrisk",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
@@ -14995,6 +15488,7 @@
           "instruction": "Please provide your answers using the scale provided again.\nA value of 0 means: totally dissatisfied.\nA value of 10 means: totally satisfied.\nYou can use the in-between ratings to tailor your response.",
           "instruction_de": "Antworte bitte wieder anhand einer Skala. \nDer Wert 0 bedeutet: ganz und gar unzufrieden. \nDer Wert 10 bedeutet: ganz und gar zufrieden. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
           "concept": "jzule1",
+          "scale": "cat",
           "answers": [
             {
               "value": 1,
