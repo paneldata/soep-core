@@ -865,7 +865,35 @@
             }
           },
           {
+            "name": "description",
+            "title": "A description text for the question item",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "description_de",
+            "title": "A german description text for the question item",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
+            "name": "filter",
+            "title": "A descriptor about the question item, that filters this question item.",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": false
+            }
+          },
+          {
             "name": "goto",
+            "title": "The destination question item to go to, depending on answer value.",
             "type": "string",
             "format": "default",
             "constraints": {
@@ -880,6 +908,15 @@
             "constraints": {
               "required": false,
               "maxLength": 255
+            }
+          },
+          {
+            "name": "scale",
+            "title": "The type of the question item",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+              "required": false
             }
           }
         ],
