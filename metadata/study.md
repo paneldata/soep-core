@@ -45,49 +45,49 @@ The SOEP is presented to respondents and interviewers under the easy-to-remember
 
 The most current instruments (survey year 2019) are for our main samples (PDF documentation will be completed shortly): 
 
-| paneldata.org (Links to CAPI-Versions)                             | Field version (PAPI)                                                                            | Version with variable names |
+| paneldata.org (Links to CAPI-Versions)                             | Field version (PAPI)                                                                            | Version with variable names (CAPI) |
 | ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- | --------------------------- |
 | Address/contact protocol and supporting instruments 2019           |                                                                                                 |                             |
-| [Household 2019](inst/soep-core-2019-hh2)                          | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.807936.de/diw_ssp0908.pdf) | PDF (en), PDF (de)          |
-| [Individual 2019](inst/soep-core-2019-pe2)                         | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.807938.de/diw_ssp0909.pdf) | PDF (en), PDF (de)          |
-| [Biography 2019](inst/soep-core-2019-ll2)                          | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.807940.de/diw_ssp0910.pdf) | PDF (en), PDF (de)          |
-| [Catch-up Individual 2019](inst/soep-core-2019-l2)                 | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808507.de/diw_ssp0911.pdf)    | PDF (en), PDF (de)          |
-| [Mother and Child (Newborns) 2019](inst/soep-core-2019-e1-2)       | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808513.de/diw_ssp0913.pdf)    | PDF (en), PDF (de)          |
-| [Mother and Child (2-3-year-olds) 2019](inst/soep-core-2019-e2-2)  | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808515.de/diw_ssp0914.pdf)    | PDF (en), PDF (de)          |
-| [Mother and Child (5-6-year-olds) 2019](inst/soep-core-2019-e3-2)  | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808518.de/diw_ssp0915.pdf)    | PDF (en), PDF (de)          |
-| [Parents and Child (7-8-year-olds) 2019](inst/soep-core-2019-e4-2) | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808520.de/diw_ssp0916.pdf)    | PDF (en), PDF (de)          |
-| [Mother and Child (9-10-year-olds) 2019](inst/soep-core-2019-e5-2) | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808522.de/diw_ssp0917.pdf)    | PDF (en), PDF (de)          |
-| [Pre-teen (11-12-year-olds) 2019](inst/soep-core-2019-s-2)         | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808524.de/diw_ssp0918.pdf)    | PDF (en), PDF (de)          |
-| [Early Youth (13-14-year-olds) 2019](inst/soep-core-2019-s2-2)     | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808530.de/diw_ssp0919.pdf)    | PDF (en), PDF (de)          |
-| [Youth (16-17-year-olds) 2019](inst/soep-core-2019-ju2)            | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808532.de/diw_ssp0920.pdf)    | PDF (en), PDF (de)          |
-| [Deceased Individual 2019](inst/soep-core-2019-vp2)                | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808511.de/diw_ssp0912.pdf)    | PDF (en), PDF (de)          |
+| [Household 2019](inst/soep-core-2019-hh2)                          | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.807936.de/diw_ssp0908.pdf) | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.823693.de/diw_ssp1006.pdf)      |
+| [Individual 2019](inst/soep-core-2019-pe2)                         | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.807938.de/diw_ssp0909.pdf) | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.824201.de/diw_ssp1024.pdf)          |
+| [Biography 2019](inst/soep-core-2019-ll2)                          | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.807940.de/diw_ssp0910.pdf) | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.823850.de/diw_ssp1018.pdf)          |
+| [Catch-up Individual 2019](inst/soep-core-2019-l2)                 | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808507.de/diw_ssp0911.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.823846.de/diw_ssp1016.pdf)          |
+| [Mother and Child (Newborns) 2019](inst/soep-core-2019-e1-2)       | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808513.de/diw_ssp0913.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.822393.de/diw_ssp0991.pdf)          |
+| [Mother and Child (2-3-year-olds) 2019](inst/soep-core-2019-e2-2)  | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808515.de/diw_ssp0914.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.822399.de/diw_ssp0994.pdf)          |
+| [Mother and Child (5-6-year-olds) 2019](inst/soep-core-2019-e3-2)  | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808518.de/diw_ssp0915.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.822405.de/diw_ssp0997.pdf)          |
+| [Parents and Child (7-8-year-olds) 2019](inst/soep-core-2019-e4-2) | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808520.de/diw_ssp0916.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.822427.de/diw_ssp1000.pdf)          |
+| [Mother and Child (9-10-year-olds) 2019](inst/soep-core-2019-e5-2) | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808522.de/diw_ssp0917.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.823687.de/diw_ssp1003.pdf)          |
+| [Pre-teen (11-12-year-olds) 2019](inst/soep-core-2019-s-2)         | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808524.de/diw_ssp0918.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.824205.de/diw_ssp1026.pdf)          |
+| [Early Youth (13-14-year-olds) 2019](inst/soep-core-2019-s2-2)     | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808530.de/diw_ssp0919.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.824223.de/diw_ssp1029.pdf)          |
+| [Youth (16-17-year-olds) 2019](inst/soep-core-2019-ju2)            | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808532.de/diw_ssp0920.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.823746.de/diw_ssp1011.pdf)          |
+| [Deceased Individual 2019](inst/soep-core-2019-vp2)                | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.808511.de/diw_ssp0912.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.824242.de/diw_ssp1032.pdf)          |
 
 In some samples adapted versions of the instruments were used:
 
 | paneldata.org (Links to CAPI-Versions)                                               | Field version (PAPI)                                                                            | Version with variable names |
 | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- | --------------------------- |
 | Samples M3-M5 (“Refugee Samples”)                                                    |                                                                                                 |                             |
-| [Household 2019](inst/soep-core-2019-hh-m345)                                        | PDF (de/en)                                                                                     | PDF (en), PDF (de)          |
-| [Individual and Biography, Follow-up 2019](inst/soep-core-2019-p-m345-wieder)        | PDF (de/en)                                                                                     | PDF (en), PDF (de)          |
-| [Individual and Biography, Initial Interview 2019](inst/soep-core-2019-pb-m345-erst) | PDF (de/en)                                                                                     | PDF (en), PDF (de)          |
-| [Childhood, 0-10-year-olds 2019](inst/soep-core-2019-ki-m345)                        | PDF (de/en)                                                                                     | PDF (en), PDF (de)          |
-| [Youth (16-17-year-olds) 2019](inst/soep-core-2019-m345)                             | PDF (de)                                                                                        | PDF (en), PDF (de)          |
+| [Household 2019](inst/soep-core-2019-hh-m345)                                        | PDF (de/en)                                                                                     | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.823697.de/diw_ssp1008.pdf)          |
+| [Individual and Biography, Follow-up 2019](inst/soep-core-2019-p-m345-wieder)        | PDF (de/en)                                                                                     | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.823856.de/diw_ssp1021.pdf)          |
+| [Individual and Biography, Initial Interview 2019](inst/soep-core-2019-pb-m345-erst) | PDF (de/en)                                                                                     | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.823858.de/diw_ssp1022.pdf)          |
+| [Childhood, 0-10-year-olds 2019](inst/soep-core-2019-ki-m345)                        | PDF (de/en)                                                                                     | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.823769.de/diw_ssp1015.pdf)          |
+| [Youth (16-17-year-olds) 2019](inst/soep-core-2019-m345)                             | PDF (de)                                                                                        | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.823765.de/diw_ssp1013.pdf)          |
 | Sample P (“Top Shareholder Sample”)                                                  |                                                                                                 |                             |
-| [Household 2019](inst/soep-core-2019-hh4)                                            | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.809789.de/diw_ssp0921.pdf) | PDF (en), PDF (de)          |
-| [Residential Environment 2019](inst/soep-core-2019-wuma-p)                           | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.809679.de/diw_ssp0924.pdf)    | PDF (en), PDF (de)          |
+| [Household 2019](inst/soep-core-2019-hh4)                                            | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.809789.de/diw_ssp0921.pdf) | PDF (en), [PDF (de)]()          |
+| [Residential Environment 2019](inst/soep-core-2019-wuma-p)                           | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.809679.de/diw_ssp0924.pdf)    | PDF (en), [PDF (de)]()          |
 | Sample Q (“LGB*”)                                                                    |                                                                                                 |                             |
-| [Household 2019](inst/soep-core-2019-hh-lgb)                                         | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.810670.de/diw_ssp0928.pdf) | PDF (en), PDF (de)          |
-| [Individual 2019](inst/soep-core-2019-pe-lgb)                                        | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.809693.de/diw_ssp0929.pdf) | PDF (en), PDF (de)          |
-| [Biography 2019](inst/soep-core-2019-ll-lgb)                                         | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.809695.de/diw_ssp0930.pdf) | PDF (en), PDF (de)          |
-| [Mother and Child (Newborns) 2019](inst/soep-core-2019-e1-lgb)                       | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.809697.de/diw_ssp0931.pdf)    | PDF (en), PDF (de)          |
-| [Mother and Child (2-3-year-olds) 2019](inst/soep-core-2019-e2-lgb)                  | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810672.de/diw_ssp0932.pdf)    | PDF (en), PDF (de)          |
-| [Mother and Child (5-6-year-olds) 2019](inst/soep-core-2019-e3-lgb)                  | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810674.de/diw_ssp0933.pdf)    | PDF (en), PDF (de)          |
-| [Parents and Child (7-8-year-olds) 2019](inst/soep-core-2019-e4-lgb)                 | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810676.de/diw_ssp0934.pdf)    | PDF (en), PDF (de)          |
-| [Mother and Child (9-10-year-olds) 2019](inst/soep-core-2019-e5-lgb)                 | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810678.de/diw_ssp0935.pdf)    | PDF (en), PDF (de)          |
-| [Pre-teen (11-12-year-olds) 2019](inst/soep-core-2019-s-lgb)                         | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810680.de/diw_ssp0936.pdf)    | PDF (en), PDF (de)          |
-| [Early Youth (13-14-year-olds) 2019](inst/soep-core-2019-s2-lgb)                     | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810682.de/diw_ssp0937.pdf)    | PDF (en), PDF (de)          |
-| [Youth (16-17-year-olds) 2019](inst/soep-core-2019-ju-lgb)                           | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810684.de/diw_ssp0938.pdf)    | PDF (en), PDF (de)          |
-| [Residential Environment 2019](inst/soep-core-2019-wuma-q)                           | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.809677.de/diw_ssp0923.pdf)    | PDF (en), PDF (de)          |
+| [Household 2019](inst/soep-core-2019-hh-lgb)                                         | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.810670.de/diw_ssp0928.pdf) | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.823695.de/diw_ssp1007.pdf)          |
+| [Individual 2019](inst/soep-core-2019-pe-lgb)                                        | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.809693.de/diw_ssp0929.pdf) | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.823860.de/diw_ssp1023.pdf)          |
+| [Biography 2019](inst/soep-core-2019-ll-lgb)                                         | [PDF (de/en)](https://www.diw.de/documents/publikationen/73/diw_01.c.809695.de/diw_ssp0930.pdf) | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.823854.de/diw_ssp1020.pdf)          |
+| [Mother and Child (Newborns) 2019](inst/soep-core-2019-e1-lgb)                       | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.809697.de/diw_ssp0931.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.822397.de/diw_ssp0993.pdf)          |
+| [Mother and Child (2-3-year-olds) 2019](inst/soep-core-2019-e2-lgb)                  | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810672.de/diw_ssp0932.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.822403.de/diw_ssp0996.pdf)          |
+| [Mother and Child (5-6-year-olds) 2019](inst/soep-core-2019-e3-lgb)                  | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810674.de/diw_ssp0933.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.822425.de/diw_ssp0999.pdf)          |
+| [Parents and Child (7-8-year-olds) 2019](inst/soep-core-2019-e4-lgb)                 | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810676.de/diw_ssp0934.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.822431.de/diw_ssp1002.pdf)          |
+| [Mother and Child (9-10-year-olds) 2019](inst/soep-core-2019-e5-lgb)                 | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810678.de/diw_ssp0935.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.823691.de/diw_ssp1005.pdf)          |
+| [Pre-teen (11-12-year-olds) 2019](inst/soep-core-2019-s-lgb)                         | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810680.de/diw_ssp0936.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.824209.de/diw_ssp1028.pdf)          |
+| [Early Youth (13-14-year-olds) 2019](inst/soep-core-2019-s2-lgb)                     | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810682.de/diw_ssp0937.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.824240.de/diw_ssp1031.pdf)          |
+| [Youth (16-17-year-olds) 2019](inst/soep-core-2019-ju-lgb)                           | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.810684.de/diw_ssp0938.pdf)    | PDF (en), [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.823748.de/diw_ssp1012.pdf)          |
+| [Residential Environment 2019](inst/soep-core-2019-wuma-q)                           | [PDF (de)](https://www.diw.de/documents/publikationen/73/diw_01.c.809677.de/diw_ssp0923.pdf)    | PDF (en), [PDF (de)]()          |
 
 ## Data access
 
@@ -129,14 +129,14 @@ Survey variables might be missing, that is, lacking a valid code or value for di
 
 | Code | Meaning                                             |
 | :--: | --------------------------------------------------- |
-|  -1  | no answer /don`t know                               |
-|  -2  | does not apply                                      |
-|  -3  | implausible value                                   |
-|  -4  | inadmissible multiple response                      |
-|  -5  | not included in this version of the questionnaire   |
-|  -6  | version of questionnaire with modified filtering    |
+|  -1  | No answer / don't know                               |
+|  -2  | Does not apply                                      |
+|  -3  | Implausible value                                   |
+|  -4  | Inadmissible multiple response                      |
+|  -5  | Not included in this version of the questionnaire   |
+|  -6  | Version of questionnaire with modified filtering    |
 |  -7  | Only available in less restricted edition           |
-|  -8  | question not part of the survey programm this year* |
+|  -8  | Question not part of the survey programm this year* |
 
 *Only applicable for datasets in long format.
 
