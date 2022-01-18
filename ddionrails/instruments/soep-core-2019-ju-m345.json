@@ -17,6 +17,7 @@
           "item": "0",
           "text": "[de] 2007 = Schüler / Preteen\n2005 = Frühe Jugend\n2002 = Jugend",
           "text_de": "2007 = Schüler / Preteen\n2005 = Frühe Jugend\n2002 = Jugend",
+          "description": "Jahrgänge angepasst;  „Preteen“ im Fragetext ergänzt",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -36,6 +37,8 @@
           "item": "1",
           "text": "[de] Preload Dummy: Liegt der Fragebogen Schüler oder Frühe Jugend schon vor?",
           "text_de": "Preload Dummy: Liegt der Fragebogen Schüler oder Frühe Jugend schon vor?",
+          "description": "Neu;\n\nHinterlegt wird:\n\nSchülerfragebogen\n\nliegt vor\n\nliegt nicht vor\n\nFrühe Jugend\n\nliegt vor\n\nliegt nicht vor",
+          "filter": "Für Jahrgänge 2002 & 2005",
           "scale": "cat",
           "answers": [
             {
@@ -126,6 +129,7 @@
           "text_de": "Plausibilisierungsfrage: Welche Person im Haushalt <HNR> wollen Sie befragen?",
           "instruction": "[de] Bitte alle im Haushalt vorhandenen Personen mit Jahrgang 2002, 2005 oder 2007 einblenden.\nWenn \"Andere Person im Haushalt\", Wechsel zu Mein Infratest zum Anlegen der neuen Person.",
           "instruction_de": "Bitte alle im Haushalt vorhandenen Personen mit Jahrgang 2002, 2005 oder 2007 einblenden.\nWenn \"Andere Person im Haushalt\", Wechsel zu Mein Infratest zum Anlegen der neuen Person.",
+          "description": "Jahrgänge in instruction angepasst",
           "scale": "cat",
           "answers": [
             {
@@ -279,6 +283,8 @@
           "item": "1",
           "text": "I confirm, that the selected respondent declared, that he red the data security sheet. \nHe/She agreed to the survey and the handling with the data, plus the deletion corresponding to the content of the data security sheet.",
           "text_de": "Ich bestätige, dass die ausgewählte Befragungsperson erklärt hat, das Datenschutzblatt gelesen zu haben.\nEr/Sie hat sodann in die Erhebung und den Umgang mit den Daten und deren Löschung gemäß dem Inhalt des Datenschutzblattes eingewilligt.",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "Für Jahrgang 2002",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -298,6 +304,8 @@
           "item": "1",
           "text": "I confirm, that the selected guardian agreed to the interview with the child named above. He/She declared, that he/she red the data security sheet and agreed to the survey and the handling with the data, plus the deletion corresponding to the content of the data security sheet.",
           "text_de": "Ich bestätige, dass die ausgewählte erziehungsberechtigte Person mit der Befragung des oben genannten Kindes einverstanden ist. Er/Sie hat erklärt, das Datenschutzblatt gelesen zu haben und in den Umgang mit den Daten und deren Löschung gemäß dem Inhalt des Datenschutzblattes eingewilligt.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "Für Jahrgänge 2005 & 2007",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -350,6 +358,7 @@
           "item": "1",
           "text": "Country of Origin",
           "text_de": "Herkunft",
+          "description": "Blocküberschrift neu",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -369,6 +378,8 @@
           "item": "1",
           "text": "[de] In welchem Land bist Du geboren?",
           "text_de": "In welchem Land bist Du geboren?",
+          "description": "neuer Filter, EL: hier muss für 2020 ein echter preload auf der Frageinfo aus den Vorjahren gebaut werden, Vorlage von Fragebogen reicht nicht aus",
+          "filter": "Für Jahrgänge 2007, 2005, 2002 ",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -417,6 +428,8 @@
           "item": "wnd",
           "text": "[de] Mit wem bist Du nach Deutschland gekommen?",
           "text_de": "Mit wem bist Du nach Deutschland gekommen?",
+          "description": "Filter verändert",
+          "filter": "(Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2) & Q007;sta2=1",
           "concept": "wnd",
           "scale": "cat",
           "answers": [
@@ -464,6 +477,8 @@
           "item": "1",
           "text": "[de] Wann hast Du dein Geburtsland verlassen?",
           "text_de": "Wann hast Du dein Geburtsland verlassen?",
+          "description": "Filter verändert",
+          "filter": "(Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2) & Q007;sta2=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -516,6 +531,8 @@
           "item": "1",
           "text": "[de] Wann bist Du in Deutschland angekommen?",
           "text_de": "Wann bist Du in Deutschland angekommen?",
+          "description": "Filter verändert",
+          "filter": "(Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2) & Q007;sta2=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -568,6 +585,7 @@
           "item": "nat10",
           "text": "[de] Kannst Du Dir vorstellen, für immer in Deutschland zu bleiben?",
           "text_de": "Kannst Du Dir vorstellen, für immer in Deutschland zu bleiben?",
+          "filter": "Q007;sta2=1",
           "concept": "nat10",
           "scale": "cat",
           "answers": [
@@ -605,6 +623,8 @@
           "item": "nat11",
           "text": "[de] Wie lange willst Du in Deutschland bleiben?",
           "text_de": "Wie lange willst Du in Deutschland bleiben?",
+          "description": "Filter verändert",
+          "filter": "(Für Jahrgang 2002) & Q011;nat10=2",
           "concept": "nat11",
           "scale": "cat",
           "answers": [
@@ -642,6 +662,8 @@
           "item": "1",
           "text": "[de] Wie viele Jahre willst Du in Deutschland bleiben?",
           "text_de": "Wie viele Jahre willst Du in Deutschland bleiben?",
+          "description": "Filter verändert",
+          "filter": "(Für Jahrgang 2002) & Q012;nat11=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -689,6 +711,7 @@
           "item": "natda",
           "text": "[de] Beabsichtigst Du, die deutsche Staatsangehörigkeit zu beantragen?",
           "text_de": "Beabsichtigst Du, die deutsche Staatsangehörigkeit zu beantragen?",
+          "filter": "für Jahrgang 2002 & Q007;sta2=1",
           "concept": "natda",
           "scale": "cat",
           "answers": [
@@ -738,6 +761,8 @@
           "text_de": "Wo hast Du den größten Teil Deiner Kindheit bis zum 15. Lebensjahr verbracht?",
           "instruction": "[de] Fragetext: “bis zum 15. Lebensjahr” nur bei Jahrgang 2002 anzeigen",
           "instruction_de": "Fragetext: “bis zum 15. Lebensjahr” nur bei Jahrgang 2002 anzeigen",
+          "description": "neuer Filter",
+          "filter": "Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2",
           "concept": "kh01",
           "scale": "cat",
           "answers": [
@@ -805,6 +830,8 @@
           "item": "spzug1",
           "text": "[de] Wie gut konntest Du vor Deinem Zuzug nach Deutschland die deutsche Sprache sprechen?",
           "text_de": "Wie gut konntest Du vor Deinem Zuzug nach Deutschland die deutsche Sprache sprechen?",
+          "description": "Jahrgänge im Filter angepasst;  Filter verändert",
+          "filter": "(Jahrgang 2005 | 2002, wenn PL1;1=2) & Q007;sta2=1",
           "concept": "spzug1",
           "scale": "cat",
           "answers": [
@@ -857,6 +884,8 @@
           "item": "kdspsb",
           "text": "[de] Wie gut konntest Du zum Zeitpunkt Deines Schulbeginns in Deutschland die deutsche Sprache sprechen?",
           "text_de": "Wie gut konntest Du zum Zeitpunkt Deines Schulbeginns in Deutschland die deutsche Sprache sprechen?",
+          "description": "Jahrgänge im Filter angepasst;  Filter verändert",
+          "filter": "(an Jahrgänge 2007 | 2005, 2002, wenn PL1;1 = 2) & (Q007;sta2 = 1)",
           "concept": "kdspsb",
           "scale": "cat",
           "answers": [
@@ -914,6 +943,8 @@
           "item": "kdspspr",
           "text": "[de] Wie gut kannst Du mittlerweile Deutsch sprechen?",
           "text_de": "Wie gut kannst Du mittlerweile Deutsch sprechen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2007 | 2005, 2002, wenn PL1;1 = 2) & (Q007;sta2 = 1)",
           "concept": "kdspspr",
           "scale": "cat",
           "answers": [
@@ -966,6 +997,8 @@
           "item": "kdspsch",
           "text": "[de] Wie gut kannst Du mittlerweile Deutsch schreiben?",
           "text_de": "Wie gut kannst Du mittlerweile Deutsch schreiben?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2007 | 2005, 2002, wenn PL1;1 = 2) & (Q007;sta2 = 1)",
           "concept": "kdspsch",
           "scale": "cat",
           "answers": [
@@ -1018,6 +1051,8 @@
           "item": "kdsples",
           "text": "[de] Wie gut kannst Du mittlerweile Deutsch lesen?",
           "text_de": "Wie gut kannst Du mittlerweile Deutsch lesen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2007 | 2005, 2002, wenn PL1;1 = 2) & (Q007;sta2 = 1)",
           "concept": "kdsples",
           "scale": "cat",
           "answers": [
@@ -1070,6 +1105,8 @@
           "item": "spf",
           "text": "[de] Nimmst Du an einer speziellen Sprachförderung teil, um Deutsch zu lernen?",
           "text_de": "Nimmst Du an einer speziellen Sprachförderung teil, um Deutsch zu lernen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2007 | 2005, 2002, wenn PL1;1 = 2) & (Q007;sta2 = 1)",
           "concept": "spf",
           "scale": "cat",
           "answers": [
@@ -1112,6 +1149,8 @@
           "item": "1",
           "text": "[de] Wie viele Stunden pro Woche nimmst Du an dieser speziellen Sprachförderung teil?",
           "text_de": "Wie viele Stunden pro Woche nimmst Du an dieser speziellen Sprachförderung teil?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2007 | 2005, 2002, wenn PL1;1=2) & Q021;spf=1:2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -1157,6 +1196,8 @@
           "text_de": "Welche Sprache(n) sprichst Du noch außer Deutsch?",
           "instruction": "[de] Bitte gib alles Zutreffende an.",
           "instruction_de": "Bitte gib alles Zutreffende an.",
+          "description": "Jahrgänge im Filter angepasst;  Filter verändert",
+          "filter": "(an Jahrgänge 2007 | 2005 und 2002, wenn PL1;1=2)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -1498,6 +1539,7 @@
           "item": "wspad37so",
           "text": "[de] Andere Sprache, und zwar:",
           "text_de": "Andere Sprache, und zwar:",
+          "filter": "Nur wenn Q023;wspad37==1",
           "concept": "wspadso",
           "scale": "chr",
           "sn": 38,
@@ -1538,6 +1580,8 @@
           "item": "kbsp",
           "text": "[de] Welche Sprache sprichst Du davon am besten?",
           "text_de": "Welche Sprache sprichst Du davon am besten?",
+          "description": "neuer Filter\n\nAngezeigt werden nur die zuvor in Frage 23 genannten Sprachen",
+          "filter": "(an Jahrgänge 2007 | 2005, 2002, wenn PL1;1=2). Frage Q024 nur wenn bei Frage Q023 mehr als eine Angabe.",
           "goto": "-1@Q028",
           "concept": "kbsp",
           "scale": "cat",
@@ -1756,6 +1800,7 @@
           "text_de": "Wie gut kannst Du diese Sprache sprechen?",
           "instruction": "[de] [Einblendung Sprache aus Frage Q023 / Q024]",
           "instruction_de": "[Einblendung Sprache aus Frage Q023 / Q024]",
+          "filter": "nur wenn Angabe von mindestens einer Sprache in Q023 & (Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2)",
           "concept": "kbspspr",
           "scale": "cat",
           "answers": [
@@ -1810,6 +1855,7 @@
           "text_de": "Wie gut kannst Du diese Sprache schreiben?",
           "instruction": "[de] [Einblendung Sprache aus Frage Q023 / Q024]",
           "instruction_de": "[Einblendung Sprache aus Frage Q023 / Q024]",
+          "filter": "nur wenn Angabe von mindestens einer Sprache in Q023 & (Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2)",
           "concept": "kbspsch",
           "scale": "cat",
           "answers": [
@@ -1864,6 +1910,7 @@
           "text_de": "Wie gut kannst Du diese Sprache lesen?",
           "instruction": "[de] [Einblendung Sprache aus Frage Q023 / Q024]",
           "instruction_de": "[Einblendung Sprache aus Frage Q023 / Q024]",
+          "filter": "nur wenn Angabe von mindestens einer Sprache in Q023 & (Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2)",
           "concept": "kbsples",
           "scale": "cat",
           "answers": [
@@ -1947,6 +1994,7 @@
           "item": "gspda3",
           "text": "[de] Welche andere Sprache?",
           "text_de": "Welche andere Sprache?",
+          "filter": "Nur wenn Q028;gspd3==2 | Q028;gspd3==3",
           "concept": "gspda3",
           "scale": "chr",
           "sn": 1,
@@ -2193,6 +2241,7 @@
           "text_de": "In welcher Sprache machst Du Folgendes normalerweise?",
           "instruction": "[de] Im Internet surfen",
           "instruction_de": "Im Internet surfen",
+          "description": "„int“ als varfix ist nicht gestattet, daher nun intsur",
           "concept": "intsur",
           "scale": "cat",
           "answers": [
@@ -2308,6 +2357,8 @@
           "item": "1",
           "text": "[de] Wann bist Du das erste Mal zur Schule gegangen?",
           "text_de": "Wann bist Du das erste Mal zur Schule gegangen?",
+          "description": "neuer Filter",
+          "filter": "Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1:1=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2364,6 +2415,8 @@
           "item": "schland",
           "text": "[de] In welchem Land bist Du zum ersten Mal in die Schule gegangen?",
           "text_de": "In welchem Land bist Du zum ersten Mal in die Schule gegangen?",
+          "description": "Filter verändert, Itemname im Filter korrigiert",
+          "filter": "(Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2) & (Q007;sta2=1) & (Q036;schm=1 | Q036;schj=1 | Q036;schno=-1)",
           "concept": "schland",
           "scale": "cat",
           "answers": [
@@ -2415,6 +2468,8 @@
           "item": "1",
           "text": "[de] Wie lange bist Du dort zur Schule gegangen?",
           "text_de": "Wie lange bist Du dort zur Schule gegangen?",
+          "description": "Filter verändert",
+          "filter": "(Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2) & Q037;schland=2,3",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2475,6 +2530,8 @@
           "item": "lschaloe",
           "text": "[de] Was für eine Schule hast Du dort zuletzt besucht?",
           "text_de": "Was für eine Schule hast Du dort zuletzt besucht?",
+          "description": "Filter verändert",
+          "filter": "(Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2) & Q037;schland=2,3",
           "concept": "lschaloe",
           "scale": "cat",
           "answers": [
@@ -2527,6 +2584,8 @@
           "item": "schable",
           "text": "[de] Mit was für einem Abschluss hast Du die Schule verlassen?",
           "text_de": "Mit was für einem Abschluss hast Du die Schule verlassen?",
+          "description": "Jahrgang im Filter angepasst;  Filter verändert",
+          "filter": "(nur an Jahrgang 2002, wenn PL1;1=2) & Q037;schland=2,3",
           "concept": "schable",
           "scale": "cat",
           "answers": [
@@ -2579,6 +2638,8 @@
           "item": "schableso",
           "text": "[de] Bitte sag uns noch, was für eine Art des Abschlusses das war?",
           "text_de": "Bitte sag uns noch, was für eine Art des Abschlusses das war?",
+          "description": "Jahrgang im Filter angepasst;  Filter verändert",
+          "filter": "(nur an Jahrgang 2002, wenn PL1;1=2) & Q040;schable=5",
           "concept": "schableso",
           "scale": "chr",
           "sn": 0,
@@ -2613,6 +2674,8 @@
         {
           "text": "[de] Bist Du noch in einem weiteren Land (außer Deutschland) zur Schule gegangen?",
           "text_de": "Bist Du noch in einem weiteren Land (außer Deutschland) zur Schule gegangen?",
+          "description": "Filter verändert, Itemname im Filter korrigiert",
+          "filter": "(Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2) & (Q036;schm=1 | Q036;schj=1 | Q036;schno=-1)",
           "scale": "txt",
           "sn": 0,
           "item": "root",
@@ -2666,6 +2729,8 @@
           "item": "1",
           "text": "[de] Wie lange bist Du dort zur Schule gegangen?",
           "text_de": "Wie lange bist Du dort zur Schule gegangen?",
+          "description": "Filter verändert, Itemname im Filter ergänzt",
+          "filter": "(Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2) & Q042;schaland01=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2726,6 +2791,8 @@
           "item": "zlschal01",
           "text": "[de] Was für eine Schule hast Du dort zuletzt besucht?",
           "text_de": "Was für eine Schule hast Du dort zuletzt besucht?",
+          "description": "Filter verändert, Itemname im Filter ergänzt",
+          "filter": "(Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2) & Q042;schaland01=1",
           "concept": "zlschal01",
           "scale": "cat",
           "answers": [
@@ -2778,6 +2845,8 @@
           "item": "zlschalab01",
           "text": "[de] Mit was für einem Abschluss hast Du diese Schule verlassen?",
           "text_de": "Mit was für einem Abschluss hast Du diese Schule verlassen?",
+          "description": "Jahrgang im Filter angepasst;  Filter verändert, Itemname im Filter ergänzt",
+          "filter": "(nur an Jahrgang 2002, wenn  PL1;1=2) & Q042;schaland011=1",
           "goto": "Schleife: Weiter mit Q042; Fragen Q042-Q045 so oft stellen, bis Q042:3=1 (also alle Schulen, die im Ausland besucht wurden, abgefragt sind)",
           "concept": "zlschalab01",
           "scale": "cat",
@@ -2836,6 +2905,8 @@
           "item": "1",
           "text": "[de] Wann bist Du das erste Mal in Deutschland zur Schule gegangen?",
           "text_de": "Wann bist Du das erste Mal in Deutschland zur Schule gegangen?",
+          "description": "Filter verändert",
+          "filter": "(Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2) & [(Q037;schland=2,3,-1) | (Q036;schno=-1 & Q037;schland=1)]",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2892,6 +2963,8 @@
           "item": "schfsp",
           "text": "[de] Hast Du zunächst eine spezielle Klasse für geflüchtete Kinder (zum Beispiel Willkommensklasse, Vorbereitungsklasse oder Übergangsklasse) besucht?",
           "text_de": "Hast Du zunächst eine spezielle Klasse für geflüchtete Kinder (zum Beispiel Willkommensklasse, Vorbereitungsklasse oder Übergangsklasse) besucht?",
+          "description": "Filter verändert, Itemname im Filter korrigiert",
+          "filter": "(Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2) & (Q007;sta2=1) & (Q046;schdm=1 | Q046;schdj=1 | Q046;schdno=-1)",
           "concept": "schfsp",
           "scale": "cat",
           "answers": [
@@ -2934,6 +3007,8 @@
           "item": "1",
           "text": "[de] Wie lange hast Du auch eine spezielle Klasse für Geflüchtete besucht?",
           "text_de": "Wie lange hast Du auch eine spezielle Klasse für Geflüchtete besucht?",
+          "description": "Filter verändert",
+          "filter": "(Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2) & Q047;schfsp=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2998,6 +3073,8 @@
           "item": "1",
           "text": "[de] Wie lange hast Du ausschließlich eine spezielle Klasse für Geflüchtete besucht?",
           "text_de": "Wie lange hast Du ausschließlich eine spezielle Klasse für Geflüchtete besucht?",
+          "description": "Filter verändert",
+          "filter": "(Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2) & Q047;schfsp=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3062,6 +3139,8 @@
           "item": "1",
           "text": "[de] Welche Klassenstufe hast Du zuerst in Deutschland besucht?",
           "text_de": "Welche Klassenstufe hast Du zuerst in Deutschland besucht?",
+          "description": "Filter verändert, Itemname im Filter korrigiert",
+          "filter": "(Für Jahrgang 2007 | für Jahrgänge 2005, 2002, wenn PL1;1=2) & (Q007;sta2=1) & (Q046;schdm=1 | Q046;schdj=1 | Q046;schdno=-1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3105,6 +3184,8 @@
           "item": "schu",
           "text": "[de] Welche allgemeinbildende Schule hast Du im Schuljahr 2018/2019 besucht?",
           "text_de": "Welche allgemeinbildende Schule hast Du im Schuljahr 2018/2019 besucht?",
+          "description": "Jahreszahlen im Fragetext angepasst, Itemname in Filter korrigiert",
+          "filter": "(Q046;schdm=1 | Q046;schdj=1 | Q046;schdno=-1)",
           "concept": "schu",
           "scale": "cat",
           "answers": [
@@ -3186,6 +3267,8 @@
           "item": "schul",
           "text": "[de] Und welche allgemeinbildende Schule besuchst Du gerade, also im Schuljahr 2019/2020?",
           "text_de": "Und welche allgemeinbildende Schule besuchst Du gerade, also im Schuljahr 2019/2020?",
+          "description": "Jahreszahlen im Fragetext angepasst, Itemname in Filter korrigiert",
+          "filter": "(Q046;schdm=1 | Q046;schdj=1 | Q046;schdno=-1)",
           "concept": "schul",
           "scale": "cat",
           "answers": [
@@ -3267,6 +3350,8 @@
           "item": "1",
           "text": "[de] In der wievielten Klasse warst Du im Schuljahr 2018/2019?",
           "text_de": "In der wievielten Klasse warst Du im Schuljahr 2018/2019?",
+          "description": "Jahreszahlen im Fragetext angepasst",
+          "filter": "Q051;schu=1:8",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3310,6 +3395,8 @@
           "item": "1",
           "text": "[de] Und in der wievielten Klasse bist Du gerade, also im Schuljahr 2019/2020?",
           "text_de": "Und in der wievielten Klasse bist Du gerade, also im Schuljahr 2019/2020?",
+          "description": "Jahreszahlen im Fragetext angepasst",
+          "filter": "Q052;schul=1:8",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3355,6 +3442,8 @@
           "text_de": "Machst Du derzeit eines oder mehrere der folgenden Dinge?",
           "instruction": "[de] Bitte gib alles Zutreffende an!",
           "instruction_de": "Bitte gib alles Zutreffende an!",
+          "description": "Itemname im Filter ergänzt",
+          "filter": "(Q046;schdno=1) | (Q052;schul=9) | (Q036;schno=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3472,6 +3561,7 @@
           "text_de": "Wie viele Schüler bzw. Schülerinnen sind insgesamt in Deiner Schulklasse?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung dieser Frage bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung dieser Frage bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3517,6 +3607,7 @@
           "text_de": "Und wie viele von diesen Schülern bzw. Schülerinnen stammen nicht aus Deutschland oder haben Eltern, die nicht aus Deutschland stammen? \nWenn Du es nicht genau weißt, kannst Du es auch ungefähr angeben!",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung dieser Frage bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung dieser Frage bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3562,6 +3653,7 @@
           "text_de": "Hast Du das Gefühl, dass die Lehrer Dich seltener aufrufen als Deine Mitschüler?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "lehr01",
           "scale": "cat",
           "answers": [
@@ -3601,6 +3693,7 @@
           "text_de": "Hast Du das Gefühl, dass die Lehrer Dich strenger benoten als Deine Mitschüler?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "lehr02",
           "scale": "cat",
           "answers": [
@@ -3640,6 +3733,7 @@
           "text_de": "Hast Du das Gefühl, dass die Lehrer Dich öfter ermahnen als Deine Mitschüler?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "lehr03",
           "scale": "cat",
           "answers": [
@@ -3679,6 +3773,7 @@
           "text_de": "Hast Du das Gefühl, dass die Lehrer denken, dass Du weniger klug bist als Deine Mitschüler?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "lehr04",
           "scale": "cat",
           "answers": [
@@ -3718,6 +3813,7 @@
           "text_de": "Hast Du in Deutschland bereits ein Zeugnis erhalten?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "dzeug",
           "scale": "cat",
           "answers": [
@@ -3757,6 +3853,8 @@
           "text_de": "Welche Note hattest Du in Deinem letzten Zeugnis im Fach Deutsch? \nSchulnote von 1 bis 6",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "description": "Antwortkategorien verändert: Keine Angabe ergänzt",
+          "filter": "(Q062;dzeug=1) & (Q051;schu=1:8 | Q052;schul=1:8)",
           "concept": "not1",
           "scale": "cat",
           "answers": [
@@ -3830,6 +3928,8 @@
           "text_de": "Welche Note hattest Du in Deinem letzten Zeugnis im Fach Mathematik?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "description": "Antwortkategorien verändert: Keine Angabe ergänzt",
+          "filter": "(Q062;dzeug=1) & (Q051;schu=1:8 | Q052;schul=1:8)",
           "concept": "not2",
           "scale": "cat",
           "answers": [
@@ -3903,6 +4003,8 @@
           "text_de": "Welche Note hattest Du in Deinem letzten Zeugnis im Fach \"Erste Fremdsprache\"?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "description": "Antwortkategorien verändert: Keine Angabe ergänzt",
+          "filter": "(Q062;dzeug=1) & (Q051;schu=1:8 | Q052;schul=1:8)",
           "concept": "not4",
           "scale": "cat",
           "answers": [
@@ -3976,6 +4078,7 @@
           "text_de": "Wie oft hilft Deine Mutter Dir bei den Hausaufgaben oder dem Lernen für die Schule?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "haus3",
           "scale": "cat",
           "answers": [
@@ -4035,6 +4138,7 @@
           "text_de": "Wie oft hilft Dein Vater Dir bei den Hausaufgaben oder dem Lernen für die Schule?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "haus4",
           "scale": "cat",
           "answers": [
@@ -4094,6 +4198,7 @@
           "text_de": "Wie oft helfen Dir andere Verwandte bei den Hausaufgaben oder dem Lernen für die Schule?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "haus10",
           "scale": "cat",
           "answers": [
@@ -4153,6 +4258,7 @@
           "text_de": "Wie oft helfen Dir Deine Geschwister bei den Hausaufgaben oder dem Lernen für die Schule?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "haus6",
           "scale": "cat",
           "answers": [
@@ -4212,6 +4318,7 @@
           "text_de": "Wie oft helfen Dir Freundinnen und Freunde oder Mitschülerinnen und Mitschüler bei den Hausaufgaben oder dem Lernen für die Schule?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "haus7",
           "scale": "cat",
           "answers": [
@@ -4271,6 +4378,7 @@
           "text_de": "Wie oft hilft Dir eine Nachhilfelehrerin oder ein Nachhilfelehrer bei den Hausaufgaben oder dem Lernen für die Schule?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "haus8",
           "scale": "cat",
           "answers": [
@@ -4330,6 +4438,7 @@
           "text_de": "Wie oft hilft Dir eine Hausaufgabenbetreuung (z.B. in der Schule, im Jugendzentrum oder Gemeindetreff) bei den Hausaufgaben oder dem Lernen für die Schule?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "haus9",
           "scale": "cat",
           "answers": [
@@ -4389,6 +4498,7 @@
           "text_de": "Wie viel Zeit verwendest Du normalerweise für Deine Hausaufgaben und das Lernen für die Schule?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "haus2",
           "scale": "cat",
           "answers": [
@@ -4458,15 +4568,24 @@
     "Q074": {
       "question": "Q074",
       "name": "Q074",
-      "label": "[de] Wie sehr stimmst Du den folgenden Aussagen zu? \nIch fühle mich als Außenseiter/-in (oder von Dingen ausgeschlossen) in der Schule.",
-      "label_de": "Wie sehr stimmst Du den folgenden Aussagen zu? \nIch fühle mich als Außenseiter/-in (oder von Dingen ausgeschlossen) in der Schule.",
+      "label": "[de] Wie sehr stimmst Du den folgenden Aussagen zu?",
+      "label_de": "Wie sehr stimmst Du den folgenden Aussagen zu?",
       "items": [
         {
-          "item": "pisa1",
-          "text": "[de] Wie sehr stimmst Du den folgenden Aussagen zu? \nIch fühle mich als Außenseiter/-in (oder von Dingen ausgeschlossen) in der Schule.",
-          "text_de": "Wie sehr stimmst Du den folgenden Aussagen zu? \nIch fühle mich als Außenseiter/-in (oder von Dingen ausgeschlossen) in der Schule.",
+          "item": "1",
+          "text": "[de] Wie sehr stimmst Du den folgenden Aussagen zu?",
+          "text_de": "Wie sehr stimmst Du den folgenden Aussagen zu?",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pisa1",
+          "text": "[de] Ich fühle mich als Außenseiter/-in (oder von Dingen ausgeschlossen) in der Schule.",
+          "text_de": "Ich fühle mich als Außenseiter/-in (oder von Dingen ausgeschlossen) in der Schule.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "pisa1",
           "scale": "cat",
           "answers": [
@@ -4496,7 +4615,7 @@
               "label_de": "Keine Angabe"
             }
           ],
-          "sn": 0,
+          "sn": 1,
           "number": ""
         }
       ],
@@ -4514,8 +4633,7 @@
           "item": "pisa2",
           "text": "[de] In der Schule finde ich leicht neue Freundinnen und Freunde.",
           "text_de": "In der Schule finde ich leicht neue Freundinnen und Freunde.",
-          "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
-          "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "pisa2",
           "scale": "cat",
           "answers": [
@@ -4563,8 +4681,7 @@
           "item": "pisa3",
           "text": "[de] Ich habe das Gefühl, zu dieser Schule zu gehören.",
           "text_de": "Ich habe das Gefühl, zu dieser Schule zu gehören.",
-          "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
-          "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "pisa3",
           "scale": "cat",
           "answers": [
@@ -4612,8 +4729,7 @@
           "item": "pisa4",
           "text": "[de] Ich fühle mich unbehaglich und fehl am Platz in dieser Schule.",
           "text_de": "Ich fühle mich unbehaglich und fehl am Platz in dieser Schule.",
-          "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
-          "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "pisa4",
           "scale": "cat",
           "answers": [
@@ -4661,8 +4777,7 @@
           "item": "pisa5",
           "text": "[de] Andere Schülerinnen und Schüler scheinen mich zu mögen.",
           "text_de": "Andere Schülerinnen und Schüler scheinen mich zu mögen.",
-          "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
-          "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "pisa5",
           "scale": "cat",
           "answers": [
@@ -4710,8 +4825,7 @@
           "item": "pisa6",
           "text": "[de] Ich fühle mich in dieser Schule einsam.",
           "text_de": "Ich fühle mich in dieser Schule einsam.",
-          "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
-          "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "pisa6",
           "scale": "cat",
           "answers": [
@@ -4759,8 +4873,7 @@
           "item": "pisa7",
           "text": "[de] Ich fühle mich in dieser Schule glücklich.",
           "text_de": "Ich fühle mich in dieser Schule glücklich.",
-          "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
-          "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "pisa7",
           "scale": "cat",
           "answers": [
@@ -4808,8 +4921,7 @@
           "item": "pisa8",
           "text": "[de] Alles läuft sehr gut in der Schule.",
           "text_de": "Alles läuft sehr gut in der Schule.",
-          "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
-          "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "pisa8",
           "scale": "cat",
           "answers": [
@@ -4857,8 +4969,7 @@
           "item": "pisa9",
           "text": "[de] Ich bin zufrieden mit meiner Schule.",
           "text_de": "Ich bin zufrieden mit meiner Schule.",
-          "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
-          "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.",
+          "filter": "(Q051;schu=1:8) | (Q052;schul=1:8)",
           "concept": "pisa9",
           "scale": "cat",
           "answers": [
@@ -4908,6 +5019,8 @@
           "text_de": "Neben dem normalen Unterricht gibt es ja auch andere Möglichkeiten, sich in der Schule zu engagieren, sich also aktiv an etwas zu beteiligen. \n\nEngagierst Du dich derzeit in einem oder mehreren der folgenden Bereiche? ",
           "instruction": "[de] Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.\n\n\nBitte alles Zutreffende angeben!",
           "instruction_de": "Wenn Du gerade keine Schule besuchst, dann denke bei der Beantwortung der nächsten Fragen bitte an Dein letztes Schuljahr.\n\n\nBitte alles Zutreffende angeben!",
+          "description": "Fragetext verändert: „Bitte alles Zutreffende angeben!“ in den Hinweistext verschoben\n\n\nAn Frau Gessner: Stimmen hier die items?",
+          "filter": "(an Jahrgang 2005 und 2002) &(Q051;schu=1:8) | (Q052;schul=1:8)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5032,6 +5145,8 @@
           "item": "schabd",
           "text": "[de] Strebst Du in der Zukunft einen Schulabschluss in Deutschland an?",
           "text_de": "Strebst Du in der Zukunft einen Schulabschluss in Deutschland an?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2002",
           "concept": "schabd",
           "scale": "cat",
           "answers": [
@@ -5074,6 +5189,8 @@
           "item": "schabe",
           "text": "[de] Welchen Schulabschluss willst Du persönlich einmal erreichen?",
           "text_de": "Welchen Schulabschluss willst Du persönlich einmal erreichen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2007 & 2005) | (an 2002, wenn Q084;schabd=1:2,-1)",
           "concept": "schabe",
           "scale": "cat",
           "answers": [
@@ -5121,6 +5238,8 @@
           "item": "schabw",
           "text": "[de] Wie wichtig ist es Dir, diesen Schulabschluss zu erreichen?",
           "text_de": "Wie wichtig ist es Dir, diesen Schulabschluss zu erreichen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(2007, 2005 | (2002 & Q084;schabd=1;2)) & (Q085;schabe=1:2,3)",
           "concept": "schabw",
           "scale": "cat",
           "answers": [
@@ -5168,6 +5287,8 @@
           "item": "schabt",
           "text": "[de] Und was denkst Du, welchen Schulabschluss wirst Du tatsächlich einmal erreichen?",
           "text_de": "Und was denkst Du, welchen Schulabschluss wirst Du tatsächlich einmal erreichen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2007 & 2005) | (an 2002, wenn Q084;schabd=1:2)",
           "concept": "schabt",
           "scale": "cat",
           "answers": [
@@ -5215,6 +5336,8 @@
           "item": "1",
           "text": "[de] Warst Du in einem anderen Land als Deutschland in einer beruflichen Ausbildung?",
           "text_de": "Warst Du in einem anderen Land als Deutschland in einer beruflichen Ausbildung?",
+          "description": "Jahrgang im Filter angepasst, Filter verändert",
+          "filter": "an Jahrgang 2002, wenn PL1;1=2",
           "concept": "ab10",
           "scale": "cat",
           "answers": [
@@ -5254,6 +5377,8 @@
           "text_de": "Was für eine berufliche Ausbildung war das?",
           "instruction": "[de] Bitte gib alles Zutreffende an!",
           "instruction_de": "Bitte gib alles Zutreffende an!",
+          "description": "Jahrgang im Filter angepasst;  Itemnamen in Filter korrigiert",
+          "filter": "(an Jahrgang 2002, wenn PL1;1=2) & (Q088;ab10=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5326,6 +5451,8 @@
           "text_de": "Wie hast Du diese Ausbildung beendet?",
           "instruction": "[de] In einem Betrieb angelernt",
           "instruction_de": "In einem Betrieb angelernt",
+          "description": "Filter verändert, Itemnamen in Filter korrigiert",
+          "filter": "(an Jahrgang 2002, wenn PL1;1=2) &  Q089;ab11=1",
           "concept": "ab11a",
           "scale": "cat",
           "answers": [
@@ -5365,6 +5492,8 @@
           "text_de": "Wie hast Du diese Ausbildung beendet?",
           "instruction": "[de] In einem Betrieb eine längere Ausbildung gemacht",
           "instruction_de": "In einem Betrieb eine längere Ausbildung gemacht",
+          "description": "Filter verändert, Itemnamen in Filter korrigiert",
+          "filter": "(an Jahrgang 2002, wenn PL1;1=2) &  Q089;ab12=1",
           "concept": "ab12a",
           "scale": "cat",
           "answers": [
@@ -5404,6 +5533,8 @@
           "text_de": "Wie hast Du diese Ausbildung beendet?",
           "instruction": "[de] Eine berufsbildende Schule besucht",
           "instruction_de": "Eine berufsbildende Schule besucht",
+          "description": "Filter verändert, Itemnamen in Filter korrigiert",
+          "filter": "(an Jahrgang 2002, wenn PL1;1=2) &  Q089;ab13=1",
           "concept": "ab13a",
           "scale": "cat",
           "answers": [
@@ -5443,6 +5574,8 @@
           "text_de": "Wie hast Du diese Ausbildung beendet?",
           "instruction": "[de] Sonstige Ausbildung",
           "instruction_de": "Sonstige Ausbildung",
+          "description": "Filter verändert, Itemnamen in Filter korrigiert",
+          "filter": "(an Jahrgang 2002, wenn PL1;1=2) &  Q089;ab15=1",
           "concept": "ab15a",
           "scale": "cat",
           "answers": [
@@ -5480,6 +5613,8 @@
           "item": "aus07",
           "text": "[de] Strebst Du in der Zukunft einen beruflichen Ausbildungsabschluss oder Hochschulabschluss an?",
           "text_de": "Strebst Du in der Zukunft einen beruflichen Ausbildungsabschluss oder Hochschulabschluss an?",
+          "description": "Jahrgang im Filter angepasst, Itemnamen in Filter korrigiert",
+          "filter": "nur an Jahrgang 2002",
           "concept": "aus07",
           "scale": "cat",
           "answers": [
@@ -5522,6 +5657,8 @@
           "item": "ausb",
           "text": "[de] Welchen der folgenden beruflichen Ausbildungsabschlüsse oder Hochschulabschlüsse strebst Du an?",
           "text_de": "Welchen der folgenden beruflichen Ausbildungsabschlüsse oder Hochschulabschlüsse strebst Du an?",
+          "description": "Jahrgang im Filter angepasst, Antwort 9 nur stellen, wenn Frühe Jugend",
+          "filter": "an Jahrgang 2005 | Q094;aus07=1:2",
           "concept": "ausb",
           "scale": "cat",
           "answers": [
@@ -5594,6 +5731,8 @@
           "item": "stug",
           "text": "[de] Möchtest Du gerne studieren?",
           "text_de": "Möchtest Du gerne studieren?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "An Jahrgang 2007 | (Q085;schabe=4 | Q095;ausb=8)",
           "concept": "stug",
           "scale": "cat",
           "answers": [
@@ -5655,6 +5794,8 @@
           "item": "job3",
           "text": "[de] Hast Du schon einmal für Geld gearbeitet?",
           "text_de": "Hast Du schon einmal für Geld gearbeitet?",
+          "description": "Jahrgänge im Filter angepasst;  Filter verändert",
+          "filter": "(an Jahrgänge 2002 und 2005) & (Q055;kderz1=1 | Q055;kderz2=1 | Q055;kderz9=1 | Q055;kderz3=1 | Q055;4=1 | Q055;kderz11=1 | Q055;kderz8=-1)",
           "concept": "job3",
           "scale": "cat",
           "answers": [
@@ -5694,6 +5835,8 @@
           "text_de": "Wie alt warst du, als Du das erste Mal in Deinem Leben für Geld gearbeitet hast?",
           "instruction": "[de] Gemeint ist nicht die Berufsausbildung, sondern gegebenenfalls die erste Tätigkeit danach!",
           "instruction_de": "Gemeint ist nicht die Berufsausbildung, sondern gegebenenfalls die erste Tätigkeit danach!",
+          "description": "Jahrgänge im Filter angepasst, Filter verändert (binäre Antworten=1)",
+          "filter": "(an Jahrgänge 2002 und 2005) & (Q097;job3=1 | Q055;kderz10=1 | Q055;kderz6=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5739,6 +5882,8 @@
           "text_de": "Welche berufliche Tätigkeit hast Du in Deinem Herkunftsland zuletzt ausgeübt?",
           "instruction": "[de] Bitte gib die genaue Tätigkeitsbezeichnung an, also z.B. nicht \"kaufmännischer Angestellter\", sondern: \"Speditionskaufmann\", nicht \"Arbeiter\", sondern: \"Maschinenschlosser\".",
           "instruction_de": "Bitte gib die genaue Tätigkeitsbezeichnung an, also z.B. nicht \"kaufmännischer Angestellter\", sondern: \"Speditionskaufmann\", nicht \"Arbeiter\", sondern: \"Maschinenschlosser\".",
+          "description": "Jahrgänge im Filter angepasst;  Filter verändert (binäre Antworten=1)",
+          "filter": " (an Jahrgänge 2005 und 2002, wenn PL1;1=2) & [Q097;job3=1 | (Q055;kderz10=1 | Q055;kderz6=1)] & (Q007;sta2 =1 | Q007;sta1=-1) ",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5786,6 +5931,8 @@
           "item": "lh1branr",
           "text": "[de] In welchem Wirtschaftszweig, welcher Branche oder welchem Dienstleistungsbereich war das Unternehmen bzw. die Einrichtung tätig?",
           "text_de": "In welchem Wirtschaftszweig, welcher Branche oder welchem Dienstleistungsbereich war das Unternehmen bzw. die Einrichtung tätig?",
+          "description": "Jahrgänge im Filter angepasst;  Filter verändert",
+          "filter": "(an Jahrgänge 2005 und 2002, wenn PL1;1=2) & (Q099;lh1ber=1 | Q099;lh1berno=-1)",
           "concept": "lh1branr",
           "scale": "cat",
           "answers": [
@@ -5923,6 +6070,8 @@
           "item": "1",
           "text": "[de] Wie viele Stunden betrug in dieser Stelle, im Durchschnitt, Deine Arbeitszeit pro Woche?",
           "text_de": "Wie viele Stunden betrug in dieser Stelle, im Durchschnitt, Deine Arbeitszeit pro Woche?",
+          "description": "Jahrgänge im Filter angepasst;  Filter verändert",
+          "filter": "(an Jahrgänge 2005 und 2002, wenn PL1;1=2) & (Q099;lh1ber=1 | Q099;lh1berno=-1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5968,6 +6117,8 @@
           "text_de": "Welche berufliche Tätigkeit übst Du derzeit aus?",
           "instruction": "[de] Bitte gib die genaue Tätigkeitsbezeichnung an, also z.B. nicht \"kaufmännischer Angestellter\", sondern: \"Speditionskaufmann\", nicht \"Arbeiter\", sondern: \"Maschinenschlosser\".",
           "instruction_de": "Bitte gib die genaue Tätigkeitsbezeichnung an, also z.B. nicht \"kaufmännischer Angestellter\", sondern: \"Speditionskaufmann\", nicht \"Arbeiter\", sondern: \"Maschinenschlosser\".",
+          "description": "Jahrgänge im Filter angepasst, Filter verändert (binäre Antworten=1)",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q055;kderz10=1 | Q055;kderz6=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -6011,6 +6162,8 @@
           "item": "braco",
           "text": "[de] In welchem Wirtschaftszweig, welcher Branche oder welchem Dienstleistungsbereich ist das Unternehmen bzw. die Einrichtung tätig?",
           "text_de": "In welchem Wirtschaftszweig, welcher Branche oder welchem Dienstleistungsbereich ist das Unternehmen bzw. die Einrichtung tätig?",
+          "description": "Jahrgänge im Filter angepasst, Filter verändert (binäre Antworten=1)",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q055;kderz10=1 | Q055;kderz6=1)",
           "concept": "braco",
           "scale": "cat",
           "answers": [
@@ -6148,6 +6301,8 @@
           "item": "1",
           "text": "[de] Wie viele Stunden beträgt in dieser Stelle, im Durchschnitt, Deine Arbeitszeit pro Woche?",
           "text_de": "Wie viele Stunden beträgt in dieser Stelle, im Durchschnitt, Deine Arbeitszeit pro Woche?",
+          "description": "Jahrgänge im Filter angepasst, Filter verändert (binäre Antworten=1)",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q055;kderz10=1 | Q055;kderz6=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -8589,6 +8744,8 @@
           "text_de": "Ich bin jemand, der versucht, auch ganz schwierige Aufgaben zu lösen.",
           "instruction": "[de] Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "ego20",
           "scale": "cat",
           "answers": [
@@ -8670,6 +8827,8 @@
           "item": "pll",
           "text": "[de] Hast Du bei Dir zu Hause einen ruhigen Platz zum Lernen?",
           "text_de": "Hast Du bei Dir zu Hause einen ruhigen Platz zum Lernen?",
+          "description": "Filter angepasst, Ausbildung / Lehre und Praktikum / Volontariat aus Frage Q055 laufen jetzt hier rein",
+          "filter": "(Q051:schu=1:8) | (Q052:schul=1:8) | (Q055:kderz1=1 | Q055:kderz2=1 | Q055:kderz9=1 | Q055:kderz3=1 | Q055:kderz4=1 | Q055:kderz10=1 | Q055:kderz11=1)",
           "concept": "pll",
           "scale": "cat",
           "answers": [
@@ -8707,6 +8866,8 @@
           "item": "zh1",
           "text": "[de] Hast Du bei Dir zu Hause einen Schreibtisch zum Lernen?",
           "text_de": "Hast Du bei Dir zu Hause einen Schreibtisch zum Lernen?",
+          "description": "Filter angepasst, Ausbildung / Lehre und Praktikum / Volontariat aus Frage Q055 laufen jetzt hier rein",
+          "filter": "(Q051:schu=1:8) | (Q052:schul=1:8) | (Q055:kderz1=1 | Q055:kderz2=1 | Q055:kderz9=1 | Q055:kderz3=1 | Q055:kderz4=1 | Q055:kderz10=1 | Q055:kderz11=1)",
           "concept": "zh1",
           "scale": "cat",
           "answers": [
@@ -8744,6 +8905,8 @@
           "item": "zh9",
           "text": "[de] Hast Du bei Dir zu Hause Schulbücher bzw. Lehrbücher?",
           "text_de": "Hast Du bei Dir zu Hause Schulbücher bzw. Lehrbücher?",
+          "description": "Filter angepasst, Ausbildung / Lehre und Praktikum / Volontariat aus Frage Q055 laufen jetzt hier rein",
+          "filter": "(Q051:schu=1:8) | (Q052:schul=1:8) | (Q055:kderz1=1 | Q055:kderz2=1 | Q055:kderz9=1 | Q055:kderz3=1 | Q055:kderz4=1 | Q055:kderz10=1 | Q055:kderz11=1)",
           "concept": "zh9",
           "scale": "cat",
           "answers": [
@@ -8892,6 +9055,8 @@
           "item": "zh5",
           "text": "[de] Gibt es bei Dir zu Hause Bücher, die bei den Hausaufgaben hilfreich sind (außer Deinen Schulbüchern bzw. Lehrbüchern)?",
           "text_de": "Gibt es bei Dir zu Hause Bücher, die bei den Hausaufgaben hilfreich sind (außer Deinen Schulbüchern bzw. Lehrbüchern)?",
+          "description": "Filter angepasst, Ausbildung / Lehre und Praktikum / Volontariat aus Frage Q055 laufen jetzt hier rein",
+          "filter": "(Q051:schu=1:8) | (Q052:schul=1:8) | (Q055:kderz1=1 | Q055:kderz2=1 | Q055:kderz9=1 | Q055:kderz3=1 | Q055:kderz4=1 | Q055:kderz10=1 | Q055:kderz11=1)",
           "concept": "zh5",
           "scale": "cat",
           "answers": [
@@ -8929,6 +9094,8 @@
           "item": "zh4",
           "text": "[de] Gibt es bei Dir zu Hause Lern-Software (z.B. für Computer, Tablet, Konsole)?",
           "text_de": "Gibt es bei Dir zu Hause Lern-Software (z.B. für Computer, Tablet, Konsole)?",
+          "description": "Filter angepasst, Ausbildung / Lehre und Praktikum / Volontariat aus Frage Q055 laufen jetzt hier rein",
+          "filter": "(Q051:schu=1:8) | (Q052:schul=1:8) | (Q055:kderz1=1 | Q055:kderz2=1 | Q055:kderz9=1 | Q055:kderz3=1 | Q055:kderz4=1 | Q055:kderz10=1 | Q055:kderz11=1)",
           "concept": "zh4",
           "scale": "cat",
           "answers": [
@@ -9115,6 +9282,7 @@
           "item": "zhg1",
           "text": "[de] Kannst Du bei Dir zu Hause ein Tablet nutzen?",
           "text_de": "Kannst Du bei Dir zu Hause ein Tablet nutzen?",
+          "description": "beachten fzhg*nicht identisch mit Hauptsoep, neue varfix erforderlich: zhg_r",
           "concept": "zhg1",
           "scale": "cat",
           "answers": [
@@ -9157,6 +9325,7 @@
           "item": "zhg2",
           "text": "[de] Kannst Du bei Dir zu Hause einen Computer / Laptop nutzen?",
           "text_de": "Kannst Du bei Dir zu Hause einen Computer / Laptop nutzen?",
+          "description": "beachten fzhg*nicht identisch mit Hauptsoep, neue varfix erforderlich: zhg_r",
           "concept": "zhg2",
           "scale": "cat",
           "answers": [
@@ -9199,6 +9368,7 @@
           "item": "zhg3",
           "text": "[de] Kannst Du bei Dir zu Hause eine (Spiele-)Konsole nutzen?",
           "text_de": "Kannst Du bei Dir zu Hause eine (Spiele-)Konsole nutzen?",
+          "description": "beachten fzhg*nicht identisch mit Hauptsoep, neue varfix erforderlich: zhg_r",
           "concept": "zhg3",
           "scale": "cat",
           "answers": [
@@ -9241,6 +9411,7 @@
           "item": "zhg4",
           "text": "[de] Kannst Du bei Dir zu Hause ein Smartphone nutzen?",
           "text_de": "Kannst Du bei Dir zu Hause ein Smartphone nutzen?",
+          "description": "beachten fzhg*nicht identisch mit Hauptsoep, neue varfix erforderlich: zhg_r",
           "concept": "zhg4",
           "scale": "cat",
           "answers": [
@@ -9283,6 +9454,7 @@
           "item": "zhg5",
           "text": "[de] Kannst Du bei Dir zu Hause ein anderes Handy nutzen?",
           "text_de": "Kannst Du bei Dir zu Hause ein anderes Handy nutzen?",
+          "description": "beachten fzhg*nicht identisch mit Hauptsoep, neue varfix erforderlich: zhg_r",
           "concept": "zhg5",
           "scale": "cat",
           "answers": [
@@ -9344,6 +9516,8 @@
           "item": "erl1",
           "text": "[de] Bis wann erlauben Dir Deine Eltern, an Abenden vor Schultagen / an Wochentagen alleine unterwegs zu sein? \nBis spätestens…",
           "text_de": "Bis wann erlauben Dir Deine Eltern, an Abenden vor Schultagen / an Wochentagen alleine unterwegs zu sein? \nBis spätestens…",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "erl1",
           "scale": "cat",
           "answers": [
@@ -9416,6 +9590,8 @@
           "item": "erl2",
           "text": "[de] Bis wann erlauben Dir Deine Eltern, an Abenden vor schulfreien Tagen / am Wochenende alleine unterwegs zu sein? \nBis spätestens…",
           "text_de": "Bis wann erlauben Dir Deine Eltern, an Abenden vor schulfreien Tagen / am Wochenende alleine unterwegs zu sein? \nBis spätestens…",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "erl2",
           "scale": "cat",
           "answers": [
@@ -9488,6 +9664,8 @@
           "item": "erl3",
           "text": "[de] Bis wann erlauben Dir Deine Eltern, an Abenden vor Schultagen / an Wochentagen zuhause aufzubleiben? \nBis spätestens…",
           "text_de": "Bis wann erlauben Dir Deine Eltern, an Abenden vor Schultagen / an Wochentagen zuhause aufzubleiben? \nBis spätestens…",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "erl3",
           "scale": "cat",
           "answers": [
@@ -9560,6 +9738,8 @@
           "item": "erl4",
           "text": "[de] Bis wann erlauben Dir Deine Eltern an Abenden vor schulfreien Tagen / am Wochenende zuhause aufzubleiben? \nBis spätestens…",
           "text_de": "Bis wann erlauben Dir Deine Eltern an Abenden vor schulfreien Tagen / am Wochenende zuhause aufzubleiben? \nBis spätestens…",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "erl4",
           "scale": "cat",
           "answers": [
@@ -9632,6 +9812,8 @@
           "item": "1",
           "text": "Do things without parents",
           "text_de": "Dinge ohne Eltern gemacht",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -9653,6 +9835,8 @@
           "text_de": "Was von den folgenden Dingen hast Du schon mal ohne Deine Eltern gemacht?",
           "instruction": "For each activity, please say whether you have done them with adults, e.g.: aunt/uncle, grandparents, friend's parents, youth leader on holiday, and also whether you have done them without adults, i.e.: alone, just with friends, or with siblings who are still minors.",
           "instruction_de": "Sag bitte bei jeder Tätigkeit, ob Du sie mit Erwachsenen, zum Beispiel Onkel/Tante, Großeltern, Eltern von Freunden, Ferienfreizeitbetreuer, gemacht hast und ob Du sie schon ohne Erwachsene, also ganz alleine oder nur mit Freunden oder noch nicht erwachsenen Geschwistern, gemacht hast.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -9672,6 +9856,8 @@
           "item": "moelt1",
           "text": "[de] Ich habe schon mal ohne Eltern Urlaub gemacht.",
           "text_de": "Ich habe schon mal ohne Eltern Urlaub gemacht.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "moelt1",
           "scale": "cat",
           "answers": [
@@ -9714,6 +9900,8 @@
           "item": "moelt2",
           "text": "[de] Ich habe schon mal ohne Eltern eine Zug- oder Flugreise gemacht.",
           "text_de": "Ich habe schon mal ohne Eltern eine Zug- oder Flugreise gemacht.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "moelt2",
           "scale": "cat",
           "answers": [
@@ -9756,6 +9944,8 @@
           "item": "moelt3",
           "text": "[de] Ich bin schon mal ohne Eltern zum Arzt gegangen.",
           "text_de": "Ich bin schon mal ohne Eltern zum Arzt gegangen.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "moelt3",
           "scale": "cat",
           "answers": [
@@ -9798,6 +9988,8 @@
           "item": "moelt4",
           "text": "[de] Ich habe schon mal ohne Eltern Kleidung für mich gekauft.",
           "text_de": "Ich habe schon mal ohne Eltern Kleidung für mich gekauft.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "moelt4",
           "scale": "cat",
           "answers": [
@@ -9840,6 +10032,8 @@
           "item": "moelt5",
           "text": "[de] Ich habe schon mal ohne Eltern selbst gekocht oder gebacken.",
           "text_de": "Ich habe schon mal ohne Eltern selbst gekocht oder gebacken.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "moelt5",
           "scale": "cat",
           "answers": [
@@ -9882,6 +10076,8 @@
           "item": "moelt6",
           "text": "[de] Ich habe schon mal ohne Eltern im Laden etwas umgetauscht.",
           "text_de": "Ich habe schon mal ohne Eltern im Laden etwas umgetauscht.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "moelt6",
           "scale": "cat",
           "answers": [
@@ -9924,6 +10120,8 @@
           "item": "moelt7",
           "text": "[de] Ich bin schon mal ohne Eltern ins Kino gegangen.",
           "text_de": "Ich bin schon mal ohne Eltern ins Kino gegangen.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "moelt7",
           "scale": "cat",
           "answers": [
@@ -9966,6 +10164,8 @@
           "item": "moelt8",
           "text": "[de] Ich habe schon mal ohne Eltern Alkohol getrunken.",
           "text_de": "Ich habe schon mal ohne Eltern Alkohol getrunken.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "moelt8",
           "scale": "cat",
           "answers": [
@@ -10008,6 +10208,8 @@
           "item": "moelt9",
           "text": "[de] Ich habe schon mal ohne Eltern Zigaretten geraucht.",
           "text_de": "Ich habe schon mal ohne Eltern Zigaretten geraucht.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "moelt9",
           "scale": "cat",
           "answers": [
@@ -10050,6 +10252,8 @@
           "item": "moelt10",
           "text": "[de] Ich habe schon mal ohne Eltern Wasserpfeife / Shisha geraucht.",
           "text_de": "Ich habe schon mal ohne Eltern Wasserpfeife / Shisha geraucht.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "moelt10",
           "scale": "cat",
           "answers": [
@@ -10163,6 +10367,8 @@
           "item": "elt1",
           "text": "How interested are your parents in your performance at school?",
           "text_de": "Wie sehr interessieren sich Deine Eltern für Deine Leistungen in der Schule?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2007",
           "concept": "elt1",
           "scale": "cat",
           "answers": [
@@ -11371,6 +11577,7 @@
           "item": "str6",
           "text": "[de] Wie oft kommt es vor, dass Du Dich mit Deinen Freunden streitest?",
           "text_de": "Wie oft kommt es vor, dass Du Dich mit Deinen Freunden streitest?",
+          "description": "„str+Zahl“ als varfix ist nicht gestattet, daher nun streit+zahl",
           "concept": "streit6",
           "scale": "cat",
           "answers": [
@@ -11428,6 +11635,7 @@
           "item": "str3",
           "text": "[de] Wie oft kommt es vor, dass Du Dich mit Deinen Geschwistern streitest?",
           "text_de": "Wie oft kommt es vor, dass Du Dich mit Deinen Geschwistern streitest?",
+          "description": "„str+Zahl“ als varfix ist nicht gestattet, daher nun streit+zahl",
           "concept": "streit3",
           "scale": "cat",
           "answers": [
@@ -11485,6 +11693,7 @@
           "item": "str2",
           "text": "[de] Wie oft kommt es vor, dass Du Dich mit Deiner Mutter streitest?",
           "text_de": "Wie oft kommt es vor, dass Du Dich mit Deiner Mutter streitest?",
+          "description": "„str+Zahl“ als varfix ist nicht gestattet, daher nun streit+zahl",
           "concept": "streit2",
           "scale": "cat",
           "answers": [
@@ -11542,6 +11751,7 @@
           "item": "str1",
           "text": "[de] Wie oft kommt es vor, dass Du Dich mit Deinem Vater streitest?",
           "text_de": "Wie oft kommt es vor, dass Du Dich mit Deinem Vater streitest?",
+          "description": "„str+Zahl“ als varfix ist nicht gestattet, daher nun streit+zahl",
           "concept": "streit1",
           "scale": "cat",
           "answers": [
@@ -11599,6 +11809,7 @@
           "item": "str8",
           "text": "[de] Wie oft kommt es vor, dass Du Dich mit anderen Verwandten streitest?",
           "text_de": "Wie oft kommt es vor, dass Du Dich mit anderen Verwandten streitest?",
+          "description": "„str+Zahl“ als varfix ist nicht gestattet, daher nun streit+zahl",
           "concept": "streit8",
           "scale": "cat",
           "answers": [
@@ -11656,6 +11867,8 @@
           "item": "wich1",
           "text": "[de] Wie wichtig für Dein Leben ist derzeit Dein Vater?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit Dein Vater?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "wich1",
           "scale": "cat",
           "answers": [
@@ -11708,6 +11921,8 @@
           "item": "wich2",
           "text": "[de] Wie wichtig für Dein Leben ist derzeit Deine Mutter?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit Deine Mutter?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "wich2",
           "scale": "cat",
           "answers": [
@@ -11760,6 +11975,8 @@
           "item": "wich3",
           "text": "[de] Wie wichtig für Dein Leben sind derzeit Deine Geschwister?",
           "text_de": "Wie wichtig für Dein Leben sind derzeit Deine Geschwister?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "wich3",
           "scale": "cat",
           "answers": [
@@ -11812,6 +12029,8 @@
           "item": "wich4",
           "text": "[de] Wie wichtig für Dein Leben ist derzeit eine andere verwandte Person?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit eine andere verwandte Person?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "wich4",
           "scale": "cat",
           "answers": [
@@ -11864,6 +12083,8 @@
           "item": "wich5",
           "text": "[de] Wie wichtig für Dein Leben ist derzeit Deine feste Freundin / Dein fester Freund?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit Deine feste Freundin / Dein fester Freund?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "wich5",
           "scale": "cat",
           "answers": [
@@ -11916,6 +12137,8 @@
           "item": "wich6",
           "text": "[de] Wie wichtig für Dein Leben ist derzeit Deine beste Freundin / Dein bester Freund?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit Deine beste Freundin / Dein bester Freund?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "wich6",
           "scale": "cat",
           "answers": [
@@ -11968,6 +12191,8 @@
           "item": "wich8",
           "text": "[de] Wie wichtig für Dein Leben ist derzeit Deine Gruppe, der Du angehörst?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit Deine Gruppe, der Du angehörst?",
+          "description": "Jahrgänge im Filter angepasst\n\nGruppe nicht vorhanden",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "wich8",
           "scale": "cat",
           "answers": [
@@ -12020,6 +12245,8 @@
           "item": "wich7",
           "text": "[de] Wie wichtig für Dein Leben ist derzeit ein Lehrer oder eine Lehrerin?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit ein Lehrer oder eine Lehrerin?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "wich7",
           "scale": "cat",
           "answers": [
@@ -12072,6 +12299,8 @@
           "item": "wich9",
           "text": "[de] Wie wichtig für Dein Leben ist derzeit eine andere Person?",
           "text_de": "Wie wichtig für Dein Leben ist derzeit eine andere Person?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "wich9",
           "scale": "cat",
           "answers": [
@@ -12124,6 +12353,8 @@
           "item": "aebsd",
           "text": "[de] Hast Du ältere Geschwister, die in Deutschland in die Schule gehen?",
           "text_de": "Hast Du ältere Geschwister, die in Deutschland in die Schule gehen?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2007",
           "concept": "aebsd",
           "scale": "cat",
           "answers": [
@@ -12163,6 +12394,8 @@
           "text_de": "Jetzt haben wir Fragen zu drei Deiner älteren Geschwister, die in Deutschland zur Schule gehen.",
           "instruction": "If you have more than three older siblings who currently go to school in Germany, please answer for your three eldest, starting with the oldest.\nIf you have fewer than three older siblings who currently go to school in Germany, please answer for one or two of them.\nIf you're not sure how to answer, just indicate what you think.",
           "instruction_de": "Wenn Du mehr als drei ältere Geschwister hast, die in Deutschland zur Schule gehen, dann gib die Antworten bitte der Reihe nach für die drei ältesten - also den ältesten Bruder oder die älteste Schwester zuerst. \nWenn Du weniger als drei ältere Geschwister hast, die in Deutschland zur Schule gehen, gib es für ein oder zwei an. \nWenn Du Dir bei den Antworten nicht sicher bist, gib an, was Du denkst.",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "(an Jahrgang 2007) & (Q222;aebsd=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12182,6 +12415,8 @@
           "item": "bsnam1",
           "text": "[de] Jetzt zu Deinem ältesten Geschwister: \nGib bitte den Vornamen Deines Bruders oder Deiner Schwester an!",
           "text_de": "Jetzt zu Deinem ältesten Geschwister: \nGib bitte den Vornamen Deines Bruders oder Deiner Schwester an!",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "(an Jahrgang 2007) & (Q222;aebsd=1)",
           "concept": "bsnam1",
           "scale": "chr",
           "sn": 0,
@@ -12202,6 +12437,8 @@
           "item": "bss1",
           "text": "[de] Was denkst Du, welchen Schulabschluss will Dein ältester Bruder oder Deine älteste Schwester erreichen?",
           "text_de": "Was denkst Du, welchen Schulabschluss will Dein ältester Bruder oder Deine älteste Schwester erreichen?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "(an Jahrgang 2007) & (Q222;aebsd=1)",
           "concept": "bss1",
           "scale": "cat",
           "answers": [
@@ -12249,6 +12486,8 @@
           "item": "aebsw1",
           "text": "[de] Hast Du weitere ältere Geschwister?",
           "text_de": "Hast Du weitere ältere Geschwister?",
+          "description": "Filter hinzugefügt",
+          "filter": "an Jahrgang 2007",
           "concept": "aebsw1",
           "scale": "cat",
           "answers": [
@@ -12286,6 +12525,8 @@
           "item": "bsnam2",
           "text": "[de] Jetzt zu Deinem zweitältesten Geschwister: \nGib bitte den Vornamen Deines Bruders oder Deiner Schwester an!",
           "text_de": "Jetzt zu Deinem zweitältesten Geschwister: \nGib bitte den Vornamen Deines Bruders oder Deiner Schwester an!",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "(an Jahrgang 2007) & (Q222;aebsd=1)",
           "concept": "bsnam2",
           "scale": "chr",
           "sn": 0,
@@ -12306,6 +12547,8 @@
           "item": "bss2",
           "text": "[de] Was denkst Du, welchen Schulabschluss will Dein zweitältester Bruder oder Deine zweitälteste Schwester erreichen?",
           "text_de": "Was denkst Du, welchen Schulabschluss will Dein zweitältester Bruder oder Deine zweitälteste Schwester erreichen?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "(an Jahrgang 2007) & (Q222;aebsd=1)",
           "concept": "bss2",
           "scale": "cat",
           "answers": [
@@ -12353,6 +12596,8 @@
           "item": "aebsw2",
           "text": "[de] Hast Du weitere ältere Geschwister?",
           "text_de": "Hast Du weitere ältere Geschwister?",
+          "description": "Filter hinzugefügt",
+          "filter": "an Jahrgang 2007",
           "concept": "aebsw2",
           "scale": "cat",
           "answers": [
@@ -12390,6 +12635,8 @@
           "item": "bsnam3",
           "text": "[de] Jetzt zu Deinem drittältesten Geschwister: \nGib bitte den Vornamen Deines Bruders oder Deiner Schwester an!",
           "text_de": "Jetzt zu Deinem drittältesten Geschwister: \nGib bitte den Vornamen Deines Bruders oder Deiner Schwester an!",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "(an Jahrgang 2007) & (Q222;aebsd=1)",
           "concept": "bsnam3",
           "scale": "chr",
           "sn": 0,
@@ -12410,6 +12657,8 @@
           "item": "bss3",
           "text": "[de] Was denkst Du, welchen Schulabschluss will Dein drittältester Bruder oder Deine drittälteste Schwester erreichen?",
           "text_de": "Was denkst Du, welchen Schulabschluss will Dein drittältester Bruder oder Deine drittälteste Schwester erreichen?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "(an Jahrgang 2007) & (Q222;aebsd=1)",
           "concept": "bss3",
           "scale": "cat",
           "answers": [
@@ -13691,6 +13940,8 @@
           "item": "1",
           "text": "Now it's about whether you're in the following places after school.",
           "text_de": "Jetzt geht es darum, ob Du Dich nach der Schule an den folgenden Orten aufhältst.",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2007",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13712,6 +13963,8 @@
           "text_de": "Wie viele Stunden bist Du unter der Woche im Hort?",
           "instruction": "[de] Bitte nur ganze Stunden angeben! \nFalls nicht zutreffend, bitte \"0\" eintragen!",
           "instruction_de": "Bitte nur ganze Stunden angeben! \nFalls nicht zutreffend, bitte \"0\" eintragen!",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2007",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13757,6 +14010,8 @@
           "text_de": "Wie viele Stunden bist Du am Wochenende im Hort?",
           "instruction": "[de] Bitte nur ganze Stunden angeben! \nFalls nicht zutreffend, bitte \"0\" eintragen!",
           "instruction_de": "Bitte nur ganze Stunden angeben! \nFalls nicht zutreffend, bitte \"0\" eintragen!",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2007",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13802,6 +14057,8 @@
           "text_de": "Wie viele Stunden bist Du unter der Woche in einem Jugendzentrum oder Gemeindetreff?",
           "instruction": "[de] Bitte nur ganze Stunden angeben! \nFalls nicht zutreffend, bitte \"0\" eintragen!",
           "instruction_de": "Bitte nur ganze Stunden angeben! \nFalls nicht zutreffend, bitte \"0\" eintragen!",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2007",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13847,6 +14104,8 @@
           "text_de": "Wie viele Stunden bist Du am Wochenende in einem Jugendzentrum oder Gemeindetreff?",
           "instruction": "[de] Bitte nur ganze Stunden angeben! \nFalls nicht zutreffend, bitte \"0\" eintragen!",
           "instruction_de": "Bitte nur ganze Stunden angeben! \nFalls nicht zutreffend, bitte \"0\" eintragen!",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2007",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13892,6 +14151,8 @@
           "text_de": "Wie viele Stunden bist Du unter der Woche in einem Sportverein oder einer anderen Freizeiteinrichtung?",
           "instruction": "[de] Bitte nur ganze Stunden angeben! \nFalls nicht zutreffend, bitte \"0\" eintragen!",
           "instruction_de": "Bitte nur ganze Stunden angeben! \nFalls nicht zutreffend, bitte \"0\" eintragen!",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2007",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13935,6 +14196,8 @@
           "item": "1",
           "text": "[de] Wie viele Stunden bist Du am Wochenende in einem Sportverein oder einer anderen Freizeiteinrichtung?",
           "text_de": "Wie viele Stunden bist Du am Wochenende in einem Sportverein oder einer anderen Freizeiteinrichtung?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2007",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13997,6 +14260,8 @@
           "item": "1",
           "text": "Now, we'd like to know more precisely how many hours you spend doing specific things on your average weekday or on an average weekend.",
           "text_de": "Nun möchten wir noch etwas genauer wissen, wie viele Stunden Du Dich an einem durchschnittlichen Wochentag bzw. an einem durchschnittlichen Wochenende mit bestimmten Dingen beschäftigst.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14016,6 +14281,8 @@
           "item": "1",
           "text": "[de] Wie viele Stunden pro Tag schaust Du an einem Schultag / an einem Wochentag Fernsehen, DVDs oder Internet-Streams (z.B. Youtube)?",
           "text_de": "Wie viele Stunden pro Tag schaust Du an einem Schultag / an einem Wochentag Fernsehen, DVDs oder Internet-Streams (z.B. Youtube)?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q232;fz01d=1:4 | Q233;fz01a=1:4)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14059,6 +14326,8 @@
           "item": "1",
           "text": "[de] Und wie viele Stunden pro Tag schaust Du am Wochenende Fernsehen, DVDs oder Internet-Streams (z.B. Youtube)?",
           "text_de": "Und wie viele Stunden pro Tag schaust Du am Wochenende Fernsehen, DVDs oder Internet-Streams (z.B. Youtube)?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q232;fz01d=1:4 | Q233;fz01a=1:4)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14102,6 +14371,8 @@
           "item": "1",
           "text": "[de] Wie viele Stunden pro Tag verbringst Du an einem Schultag / an einem Wochentag mit Computer-, Online-, Konsolen- oder Smartphonespielen?",
           "text_de": "Wie viele Stunden pro Tag verbringst Du an einem Schultag / an einem Wochentag mit Computer-, Online-, Konsolen- oder Smartphonespielen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q234;fz02=1:4)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14145,6 +14416,8 @@
           "item": "1",
           "text": "[de] Und wie viele Stunden pro Tag verbringst Du am Wochenende mit Computer-, Online-, Konsolen- oder Smartphonespielen?",
           "text_de": "Und wie viele Stunden pro Tag verbringst Du am Wochenende mit Computer-, Online-, Konsolen- oder Smartphonespielen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q234;fz02=1:4)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14188,6 +14461,8 @@
           "item": "1",
           "text": "[de] Wie viele Stunden pro Tag verbringst Du an einem Schultag / an einem Wochentag mit Nutzen von sozialen Online-Netzwerken oder sonstigem Surfen im Internet?",
           "text_de": "Wie viele Stunden pro Tag verbringst Du an einem Schultag / an einem Wochentag mit Nutzen von sozialen Online-Netzwerken oder sonstigem Surfen im Internet?",
+          "description": "Jahrgänge im Filter angepasst\n\nFormulierung unglücklich, vielleicht besser „mit der Nutzung von sozialen Netzwerken…“ statt „mit Nutzen von sozialen Netzwerken …“, 2020 anpassen",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q235;fz21=1:4 | Q238;fz14=1:4)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14231,6 +14506,8 @@
           "item": "1",
           "text": "[de] Und wie viele Stunden pro Tag verbringst Du am Wochenende mit Nutzen von sozialen Online-Netzwerken oder sonstigem Surfen im Internet?",
           "text_de": "Und wie viele Stunden pro Tag verbringst Du am Wochenende mit Nutzen von sozialen Online-Netzwerken oder sonstigem Surfen im Internet?",
+          "description": "Jahrgänge im Filter angepasst\n\nFormulierung unglücklich, vielleicht besser „mit der Nutzung von sozialen Netzwerken…“ statt „mit Nutzen von sozialen Netzwerken …“, 2020 anpassen",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q235;fz21=1:4 | Q238;fz14=1:4)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14274,6 +14551,8 @@
           "item": "1",
           "text": "[de] Wie viele Stunden pro Tag verbringst Du an einem Schultag / an einem Wochentag mit Musikmachen?",
           "text_de": "Wie viele Stunden pro Tag verbringst Du an einem Schultag / an einem Wochentag mit Musikmachen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q240;fz04=1:4)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14317,6 +14596,8 @@
           "item": "1",
           "text": "[de] Und wie viele Stunden pro Tag verbringst Du am Wochenende mit Musikmachen?",
           "text_de": "Und wie viele Stunden pro Tag verbringst Du am Wochenende mit Musikmachen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q240;fz04=1:4)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14360,6 +14641,8 @@
           "item": "1",
           "text": "[de] Wie viele Stunden pro Tag treibst Du an einem Schultag / an einem Wochentag Sport?",
           "text_de": "Wie viele Stunden pro Tag treibst Du an einem Schultag / an einem Wochentag Sport?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q241;fz05=1:4)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14403,6 +14686,8 @@
           "item": "1",
           "text": "[de] Und wie viele Stunden pro Tag treibst Du am Wochenende Sport?",
           "text_de": "Und wie viele Stunden pro Tag treibst Du am Wochenende Sport?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q241;fz05=1:4)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14508,6 +14793,7 @@
           "item": "1",
           "text": "[de] Wie viele Deiner engen Freunde leben in Deinem Herkunftsland?",
           "text_de": "Wie viele Deiner engen Freunde leben in Deinem Herkunftsland?",
+          "filter": "(Q007;sta2=1) & (Q273;bez06>0)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14551,6 +14837,8 @@
           "item": "1",
           "text": "[de] Wie viele Deiner engen Freunde leben in Deutschland?",
           "text_de": "Wie viele Deiner engen Freunde leben in Deutschland?",
+          "description": "Itemname im Filter ergänzt",
+          "filter": "Q273;bez06>0",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14594,6 +14882,8 @@
           "item": "1",
           "text": "[de] Wie viele Deiner engen Freunde leben in einem anderen Land?",
           "text_de": "Wie viele Deiner engen Freunde leben in einem anderen Land?",
+          "description": "Itemname im Filter ergänzt",
+          "filter": "Q273;bez06>0",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14639,6 +14929,7 @@
           "text_de": "Wie viele Deiner Freunde, die in Deutschland leben, kommen aus Deutschland, wie viele kommen aus Deinem Herkunftsland und wie viele kommen aus einem anderen Land?",
           "instruction": "[de] Bitte gib jeweils die Anzahl Deiner Freunde an.",
           "instruction_de": "Bitte gib jeweils die Anzahl Deiner Freunde an.",
+          "filter": "(Q007;sta2=1) & (Q275;freud>0)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14700,6 +14991,7 @@
           "item": "freu1",
           "text": "[de] Woher kommt Dein bester Freund oder Deine beste Freundin?",
           "text_de": "Woher kommt Dein bester Freund oder Deine beste Freundin?",
+          "filter": "Q275;freud>0",
           "concept": "freu1",
           "scale": "cat",
           "answers": [
@@ -14749,6 +15041,7 @@
           "text_de": "Wie ist das mit Deinen drei besten Freunden oder Freundinnen in Deutschland, mit denen Du Dich regelmäßig triffst und die ungefähr in Deinem Alter sind? \nWelchen Schulabschluss will Dein bester Freund oder Deine beste Freundin erreichen?",
           "instruction": "[de] Wenn Du Dir bei der Antwort nicht sicher bist, gib an, was Du denkst.",
           "instruction_de": "Wenn Du Dir bei der Antwort nicht sicher bist, gib an, was Du denkst.",
+          "filter": "Q275;freud>0",
           "concept": "frs1",
           "scale": "cat",
           "answers": [
@@ -14801,6 +15094,7 @@
           "item": "freu2",
           "text": "[de] Woher kommt Dein zweitbester Freund oder Deine zweitbeste Freundin?",
           "text_de": "Woher kommt Dein zweitbester Freund oder Deine zweitbeste Freundin?",
+          "filter": "Q275;freud>0",
           "concept": "freu2",
           "scale": "cat",
           "answers": [
@@ -14850,6 +15144,7 @@
           "text_de": "Welchen Schulabschluss will Dein zweitbester Freund oder Deine zweitbeste Freundin erreichen?",
           "instruction": "[de] Wenn Du Dir bei der Antwort nicht sicher bist, gib an was Du denkst.",
           "instruction_de": "Wenn Du Dir bei der Antwort nicht sicher bist, gib an was Du denkst.",
+          "filter": "Q275;freud>0",
           "concept": "frs2",
           "scale": "cat",
           "answers": [
@@ -14902,6 +15197,7 @@
           "item": "freu3",
           "text": "[de] Woher kommt Dein drittbester Freund oder Deine drittbeste Freundin?",
           "text_de": "Woher kommt Dein drittbester Freund oder Deine drittbeste Freundin?",
+          "filter": "Q275;freud>0",
           "concept": "freu3",
           "scale": "cat",
           "answers": [
@@ -14951,6 +15247,7 @@
           "text_de": "Welchen Schulabschluss will Dein drittbester Freund oder Deine drittbeste Freundin erreichen?",
           "instruction": "[de] Wenn Du Dir bei der Antwort nicht sicher bist, gib an was Du denkst.",
           "instruction_de": "Wenn Du Dir bei der Antwort nicht sicher bist, gib an was Du denkst.",
+          "filter": "Q275;freud>0",
           "concept": "frs3",
           "scale": "cat",
           "answers": [
@@ -15003,6 +15300,7 @@
           "item": "freiznv",
           "text": "[de] Wie oft verbringst Du in Deiner Freizeit Zeit mit Personen aus Deinem Herkunftsland, die nicht mit Dir verwandt sind?",
           "text_de": "Wie oft verbringst Du in Deiner Freizeit Zeit mit Personen aus Deinem Herkunftsland, die nicht mit Dir verwandt sind?",
+          "filter": "(Q007;sta2=1)",
           "concept": "freiznv",
           "scale": "cat",
           "answers": [
@@ -15174,6 +15472,8 @@
           "item": "1",
           "text": "[de] Wie viele Personen aus Deinem Herkunftsland, mit denen Du regelmäßig Kontakt hast, hast Du seit Deiner Ankunft in Deutschland schon kennengelernt?",
           "text_de": "Wie viele Personen aus Deinem Herkunftsland, mit denen Du regelmäßig Kontakt hast, hast Du seit Deiner Ankunft in Deutschland schon kennengelernt?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "(an Jahrgang 2002) & (Q007;sta2=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15221,6 +15521,8 @@
           "item": "1",
           "text": "[de] Wie viele Deutsche, mit denen Du regelmäßig Kontakt hast, hast Du seit Deiner Ankunft in Deutschland schon kennengelernt?",
           "text_de": "Wie viele Deutsche, mit denen Du regelmäßig Kontakt hast, hast Du seit Deiner Ankunft in Deutschland schon kennengelernt?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgang 2002) & (Q007;sta2=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15268,6 +15570,8 @@
           "item": "tg1",
           "text": "[de] Erhältst Du Taschengeld oder einen regelmäßigen Zuschuss von Deinen Eltern oder anderen Verwandten?",
           "text_de": "Erhältst Du Taschengeld oder einen regelmäßigen Zuschuss von Deinen Eltern oder anderen Verwandten?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "tg1",
           "scale": "cat",
           "answers": [
@@ -15307,6 +15611,8 @@
           "text_de": "Wie viel Taschengeld oder Zuschuss erhältst Du regelmäßig pro Woche oder pro Monat?",
           "instruction": "[de] Bitte gib den Betrag entweder pro Woche oder pro Monat an!",
           "instruction_de": "Bitte gib den Betrag entweder pro Woche oder pro Monat an!",
+          "description": "Jahrgänge im Filter angepasst, Itemname im Filter ergänzt",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q289;tg1=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15359,6 +15665,8 @@
           "item": "spar1",
           "text": "[de] Kannst Du gelegentlich oder regelmäßig etwas Geld sparen, z.B. für eigene Anschaffungen oder Freizeitaktivitäten?",
           "text_de": "Kannst Du gelegentlich oder regelmäßig etwas Geld sparen, z.B. für eigene Anschaffungen oder Freizeitaktivitäten?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "spar1",
           "scale": "cat",
           "answers": [
@@ -15401,6 +15709,8 @@
           "item": "1",
           "text": "[de] Wie viel sparst Du ungefähr pro Monat?",
           "text_de": "Wie viel sparst Du ungefähr pro Monat?",
+          "description": "Jahrgänge im Filter angepasst, Itemname im Filter ergänzt",
+          "filter": "an Jahrgänge 2005 und 2002 & Q291spar1=1:2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15467,6 +15777,8 @@
           "item": "ges",
           "text": "[de] Wie würdest Du Deinen gegenwärtigen Gesundheitszustand beschreiben?",
           "text_de": "Wie würdest Du Deinen gegenwärtigen Gesundheitszustand beschreiben?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "ges",
           "scale": "cat",
           "answers": [
@@ -15609,6 +15921,8 @@
           "item": "1",
           "text": "Now, we're going to talk about the last two weeks. How often in the last two weeks have you been affected by the following problems?",
           "text_de": "Jetzt geht es um die letzten zwei Wochen. Wie oft hast Du Dich in den letzten zwei Wochen durch die folgenden Beschwerden beeinträchtigt gefühlt?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2002",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15628,6 +15942,8 @@
           "item": "depri1",
           "text": "[de] Wenig Interesse oder Freude an Deinen Tätigkeiten?",
           "text_de": "Wenig Interesse oder Freude an Deinen Tätigkeiten?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2002",
           "concept": "depri1",
           "scale": "cat",
           "answers": [
@@ -15675,6 +15991,8 @@
           "item": "depri2",
           "text": "[de] Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit?",
           "text_de": "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2002",
           "concept": "depri2",
           "scale": "cat",
           "answers": [
@@ -15722,6 +16040,8 @@
           "item": "depri3",
           "text": "[de] Nervosität, Ängstlichkeit oder Anspannung?",
           "text_de": "Nervosität, Ängstlichkeit oder Anspannung?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2002",
           "concept": "depri3",
           "scale": "cat",
           "answers": [
@@ -15769,6 +16089,8 @@
           "item": "depri4",
           "text": "[de] Nicht in der Lage sein, Sorgen zu stoppen oder zu kontrollieren?",
           "text_de": "Nicht in der Lage sein, Sorgen zu stoppen oder zu kontrollieren?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2002",
           "concept": "depri4",
           "scale": "cat",
           "answers": [
@@ -15835,6 +16157,8 @@
           "item": "pol1",
           "text": "[de] Einmal ganz allgemein gesprochen: \nWie stark interessierst Du Dich für Politik?",
           "text_de": "Einmal ganz allgemein gesprochen: \nWie stark interessierst Du Dich für Politik?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "pol1",
           "scale": "cat",
           "answers": [
@@ -15882,6 +16206,8 @@
           "item": "pol2",
           "text": "[de] Viele Leute in Deutschland neigen längere Zeit einer bestimmten Partei zu, \nauch wenn sie ab und zu eine andere Partei wählen, nicht wählen oder nicht wahlberechtigt sind. \nWie ist das bei Dir: Neigst Du einer bestimmten Partei in Deutschland zu?",
           "text_de": "Viele Leute in Deutschland neigen längere Zeit einer bestimmten Partei zu, \nauch wenn sie ab und zu eine andere Partei wählen, nicht wählen oder nicht wahlberechtigt sind. \nWie ist das bei Dir: Neigst Du einer bestimmten Partei in Deutschland zu?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "pol2",
           "scale": "cat",
           "answers": [
@@ -15919,6 +16245,8 @@
           "item": "pol3",
           "text": "[de] Welcher Partei neigst Du zu?",
           "text_de": "Welcher Partei neigst Du zu?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q302;pol2=1)",
           "concept": "pol3",
           "scale": "cat",
           "answers": [
@@ -15991,6 +16319,8 @@
           "item": "rel",
           "text": "[de] Gehörst Du einer Kirche, Religionsgemeinschaft oder Glaubensrichtung an?",
           "text_de": "Gehörst Du einer Kirche, Religionsgemeinschaft oder Glaubensrichtung an?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "rel",
           "scale": "cat",
           "answers": [
@@ -16038,6 +16368,8 @@
           "item": "relch",
           "text": "[de] Welcher christlichen Religionsgemeinschaft gehörst Du an?",
           "text_de": "Welcher christlichen Religionsgemeinschaft gehörst Du an?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q304;rel=1)",
           "concept": "relch",
           "scale": "cat",
           "answers": [
@@ -16090,6 +16422,8 @@
           "item": "relis",
           "text": "[de] Welcher islamischen Glaubensrichtung gehörst Du an?",
           "text_de": "Welcher islamischen Glaubensrichtung gehörst Du an?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q304;rel=2)",
           "concept": "relis",
           "scale": "cat",
           "answers": [
@@ -16142,6 +16476,8 @@
           "item": "relso",
           "text": "[de] Welcher Religionsgemeinschaft gehörst Du an?",
           "text_de": "Welcher Religionsgemeinschaft gehörst Du an?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q304;rel=3)",
           "concept": "relso",
           "scale": "chr",
           "sn": 0,
@@ -16177,6 +16513,8 @@
           "item": "relwz",
           "text": "[de] Unabhängig davon, ob man einer Religionsgemeinschaft angehört oder nicht, kann man religiös sein. \nWie wichtig ist Dir der Glaube beziehungsweise die Religion für Dein Wohlbefinden und Deine Zufriedenheit?",
           "text_de": "Unabhängig davon, ob man einer Religionsgemeinschaft angehört oder nicht, kann man religiös sein. \nWie wichtig ist Dir der Glaube beziehungsweise die Religion für Dein Wohlbefinden und Deine Zufriedenheit?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "relwz",
           "scale": "cat",
           "answers": [
@@ -16224,6 +16562,8 @@
           "item": "relhb",
           "text": "[de] Wie oft betest Du in etwa?",
           "text_de": "Wie oft betest Du in etwa?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "relhb",
           "scale": "cat",
           "answers": [
@@ -16276,6 +16616,8 @@
           "item": "1",
           "text": "The following is about your opinion, certain things in a family should be done more by a man or a woman.",
           "text_de": "Im Folgenden geht es darum, ob Deiner Meinung nach bestimmte Dinge in einer Familie eher vom Mann oder von der Frau erledigt werden sollten.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16295,6 +16637,8 @@
           "item": "kinda",
           "text": "[de] Wer sollte in einer Familie auf die Kinder aufpassen?",
           "text_de": "Wer sollte in einer Familie auf die Kinder aufpassen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "kinda",
           "scale": "cat",
           "answers": [
@@ -16347,6 +16691,8 @@
           "item": "koch",
           "text": "[de] Wer sollte in einer Familie kochen?",
           "text_de": "Wer sollte in einer Familie kochen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "koch",
           "scale": "cat",
           "answers": [
@@ -16399,6 +16745,8 @@
           "item": "geld",
           "text": "[de] Wer sollte in einer Familie Geld verdienen?",
           "text_de": "Wer sollte in einer Familie Geld verdienen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "geld",
           "scale": "cat",
           "answers": [
@@ -16451,6 +16799,8 @@
           "item": "putzfam",
           "text": "[de] Wer sollte in einer Familie putzen?",
           "text_de": "Wer sollte in einer Familie putzen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "putzfam",
           "scale": "cat",
           "answers": [
@@ -16503,6 +16853,8 @@
           "item": "entsch",
           "text": "[de] Wer sollte wichtige Entscheidungen für die Familie treffen?",
           "text_de": "Wer sollte wichtige Entscheidungen für die Familie treffen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "entsch",
           "scale": "cat",
           "answers": [
@@ -16557,6 +16909,8 @@
           "text_de": "Wie ist Deine Einstellung zu den folgenden Themen?",
           "instruction": "Please use the following scale when giving your answer. Value 1 means you think it's completely OK. Value 7 means you don't think it's OK at all. \nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Bitte antworte anhand der folgenden Skala. 1 bedeutet, Du findest das völlig in Ordnung, 7 bedeutet, Du findest das gar nicht in Ordnung. \nMit den Werten dazwischen kannst Du Deine Meinung abstufen.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16578,6 +16932,8 @@
           "text_de": "Wie ist Deine Einstellung dazu, als Paar zusammenzuleben, ohne verheiratet zu sein?",
           "instruction": "[de] Bitte antworte anhand der folgenden Skala. 1 bedeutet, Du findest das völlig in Ordnung, 7 bedeutet, Du findest das gar nicht in Ordnung. \nMit den Werten dazwischen kannst Du Deine Meinung abstufen.",
           "instruction_de": "Bitte antworte anhand der folgenden Skala. 1 bedeutet, Du findest das völlig in Ordnung, 7 bedeutet, Du findest das gar nicht in Ordnung. \nMit den Werten dazwischen kannst Du Deine Meinung abstufen.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "hanok14",
           "scale": "cat",
           "answers": [
@@ -16642,6 +16998,8 @@
           "text_de": "Wie ist Deine Einstellung zum Thema Scheidung?",
           "instruction": "[de] Bitte antworte anhand der folgenden Skala. 1 bedeutet, Du findest das völlig in Ordnung, 7 bedeutet, Du findest das gar nicht in Ordnung. \nMit den Werten dazwischen kannst Du Deine Meinung abstufen.",
           "instruction_de": "Bitte antworte anhand der folgenden Skala. 1 bedeutet, Du findest das völlig in Ordnung, 7 bedeutet, Du findest das gar nicht in Ordnung. \nMit den Werten dazwischen kannst Du Deine Meinung abstufen.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "hanok8",
           "scale": "cat",
           "answers": [
@@ -16706,6 +17064,8 @@
           "text_de": "Wie ist Deine Einstellung zum Thema Abtreibung?",
           "instruction": "[de] Bitte antworte anhand der folgenden Skala. 1 bedeutet, Du findest das völlig in Ordnung, 7 bedeutet, Du findest das gar nicht in Ordnung. \nMit den Werten dazwischen kannst Du Deine Meinung abstufen.",
           "instruction_de": "Bitte antworte anhand der folgenden Skala. 1 bedeutet, Du findest das völlig in Ordnung, 7 bedeutet, Du findest das gar nicht in Ordnung. \nMit den Werten dazwischen kannst Du Deine Meinung abstufen.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "hanok7",
           "scale": "cat",
           "answers": [
@@ -16770,6 +17130,8 @@
           "text_de": "Wie ist Deine Einstellung zum Thema Homosexualität?",
           "instruction": "[de] Bitte antworte anhand der folgenden Skala. 1 bedeutet, Du findest das völlig in Ordnung, 7 bedeutet, Du findest das gar nicht in Ordnung. \nMit den Werten dazwischen kannst Du Deine Meinung abstufen.",
           "instruction_de": "Bitte antworte anhand der folgenden Skala. 1 bedeutet, Du findest das völlig in Ordnung, 7 bedeutet, Du findest das gar nicht in Ordnung. \nMit den Werten dazwischen kannst Du Deine Meinung abstufen.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "hanok5",
           "scale": "cat",
           "answers": [
@@ -16832,6 +17194,8 @@
           "item": "gef15",
           "text": "[de] Kommen wir noch einmal darauf zurück, wie es war, als Du in Deutschland angekommen bist:\n \nHattest Du bei Deiner Ankunft in Deutschland das Gefühl, willkommen zu sein?",
           "text_de": "Kommen wir noch einmal darauf zurück, wie es war, als Du in Deutschland angekommen bist:\n \nHattest Du bei Deiner Ankunft in Deutschland das Gefühl, willkommen zu sein?",
+          "description": "Jahrgänge im Filter angepasst;  Filter verändert",
+          "filter": "(an Jahrgänge 2005 und 2002, wenn PL1;1=2) & (Q007;sta2=1 | Q007;sta1=-1)",
           "concept": "gef15",
           "scale": "cat",
           "answers": [
@@ -16884,6 +17248,8 @@
           "item": "gef16",
           "text": "[de] Und wie ist das jetzt: Fühlst Du Dich heute in Deutschland willkommen?",
           "text_de": "Und wie ist das jetzt: Fühlst Du Dich heute in Deutschland willkommen?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q007;sta2=1 | Q007;sta1=-1)",
           "concept": "gef16",
           "scale": "cat",
           "answers": [
@@ -16936,6 +17302,8 @@
           "item": "na15",
           "text": "[de] Wie stark fühlst Du Dich mit Deinem Herkunftsland verbunden?",
           "text_de": "Wie stark fühlst Du Dich mit Deinem Herkunftsland verbunden?",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "(an Jahrgänge 2005 und 2002) & (Q007;sta2=1 | Q007;sta1=-1)",
           "concept": "na15",
           "scale": "cat",
           "answers": [
@@ -16990,6 +17358,7 @@
           "text_de": "Inwieweit stimmst Du der folgenden Aussage zu?\n\nIch denke oft an positive Sachen, die ich in der Zeit vor meinem Zuzug nach Deutschland erlebt habe.",
           "instruction": "[de] Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
+          "filter": "(Q007;sta2=1 | Q007;sta1=-1)",
           "concept": "vposvz",
           "scale": "cat",
           "answers": [
@@ -17054,6 +17423,7 @@
           "text_de": "Inwieweit stimmst Du der folgenden Aussage zu?\n\nIch denke oft an negative Sachen, die ich in der Zeit vor meinem Zuzug nach Deutschland erlebt habe.",
           "instruction": "[de] Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
+          "filter": "(Q007;sta2=1 | Q007;sta1=-1)",
           "concept": "vnegvz",
           "scale": "cat",
           "answers": [
@@ -17116,6 +17486,7 @@
           "item": "gef14",
           "text": "[de] Wie oft hast Du das Gefühl, dass Du Menschen aus Deinem Herkunftsland vermisst?",
           "text_de": "Wie oft hast Du das Gefühl, dass Du Menschen aus Deinem Herkunftsland vermisst?",
+          "filter": "(Q007;sta2=1 | Q007;sta1=-1)",
           "concept": "gef14",
           "scale": "cat",
           "answers": [
@@ -17168,6 +17539,8 @@
           "item": "gef11",
           "text": "[de] Wie oft hast Du das Gefühl, dass Dir die Gesellschaft anderer fehlt?",
           "text_de": "Wie oft hast Du das Gefühl, dass Dir die Gesellschaft anderer fehlt?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2002",
           "concept": "gef11",
           "scale": "cat",
           "answers": [
@@ -17220,6 +17593,8 @@
           "item": "gef12",
           "text": "[de] Wie oft hast Du das Gefühl, außen vor zu sein?",
           "text_de": "Wie oft hast Du das Gefühl, außen vor zu sein?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2002",
           "concept": "gef12",
           "scale": "cat",
           "answers": [
@@ -17272,6 +17647,8 @@
           "item": "gef13",
           "text": "[de] Wie oft hast Du das Gefühl, sozial isoliert zu sein?",
           "text_de": "Wie oft hast Du das Gefühl, sozial isoliert zu sein?",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2002",
           "concept": "gef13",
           "scale": "cat",
           "answers": [
@@ -17326,6 +17703,8 @@
           "text_de": "Im Folgenden kommen eine Reihe von Aussagen. Inwieweit stimmst Du diesen Aussagen zu? \nIch habe eine positive Einstellung zu mir selbst.",
           "instruction": "[de] Der Wert 1 bedeutet: trifft überhaupt nicht zu. \nDer Wert 7 bedeutet: trifft voll zu. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
           "instruction_de": "Der Wert 1 bedeutet: trifft überhaupt nicht zu. \nDer Wert 7 bedeutet: trifft voll zu. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2002",
           "concept": "mas11",
           "scale": "cat",
           "answers": [
@@ -17390,6 +17769,8 @@
           "text_de": "Ich versuche mir etwas einfallen zu lassen, wie ich schwierige Situationen verändern kann.",
           "instruction": "[de] Der Wert 1 bedeutet: trifft überhaupt nicht zu. \nDer Wert 7 bedeutet: trifft voll zu. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
           "instruction_de": "Der Wert 1 bedeutet: trifft überhaupt nicht zu. \nDer Wert 7 bedeutet: trifft voll zu. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2002",
           "concept": "mas16",
           "scale": "cat",
           "answers": [
@@ -17454,6 +17835,8 @@
           "text_de": "Egal, was mir passiert, ich glaube, ich habe meine Reaktionen unter Kontrolle.",
           "instruction": "[de] Der Wert 1 bedeutet: trifft überhaupt nicht zu. \nDer Wert 7 bedeutet: trifft voll zu. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
           "instruction_de": "Der Wert 1 bedeutet: trifft überhaupt nicht zu. \nDer Wert 7 bedeutet: trifft voll zu. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2002",
           "concept": "mas17",
           "scale": "cat",
           "answers": [
@@ -17518,6 +17901,8 @@
           "text_de": "Ich glaube, ich kann mich weiterentwickeln, wenn ich mich mit schwierigen Situationen auseinandersetze.",
           "instruction": "[de] Der Wert 1 bedeutet: trifft überhaupt nicht zu. \nDer Wert 7 bedeutet: trifft voll zu. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
           "instruction_de": "Der Wert 1 bedeutet: trifft überhaupt nicht zu. \nDer Wert 7 bedeutet: trifft voll zu. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2002",
           "concept": "mas18",
           "scale": "cat",
           "answers": [
@@ -17582,6 +17967,8 @@
           "text_de": "Ich suche aktiv nach Wegen, um die Verluste auszugleichen, die mir in meinem Leben widerfahren sind.",
           "instruction": "[de] Der Wert 1 bedeutet: trifft überhaupt nicht zu. \nDer Wert 7 bedeutet: trifft voll zu. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
           "instruction_de": "Der Wert 1 bedeutet: trifft überhaupt nicht zu. \nDer Wert 7 bedeutet: trifft voll zu. \nMit den Werten dazwischen kannst Du Deine Einschätzung abstufen.",
+          "description": "Jahrgang im Filter angepasst",
+          "filter": "an Jahrgang 2002",
           "concept": "mas19",
           "scale": "cat",
           "answers": [
@@ -17663,6 +18050,8 @@
           "item": "1",
           "text": "The following statements characterise different attitudes regarding life and future. To what extent would you agree with the following statements?",
           "text_de": "Die folgenden Aussagen kennzeichnen verschiedene Einstellungen zum Leben und zur Zukunft. \nBitte sag uns, inwieweit Du jeweils zustimmst.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -17684,6 +18073,8 @@
           "text_de": "Was man im Leben erreicht, ist in erster Linie eine Frage von Schicksal oder Glück.",
           "instruction": "[de] Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: stimme überhaupt nicht zu. \nDer Wert 7 bedeutet: stimme voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: stimme überhaupt nicht zu. \nDer Wert 7 bedeutet: stimme voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "zu03",
           "scale": "cat",
           "answers": [
@@ -17748,6 +18139,8 @@
           "text_de": "Erfolg muss man sich hart erarbeiten.",
           "instruction": "[de] Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: stimme überhaupt nicht zu. \nDer Wert 7 bedeutet: stimme voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
           "instruction_de": "Antworte bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: stimme überhaupt nicht zu. \nDer Wert 7 bedeutet: stimme voll zu. \nMit den Werten zwischen 1 und 7 kannst Du Deine Meinung abstufen.",
+          "description": "Jahrgänge im Filter angepasst",
+          "filter": "an Jahrgänge 2005 und 2002",
           "concept": "zu05",
           "scale": "cat",
           "answers": [
@@ -18143,6 +18536,7 @@
           "item": "pnrfest1",
           "text": "[de] Unveränderliche Personennr. Befragungsperson",
           "text_de": "Unveränderliche Personennr. Befragungsperson",
+          "description": "Kinder beantworten selbst, daher keine extra ID für Kinder, bitte pnrfest und nicht pnrfest1",
           "concept": "pnrfest",
           "scale": "int",
           "sn": 0,
@@ -18163,6 +18557,7 @@
           "item": "pnrfest2",
           "text": "[de] Unveränderliche Personennr. Kind",
           "text_de": "Unveränderliche Personennr. Kind",
+          "description": "Kinder beantworten selbst, daher keine extra ID für Kinder",
           "concept": "pnrfest2",
           "scale": "int",
           "sn": 0,
@@ -18203,6 +18598,7 @@
           "item": "krespid",
           "text": "[de] Unveränderliche Personennr. Kind",
           "text_de": "Unveränderliche Personennr. Kind",
+          "description": "Kinder beantworten selbst, daher keine extra ID für Kinder",
           "concept": "krespid",
           "scale": "int",
           "sn": 0,

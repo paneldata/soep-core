@@ -1,11 +1,11 @@
 {
   "study": "soep-core",
-  "name": "soep-core-2019-hh2",
-  "label": "Household (CAPI) 2019",
-  "label_de": "Haushalt (CAPI) 2019",
+  "name": "soep-core-2019-hh3",
+  "label": "Household (CAWI) 2019",
+  "label_de": "Haushalt (CAWI) 2019",
   "analysis_unit": "h",
   "period": 2019.0,
-  "instrument": "soep-core-2019-hh2",
+  "instrument": "soep-core-2019-hh3",
   "questions": {
     "Intro": {
       "question": "Intro",
@@ -23,7 +23,7 @@
         }
       ],
       "sn": 0,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "0": {
@@ -77,7 +77,7 @@
         }
       ],
       "sn": 1,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "1": {
@@ -120,7 +120,7 @@
         }
       ],
       "sn": 2,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "2": {
@@ -173,7 +173,7 @@
         }
       ],
       "sn": 3,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "3": {
@@ -242,7 +242,7 @@
         }
       ],
       "sn": 4,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "4": {
@@ -479,7 +479,7 @@
         }
       ],
       "sn": 5,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "5": {
@@ -526,7 +526,7 @@
         }
       ],
       "sn": 6,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "6": {
@@ -583,7 +583,7 @@
         }
       ],
       "sn": 7,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "7": {
@@ -646,7 +646,7 @@
         }
       ],
       "sn": 8,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "8": {
@@ -656,29 +656,39 @@
       "label_de": "Können Sie das Jahr, in dem das Haus erbaut wurde, auch genau nennen? ",
       "items": [
         {
-          "item": "1",
+          "item": "hbauj",
           "text": "Can you provide the exact year in which the building was built?",
           "text_de": "Können Sie das Jahr, in dem das Haus erbaut wurde, auch genau nennen? ",
-          "scale": "txt",
+          "concept": "hbauj",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
+            }
+          ],
           "sn": 0,
           "number": ""
         },
         {
           "item": "hwohn09a",
           "text": "Please state:",
-          "text_de": "Ja, und zwar: im Jahr: ",
+          "text_de": "[Ja, und zwar:] im Jahr: ",
+          "filter": "8;hbauj=1",
           "concept": "hwohn09a",
           "scale": "int",
           "sn": 1,
-          "number": ""
-        },
-        {
-          "item": "hbauj",
-          "text": "[de] Nein",
-          "text_de": "Nein",
-          "concept": "hbauj",
-          "scale": "bin",
-          "sn": 2,
           "number": ""
         },
         {
@@ -686,12 +696,12 @@
           "text": "[de] keine Angabe",
           "text_de": "keine Angabe",
           "scale": "bin",
-          "sn": 3,
+          "sn": 2,
           "number": ""
         }
       ],
       "sn": 9,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "9": {
@@ -729,7 +739,7 @@
         }
       ],
       "sn": 10,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "10": {
@@ -794,7 +804,7 @@
         }
       ],
       "sn": 11,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "11": {
@@ -826,7 +836,7 @@
         }
       ],
       "sn": 12,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_9.1": {
@@ -845,7 +855,7 @@
         }
       ],
       "sn": 13,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "12": {
@@ -881,7 +891,7 @@
         }
       ],
       "sn": 14,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_9.2": {
@@ -900,7 +910,7 @@
         }
       ],
       "sn": 15,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_9.3": {
@@ -919,7 +929,7 @@
         }
       ],
       "sn": 16,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_9.4": {
@@ -938,7 +948,7 @@
         }
       ],
       "sn": 17,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "13": {
@@ -977,7 +987,7 @@
         }
       ],
       "sn": 18,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_10.1": {
@@ -996,7 +1006,7 @@
         }
       ],
       "sn": 19,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_10.2": {
@@ -1015,7 +1025,7 @@
         }
       ],
       "sn": 20,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_10.3": {
@@ -1034,7 +1044,7 @@
         }
       ],
       "sn": 21,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_10.4": {
@@ -1053,7 +1063,7 @@
         }
       ],
       "sn": 22,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_10.5": {
@@ -1072,7 +1082,7 @@
         }
       ],
       "sn": 23,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "14": {
@@ -1119,7 +1129,7 @@
         }
       ],
       "sn": 24,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "15": {
@@ -1161,7 +1171,7 @@
         }
       ],
       "sn": 25,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "16": {
@@ -1789,7 +1799,7 @@
         }
       ],
       "sn": 26,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "17": {
@@ -1822,7 +1832,7 @@
         }
       ],
       "sn": 27,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "18": {
@@ -1909,7 +1919,7 @@
         }
       ],
       "sn": 28,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "19": {
@@ -1952,7 +1962,7 @@
         }
       ],
       "sn": 29,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "20": {
@@ -1985,7 +1995,7 @@
         }
       ],
       "sn": 30,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "21": {
@@ -2023,7 +2033,7 @@
         }
       ],
       "sn": 31,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_19.1": {
@@ -2042,7 +2052,7 @@
         }
       ],
       "sn": 32,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "22": {
@@ -2075,7 +2085,7 @@
         }
       ],
       "sn": 33,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "23": {
@@ -2113,7 +2123,7 @@
         }
       ],
       "sn": 34,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON-21.1": {
@@ -2132,7 +2142,7 @@
         }
       ],
       "sn": 35,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_21.2": {
@@ -2151,7 +2161,7 @@
         }
       ],
       "sn": 36,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "24": {
@@ -2198,7 +2208,7 @@
         }
       ],
       "sn": 37,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_22.1": {
@@ -2217,7 +2227,7 @@
         }
       ],
       "sn": 38,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "25": {
@@ -2265,7 +2275,7 @@
         }
       ],
       "sn": 39,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_23.1": {
@@ -2284,7 +2294,7 @@
         }
       ],
       "sn": 40,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "26": {
@@ -2329,7 +2339,7 @@
         }
       ],
       "sn": 41,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_24.1": {
@@ -2348,7 +2358,7 @@
         }
       ],
       "sn": 42,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "27": {
@@ -2395,7 +2405,7 @@
         }
       ],
       "sn": 43,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_25.1": {
@@ -2414,7 +2424,7 @@
         }
       ],
       "sn": 44,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "28": {
@@ -2452,7 +2462,7 @@
         }
       ],
       "sn": 45,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "Intro1": {
@@ -2471,7 +2481,7 @@
         }
       ],
       "sn": 46,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "29": {
@@ -2503,7 +2513,7 @@
         }
       ],
       "sn": 47,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "30": {
@@ -2537,7 +2547,7 @@
         }
       ],
       "sn": 48,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "31": {
@@ -2589,7 +2599,7 @@
         }
       ],
       "sn": 49,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "32": {
@@ -2646,7 +2656,7 @@
         }
       ],
       "sn": 50,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_30.1": {
@@ -2665,7 +2675,7 @@
         }
       ],
       "sn": 51,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "33": {
@@ -2697,7 +2707,7 @@
         }
       ],
       "sn": 52,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "34": {
@@ -2744,7 +2754,7 @@
         }
       ],
       "sn": 53,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_32.1": {
@@ -2763,7 +2773,7 @@
         }
       ],
       "sn": 54,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "35": {
@@ -2812,7 +2822,7 @@
         }
       ],
       "sn": 55,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "36": {
@@ -2849,7 +2859,7 @@
         }
       ],
       "sn": 56,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_34.1": {
@@ -2868,7 +2878,7 @@
         }
       ],
       "sn": 57,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "37": {
@@ -2917,7 +2927,7 @@
         }
       ],
       "sn": 58,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "38": {
@@ -2954,7 +2964,7 @@
         }
       ],
       "sn": 59,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_36.1": {
@@ -2973,7 +2983,7 @@
         }
       ],
       "sn": 60,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "Intro2": {
@@ -2992,7 +3002,7 @@
         }
       ],
       "sn": 61,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "39": {
@@ -3027,7 +3037,7 @@
         }
       ],
       "sn": 62,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "40": {
@@ -3065,7 +3075,7 @@
         }
       ],
       "sn": 63,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_39.1": {
@@ -3084,7 +3094,7 @@
         }
       ],
       "sn": 64,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "41": {
@@ -3117,7 +3127,7 @@
         }
       ],
       "sn": 65,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "42": {
@@ -3155,7 +3165,7 @@
         }
       ],
       "sn": 66,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_41.1": {
@@ -3174,7 +3184,7 @@
         }
       ],
       "sn": 67,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "43": {
@@ -3222,7 +3232,7 @@
         }
       ],
       "sn": 68,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "44": {
@@ -3250,7 +3260,7 @@
         }
       ],
       "sn": 69,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_43.1": {
@@ -3269,7 +3279,7 @@
         }
       ],
       "sn": 70,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "45": {
@@ -3301,7 +3311,7 @@
         }
       ],
       "sn": 71,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "46": {
@@ -3339,7 +3349,7 @@
         }
       ],
       "sn": 72,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "47": {
@@ -3376,18 +3386,7 @@
           ],
           "sn": 0,
           "number": ""
-        }
-      ],
-      "sn": 73,
-      "instrument": "soep-core-2019-hh2",
-      "study": "soep-core"
-    },
-    "48": {
-      "question": "48",
-      "name": "48",
-      "label": "How much do you pay per month on these loans?",
-      "label_de": "Wie hoch ist der monatliche Betrag den Sie für die Rückzahlung dieser Kredite (einschließlich Zinsen) verwendet müssen?",
-      "items": [
+        },
         {
           "item": "1",
           "text": "How much do you pay per month on these loans?",
@@ -3395,16 +3394,27 @@
           "instruction": "If you don't know the exact amount, please estimate!",
           "instruction_de": "Falls nicht genau bekannt: bitte schätzen!",
           "scale": "txt",
-          "sn": 0,
+          "sn": 1,
           "number": ""
-        },
+        }
+      ],
+      "sn": 73,
+      "instrument": "soep-core-2019-hh3",
+      "study": "soep-core"
+    },
+    "48": {
+      "question": "48",
+      "name": "48",
+      "label": "Loan repayment (including interest payments) ... euros per month",
+      "label_de": "Kredit-Rückzahlung (einschließlich Zinsen)  ...  Euro pro Monat",
+      "items": [
         {
           "item": "hkred2",
           "text": "Loan repayment (including interest payments) ... euros per month",
           "text_de": "Kredit-Rückzahlung (einschließlich Zinsen)  ...  Euro pro Monat",
           "concept": "hkred2",
           "scale": "int",
-          "sn": 1,
+          "sn": 0,
           "number": ""
         },
         {
@@ -3412,12 +3422,12 @@
           "text": "[de] keine Angabe",
           "text_de": "keine Angabe",
           "scale": "bin",
-          "sn": 2,
+          "sn": 1,
           "number": ""
         }
       ],
       "sn": 74,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_47.1": {
@@ -3436,7 +3446,7 @@
         }
       ],
       "sn": 75,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "49": {
@@ -3469,7 +3479,7 @@
         }
       ],
       "sn": 76,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "50": {
@@ -3507,7 +3517,7 @@
         }
       ],
       "sn": 77,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "51": {
@@ -3540,7 +3550,7 @@
         }
       ],
       "sn": 78,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "52": {
@@ -3578,7 +3588,7 @@
         }
       ],
       "sn": 79,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "53": {
@@ -3611,7 +3621,7 @@
         }
       ],
       "sn": 80,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "54": {
@@ -3649,7 +3659,7 @@
         }
       ],
       "sn": 81,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "55": {
@@ -3744,7 +3754,7 @@
         }
       ],
       "sn": 82,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "56": {
@@ -3800,7 +3810,7 @@
         }
       ],
       "sn": 83,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "57": {
@@ -3846,7 +3856,7 @@
         }
       ],
       "sn": 84,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_57.1": {
@@ -3865,7 +3875,7 @@
         }
       ],
       "sn": 85,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "58": {
@@ -3917,7 +3927,7 @@
         }
       ],
       "sn": 86,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "59": {
@@ -4329,6 +4339,7 @@
           "item": "23",
           "text": "[de] keine Angabe",
           "text_de": "keine Angabe",
+          "concept": "zlsh1",
           "scale": "bin",
           "sn": 34,
           "number": ""
@@ -4502,7 +4513,7 @@
         }
       ],
       "sn": 87,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.1": {
@@ -4521,7 +4532,7 @@
         }
       ],
       "sn": 88,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.2": {
@@ -4540,7 +4551,7 @@
         }
       ],
       "sn": 89,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.4": {
@@ -4559,7 +4570,7 @@
         }
       ],
       "sn": 90,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.5": {
@@ -4578,7 +4589,7 @@
         }
       ],
       "sn": 91,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.6": {
@@ -4597,7 +4608,7 @@
         }
       ],
       "sn": 92,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.7": {
@@ -4616,7 +4627,7 @@
         }
       ],
       "sn": 93,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.8": {
@@ -4635,7 +4646,7 @@
         }
       ],
       "sn": 94,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.9": {
@@ -4654,7 +4665,7 @@
         }
       ],
       "sn": 95,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.10": {
@@ -4673,7 +4684,7 @@
         }
       ],
       "sn": 96,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.11": {
@@ -4692,7 +4703,7 @@
         }
       ],
       "sn": 97,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.12": {
@@ -4711,7 +4722,7 @@
         }
       ],
       "sn": 98,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.13": {
@@ -4730,7 +4741,7 @@
         }
       ],
       "sn": 99,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.14": {
@@ -4749,7 +4760,7 @@
         }
       ],
       "sn": 100,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.15": {
@@ -4768,7 +4779,7 @@
         }
       ],
       "sn": 101,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.16": {
@@ -4787,7 +4798,7 @@
         }
       ],
       "sn": 102,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_59.17": {
@@ -4806,7 +4817,7 @@
         }
       ],
       "sn": 103,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "60": {
@@ -5260,12 +5271,12 @@
         }
       ],
       "sn": 104,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.0": {
-      "question": "CON_60.0",
-      "name": "CON_60.0",
+    "CON_60.1": {
+      "question": "CON_60.1",
+      "name": "CON_60.1",
       "label": "[de] Ihre Angabe: \"Derzeit \"Betrag für Anzahl Kind(er)\" erscheint etwas niedrig bzw. hoch. Müssen wir sie vielleicht korrigieren?",
       "label_de": "Ihre Angabe: \"Derzeit \"Betrag für Anzahl Kind(er)\" erscheint etwas niedrig bzw. hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
@@ -5279,12 +5290,12 @@
         }
       ],
       "sn": 105,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.1": {
-      "question": "CON_60.1",
-      "name": "CON_60.1",
+    "CON_60.2": {
+      "question": "CON_60.2",
+      "name": "CON_60.2",
       "label": "[de] Bitte erklären Sie noch, warum der Betrag beim Kindergeld so noedrig bzw. hoch ist!",
       "label_de": "Bitte erklären Sie noch, warum der Betrag beim Kindergeld so noedrig bzw. hoch ist!",
       "items": [
@@ -5298,12 +5309,12 @@
         }
       ],
       "sn": 106,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.2": {
-      "question": "CON_60.2",
-      "name": "CON_60.2",
+    "CON_60.3": {
+      "question": "CON_60.3",
+      "name": "CON_60.3",
       "label": "[de] Ihre Angabe: \">9 Kinder\" erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "label_de": "Ihre Angabe: \">9 Kinder\" erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
@@ -5317,12 +5328,12 @@
         }
       ],
       "sn": 107,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.3": {
-      "question": "CON_60.3",
-      "name": "CON_60.3",
+    "CON_60.4": {
+      "question": "CON_60.4",
+      "name": "CON_60.4",
       "label": "[de] Ihre Angabe: \"Derzeit \"{HDKZ2} Euro Kindergeldzuschlag pro Monat\" erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "label_de": "Ihre Angabe: \"Derzeit \"{HDKZ2} Euro Kindergeldzuschlag pro Monat\" erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
@@ -5336,12 +5347,12 @@
         }
       ],
       "sn": 108,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.4": {
-      "question": "CON_60.4",
-      "name": "CON_60.4",
+    "CON_60.5": {
+      "question": "CON_60.5",
+      "name": "CON_60.5",
       "label": "[de] Bitte erklären Sie noch, warum der Betrag beim Kindergeldzuschlag so hoch ist!",
       "label_de": "Bitte erklären Sie noch, warum der Betrag beim Kindergeldzuschlag so hoch ist!",
       "items": [
@@ -5355,12 +5366,12 @@
         }
       ],
       "sn": 109,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.5": {
-      "question": "CON_60.5",
-      "name": "CON_60.5",
+    "CON_60.6": {
+      "question": "CON_60.6",
+      "name": "CON_60.6",
       "label": "[de] Ihre Angabe: \"Derzeit {HDBG2} Euro Betreuungsgeld  pro Monat\" erscheint etwas niedrig bzw. hoch. Müssen wir sie vielleicht korrigieren?",
       "label_de": "Ihre Angabe: \"Derzeit {HDBG2} Euro Betreuungsgeld  pro Monat\" erscheint etwas niedrig bzw. hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
@@ -5374,12 +5385,12 @@
         }
       ],
       "sn": 110,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.6": {
-      "question": "CON_60.6",
-      "name": "CON_60.6",
+    "CON_60.7": {
+      "question": "CON_60.7",
+      "name": "CON_60.7",
       "label": "[de] Bitte erklären Sie noch, warum der Betrag beim Betreuungsgeld so niedrig bzw. hoch ist!",
       "label_de": "Bitte erklären Sie noch, warum der Betrag beim Betreuungsgeld so niedrig bzw. hoch ist!",
       "items": [
@@ -5393,12 +5404,12 @@
         }
       ],
       "sn": 111,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.7": {
-      "question": "CON_60.7",
-      "name": "CON_60.7",
+    "CON_60.8": {
+      "question": "CON_60.8",
+      "name": "CON_60.8",
       "label": "[de] Ihre Angabe: \"Derzeit < 10 bzw. > 2000 Euro Arbeitslosengeld II (Hartz IV) pro Monat einschließlich Sozialgeld und Unterkunftskosten\" erscheint etwas niedrig bzw. hoch. Müssen wir sie vielleicht korrigieren?",
       "label_de": "Ihre Angabe: \"Derzeit < 10 bzw. > 2000 Euro Arbeitslosengeld II (Hartz IV) pro Monat einschließlich Sozialgeld und Unterkunftskosten\" erscheint etwas niedrig bzw. hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
@@ -5412,12 +5423,12 @@
         }
       ],
       "sn": 112,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.8": {
-      "question": "CON_60.8",
-      "name": "CON_60.8",
+    "CON_60.9": {
+      "question": "CON_60.9",
+      "name": "CON_60.9",
       "label": "[de] Bitte erklären Sie noch, warum der Betrag beim Arbeitslosengeld II (Hartz IV) pro Monat einschließlich Sozialgeld und Unterkunftskosten so niedrig bzw. hoch ist!",
       "label_de": "Bitte erklären Sie noch, warum der Betrag beim Arbeitslosengeld II (Hartz IV) pro Monat einschließlich Sozialgeld und Unterkunftskosten so niedrig bzw. hoch ist!",
       "items": [
@@ -5431,12 +5442,12 @@
         }
       ],
       "sn": 113,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.9": {
-      "question": "CON_60.9",
-      "name": "CON_60.9",
+    "CON_60.10": {
+      "question": "CON_60.10",
+      "name": "CON_60.10",
       "label": "[de] Ihre Angabe: \"Derzeit < 123 bzw. > 2000 Euro pro Monat Leistungen der Pflegeversicherung\" erscheint etwas niedrig bzw. hoch. Müssen wir sie vielleicht korrigieren?",
       "label_de": "Ihre Angabe: \"Derzeit < 123 bzw. > 2000 Euro pro Monat Leistungen der Pflegeversicherung\" erscheint etwas niedrig bzw. hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
@@ -5450,12 +5461,12 @@
         }
       ],
       "sn": 114,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.10": {
-      "question": "CON_60.10",
-      "name": "CON_60.10",
+    "CON_60.11": {
+      "question": "CON_60.11",
+      "name": "CON_60.11",
       "label": "[de] Bitte erklären Sie noch, warum der Betrag  von der Pflegeversicherung so niedrig bzw. hoch ist!",
       "label_de": "Bitte erklären Sie noch, warum der Betrag  von der Pflegeversicherung so niedrig bzw. hoch ist!",
       "items": [
@@ -5469,12 +5480,12 @@
         }
       ],
       "sn": 115,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.11": {
-      "question": "CON_60.11",
-      "name": "CON_60.11",
+    "CON_60.12": {
+      "question": "CON_60.12",
+      "name": "CON_60.12",
       "label": "[de] Ihre Angabe: \"Derzeit < 25 bzw. > 1500 Euro pro Monat laufende Hilfe zum Lebensunterhalt / Hilfe in besonderen Lebenslagen\" erscheint etwas niedrig bzw. hoch. Müssen wir sie vielleicht korrigieren?",
       "label_de": "Ihre Angabe: \"Derzeit < 25 bzw. > 1500 Euro pro Monat laufende Hilfe zum Lebensunterhalt / Hilfe in besonderen Lebenslagen\" erscheint etwas niedrig bzw. hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
@@ -5488,12 +5499,12 @@
         }
       ],
       "sn": 116,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.12": {
-      "question": "CON_60.12",
-      "name": "CON_60.12",
+    "CON_60.13": {
+      "question": "CON_60.13",
+      "name": "CON_60.13",
       "label": "[de] Bitte erklären Sie noch, warum der Betrag bei der laufenden Hilfe zum Lebensunterhalt / Hilfe in besonderen Lebenslagen so niedrig bzw. hoch ist!",
       "label_de": "Bitte erklären Sie noch, warum der Betrag bei der laufenden Hilfe zum Lebensunterhalt / Hilfe in besonderen Lebenslagen so niedrig bzw. hoch ist!",
       "items": [
@@ -5507,12 +5518,12 @@
         }
       ],
       "sn": 117,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.13": {
-      "question": "CON_60.13",
-      "name": "CON_60.13",
+    "CON_60.14": {
+      "question": "CON_60.14",
+      "name": "CON_60.14",
       "label": "[de] Ihre Angabe: \"Derzeit < 10 bzw. > 1000 Euro pro Monat Grundsicherung im Alter und bei Erwerbsminderung\" erscheint etwas niedrig bzw. hoch. Müssen wir sie vielleicht korrigieren?",
       "label_de": "Ihre Angabe: \"Derzeit < 10 bzw. > 1000 Euro pro Monat Grundsicherung im Alter und bei Erwerbsminderung\" erscheint etwas niedrig bzw. hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
@@ -5526,12 +5537,12 @@
         }
       ],
       "sn": 118,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.14": {
-      "question": "CON_60.14",
-      "name": "CON_60.14",
+    "CON_60.15": {
+      "question": "CON_60.15",
+      "name": "CON_60.15",
       "label": "[de] Bitte erklären Sie noch, warum der Betrag bei der Grundsicherung im Alter und bei Erwerbsminderung so niedrig bzw. hoch ist!",
       "label_de": "Bitte erklären Sie noch, warum der Betrag bei der Grundsicherung im Alter und bei Erwerbsminderung so niedrig bzw. hoch ist!",
       "items": [
@@ -5545,12 +5556,12 @@
         }
       ],
       "sn": 119,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.15": {
-      "question": "CON_60.15",
-      "name": "CON_60.15",
+    "CON_60.16": {
+      "question": "CON_60.16",
+      "name": "CON_60.16",
       "label": "[de] Ihre Angabe: \"Derzeit > 600 Euro Wohngeld und Lastenzuschuss\" erscheint mir etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "label_de": "Ihre Angabe: \"Derzeit > 600 Euro Wohngeld und Lastenzuschuss\" erscheint mir etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
@@ -5564,12 +5575,12 @@
         }
       ],
       "sn": 120,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.16": {
-      "question": "CON_60.16",
-      "name": "CON_60.16",
+    "CON_60.17": {
+      "question": "CON_60.17",
+      "name": "CON_60.17",
       "label": "[de] Bitte erklären Sie mir noch, warum der Betrag bei dem Wohngeld und Lastenzuschuss so hoch ist!",
       "label_de": "Bitte erklären Sie mir noch, warum der Betrag bei dem Wohngeld und Lastenzuschuss so hoch ist!",
       "items": [
@@ -5583,12 +5594,12 @@
         }
       ],
       "sn": 121,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.17": {
-      "question": "CON_60.17",
-      "name": "CON_60.17",
+    "CON_60.18": {
+      "question": "CON_60.18",
+      "name": "CON_60.18",
       "label": "[de] Laut Ihren Angaben zahlt Ihr Haushalt derzeit ___Euro Miete, erhält aber ___Euro Wohngeld.\nMüssen wir vielleicht eine der Angaben korrigieren? ",
       "label_de": "Laut Ihren Angaben zahlt Ihr Haushalt derzeit ___Euro Miete, erhält aber ___Euro Wohngeld.\nMüssen wir vielleicht eine der Angaben korrigieren? ",
       "items": [
@@ -5602,12 +5613,12 @@
         }
       ],
       "sn": 122,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
-    "CON_60.18": {
-      "question": "CON_60.18",
-      "name": "CON_60.18",
+    "CON_60.19": {
+      "question": "CON_60.19",
+      "name": "CON_60.19",
       "label": "[de] Bitte erklären Sie mir noch, warum die Miete niedriger als das Wohngeld ist!",
       "label_de": "Bitte erklären Sie mir noch, warum die Miete niedriger als das Wohngeld ist!",
       "items": [
@@ -5621,7 +5632,7 @@
         }
       ],
       "sn": 123,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "61": {
@@ -5660,7 +5671,7 @@
         }
       ],
       "sn": 124,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_61.1": {
@@ -5679,7 +5690,7 @@
         }
       ],
       "sn": 125,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_61.2": {
@@ -5698,7 +5709,7 @@
         }
       ],
       "sn": 126,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_61.3": {
@@ -5717,7 +5728,7 @@
         }
       ],
       "sn": 127,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_61.4": {
@@ -5736,7 +5747,7 @@
         }
       ],
       "sn": 128,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_61.5": {
@@ -5755,7 +5766,7 @@
         }
       ],
       "sn": 129,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_61.6": {
@@ -5774,7 +5785,7 @@
         }
       ],
       "sn": 130,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "62": {
@@ -5862,7 +5873,7 @@
         }
       ],
       "sn": 131,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_62.1": {
@@ -5881,7 +5892,7 @@
         }
       ],
       "sn": 132,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_62.2": {
@@ -5900,7 +5911,7 @@
         }
       ],
       "sn": 133,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "63": {
@@ -5943,7 +5954,7 @@
         }
       ],
       "sn": 134,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "64": {
@@ -5979,7 +5990,7 @@
         }
       ],
       "sn": 135,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_64.1": {
@@ -5998,7 +6009,7 @@
         }
       ],
       "sn": 136,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_64.2": {
@@ -6017,7 +6028,7 @@
         }
       ],
       "sn": 137,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "65": {
@@ -6220,11 +6231,11 @@
           "number": ""
         },
         {
+          "item": "2",
           "text": "[de] Verbesserungsbedarf?",
           "text_de": "Verbesserungsbedarf?",
           "scale": "txt",
           "sn": 6,
-          "item": "root",
           "number": ""
         },
         {
@@ -6364,7 +6375,7 @@
         }
       ],
       "sn": 138,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "66": {
@@ -6417,7 +6428,7 @@
         }
       ],
       "sn": 139,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "67": {
@@ -6427,13 +6438,13 @@
       "label_de": "Wie lange brauchen Sie, um zu Fuß die folgenden Einrichtungen in Ihrem Wohngebiet zu erreichen?",
       "items": [
         {
+          "item": "1",
           "text": "How long does it take to reach the following places in your neighborhood on foot?",
           "text_de": "Wie lange brauchen Sie, um zu Fuß die folgenden Einrichtungen in Ihrem Wohngebiet zu erreichen?",
           "instruction": "If you don’t use one of the following facilities, please state how much time you *would* need!",
           "instruction_de": "Falls Sie eine der genannten Einrichtungen nicht nutzen, \ngeben Sie bitte an, wie lange Sie brauchen würden!",
           "scale": "txt",
           "sn": 0,
-          "item": "root",
           "number": ""
         },
         {
@@ -6810,7 +6821,7 @@
         }
       ],
       "sn": 140,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "68": {
@@ -6820,11 +6831,11 @@
       "label_de": "Wie sehr fühlen Sie sich hier in dieser Wohngegend durch folgende Umwelteinflüsse beeinträchtigt?",
       "items": [
         {
+          "item": "1",
           "text": "To what extent do you feel affected by the following environmental factors in this neighborhood?",
           "text_de": "Wie sehr fühlen Sie sich hier in dieser Wohngegend durch folgende Umwelteinflüsse beeinträchtigt?",
           "scale": "txt",
           "sn": 0,
-          "item": "root",
           "number": ""
         },
         {
@@ -6937,7 +6948,7 @@
         }
       ],
       "sn": 141,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "69": {
@@ -6979,7 +6990,7 @@
         }
       ],
       "sn": 142,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "70": {
@@ -7080,7 +7091,7 @@
         }
       ],
       "sn": 143,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "71": {
@@ -7122,7 +7133,7 @@
         }
       ],
       "sn": 144,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "72": {
@@ -7174,7 +7185,7 @@
         }
       ],
       "sn": 145,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "73": {
@@ -7221,7 +7232,7 @@
         }
       ],
       "sn": 146,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "74": {
@@ -7258,7 +7269,7 @@
         }
       ],
       "sn": 147,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "75": {
@@ -7301,7 +7312,7 @@
         }
       ],
       "sn": 148,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "Intro3": {
@@ -7320,7 +7331,7 @@
         }
       ],
       "sn": 149,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "76": {
@@ -7353,7 +7364,7 @@
         }
       ],
       "sn": 150,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "77": {
@@ -7389,7 +7400,7 @@
         }
       ],
       "sn": 151,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_69.1": {
@@ -7408,7 +7419,7 @@
         }
       ],
       "sn": 152,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_69.2": {
@@ -7427,7 +7438,7 @@
         }
       ],
       "sn": 153,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "78": {
@@ -7527,7 +7538,7 @@
         }
       ],
       "sn": 154,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "79": {
@@ -7560,7 +7571,7 @@
         }
       ],
       "sn": 155,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "80": {
@@ -7608,7 +7619,7 @@
         }
       ],
       "sn": 156,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "81": {
@@ -7640,7 +7651,7 @@
         }
       ],
       "sn": 157,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "82": {
@@ -7740,7 +7751,7 @@
         }
       ],
       "sn": 158,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "83": {
@@ -7777,7 +7788,7 @@
         }
       ],
       "sn": 159,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "84": {
@@ -7833,7 +7844,7 @@
         }
       ],
       "sn": 160,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_76.1": {
@@ -7852,7 +7863,7 @@
         }
       ],
       "sn": 161,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_76.2": {
@@ -7871,7 +7882,7 @@
         }
       ],
       "sn": 162,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "85": {
@@ -7925,7 +7936,7 @@
         }
       ],
       "sn": 163,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_77.1": {
@@ -7944,7 +7955,7 @@
         }
       ],
       "sn": 164,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_77.2": {
@@ -7963,7 +7974,7 @@
         }
       ],
       "sn": 165,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "86": {
@@ -8011,22 +8022,49 @@
         }
       ],
       "sn": 166,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "87": {
       "question": "87",
       "name": "87",
       "label": "First name:",
-      "label_de": "Vorname:",
+      "label_de": "[1. Kind] Vorname:",
       "items": [
         {
           "item": "hknama",
           "text": "First name:",
-          "text_de": "Vorname:",
+          "text_de": "[1. Kind] Vorname:",
           "concept": "hknama",
           "scale": "chr",
           "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "hknamb",
+          "text": "[de] [2. Kind] Vorname:",
+          "text_de": "[2. Kind] Vorname:",
+          "concept": "hknamb",
+          "scale": "chr",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hknamc",
+          "text": "[de] [3. Kind] Vorname:",
+          "text_de": "[3. Kind] Vorname:",
+          "concept": "hknamc",
+          "scale": "chr",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hknamd",
+          "text": "[de] [4. Kind] Vorname:",
+          "text_de": "[4. Kind] Vorname:",
+          "concept": "hknamd",
+          "scale": "chr",
+          "sn": 3,
           "number": ""
         },
         {
@@ -8034,25 +8072,79 @@
           "text": "[de] keine Angabe",
           "text_de": "keine Angabe",
           "scale": "bin",
-          "sn": 1,
+          "sn": 4,
           "number": ""
         },
         {
           "item": "hknra",
-          "text": "[de] Personennummer Kind A",
-          "text_de": "Personennummer Kind A",
+          "text": "[de] [1. Kind] Personennummer",
+          "text_de": "[1. Kind] Personennummer",
           "concept": "hknra",
           "scale": "int",
-          "sn": 2,
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "hknrb",
+          "text": "[de] [2. Kind] Personennummer",
+          "text_de": "[2. Kind] Personennummer",
+          "concept": "hknrb",
+          "scale": "int",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "hknrc",
+          "text": "[de] [3. Kind] Personennummer",
+          "text_de": "[3. Kind] Personennummer",
+          "concept": "hknrc",
+          "scale": "int",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "hknrd",
+          "text": "[de] [4. Kind] Personennummer",
+          "text_de": "[4. Kind] Personennummer",
+          "concept": "hknrd",
+          "scale": "int",
+          "sn": 8,
           "number": ""
         },
         {
           "item": "hkgeba",
           "text": "Year of birth:",
-          "text_de": "Geburtsjahr:",
+          "text_de": "[1. Kind] Geburtsjahr:",
           "concept": "hkgeba",
           "scale": "int",
-          "sn": 3,
+          "sn": 9,
+          "number": ""
+        },
+        {
+          "item": "hkgebb",
+          "text": "[de] [2. Kind] Geburtsjahr:",
+          "text_de": "[2. Kind] Geburtsjahr:",
+          "concept": "hkgebb",
+          "scale": "int",
+          "sn": 10,
+          "number": ""
+        },
+        {
+          "item": "hkgebc",
+          "text": "[de] [3. Kind] Geburtsjahr:",
+          "text_de": "[3. Kind] Geburtsjahr:",
+          "concept": "hkgebc",
+          "scale": "int",
+          "sn": 11,
+          "number": ""
+        },
+        {
+          "item": "hkgebd",
+          "text": "[de] [4. Kind] Geburtsjahr:",
+          "text_de": "[4. Kind] Geburtsjahr:",
+          "concept": "hkgebd",
+          "scale": "int",
+          "sn": 12,
           "number": ""
         },
         {
@@ -8060,12 +8152,12 @@
           "text": "[de] keine Angabe",
           "text_de": "keine Angabe",
           "scale": "bin",
-          "sn": 4,
+          "sn": 13,
           "number": ""
         }
       ],
       "sn": 167,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "88": {
@@ -8084,6 +8176,8 @@
         },
         {
           "item": "hschnoa",
+          "text": "[de] [1. Kind] Besucht keine Schule mehr/besucht noch keine Schule",
+          "text_de": "[1. Kind] Besucht keine Schule mehr/besucht noch keine Schule",
           "goto": "1 @ A ,  2 @ 95",
           "concept": "hschnoa",
           "scale": "cat",
@@ -8097,13 +8191,101 @@
               "value": 2,
               "label": "Does not attend school",
               "label_de": "Besucht noch keine Schule"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
             }
           ],
           "sn": 1,
           "number": ""
         },
         {
+          "item": "hschnob",
+          "text": "[de] [2. Kind] Besucht keine Schule mehr/besucht noch keine Schule",
+          "text_de": "[2. Kind] Besucht keine Schule mehr/besucht noch keine Schule",
+          "goto": "1 @ A ,  2 @ 95",
+          "concept": "hschnob",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Does not attend school",
+              "label_de": "Besucht keine Schule mehr"
+            },
+            {
+              "value": 2,
+              "label": "Does not attend school",
+              "label_de": "Besucht noch keine Schule"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hschnoc",
+          "text": "[de] [3. Kind] Besucht keine Schule mehr/besucht noch keine Schule",
+          "text_de": "[3. Kind] Besucht keine Schule mehr/besucht noch keine Schule",
+          "goto": "1 @ A ,  2 @ 95",
+          "concept": "hschnoc",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Does not attend school",
+              "label_de": "Besucht keine Schule mehr"
+            },
+            {
+              "value": 2,
+              "label": "Does not attend school",
+              "label_de": "Besucht noch keine Schule"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "hschnod",
+          "text": "[de] [4. Kind] Besucht keine Schule mehr/besucht noch keine Schule",
+          "text_de": "[4. Kind] Besucht keine Schule mehr/besucht noch keine Schule",
+          "goto": "1 @ A ,  2 @ 95",
+          "concept": "hschnod",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Does not attend school",
+              "label_de": "Besucht keine Schule mehr"
+            },
+            {
+              "value": 2,
+              "label": "Does not attend school",
+              "label_de": "Besucht noch keine Schule"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
           "item": "hein3a",
+          "text": "[de] [1. Kind]",
+          "text_de": "[1. Kind]",
           "concept": "hein3a",
           "scale": "cat",
           "answers": [
@@ -8141,14 +8323,172 @@
               "value": 7,
               "label": "Other type of school",
               "label_de": "Sonstige Schule"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
             }
           ],
-          "sn": 2,
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "hein3b",
+          "text": "[de] [2. Kind]",
+          "text_de": "[2. Kind]",
+          "concept": "hein3b",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Elementary school (Grundschule, Including Förderstufe/schulformunabhängige Orientierungstufe, the transition grades prior to entering secondary school)",
+              "label_de": "Grundschule (inkl. Förderschule)"
+            },
+            {
+              "value": 2,
+              "label": "Lower secondary school (Hauptschule)",
+              "label_de": "Hauptschule"
+            },
+            {
+              "value": 3,
+              "label": "Intermediate school (Realschule)",
+              "label_de": "Realschule"
+            },
+            {
+              "value": 4,
+              "label": "Upper secondary school (Gymnasium)",
+              "label_de": "Gymnasium"
+            },
+            {
+              "value": 5,
+              "label": "Comprehensive school (Gesamtschule)",
+              "label_de": "Gesamtschule"
+            },
+            {
+              "value": 6,
+              "label": "Vocational school (Berufsschule)",
+              "label_de": "Berufsschule"
+            },
+            {
+              "value": 7,
+              "label": "Other type of school",
+              "label_de": "Sonstige Schule"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "hein3c",
+          "text": "[de] [3. Kind]",
+          "text_de": "[3. Kind]",
+          "concept": "hein3c",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Elementary school (Grundschule, Including Förderstufe/schulformunabhängige Orientierungstufe, the transition grades prior to entering secondary school)",
+              "label_de": "Grundschule (inkl. Förderschule)"
+            },
+            {
+              "value": 2,
+              "label": "Lower secondary school (Hauptschule)",
+              "label_de": "Hauptschule"
+            },
+            {
+              "value": 3,
+              "label": "Intermediate school (Realschule)",
+              "label_de": "Realschule"
+            },
+            {
+              "value": 4,
+              "label": "Upper secondary school (Gymnasium)",
+              "label_de": "Gymnasium"
+            },
+            {
+              "value": 5,
+              "label": "Comprehensive school (Gesamtschule)",
+              "label_de": "Gesamtschule"
+            },
+            {
+              "value": 6,
+              "label": "Vocational school (Berufsschule)",
+              "label_de": "Berufsschule"
+            },
+            {
+              "value": 7,
+              "label": "Other type of school",
+              "label_de": "Sonstige Schule"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "hein3d",
+          "text": "[de] [4. Kind]",
+          "text_de": "[4. Kind]",
+          "concept": "hein3d",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Elementary school (Grundschule, Including Förderstufe/schulformunabhängige Orientierungstufe, the transition grades prior to entering secondary school)",
+              "label_de": "Grundschule (inkl. Förderschule)"
+            },
+            {
+              "value": 2,
+              "label": "Lower secondary school (Hauptschule)",
+              "label_de": "Hauptschule"
+            },
+            {
+              "value": 3,
+              "label": "Intermediate school (Realschule)",
+              "label_de": "Realschule"
+            },
+            {
+              "value": 4,
+              "label": "Upper secondary school (Gymnasium)",
+              "label_de": "Gymnasium"
+            },
+            {
+              "value": 5,
+              "label": "Comprehensive school (Gesamtschule)",
+              "label_de": "Gesamtschule"
+            },
+            {
+              "value": 6,
+              "label": "Vocational school (Berufsschule)",
+              "label_de": "Berufsschule"
+            },
+            {
+              "value": 7,
+              "label": "Other type of school",
+              "label_de": "Sonstige Schule"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 8,
           "number": ""
         }
       ],
       "sn": 168,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_80.1": {
@@ -8167,7 +8507,7 @@
         }
       ],
       "sn": 169,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_80.2": {
@@ -8186,19 +8526,19 @@
         }
       ],
       "sn": 170,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "89": {
       "question": "89",
       "name": "89",
-      "label": "Is it a school with a special teaching concept such as a ...",
-      "label_de": "Ist das eine Schule mit speziellem pädagogischem Konzept wieder z.B. …",
+      "label": "[de] [1. Kind] Ist das eine Schule mit speziellem pädagogischem Konzept wieder z.B. ...",
+      "label_de": "[1. Kind] Ist das eine Schule mit speziellem pädagogischem Konzept wieder z.B. ...",
       "items": [
         {
           "item": "hschspa",
-          "text": "Is it a school with a special teaching concept such as a ...",
-          "text_de": "Ist das eine Schule mit speziellem pädagogischem Konzept wieder z.B. …",
+          "text": "[de] [1. Kind] Ist das eine Schule mit speziellem pädagogischem Konzept wieder z.B. ...",
+          "text_de": "[1. Kind] Ist das eine Schule mit speziellem pädagogischem Konzept wieder z.B. ...",
           "concept": "hschspa",
           "scale": "cat",
           "answers": [
@@ -8216,26 +8556,124 @@
               "value": 3,
               "label": "No, I received none of these",
               "label_de": "Nein, nichts davon."
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
             }
           ],
           "sn": 0,
           "number": ""
+        },
+        {
+          "item": "hschspb",
+          "text": "[de] [2. Kind] Ist das eine Schule mit speziellem pädagogischem Konzept wieder z.B. ...",
+          "text_de": "[2. Kind] Ist das eine Schule mit speziellem pädagogischem Konzept wieder z.B. ...",
+          "concept": "hschspb",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Waldorf school, Montessori school, etc",
+              "label_de": "Waldorfschule, Montessorischule, o.Ä."
+            },
+            {
+              "value": 2,
+              "label": "School for children with learn difficulties (Förderschule, Sonderschule, Sprachheilschule)",
+              "label_de": "Förder-, Sonder-, Sprachheilschule."
+            },
+            {
+              "value": 3,
+              "label": "No, I received none of these",
+              "label_de": "Nein, nichts davon."
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hschspc",
+          "text": "[de] [3. Kind] Ist das eine Schule mit speziellem pädagogischem Konzept wieder z.B. ...",
+          "text_de": "[3. Kind] Ist das eine Schule mit speziellem pädagogischem Konzept wieder z.B. ...",
+          "concept": "hschspc",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Waldorf school, Montessori school, etc",
+              "label_de": "Waldorfschule, Montessorischule, o.Ä."
+            },
+            {
+              "value": 2,
+              "label": "School for children with learn difficulties (Förderschule, Sonderschule, Sprachheilschule)",
+              "label_de": "Förder-, Sonder-, Sprachheilschule."
+            },
+            {
+              "value": 3,
+              "label": "No, I received none of these",
+              "label_de": "Nein, nichts davon."
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hschspd",
+          "text": "[de] [4. Kind] Ist das eine Schule mit speziellem pädagogischem Konzept wieder z.B. ...",
+          "text_de": "[4. Kind] Ist das eine Schule mit speziellem pädagogischem Konzept wieder z.B. ...",
+          "concept": "hschspd",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Waldorf school, Montessori school, etc",
+              "label_de": "Waldorfschule, Montessorischule, o.Ä."
+            },
+            {
+              "value": 2,
+              "label": "School for children with learn difficulties (Förderschule, Sonderschule, Sprachheilschule)",
+              "label_de": "Förder-, Sonder-, Sprachheilschule."
+            },
+            {
+              "value": 3,
+              "label": "No, I received none of these",
+              "label_de": "Nein, nichts davon."
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 3,
+          "number": ""
         }
       ],
       "sn": 171,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "90": {
       "question": "90",
       "name": "90",
       "label": "Does the child usually stay at school all day?",
-      "label_de": "Besucht das Kind diese Schule meistens ganztags?",
+      "label_de": "[1. Kind] Besucht das Kind diese Schule meistens ganztags?",
       "items": [
         {
           "item": "hein9a",
           "text": "Does the child usually stay at school all day?",
-          "text_de": "Besucht das Kind diese Schule meistens ganztags?",
+          "text_de": "[1. Kind] Besucht das Kind diese Schule meistens ganztags?",
           "concept": "hein9a",
           "scale": "cat",
           "answers": [
@@ -8248,26 +8686,109 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
           "number": ""
+        },
+        {
+          "item": "hein9b",
+          "text": "[de] [2. Kind] Besucht das Kind diese Schule meistens ganztags?",
+          "text_de": "[2. Kind] Besucht das Kind diese Schule meistens ganztags?",
+          "concept": "hein9b",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hein9c",
+          "text": "[de] [3. Kind] Besucht das Kind diese Schule meistens ganztags?",
+          "text_de": "[3. Kind] Besucht das Kind diese Schule meistens ganztags?",
+          "concept": "hein9c",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hein9d",
+          "text": "[de] [4. Kind] Besucht das Kind diese Schule meistens ganztags?",
+          "text_de": "[4. Kind] Besucht das Kind diese Schule meistens ganztags?",
+          "concept": "hein9d",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
+            }
+          ],
+          "sn": 3,
+          "number": ""
         }
       ],
       "sn": 172,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "91": {
       "question": "91",
       "name": "91",
       "label": "If you want, does the facility\nprovide the child with lunch?",
-      "label_de": "Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen?",
+      "label_de": "[1. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
       "items": [
         {
           "item": "hein7a",
           "text": "If you want, does the facility\nprovide the child with lunch?",
-          "text_de": "Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen?",
+          "text_de": "[1. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
           "concept": "hein7a",
           "scale": "cat",
           "answers": [
@@ -8280,68 +8801,21 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
           "number": ""
-        }
-      ],
-      "sn": 173,
-      "instrument": "soep-core-2019-hh2",
-      "study": "soep-core"
-    },
-    "92": {
-      "question": "92",
-      "name": "92",
-      "label": "What type of school is it? It is:",
-      "label_de": "Wer ist der Träger dieser Schule? Ist es ...",
-      "items": [
+        },
         {
-          "item": "heinsa",
-          "text": "What type of school is it? It is:",
-          "text_de": "Wer ist der Träger dieser Schule? Ist es ...",
-          "concept": "heinsa",
-          "scale": "cat",
-          "answers": [
-            {
-              "value": 1,
-              "label": "Public (state-run)",
-              "label_de": "eine öffentliche Schule, z.B. staatlich"
-            },
-            {
-              "value": 2,
-              "label": "Religious",
-              "label_de": "eine kirchliche Schule"
-            },
-            {
-              "value": 3,
-              "label": "Non-profit, including Free Alternative Schools",
-              "label_de": "eine gemeinnützige Schule, auch Freie Alternativschule"
-            },
-            {
-              "value": 4,
-              "label": "Private",
-              "label_de": "eine gewerbliche Privatschule"
-            }
-          ],
-          "sn": 0,
-          "number": ""
-        }
-      ],
-      "sn": 174,
-      "instrument": "soep-core-2019-hh2",
-      "study": "soep-core"
-    },
-    "93": {
-      "question": "93",
-      "name": "93",
-      "label": "Does this child attend a day care group or similar care facility at school?",
-      "label_de": "Besucht das Kind derzeit einen Schulhort oder eine vergleichbare Betreuung in der Schule?",
-      "items": [
-        {
-          "item": "hhorta",
-          "text": "Does this child attend a day care group or similar care facility at school?",
-          "text_de": "Besucht das Kind derzeit einen Schulhort oder eine vergleichbare Betreuung in der Schule?",
+          "item": "hein7b",
+          "text": "[de] [2. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
+          "text_de": "[2. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
+          "concept": "hein7b",
           "scale": "cat",
           "answers": [
             {
@@ -8353,14 +8827,341 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hein7c",
+          "text": "[de] [3. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
+          "text_de": "[3. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
+          "concept": "hein7c",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hein7d",
+          "text": "[de] [4. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
+          "text_de": "[4. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
+          "concept": "hein7d",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        }
+      ],
+      "sn": 173,
+      "instrument": "soep-core-2019-hh3",
+      "study": "soep-core"
+    },
+    "92": {
+      "question": "92",
+      "name": "92",
+      "label": "What type of school is it? It is:",
+      "label_de": "[1. Kind] Wer ist der Träger dieser Schule? Ist es ...",
+      "items": [
+        {
+          "item": "heinsa",
+          "text": "What type of school is it? It is:",
+          "text_de": "[1. Kind] Wer ist der Träger dieser Schule? Ist es ...",
+          "concept": "heinsa",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Public (state-run)",
+              "label_de": "eine öffentliche Schule, z.B. staatlich "
+            },
+            {
+              "value": 2,
+              "label": "Religious",
+              "label_de": "eine kirchliche Schule"
+            },
+            {
+              "value": 3,
+              "label": "Non-profit, including Free Alternative Schools ",
+              "label_de": "eine gemeinnützige Schule, auch Freie Alternativschule "
+            },
+            {
+              "value": 4,
+              "label": "Private",
+              "label_de": "eine gewerbliche Privatschule"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
             }
           ],
           "sn": 0,
           "number": ""
+        },
+        {
+          "item": "heinsb",
+          "text": "[de] [2. Kind] Wer ist der Träger dieser Schule? Ist es ...",
+          "text_de": "[2. Kind] Wer ist der Träger dieser Schule? Ist es ...",
+          "concept": "heinsb",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Public (state-run)",
+              "label_de": "eine öffentliche Schule, z.B. staatlich "
+            },
+            {
+              "value": 2,
+              "label": "Religious",
+              "label_de": "eine kirchliche Schule"
+            },
+            {
+              "value": 3,
+              "label": "Non-profit, including Free Alternative Schools ",
+              "label_de": "eine gemeinnützige Schule, auch Freie Alternativschule "
+            },
+            {
+              "value": 4,
+              "label": "Private",
+              "label_de": "eine gewerbliche Privatschule"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "heinsc",
+          "text": "[de] [3. Kind] Wer ist der Träger dieser Schule? Ist es ...",
+          "text_de": "[3. Kind] Wer ist der Träger dieser Schule? Ist es ...",
+          "concept": "heinsc",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Public (state-run)",
+              "label_de": "eine öffentliche Schule, z.B. staatlich "
+            },
+            {
+              "value": 2,
+              "label": "Religious",
+              "label_de": "eine kirchliche Schule"
+            },
+            {
+              "value": 3,
+              "label": "Non-profit, including Free Alternative Schools ",
+              "label_de": "eine gemeinnützige Schule, auch Freie Alternativschule "
+            },
+            {
+              "value": 4,
+              "label": "Private",
+              "label_de": "eine gewerbliche Privatschule"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "heinsd",
+          "text": "[de] [4. Kind] Wer ist der Träger dieser Schule? Ist es ...",
+          "text_de": "[4. Kind] Wer ist der Träger dieser Schule? Ist es ...",
+          "concept": "heinsd",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Public (state-run)",
+              "label_de": "eine öffentliche Schule, z.B. staatlich "
+            },
+            {
+              "value": 2,
+              "label": "Religious",
+              "label_de": "eine kirchliche Schule"
+            },
+            {
+              "value": 3,
+              "label": "Non-profit, including Free Alternative Schools ",
+              "label_de": "eine gemeinnützige Schule, auch Freie Alternativschule "
+            },
+            {
+              "value": 4,
+              "label": "Private",
+              "label_de": "eine gewerbliche Privatschule"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        }
+      ],
+      "sn": 174,
+      "instrument": "soep-core-2019-hh3",
+      "study": "soep-core"
+    },
+    "93": {
+      "question": "93",
+      "name": "93",
+      "label": "[de] [1. Kind] Besucht das Kind derzeit einen Schulhort oder eine vergleichbare Betreuung in der Schule?",
+      "label_de": "[1. Kind] Besucht das Kind derzeit einen Schulhort oder eine vergleichbare Betreuung in der Schule?",
+      "items": [
+        {
+          "item": "hhorta",
+          "text": "[de] [1. Kind] Besucht das Kind derzeit einen Schulhort oder eine vergleichbare Betreuung in der Schule?",
+          "text_de": "[1. Kind] Besucht das Kind derzeit einen Schulhort oder eine vergleichbare Betreuung in der Schule?",
+          "concept": "hhorta",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "hhortb",
+          "text": "[de] [2. Kind] Besucht das Kind derzeit einen Schulhort oder eine vergleichbare Betreuung in der Schule?",
+          "text_de": "[2. Kind] Besucht das Kind derzeit einen Schulhort oder eine vergleichbare Betreuung in der Schule?",
+          "concept": "hhortb",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hhortc",
+          "text": "[de] [3. Kind] Besucht das Kind derzeit einen Schulhort oder eine vergleichbare Betreuung in der Schule?",
+          "text_de": "[3. Kind] Besucht das Kind derzeit einen Schulhort oder eine vergleichbare Betreuung in der Schule?",
+          "concept": "hhortc",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hhortd",
+          "text": "[de] [4. Kind] Besucht das Kind derzeit einen Schulhort oder eine vergleichbare Betreuung in der Schule?",
+          "text_de": "[4. Kind] Besucht das Kind derzeit einen Schulhort oder eine vergleichbare Betreuung in der Schule?",
+          "concept": "hhortd",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
+            }
+          ],
+          "sn": 3,
+          "number": ""
         }
       ],
       "sn": 175,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "94": {
@@ -8370,11 +9171,11 @@
       "label_de": "Welche Kosten entstehen Ihnen für die Schule?",
       "items": [
         {
+          "item": "1",
           "text": "How much does the school\ncost you?",
           "text_de": "Welche Kosten entstehen Ihnen für die Schule?",
           "scale": "txt",
           "sn": 0,
-          "item": "root",
           "number": ""
         },
         {
@@ -8451,7 +9252,7 @@
         }
       ],
       "sn": 176,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "95": {
@@ -8471,10 +9272,37 @@
         {
           "item": "hein1a",
           "text": "No, none os these",
-          "text_de": "Nein, besucht keine dieser Einrichtungen",
+          "text_de": "[1. Kind] Nein, besucht keine dieser Einrichtungen",
           "concept": "hein1a",
           "scale": "bin",
           "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hein1b",
+          "text": "[de] [2. Kind] Nein, besucht keine dieser Einrichtungen",
+          "text_de": "[2. Kind] Nein, besucht keine dieser Einrichtungen",
+          "concept": "hein1b",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hein1c",
+          "text": "[de] [3. Kind] Nein, besucht keine dieser Einrichtungen",
+          "text_de": "[3. Kind] Nein, besucht keine dieser Einrichtungen",
+          "concept": "hein1c",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "hein1d",
+          "text": "[de] [4. Kind] Nein, besucht keine dieser Einrichtungen",
+          "text_de": "[4. Kind] Nein, besucht keine dieser Einrichtungen",
+          "concept": "hein1d",
+          "scale": "bin",
+          "sn": 4,
           "number": ""
         },
         {
@@ -8482,16 +9310,43 @@
           "text": "[de] keine Angabe",
           "text_de": "keine Angabe",
           "scale": "bin",
-          "sn": 2,
+          "sn": 5,
           "number": ""
         },
         {
           "item": "hein1sa",
           "text": "Yes, approximately ... hours per day",
-          "text_de": "Ja, und zwar, tatsächliche Stunden pro Tag",
+          "text_de": "[1. Kind] Ja, und zwar, tatsächliche Stunden pro Tag",
           "concept": "hein1sa",
           "scale": "int",
-          "sn": 3,
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "hein1sb",
+          "text": "[de] [2. Kind] Ja, und zwar, tatsächliche Stunden pro Tag",
+          "text_de": "[2. Kind] Ja, und zwar, tatsächliche Stunden pro Tag",
+          "concept": "hein1sb",
+          "scale": "int",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "hein1sc",
+          "text": "[de] [3. Kind] Ja, und zwar, tatsächliche Stunden pro Tag",
+          "text_de": "[3. Kind] Ja, und zwar, tatsächliche Stunden pro Tag",
+          "concept": "hein1sc",
+          "scale": "int",
+          "sn": 8,
+          "number": ""
+        },
+        {
+          "item": "hein1sd",
+          "text": "[de] [4. Kind] Ja, und zwar, tatsächliche Stunden pro Tag",
+          "text_de": "[4. Kind] Ja, und zwar, tatsächliche Stunden pro Tag",
+          "concept": "hein1sd",
+          "scale": "int",
+          "sn": 9,
           "number": ""
         },
         {
@@ -8499,12 +9354,12 @@
           "text": "[de] keine Angabe",
           "text_de": "keine Angabe",
           "scale": "bin",
-          "sn": 4,
+          "sn": 10,
           "number": ""
         }
       ],
       "sn": 177,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_86.1": {
@@ -8523,7 +9378,7 @@
         }
       ],
       "sn": 178,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_86.2": {
@@ -8542,7 +9397,7 @@
         }
       ],
       "sn": 179,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_86.3": {
@@ -8561,7 +9416,7 @@
         }
       ],
       "sn": 180,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_86.4": {
@@ -8580,19 +9435,19 @@
         }
       ],
       "sn": 181,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "96": {
       "question": "96",
       "name": "96",
       "label": "Does the school or facility serve\nlunch to your child if you choose?",
-      "label_de": "Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen?",
+      "label_de": "[1. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
       "items": [
         {
           "item": "hei12a",
           "text": "Does the school or facility serve\nlunch to your child if you choose?",
-          "text_de": "Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen?",
+          "text_de": "[1. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
           "concept": "hei12a",
           "scale": "cat",
           "answers": [
@@ -8605,26 +9460,109 @@
               "value": 2,
               "label": "No",
               "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
             }
           ],
           "sn": 0,
           "number": ""
+        },
+        {
+          "item": "hei12b",
+          "text": "[de] [2. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
+          "text_de": "[2. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
+          "concept": "hei12b",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hei12c",
+          "text": "[de] [3. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
+          "text_de": "[3. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
+          "concept": "hei12c",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hei12d",
+          "text": "[de] [4. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
+          "text_de": "[4. Kind] Erhält das Kind, wenn Sie das wollen, mittags dort ein Essen? ",
+          "concept": "hei12d",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Kein Angabe"
+            }
+          ],
+          "sn": 3,
+          "number": ""
         }
       ],
       "sn": 182,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "97": {
       "question": "97",
       "name": "97",
       "label": "What type of school or facility is it? It is:",
-      "label_de": "Wer ist der Träger dieser Einrichtung? Ist es ...",
+      "label_de": "[1. Kind] Wer ist der Träger dieser Einrichtung? Ist es ...",
       "items": [
         {
           "item": "heinka",
           "text": "What type of school or facility is it? It is:",
-          "text_de": "Wer ist der Träger dieser Einrichtung? Ist es ...",
+          "text_de": "[1. Kind] Wer ist der Träger dieser Einrichtung? Ist es ...",
           "concept": "heinka",
           "scale": "cat",
           "answers": [
@@ -8651,15 +9589,143 @@
             {
               "value": 5,
               "label": "For-profit private (for example, private daycare)",
-              "label_de": "oder eine privat-gewerbliche Einrich-tung, wie z.B. privater Kindergarten"
+              "label_de": "oder eine privat-gewerbliche Einrichtung, wie z.B. privater Kindergarten"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
             }
           ],
           "sn": 0,
           "number": ""
+        },
+        {
+          "item": "heinkb",
+          "text": "[de] [2. Kind] Wer ist der Träger dieser Einrichtung? Ist es ...",
+          "text_de": "[2. Kind] Wer ist der Träger dieser Einrichtung? Ist es ...",
+          "concept": "heinkb",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Public (for example, state-run daycare)",
+              "label_de": "eine öffentliche Einrichtung, z.B. städtischer Kindergarten"
+            },
+            {
+              "value": 2,
+              "label": "Religious or other non-profit",
+              "label_de": "eine kirchliche oder sonstige gemeinnützige Einrichtung"
+            },
+            {
+              "value": 3,
+              "label": "Non-profit private school or facility founded by an association of parents",
+              "label_de": "eine Elterninitiative"
+            },
+            {
+              "value": 4,
+              "label": "Employer-operated (for example, company daycare)",
+              "label_de": "eine betriebliche Einrichtung, z.B. betrieblicher Kindergarten"
+            },
+            {
+              "value": 5,
+              "label": "For-profit private (for example, private daycare)",
+              "label_de": "oder eine privat-gewerbliche Einrichtung, wie z.B. privater Kindergarten"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "heinkc",
+          "text": "[de] [3. Kind] Wer ist der Träger dieser Einrichtung? Ist es ...",
+          "text_de": "[3. Kind] Wer ist der Träger dieser Einrichtung? Ist es ...",
+          "concept": "heinkc",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Public (for example, state-run daycare)",
+              "label_de": "eine öffentliche Einrichtung, z.B. städtischer Kindergarten"
+            },
+            {
+              "value": 2,
+              "label": "Religious or other non-profit",
+              "label_de": "eine kirchliche oder sonstige gemeinnützige Einrichtung"
+            },
+            {
+              "value": 3,
+              "label": "Non-profit private school or facility founded by an association of parents",
+              "label_de": "eine Elterninitiative"
+            },
+            {
+              "value": 4,
+              "label": "Employer-operated (for example, company daycare)",
+              "label_de": "eine betriebliche Einrichtung, z.B. betrieblicher Kindergarten"
+            },
+            {
+              "value": 5,
+              "label": "For-profit private (for example, private daycare)",
+              "label_de": "oder eine privat-gewerbliche Einrichtung, wie z.B. privater Kindergarten"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "heinkd",
+          "text": "[de] [4. Kind] Wer ist der Träger dieser Einrichtung? Ist es ...",
+          "text_de": "[4. Kind] Wer ist der Träger dieser Einrichtung? Ist es ...",
+          "concept": "heinkd",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Public (for example, state-run daycare)",
+              "label_de": "eine öffentliche Einrichtung, z.B. städtischer Kindergarten"
+            },
+            {
+              "value": 2,
+              "label": "Religious or other non-profit",
+              "label_de": "eine kirchliche oder sonstige gemeinnützige Einrichtung"
+            },
+            {
+              "value": 3,
+              "label": "Non-profit private school or facility founded by an association of parents",
+              "label_de": "eine Elterninitiative"
+            },
+            {
+              "value": 4,
+              "label": "Employer-operated (for example, company daycare)",
+              "label_de": "eine betriebliche Einrichtung, z.B. betrieblicher Kindergarten"
+            },
+            {
+              "value": 5,
+              "label": "For-profit private (for example, private daycare)",
+              "label_de": "oder eine privat-gewerbliche Einrichtung, wie z.B. privater Kindergarten"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 3,
+          "number": ""
         }
       ],
       "sn": 183,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "98": {
@@ -8750,7 +9816,7 @@
         }
       ],
       "sn": 184,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "99": {
@@ -8805,7 +9871,7 @@
         }
       ],
       "sn": 185,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "100": {
@@ -8825,46 +9891,181 @@
         {
           "item": "hbet5a",
           "text": "Yes, childcare provider outside the home (Tagesmutter)",
-          "text_de": "Ja, Tagesmutter außerhalb des Haushalts",
+          "text_de": "[1. Kind] Ja, Tagesmutter außerhalb des Haushalts",
           "concept": "hbet5a",
           "scale": "bin",
           "sn": 1,
           "number": ""
         },
         {
-          "item": "hbet3a",
-          "text": "Yes, paid in-home childcare provider (Betreuungsperson)",
-          "text_de": "Ja, bezahlte Betreuungsperson kommt ins Haus",
-          "concept": "hbet3a",
+          "item": "hbet5b",
+          "text": "[de] [2. Kind] Ja, Tagesmutter außerhalb des Haushalts",
+          "text_de": "[2. Kind] Ja, Tagesmutter außerhalb des Haushalts",
+          "concept": "hbet5b",
           "scale": "bin",
           "sn": 2,
           "number": ""
         },
         {
-          "item": "hbet1a",
-          "text": "Yes, relatives",
-          "text_de": "Ja, Verwandte",
-          "concept": "hbet1a",
+          "item": "hbet5c",
+          "text": "[de] [3. Kind] Ja, Tagesmutter außerhalb des Haushalts",
+          "text_de": "[3. Kind] Ja, Tagesmutter außerhalb des Haushalts",
+          "concept": "hbet5c",
           "scale": "bin",
           "sn": 3,
           "number": ""
         },
         {
-          "item": "hbet2a",
-          "text": "Yes, friends/acquaintances/neighbors",
-          "text_de": "Ja, Freunde / Bekannte / Nachbarn",
-          "concept": "hbet2a",
+          "item": "hbet5d",
+          "text": "[de] [4. Kind] Ja, Tagesmutter außerhalb des Haushalts",
+          "text_de": "[4. Kind] Ja, Tagesmutter außerhalb des Haushalts",
+          "concept": "hbet5d",
           "scale": "bin",
           "sn": 4,
           "number": ""
         },
         {
-          "item": "hbet4a",
-          "text": "No",
-          "text_de": "Nein",
-          "concept": "hbet4a",
+          "item": "hbet3a",
+          "text": "Yes, paid in-home childcare provider (Betreuungsperson)",
+          "text_de": "[1. Kind] Ja, bezahlte Betreuungsperson kommt ins Haus",
+          "concept": "hbet3a",
           "scale": "bin",
           "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "hbet3b",
+          "text": "[de] [2. Kind] Ja, bezahlte Betreuungsperson kommt ins Haus",
+          "text_de": "[2. Kind] Ja, bezahlte Betreuungsperson kommt ins Haus",
+          "concept": "hbet3b",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "hbet3c",
+          "text": "[de] [3. Kind] Ja, bezahlte Betreuungsperson kommt ins Haus",
+          "text_de": "[3. Kind] Ja, bezahlte Betreuungsperson kommt ins Haus",
+          "concept": "hbet3c",
+          "scale": "bin",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "hbet3d",
+          "text": "[de] [4. Kind] Ja, bezahlte Betreuungsperson kommt ins Haus",
+          "text_de": "[4. Kind] Ja, bezahlte Betreuungsperson kommt ins Haus",
+          "concept": "hbet3d",
+          "scale": "bin",
+          "sn": 8,
+          "number": ""
+        },
+        {
+          "item": "hbet1a",
+          "text": "Yes, relatives",
+          "text_de": "[1. Kind] Ja, Verwandte",
+          "concept": "hbet1a",
+          "scale": "bin",
+          "sn": 9,
+          "number": ""
+        },
+        {
+          "item": "hbet1b",
+          "text": "[de] [2. Kind] Ja, Verwandte",
+          "text_de": "[2. Kind] Ja, Verwandte",
+          "concept": "hbet1b",
+          "scale": "bin",
+          "sn": 10,
+          "number": ""
+        },
+        {
+          "item": "hbet1c",
+          "text": "[de] [3. Kind] Ja, Verwandte",
+          "text_de": "[3. Kind] Ja, Verwandte",
+          "concept": "hbet1c",
+          "scale": "bin",
+          "sn": 11,
+          "number": ""
+        },
+        {
+          "item": "hbet1d",
+          "text": "[de] [4. Kind] Ja, Verwandte",
+          "text_de": "[4. Kind] Ja, Verwandte",
+          "concept": "hbet1d",
+          "scale": "bin",
+          "sn": 12,
+          "number": ""
+        },
+        {
+          "item": "hbet2a",
+          "text": "Yes, friends/acquaintances/neighbors",
+          "text_de": "[1. Kind] Ja, Freunde / Bekannte / Nachbarn",
+          "concept": "hbet2a",
+          "scale": "bin",
+          "sn": 13,
+          "number": ""
+        },
+        {
+          "item": "hbet2b",
+          "text": "[de] [2. Kind] Ja, Freunde / Bekannte / Nachbarn",
+          "text_de": "[2. Kind] Ja, Freunde / Bekannte / Nachbarn",
+          "concept": "hbet2b",
+          "scale": "bin",
+          "sn": 14,
+          "number": ""
+        },
+        {
+          "item": "hbet2c",
+          "text": "[de] [3. Kind] Ja, Freunde / Bekannte / Nachbarn",
+          "text_de": "[3. Kind] Ja, Freunde / Bekannte / Nachbarn",
+          "concept": "hbet2c",
+          "scale": "bin",
+          "sn": 15,
+          "number": ""
+        },
+        {
+          "item": "hbet2d",
+          "text": "[de] [4. Kind] Ja, Freunde / Bekannte / Nachbarn",
+          "text_de": "[4. Kind] Ja, Freunde / Bekannte / Nachbarn",
+          "concept": "hbet2d",
+          "scale": "bin",
+          "sn": 16,
+          "number": ""
+        },
+        {
+          "item": "hbet4a",
+          "text": "No",
+          "text_de": "[1. Kind] Nein",
+          "concept": "hbet4a",
+          "scale": "bin",
+          "sn": 17,
+          "number": ""
+        },
+        {
+          "item": "hbet4b",
+          "text": "[de] [2. Kind] Nein",
+          "text_de": "[2. Kind] Nein",
+          "concept": "hbet4b",
+          "scale": "bin",
+          "sn": 18,
+          "number": ""
+        },
+        {
+          "item": "hbet4c",
+          "text": "[de] [3. Kind] Nein",
+          "text_de": "[3. Kind] Nein",
+          "concept": "hbet4c",
+          "scale": "bin",
+          "sn": 19,
+          "number": ""
+        },
+        {
+          "item": "hbet4d",
+          "text": "[de] [4. Kind] Nein",
+          "text_de": "[4. Kind] Nein",
+          "concept": "hbet4d",
+          "scale": "bin",
+          "sn": 20,
           "number": ""
         },
         {
@@ -8872,12 +10073,12 @@
           "text": "[de] keine Angabe",
           "text_de": "keine Angabe",
           "scale": "bin",
-          "sn": 6,
+          "sn": 21,
           "number": ""
         }
       ],
       "sn": 186,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "101": {
@@ -8896,11 +10097,38 @@
         },
         {
           "item": "hbet6a",
-          "text": "[de] Durchschnittliche monatliche Kosten in Euro",
-          "text_de": "Durchschnittliche monatliche Kosten in Euro",
+          "text": "[de] [1. Kind] Durchschnittliche monatliche Kosten in Euro",
+          "text_de": "[1. Kind] Durchschnittliche monatliche Kosten in Euro",
           "concept": "hbet6a",
           "scale": "int",
           "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hbet6b",
+          "text": "[de] [2. Kind] Durchschnittliche monatliche Kosten in Euro",
+          "text_de": "[2. Kind] Durchschnittliche monatliche Kosten in Euro",
+          "concept": "hbet6b",
+          "scale": "int",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hbet6c",
+          "text": "[de] [3. Kind] Durchschnittliche monatliche Kosten in Euro",
+          "text_de": "[3. Kind] Durchschnittliche monatliche Kosten in Euro",
+          "concept": "hbet6c",
+          "scale": "int",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "hbet6d",
+          "text": "[de] [4. Kind] Durchschnittliche monatliche Kosten in Euro",
+          "text_de": "[4. Kind] Durchschnittliche monatliche Kosten in Euro",
+          "concept": "hbet6d",
+          "scale": "int",
+          "sn": 4,
           "number": ""
         },
         {
@@ -8908,21 +10136,48 @@
           "text": "[de] keine Angabe",
           "text_de": "keine Angabe",
           "scale": "bin",
-          "sn": 2,
+          "sn": 5,
           "number": ""
         },
         {
           "item": "hbet7a",
-          "text": "[de] Keine Kosten",
-          "text_de": "Keine Kosten",
+          "text": "[de] [1. Kind] Keine Kosten",
+          "text_de": "[1. Kind] Keine Kosten",
           "concept": "hbet7a",
           "scale": "bin",
-          "sn": 3,
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "hbet7b",
+          "text": "[de] [2. Kind] Keine Kosten",
+          "text_de": "[2. Kind] Keine Kosten",
+          "concept": "hbet7b",
+          "scale": "bin",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "hbet7c",
+          "text": "[de] [3. Kind] Keine Kosten",
+          "text_de": "[3. Kind] Keine Kosten",
+          "concept": "hbet7c",
+          "scale": "bin",
+          "sn": 8,
+          "number": ""
+        },
+        {
+          "item": "hbet7d",
+          "text": "[de] [4. Kind] Keine Kosten",
+          "text_de": "[4. Kind] Keine Kosten",
+          "concept": "hbet7d",
+          "scale": "bin",
+          "sn": 9,
           "number": ""
         }
       ],
       "sn": 187,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_89.1": {
@@ -8941,7 +10196,7 @@
         }
       ],
       "sn": 188,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "CON_89.2": {
@@ -8960,7 +10215,82 @@
         }
       ],
       "sn": 189,
-      "instrument": "soep-core-2019-hh2",
+      "instrument": "soep-core-2019-hh3",
+      "study": "soep-core"
+    },
+    "102": {
+      "question": "102",
+      "name": "102",
+      "label": "[de] Auf welchem Gerät haben Sie die Befragung durchgeführt?",
+      "label_de": "Auf welchem Gerät haben Sie die Befragung durchgeführt?",
+      "items": [
+        {
+          "item": "zgeraet",
+          "text": "[de] Auf welchem Gerät haben Sie die Befragung durchgeführt?",
+          "text_de": "Auf welchem Gerät haben Sie die Befragung durchgeführt?",
+          "concept": "zgeraet",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Computer/Laptop",
+              "label_de": "Computer/Laptop"
+            },
+            {
+              "value": 2,
+              "label": "[de] Tablet",
+              "label_de": "Tablet"
+            },
+            {
+              "value": 3,
+              "label": "[de] Smartphone",
+              "label_de": "Smartphone"
+            },
+            {
+              "value": 4,
+              "label": "[de] Sonstiges",
+              "label_de": "Sonstiges"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "zgeraetx",
+          "text": "[de] [Sonstiges] und zwar",
+          "text_de": "[Sonstiges] und zwar",
+          "concept": "zgeraetx",
+          "scale": "chr",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "zuseragent",
+          "concept": "zuseragent",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] User Agent",
+              "label_de": "User Agent"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "keine Angabe"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        }
+      ],
+      "sn": 190,
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "intro4": {
@@ -8978,8 +10308,8 @@
           "number": ""
         }
       ],
-      "sn": 190,
-      "instrument": "soep-core-2019-hh2",
+      "sn": 191,
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "A": {
@@ -9033,8 +10363,8 @@
           "number": ""
         }
       ],
-      "sn": 191,
-      "instrument": "soep-core-2019-hh2",
+      "sn": 192,
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "B": {
@@ -9083,8 +10413,8 @@
           "number": ""
         }
       ],
-      "sn": 192,
-      "instrument": "soep-core-2019-hh2",
+      "sn": 193,
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "C": {
@@ -9112,8 +10442,8 @@
           "number": ""
         }
       ],
-      "sn": 193,
-      "instrument": "soep-core-2019-hh2",
+      "sn": 194,
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     },
     "D": {
@@ -9159,8 +10489,8 @@
           "number": ""
         }
       ],
-      "sn": 194,
-      "instrument": "soep-core-2019-hh2",
+      "sn": 195,
+      "instrument": "soep-core-2019-hh3",
       "study": "soep-core"
     }
   }

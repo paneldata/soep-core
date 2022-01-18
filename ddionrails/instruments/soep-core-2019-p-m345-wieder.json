@@ -113,6 +113,7 @@
           "item": "1",
           "text": "[de] Leben in Deutschland \nUmfrage zur Lebenssituation von Schutzsuchenden in Deutschland 2019",
           "text_de": "Leben in Deutschland \nUmfrage zur Lebenssituation von Schutzsuchenden in Deutschland 2019",
+          "description": "Jahreszahl angepasst\n\nNummerierung im Q00X Stil machen, wie bei Perst",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -208,6 +209,7 @@
           "item": "1",
           "text": "[de] Wie schon in der Broschüre beschrieben, bitten wir Sie um die Teilnahme an dieser Umfrage. \nDie Teilnahme an dieser Umfrage ist freiwillig. \nWenn Sie teilnehmen und Sie einzelne Fragen aus persönlichen Gründen nicht beantworten möchten, können Sie auch die Beantwortung der jeweiligen Frage spontan ablehnen. Zeigen Sie dafür zum Beispiel auf die Option \"keine Angabe\". \nIhre Angaben werden streng vertraulich behandelt. Namen und Adressen werden von den Angaben im Interview getrennt. Genaueres erfahren Sie im „Datenschutzblatt“, das die Interviewerin bzw. der Interviewer Ihnen überreicht. Aus den statistischen Ergebnissen kann niemand erkennen, welche konkreten Personen hinter den Angaben stehen. Die Umfrage steht in keinem Zusammenhang mit Ihrem Asylverfahren, so dass es darauf keine Auswirkungen haben kann, auch nicht nachträglich, wenn Ihr Asylverfahren bereits abgeschlossen ist.",
           "text_de": "Wie schon in der Broschüre beschrieben, bitten wir Sie um die Teilnahme an dieser Umfrage. \nDie Teilnahme an dieser Umfrage ist freiwillig. \nWenn Sie teilnehmen und Sie einzelne Fragen aus persönlichen Gründen nicht beantworten möchten, können Sie auch die Beantwortung der jeweiligen Frage spontan ablehnen. Zeigen Sie dafür zum Beispiel auf die Option \"keine Angabe\". \nIhre Angaben werden streng vertraulich behandelt. Namen und Adressen werden von den Angaben im Interview getrennt. Genaueres erfahren Sie im „Datenschutzblatt“, das die Interviewerin bzw. der Interviewer Ihnen überreicht. Aus den statistischen Ergebnissen kann niemand erkennen, welche konkreten Personen hinter den Angaben stehen. Die Umfrage steht in keinem Zusammenhang mit Ihrem Asylverfahren, so dass es darauf keine Auswirkungen haben kann, auch nicht nachträglich, wenn Ihr Asylverfahren bereits abgeschlossen ist.",
+          "description": "Fragetext veränder: „Einleitung“ gelöscht",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -227,6 +229,7 @@
           "item": "1",
           "text": "Personal details",
           "text_de": "Angaben zur Person",
+          "description": "diese Überschrift ist in Capi 2018 nicht vorhanden",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -812,6 +815,7 @@
           "item": "1",
           "text": "Normal day",
           "text_de": "Normaler Alltag",
+          "description": "Gleich gestaltet wie in Perst-2019-M345",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -1100,6 +1104,7 @@
           "item": "pwerk3",
           "text": "Number of hours",
           "text_de": "Anzahl Stunden",
+          "description": "JN: pwerk2 sind Besorgungen, daher habe ich den var_fix dem concept angepasst, vermute Rechtschreibirrtum",
           "concept": "pwerk3",
           "scale": "int",
           "sn": 1,
@@ -1899,6 +1904,7 @@
           "item": "pfrei19",
           "text": "Using online social networks (such as Facebook / Google+ / Xing)",
           "text_de": "Wie oft nutzen Sie soziale Netzwerke wie zum Beispiel Facebook, Google+ oder Xing?",
+          "description": "JN: pfrei19 lassen, da analog zu vergangenen Jahren, aber im Hauptsoep varfix evtl. anpassen",
           "concept": "pfrei19",
           "scale": "cat",
           "answers": [
@@ -2353,6 +2359,7 @@
           "item": "pggt1",
           "text": "Who do you share personal thoughts and feelings or with\ntalk about things that you would not tell anyone? The first person is:",
           "text_de": "Mit wem teilen Sie persönliche Gedanken und Gefühle oder\nsprechen über Dinge, die Sie nicht jedem erzählen würden? Die erste Person ist:",
+          "description": "Gotos verändert",
           "goto": "1:10@Q046,11:17@Q045,18@Q054,-1@Q054",
           "concept": "p1pera",
           "scale": "cat",
@@ -2466,6 +2473,8 @@
           "item": "pggt1h",
           "text": "[de] Woher stammt diese Person?",
           "text_de": "Woher stammt diese Person?",
+          "description": "Antwortkategorie 2 „aus Ihrem Herkunftsland (wenn nicht Deutschland)“ verändert in „aus Ihrem Herkunftsland“",
+          "filter": "Q044;pggt1=11:17",
           "concept": "pggt1h",
           "scale": "cat",
           "answers": [
@@ -2508,6 +2517,7 @@
           "item": "pggt2",
           "text": "With whom do you share personal thoughts and feelings or talk about things\nyou would not tell everyone? The second person is:",
           "text_de": "Mit wem teilen Sie persönliche Gedanken und Gefühle oder\nsprechen über Dinge, die Sie nicht jedem erzählen würden? Die zweite Person ist:",
+          "description": "Gotos verändert",
           "goto": "1:10@Q048,11:17@Q047,18@Q054,-1@Q054",
           "concept": "p2pera",
           "scale": "cat",
@@ -2621,6 +2631,8 @@
           "item": "pggt2h",
           "text": "[de] Woher stammt diese Person?",
           "text_de": "Woher stammt diese Person?",
+          "description": "Antwortkategorie 2 „aus Ihrem Herkunftsland (wenn nicht Deutschland)“ verändert in „aus Ihrem Herkunftsland“",
+          "filter": "Q046;pggt2=11:17",
           "concept": "pggt2h",
           "scale": "cat",
           "answers": [
@@ -2663,6 +2675,7 @@
           "item": "pggt3",
           "text": "With whom do you share personal thoughts and feelings or talk about things\nyou would not tell everyone? The third person is:",
           "text_de": "Mit wem teilen Sie persönliche Gedanken und Gefühle oder\nsprechen über Dinge, die Sie nicht jedem erzählen würden? Die dritte Person ist:",
+          "description": "Gotos verändert",
           "goto": "1:10@Q050,11:17@Q049,18@Q054,-1@Q054",
           "concept": "p3pera",
           "scale": "cat",
@@ -2776,6 +2789,8 @@
           "item": "pggt3h",
           "text": "[de] Woher stammt diese Person?",
           "text_de": "Woher stammt diese Person?",
+          "description": "Antwortkategorie 2 „aus Ihrem Herkunftsland (wenn nicht Deutschland)“ verändert in „aus Ihrem Herkunftsland“",
+          "filter": "Q048;pggt3=11:17",
           "concept": "pggt3h",
           "scale": "cat",
           "answers": [
@@ -2818,6 +2833,7 @@
           "item": "pggt4",
           "text": "With whom do you share personal thoughts and feelings or talk about things\nyou would not tell everyone? The fourth person is:",
           "text_de": "Mit wem teilen Sie persönliche Gedanken und Gefühle oder\nsprechen über Dinge, die Sie nicht jedem erzählen würden? Die vierte Person ist:",
+          "description": "Gotos verändert",
           "goto": "1:10@Q052,18@Q054,-1@Q054",
           "concept": "p4pera",
           "scale": "cat",
@@ -2931,6 +2947,7 @@
           "item": "pggt4h",
           "text": "[de] Woher stammt diese Person?",
           "text_de": "Woher stammt diese Person?",
+          "description": "Antwortkategorie 2 „aus Ihrem Herkunftsland (wenn nicht Deutschland)“ verändert in „aus Ihrem Herkunftsland“",
           "concept": "pggt4h",
           "scale": "cat",
           "answers": [
@@ -2973,6 +2990,7 @@
           "item": "pggt5",
           "text": "With whom do you share personal thoughts and feelings or talk about things\nyou would not tell everyone? The fifth person is:",
           "text_de": "Mit wem teilen Sie persönliche Gedanken und Gefühle oder\nsprechen über Dinge, die Sie nicht jedem erzählen würden? Die fünfte Person ist:",
+          "description": "Gotos verändert",
           "goto": "1:10@Q054,18@Q054,-1@Q054",
           "concept": "p5pera",
           "scale": "cat",
@@ -3086,6 +3104,7 @@
           "item": "pggt5h",
           "text": "[de] Woher stammt diese Person?",
           "text_de": "Woher stammt diese Person?",
+          "description": "Antwortkategorie 2 „aus Ihrem Herkunftsland (wenn nicht Deutschland)“ verändert in „aus Ihrem Herkunftsland“",
           "concept": "pggt5h",
           "scale": "cat",
           "answers": [
@@ -3497,6 +3516,7 @@
           "item": "pspfam",
           "text": "[de] In welcher Sprache sprechen Sie hier in Deutschland mit Ihren Familienmitgliedern?",
           "text_de": "In welcher Sprache sprechen Sie hier in Deutschland mit Ihren Familienmitgliedern?",
+          "description": "Item 5 „Trifft nicht zu“ hinzugefügt     VH: Var_fix nach dem Abgleich mit haupt soep angepasst",
           "concept": "pspfam",
           "scale": "cat",
           "answers": [
@@ -3549,6 +3569,7 @@
           "item": "psprfr",
           "text": "[de] In welcher Sprache sprechen Sie hier in Deutschland mit Ihren Freunden?",
           "text_de": "In welcher Sprache sprechen Sie hier in Deutschland mit Ihren Freunden?",
+          "description": "Item 5 „Trifft nicht zu“ hinzugefügt     VH: Var_fix nach dem Abgleich mit haupt soep angepasst",
           "concept": "pspfreu",
           "scale": "cat",
           "answers": [
@@ -3601,6 +3622,7 @@
           "item": "psparb",
           "text": "[de] In welcher Sprache sprechen Sie hier in Deutschland bei der Arbeit?",
           "text_de": "In welcher Sprache sprechen Sie hier in Deutschland bei der Arbeit?",
+          "description": "Item 5 „Trifft nicht zu“ hinzugefügt     VH: Var_fix nach dem Abgleich mit haupt soep angepasst",
           "concept": "psparb",
           "scale": "cat",
           "answers": [
@@ -3653,6 +3675,7 @@
           "item": "pspaus",
           "text": "[de] In welcher Sprache sprechen Sie hier in Deutschland im Rahmen Ihrer Ausbildung?",
           "text_de": "In welcher Sprache sprechen Sie hier in Deutschland im Rahmen Ihrer Ausbildung?",
+          "description": "Item 5 „Trifft nicht zu“ hinzugefügt",
           "concept": "pspaus",
           "scale": "cat",
           "answers": [
@@ -3762,6 +3785,7 @@
           "item": "1",
           "text": "[de] Integrations- und andere Sprachkurse in Deutschland",
           "text_de": "Integrations- und andere Sprachkurse in Deutschland",
+          "description": "Fragenaufbau im gesamten Block geändert; Filterführung generell geändert",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3783,6 +3807,7 @@
           "text_de": "Haben Sie zum Zeitpunkt der letzten Befragung oder danach an einem der folgenden Kurse bzw. einer der folgenden Maßnahmen teilgenommen?",
           "instruction": "[de] Die letzte Befragung war am: [Einblendung des Datums]\nBitte geben Sie alles Zutreffende an!",
           "instruction_de": "Die letzte Befragung war am: [Einblendung des Datums]\nBitte geben Sie alles Zutreffende an!",
+          "description": "Gotos verändert; Antwortkategorie „Ja, andere BA-Maßnahme“ in „Ja, andere Maßnahme der Agentur für Arbeit“ verändert",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3907,6 +3932,7 @@
         {
           "text": "Integration Course BAMF",
           "text_de": "Integrationskurs des BAMF",
+          "description": "Filter hier als Vorlage vergeben, mit neuer Nummerierung in Nachfolgeabschnitten übernehmen",
           "scale": "txt",
           "sn": 0,
           "item": "root",
@@ -3927,6 +3953,7 @@
           "item": "1",
           "text": "When did the integration course start?",
           "text_de": "Wann war der Beginn des Integrationskurses?",
+          "filter": "Q066;lintk=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3979,6 +4006,8 @@
           "item": "1",
           "text": "When did the integration course finish?",
           "text_de": "Wann war das Ende des Integrationskurses?",
+          "description": "Gotos verändert",
+          "filter": "Q066;lintk=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4036,6 +4065,7 @@
           "item": "lintkdt",
           "text": "Did you take a German language test in order to complete your integration course?",
           "text_de": "Haben Sie zum Abschluss des Integrationskurses an einem Deutschtest teilgenommen?",
+          "filter": "Q068;lintkej!= .",
           "goto": "2@Q071,-1@Q071",
           "concept": "lintkdt",
           "scale": "cat",
@@ -4074,6 +4104,7 @@
           "item": "lintkniv",
           "text": "For which language ability level did you get certification in the integration course?",
           "text_de": "Welches Niveau wurde Ihnen bei dem Integrationskurs bescheinigt?",
+          "filter": "Q069;lintkdt=1",
           "concept": "lintkniv",
           "scale": "cat",
           "answers": [
@@ -4116,6 +4147,8 @@
           "item": "lintkhil",
           "text": "How helpful did you find the integration course for learning German?",
           "text_de": "Wie hilfreich fanden Sie den Integrationskurs, um Deutsch zu lernen?",
+          "description": "Goto hinzugefügt",
+          "filter": "Q066;lintk=1",
           "goto": "all@Q097 bzw. nächste Maßnahme laut Q066",
           "concept": "lintkhil",
           "scale": "cat",
@@ -4183,6 +4216,7 @@
           "item": "1",
           "text": "[de] Wann war der Beginn dieser berufsbezogenen Deutschsprachförderung des BAMF?",
           "text_de": "Wann war der Beginn dieser berufsbezogenen Deutschsprachförderung des BAMF?",
+          "filter": "Q066;lesfk=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4235,6 +4269,8 @@
           "item": "1",
           "text": "When was the end of this job-related promotion of German language by the BAMF?",
           "text_de": "Wann war das Ende dieser berufsbezogenen Deutschsprachförderung des BAMF?",
+          "description": "Gotos verändert",
+          "filter": "Q066;lesfk=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4292,6 +4328,7 @@
           "item": "lesfkdt",
           "text": "Did you attend a German test to complete this job-related German language program of the BAMF?",
           "text_de": "Haben Sie zum Abschluss dieser berufsbezogenen Deutschsprachförderung des BAMF an einem Deutschtest teilgenommen?",
+          "filter": "Q073;lesfkaka!= -1",
           "goto": "2,-1@Q076",
           "concept": "lesfkdt",
           "scale": "cat",
@@ -4330,6 +4367,7 @@
           "item": "lesfkniv",
           "text": "What level of certification was awarded to you for this job-related promotion of German language by the BAMF?",
           "text_de": "Welches Niveau wurde Ihnen bei dieser berufsbezogenen Deutschsprachförderung des BAMF bescheinigt?",
+          "filter": "Q074;lesfkdt=1",
           "concept": "lesfkniv",
           "scale": "cat",
           "answers": [
@@ -4397,6 +4435,7 @@
           "item": "lesfkhil",
           "text": "How helpful did you find this job-related promotion of German language by the BAMF?",
           "text_de": "Wie hilfreich fanden Sie diese berufsbezogene Deutschsprachförderung des BAMF?",
+          "filter": "Q066;lesfk=1",
           "goto": "all@Q097 bzw. nächste Maßnahme laut Q066",
           "concept": "lesfkhil",
           "scale": "cat",
@@ -4464,6 +4503,7 @@
           "item": "1",
           "text": "[de] Wann war der Beginn der Maßnahme „Perspektiven für weibliche Flüchtlinge“?",
           "text_de": "Wann war der Beginn der Maßnahme „Perspektiven für weibliche Flüchtlinge“?",
+          "filter": "Q066;lmaa1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4516,6 +4556,8 @@
           "item": "1",
           "text": "When did the “Perspectives for Young Refugees” course finish?",
           "text_de": "Wann war das Ende der Maßnahme „Perspektiven für weibliche Flüchtlinge\"?",
+          "description": "Gotos verändert",
+          "filter": "Q066;lmaa1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4573,6 +4615,7 @@
           "item": "lpfwfkdt",
           "text": "Did you take a German language test in order to complete the “Perspectives for Young Refugees” course?",
           "text_de": "Haben Sie zum Abschluss der Maßnahme „Perspektiven für weibliche Flüchtlinge“ an einem Deutschtest teilgenommen?",
+          "filter": "Q078;lpfwfe!= -1",
           "concept": "lpfwfkdt",
           "scale": "cat",
           "answers": [
@@ -4610,6 +4653,8 @@
           "item": "lpfwfkhil",
           "text": "How helpful did you find the “Perspectives for female Refugees” course for learning vocational German?",
           "text_de": "Wie hilfreich fanden Sie die Maßnahme „Perspektiven für weibliche Flüchtlinge“, um berufsbezogenes Deutsch zu lernen?",
+          "description": "Gotos verändert",
+          "filter": "Q066;lmaa1=1",
           "goto": "ALL@Q097 oder weiter entsprechend der Ergebnisse von Q066",
           "concept": "lpfwkhil",
           "scale": "cat",
@@ -4677,6 +4722,7 @@
           "item": "1",
           "text": "When did the “Perspectives for Young Refugees” course start?",
           "text_de": "Wann war der Beginn der Maßnahme „Perspektiven für jugendliche Flüchtlinge“?",
+          "filter": "Q066;lmaa2=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4729,6 +4775,7 @@
           "item": "1",
           "text": "When did the “Perspectives for Young Refugees” course finish?",
           "text_de": "Wann war das Ende der Maßnahme „Perspektiven für jugendliche Flüchtlinge“?",
+          "filter": "Q066;lmaa2=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4753,6 +4800,7 @@
         },
         {
           "item": "lpfjfke",
+          "description": "Gotos verändert",
           "goto": "1,-1@Q097 bzw. nächste Maßnahme laut Q066",
           "concept": "lpfjfke",
           "scale": "cat",
@@ -4786,6 +4834,7 @@
           "item": "lpfjfkdt",
           "text": "Did you take a German language test in order to complete the “Perspectives for Young Refugees” course?",
           "text_de": "Haben Sie zum Abschluss der Maßnahme „Perspektiven für jugendliche Flüchtlinge“ an einem Deutschtest teilgenommen?",
+          "filter": "Q082;pfjfke!=-1",
           "concept": "lpfjfkdt",
           "scale": "cat",
           "answers": [
@@ -4823,6 +4872,8 @@
           "item": "lpfjfkhil",
           "text": "How helpful did you find the “Perspectives for Young Refugees” course for learning vocational German?",
           "text_de": "Wie hilfreich fanden Sie die Maßnahme „Perspektiven für jugendliche Flüchtlinge“, um berufsbezogenes Deutsch zu lernen?",
+          "description": "Gotos verändert",
+          "filter": "Q066;lmaa2=1",
           "goto": "ALL@Q097 oder weiter entsprechend der Ergebnisse von Q066",
           "concept": "lpfjfkhil",
           "scale": "cat",
@@ -4890,6 +4941,7 @@
           "item": "1",
           "text": "When did the “Perspectives for Refugees” course start?",
           "text_de": "Wann war der Beginn der Maßnahme „Perspektiven für Flüchtlinge“?",
+          "filter": "Q066;lmaa3=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4942,6 +4994,7 @@
           "item": "1",
           "text": "When did the “Perspectives for Refugees” course finish?",
           "text_de": "Wann war das Ende der Maßnahme „Perspektiven für Flüchtlinge“?",
+          "filter": "Q066;lmaa3=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4966,6 +5019,7 @@
         },
         {
           "item": "lpffke",
+          "description": "Gotos verändert",
           "goto": "1,-1@Q097 bzw. nächste Maßnahme laut Q066",
           "concept": "lpffke",
           "scale": "cat",
@@ -4999,6 +5053,7 @@
           "item": "lpffkdt",
           "text": "Did you take a German language test in order to complete the “Perspectives for Refugees” course?",
           "text_de": "Haben Sie zum Abschluss der Maßnahme „Perspektiven für Flüchtlinge“ an einem Deutschtest teilgenommen?",
+          "filter": "Q086;lpffke!=-1",
           "concept": "lpffkdt",
           "scale": "cat",
           "answers": [
@@ -5036,6 +5091,8 @@
           "item": "lpffkhil",
           "text": "How helpful did you find the “Perspectives for Refugees” course for learning vocational German?",
           "text_de": "Wie hilfreich fanden Sie die Maßnahme „Perspektiven für Flüchtlinge“, um berufsbezogenes Deutsch zu lernen?",
+          "description": "Gotos verändert",
+          "filter": "Q066;lmaa3=1",
           "goto": "ALL@Q097 oder weiter entsprechend der Ergebnisse von Q066",
           "concept": "lpffkhil",
           "scale": "cat",
@@ -5103,6 +5160,7 @@
           "item": "1",
           "text": "[de] Wann war der Beginn der Maßnahme „KompAS“?",
           "text_de": "Wann war der Beginn der Maßnahme „KompAS“?",
+          "filter": "Q066;lmaa4=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5155,6 +5213,7 @@
           "item": "1",
           "text": "When did the \"KompAS\" course finish?",
           "text_de": "Wann war das Ende der Maßnahme „KompAS“?",
+          "filter": "Q066;lmaa4=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5179,6 +5238,7 @@
         },
         {
           "item": "lkomke",
+          "description": "Gotos verändert",
           "goto": "1,-1@Q097 bzw. nächste Maßnahme laut Q066",
           "concept": "lkomke",
           "scale": "cat",
@@ -5212,6 +5272,7 @@
           "item": "lkomkdt",
           "text": "Did you take a German language test in order to complete of \"KompAS\" course?",
           "text_de": "Haben Sie zum Abschluss der Maßnahme „KompAS“ an einem Deutschtest teilgenommen?",
+          "filter": "Q090;lkomke!=-1",
           "concept": "lkomdt",
           "scale": "cat",
           "answers": [
@@ -5249,6 +5310,7 @@
           "item": "lkomkhil",
           "text": "[de] Wie hilfreich fanden Sie die Maßnahme „KompAS“, um berufsbezogenes Deutsch zu lernen? ",
           "text_de": "Wie hilfreich fanden Sie die Maßnahme „KompAS“, um berufsbezogenes Deutsch zu lernen? ",
+          "filter": "Q066;lmaa4=1",
           "goto": "ALL@Q097 bzw. nächste Maßnahme laut Q066",
           "concept": "lkomhil",
           "scale": "cat",
@@ -5316,6 +5378,7 @@
           "item": "1",
           "text": "When did this other German language course start?",
           "text_de": "Wann war der Beginn dieses Deutschsprachkurses?",
+          "filter": "Q066;ldspk=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5368,6 +5431,7 @@
           "item": "1",
           "text": "When did this other German language course finish?",
           "text_de": "Wann war das Ende dieses Deutschsprachkurses?",
+          "filter": "Q066;ldspk=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5427,6 +5491,7 @@
           "text_de": "Wie viele Stunden hat der Deutsch-Sprachkurs insgesamt gedauert?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte. ",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte. ",
+          "filter": "Q066;ldspk=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5470,6 +5535,7 @@
           "item": "ldsphniv",
           "text": "[de] Welches ist das höchste Niveau, das Ihnen bis jetzt für die deutsche Sprache bescheinigt wurde? ",
           "text_de": "Welches ist das höchste Niveau, das Ihnen bis jetzt für die deutsche Sprache bescheinigt wurde? ",
+          "filter": "(Q071;lintkhil=1:4,-1)|(Q076;lesfkhil=1:4,-1)|(Q080;lpfwkhil=1:4,-1)|(Q084;lpfjfkhil=1:4,-1)|(Q088;lpffkhil=1:4,-1)|(Q092;lkomkhil=1:4,-1)|(Q093;ldspk=2,-1)|(Q095;ldspke=1,-1)",
           "concept": "ldsphniv",
           "scale": "cat",
           "answers": [
@@ -5551,6 +5617,7 @@
           "item": "dvor43_45",
           "text": "[de] Sprungdummy [Einblendung offizielle Anhörung aus 144 der Befragung 2018]",
           "text_de": "Sprungdummy [Einblendung offizielle Anhörung aus 144 der Befragung 2018]",
+          "description": "technische Filterfrage (soll 2019 nicht in Fragennummerierung aufgenommen werden!); Filterprüfung nötig; Fragetext + Antwortkategorien wurden angepasst,\nVarfix verändert ",
           "goto": "1@Q098,2@Q100,3@Q106,4@Q112, 5@Q112",
           "concept": "dvor43_45",
           "scale": "cat",
@@ -5601,6 +5668,8 @@
           "text_de": "Wann wurde Ihnen der Ankunftsnachweis oder eine Bescheinigung über die Meldung als Asylsuchende/r (BüMA) ausgestellt?",
           "instruction": "[de] Datumsangabe sollte nicht vor Einreisedatum sein:\n[Einblendung Datum der Einreise aus Q076 der Befragung 2018]",
           "instruction_de": "Datumsangabe sollte nicht vor Einreisedatum sein:\n[Einblendung Datum der Einreise aus Q076 der Befragung 2018]",
+          "description": "instruction angepasst",
+          "filter": "Preload1:dvor43_45=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5660,6 +5729,8 @@
           "text_de": "Wann haben Sie beim Bundesamt für Migration und Flüchtlinge Ihren offiziellen Antrag auf Asyl gestellt?",
           "instruction": "[de] Sollten Sie bereits mehrere Anträge gestellt haben, beziehen Sie sich bitte auf Ihren letzten Antrag. Datumsangabe sollte nicht vor dem Datum der Meldebescheinigung sein:\n[Einblendung Datum der Meldebescheinigung aus Q081 der Befragung 2019]",
           "instruction_de": "Sollten Sie bereits mehrere Anträge gestellt haben, beziehen Sie sich bitte auf Ihren letzten Antrag. Datumsangabe sollte nicht vor dem Datum der Meldebescheinigung sein:\n[Einblendung Datum der Meldebescheinigung aus Q081 der Befragung 2019]",
+          "description": "instruction angepasst",
+          "filter": "Preload1:dvor43_45=1;138:dvor43_45=-1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5714,6 +5785,7 @@
           "text_de": "Sie hatten uns bei der letzten Befragung erzählt, dass die offizielle Anhörung Ihres Asylantrags beim BAMF noch nicht stattgefunden hatte. Daher würden wir Ihnen gerne nochmal ein paar Fragen zu Ihrem Asylverfahren stellen: Wann haben Sie beim Bundesamt für Migration und Flüchtlinge Ihren offiziellen Antrag auf Asyl gestellt?",
           "instruction": "[de] Sollten Sie bereits mehrere Anträge gestellt haben, beziehen Sie sich bitte auf Ihren letzten Antrag.",
           "instruction_de": "Sollten Sie bereits mehrere Anträge gestellt haben, beziehen Sie sich bitte auf Ihren letzten Antrag.",
+          "filter": "Preload1:dvor43_45=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5768,6 +5840,8 @@
           "item": "lbamfa1",
           "text": "Is this current application for asylum the first time you applied for asylum at the German Federal Office for Migration and Refugees?",
           "text_de": "Handelt es sich bei diesem Asylantrag um Ihren ersten Asylantrag beim Bundesamt für Migration und Flüchtlinge?",
+          "description": "Eingangsfilter geändert (da Codierung in 139 geändert)",
+          "filter": "(Preload1;dvor43_45=2)|(Q098;lbmano!=1,-1)",
           "concept": "lbamfa1",
           "scale": "cat",
           "answers": [
@@ -5807,6 +5881,8 @@
           "text_de": "Wann haben Sie Ihren ersten Antrag auf Asyl beim Bundesamt für Migration und Flüchtlinge gestellt?",
           "instruction": "[de] Datumsangabe sollte vor dem Datum des letzten Asylantrags sein.",
           "instruction_de": "Datumsangabe sollte vor dem Datum des letzten Asylantrags sein.",
+          "description": "Eingangsfilter geändert (da Codierung in 139 geändert)",
+          "filter": "(Preload1;dvor43_45=2)|(Q098;lbmano!=1,-1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5859,6 +5935,8 @@
           "item": "lbamfaa",
           "text": "Has the official interview for your current asylum application to the Federal Office for Migration und Refugees already taken place?",
           "text_de": "Fand bereits die offizielle Anhörung Ihres aktuellen Asylantrags beim Bundesamt für Migration und Flüchtlinge statt?",
+          "description": "Eingangsfilter geändert (da Codierung in 139 geändert)",
+          "filter": "(Preload1;dvor43_45=2)|(Q098;lbmano!=1,-1)",
           "concept": "lbamfaa",
           "scale": "cat",
           "answers": [
@@ -5903,6 +5981,7 @@
           "text_de": "Wann fand die offizielle Anhörung Ihres aktuellen Asylantrags beim Bundesamt für Migration und Flüchtlinge statt?",
           "instruction": "[de] Datumsangabe sollte nicht vor dem Datum des letzten Asylantrags sein:\n[Einblendung Datum des letzten Asylantrags aus Q148 bzw. Q149]",
           "instruction_de": "Datumsangabe sollte nicht vor dem Datum des letzten Asylantrags sein:\n[Einblendung Datum des letzten Asylantrags aus Q148 bzw. Q149]",
+          "filter": "Q103;lbamfaa=3",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5993,6 +6072,7 @@
           "item": "lbamfa1vj",
           "text": "In the previous survey, you told us that the German Federal Office for Migration and Refugees (BAMF) had not yet made a decision regarding your application for asylum. \nHas this changed? \nHas the German Federal Agency of Migration and Refugees made an official decision about your application for asylum?",
           "text_de": "Sie hatten uns bei der letzten Befragung erzählt, dass Ihr Asylantrag vom BAMF noch nicht entschieden wurde. Wie ist das heute:\nWurde über Ihren Asylantrag vom Bundesamt für Migration und Flüchtlinge bereits entschieden?",
+          "filter": "Preload1;dvor43_45=3",
           "goto": "2,-1@Q112",
           "concept": "lbamfa1vj",
           "scale": "cat",
@@ -6033,6 +6113,7 @@
           "text_de": "Wann wurde über Ihren Asylantrag entschieden?",
           "instruction": "[de] Datumsangabe sollte nicht vor Anhörung des aktuellen Asylantrags sein:\n[Einblendung Datum des aktuellen Asylantrags aus Q153]",
           "instruction_de": "Datumsangabe sollte nicht vor Anhörung des aktuellen Asylantrags sein:\n[Einblendung Datum des aktuellen Asylantrags aus Q153]",
+          "filter": "(Q105;lbamfent=1)|(Q106;lbamfa1vj=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -6085,6 +6166,7 @@
           "item": "lmfaner",
           "text": "Has your application for asylum been approved by the Federal Office for Migration and Refugees?",
           "text_de": "Wurde Ihr Asylantrag vom Bundesamt für Migration und Flüchtlinge anerkannt?",
+          "filter": "(Q105;lbamfent=1)|(Q106;lbamfa1vj=1)",
           "concept": "lmfaner",
           "scale": "cat",
           "answers": [
@@ -6127,6 +6209,7 @@
           "item": "lmfkl",
           "text": "Have you officially challenged the decision and brought a court action against the German Federal Office for Migration and Refugees?",
           "text_de": "Haben Sie den Bescheid rechtlich angefochten und gegen das Bundesamt für Migration und Flüchtlinge vor einem Gericht geklagt?",
+          "filter": "(Q105;lbamfent=1)|(Q106;lbamfa1vj=1)",
           "goto": "2@Q112,-1@Q112,1@Q111",
           "concept": "lmfkl",
           "scale": "cat",
@@ -6165,6 +6248,7 @@
           "item": "lmfklerfvj",
           "text": "[de] Sie hatten uns bei der letzten Befragung erzählt, dass Ihr Asylantrag vom BAMF bereits entschieden wurde:\nHaben Sie den Bescheid rechtlich angefochten und gegen das Bundesamt für Migration und Flüchtlinge vor einem Gericht geklagt?",
           "text_de": "Sie hatten uns bei der letzten Befragung erzählt, dass Ihr Asylantrag vom BAMF bereits entschieden wurde:\nHaben Sie den Bescheid rechtlich angefochten und gegen das Bundesamt für Migration und Flüchtlinge vor einem Gericht geklagt?",
+          "filter": "Preload1;dvor43_45=4",
           "goto": "2@Q112,-1@Q112",
           "concept": "lmfklerfvj",
           "scale": "cat",
@@ -6245,6 +6329,7 @@
           "item": "laht",
           "text": "Which residence title do you currently hold? Please check the Immigration Authority's label in your passport.",
           "text_de": "Welchen Aufenthaltstitel haben Sie momentan? Schauen Sie bitte auf das Etikett der Ausländerbehörde in Ihrem Pass.",
+          "description": "Gotos verändert",
           "goto": "1,8,-1@Q114",
           "concept": "laht",
           "scale": "cat",
@@ -7001,6 +7086,7 @@
           "item": "panausb2",
           "text": "Which qualification obtained abroad are you continuing/have you begun to seek recognition for?",
           "text_de": "Für welchen im Ausland erworbenen beruflichen Abschluss haben Sie ein Anerkennungsverfahren fortgeführt oder begonnen?",
+          "filter": "Q125;panausb1=1",
           "concept": "panausb2",
           "scale": "cat",
           "answers": [
@@ -7063,6 +7149,7 @@
           "item": "l1anerx",
           "text": "For which German profession did you apply for recognition of your qualifications?",
           "text_de": "Für welchen deutschen Beruf haben Sie den Antrag auf Anerkennung gestellt?",
+          "filter": "Q125;panausb1=1",
           "concept": "l1anerx",
           "scale": "chr",
           "sn": 0,
@@ -7098,6 +7185,7 @@
           "item": "1",
           "text": "When did you apply for recognition of your qualifications?",
           "text_de": "Wann haben Sie die Anerkennung Ihres Abschlusses beantragt?",
+          "filter": "Q125;panausb1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -7150,6 +7238,7 @@
           "item": "l1besja",
           "text": "[de] Ist dieser Beruf reglementiert, also zur Ausübung eine Anerkennung gesetzlich vorgeschrieben?",
           "text_de": "Ist dieser Beruf reglementiert, also zur Ausübung eine Anerkennung gesetzlich vorgeschrieben?",
+          "filter": "Q125;panausb1=1",
           "concept": "l1besja",
           "scale": "cat",
           "answers": [
@@ -7192,6 +7281,7 @@
           "item": "l1resula",
           "text": "Have you already received notification of either recognition or rejection of your qualifications?",
           "text_de": "Haben Sie schon den Bescheid über die Anerkennung oder die Ablehnung Ihres Abschlusses erhalten?",
+          "filter": "Q125;panausb1=1",
           "goto": "3,-1@Q137",
           "concept": "l1resula",
           "scale": "cat",
@@ -7235,6 +7325,7 @@
           "item": "1",
           "text": "When did you receive notification of either recognition or rejection of your qualifications?",
           "text_de": "Wann haben Sie den Bescheid über die Anerkennung oder die Ablehnung Ihres Abschlusses erhalten?",
+          "filter": "Q130;l1resula=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -7287,6 +7378,7 @@
           "item": "l1agmaq",
           "text": "[de] Wurde in Ihrem Anerkennungsbescheid eine Ausgleichsmaßnahme gefordert oder eine Anpassungsqualifizierung vorgeschlagen?",
           "text_de": "Wurde in Ihrem Anerkennungsbescheid eine Ausgleichsmaßnahme gefordert oder eine Anpassungsqualifizierung vorgeschlagen?",
+          "filter": "Q130;l1resula=1",
           "goto": "2@Q134,3,-1@Q135",
           "concept": "l1agmaq",
           "scale": "cat",
@@ -7330,6 +7422,7 @@
           "item": "l1agma",
           "text": "[de] Haben Sie die empfohlene Ausgleichsmaßnahme bereits abgeschlossen?",
           "text_de": "Haben Sie die empfohlene Ausgleichsmaßnahme bereits abgeschlossen?",
+          "filter": "Q132;l1agmaq=1",
           "goto": "1,2@Q135,3@Q137,4,5@Q135,-1@Q135",
           "concept": "l1agma",
           "scale": "cat",
@@ -7383,6 +7476,7 @@
           "item": "l1aq2",
           "text": "[de] Haben Sie die empfohlene Anpassungsqualifizierung bereits abgeschlossen?",
           "text_de": "Haben Sie die empfohlene Anpassungsqualifizierung bereits abgeschlossen?",
+          "filter": "Q132;l1agmaq=2",
           "concept": "l1aq2",
           "scale": "cat",
           "answers": [
@@ -7435,6 +7529,7 @@
           "item": "l1resul",
           "text": "[de] Was war das Resultat des Anerkennungsbescheids?",
           "text_de": "Was war das Resultat des Anerkennungsbescheids?",
+          "filter": "Q132;l1agmaq=2,3,-1 | Q133;l1agma!=3 ",
           "goto": "3,4,-1@Q137",
           "concept": "l1resul",
           "scale": "cat",
@@ -7483,6 +7578,7 @@
           "item": "l1anerab",
           "text": "[de] Entspricht der in der Anerkennungsbestätigung bescheinigte Abschluss Ihrem Ausbildungsberuf bzw. Ihrem Hochschulabschluss?",
           "text_de": "Entspricht der in der Anerkennungsbestätigung bescheinigte Abschluss Ihrem Ausbildungsberuf bzw. Ihrem Hochschulabschluss?",
+          "filter": "Q135;l1resul=1;2",
           "goto": "ALL@Q137",
           "concept": "l1anerab",
           "scale": "cat",
@@ -7542,6 +7638,7 @@
           "text_de": "Haben Sie seit dem 01. Januar 2018 eine Schule, eine Berufsausbildung oder ein Hochschulstudium beendet?",
           "instruction": "[de] Gemeint ist auch ein höherer akademischer Abschluss!",
           "instruction_de": "Gemeint ist auch ein höherer akademischer Abschluss!",
+          "description": "Fragetext verändert: \"... seit dem 01. Januar 2018 …\" eingefügt, also wie im Hauptsoep.",
           "goto": "2,-1@Q148",
           "concept": "pab1",
           "scale": "cat",
@@ -7580,6 +7677,7 @@
           "item": "1",
           "text": "[de] Wann haben Sie diese Schule, diese Berufsausbildung oder dieses Hochschulstudium beendet?",
           "text_de": "Wann haben Sie diese Schule, diese Berufsausbildung oder dieses Hochschulstudium beendet?",
+          "description": "Jahreszahlen angepasst",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -7752,6 +7850,7 @@
           "item": "pab5",
           "text": "Please state degree:",
           "text_de": "Was für ein allgemeinbildender Schulabschluss ist das?",
+          "description": "Goto verbessert",
           "goto": "ALL@Q148",
           "concept": "pab5",
           "scale": "cat",
@@ -8073,6 +8172,7 @@
           "text_de": "Sind Sie seit dem 01. Januar 2018 aus einer beruflichen Tätigkeit bzw. einer Stelle, die Sie vorher gehabt haben, ausgeschieden?",
           "instruction": "[de] Hier ist auch Beurlaubung / Mutterschutz / Elternzeit gemeint!",
           "instruction_de": "Hier ist auch Beurlaubung / Mutterschutz / Elternzeit gemeint!",
+          "description": "Fragetext verändert: \"... seit dem 01. Januar 2018 …\" eingefügt, also wie im Hauptsoep",
           "goto": "2,-1@Q154",
           "concept": "pend1",
           "scale": "cat",
@@ -8119,6 +8219,7 @@
           "item": "pend2",
           "text": "2018, in the month … or",
           "text_de": "2018, im Monat ... oder",
+          "description": "Jahreszahlen angepasst",
           "concept": "pend2",
           "scale": "int",
           "sn": 1,
@@ -8164,6 +8265,7 @@
           "item": "1",
           "text": "How long were you employed at that job?",
           "text_de": "Wie lange waren Sie insgesamt in Ihrer letzten Stelle beschäftigt?",
+          "description": "Rechtschreibfehler in Fragetext verbessert: statt „ihrer“ „Ihrer“",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -8356,6 +8458,7 @@
           "item": "1",
           "text": "Current Employment Status",
           "text_de": "Derzeitiger Erwerbsstatus",
+          "description": "Überschrift soll in Capi übernommen werden",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -8375,6 +8478,7 @@
           "item": "perw_r",
           "text": "Are you currently working?",
           "text_de": "Sind Sie derzeit erwerbstätig?",
+          "description": "Goto verbessert (an Codierung angepasst)",
           "goto": "1,2,4,3,10@Q165,9@Q155",
           "concept": "perw",
           "scale": "cat",
@@ -8447,6 +8551,8 @@
           "item": "pnerw02",
           "text": "Do you intend to obtain (or resume) employment in the future?",
           "text_de": "Beabsichtigen Sie, in der Zukunft (wieder) eine Erwerbstätigkeit aufzunehmen?",
+          "description": "Goto verbessert",
+          "filter": "Q154;perw_r=9",
           "goto": "1,-1@Q210",
           "concept": "pnerw02",
           "scale": "cat",
@@ -8807,6 +8913,7 @@
           "item": "psuchst1",
           "text": "Employment Agency, job centre, working group (ARGE), social welfare office",
           "text_de": "Agentur für Arbeit, Job-Center, ARGE, Sozialamt",
+          "description": "Gotos verbessert",
           "goto": "1@Q210",
           "concept": "psuchst1",
           "scale": "bin",
@@ -8907,6 +9014,7 @@
           "text_de": "Woher stammt diese Person?",
           "instruction": "If more than one person is relevant here, please indicate the origin of the person who you consider to be the most important!",
           "instruction_de": "Bei mehreren Personen nennen Sie bitte die Herkunft der Person, die Ihnen dabei am wichtigsten erscheint!",
+          "filter": "Q163;psuchst9=1",
           "goto": "ALL@Q210",
           "concept": "psustwp",
           "scale": "cat",
@@ -8950,6 +9058,7 @@
           "item": "1",
           "text": "[de] Stellenwechsel seit Anfang 2018",
           "text_de": "Stellenwechsel seit Anfang 2018",
+          "description": "2019 sollen die Blöcke idealerweise nicht springen, sondern auch durchgehend nummeriert werden; Text angepasst",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -8971,6 +9080,7 @@
           "text_de": "Haben Sie seit dem 01. Januar 2018 die Stelle gewechselt oder eine Arbeit neu aufgenommen?",
           "instruction": "This includes starting working again after a break!",
           "instruction_de": "Bitte auch angeben, wenn Sie nach einer Unterbrechung wieder angefangen haben zu arbeiten!",
+          "description": "Fragetext verändert: \"... seit dem 01. Januar 2018 …\" eingefügt, also wie im Hauptsoep",
           "goto": "2,-1@Q172",
           "concept": "pwexl1",
           "scale": "cat",
@@ -9009,6 +9119,7 @@
           "item": "1",
           "text": "How often have you changed jobs or started a new one since December 31, 2017?",
           "text_de": "Wie oft haben Sie seit dem 01. Januar 2018 die Stelle gewechselt bzw. eine Arbeit neu aufgenommen?",
+          "description": "Fragetext verändert: \"... seit dem 01. Januar 2018 …\" eingefügt, also wie im Hauptsoep",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -9061,6 +9172,7 @@
           "item": "1",
           "text": "When did you start your current position?",
           "text_de": "Wann haben Sie Ihre jetzige Stelle angetreten bzw. die Arbeit aufgenommen?",
+          "description": "Jahreszahlen angepasst",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -9116,6 +9228,7 @@
           "text_de": "Welche Art von beruflicher Veränderung war das?",
           "instruction": "If you have changed positions several times, please choose the reason for the most recent change.",
           "instruction_de": "Falls Sie mehrfach die Stelle gewechselt haben, sagen Sie es bitte für den letzten Wechsel.",
+          "description": "Antwortkategorie 4 wurde verändert (Praktikum wurde in Antwortkategorie aufgenommen)!",
           "goto": "2@Q169,1,3:6,-1@Q172",
           "concept": "pwexl4",
           "scale": "cat",
@@ -9274,6 +9387,8 @@
           "item": "1",
           "text": "Your current job",
           "text_de": "Ihre derzeitige Erwerbstätigkeit",
+          "description": "Überschrift soll in Capi übernommen werden!; Eingangsfilter eingefügt",
+          "filter": "Q154;perw_r=1:4,10",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -9948,6 +10063,7 @@
           "item": "psstanz",
           "text": "How many employees do you have?",
           "text_de": "Wie viele Mitarbeiter haben Sie?",
+          "description": "Fragetext verändert (Rechtschreibfehler verbessert Wie viele statt Wieviele); Goto verändert",
           "goto": "1,-1@Q193,2,3@Q192",
           "concept": "psstanz",
           "scale": "cat",
@@ -10075,6 +10191,7 @@
           "item": "pzaf",
           "text": "Is this work through a temporary employment agency (Zeitarbeit, Leiharbeit)?",
           "text_de": "Handelt es sich um ein Zeitarbeits- bzw. Leiharbeitsverhältnis?",
+          "description": "Antwortkategorie „Weiß nicht“ hinzugefügt",
           "concept": "pzaf",
           "scale": "cat",
           "answers": [
@@ -10196,6 +10313,7 @@
           "item": "pgesunt",
           "text": "How many employees does the company have?\nNot meant here is the local establishment if necessary.",
           "text_de": "Wie viele Beschäftigte hat das Gesamtunternehmen etwa? \nNicht gemeint ist hierbei gegebenenfalls die lokale Betriebsstätte.",
+          "filter": "(Q182;pstell=1,2)|(Q182;pstell=4)|(Q186;psstanz=2,3)",
           "concept": "pgesunt",
           "scale": "cat",
           "answers": [
@@ -10258,6 +10376,7 @@
           "item": "1",
           "text": "If you could choose your own working hours, taking into account that your income would change according to the number of hours: How many hours would you want to work?",
           "text_de": "Wenn Sie den Umfang Ihrer Arbeitszeit selbst wählen könnten und dabei berücksichtigen, dass sich Ihr Verdienst entsprechend der Arbeitszeit ändern würde:\nWie viele Stunden in der Woche würden Sie dann am liebsten arbeiten?",
+          "description": "Merkposten für 2020 paz14a und paz14b (Stunden mit Kommastellen, siehe Hauptsoep)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -10354,6 +10473,7 @@
           "item": "1",
           "text": "How many hours per week are stipulated in your contract (excluding overtime)?",
           "text_de": "Wie viele Wochenstunden beträgt Ihre vereinbarte Arbeitszeit ohne Überstunden?",
+          "description": "Merkposten für 2020 paz08a und paz08b (Stunden mit Kommastellen, siehe Hauptsoep)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -10410,6 +10530,7 @@
           "item": "paz10",
           "text": "Hours per week",
           "text_de": "Stunden pro Woche",
+          "description": "Merkposten für 2020 paz08a und paz08b (Stunden mit Kommastellen, siehe Hauptsoep)",
           "goto": "Q196<=30@Q197,Q196>30@Q200",
           "concept": "paz10",
           "scale": "int",
@@ -10447,6 +10568,7 @@
           "item": "paz11",
           "text": "Is it “marginal” part-time work in accordance with the 450/850–euro rule (Mini-Job, Midi-Job)?",
           "text_de": "Ist das eine geringfügige Beschäftigung nach der 450- bzw. 850-Euro-Regelung (Mini- bzw. Midi-Job)?",
+          "description": "Klammersetzung in Antwortkategorien wurde zur Angleichung an Capi 2018 entfernt, vorher: Ja, Mini-Job (bis 450 Euro) 1\nJa, Midi-Job (450,01 bis 850 Euro)",
           "goto": "2,3,-1@Q199",
           "concept": "paz11",
           "scale": "cat",
@@ -10607,6 +10729,7 @@
           "item": "pustd3",
           "text": "[de] Können diese Überstunden auch in ein sogenanntes Arbeitszeitkonto fließen, das Sie innerhalb eines Jahres oder längerer Frist mit Freizeit ausgleichen können?",
           "text_de": "Können diese Überstunden auch in ein sogenanntes Arbeitszeitkonto fließen, das Sie innerhalb eines Jahres oder längerer Frist mit Freizeit ausgleichen können?",
+          "description": "JN: VH Korrektur korrigiert, Frage und Antwortkategorien stimmen mit pustd3 vom Hauptsoep überein, daher keine Korrektur des varfix",
           "concept": "pustd3",
           "scale": "cat",
           "answers": [
@@ -10987,6 +11110,7 @@
           "item": "1",
           "text": "Salary / salary / state benefits",
           "text_de": "Bezug Lohn / Gehalt / staatl. Leistungen",
+          "description": "diesen Block insgesamt im Aufbau verändert; Jahreszahlen bereits angepasst; Filterführung neu",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11250,6 +11374,7 @@
           "item": "pek23",
           "text": "[de] Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt",
           "text_de": "Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt",
+          "description": "Merkposten für 2020: Ehepartner zukünftig gendern und durch Ehepartner / Ehepartnerin ersetzen, das gleich gilt für Lebenspartner",
           "concept": "pek23",
           "scale": "cat",
           "answers": [
@@ -11341,6 +11466,7 @@
           "text_de": "Wie viel Lohn / Gehalt als Arbeitnehmer haben Sie im letzten Monat erhalten?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q210;plmek01=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11386,6 +11512,8 @@
           "text_de": "Wie hoch waren Ihre Einkünfte aus selbständiger / freiberuflicher / gewerblicher Tätigkeit / einschließlich Gewinnentnahme im letzten Monat?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "description": "instruction ergänzt",
+          "filter": "Q210;plmek02=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11431,6 +11559,8 @@
           "text_de": "Wie hoch waren Ihre Einkünfte aus Nebentätigkeit bzw. Nebenverdienst im letzten Monat?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "description": "instruction ergänzt",
+          "filter": "Q210;plmek03=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11476,6 +11606,7 @@
           "text_de": "Wie viel Rente / Pension haben Sie im letzten Monat erhalten?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q210;pek01=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11521,6 +11652,8 @@
           "text_de": "Wie viel Witwenrente, Witwenpension, Waisenrente haben Sie im letzten Monat erhalten?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "description": "instruction ergänzt",
+          "filter": "Q210;pek02=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11566,6 +11699,7 @@
           "text_de": "Wie viel Arbeitslosengeld haben Sie im letzten Monat erhalten?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q210;pek03=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11611,6 +11745,7 @@
           "text_de": "Wie viel Arbeitslosengeld II (Hartz IV) / Sozialgeld haben Sie im letzten Monat erhalten?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q210;pek04=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11656,6 +11791,8 @@
           "text_de": "Wie viel Elterngeld / Mutterschaftsgeld haben Sie im letzten Monat erhalten?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "description": "instruction ergänzt",
+          "filter": "Q210;pek07=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11701,6 +11838,7 @@
           "text_de": "Wie hoch waren die Leistungen nach dem BAföG, ein Stipendium oder Berufsausbildungsbeihilfe, die Sie im letzten Monat erhalten haben?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q210;pek08=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11746,6 +11884,8 @@
           "text_de": "Wie viel Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt haben Sie im letzten Monat erhalten?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "description": "instruction ergänzt",
+          "filter": "Q210;pek23=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11791,6 +11931,8 @@
           "text_de": "Wie viel Unterhalt von Unterhaltsvorschusskassen haben Sie im letzten Monat erhalten?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "description": "instruction ergänzt",
+          "filter": "Q210;pek18=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11836,6 +11978,7 @@
           "text_de": "Wie hoch war die sonstige Unterstützung von Personen die nicht im Haushalt leben, die Sie im letzten Monat erhalten haben?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q210;pek11=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11879,6 +12022,7 @@
           "item": "1",
           "text": "[de] Haben Sie persönlich im Kalenderjahr 2018 eine oder mehrere der folgenden Leistungen bezogen?",
           "text_de": "Haben Sie persönlich im Kalenderjahr 2018 eine oder mehrere der folgenden Leistungen bezogen?",
+          "description": "Liste aus Haupt-Soep übernommen",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12212,6 +12356,7 @@
           "item": "1",
           "text": "[de] Wie viele Monate haben Sie im Kalenderjahr 2018 Lohn / Gehalt als Arbeitnehmer erhalten?",
           "text_de": "Wie viele Monate haben Sie im Kalenderjahr 2018 Lohn / Gehalt als Arbeitnehmer erhalten?",
+          "filter": "Q223;pvek01=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12257,6 +12402,7 @@
           "text_de": "Wie viel Lohn / Gehalt haben Sie im Kalenderjahr 2018 durchschnittlich pro Monat bezogen?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q223;pvek01=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12300,6 +12446,7 @@
           "item": "1",
           "text": "[de] Wie viele Monate haben Sie im Kalenderjahr 2018 Einkünfte aus selbständiger / freiberuflicher / gewerblicher Tätigkeit / einschließlich Gewinnentnahme bezogen?",
           "text_de": "Wie viele Monate haben Sie im Kalenderjahr 2018 Einkünfte aus selbständiger / freiberuflicher / gewerblicher Tätigkeit / einschließlich Gewinnentnahme bezogen?",
+          "filter": "Q223;pvek02=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12345,6 +12492,7 @@
           "text_de": "Wie hoch waren im Durchschnitt im Kalenderjahr 2018 Ihre monatlichen Einkünfte aus selbständiger / freiberuflicher / gewerblicher Tätigkeit / einschließlich Gewinnentnahme?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q223;pvek02=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12388,6 +12536,8 @@
           "item": "1",
           "text": "[de] Wie viele Monate haben Sie im Kalenderjahr 2018 Nebentätigkeit, Nebenverdienst bezogen?",
           "text_de": "Wie viele Monate haben Sie im Kalenderjahr 2018 Nebentätigkeit, Nebenverdienst bezogen?",
+          "description": "Merkposten für 2020: „ Nebentätigkeit/Nebenverdienst bezogen“ grammatikalisch falsch",
+          "filter": "Q223;pvek03=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12433,6 +12583,7 @@
           "text_de": "Wie hoch waren im Durchschnitt im Kalenderjahr 2018 Ihre monatlichen Einkünfte aus Nebentätigkeit, Nebenverdienst?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q223;pvek03=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12476,6 +12627,7 @@
           "item": "1",
           "text": "[de] Wie viele Monate haben Sie im Kalenderjahr 2018 Rente / Pension bezogen?",
           "text_de": "Wie viele Monate haben Sie im Kalenderjahr 2018 Rente / Pension bezogen?",
+          "filter": "Q223;pvek04=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12521,6 +12673,7 @@
           "text_de": "Wie viel Rente / Pension haben Sie im Kalenderjahr 2018 durchschnittlich pro Monat erhalten?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q223;pvek04=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12564,6 +12717,7 @@
           "item": "1",
           "text": "[de] Wie viele Monate haben Sie im Kalenderjahr 2018 Witwenrente, Witwenpension, Waisenrente bezogen?",
           "text_de": "Wie viele Monate haben Sie im Kalenderjahr 2018 Witwenrente, Witwenpension, Waisenrente bezogen?",
+          "filter": "Q223;pvek05=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12609,6 +12763,7 @@
           "text_de": "Wie viel Witwenrente, Witwenpension oder Waisenrente haben Sie im Kalenderjahr 2018 durchschnittlich pro Monat erhalten?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q223;pvek05=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12652,6 +12807,7 @@
           "item": "1",
           "text": "[de] Wie viele Monate haben Sie im Kalenderjahr 2018 Arbeitslosengeld bezogen?",
           "text_de": "Wie viele Monate haben Sie im Kalenderjahr 2018 Arbeitslosengeld bezogen?",
+          "filter": "Q223;pvek06=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12697,6 +12853,7 @@
           "text_de": "Wie viel Arbeitslosengeld haben Sie im Kalenderjahr 2018 durchschnittlich pro Monat erhalten?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q223;pvek06=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12740,6 +12897,7 @@
           "item": "1",
           "text": "[de] Wie viele Monate haben Sie im Kalenderjahr 2018 Arbeitslosengeld II (Hartz IV) / Sozialgeld bezogen?",
           "text_de": "Wie viele Monate haben Sie im Kalenderjahr 2018 Arbeitslosengeld II (Hartz IV) / Sozialgeld bezogen?",
+          "filter": "Q223;pvek07=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12785,6 +12943,7 @@
           "text_de": "Wie hoch war im Durchschnitt im Kalenderjahr 2018 Ihr monatliches Arbeitslosengeld II (Hartz IV) / Sozialgeld?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q223;pvek07=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12828,6 +12987,7 @@
           "item": "1",
           "text": "[de] Wie viele Monate haben Sie im Kalenderjahr 2018 Elterngeld / Mutterschaftsgeld bezogen?",
           "text_de": "Wie viele Monate haben Sie im Kalenderjahr 2018 Elterngeld / Mutterschaftsgeld bezogen?",
+          "filter": "Q223;pvek09=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12873,6 +13033,7 @@
           "text_de": "Wie viel Elterngeld / Mutterschaftsgeld haben Sie im Kalenderjahr 2018 durchschnittlich pro Monat erhalten?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q223;pvek09=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12916,6 +13077,7 @@
           "item": "1",
           "text": "[de] Wie viele Monate haben Sie im Kalenderjahr 2018 Leistungen nach dem BAföG, ein Stipendium oder Berufsausbildungsbeihilfe bezogen?",
           "text_de": "Wie viele Monate haben Sie im Kalenderjahr 2018 Leistungen nach dem BAföG, ein Stipendium oder Berufsausbildungsbeihilfe bezogen?",
+          "filter": "Q223;pvek10=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12961,6 +13123,7 @@
           "text_de": "Wie hoch waren im Durchschnitt im Kalenderjahr 2018 Ihre monatlichen Leistungen nach dem BAföG, ein Stipendium oder Berufsausbildungsbeihilfe?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q223;pvek10=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13004,6 +13167,7 @@
           "item": "1",
           "text": "[de] Wie viele Monate haben Sie im Kalenderjahr 2018 Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt bezogen?",
           "text_de": "Wie viele Monate haben Sie im Kalenderjahr 2018 Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt bezogen?",
+          "filter": "Q223;pvek23=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13049,6 +13213,7 @@
           "text_de": "Wie viel Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt haben Sie im Kalenderjahr 2018 durchschnittlich pro Monat erhalten?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q223;pvek23=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13092,6 +13257,7 @@
           "item": "1",
           "text": "[de] Wie viele Monate haben Sie im Kalenderjahr 2018 Unterhalt von Unterhaltsvorschusskassen bezogen?",
           "text_de": "Wie viele Monate haben Sie im Kalenderjahr 2018 Unterhalt von Unterhaltsvorschusskassen bezogen?",
+          "filter": "Q223;pvek18=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13137,6 +13303,7 @@
           "text_de": "Wie viel Unterhalt von Unterhaltsvorschusskassen haben Sie im Kalenderjahr 2018 durchschnittlich pro Monat erhalten?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q223;pvek18=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13180,6 +13347,7 @@
           "item": "1",
           "text": "[de] Wie viele Monate haben Sie im Kalenderjahr 2018 sonstige Unterstützung von Personen die nicht im Haushalt leben bezogen?",
           "text_de": "Wie viele Monate haben Sie im Kalenderjahr 2018 sonstige Unterstützung von Personen die nicht im Haushalt leben bezogen?",
+          "filter": "Q223;pvek13=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13225,6 +13393,7 @@
           "text_de": "Wie hoch war im Durchschnitt im Kalenderjahr 2018 monatlich Ihre sonstige Unterstützung von Personen die nicht im Haushalt leben?",
           "instruction": "[de] Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "filter": "Q223;pvek13=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13287,6 +13456,7 @@
           "item": "1",
           "text": "[de] Und nun denken Sie bitte an das ganze letzte Jahr, also das Jahr 2018. \nWir haben hier eine Art Kalender abgebildet. Links steht, was Sie im letzten Jahr gewesen sein können. \nBitte gehen Sie die Liste durch und geben Sie für alle 12 Monate an, welche Tätigkeit beziehungsweise welcher Status auf Sie im jeweiligen Monat zutrifft.",
           "text_de": "Und nun denken Sie bitte an das ganze letzte Jahr, also das Jahr 2018. \nWir haben hier eine Art Kalender abgebildet. Links steht, was Sie im letzten Jahr gewesen sein können. \nBitte gehen Sie die Liste durch und geben Sie für alle 12 Monate an, welche Tätigkeit beziehungsweise welcher Status auf Sie im jeweiligen Monat zutrifft.",
+          "description": "Jahreszahl angepasst",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13308,6 +13478,7 @@
           "text_de": "Bitte gehen Sie die Liste durch und geben Sie für alle 12 Monate an, welche Tätigkeit beziehungsweise welcher Status auf Sie im jeweiligen Monat zutrifft. ",
           "instruction": "[de] Bitte achten Sie darauf, dass für jeden Monat mindestens ein Kästchen angekreuzt sein muss.\n\nAuch wenn etwas kürzer als ein Monat war, geben Sie es bitte im entsprechenden Monat an.\n\n\nBei mehreren Tätigkeiten pro Monat, geben Sie bitte alles Zutreffende an.",
           "instruction_de": "Bitte achten Sie darauf, dass für jeden Monat mindestens ein Kästchen angekreuzt sein muss.\n\nAuch wenn etwas kürzer als ein Monat war, geben Sie es bitte im entsprechenden Monat an.\n\n\nBei mehreren Tätigkeiten pro Monat, geben Sie bitte alles Zutreffende an.",
+          "description": "Rechtschreibfehler in Antworttext verbessert statt „Um Was für eine Tätigkeit...“ „Um was für eine Tätigkeit...“",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13448,6 +13619,7 @@
           "item": "pkalso",
           "text": "[de] Sie haben für einen oder mehrere Monate „Sonstige“ angegeben.\nUm was für eine Tätigkeit oder Tätigkeiten handelte es sich dabei?",
           "text_de": "Sie haben für einen oder mehrere Monate „Sonstige“ angegeben.\nUm was für eine Tätigkeit oder Tätigkeiten handelte es sich dabei?",
+          "description": "Antwortkategorie umformuliert",
           "concept": "pkalso",
           "scale": "chr",
           "sn": 15,
@@ -13539,6 +13711,7 @@
           "item": "1",
           "text": "[de] Gesundheitliche Einschränkungen (Einschränkung normales\nAlltagsleben)",
           "text_de": "Gesundheitliche Einschränkungen (Einschränkung normales\nAlltagsleben)",
+          "description": "Neu",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13558,6 +13731,7 @@
           "item": "pges14",
           "text": "Are you restricted in normal everyday activities by a health problem ?",
           "text_de": "Sind Sie durch ein gesundheitliches Problem bei Tätigkeiten des normalen Alltagslebens eingeschränkt?",
+          "description": "aus soep-core-2016-pb-m34 übernommen",
           "goto": "3,-1@Q256",
           "concept": "pges14",
           "scale": "cat",
@@ -13603,6 +13777,7 @@
           "text_de": "Um welche der folgenden Beeinträchtigungen handelt es sich?",
           "instruction": "Please select all responses that apply.",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "description": "aus soep-core-2016-pb-m34 übernommen",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13691,6 +13866,7 @@
           "item": "pges15",
           "text": "Have you had this impairment for longer than six months?",
           "text_de": "Haben Sie diese Beeinträchtigung schon länger als ein halbes Jahr?",
+          "description": "Merkposten für 2020: Q252 lässt mehrere Beeinträchtigungen zu, in Fragen 253-255 wird jedoch nur nach einer Beeinträchtigung gefragt, evtl. Formulierung überarbeiten",
           "concept": "pges15",
           "scale": "cat",
           "answers": [
@@ -13728,6 +13904,7 @@
           "item": "pgesb7",
           "text": "Does this impairment affect the type of any possible employment activity?",
           "text_de": "Hat diese Beeinträchtigung Einfluss auf die Art einer möglichen Erwerbstätigkeit?",
+          "description": "siehe Description Q253",
           "concept": "pgesb7",
           "scale": "cat",
           "answers": [
@@ -13765,6 +13942,7 @@
           "item": "pgesb8",
           "text": "Does this impairment affect the scope of any possible employment activity?",
           "text_de": "Hat diese Beeinträchtigung Einfluss auf den Umfang einer möglichen Erwerbstätigkeit?",
+          "description": "siehe Description Q253",
           "concept": "pgesb8",
           "scale": "cat",
           "answers": [
@@ -13802,6 +13980,7 @@
           "item": "1",
           "text": "It's possible to be religious even if you're not a member of a religious community.\nHow important is your faith or religion for your well-being and your life satisfaction?",
           "text_de": "Unabhängig davon, ob man einer Religionsgemeinschaft angehört oder nicht, kann man religiös sein.\nWie wichtig ist Ihnen der Glaube beziehungsweise die Religion für Ihr Wohlbefinden\nund Ihre Zufriedenheit?",
+          "description": "Neu",
           "concept": "pglaub",
           "scale": "cat",
           "answers": [
@@ -13844,6 +14023,7 @@
           "item": "1",
           "text": "How many times do you pray?",
           "text_de": "Wie oft beten Sie etwa?",
+          "description": "aus soep-core-2016-pb-m34 übernommen",
           "concept": "pbetanz",
           "scale": "cat",
           "answers": [
@@ -13891,6 +14071,7 @@
           "item": "pbes2w1",
           "text": "How often do you attend church, attending religious events",
           "text_de": "Wie oft besuchen Sie religiöse Veranstaltungen?",
+          "description": "aus soep-core-2016-pb-m34 übernommen",
           "concept": "pveran",
           "scale": "cat",
           "answers": [
@@ -13933,6 +14114,7 @@
           "item": "pbes2w2",
           "text": "Low spirits, melancholy or hopelessness?",
           "text_de": "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit?",
+          "description": "aus soep-core-2016-pb-m34 übernommen",
           "concept": "pbes2w2",
           "scale": "cat",
           "answers": [
@@ -13980,6 +14162,7 @@
           "item": "pbes2w3",
           "text": "And how strongly do you feel connected with your country of origin?",
           "text_de": "Und wie sehr fühlen Sie sich mit Deutschland verbunden?",
+          "description": "aus soep-core-2016-pb-m34 übernommen",
           "concept": "pdverb",
           "scale": "cat",
           "answers": [
@@ -14032,6 +14215,7 @@
           "item": "pbes2w4",
           "text": "Unable to stop or control worrying?",
           "text_de": "Nicht in der Lage sein, Sorgen zu stoppen oder zu kontrollieren?",
+          "description": "aus soep-core-2016-pb-m34 übernommen",
           "concept": "pbes2w4",
           "scale": "cat",
           "answers": [
@@ -14224,6 +14408,7 @@
           "item": "psor23",
           "text": "Are you worried about the result of your asylum application?",
           "text_de": "Machen Sie sich Sorgen um das Ergebnis Ihres Asylverfahrens?",
+          "filter": "Q112;laht=1",
           "concept": "psor23",
           "scale": "cat",
           "answers": [
@@ -14392,6 +14577,7 @@
           "item": "psor26",
           "text": "Do you worry about losing your job?",
           "text_de": "Machen Sie sich Sorgen, Ihren Arbeitsplatz zu verlieren?",
+          "filter": "Q154;perw_r=1:4,10",
           "concept": "psor26",
           "scale": "cat",
           "answers": [
@@ -14434,6 +14620,7 @@
           "item": "1",
           "text": "And how is it now: Do you feel welcome in Germany now?",
           "text_de": "Und wie ist das jetzt: Fühlen Sie sich heute in Deutschland willkommen?",
+          "description": "Neu",
           "concept": "pgef16",
           "scale": "cat",
           "answers": [
@@ -14534,6 +14721,7 @@
           "item": "prelch",
           "text": "Which other religious communities do you belong to?",
           "text_de": "Welcher christlichen Religionsgemeinschaft gehören Sie an?",
+          "filter": "Q269;prel=7",
           "goto": "ALL@Q273",
           "concept": "prelch",
           "scale": "cat",
@@ -14582,6 +14770,7 @@
           "item": "prelis",
           "text": "Which Islamic denomination do you belong to?",
           "text_de": "Welcher islamischen Glaubensrichtung gehören Sie an?",
+          "filter": "Q269;prel=4",
           "goto": "ALL@Q273",
           "concept": "prelis",
           "scale": "cat",
@@ -14630,6 +14819,7 @@
           "item": "prelso",
           "text": "Which religious community do you belong to?",
           "text_de": "Welcher Religionsgemeinschaft gehören Sie an?",
+          "filter": "Q269;prel=5",
           "concept": "prelso",
           "scale": "chr",
           "sn": 0,
@@ -14830,6 +15020,7 @@
           "item": "pfamsta",
           "text": "What is your marital status?",
           "text_de": "Wie ist Ihr Familienstand?",
+          "description": "In Antworkategorie 7 „Lebenspartnerin“ ergänzt",
           "goto": "1,4:7@Q279,2@Q277,3@Q280,-1@Q284",
           "concept": "pfamsta",
           "scale": "cat",
@@ -14946,6 +15137,7 @@
           "item": "ppnamep",
           "text": "[de] Wie ist der Vorname Ihres Ehepartners / Ihrer Ehepartnerin?",
           "text_de": "Wie ist der Vorname Ihres Ehepartners / Ihrer Ehepartnerin?",
+          "description": "„keine Angabe“ soll in Capi 2019 ergänzt werden (war 2018 nicht vorhanden); Goto hinzugefügt",
           "goto": "ALL@Q282",
           "concept": "ppnamep",
           "scale": "chr",
@@ -15020,6 +15212,7 @@
           "item": "plebwo",
           "text": "Where does your partner live?",
           "text_de": "Wo lebt Ihr Lebenspartner / Ihre Lebenspartnerin?",
+          "description": "Goto verändert",
           "goto": "2,3@Q282;4,5,-1@Q284",
           "concept": "plebwo",
           "scale": "cat",
@@ -15073,6 +15266,7 @@
           "item": "ppnamlp",
           "text": "[de] Wie ist der Vorname Ihres Lebenspartners / Ihrer Lebenspartnerin?",
           "text_de": "Wie ist der Vorname Ihres Lebenspartners / Ihrer Lebenspartnerin?",
+          "description": "„keine Angabe“ soll in Capi 2019 ergänzt werden (war 2018 nicht vorhanden)",
           "concept": "ppnamlp",
           "scale": "chr",
           "sn": 0,
@@ -15129,6 +15323,8 @@
           "text_de": "Ist Ihr Ehe-/Lebenspartner oder Ihre Ehe-/Lebenspartnerin seit Ihrer letzten Befragung nach Deutschland gekommen?",
           "instruction": "[de] Die letzte Befragung war am: [Einblendung des Datums]\n",
           "instruction_de": "Die letzte Befragung war am: [Einblendung des Datums]\n",
+          "description": "Frage neu eingefügt",
+          "filter": "Q277;pehewo=1:3 | Q280;plebwo=1:3",
           "goto": "-1,2@Q284",
           "concept": "pelzug",
           "scale": "cat",
@@ -15167,6 +15363,8 @@
           "item": "1",
           "text": "[de] Wann ist dieser Ehe-/Lebenspartner bzw. diese Ehe-/Lebenspartnerin nach Deutschland gekommen?",
           "text_de": "Wann ist dieser Ehe-/Lebenspartner bzw. diese Ehe-/Lebenspartnerin nach Deutschland gekommen?",
+          "description": "Frage neu eingefügt",
+          "filter": "Q282;pelzug=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15219,6 +15417,7 @@
           "item": "1",
           "text": "[de] Bei den folgenden Fragen geht es um den Familiennachzug von Kindern.",
           "text_de": "Bei den folgenden Fragen geht es um den Familiennachzug von Kindern.",
+          "description": "Fragetext verändert: „oder Geschwistern“ gestrichen",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15240,6 +15439,7 @@
           "text_de": "Haben Sie Kinder, die seit Ihrer letzten Befragung nach Deutschland gekommen sind?",
           "instruction": "[de] Die letzte Befragung war am: [Einblendung des Datums]",
           "instruction_de": "Die letzte Befragung war am: [Einblendung des Datums]",
+          "description": "Fragetext von „nach Ihnen“ zu „seit Ihrer letzten Befragung“ geändert; instruction verändert: „Die letzte Befragung war am: [Einblendung des Datums]“ hinzugefügt; Gotos verändert (da Frage 478 nicht mehr vorhanden)",
           "goto": "-1,2@Q298",
           "concept": "pkdnz",
           "scale": "cat",
@@ -15278,6 +15478,8 @@
           "item": "1",
           "text": "[de] Wie viele Ihrer Kinder sind seit Ihrer letzten Befragung nach Deutschland gekommen?",
           "text_de": "Wie viele Ihrer Kinder sind seit Ihrer letzten Befragung nach Deutschland gekommen?",
+          "description": "Fragetext von „nach Ihnen“ zu „seit Ihrer letzten Befragung“ geändert",
+          "filter": "Q285;pkdnz=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15295,6 +15497,7 @@
           "item": "3",
           "text": "[de] keine Angabe",
           "text_de": "keine Angabe",
+          "description": "Gotos verändert (da Frage 478 nicht mehr vorhanden)",
           "goto": "-1@Q298",
           "scale": "bin",
           "answers": [
@@ -15322,6 +15525,8 @@
           "item": "1",
           "text": "[de] Wann ist dieses Kind nach Deutschland gekommen?",
           "text_de": "Wann ist dieses Kind nach Deutschland gekommen?",
+          "description": "Eingangsfilter verbessert",
+          "filter": "Q286;pknzanz=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15347,6 +15552,7 @@
         {
           "text": "[de] keine Angabe",
           "text_de": "keine Angabe",
+          "description": "Gotos verändert (da Frage 478 nicht mehr vorhanden)",
           "goto": "ALL@Q298",
           "scale": "bin",
           "answers": [
@@ -15375,6 +15581,7 @@
           "item": "pkdnza",
           "text": "[de] Sind Ihre Kinder zusammen nach Deutschland gekommen?",
           "text_de": "Sind Ihre Kinder zusammen nach Deutschland gekommen?",
+          "filter": "Q286;pknzanz>1",
           "goto": "2@Q290",
           "concept": "pkdnza",
           "scale": "cat",
@@ -15413,6 +15620,7 @@
           "item": "1",
           "text": "[de] Wann sind Ihre Kinder nach Deutschland gekommen?",
           "text_de": "Wann sind Ihre Kinder nach Deutschland gekommen?",
+          "filter": "Q288;pkdnza=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15438,6 +15646,7 @@
         {
           "text": "[de] keine Angabe",
           "text_de": "keine Angabe",
+          "description": "Gotos verändert (da Frage 478 nicht mehr vorhanden)",
           "goto": "ALL@Q298",
           "scale": "bin",
           "answers": [
@@ -15466,6 +15675,7 @@
           "item": "1",
           "text": "[de] Wann ist das 1. Kind nach Deutschland gekommen?",
           "text_de": "Wann ist das 1. Kind nach Deutschland gekommen?",
+          "filter": "Q288;pkdnza=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15518,6 +15728,8 @@
           "item": "1",
           "text": "[de] Wann ist das 2. Kind nach Deutschland gekommen?",
           "text_de": "Wann ist das 2. Kind nach Deutschland gekommen?",
+          "description": "Goto verbessert",
+          "filter": "Q286;pknzanz>1 & Q288;pkdnza=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15570,6 +15782,8 @@
           "item": "1",
           "text": "[de] Wann ist das 3. Kind nach Deutschland gekommen?",
           "text_de": "Wann ist das 3. Kind nach Deutschland gekommen?",
+          "description": "Goto verbessert",
+          "filter": "Q286;pknzanz>2 & Q288;1=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15595,6 +15809,7 @@
         {
           "text": "[de] keine Angabe",
           "text_de": "keine Angabe",
+          "description": "Gotos verändert (da Frage 478 nicht mehr vorhanden)",
           "goto": "1@Q298",
           "scale": "bin",
           "answers": [
@@ -15623,6 +15838,7 @@
           "item": "1",
           "text": "[de] Wann ist das 4. Kind nach Deutschland gekommen?",
           "text_de": "Wann ist das 4. Kind nach Deutschland gekommen?",
+          "filter": "Q286;pknzanz>3 & Q288;1=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15646,6 +15862,7 @@
           "number": ""
         },
         {
+          "description": "Gotos verändert (da Frage 478 nicht mehr vorhanden); Codierung verändert",
           "goto": "1@Q298",
           "scale": "cat",
           "answers": [
@@ -15679,6 +15896,7 @@
           "item": "1",
           "text": "[de] Wann ist das 5. Kind nach Deutschland gekommen?",
           "text_de": "Wann ist das 5. Kind nach Deutschland gekommen?",
+          "filter": "Q286;pknzanz>4 & Q288;1=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15702,6 +15920,7 @@
           "number": ""
         },
         {
+          "description": "Gotos verändert (da Frage 478 nicht mehr vorhanden); Codierung verändert",
           "goto": "1@Q298",
           "scale": "cat",
           "answers": [
@@ -15735,6 +15954,7 @@
           "item": "1",
           "text": "[de] Wann ist das 6. Kind nach Deutschland gekommen?",
           "text_de": "Wann ist das 6. Kind nach Deutschland gekommen?",
+          "filter": "Q286;pknzanz>5 & Q288;1=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15758,6 +15978,7 @@
           "number": ""
         },
         {
+          "description": "Gotos verändert (da Frage 478 nicht mehr vorhanden); Codierung verändert",
           "goto": "1@Q298",
           "scale": "cat",
           "answers": [
@@ -15791,6 +16012,7 @@
           "item": "1",
           "text": "[de] Wann ist das 7. Kind nach Deutschland gekommen?",
           "text_de": "Wann ist das 7. Kind nach Deutschland gekommen?",
+          "filter": "Q286;pknzanz>6 & Q288;1=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15814,6 +16036,7 @@
           "number": ""
         },
         {
+          "description": "Gotos verändert (da Frage 478 nicht mehr vorhanden); Codierung verändert",
           "goto": "1@Q298",
           "scale": "cat",
           "answers": [
@@ -15847,6 +16070,7 @@
           "item": "1",
           "text": "[de] Wann ist das 8. Kind nach Deutschland gekommen?",
           "text_de": "Wann ist das 8. Kind nach Deutschland gekommen?",
+          "filter": "Q286;pknzanz>7 & Q288;1=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15870,6 +16094,7 @@
           "number": ""
         },
         {
+          "description": "Gotos verändert (da Frage 478 nicht mehr vorhanden); Codierung verändert",
           "goto": "1@Q298",
           "scale": "cat",
           "answers": [
@@ -15924,6 +16149,7 @@
           "text_de": "Haben Sie persönlich im letzten Jahr, also im Jahr 2018, Zahlungen oder finanzielle Unterstützungen an Verwandte oder sonstige Personen außerhalb dieses Haushalts geleistet?",
           "instruction": "Please select all responses that apply.",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "description": "Jahreszahl angepasst",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16020,6 +16246,7 @@
           "text_de": "Wie hoch war der Betrag, mit dem Sie Ihre Eltern oder Schwiegereltern im Jahr 2018 unterstützt haben, insgesamt?",
           "instruction": "If you don't know the exact figure, please give an approximate amount.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "description": "Jahreszahl angepasst",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16082,6 +16309,7 @@
           "item": "punt14_r",
           "text": "In my country of origin",
           "text_de": "In meinem Herkunftsland",
+          "description": "JN: varfix aus v34 übernommen",
           "concept": "punt14",
           "scale": "bin",
           "sn": 2,
@@ -16091,6 +16319,7 @@
           "item": "punt15",
           "text": "In another country",
           "text_de": "In einem anderen Land",
+          "description": "JN: varfix aus v34 übernommen",
           "concept": "punt14",
           "scale": "bin",
           "sn": 3,
@@ -16128,6 +16357,8 @@
           "text_de": "Wie hoch war der Betrag, mit dem Sie Ihre Kinder im Jahr 2018 unterstützt haben, insgesamt?",
           "instruction": "If you don't know the exact figure, please give an approximate amount.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "description": "Jahreszahl angepasst",
+          "filter": "Q298;punt21=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16190,6 +16421,7 @@
           "item": "punt24_r",
           "text": "In my country of origin",
           "text_de": "In meinem Herkunftsland",
+          "description": "JN: varfix aus v34 übernommen",
           "concept": "punt24",
           "scale": "bin",
           "sn": 2,
@@ -16199,6 +16431,7 @@
           "item": "punt25",
           "text": "In another country",
           "text_de": "In einem anderen Land",
+          "description": "JN: varfix aus v34 übernommen",
           "concept": "punt24",
           "scale": "bin",
           "sn": 3,
@@ -16236,6 +16469,8 @@
           "text_de": "Wie hoch war der Betrag, mit dem Sie Ehepartner / Ehepartnerin oder geschiedenen Ehepartner / geschiedene Ehepartnerin im Jahr 2018 unterstützt haben, insgesamt?",
           "instruction": "If you don't know the exact figure, please give an approximate amount.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "description": "Jahreszahl angepasst",
+          "filter": "Q298;punt31=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16298,6 +16533,7 @@
           "item": "punt34_r",
           "text": "In my country of origin",
           "text_de": "In meinem Herkunftsland",
+          "description": "JN: varfix aus v34 übernommen",
           "concept": "punt34",
           "scale": "bin",
           "sn": 2,
@@ -16307,6 +16543,7 @@
           "item": "punt35",
           "text": "In another country",
           "text_de": "In einem anderen Land",
+          "description": "JN: varfix aus v34 übernommen",
           "concept": "punt34",
           "scale": "bin",
           "sn": 3,
@@ -16344,6 +16581,8 @@
           "text_de": "Wie hoch war der Betrag, mit dem Sie sonstige Verwandte im Jahr 2018 unterstützt haben, insgesamt?",
           "instruction": "If you don't know the exact figure, please give an approximate amount.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "description": "Jahreszahl angepasst",
+          "filter": "Q298;punt41=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16406,6 +16645,7 @@
           "item": "punt44_r",
           "text": "In my country of origin",
           "text_de": "In meinem Herkunftsland",
+          "description": "JN: varfix aus v34 übernommen",
           "concept": "punt44",
           "scale": "bin",
           "sn": 2,
@@ -16415,6 +16655,7 @@
           "item": "punt45",
           "text": "In another country",
           "text_de": "In einem anderen Land",
+          "description": "JN: varfix aus v34 übernommen",
           "concept": "punt44",
           "scale": "bin",
           "sn": 3,
@@ -16452,6 +16693,8 @@
           "text_de": "Wie hoch war der Betrag mit dem Sie nicht verwandte Personen im Jahr 2018 unterstützt haben, insgesamt?",
           "instruction": "If you don't know the exact figure, please give an approximate amount.",
           "instruction_de": "Wenn Sie es nicht genau wissen, schätzen Sie bitte.",
+          "description": "Jahreszahl angepasst",
+          "filter": "Q298;punt51=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16514,6 +16757,7 @@
           "item": "punt54_r",
           "text": "In my country of origin",
           "text_de": "In meinem Herkunftsland",
+          "description": "JN: varfix aus v34 übernommen",
           "concept": "punt54",
           "scale": "bin",
           "sn": 2,
@@ -16523,6 +16767,7 @@
           "item": "punt55",
           "text": "In another country",
           "text_de": "In einem anderen Land",
+          "description": "JN: varfix aus v34 übernommen",
           "concept": "punt54",
           "scale": "bin",
           "sn": 3,
@@ -16558,6 +16803,7 @@
           "item": "1",
           "text": "[de] Familiäre Veränderungen 2018",
           "text_de": "Familiäre Veränderungen 2018",
+          "description": "Jahreszahl angepasst",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16579,6 +16825,7 @@
           "text_de": "Hat sich an Ihrer familiären Situation seit dem 01. Januar 2018 etwas verändert?",
           "instruction": "[de] Bitte geben Sie alles Zutreffende an!",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "description": "Fragetext verändert: \"... seit dem 01. Januar 2018 …\" eingefügt, also wie im Hauptsoep",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16753,6 +17000,8 @@
           "item": "1",
           "text": "[de] Wann war die Veränderung der folgenden familiären Situation?\n \nHabe neuen Partner / neue Partnerin",
           "text_de": "Wann war die Veränderung der folgenden familiären Situation?\n \nHabe neuen Partner / neue Partnerin",
+          "description": "Jahreszahlen angepasst",
+          "filter": "Q309;pfs141=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16805,6 +17054,8 @@
           "item": "1",
           "text": "[de] Wann war die Veränderung der folgenden familiären Situation?\n \nBin mit Partner / Partnerin zusammengezogen",
           "text_de": "Wann war die Veränderung der folgenden familiären Situation?\n \nBin mit Partner / Partnerin zusammengezogen",
+          "description": "Jahreszahlen angepasst",
+          "filter": "Q309;pfs021=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16857,6 +17108,8 @@
           "item": "1",
           "text": "[de] Wann war die Veränderung der folgenden familiären Situation?\n \nHabe geheiratet / auch eingetragene, gleichgeschlechtliche Partnerschaft",
           "text_de": "Wann war die Veränderung der folgenden familiären Situation?\n \nHabe geheiratet / auch eingetragene, gleichgeschlechtliche Partnerschaft",
+          "description": "Jahreszahlen angepasst",
+          "filter": "Q309;pfs011=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16909,6 +17162,8 @@
           "item": "1",
           "text": "[de] Wann war die Veränderung der folgenden familiären Situation? \n\nBin (erneut) Vater / Mutter geworden",
           "text_de": "Wann war die Veränderung der folgenden familiären Situation? \n\nBin (erneut) Vater / Mutter geworden",
+          "description": "Jahreszahlen angepasst",
+          "filter": "Q309;pfs031=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16961,6 +17216,8 @@
           "item": "1",
           "text": "[de] Wann war die Veränderung der folgenden familiären Situation?\n \nKind kam in den Haushalt",
           "text_de": "Wann war die Veränderung der folgenden familiären Situation?\n \nKind kam in den Haushalt",
+          "description": "Jahreszahlen angepasst",
+          "filter": "Q309;pfs111=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -17013,6 +17270,8 @@
           "item": "1",
           "text": "[de] Wann war die Veränderung der folgenden familiären Situation?\n \nSohn / Tochter hat den Haushalt verlassen",
           "text_de": "Wann war die Veränderung der folgenden familiären Situation?\n \nSohn / Tochter hat den Haushalt verlassen",
+          "description": "Jahreszahlen angepasst",
+          "filter": "Q309;pfs041=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -17065,6 +17324,8 @@
           "item": "1",
           "text": "[de] Wann war die Veränderung der folgenden familiären Situation?\n \nHabe mich von Ehepartner / Lebenspartner getrennt ",
           "text_de": "Wann war die Veränderung der folgenden familiären Situation?\n \nHabe mich von Ehepartner / Lebenspartner getrennt ",
+          "description": "Jahreszahlen angepasst",
+          "filter": "Q309;pfs051=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -17117,6 +17378,8 @@
           "item": "1",
           "text": "[de] Wann war die Veränderung der folgenden familiären Situation?\n \nWurde geschieden / auch eingetragene, gleichgeschlechtliche Partnerschaft ",
           "text_de": "Wann war die Veränderung der folgenden familiären Situation?\n \nWurde geschieden / auch eingetragene, gleichgeschlechtliche Partnerschaft ",
+          "description": "Jahreszahlen angepasst",
+          "filter": "Q309;pfs061=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -17169,6 +17432,8 @@
           "item": "1",
           "text": "[de] Wann war die Veränderung der folgenden familiären Situation?\n \nEhepartner / Lebenspartner ist verstorben ",
           "text_de": "Wann war die Veränderung der folgenden familiären Situation?\n \nEhepartner / Lebenspartner ist verstorben ",
+          "description": "Jahreszahlen angepasst",
+          "filter": "Q309;pfs071=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -17221,6 +17486,8 @@
           "item": "1",
           "text": "[de] Wann war die Veränderung der folgenden familiären Situation?\n \nVater ist verstorben",
           "text_de": "Wann war die Veränderung der folgenden familiären Situation?\n \nVater ist verstorben",
+          "description": "Jahreszahlen angepasst",
+          "filter": "Q309;pfs081=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -17273,6 +17540,8 @@
           "item": "1",
           "text": "[de] Wann war die Veränderung der folgenden familiären Situation?\n \nMutter ist verstorben ",
           "text_de": "Wann war die Veränderung der folgenden familiären Situation?\n \nMutter ist verstorben ",
+          "description": "Jahreszahlen angepasst",
+          "filter": "Q309;pfs091=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -17325,6 +17594,8 @@
           "item": "1",
           "text": "[de] Wann war die Veränderung der folgenden familiären Situation?\n \nKind ist verstorben",
           "text_de": "Wann war die Veränderung der folgenden familiären Situation?\n \nKind ist verstorben",
+          "description": "Jahreszahlen angepasst",
+          "filter": "Q309;pfs121=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -17377,6 +17648,8 @@
           "item": "1",
           "text": "[de] Wann war die Veränderung der folgenden familiären Situation?\n \nAndere Person, die hier im Haushalt lebte, ist verstorben",
           "text_de": "Wann war die Veränderung der folgenden familiären Situation?\n \nAndere Person, die hier im Haushalt lebte, ist verstorben",
+          "description": "Jahreszahlen angepasst",
+          "filter": "Q309;pfs131=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -17660,6 +17933,7 @@
           "item": "psta3",
           "text": "Have you had German citizenship since birth or did you acquire it at a later date?",
           "text_de": "Haben Sie die deutsche Staatsangehörigkeit seit Geburt oder erst später erworben?",
+          "description": "Goto verändert",
           "goto": "1,-1@Q331",
           "concept": "psta3",
           "scale": "cat",
@@ -17698,6 +17972,7 @@
           "item": "1",
           "text": "[de] Wann haben Sie die deutsche Staatsangehörigkeit erhalten?",
           "text_de": "Wann haben Sie die deutsche Staatsangehörigkeit erhalten?",
+          "filter": "Q326;psta3=2",
           "goto": "ALL@Q330",
           "scale": "txt",
           "sn": 0,
@@ -17752,6 +18027,7 @@
           "text": "What is your country of citizenship?",
           "text_de": "Welche Staatsangehörigkeit haben Sie?",
           "instruction": "Please state:",
+          "filter": "(Q323;psta1=2) | (Q323;psta1=-1)",
           "concept": "pstaat",
           "scale": "cat",
           "answers": [
@@ -17940,6 +18216,8 @@
           "item": "pdverb",
           "text": "Have you had this impairment for longer than six months?",
           "text_de": "Haben Sie diese Beeinträchtigung schon länger als ein halbes Jahr?",
+          "description": "Aus soep-core-2017-pb-m34-wieder übernommen; Filter in Anlehnung an 2017 verbessert",
+          "filter": "(Q323;psta1=2) | (Q326;psta3=2)",
           "concept": "pges15",
           "scale": "cat",
           "answers": [
@@ -18066,6 +18344,7 @@
           "item": "1",
           "text": "ow often did you feel discriminated against in these areas be- cause of your ethnic origins?",
           "text_de": "Wie häufig kam es dabei vor, dass Sie aufgrund Ihrer Herkunft benachteiligt wurden?",
+          "description": "Aus soep-core-2017-pb-m34-wieder übernommen",
           "concept": "plbj6a",
           "scale": "cat",
           "answers": [
@@ -18108,6 +18387,7 @@
           "item": "plbj1",
           "text": "And how was that in everyday life in the last two years? How often did you, for example, when shopping, on the subway or on the bus, find yourself disadvantaged because of your background?",
           "text_de": "Und wie war das in den letzten zwei Jahren im Alltag: Wie häufig kam es zum Beispiel beim Einkaufen, in der U-Bahn oder im Bus vor, dass Sie aufgrund Ihrer Herkunft benachteiligt wurden?",
+          "description": "Aus soep-core-2017-pb-m34-wieder übernommen",
           "concept": "plbj7a",
           "scale": "cat",
           "answers": [
@@ -18150,6 +18430,8 @@
           "item": "plbj1a",
           "text": "ow often did you feel discriminated against in these areas be- cause of your ethnic origins?",
           "text_de": "Wie häufig kam es dabei vor, dass Sie aufgrund Ihrer Herkunft benachteiligt wurden?",
+          "description": "Aus soep-core-2017-pb-m34-wieder übernommen",
+          "filter": "Q334;plbj1=1",
           "concept": "plbj1a",
           "scale": "cat",
           "answers": [
@@ -18192,6 +18474,7 @@
           "item": "plbj2",
           "text": "Now let's talk about the last two weeks. How often have you felt negatively affected by the following complaints in the last two weeks?",
           "text_de": "Jetzt geht es um die letzten zwei Wochen. Wie oft fühlten Sie sich in den letzten zwei Wochen durch die folgenden Beschwerden beeinträchtigt?",
+          "description": "Aus soep-core-2017-pb-m34-wieder übernommen",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -18211,6 +18494,8 @@
           "item": "plbj2a",
           "text": "Little interest or pleasure in your activities?",
           "text_de": "Wenig Interesse oder Freude an Ihren Tätigkeiten?",
+          "description": "Aus soep-core-2017-pb-m34-wieder übernommen",
+          "filter": "Q336;plbj2=1",
           "concept": "pbes2w1",
           "scale": "cat",
           "answers": [
@@ -18258,6 +18543,7 @@
           "item": "plbj3",
           "text": "Low spirits, melancholy or hopelessness?",
           "text_de": "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit?",
+          "description": "Aus soep-core-2017-pb-m34-wieder übernommen",
           "concept": "pbes2w2",
           "scale": "cat",
           "answers": [
@@ -18305,6 +18591,8 @@
           "item": "plbj3a",
           "text": "Nervousness, anxiety or tension?",
           "text_de": "Nervosität, Ängstlichkeit oder Anspannung?",
+          "description": "Aus soep-core-2017-pb-m34-wieder übernommen",
+          "filter": "Q338;plbj3=1",
           "concept": "pbes2w3",
           "scale": "cat",
           "answers": [
@@ -18352,6 +18640,7 @@
           "item": "plbj4",
           "text": "Unable to stop or control worrying?",
           "text_de": "Nicht in der Lage sein, Sorgen zu stoppen oder zu kontrollieren?",
+          "description": "Aus soep-core-2017-pb-m34-wieder übernommen",
           "concept": "pbes2w4",
           "scale": "cat",
           "answers": [
@@ -18399,6 +18688,8 @@
           "item": "plbj4a",
           "text": "How often did you feel discriminated against in these areas be- cause of your ethnic origins?",
           "text_de": "Wie häufig kam es dabei vor, dass Sie aufgrund Ihrer Herkunft benachteiligt wurden?",
+          "description": "Aus soep-core-2017-pb-m34-wieder übernommen",
+          "filter": "Q340;plbj4=1",
           "concept": "plbj4a",
           "scale": "cat",
           "answers": [
@@ -18441,6 +18732,7 @@
           "item": "plbj5",
           "text": "Do you belong to a church, religious community or faith?",
           "text_de": "Gehören Sie einer Kirche, Religionsgemeinschaft oder Glaubensrichtung an?",
+          "description": "Aus soep-core-2017-pb-m34-wieder übernommen",
           "concept": "prel",
           "scale": "cat",
           "answers": [
@@ -18488,6 +18780,8 @@
           "item": "plbj5a",
           "text": "Which other religious communities do you belong to?",
           "text_de": "Welcher christlichen Religionsgemeinschaft gehören Sie an?",
+          "description": "Aus soep-core-2017-pb-m34-wieder übernommen",
+          "filter": "Q342;plbj5=1",
           "concept": "prelch",
           "scale": "cat",
           "answers": [
@@ -18535,6 +18829,7 @@
           "item": "plbj6",
           "text": "Which Islamic denomination do you belong to?",
           "text_de": "Welcher islamischen Glaubensrichtung gehören Sie an?",
+          "description": "Aus soep-core-2017-pb-m34-wieder übernommen",
           "concept": "prelis",
           "scale": "cat",
           "answers": [
@@ -18582,6 +18877,8 @@
           "item": "plbj6a",
           "text": "Which religious community do you belong to?",
           "text_de": "Welcher Religionsgemeinschaft gehören Sie an?",
+          "description": "Aus soep-core-2017-pb-m34-wieder übernommen",
+          "filter": "Q344;plbj6=1",
           "concept": "prelso",
           "scale": "chr",
           "sn": 0,
@@ -18602,6 +18899,7 @@
           "item": "plbj7a",
           "text": "And how was that in everyday life in the last two years? How often did you, for example, when shopping, on the subway or on the bus, find yourself disadvantaged because of your background?",
           "text_de": "Und wie war das in den letzten zwei Jahren im Alltag: Wie häufig kam es zum Beispiel beim Einkaufen, in der U-Bahn oder im Bus vor, dass Sie aufgrund Ihrer Herkunft benachteiligt wurden?",
+          "description": "Aus soep-core-2017-pb-m34-wieder übernommen",
           "concept": "plbj7a",
           "scale": "cat",
           "answers": [
@@ -18663,6 +18961,7 @@
           "item": "1",
           "text": "[de] Nun möchte ich alle Wohnorte abfragen, in denen Sie seit Ihrer Ankunft in Deutschland gelebt haben. Dabei interessiert mich immer Ihr tatsächlicher Aufenthaltsort, unabhängig davon, ob Sie eventuell an einem anderen Wohnort offiziell gemeldet waren.\n \nBitte fangen Sie mit dem ersten Ort an, in dem Sie nach Ihrer Ankunft in Deutschland gelebt haben.",
           "text_de": "Nun möchte ich alle Wohnorte abfragen, in denen Sie seit Ihrer Ankunft in Deutschland gelebt haben. Dabei interessiert mich immer Ihr tatsächlicher Aufenthaltsort, unabhängig davon, ob Sie eventuell an einem anderen Wohnort offiziell gemeldet waren.\n \nBitte fangen Sie mit dem ersten Ort an, in dem Sie nach Ihrer Ankunft in Deutschland gelebt haben.",
+          "description": "Neu",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -18684,6 +18983,7 @@
           "text_de": "In welchem Ort haben Sie damals gelebt?\n\nIhr [1.] Wohnort in Deutschland...\n\nIhr [15.] Wohnort in Deutschland",
           "instruction": "[de] Bitte nennen Sie bei kleinen Orten auch den Namen der nahegelegenen Stadt.",
           "instruction_de": "Bitte nennen Sie bei kleinen Orten auch den Namen der nahegelegenen Stadt.",
+          "description": "Neu\n\nAbfrage erfolgt für max. 15 Wohnungen!",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -18737,6 +19037,7 @@
           "item": "lbulao1",
           "text": "[de] In welchem Bundesland liegt dieser Ort?",
           "text_de": "In welchem Bundesland liegt dieser Ort?",
+          "description": "Neu",
           "concept": "lbula1",
           "scale": "cat",
           "answers": [
@@ -18844,6 +19145,7 @@
           "item": "1",
           "text": "[de] Wann sind Sie in diesen Ort gezogen?",
           "text_de": "Wann sind Sie in diesen Ort gezogen?",
+          "description": "Neu",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -18897,6 +19199,7 @@
           "item": "1",
           "text": "[de] Wann sind Sie in diese Wohnung gezogen?",
           "text_de": "Wann sind Sie in diese Wohnung gezogen?",
+          "description": "Neu\n\nAbfrage für max. 15 Wohnungen! Bei Ortswechsel wird auch die Anzahl Wohnungen um 1 erhöht.",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -18913,6 +19216,7 @@
           "item": "lwortdj1",
           "text": "[de] Jahr",
           "text_de": "Jahr",
+          "description": "wird bei 1. Schleife nicht gestellt",
           "concept": "lwortdj1",
           "scale": "int",
           "sn": 2,
@@ -18922,6 +19226,7 @@
           "item": "lwordm1",
           "text": "[de] Monat",
           "text_de": "Monat",
+          "description": "wird bei 1. Schleife nicht gestellt",
           "concept": "lwordm1",
           "scale": "int",
           "sn": 3,
@@ -18957,6 +19262,7 @@
           "item": "luntart1",
           "text": "[de] In welcher Art von Unterkunft sind Sie da gezogen?",
           "text_de": "In welcher Art von Unterkunft sind Sie da gezogen?",
+          "description": "Neu",
           "goto": "1,2,-1@Q354,3@Q353",
           "concept": "luntart1",
           "scale": "cat",
@@ -19000,6 +19306,8 @@
           "item": "lwhart1",
           "text": "[de] Um was für eine Unterkunft handelt es sich?",
           "text_de": "Um was für eine Unterkunft handelt es sich?",
+          "description": "Neu (aus HH Fragebogen übernommen)",
+          "filter": "Q352;luntart1=3",
           "concept": "lwhart1",
           "scale": "cat",
           "answers": [
@@ -19047,6 +19355,7 @@
           "item": "lwortgr1",
           "text": "[de] Was war der Hauptgrund dafür, dass Sie in diesen Ort/diese Wohnung gezogen sind?",
           "text_de": "Was war der Hauptgrund dafür, dass Sie in diesen Ort/diese Wohnung gezogen sind?",
+          "description": "Neu",
           "concept": "lwortgr1",
           "scale": "cat",
           "answers": [
@@ -19109,6 +19418,7 @@
           "item": "lumzug1",
           "text": "[de] Sind Sie danach nochmal umgezogen?",
           "text_de": "Sind Sie danach nochmal umgezogen?",
+          "description": "Neu\n\nmax. 14x 1|2 (=> 15 Wohnungen)\nWenn mehr als 15 Wohnungen (was wohl selten bis gar nicht vorkommen wird) weiter mit Q356.",
           "goto": "1@Q348,2@Q351 ",
           "concept": "lumzug1",
           "scale": "cat",
@@ -19267,6 +19577,7 @@
           "item": "1",
           "text": "[de] EV_BAMF_preload: Preload Record Linkage BAMF",
           "text_de": "EV_BAMF_preload: Preload Record Linkage BAMF",
+          "filter": "Preload2;IAB_EV_preload=1 & Preload3;EV_BAMF_preload=1",
           "scale": "cat",
           "answers": [
             {
@@ -19367,6 +19678,7 @@
           "item": "1",
           "text": "[de] Record Linkage - IAB I",
           "text_de": "Record Linkage - IAB I",
+          "filter": "Preload2;IAB_EV_preload=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -19402,6 +19714,7 @@
           "item": "1",
           "text": "[de] Record Linkage - IAB II",
           "text_de": "Record Linkage - IAB II",
+          "filter": "Preload2;IAB_EV_preload=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -19447,6 +19760,7 @@
           "item": "1",
           "text": "[de] An Interviewer: Bestätigung Übergabe Formular [NICHT ÜBERSETZEN]",
           "text_de": "An Interviewer: Bestätigung Übergabe Formular [NICHT ÜBERSETZEN]",
+          "filter": "Preload2;IAB_EV_preload=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -19474,6 +19788,7 @@
           "item": "rliab",
           "text": "[de] Sind Sie mit der Zusammenführung ausgewählter Sozialdaten mit Ihren Befragungsdaten einverstanden?",
           "text_de": "Sind Sie mit der Zusammenführung ausgewählter Sozialdaten mit Ihren Befragungsdaten einverstanden?",
+          "filter": "Preload2;IAB_EV_preload=1 & Q359;INT1=1",
           "concept": "reclink",
           "scale": "cat",
           "answers": [
@@ -19530,6 +19845,7 @@
           "item": "1",
           "text": "[de] Record Linkage - BAMF I",
           "text_de": "Record Linkage - BAMF I",
+          "filter": "Preload3;EV_BAMF_preload=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -19565,6 +19881,7 @@
           "item": "1",
           "text": "[de] Record Linkage - BAMF III",
           "text_de": "Record Linkage - BAMF III",
+          "filter": "Preload3;EV_BAMF_preload=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -19610,6 +19927,7 @@
           "item": "1",
           "text": "[de] An Interviewer: Bestätigung Übergabe Formular [NICHT ÜBERSETZEN]",
           "text_de": "An Interviewer: Bestätigung Übergabe Formular [NICHT ÜBERSETZEN]",
+          "filter": "Preload3;EV_BAMF_preload=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -19637,6 +19955,7 @@
           "item": "rlbamf",
           "text": "[de] Sind Sie mit der Zusammenführung ausgewählter Registerdaten mit Ihren Befragungsdaten einverstanden?",
           "text_de": "Sind Sie mit der Zusammenführung ausgewählter Registerdaten mit Ihren Befragungsdaten einverstanden?",
+          "filter": "Preload3;EV_BAMF_preload=1 & Q362;INT2=1",
           "concept": "rlbamf",
           "scale": "cat",
           "answers": [
@@ -19674,6 +19993,7 @@
           "item": "1",
           "text": "[de] consent_given: Zustimmung zu Rec Link IAB oder BAMF",
           "text_de": "consent_given: Zustimmung zu Rec Link IAB oder BAMF",
+          "filter": "Q360;rliab=1| Q364;rlbamf=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -19733,6 +20053,8 @@
           "item": "1",
           "text": "[de] Um die Sozialdaten, die am Institut für Arbeitsmarkt- und Berufsforschung (IAB) über Sie vorliegen den Befragungsdaten zuspielen zu können, benötigen wir Angaben zu Ihrer Person wie  Vorname, Familienname (Nachname) und Geburtsname (falls abweichend).\nFalls einzelne Angaben aus dieser Befragung schon vorliegen, werden sie Ihnen zur Bestätigung bzw. Korrektur vorgelegt.",
           "text_de": "Um die Sozialdaten, die am Institut für Arbeitsmarkt- und Berufsforschung (IAB) über Sie vorliegen den Befragungsdaten zuspielen zu können, benötigen wir Angaben zu Ihrer Person wie  Vorname, Familienname (Nachname) und Geburtsname (falls abweichend).\nFalls einzelne Angaben aus dieser Befragung schon vorliegen, werden sie Ihnen zur Bestätigung bzw. Korrektur vorgelegt.",
+          "description": "Frage in 366a und 366b aufgeteilt, damit variabler Fragetext möglich ",
+          "filter": "Q365;consent_given=1,2 & (Preload2;IAB_EV_preload=1 | Preload4;IAB_BAMF_first=2)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -19772,6 +20094,7 @@
           "item": "1",
           "text": "[de] Um die Registerdaten, die am Bundesamt für Migration und Flüchtlinge (BAMF) über Sie vorliegen den Befragungsdaten zuspielen zu können, benötigen wir Angaben zu Ihrer Person wie  Vorname, Familienname (Nachname) und Geburtsname (falls abweichend).\nFalls einzelne Angaben aus dieser Befragung schon vorliegen, werden sie Ihnen zur Bestätigung bzw. Korrektur vorgelegt.",
           "text_de": "Um die Registerdaten, die am Bundesamt für Migration und Flüchtlinge (BAMF) über Sie vorliegen den Befragungsdaten zuspielen zu können, benötigen wir Angaben zu Ihrer Person wie  Vorname, Familienname (Nachname) und Geburtsname (falls abweichend).\nFalls einzelne Angaben aus dieser Befragung schon vorliegen, werden sie Ihnen zur Bestätigung bzw. Korrektur vorgelegt.",
+          "filter": "Q365;consent_given=1,2 & (Preload3;EV_BAMF_preload=1 | Preload4;IAB_BAMF_first=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -19811,6 +20134,7 @@
           "item": "1",
           "text": "[de] Wie lautet Ihr Familienname (Nachname)?",
           "text_de": "Wie lautet Ihr Familienname (Nachname)?",
+          "filter": "Q365;consent_given=1,2",
           "scale": "chr",
           "sn": 0,
           "number": ""
@@ -19830,6 +20154,7 @@
           "item": "1",
           "text": "[de] Ist Ihr Familienname auch Ihr Geburtsname?",
           "text_de": "Ist Ihr Familienname auch Ihr Geburtsname?",
+          "filter": "Q365;consent_given=1,2",
           "scale": "cat",
           "answers": [
             {
@@ -19861,6 +20186,7 @@
           "item": "1",
           "text": "[de] Record Linkage - IAB IV",
           "text_de": "Record Linkage - IAB IV",
+          "filter": "Q365;consent_given=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -19906,6 +20232,7 @@
           "item": "1",
           "text": "[de] Record Linkage - BAMF IV",
           "text_de": "Record Linkage - BAMF IV",
+          "filter": "Q365;consent_given=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -20037,6 +20364,7 @@
           "item": "i2",
           "text": "How often did you use the written translations in this interview?",
           "text_de": "Wie häufig wurden in diesem Interview die übersetzten Texte verwendet?",
+          "filter": "Q002;pspvers=1:6",
           "goto": "5@Q375",
           "concept": "i2",
           "scale": "cat",
@@ -20085,6 +20413,7 @@
           "item": "i3",
           "text": "How helpful were the written translations in this interview?",
           "text_de": "Wie hilfreich waren in diesem Interview die übersetzten Texte?",
+          "filter": "Q375;i2=1:4",
           "concept": "i3",
           "scale": "cat",
           "answers": [
@@ -20167,6 +20496,7 @@
           "item": "i7",
           "text": "What language did the interpreter translate into?",
           "text_de": "In welche Sprache hat der Dolmetscher übersetzt?",
+          "filter": "Q375;i6=1",
           "concept": "i7",
           "scale": "chr",
           "sn": 0,
@@ -20187,6 +20517,7 @@
           "item": "i8",
           "text": "Approximately how old is the interpreter?",
           "text_de": "Wie alt ist der Dolmetscher etwa?",
+          "filter": "Q375;i6=1",
           "concept": "i8",
           "scale": "cat",
           "answers": [
@@ -20224,6 +20555,7 @@
           "item": "i9",
           "text": "Here are a few questions about certain areas of life: If applicable, there is always a demand for possible disadvantages.",
           "text_de": "Es folgen ein paar Fragen zu bestimmten Lebensbereichen: Falls für Sie zutreffend, kommt jeweils eine Nachfrage über eventuelle Benachteiligungen.",
+          "filter": "Q375;i6=1",
           "goto": "ALL@382",
           "scale": "txt",
           "sn": 0,
@@ -20281,6 +20613,7 @@
           "item": "i11",
           "text": "ow often did you feel discriminated against in these areas be- cause of your ethnic origins?",
           "text_de": "Wie häufig kam es dabei vor, dass Sie aufgrund Ihrer Herkunft benachteiligt wurden?",
+          "filter": "Q375;i6=2",
           "concept": "plbj1a",
           "scale": "cat",
           "answers": [
@@ -20323,6 +20656,7 @@
           "item": "i12",
           "text": "Have you been looking for a job, an apprenticeship or an internship in the last two years?",
           "text_de": "Haben Sie in den letzten beiden Jahren eine Arbeit, einen Ausbildungsplatz oder einen Praktikumsplatz gesucht?",
+          "filter": "Q375;i6=2",
           "concept": "plbj2",
           "scale": "cat",
           "answers": [

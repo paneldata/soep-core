@@ -17,6 +17,7 @@
           "item": "1",
           "text": "Child questions household",
           "text_de": "Kinderfragen Haushalt",
+          "description": "Wenn A-concept vorhanden, dann concept=a, wenn nicht dann b, wenn nicht dann c, …",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -36,6 +37,7 @@
           "item": "1",
           "text": "These are according to the address protocol children in your household who were born only in 2000 or later.\nPlease indicate if these children are still or no longer live in the household.",
           "text_de": "Dies sind laut Adressenprotokoll Kinder in Ihrem Haushalt die erst 2000 oder später geboren sind. \nBitte geben Sie an, ob diese Kinder noch oder nicht mehr im Haushalt leben.",
+          "description": "Für Jahrgang 2017 bis 2000",
           "scale": "cat",
           "answers": [
             {
@@ -109,6 +111,8 @@
           "item": "1",
           "text": "Please state the first name of your child",
           "text_de": "Bitte nennen Sie mir den Vornamen des Kindes.",
+          "description": "Nur wenn HKIND = 1",
+          "filter": "Q2;1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -145,6 +149,8 @@
           "item": "1",
           "text": "Please state the correct birth date of your child.",
           "text_de": "Bitte nennen Sie mir das genaue Geburtsdatum des Kindes.",
+          "description": "Nur wenn HKIND = 1",
+          "filter": "Q2;1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -199,6 +205,8 @@
           "item": "1",
           "text": "Please state sex of child",
           "text_de": "Bitte nennen Sie mir das Geschlecht des Kindes.",
+          "description": "Nur wenn HKIND = 1",
+          "filter": "Q2;1=1",
           "concept": "asex",
           "scale": "cat",
           "answers": [
@@ -267,6 +275,7 @@
           "item": "1",
           "text": "Now follow a few questions for all of your children. It's about",
           "text_de": "Nun folgen für alle Ihre Kinder ein paar Fragen. \nJetzt geht es um:",
+          "description": "Ab hier wird auf jedem Screen der Vorname und das Geburtsjahr des jeweiligen Kindes eingeblendet. Sortierung vom Jüngsten zum Ältesten.",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -305,6 +314,8 @@
           "item": "1",
           "text": "Which country were you born in?",
           "text_de": "In welchem Land ist dieses Kind geboren?",
+          "description": "Für Jahrgang des Kindes = 2017, 2016, 2014, 2011, 2009, 2007",
+          "filter": "Q4;2=2017, 2016, 2014, 2011, 2009, 2007",
           "concept": "agebd",
           "scale": "cat",
           "answers": [
@@ -351,6 +362,8 @@
           "item": "1",
           "text": "Are you the birth mother, the biological father or another person?",
           "text_de": "Sind Sie die leibliche Mutter, der leibliche Vater oder eine andere Person?",
+          "description": "Ähnlich aleib, soep-core-2016-e1; Nur für Jahrgang = 2017, 2016, 2014 \n  ",
+          "filter": "Q4;2=2017, 2016, 2014",
           "concept": "aleib",
           "scale": "cat",
           "answers": [
@@ -393,6 +406,8 @@
           "item": "1",
           "text": "With whom did this child come to Germany?",
           "text_de": "Mit wem ist dieses Kind nach Deutschland gekommen?",
+          "description": "Nur wenn ABCDE3 = 2 \n  ",
+          "filter": "Q7;1=2",
           "concept": "adlandw",
           "scale": "cat",
           "answers": [
@@ -440,6 +455,8 @@
           "item": "1",
           "text": "When did this child leave his or her country of birth?",
           "text_de": "Wann hat dieses Kind sein Geburtsland verlassen?",
+          "description": "Nur wenn BCDE6 = 4, 9 \n  ",
+          "filter": "Q9;1=4, -1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -485,6 +502,8 @@
           "item": "1",
           "text": "When did you arrive in Germany?",
           "text_de": "Wann ist dieses Kind in Deutschland angekommen?",
+          "description": "Nur wenn BCDE6 = 4, 9",
+          "filter": "Q9;1=4, -1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -530,6 +549,8 @@
           "item": "1",
           "text": "Would this child be extra-familially cared for before moving to Germany?",
           "text_de": "Wurde dieses Kind vor dem Zuzug nach Deutschland bereits regelmäßig außerfamiliär betreut?",
+          "description": "An die Jahrgänge 2014, 2011, 2009 \nNur wenn Q007 - ABCDE3 = 2.",
+          "filter": "(Q4;2=2014, 2011, 2009) & (Q7;1=2)",
           "concept": "bvzabet",
           "scale": "cat",
           "answers": [
@@ -567,6 +588,8 @@
           "item": "1",
           "text": "Was the mother pregnant with this child before she came to Germany?",
           "text_de": "War die Mutter, bevor sie nach Deutschland kam, schon mit diesem Kind schwanger?",
+          "description": "Nur für Jahrgang = 2017, 2016 \nNur wenn AB5=1, 2",
+          "filter": "(Q4;2=2017, 2016) & (Q8;1=1, 2)",
           "concept": "avzkschw",
           "scale": "cat",
           "answers": [
@@ -604,6 +627,8 @@
           "item": "1",
           "text": "Where was your baby delivered?",
           "text_de": "An welchem Ort fand die Entbindung statt?",
+          "description": "soep-core-2016-e1; Nur für Jahrgang = 2017, 2016, 2014 \nNur wenn AB5=1, 2",
+          "filter": "(Q4;2=2017, 2016, 2014) & (Q8;1=1, 2)",
           "concept": "aent",
           "scale": "cat",
           "answers": [
@@ -645,6 +670,8 @@
           "item": "1",
           "text": "Was the baby delivered by caesarean section?",
           "text_de": "War es eine Entbindung mit Kaiserschnitt?",
+          "description": "soep-core-2016-e1; Nur für Jahrgang = 2017, 2016, 2014 und AB5 = 1, 2",
+          "filter": "(Q4;2=2017, 2016, 2014) & (Q8;1=1, 2)",
           "concept": "aent1",
           "scale": "cat",
           "answers": [
@@ -677,6 +704,8 @@
           "item": "1",
           "text": "In which week of pregnancy was your baby born?",
           "text_de": "In der wievielten Schwangerschaftswoche wurde dieses Kind geboren?",
+          "description": "soep-core-2016-e1, leicht verändert; Nur für Jahrgang = 2017, 2016",
+          "filter": "Q4;2=2017, 2016",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -713,6 +742,8 @@
           "item": "1",
           "text": "What did your baby weigh/measure at birth?",
           "text_de": "Wie schwer war dieses Kind zum Zeitpunkt der Geburt?",
+          "description": "soep-core-2016-e1, ausdifferenziert; Nur für Jahrgang = 2017, 2016",
+          "filter": "Q4;2=2017, 2016",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -749,6 +780,8 @@
           "item": "1",
           "text": "What did your baby weigh/measure at birth?",
           "text_de": "Wie groß war dieses Kind zum Zeitpunkt der Geburt?",
+          "description": "Nur für Jahrgang = 2017, 2016",
+          "filter": "Q4;2=2017, 2016",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -785,6 +818,8 @@
           "item": "1",
           "text": "How was your child's head circumference at birth?",
           "text_de": "Wie war der Kopfumfang Ihres Kindes zum Zeitpunkt der Geburt?",
+          "description": "Nur für Jahrgang = 2017, 2016",
+          "filter": "Q4;2=2017, 2016",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -821,6 +856,8 @@
           "item": "1",
           "text": "During the first three months after your baby’s birth, did your child experience health problems that necessitated a hospital stay?",
           "text_de": "Gab es bei diesem Kind in den ersten drei Monaten nach der Geburt ernste gesundheitliche Probleme, die einen Krankenhausaufenthalt notwendig machten?",
+          "description": "soep-core-2016-e1, leicht verändert; Nur für Jahrgang = 2017, 2016",
+          "filter": "Q4;2=2017, 2016",
           "concept": "ages1",
           "scale": "cat",
           "answers": [
@@ -858,6 +895,8 @@
           "item": "1",
           "text": "How many days was this child in the hospital within the first three months after birth?",
           "text_de": "Wie viele Tage war dieses Kind innerhalb der ersten drei Monate nach der Geburt im Krankenhaus?",
+          "description": "Nur wenn A24 = 1",
+          "filter": "Q20;1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -866,6 +905,7 @@
           "item": "2",
           "text": "Days",
           "text_de": "Tage",
+          "description": "soep-core-2016-e1, leicht verändert",
           "concept": "ages2",
           "scale": "int",
           "sn": 1,
@@ -894,6 +934,8 @@
           "item": "1",
           "text": "Did you breastfeed your baby? If so, how long?",
           "text_de": "Wurde das Kind gestillt, und wenn ja, wie lange?",
+          "description": "soep-core-2016-e1, leicht verändert; Antwortkategorien auch; Nur für Jahrgang = 2017, 2016 , 2014 \nNur wenn AB5=1, 2",
+          "filter": "(Q4;2=2017, 2016, 2014) & (Q8;1=1, 2)",
           "concept": "astil1",
           "scale": "cat",
           "answers": [
@@ -941,6 +983,8 @@
           "item": "1",
           "text": "How many month did this child breastfed?",
           "text_de": "Wie viele Monate wurde dieses Kind gestillt?",
+          "description": "Nur wenn AB22 = 3 \nNur wenn AB5=1, 2",
+          "filter": "(Q22;1=1, 2, 3, -1) & (Q8;1=1, 2)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -949,6 +993,7 @@
           "item": "2",
           "text": "Months",
           "text_de": "Monate",
+          "description": "soep-core-2016-e1, leicht verändert",
           "concept": "astil2",
           "scale": "int",
           "sn": 1,
@@ -977,6 +1022,8 @@
           "item": "1",
           "text": "Was your pregnancy more unplanned or more planned?",
           "text_de": "War diese Schwangerschaft eher ungeplant oder eher geplant?",
+          "description": "soep-core-2016-e1, leicht verändert; Nur für Jahrgang = 2017, 2016 \nNur wenn AB5=1, 2",
+          "filter": "(Q4;2=2017, 2016) & (Q8;1=1, 2)",
           "concept": "aplan",
           "scale": "cat",
           "answers": [
@@ -1019,6 +1066,8 @@
           "item": "1",
           "text": "Physical State: In the last third of your pregnancy",
           "text_de": "Wie war Ihr körperliches Befinden im letzten Drittel der Schwangerschaft?",
+          "description": "soep-core-2016-e1, ausdifferenziert; Nur für Jahrgang = 2017, 2016 \nNur wenn AB5=1",
+          "filter": "(Q4;2=2017, 2016) & (Q8;1=1)",
           "concept": "abef1",
           "scale": "cat",
           "answers": [
@@ -1066,6 +1115,8 @@
           "item": "1",
           "text": "Physical State:  In the first three months after childbirth",
           "text_de": "Wie war Ihr körperliches Befinden in den ersten drei Monaten nach der Geburt?",
+          "description": "soep-core-2016-e1, ausdifferenziert; Nur für Jahrgang = 2017, 2016 \nNur wenn AB5=1",
+          "filter": "(Q4;2=2017, 2016) & (Q8;1=1)",
           "concept": "abef2",
           "scale": "cat",
           "answers": [
@@ -1113,6 +1164,8 @@
           "item": "1",
           "text": "[Mental state]: In the last third of your pregnancy",
           "text_de": "Wie war Ihr seelisches / psychisches Befinden im letzten Drittel der Schwangerschaft?",
+          "description": "soep-core-2016-e1, ausdifferenziert; Nur für Jahrgang = 2017, 2016 \nNur wenn AB5=1",
+          "filter": "(Q4;2=2017, 2016) & (Q8;1=1)",
           "concept": "abef3",
           "scale": "cat",
           "answers": [
@@ -1160,6 +1213,8 @@
           "item": "1",
           "text": "Mental State: In the first three months after childbirth",
           "text_de": "Wie war Ihr seelisches / psychisches Befinden in den ersten drei Monaten nach der Geburt?",
+          "description": "soep-core-2016-e1, ausdifferenziert; Nur für Jahrgang = 2017, 2016 \nNur wenn AB5=1",
+          "filter": "(Q4;2=2017, 2016) & (Q8;1=1)",
           "concept": "abef4",
           "scale": "cat",
           "answers": [
@@ -1226,6 +1281,8 @@
           "item": "1",
           "text": "Life changes after the birth of a child. You experience new things and start to have new expectations for the future. To what extent do you agree with the following statements?",
           "text_de": "Bedingt durch die Geburt eines Kindes verändern sich ja die Lebensumstände. Man macht neue Erfahrungen und entwickelt neue Erwartungen an die Zukunft. \nInwieweit stimmen Sie den folgenden Aussagen zu?",
+          "description": "soep-core-2016-e1; Nur für Jahrgang = 2017, 2016",
+          "filter": "Q4;2=2017, 2016",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -1245,6 +1302,8 @@
           "item": "1",
           "text": "My life has changed significantly",
           "text_de": "Meine Lebensumstände haben sich sehr stark verändert",
+          "description": "soep-core-2016-e1; Nur für Jahrgang = 2017, 2016",
+          "filter": "Q4;2=2017, 2016",
           "concept": "aver1",
           "scale": "cat",
           "answers": [
@@ -1287,6 +1346,8 @@
           "item": "1",
           "text": "It gives me pleasure and happiness to raise my child",
           "text_de": "Das Aufziehen dieses Kindes bereitet mir Glück und Freude.",
+          "description": "soep-core-2016-e1, leicht verändert; Nur für Jahrgang = 2017, 2016",
+          "filter": "Q4;2=2017, 2016",
           "concept": "aver2",
           "scale": "cat",
           "answers": [
@@ -1329,6 +1390,8 @@
           "item": "1",
           "text": "I often feel like I’m running out of energy",
           "text_de": "Ich bin oft am Ende meiner Kräfte",
+          "description": "soep-core-2016-e1; Nur für Jahrgang = 2017, 2016",
+          "filter": "Q4;2=2017, 2016",
           "concept": "aver3",
           "scale": "cat",
           "answers": [
@@ -1371,6 +1434,8 @@
           "item": "1",
           "text": "I am satisfied with my role as a mother",
           "text_de": "Meine Rolle als Mutter ist für mich sehr befriedigend",
+          "description": "soep-core-2016-e1; Nur für Jahrgang = 2017, 2016 und wenn AB5 = 1",
+          "filter": "(Q4;2=2017, 2016) & (Q8;1=1)",
           "concept": "aver4",
           "scale": "cat",
           "answers": [
@@ -1413,6 +1478,8 @@
           "item": "1",
           "text": "I often do not feel up to the new tasks and demands of being a mother",
           "text_de": "Ich fühle mich den neuen Aufgaben und Anforderungen oft nicht gewachsen",
+          "description": "soep-core-2016-e1; Nur für Jahrgang = 2017, 2016",
+          "filter": "Q4;2=2017, 2016",
           "concept": "aver5",
           "scale": "cat",
           "answers": [
@@ -1455,6 +1522,8 @@
           "item": "1",
           "text": "I am meeting new people and making new contacts through my child",
           "text_de": "Ich lerne über dieses Kind auch andere Menschen kennen und knüpfe neue Kontakte.",
+          "description": "soep-core-2016-e1, leicht verändert; Nur für Jahrgang = 2017, 2016",
+          "filter": "Q4;2=2017, 2016",
           "concept": "aver6",
           "scale": "cat",
           "answers": [
@@ -1497,6 +1566,8 @@
           "item": "1",
           "text": "I am suffering from being restricted to my role as a mother",
           "text_de": "Ich leide darunter, auf meine Rolle als Mutter eingeschränkt zu sein ",
+          "description": "soep-core-2016-e1; Nur für Jahrgang = 2017, 2016 und wenn AB5 = 1",
+          "filter": "(Q4;2=2017, 2016) & (Q8;1=1)",
           "concept": "aver7",
           "scale": "cat",
           "answers": [
@@ -1539,6 +1610,8 @@
           "item": "1",
           "text": "It’s important to me to show my child plenty of affection",
           "text_de": "Diesem Kind viel Zärtlichkeit zu geben, ist mir sehr wichtig.",
+          "description": "soep-core-2016-e1, leicht verändert; Nur für Jahrgang = 2017, 2016",
+          "filter": "Q4;2=2017, 2016",
           "concept": "aver8",
           "scale": "cat",
           "answers": [
@@ -1581,6 +1654,8 @@
           "item": "1",
           "text": "I'm worried about the health of my child",
           "text_de": "Die Gesundheit dieses Kindes macht mir Sorgen.",
+          "description": "soep-core-2016-e1, leicht verändert; Nur für Jahrgang = 2017, 2016",
+          "filter": "Q4;2=2017, 2016",
           "concept": "aver9",
           "scale": "cat",
           "answers": [
@@ -1623,6 +1698,8 @@
           "item": "1",
           "text": "Does the father live in the household?",
           "text_de": "Lebt der Vater des Kindes hier im Haushalt?",
+          "description": "soep-core-2016-e1; Nur für Jahrgang = 2017, 2016",
+          "filter": "(Q4;2=2017, 2016) & (Q8;1=1, 3, -1)",
           "concept": "avat",
           "scale": "cat",
           "answers": [
@@ -1655,6 +1732,8 @@
           "item": "1",
           "text": "How much do you feel your partner helps you in looking after the child?",
           "text_de": "Wie stark fühlen Sie sich von Ihrem Partner bei der Betreuung des Kindes unterstützt?",
+          "description": "soep-core-2016-e1; ur für Jahrgang = 2017, 2016",
+          "filter": "Q4;2=2017, 2016",
           "concept": "auntp",
           "scale": "cat",
           "answers": [
@@ -1707,6 +1786,8 @@
           "item": "1",
           "text": "Does this child currently go to school?",
           "text_de": "Besucht dieses Kind derzeit eine Schule?",
+          "description": "soep-core-2015-e5, verändert; Nur für Jahrgang 2011 bis 2000",
+          "filter": "Q4;2=2000:2011",
           "concept": "cschno",
           "scale": "cat",
           "answers": [
@@ -1754,6 +1835,8 @@
           "item": "1",
           "text": "Which school does this child currently go to?",
           "text_de": "Welche Schule besucht dieses Kind derzeit?",
+          "description": "Nur wenn H82 = 1",
+          "filter": "Q41;1=1",
           "concept": "cschart",
           "scale": "cat",
           "answers": [
@@ -1815,6 +1898,7 @@
           "item": "2",
           "text": "[Other school]:",
           "text_de": "[Sonstige Schule,] und zwar:",
+          "description": "Nur für Jahrgang = 2011, 2009, 2007 \nNur wenn H82 = 1, 2, 4, 9999",
           "concept": "cschartso",
           "scale": "chr",
           "sn": 1,
@@ -1835,6 +1919,7 @@
           "item": "1",
           "text": "When did this child first go to school?",
           "text_de": "Wann ist dieses Kind das erste Mal zur Schule gegangen?",
+          "filter": "(Q4;2=2011, 2009, 2007) & (Q41;1=1, 2, 4, -1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -1899,6 +1984,8 @@
           "item": "1",
           "text": "In which country did this child go to school for the first time?",
           "text_de": "In welchem Land ist dieses Kind zum ersten Mal in die Schule gegangen?",
+          "description": "Nur für Jahrgang = 2009, 2007 und wenn H82 = 1, 2, 4, 9999 \nItem 4 nur einblenden, wenn H82 = 2, 4, 9999",
+          "filter": "(Q4;2=2009, 2007) & (Q41;1=1, 2, 4, -1)",
           "concept": "dschland",
           "scale": "cat",
           "answers": [
@@ -1957,6 +2044,8 @@
           "text_de": "Wie lange ist es dort zur Schule gegangen?",
           "instruction": "Please state the duration either in years or in months!",
           "instruction_de": "Bitte geben Sie die Dauer entweder in Jahren oder Monaten an!",
+          "description": "Nur für Jahrgang = 2009, 2007 \nNur wenn DE152 = 2, 3",
+          "filter": "(Q4;2=2009, 2007) & (Q44;1=2, 3)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2010,6 +2099,8 @@
           "item": "1",
           "text": "Did this child go to school in another country (except Germany)?",
           "text_de": "Ist dieses Kind in einem weiteren Land (außer Deutschland) zur Schule gegangen?",
+          "description": "Nur für Jahrgang = 2009, 2007 \nNur wenn DE152 = 1 \nWenn Antwort 1 ---> Schleife über DE155 --> DE156 --> DE154 \nWenn Antwort 2 --> weiter mit DE157",
+          "filter": "(Q4;2=2009, 2007) & (Q44;1=1)",
           "concept": "dschaland01",
           "scale": "cat",
           "answers": [
@@ -2047,6 +2138,8 @@
           "item": "1",
           "text": "In which country did this child (except Germany) go to school?",
           "text_de": "In welchem Land ist dieses Kind (außer Deutschland) zur Schule gegangen?",
+          "description": "Nur für Jahrgang = 2009, 2007 \nNur wenn DE154 = 1",
+          "filter": "(Q4;2=2009, 2007) & (Q46;1=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2085,6 +2178,8 @@
           "text_de": "Wie lange ist es dort zur Schule gegangen?",
           "instruction": "Please state the duration either in years or months!",
           "instruction_de": "Bitte geben Sie die Dauer entweder in Jahren oder Monaten an!",
+          "description": "Nur für Jahrgang = 2009, 2007 \nNur wenn DE154 = 1",
+          "filter": "(Q4;2=2009, 2007) & (Q46;1=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2140,6 +2235,8 @@
           "text_de": "Seit wann geht dieses Kind in Deutschland zur Schule?",
           "instruction": "Please state year and month if possible!",
           "instruction_de": "Bitte wenn möglich Jahr und Monat angeben!",
+          "description": "Nur für Jahrgang = 2009, 2007 \nNur wenn DE152 = 2, 3, 9999",
+          "filter": "(Q4;2=2009, 2007) & (Q44;1=2, 3, -1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2213,6 +2310,8 @@
           "item": "1",
           "text": "Does this child currently attend a special class for refugee children (for example, welcome class, preparatory class or transition class)?",
           "text_de": "Hat dieses Kind zunächst eine spezielle Klasse für geflüchtete Kinder (zum Beispiel Willkommensklasse, Vorbereitungsklasse oder Übergangsklasse) besucht?",
+          "description": "soep-core-2016-hh-m34; verändert Nur für Jahrgang < 2012 \nNur wenn H82 = 1",
+          "filter": "Q41;1=1",
           "concept": "cschfsp",
           "scale": "cat",
           "answers": [
@@ -2257,6 +2356,8 @@
           "text_de": "Wie lange hat dieses Kind ausschließlich eine spezielle Klasse für Geflüchtete besucht?",
           "instruction": "Please state the duration either in years or in months!",
           "instruction_de": "Bitte geben Sie die Dauer entweder in Jahren oder Monaten an!",
+          "description": "Nur wenn DE158 = 1",
+          "filter": "Q50;1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2319,6 +2420,8 @@
           "item": "1",
           "text": "How long did this child visit a special class for refugees?\n",
           "text_de": "Wie lange hat dieses Kind auch eine spezielle Klasse für Geflüchtete besucht?",
+          "description": "Nur wenn DE158 = 2",
+          "filter": "Q50;1=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2381,6 +2484,8 @@
           "item": "1",
           "text": "Which class did this child visit first in Germany?",
           "text_de": "Welche Klassenstufe hat dieses Kind zuerst in Deutschland besucht?",
+          "description": "Nur für Jahrgang = 2009, 2007 \nNur wenn DE157 = 1, 2, 9999",
+          "filter": "(Q4;2=2009, 2007) & (Q49;4!=1)",
           "concept": "dschkstd",
           "scale": "txt",
           "sn": 0,
@@ -2418,6 +2523,8 @@
           "item": "1",
           "text": "Which class does/did your child attend in 2016/2017?",
           "text_de": "Welche Klassenstufe besucht bzw. besuchte dieses Kind im Schuljahr 2016/2017?",
+          "description": "Nur für Jahrgang = 2009, 2007 \nNur wenn CDE158 = 2, 3, 99 oder (CDE158 = 1 + CDE159 = 1, 2, 97)",
+          "filter": "(Q4;2=2009, 2007) & ((Q50;1=2, 3, -1) | ((Q50;1=1) & (Q51;5!=1)))",
           "concept": "dschkstakt",
           "scale": "txt",
           "sn": 0,
@@ -2455,6 +2562,8 @@
           "item": "1",
           "text": "Does this child receive special language assistance at school?",
           "text_de": "Bekommt dieses Kind spezielle Sprachförderung in der Schule?",
+          "description": "soep-core-2016-hh-m34; Wenn für H82 = 1",
+          "filter": "Q41;1=1",
           "concept": "cschspsp",
           "scale": "cat",
           "answers": [
@@ -2492,6 +2601,8 @@
           "item": "1",
           "text": "Does this child usually attend school all day?",
           "text_de": "Besucht dieses Kind die Schule meistens ganztags?",
+          "description": "soep-core-2016-hh-m34; Nur wenn H82=1",
+          "filter": "Q41;1=1",
           "concept": "cschgtag",
           "scale": "cat",
           "answers": [
@@ -2529,6 +2640,8 @@
           "item": "1",
           "text": "How many hours per week does the school take care of?",
           "text_de": "Wie viele Stunden pro Woche übernimmt die Schule die Betreuung?",
+          "description": "Nur für Jahrgang = 2011, 2009, 2007 und H82 = 1",
+          "filter": "Q41;1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2565,6 +2678,8 @@
           "item": "1",
           "text": "Get the child, if you want, a meal at lunchtime?",
           "text_de": "Erhält dieses Kind, wenn Sie das wollen, mittags dort ein Essen?",
+          "description": "NEU; Nur wenn H82 = 1",
+          "filter": "Q41;1=1",
           "concept": "cschmess",
           "scale": "cat",
           "answers": [
@@ -2602,6 +2717,8 @@
           "item": "1",
           "text": "Who is the sponsor of this institution? Is it ...",
           "text_de": "Wer ist der Träger dieser Schule? Ist es …",
+          "description": "NEU; Nur wenn H82 = 1",
+          "filter": "Q41;1=1",
           "concept": "cschtrag",
           "scale": "cat",
           "answers": [
@@ -2649,6 +2766,8 @@
           "item": "1",
           "text": "How much does the school\ncost you?",
           "text_de": "Welche Kosten entstehen Ihnen für die Schule?",
+          "description": "Nur wenn H82 = 1",
+          "filter": "Q41;1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2694,6 +2813,8 @@
           "item": "1",
           "text": "Does this child attend a day care group or similar care facility at school?",
           "text_de": "Besucht dieses Kind einen Schulhort oder eine vergleichbare Betreuung in der Schule?",
+          "description": "soep-core-2016-hh-m34; Nur wenn H82 = 1",
+          "filter": "Q41;1=1",
           "concept": "cschhort",
           "scale": "cat",
           "answers": [
@@ -2731,6 +2852,8 @@
           "item": "1",
           "text": "… how many hours a week do you spend looking after the child?",
           "text_de": "Wie viele Stunden pro Woche übernimmt der Hort die Betreuung?",
+          "description": "Nur wenn H87 = 1",
+          "filter": "Q61;1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2739,6 +2862,7 @@
           "item": "2",
           "text": "Hours",
           "text_de": "Stunden",
+          "description": "soep-core-2016-e4, verändert",
           "concept": "cschhortst",
           "scale": "int",
           "sn": 1,
@@ -2769,6 +2893,8 @@
           "text_de": "Nimmt dieses Kind derzeit an einer oder mehreren der folgenden Aktivitäten außerhalb der Schule teil?",
           "instruction": "Please select all responses that apply.",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "description": "soep-core-2016-hh-m34; Nur für 2010-2000 oder wenn (2011 und H82=1)",
+          "filter": "(Q4;2=2000:2010) | ((Q4;2=2011) & (Q41;1=1))",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2777,6 +2903,7 @@
           "item": "2",
           "text": "Language assistance",
           "text_de": "Sprachförderung",
+          "description": "soep-core-2016-hh-m34",
           "concept": "cschakta1",
           "scale": "bin",
           "sn": 1,
@@ -2786,6 +2913,7 @@
           "item": "3",
           "text": "Sports, dance, gymnastics, ballet",
           "text_de": "Sport, Tanzen, Gymnastik, Ballett",
+          "description": "soep-core-2016-hh-m34",
           "concept": "cschakta2",
           "scale": "bin",
           "sn": 2,
@@ -2795,6 +2923,7 @@
           "item": "4",
           "text": "Music lessons or singing lessons",
           "text_de": "Musikunterricht oder Gesangsunterricht",
+          "description": "soep-core-2016-hh-m34",
           "concept": "cschakta3",
           "scale": "bin",
           "sn": 3,
@@ -2804,6 +2933,7 @@
           "item": "5",
           "text": "Art classes / painting",
           "text_de": "Kunsterziehung / Malen",
+          "description": "soep-core-2016-hh-m34",
           "concept": "cschakta4",
           "scale": "bin",
           "sn": 4,
@@ -2813,6 +2943,7 @@
           "item": "6",
           "text": "No, no none of theses",
           "text_de": "Nein, nichts davon",
+          "description": "soep-core-2016-hh-m34",
           "concept": "cschakta5",
           "scale": "bin",
           "sn": 5,
@@ -2822,6 +2953,7 @@
           "item": "7",
           "text": "No answer",
           "text_de": "Keine Angabe",
+          "description": "soep-core-2016-hh-m34",
           "concept": "cschaktaka",
           "scale": "bin",
           "sn": 6,
@@ -2842,6 +2974,8 @@
           "item": "1",
           "text": "How many hours per week does this child receive total language support?",
           "text_de": "Wie viele Stunden pro Woche erhält dieses Kind insgesamt Sprachförderung?",
+          "description": "NEU; Nur wenn H85= 1 oder H89 = 1",
+          "filter": "(Q55;1=1) | (Q63;2=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2850,6 +2984,7 @@
           "item": "2",
           "text": "Hours",
           "text_de": "Stunden",
+          "description": "NEU",
           "concept": "cschspdst",
           "scale": "int",
           "sn": 1,
@@ -2859,6 +2994,7 @@
           "item": "3",
           "text": "No answer",
           "text_de": "Keine Angabe",
+          "description": "NEU",
           "scale": "bin",
           "sn": 2,
           "number": ""
@@ -2878,6 +3014,8 @@
           "item": "1",
           "text": "When is this child expected to be enrolled in school?",
           "text_de": "Wann wird dieses Kind voraussichtlich eingeschult?",
+          "description": "Nur für Jahrgang = 2011 \nNur wenn H82 = 3",
+          "filter": "(Q4;2=2011) & (Q41;1=3)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2923,6 +3061,8 @@
           "item": "1",
           "text": "Is this child currently visiting a nursery, a kindergarten, a day care center or being looked after by a childminder outside the home?",
           "text_de": "Besucht dieses Kind derzeit eine Kinderkrippe, einen Kindergarten, eine Kindertageseinrichtung oder wird bei einer Tagesmutter außer Haus betreut?",
+          "description": "soep-core-2016-hh-m34, ausdifferenziert; Nur wenn 2017-2012 oder (2011 und H82=3)",
+          "filter": "(Q4;2=2012:2017) | ((Q4;2=2011) & (Q41;1=3))",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2977,6 +3117,8 @@
           "item": "1",
           "text": "Do you know that there are external child care facilities in Germany (for example, crèche, kindergarten, kindergarten, childminder, etc.)?",
           "text_de": "Ist Ihnen bekannt, dass es in Deutschland externe Kinderbetreuungsmöglichkeiten (z.B. Krippe, Kindergarten, Kita, Tagesmutter, etc.) gibt?",
+          "description": "Nur wenn Jahrgang = 2016, 2014, 2011 und Hy90 = 3 \nFrageblock ABC80 - ABC81 nur einmalig pro HH stellen, wenn im HH ein Kind von unter 7 Jahren",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1)",
           "concept": "abetber",
           "scale": "cat",
           "answers": [
@@ -3014,6 +3156,8 @@
           "item": "1",
           "text": "Do you know that every child in Germany over the age of one even has the right to such care in a crèche, kindergarten, kindergarten, childminder, etc.?",
           "text_de": "Wissen Sie, dass jedes Kind in Deutschland ab einem Jahr sogar einen Anspruch auf eine solche Betreuung in einer Krippe, einem Kindergarten, Kita, Tagesmutter, etc. hat?",
+          "description": "Nur wenn Jahrgang = 2016, 2014, 2011 \nFrageblock ABC80 - ABC81 nur einmalig pro HH stellen, wenn im HH ein Kind von unter 7 Jahren",
+          "filter": "(Q4;2=2016, 2014, 2011) & ((Q66;2=1) | (Q66;3=1) | (Q66;5=1) | (Q88;1=1, -1))",
           "concept": "abetan",
           "scale": "cat",
           "answers": [
@@ -3051,6 +3195,8 @@
           "item": "1",
           "text": "Would it be possible for you to make such an offer?",
           "text_de": "Käme es für Sie in Frage ein solches Angebot in Anspruch zu nehmen?",
+          "description": "Nur wenn Jahrgang = 2016, 2014, 2011 und Hy90 = 3 \nFrage nur einmalig pro HH stellen, wenn im HH ein Kind unter 7 Jahren.",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1)",
           "concept": "abetana",
           "scale": "cat",
           "answers": [
@@ -3107,6 +3253,8 @@
           "item": "1",
           "text": "There are various reasons why parents have their children cared for only at home and not in a care facility. To what extent do the following statements apply to this child?",
           "text_de": "Es gibt verschiedene Gründe, warum Eltern ihre Kinder ausschließlich zu Hause und nicht in einer Einrichtung betreuen lassen. Wie sehr treffen bei Ihnen die folgenden Aussagen für dieses Kind zu?",
+          "description": "soep-core-2016-hh-m34; Nur wenn [(2016 & dieses Kind ist bereits 1 Jahr alt) oder 2014 oder 2011] und Hy90=3 und ABC80=1",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1) & (Q88;1=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3126,6 +3274,8 @@
           "item": "1",
           "text": "This child is not in a care facility as I did not get a place.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil ich keinen Platz bekommen habe.",
+          "description": "soep-core-2016-hh-m34; Antwortkategorien verändert; Nur wenn [(2016 & dieses Kind ist bereits 1 Jahr alt) oder 2014 oder 2011] und Hy90=3 und ABC80=1",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1) & (Q88;1=1)",
           "concept": "abetnog1",
           "scale": "cat",
           "answers": [
@@ -3163,6 +3313,8 @@
           "item": "1",
           "text": "This child is not in a care facility as I still consider it too young.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil ich es noch für zu jung halte.",
+          "description": "soep-core-2016-hh-m34; Antwortkategorien verändert; Nur wenn [(2016 & dieses Kind ist bereits 1 Jahr alt) oder 2014 oder 2011] und Hy90=3 und ABC80=1",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1) & (Q88;1=1)",
           "concept": "abetnog2",
           "scale": "cat",
           "answers": [
@@ -3200,6 +3352,8 @@
           "item": "1",
           "text": "This child is not in a care facility as I want to bring it up myself.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil ich es selbst erziehen möchte.",
+          "description": "soep-core-2016-hh-m34; Antwortkategorien verändert; Nur wenn [(2016 & dieses Kind ist bereits 1 Jahr alt) oder 2014 oder 2011] und Hy90=3 und ABC80=1",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1) & (Q88;1=1)",
           "concept": "abetnog3",
           "scale": "cat",
           "answers": [
@@ -3237,6 +3391,8 @@
           "item": "1",
           "text": "This child is not in a care facility as I want to bring it up in my first language.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil ich es in meiner Herkunftssprache erziehen möchte.",
+          "description": "soep-core-2016-hh-m34; Antwortkategorien verändert; Nur wenn [(2016 & dieses Kind ist bereits 1 Jahr alt) oder 2014 oder 2011] und Hy90=3 und ABC80=1",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1) & (Q88;1=1)",
           "concept": "abetnog4",
           "scale": "cat",
           "answers": [
@@ -3274,6 +3430,8 @@
           "item": "1",
           "text": "This child is not in a care facility as it is not taught the religious or cultural values that are important to me.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil es dort nicht die religiösen oder kulturellen Werte vermittelt bekommt, die mir wichtig sind.",
+          "description": "soep-core-2016-hh-m34; Antwortkategorien verändert; Nur wenn [(2016 & dieses Kind ist bereits 1 Jahr alt) oder 2014 oder 2011] und Hy90=3 und ABC80=1",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1) & (Q88;1=1)",
           "concept": "abetnog5",
           "scale": "cat",
           "answers": [
@@ -3311,6 +3469,8 @@
           "item": "1",
           "text": "This child is not in a care facility as I am afraid it will be shunned because of its origin.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil ich befürchte, dass es aufgrund seiner Herkunft ausgegrenzt wird.",
+          "description": "soep-core-2016-hh-m34; Antwortkategorien verändert; Nur wenn [(2016 & dieses Kind ist bereits 1 Jahr alt) oder 2014 oder 2011] und Hy90=3 und ABC80=1",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1) & (Q88;1=1)",
           "concept": "abetnog6",
           "scale": "cat",
           "answers": [
@@ -3348,6 +3508,8 @@
           "item": "1",
           "text": "This child is not in a care facility as I am at home anyway and can look after it myself.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil ich sowieso zu Hause bin und die Betreuung übernehmen kann.",
+          "description": "soep-core-2016-hh-m34; Antwortkategorien verändert; Nur wenn [(2016 & dieses Kind ist bereits 1 Jahr alt) oder 2014 oder 2011] und Hy90=3 und ABC80=1",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1) & (Q88;1=1)",
           "concept": "abetnog7",
           "scale": "cat",
           "answers": [
@@ -3385,6 +3547,8 @@
           "item": "1",
           "text": "This child is not in a care facility as the costs are too high.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil die Kosten dafür zu hoch sind.",
+          "description": "soep-core-2016-hh-m34; Antwortkategorien verändert; Nur wenn [(2016 & dieses Kind ist bereits 1 Jahr alt) oder 2014 oder 2011] und Hy90=3 und ABC80=1",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1) & (Q88;1=1)",
           "concept": "abetnog8",
           "scale": "cat",
           "answers": [
@@ -3422,6 +3586,8 @@
           "item": "1",
           "text": "This child is not in a care facility as the nearest one is too far away.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil die Entfernung zur nächsten Einrichtung zu groß ist.",
+          "description": "soep-core-2016-hh-m34; Antwortkategorien verändert; Nur wenn [(2016 & dieses Kind ist bereits 1 Jahr alt) oder 2014 oder 2011] und Hy90=3 und ABC80=1",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1) & (Q88;1=1)",
           "concept": "abetnog9",
           "scale": "cat",
           "answers": [
@@ -3459,6 +3625,8 @@
           "item": "1",
           "text": "This child is not in a care facility as the opening times do not suit me.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil die Öffnungszeiten für mich nicht passen.",
+          "description": "soep-core-2016-hh-m34; Antwortkategorien verändert; Nur wenn [(2016 & dieses Kind ist bereits 1 Jahr alt) oder 2014 oder 2011] und Hy90=3 und ABC80=1",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1) & (Q88;1=1)",
           "concept": "abetnog10",
           "scale": "cat",
           "answers": [
@@ -3496,6 +3664,8 @@
           "item": "1",
           "text": "This child is not in a care facility as it takes up too much time to take it there and collect it again every day.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil es zu aufwendig ist, es jeden Tag dort hinzubringen und wieder abzuholen.",
+          "description": "soep-core-2016-hh-m34; Antwortkategorien verändert; Nur wenn [(2016 & dieses Kind ist bereits 1 Jahr alt) oder 2014 oder 2011] und Hy90=3 und ABC80=1",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1) & (Q88;1=1)",
           "concept": "abetnog11",
           "scale": "cat",
           "answers": [
@@ -3533,6 +3703,8 @@
           "item": "1",
           "text": "This child is not in a care facility as it has a chronic illness or a disability.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil es eine chronische Krankheit oder eine Behinderung hat.",
+          "description": "soep-core-2016-hh-m34; Antwortkategorien verändert; Nur wenn [(2016 & dieses Kind ist bereits 1 Jahr alt) oder 2014 oder 2011] und Hy90=3 und ABC80=1",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1) & (Q88;1=1)",
           "concept": "abetnog12",
           "scale": "cat",
           "answers": [
@@ -3570,6 +3742,8 @@
           "item": "1",
           "text": "This child is not in a care facility as it should spend as much time as possible with its siblings.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil es möglichst viel Zeit mit den Geschwistern verbringen soll.",
+          "description": "soep-core-2016-hh-m34; Antwortkategorien verändert; Nur wenn [(2016 & dieses Kind ist bereits 1 Jahr alt) oder 2014 oder 2011] und Hy90=3 und ABC80=1",
+          "filter": "(Q4;2=2016, 2014, 2011) & (Q66;4=1) & (Q88;1=1)",
           "concept": "abetnog13",
           "scale": "cat",
           "answers": [
@@ -3607,6 +3781,8 @@
           "item": "1",
           "text": "How many hours a day does this facility or childminder take care of?",
           "text_de": "Wie viele Stunden pro Tag übernimmt diese Einrichtung oder die Tagesmutter die Betreuung?",
+          "description": "soep-core-2016-e1, ausdifferenziert; Nur wenn Hy90 = 1,2",
+          "filter": "(Q66;2=1) | (Q66;3=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3643,6 +3819,8 @@
           "item": "1",
           "text": "How many days per week does this child visit this institution or childminder?",
           "text_de": "Wie viele Tage pro Woche besucht dieses Kind diese Einrichtung oder die Tagesmutter?",
+          "description": "NEU; Nur wenn Hy90 = 1,2",
+          "filter": "(Q66;2=1) | (Q66;3=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3651,6 +3829,7 @@
           "item": "2",
           "text": "Days per week",
           "text_de": "Tage pro Woche",
+          "description": "NEU",
           "concept": "akbett",
           "scale": "int",
           "sn": 1,
@@ -3660,6 +3839,7 @@
           "item": "3",
           "text": "Now answer",
           "text_de": "Keine Angabe",
+          "description": "NEU",
           "scale": "bin",
           "sn": 2,
           "number": ""
@@ -3679,6 +3859,8 @@
           "item": "1",
           "text": "How many of the other children in the Kita group are children of refugees?",
           "text_de": "Wie viele der anderen Kinder in der Kita-Gruppe sind Kinder von Geflüchteten?",
+          "description": "NEU; Nur wenn Hy90=1.",
+          "filter": "Q66;2=1",
           "concept": "akbetfanz",
           "scale": "cat",
           "answers": [
@@ -3736,6 +3918,8 @@
           "item": "1",
           "text": "Does this child receive at this facility or at the childminder if they wish a meal at lunchtime?",
           "text_de": "Erhält dieses Kind in dieser Einrichtung oder bei der Tagesmutter, wenn Sie das wollen, mittags dort ein Essen?",
+          "description": "NEU; Nur wenn Hy90 = 1,2",
+          "filter": "(Q66;2=1) | (Q66;3=1)",
           "concept": "akbetess",
           "scale": "cat",
           "answers": [
@@ -3773,6 +3957,8 @@
           "item": "1",
           "text": "Which costs do you incur for the care provided by this institution or the childminder for this child?",
           "text_de": "Welche Kosten entstehen Ihnen für die Betreuung durch diese Einrichtung oder die Tagesmutter für dieses Kind?",
+          "description": "Nur wenn Hy90 = 1,2.",
+          "filter": "(Q66;2=1) | (Q66;3=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3818,6 +4004,8 @@
           "item": "1",
           "text": "Since when do you visit this institution or the childminder?",
           "text_de": "Seit welchem Jahr besucht dieses Kind diese Einrichtung oder die Tagesmutter?",
+          "description": "Nur wenn Hy90 = 1,2.",
+          "filter": "(Q66;2=1) | (Q66;3=1)",
           "concept": "akbetj",
           "scale": "txt",
           "sn": 0,
@@ -3857,6 +4045,8 @@
           "text_de": "Nimmt dieses Kind derzeit an einer oder mehreren der folgenden Aktivitäten teil?",
           "instruction": "Please select all responses that apply.",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "description": "soep-core-2016-hh-m34, instruction ergänzt; Nur wenn 2017-2012 oder (2011 und H82=3)",
+          "filter": "(Q4;2=2012:2017) | ((Q4;2=2011) & (Q41;1=3))",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3865,6 +4055,7 @@
           "item": "2",
           "text": "Language assistance",
           "text_de": "Sprachförderung",
+          "description": "soep-core-2016-hh-m34",
           "concept": "akakt1",
           "scale": "bin",
           "sn": 1,
@@ -3874,6 +4065,7 @@
           "item": "3",
           "text": "Children's gymnastics, children's sport, children's swimming",
           "text_de": "Kinderturnen, Kindersport, Kinderschwimmen",
+          "description": "soep-core-2016-hh-m34",
           "concept": "akakt2",
           "scale": "bin",
           "sn": 2,
@@ -3883,6 +4075,7 @@
           "item": "4",
           "text": "Early childhood music lessons",
           "text_de": "Frühkindliche Musikerziehung",
+          "description": "soep-core-2016-hh-m34",
           "concept": "akakt3",
           "scale": "bin",
           "sn": 3,
@@ -3892,6 +4085,7 @@
           "item": "5",
           "text": "Artistic activities (for example painting for children, children's theatre)",
           "text_de": "Künstlerische Aktivitäten (zum Beispiel Malen für Kinder, Kindertheater)",
+          "description": "soep-core-2016-hh-m34",
           "concept": "akakt4",
           "scale": "bin",
           "sn": 4,
@@ -3901,6 +4095,7 @@
           "item": "6",
           "text": "Other parent-child group",
           "text_de": "Sonstige Eltern-Kind-Gruppe",
+          "description": "soep-core-2016-hh-m34",
           "concept": "akakt5",
           "scale": "bin",
           "sn": 5,
@@ -3910,6 +4105,7 @@
           "item": "7",
           "text": "No, none of these",
           "text_de": "Nein, nichts davon",
+          "description": "soep-core-2016-hh-m34",
           "concept": "akakt6",
           "scale": "bin",
           "sn": 6,
@@ -3919,6 +4115,7 @@
           "item": "8",
           "text": "No details",
           "text_de": "keine Angabe",
+          "description": "soep-core-2016-hh-m34",
           "concept": "akaktka",
           "scale": "bin",
           "sn": 7,
@@ -3941,6 +4138,8 @@
           "text_de": "Macht dieses Kind derzeit eines oder mehrere der folgenden Dinge?",
           "instruction": "Please select all responses that apply.",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "description": "soep-core-2016-hh-m34, instruction ergänzt; Nur wenn H82 = 2, 4, 9999",
+          "filter": "Q41;1=4, 2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3949,6 +4148,7 @@
           "item": "2",
           "text": "Waiting for school or further education to start",
           "text_de": "Wartet auf den Schulbeginn oder Ausbildungsbeginn",
+          "description": "soep-core-2016-hh-m34, verändert",
           "concept": "ckderz1",
           "scale": "bin",
           "sn": 1,
@@ -3958,6 +4158,7 @@
           "item": "3",
           "text": "Waiting vocational training to start",
           "text_de": "Wartet auf den Berufsausbildungsbeginn",
+          "description": "soep-core-2016-hh-m34",
           "concept": "ckderz2",
           "scale": "bin",
           "sn": 2,
@@ -3967,6 +4168,7 @@
           "item": "4",
           "text": "Is in a vocational preparatory year, vocational basic education year",
           "text_de": "Ist in einem Berufsvorbereitungsjahr, Berufsgrundbildungsjahr",
+          "description": "soep-core-2016-hh-m34, verändert",
           "concept": "ckderz3",
           "scale": "bin",
           "sn": 3,
@@ -3976,6 +4178,7 @@
           "item": "5",
           "text": "Attending a vocational training school",
           "text_de": "Besucht eine berufsbildende Schule",
+          "description": "soep-core-2016-hh-m34",
           "concept": "ckderz4",
           "scale": "bin",
           "sn": 4,
@@ -3985,6 +4188,7 @@
           "item": "6",
           "text": "Is in a vocational training / apprenticeship / internship",
           "text_de": "Ist in einer beruflichen Ausbildung / Lehre / betrieblichem Praktikum",
+          "description": "soep-core-2016-hh-m34, verändert",
           "concept": "ckderz5",
           "scale": "bin",
           "sn": 5,
@@ -3994,6 +4198,7 @@
           "item": "7",
           "text": "Is working",
           "text_de": "Ist erwerbstätig",
+          "description": "soep-core-2016-hh-m34",
           "concept": "ckderz6",
           "scale": "bin",
           "sn": 6,
@@ -4003,6 +4208,7 @@
           "item": "8",
           "text": "Get a language promotion",
           "text_de": "Bekommt eine Sprachförderung",
+          "description": "soep-core-2016-hh-m34; war eigenständige Frage",
           "concept": "ckderz7",
           "scale": "bin",
           "sn": 7,
@@ -4012,6 +4218,7 @@
           "item": "9",
           "text": "None of these",
           "text_de": "Nichts davon",
+          "description": "soep-core-2016-hh-m34",
           "concept": "ckderz8",
           "scale": "bin",
           "sn": 8,
@@ -4021,6 +4228,7 @@
           "item": "10",
           "text": "No details",
           "text_de": "keine Angabe",
+          "description": "soep-core-2016-hh-m34",
           "concept": "ckderzka",
           "scale": "bin",
           "sn": 9,
@@ -4060,6 +4268,8 @@
           "item": "1",
           "text": "Are you the child's main caregiver?",
           "text_de": "Sind Sie selbst die Hauptbetreuungsperson dieses Kindes?",
+          "description": "soep-core-2016-e1, leicht verändert + Antwortkategorien ausdifferenziert; Nur für Jahrgang = 2017, 2016, 2014, 2011, 2009, 2007",
+          "filter": "Q4;2=2007:2017",
           "concept": "ahbetp",
           "scale": "cat",
           "answers": [
@@ -4104,6 +4314,8 @@
           "text_de": "Gibt es außer Ihnen oder neben der bereits erfragten Einrichtung (Kita, Tagesmutter, Schule) noch andere Personen oder Einrichtungen, die die Betreuung dieses Kindes zeitweise übernehmen?",
           "instruction": "Please select all responses that apply.",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "description": "soep-core-2016-e1, verändert; Frage für alle 2000-2017",
+          "filter": "Q4;2=2000:2017",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4121,6 +4333,7 @@
           "item": "3",
           "text": "Paid caregiver comes in (for example, nanny, au-pair)",
           "text_de": "Bezahlte Betreuungsperson kommt ins Haus (z.B. Kinderfrau, Au-pair)",
+          "description": "NEU",
           "concept": "abeta2",
           "scale": "bin",
           "sn": 2,
@@ -4130,6 +4343,7 @@
           "item": "4",
           "text": "Child's grandparents",
           "text_de": "Großeltern des Kindes",
+          "description": "soep-core-2016-e1",
           "concept": "abeta3",
           "scale": "bin",
           "sn": 3,
@@ -4139,6 +4353,7 @@
           "item": "5",
           "text": "Older brother / sister of the child",
           "text_de": "Ältere Geschwister des Kindes",
+          "description": "soep-core-2016-e1",
           "concept": "abeta4",
           "scale": "bin",
           "sn": 4,
@@ -4148,6 +4363,7 @@
           "item": "6",
           "text": "Other relatives",
           "text_de": "Andere Verwandte",
+          "description": "soep-core-2016-e1",
           "concept": "abeta5",
           "scale": "bin",
           "sn": 5,
@@ -4157,6 +4373,7 @@
           "item": "7",
           "text": "Friends, acquaintances, and neighbors",
           "text_de": "Freunde, Bekannte oder Nachbarn ",
+          "description": "soep-core-2016-hh-m34",
           "concept": "abeta6",
           "scale": "bin",
           "sn": 6,
@@ -4166,6 +4383,7 @@
           "item": "8",
           "text": "Volunteer",
           "text_de": "Ehrenamtlicher Betreuer/-in",
+          "description": "soep-core-2016-hh-m34",
           "concept": "abeta7",
           "scale": "bin",
           "sn": 7,
@@ -4175,6 +4393,7 @@
           "item": "9",
           "text": "Social service organization",
           "text_de": "Soziale Einrichtungen, Zentren, Freizeitorganisationen",
+          "description": "NEU",
           "concept": "abeta8",
           "scale": "bin",
           "sn": 8,
@@ -4184,6 +4403,7 @@
           "item": "10",
           "text": "other",
           "text_de": "Andere\n  ",
+          "description": "soep-core-2016-e1",
           "concept": "abeta9",
           "scale": "bin",
           "sn": 9,
@@ -4193,6 +4413,7 @@
           "item": "11",
           "text": "No, nobody",
           "text_de": "Nein, keine Person oder Einrichtung",
+          "description": "soep-core-2016-e1",
           "concept": "abetano",
           "scale": "bin",
           "sn": 10,
@@ -4222,6 +4443,8 @@
           "item": "1",
           "text": "How much do you pay\nfor the school or facility?",
           "text_de": "Welche Kosten entstehen Ihnen für die Betreuung?",
+          "description": "NEU; Nur wenn ABCDE60 = 2, 6, 7, 8, 9",
+          "filter": "(Q76;3=1) | (Q76;7=1) | (Q76;8=1) | (Q76;9=1) | (Q76;10=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4267,6 +4490,8 @@
           "item": "1",
           "text": "In which language does the care take place by the father / mother?",
           "text_de": "In welcher Sprache findet die Betreuung durch den Vater/die Mutter statt?",
+          "description": "NEU; Diese Frage für alle in Frage ABCDE60 genannten Items für die Jahrgänge 2017/2016 2014 2011 einzeln erfragen (-> Schleife). \nNur wenn ABCDE60 = 1, 2, 3, 4, 5, 6, 7, 8, 9",
+          "filter": "(Q4;2=2017, 2016, 2014, 2011) & (Q76;2=1)",
           "concept": "abetasp1",
           "scale": "cat",
           "answers": [
@@ -4309,6 +4534,8 @@
           "item": "1",
           "text": "In which language does the care take place by a paid caregiver?",
           "text_de": "In welcher Sprache findet die Betreuung durch eine bezahlte Betreuungsperson statt?",
+          "description": "NEU; Diese Frage für alle in Frage ABCDE60 genannten Items für die Jahrgänge 2017/2016 2014 2011 einzeln erfragen (-> Schleife). \nNur wenn ABCDE60 = 1, 2, 3, 4, 5, 6, 7, 8, 9",
+          "filter": "(Q4;2=2017, 2016, 2014, 2011) & (Q76;3=1)",
           "concept": "abetasp2",
           "scale": "cat",
           "answers": [
@@ -4351,6 +4578,8 @@
           "item": "1",
           "text": "In which language does the care take place by the grandparents?",
           "text_de": "In welcher Sprache findet die Betreuung durch die Großeltern statt?",
+          "description": "NEU; Diese Frage für alle in Frage ABCDE60 genannten Items für die Jahrgänge 2017/2016 2014 2011 einzeln erfragen (-> Schleife). \nNur wenn ABCDE60 = 1, 2, 3, 4, 5, 6, 7, 8, 9",
+          "filter": "(Q4;2=2017, 2016, 2014, 2011) & (Q76;4=1)",
           "concept": "abetasp3",
           "scale": "cat",
           "answers": [
@@ -4393,6 +4622,8 @@
           "item": "1",
           "text": "In which language does the care take place by older siblings?",
           "text_de": "In welcher Sprache findet die Betreuung durch ältere Geschwister statt?",
+          "description": "NEU; Diese Frage für alle in Frage ABCDE60 genannten Items für die Jahrgänge 2017/2016 2014 2011 einzeln erfragen (-> Schleife). \nNur wenn ABCDE60 = 1, 2, 3, 4, 5, 6, 7, 8, 9",
+          "filter": "(Q4;2=2017, 2016, 2014, 2011) & (Q76;5=1)",
           "concept": "abetasp4",
           "scale": "cat",
           "answers": [
@@ -4435,6 +4666,8 @@
           "item": "1",
           "text": "In which language does the care take place by other relatives?",
           "text_de": "In welcher Sprache findet die Betreuung durch andere Verwandte statt?",
+          "description": "NEU; Diese Frage für alle in Frage ABCDE60 genannten Items für die Jahrgänge 2017/2016 2014 2011 einzeln erfragen (-> Schleife). \nNur wenn ABCDE60 = 1, 2, 3, 4, 5, 6, 7, 8, 9",
+          "filter": "(Q4;2=2017, 2016, 2014, 2011) & (Q76;6=1)",
           "concept": "abetasp5",
           "scale": "cat",
           "answers": [
@@ -4477,6 +4710,8 @@
           "item": "1",
           "text": "In which language does the care take place by friends, acquaintances or neighbors?",
           "text_de": "In welcher Sprache findet die Betreuung durch Freunde, Bekannte oder Nachbarn statt?",
+          "description": "NEU; Diese Frage für alle in Frage ABCDE60 genannten Items für die Jahrgänge 2017/2016 2014 2011 einzeln erfragen (-> Schleife). \nNur wenn ABCDE60 = 1, 2, 3, 4, 5, 6, 7, 8, 9",
+          "filter": "(Q4;2=2017, 2016, 2014, 2011) & (Q76;7=1)",
           "concept": "abetasp6",
           "scale": "cat",
           "answers": [
@@ -4519,6 +4754,8 @@
           "item": "1",
           "text": "In which language does the mentoring take place by volunteers?",
           "text_de": "In welcher Sprache findet die Betreuung durch ehrenamtlicher Betreuer statt?",
+          "description": "NEU; Diese Frage für alle in Frage ABCDE60 genannten Items für die Jahrgänge 2017/2016 2014 2011 einzeln erfragen (-> Schleife). \nNur wenn ABCDE60 = 1, 2, 3, 4, 5, 6, 7, 8, 9",
+          "filter": "(Q4;2=2017, 2016, 2014, 2011) & (Q76;8=1)",
           "concept": "abetasp7",
           "scale": "cat",
           "answers": [
@@ -4561,6 +4798,8 @@
           "item": "1",
           "text": "In which language does the care take place through social institutions, centers or leisure organizations?",
           "text_de": "In welcher Sprache findet die Betreuung durch soziale Einrichtungen, Zentren oder Freizeitorganisationen statt?",
+          "description": "NEU; Diese Frage für alle in Frage ABCDE60 genannten Items für die Jahrgänge 2017/2016 2014 2011 einzeln erfragen (-> Schleife). \nNur wenn ABCDE60 = 1, 2, 3, 4, 5, 6, 7, 8, 9",
+          "filter": "(Q4;2=2017, 2016, 2014, 2011) & (Q76;9=1)",
           "concept": "abetasp8",
           "scale": "cat",
           "answers": [
@@ -4603,6 +4842,8 @@
           "item": "1",
           "text": "In which language does the care take place by others?",
           "text_de": "In welcher Sprache findet die Betreuung durch Andere statt?",
+          "description": "NEU; Diese Frage für alle in Frage ABCDE60 genannten Items für die Jahrgänge 2017/2016 2014 2011 einzeln erfragen (-> Schleife). \nNur wenn ABCDE60 = 1, 2, 3, 4, 5, 6, 7, 8, 9",
+          "filter": "(Q4;2=2017, 2016, 2014, 2011) & (Q76;10=1)",
           "concept": "abetasp9",
           "scale": "cat",
           "answers": [
@@ -4645,6 +4886,8 @@
           "item": "1",
           "text": "How many hours a week does the father / mother take care of it?",
           "text_de": "Wie viele Stunden pro Woche übernimmt der Vater/die Mutter die Betreuung?",
+          "description": "NEU; Nur wenn ABCDE60 = 1",
+          "filter": "Q76;2=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4681,6 +4924,8 @@
           "item": "1",
           "text": "How many hours a week does a paid caregiver take care of it?",
           "text_de": "Wie viele Stunden pro Woche übernimmt eine bezahlte Betreuungsperson die Betreuung?",
+          "description": "NEU; Nur wenn ABCDE60 = 2 & 2017, 2016, 2014, 2011, 2009, 2007",
+          "filter": "(Q76;3=1) & (Q4;2=2017, 2016, 2014, 2011, 2009, 2007)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4717,6 +4962,8 @@
           "item": "1",
           "text": "… how many hours a week do you spend looking after the child?",
           "text_de": "Wie viele Stunden pro Woche übernehmen die Großeltern die Betreuung?",
+          "description": "Nur wenn ABCDE60 = 3",
+          "filter": "Q76;4=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4725,6 +4972,7 @@
           "item": "2",
           "text": "Hours",
           "text_de": "Stunden",
+          "description": "soep-core-2016-e1",
           "concept": "abeta3st",
           "scale": "int",
           "sn": 1,
@@ -4753,6 +5001,8 @@
           "item": "1",
           "text": "How many hours a week do older siblings take care?",
           "text_de": "Wie viele Stunden pro Woche übernehmen ältere Geschwister die Betreuung?",
+          "description": "Nur wenn ABCDE60 = 4",
+          "filter": "Q76;5=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4761,6 +5011,7 @@
           "item": "2",
           "text": "Hours",
           "text_de": "Stunden",
+          "description": "soep-core-2016-e1",
           "concept": "abeta4st",
           "scale": "int",
           "sn": 1,
@@ -4789,6 +5040,8 @@
           "item": "1",
           "text": "How many hours a week do other relatives take care?",
           "text_de": "Wie viele Stunden pro Woche übernehmen andere Verwandte die Betreuung?",
+          "description": "Nur wenn ABCDE60 = 5 & 2017, 2016, 2014, 2011, 2009, 2007",
+          "filter": "(Q76;6=1) & (Q4;2=2017, 2016, 2014, 2011, 2009, 2007)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4797,6 +5050,7 @@
           "item": "2",
           "text": "Hours",
           "text_de": "Stunden",
+          "description": "soep-core-2016-e1",
           "concept": "abeta5st",
           "scale": "int",
           "sn": 1,
@@ -4825,6 +5079,8 @@
           "item": "1",
           "text": "How many hours per week do friends, acquaintances or neighbors take care of?",
           "text_de": "Wie viele Stunden pro Woche übernehmen Freunde, Bekannte oder Nachbarn die Betreuung?",
+          "description": "NEU; Nur wenn ABCDE60 = 6 & 2017, 2016, 2014, 2011, 2009, 2007",
+          "filter": "(Q76;7=1) & (Q4;2=2017, 2016, 2014, 2011, 2009, 2007)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4861,6 +5117,8 @@
           "item": "1",
           "text": "How many hours a week do volunteers take care of it?",
           "text_de": "Wie viele Stunden pro Woche übernehmen ehrenamtliche Personen die Betreuung?",
+          "description": "NEU; Nur wenn ABCDE60 = 7 & 2017, 2016, 2014, 2011, 2009, 2007",
+          "filter": "(Q76;8=1) & (Q4;2=2017, 2016, 2014, 2011, 2009, 2007)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4897,6 +5155,8 @@
           "item": "1",
           "text": "How many hours per week do social services, centers and leisure organizations take care of?",
           "text_de": "Wie viele Stunden pro Woche übernehmen Soziale Einrichtungen, Zentren, Freizeitorganisationen die Betreuung?",
+          "description": "NEU; notes: Nur wenn ABCDE60 = 8",
+          "filter": "Q76;9=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4933,6 +5193,8 @@
           "item": "1",
           "text": "How many hours a week do others take care of it?",
           "text_de": "Wie viele Stunden pro Woche übernehmen Andere die Betreuung?",
+          "description": "Nur wenn ABCDE60 = 9 & 2017, 2016, 2014, 2011, 2009, 2007",
+          "filter": "(Q76;10=1) & (Q4;2=2017, 2016, 2014, 2011, 2009, 2007)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4941,6 +5203,7 @@
           "item": "2",
           "text": "Hours",
           "text_de": "Stunden",
+          "description": "soep-core-2016-e1",
           "concept": "abeta9st",
           "scale": "int",
           "sn": 1,
@@ -4988,6 +5251,8 @@
           "item": "1",
           "text": "How many students are in your child's regular school class?",
           "text_de": "Wie viele Schüler bzw. Schülerinnen sind insgesamt in der regulären Schulklasse Ihres Kindes?",
+          "description": "NEU; Nur für Jahrgang = 2009, 2007 \nNur wenn CDE158 = 2, 3, 99 oder (CDE158 = 1 + CDE159 = 1, 2, 97)",
+          "filter": "(Q4;2=2009, 2007) & ((Q50;1=2, 3, -1) | ((Q50;1=1) & (Q51;5!=1)))",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5024,6 +5289,8 @@
           "item": "1",
           "text": "And how many of these students are not from Germany or have parents who aren't from Germany?",
           "text_de": "Und wie viele von diesen Schülern stammen nicht aus Deutschland oder haben Eltern, die nicht aus Deutschland stammen? ",
+          "description": "NEU; multicoded - korrekt?; Nur für Jahrgang = 2009, 2007 \nNur wenn CDE158 = 2, 3, 99 oder (CDE158 = 1 + CDE159 = 1, 2, 97)",
+          "filter": "(Q4;2=2009, 2007) & ((Q50;1=2, 3, -1) | ((Q50;1=1) & (Q51;5!=1)))",
           "concept": "dklaus",
           "scale": "cat",
           "answers": [
@@ -5081,6 +5348,8 @@
           "item": "1",
           "text": "Has this child already received a certificate in Germany?",
           "text_de": "Hat dieses Kind in Deutschland bereits ein Zeugnis erhalten?",
+          "description": "NEU; Nur für Jahrgang = 2007 \nNur wenn CDE152 = 1 oder CDE157 = 1, 2, KA",
+          "filter": "(Q4;2=2007) & ((Q44;1=1) | (Q49;4!=1))",
           "concept": "edzeug",
           "scale": "cat",
           "answers": [
@@ -5120,6 +5389,8 @@
           "text_de": "Welche Note hatte dieses Kind in seinem letzten Zeugnis im Fach Deutsch?",
           "instruction": "Grading scale from 1 to 6",
           "instruction_de": "Schulnote von 1 bis 6 \n  ",
+          "description": "Nur für Jahrgang = 2007 \nNur wenn E167 = 1",
+          "filter": "(Q4;2=2007) & (Q107;1=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5167,6 +5438,8 @@
           "text_de": "Welche Note hatte dieses Kind in seinem letzten Zeugnis im Fach Mathematik?",
           "instruction": "Grading scale from 1 to 6",
           "instruction_de": "Schulnote von 1 bis 6 \n  ",
+          "description": "Nur für Jahrgang = 2007 \nNur wenn E167 = 1",
+          "filter": "(Q4;2=2007) & (Q107;1=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5212,6 +5485,7 @@
           "item": "1",
           "text": "Questions E170-E185",
           "text_de": "Einschätzungen des Kindes",
+          "description": "Fragen Block E170-E185: bitte nur stellen, wenn 2007 & H82=1! \n  ",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5233,6 +5507,8 @@
           "text_de": "In welcher Weise suchen Sie den Kontakt mit der Schule?",
           "instruction": "Please mark all that apply!",
           "instruction_de": "Bitte alles Zutreffende ankreuzen!",
+          "description": "soep-core-2015-e5; Antwortkategorie verändert; Nur für Jahrgang = 2007 & H82=1 \nAchtung, die Fragen in diesem Block E170-E185 nur stellen, wenn H82=1!",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5241,6 +5517,7 @@
           "item": "2",
           "text": "Attend parent evenings at the school on a regular basis",
           "text_de": "Regelmäßige Teilnahme am Elternabend",
+          "description": "soep-core-2015-e5",
           "concept": "eelt11",
           "scale": "bin",
           "sn": 1,
@@ -5250,6 +5527,7 @@
           "item": "3",
           "text": "Attend parent-teacher conference days on a regular basis",
           "text_de": "Regelmäßige Besuche von Elternsprechtagen",
+          "description": "soep-core-2015-e5",
           "concept": "eelt12",
           "scale": "bin",
           "sn": 2,
@@ -5259,6 +5537,7 @@
           "item": "4",
           "text": "Meet with teacher outside of parent-teacher conference days",
           "text_de": "Aufsuchen des Lehrers / der Lehrerin auch außerhalb von Sprechtagen",
+          "description": "soep-core-2015-e5",
           "concept": "eelt13",
           "scale": "bin",
           "sn": 3,
@@ -5268,6 +5547,7 @@
           "item": "5",
           "text": "Serve as a parent representative in the parent-teacher association",
           "text_de": "Engagement als Elternvertreter",
+          "description": "soep-core-2015-e5",
           "concept": "eelt14",
           "scale": "bin",
           "sn": 4,
@@ -5277,6 +5557,7 @@
           "item": "6",
           "text": "Provide support to teacher / school in other ways (school parties or school trips)",
           "text_de": "Sonstige Unterstützung der Lehrer / Schule (wie Unterstützung bei Schulfesten, Ausflügen, Pausenraumgestaltung etc.) ",
+          "description": "soep-core-2015-e5",
           "concept": "eelt16",
           "scale": "bin",
           "sn": 5,
@@ -5286,6 +5567,7 @@
           "item": "7",
           "text": "Member of booster club",
           "text_de": "Mitglied im Förderverein",
+          "description": "soep-core-2015-e5",
           "concept": "eelt17",
           "scale": "bin",
           "sn": 6,
@@ -5295,6 +5577,7 @@
           "item": "8",
           "text": "Another person takes care of school affairs.",
           "text_de": "Eine andere Person kümmert sich um schulische Angelegenheiten.",
+          "description": "NEU",
           "concept": "eelt18",
           "scale": "bin",
           "sn": 7,
@@ -5304,6 +5587,7 @@
           "item": "9",
           "text": "None of the above",
           "text_de": "Nichts davon",
+          "description": "soep-core-2015-e5",
           "concept": "eelt1no",
           "scale": "bin",
           "sn": 8,
@@ -5332,6 +5616,8 @@
           "item": "1",
           "text": "How often do you interact with other parents about classmates of this child about school matters?",
           "text_de": "Wie oft tauschen Sie sich mit anderen Eltern von Klassenkameraden dieses Kindes über schulische Angelegenheiten aus?",
+          "description": "NEU; Nur für Jahrgang = 2007 & H82=1 \nAchtung, die Fragen in diesem Block E170-E185 nur stellen, wenn H82=1!",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "concept": "eeltkla",
           "scale": "cat",
           "answers": [
@@ -5384,6 +5670,8 @@
           "item": "1",
           "text": "How often do the following people help you with your homework and studying for school?",
           "text_de": "Wie oft helfen Sie diesem Kind bei den Hausaufgaben oder dem Lernen für die Schule?",
+          "description": "soep-core-2016-e5, verändert; Nur für Jahrgang = 2007 \n  ",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "concept": "ehaus3",
           "scale": "cat",
           "answers": [
@@ -5436,6 +5724,8 @@
           "item": "1",
           "text": "How often do your father help you with your homework and studying for school?",
           "text_de": "Wie oft hilft der Vater diesem Kind bei den Hausaufgaben oder dem Lernen für die Schule?",
+          "description": "NEU; Nur für Jahrgang = 2007",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "concept": "ehaus4",
           "scale": "cat",
           "answers": [
@@ -5493,6 +5783,8 @@
           "item": "1",
           "text": "How often do other relatives help you with your homework and studying for school?",
           "text_de": "Wie oft helfen andere Verwandte diesem Kind bei den Hausaufgaben oder dem Lernen für die Schule?",
+          "description": "NEU; Nur für Jahrgang = 2007",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "concept": "ehaus10",
           "scale": "cat",
           "answers": [
@@ -5550,6 +5842,8 @@
           "item": "1",
           "text": "How often do your siblings help you with your homework and studying for school?",
           "text_de": "Wie oft helfen Geschwister diesem Kind bei den Hausaufgaben oder dem Lernen für die Schule?",
+          "description": "NEU; Nur für Jahrgang = 2007",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "concept": "ehaus6",
           "scale": "cat",
           "answers": [
@@ -5607,6 +5901,8 @@
           "item": "1",
           "text": "How often do friends or classmates help this child with homework or school learning?",
           "text_de": "Wie oft helfen Freundinnen und Freunde oder Mitschülerinnen und Mitschüler diesem Kind bei den Hausaufgaben oder dem Lernen für die Schule?",
+          "description": "NEU; Nur für Jahrgang = 2007",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "concept": "ehaus7",
           "scale": "cat",
           "answers": [
@@ -5664,6 +5960,8 @@
           "item": "1",
           "text": "How often does a tutor help a child with homework or school learning?",
           "text_de": "Wie oft hilft eine Nachhilfelehrerin oder ein Nachhilfelehrer diesem Kind bei den Hausaufgaben oder dem Lernen für die Schule?",
+          "description": "NEU; Nur für Jahrgang = 2007",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "concept": "ehaus8",
           "scale": "cat",
           "answers": [
@@ -5721,6 +6019,8 @@
           "item": "1",
           "text": "How often does homework help (for example, at school, youth center or community meeting) help this child with homework or school learning?",
           "text_de": "Wie oft hilft eine Hausaufgabenbetreuung (z.B. in der Schule, Jugendzentrum oder Gemeindetreff) diesem Kind bei den Hausaufgaben oder dem Lernen für die Schule?",
+          "description": "NEU; Nur für Jahrgang = 2007",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "concept": "ehaus9",
           "scale": "cat",
           "answers": [
@@ -5778,6 +6078,8 @@
           "item": "1",
           "text": "To what extent do the following statements apply to your child?",
           "text_de": "Inwieweit treffen die folgenden Aussagen auf dieses Kind zu?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5786,6 +6088,7 @@
           "item": "2",
           "text": "This child likes to go to school.",
           "text_de": "Dieses Kind geht gerne in die Schule.",
+          "description": "soep-core-2016-e5, leicht verändert",
           "concept": "esch22",
           "scale": "cat",
           "answers": [
@@ -5838,6 +6141,8 @@
           "item": "1",
           "text": "This kid gets on well with his classmates.",
           "text_de": "Dieses Kind versteht sich gut mit seinen Klassenkameraden.",
+          "description": "soep-core-2016-e5, verändert (negativ formuliert); Nur für Jahrgang = 2007",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "concept": "esch26",
           "scale": "cat",
           "answers": [
@@ -5890,6 +6195,8 @@
           "item": "1",
           "text": "This child thinks school is a waste of time.",
           "text_de": "Dieses Kind empfindet Schule als reine Zeitverschwendung.",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "concept": "esch27",
           "scale": "cat",
           "answers": [
@@ -5942,6 +6249,8 @@
           "item": "1",
           "text": "Does not take school seriously.",
           "text_de": "Dieses Kind nimmt Arbeit in der Schule nie ernst.",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "concept": "esch28",
           "scale": "cat",
           "answers": [
@@ -5994,6 +6303,8 @@
           "item": "1",
           "text": "This kid comes along well in class.",
           "text_de": "Dieses Kind kommt im Unterricht gut mit.",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "concept": "esch23",
           "scale": "cat",
           "answers": [
@@ -6046,6 +6357,8 @@
           "item": "1",
           "text": "Does not get along well with the teacher.",
           "text_de": "Dieses Kind kommt mit dem jetzigen Lehrer oder der Lehrerin nicht gut aus.",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "concept": "esch29",
           "scale": "cat",
           "answers": [
@@ -6098,6 +6411,8 @@
           "item": "1",
           "text": "This kid likes to learn.",
           "text_de": "Dieses Kind lernt gerne.",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "(Q4;2=2007) & (Q41;1=1)",
           "concept": "esch25",
           "scale": "cat",
           "answers": [
@@ -6171,6 +6486,8 @@
           "text_de": "Inwieweit entsprechen die folgenden Schulabschlüsse Ihrer persönlichen Idealvorstellung für die schulische Ausbildung des Kindes?",
           "instruction": "\nPlease answer on a scale of 1 to 7. The value 1 means that the degree\nnot at all, the value 7 fully corresponds to your personal ideas.\nWith the values <U+200B><U+200B>between 1 and 7 you can rate your opinion.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. Der Wert 1 bedeutet, dass der Abschluss \nüberhaupt nicht, der Wert 7 voll und ganz Ihren persönlichen Vorstellungen entspricht. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2009, 2007",
+          "filter": "Q4;2=2009, 2007",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -6192,6 +6509,8 @@
           "text_de": "Inwieweit entspricht ein Hauptschulabschluss (Abschluss der Pflichtschule) Ihrer persönlichen Idealvorstellung für die schulische Ausbildung dieses Kindes?",
           "instruction": "\nPlease answer on a scale of 1 to 7. The value 1 means that the degree\nnot at all, the value 7 fully corresponds to your personal ideas.\nWith the values <U+200B><U+200B>between 1 and 7 you can rate your opinion.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. Der Wert 1 bedeutet, dass der Abschluss \nüberhaupt nicht, der Wert 7 voll und ganz Ihren persönlichen Vorstellungen entspricht. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2015-e5; Nur für Jahrgang = 2009, 2007",
+          "filter": "Q4;2=2009, 2007",
           "concept": "dsch1",
           "scale": "cat",
           "answers": [
@@ -6246,6 +6565,8 @@
           "text_de": "Inwieweit entspricht ein Mittlerer Schulabschluss (z.B. Realschulabschluss) Ihrer persönlichen Idealvorstellung für die schulische Ausbildung dieses Kindes?",
           "instruction": "Please answer on a scale of 1 to 7. The value 1 means that the degree\nnot at all, the value 7 fully corresponds to your personal ideas.\nWith the values <U+200B><U+200B>between 1 and 7 you can rate your opinion.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. Der Wert 1 bedeutet, dass der Abschluss \nüberhaupt nicht, der Wert 7 voll und ganz Ihren persönlichen Vorstellungen entspricht. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2015-e5",
+          "filter": "Q4;2=2009, 2007",
           "concept": "dsch2",
           "scale": "cat",
           "answers": [
@@ -6300,6 +6621,8 @@
           "text_de": "Inwieweit entspricht das Abitur (Höchster Schulabschluss/ Hochschulreife) Ihrer persönlichen Idealvorstellung für die schulische Ausbildung dieses Kindes?",
           "instruction": "\nPlease answer on a scale of 1 to 7. The value 1 means that the degree\nnot at all, the value 7 fully corresponds to your personal ideas.\nWith the values <U+200B><U+200B>between 1 and 7 you can rate your opinion.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. Der Wert 1 bedeutet, dass der Abschluss \nüberhaupt nicht, der Wert 7 voll und ganz Ihren persönlichen Vorstellungen entspricht. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2015-e5; Nur für Jahrgang = 2009, 2007",
+          "filter": "Q4;2=2009, 2007",
           "concept": "dsch3",
           "scale": "cat",
           "answers": [
@@ -6354,6 +6677,8 @@
           "text_de": "Und für wie wahrscheinlich halten Sie es, dass dieses Kind die Schule mit einem der folgenden Abschlüsse verlassen wird?",
           "instruction": "\nPlease answer on a scale of 1 to 7. The value 1 means that the degree\nnot at all, the value 7 fully corresponds to your personal ideas.\nWith the values <U+200B><U+200B>between 1 and 7 you can rate your opinion.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. \nDer Wert 1 bedeutet dieses Mal ausgeschlossen und der Wert 7 bedeutet ganz sicher.",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2009, 2007",
+          "filter": "Q4;2=2009, 2007",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -6375,6 +6700,8 @@
           "text_de": "Und für wie wahrscheinlich halten Sie es, dass dieses Kind die Schule mit einem Hauptschulabschluss (Abschluss der Pflichtschule) verlassen wird?",
           "instruction": "\nPlease answer on a scale of 1 to 7. The value 1 means that the degree\nnot at all, the value 7 fully corresponds to your personal ideas.\nWith the values <U+200B><U+200B>between 1 and 7 you can rate your opinion.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. \nDer Wert 1 bedeutet dieses Mal ausgeschlossen und der Wert 7 bedeutet ganz sicher.",
+          "description": "soep-core-2015-e5",
+          "filter": "Q4;2=2009, 2007",
           "concept": "dsch4",
           "scale": "cat",
           "answers": [
@@ -6429,6 +6756,8 @@
           "text_de": "Und für wie wahrscheinlich halten Sie es, dass dieses Kind die Schule mit einem Mittleren Schulabschluss (z.B. Realschulabschluss) verlassen wird?",
           "instruction": "Please answer again on a scale from 1 to 7, where 1 means “not at all”, and 7 means “completely”",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. \nDer Wert 1 bedeutet dieses Mal ausgeschlossen und der Wert 7 bedeutet ganz sicher.",
+          "description": "soep-core-2015-e5; Nur für Jahrgang = 2009, 2007",
+          "filter": "Q4;2=2009, 2007",
           "concept": "dsch5",
           "scale": "cat",
           "answers": [
@@ -6483,6 +6812,8 @@
           "text_de": "Und für wie wahrscheinlich halten Sie es, dass dieses Kind die Schule mit dem Abitur (Höchster Schulabschluss/ Hochschulreife) verlassen wird?",
           "instruction": "Please answer again on a scale from 1 to 7, where 1 means “not at all”, and 7 means “completely”",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. \nDer Wert 1 bedeutet dieses Mal ausgeschlossen und der Wert 7 bedeutet ganz sicher.",
+          "description": "soep-core-2015-e5; Nur für Jahrgang = 2009, 2007",
+          "filter": "Q4;2=2009, 2007",
           "concept": "dsch6",
           "scale": "cat",
           "answers": [
@@ -6554,6 +6885,8 @@
           "item": "1",
           "text": "\nWhich languages <U+200B><U+200B>do you speak with this child?",
           "text_de": "Welche Sprachen sprechen Sie mit diesem Kind?",
+          "description": "NEU; Nur für Jahrgang = 2017, 2016, 2014",
+          "filter": "Q4;2=2017, 2016, 2014",
           "concept": "agspd1",
           "scale": "cat",
           "answers": [
@@ -6585,6 +6918,7 @@
           "item": "2",
           "text": "\n[German and one or more other languages,]:",
           "text_de": "[Deutsch und eine oder mehrere andere Sprache(n),] und zwar: ",
+          "description": "NEU",
           "concept": "agspda1",
           "scale": "chr",
           "sn": 1,
@@ -6594,6 +6928,7 @@
           "item": "3",
           "text": "\n[No German, just one or more other languages,] and that:",
           "text_de": "[Kein Deutsch, nur eine oder mehrere andere Sprache(n),] und zwar: ",
+          "description": "NEU",
           "concept": "agspa1",
           "scale": "chr",
           "sn": 2,
@@ -6614,6 +6949,8 @@
           "item": "1",
           "text": "\nWhat languages <U+200B><U+200B>do other household members talk to this child?",
           "text_de": "Welche Sprachen sprechen andere Haushaltsmitglieder mit diesem Kind?",
+          "description": "NEU; Nur für Jahrgang = 2017, 2016, 2014",
+          "filter": "Q4;2=2017, 2016, 2014",
           "concept": "agspd2",
           "scale": "cat",
           "answers": [
@@ -6645,6 +6982,7 @@
           "item": "2",
           "text": "\n[German and one or more other languages,]:",
           "text_de": "[Deutsch und eine oder mehrere andere Sprache(n),] und zwar: ",
+          "description": "NEU",
           "concept": "agspda2",
           "scale": "chr",
           "sn": 1,
@@ -6654,6 +6992,7 @@
           "item": "3",
           "text": "\n[No German, just one or more other languages,] and that:",
           "text_de": "[Kein Deutsch, nur eine oder mehrere andere Sprache(n),] und zwar: ",
+          "description": "NEU",
           "concept": "agspa2",
           "scale": "chr",
           "sn": 2,
@@ -6674,6 +7013,8 @@
           "item": "1",
           "text": "\nWhich languages <U+200B><U+200B>do you or other household members talk to this child?",
           "text_de": "Welche Sprachen sprechen Sie oder andere Haushaltsmitglieder mit diesem Kind?",
+          "description": "NEU;Nur für Jahrgang = 2011. 2009, 2007\n  ",
+          "filter": "Q4;2=2011, 2009, 2007",
           "concept": "cgspd3",
           "scale": "cat",
           "answers": [
@@ -6705,6 +7046,7 @@
           "item": "2",
           "text": "\n[German and one or more other languages,]:",
           "text_de": "[Deutsch und eine oder mehrere andere Sprache(n),] und zwar: ",
+          "description": "NEU",
           "concept": "cgspda3",
           "scale": "chr",
           "sn": 1,
@@ -6714,6 +7056,7 @@
           "item": "3",
           "text": "\n[No German, just one or more other languages,] and that:",
           "text_de": "[Kein Deutsch, nur eine oder mehrere andere Sprache(n),] und zwar: ",
+          "description": "NEU",
           "concept": "cgspa3",
           "scale": "chr",
           "sn": 2,
@@ -6734,6 +7077,8 @@
           "item": "1",
           "text": "Does this child speak here in Germany with his family members ...",
           "text_de": "Spricht dieses Kind hier in Deutschland mit seinen Familienmitgliedern…",
+          "description": "NEU; Nur für Jahrgang = 2011, 2009, 2007",
+          "filter": "Q4;2=2011, 2009, 2007",
           "concept": "cgspd4",
           "scale": "cat",
           "answers": [
@@ -6776,6 +7121,8 @@
           "item": "1",
           "text": "Does this kid talk to his friends here in Germany ...",
           "text_de": "Spricht dieses Kind hier in Deutschland mit seinen Freunden…",
+          "description": "NEU; Nur für Jahrgang = 2011, 2009, 2007",
+          "filter": "Q4;2=2011, 2009, 2007",
           "concept": "cgspd5",
           "scale": "cat",
           "answers": [
@@ -6818,6 +7165,8 @@
           "item": "1",
           "text": "Does this child speak here in Germany in kindergarten or at school ...",
           "text_de": "Spricht dieses Kind hier in Deutschland im Kindergarten oder in der Schule…",
+          "description": "NEU; Nur für Jahrgang = 2011, 2009, 2007",
+          "filter": "Q4;2=2011, 2009, 2007",
           "concept": "cgspd6",
           "scale": "cat",
           "answers": [
@@ -6860,6 +7209,8 @@
           "item": "1",
           "text": "Can this child understand German?",
           "text_de": "Kann dieses Kind Deutsch verstehen?",
+          "description": "NEU; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bkdspv",
           "scale": "cat",
           "answers": [
@@ -6897,6 +7248,8 @@
           "item": "1",
           "text": "Does this child speak German words?",
           "text_de": "Spricht dieses Kind auch deutsche Wörter?",
+          "description": "NEU; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bkdspw",
           "scale": "cat",
           "answers": [
@@ -6934,6 +7287,8 @@
           "item": "1",
           "text": "How well could this child speak German at the time of his / her beginning in Germany?",
           "text_de": "Wie gut konnte dieses Kind zum Zeitpunkt seines/ihres Schulbeginns in Deutschland die deutsche Sprache sprechen?",
+          "description": "NEU; Nur für Jahrgang = 2011, 2009, 2007 \nNur wenn H82 = 1",
+          "filter": "(Q4;2=2011, 2009, 2007) & (Q41;1=1)",
           "concept": "ckdspsb",
           "scale": "cat",
           "answers": [
@@ -6986,6 +7341,8 @@
           "item": "1",
           "text": "How well can the child speak German?",
           "text_de": "Wie gut kann dieses Kind jetzt die deutsche Sprache sprechen?",
+          "description": "NEU; Nur für Jahrgang = 2011, 2009, 2007",
+          "filter": "Q4;2=2011, 2009, 2007",
           "concept": "ckdspspr",
           "scale": "cat",
           "answers": [
@@ -7038,6 +7395,8 @@
           "item": "1",
           "text": "How well can the child write in German ?",
           "text_de": "Wie gut kann dieses Kind jetzt die deutsche Sprache schreiben?",
+          "description": "NEU; Nur für Jahrgang = 2009, 2007",
+          "filter": "Q4;2=2009, 2007",
           "concept": "dkdspsch",
           "scale": "cat",
           "answers": [
@@ -7090,6 +7449,8 @@
           "item": "1",
           "text": "How well can the child speak German?",
           "text_de": "Wie gut kann dieses Kind jetzt die deutsche Sprache lesen?",
+          "description": "NEU; Nur für Jahrgang = 2009, 2007",
+          "filter": "Q4;2=2009, 2007",
           "concept": "dkdsples",
           "scale": "cat",
           "answers": [
@@ -7142,6 +7503,8 @@
           "item": "1",
           "text": "Which languages <U+200B><U+200B>does this child still speak except German?",
           "text_de": "Welche Sprachen spricht dieses Kind noch außer Deutsch?",
+          "description": "NEU; Nur für Jahrgang = 2011, 2009, 2007",
+          "filter": "Q4;2=2011, 2009, 2007",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -7511,6 +7874,8 @@
           "item": "1",
           "text": "Which language does it speak the best of it?",
           "text_de": "Welche Sprache spricht es davon am besten?",
+          "description": "Nur für Jahrgang = 2011, 2009, 2007 und wenn CDE107 != 38, 9999 und CDE107 Anzahl Nennungen > 1 \nNur in Vorfrage genannte Sprachen einblenden",
+          "filter": "(Q4;2=2011, 2009, 2007) & (Q146;39!=1) & (Q146;40!=1)",
           "concept": "ckbsp",
           "scale": "cat",
           "answers": [
@@ -7732,6 +8097,8 @@
           "item": "1",
           "text": "How well can this child speak that language?",
           "text_de": "Wie gut kann dieses Kind diese Sprache sprechen?",
+          "description": "Nur wenn Jahrgang = 2011, 2009, 2007 \nund CDE107 != 38, 9999 \nund CDE108 != 9999, sofern CDE108 gestellt wurde.",
+          "filter": "(Q4;2=2011, 2009, 2007) & (Q146;39!=1) & (Q146;40!=1) & (Q147;1!=-1)",
           "concept": "ckbspspr",
           "scale": "cat",
           "answers": [
@@ -7784,6 +8151,8 @@
           "item": "1",
           "text": "How well can you write in German ?",
           "text_de": "Wie gut kann dieses Kind diese Sprache schreiben?",
+          "description": "Nur wenn Jahrgang = 2009, 2007 \nund CDE107 != 38, 9999 \nund CDE108 != 9999, sofern CDE108 gestellt wurde.",
+          "filter": "(Q4;2=2009, 2007) & (Q146;39!=1) & (Q146;40!=1) & (Q147;1!=-1)",
           "concept": "dkbspsch",
           "scale": "cat",
           "answers": [
@@ -7836,6 +8205,8 @@
           "item": "1",
           "text": "How well can this child read this language?",
           "text_de": "Wie gut kann dieses Kind diese Sprache lesen?",
+          "description": "Nur wenn Jahrgang = 2009, 2007 \nund CDE107 != 38, 9999 \nund CDE108 != 9999, sofern CDE108 gestellt wurde.",
+          "filter": "(Q4;2=2009, 2007) & (Q146;39!=1) & (Q146;40!=1) & (Q147;1!=-1)",
           "concept": "dkbsples",
           "scale": "cat",
           "answers": [
@@ -7888,6 +8259,8 @@
           "item": "1",
           "text": "What’s your current impression of your child? To what extent do you agree with the following statements?",
           "text_de": "Wie sehen Sie dieses Kind heute? \nInwieweit treffen die folgenden Aussagen zu?",
+          "description": "soep-core-2016-e1, leicht verändert; Nur für Jahrgang = 2017, 2016, 2014",
+          "filter": "Q4;2=2017, 2016, 2014",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -7907,6 +8280,8 @@
           "item": "1",
           "text": "My child is generally cheerful and happy",
           "text_de": "Dieses Kind ist meist fröhlich und zufrieden.",
+          "description": "soep-core-2016-e1, leicht verändert; Nur für Jahrgang = 2017, 2016, 2014",
+          "filter": "Q4;2=2017, 2016, 2014",
           "concept": "aakt1",
           "scale": "cat",
           "answers": [
@@ -7954,6 +8329,8 @@
           "item": "1",
           "text": "My child is easily irritated and cries a lot",
           "text_de": "Dieses Kind ist leicht erregbar und weint häufig.",
+          "description": "soep-core-2016-e1, leicht verändert; Nur für Jahrgang = 2017, 2016, 2014",
+          "filter": "Q4;2=2017, 2016, 2014",
           "concept": "aakt2",
           "scale": "cat",
           "answers": [
@@ -8001,6 +8378,8 @@
           "item": "1",
           "text": "My child is difficult to comfort when upset",
           "text_de": "Dieses Kind ist schwer zu trösten.",
+          "description": "soep-core-2016-e1, leicht verändert; Nur für Jahrgang = 2017, 2016, 2014",
+          "filter": "Q4;2=2017, 2016, 2014",
           "concept": "aakt3",
           "scale": "cat",
           "answers": [
@@ -8048,6 +8427,8 @@
           "item": "1",
           "text": "My child is curious and active",
           "text_de": "Dieses Kind ist neugierig und aktiv.",
+          "description": "soep-core-2016-e1, leicht verändert; Nur für Jahrgang = 2017, 2016, 2014",
+          "filter": "Q4;2=2017, 2016, 2014",
           "concept": "aakt4",
           "scale": "cat",
           "answers": [
@@ -8095,6 +8476,8 @@
           "item": "1",
           "text": "My child tends to be shy",
           "text_de": "Dieses Kind ist eher zurückhaltend.",
+          "description": "soep-core-2016-e1, leicht verändert; Nur für Jahrgang = 2017, 2016, 2014",
+          "filter": "Q4;2=2017, 2016, 2014",
           "concept": "aakt8",
           "scale": "cat",
           "answers": [
@@ -8142,6 +8525,8 @@
           "item": "1",
           "text": "My child is communicative and likes to talk",
           "text_de": "Dieses Kind ist gesprächig, redet gern.",
+          "description": "soep-core-2015-e2, leicht verändert; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bakt5",
           "scale": "cat",
           "answers": [
@@ -8189,6 +8574,8 @@
           "item": "1",
           "text": "My child shows empathy when others are sad",
           "text_de": "Dieses Kind zeigt Mitgefühl, wenn andere traurig sind.",
+          "description": "soep-core-2015-e2, leicht verändert; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bakt6",
           "scale": "cat",
           "answers": [
@@ -8236,6 +8623,8 @@
           "item": "1",
           "text": "I'm worried about the health of my child",
           "text_de": "Die Gesundheit dieses Kindes macht mir Sorgen.",
+          "description": "soep-core-2015-e2, leicht verändert; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bakt7",
           "scale": "cat",
           "answers": [
@@ -8302,6 +8691,8 @@
           "item": "1",
           "text": "Did you receive a children's examination booklet (U-booklet) for medical check-ups (U1, U2, U3, etc.) for this child?",
           "text_de": "Haben Sie für dieses Kind ein Kinder-Untersuchungsheft (U-Heft) für ärztliche Vorsorgeuntersuchungen (U1, U2, U3, usw.) erhalten?",
+          "description": "NEU; Nur für Jahrgang = 2017, 2016, 2014, 2011",
+          "filter": "Q4;2=2017, 2016, 2014, 2011",
           "concept": "akunt",
           "scale": "cat",
           "answers": [
@@ -8344,6 +8735,8 @@
           "item": "1",
           "text": "What was the last performed check-up (U2, U3, etc.) on this child?",
           "text_de": "Welche war die letzte durchgeführte Vorsorgeuntersuchung (U2, U3, usw.) bei diesem Kind?",
+          "description": "soep-core-2016-e1, verändert;N ur wenn ABC28=1",
+          "filter": "Q160;1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -8352,6 +8745,7 @@
           "item": "2",
           "text": "U",
           "text_de": "U",
+          "description": "soep-core-2016-e1",
           "concept": "aunt",
           "scale": "int",
           "sn": 1,
@@ -8361,6 +8755,7 @@
           "item": "3",
           "text": "None of these check-ups where conducted",
           "text_de": "Es wurde keine dieser Untersuchungen durchgeführt",
+          "description": "soep-core-2016-e1",
           "concept": "auntno",
           "scale": "bin",
           "sn": 2,
@@ -8381,6 +8776,8 @@
           "item": "1",
           "text": "How would you describe your child's current state of health?",
           "text_de": "Wie würden Sie den allgemeinen Gesundheitszustand des Kindes beschreiben?",
+          "description": "soep-core-2016-e5; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "eges01",
           "scale": "cat",
           "answers": [
@@ -8428,6 +8825,8 @@
           "item": "1",
           "text": "Has this child ever been examined by a doctor in Germany?",
           "text_de": "Wurde dieses Kind schon mal von einem Arzt oder einer Ärztin in Deutschland untersucht?",
+          "description": "NEU; Nur wenn 2009, 2007 \noder ((2017 / 2016 und (ABC28 = 2, 3, KA oder ABC29 = 2, KA))",
+          "filter": "(Q4;2=2009, 2007) | ((Q4;2=2017, 2016) & ((Q160;1=2, 3, -1) | (Q161;3=1)))",
           "concept": "aarztd",
           "scale": "cat",
           "answers": [
@@ -8467,6 +8866,8 @@
           "text_de": "Wurde bei diesem Kind eine der im Folgenden genannten Verzögerungen / Störung / Behinderungen festgestellt?",
           "instruction": "Please select all responses that apply.",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "description": "soep-core-2016-e1, verändert; Nur wenn Jahrgang 2017/2016 und (ABC29 = 1 oder DE30 = 1, 9999) \n  ",
+          "filter": "(Q4;2=2017, 2016) & ((Q161;2=1) | (Q163;1=1, -1))",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -8475,6 +8876,7 @@
           "item": "2",
           "text": "sensory (sight, hearing)",
           "text_de": "Wahrnehmung (Sehen, Hören)",
+          "description": "soep-core-2016-e1",
           "concept": "astor1",
           "scale": "bin",
           "sn": 1,
@@ -8484,6 +8886,7 @@
           "item": "3",
           "text": "motor functions (grasping, crawling, walking)",
           "text_de": "Motorik (Greifen, Krabbeln, Laufen)",
+          "description": "soep-core-2016-e1",
           "concept": "astor2",
           "scale": "bin",
           "sn": 2,
@@ -8493,6 +8896,7 @@
           "item": "4",
           "text": "neurological disorders (including cramps)",
           "text_de": "Neurologische Störung (Krämpfe und Ähnliches)",
+          "description": "soep-core-2016-e1",
           "concept": "astor3",
           "scale": "bin",
           "sn": 3,
@@ -8502,6 +8906,7 @@
           "item": "5",
           "text": "speech (pronunciation, speech acquisition disorders)",
           "text_de": "Sprache (Lautbildung, Spracherwerbsstörung)",
+          "description": "soep-core-2016-e1",
           "concept": "astor4",
           "scale": "bin",
           "sn": 4,
@@ -8511,6 +8916,7 @@
           "item": "6",
           "text": "regulatory system (inconsolable crying, ongoing sleeping or eating disorders)",
           "text_de": "Regulation (untröstbares Schreien, dauerhafte Schlaf- oder Essstörung)",
+          "description": "soep-core-2016-e1",
           "concept": "astor5",
           "scale": "bin",
           "sn": 5,
@@ -8520,6 +8926,7 @@
           "item": "7",
           "text": "chronic illness",
           "text_de": "Chronische Krankheit",
+          "description": "soep-core-2016-e1",
           "concept": "astor6",
           "scale": "bin",
           "sn": 6,
@@ -8529,6 +8936,7 @@
           "item": "8",
           "text": "physical disability",
           "text_de": "Körperliche Behinderung",
+          "description": "soep-core-2016-e1",
           "concept": "astor7",
           "scale": "bin",
           "sn": 7,
@@ -8538,6 +8946,7 @@
           "item": "9",
           "text": "mental disability",
           "text_de": "Geistige Behinderung",
+          "description": "soep-core-2016-e1",
           "concept": "astor8",
           "scale": "bin",
           "sn": 8,
@@ -8547,6 +8956,7 @@
           "item": "10",
           "text": "other",
           "text_de": "Sonstiges",
+          "description": "soep-core-2016-e1",
           "concept": "astor9",
           "scale": "bin",
           "sn": 9,
@@ -8556,6 +8966,7 @@
           "item": "11",
           "text": "No, I received none of these",
           "text_de": "Nein, nichts davon",
+          "description": "NEU",
           "concept": "astorno",
           "scale": "bin",
           "sn": 10,
@@ -8584,6 +8995,8 @@
           "item": "1",
           "text": "Did your child experience health problems in the last 12 months that necessitated a hospital stay?",
           "text_de": "Gab es bei diesem Kind in den letzten 12 Monaten gesundheitliche Probleme, die einen Krankenhausaufenthalt notwendig machten?",
+          "description": "soep-core-2016-e2, leicht verändert; Nur für Jahrgang = 2014, 2011, 2007",
+          "filter": "Q4;2=2014, 2011, 2007",
           "concept": "bgeskr",
           "scale": "cat",
           "answers": [
@@ -8621,6 +9034,8 @@
           "item": "1",
           "text": "How many days has this kid been in the hospital for the past 12 months?",
           "text_de": "Wie viele Tage war dieses Kind innerhalb der letzten zwölf Monate im Krankenhaus?",
+          "description": "Nur wenn BCE26 = 1 \n  ",
+          "filter": "Q165;1=1",
           "concept": "bgeskrdau",
           "scale": "txt",
           "sn": 0,
@@ -8630,6 +9045,7 @@
           "item": "2",
           "text": "Days",
           "text_de": "Tage",
+          "description": "soep-core-2016-e2, verändert",
           "concept": "cgeskrdau",
           "scale": "int",
           "sn": 1,
@@ -8658,6 +9074,8 @@
           "item": "1",
           "text": "Is your child in any way impaired or prevented from doing things that most children of his or her age can do?",
           "text_de": "Ist dieses Kind in irgendeiner Weise eingeschränkt oder daran gehindert, Dinge zu tun, die die meisten gleichaltrigen Kinder tun können?",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011",
+          "filter": "Q4;2=2011",
           "concept": "ceings",
           "scale": "cat",
           "answers": [
@@ -8695,6 +9113,8 @@
           "item": "1",
           "text": "Did you have to go to or call a doctor in the last 3 months because of your child's health problems?",
           "text_de": "Mussten Sie in den letzten drei Monaten wegen gesundheitlicher Probleme Ihres Kindes einen Arzt oder eine Ärztin aufsuchen oder rufen?",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "carzt",
           "scale": "cat",
           "answers": [
@@ -8732,6 +9152,8 @@
           "item": "1",
           "text": "Did you have to go to or call a doctor in the last 3 months because of your child's health problems?",
           "text_de": "Wie oft mussten Sie in den letzten drei Monaten wegen gesundheitlicher Probleme dieses Kindes einen Arzt aufsuchen oder rufen?",
+          "description": "soep-core-2016-e3, ausdifferenziert; Nur wenn CE33 = 1",
+          "filter": "Q168;1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -8740,6 +9162,7 @@
           "item": "2",
           "text": "Number of doctor visits",
           "text_de": "Anzahl Arztbesuche",
+          "description": "soep-core-2016-e3, verändert",
           "concept": "carztanz",
           "scale": "int",
           "sn": 1,
@@ -8770,6 +9193,8 @@
           "text_de": "Ist von einem Arzt oder einer Ärztin bei diesem Kind einmal eine der folgenden Erkrankungen oder Störungen festgestellt worden?",
           "instruction": "Please select all responses that apply.",
           "instruction_de": "Bitte geben Sie alles Zutreffende an! \n  ",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2014, 2011, 2009, 2007",
+          "filter": "Q4;2=2014, 2011, 2009, 2007",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -8778,6 +9203,7 @@
           "item": "2",
           "text": "Respiratory disease (asthma, bronchitis or similar)",
           "text_de": "Atemwegserkrankungen (Asthma, Bronchitis oder ähnliches)",
+          "description": "soep-core-2016-e3",
           "concept": "bstora1",
           "scale": "bin",
           "sn": 1,
@@ -8787,6 +9213,7 @@
           "item": "3",
           "text": "Middle-ear inflammation",
           "text_de": "Mittelohrentzündung",
+          "description": "soep-core-2016-e3",
           "concept": "bstora2",
           "scale": "bin",
           "sn": 2,
@@ -8796,6 +9223,7 @@
           "item": "4",
           "text": "Neurodermatitis",
           "text_de": "Neurodermitis",
+          "description": "soep-core-2016-e3",
           "concept": "bstora3",
           "scale": "bin",
           "sn": 3,
@@ -8805,6 +9233,7 @@
           "item": "5",
           "text": "Vision impairment (e.g., far-sightedness, near-sightedness, crossed eyes)",
           "text_de": "Fehlsichtigkeit (z.B. Kurz- bzw. Weitsichtigkeit, Schielen)",
+          "description": "soep-core-2016-e3",
           "concept": "bstora4",
           "scale": "bin",
           "sn": 4,
@@ -8814,6 +9243,7 @@
           "item": "6",
           "text": "Nutritional disorder",
           "text_de": "Ernährungsstörungen",
+          "description": "soep-core-2016-e3",
           "concept": "bstora5",
           "scale": "bin",
           "sn": 5,
@@ -8823,6 +9253,7 @@
           "item": "7",
           "text": "Motor impairment (impairments of the locomotor apparatus)",
           "text_de": "Störungen der Motorik, des Bewegungsapparates",
+          "description": "soep-core-2016-e3",
           "concept": "bstora6",
           "scale": "bin",
           "sn": 6,
@@ -8832,6 +9263,7 @@
           "item": "8",
           "text": "Mental illnesses (e.g., post-traumatic stress disorder, depression, adjustment disorder)",
           "text_de": "Psychische Erkrankungen (z.B. Posttraumatische Belastungsstörung, Depression, Anpassungsstörung)",
+          "description": "NEU",
           "concept": "bstora7",
           "scale": "bin",
           "sn": 7,
@@ -8841,6 +9273,7 @@
           "item": "9",
           "text": "behavioral problems",
           "text_de": "Verhaltensauffälligkeiten",
+          "description": "NEU",
           "concept": "bstora8",
           "scale": "bin",
           "sn": 8,
@@ -8850,6 +9283,7 @@
           "item": "10",
           "text": "Pseudocroup / Croup syndrome",
           "text_de": "Pseudokrupp/Kruppsyndrom",
+          "description": "soep-core-2016-e2",
           "concept": "bstora9",
           "scale": "bin",
           "sn": 9,
@@ -8859,6 +9293,7 @@
           "item": "11",
           "text": "hay fever/allergies",
           "text_de": "Heuschnupfen/Allergien",
+          "description": "soep-core-2016-e2, verändert",
           "concept": "bstora10",
           "scale": "bin",
           "sn": 10,
@@ -8868,6 +9303,7 @@
           "item": "12",
           "text": "Hearing impairment",
           "text_de": "Schwerhörigkeit",
+          "description": "soep-core-2016-e2",
           "concept": "bstora11",
           "scale": "bin",
           "sn": 11,
@@ -8877,6 +9313,7 @@
           "item": "13",
           "text": "Other impairment or disorder",
           "text_de": "Sonstige Störungen / Behinderungen und zwar:",
+          "description": "soep-core-2016-e3, verändert",
           "concept": "bstora12",
           "scale": "chr",
           "sn": 12,
@@ -8886,6 +9323,7 @@
           "item": "14",
           "text": "No, none of the above",
           "text_de": "Nein, nichts davon",
+          "description": "soep-core-2016-e3",
           "concept": "bstorano",
           "scale": "bin",
           "sn": 13,
@@ -8914,6 +9352,8 @@
           "item": "1",
           "text": "How many height is the child",
           "text_de": "Wie groß ist dieses Kind gegenwärtig?",
+          "description": "soep-core-2016-e2; ausdifferenziert",
+          "filter": "Q4;2=2014, 2011",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -8922,6 +9362,7 @@
           "item": "2",
           "text": "Height in centimeters",
           "text_de": "Körpergröße in cm",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014, 2011",
           "concept": "bgro",
           "scale": "int",
           "sn": 1,
@@ -8950,6 +9391,8 @@
           "item": "3",
           "text": "What is the current weight of this child?",
           "text_de": "Wie ist gegenwärtig das Gewicht dieses Kindes?",
+          "description": "soep-core-2016-e2; ausdifferenziert; Nur für Jahrgang = 2014, 2011",
+          "filter": "Q4;2=2014, 2011",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -8958,6 +9401,7 @@
           "item": "4",
           "text": "Weight in kilograms",
           "text_de": "Gewicht in Kilogramm",
+          "description": "soep-core-2016-e2",
           "concept": "bgew",
           "scale": "int",
           "sn": 1,
@@ -9005,6 +9449,8 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver engaged in the following activities  with your child?",
           "text_de": "Wie oft sind Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind auf den Spielplatz gegangen?",
+          "description": "soep-core-2016-e2, verändert; Nur für Jahrgang = 2014, 2011    ",
+          "filter": "Q4;2=2014, 2011",
           "concept": "baktiv01",
           "scale": "cat",
           "answers": [
@@ -9052,6 +9498,8 @@
           "item": "1",
           "text": "How many times have you or the main caregiver taken outdoor activities (walks or similar) with the child over the last 14 days?How many times have you or the primary care person shared with this child in the last 14 days? Doing activities in the fresh air (walks or similar)?",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind Aktivitäten an der frischen Luft (Spaziergänge oder Ähnliches) unternommen?",
+          "description": "soep-core-2016-e2, verändert; Nur für Jahrgang = 2014, 2011",
+          "filter": "Q4;2=2014, 2011",
           "concept": "baktiv02",
           "scale": "cat",
           "answers": [
@@ -9099,6 +9547,8 @@
           "item": "1",
           "text": "How many times have you or the main caregiver visited other families with children in the last 14 days with this child?",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind andere Familien mit Kindern besucht?",
+          "description": "soep-core-2016-e2, verändert; Nur für Jahrgang = 2014, 2011",
+          "filter": "Q4;2=2014, 2011",
           "concept": "baktiv03",
           "scale": "cat",
           "answers": [
@@ -9146,6 +9596,8 @@
           "item": "1",
           "text": "How many times have you or the main caregiver been shopping with this child in the last 14 days?",
           "text_de": "Wie oft waren Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind einkaufen?",
+          "description": "soep-core-2016-e2, verändert; Nur für Jahrgang = 2014, 2011",
+          "filter": "Q4;2=2014, 2011",
           "concept": "baktiv04",
           "scale": "cat",
           "answers": [
@@ -9193,6 +9645,8 @@
           "item": "1",
           "text": "How many times have you or the primary caregiver sung children's songs with the child over the last 14 days?",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind Kinderlieder gesungen?",
+          "description": "soep-core-2016-e2, verändert; Nur für Jahrgang = 2014, 2011",
+          "filter": "Q4;2=2014, 2011",
           "concept": "baktiv05",
           "scale": "cat",
           "answers": [
@@ -9240,6 +9694,8 @@
           "item": "1",
           "text": "How many times have you or the main caregiver painted or tinkered with this child in the last 14 days?",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind gemalt oder gebastelt?",
+          "description": "soep-core-2016-e2, verändert; Nur für Jahrgang = 2014, 2011",
+          "filter": "Q4;2=2014, 2011",
           "concept": "baktiv06",
           "scale": "cat",
           "answers": [
@@ -9287,6 +9743,8 @@
           "item": "1",
           "text": "How many times have you or the main caregiver played card games, dice games or other games together with this child over the past 14 days?",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind Karten-, Würfelspiele oder andere gemeinsame Spiele gespielt?",
+          "description": "soep-core-2016-e3, verändert; Nur für Jahrgang 2011",
+          "filter": "Q4;2=2011",
           "concept": "caktiv07",
           "scale": "cat",
           "answers": [
@@ -9334,6 +9792,8 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver engaged in the following activities  with your child?",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind Filme oder Videos auf Deutsch geschaut?",
+          "description": "soep-core-2016-e2, ausdifferenziert; Nur für Jahrgang = 2014, 2011",
+          "filter": "Q4;2=2014, 2011",
           "concept": "baktiv08a",
           "scale": "cat",
           "answers": [
@@ -9381,6 +9841,8 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind Filme oder Videos in einer oder mehreren anderen Sprachen geschaut?",
+          "description": "NEU; Nur für Jahrgang = 2014, 2011",
+          "filter": "Q4;2=2014, 2011",
           "concept": "baktiv08b",
           "scale": "cat",
           "answers": [
@@ -9428,6 +9890,8 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind am \nComputer oder auf dem Tablet oder Smartphone gespielt?",
+          "description": "soep-core-2016-e3, verändert; Nur für Jahrgang = 2014, 2011",
+          "filter": "Q4;2=2011",
           "concept": "baktiv13",
           "scale": "cat",
           "answers": [
@@ -9475,6 +9939,8 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind ein Kindertheater, einen Zirkus, ein Museum, eine Ausstellung oder Ähnliches besucht?",
+          "description": "soep-core-2016-e3, verändert; Nur für Jahrgang = 2011",
+          "filter": "Q4;2=2014, 2011",
           "concept": "caktiv10",
           "scale": "cat",
           "answers": [
@@ -9522,6 +9988,8 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson diesem Kind in den letzten 14 Tagen eine Geschichte auf Deutsch vorgelesen oder erzählt?",
+          "description": "soep-core-2016-e3, verändert; Nur für Jahrgang = 2014, 2011",
+          "filter": "Q4;2=2014, 2011",
           "concept": "baktiv11",
           "scale": "cat",
           "answers": [
@@ -9569,6 +10037,8 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson diesem Kind in den letzten 14 Tagen eine Geschichte auf einer oder mehreren anderen Sprachen vorgelesen oder erzählt?",
+          "description": "soep-core-2016-e3, verändert; Nur für Jahrgang = 2014, 2011",
+          "filter": "Q4;2=2014, 2011",
           "concept": "baktiv12",
           "scale": "cat",
           "answers": [
@@ -9616,6 +10086,8 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver watch picture books with your child?",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson mit diesem Kind in den letzten 14 Tagen Bilderbücher angeschaut?",
+          "description": "soep-core-2016-e2, verändert; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "baktiv14",
           "scale": "cat",
           "answers": [
@@ -9663,6 +10135,8 @@
           "item": "1",
           "text": "Is your child allowed to watch television or videos alone, without adult supervision?",
           "text_de": "Darf dieses Kind alleine, also ohne Erwachsene, Fernsehen oder Videos schauen?",
+          "description": "soep-core-2016-e2, leicht verändert; Nur für Jahrgang 2014 und 2011",
+          "filter": "Q4;2=2014, 2011",
           "concept": "btv1",
           "scale": "cat",
           "answers": [
@@ -9705,6 +10179,8 @@
           "item": "1",
           "text": "How many hours per week may this child watch TV or videos alone?",
           "text_de": "Wie viele Stunden pro Woche darf dieses Kind alleine Fernsehen oder Videos schauen?",
+          "description": "soep-core-2016-e2, ausdifferenziert; Nur für Jahrgang 2014 und 2011 und B278 = 1,2",
+          "filter": "(Q4;2=2014, 2011) & (Q187;1=1, 2)",
           "concept": "btv1",
           "scale": "txt",
           "sn": 0,
@@ -9714,6 +10190,7 @@
           "item": "2",
           "text": "Hours per week",
           "text_de": "Stunden pro Woche",
+          "description": "soep-core-2016-e2, verändert",
           "concept": "btv2",
           "scale": "int",
           "sn": 1,
@@ -9763,6 +10240,8 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this kid is talkative, 11 means this kid is silent.\nWith the values <U+200B><U+200B>in between, you can scale your answer",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist gesprächig, 11 bedeutet dieses Kind ist still. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cverg01",
           "scale": "cat",
           "answers": [
@@ -9829,6 +10308,8 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this kid is messy, 11 means this kid is neat.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist unordentlich, 11 bedeutet dieses Kind ist ordentlich. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cverg02",
           "scale": "cat",
           "answers": [
@@ -9895,6 +10376,8 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this child is good-natured, 11 means this child is easily irritable.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist gutmütig, 11 bedeutet dieses Kind ist leicht reizbar. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cverg03",
           "scale": "cat",
           "answers": [
@@ -9961,6 +10444,8 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this child is little interested, 11 means this child is thirsty for knowledge.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist wenig interessiert, 11 bedeutet dieses Kind ist wissensdurstig. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cverg04",
           "scale": "cat",
           "answers": [
@@ -10027,6 +10512,8 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this child has self-confidence, 11 means this child is uncertain.\nWith the values <U+200B><U+200B>in between, you can scale your answer.Answer by a scale.\n1 means this kid is talkative, 11 means this kid is silent.\nWith the values <U+200B><U+200B>in between, you can scale your answer",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind hat Selbstvertrauen, 11 bedeutet dieses Kind ist unsicher. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cverg05",
           "scale": "cat",
           "answers": [
@@ -10093,6 +10580,8 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this child is withdrawn, 11 means this child is sociable.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist zurückgezogen, 11 bedeutet dieses Kind ist kontaktfreudig. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cverg06",
           "scale": "cat",
           "answers": [
@@ -10159,6 +10648,8 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this child is concentrated, 11 means this child is easily distracted.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist konzentriert, 11 bedeutet dieses Kind ist leicht ablenkbar. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cverg07",
           "scale": "cat",
           "answers": [
@@ -10225,6 +10716,8 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this kid understands fast, 11 means this kid needs more time.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist trotzig, 11 bedeutet dieses Kind ist folgsam. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cverg08",
           "scale": "cat",
           "answers": [
@@ -10291,6 +10784,8 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this kid understands fast, 11 means this kid needs more time.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind begreift schnell, 11 bedeutet dieses Kind braucht mehr Zeit. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cverg09",
           "scale": "cat",
           "answers": [
@@ -10357,6 +10852,8 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this child is anxious, 11 means this child is uneasy.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist ängstlich, 11 bedeutet dieses Kind ist unängstlich. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cverg10",
           "scale": "cat",
           "answers": [
@@ -10416,6 +10913,8 @@
           "item": "1",
           "text": "For parents it is always a special event, if your child can do something new again. Please indicate on each of the following items if this child already can.",
           "text_de": "Für Eltern ist es immer ein besonderes Ereignis, wenn ihr Kind schon wieder etwas Neues kann. Bitte geben Sie bei jedem der folgenden Dinge an, ob dieses Kind das bereits kann.",
+          "description": "soep-core-2016-e2, leicht verändert; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -10435,6 +10934,8 @@
           "item": "1",
           "text": "Speaks in full sentences (with four or more words)",
           "text_de": "Spricht in ganzen Sätzen (mit vier oder mehr Wörtern)",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bspr3",
           "scale": "cat",
           "answers": [
@@ -10472,6 +10973,8 @@
           "item": "1",
           "text": "Follows instructions, five minutes after hearing them.",
           "text_de": "Folgt Anweisungen, die es fünf Minuten zuvor gehört hat",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bspr6",
           "scale": "cat",
           "answers": [
@@ -10509,6 +11012,8 @@
           "item": "1",
           "text": "Can state his/her first and last name if someone asks for it.",
           "text_de": "Nennt seinen Vor- und Nachnamen, wenn es danach gefragt wird",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bspr7",
           "scale": "cat",
           "answers": [
@@ -10546,6 +11051,8 @@
           "item": "1",
           "text": "Listens attentively to a story for 15 minutes or longer",
           "text_de": "Hört in der Regel Geschichten mindestens 15 Min. aufmerksam zu",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bspr4",
           "scale": "cat",
           "answers": [
@@ -10583,6 +11090,8 @@
           "item": "1",
           "text": "Passes on simple messages such as “dinner is ready”",
           "text_de": "Überbringt einfache Nachrichten wie z.B. „Essen ist fertig“",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bspr5",
           "scale": "cat",
           "answers": [
@@ -10620,6 +11129,8 @@
           "item": "1",
           "text": "Uses a spoon to eat, without assistance and without dripping",
           "text_de": "Isst selbständig mit dem Löffel, ohne zu kleckern",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "ball1",
           "scale": "cat",
           "answers": [
@@ -10657,6 +11168,8 @@
           "item": "1",
           "text": "Blows his/her nose without assistance",
           "text_de": "Putzt sich selbst die Nase",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "ball2",
           "scale": "cat",
           "answers": [
@@ -10694,6 +11207,8 @@
           "item": "1",
           "text": "Uses the toilet to do “number two”",
           "text_de": "Benutzt für „großes Geschäft“ die Toilette",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "ball3",
           "scale": "cat",
           "answers": [
@@ -10731,6 +11246,8 @@
           "item": "1",
           "text": "Put on pants and underpants the right way around",
           "text_de": "Zieht sich Hosen und Unterhosen selbst richtig herum an",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "ball4",
           "scale": "cat",
           "answers": [
@@ -10768,6 +11285,8 @@
           "item": "1",
           "text": "Brushes his/her teeth without assistance",
           "text_de": "Putzt sich selbst die Zähne",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "ball5",
           "scale": "cat",
           "answers": [
@@ -10805,6 +11324,8 @@
           "item": "1",
           "text": "Walks forwards down the stairs",
           "text_de": "Läuft Treppen vorwärts hinunter",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bbew1",
           "scale": "cat",
           "answers": [
@@ -10842,6 +11363,8 @@
           "item": "1",
           "text": "Climbs up playground climbing equipment and other high playground structures",
           "text_de": "Klettert auf Klettergerüste und andere hohe Spielgeräte",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bbew3",
           "scale": "cat",
           "answers": [
@@ -10879,6 +11402,8 @@
           "item": "1",
           "text": "Cuts paper with scissors",
           "text_de": "Schneidet mit einer Schere Papier durch",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bbew4",
           "scale": "cat",
           "answers": [
@@ -10916,6 +11441,8 @@
           "item": "1",
           "text": "Paints/draws recognizable shapes on paper",
           "text_de": "Malt auf Papier erkennbare Formen",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bbew5",
           "scale": "cat",
           "answers": [
@@ -10953,6 +11480,8 @@
           "item": "1",
           "text": "Can hold a pencil correctly",
           "text_de": "Hält Stifte richtig (nicht mit der Faust), um zu malen",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bbew7",
           "scale": "cat",
           "answers": [
@@ -10990,6 +11519,8 @@
           "item": "1",
           "text": "Participates in games with other children",
           "text_de": "Nimmt an Spielen mit anderen Kindern teil",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bsoz2",
           "scale": "cat",
           "answers": [
@@ -11027,6 +11558,8 @@
           "item": "1",
           "text": "Gets involved in role-playing games (“playing pretend”)",
           "text_de": "Beschäftigt sich mit Rollenspielen (tun als ob)",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bsoz3",
           "scale": "cat",
           "answers": [
@@ -11064,6 +11597,8 @@
           "item": "1",
           "text": "Shows a special liking for particular playmates or friends",
           "text_de": "Zeigt eine Vorliebe für bestimmte Spielgefährten oder Freunde",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bsoz4",
           "scale": "cat",
           "answers": [
@@ -11101,6 +11636,8 @@
           "item": "1",
           "text": "Is able to name his/her own feelings, e.g., “sad”, “happy”, “scared”",
           "text_de": "Benennt eigene Gefühle, z.B. „traurig“, „freuen“, „Angst“",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bsoz5",
           "scale": "cat",
           "answers": [
@@ -11138,6 +11675,8 @@
           "item": "1",
           "text": "Takes turns when playing playing without being asked.",
           "text_de": "Wechselt sich mit anderen beim Spielen ab, ohne darum gebeten zu werden ",
+          "description": "soep-core-2016-e2; Nur für Jahrgang = 2014",
+          "filter": "Q4;2=2014",
           "concept": "bsoz7",
           "scale": "cat",
           "answers": [
@@ -11196,6 +11735,8 @@
           "text_de": "Inwieweit treffen folgende Aussagen auf dieses Kind zu? \nDieses Kind spricht oft über positive Sachen, die es in der Zeit vor dem Zuzug nach Deutschland erlebt hat",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen. ",
+          "description": "NEU; Nur für Jahrgang = 2011, 2009, 2007 und ABCDE3 = 2",
+          "filter": "(Q4;2=2011, 2009, 2007) & (Q7;2=2)",
           "concept": "cvposvz",
           "scale": "cat",
           "answers": [
@@ -11250,6 +11791,8 @@
           "text_de": "Dieses Kind spricht oft über negative Sachen, die es in der Zeit vor dem Zuzug nach Deutschland erlebt hat",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "NEU; Nur für Jahrgang = 2011, 2009, 2007 und ABCDE3 = 2",
+          "filter": "(Q4;2=2011, 2009, 2007) & (Q7;2=2)",
           "concept": "cvnegvz",
           "scale": "cat",
           "answers": [
@@ -11304,6 +11847,8 @@
           "text_de": "Inwieweit treffen die folgenden Aussagen auf dieses Kind zu? Bitte berücksichtigen Sie bei der Antwort das Verhalten Ihres Kindes in den letzten sechs Monaten.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11325,6 +11870,8 @@
           "text_de": "Dieses Kind ist rücksichtsvoll",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver01",
           "scale": "cat",
           "answers": [
@@ -11379,6 +11926,8 @@
           "text_de": "Dieses Kind ist unruhig, überaktiv, kann nicht lange stillsitzen",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver02",
           "scale": "cat",
           "answers": [
@@ -11433,6 +11982,8 @@
           "text_de": "Dieses Kind teilt gerne mit anderen Kindern",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver03",
           "scale": "cat",
           "answers": [
@@ -11487,6 +12038,8 @@
           "text_de": "Dieses Kind hat oft Wutanfälle, ist aufbrausend",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver04",
           "scale": "cat",
           "answers": [
@@ -11541,6 +12094,8 @@
           "text_de": "Dieses Kind ist ein Einzelgänger, spielt meist alleine",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver05",
           "scale": "cat",
           "answers": [
@@ -11595,6 +12150,8 @@
           "text_de": "Dieses Kind ist hilfsbereit, wenn andere verletzt, krank oder betrübt sind",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver06",
           "scale": "cat",
           "answers": [
@@ -11649,6 +12206,8 @@
           "text_de": "Dieses Kind ist ständig zappelig",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver07",
           "scale": "cat",
           "answers": [
@@ -11703,6 +12262,8 @@
           "text_de": "Dieses Kind streitet sich oft mit anderen Kindern oder schikaniert sie",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver08",
           "scale": "cat",
           "answers": [
@@ -11757,6 +12318,8 @@
           "text_de": "Dieses Kind ist oft unglücklich oder niedergeschlagen, weint häufig",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver09",
           "scale": "cat",
           "answers": [
@@ -11811,6 +12374,8 @@
           "text_de": "Dieses Kind ist im Allgemeinen bei anderen Kindern beliebt",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver10",
           "scale": "cat",
           "answers": [
@@ -11865,6 +12430,8 @@
           "text_de": "Dieses Kind ist leicht ablenkbar, unkonzentriert",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver11",
           "scale": "cat",
           "answers": [
@@ -11919,6 +12486,8 @@
           "text_de": "Dieses Kind ist nervös oder anklammernd in neuen Situationen, verliert leicht das Selbstvertrauen",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver12",
           "scale": "cat",
           "answers": [
@@ -11973,6 +12542,8 @@
           "text_de": "Dieses Kind wird von anderen gehänselt oder schikaniert",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver13",
           "scale": "cat",
           "answers": [
@@ -12027,6 +12598,8 @@
           "text_de": "Dieses Kind hilft anderen oft freiwillig (Eltern, Erziehern, anderen Kindern)",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver14",
           "scale": "cat",
           "answers": [
@@ -12081,6 +12654,8 @@
           "text_de": "Dieses Kind kommt besser mit Erwachsenen aus als mit anderen Kindern",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver15",
           "scale": "cat",
           "answers": [
@@ -12135,6 +12710,8 @@
           "text_de": "Dieses Kind hat viele Ängste, fürchtet sich leicht",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver16",
           "scale": "cat",
           "answers": [
@@ -12189,6 +12766,8 @@
           "text_de": "Dieses Kind führt Aufgaben zu Ende, kann sich lange konzentrieren",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e3, leicht verändert; Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver17",
           "scale": "cat",
           "answers": [
@@ -12243,6 +12822,8 @@
           "text_de": "Dieses Kind denkt nach bevor es handelt.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007    ",
+          "filter": "Q4;2=2007",
           "concept": "ever18",
           "scale": "cat",
           "answers": [
@@ -12297,6 +12878,8 @@
           "text_de": "Dieses Kind klagt häufig über Kopfschmerzen, Bauchschmerzen oder Übelkeit",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "Nur für Jahrgang = 2011, 2007",
+          "filter": "Q4;2=2011, 2007",
           "concept": "cver19",
           "scale": "cat",
           "answers": [
@@ -12349,6 +12932,8 @@
           "item": "1",
           "text": "Below are some of the personality and skill influenced by child rearing. In your opinion, how important are the following education aims?",
           "text_de": "Im Folgenden werden einige Eigenschaften und Fähigkeiten genannt, die man durch Erziehung fördern kann. Für wie wichtig halten Sie persönlich die folgenden Erziehungsziele?",
+          "description": "soep-core-2016-e4; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12368,6 +12953,8 @@
           "item": "1",
           "text": "How important do you personally think that this child will become a good student?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind ein guter Schüler wird?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz01",
           "scale": "cat",
           "answers": [
@@ -12420,6 +13007,8 @@
           "item": "1",
           "text": "How important do you personally think that this child gets on well with other children?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind sich gut mit anderen Kindern versteht?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz02",
           "scale": "cat",
           "answers": [
@@ -12472,6 +13061,8 @@
           "item": "1",
           "text": "How important do you personally think that this child is interested in how and why certain things happen?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind sich dafür interessiert, wie und warum bestimmte Dinge passieren?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz03",
           "scale": "cat",
           "answers": [
@@ -12524,6 +13115,8 @@
           "item": "1",
           "text": "How important do you personally think that this child behaves like a normal girl or a normal boy?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind sich wie ein normales Mädchen bzw. wie ein normaler Junge verhält?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz04",
           "scale": "cat",
           "answers": [
@@ -12576,6 +13169,8 @@
           "item": "1",
           "text": "How important do you personally think that this child is honest?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind ehrlich ist?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz05",
           "scale": "cat",
           "answers": [
@@ -12628,6 +13223,8 @@
           "item": "1",
           "text": "How important do you personally think that this child has good manners?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind gute Umgangsformen hat?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz06",
           "scale": "cat",
           "answers": [
@@ -12680,6 +13277,8 @@
           "item": "1",
           "text": "How important do you personally think that this child has self-control?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind Selbstbeherrschung besitzt?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz07",
           "scale": "cat",
           "answers": [
@@ -12732,6 +13331,8 @@
           "item": "1",
           "text": "How important do you personally think that this child is responsible?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind verantwortungsbewusst ist?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz08",
           "scale": "cat",
           "answers": [
@@ -12784,6 +13385,8 @@
           "item": "1",
           "text": "How important do you personally think that this child takes care of others?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind auf andere Rücksicht nimmt?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz09",
           "scale": "cat",
           "answers": [
@@ -12836,6 +13439,8 @@
           "item": "1",
           "text": "How important do you think that this child obey his/her parents?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind seinen Eltern gehorcht?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz10",
           "scale": "cat",
           "answers": [
@@ -12888,6 +13493,8 @@
           "item": "1",
           "text": "How important do you think that this child has a good judgment?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind ein gutes Urteilsvermögen besitzt?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz11",
           "scale": "cat",
           "answers": [
@@ -12940,6 +13547,8 @@
           "item": "1",
           "text": "How important do you think that this child is neat and proper?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind ordentlich und sauber ist?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz12",
           "scale": "cat",
           "answers": [
@@ -12992,6 +13601,8 @@
           "item": "1",
           "text": "How important do you think that this child will reach their aims?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind sich bemüht, seine Ziele zu erreichen?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz13",
           "scale": "cat",
           "answers": [
@@ -13044,6 +13655,8 @@
           "item": "1",
           "text": "How important do you think that this child can integrate in groups?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind sich gut in Gruppen einfügen kann?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz14",
           "scale": "cat",
           "answers": [
@@ -13096,6 +13709,8 @@
           "item": "1",
           "text": "How important do you personally think that this child learns to prevail in life against resistance?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind lernt, sich im Leben auch gegen Widerstände durchzusetzen?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz15",
           "scale": "cat",
           "answers": [
@@ -13148,6 +13763,8 @@
           "item": "1",
           "text": "#How important do you personally think that this child is satisfied with what it has and can do?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind zufrieden mit dem ist, was es hat und kann?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz16",
           "scale": "cat",
           "answers": [
@@ -13200,6 +13817,8 @@
           "item": "1",
           "text": "How important do you personally think that this child learns to avoid risks in life?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind lernt, Risiken im Leben zu meiden?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz17",
           "scale": "cat",
           "answers": [
@@ -13252,6 +13871,8 @@
           "item": "1",
           "text": "How important do you personally think that this child is liked by others, is adorable?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind von anderen gemocht wird, liebenswert ist?",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz18",
           "scale": "cat",
           "answers": [
@@ -13304,6 +13925,8 @@
           "item": "1",
           "text": "How important do you personally think that this child obeys religious rules?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind religiöse Vorschriften befolgt?",
+          "description": "NEU; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz19",
           "scale": "cat",
           "answers": [
@@ -13356,6 +13979,8 @@
           "item": "1",
           "text": "How do you feel in your role as a parent and to what extent do you agree with the following statements?",
           "text_de": "Wie fühlen Sie sich in Ihrer Elternrolle und inwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu?",
+          "description": "soep-core-2016-e4; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13375,6 +14000,8 @@
           "item": "1",
           "text": "I am willing to put my child's desires ahead of my own.",
           "text_de": "Ich bin bereit, meine eigenen Wünsche denen dieses Kindes zu opfern.",
+          "description": "soep-core-2016-e4; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "delt01",
           "scale": "cat",
           "answers": [
@@ -13427,6 +14054,8 @@
           "item": "1",
           "text": "When my child refuses to obey or does something she/he is not supposed to, it's because he/she is trying to annoy me.",
           "text_de": "Wenn dieses Kind nicht gehorcht und etwas Verbotenes tut, will es mich ärgern.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "delt02",
           "scale": "cat",
           "answers": [
@@ -13479,6 +14108,8 @@
           "item": "1",
           "text": "I feel that childcare and bringing takes up all of my time and dominates my life.",
           "text_de": "Ich habe das Gefühl, dass Betreuung und Erziehung dieses Kindes mich völlig in Beschlag nehmen, mein ganzes Leben bestimmen.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "delt03",
           "scale": "cat",
           "answers": [
@@ -13531,6 +14162,8 @@
           "item": "1",
           "text": "I wish my parental responsibilities didn't tie me up so much.",
           "text_de": "Ich wünschte, ich würde durch meine Elternpflichten nicht so gefangen genommen.",
+          "description": "soep-core-2016-e4; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "delt04",
           "scale": "cat",
           "answers": [
@@ -13583,6 +14216,8 @@
           "item": "1",
           "text": "When there are problems with childrearing, my child is to blame.",
           "text_de": "Wenn es Probleme in der Erziehung gibt, liegt das an diesem Kind.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "delt05",
           "scale": "cat",
           "answers": [
@@ -13635,6 +14270,8 @@
           "item": "1",
           "text": "When I am with my child, there’s nothing I would rather be doing.",
           "text_de": "Wenn ich mit diesem Kind zusammen bin, gibt es nichts anderes, was ich lieber täte.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "delt06",
           "scale": "cat",
           "answers": [
@@ -13687,6 +14324,8 @@
           "item": "1",
           "text": "I would put up with anything in my child's best interests.",
           "text_de": "Für das Wohl dieses Kindes würde ich alles aushalten.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "delt07",
           "scale": "cat",
           "answers": [
@@ -13739,6 +14378,8 @@
           "item": "1",
           "text": "I think when my child misbehaves he/she is doing it intentionally",
           "text_de": "Ich denke, wenn dieses Kind sich falsch verhält, macht es das mit Absicht.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "delt08",
           "scale": "cat",
           "answers": [
@@ -13791,6 +14432,8 @@
           "item": "1",
           "text": "I often drop everything to help my child",
           "text_de": "Ich lasse oft alles stehen und liegen, um dieses Kind zu unterstützen.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "delt09",
           "scale": "cat",
           "answers": [
@@ -13843,6 +14486,8 @@
           "item": "1",
           "text": "I look forward to being with my child",
           "text_de": "Ich freue mich darauf, mit diesem Kind zusammen zu sein.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "delt10",
           "scale": "cat",
           "answers": [
@@ -13895,6 +14540,8 @@
           "item": "1",
           "text": "How frequently do the following things occur?",
           "text_de": "Wie häufig kommen folgende Dinge vor?",
+          "description": "soep-core-2016-e4; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13914,6 +14561,8 @@
           "item": "1",
           "text": "I use words and gestures to show my child that I love him/her",
           "text_de": "Ich zeige diesem Kind mit Worten und Gesten, dass ich es gerne habe.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz21",
           "scale": "cat",
           "answers": [
@@ -13966,6 +14615,8 @@
           "item": "1",
           "text": "I criticize my child",
           "text_de": "Ich kritisiere dieses Kind.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz22",
           "scale": "cat",
           "answers": [
@@ -14018,6 +14669,8 @@
           "item": "1",
           "text": "I talk to my child about things he/she has done, seen, or experienced when he/she was out.",
           "text_de": "Wenn dieses Kind unterwegs war, frage ich nach, was es getan und erlebt hat.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz23",
           "scale": "cat",
           "answers": [
@@ -14070,6 +14723,8 @@
           "item": "1",
           "text": "I punish my child when he/she is disobedient.",
           "text_de": "Wenn dieses Kind etwas gegen meinen Willen tut, bestrafe ich es.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz24",
           "scale": "cat",
           "answers": [
@@ -14122,6 +14777,8 @@
           "item": "1",
           "text": "I threaten my child with punishment, but don't actually follow through with it.",
           "text_de": "Ich drohe diesem Kind eine Strafe an, bestrafe es aber dann doch nicht.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz25",
           "scale": "cat",
           "answers": [
@@ -14174,6 +14831,8 @@
           "item": "1",
           "text": "When my child is outside the home, I know exactly where he/she is.",
           "text_de": "Wenn dieses Kind außer Haus ist, weiß ich genau, wo es sich aufhält.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz26",
           "scale": "cat",
           "answers": [
@@ -14226,6 +14885,8 @@
           "item": "1",
           "text": "I tend to be strict with my child.",
           "text_de": "Ich bin eher streng zu diesem Kind.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz27",
           "scale": "cat",
           "answers": [
@@ -14278,6 +14939,8 @@
           "item": "1",
           "text": "I comfort my child when he/she feels sad.",
           "text_de": "Ich tröste dieses Kind, wenn es traurig ist.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz28",
           "scale": "cat",
           "answers": [
@@ -14330,6 +14993,8 @@
           "item": "1",
           "text": "I shout at my child when he/she did something wrong.",
           "text_de": "Ich schreie dieses Kind an, wenn es etwas falsch gemacht hat.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz29",
           "scale": "cat",
           "answers": [
@@ -14382,6 +15047,8 @@
           "item": "1",
           "text": "I feel that my child is ungrateful because he/she disobeys.",
           "text_de": "Ich halte dieses Kind für undankbar, weil es mir nicht gehorcht.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz30",
           "scale": "cat",
           "answers": [
@@ -14434,6 +15101,8 @@
           "item": "1",
           "text": "I stop talking to my child for a while when he/she did something wrong.",
           "text_de": "Ich rede eine Zeit lang nicht mit diesem Kind, wenn es etwas angestellt hat.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz31",
           "scale": "cat",
           "answers": [
@@ -14486,6 +15155,8 @@
           "item": "1",
           "text": "I make it clear to my child that he/she should not oppose orders and decisions.",
           "text_de": "Ich gebe diesem Kind zu verstehen, dass es sich meinen Anordnungen und Entscheidungen nicht widersetzen soll.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz32",
           "scale": "cat",
           "answers": [
@@ -14538,6 +15209,8 @@
           "item": "1",
           "text": "I praise my child.",
           "text_de": "Ich lobe dieses Kind.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz33",
           "scale": "cat",
           "answers": [
@@ -14590,6 +15263,8 @@
           "item": "1",
           "text": "I scold my child when I am angry at him/her.",
           "text_de": "Ich beschimpfe dieses Kind, weil ich wütend auf es bin.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz34",
           "scale": "cat",
           "answers": [
@@ -14642,6 +15317,8 @@
           "item": "1",
           "text": "I try to actively influence my child's circle of friends.",
           "text_de": "Ich versuche den Freundeskreis dieses Kindes aktiv zu beeinflussen.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz35",
           "scale": "cat",
           "answers": [
@@ -14694,6 +15371,8 @@
           "item": "1",
           "text": "I reduce punishments or lift them ahead of time.",
           "text_de": "Ich schwäche eine Bestrafung ab oder hebe sie vorzeitig auf.",
+          "description": "soep-core-2016-e4; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz36",
           "scale": "cat",
           "answers": [
@@ -14746,6 +15425,8 @@
           "item": "1",
           "text": "I am disappointed and sad when my child misbehaves.",
           "text_de": "Ich bin enttäuscht und traurig, wenn dieses Kind sich schlecht benommen hat.",
+          "description": "soep-core-2016-e4, leicht verändert; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz37",
           "scale": "cat",
           "answers": [
@@ -14798,6 +15479,8 @@
           "item": "1",
           "text": "It is hard for me to be consistent in my childrearing.",
           "text_de": "Es fällt mir schwer in meiner Erziehung konsequent zu sein.",
+          "description": "soep-core-2016-e4; Nur für Jahrgang = 2009",
+          "filter": "Q4;2=2009",
           "concept": "derz38",
           "scale": "cat",
           "answers": [
@@ -14850,6 +15533,8 @@
           "item": "1",
           "text": "\nHow often does this kid watch TV, DVDs or Internet streams (like YouTube) in German?",
           "text_de": "Wie oft schaut dieses Kind Fernsehen, DVDs oder Internet-Streams (z.B. YouTube) auf Deutsch?",
+          "description": "soep-core-2016-e5, verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz01d",
           "scale": "cat",
           "answers": [
@@ -14902,6 +15587,8 @@
           "item": "1",
           "text": "How often does this kid watch TV, DVDs, or Internet streams (such as YouTube) in one or more other languages?",
           "text_de": "Wie oft schaut dieses Kind Fernsehen, DVDs oder Internet-Streams (z.B. YouTube) auf einer oder mehreren anderen Sprachen?",
+          "description": "NEU; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz01a",
           "scale": "cat",
           "answers": [
@@ -14954,6 +15641,8 @@
           "item": "1",
           "text": "How often does child use computer- /Online- /console- or smart phone games?",
           "text_de": "Wie oft nutzt dieses Kind Computer- / Online- / Konsolen- oder Smartphonespiele?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007 ",
+          "filter": "Q4;2=2007",
           "concept": "efz02",
           "scale": "cat",
           "answers": [
@@ -15006,6 +15695,8 @@
           "item": "1",
           "text": "How often does this kid use social online networks?",
           "text_de": "Wie oft nutzt dieses Kind soziale Online-Netzwerke?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007\n  ",
+          "filter": "Q4;2=2007",
           "concept": "efz21",
           "scale": "cat",
           "answers": [
@@ -15058,6 +15749,8 @@
           "item": "1",
           "text": "\nHow many times is this child on the phone (including Skype or similar)?",
           "text_de": "Wie oft telefoniert dieses Kind (einschließlich Skype o.ä.)?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz22",
           "scale": "cat",
           "answers": [
@@ -15110,6 +15803,8 @@
           "item": "1",
           "text": "How often does this child exchange text messages or messengers?",
           "text_de": "Wie oft tauscht sich dieses Kind per SMS oder Messenger aus?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz23",
           "scale": "cat",
           "answers": [
@@ -15162,6 +15857,8 @@
           "item": "1",
           "text": "How often does this child surf the internet?",
           "text_de": "Wie oft surft dieses Kind ansonsten im Internet?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz14",
           "scale": "cat",
           "answers": [
@@ -15214,6 +15911,8 @@
           "item": "1",
           "text": "How often does this child listen music?",
           "text_de": "Wie oft hört dieses Kind Musik?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz03",
           "scale": "cat",
           "answers": [
@@ -15266,6 +15965,8 @@
           "item": "1",
           "text": "How often does this child make music?",
           "text_de": "Wie oft macht dieses Kind selbst Musik?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz04",
           "scale": "cat",
           "answers": [
@@ -15318,6 +16019,8 @@
           "item": "1",
           "text": "How often do this child sport?",
           "text_de": "Wie oft treibt dieses Kind Sport?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz05",
           "scale": "cat",
           "answers": [
@@ -15370,6 +16073,8 @@
           "item": "1",
           "text": "How often does this child do something with the family (for example, trips or similar)?",
           "text_de": "Wie oft unternimmt dieses Kind etwas mit der Familie (z.B. Ausflüge oder Ähnliches)?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz17",
           "scale": "cat",
           "answers": [
@@ -15422,6 +16127,8 @@
           "item": "1",
           "text": "How often is this child with friends?",
           "text_de": "Wie oft ist dieses Kind mit Freunden zusammen?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz19",
           "scale": "cat",
           "answers": [
@@ -15474,6 +16181,8 @@
           "item": "1",
           "text": "How often does this child practice dance, theater or something else?",
           "text_de": "Wie oft betreibt dieses Kind Tanz, Theater oder Ähnliches?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz06",
           "scale": "cat",
           "answers": [
@@ -15526,6 +16235,8 @@
           "item": "1",
           "text": "How often does this child do technical work and work?",
           "text_de": "Wie oft betreibt dieses Kind technisches Werken und Arbeiten?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz07",
           "scale": "cat",
           "answers": [
@@ -15578,6 +16289,8 @@
           "item": "1",
           "text": "How often does this child paint or make things with hands?",
           "text_de": "Wie oft malt oder bastelt dieses Kind?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz18",
           "scale": "cat",
           "answers": [
@@ -15630,6 +16343,8 @@
           "item": "1",
           "text": "How often does this child read?",
           "text_de": "Wie oft liest dieses Kind?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz08",
           "scale": "cat",
           "answers": [
@@ -15682,6 +16397,8 @@
           "item": "1",
           "text": "How often does this child just do nothing, hang or dream?",
           "text_de": "Wie oft tut dieses Kind einfach nichts, hängt ab oder träumt?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz10",
           "scale": "cat",
           "answers": [
@@ -15734,6 +16451,8 @@
           "item": "1",
           "text": "How often does  this child visit \nextracurricular religious education?",
           "text_de": "Wie oft besucht dieses Kind außerschulischen Religionsunterricht?",
+          "description": "NEU; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz26",
           "scale": "cat",
           "answers": [
@@ -15786,6 +16505,8 @@
           "item": "1",
           "text": "How often does this child visit other religious events?",
           "text_de": "Wie oft besucht dieses Kind andere religiöse Veranstaltungen?",
+          "description": "soep-core-2016-e5, verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz16",
           "scale": "cat",
           "answers": [
@@ -15838,6 +16559,8 @@
           "item": "1",
           "text": "How often does this child go in youth group?",
           "text_de": "Wie oft geht dieses Kind in eine Jugendgruppe?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz20",
           "scale": "cat",
           "answers": [
@@ -15890,6 +16613,8 @@
           "item": "1",
           "text": "How often does this child involved social or support aid projects?",
           "text_de": "Wie oft engagiert sich dieses Kind sozial oder unterstützt Hilfsprojekte?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz25",
           "scale": "cat",
           "answers": [
@@ -15942,6 +16667,8 @@
           "item": "1",
           "text": "How often does this child take care about pets?",
           "text_de": "Wie oft kümmert sich dieses Kind um Haustiere?",
+          "description": "soep-core-2016-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz24",
           "scale": "cat",
           "answers": [
@@ -15994,6 +16721,8 @@
           "item": "1",
           "text": "How often does this child visit a culture association?",
           "text_de": "Wie oft besucht dieses Kind einen Kulturverein?",
+          "description": "NEU; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efz27",
           "scale": "cat",
           "answers": [
@@ -16046,6 +16775,8 @@
           "item": "1",
           "text": "How many closely friends has this child in Germany?",
           "text_de": "Wie viele enge Freunde hat dieses Kind in Deutschland?",
+          "description": "NEU; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16084,6 +16815,8 @@
           "text_de": "Woher stammen die Freunde dieses Kindes, die in Deutschland leben?",
           "instruction": "Please select all responses that apply.",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "description": "NEU; Nur für Jahrgang = 2007",
+          "filter": "(Q4;2=2007) & (Q315;2>=0)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16139,6 +16872,8 @@
           "item": "1",
           "text": "How often does this child spend time in his / her free time with persons from his/her country of origin who not related with him or her?",
           "text_de": "Wie oft verbringt dieses Kind in seiner/ihrer Freizeit Zeit mit Personen aus seinem/ihrem Herkunftsland, die nicht mit ihm/ihr verwandt sind?",
+          "description": "NEU; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efreiznv",
           "scale": "cat",
           "answers": [
@@ -16196,6 +16931,8 @@
           "item": "1",
           "text": "How often does this child spend time in his / her free time with persons from Germany?",
           "text_de": "Wie oft verbringt dieses Kind in seiner/ihrer Freizeit Zeit mit Personen aus Deutschland?",
+          "description": "NEU; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efreizd",
           "scale": "cat",
           "answers": [
@@ -16253,6 +16990,8 @@
           "item": "1",
           "text": "How often does this child spend time in his/her free time with persons from other countries?",
           "text_de": "Wie oft verbringt dieses Kind in seiner/ihrer Freizeit Zeit mit Personen aus anderen Ländern?",
+          "description": "NEU; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "efreiza",
           "scale": "cat",
           "answers": [
@@ -16310,6 +17049,8 @@
           "item": "1",
           "text": "Gets your child pocket money?",
           "text_de": "Erhält dieses Kind Taschengeld?",
+          "description": "soep-core-2015-e5, leicht verändert; Nur für Jahrgang = 2007",
+          "filter": "Q4;2=2007",
           "concept": "etg1",
           "scale": "cat",
           "answers": [
@@ -16349,6 +17090,8 @@
           "text_de": "Wie viel Taschengeld erhält dieses Kind?",
           "instruction": "Please state the amount either per week or per month!",
           "instruction_de": "Bitte geben Sie den Betrag entweder pro Woche oder pro Monat an!",
+          "description": "soep-core-2015-e5, leicht verändert; Nur wenn E280 = 1  ",
+          "filter": "Q320;1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -16357,6 +17100,7 @@
           "item": "2",
           "text": "per week",
           "text_de": "pro Woche",
+          "description": "soep-core-2015-e5, leicht verändert",
           "concept": "etg2",
           "scale": "chr",
           "sn": 1,
@@ -16366,6 +17110,7 @@
           "item": "3",
           "text": "per month",
           "text_de": "pro Monat",
+          "description": "soep-core-2015-e5, leicht verändert",
           "concept": "etg3",
           "scale": "chr",
           "sn": 2,

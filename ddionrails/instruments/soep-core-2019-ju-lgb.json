@@ -17,6 +17,7 @@
           "item": "1",
           "text": "This questionnaires addresses household members born 1998 and are participating for the first time ever.\n\nYour cooperation is voluntary. The scientific validity of this survey, however, depends on cooperation of every member of every household.\n\nWe cordially request you,\n\n- to answer the questions for our Interviewer\n\n- or to fill out the questionnaire by yourself accurately. ",
           "text_de": "Dieser Fragebogen richtet sich an Personen im Haushalt, die 2002 geboren sind.\n\nIhre Mitarbeit ist freiwillig. Die wissenschaftliche Aussagekraft dieser Untersuchung hängt aber entscheidend von der Mitarbeit aller Personen in allen Haushalten ab.\n\nDarum bitten wir Sie herzlich, \n\n- unserem Mitarbeiter / unserer Mitarbeiterin dieses Interview zu gewähren\n\n- oder den Fragebogen sorgfältig selbst auszufüllen.",
+          "description": "Jahresanpassung",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -201,6 +202,7 @@
           "item": "jwohn2",
           "text": "Do you have a room of your own? Or do you share your room (e.g. with siblings)?",
           "text_de": "Haben Sie ein eigenes Zimmer für sich alleine, oder teilen Sie Ihr Zimmer mit anderen Personen (beispielsweise Geschwistern)?",
+          "filter": "jwohn1=1",
           "concept": "jwohn2",
           "scale": "cat",
           "answers": [
@@ -700,6 +702,7 @@
           "item": "jfreun1",
           "text": "What makes up your circle of friends: how many of your friends are not even from Germany or have parents who do not come from Germany?",
           "text_de": "Wie setzt sich Ihr Freundeskreis zusammen: Wie viele Ihrer Freundinnen und Freunde stammen selbst nicht aus Deutschland oder haben Eltern, die nicht aus Deutschland stammen, haben also einen Migrationshintergrund?",
+          "description": "Aus Jugend M1-M2",
           "concept": "jfreun1",
           "scale": "cat",
           "answers": [
@@ -801,6 +804,7 @@
           "text_de": "Bei der nächsten Frage geht es darum, wie sich Ihre Freundinnen und Freunde, Ihre Geschwister\nund Ihre Eltern Ihnen gegenüber verhalten.",
           "instruction": "[de] Wenn es eine Person für Sie nicht gibt, z.B. wenn Sie keine Geschwister haben,\ngeben Sie bitte \"Personen sind nicht vorhanden\" an.",
           "instruction_de": "Wenn es eine Person für Sie nicht gibt, z.B. wenn Sie keine Geschwister haben,\ngeben Sie bitte \"Personen sind nicht vorhanden\" an.",
+          "description": "Alles in die Sie-Form umformulieren",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2641,6 +2645,7 @@
           "item": "jmus2x",
           "text": "What kind of music is that mainly?",
           "text_de": "Welche Art von Musik machen Sie überwiegend?",
+          "filter": "jmus1=1",
           "concept": "jmus2x",
           "scale": "chr",
           "sn": 0,
@@ -2805,6 +2810,7 @@
           "item": "1",
           "text": "What is the most important kind of sport to you?",
           "text_de": "Welches ist für Sie die wichtigste Sportart, die Sie ausüben?",
+          "filter": "jsp1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2870,6 +2876,7 @@
           "item": "jsp4",
           "text": "Where and when do you practice that sport?",
           "text_de": "Wo und mit wem betreiben Sie diese Sportart hauptsächlich?",
+          "description": "-4 = Mfn",
           "concept": "jsp4",
           "scale": "cat",
           "answers": [
@@ -3046,6 +3053,7 @@
           "item": "1",
           "text": "Which grade are you in?",
           "text_de": "Und in der wievielten Klasse sind Sie?",
+          "filter": "jsch=1:4",
           "scale": "txt",
           "sn": 1,
           "number": ""
@@ -3075,6 +3083,7 @@
           "item": "1",
           "text": "In which year did you leave school?",
           "text_de": "In welchem Jahr haben Sie die allgemeinbildende Schule beendet?",
+          "filter": "jsch=5:6",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3103,6 +3112,7 @@
           "item": "jschab1",
           "text": "What was you type of graduation certificate?",
           "text_de": "Mit was für einem Abschluss haben Sie die Schule verlassen?",
+          "filter": "jsch=5:6",
           "concept": "jschab1",
           "scale": "cat",
           "answers": [
@@ -3146,6 +3156,7 @@
           "text_de": "[Schule ohne Abschluss verlassen] Art der Schule",
           "instruction": "Please state the type of general school",
           "instruction_de": "Bitte eintragen: Art der Schule",
+          "filter": "jschab1=1",
           "concept": "jschab2",
           "scale": "chr",
           "sn": 1,
@@ -3157,6 +3168,7 @@
           "text_de": "[Sonstiger Abschluss] Art des Abschlusses",
           "instruction": "Please state the type of graduation certificate",
           "instruction_de": "Bitte eintragen: Art des Abschlusses",
+          "filter": "jschab1=6",
           "concept": "jschab3",
           "scale": "chr",
           "sn": 2,
@@ -3177,6 +3189,7 @@
           "item": "jschab4",
           "text": "Do you intend to get graduate in future?",
           "text_de": "Streben Sie in Zukunft noch einen Schulabschluss an?",
+          "filter": "jsch=5:6",
           "goto": "3 @26",
           "concept": "jschab4",
           "scale": "cat",
@@ -3215,6 +3228,7 @@
           "item": "jschab5",
           "text": "What is the highest degree you are prefer to get?",
           "text_de": "Welchen höchsten Schulabschluss streben Sie an?",
+          "filter": "jschab4=1:2",
           "concept": "jschab5",
           "scale": "cat",
           "answers": [
@@ -3257,6 +3271,7 @@
           "item": "1",
           "text": "Which foreign languages did you learn in school? What were your first and second foreign languages?",
           "text_de": "Welche Fremdsprachen haben Sie in der Schule gelernt?\nWelches war Ihre erste Fremdsprache? \nUnd welches Ihre zweite, sofern Sie eine zweite Fremdsprache hatten?",
+          "description": "Zusätzliches Item „Deutsch als Fremdsprache“, um die Frage 38b aus J2018M1 abdecken zu können; Wir müssen nur aufpassen, dass sich die 17-Jährigen Muttersprachler hier keinen Scherz draus machen.",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3447,6 +3462,7 @@
           "item": "1",
           "text": "And how old were you?",
           "text_de": "Und in welchem Alter war das?",
+          "filter": "28:jschl=1:2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3455,6 +3471,7 @@
           "item": "jschlv",
           "text": "From the age of …",
           "text_de": "Im Alter von …",
+          "filter": "28:jschl=1:2",
           "concept": "jschlv",
           "scale": "int",
           "sn": 1,
@@ -3466,6 +3483,7 @@
           "text_de": "… bis Jahren",
           "instruction": "if longer",
           "instruction_de": "falls länger",
+          "filter": "28:jschl=1:2",
           "concept": "jschlb",
           "scale": "int",
           "sn": 2,
@@ -4235,6 +4253,7 @@
           "item": "jsch3a",
           "text": "[German] Level A, B, C",
           "text_de": "[Deutsch] [Gesamtschule] Niveau A, B, C",
+          "filter": "33:jschart=1",
           "concept": "jsch3a",
           "scale": "chr",
           "sn": 5,
@@ -4244,6 +4263,7 @@
           "item": "jsch4a",
           "text": "[German]",
           "text_de": "[Deutsch] [gymnasiale Oberstufe] und zwar:",
+          "filter": "33:jschart=2",
           "concept": "jsch4a",
           "scale": "cat",
           "answers": [
@@ -4287,6 +4307,7 @@
           "item": "jsch2b",
           "text": "[Mathematics] Points 0-15",
           "text_de": "[Mathematik] Punktezahl von 0-15",
+          "filter": "33:jschart=1",
           "concept": "jsch2b",
           "scale": "int",
           "sn": 9,
@@ -4296,6 +4317,7 @@
           "item": "jsch3b",
           "text": "[Mathematics] Level A, B, C",
           "text_de": "[Mathematik] [Gesamtschule] Niveau A, B, C",
+          "filter": "33:jschart=2",
           "concept": "jsch3b",
           "scale": "chr",
           "sn": 10,
@@ -4357,6 +4379,7 @@
           "item": "jsch3c",
           "text": "[1. foreign language] Level A, B, C",
           "text_de": "[Erste Fremdsprache]  [Gesamtschule] Niveau A, B, C",
+          "filter": "33:jschart=1",
           "concept": "jsch3c",
           "scale": "chr",
           "sn": 15,
@@ -4366,6 +4389,7 @@
           "item": "jsch4c",
           "text": "[1. foreign language]",
           "text_de": "[Erste Fremdsprache] [gymnasiale Oberstufe] und zwar:",
+          "filter": "33:jschart=2",
           "concept": "jsch4c",
           "scale": "cat",
           "answers": [
@@ -4436,6 +4460,7 @@
           "item": "1",
           "text": "Which grade you had to repeat?",
           "text_de": "Welche Klasse haben Sie wiederholt?",
+          "filter": "34:jwied1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4453,6 +4478,7 @@
           "item": "2",
           "text": "If apply:",
           "text_de": "Falls zutreffend:",
+          "filter": "34:jwied1=1",
           "scale": "txt",
           "sn": 2,
           "number": ""
@@ -5104,6 +5130,7 @@
           "item": "jausl",
           "text": "[de] Wenn Sie einmal an die Schulklasse denken, die Sie gegenwärtig besuchen oder zuletzt\nbesucht haben:\nWie viele Ihrer Mitschülerinnen und Mitschüler stammen/stammten nicht aus Deutschland oder\nhaben Eltern, die nicht aus Deutschland stammen, haben also einen Migrationshintergrund?",
           "text_de": "Wenn Sie einmal an die Schulklasse denken, die Sie gegenwärtig besuchen oder zuletzt\nbesucht haben:\nWie viele Ihrer Mitschülerinnen und Mitschüler stammen/stammten nicht aus Deutschland oder\nhaben Eltern, die nicht aus Deutschland stammen, haben also einen Migrationshintergrund?",
+          "description": "mit den Antwortitems aus P2018 zum Migrationshintergrund der Freunde",
           "concept": "jausl",
           "scale": "cat",
           "answers": [
@@ -5210,6 +5237,7 @@
           "text_de": "Welche Art von Ausbildung ist oder war das?\nFalls schon beendet: Haben Sie die Ausbildung/das Studium regulär abgeschlossen?",
           "instruction": "Please mark all that apply! Multiple answers possible.",
           "instruction_de": "Bitte alles Zutreffende ankreuzen!\nMehrfachnennungen möglich!",
+          "filter": "42:jaus01=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5365,6 +5393,7 @@
           "item": "jaus02a",
           "text": "Completed within regular schedule [Basic occupational training year (Berufsgrundbildungsjahr) / occupational preparation year (Berufsvorbereitungsjahr)]",
           "text_de": "Regulär abgeschlossen [Berufsgrundschuljahr / Berufsvorbereitungsjahr]",
+          "filter": "43:jaus02=2",
           "concept": "jaus02a",
           "scale": "cat",
           "answers": [
@@ -5386,6 +5415,7 @@
           "item": "jaus03a",
           "text": "Completed within regular schedule [Occupational integration courses (Berufliche Eingliederungslehrgänge)]",
           "text_de": "Regulär abgeschlossen [Berufliche Eingliederungslehrgänge]",
+          "filter": "43:jaus03=2",
           "concept": "jaus03a",
           "scale": "cat",
           "answers": [
@@ -5407,6 +5437,7 @@
           "item": "jaus04a",
           "text": "Completed within regular schedule [Apprenticeship]",
           "text_de": "Regulär abgeschlossen [Berufsausbildung (Lehre)]",
+          "filter": "43:jaus04=2",
           "concept": "jaus04a",
           "scale": "cat",
           "answers": [
@@ -5428,6 +5459,7 @@
           "item": "jaus05a",
           "text": "Completed within regular schedule [Full-time vocational school or health sector school]",
           "text_de": "Regulär abgeschlossen [Berufsfachschule oder Schule des Gesundheitswesens]",
+          "filter": "43:jaus05=2",
           "concept": "jaus05a",
           "scale": "cat",
           "answers": [
@@ -5449,6 +5481,7 @@
           "item": "jaus06a",
           "text": "Completed within regular schedule [Internship, practical training]",
           "text_de": "Regulär abgeschlossen [Praktikum, Volontariat]",
+          "filter": "43:jaus06=2",
           "concept": "jaus06a",
           "scale": "cat",
           "answers": [
@@ -5470,6 +5503,7 @@
           "item": "jaus18a",
           "text": "Completed within regular schedule [Dual course of study / college of advanced vocational studies]",
           "text_de": "Regulär abgeschlossen [Duales Studium / Berufsakademie]",
+          "filter": "43:jaus18=2",
           "concept": "jaus18a",
           "scale": "cat",
           "answers": [
@@ -5491,6 +5525,7 @@
           "item": "jaus17a",
           "text": "Completed within regular schedule [Technical college or university studies]",
           "text_de": "Regulär abgeschlossen [Fachhochschulstudium / Universitätsstudium]",
+          "filter": "43:jaus17=2",
           "concept": "jaus17a",
           "scale": "cat",
           "answers": [
@@ -5563,6 +5598,7 @@
           "text_de": "Welchen der folgenden Ausbildungsabschlüsse streben Sie an?",
           "instruction": "Please mark all that apply!",
           "instruction_de": "Mehrere Nennnungen möglich!",
+          "filter": "44:jaus07=1:2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5761,6 +5797,7 @@
           "item": "jber02",
           "text": "What kind of occupation is that? Please state as exact as possible.",
           "text_de": "Welcher Beruf ist das?\nBitte nennen Sie uns möglichst die genaue Bezeichnung Ihres angestrebten Berufs.",
+          "filter": "48:jber01=1:2",
           "concept": "jber02",
           "scale": "chr",
           "sn": 0,
@@ -7341,6 +7378,7 @@
           "item": "1",
           "text": "What did you earn from your work last month? Please state both: gross income, which means income before deduction of taxes and social security and net income, which means income after deduction of taxes, social security, and unemployment and health insurance.",
           "text_de": "Wie hoch war Ihr Arbeitsverdienst im letzten Monat? Bitte geben Sie nach Möglichkeit beides an: den Bruttoverdienst, das heißt Lohn oder Gehalt vor Abzug der Steuern und Sozialversicherung, und den Nettoverdienst, das heißt den Betrag nach Abzug von Steuern und Beiträgen zur Renten-, Arbeitslosen- und Krankenversicherung.",
+          "filter": "jjob1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -7378,6 +7416,7 @@
           "item": "jjob2",
           "text": "Do you earn the money …",
           "text_de": "Verdienen Sie das Geld ...",
+          "filter": "jjob1=1",
           "goto": "3@61",
           "concept": "jjob2",
           "scale": "cat",
@@ -7418,6 +7457,7 @@
           "text_de": "Haben Sie früher schon einmal „gejobbt“ und damit etwas Geld verdient?",
           "instruction": "What we are referring to are relatively regular jobs during school vacation or the school year (babysitting, tutoring, delivering newspapers, etc.)",
           "instruction_de": "Gemeint sind einigermaßen regelmäßige Verdienstquellen während der Ferien oder während desganzen Jahres, z.B. häufiges Babysitten, Nachhilfeunterricht geben oder Austragen von Zeitungen",
+          "filter": "jjob2=1 : 2",
           "goto": "2@63",
           "concept": "jjob3",
           "scale": "cat",
@@ -7451,6 +7491,7 @@
           "item": "1",
           "text": "How old were you when starting doing side jobs or earning money?",
           "text_de": "In welchem Alter haben Sie erstmals mit dem regelmäßigen „Jobben“ bzw. Geldverdienen angefangen?",
+          "filter": "jjob3=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -7549,6 +7590,7 @@
           "item": "1",
           "text": "How much pocket money/allowance do you get per week / per month?",
           "text_de": "Wieviel Taschengeld oder Zuschuss erhalten Sie regelmäßig pro Woche oder pro Monat?",
+          "filter": "jtg1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -9154,6 +9196,7 @@
           "item": "jpol3",
           "text": "Which party do you lean towards?",
           "text_de": "Welcher Partei neigen Sie zu?",
+          "filter": "jpol2=1",
           "concept": "jpol3",
           "scale": "cat",
           "answers": [
@@ -9215,6 +9258,7 @@
           "item": "jpolso",
           "text": "[other]:",
           "text_de": "[Andere] und zwar:",
+          "filter": "jpol3=8",
           "concept": "jpolso",
           "scale": "chr",
           "sn": 1,
@@ -9235,6 +9279,7 @@
           "item": "jpol4",
           "text": "And to what extent do you lean towards this party?",
           "text_de": "Und wie stark neigen Sie dieser Partei zu?",
+          "filter": "74:jpol4=1:27",
           "concept": "jpol4",
           "scale": "cat",
           "answers": [
@@ -10183,6 +10228,7 @@
           "item": "1",
           "text": "[de] Wie sehr treffen die folgenden Aussagen auf Sie persönlich zu?",
           "text_de": "Wie sehr treffen die folgenden Aussagen auf Sie persönlich zu?",
+          "description": "neu aus FJ2018",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -10987,6 +11033,7 @@
           "text_de": "Rauchen Sie gegenwärtig, seien es Zigaretten, Pfeifen oder Zigarren?",
           "instruction": "We are not referring here to e-cigarettes!",
           "instruction_de": "Nicht gemeint sind hier E-Zigaretten!",
+          "description": "neu aus P2018",
           "goto": "2@84",
           "concept": "prauch1",
           "scale": "cat",
@@ -11022,6 +11069,8 @@
           "text_de": "Wie viele Zigaretten rauchen Sie pro Tag?",
           "instruction": "[de] Geben Sie bitte den täglichen Durchschnitt der letzten Woche an.",
           "instruction_de": "Geben Sie bitte den täglichen Durchschnitt der letzten Woche an.",
+          "description": "neu aus P2018",
+          "filter": "jrauch1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11050,6 +11099,7 @@
           "item": "jrauche",
           "text": "Do you smoke e-cigarettes?",
           "text_de": "Rauchen Sie E-Zigarette?",
+          "description": "neu aus P2018",
           "concept": "prauche",
           "scale": "cat",
           "answers": [
@@ -11383,6 +11433,7 @@
           "item": "1",
           "text": "When did you finish filling out the questionnaire?",
           "text_de": "Wann waren Sie mit dem Ausfüllen des Fragebogens fertig?",
+          "description": "text_de: \n„Wann waren Sie mit dem Ausfüllen des Fragebogens fertig?“ statt „Welches Datum haben wir heute und um wie viel Uhr wurde der Fragebogen beendet?“; \nItems: \n„Datum“ statt „“; \n„Uhrzeit“ statt „“",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11454,6 +11505,7 @@
           "item": "jform",
           "text": "How did you complete the interview?",
           "text_de": "Wie wurde die Befragung durchgeführt?",
+          "description": "Tel 0 / Proxy 5 / Schrift 8 / Capi 9 / Cawi 10",
           "concept": "jform",
           "scale": "cat",
           "answers": [
@@ -11535,6 +11587,7 @@
           "text_de": "Waren beim Ausfüllen des Fragebogens weitere Personen anwesend?",
           "instruction": "Respondent necessary the questionnaire him/herself without interviewer!",
           "instruction_de": "Geben Sie bitte alles Zutreffende an, gegebenenfalls ohne Interviewer!",
+          "description": "MFN=-4",
           "concept": "panw",
           "scale": "cat",
           "answers": [

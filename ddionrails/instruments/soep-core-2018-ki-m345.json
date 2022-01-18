@@ -193,6 +193,8 @@
           "text_de": "Dies sind laut Adressenprotokoll Kinder in Ihrem Haushalt die erst 2001 oder später geboren sind. \nBitte geben Sie an, ob diese Kinder noch oder nicht mehr im Haushalt leben.",
           "instruction": "[Overlay First name and date of birth]",
           "instruction_de": "[Einblendung Vorname und Geburtsdatum]",
+          "description": "Jahreszahl verbessert",
+          "filter": "Für Jahrgang 2018 bis 2001",
           "scale": "cat",
           "answers": [
             {
@@ -226,6 +228,7 @@
           "text_de": "Gibt es in Ihrem Haushalt weitere Kinder, die erst 2001 oder später geboren sind?",
           "instruction": "[Please do not enter the children you indicated in question 5!]",
           "instruction_de": "[Die Kinder im Haushalt, die Sie in Frage 5 bereits angegeben haben, bitte nicht mehr eingeben!]",
+          "description": "Jahreszahl verbessert",
           "scale": "cat",
           "answers": [
             {
@@ -262,6 +265,7 @@
           "item": "1",
           "text": "Please state the first name of your child",
           "text_de": "Bitte nennen Sie mir den Vornamen des Kindes.",
+          "filter": "6:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -290,6 +294,7 @@
           "item": "1",
           "text": "Please state the correct birth date of your child.",
           "text_de": "Bitte nennen Sie mir das genaue Geburtsdatum des Kindes.",
+          "filter": "6:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -336,6 +341,7 @@
           "item": "1",
           "text": "Please state sex of child",
           "text_de": "Bitte nennen Sie mir das Geschlecht des Kindes.",
+          "filter": "6:1=1",
           "concept": "sex",
           "scale": "cat",
           "answers": [
@@ -368,6 +374,7 @@
           "item": "1",
           "text": "Further child existing?",
           "text_de": "Weiteres Kind vorhanden?",
+          "description": "Jahreszahl verbessert",
           "scale": "cat",
           "answers": [
             {
@@ -439,6 +446,7 @@
           "item": "1",
           "text": "Which country were you born in?",
           "text_de": "In welchem Land ist dieses Kind geboren?",
+          "filter": "Für Jahrgang des Kindes = 2018, 2017, 2015, 2012, 2010, 2008",
           "concept": "gebd",
           "scale": "cat",
           "answers": [
@@ -485,6 +493,7 @@
           "item": "1",
           "text": "Are you the birth mother, the biological father or another person?",
           "text_de": "Sind Sie die leibliche Mutter, der leibliche Vater oder eine andere Person?",
+          "filter": "Für Jahrgang des Kindes = 2018, 2017, 2015",
           "concept": "leib",
           "scale": "cat",
           "answers": [
@@ -527,6 +536,7 @@
           "item": "1",
           "text": "With whom did this child come to Germany?",
           "text_de": "Mit wem ist dieses Kind nach Deutschland gekommen?",
+          "filter": "12:2=2",
           "concept": "landw",
           "scale": "cat",
           "answers": [
@@ -574,6 +584,7 @@
           "item": "1",
           "text": "When did this child leave his or her country of birth?",
           "text_de": "Wann hat dieses Kind sein Geburtsland verlassen?",
+          "filter": "(14:1=4)|(14:1=-1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -619,6 +630,7 @@
           "item": "1",
           "text": "When did you arrive in Germany?",
           "text_de": "Wann ist dieses Kind in Deutschland angekommen?",
+          "filter": "(14:1=4)|(14:1=-1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -664,6 +676,7 @@
           "item": "1",
           "text": "Would this child be extra-familially cared for before moving to Germany?",
           "text_de": "Wurde dieses Kind vor dem Zuzug nach Deutschland bereits regelmäßig außerfamiliär betreut?",
+          "filter": "An die Jahrgänge 2015, 2012, 2010  & 12:2=2",
           "concept": "vzabet",
           "scale": "cat",
           "answers": [
@@ -701,6 +714,7 @@
           "item": "1",
           "text": "Was the mother pregnant with this child before she came to Germany?",
           "text_de": "War die Mutter, bevor sie nach Deutschland kam, schon mit diesem Kind schwanger?",
+          "filter": "Nur für Jahrgang = 2018, 2017 & 13:1=1:2",
           "concept": "vzkschw",
           "scale": "cat",
           "answers": [
@@ -738,6 +752,7 @@
           "item": "1",
           "text": "Where was your baby delivered?",
           "text_de": "An welchem Ort fand die Entbindung statt?",
+          "filter": "Nur für Jahrgang = 2018, 2017, 2015  & 13:1=1:2",
           "concept": "ent",
           "scale": "cat",
           "answers": [
@@ -784,6 +799,7 @@
           "item": "1",
           "text": "Was the baby delivered by caesarean section?",
           "text_de": "War es eine Entbindung mit Kaiserschnitt?",
+          "filter": "Nur für Jahrgang = 2018, 2017, 2015 & 13:1=1:2",
           "concept": "ent1",
           "scale": "cat",
           "answers": [
@@ -821,6 +837,7 @@
           "item": "1",
           "text": "How many weeks pregnant were you when you gave birth to this child?",
           "text_de": "In der wie vielten Schwangerschaftswoche wurde dieses Kind geboren?",
+          "filter": "Nur für Jahrgang = 2018, 2017",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -857,6 +874,7 @@
           "item": "1",
           "text": "What did your baby weigh/measure at birth?",
           "text_de": "Wie schwer war dieses Kind zum Zeitpunkt der Geburt?",
+          "filter": "Nur für Jahrgang = 2018, 2017",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -893,6 +911,7 @@
           "item": "1",
           "text": "What did your baby weigh/measure at birth?",
           "text_de": "Wie groß war dieses Kind zum Zeitpunkt der Geburt?",
+          "filter": "Nur für Jahrgang = 2018, 2017",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -929,6 +948,7 @@
           "item": "1",
           "text": "How was your child's head circumference at birth?",
           "text_de": "Wie war der Kopfumfang Ihres Kindes zum Zeitpunkt der Geburt?",
+          "filter": "Nur für Jahrgang = 2018, 2017",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -965,6 +985,7 @@
           "item": "1",
           "text": "During the first three months after your baby’s birth, did your child experience health problems that necessitated a hospital stay?",
           "text_de": "Gab es bei Ihrem Kind in den ersten drei Monaten nach der Geburt ernste gesundheitliche Probleme, die einen Krankenhausaufenthalt notwendig machten?",
+          "filter": "Nur für Jahrgang = 2018, 2017",
           "concept": "ages1",
           "scale": "cat",
           "answers": [
@@ -1002,6 +1023,7 @@
           "item": "1",
           "text": "How many days was this child in the hospital within the first three months after birth?",
           "text_de": "Wie viele Tage war dieses Kind innerhalb der ersten drei Monate nach der Geburt im Krankenhaus?",
+          "filter": "25:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -1038,6 +1060,7 @@
           "item": "1",
           "text": "Did you breastfeed your baby? If so, how long?",
           "text_de": "Wurde das Kind gestillt, und wenn ja, wie lange?",
+          "filter": "Nur für Jahrgang = 2018, 2017 , 2015 & 13:1=1:2",
           "concept": "stil1",
           "scale": "cat",
           "answers": [
@@ -1085,6 +1108,8 @@
           "item": "1",
           "text": "How many month did this child breastfed?",
           "text_de": "Wie viele Monate wurde dieses Kind gestillt?",
+          "description": "Filterführung im Codeplan falsch",
+          "filter": "13:1=1:2 & 27:1=3",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -1121,6 +1146,7 @@
           "item": "1",
           "text": "Was your pregnancy more unplanned or more planned?",
           "text_de": "War diese Schwangerschaft eher ungeplant oder eher geplant?",
+          "filter": "Nur für Jahrgang = 2018, 2017  & 13:1=1:2",
           "concept": "aplan",
           "scale": "cat",
           "answers": [
@@ -1163,6 +1189,7 @@
           "item": "1",
           "text": "Physical State: In the last third of your pregnancy",
           "text_de": "Wie war Ihr körperliches Befinden im letzten Drittel der Schwangerschaft?",
+          "filter": "Nur für Jahrgang = 2018, 2017 & 13:1=1",
           "concept": "abef1",
           "scale": "cat",
           "answers": [
@@ -1210,6 +1237,7 @@
           "item": "1",
           "text": "Physical State:  In the first three months after childbirth",
           "text_de": "Wie war Ihr körperliches Befinden in den ersten drei Monaten nach der Geburt?",
+          "filter": "Nur für Jahrgang = 2018, 2017 & 13:1=1",
           "concept": "abef2",
           "scale": "cat",
           "answers": [
@@ -1257,6 +1285,7 @@
           "item": "1",
           "text": "[Mental state]: In the last third of your pregnancy",
           "text_de": "Wie war Ihr seelisches / psychisches Befinden im letzten Drittel der Schwangerschaft?",
+          "filter": "Nur für Jahrgang = 2018, 2017 & 13:1=1",
           "concept": "abef3",
           "scale": "cat",
           "answers": [
@@ -1304,6 +1333,7 @@
           "item": "1",
           "text": "Mental State: In the first three months after childbirth",
           "text_de": "Wie war Ihr seelisches / psychisches Befinden in den ersten drei Monaten nach der Geburt?",
+          "filter": "Nur für Jahrgang = 2018, 2017 & 13:1=1",
           "concept": "abef4",
           "scale": "cat",
           "answers": [
@@ -1370,6 +1400,7 @@
           "item": "1",
           "text": "Life changes after the birth of a child. You experience new things and start to have new expectations for the future. To what extent do you agree with the following statements?",
           "text_de": "Bedingt durch die Geburt eines Kindes verändern sich ja die Lebensumstände. Man macht neue Erfahrungen und entwickelt neue Erwartungen an die Zukunft. \nInwieweit stimmen Sie den folgenden Aussagen zu?",
+          "filter": "Nur für Jahrgang = 2018, 2017",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -1389,6 +1420,7 @@
           "item": "1",
           "text": "My life has changed significantly",
           "text_de": "Meine Lebensumstände haben sich sehr stark verändert.",
+          "filter": " Nur für Jahrgang = 2018, 2017",
           "concept": "aver1",
           "scale": "cat",
           "answers": [
@@ -1436,6 +1468,7 @@
           "item": "1",
           "text": "It gives me pleasure and happiness to raise my child",
           "text_de": "Das Aufziehen dieses Kindes bereitet mir Glück und Freude.",
+          "filter": "Nur für Jahrgang = 2018, 2017",
           "concept": "aver2",
           "scale": "cat",
           "answers": [
@@ -1483,6 +1516,7 @@
           "item": "1",
           "text": "I often feel like I’m running out of energy",
           "text_de": "Ich bin oft am Ende meiner Kräfte.",
+          "filter": " Nur für Jahrgang = 2018, 2017",
           "concept": "aver3",
           "scale": "cat",
           "answers": [
@@ -1530,6 +1564,7 @@
           "item": "1",
           "text": "I am satisfied with my role as a mother",
           "text_de": "Meine Rolle als Mutter ist für mich sehr befriedigend.",
+          "filter": " Nur für Jahrgang = 2018, 2017 & 13:1=1",
           "concept": "aver4",
           "scale": "cat",
           "answers": [
@@ -1577,6 +1612,7 @@
           "item": "1",
           "text": "I often do not feel up to the new tasks and demands of being a mother",
           "text_de": "Ich fühle mich den neuen Aufgaben und Anforderungen oft nicht gewachsen.",
+          "filter": " Nur für Jahrgang = 2018, 2017",
           "concept": "aver5",
           "scale": "cat",
           "answers": [
@@ -1624,6 +1660,7 @@
           "item": "1",
           "text": "I am meeting new people and making new contacts through my child",
           "text_de": "Ich lerne über dieses Kind auch andere Menschen kennen und knüpfe neue Kontakte.",
+          "filter": "Nur für Jahrgang = 2018, 2017",
           "concept": "aver6",
           "scale": "cat",
           "answers": [
@@ -1671,6 +1708,7 @@
           "item": "1",
           "text": "I am suffering from being restricted to my role as a mother",
           "text_de": "Ich leide darunter, auf meine Rolle als Mutter eingeschränkt zu sein.",
+          "filter": " Nur für Jahrgang = 2018, 2017 & 13:1=1",
           "concept": "aver7",
           "scale": "cat",
           "answers": [
@@ -1718,6 +1756,7 @@
           "item": "1",
           "text": "It’s important to me to show my child plenty of affection",
           "text_de": "Diesem Kind viel Zärtlichkeit zu geben, ist mir sehr wichtig.",
+          "filter": "Nur für Jahrgang = 2018, 2017",
           "concept": "aver8",
           "scale": "cat",
           "answers": [
@@ -1765,6 +1804,7 @@
           "item": "1",
           "text": "I'm worried about the health of my child",
           "text_de": "Die Gesundheit dieses Kindes macht mir Sorgen.",
+          "filter": "Nur für Jahrgang = 2018, 2017",
           "concept": "aver9",
           "scale": "cat",
           "answers": [
@@ -1812,6 +1852,7 @@
           "item": "1",
           "text": "Does the father live in the household?",
           "text_de": "Lebt der Vater des Kindes hier im Haushalt?",
+          "filter": " Nur für Jahrgang = 2018, 2017",
           "concept": "avat",
           "scale": "cat",
           "answers": [
@@ -1849,6 +1890,7 @@
           "item": "1",
           "text": "How much do you feel your partner helps you in looking after the child?",
           "text_de": "Wie stark fühlen Sie sich von Ihrem Partner bei der Betreuung des Kindes unterstützt?",
+          "filter": " Nur für Jahrgang = 2018, 2017",
           "concept": "auntp",
           "scale": "cat",
           "answers": [
@@ -1920,6 +1962,8 @@
           "item": "1",
           "text": "Does this child currently go to school?",
           "text_de": "Besucht dieses Kind derzeit eine Schule?",
+          "description": "Anpassungen: Bitte anderen Variablennamen vergeben, hschno in M34!= hschno A-L3: Vorschlag hschnor (r=refugees); Filter verbessert",
+          "filter": "Nur für Jahrgang 2012 bis 2001",
           "concept": "shno",
           "scale": "cat",
           "answers": [
@@ -1967,6 +2011,8 @@
           "item": "1",
           "text": "What school does your child currently attend?",
           "text_de": "Welche Schule besucht das Kind derzeit?",
+          "description": "angepasst an Hauptsoep HH 2018",
+          "filter": "46:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2035,6 +2081,8 @@
           "item": "1",
           "text": "Is it a school with a special teaching concept such as a ...",
           "text_de": "Ist das eine Schule mit speziellem pädagogischem Konzept wieder z.B. …",
+          "description": "angepasst an Hauptsoep HH 2018",
+          "filter": "46:1=1",
           "concept": "hschspa",
           "scale": "cat",
           "answers": [
@@ -2072,6 +2120,7 @@
           "item": "1",
           "text": "When did this child first go to school?",
           "text_de": "Wann ist dieses Kind das erste Mal zur Schule gegangen?",
+          "filter": "Nur für Jahrgang = 2012, 2010, 2008 & 46:1=1,2,4,-1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2117,6 +2166,8 @@
           "item": "1",
           "text": "In which country did this child go to school for the first time?",
           "text_de": "In welchem Land ist dieses Kind zum ersten Mal in die Schule gegangen?",
+          "description": "Item 4 wird nur eigeblendet, wenn 46:1=2,4,-1",
+          "filter": "Nur für Jahrgang = 2010, 2008 & 46:1=1,2,4,-1",
           "concept": "schland",
           "scale": "cat",
           "answers": [
@@ -2175,6 +2226,7 @@
           "text_de": "Wie lange ist es dort zur Schule gegangen?",
           "instruction": "Please state how long, either in years or months!",
           "instruction_de": "Bitte geben Sie die Dauer entweder in Jahren oder Monaten an!",
+          "filter": "Nur für Jahrgang = 2010, 2008  & 50:1=2:3",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2228,6 +2280,8 @@
           "item": "1",
           "text": "Did this child go to school in another country (except Germany)?",
           "text_de": "Ist dieses Kind in einem weiteren Land (außer Deutschland) zur Schule gegangen?",
+          "description": "Maximal 10 Schleifen",
+          "filter": "Nur für Jahrgang = 2010, 2008  & 50:1=1\n",
           "goto": "Wenn Antwort 1 ---> Schleife über 53 --> 54 --> 52\nWenn Antwort 2, -1 --> weiter mit 55",
           "concept": "schaland01",
           "scale": "cat",
@@ -2266,6 +2320,7 @@
           "item": "1",
           "text": "In which country did this child (except Germany) go to school?",
           "text_de": "In welchem Land ist dieses Kind (außer Deutschland) zur Schule gegangen?",
+          "filter": "Nur für Jahrgang = 2010, 2008 & 52:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2304,6 +2359,7 @@
           "text_de": "Wie lange ist es dort zur Schule gegangen?",
           "instruction": "Please state how long, either in years or months!",
           "instruction_de": "Bitte geben Sie die Dauer entweder in Jahren oder Monaten an!",
+          "filter": "Nur für Jahrgang = 2010, 2008 & 52:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2359,6 +2415,8 @@
           "text_de": "Seit wann geht dieses Kind in Deutschland zur Schule?",
           "instruction": "Please state year and month if possible!",
           "instruction_de": "Bitte wenn möglich Jahr und Monat angeben!",
+          "description": "Item 3 nur einblenden, wenn 46= 2,4, -1",
+          "filter": "Nur für Jahrgang = 2010, 2008 & 50:1=2:3,-1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2376,6 +2434,7 @@
           "item": "3",
           "text": "Year:",
           "text_de": "Jahr:",
+          "description": "Achtung, Frage dafür in Programmierung gedoppelt als Q049NEU",
           "concept": "schdj",
           "scale": "int",
           "sn": 2,
@@ -2413,6 +2472,7 @@
           "item": "1",
           "text": "Does this child currently attend a special class for refugee children (for example, welcome class, preparatory class or transition class)?",
           "text_de": "Hat dieses Kind zunächst eine spezielle Klasse für geflüchtete Kinder (zum Beispiel Willkommensklasse, Vorbereitungsklasse oder Übergangsklasse) besucht?",
+          "filter": "Nur für Jahrgang < 2012 & 46:1=1",
           "concept": "schfsp",
           "scale": "cat",
           "answers": [
@@ -2457,6 +2517,7 @@
           "text_de": "Wie lange hat dieses Kind ausschließlich eine spezielle Klasse für Geflüchtete besucht?",
           "instruction": "Please state how long, either in years or months!",
           "instruction_de": "Bitte geben Sie die Dauer entweder in Jahren oder Monaten an!",
+          "filter": "56:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2521,6 +2582,7 @@
           "text_de": "Wie lange hat dieses Kind auch eine spezielle Klasse für Geflüchtete besucht?",
           "instruction": "Bitte geben Sie die Dauer entweder in Jahren oder Monaten an!",
           "instruction_de": "Bitte geben Sie die Dauer entweder in Jahren oder Monaten an!",
+          "filter": "56:1=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2583,6 +2645,7 @@
           "item": "1",
           "text": "Which class did this child visit first in Germany?",
           "text_de": "Welche Klassenstufe hat dieses Kind zuerst in Deutschland besucht?",
+          "filter": "Nur für Jahrgang = 2010, 2008 & 55:1=1:2,-1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2619,6 +2682,7 @@
           "item": "1",
           "text": "Which class level is this child attending / did this child attend in the 2017/2018 school year?",
           "text_de": "Welche Klassenstufe besucht bzw. besuchte dieses Kind im Schuljahr 2017/2018?",
+          "filter": "Nur für Jahrgang = 2010, 2008 & [(56:1=2:3,-1) | (56:1=1 & 57:1=1:2,-1)]",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2655,6 +2719,7 @@
           "item": "1",
           "text": "Does this child receive special language assistance at school?",
           "text_de": "Bekommt dieses Kind spezielle Sprachförderung in der Schule?",
+          "filter": "46:1=1",
           "concept": "schspsp",
           "scale": "cat",
           "answers": [
@@ -2692,6 +2757,7 @@
           "item": "1",
           "text": "Does this child usually attend school all day?",
           "text_de": "Besucht dieses Kind die Schule meistens ganztags?",
+          "filter": "46:1=1",
           "concept": "schgtag",
           "scale": "cat",
           "answers": [
@@ -2729,6 +2795,7 @@
           "item": "1",
           "text": "How many hours per week does the school take care of?",
           "text_de": "Wie viele Stunden pro Woche übernimmt die Schule die Betreuung?",
+          "filter": "Nur für Jahrgang = 2012, 2010, 2008 & 46:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2765,6 +2832,7 @@
           "item": "1",
           "text": "Get the child, if you want, a meal at lunchtime?",
           "text_de": "Erhält dieses Kind, wenn Sie das wollen, mittags dort ein Essen?",
+          "filter": "46:1=1",
           "concept": "schmess",
           "scale": "cat",
           "answers": [
@@ -2802,6 +2870,7 @@
           "item": "1",
           "text": "Who is the sponsor of this institution? Is it ...",
           "text_de": "Wer ist der Träger dieser Schule? Ist es …",
+          "filter": "46:1=1",
           "concept": "heinsa",
           "scale": "cat",
           "answers": [
@@ -2849,6 +2918,7 @@
           "item": "1",
           "text": "How much does the school\ncost you?",
           "text_de": "Welche Kosten entstehen Ihnen für die Schule?",
+          "filter": "46:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2895,6 +2965,7 @@
           "item": "1",
           "text": "Does this child attend a day care group or similar care facility at school?",
           "text_de": "Besucht dieses Kind einen Schulhort oder eine vergleichbare Betreuung in der Schule?",
+          "filter": "46:1=1",
           "concept": "horta",
           "scale": "cat",
           "answers": [
@@ -2932,6 +3003,7 @@
           "item": "1",
           "text": "… how many hours a week do you spend looking after the child?",
           "text_de": "Wie viele Stunden pro Woche übernimmt der Hort die Betreuung?",
+          "filter": "67:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -2970,6 +3042,7 @@
           "text_de": "Nimmt dieses Kind derzeit an einer oder mehreren der folgenden Aktivitäten außerhalb der Schule teil?",
           "instruction": "Please mark all responses that apply!",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "filter": "Nur für 2011-2001 | (2012 & 46:1=1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3043,6 +3116,7 @@
           "item": "1",
           "text": "How many hours per week does this child receive total language support?",
           "text_de": "Wie viele Stunden pro Woche erhält dieses Kind insgesamt Sprachförderung?",
+          "filter": "61:1=1 | 69:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3079,6 +3153,7 @@
           "item": "1",
           "text": "How often does your child participate in the following?",
           "text_de": "Wie oft nimmt Ihr Kind an bestimmten Kursen teil?",
+          "filter": "Nur an 2012, 2010 und 2008 & 46:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3098,6 +3173,7 @@
           "item": "1",
           "text": "What kind of classes or training does your child attend, and how often is it going?",
           "text_de": "Wie oft nimmt Ihr Kind an folgenden Kursen teil?",
+          "description": "Externes Modul, Frage soll an Eltern von Kindern der Altersklassen E und D gehen",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3397,6 +3473,7 @@
           "item": "1",
           "text": "When is this child expected to be enrolled in school?",
           "text_de": "Wann wird dieses Kind voraussichtlich eingeschult?",
+          "filter": "Nur für Jahrgang = 2012 & 46:1=3",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3459,6 +3536,7 @@
           "item": "1",
           "text": "Is this child currently visiting a nursery, a kindergarten, a day care center or being looked after by a childminder outside the home?",
           "text_de": "Besucht dieses Kind derzeit eine Kinderkrippe, einen Kindergarten, eine Kindertageseinrichtung oder wird bei einer Tagesmutter außer Haus betreut?",
+          "filter": "2018-2013 | (2012 & 46:1=3)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3513,6 +3591,7 @@
           "item": "1",
           "text": "How many hours a day does this facility or childminder take care of?",
           "text_de": "Wie viele Stunden pro Tag übernimmt diese Einrichtung oder die Tagesmutter die Betreuung?",
+          "filter": "78:1=1:2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3549,6 +3628,7 @@
           "item": "1",
           "text": "How many days per week does this child visit this institution or childminder?",
           "text_de": "Wie viele Tage pro Woche besucht dieses Kind diese Einrichtung oder die Tagesmutter?",
+          "filter": "78:1=1:2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3585,6 +3665,7 @@
           "item": "1",
           "text": "How many of the other children in the Kita group are children of refugees?",
           "text_de": "Wie viele der anderen Kinder in der Kita-Gruppe sind Kinder von Geflüchteten?",
+          "filter": "78:1=1",
           "concept": "kbetfanz",
           "scale": "cat",
           "answers": [
@@ -3642,6 +3723,7 @@
           "item": "1",
           "text": "Does this child receive at this facility or at the childminder if they wish a meal at lunchtime?",
           "text_de": "Erhält dieses Kind in dieser Einrichtung oder bei der Tagesmutter, wenn Sie das wollen, mittags dort ein Essen?",
+          "filter": "78:1=1:2",
           "concept": "kbetess",
           "scale": "cat",
           "answers": [
@@ -3679,6 +3761,7 @@
           "item": "1",
           "text": "Which costs do you incur for the care provided by this institution or the childminder for this child?",
           "text_de": "Welche Kosten entstehen Ihnen für die Betreuung durch diese Einrichtung oder die Tagesmutter für dieses Kind?",
+          "filter": "78:1=1:2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3724,6 +3807,7 @@
           "item": "1",
           "text": "Since when do you visit this institution or the childminder?",
           "text_de": "Seit welchem Jahr besucht dieses Kind diese Einrichtung oder die Tagesmutter?",
+          "filter": "78:1=1:2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3762,6 +3846,7 @@
           "text_de": "Nimmt dieses Kind derzeit an einer oder mehreren der folgenden Aktivitäten teil?",
           "instruction": "Please mark all responses that apply!",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "filter": "2018-2013 | (2012 & 46:1=3)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3846,6 +3931,7 @@
           "text_de": "Macht dieses Kind derzeit eines oder mehrere der folgenden Dinge?",
           "instruction": "Please mark all responses that apply!",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "filter": "46:1=2,4,-1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -3965,6 +4051,7 @@
           "item": "1",
           "text": "Are you the child's main caregiver?",
           "text_de": "Sind Sie selbst die Hauptbetreuungsperson dieses Kindes?",
+          "filter": "Nur für Jahrgang = 2018, 2017, 2015, 2012, 2010, 2008",
           "concept": "hbetp",
           "scale": "cat",
           "answers": [
@@ -4009,6 +4096,8 @@
           "text_de": "Gibt es außer Ihnen oder neben der bereits erfragten Einrichtung (Kita, Tagesmutter, Schule) noch andere Personen oder Einrichtungen, die die Betreuung dieses Kindes zeitweise übernehmen?",
           "instruction": "Please mark all responses that apply!",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "description": "Filter verändert",
+          "filter": "Jahrgänge 2001-2018",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4126,6 +4215,7 @@
           "item": "1",
           "text": "How much do you pay\nfor the school or facility?",
           "text_de": "Welche Kosten entstehen Ihnen für die Betreuung?",
+          "filter": "88:1=2 | 88:1=6 | 88:1=7 | 88:1=8 | 88:=9",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4171,6 +4261,8 @@
           "item": "1",
           "text": "In which language does the care take place by the father / mother?",
           "text_de": "In welcher Sprache findet die Betreuung durch den Vater/die Mutter statt?",
+          "description": "Filter geändert",
+          "filter": "Diese Frage für alle in Frage 88 genannten Items für die Jahrgänge 2018/2017 2015 2012 einzeln erfragen (-> Schleife).\nNur wenn 88:1=1",
           "concept": "betasp1",
           "scale": "cat",
           "answers": [
@@ -4213,6 +4305,8 @@
           "item": "1",
           "text": "In which language does the care take place by a paid caregiver?",
           "text_de": "In welcher Sprache findet die Betreuung durch eine bezahlte Betreuungsperson statt?",
+          "description": "Filter geändert",
+          "filter": "Diese Frage für alle in Frage 88  genannten Items für  Jahrgänge 2018/2017 2015 2012 einzeln erfragen (-> Schleife).\n88:1=2",
           "concept": "betasp2",
           "scale": "cat",
           "answers": [
@@ -4255,6 +4349,8 @@
           "item": "1",
           "text": "In which language does the care take place by the grandparents?",
           "text_de": "In welcher Sprache findet die Betreuung durch die Großeltern statt?",
+          "description": "Filter geändert",
+          "filter": "Diese Frage für alle in Frage 88 genannten Items für  Jahrgänge 2018/2017 2015 2012 einzeln erfragen (-> Schleife).\n88:1=3",
           "concept": "betasp3",
           "scale": "cat",
           "answers": [
@@ -4297,6 +4393,8 @@
           "item": "1",
           "text": "In which language does the care take place by older siblings?",
           "text_de": "In welcher Sprache findet die Betreuung durch ältere Geschwister statt?",
+          "description": "Filter geändert",
+          "filter": "Diese Frage für alle in Frage 88 genannten Items für  Jahrgänge 2018/2017 2015 2012 einzeln erfragen (-> Schleife).\n88:1=4",
           "concept": "betasp4",
           "scale": "cat",
           "answers": [
@@ -4339,6 +4437,8 @@
           "item": "1",
           "text": "In which language does the care take place by other relatives?",
           "text_de": "In welcher Sprache findet die Betreuung durch andere Verwandte statt?",
+          "description": "Filter geändert",
+          "filter": "Diese Frage für alle in Frage 88 genannten Items für  Jahrgänge 2018/2017 2015 2012 einzeln erfragen (-> Schleife).\n88:1=5",
           "concept": "betasp5",
           "scale": "cat",
           "answers": [
@@ -4381,6 +4481,8 @@
           "item": "1",
           "text": "In which language does the care take place by friends, acquaintances or neighbors?",
           "text_de": "In welcher Sprache findet die Betreuung durch Freunde, Bekannte oder Nachbarn statt?",
+          "description": "Filter geändert",
+          "filter": "Diese Frage für alle in Frage 88 genannten Items für  Jahrgänge 2018/2017 2015 2012 einzeln erfragen (-> Schleife).\n88:1=6",
           "concept": "betasp6",
           "scale": "cat",
           "answers": [
@@ -4423,6 +4525,8 @@
           "item": "1",
           "text": "In which language does the mentoring take place by volunteers?",
           "text_de": "In welcher Sprache findet die Betreuung durch ehrenamtlicher Betreuer statt?",
+          "description": "Filter geändert",
+          "filter": "Diese Frage für alle in Frage 88 genannten Items für  Jahrgänge 2018/2017 2015 2012 einzeln erfragen (-> Schleife).\n88:1=7",
           "concept": "betasp7",
           "scale": "cat",
           "answers": [
@@ -4465,6 +4569,8 @@
           "item": "1",
           "text": "In which language does the care take place through social institutions, centers or leisure organizations?",
           "text_de": "In welcher Sprache findet die Betreuung durch soziale Einrichtungen, Zentren oder Freizeitorganisationen statt?",
+          "description": "Filter geändert",
+          "filter": "Diese Frage für alle in Frage 88 genannten Items für  Jahrgänge 2018/2017 2015 2012 einzeln erfragen (-> Schleife).\n88:1=8",
           "concept": "betasp8",
           "scale": "cat",
           "answers": [
@@ -4507,6 +4613,8 @@
           "item": "1",
           "text": "In which language does the care take place by others?",
           "text_de": "In welcher Sprache findet die Betreuung durch Andere statt?",
+          "description": "Filter geändert",
+          "filter": "Diese Frage für alle in Frage 88 genannten Items für  Jahrgänge 2018/2017 2015 2012 einzeln erfragen (-> Schleife).\n88:1=9",
           "concept": "betasp9",
           "scale": "cat",
           "answers": [
@@ -4549,6 +4657,7 @@
           "item": "1",
           "text": "How many hours a week does the father / mother take care of it?",
           "text_de": "Wie viele Stunden pro Woche übernimmt der Vater/die Mutter die Betreuung?",
+          "filter": "88:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4585,6 +4694,7 @@
           "item": "1",
           "text": "How many hours a week does a paid caregiver take care of it?",
           "text_de": "Wie viele Stunden pro Woche übernimmt eine bezahlte Betreuungsperson die Betreuung?",
+          "filter": "88:1=2",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4621,6 +4731,7 @@
           "item": "1",
           "text": "… how many hours a week do you spend looking after the child?",
           "text_de": "Wie viele Stunden pro Woche übernehmen die Großeltern die Betreuung?",
+          "filter": "88:1=3",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4657,6 +4768,7 @@
           "item": "1",
           "text": "How many hours a week do older siblings take care?",
           "text_de": "Wie viele Stunden pro Woche übernehmen ältere Geschwister die Betreuung?",
+          "filter": "88:1=4",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4693,6 +4805,7 @@
           "item": "1",
           "text": "How many hours a week do other relatives take care?",
           "text_de": "Wie viele Stunden pro Woche übernehmen andere Verwandte die Betreuung?",
+          "filter": "88:1=5 & 2018, 2017, 2015, 2012, 2010, 2008",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4729,6 +4842,7 @@
           "item": "1",
           "text": "How many hours per week do friends, acquaintances or neighbors take care of?",
           "text_de": "Wie viele Stunden pro Woche übernehmen Freunde, Bekannte oder Nachbarn die Betreuung?",
+          "filter": "88:1=6 & 2018, 2017, 2015, 2012, 2010, 2008",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4765,6 +4879,7 @@
           "item": "1",
           "text": "How many hours a week do volunteers take care of it?",
           "text_de": "Wie viele Stunden pro Woche übernehmen ehrenamtliche Personen die Betreuung?",
+          "filter": "88:1=7 & 2018, 2017, 2015, 2012, 2010, 2008",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4801,6 +4916,7 @@
           "item": "1",
           "text": "How many hours per week do social services, centers and leisure organizations take care of?",
           "text_de": "Wie viele Stunden pro Woche übernehmen Soziale Einrichtungen, Zentren, Freizeitorganisationen die Betreuung?",
+          "filter": "88:1=8",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4837,6 +4953,7 @@
           "item": "1",
           "text": "How many hours a week do others take care of it?",
           "text_de": "Wie viele Stunden pro Woche übernehmen Andere die Betreuung?",
+          "filter": "88:1=9 & 2018, 2017, 2015, 2012, 2010, 2008",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -4873,6 +4990,7 @@
           "item": "1",
           "text": "Do you know that there are external child care facilities in Germany (for example, crèche, kindergarten, kindergarten, childminder, etc.)?",
           "text_de": "Ist Ihnen bekannt, dass es in Deutschland externe Kinderbetreuungsmöglichkeiten (z.B. Krippe, Kindergarten, Kita, Tagesmutter, etc.) gibt?",
+          "filter": "Nur wenn Jahrgang = 2017, 2015, 2012 & 78:1=3\nFrageblock 108 – 109 nur einmalig pro HH stellen, wenn im HH ein Kind von unter 7 Jahren",
           "concept": "betber",
           "scale": "cat",
           "answers": [
@@ -4910,6 +5028,7 @@
           "item": "1",
           "text": "Do you know that every child in Germany over the age of one even has the right to such care in a crèche, kindergarten, kindergarten, childminder, etc.?",
           "text_de": "Wissen Sie, dass jedes Kind in Deutschland ab einem Jahr sogar einen Anspruch auf eine solche Betreuung in einer Krippe, einem Kindergarten, Kita, Tagesmutter, etc. hat?",
+          "filter": "Nur wenn Jahrgang = 2017, 2015, 2012 + (78 :1=1; 78:1=2; 78:1=-1 | 108:1=1; 108:1=-1)\nFrageblock 108 - 109 nur einmalig pro HH stellen, wenn im HH ein Kind von unter 7 Jahren",
           "concept": "betan",
           "scale": "cat",
           "answers": [
@@ -4947,6 +5066,7 @@
           "item": "1",
           "text": "Would it be possible for you to make such an offer?",
           "text_de": "Käme es für Sie in Frage ein solches Angebot in Anspruch zu nehmen?",
+          "filter": "Nur wenn Jahrgang = 2017, 2015, 2012 & 78:1=3\nFrage nur einmalig pro HH stellen, wenn im HH ein Kind unter 7 Jahren",
           "concept": "betana",
           "scale": "cat",
           "answers": [
@@ -5003,6 +5123,7 @@
           "item": "1",
           "text": "There are various reasons why parents have their children cared for only at home and not in a care facility. To what extent do the following statements apply to this child?",
           "text_de": "Es gibt verschiedene Gründe, warum Eltern ihre Kinder ausschließlich zu Hause und nicht in einer Einrichtung betreuen lassen. Wie sehr treffen bei Ihnen die folgenden Aussagen für dieses Kind zu?",
+          "filter": "Nur wenn [(2017 & dieses Kind ist bereits 1 Jahr alt) | 2015 | 2012] & 78:1=3 & 108:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5022,6 +5143,7 @@
           "item": "1",
           "text": "This child is not in a care facility as I did not get a place.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil ich keinen Platz bekommen habe.",
+          "filter": "Nur wenn [(2017 & dieses Kind ist bereits 1 Jahr alt) | 2015 | 2012] & 78:1=3 & 108:1=1",
           "concept": "betnog1",
           "scale": "cat",
           "answers": [
@@ -5059,6 +5181,7 @@
           "item": "1",
           "text": "This child is not in a care facility as I still consider it too young.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil ich es noch für zu jung halte.",
+          "filter": "Nur wenn [(2017 & dieses Kind ist bereits 1 Jahr alt) | 2015 | 2012] & 78:1=3 & 108:1=1",
           "concept": "betnog2",
           "scale": "cat",
           "answers": [
@@ -5096,6 +5219,7 @@
           "item": "1",
           "text": "This child is not in a care facility as I want to bring it up myself.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil ich es selbst erziehen möchte.",
+          "filter": "Nur wenn [(2017 & dieses Kind ist bereits 1 Jahr alt) | 2015 | 2012] & 78:1=3 & 108:1=1",
           "concept": "betnog3",
           "scale": "cat",
           "answers": [
@@ -5133,6 +5257,7 @@
           "item": "1",
           "text": "This child is not in a care facility as I want to bring it up in my first language.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil ich es in meiner Herkunftssprache erziehen möchte.",
+          "filter": "Nur wenn [(2017 & dieses Kind ist bereits 1 Jahr alt) | 2015 | 2012] & 78:1=3 & 108:1=1",
           "concept": "betnog4",
           "scale": "cat",
           "answers": [
@@ -5170,6 +5295,7 @@
           "item": "1",
           "text": "This child is not in a care facility as it is not taught the religious or cultural values that are important to me.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil es dort nicht die religiösen oder kulturellen Werte vermittelt bekommt, die mir wichtig sind.",
+          "filter": "Nur wenn [(2017 & dieses Kind ist bereits 1 Jahr alt) | 2015 | 2012] & 78:1=3 & 108:1=1",
           "concept": "betnog5",
           "scale": "cat",
           "answers": [
@@ -5207,6 +5333,7 @@
           "item": "1",
           "text": "This child is not in a care facility as I am afraid it will be shunned because of its origin.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil ich befürchte, dass es aufgrund seiner Herkunft ausgegrenzt wird.",
+          "filter": "Nur wenn [(2017 & dieses Kind ist bereits 1 Jahr alt) | 2015 | 2012] & 78:1=3 & 108:1=1",
           "concept": "betnog6",
           "scale": "cat",
           "answers": [
@@ -5244,6 +5371,7 @@
           "item": "1",
           "text": "This child is not in a care facility as I am at home anyway and can look after it myself.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil ich sowieso zu Hause bin und die Betreuung übernehmen kann.",
+          "filter": "Nur wenn [(2017 & dieses Kind ist bereits 1 Jahr alt) | 2015 | 2012] & 78:1=3 & 108:1=1",
           "concept": "betnog7",
           "scale": "cat",
           "answers": [
@@ -5281,6 +5409,7 @@
           "item": "1",
           "text": "This child is not in a care facility as the costs are too high.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil die Kosten dafür zu hoch sind.",
+          "filter": "Nur wenn [(2017 & dieses Kind ist bereits 1 Jahr alt) | 2015 | 2012] & 78:1=3 & 108:1=1",
           "concept": "betnog8",
           "scale": "cat",
           "answers": [
@@ -5318,6 +5447,7 @@
           "item": "1",
           "text": "This child is not in a care facility as the nearest one is too far away.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil die Entfernung zur nächsten Einrichtung zu groß ist.",
+          "filter": "Nur wenn [(2017 & dieses Kind ist bereits 1 Jahr alt) | 2015 | 2012] & 78:1=3 & 108:1=1",
           "concept": "betnog9",
           "scale": "cat",
           "answers": [
@@ -5355,6 +5485,7 @@
           "item": "1",
           "text": "This child is not in a care facility as the opening times do not suit me.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil die Öffnungszeiten für mich nicht passen.",
+          "filter": "Nur wenn [(2017 & dieses Kind ist bereits 1 Jahr alt) | 2015 | 2012] & 78:1=3 & 108:1=1",
           "concept": "betnog10",
           "scale": "cat",
           "answers": [
@@ -5392,6 +5523,7 @@
           "item": "1",
           "text": "This child is not in a care facility as it takes up too much time to take it there and collect it again every day.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil es zu aufwendig ist, es jeden Tag dort hinzubringen und wieder abzuholen.",
+          "filter": "Nur wenn [(2017 & dieses Kind ist bereits 1 Jahr alt) | 2015 | 2012] & 78:1=3 & 108:1=1",
           "concept": "betnog11",
           "scale": "cat",
           "answers": [
@@ -5429,6 +5561,7 @@
           "item": "1",
           "text": "This child is not in a care facility as it has a chronic illness or a disability.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil es eine chronische Krankheit oder eine Behinderung hat.",
+          "filter": "Nur wenn [(2017 & dieses Kind ist bereits 1 Jahr alt) | 2015 | 2012] & 78:1=3 & 108:1=1",
           "concept": "betnog12",
           "scale": "cat",
           "answers": [
@@ -5466,6 +5599,7 @@
           "item": "1",
           "text": "This child is not in a care facility as it should spend as much time as possible with its siblings.",
           "text_de": "Dieses Kind ist in keiner Einrichtung, weil es möglichst viel Zeit mit den Geschwistern verbringen soll.",
+          "filter": "Nur wenn [(2017 & dieses Kind ist bereits 1 Jahr alt) | 2015 | 2012] & 78:1=3 & 108:1=1",
           "concept": "betnog13",
           "scale": "cat",
           "answers": [
@@ -5522,6 +5656,7 @@
           "item": "1",
           "text": "How many students are in your child's regular school class?",
           "text_de": "Wie viele Schüler bzw. Schülerinnen sind insgesamt in der regulären Schulklasse Ihres Kindes?",
+          "filter": "Nur für Jahrgang = 2010, 2008  & 56:1=2:3, -1 | (56:1= 1 & 57:1=1:2, -1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5558,6 +5693,7 @@
           "item": "1",
           "text": "And how many of these students are not from Germany or have parents who aren't from Germany?",
           "text_de": "Und wie viele von diesen Schülern stammen nicht aus Deutschland oder haben Eltern, die nicht aus Deutschland stammen? ",
+          "filter": "Nur für Jahrgang = 2010, 2008 ; 56:1=2:3, -1 | (56:1=1 & 57:1=1:2, -1)",
           "concept": "klaus",
           "scale": "cat",
           "answers": [
@@ -5615,6 +5751,7 @@
           "item": "1",
           "text": "Has this child already received a certificate in Germany?",
           "text_de": "Hat dieses Kind in Deutschland bereits ein Zeugnis erhalten?",
+          "filter": "Nur für Jahrgang 2008",
           "concept": "dzeug",
           "scale": "cat",
           "answers": [
@@ -5654,6 +5791,7 @@
           "text_de": "Welche Note hatte dieses Kind in seinem letzten Zeugnis im Fach Deutsch?",
           "instruction": "Grading scale from 1 to 6",
           "instruction_de": "Schulnote von 1 bis 6 \n  ",
+          "filter": "Nur für Jahrgang 2008 & 127:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5703,6 +5841,7 @@
           "text_de": "Welche Note hatte dieses Kind in seinem letzten Zeugnis im Fach Mathematik?",
           "instruction": "Grading scale from 1 to 6",
           "instruction_de": "Schulnote von 1 bis 6 \n  ",
+          "filter": "Nur für Jahrgang = 2008 & 127:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5750,6 +5889,7 @@
           "item": "1",
           "text": "Support and motivation of the child",
           "text_de": "Unterstützung und Motivation des Kindes",
+          "filter": "nur stellen, wenn 2008 & 46:1=1 \n  ",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5771,6 +5911,7 @@
           "text_de": "In welcher Weise suchen Sie als Eltern den Kontakt mit der Schule?",
           "instruction": "Please mark all that apply!",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -5870,6 +6011,7 @@
           "item": "1",
           "text": "How often do you interact with other parents about classmates of this child about school matters?",
           "text_de": "Wie oft tauschen Sie sich mit anderen Eltern von Klassenkameraden dieses Kindes über schulische Angelegenheiten aus?",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "concept": "eltkla",
           "scale": "cat",
           "answers": [
@@ -5922,6 +6064,7 @@
           "item": "1",
           "text": "How often do the following people help you with your homework and studying for school?",
           "text_de": "Wie oft helfen Sie diesem Kind bei den Hausaufgaben oder dem Lernen für die Schule?",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "concept": "haus3",
           "scale": "cat",
           "answers": [
@@ -5974,6 +6117,7 @@
           "item": "1",
           "text": "How often do your father help you with your homework and studying for school?",
           "text_de": "Wie oft hilft der Vater diesem Kind bei den Hausaufgaben oder dem Lernen für die Schule?",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "concept": "haus4",
           "scale": "cat",
           "answers": [
@@ -6031,6 +6175,7 @@
           "item": "1",
           "text": "How often do other relatives help you with your homework and studying for school?",
           "text_de": "Wie oft helfen andere Verwandte diesem Kind bei den Hausaufgaben oder dem Lernen für die Schule?",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "concept": "haus10",
           "scale": "cat",
           "answers": [
@@ -6088,6 +6233,7 @@
           "item": "1",
           "text": "How often do your siblings help you with your homework and studying for school?",
           "text_de": "Wie oft helfen Geschwister diesem Kind bei den Hausaufgaben oder dem Lernen für die Schule?",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "concept": "haus6",
           "scale": "cat",
           "answers": [
@@ -6145,6 +6291,7 @@
           "item": "1",
           "text": "How often do friends or classmates help this child with homework or school learning?",
           "text_de": "Wie oft helfen Freundinnen und Freunde oder Mitschülerinnen und Mitschüler diesem Kind bei den Hausaufgaben oder dem Lernen für die Schule?",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "concept": "haus7",
           "scale": "cat",
           "answers": [
@@ -6202,6 +6349,7 @@
           "item": "1",
           "text": "How often does a tutor help a child with homework or school learning?",
           "text_de": "Wie oft hilft eine Nachhilfelehrerin oder ein Nachhilfelehrer diesem Kind bei den Hausaufgaben oder dem Lernen für die Schule?",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "concept": "haus8",
           "scale": "cat",
           "answers": [
@@ -6259,6 +6407,7 @@
           "item": "1",
           "text": "How often does homework help (for example, at school, youth center or community meeting) help this child with homework or school learning?",
           "text_de": "Wie oft hilft eine Hausaufgabenbetreuung (z.B. in der Schule, Jugendzentrum oder Gemeindetreff) diesem Kind bei den Hausaufgaben oder dem Lernen für die Schule?",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "concept": "haus9",
           "scale": "cat",
           "answers": [
@@ -6316,6 +6465,7 @@
           "item": "1",
           "text": "To what extent do the following statements apply to your child?",
           "text_de": "Inwieweit treffen die folgenden Aussagen auf dieses Kind zu?",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -6324,6 +6474,7 @@
           "item": "2",
           "text": "This child likes to go to school.",
           "text_de": "Dieses Kind geht gerne in die Schule.",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "concept": "sch22",
           "scale": "cat",
           "answers": [
@@ -6376,6 +6527,7 @@
           "item": "1",
           "text": "This kid gets on well with his classmates.",
           "text_de": "Dieses Kind versteht sich gut mit seinen Klassenkameraden.",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "concept": "sch26",
           "scale": "cat",
           "answers": [
@@ -6428,6 +6580,7 @@
           "item": "1",
           "text": "This child thinks school is a waste of time.",
           "text_de": "Dieses Kind empfindet Schule als reine Zeitverschwendung.",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "concept": "sch27",
           "scale": "cat",
           "answers": [
@@ -6480,6 +6633,7 @@
           "item": "1",
           "text": "Does not take school seriously.",
           "text_de": "Dieses Kind nimmt Arbeit in der Schule nie ernst.",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "concept": "sch28",
           "scale": "cat",
           "answers": [
@@ -6532,6 +6686,7 @@
           "item": "1",
           "text": "This kid comes along well in class.",
           "text_de": "Dieses Kind kommt im Unterricht gut mit.",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "concept": "sch23",
           "scale": "cat",
           "answers": [
@@ -6584,6 +6739,7 @@
           "item": "1",
           "text": "Does not get along well with the teacher.",
           "text_de": "Dieses Kind kommt mit dem jetzigen Lehrer oder der Lehrerin nicht gut aus.",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "concept": "sch29",
           "scale": "cat",
           "answers": [
@@ -6636,6 +6792,7 @@
           "item": "1",
           "text": "This kid likes to learn.",
           "text_de": "Dieses Kind lernt gerne.",
+          "filter": "Nur für Jahrgang = 2008 & 46:1=1 \n",
           "concept": "sch25",
           "scale": "cat",
           "answers": [
@@ -6690,6 +6847,7 @@
           "text_de": "Inwieweit entsprechen die folgenden Schulabschlüsse Ihrer persönlichen Idealvorstellung für die schulische Ausbildung des Kindes?",
           "instruction": "\nPlease answer on a scale of 1 to 7. The value 1 means that the degree\nnot at all, the value 7 fully corresponds to your personal ideas.\nWith the values <U+200B><U+200B>between 1 and 7 you can rate your opinion.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. Der Wert 1 bedeutet, dass der Abschluss \nüberhaupt nicht, der Wert 7 voll und ganz Ihren persönlichen Vorstellungen entspricht. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2010, 2008",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -6711,6 +6869,7 @@
           "text_de": "Inwieweit entspricht ein Hauptschulabschluss (Abschluss der Pflichtschule) Ihrer persönlichen Idealvorstellung für die schulische Ausbildung dieses Kindes?",
           "instruction": "Please answer using a scale of 1 to 7. Value 1 means that you don't believe this certificate \nis worth anything and value 7 means it meets your personal ideals completely.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. Der Wert 1 bedeutet, dass der Abschluss \nüberhaupt nicht, der Wert 7 voll und ganz Ihren persönlichen Vorstellungen entspricht. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2010, 2008",
           "concept": "sch1",
           "scale": "cat",
           "answers": [
@@ -6765,6 +6924,7 @@
           "text_de": "Inwieweit entspricht ein Mittlerer Schulabschluss (z.B. Realschulabschluss) Ihrer persönlichen Idealvorstellung für die schulische Ausbildung dieses Kindes?",
           "instruction": "Please answer using a scale of 1 to 7. Value 1 means that you don't believe this certificate \nis worth anything and value 7 means it meets your personal ideals completely.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. Der Wert 1 bedeutet, dass der Abschluss \nüberhaupt nicht, der Wert 7 voll und ganz Ihren persönlichen Vorstellungen entspricht. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2010, 2008",
           "concept": "sch2",
           "scale": "cat",
           "answers": [
@@ -6819,6 +6979,7 @@
           "text_de": "Inwieweit entspricht das Abitur (Höchster Schulabschluss/ Hochschulreife) Ihrer persönlichen Idealvorstellung für die schulische Ausbildung dieses Kindes?",
           "instruction": "Please answer using a scale of 1 to 7. Value 1 means that you don't believe this certificate \nis worth anything and value 7 means it meets your personal ideals completely.\nYou may use the values in between to show the extent to which you agree.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. Der Wert 1 bedeutet, dass der Abschluss \nüberhaupt nicht, der Wert 7 voll und ganz Ihren persönlichen Vorstellungen entspricht. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2010, 2008",
           "concept": "sch3",
           "scale": "cat",
           "answers": [
@@ -6873,6 +7034,8 @@
           "text_de": "Warum wünschen Sie sich, dass Ihr Kind folgenden Bildungsabschluss erreicht?\n[höchster Abschluss mit Werten >=5 einblenden]",
           "instruction": "Please mark all responses that apply!",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "description": "Neu, Externes Modul, Die Frage wird für den höchsten (!) Abschluss gestellt werden, der >=5 bewertet wird.",
+          "filter": "Nur für Jahrgang = 2010, 2008",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -6984,6 +7147,7 @@
           "text_de": "Schulbildung hat nicht für alle die gleiche Bedeutung: Wie ist Ihre Meinung?",
           "instruction": "Please use a scale to indicate your answer.\nValue 0 means Completely disagree\nValue 10 means Completely agree \nYou may use the values between 0 and 10 to show the extent to which you agree.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala.\nDer Wert 0 bedeutet: Trifft überhaupt nicht zu.\nDer Wert 10 bedeutet: Trifft voll zu. \nMit den Werten zwischen 0 und 10 können Sie Ihre Meinung abstufen.",
+          "description": "Neu, Externes Modul, Frage wird dem Befragungsmodus entsprechend in 3 Fragen aufgeteilt, Frage soll an alle Eltern aller Kohorten gehen",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -7005,6 +7169,7 @@
           "text_de": "Eine gute Schulbildung garantiert ein hohes Einkommen.",
           "instruction": "Please use a scale to indicate your answer.\nValue 0 means Completely disagree.\nValue 10 means Completely agree. \nYou may use the values between 0 and 10 to show the extent to which you agree.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala.\nDer Wert 0 bedeutet: Trifft überhaupt nicht zu.\nDer Wert 10 bedeutet: Trifft voll zu. \nMit den Werten zwischen 0 und 10 können Sie Ihre Meinung abstufen.",
+          "description": "was ist mit ka? zusätzlich oder anstatt weiß nicht? Weiß nicht wird im Soep nur in Ausnahmen eingesetzt; Externes Modul",
           "concept": "schbb1",
           "scale": "cat",
           "answers": [
@@ -7089,6 +7254,7 @@
           "text_de": "Eine gute Schulbildung schützt vor Arbeitslosigkeit.",
           "instruction": "Please use a scale to indicate your answer.\nValue 0 means Completely disagree.\nValue 10 means Completely agree. \nYou may use the values between 0 and 10 to show the extent to which you agree.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala.\nDer Wert 0 bedeutet: Trifft überhaupt nicht zu.\nDer Wert 10 bedeutet: Trifft voll zu. \nMit den Werten zwischen 0 und 10 können Sie Ihre Meinung abstufen.",
+          "description": "Externes Modul",
           "concept": "schbb2",
           "scale": "cat",
           "answers": [
@@ -7173,6 +7339,7 @@
           "text_de": "Eine gute Schulbildung ermöglicht die Ausübung eines guten Berufes.",
           "instruction": "Please use a scale to indicate your answer.\nValue 0 means Completely disagree.\nValue 10 means Completely agree. \nYou may use the values between 0 and 10 to show the extent to which you agree.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala.\nDer Wert 0 bedeutet: Trifft überhaupt nicht zu.\nDer Wert 10 bedeutet: Trifft voll zu. \nMit den Werten zwischen 0 und 10 können Sie Ihre Meinung abstufen.",
+          "description": "Externes Modul",
           "concept": "schbb3",
           "scale": "cat",
           "answers": [
@@ -7257,6 +7424,8 @@
           "text_de": "Was bräuchten Sie um Ihr Kind in der Ausbildung besser zu unterstützen?",
           "instruction": "Please select and rank up to three responses.",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "description": "Neu, Externes Modul",
+          "filter": "Nur für Jahrgang = 2010, 2008",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -7265,6 +7434,7 @@
           "item": "2",
           "text": "More money.",
           "text_de": "Mehr Geld",
+          "filter": "Nur für Jahrgang = 2010, 2008",
           "concept": "abunt1",
           "scale": "bin",
           "sn": 1,
@@ -7274,6 +7444,7 @@
           "item": "3",
           "text": "More time.",
           "text_de": "Mehr Zeit",
+          "filter": "Nur für Jahrgang = 2010, 2008",
           "concept": "abunt2",
           "scale": "bin",
           "sn": 2,
@@ -7283,6 +7454,7 @@
           "item": "4",
           "text": "Better understanding of the school subjects.",
           "text_de": "Mehr Wissen in den Schulfächern",
+          "filter": "Nur für Jahrgang = 2010, 2008",
           "concept": "abunt3",
           "scale": "bin",
           "sn": 3,
@@ -7292,6 +7464,7 @@
           "item": "5",
           "text": "Better knowledge about the school system.",
           "text_de": "Bessere Kenntnisse über das Schulsystem",
+          "filter": "Nur für Jahrgang = 2010, 2008",
           "concept": "abunt4",
           "scale": "bin",
           "sn": 4,
@@ -7332,6 +7505,7 @@
           "text_de": "Und für wie wahrscheinlich halten Sie es, dass dieses Kind die Schule mit einem der folgenden Abschlüsse verlassen wird?",
           "instruction": "\nPlease answer on a scale of 1 to 7. The value 1 means that the degree\nnot at all, the value 7 fully corresponds to your personal ideas.\nWith the values <U+200B><U+200B>between 1 and 7 you can rate your opinion.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. \nDer Wert 1 bedeutet dieses Mal ausgeschlossen und der Wert 7 bedeutet ganz sicher.",
+          "filter": "Nur für Jahrgang = 2010, 2008",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -7353,6 +7527,7 @@
           "text_de": "Und für wie wahrscheinlich halten Sie es, dass dieses Kind die Schule mit einem Hauptschulabschluss (Abschluss der Pflichtschule) verlassen wird?",
           "instruction": "Please answer using a scale of 1 to 7. \nThis time, value 1 means 'Definitely will not' and value 7 means 'Definitely will'.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. \nDer Wert 1 bedeutet dieses Mal ausgeschlossen und der Wert 7 bedeutet ganz sicher.",
+          "filter": "Nur für Jahrgang = 2010, 2008",
           "concept": "sch4",
           "scale": "cat",
           "answers": [
@@ -7407,6 +7582,7 @@
           "text_de": "Und für wie wahrscheinlich halten Sie es, dass dieses Kind die Schule mit einem Mittleren Schulabschluss (z.B. Realschulabschluss) verlassen wird?",
           "instruction": "Please answer using a scale of 1 to 7. \nThis time, value 1 means 'Definitely will not' and value 7 means 'Definitely will'.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. \nDer Wert 1 bedeutet dieses Mal ausgeschlossen und der Wert 7 bedeutet ganz sicher.",
+          "filter": "Nur für Jahrgang = 2010, 2008",
           "concept": "sch5",
           "scale": "cat",
           "answers": [
@@ -7461,6 +7637,7 @@
           "text_de": "Und für wie wahrscheinlich halten Sie es, dass dieses Kind die Schule mit dem Abitur (Höchster Schulabschluss/ Hochschulreife) verlassen wird?",
           "instruction": "Please answer using a scale of 1 to 7. \nThis time, value 1 means 'Definitely will not' and value 7 means 'Definitely will'.",
           "instruction_de": "Antworten Sie bitte anhand einer Skala von 1 bis 7. \nDer Wert 1 bedeutet dieses Mal ausgeschlossen und der Wert 7 bedeutet ganz sicher.",
+          "filter": "Nur für Jahrgang = 2010, 2008",
           "concept": "sch6",
           "scale": "cat",
           "answers": [
@@ -7532,6 +7709,7 @@
           "item": "1",
           "text": "\nWhich languages <U+200B><U+200B>do you speak with this child?",
           "text_de": "Welche Sprachen sprechen Sie mit diesem Kind?",
+          "filter": "Nur für Jahrgang = 2018, 2017, 2015",
           "concept": "gspd1",
           "scale": "cat",
           "answers": [
@@ -7592,6 +7770,7 @@
           "item": "1",
           "text": "\nWhat languages <U+200B><U+200B>do other household members talk to this child?",
           "text_de": "Welche Sprachen sprechen andere Haushaltsmitglieder mit diesem Kind?",
+          "filter": "Nur für Jahrgang = 2018, 2017, 2015",
           "concept": "gspd2",
           "scale": "cat",
           "answers": [
@@ -7652,6 +7831,7 @@
           "item": "1",
           "text": "\nWhich languages <U+200B><U+200B>do you or other household members talk to this child?",
           "text_de": "Welche Sprachen sprechen Sie oder andere Haushaltsmitglieder mit diesem Kind?",
+          "filter": "Nur für Jahrgang = 2012. 2010, 2008\n  ",
           "concept": "gspd3",
           "scale": "cat",
           "answers": [
@@ -7710,6 +7890,7 @@
           "item": "1",
           "text": "Does this child speak here in Germany with his family members ...",
           "text_de": "Spricht dieses Kind hier in Deutschland mit seinen Familienmitgliedern…",
+          "filter": "Nur für Jahrgang = 2012, 2010, 2008",
           "concept": "gspd4",
           "scale": "cat",
           "answers": [
@@ -7752,6 +7933,7 @@
           "item": "1",
           "text": "Does this kid talk to his friends here in Germany ...",
           "text_de": "Spricht dieses Kind hier in Deutschland mit seinen Freunden…",
+          "filter": "Nur für Jahrgang = 2012, 2010, 2008",
           "concept": "gspd5",
           "scale": "cat",
           "answers": [
@@ -7794,6 +7976,7 @@
           "item": "1",
           "text": "Does this child speak here in Germany in kindergarten or at school ...",
           "text_de": "Spricht dieses Kind hier in Deutschland im Kindergarten oder in der Schule…",
+          "filter": "Nur für Jahrgang = 2012, 2010, 2008",
           "concept": "gspd6",
           "scale": "cat",
           "answers": [
@@ -7836,6 +8019,7 @@
           "item": "1",
           "text": "Can this child understand German?",
           "text_de": "Kann dieses Kind Deutsch verstehen?",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -7872,6 +8056,7 @@
           "item": "1",
           "text": "Does this child speak German words?",
           "text_de": "Spricht dieses Kind auch deutsche Wörter?",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -7908,6 +8093,7 @@
           "item": "1",
           "text": "How well could this child speak German at the time of his / her beginning in Germany?",
           "text_de": "Wie gut konnte dieses Kind zum Zeitpunkt seines/ihres Schulbeginns in Deutschland die deutsche Sprache sprechen?",
+          "filter": " Nur für Jahrgang = 2012, 2010, 2008 \n46:1=1",
           "concept": "kdspsb",
           "scale": "cat",
           "answers": [
@@ -7960,6 +8146,7 @@
           "item": "1",
           "text": "How well can the child speak German?",
           "text_de": "Wie gut kann dieses Kind jetzt die deutsche Sprache sprechen?",
+          "filter": " Nur für Jahrgang = 2012, 2010, 2008",
           "concept": "kdspspr",
           "scale": "cat",
           "answers": [
@@ -8012,6 +8199,7 @@
           "item": "1",
           "text": "How well can the child write in German ?",
           "text_de": "Wie gut kann dieses Kind jetzt die deutsche Sprache schreiben?",
+          "filter": " Nur für Jahrgang = 2010, 2008",
           "concept": "kdspsch",
           "scale": "cat",
           "answers": [
@@ -8064,6 +8252,7 @@
           "item": "1",
           "text": "How well can the child speak German?",
           "text_de": "Wie gut kann dieses Kind jetzt die deutsche Sprache lesen?",
+          "filter": " Nur für Jahrgang = 2010, 2008",
           "concept": "kdsples",
           "scale": "cat",
           "answers": [
@@ -8116,6 +8305,7 @@
           "item": "1",
           "text": "Which languages <U+200B><U+200B>does this child still speak except German?",
           "text_de": "Welche Sprachen spricht dieses Kind noch außer Deutsch?",
+          "filter": " Nur für Jahrgang = 2012, 2010, 2008",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -8485,6 +8675,7 @@
           "item": "1",
           "text": "Which language does it speak the best of it?",
           "text_de": "Welche Sprache spricht es davon am besten?",
+          "filter": "Nur für Jahrgang = 2012, 2010, 2008 & (173:38!=38|173:40!=-1) & 173 Anzahl Nennungen > 1 \nNur in Vorfrage genannte Sprachen einblenden",
           "concept": "kbsp",
           "scale": "cat",
           "answers": [
@@ -8705,6 +8896,7 @@
           "item": "1",
           "text": "How well can this child speak that language?",
           "text_de": "Wie gut kann dieses Kind diese Sprache sprechen?",
+          "filter": "Nur für Jahrgang = 2012, 2010, 2008 & (173:38!=38|173:40!=-1)\n& 174:1!=-1, sofern 174 gestellt wurde.",
           "concept": "kbspspr",
           "scale": "cat",
           "answers": [
@@ -8757,6 +8949,7 @@
           "item": "1",
           "text": "How well can you write in German ?",
           "text_de": "Wie gut kann dieses Kind diese Sprache schreiben?",
+          "filter": "Nur wenn Jahrgang = 2010, 2008 & (173:38!=38|173:40!=-1)\n& 174:1!=-1, sofern 174 gestellt wurde.",
           "concept": "kbspsch",
           "scale": "cat",
           "answers": [
@@ -8809,6 +9002,7 @@
           "item": "1",
           "text": "How well can this child read this language?",
           "text_de": "Wie gut kann dieses Kind diese Sprache lesen?",
+          "filter": "Nur wenn Jahrgang = 2010, 2008 & (173:38!=38|173:40!=-1)\n& 174:1!=-1, sofern 174 gestellt wurde.",
           "concept": "kbsples",
           "scale": "cat",
           "answers": [
@@ -8880,6 +9074,7 @@
           "item": "1",
           "text": "What’s your current impression of your child? To what extent do you agree with the following statements?",
           "text_de": "Wie sehen Sie dieses Kind heute? \nInwieweit treffen die folgenden Aussagen zu?",
+          "filter": "Nur für Jahrgang = 2018, 2017, 2015",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -8899,6 +9094,7 @@
           "item": "1",
           "text": "My child is generally cheerful and happy",
           "text_de": "Dieses Kind ist meist fröhlich und zufrieden.",
+          "filter": "Nur für Jahrgang = 2018, 2017, 2015",
           "concept": "akt1",
           "scale": "cat",
           "answers": [
@@ -8946,6 +9142,7 @@
           "item": "1",
           "text": "My child is easily irritated and cries a lot",
           "text_de": "Dieses Kind ist leicht erregbar und weint häufig.",
+          "filter": "Nur für Jahrgang = 2018, 2017, 2015",
           "concept": "akt2",
           "scale": "cat",
           "answers": [
@@ -8993,6 +9190,7 @@
           "item": "1",
           "text": "My child is difficult to comfort when upset",
           "text_de": "Dieses Kind ist schwer zu trösten.",
+          "filter": "Nur für Jahrgang = 2018, 2017, 2015",
           "concept": "akt3",
           "scale": "cat",
           "answers": [
@@ -9040,6 +9238,7 @@
           "item": "1",
           "text": "My child is curious and active",
           "text_de": "Dieses Kind ist neugierig und aktiv.",
+          "filter": "Nur für Jahrgang = 2018, 2017, 2015",
           "concept": "akt4",
           "scale": "cat",
           "answers": [
@@ -9087,6 +9286,7 @@
           "item": "1",
           "text": "My child tends to be shy",
           "text_de": "Dieses Kind ist eher zurückhaltend.",
+          "filter": "Nur für Jahrgang = 2018, 2017, 2015",
           "concept": "akt8",
           "scale": "cat",
           "answers": [
@@ -9134,6 +9334,7 @@
           "item": "1",
           "text": "My child is communicative and likes to talk",
           "text_de": "Dieses Kind ist gesprächig, redet gern.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -9180,6 +9381,7 @@
           "item": "1",
           "text": "My child shows empathy when others are sad",
           "text_de": "Dieses Kind zeigt Mitgefühl, wenn andere traurig sind.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -9226,6 +9428,7 @@
           "item": "1",
           "text": "I'm worried about the health of my child",
           "text_de": "Die Gesundheit dieses Kindes macht mir Sorgen.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -9291,6 +9494,7 @@
           "item": "1",
           "text": "Have you received a 'Kinder-Untersuchungsheft' (an 'U-Heft', a child's health record) for the U1, U2, U3, etc. medical check ups?",
           "text_de": "Haben Sie für dieses Kind ein „Kinder-Untersuchungsheft“ („U-Heft“) für ärztliche Vorsorgeuntersuchungen (U1, U2, U3, usw.) erhalten?",
+          "filter": "Nur für Jahrgang = 2018, 2017, 2015, 2012",
           "concept": "kunt",
           "scale": "cat",
           "answers": [
@@ -9333,6 +9537,7 @@
           "item": "1",
           "text": "What was the last performed check-up (U2, U3, etc.) on this child?",
           "text_de": "Welche war die letzte durchgeführte Vorsorgeuntersuchung (U2, U3, usw.) bei diesem Kind?",
+          "filter": "187:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -9378,6 +9583,7 @@
           "item": "1",
           "text": "How would you describe your child's current state of health?",
           "text_de": "Wie würden Sie den allgemeinen Gesundheitszustand des Kindes beschreiben?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "ges01",
           "scale": "cat",
           "answers": [
@@ -9430,6 +9636,7 @@
           "item": "1",
           "text": "Has this child ever been examined by a doctor in Germany?",
           "text_de": "Wurde dieses Kind schon mal von einem Arzt oder einer Ärztin in Deutschland untersucht?",
+          "filter": "Für Jahrgänge 2010, 2008 | ((2018 / 2017 & (187:1=2:3, -1 | 188:1=2, -1))",
           "scale": "cat",
           "answers": [
             {
@@ -9468,6 +9675,7 @@
           "text_de": "Wurde bei diesem Kind eine der im Folgenden genannten Verzögerungen / Störung / Behinderungen festgestellt?",
           "instruction": "Please mark all responses that apply!",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "filter": "Nur wenn 2018/2017 & (188:2=1 | 190:1=1, -1)",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -9575,6 +9783,7 @@
           "item": "1",
           "text": "Did your child experience health problems in the last 12 months that necessitated a hospital stay?",
           "text_de": "Gab es bei diesem Kind in den letzten 12 Monaten gesundheitliche Probleme, die einen Krankenhausaufenthalt notwendig machten?",
+          "filter": "Nur für Jahrgang = 2015, 2012, 2008",
           "concept": "geskr",
           "scale": "cat",
           "answers": [
@@ -9612,6 +9821,7 @@
           "item": "1",
           "text": "How many days has this kid been in the hospital for the past 12 months?",
           "text_de": "Wie viele Tage war dieses Kind innerhalb der letzten zwölf Monate im Krankenhaus?",
+          "filter": "192:1=1",
           "concept": "geskrdau",
           "scale": "txt",
           "sn": 0,
@@ -9648,6 +9858,7 @@
           "item": "1",
           "text": "Is your child in any way impaired or prevented from doing things that most children of his or her age can do?",
           "text_de": "Ist dieses Kind in irgendeiner Weise eingeschränkt oder daran gehindert, Dinge zu tun, die die meisten gleichaltrigen Kinder tun können?",
+          "filter": "Nur für Jahrgang = 2012",
           "scale": "cat",
           "answers": [
             {
@@ -9684,6 +9895,7 @@
           "item": "1",
           "text": "Did you have to go to or call a doctor in the last 3 months because of your child's health problems?",
           "text_de": "Mussten Sie in den letzten drei Monaten wegen gesundheitlicher Probleme Ihres Kindes einen Arzt oder eine Ärztin aufsuchen oder rufen?",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "arzt",
           "scale": "cat",
           "answers": [
@@ -9721,6 +9933,7 @@
           "item": "1",
           "text": "Did you have to go to or call a doctor in the last 3 months because of your child's health problems?",
           "text_de": "Wie oft mussten Sie in den letzten drei Monaten wegen gesundheitlicher Probleme dieses Kindes einen Arzt aufsuchen oder rufen?",
+          "filter": "Q195:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -9759,6 +9972,7 @@
           "text_de": "Ist von einem Arzt oder einer Ärztin bei diesem Kind einmal eine der folgenden Erkrankungen oder Störungen festgestellt worden?",
           "instruction": "Please select all responses that apply.",
           "instruction_de": "Bitte geben Sie alles Zutreffende an! \n  ",
+          "filter": "Nur für Jahrgang = 2015, 2012, 2010, 2008",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -9903,6 +10117,7 @@
           "item": "1",
           "text": "How many height is the child",
           "text_de": "Wie groß ist dieses Kind gegenwärtig?",
+          "filter": "Nur für Jahrgang = 2015, 2012",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -9939,6 +10154,7 @@
           "item": "1",
           "text": "What is the current weight of this child?",
           "text_de": "Wie ist gegenwärtig das Gewicht dieses Kindes?",
+          "filter": "Nur für Jahrgang = 2015, 2012",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -9994,6 +10210,7 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver engaged in the following activities  with your child?",
           "text_de": "Wie oft sind Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind auf den Spielplatz gegangen?",
+          "filter": "Nur für Jahrgang = 2015, 2012    ",
           "concept": "aktiv01",
           "scale": "cat",
           "answers": [
@@ -10041,6 +10258,7 @@
           "item": "1",
           "text": "How many times have you or the main caregiver taken outdoor activities (walks or similar) with the child over the last 14 days?How many times have you or the primary care person shared with this child in the last 14 days? Doing activities in the fresh air (walks or similar)?",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind Aktivitäten an der frischen Luft (Spaziergänge oder Ähnliches) unternommen?",
+          "filter": "Nur für Jahrgang = 2015, 2012",
           "concept": "aktiv02",
           "scale": "cat",
           "answers": [
@@ -10088,6 +10306,7 @@
           "item": "1",
           "text": "How many times have you or the main caregiver visited other families with children in the last 14 days with this child?",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind andere Familien mit Kindern besucht?",
+          "filter": "Nur für Jahrgang = 2015, 2012",
           "concept": "aktiv03",
           "scale": "cat",
           "answers": [
@@ -10135,6 +10354,7 @@
           "item": "1",
           "text": "How many times have you or the main caregiver been shopping with this child in the last 14 days?",
           "text_de": "Wie oft waren Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind einkaufen?",
+          "filter": "Nur für Jahrgang = 2015, 2012",
           "concept": "aktiv04",
           "scale": "cat",
           "answers": [
@@ -10182,6 +10402,7 @@
           "item": "1",
           "text": "How many times have you or the primary caregiver sung children's songs with the child over the last 14 days?",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind Kinderlieder gesungen?",
+          "filter": "Nur für Jahrgang = 2015, 2012",
           "concept": "aktiv05",
           "scale": "cat",
           "answers": [
@@ -10229,6 +10450,7 @@
           "item": "1",
           "text": "How many times have you or the main caregiver painted or tinkered with this child in the last 14 days?",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind gemalt oder gebastelt?",
+          "filter": "Nur für Jahrgang = 2015, 2012",
           "concept": "aktiv06",
           "scale": "cat",
           "answers": [
@@ -10276,6 +10498,7 @@
           "item": "1",
           "text": "How many times have you or the main caregiver played card games, dice games or other games together with this child over the past 14 days?",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind Karten-, Würfelspiele oder andere gemeinsame Spiele gespielt?",
+          "filter": "Nur für Jahrgang = 2012",
           "scale": "cat",
           "answers": [
             {
@@ -10322,6 +10545,7 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver engaged in the following activities  with your child?",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind Filme oder Videos auf Deutsch geschaut?",
+          "filter": "Nur für Jahrgang = 2015, 2012",
           "concept": "aktiv08a",
           "scale": "cat",
           "answers": [
@@ -10369,6 +10593,7 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind Filme oder Videos in einer oder mehreren anderen Sprachen geschaut?",
+          "filter": "Nur für Jahrgang = 2015, 2012",
           "concept": "aktiv08",
           "scale": "cat",
           "answers": [
@@ -10416,6 +10641,7 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind am \nComputer oder auf dem Tablet oder Smartphone gespielt?",
+          "filter": "Nur für Jahrgang = 2012",
           "concept": "aktiv13",
           "scale": "cat",
           "answers": [
@@ -10463,6 +10689,7 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson in den letzten 14 Tagen gemeinsam mit diesem Kind ein Kindertheater, einen Zirkus, ein Museum, eine Ausstellung oder Ähnliches besucht?",
+          "filter": "Nur für Jahrgang = 2015, 2012",
           "scale": "cat",
           "answers": [
             {
@@ -10509,6 +10736,7 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson diesem Kind in den letzten 14 Tagen eine Geschichte auf Deutsch vorgelesen oder erzählt?",
+          "filter": "Nur für Jahrgang = 2015, 2012",
           "concept": "aktiv11",
           "scale": "cat",
           "answers": [
@@ -10556,6 +10784,7 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson diesem Kind in den letzten 14 Tagen eine Geschichte auf einer oder mehreren anderen Sprachen vorgelesen oder erzählt?",
+          "filter": "Nur für Jahrgang = 2015, 2012",
           "concept": "aktiv12",
           "scale": "cat",
           "answers": [
@@ -10603,6 +10832,7 @@
           "item": "1",
           "text": "How many times in the last 14 days have you or the main caregiver watch picture books with your child?",
           "text_de": "Wie oft haben Sie oder die Hauptbetreuungsperson mit diesem Kind in den letzten 14 Tagen Bilderbücher angeschaut?",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -10649,6 +10879,8 @@
           "item": "1",
           "text": "In the last three months, how often did you or another adult in your household do the following with your child?",
           "text_de": "Wie oft haben Sie oder ein anderer Erwachsener in Ihrem Haushalt in den letzten drei Monaten folgendes mit Ihrem Kind gemacht?",
+          "description": "Externes Modul",
+          "filter": "Nur am 2012, 2010, 2008 und nur wenn 46:1=1 ",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -10668,6 +10900,7 @@
           "item": "1",
           "text": "Make sure s/he does his/her homework.",
           "text_de": "Sichergestellt, dass mein Kind seine Hausaufgaben macht. ",
+          "filter": "Nur am 2012, 2010, 2008 und nur wenn 46:1=1 ",
           "scale": "cat",
           "answers": [
             {
@@ -10724,6 +10957,8 @@
           "item": "1",
           "text": "Go to a concert, visit a museum, an exposition or a theatre play.",
           "text_de": "Ein Konzert, eine Ausstellung oder ein Theaterstück besucht. ",
+          "description": "Externes Modul",
+          "filter": "Nur am 2012, 2010, 2008 und nur wenn 46:1=1 ",
           "scale": "cat",
           "answers": [
             {
@@ -10780,6 +11015,8 @@
           "item": "1",
           "text": "Exercise sports or go on an excursion.",
           "text_de": "Sport oder einen Ausflug gemacht.",
+          "description": "Externes Modul",
+          "filter": "Nur am 2012, 2010, 2008 und nur wenn 46:1=1 ",
           "scale": "cat",
           "answers": [
             {
@@ -10836,6 +11073,8 @@
           "item": "1",
           "text": "Done cooking or gardening together or engaged in other communal activities.",
           "text_de": "Gemeinsam gekocht, Gartenarbeit oder andere gemeinsame Aktivitäten gemacht.",
+          "description": "Externes Modul",
+          "filter": "Nur am 2012, 2010, 2008 und nur wenn 46:1=1 ",
           "scale": "cat",
           "answers": [
             {
@@ -10892,6 +11131,8 @@
           "item": "1",
           "text": "Played board games or video games.",
           "text_de": "Gemeinsam Brett- oder Videospiele gespielt.",
+          "description": "Externes Modul",
+          "filter": "Nur am 2012, 2010, 2008 und nur wenn 46:1=1 ",
           "scale": "cat",
           "answers": [
             {
@@ -10948,6 +11189,7 @@
           "item": "1",
           "text": "Is your child allowed to watch television or videos alone, without adult supervision?",
           "text_de": "Darf dieses Kind alleine, also ohne Erwachsene, Fernsehen oder Videos schauen?",
+          "filter": "Nur für Jahrgang 2015 und 2012",
           "scale": "cat",
           "answers": [
             {
@@ -10989,6 +11231,7 @@
           "item": "1",
           "text": "How many hours per week may this child watch TV or videos alone?",
           "text_de": "Wie viele Stunden pro Woche darf dieses Kind alleine Fernsehen oder Videos schauen?",
+          "filter": "Nur für Jahrgang 2015 und 2012& 220:1=1:2",
           "concept": "tv1",
           "scale": "txt",
           "sn": 0,
@@ -11047,6 +11290,7 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Please use a scale to indicate your answer.\nA value of 1 means this child is chatty, a value of 11 means this child is quiet.\nYou may use the values in between to show the extent to which you believe this.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist gesprächig, 11 bedeutet dieses Kind ist still. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "verg01",
           "scale": "cat",
           "answers": [
@@ -11113,6 +11357,7 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this kid is messy, 11 means this kid is neat.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist unordentlich, 11 bedeutet dieses Kind ist ordentlich. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "verg02",
           "scale": "cat",
           "answers": [
@@ -11179,6 +11424,7 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this child is good-natured, 11 means this child is easily irritable.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist gutmütig, 11 bedeutet dieses Kind ist leicht reizbar. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "verg03",
           "scale": "cat",
           "answers": [
@@ -11245,6 +11491,7 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this child is little interested, 11 means this child is thirsty for knowledge.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist wenig interessiert, 11 bedeutet dieses Kind ist wissensdurstig. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "verg04",
           "scale": "cat",
           "answers": [
@@ -11311,6 +11558,7 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this child has self-confidence, 11 means this child is uncertain.\nWith the values <U+200B><U+200B>in between, you can scale your answer.Answer by a scale.\n1 means this kid is talkative, 11 means this kid is silent.\nWith the values <U+200B><U+200B>in between, you can scale your answer",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind hat Selbstvertrauen, 11 bedeutet dieses Kind ist unsicher. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "verg05",
           "scale": "cat",
           "answers": [
@@ -11377,6 +11625,7 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this child is withdrawn, 11 means this child is sociable.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist zurückgezogen, 11 bedeutet dieses Kind ist kontaktfreudig. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "verg06",
           "scale": "cat",
           "answers": [
@@ -11443,6 +11692,7 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this child is concentrated, 11 means this child is easily distracted.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist konzentriert, 11 bedeutet dieses Kind ist leicht ablenkbar. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "verg07",
           "scale": "cat",
           "answers": [
@@ -11509,6 +11759,7 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this kid understands fast, 11 means this kid needs more time.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist trotzig, 11 bedeutet dieses Kind ist folgsam. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "verg08",
           "scale": "cat",
           "answers": [
@@ -11575,6 +11826,7 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this kid understands fast, 11 means this kid needs more time.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind begreift schnell, 11 bedeutet dieses Kind braucht mehr Zeit. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "verg09",
           "scale": "cat",
           "answers": [
@@ -11641,6 +11893,7 @@
           "text_de": "Wie würden Sie dieses Kind im Vergleich zu Gleichaltrigen beurteilen?",
           "instruction": "Answer by a scale.\n1 means this child is anxious, 11 means this child is uneasy.\nWith the values <U+200B><U+200B>in between, you can scale your answer.",
           "instruction_de": "Antworten Sie anhand einer Skala. \n1 bedeutet dieses Kind ist ängstlich, 11 bedeutet dieses Kind ist unängstlich. \nMit den Werten dazwischen können Sie Ihre Antwort abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "verg10",
           "scale": "cat",
           "answers": [
@@ -11724,6 +11977,7 @@
           "item": "1",
           "text": "For parents it is always a special event, if your child can do something new again. Please indicate on each of the following items if this child already can.",
           "text_de": "Für Eltern ist es immer ein besonderes Ereignis, wenn ihr Kind schon wieder etwas Neues kann. Bitte geben Sie bei jedem der folgenden Dinge an, ob dieses Kind das bereits kann.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -11743,6 +11997,7 @@
           "item": "1",
           "text": "Speaks in full sentences (with four or more words)",
           "text_de": "Spricht in ganzen Sätzen (mit vier oder mehr Wörtern).",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -11784,6 +12039,7 @@
           "item": "1",
           "text": "Follows instructions, five minutes after hearing them.",
           "text_de": "Folgt Anweisungen, die es fünf Minuten zuvor gehört hat.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -11825,6 +12081,7 @@
           "item": "1",
           "text": "Can state his/her first and last name if someone asks for it.",
           "text_de": "Nennt seinen Vor- und Nachnamen, wenn es danach gefragt wird.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -11866,6 +12123,7 @@
           "item": "1",
           "text": "Listens attentively to a story for 15 minutes or longer",
           "text_de": "Hört in der Regel Geschichten mindestens 15 Min. aufmerksam zu.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -11907,6 +12165,7 @@
           "item": "1",
           "text": "Passes on simple messages such as “dinner is ready”",
           "text_de": "Überbringt einfache Nachrichten wie z.B. „Essen ist fertig“.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -11948,6 +12207,7 @@
           "item": "1",
           "text": "Uses a spoon to eat, without assistance and without dripping",
           "text_de": "Isst selbständig mit dem Löffel, ohne zu kleckern.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -11989,6 +12249,7 @@
           "item": "1",
           "text": "Blows his/her nose without assistance",
           "text_de": "Putzt sich selbst die Nase.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -12030,6 +12291,7 @@
           "item": "1",
           "text": "Uses the toilet to do “number two”",
           "text_de": "Benutzt für „großes Geschäft“ die Toilette.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -12071,6 +12333,7 @@
           "item": "1",
           "text": "Put on pants and underpants the right way around",
           "text_de": "Zieht sich Hosen und Unterhosen selbst richtig herum an.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -12112,6 +12375,7 @@
           "item": "1",
           "text": "Brushes his/her teeth without assistance",
           "text_de": "Putzt sich selbst die Zähne.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -12153,6 +12417,7 @@
           "item": "1",
           "text": "Walks forwards down the stairs",
           "text_de": "Läuft Treppen vorwärts hinunter.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -12194,6 +12459,7 @@
           "item": "1",
           "text": "Climbs up playground climbing equipment and other high playground structures",
           "text_de": "Klettert auf Klettergerüste und andere hohe Spielgeräte.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -12235,6 +12501,7 @@
           "item": "1",
           "text": "Cuts paper with scissors",
           "text_de": "Schneidet mit einer Schere Papier durch.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -12276,6 +12543,7 @@
           "item": "1",
           "text": "Paints/draws recognizable shapes on paper",
           "text_de": "Malt auf Papier erkennbare Formen.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -12317,6 +12585,7 @@
           "item": "1",
           "text": "Can hold a pencil correctly",
           "text_de": "Hält Stifte richtig (nicht mit der Faust), um zu malen.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -12358,6 +12627,7 @@
           "item": "1",
           "text": "Participates in games with other children",
           "text_de": "Nimmt an Spielen mit anderen Kindern teil.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -12399,6 +12669,7 @@
           "item": "1",
           "text": "Gets involved in role-playing games (“playing pretend”)",
           "text_de": "Beschäftigt sich mit Rollenspielen (tun als ob).",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -12440,6 +12711,7 @@
           "item": "1",
           "text": "Shows a special liking for particular playmates or friends",
           "text_de": "Zeigt eine Vorliebe für bestimmte Spielgefährten oder Freunde.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -12481,6 +12753,7 @@
           "item": "1",
           "text": "Is able to name his/her own feelings, e.g., “sad”, “happy”, “scared”",
           "text_de": "Benennt eigene Gefühle, z.B. „traurig“, „freuen“, „Angst“.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -12522,6 +12795,7 @@
           "item": "1",
           "text": "Takes turns when playing playing without being asked.",
           "text_de": "Wechselt sich mit anderen beim Spielen ab, ohne darum gebeten zu werden.",
+          "filter": "Nur für Jahrgang = 2015",
           "scale": "cat",
           "answers": [
             {
@@ -12584,6 +12858,7 @@
           "text_de": "Inwieweit treffen folgende Aussagen auf dieses Kind zu? \nDieses Kind spricht oft über positive Sachen, die es in der Zeit vor dem Zuzug nach Deutschland erlebt hat",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen. ",
+          "filter": " Nur für Jahrgang = 2012, 2010, 2008 & 12:1=2",
           "concept": "vposvz",
           "scale": "cat",
           "answers": [
@@ -12638,6 +12913,7 @@
           "text_de": "Dieses Kind spricht oft über negative Sachen, die es in der Zeit vor dem Zuzug nach Deutschland erlebt hat",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": " Nur für Jahrgang = 2012, 2010, 2008 & 12:1=2",
           "concept": "vnegvz",
           "scale": "cat",
           "answers": [
@@ -12690,6 +12966,7 @@
           "item": "1",
           "text": "To what extent do you agree with the following statements about your child? For each answer, think about your child’s behavior in the last six months. \n",
           "text_de": "Inwieweit treffen die folgenden Aussagen auf dieses Kind zu? Bitte berücksichtigen Sie bei der Antwort das Verhalten Ihres Kindes in den letzten sechs Monaten.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -12711,6 +12988,7 @@
           "text_de": "Dieses Kind ist rücksichtsvoll",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver01",
           "scale": "cat",
           "answers": [
@@ -12765,6 +13043,7 @@
           "text_de": "Dieses Kind ist unruhig, überaktiv, kann nicht lange stillsitzen.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver02",
           "scale": "cat",
           "answers": [
@@ -12819,6 +13098,7 @@
           "text_de": "Dieses Kind teilt gerne mit anderen Kindern.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver03",
           "scale": "cat",
           "answers": [
@@ -12873,6 +13153,7 @@
           "text_de": "Dieses Kind hat oft Wutanfälle, ist aufbrausend.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver04",
           "scale": "cat",
           "answers": [
@@ -12927,6 +13208,7 @@
           "text_de": "Dieses Kind ist ein Einzelgänger, spielt meist alleine.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver05",
           "scale": "cat",
           "answers": [
@@ -12981,6 +13263,7 @@
           "text_de": "Dieses Kind ist hilfsbereit, wenn andere verletzt, krank oder betrübt sind.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver06",
           "scale": "cat",
           "answers": [
@@ -13035,6 +13318,7 @@
           "text_de": "Dieses Kind ist ständig zappelig.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver07",
           "scale": "cat",
           "answers": [
@@ -13089,6 +13373,7 @@
           "text_de": "Dieses Kind streitet sich oft mit anderen Kindern oder schikaniert sie.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver08",
           "scale": "cat",
           "answers": [
@@ -13143,6 +13428,7 @@
           "text_de": "Dieses Kind ist oft unglücklich oder niedergeschlagen, weint häufig.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver09",
           "scale": "cat",
           "answers": [
@@ -13197,6 +13483,7 @@
           "text_de": "Dieses Kind ist im Allgemeinen bei anderen Kindern beliebt.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver10",
           "scale": "cat",
           "answers": [
@@ -13251,6 +13538,7 @@
           "text_de": "Dieses Kind ist leicht ablenkbar, unkonzentriert.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver11",
           "scale": "cat",
           "answers": [
@@ -13305,6 +13593,7 @@
           "text_de": "Dieses Kind ist nervös oder anklammernd in neuen Situationen, verliert leicht das Selbstvertrauen.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver12",
           "scale": "cat",
           "answers": [
@@ -13359,6 +13648,7 @@
           "text_de": "Dieses Kind wird von anderen gehänselt oder schikaniert.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver13",
           "scale": "cat",
           "answers": [
@@ -13413,6 +13703,7 @@
           "text_de": "Dieses Kind hilft anderen oft freiwillig (Eltern, Erziehern, anderen Kindern).",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver14",
           "scale": "cat",
           "answers": [
@@ -13467,6 +13758,7 @@
           "text_de": "Dieses Kind kommt besser mit Erwachsenen aus als mit anderen Kindern.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver15",
           "scale": "cat",
           "answers": [
@@ -13521,6 +13813,7 @@
           "text_de": "Dieses Kind hat viele Ängste, fürchtet sich leicht.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver16",
           "scale": "cat",
           "answers": [
@@ -13575,6 +13868,7 @@
           "text_de": "Dieses Kind führt Aufgaben zu Ende, kann sich lange konzentrieren.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver17",
           "scale": "cat",
           "answers": [
@@ -13629,6 +13923,8 @@
           "text_de": "Dieses Kind denkt nach bevor es handelt.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "description": "Fragetext verändert (Satzzeichen entfernt)",
+          "filter": "Nur für Jahrgang = 2008",
           "scale": "cat",
           "answers": [
             {
@@ -13682,6 +13978,7 @@
           "text_de": "Dieses Kind klagt häufig über Kopfschmerzen, Bauchschmerzen oder Übelkeit.",
           "instruction": "Please answer on the following scale, where 1 means \"does not apply at all\", and 7 meaning \"applies  completely\"",
           "instruction_de": "Antworten Sie bitte anhand der folgenden Skala. \nDer Wert 1 bedeutet: trifft überhaupt nicht zu. Der Wert 7 bedeutet: trifft voll zu. \nMit den Werten zwischen 1 und 7 können Sie Ihre Meinung abstufen.",
+          "filter": "Nur für Jahrgang = 2012, 2008",
           "concept": "ver19",
           "scale": "cat",
           "answers": [
@@ -13753,6 +14050,7 @@
           "item": "1",
           "text": "Below are some of the personality and skill influenced by child rearing. In your opinion, how important are the following education aims?",
           "text_de": "Im Folgenden werden einige Eigenschaften und Fähigkeiten genannt, die man durch Erziehung fördern kann. Für wie wichtig halten Sie persönlich die folgenden Erziehungsziele?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -13772,6 +14070,8 @@
           "item": "1",
           "text": "How important is it for you that this child is a good pupil?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind ein guter Schüler / eine gute Schülerin wird?",
+          "description": "Fragetext verändert (eine gute Schülerin ergänzt)",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -13823,6 +14123,7 @@
           "item": "1",
           "text": "How important do you personally think that this child gets on well with other children?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind sich gut mit anderen Kindern versteht?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -13874,6 +14175,7 @@
           "item": "1",
           "text": "How important do you personally think that this child is interested in how and why certain things happen?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind sich dafür interessiert, wie und warum bestimmte Dinge passieren?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -13925,6 +14227,7 @@
           "item": "1",
           "text": "How important do you personally think that this child behaves like a normal girl or a normal boy?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind sich wie ein normales Mädchen bzw. wie ein normaler Junge verhält?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -13976,6 +14279,7 @@
           "item": "1",
           "text": "How important do you personally think that this child is honest?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind ehrlich ist?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14027,6 +14331,7 @@
           "item": "1",
           "text": "How important do you personally think that this child has good manners?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind gute Umgangsformen hat?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14078,6 +14383,7 @@
           "item": "1",
           "text": "How important do you personally think that this child has self-control?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind Selbstbeherrschung besitzt?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14129,6 +14435,7 @@
           "item": "1",
           "text": "How important do you personally think that this child is responsible?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind verantwortungsbewusst ist?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14180,6 +14487,7 @@
           "item": "1",
           "text": "How important do you personally think that this child takes care of others?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind auf andere Rücksicht nimmt?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14231,6 +14539,7 @@
           "item": "1",
           "text": "How important do you think that this child obey his/her parents?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind seinen Eltern gehorcht?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14282,6 +14591,7 @@
           "item": "1",
           "text": "How important do you think that this child has a good judgment?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind ein gutes Urteilsvermögen besitzt?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14333,6 +14643,7 @@
           "item": "1",
           "text": "How important do you think that this child is neat and proper?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind ordentlich und sauber ist?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14384,6 +14695,7 @@
           "item": "1",
           "text": "How important do you think that this child will reach their aims?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind sich bemüht, seine Ziele zu erreichen?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14435,6 +14747,7 @@
           "item": "1",
           "text": "How important do you think that this child can integrate in groups?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind sich gut in Gruppen einfügen kann?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14486,6 +14799,7 @@
           "item": "1",
           "text": "How important do you personally think that this child learns to prevail in life against resistance?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind lernt, sich im Leben auch gegen Widerstände durchzusetzen?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14537,6 +14851,7 @@
           "item": "1",
           "text": "#How important do you personally think that this child is satisfied with what it has and can do?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind zufrieden mit dem ist, was es hat und kann?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14588,6 +14903,7 @@
           "item": "1",
           "text": "How important do you personally think that this child learns to avoid risks in life?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind lernt, Risiken im Leben zu meiden?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14639,6 +14955,7 @@
           "item": "1",
           "text": "How important do you personally think that this child is liked by others, is adorable?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind von anderen gemocht wird, liebenswert ist?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14690,6 +15007,7 @@
           "item": "1",
           "text": "How important do you personally think that this child obeys religious rules?",
           "text_de": "Für wie wichtig halten Sie es persönlich, dass dieses Kind religiöse Vorschriften befolgt?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14741,6 +15059,7 @@
           "item": "1",
           "text": "How do you feel in your role as a parent and to what extent do you agree with the following statements?",
           "text_de": "Wie fühlen Sie sich in Ihrer Elternrolle und inwieweit stimmen Sie den folgenden Aussagen zu oder nicht zu?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -14760,6 +15079,7 @@
           "item": "1",
           "text": "I am willing to put my child's desires ahead of my own.",
           "text_de": "Ich bin bereit, meine eigenen Wünsche denen dieses Kindes zu opfern.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14811,6 +15131,7 @@
           "item": "1",
           "text": "When my child refuses to obey or does something she/he is not supposed to, it's because he/she is trying to annoy me.",
           "text_de": "Wenn dieses Kind nicht gehorcht und etwas Verbotenes tut, will es mich ärgern.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14862,6 +15183,7 @@
           "item": "1",
           "text": "I feel that childcare and bringing takes up all of my time and dominates my life.",
           "text_de": "Ich habe das Gefühl, dass Betreuung und Erziehung dieses Kindes mich völlig in Beschlag nehmen, mein ganzes Leben bestimmen.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14913,6 +15235,7 @@
           "item": "1",
           "text": "I wish my parental responsibilities didn't tie me up so much.",
           "text_de": "Ich wünschte, ich würde durch meine Elternpflichten nicht so gefangen genommen.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -14964,6 +15287,7 @@
           "item": "1",
           "text": "When there are problems with childrearing, my child is to blame.",
           "text_de": "Wenn es Probleme in der Erziehung gibt, liegt das an diesem Kind.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15015,6 +15339,7 @@
           "item": "1",
           "text": "When I am with my child, there’s nothing I would rather be doing.",
           "text_de": "Wenn ich mit diesem Kind zusammen bin, gibt es nichts anderes, was ich lieber täte.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15066,6 +15391,7 @@
           "item": "1",
           "text": "I would put up with anything in my child's best interests.",
           "text_de": "Für das Wohl dieses Kindes würde ich alles aushalten.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15117,6 +15443,7 @@
           "item": "1",
           "text": "I think when my child misbehaves he/she is doing it intentionally",
           "text_de": "Ich denke, wenn dieses Kind sich falsch verhält, macht es das mit Absicht.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15168,6 +15495,7 @@
           "item": "1",
           "text": "I often drop everything to help my child",
           "text_de": "Ich lasse oft alles stehen und liegen, um dieses Kind zu unterstützen.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15219,6 +15547,7 @@
           "item": "1",
           "text": "I look forward to being with my child",
           "text_de": "Ich freue mich darauf, mit diesem Kind zusammen zu sein.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15270,6 +15599,7 @@
           "item": "1",
           "text": "How frequently do the following things occur?",
           "text_de": "Wie häufig kommen folgende Dinge vor?",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -15289,6 +15619,7 @@
           "item": "1",
           "text": "I use words and gestures to show my child that I love him/her",
           "text_de": "Ich zeige diesem Kind mit Worten und Gesten, dass ich es gerne habe.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15340,6 +15671,7 @@
           "item": "1",
           "text": "I criticize my child",
           "text_de": "Ich kritisiere dieses Kind.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15391,6 +15723,7 @@
           "item": "1",
           "text": "I talk to my child about things he/she has done, seen, or experienced when he/she was out.",
           "text_de": "Wenn dieses Kind unterwegs war, frage ich nach, was es getan und erlebt hat.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15442,6 +15775,7 @@
           "item": "1",
           "text": "I punish my child when he/she is disobedient.",
           "text_de": "Wenn dieses Kind etwas gegen meinen Willen tut, bestrafe ich es.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15493,6 +15827,7 @@
           "item": "1",
           "text": "I threaten my child with punishment, but don't actually follow through with it.",
           "text_de": "Ich drohe diesem Kind eine Strafe an, bestrafe es aber dann doch nicht.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15544,6 +15879,7 @@
           "item": "1",
           "text": "When my child is outside the home, I know exactly where he/she is.",
           "text_de": "Wenn dieses Kind außer Haus ist, weiß ich genau, wo es sich aufhält.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15595,6 +15931,7 @@
           "item": "1",
           "text": "I tend to be strict with my child.",
           "text_de": "Ich bin eher streng zu diesem Kind.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15646,6 +15983,7 @@
           "item": "1",
           "text": "I comfort my child when he/she feels sad.",
           "text_de": "Ich tröste dieses Kind, wenn es traurig ist.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15697,6 +16035,7 @@
           "item": "1",
           "text": "I shout at my child when he/she did something wrong.",
           "text_de": "Ich schreie dieses Kind an, wenn es etwas falsch gemacht hat.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15748,6 +16087,7 @@
           "item": "1",
           "text": "I feel that my child is ungrateful because he/she disobeys.",
           "text_de": "Ich halte dieses Kind für undankbar, weil es mir nicht gehorcht.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15799,6 +16139,7 @@
           "item": "1",
           "text": "I stop talking to my child for a while when he/she did something wrong.",
           "text_de": "Ich rede eine Zeit lang nicht mit diesem Kind, wenn es etwas angestellt hat.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15850,6 +16191,7 @@
           "item": "1",
           "text": "I make it clear to my child that he/she should not oppose orders and decisions.",
           "text_de": "Ich gebe diesem Kind zu verstehen, dass es sich meinen Anordnungen und Entscheidungen nicht widersetzen soll.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15901,6 +16243,7 @@
           "item": "1",
           "text": "I praise my child.",
           "text_de": "Ich lobe dieses Kind.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -15952,6 +16295,7 @@
           "item": "1",
           "text": "I scold my child when I am angry at him/her.",
           "text_de": "Ich beschimpfe dieses Kind, weil ich wütend auf es bin.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -16003,6 +16347,7 @@
           "item": "1",
           "text": "I try to actively influence my child's circle of friends.",
           "text_de": "Ich versuche den Freundeskreis dieses Kindes aktiv zu beeinflussen.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -16054,6 +16399,7 @@
           "item": "1",
           "text": "I reduce punishments or lift them ahead of time.",
           "text_de": "Ich schwäche eine Bestrafung ab oder hebe sie vorzeitig auf.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -16105,6 +16451,7 @@
           "item": "1",
           "text": "I am disappointed and sad when my child misbehaves.",
           "text_de": "Ich bin enttäuscht und traurig, wenn dieses Kind sich schlecht benommen hat.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -16156,6 +16503,7 @@
           "item": "1",
           "text": "It is hard for me to be consistent in my childrearing.",
           "text_de": "Es fällt mir schwer in meiner Erziehung konsequent zu sein.",
+          "filter": "Nur für Jahrgang = 2010",
           "scale": "cat",
           "answers": [
             {
@@ -16226,6 +16574,7 @@
           "item": "1",
           "text": "\nHow often does this kid watch TV, DVDs or Internet streams (like YouTube) in German?",
           "text_de": "Wie oft schaut dieses Kind Fernsehen, DVDs oder Internet-Streams (z.B. YouTube) auf Deutsch?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz01d",
           "scale": "cat",
           "answers": [
@@ -16278,6 +16627,7 @@
           "item": "1",
           "text": "How often does this kid watch TV, DVDs, or Internet streams (such as YouTube) in one or more other languages?",
           "text_de": "Wie oft schaut dieses Kind Fernsehen, DVDs oder Internet-Streams (z.B. YouTube) auf einer oder mehreren anderen Sprachen?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz01a",
           "scale": "cat",
           "answers": [
@@ -16330,6 +16680,7 @@
           "item": "1",
           "text": "How often does child use computer- /Online- /console- or smart phone games?",
           "text_de": "Wie oft nutzt dieses Kind Computer- / Online- / Konsolen- oder Smartphonespiele?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz02",
           "scale": "cat",
           "answers": [
@@ -16382,6 +16733,7 @@
           "item": "1",
           "text": "How often does this kid use social online networks?",
           "text_de": "Wie oft nutzt dieses Kind soziale Online-Netzwerke?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz21",
           "scale": "cat",
           "answers": [
@@ -16434,6 +16786,7 @@
           "item": "1",
           "text": "\nHow many times is this child on the phone (including Skype or similar)?",
           "text_de": "Wie oft telefoniert dieses Kind (einschließlich Skype o.ä.)?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz22",
           "scale": "cat",
           "answers": [
@@ -16486,6 +16839,7 @@
           "item": "1",
           "text": "How often does this child exchange text messages or messengers?",
           "text_de": "Wie oft tauscht sich dieses Kind per SMS oder Messenger aus?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz23",
           "scale": "cat",
           "answers": [
@@ -16538,6 +16892,7 @@
           "item": "1",
           "text": "How often does this child surf the internet?",
           "text_de": "Wie oft surft dieses Kind ansonsten im Internet?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz14",
           "scale": "cat",
           "answers": [
@@ -16590,6 +16945,7 @@
           "item": "1",
           "text": "How often does this child listen music?",
           "text_de": "Wie oft hört dieses Kind Musik?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz03",
           "scale": "cat",
           "answers": [
@@ -16642,6 +16998,7 @@
           "item": "1",
           "text": "How often does this child make music?",
           "text_de": "Wie oft macht dieses Kind selbst Musik?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz04",
           "scale": "cat",
           "answers": [
@@ -16694,6 +17051,7 @@
           "item": "1",
           "text": "How often do this child sport?",
           "text_de": "Wie oft treibt dieses Kind Sport?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz05",
           "scale": "cat",
           "answers": [
@@ -16746,6 +17104,7 @@
           "item": "1",
           "text": "How often does this child do something with the family (for example, trips or similar)?",
           "text_de": "Wie oft unternimmt dieses Kind etwas mit der Familie (z.B. Ausflüge oder Ähnliches)?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz17",
           "scale": "cat",
           "answers": [
@@ -16798,6 +17157,7 @@
           "item": "1",
           "text": "How often is this child with friends?",
           "text_de": "Wie oft ist dieses Kind mit Freunden zusammen?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz19",
           "scale": "cat",
           "answers": [
@@ -16850,6 +17210,7 @@
           "item": "1",
           "text": "How often does this child practice dance, theater or something else?",
           "text_de": "Wie oft betreibt dieses Kind Tanz, Theater oder Ähnliches?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz06",
           "scale": "cat",
           "answers": [
@@ -16902,6 +17263,7 @@
           "item": "1",
           "text": "How often does this child do technical work and work?",
           "text_de": "Wie oft betreibt dieses Kind technisches Werken und Arbeiten?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz07",
           "scale": "cat",
           "answers": [
@@ -16954,6 +17316,7 @@
           "item": "1",
           "text": "How often does this child paint or make things with hands?",
           "text_de": "Wie oft malt oder bastelt dieses Kind?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz18",
           "scale": "cat",
           "answers": [
@@ -17006,6 +17369,7 @@
           "item": "1",
           "text": "How often does this child read?",
           "text_de": "Wie oft liest dieses Kind?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz08",
           "scale": "cat",
           "answers": [
@@ -17058,6 +17422,7 @@
           "item": "1",
           "text": "How often does this child just do nothing, hang or dream?",
           "text_de": "Wie oft tut dieses Kind einfach nichts, hängt ab oder träumt?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz10",
           "scale": "cat",
           "answers": [
@@ -17110,6 +17475,7 @@
           "item": "1",
           "text": "How often does  this child visit \nextracurricular religious education?",
           "text_de": "Wie oft besucht dieses Kind außerschulischen Religionsunterricht?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz26",
           "scale": "cat",
           "answers": [
@@ -17162,6 +17528,7 @@
           "item": "1",
           "text": "How often does this child visit other religious events?",
           "text_de": "Wie oft besucht dieses Kind andere religiöse Veranstaltungen?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz16",
           "scale": "cat",
           "answers": [
@@ -17214,6 +17581,7 @@
           "item": "1",
           "text": "How often does this child go in youth group?",
           "text_de": "Wie oft geht dieses Kind in eine Jugendgruppe?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz20",
           "scale": "cat",
           "answers": [
@@ -17266,6 +17634,7 @@
           "item": "1",
           "text": "How often does this child involved social or support aid projects?",
           "text_de": "Wie oft engagiert sich dieses Kind sozial oder unterstützt Hilfsprojekte?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz25",
           "scale": "cat",
           "answers": [
@@ -17318,6 +17687,7 @@
           "item": "1",
           "text": "How often does this child take care about pets?",
           "text_de": "Wie oft kümmert sich dieses Kind um Haustiere?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz24",
           "scale": "cat",
           "answers": [
@@ -17370,6 +17740,7 @@
           "item": "1",
           "text": "How often does this child visit a culture association?",
           "text_de": "Wie oft besucht dieses Kind einen Kulturverein?",
+          "filter": "Nur für Jahrgang = 2008",
           "concept": "fz27",
           "scale": "cat",
           "answers": [
@@ -17422,6 +17793,7 @@
           "item": "1",
           "text": "How many closely friends has this child in Germany?",
           "text_de": "Wie viele enge Freunde hat dieses Kind in Deutschland?",
+          "filter": "Nur für Jahrgang = 2008",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -17460,6 +17832,7 @@
           "text_de": "Woher stammen die Freunde dieses Kindes, die in Deutschland leben?",
           "instruction": "Please mark all responses that apply!",
           "instruction_de": "Bitte geben Sie alles Zutreffende an!",
+          "filter": "Nur für Jahrgang = 2008 & 348 > 0 & !=-1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -17515,6 +17888,7 @@
           "item": "1",
           "text": "How often does this child spend time in his / her free time with persons from his/her country of origin who not related with him or her?",
           "text_de": "Wie oft verbringt dieses Kind in seiner/ihrer Freizeit Zeit mit Personen aus seinem/ihrem Herkunftsland, die nicht mit ihm/ihr verwandt sind?",
+          "filter": "Nur für Jahrgang = 2008",
           "scale": "cat",
           "answers": [
             {
@@ -17571,6 +17945,7 @@
           "item": "1",
           "text": "How often does this child spend time in his / her free time with persons from Germany?",
           "text_de": "Wie oft verbringt dieses Kind in seiner/ihrer Freizeit Zeit mit Personen aus Deutschland?",
+          "filter": "Nur für Jahrgang = 2008",
           "scale": "cat",
           "answers": [
             {
@@ -17627,6 +18002,7 @@
           "item": "1",
           "text": "How often does this child spend time in his/her free time with persons from other countries?",
           "text_de": "Wie oft verbringt dieses Kind in seiner/ihrer Freizeit Zeit mit Personen aus anderen Ländern?",
+          "filter": "Nur für Jahrgang = 2008",
           "scale": "cat",
           "answers": [
             {
@@ -17683,6 +18059,7 @@
           "item": "1",
           "text": "Gets your child pocket money?",
           "text_de": "Erhält dieses Kind Taschengeld?",
+          "filter": "Nur für Jahrgang = 2008",
           "scale": "cat",
           "answers": [
             {
@@ -17721,6 +18098,7 @@
           "text_de": "Wie viel Taschengeld erhält dieses Kind?",
           "instruction": "Please state the amount either per week or per month!",
           "instruction_de": "Bitte geben Sie den Betrag entweder pro Woche oder pro Monat an!",
+          "filter": "353:1=1",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -17764,6 +18142,7 @@
           "item": "1",
           "text": "Thank you for answering this child. Now it's about:",
           "text_de": "Vielen Dank für die Beantwortung zu diesem Kind. Jetzt geht es um:",
+          "filter": "für alle Jahrgänge",
           "scale": "txt",
           "sn": 0,
           "number": ""
@@ -17783,6 +18162,7 @@
           "item": "1",
           "text": "Are there any further notes related to the interview?",
           "text_de": "Gibt es noch sonstige Hinweise zum Interview?",
+          "filter": "für alle Jahrgänge",
           "scale": "txt",
           "sn": 0,
           "number": ""
