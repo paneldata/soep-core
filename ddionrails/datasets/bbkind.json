@@ -2,10 +2,12 @@
   {
     "name": "cid",
     "dataset": "bbkind",
-    "label": "Original Household Number",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
@@ -22,37 +24,17 @@
     }
   },
   {
-    "name": "hhnrakt",
-    "dataset": "bbkind",
-    "label": "Current Household Number (=BBHHNR)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=BBHHNR)",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 60.0,
-      "1st Qu.": 2001783.0,
-      "Median": 2031542.0,
-      "Mean": 1723031.1181282974,
-      "3rd Qu.": 2118948.5,
-      "Max.": 3097683.0,
-      "valid": 13079,
-      "invalid": 0
-    }
-  },
-  {
     "name": "pid",
     "dataset": "bbkind",
     "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Personennummer",
+    "label_de": "Unveränderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 605.0,
@@ -71,7 +53,9 @@
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erhebungsjahr",
@@ -88,37 +72,17 @@
     }
   },
   {
-    "name": "hhnr",
+    "name": "hid_2011",
     "dataset": "bbkind",
-    "label": "Original Household Number",
+    "label": "Current Wave HH Number (=hid)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 60.0,
-      "1st Qu.": 2001775.0,
-      "Median": 2031453.0,
-      "Mean": 1722112.0539032037,
-      "3rd Qu.": 2118757.0,
-      "Max.": 3097683.0,
-      "valid": 13079,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "bbhhnr",
-    "dataset": "bbkind",
-    "label": "Current Wave HH Number (=HHNRAKT)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=HHNRAKT)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 60.0,
@@ -134,13 +98,15 @@
   {
     "name": "hid",
     "dataset": "bbkind",
-    "label": "Current Household Number (=BBHHNR)",
+    "label": "Current Wave HH Number (=hid_2011)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=BBHHNR)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_2011)",
     "study": "soep-core",
     "statistics": {
       "Min.": 60.0,
@@ -149,28 +115,6 @@
       "Mean": 1723031.1181282974,
       "3rd Qu.": 2118948.5,
       "Max.": 3097683.0,
-      "valid": 13079,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "persnr",
-    "dataset": "bbkind",
-    "label": "Never Changing Person ID",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Personennummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 605.0,
-      "1st Qu.": 20017803.5,
-      "Median": 20315202.0,
-      "Mean": 17241772.795703035,
-      "3rd Qu.": 21187553.0,
-      "Max.": 30976803.0,
       "valid": 13079,
       "invalid": 0
     }
@@ -400,7 +344,9 @@
     "label": "Year Of Birth",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr",
@@ -844,7 +790,9 @@
     "label": "Number Of Persons In Household",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zahl der Personen im HH",
@@ -866,7 +814,9 @@
     "label": "Number Of Children In Household",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zahl der Kinder bis 16 Jahre im HH",
@@ -875,7 +825,7 @@
       "Min.": 1.0,
       "1st Qu.": 2.0,
       "Median": 2.0,
-      "Mean": 2.338634490966797,
+      "Mean": 2.338634452175243,
       "3rd Qu.": 3.0,
       "Max.": 10.0,
       "valid": 13079,
@@ -888,7 +838,9 @@
     "label": "Serial Number Of Child",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lfd. Nr. des Kindes",
@@ -1462,7 +1414,9 @@
     "label": "Hours Per Day In Care",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stunden pro Tag in der Einrichtung",
@@ -2193,7 +2147,9 @@
     "label": "External Care: Costs per Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung ausserh. HH.: Kosten pro Monat",
@@ -2279,7 +2235,9 @@
     "label": "Pointer To Head Of Household",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zeiger auf HV",
@@ -2301,7 +2259,9 @@
     "label": "Pointer To Partner Of Head Of Household",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zeiger auf Partner des HV",
@@ -2323,7 +2283,9 @@
     "label": "Pointer To Mother",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zeiger auf Mutter",
@@ -2345,7 +2307,9 @@
     "label": "Pointer To Partner Of Mother",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zeiger auf Partner der Mutter",
@@ -2590,7 +2554,9 @@
     "label": "Class Level",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Klassenstufe",
@@ -2681,7 +2647,9 @@
     "label": "School Fee Amount",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Schulgeld Betrag",
@@ -2836,7 +2804,9 @@
     "label": "Costs for Private Lessons Prev. Half Yr.",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kosten fuer Nachhilfe im letzten halben Jahr",
@@ -2986,7 +2956,9 @@
     "label": "First Time Child Care Facility",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erstmaliger Besuch einer Kinderbetreuungseinrichtung",
@@ -3008,7 +2980,9 @@
     "label": "Costs for Child Care",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuungseinrichtungskosten Betrag",
@@ -4182,7 +4156,9 @@
     "label": "Costs Child Activities Amount",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kosten Kinderaktivitaeten Hoehe",
@@ -4268,7 +4244,9 @@
     "label": "Never Changing Person ID (Mother)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unveraenderliche Personennummer (Mutter)",
@@ -4379,7 +4357,9 @@
     "label": "Never Changing Person ID (Father)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unveraenderliche Personennummer (Vater)",

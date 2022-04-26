@@ -1,58 +1,16 @@
 [
   {
-    "name": "hhnrakt",
-    "dataset": "skind",
-    "label": "Current Wave HH Number (=SHHNR)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=SHHNR)",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 60.0,
-      "1st Qu.": 94544.0,
-      "Median": 271144.0,
-      "Mean": 314298.7047712099,
-      "3rd Qu.": 506400.0,
-      "Max.": 824879.0,
-      "valid": 6141,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hhnr",
-    "dataset": "skind",
-    "label": "Original Household Number",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 60.0,
-      "1st Qu.": 49336.0,
-      "Median": 271560.0,
-      "Mean": 300473.76990718127,
-      "3rd Qu.": 504700.0,
-      "Max.": 824879.0,
-      "valid": 6141,
-      "invalid": 0
-    }
-  },
-  {
     "name": "pid",
     "dataset": "skind",
     "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Personennummer",
+    "label_de": "Unveränderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 604.0,
@@ -71,7 +29,9 @@
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Befragungsjahr",
@@ -90,10 +50,12 @@
   {
     "name": "cid",
     "dataset": "skind",
-    "label": "Original Household Number",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
@@ -110,15 +72,17 @@
     }
   },
   {
-    "name": "shhnr",
+    "name": "hid_2002",
     "dataset": "skind",
-    "label": "Current Wave HH Number (=HHNRAKT)",
+    "label": "Current Wave HH Number (=hid)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Haushaltsnummer 2002",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 60.0,
@@ -134,13 +98,15 @@
   {
     "name": "hid",
     "dataset": "skind",
-    "label": "Current Wave HH Number (=SHHNR)",
+    "label": "Current Wave HH Number (=hid_2002)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=SHHNR)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_2002)",
     "study": "soep-core",
     "statistics": {
       "Min.": 60.0,
@@ -154,34 +120,14 @@
     }
   },
   {
-    "name": "persnr",
-    "dataset": "skind",
-    "label": "Never Changing Person ID",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Personennummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 604.0,
-      "1st Qu.": 920204.0,
-      "Median": 2713204.0,
-      "Mean": 3143489.5972968573,
-      "3rd Qu.": 5067203.0,
-      "Max.": 8248703.0,
-      "valid": 6141,
-      "invalid": 0
-    }
-  },
-  {
     "name": "welle",
     "dataset": "skind",
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Befragungsjahr",
@@ -203,7 +149,9 @@
     "label": "Year Of Birth",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr",
@@ -657,7 +605,9 @@
     "label": "Number Of Persons In Household",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zahl der Personen im HH",
@@ -679,7 +629,9 @@
     "label": "Number Of Children In Household",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zahl der Kinder bis 16 Jahre im HH",
@@ -688,7 +640,7 @@
       "Min.": 1.0,
       "1st Qu.": 1.0,
       "Median": 2.0,
-      "Mean": 2.025240182876587,
+      "Mean": 2.025240188894317,
       "3rd Qu.": 2.0,
       "Max.": 7.0,
       "valid": 6141,
@@ -701,7 +653,9 @@
     "label": "Serial Number Of Child",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lfd. Nr. des Kindes",
@@ -1679,7 +1633,9 @@
     "label": "Monthly Attendence Costs",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Einrichtungskosten in Euro pro Monat",
@@ -1893,7 +1849,9 @@
     "label": "Pointer To Head Of Household",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zeiger auf HV",
@@ -1915,7 +1873,9 @@
     "label": "Pointer To Partner Of Head",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zeiger auf Partner des HV",
@@ -1937,7 +1897,9 @@
     "label": "Pointer To Mother",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zeiger auf Mutter",
@@ -1959,7 +1921,9 @@
     "label": "Pointer To Partner Of Mother",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zeiger auf Partner der Mutter",

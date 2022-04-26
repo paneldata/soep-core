@@ -2,98 +2,12 @@
   {
     "name": "cid",
     "dataset": "bipequiv",
-    "label": "Case ID",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Case ID",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 60.0,
-      "1st Qu.": 2007200.0,
-      "Median": 2177679.0,
-      "Mean": 2304034.377997236,
-      "3rd Qu.": 3416088.0,
-      "Max.": 3923835.0,
-      "valid": 49921,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hid",
-    "dataset": "bipequiv",
-    "label": "Current Wave HH Number",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Current Wave HH Number",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 94.0,
-      "1st Qu.": 2003794.0,
-      "Median": 2175900.0,
-      "Mean": 2280822.798982392,
-      "3rd Qu.": 3425907.0,
-      "Max.": 3923835.0,
-      "valid": 49921,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "persnr",
-    "dataset": "bipequiv",
-    "label": "Never Changing Person ID",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Never Changing Person ID",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 901.0,
-      "1st Qu.": 20064401.0,
-      "Median": 21771301.0,
-      "Mean": 22982842.666052364,
-      "3rd Qu.": 34209802.0,
-      "Max.": 39238301.0,
-      "valid": 49921,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "syear",
-    "dataset": "bipequiv",
-    "label": "Survey Year",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Survey Year",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 2018.0,
-      "1st Qu.": 2018.0,
-      "Median": 2018.0,
-      "Mean": 2018.0,
-      "3rd Qu.": 2018.0,
-      "Max.": 2018.0,
-      "valid": 49921,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hhnr",
-    "dataset": "bipequiv",
-    "label": "Original Household Number",
-    "categories": {
-      "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
@@ -110,15 +24,17 @@
     }
   },
   {
-    "name": "bihhnr",
+    "name": "hid",
     "dataset": "bipequiv",
-    "label": "Current Wave HH Number (=HHNRAKT)",
+    "label": "Current Wave HH Number (=hid_2018)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Current Wave HH Number (=HHNRAKT)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_2018)",
     "study": "soep-core",
     "statistics": {
       "Min.": 94.0,
@@ -132,15 +48,41 @@
     }
   },
   {
-    "name": "hhnrakt",
+    "name": "syear",
     "dataset": "bipequiv",
-    "label": "Current Wave HH Number (=bhHHNR)",
+    "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Current Wave HH Number (=bhHHNR)",
+    "label_de": "Survey Year",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 2018.0,
+      "1st Qu.": 2018.0,
+      "Median": 2018.0,
+      "Mean": 2018.0,
+      "3rd Qu.": 2018.0,
+      "Max.": 2018.0,
+      "valid": 49921,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "hid_2018",
+    "dataset": "bipequiv",
+    "label": "Current Wave HH Number (=hid)",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 94.0,
@@ -159,10 +101,12 @@
     "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Never Changing Person ID",
+    "label_de": "Unveränderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 901.0,
@@ -181,7 +125,9 @@
     "label": "Person Identification Number",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Person Identification Number",
@@ -253,17 +199,17 @@
         0,
         0,
         0,
-        5,
+        3,
         24871,
-        25045
+        25047
       ]
     },
     "scale": "cat",
     "label_de": "Gender of Individual",
     "study": "soep-core",
     "statistics": {
-      "valid": 49916,
-      "invalid": 5
+      "valid": 49918,
+      "invalid": 3
     }
   },
   {
@@ -436,7 +382,9 @@
     "label": "HH Identification Number",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH Identification Number",
@@ -596,7 +544,9 @@
     "label": "Age of Individual",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Age of Individual",
@@ -605,11 +555,11 @@
       "Min.": 0.0,
       "1st Qu.": 15.0,
       "Median": 34.0,
-      "Mean": 35.08535677643887,
+      "Mean": 35.08645799806888,
       "3rd Qu.": 52.0,
       "Max.": 103.0,
-      "valid": 49709,
-      "invalid": 212
+      "valid": 49712,
+      "invalid": 209
     }
   },
   {
@@ -762,12 +712,12 @@
         0,
         0,
         0,
-        19108,
-        17093,
-        8647,
-        1449,
-        2607,
-        1017,
+        19138,
+        17101,
+        8623,
+        1446,
+        2600,
+        1013,
         0,
         0
       ]
@@ -776,8 +726,8 @@
     "label_de": "Marital Status of Individual",
     "study": "soep-core",
     "statistics": {
-      "valid": 30813,
-      "invalid": 19108
+      "valid": 30783,
+      "invalid": 19138
     }
   },
   {
@@ -870,7 +820,9 @@
     "label": "Number of Persons in HH",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Number of Persons in HH",
@@ -892,7 +844,9 @@
     "label": "Number of Children in HH",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Number of Children in HH",
@@ -901,7 +855,7 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 1.0,
-      "Mean": 1.4222872137978004,
+      "Mean": 1.4221670238977584,
       "3rd Qu.": 2.0,
       "Max.": 11.0,
       "valid": 49921,
@@ -968,18 +922,18 @@
         0,
         0,
         0,
-        21564,
-        6417,
-        14367,
-        7573
+        21354,
+        6458,
+        14488,
+        7621
       ]
     },
     "scale": "cat",
     "label_de": "Education With Respect to High School",
     "study": "soep-core",
     "statistics": {
-      "valid": 28357,
-      "invalid": 21564
+      "valid": 28567,
+      "invalid": 21354
     }
   },
   {
@@ -988,7 +942,9 @@
     "label": "Number of Years of Education",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Number of Years of Education",
@@ -997,11 +953,11 @@
       "Min.": 7.0,
       "1st Qu.": 10.5,
       "Median": 11.5,
-      "Mean": 11.885970115661621,
+      "Mean": 11.891348838806152,
       "3rd Qu.": 13.0,
       "Max.": 18.0,
-      "valid": 28383,
-      "invalid": 21538
+      "valid": 28610,
+      "invalid": 21311
     }
   },
   {
@@ -1010,7 +966,9 @@
     "label": "Annual Work Hours of Individual",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Annual Work Hours of Individual",
@@ -1019,11 +977,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 125.0,
-      "Mean": 865.4497357380264,
+      "Mean": 865.3961806690639,
       "3rd Qu.": 2026.0,
       "Max.": 5373.0,
-      "valid": 36706,
-      "invalid": 13215
+      "valid": 36708,
+      "invalid": 13213
     }
   },
   {
@@ -1082,8 +1040,8 @@
         0,
         0,
         0,
-        13215,
-        18635,
+        13213,
+        18637,
         18071
       ]
     },
@@ -1091,8 +1049,8 @@
     "label_de": "Employment Status of Individual",
     "study": "soep-core",
     "statistics": {
-      "valid": 36706,
-      "invalid": 13215
+      "valid": 36708,
+      "invalid": 13213
     }
   },
   {
@@ -1155,18 +1113,18 @@
         0,
         0,
         0,
-        13215,
-        10131,
-        7940,
-        18635
+        13213,
+        10130,
+        7941,
+        18637
       ]
     },
     "scale": "cat",
     "label_de": "Employment Level of Individual",
     "study": "soep-core",
     "statistics": {
-      "valid": 36706,
-      "invalid": 13215
+      "valid": 36708,
+      "invalid": 13213
     }
   },
   {
@@ -1224,8 +1182,8 @@
         0,
         0,
         0,
-        13215,
-        6486,
+        13213,
+        6488,
         17555,
         12665
       ]
@@ -3573,8 +3531,8 @@
         0,
         0,
         0,
-        6486,
-        15109,
+        6488,
+        15107,
         12665,
         166,
         0,
@@ -3787,8 +3745,8 @@
         0,
         0,
         0,
-        6486,
-        15109,
+        6488,
+        15107,
         12665,
         166,
         0,
@@ -3841,20 +3799,22 @@
     "label": "HH Pre-Government Income",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH Pre-Government Income",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
-      "1st Qu.": 3321.0,
-      "Median": 32253.0,
-      "Mean": 43650.047423838856,
-      "3rd Qu.": 66605.75,
-      "Max.": 1389924.0,
-      "valid": 48056,
-      "invalid": 1865
+      "1st Qu.": 3200.0,
+      "Median": 31800.0,
+      "Mean": 43624.935808841896,
+      "3rd Qu.": 66662.25,
+      "Max.": 1895511.0,
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -3863,20 +3823,22 @@
     "label": "HH Post-Government Income",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH Post-Government Income",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
-      "1st Qu.": 22683.25,
-      "Median": 36371.0,
-      "Mean": 41617.13717329782,
-      "3rd Qu.": 53098.0,
-      "Max.": 985295.0,
-      "valid": 48056,
-      "invalid": 1865
+      "1st Qu.": 22568.0,
+      "Median": 36333.0,
+      "Mean": 41581.965073682455,
+      "3rd Qu.": 53068.0,
+      "Max.": 1100099.0,
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -3885,7 +3847,9 @@
     "label": "HH Labor Income",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH Labor Income",
@@ -3893,12 +3857,12 @@
     "statistics": {
       "Min.": 0.0,
       "1st Qu.": 0.0,
-      "Median": 30080.0,
-      "Mean": 40884.56122024305,
-      "3rd Qu.": 64830.0,
-      "Max.": 1389898.0,
-      "valid": 48056,
-      "invalid": 1865
+      "Median": 29950.0,
+      "Mean": 40857.391869952546,
+      "3rd Qu.": 64800.0,
+      "Max.": 1223991.0,
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -3907,7 +3871,9 @@
     "label": "HH Income From Asset Flows",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH Income From Asset Flows",
@@ -3916,11 +3882,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 20.0,
-      "Mean": 1658.4019893457632,
-      "3rd Qu.": 211.0,
+      "Mean": 1662.2462326200982,
+      "3rd Qu.": 213.0,
       "Max.": 1298905.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -3929,7 +3895,9 @@
     "label": "HH Imputed Rent",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH Imputed Rent",
@@ -3938,11 +3906,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 1825.2879557183287,
-      "3rd Qu.": 2638.0,
-      "Max.": 44641.0,
-      "valid": 48056,
-      "invalid": 1865
+      "Mean": 1808.488468903505,
+      "3rd Qu.": 2657.0,
+      "Max.": 62094.0,
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -3951,7 +3919,9 @@
     "label": "HH Private Transfers",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH Private Transfers",
@@ -3960,11 +3930,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 626.4942150824039,
+      "Mean": 624.5162143035551,
       "3rd Qu.": 0.0,
       "Max.": 60000.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -3973,7 +3943,9 @@
     "label": "HH Public Transfers",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH Public Transfers",
@@ -3982,11 +3954,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 4608.0,
-      "Mean": 8178.310158981189,
-      "3rd Qu.": 11001.0,
+      "Mean": 8188.254745649821,
+      "3rd Qu.": 10870.0,
       "Max.": 135312.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -3995,7 +3967,9 @@
     "label": "HH Social Security Pensions",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH Social Security Pensions",
@@ -4004,11 +3978,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 4201.301918594972,
+      "Mean": 4184.693510115727,
       "3rd Qu.": 0.0,
       "Max.": 152220.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -4017,7 +3991,9 @@
     "label": "Total HH Taxes",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Total HH Taxes",
@@ -4025,12 +4001,12 @@
     "statistics": {
       "Min.": 0.0,
       "1st Qu.": 986.0,
-      "Median": 8347.0,
-      "Mean": 14412.519831030464,
-      "3rd Qu.": 21239.0,
-      "Max.": 620300.0,
-      "valid": 48056,
-      "invalid": 1865
+      "Median": 8227.0,
+      "Mean": 14415.919032553493,
+      "3rd Qu.": 21167.5,
+      "Max.": 795412.0,
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -4039,7 +4015,9 @@
     "label": "Individual Labor Earnings",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Individual Labor Earnings",
@@ -4048,11 +4026,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 13586.247794240053,
-      "3rd Qu.": 20700.0,
-      "Max.": 1379695.0,
-      "valid": 48056,
-      "invalid": 1865
+      "Mean": 13579.139726084422,
+      "3rd Qu.": 20500.0,
+      "Max.": 1223591.0,
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -4061,7 +4039,9 @@
     "label": "HH Federal Taxes",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH Federal Taxes",
@@ -4069,12 +4049,12 @@
     "statistics": {
       "Min.": 0.0,
       "1st Qu.": 0.0,
-      "Median": 2418.0,
-      "Mean": 7562.5426793740635,
-      "3rd Qu.": 9495.0,
-      "Max.": 613040.0,
-      "valid": 48056,
-      "invalid": 1865
+      "Median": 2401.5,
+      "Mean": 7580.841770044126,
+      "3rd Qu.": 9470.25,
+      "Max.": 790216.0,
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -4083,20 +4063,22 @@
     "label": "HH Social Security Taxes",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH Social Security Taxes",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
-      "1st Qu.": 704.0,
-      "Median": 5286.0,
-      "Mean": 6849.977151656401,
-      "3rd Qu.": 11568.0,
-      "Max.": 46603.0,
-      "valid": 48056,
-      "invalid": 1865
+      "1st Qu.": 657.0,
+      "Median": 5218.5,
+      "Mean": 6835.077262509367,
+      "3rd Qu.": 11536.0,
+      "Max.": 52098.0,
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -4105,7 +4087,9 @@
     "label": "HH Post-Government Income (TAXSIM)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH Post-Government Income (TAXSIM)",
@@ -4127,7 +4111,9 @@
     "label": "Total HH Taxes (TAXSIM)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Total HH Taxes (TAXSIM)",
@@ -4149,7 +4135,9 @@
     "label": "HH State Taxes (TAXSIM)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH State Taxes (TAXSIM)",
@@ -4171,7 +4159,9 @@
     "label": "HH Federal Taxes (TAXSIM)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH Federal Taxes (TAXSIM)",
@@ -4193,7 +4183,9 @@
     "label": "HH Private Retirement Income",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH Private Retirement Income",
@@ -4202,11 +4194,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 480.59039453970365,
+      "Mean": 480.7853634168679,
       "3rd Qu.": 0.0,
       "Max.": 348000.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -4222,106 +4214,6 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0
       ],
       "labels": [
@@ -4332,107 +4224,7 @@
         "[-3] Answer improbable",
         "[-2] Does not apply",
         "[-1] No Answer",
-        "[0] Not Imputed     0",
-        "1",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0"
+        "[0] Not Imputed     0"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -4452,225 +4244,25 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        33754,
-        2614,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754,
-        33754
+        33835
       ]
     },
     "scale": "cat",
     "label_de": "Share of imputed HH Pre-Government Income",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -4686,106 +4278,6 @@
         -3,
         -2,
         -1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0
       ],
       "labels": [
@@ -4796,107 +4288,7 @@
         "[-3] Answer improbable",
         "[-2] Does not apply",
         "[-1] No Answer",
-        "[0] Not Imputed     0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "1",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0"
+        "[0] Not Imputed     0"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -4916,225 +4308,25 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        504,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301,
-        28301
+        28539
       ]
     },
     "scale": "cat",
     "label_de": "Share of imputed HH Post-Government Income",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -5150,106 +4342,6 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0
       ],
       "labels": [
@@ -5260,107 +4352,7 @@
         "[-3] Answer improbable",
         "[-2] Does not apply",
         "[-1] No Answer",
-        "[0] Not Imputed     0",
-        "1",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0"
+        "[0] Not Imputed     0"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -5380,225 +4372,25 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        34625,
-        3402,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625,
-        34625
+        34693
       ]
     },
     "scale": "cat",
     "label_de": "Share of imputed HH Labour Income",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -5614,46 +4406,6 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0
       ],
       "labels": [
@@ -5664,47 +4416,7 @@
         "[-3] Answer improbable",
         "[-2] Does not apply",
         "[-1] No Answer",
-        "[0] Not Imputed     0",
-        "1",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0"
+        "[0] Not Imputed     0"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -5724,105 +4436,25 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        46725,
-        980,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725,
-        46725
+        46713
       ]
     },
     "scale": "cat",
     "label_de": "Share of imputed HH Income From Asset Flows",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -5838,30 +4470,6 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0
       ],
       "labels": [
@@ -5872,31 +4480,7 @@
         "[-3] Answer improbable",
         "[-2] Does not apply",
         "[-1] No Answer",
-        "[0] Not Imputed     0",
-        "1",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0"
+        "[0] Not Imputed     0"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -5916,73 +4500,25 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47549,
-        414,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549,
-        47549
+        47551
       ]
     },
     "scale": "cat",
     "label_de": "Share of imputed HH Private Transfers",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -5998,89 +4534,6 @@
         -3,
         -2,
         -1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0
       ],
       "labels": [
@@ -6091,90 +4544,7 @@
         "[-3] Answer improbable",
         "[-2] Does not apply",
         "[-1] No Answer",
-        "[0] Not Imputed     0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "1",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0"
+        "[0] Not Imputed     0"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -6194,191 +4564,25 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        164,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461,
-        41461
+        41650
       ]
     },
     "scale": "cat",
     "label_de": "Share of imputed HH Public Transfers",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -6394,94 +4598,6 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0
       ],
       "labels": [
@@ -6492,95 +4608,7 @@
         "[-3] Answer improbable",
         "[-2] Does not apply",
         "[-1] No Answer",
-        "[0] Not Imputed     0",
-        "1",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0"
+        "[0] Not Imputed     0"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -6600,201 +4628,25 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        46445,
-        916,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445,
-        46445
+        46444
       ]
     },
     "scale": "cat",
     "label_de": "Share of imputed HH Social Security Pensions",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -6810,98 +4662,6 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0
       ],
       "labels": [
@@ -6912,99 +4672,7 @@
         "[-3] Answer improbable",
         "[-2] Does not apply",
         "[-1] No Answer",
-        "[0] Not Imputed     0",
-        "1",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0",
-        "0"
+        "[0] Not Imputed     0"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -7024,209 +4692,25 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        42580,
-        4528,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580,
-        42580
+        42624
       ]
     },
     "scale": "cat",
     "label_de": "Share of imputed Individual Labor Earnings",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -7281,12 +4765,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48056,
+        48044,
         0
       ]
     },
@@ -7294,8 +4778,8 @@
     "label_de": "Share of imputed HH Private Retirement Income",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -7304,7 +4788,9 @@
     "label": "Individuals Cross-sectional Weight - without 1st wave of a subsample",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Individuals Cross-sectional Weight - without 1st wave of a subsample",
@@ -7326,18 +4812,20 @@
     "label": "HH Weight",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "HH Weight",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
-      "1st Qu.": 180.39999389648438,
-      "Median": 787.5499877929688,
-      "Mean": 1672.943115234375,
-      "3rd Qu.": 2128.25,
-      "Max.": 16423.099609375,
+      "1st Qu.": 180.00999450683594,
+      "Median": 785.3300170898438,
+      "Mean": 1673.25634765625,
+      "3rd Qu.": 2105.159912109375,
+      "Max.": 18538.23046875,
       "valid": 49921,
       "invalid": 0
     }
@@ -7345,19 +4833,21 @@
   {
     "name": "w1110318",
     "dataset": "bipequiv",
-    "label": "Longitudinal Weight - Respondent Individual",
+    "label": "Inverse Staying Probability",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Longitudinal Weight - Respondent Individual",
+    "label_de": "Inverse Staying Probability",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
       "1st Qu.": 1.0299999713897705,
       "Median": 1.100000023841858,
-      "Mean": 1.033217430114746,
+      "Mean": 1.0331902503967285,
       "3rd Qu.": 1.2000000476837158,
       "Max.": 6.119999885559082,
       "valid": 49921,
@@ -7370,18 +4860,20 @@
     "label": "Cross-sectional Weight - all samples",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Cross-sectional Weight - all samples",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
-      "1st Qu.": 87.43000030517578,
-      "Median": 649.530029296875,
-      "Mean": 1653.349609375,
-      "3rd Qu.": 2084.22998046875,
-      "Max.": 40393.4296875,
+      "1st Qu.": 90.5199966430664,
+      "Median": 654.72998046875,
+      "Mean": 1651.23876953125,
+      "3rd Qu.": 2062.429931640625,
+      "Max.": 36545.44140625,
       "valid": 49921,
       "invalid": 0
     }
@@ -7392,7 +4884,9 @@
     "label": "X-Sectional Weight - Enumerated Individual",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "X-Sectional Weight - Enumerated Individual",
@@ -7414,7 +4908,9 @@
     "label": "Longitudinal Weight - Enumerated Individual",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Longitudinal Weight - Enumerated Individual",
@@ -7436,7 +4932,9 @@
     "label": "Population Factor for w11103$",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Population Factor for w11103$",
@@ -7458,7 +4956,9 @@
     "label": "Population Factor for w11107$",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Population Factor for w11107$",
@@ -7480,7 +4980,9 @@
     "label": "Population Factor for w11108$",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Population Factor for w11108$",
@@ -7499,19 +5001,21 @@
   {
     "name": "h1110118",
     "dataset": "bipequiv",
-    "label": "Number of hh members age 0-14",
+    "label": "Number of hh members age 0-13",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Number of hh members age 0-14",
+    "label_de": "Number of hh members age 0-13",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 1.0,
-      "Mean": 1.1009394843853288,
+      "Mean": 1.1008593577853008,
       "3rd Qu.": 2.0,
       "Max.": 10.0,
       "valid": 49921,
@@ -7521,19 +5025,21 @@
   {
     "name": "h1110218",
     "dataset": "bipequiv",
-    "label": "Number of hh members age 15-18",
+    "label": "Number of hh members age 14-18",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Number of hh members age 15-18",
+    "label_de": "Number of hh members age 14-18",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 0.3952444862883356,
+      "Mean": 0.39520442298832154,
       "3rd Qu.": 1.0,
       "Max.": 4.0,
       "valid": 49921,
@@ -7546,7 +5052,9 @@
     "label": "Number of hh members age 0-1",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Number of hh members age 0-1",
@@ -7568,7 +5076,9 @@
     "label": "Number of hh members age 2-4",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Number of hh members age 2-4",
@@ -7590,7 +5100,9 @@
     "label": "Number of hh members age 5-7",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Number of hh members age 5-7",
@@ -7599,7 +5111,7 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 0.22062859317722,
+      "Mean": 0.22070871977724804,
       "3rd Qu.": 0.0,
       "Max.": 3.0,
       "valid": 49921,
@@ -7612,7 +5124,9 @@
     "label": "Number of hh members age 8-10",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Number of hh members age 8-10",
@@ -7621,7 +5135,7 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 0.2946455399531259,
+      "Mean": 0.2944652551030628,
       "3rd Qu.": 1.0,
       "Max.": 4.0,
       "valid": 49921,
@@ -7634,7 +5148,9 @@
     "label": "Number of hh members age 11-12",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Number of hh members age 11-12",
@@ -7643,7 +5159,7 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 0.19448728991807054,
+      "Mean": 0.19456741651809858,
       "3rd Qu.": 0.0,
       "Max.": 3.0,
       "valid": 49921,
@@ -7656,7 +5172,9 @@
     "label": "Number of hh members age 13-15",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Number of hh members age 13-15",
@@ -7665,7 +5183,7 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 0.2573866709400853,
+      "Mean": 0.2575068608401274,
       "3rd Qu.": 0.0,
       "Max.": 3.0,
       "valid": 49921,
@@ -7678,7 +5196,9 @@
     "label": "Number of hh members age 16-18",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Number of hh members age 16-18",
@@ -7687,7 +5207,7 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 0.21872558642655396,
+      "Mean": 0.21848520662646984,
       "3rd Qu.": 0.0,
       "Max.": 3.0,
       "valid": 49921,
@@ -7700,7 +5220,9 @@
     "label": "No. hh members 19 and above or 16-18,ind",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "No. hh members 19 and above or 16-18,ind",
@@ -7709,7 +5231,7 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 0.38861401013601493,
+      "Mean": 0.388754231686064,
       "3rd Qu.": 0.0,
       "Max.": 9.0,
       "valid": 49921,
@@ -7722,7 +5244,9 @@
     "label": "Indicator-wife in HH",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Indicator-wife in HH",
@@ -7744,7 +5268,9 @@
     "label": "Consumer Price Index",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Consumer Price Index",
@@ -8043,7 +5569,9 @@
     "label": "Household Windfall Income",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Household Windfall Income",
@@ -8052,11 +5580,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 1711.3406858664891,
+      "Mean": 1711.7681292148864,
       "3rd Qu.": 0.0,
       "Max.": 4000000.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -8072,8 +5600,7 @@
         -3,
         -2,
         -1,
-        0,
-        1
+        0
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -8083,8 +5610,7 @@
         "[-3] Answer improbable",
         "[-2] Does not apply",
         "[-1] No Answer",
-        "[0] Not Imputed     0",
-        "1"
+        "[0] Not Imputed     0"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -8104,27 +5630,25 @@
         true,
         true,
         true,
-        false,
         false
       ],
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47938,
-        118
+        47926
       ]
     },
     "scale": "cat",
     "label_de": "Impute Household Windfall Income",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -8133,7 +5657,9 @@
     "label": "Indicator - Head in HH",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Indicator - Head in HH",
@@ -8201,21 +5727,21 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        31390,
-        16666
+        31418,
+        16626
       ]
     },
     "scale": "cat",
     "label_de": "Impute HH Imputed Rental Value",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -8270,21 +5796,21 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        11414,
-        36642
+        11458,
+        36586
       ]
     },
     "scale": "cat",
     "label_de": "Impute Total HH Taxes",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -8293,18 +5819,20 @@
     "label": "Individuals Cross-sectional Weight - without 1st wave of a subsample",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Individuals Cross-sectional Weight - without 1st wave of a subsample",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
-      "1st Qu.": 60.15999984741211,
-      "Median": 589.4600219726562,
-      "Mean": 1654.5179443359375,
-      "3rd Qu.": 2067.9599609375,
-      "Max.": 58178.58984375,
+      "1st Qu.": 63.27000045776367,
+      "Median": 601.969970703125,
+      "Mean": 1652.190673828125,
+      "3rd Qu.": 2065.419921875,
+      "Max.": 57334.41015625,
       "valid": 49921,
       "invalid": 0
     }
@@ -8315,7 +5843,9 @@
     "label": "Impute Annual Work Hours of Individual",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Impute Annual Work Hours of Individual",
@@ -8337,7 +5867,9 @@
     "label": "Wages,Salary from main job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wages,Salary from main job",
@@ -8346,11 +5878,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 3600.0,
-      "Mean": 15805.583905593707,
+      "Mean": 15775.80034010203,
       "3rd Qu.": 27600.0,
-      "Max.": 622545.0,
-      "valid": 29998,
-      "invalid": 19923
+      "Max.": 549937.0,
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8359,7 +5891,9 @@
     "label": "Income from secondary employment",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Income from secondary employment",
@@ -8368,11 +5902,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 274.9317621174745,
+      "Mean": 270.24627388216464,
       "3rd Qu.": 0.0,
-      "Max.": 146240.0,
-      "valid": 29998,
-      "invalid": 19923
+      "Max.": 144000.0,
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8381,7 +5915,9 @@
     "label": "Income from self-employment",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Income from self-employment",
@@ -8390,11 +5926,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 2158.0460697379826,
+      "Mean": 2173.509652895869,
       "3rd Qu.": 0.0,
-      "Max.": 1379695.0,
-      "valid": 29998,
-      "invalid": 19923
+      "Max.": 1223591.0,
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8403,7 +5939,9 @@
     "label": "old-age,disability and civil serv. pensions",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "old-age,disability and civil serv. pensions",
@@ -8412,11 +5950,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 3472.773718247883,
+      "Mean": 3475.5152212330368,
       "3rd Qu.": 0.0,
       "Max.": 348000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8425,7 +5963,9 @@
     "label": "widows and/or orphans pension",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "widows and/or orphans pension",
@@ -8434,11 +5974,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 355.4973664910994,
+      "Mean": 356.7469574205595,
       "3rd Qu.": 0.0,
       "Max.": 96468.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8447,7 +5987,9 @@
     "label": "Unemployment benefit",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unemployment benefit",
@@ -8456,11 +5998,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 204.08415272267266,
+      "Mean": 203.22117098981997,
       "3rd Qu.": 0.0,
-      "Max.": 31523.0,
-      "valid": 34782,
-      "invalid": 15139
+      "Max.": 47736.0,
+      "valid": 34774,
+      "invalid": 15147
     }
   },
   {
@@ -8469,7 +6011,9 @@
     "label": "Unemployment assistance",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unemployment assistance",
@@ -8481,8 +6025,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8491,7 +6035,9 @@
     "label": "Subsistence allowance",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Subsistence allowance",
@@ -8503,8 +6049,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8513,7 +6059,9 @@
     "label": "Old-age transition benefit",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Old-age transition benefit",
@@ -8525,8 +6073,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8535,7 +6083,9 @@
     "label": "Maternity benefit",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Maternity benefit",
@@ -8544,11 +6094,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 82.76105456845495,
+      "Mean": 83.03626272502444,
       "3rd Qu.": 0.0,
       "Max.": 22800.0,
-      "valid": 34782,
-      "invalid": 15139
+      "valid": 34774,
+      "invalid": 15147
     }
   },
   {
@@ -8557,7 +6107,9 @@
     "label": "Student grants",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Student grants",
@@ -8566,11 +6118,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 59.67198550974642,
+      "Mean": 57.603669408178526,
       "3rd Qu.": 0.0,
       "Max.": 19680.0,
-      "valid": 34782,
-      "invalid": 15139
+      "valid": 34774,
+      "invalid": 15147
     }
   },
   {
@@ -8579,7 +6131,9 @@
     "label": "Military/community service pay",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Military/community service pay",
@@ -8591,8 +6145,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8601,7 +6155,9 @@
     "label": "Alimony",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Alimony",
@@ -8613,8 +6169,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8623,7 +6179,9 @@
     "label": "Private Transfers received",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Private Transfers received",
@@ -8632,11 +6190,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 132.62175838077167,
+      "Mean": 131.4300339333985,
       "3rd Qu.": 0.0,
       "Max.": 38700.0,
-      "valid": 34782,
-      "invalid": 15139
+      "valid": 34774,
+      "invalid": 15147
     }
   },
   {
@@ -8645,7 +6203,9 @@
     "label": "Company pension (surviving dependants c.p.)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Company pension (surviving dependants c.p.)",
@@ -8657,8 +6217,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8667,7 +6227,9 @@
     "label": "Private pension (old-age,accid.,disability)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Private pension (old-age,accid.,disability)",
@@ -8679,8 +6241,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8689,7 +6251,9 @@
     "label": "13th monthly salary",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "13th monthly salary",
@@ -8698,11 +6262,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 206.25278351890125,
+      "Mean": 205.494414991164,
       "3rd Qu.": 0.0,
-      "Max.": 44378.0,
-      "valid": 29998,
-      "invalid": 19923
+      "Max.": 42115.0,
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8711,7 +6275,9 @@
     "label": "14th monthly salary",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "14th monthly salary",
@@ -8720,11 +6286,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 18.49246616441096,
+      "Mean": 18.60304758094095,
       "3rd Qu.": 0.0,
       "Max.": 12000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8733,7 +6299,9 @@
     "label": "Christmas bonus",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Christmas bonus",
@@ -8742,11 +6310,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 229.3580572038136,
+      "Mean": 229.1910906605315,
       "3rd Qu.": 0.0,
       "Max.": 25000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8755,7 +6323,9 @@
     "label": "Vacation bonus",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Vacation bonus",
@@ -8764,11 +6334,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 131.6885459030602,
+      "Mean": 132.14167583608415,
       "3rd Qu.": 0.0,
       "Max.": 7500.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8777,7 +6347,9 @@
     "label": "Profit-sharing",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Profit-sharing",
@@ -8786,11 +6358,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 333.3393892926195,
+      "Mean": 335.18919009036046,
       "3rd Qu.": 0.0,
       "Max.": 440000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8799,7 +6371,9 @@
     "label": "Other bonuses",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Other bonuses",
@@ -8808,11 +6382,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 27.628341889459296,
+      "Mean": 27.637024440665535,
       "3rd Qu.": 0.0,
       "Max.": 150000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8821,7 +6395,9 @@
     "label": "Retirement pay: stat. pension insurance",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Retirement pay: stat. pension insurance",
@@ -8830,11 +6406,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 2142.0177678109367,
+      "Mean": 2133.5582619198253,
       "3rd Qu.": 0.0,
-      "Max.": 66074.0,
-      "valid": 34782,
-      "invalid": 15139
+      "Max.": 62189.0,
+      "valid": 34774,
+      "invalid": 15147
     }
   },
   {
@@ -8843,7 +6419,9 @@
     "label": "Widows pension: stat pension insurance",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Widows pension: stat pension insurance",
@@ -8852,11 +6430,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 269.91972798186544,
+      "Mean": 271.1494114901137,
       "3rd Qu.": 0.0,
       "Max.": 38916.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -8865,7 +6443,9 @@
     "label": "Income from rental and leasing",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Income from rental and leasing",
@@ -8874,11 +6454,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 1340.014836857,
+      "Mean": 1341.6662642577637,
       "3rd Qu.": 0.0,
       "Max.": 1100000.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -8887,7 +6467,9 @@
     "label": "Operation, maintenance costs",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Operation, maintenance costs",
@@ -8896,11 +6478,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 350.96980605959715,
+      "Mean": 353.93682874032135,
       "3rd Qu.": 0.0,
       "Max.": 300000.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -8909,7 +6491,9 @@
     "label": "Interest, dividend income",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interest, dividend income",
@@ -8917,12 +6501,12 @@
     "statistics": {
       "Min.": 0.0,
       "1st Qu.": 0.0,
-      "Median": 13.0,
-      "Mean": 563.1562343932079,
-      "3rd Qu.": 183.0,
+      "Median": 12.0,
+      "Mean": 567.2826783781534,
+      "3rd Qu.": 184.0,
       "Max.": 1262905.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -8931,7 +6515,9 @@
     "label": "Child allowance",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Child allowance",
@@ -8940,11 +6526,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 2304.0,
-      "Mean": 3263.5455718328617,
+      "Mean": 3268.0250395470816,
       "3rd Qu.": 4656.0,
       "Max.": 28656.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -8953,7 +6539,9 @@
     "label": "Housing benefit",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Housing benefit",
@@ -8962,11 +6550,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 289.7445688363576,
+      "Mean": 288.52936891183083,
       "3rd Qu.": 0.0,
       "Max.": 36000.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -8975,7 +6563,9 @@
     "label": "Compulsory long term care insurance",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Compulsory long term care insurance",
@@ -8984,11 +6574,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 158.23560013317797,
+      "Mean": 157.12655066189328,
       "3rd Qu.": 0.0,
-      "Max.": 32314.0,
-      "valid": 48056,
-      "invalid": 1865
+      "Max.": 29016.0,
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -8997,7 +6587,9 @@
     "label": "Social assistance(living expenses etc)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Social assistance(living expenses etc)",
@@ -9006,11 +6598,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 83.94369069419011,
+      "Mean": 87.59081258846058,
       "3rd Qu.": 0.0,
       "Max.": 84000.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -9019,7 +6611,9 @@
     "label": "Social assistance f. spec. circumstances",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Social assistance f. spec. circumstances",
@@ -9031,8 +6625,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -9041,7 +6635,9 @@
     "label": "Housing support for owner-occupiers",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Housing support for owner-occupiers",
@@ -9053,8 +6649,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -9109,21 +6705,21 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        46322,
-        1734
+        46311,
+        1733
       ]
     },
     "scale": "cat",
     "label_de": "Imp.flag:Wages,Salary from main job",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -9178,12 +6774,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47644,
+        47632,
         412
       ]
     },
@@ -9191,8 +6787,8 @@
     "label_de": "Imp.flag:Income from secondary job",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -9247,12 +6843,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47786,
+        47774,
         270
       ]
     },
@@ -9260,8 +6856,8 @@
     "label_de": "Imp.flag:Income from self-employment",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -9316,21 +6912,21 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47874,
-        182
+        47867,
+        177
       ]
     },
     "scale": "cat",
     "label_de": "Imp.flag:Unemployment benefit",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -9385,12 +6981,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47763,
+        47751,
         293
       ]
     },
@@ -9398,8 +6994,8 @@
     "label_de": "Imp.flag:old-age,civil serv. pensions",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -9454,21 +7050,21 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47984,
-        72
+        47962,
+        82
       ]
     },
     "scale": "cat",
     "label_de": "Imp.flag:widows/orphans pension",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -9523,12 +7119,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48056,
+        48044,
         0
       ]
     },
@@ -9536,8 +7132,8 @@
     "label_de": "Imp.flag:Unemployment assistance",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -9592,12 +7188,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48056,
+        48044,
         0
       ]
     },
@@ -9605,8 +7201,8 @@
     "label_de": "Imp.flag:Subsistence allowance",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -9661,12 +7257,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48056,
+        48044,
         0
       ]
     },
@@ -9674,8 +7270,8 @@
     "label_de": "Imp.flag:Old-age transition benefit",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -9730,21 +7326,21 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47938,
-        118
+        47940,
+        104
       ]
     },
     "scale": "cat",
     "label_de": "Imp.flag:Maternity benefit",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -9799,21 +7395,21 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
         47990,
-        66
+        54
       ]
     },
     "scale": "cat",
     "label_de": "Imp.flag:Student grants",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -9868,12 +7464,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48056,
+        48044,
         0
       ]
     },
@@ -9881,8 +7477,8 @@
     "label_de": "Imp.flag:Military/community service pay",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -9937,12 +7533,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48056,
+        48044,
         0
       ]
     },
@@ -9950,8 +7546,8 @@
     "label_de": "Imp.flag:Alimony",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -10006,12 +7602,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48056,
+        48044,
         0
       ]
     },
@@ -10019,8 +7615,8 @@
     "label_de": "Imp.flag:Company pension",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -10075,21 +7671,21 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47934,
-        122
+        47932,
+        112
       ]
     },
     "scale": "cat",
     "label_de": "Imp.flag:Private Transfers received",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -10144,12 +7740,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48056,
+        48044,
         0
       ]
     },
@@ -10157,8 +7753,8 @@
     "label_de": "Imp.flag:Private pension(old-age,accid.)",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -10213,12 +7809,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47923,
+        47911,
         133
       ]
     },
@@ -10226,8 +7822,8 @@
     "label_de": "Imp.flag:13th monthly salary",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -10282,12 +7878,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48042,
+        48030,
         14
       ]
     },
@@ -10295,8 +7891,8 @@
     "label_de": "Imp.flag:14th monthly salary",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -10351,12 +7947,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47755,
+        47743,
         301
       ]
     },
@@ -10364,8 +7960,8 @@
     "label_de": "Imp.flag:Christmas bonus",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -10420,12 +8016,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47744,
+        47732,
         312
       ]
     },
@@ -10433,8 +8029,8 @@
     "label_de": "Imp.flag:Vacation bonus",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -10489,12 +8085,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47933,
+        47921,
         123
       ]
     },
@@ -10502,8 +8098,8 @@
     "label_de": "Imp.flag:Profit-sharing",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -10558,12 +8154,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48041,
+        48029,
         15
       ]
     },
@@ -10571,8 +8167,8 @@
     "label_de": "Imp.flag:Other bonuses",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -10627,21 +8223,21 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47312,
-        744
+        47321,
+        723
       ]
     },
     "scale": "cat",
     "label_de": "Imp.flag:retirement pay from stat.insurance",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -10696,21 +8292,21 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47983,
-        73
+        47961,
+        83
       ]
     },
     "scale": "cat",
     "label_de": "Imp.flag:widows pension from stat.insurance",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -10765,12 +8361,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47826,
+        47814,
         230
       ]
     },
@@ -10778,8 +8374,8 @@
     "label_de": "Imp.flag:Income from rental and leasing",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -10834,12 +8430,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47984,
+        47972,
         72
       ]
     },
@@ -10847,8 +8443,8 @@
     "label_de": "Imp.flag:Operation, maintenance costs",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -10903,12 +8499,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        46759,
+        46747,
         1297
       ]
     },
@@ -10916,8 +8512,8 @@
     "label_de": "Imp.flag:Child allowance",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -10972,12 +8568,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        46907,
+        46895,
         1149
       ]
     },
@@ -10985,8 +8581,8 @@
     "label_de": "Imp.flag:Interest, dividend income",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -11041,12 +8637,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47432,
+        47420,
         624
       ]
     },
@@ -11054,8 +8650,8 @@
     "label_de": "Imp.flag:Housing benefit",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -11110,12 +8706,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47761,
+        47749,
         295
       ]
     },
@@ -11123,8 +8719,8 @@
     "label_de": "Imp.flag:Compuls. long term care insurance",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -11179,12 +8775,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47870,
+        47858,
         186
       ]
     },
@@ -11192,8 +8788,8 @@
     "label_de": "Imp.flag:Social assist.(living expenses ..)",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -11248,12 +8844,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48056,
+        48044,
         0
       ]
     },
@@ -11261,8 +8857,8 @@
     "label_de": "Imp.flag:Soc. assist. for spec. circumstan.",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -11317,12 +8913,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48056,
+        48044,
         0
       ]
     },
@@ -11330,8 +8926,8 @@
     "label_de": "Imp.flag:Housing support f. owner-occupiers",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -11340,7 +8936,9 @@
     "label": "Social miners insurance pension",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Social miners insurance pension",
@@ -11352,8 +8950,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11362,7 +8960,9 @@
     "label": "Civil servant pension",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Civil servant pension",
@@ -11371,11 +8971,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 724.6542102806853,
+      "Mean": 724.8233470041013,
       "3rd Qu.": 0.0,
       "Max.": 102000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11384,7 +8984,9 @@
     "label": "War victim pension",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "War victim pension",
@@ -11396,8 +8998,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11406,7 +9008,9 @@
     "label": "Farmer Pension",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Farmer Pension",
@@ -11418,8 +9022,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11428,7 +9032,9 @@
     "label": "Statutory accident insurance",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Statutory accident insurance",
@@ -11437,11 +9043,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 23.74121608107207,
+      "Mean": 23.746757360541494,
       "3rd Qu.": 0.0,
       "Max.": 43200.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11450,7 +9056,9 @@
     "label": "Supplementary benefits for civil servants",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Supplementary benefits for civil servants",
@@ -11459,11 +9067,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 80.04073604906993,
+      "Mean": 80.11943583074923,
       "3rd Qu.": 0.0,
       "Max.": 42000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11472,7 +9080,9 @@
     "label": "Company pension",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Company pension",
@@ -11481,11 +9091,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 257.66571104740314,
+      "Mean": 257.7258510886599,
       "3rd Qu.": 0.0,
       "Max.": 348000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11494,7 +9104,9 @@
     "label": "Private pension",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Private pension",
@@ -11503,11 +9115,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 38.92159477298487,
+      "Mean": 38.93067920376113,
       "3rd Qu.": 0.0,
       "Max.": 55200.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11516,7 +9128,9 @@
     "label": "Other pension",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Other pension",
@@ -11525,11 +9139,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 10.964864324288286,
+      "Mean": 10.967423560401453,
       "3rd Qu.": 0.0,
       "Max.": 27600.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11538,7 +9152,9 @@
     "label": "Widows social miners insurance pension",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Widows social miners insurance pension",
@@ -11550,8 +9166,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11560,7 +9176,9 @@
     "label": "Widows civil servant pension",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Widows civil servant pension",
@@ -11569,11 +9187,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 49.55777051803454,
+      "Mean": 49.56933746790704,
       "3rd Qu.": 0.0,
       "Max.": 48000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11582,7 +9200,9 @@
     "label": "Widows war victim pension",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Widows war victim pension",
@@ -11594,8 +9214,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11604,7 +9224,9 @@
     "label": "Widows farmer Pension",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Widows farmer Pension",
@@ -11616,8 +9238,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11626,7 +9248,9 @@
     "label": "Widows statutory accident insurance",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Widows statutory accident insurance",
@@ -11635,11 +9259,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 2.681445429695313,
+      "Mean": 2.6820712880530824,
       "3rd Qu.": 0.0,
       "Max.": 24000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11648,7 +9272,9 @@
     "label": "Widows supplement. benefits(civil servants)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Widows supplement. benefits(civil servants)",
@@ -11657,11 +9283,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 5.741849456630442,
+      "Mean": 5.743189623553733,
       "3rd Qu.": 0.0,
       "Max.": 21600.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11670,7 +9296,9 @@
     "label": "Widows company pension",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Widows company pension",
@@ -11679,11 +9307,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 17.354623641576104,
+      "Mean": 17.35867426894735,
       "3rd Qu.": 0.0,
       "Max.": 96468.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11692,7 +9320,9 @@
     "label": "Other widows pension",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Other widows pension",
@@ -11701,11 +9331,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 0.7416494432962197,
+      "Mean": 0.7418225467640293,
       "3rd Qu.": 0.0,
       "Max.": 12168.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11714,7 +9344,9 @@
     "label": "Widows private pension",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Widows private pension",
@@ -11723,11 +9355,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 1.5457030468697912,
+      "Mean": 1.5460638191457436,
       "3rd Qu.": 0.0,
       "Max.": 18600.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -11805,7 +9437,9 @@
     "label": "Inpatient nights in hosp",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Inpatient nights in hosp",
@@ -11975,7 +9609,9 @@
     "label": "Have had stroke",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Have had stroke",
@@ -11997,7 +9633,9 @@
     "label": "High blood pressure/circulation problems",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "High blood pressure/circulation problems",
@@ -12019,7 +9657,9 @@
     "label": "Have or had diabetes",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Have or had diabetes",
@@ -12041,7 +9681,9 @@
     "label": "Have or had cancer",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Have or had cancer",
@@ -12063,7 +9705,9 @@
     "label": "Psychiatric problems",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Psychiatric problems",
@@ -12085,7 +9729,9 @@
     "label": "Arthritis",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Arthritis",
@@ -12107,7 +9753,9 @@
     "label": "Angina or heart condition",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Angina or heart condition",
@@ -12129,7 +9777,9 @@
     "label": "Difficulties breathing",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Difficulties breathing",
@@ -12220,7 +9870,9 @@
     "label": "Need help or have difficulty bathing alone",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Need help or have difficulty bathing alone",
@@ -12449,7 +10101,9 @@
     "label": "Walk 10+ min alone difficult",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Walk 10+ min alone difficult",
@@ -12540,7 +10194,9 @@
     "label": "Health limits kneeling",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Health limits kneeling",
@@ -12562,7 +10218,9 @@
     "label": "Health limits vigorous activities",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Health limits vigorous activities",
@@ -12584,7 +10242,9 @@
     "label": "Body height",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Body height",
@@ -12606,7 +10266,9 @@
     "label": "Body weight",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Body weight",
@@ -12895,7 +10557,9 @@
     "label": "Number of annual doctor visits",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Number of annual doctor visits",
@@ -12917,7 +10581,9 @@
     "label": "Race of individual",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Race of individual",
@@ -12939,7 +10605,9 @@
     "label": "Social assistance for elderly",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Social assistance for elderly",
@@ -12948,11 +10616,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 65.90163559180955,
+      "Mean": 65.57018566314213,
       "3rd Qu.": 0.0,
       "Max.": 19200.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -12961,7 +10629,9 @@
     "label": "Losses from renting and leasing",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Losses from renting and leasing",
@@ -12970,11 +10640,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 336.9785042450474,
+      "Mean": 322.9790816751311,
       "3rd Qu.": 0.0,
-      "Max.": 211258.0,
-      "valid": 48056,
-      "invalid": 1865
+      "Max.": 200000.0,
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -12983,7 +10653,9 @@
     "label": "Losses from capital investment",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Losses from capital investment",
@@ -12992,11 +10664,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 21.88488430164808,
+      "Mean": 21.96807093497627,
       "3rd Qu.": 0.0,
       "Max.": 125000.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -13051,12 +10723,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47871,
+        47859,
         185
       ]
     },
@@ -13064,8 +10736,8 @@
     "label_de": "Imp.flag: Social assistance for elderly",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -13120,12 +10792,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47448,
+        47436,
         608
       ]
     },
@@ -13133,8 +10805,8 @@
     "label_de": "Imp.flag: Losses from renting and leasing",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -13189,12 +10861,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47925,
+        47913,
         131
       ]
     },
@@ -13202,8 +10874,8 @@
     "label_de": "Imp.flag: Losses from capital investment",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -13212,7 +10884,9 @@
     "label": "Commuting,travel grant",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Commuting,travel grant",
@@ -13221,11 +10895,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 13.115541036069072,
+      "Mean": 13.263145610349772,
       "3rd Qu.": 0.0,
       "Max.": 5000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -13280,12 +10954,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        47929,
+        47917,
         127
       ]
     },
@@ -13293,8 +10967,8 @@
     "label_de": "Imp.flag: Commuting, travel grant",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -13303,7 +10977,9 @@
     "label": "Indemnity",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Indemnity",
@@ -13312,11 +10988,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 109.58543902926861,
+      "Mean": 109.61101663832483,
       "3rd Qu.": 0.0,
       "Max.": 600000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -13371,12 +11047,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48045,
+        48033,
         11
       ]
     },
@@ -13384,8 +11060,8 @@
     "label_de": "Imp.flag: indemnity",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -13394,7 +11070,9 @@
     "label": "Unemployment benefit II",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unemployment benefit II",
@@ -13403,11 +11081,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 2648.2878932911603,
+      "Mean": 2669.0450836732994,
       "3rd Qu.": 0.0,
       "Max.": 54000.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -13462,21 +11140,21 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        45251,
-        2805
+        45246,
+        2798
       ]
     },
     "scale": "cat",
     "label_de": "Imp.flag: Unemployment benefit II",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -13599,7 +11277,9 @@
     "label": "Additional child benefit",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Additional child benefit",
@@ -13608,11 +11288,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 33.63569585483602,
+      "Mean": 35.31385813004746,
       "3rd Qu.": 0.0,
-      "Max.": 12600.0,
-      "valid": 48056,
-      "invalid": 1865
+      "Max.": 16320.0,
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -13621,7 +11301,9 @@
     "label": "Imp.flag: Additional child benefit",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Imp.flag: Additional child benefit",
@@ -13630,11 +11312,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 0.003579157649409023,
+      "Mean": 0.0025601531929065023,
       "3rd Qu.": 0.0,
       "Max.": 1.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -13643,7 +11325,9 @@
     "label": "Advance child maintenance payment",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Advance child maintenance payment",
@@ -13652,11 +11336,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 28.235049003266884,
+      "Mean": 28.042179320462804,
       "3rd Qu.": 0.0,
       "Max.": 18000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -13711,12 +11395,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48049,
+        48037,
         7
       ]
     },
@@ -13724,8 +11408,8 @@
     "label_de": "Imp.flag: Advance child maintenance payment",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -13734,7 +11418,9 @@
     "label": "Child Care Subsidy",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Child Care Subsidy",
@@ -13746,8 +11432,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -13802,12 +11488,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48056,
+        48044,
         0
       ]
     },
@@ -13815,8 +11501,8 @@
     "label_de": "Imputation flag: Child care Subsidy",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -13825,7 +11511,9 @@
     "label": "Child support, caregiver alimony",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Child support, caregiver alimony",
@@ -13834,11 +11522,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 128.27891859457299,
+      "Mean": 128.22386716014805,
       "3rd Qu.": 0.0,
       "Max.": 60000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -13893,12 +11581,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48030,
+        48018,
         26
       ]
     },
@@ -13906,8 +11594,8 @@
     "label_de": "Imp.flag: Child support, caregiver alimony",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -13916,7 +11604,9 @@
     "label": "Divorce alimony, during separation",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Divorce alimony, during separation",
@@ -13928,8 +11618,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -13984,12 +11674,12 @@
       "frequencies": [
         0,
         0,
-        1865,
+        1877,
         0,
         0,
         0,
         0,
-        48056,
+        48044,
         0
       ]
     },
@@ -13997,8 +11687,8 @@
     "label_de": "Imp.flag: Divorce alimony, during separation",
     "study": "soep-core",
     "statistics": {
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -14007,7 +11697,9 @@
     "label": "Riester pension plan",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Riester pension plan",
@@ -14016,11 +11708,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 1.7522501500100007,
+      "Mean": 1.7526591310726551,
       "3rd Qu.": 0.0,
       "Max.": 3600.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -14029,7 +11721,9 @@
     "label": "Widows Riester pension plan",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Widows Riester pension plan",
@@ -14038,11 +11732,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 0.01480098673244883,
+      "Mean": 0.01480444133239972,
       "3rd Qu.": 0.0,
       "Max.": 384.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -14051,7 +11745,9 @@
     "label": "Income of children in household",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Income of children in household",
@@ -14063,8 +11759,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -14073,7 +11769,9 @@
     "label": "Imputation Flag for Income of children in household",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Imputation Flag for Income of children in household",
@@ -14085,8 +11783,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -14095,7 +11793,9 @@
     "label": "Profit Withdrawal",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Profit Withdrawal",
@@ -14107,8 +11807,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -14117,7 +11817,9 @@
     "label": "Imputation Flag for Profit Withdrawal",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Imputation Flag for Profit Withdrawal",
@@ -14129,8 +11831,8 @@
       "Mean": 0.0,
       "3rd Qu.": 0.0,
       "Max.": 0.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -14139,7 +11841,9 @@
     "label": "Pensions from another country",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Pensions from another country",
@@ -14148,11 +11852,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 19.069004600306688,
+      "Mean": 19.073455369944316,
       "3rd Qu.": 0.0,
       "Max.": 48000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -14161,7 +11865,9 @@
     "label": "Widows / orphans pension from another country",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Widows / orphans pension from another country",
@@ -14170,11 +11876,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 2.874091606107074,
+      "Mean": 2.8747624287286184,
       "3rd Qu.": 0.0,
       "Max.": 27600.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -14183,7 +11889,9 @@
     "label": "Asylum seeker benefit",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Asylum seeker benefit",
@@ -14192,11 +11900,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 683.6824538038954,
+      "Mean": 683.8532178836067,
       "3rd Qu.": 0.0,
       "Max.": 39600.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -14205,7 +11913,9 @@
     "label": "Benefits from the educational package",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Benefits from the educational package",
@@ -14214,11 +11924,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 45.34463958714833,
+      "Mean": 44.70225210223961,
       "3rd Qu.": 0.0,
       "Max.": 12026.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -14227,7 +11937,9 @@
     "label": "Imputation flag: Asylum seeker benefit",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Imputation flag: Asylum seeker benefit",
@@ -14236,11 +11948,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 0.006554852671882804,
+      "Mean": 0.00655648988427275,
       "3rd Qu.": 0.0,
       "Max.": 1.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -14249,7 +11961,9 @@
     "label": "Imputation flag: Benefits from the educational package",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Imputation flag: Benefits from the educational package",
@@ -14258,11 +11972,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 0.011278508406858664,
+      "Mean": 0.011281325451669303,
       "3rd Qu.": 0.0,
       "Max.": 1.0,
-      "valid": 48056,
-      "invalid": 1865
+      "valid": 48044,
+      "invalid": 1877
     }
   },
   {
@@ -14271,7 +11985,9 @@
     "label": "Pensions for liberal professions",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Pensions for liberal professions",
@@ -14280,11 +11996,11 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 50.6131075405027,
+      "Mean": 50.6249208095762,
       "3rd Qu.": 0.0,
       "Max.": 49200.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
     }
   },
   {
@@ -14293,7 +12009,9 @@
     "label": "Widow / orphans pensions for liberal professions",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Widow / orphans pensions for liberal professions",
@@ -14302,11 +12020,136 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 5.065737715847723,
+      "Mean": 5.066920076022807,
       "3rd Qu.": 0.0,
       "Max.": 36000.0,
-      "valid": 29998,
-      "invalid": 19923
+      "valid": 29991,
+      "invalid": 19930
+    }
+  },
+  {
+    "name": "bauk18",
+    "dataset": "bipequiv",
+    "label": "Building subsidy for new property owners",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "scale": "number",
+    "label_de": "Building subsidy for new property owners",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 0.0,
+      "Median": 0.0,
+      "Mean": 0.0,
+      "3rd Qu.": 0.0,
+      "Max.": 0.0,
+      "valid": 49921,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "fbauk18",
+    "dataset": "bipequiv",
+    "label": "Imputation flag: Building subsidy for new property owners",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[0] Not Imputed 0",
+        "[1] Imputed 1"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] Not Imputed 0",
+        "[1] Imputed 1"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        49921,
+        0
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Imputation flag: Building subsidy for new property owners",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 49921,
+      "invalid": 0
     }
   }
 ]

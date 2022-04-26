@@ -2,44 +2,48 @@
   {
     "name": "cid",
     "dataset": "hpathl",
-    "label": "Case-ID, Original Household Number",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Case ID, Ursprungshaushaltsnummer",
+    "label_de": "Ursprungshaushaltsnummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 19.0,
-      "1st Qu.": 57118.0,
-      "Median": 509892.0,
-      "Mean": 1263800.0720074293,
-      "3rd Qu.": 2522959.0,
-      "Max.": 3923894.0,
-      "valid": 563178,
+      "1st Qu.": 202126.0,
+      "Median": 519383.0,
+      "Mean": 1523910.569560768,
+      "3rd Qu.": 3042141.0,
+      "Max.": 5540552.0,
+      "valid": 620515,
       "invalid": 0
     }
   },
   {
     "name": "hid",
     "dataset": "hpathl",
-    "label": "Current Household Number (Household ID)",
+    "label": "Current Wave HH Number",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Haushaltsnummer",
+    "label_de": "Aktuelle Haushaltsnummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 19.0,
-      "1st Qu.": 112518.0,
-      "Median": 508730.0,
-      "Mean": 1259469.303951859,
-      "3rd Qu.": 2509243.5,
-      "Max.": 3923967.0,
-      "valid": 563178,
+      "1st Qu.": 130036.0,
+      "Median": 530468.0,
+      "Mean": 1517515.8381167257,
+      "3rd Qu.": 3040770.0,
+      "Max.": 5540552.0,
+      "valid": 620515,
       "invalid": 0
     }
   },
@@ -49,19 +53,21 @@
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erhebungsjahr",
     "study": "soep-core",
     "statistics": {
       "Min.": 1984.0,
-      "1st Qu.": 2001.0,
-      "Median": 2010.0,
-      "Mean": 2007.3639506514814,
-      "3rd Qu.": 2016.0,
-      "Max.": 2019.0,
-      "valid": 563178,
+      "1st Qu.": 2002.0,
+      "Median": 2011.0,
+      "Mean": 2008.5315568519698,
+      "3rd Qu.": 2017.0,
+      "Max.": 2020.0,
+      "valid": 620515,
       "invalid": 0
     }
   },
@@ -101,7 +107,10 @@
         20,
         21,
         22,
-        23
+        23,
+        24,
+        25,
+        26
       ],
       "labels": [
         "[-8] Question this year not part of Survey program",
@@ -134,7 +143,10 @@
         "[20] N 2017 Refreshment (PIAAC-L)",
         "[21] O 2018 Social City",
         "[22] P 2019 Top-Shareholder",
-        "[23] Q 2019 Lesbian-Gay-Bisexual (LGB) persons"
+        "[23] Q 2019 Lesbian-Gay-Bisexual (LGB) persons",
+        "[24]  M6 2020 Refugee ",
+        "[25]  M7 2020 Migration",
+        "[26]  M8 2020 Migration Professionals "
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprograms",
@@ -167,7 +179,10 @@
         "[20] N 2017 Aufstockung (PIAAC-L)",
         "[21] O 2018 Soziale Stadt",
         "[22] P 2019 Top-Gesellschafter",
-        "[23] Q 2019 Lesbische-Schwule-Bisexuelle (LGB) Personen"
+        "[23] Q 2019 Lesbische-Schwule-Bisexuelle (LGB) Personen",
+        "[24] M6 2020 Schutzsuchende",
+        "[25] M7 2020 Migration",
+        "[26] M8 2020 Migration-Fachkräfteeinwanderung"
       ],
       "missings": [
         true,
@@ -178,6 +193,9 @@
         true,
         true,
         true,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -211,36 +229,39 @@
         0,
         0,
         0,
-        120323,
-        31859,
-        54104,
-        9680,
-        13080,
-        82031,
-        19740,
-        16123,
+        121711,
+        32033,
+        55012,
+        9830,
+        13139,
+        83808,
+        20282,
+        16654,
         6499,
-        28709,
-        13287,
-        18796,
-        20163,
-        7310,
-        25298,
-        13365,
-        19402,
-        15447,
-        8496,
-        7795,
-        7577,
-        23259,
-        835
+        30393,
+        14202,
+        19825,
+        21556,
+        7893,
+        26532,
+        13851,
+        20439,
+        16554,
+        9682,
+        9950,
+        8368,
+        25242,
+        1317,
+        3000,
+        19751,
+        12992
       ]
     },
     "scale": "cat",
     "label_de": "Stichprobenart",
     "study": "soep-core",
     "statistics": {
-      "valid": 563178,
+      "valid": 620515,
       "invalid": 0
     }
   },
@@ -310,16 +331,16 @@
         8,
         0,
         0,
-        394578,
-        59601,
-        108991
+        414759,
+        64098,
+        141650
       ]
     },
     "scale": "cat",
     "label_de": "Aktueller Befragungsstatus",
     "study": "soep-core",
     "statistics": {
-      "valid": 563170,
+      "valid": 620507,
       "invalid": 8
     }
   },
@@ -383,18 +404,18 @@
         0,
         0,
         8,
-        73018,
+        73019,
         0,
-        387806,
-        102346
+        437736,
+        109752
       ]
     },
     "scale": "cat",
     "label_de": "Aktuelle Stichprobenregion",
     "study": "soep-core",
     "statistics": {
-      "valid": 490152,
-      "invalid": 73026
+      "valid": 547488,
+      "invalid": 73027
     }
   },
   {
@@ -465,20 +486,20 @@
         0,
         0,
         0,
-        111733,
+        144589,
         0,
-        383163,
-        60756,
-        3246,
-        4280
+        399742,
+        67779,
+        3291,
+        5114
       ]
     },
     "scale": "cat",
     "label_de": "Aktuelle Populationszugehoerigkeit",
     "study": "soep-core",
     "statistics": {
-      "valid": 451445,
-      "invalid": 111733
+      "valid": 475926,
+      "invalid": 144589
     }
   },
   {
@@ -487,7 +508,9 @@
     "label": "Random Groups",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Random Groups",
@@ -495,11 +518,11 @@
     "statistics": {
       "Min.": 0.0,
       "1st Qu.": 1.0,
-      "Median": 4.0,
-      "Mean": 3.6426813547404198,
+      "Median": 3.0,
+      "Mean": 3.4848569333537465,
       "3rd Qu.": 6.0,
       "Max.": 8.0,
-      "valid": 563178,
+      "valid": 620515,
       "invalid": 0
     }
   },
@@ -509,7 +532,9 @@
     "label": "Inverse Staying Probability",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Inverse Bleibewahrscheinlichkeit",
@@ -518,10 +543,10 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 1.02,
-      "Mean": 0.712775214940925,
+      "Mean": 0.6812538617116427,
       "3rd Qu.": 1.08,
       "Max.": 18.33,
-      "valid": 563178,
+      "valid": 620515,
       "invalid": 0
     }
   },
@@ -531,7 +556,9 @@
     "label": "Weighting factor",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hochrechnungsfaktor",
@@ -539,11 +566,11 @@
     "statistics": {
       "Min.": 0.0,
       "1st Qu.": 0.0,
-      "Median": 1046.4050000000002,
-      "Mean": 2382.90738849884,
-      "3rd Qu.": 3512.2325,
-      "Max.": 36608.25,
-      "valid": 563178,
+      "Median": 863.1,
+      "Mean": 2228.4098890760106,
+      "3rd Qu.": 3334.88,
+      "Max.": 22907.42,
+      "valid": 620515,
       "invalid": 0
     }
   },
@@ -553,7 +580,9 @@
     "label": "Weighting factor for new samples (wave 1 of new sample)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hochrechnungsfaktor, nur fuer neue Stichproben (Welle 1)",
@@ -562,10 +591,10 @@
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 439.9737957981313,
+      "Mean": 400.7051118184089,
       "3rd Qu.": 0.0,
-      "Max.": 205099.22,
-      "valid": 563178,
+      "Max.": 204381.24,
+      "valid": 620515,
       "invalid": 0
     }
   },
@@ -575,7 +604,9 @@
     "label": "Weighting factor without new samples (wave 1)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hochrechnungsfaktor ohne neue Stichproben (Welle 1)",
@@ -583,11 +614,11 @@
     "statistics": {
       "Min.": 0.0,
       "1st Qu.": 0.0,
-      "Median": 875.22,
-      "Mean": 2383.5851584578936,
-      "3rd Qu.": 3540.9825,
-      "Max.": 58785.93,
-      "valid": 563178,
+      "Median": 697.54,
+      "Mean": 2228.8501634932277,
+      "3rd Qu.": 3344.6549999999997,
+      "Max.": 57334.41,
+      "valid": 620515,
       "invalid": 0
     }
   },
@@ -597,7 +628,9 @@
     "label": "Interviewjahr (InterviewYear)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewjahr (InterviewYear)",
@@ -605,12 +638,12 @@
     "statistics": {
       "Min.": 1984.0,
       "1st Qu.": 2000.0,
-      "Median": 2008.0,
-      "Mean": 2006.203560950354,
-      "3rd Qu.": 2014.0,
-      "Max.": 2020.0,
-      "valid": 451958,
-      "invalid": 111220
+      "Median": 2009.0,
+      "Mean": 2006.9192818713648,
+      "3rd Qu.": 2015.0,
+      "Max.": 2021.0,
+      "valid": 476572,
+      "invalid": 143943
     }
   }
 ]

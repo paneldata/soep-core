@@ -2,10 +2,12 @@
   {
     "name": "cid",
     "dataset": "fh",
-    "label": "Original Household Number",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
@@ -24,13 +26,15 @@
   {
     "name": "hid",
     "dataset": "fh",
-    "label": "Current Wave HH Number (=FHHNR)",
+    "label": "Current Wave HH Number (=hid_1989)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=FHHNR)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_1989)",
     "study": "soep-core",
     "statistics": {
       "Min.": 19.0,
@@ -49,7 +53,9 @@
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erhebungsjahr",
@@ -66,59 +72,17 @@
     }
   },
   {
-    "name": "hhnr",
+    "name": "hid_1989",
     "dataset": "fh",
-    "label": "Original Household Number",
+    "label": "Current Wave HH Number (=hid)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 19.0,
-      "1st Qu.": 14518.0,
-      "Median": 28696.5,
-      "Mean": 29244.96737739872,
-      "3rd Qu.": 43797.0,
-      "Max.": 59692.0,
-      "valid": 4690,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "fhhnr",
-    "dataset": "fh",
-    "label": "Current Wave HH Number (=HHNRAKT)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=HHNRAKT)",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 19.0,
-      "1st Qu.": 16855.0,
-      "Median": 33749.0,
-      "Mean": 35412.67526652452,
-      "3rd Qu.": 51968.25,
-      "Max.": 81523.0,
-      "valid": 4690,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hhnrakt",
-    "dataset": "fh",
-    "label": "Current Wave HH Number (=FHHNR)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=FHHNR)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 19.0,
@@ -137,7 +101,9 @@
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Befragungswelle",
@@ -317,7 +283,9 @@
     "label": "Number Of Respondent",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Auskunftsperson Nummer",
@@ -723,61 +691,34 @@
       "values": [
         -7,
         -2,
-        -1,
-        1,
-        2,
-        3,
-        4,
-        5,
-        7,
-        6
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "7",
-        "6"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         4554,
-        3,
-        53,
-        37,
-        23,
-        10,
-        6,
-        2,
-        2
+        3
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "1.pflegebeduerftige Person im HH,lfd.Nr.",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 1.0,
+      "Median": 2.0,
+      "Mean": 2.1954887218045114,
+      "3rd Qu.": 3.0,
+      "Max.": 7.0,
       "valid": 133,
       "invalid": 4557
     }
@@ -1247,33 +1188,31 @@
     "categories": {
       "values": [
         -7,
-        -2,
-        2
+        -2
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
-        "[-2] Does not apply",
-        "2"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-2] trifft nicht zu"
+        "[-2] Does not apply"
       ],
       "missings": [
         true,
-        true,
-        false
+        true
       ],
       "frequencies": [
         0,
-        4688,
-        2
+        4688
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "2.pflegebeduerftige Person im HH,lfd.Nr.",
     "study": "soep-core",
     "statistics": {
+      "Min.": 2.0,
+      "1st Qu.": 2.0,
+      "Median": 2.0,
+      "Mean": 2.0,
+      "3rd Qu.": 2.0,
+      "Max.": 2.0,
       "valid": 2,
       "invalid": 4688
     }
@@ -1811,7 +1750,9 @@
     "label": "Size Of Housing Unit In Sq M",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wohnflaeche in qm insgesamt",
@@ -1996,7 +1937,9 @@
     "label": "Amount Of Monthly Rent",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hoehe der monatlichen Miete",
@@ -2082,7 +2025,9 @@
     "label": "Costs Of Heat And Hot Water Per Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hoehe monatl. Kosten Heizung+Warmwasser",
@@ -2376,7 +2321,9 @@
     "label": "Year Moved Into Dwelling",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr des Einzugs, vor ueber 2 Jahren",
@@ -3651,7 +3598,9 @@
     "label": "Size Of Housing Unit In Sq M",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wohnflaeche in qm insgesamt",
@@ -3675,77 +3624,34 @@
       "values": [
         -7,
         -2,
-        -1,
-        3,
-        2,
-        4,
-        1,
-        5,
-        6,
-        7,
-        8,
-        10,
-        9,
-        0
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "3",
-        "2",
-        "4",
-        "1",
-        "5",
-        "6",
-        "7",
-        "8",
-        "10",
-        "9",
-        "0"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         4210,
-        15,
-        148,
-        134,
-        66,
-        52,
-        29,
-        20,
-        8,
-        4,
-        2,
-        1,
-        1
+        15
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Anzahl der Wohnraeume",
     "study": "soep-core",
     "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 2.0,
+      "Median": 3.0,
+      "Mean": 3.032258064516129,
+      "3rd Qu.": 4.0,
+      "Max.": 10.0,
       "valid": 465,
       "invalid": 4225
     }
@@ -3988,7 +3894,9 @@
     "label": "Amount Of Monthly Rent",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hoehe der monatlichen Miete",
@@ -4074,7 +3982,9 @@
     "label": "Cost Of Heat And Hot Water Per Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hoehe monatl. Kosten Heizung+Warmwasser",
@@ -4781,7 +4691,9 @@
     "label": "Interest And Mortgage Payment Per Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hoehe monatlicher Zinsen und Tilgung",
@@ -4803,7 +4715,9 @@
     "label": "Interest Per Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hoehe monatlicher Zinsen",
@@ -4889,7 +4803,9 @@
     "label": "Other Costs Per Month, DM",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monatliche Nebenkosten in DM",
@@ -4911,7 +4827,9 @@
     "label": "Maintenance Costs Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hoehe Instandhaltungskosten Vorjahr",
@@ -4933,7 +4851,9 @@
     "label": "Heat And Hot Water Costs Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hoehe Heizkosten Vorjahr",
@@ -5039,7 +4959,9 @@
     "label": "Estimated Rent Exc Heat",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hoehe fiktive Kalt-Miete",
@@ -5194,7 +5116,9 @@
     "label": "Months Of Housing Allowance,Subsidy",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Im letzten Jahr: Monate mit Wohngeld oder Lastenzuschuss",
@@ -5216,7 +5140,9 @@
     "label": "Amount Of Housing Allowance,Subsidy",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betrag monatl. Wohngeld, Lastenzuschuss",
@@ -5376,7 +5302,9 @@
     "label": "Months Of Subsistence Assistance",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monate mit lfd. Hilfe z. Lebensunterhalt",
@@ -5398,7 +5326,9 @@
     "label": "Amount Of Subsistence Assistance",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monatl. Betrag lfd. Hilfe z. Lebensunt.",
@@ -5489,7 +5419,9 @@
     "label": "Months Of Special Assistance",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hilfe in besonderen Lebenslagen: Monate",
@@ -5511,7 +5443,9 @@
     "label": "Amount Of Special Assistance",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monatl. Betrag f. Hilfe in Bes. Lebensl.",
@@ -5668,61 +5602,34 @@
       "values": [
         -7,
         -2,
-        -1,
-        1,
-        2,
-        3,
-        4,
-        5,
-        7,
-        6
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "7",
-        "6"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         2655,
-        1,
-        918,
-        787,
-        242,
-        65,
-        16,
-        3,
-        3
+        1
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Letztes Jahr Kindergeld fuer ... Kinder",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 1.0,
+      "Median": 2.0,
+      "Mean": 1.7684365781710913,
+      "3rd Qu.": 2.0,
+      "Max.": 7.0,
       "valid": 2034,
       "invalid": 2656
     }
@@ -5733,7 +5640,9 @@
     "label": "Child Allowance prev. year, Amt./Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monatliches Kindergeld fuer alle Kinder",
@@ -5824,7 +5733,9 @@
     "label": "Amount Of Income From Rent Previous Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hoehe der Miet- oder Pachteinnahmen",
@@ -5846,7 +5757,9 @@
     "label": "Operation,Maintenance Costs Previous Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hoehe Betriebs- u. Instandhaltgskosten",
@@ -5868,7 +5781,9 @@
     "label": "Mortgage Payment And Interest Previous Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Tilgung,Zinsen f. Hypothek,Bau-Darlehen",
@@ -5890,7 +5805,9 @@
     "label": "Interest Previous Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zinsen f. Hypotheken und Bauspardarlehen",
@@ -6296,7 +6213,9 @@
     "label": "Amt Of Interest,Dividend Income Prev Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hoehe Einnahmen aus Zinsen u. Dividenden",
@@ -6402,7 +6321,9 @@
     "label": "Monthly Household Net Income",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monatliches HH-Netto-Einkommen",
@@ -6958,7 +6879,9 @@
     "label": "Interview Length Oral",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewdauer HH-Fragebogen muendlich",
@@ -6980,7 +6903,9 @@
     "label": "Interview Length Written",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewdauer HH-Fragebogen schriftlich",
@@ -7002,7 +6927,9 @@
     "label": "Day Of Interview",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Tag des Interviews",
@@ -7108,7 +7035,9 @@
     "label": "Interviewer ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewer ID",

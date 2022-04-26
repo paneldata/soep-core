@@ -1,77 +1,13 @@
 [
   {
-    "name": "hhnrakt",
-    "dataset": "bfvp",
-    "label": "Current Wave Number (=BFHHNR)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=BFHHNR)",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 3301.0,
-      "1st Qu.": 291869.75,
-      "Median": 2016373.0,
-      "Mean": 1639173.5837004406,
-      "3rd Qu.": 3064887.75,
-      "Max.": 3342904.0,
-      "valid": 454,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hhnr",
-    "dataset": "bfvp",
-    "label": "Original Household Number",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 3301.0,
-      "1st Qu.": 294935.75,
-      "Median": 2016373.0,
-      "Mean": 1637421.0462555066,
-      "3rd Qu.": 3064887.75,
-      "Max.": 3342904.0,
-      "valid": 454,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "persnr",
-    "dataset": "bfvp",
-    "label": "Unchanging ID Person Surveyed",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Unveraenderliche Personennr. Befragungsperson",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 33002.0,
-      "1st Qu.": 2939376.5,
-      "Median": 20163701.5,
-      "Mean": 16394862.235682819,
-      "3rd Qu.": 30648801.75,
-      "Max.": 33429002.0,
-      "valid": 454,
-      "invalid": 0
-    }
-  },
-  {
     "name": "syear",
     "dataset": "bfvp",
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Befragungsjahr",
@@ -90,10 +26,12 @@
   {
     "name": "cid",
     "dataset": "bfvp",
-    "label": "Original Household Number",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
@@ -110,15 +48,17 @@
     }
   },
   {
-    "name": "bfhhnr",
+    "name": "hid_2015",
     "dataset": "bfvp",
-    "label": "Current Wave HH Number (=HHNRAKT)",
+    "label": "Current Wave HH Number (=hid)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (HHNRAKT)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 3301.0,
@@ -134,13 +74,15 @@
   {
     "name": "hid",
     "dataset": "bfvp",
-    "label": "Current Wave Number (=BFHHNR)",
+    "label": "Current Wave HH Number (=hid_2015)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=BFHHNR)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_2015)",
     "study": "soep-core",
     "statistics": {
       "Min.": 3301.0,
@@ -156,13 +98,15 @@
   {
     "name": "pid",
     "dataset": "bfvp",
-    "label": "Unchanging ID Person Surveyed",
+    "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Unveraenderliche Personennr. Befragungsperson",
+    "label_de": "Unveränderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 33002.0,
@@ -176,34 +120,14 @@
     }
   },
   {
-    "name": "vpersnr",
-    "dataset": "bfvp",
-    "label": "ID person surveyed",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Personennummer der verstorbenen Person",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 33001.0,
-      "1st Qu.": 2900574.75,
-      "Median": 20163799.0,
-      "Mean": 16376261.682819383,
-      "3rd Qu.": 30648875.5,
-      "Max.": 33429099.0,
-      "valid": 454,
-      "invalid": 0
-    }
-  },
-  {
     "name": "vpnr",
     "dataset": "bfvp",
     "label": "Consecutive Nummer Person Surveyed (gen)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Laufende Nummer(gen.) zu Befragungspersonen",
@@ -225,7 +149,9 @@
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erhebungsjahr",
@@ -474,13 +400,7 @@
         -2,
         -1,
         98,
-        99,
-        1,
-        2,
-        3,
-        4,
-        6,
-        5
+        99
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -491,13 +411,7 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[98] Former Core Sample Member",
-        "[99] Not Core Sample Member",
-        "1",
-        "2",
-        "3",
-        "4",
-        "6",
-        "5"
+        "[99] Not Core Sample Member"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -519,12 +433,6 @@
         true,
         true,
         false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -536,13 +444,7 @@
         0,
         0,
         0,
-        7,
-        243,
-        177,
-        16,
-        7,
-        3,
-        1
+        7
       ]
     },
     "scale": "cat",
@@ -628,7 +530,9 @@
     "label": "year of birth person died",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr der verstorbenen Person",
@@ -729,7 +633,9 @@
     "label": "age of person died",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Alter der verstorbenen Person",
@@ -3139,7 +3045,9 @@
     "label": "day of interview",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewtag",
@@ -3280,7 +3188,9 @@
     "label": "End of Interview (Hour)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interview beendet Uhrzeit (Stunde)",
@@ -3302,7 +3212,9 @@
     "label": "End of Interview (Minutes)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interview beendet Uhrzeit (Minuten)",
@@ -3324,7 +3236,9 @@
     "label": "Interviewer ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewer ID",
@@ -3346,10 +3260,12 @@
     "label": "Unchanging ID Person deceased",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Unveraenderliche Personennr. des Verstorbenen",
+    "label_de": "Personennummer des Verstorbenen",
     "study": "soep-core",
     "statistics": {
       "Min.": 33001.0,

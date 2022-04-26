@@ -2,10 +2,12 @@
   {
     "name": "cid",
     "dataset": "fpluecke",
-    "label": "Original Household Number",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
@@ -24,13 +26,15 @@
   {
     "name": "hid",
     "dataset": "fpluecke",
-    "label": "Current Wave HH Number (=FHHNR)",
+    "label": "Current Wave HH Number (=hid_1989)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=F)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_1989)",
     "study": "soep-core",
     "statistics": {
       "Min.": 329.0,
@@ -49,10 +53,12 @@
     "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Personennummer",
+    "label_de": "Unveränderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 3202.0,
@@ -66,34 +72,14 @@
     }
   },
   {
-    "name": "hhnr",
-    "dataset": "fpluecke",
-    "label": "Original Household Number",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 329.0,
-      "1st Qu.": 17132.0,
-      "Median": 32417.0,
-      "Mean": 31454.120805369126,
-      "3rd Qu.": 47511.0,
-      "Max.": 59510.0,
-      "valid": 149,
-      "invalid": 0
-    }
-  },
-  {
     "name": "syear",
     "dataset": "fpluecke",
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erhebungsjahr",
@@ -115,7 +101,9 @@
     "label": "Reference Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Bezugsjahr",
@@ -132,15 +120,17 @@
     }
   },
   {
-    "name": "fhhnr",
+    "name": "hid_1989",
     "dataset": "fpluecke",
-    "label": "Current Wave HH Number (=HHNRAKT)",
+    "label": "Current Wave HH Number (=hid)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Haushaltsnummer Welle F",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 329.0,
@@ -149,50 +139,6 @@
       "Mean": 42715.92617449664,
       "3rd Qu.": 60232.0,
       "Max.": 81485.0,
-      "valid": 149,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hhnrakt",
-    "dataset": "fpluecke",
-    "label": "Current Wave HH Number (=FHHNR)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=F)",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 329.0,
-      "1st Qu.": 24724.0,
-      "Median": 46701.0,
-      "Mean": 42715.92617449664,
-      "3rd Qu.": 60232.0,
-      "Max.": 81485.0,
-      "valid": 149,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "persnr",
-    "dataset": "fpluecke",
-    "label": "Never Changing Person ID",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Personennummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 3202.0,
-      "1st Qu.": 187902.0,
-      "Median": 325201.0,
-      "Mean": 333323.677852349,
-      "3rd Qu.": 480601.0,
-      "Max.": 733004.0,
       "valid": 149,
       "invalid": 0
     }
@@ -212,9 +158,7 @@
         -1,
         3,
         4,
-        5,
-        1,
-        2
+        5
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -226,9 +170,7 @@
         "[-1] No Answer",
         "[3] Gr Questionnaire",
         "[4] Bl Questionnaire",
-        "[5] Blue W Biography",
-        "1",
-        "2"
+        "[5] Blue W Biography"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -252,8 +194,6 @@
         true,
         false,
         false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -266,9 +206,7 @@
         0,
         0,
         0,
-        0,
-        84,
-        65
+        0
       ]
     },
     "scale": "cat",
@@ -297,8 +235,7 @@
         3,
         4,
         5,
-        6,
-        7
+        6
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -313,8 +250,7 @@
         "[3] Yugoslav",
         "[4] Greek",
         "[5] Italian",
-        "[6] Spanish",
-        "7"
+        "[6] Spanish"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -344,7 +280,6 @@
         false,
         false,
         false,
-        false,
         false
       ],
       "frequencies": [
@@ -360,8 +295,7 @@
         8,
         7,
         10,
-        3,
-        2
+        3
       ]
     },
     "scale": "cat",
@@ -393,8 +327,7 @@
         5,
         6,
         7,
-        8,
-        9
+        8
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -412,8 +345,7 @@
         "[5] Proxy",
         "[6] With Interpreter",
         "[7] Exc. Interpreter",
-        "[8] Written",
-        "9"
+        "[8] Written"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -449,7 +381,6 @@
         false,
         false,
         false,
-        false,
         false
       ],
       "frequencies": [
@@ -468,8 +399,7 @@
         0,
         0,
         0,
-        0,
-        6
+        0
       ]
     },
     "scale": "cat",
@@ -486,7 +416,9 @@
     "label": "Seq. person number of survey year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lfd. Personennummer Erhebungsjahr",
@@ -508,7 +440,9 @@
     "label": "Seq. person number previous year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lfd. Personennummer im Vorjahr",
@@ -599,7 +533,9 @@
     "label": "Month Started First Job Previous Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erste Erwerbstaetigkeit Monat  88",
@@ -621,7 +557,9 @@
     "label": "Month Started First Job Current Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erste Erwerbstaetigkeit Monat  89",
@@ -643,7 +581,9 @@
     "label": "Month Returned To Work Previous Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Berufsaufn.nach Unterbrechg. Monat 88",
@@ -665,7 +605,9 @@
     "label": "Month Returned To Work Current Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Berufsaufn.nach Unterbrechg. Monat 89",
@@ -687,7 +629,9 @@
     "label": "Month Started New Job Previous Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wechsel Arbeitgeber Monat 88",
@@ -709,7 +653,9 @@
     "label": "Years Worked On Last Job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "D.d.Beschaeftg.letzte Stellung,Jahre",
@@ -731,7 +677,9 @@
     "label": "Months Worked On Last Job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "D.d.Beschaeftg.letzte Stellung,Monate",
@@ -753,7 +701,9 @@
     "label": "No Change In Job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "nein, nichts davon",
@@ -775,7 +725,9 @@
     "label": "Year Last Job Ended",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende letzte Stellung Jahr",
@@ -797,7 +749,9 @@
     "label": "Month Last Job Ended Previous Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende letzte Stellung Monat 88",
@@ -819,7 +773,9 @@
     "label": "Month Last Job Ended Current Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende letzte Stellung Monat 89",
@@ -841,7 +797,9 @@
     "label": "Month Became Self-Employed Current Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Neue Taetigkeit als Selbst. Monat 89",
@@ -863,7 +821,9 @@
     "label": "Terminated By Employer",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kuendigung durch Arbeitgeber",
@@ -885,7 +845,9 @@
     "label": "Month Became Self-Employed Previous Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Neue Taetigkeit als Selbst. Monat 88",
@@ -907,7 +869,9 @@
     "label": "Month Within Firm Job Change Previous Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wechsel innerh.d.Unternehmens Monat 88",
@@ -929,7 +893,9 @@
     "label": "Month Within Firm Job Change Current Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wechsel innerh.d.Unternehmens Monat 89",
@@ -951,7 +917,9 @@
     "label": "Month Started New Job Current Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wechsel Arbeitgeber Monat 89",
@@ -973,7 +941,9 @@
     "label": "Ended Self-Employment",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Aufgabe des eig. Betriebs",
@@ -995,7 +965,9 @@
     "label": "Limited Term Employment Relationship",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Befristetes Arbeitsverhaeltnis",
@@ -1017,7 +989,9 @@
     "label": "Quit Job For Marriage",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. Heirat",
@@ -1039,7 +1013,9 @@
     "label": "Education,Training Completed",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Ausbildung",
@@ -1061,7 +1037,9 @@
     "label": "Quit The Job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Eigene Kuendigung",
@@ -1083,7 +1061,9 @@
     "label": "Mutual Termination",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Einvernehm.Aufloes.d.Beschverhaeltn.",
@@ -1105,7 +1085,9 @@
     "label": "Company Transferred Employee",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Versetzung durch Betrieb",
@@ -1127,7 +1109,9 @@
     "label": "Quit Job For Child Care",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. Kinderbetreuung",
@@ -1149,7 +1133,9 @@
     "label": "Early Retirement Rules",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Vorruhestandsregelung",
@@ -1171,7 +1157,9 @@
     "label": "Employee Requested Transfer",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Versetzung auf eig. Wunsch",
@@ -1193,7 +1181,9 @@
     "label": "Other Reasons For Loss Of Job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sonstige Gruende f.Stellenausscheidung",
@@ -1215,7 +1205,9 @@
     "label": "Quit Job Because Of Other Care",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg.wg.Betreuung pflegeb.Pers.",
@@ -1237,7 +1229,9 @@
     "label": "Quit Job Due To Occupational Disability",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. Berufsunfaehigkeit",
@@ -1259,7 +1253,9 @@
     "label": "Quit Job Because Of Incapacity For Work",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. Erwerbsunfaehigkeit",
@@ -1281,7 +1277,9 @@
     "label": "Quit Job Because Of Other Health Reasons",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. sonst.gesundh. Gruende",
@@ -1303,7 +1301,9 @@
     "label": "Quit Job When Financially Independent",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. finanz.Unabh.",
@@ -1325,7 +1325,9 @@
     "label": "Quit Job When Reached Retirement Age",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. Altersgrenze",
@@ -1347,7 +1349,9 @@
     "label": "Quit Job Due To Occupational Change",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. berufl.Veraenderung",
@@ -1369,7 +1373,9 @@
     "label": "Quit Job To Continue Education",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. Fort-Ausbildung",
@@ -1391,7 +1397,9 @@
     "label": "Quit Job When Moved",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. Umzug",
@@ -1413,7 +1421,9 @@
     "label": "Quit Job For Better Job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. besserer Stellung",
@@ -1435,7 +1445,9 @@
     "label": "Quit Job Because Of Other Reasons",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. aus sonstigen Gruenden",
@@ -1457,7 +1469,9 @@
     "label": "Quit Job Due To Difficulties With Boss",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. Aerger mit Vorgesetzten",
@@ -1479,7 +1493,9 @@
     "label": "Quit Job Because Of Early Retirement",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. vorztg.Rente",
@@ -1501,7 +1517,9 @@
     "label": "Quit Job For Military,Community Service",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. Wehr-Zivildienst",
@@ -1523,7 +1541,9 @@
     "label": "Quit Job Because Of Bankruptcy",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. Konkurs",
@@ -1545,7 +1565,9 @@
     "label": "Quit Job Because Of Company Downsizing",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stellenaufg. wg. Rationalisierung",
@@ -1646,7 +1668,9 @@
     "label": "No Education,Training Necessary",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "keine bes. Ausbildung erforderlich",
@@ -1668,7 +1692,9 @@
     "label": "Introduction To The Job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kurze Einweisung am Arbeitsplatz erford.",
@@ -1690,7 +1716,9 @@
     "label": "On-The-Job Training",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "laengere Einarbeitung im Betrieb erford.",
@@ -1712,7 +1740,9 @@
     "label": "Special Courses",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Besuch von Lehrgaengen, Kursen",
@@ -1734,7 +1764,9 @@
     "label": "Completed Vocational Training",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Abgeschl. Berufsausbildung",
@@ -1756,7 +1788,9 @@
     "label": "Completed College",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Abgeschl. Hochschulstudium",
@@ -1926,8 +1960,7 @@
         94,
         95,
         96,
-        97,
-        9998
+        97
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -1994,8 +2027,7 @@
         "[94] Yes",
         "[95] Other degree",
         "[96] Degree Not in FRG",
-        "[97] No Degree Obtained",
-        "9998"
+        "[97] No Degree Obtained"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2129,7 +2161,6 @@
         false,
         false,
         false,
-        false,
         false
       ],
       "frequencies": [
@@ -2197,8 +2228,7 @@
         0,
         0,
         0,
-        0,
-        1
+        0
       ]
     },
     "scale": "cat",
@@ -2667,9 +2697,7 @@
         60,
         61,
         62,
-        99,
-        9998,
-        7812
+        99
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -2739,9 +2767,7 @@
         "[60] Theatrical Studies",
         "[61] Music",
         "[62] College Prep. Course",
-        "[99] Undeclared",
-        "9998",
-        "7812"
+        "[99] Undeclared"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2881,8 +2907,6 @@
         false,
         false,
         false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -2953,9 +2977,7 @@
         0,
         0,
         0,
-        0,
-        6,
-        1
+        0
       ]
     },
     "scale": "cat",
@@ -3520,7 +3542,9 @@
     "label": "Year Moved In Together",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beginn gemeinsame Wohnung",
@@ -3542,7 +3566,9 @@
     "label": "Live Apart",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Leben in getrennten Wohnungen",
@@ -3564,7 +3590,9 @@
     "label": "Month Married Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Heirat Monat 1988",
@@ -3586,7 +3614,9 @@
     "label": "Month Married Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Heirat Monat 1989",
@@ -3608,7 +3638,9 @@
     "label": "Month Moved In Together Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zusammenzug mit Partner Monat 1988",
@@ -3630,7 +3662,9 @@
     "label": "Month Moved In Together Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zusammenzug mit Partner Monat 1989",
@@ -3652,7 +3686,9 @@
     "label": "Month Divorced Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Scheidung Monat 1988",
@@ -3674,7 +3710,9 @@
     "label": "Month Divorced Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Scheidung Monat 1989",
@@ -3696,7 +3734,9 @@
     "label": "Month Separated Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Trennung Monat 1988",
@@ -3718,7 +3758,9 @@
     "label": "Month Separated Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Trennung Monat 1989",
@@ -3740,7 +3782,9 @@
     "label": "Month Partner Died Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Tod des Partners Monat 1988",
@@ -3762,7 +3806,9 @@
     "label": "Month Partner Died Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Tod des Partners Monat 1989",
@@ -3784,7 +3830,9 @@
     "label": "Month Child Moved Out Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind hat Haushalt verlassen Monat 1988",
@@ -3806,7 +3854,9 @@
     "label": "Month Child Moved Out Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind hat Haushalt verlassen Monat 1989",
@@ -3828,7 +3878,9 @@
     "label": "Month Child Born Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind geboren Monat 1988",
@@ -3850,7 +3902,9 @@
     "label": "Month Child Born Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind geboren Monat 1989",
@@ -3872,7 +3926,9 @@
     "label": "Month Other HH Comp Change Previous Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sonstige famil.Veraenderung Monat 1988",
@@ -3894,7 +3950,9 @@
     "label": "Month Other HH Comp Change Survey Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sonstige famil.Veraenderung Monat 1989",
@@ -3916,7 +3974,9 @@
     "label": "No Change In HH Composition",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Keine familiaere Veraenderung seit 1988",
@@ -4002,7 +4062,9 @@
     "label": "Description Of Other HH Comp Change",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "SONSTIGE FAMILIAERE VERAENDERUNG",

@@ -2,13 +2,15 @@
   {
     "name": "cid",
     "dataset": "bip",
-    "label": "Case-ID, Original Household Number (=hhnr)",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer (=hhnr)",
+    "label_de": "Ursprungshaushaltsnummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 60.0,
@@ -24,13 +26,15 @@
   {
     "name": "hid",
     "dataset": "bip",
-    "label": "Current wave household number (=HHNRAKT)",
+    "label": "Current Wave HH Number (=hid_2018)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=hhnrakt)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_2018)",
     "study": "soep-core",
     "statistics": {
       "Min.": 94.0,
@@ -46,13 +50,15 @@
   {
     "name": "pid",
     "dataset": "bip",
-    "label": "Never Changing Person ID (=persnr)",
+    "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Unveraenderliche Personennummer (=persnr)",
+    "label_de": "Unveränderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 901.0,
@@ -71,7 +77,9 @@
     "label": "Survey year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erhebungsjahr",
@@ -88,37 +96,17 @@
     }
   },
   {
-    "name": "hhnr",
+    "name": "hid_2018",
     "dataset": "bip",
-    "label": "Original Household Number (Case ID)",
+    "label": "Current Wave HH Number (=hid)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Urhaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 60.0,
-      "1st Qu.": 515850.0,
-      "Median": 2164098.5,
-      "Mean": 2068111.8784729096,
-      "3rd Qu.": 3137014.0,
-      "Max.": 3923835.0,
-      "valid": 30306,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hhnrakt",
-    "dataset": "bip",
-    "label": "Current Household Number (Household ID)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Haushaltsnummer",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 94.0,
@@ -127,50 +115,6 @@
       "Mean": 2037338.1631690094,
       "3rd Qu.": 3141412.5,
       "Max.": 3923835.0,
-      "valid": 30306,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "bihhnr",
-    "dataset": "bip",
-    "label": "Current Household Number (Household ID)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Haushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 94.0,
-      "1st Qu.": 503618.0,
-      "Median": 2161569.0,
-      "Mean": 2037338.1631690094,
-      "3rd Qu.": 3141412.5,
-      "Max.": 3923835.0,
-      "valid": 30306,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "persnr",
-    "dataset": "bip",
-    "label": "Never changing person ID",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Unveränderliche Personennr.",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 901.0,
-      "1st Qu.": 5158901.25,
-      "Median": 21635551.0,
-      "Mean": 20631798.512307793,
-      "3rd Qu.": 31386826.25,
-      "Max.": 39238301.0,
       "valid": 30306,
       "invalid": 0
     }
@@ -430,7 +374,9 @@
     "label": "Seq. person number",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lfd. Personennummer",
@@ -452,7 +398,9 @@
     "label": "Year of birth",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr",
@@ -461,7 +409,7 @@
       "Min.": 1915.0,
       "1st Qu.": 1959.0,
       "Median": 1972.0,
-      "Mean": 1971.18115234375,
+      "Mean": 1971.1690673828125,
       "3rd Qu.": 1985.0,
       "Max.": 2000.0,
       "valid": 30306,
@@ -2830,7 +2778,9 @@
     "label": "Number of close friends",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl enge Freunde",
@@ -2852,7 +2802,9 @@
     "label": "Number of close friends that are co-workers",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Davon Kollegen",
@@ -4562,25 +4514,7 @@
         -3,
         -2,
         -1,
-        0,
-        9,
-        10,
-        8,
-        6,
-        7,
-        5,
-        11,
-        4,
-        12,
-        2,
-        3,
-        1,
-        13,
-        14,
-        15,
-        16,
-        17,
-        21
+        0
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -4590,25 +4524,7 @@
         "[-3] Not valid",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[0] Does not apply",
-        "9",
-        "10",
-        "8",
-        "6",
-        "7",
-        "5",
-        "11",
-        "4",
-        "12",
-        "2",
-        "3",
-        "1",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17",
-        "21"
+        "[0] Does not apply"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -4628,24 +4544,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -4656,25 +4554,7 @@
         579,
         174,
         118,
-        12300,
-        3537,
-        3279,
-        3060,
-        1212,
-        1007,
-        962,
-        890,
-        834,
-        636,
-        613,
-        510,
-        354,
-        135,
-        83,
-        15,
-        6,
-        1,
-        1
+        12300
       ]
     },
     "scale": "cat",
@@ -4698,19 +4578,7 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        8,
-        10,
-        7,
-        12,
-        9,
-        16
+        0
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -4720,19 +4588,7 @@
         "[-3] Not valid",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[0] Does not apply",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "8",
-        "10",
-        "7",
-        "12",
-        "9",
-        "16"
+        "[0] Does not apply"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -4752,18 +4608,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -4774,19 +4618,7 @@
         21,
         137,
         27,
-        5812,
-        18628,
-        3549,
-        873,
-        413,
-        242,
-        92,
-        34,
-        22,
-        11,
-        5,
-        5,
-        2
+        5812
       ]
     },
     "scale": "cat",
@@ -4810,20 +4642,7 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        8,
-        7,
-        10,
-        9,
-        12,
-        11,
-        23
+        0
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -4833,20 +4652,7 @@
         "[-3] Not valid",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[0] Does not apply",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "8",
-        "7",
-        "10",
-        "9",
-        "12",
-        "11",
-        "23"
+        "[0] Does not apply"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -4866,19 +4672,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -4889,20 +4682,7 @@
         20,
         126,
         6,
-        3719,
-        12185,
-        5856,
-        2578,
-        1105,
-        505,
-        187,
-        51,
-        27,
-        20,
-        5,
-        3,
-        1,
-        1
+        3719
       ]
     },
     "scale": "cat",
@@ -4926,30 +4706,7 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        8,
-        12,
-        10,
-        7,
-        24,
-        9,
-        16,
-        15,
-        20,
-        14,
-        18,
-        13,
-        11,
-        19,
-        17,
-        22,
-        21
+        0
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -4959,30 +4716,7 @@
         "[-3] Not valid",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[0] Does not apply",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "8",
-        "12",
-        "10",
-        "7",
-        "24",
-        "9",
-        "16",
-        "15",
-        "20",
-        "14",
-        "18",
-        "13",
-        "11",
-        "19",
-        "17",
-        "22",
-        "21"
+        "[0] Does not apply"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -5002,29 +4736,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -5035,30 +4746,7 @@
         1,
         391,
         50,
-        19381,
-        2378,
-        1997,
-        1256,
-        1085,
-        966,
-        715,
-        557,
-        333,
-        310,
-        281,
-        187,
-        79,
-        74,
-        54,
-        54,
-        51,
-        47,
-        18,
-        16,
-        9,
-        9,
-        4,
-        3
+        19381
       ]
     },
     "scale": "cat",
@@ -5082,24 +4770,7 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        8,
-        10,
-        12,
-        24,
-        7,
-        9,
-        20,
-        16,
-        18,
-        14,
-        15
+        0
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -5109,24 +4780,7 @@
         "[-3] Not valid",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[0] Does not apply",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "8",
-        "10",
-        "12",
-        "24",
-        "7",
-        "9",
-        "20",
-        "16",
-        "18",
-        "14",
-        "15"
+        "[0] Does not apply"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -5146,23 +4800,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -5173,24 +4810,7 @@
         3,
         427,
         69,
-        27727,
-        1095,
-        414,
-        184,
-        109,
-        66,
-        56,
-        51,
-        30,
-        20,
-        13,
-        13,
-        7,
-        7,
-        6,
-        4,
-        3,
-        2
+        27727
       ]
     },
     "scale": "cat",
@@ -5214,23 +4834,7 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        8,
-        2,
-        4,
-        6,
-        3,
-        7,
-        5,
-        9,
-        10,
-        12,
-        11,
-        20,
-        15,
-        13,
-        14
+        0
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -5240,23 +4844,7 @@
         "[-3] Not valid",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[0] Does not apply",
-        "1",
-        "8",
-        "2",
-        "4",
-        "6",
-        "3",
-        "7",
-        "5",
-        "9",
-        "10",
-        "12",
-        "11",
-        "20",
-        "15",
-        "13",
-        "14"
+        "[0] Does not apply"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -5276,22 +4864,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -5302,23 +4874,7 @@
         104,
         425,
         69,
-        24850,
-        1820,
-        547,
-        536,
-        423,
-        327,
-        295,
-        282,
-        258,
-        197,
-        134,
-        18,
-        15,
-        2,
-        2,
-        1,
-        1
+        24850
       ]
     },
     "scale": "cat",
@@ -5342,18 +4898,7 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        8,
-        7,
-        10,
-        9,
-        12
+        0
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -5363,18 +4908,7 @@
         "[-3] Not valid",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[0] Does not apply",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "8",
-        "7",
-        "10",
-        "9",
-        "12"
+        "[0] Does not apply"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -5394,17 +4928,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -5415,18 +4938,7 @@
         30,
         230,
         111,
-        17082,
-        9476,
-        2326,
-        625,
-        242,
-        115,
-        46,
-        9,
-        6,
-        5,
-        2,
-        1
+        17082
       ]
     },
     "scale": "cat",
@@ -5450,19 +4962,7 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        9,
-        7,
-        8,
-        11,
-        10,
-        12
+        0
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -5472,19 +4972,7 @@
         "[-3] Not valid",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[0] Does not apply",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "9",
-        "7",
-        "8",
-        "11",
-        "10",
-        "12"
+        "[0] Does not apply"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -5504,18 +4992,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -5526,19 +5002,7 @@
         15,
         255,
         62,
-        14676,
-        12342,
-        2403,
-        371,
-        91,
-        52,
-        20,
-        6,
-        5,
-        5,
-        1,
-        1,
-        1
+        14676
       ]
     },
     "scale": "cat",
@@ -5562,23 +5026,7 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        8,
-        10,
-        7,
-        12,
-        9,
-        13,
-        14,
-        11,
-        15,
-        16
+        0
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -5588,23 +5036,7 @@
         "[-3] Not valid",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[0] Does not apply",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "8",
-        "10",
-        "7",
-        "12",
-        "9",
-        "13",
-        "14",
-        "11",
-        "15",
-        "16"
+        "[0] Does not apply"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -5624,22 +5056,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -5650,23 +5066,7 @@
         39,
         176,
         79,
-        6724,
-        10045,
-        6320,
-        2991,
-        1670,
-        912,
-        588,
-        291,
-        193,
-        153,
-        63,
-        32,
-        10,
-        6,
-        6,
-        6,
-        2
+        6724
       ]
     },
     "scale": "cat",
@@ -5683,7 +5083,9 @@
     "label": "No answer normal weekday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "GesamtKA Normaler Werktag",
@@ -5927,7 +5329,9 @@
     "label": "[de] Arbeitslos gemeldet",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "24",
     "label_de": "Arbeitslos gemeldet",
@@ -16293,7 +15697,9 @@
     "label": "Number vocational training programs 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl WB-Maßnahmen 2017",
@@ -16315,7 +15721,9 @@
     "label": "Number days vocational training programs 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl Tage WB-Maßnahmen 2017",
@@ -16337,7 +15745,9 @@
     "label": "Number days vocational training programs 2017: half-days/few hours",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl Tage WB-Maßnahmen 2017: Halbtags/wenige Stunden",
@@ -16403,7 +15813,9 @@
     "label": "Self financed vocational training: costs",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Selbst finanzierte WB: Höhe der Kosten",
@@ -17075,7 +16487,9 @@
     "label": "Item Non-Response Left Job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "GesamtKA letzte Stelle ausgeschieden",
@@ -17097,7 +16511,9 @@
     "label": "How long employed years",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie lange beschäftigt Jahre",
@@ -17119,7 +16535,9 @@
     "label": "How long employed months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie lange beschäftigt Monate",
@@ -17309,7 +16727,9 @@
     "label": "Compensation € amount",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Abfindung € Höhe",
@@ -17830,7 +17250,9 @@
     "label": "Net income at least €/month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Nettoverdienst mind. €/Monat",
@@ -17916,7 +17338,9 @@
     "label": "Hours/week for net income",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Std./Wo. für Nettoverdienst",
@@ -18559,65 +17983,37 @@
         -7,
         -5,
         -2,
-        -1,
-        2,
-        3,
-        4,
-        5,
-        1,
-        6,
-        8
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "2",
-        "3",
-        "4",
-        "5",
-        "1",
-        "6",
-        "8"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         511,
         29515,
-        9,
-        206,
-        42,
-        10,
-        6,
-        5,
-        1,
-        1
+        9
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Anzahl Stellenwechsel nach 31.12.2016",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 2.0,
+      "Median": 2.0,
+      "Mean": 2.3136532306671143,
+      "3rd Qu.": 2.0,
+      "Max.": 8.0,
       "valid": 271,
       "invalid": 30035
     }
@@ -19073,7 +18469,9 @@
     "label": "Month of Leave",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterbrechung Monate",
@@ -28316,7 +27714,9 @@
     "label": "Introductory training no answer",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Einarbeitung KA",
@@ -28961,7 +28361,9 @@
     "label": "Year current employer",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr jetziger Arbeitgeber",
@@ -28970,7 +28372,7 @@
       "Min.": 1957.0,
       "1st Qu.": 2002.0,
       "Median": 2013.0,
-      "Mean": 2008.13671875,
+      "Mean": 2008.225830078125,
       "3rd Qu.": 2016.0,
       "Max.": 2019.0,
       "valid": 17445,
@@ -30340,7 +29742,9 @@
     "label": "Would Like To Work Hours/Week",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wunscharbeitszeit Std./Wo.",
@@ -30365,65 +29769,37 @@
         -7,
         -5,
         -3,
-        -2,
-        5,
-        6,
-        4,
-        3,
-        2,
-        7,
-        1
+        -2
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
         "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "5",
-        "6",
-        "4",
-        "3",
-        "2",
-        "7",
-        "1"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu"
+        "[-2] Does not apply"
       ],
       "missings": [
         true,
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         433,
         2,
-        14526,
-        11584,
-        1043,
-        965,
-        742,
-        547,
-        245,
-        219
+        14526
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Arbeitstage/Woche",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 5.0,
+      "Median": 5.0,
+      "Mean": 4.776278972625732,
+      "3rd Qu.": 5.0,
+      "Max.": 7.0,
       "valid": 15345,
       "invalid": 14961
     }
@@ -30503,7 +29879,9 @@
     "label": "Stipulated working hours excluding overtime hours/week",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Vereinbarte Arbeitszeit ohne Überstunden Std./Wo.",
@@ -30589,7 +29967,9 @@
     "label": "Actual working hours including overtime hours/week",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Tatsächliche Arbeitszeit mit Überstunden Std./Wo.",
@@ -31109,7 +30489,9 @@
     "label": "Actual gross wage last month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Tatsächlicher Bruttostundenlohn letzter Monat",
@@ -31200,7 +30582,9 @@
     "label": "Paid Breaks: Minutes",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Dauer bezahlte Arbeitspause: Min",
@@ -31222,7 +30606,9 @@
     "label": "Usage Paid Breaks: Minutes",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Genommene Dauer bezahlte Arbeitspause: Min",
@@ -31678,7 +31064,9 @@
     "label": "Number of hours overtime",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl geleistete Überstunden",
@@ -31769,7 +31157,9 @@
     "label": "Overtime time in lieu number of hours",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl abgefeierte Überstunden",
@@ -31860,7 +31250,9 @@
     "label": "Overtime financial compensation number of hours",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl ausbezahlte Überstunden",
@@ -31882,7 +31274,9 @@
     "label": "Gross income last month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Bruttoarbeitsverdienst im letzten Monat",
@@ -31904,7 +31298,9 @@
     "label": "Net income last month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Nettoarbeitsverdienst im letzten Monat",
@@ -32099,7 +31495,9 @@
     "label": "Minimum wage € euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Mindestlohn €",
@@ -32121,7 +31519,9 @@
     "label": "Minimum wage € cents",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Mindestlohn €cent",
@@ -33113,7 +32513,9 @@
     "label": "financial advantage through usage of company car",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Geldwerter Vorteil durch Nutzung Firmenwagen",
@@ -35098,65 +34500,37 @@
         -7,
         -5,
         -2,
-        -1,
-        1,
-        2,
-        3,
-        4,
-        5,
-        7,
-        6
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "7",
-        "6"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         4344,
         21470,
-        7,
-        3318,
-        848,
-        238,
-        52,
-        19,
-        5,
-        5
+        7
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Anzahl Nebentätigkeiten/ehrenamtliche Tätigkeiten derzeit",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 1.0,
+      "Median": 1.0,
+      "Mean": 1.3591973781585693,
+      "3rd Qu.": 2.0,
+      "Max.": 7.0,
       "valid": 4485,
       "invalid": 25821
     }
@@ -61667,7 +61041,9 @@
     "label": "1. side job days per month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erste Nebentätigkeit Anzahl Tage im Monat",
@@ -61689,7 +61065,9 @@
     "label": "1. side job hours per week",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erste Nebentätigkeit Anzahl Stunden Tätigkeit pro Woche",
@@ -61711,7 +61089,9 @@
     "label": "1. side job gross income last month in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erste Nebentätigkeit € Bruttoverdienst letzter Monat",
@@ -62068,7 +61448,9 @@
     "label": "2. side job days per month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zweite Nebentätigkeit Anzahl Tage im Monat",
@@ -62090,7 +61472,9 @@
     "label": "2. side job hours per week",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zweite Nebentätigkeit Anzahl Stunden Tätigkeit pro Woche",
@@ -62112,7 +61496,9 @@
     "label": "2. side job gross income last month in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zweite Nebentätigkeit € Bruttoverdienst letzter Monat",
@@ -62469,7 +61855,9 @@
     "label": "3. side job days per month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Dritte Nebentätigkeit Anzahl Tage im Monat",
@@ -62491,7 +61879,9 @@
     "label": "3. side job hours per week",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Dritte Nebentätigkeit Anzahl Stunden Tätigkeit pro Woche",
@@ -62513,7 +61903,9 @@
     "label": "3. side job gross income last month in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Dritte Nebentätigkeit € Bruttoverdienst letzter Monat",
@@ -62658,7 +62050,9 @@
     "label": "Gross Pension, Prev. Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Rente/Pension Brutto letzter Monat",
@@ -62754,7 +62148,9 @@
     "label": "Gross Widow's Pension/Orphan's Benefit, Prev. Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Witwen/Waisenrente Brutto letzter Monat",
@@ -62850,7 +62246,9 @@
     "label": "Unemployment benefit gross amount last month in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "€ Betrag Arbeitslosengeld im letzten Monat",
@@ -63020,7 +62418,9 @@
     "label": "Gross Maternity/Parental Benefit, Prev. Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Mutterschafts-/Elterngeld Brutto letzter Monat",
@@ -63116,7 +62516,9 @@
     "label": "BAföG gross amount last month in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "€ Betrag BAföG im letzten Monat",
@@ -63202,7 +62604,9 @@
     "label": "Maintenance payments from former spouse/child support gross amount last month in",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterhalt von früherem Partner/Kindesunterhalt Brutto letzter Monat",
@@ -63298,7 +62702,9 @@
     "label": "Gross Alimony Payment (Advance Payment), Prev. Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterhaltszahlung (Vorschusskassen) Brutto letzter Monat",
@@ -63394,7 +62800,9 @@
     "label": "Other financial assistance outside HH gross amount last month in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "€ Betrag andere finanzielle Unterstützungen im letzten Monat",
@@ -63559,7 +62967,9 @@
     "label": "Wages/salary months 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lohn/Gehalt Monate 2017",
@@ -63581,7 +62991,9 @@
     "label": "Wages/salary gross amount/month 2017 in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lohn/Gehalt € Brutto/Monat 2017",
@@ -63603,7 +63015,9 @@
     "label": "Wages/salary net amount/month 2017 in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lohn/Gehalt € Netto/Monat 2017",
@@ -63689,7 +63103,9 @@
     "label": "Income independent/freelance months 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Einkommen selbständig/freiberuflich Monate 2017",
@@ -63711,7 +63127,9 @@
     "label": "Income independent/freelance gross amount/month 2017 in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Einkommen selbständig/freiberuflich € Brutto/Monat 2017",
@@ -63733,7 +63151,9 @@
     "label": "Income independent/freelance net amount/month 2017 in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Einkommen selbständig/freiberuflich € Netto/Monat 2017",
@@ -63819,7 +63239,9 @@
     "label": "Income side job months 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Einkommen Nebenerwerb Monate 2017",
@@ -63841,7 +63263,9 @@
     "label": "Income side job gross amount/month 2017 in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Einkommen Nebenerwerb € Brutto/Monat 2017",
@@ -63927,7 +63351,9 @@
     "label": "Retirement, pension months 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Rente/Pension Monate 2017",
@@ -64077,7 +63503,9 @@
     "label": "Widower´s/orphan´s pension months 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Witwen/Waisenrente Monate 2017",
@@ -64099,7 +63527,9 @@
     "label": "Unemployment benefit months 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Arbeitslosengeld Monate 2017",
@@ -64121,7 +63551,9 @@
     "label": "Unemployment benefit gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Arbeitslosengeld € Brutto/Monat 2017",
@@ -64207,7 +63639,9 @@
     "label": "Unemployment benefit II/social benefit months 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "ALG II/Sozialgeld Monate 2017",
@@ -64293,7 +63727,9 @@
     "label": "Maternity/parental allowance months 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Mutterschafts-/Elterngeld Monate 2017",
@@ -64315,7 +63751,9 @@
     "label": "Maternity/parental allowance gross amount/month 2017 in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Mutterschafts-/Elterngeld € Brutto/Monat 2017",
@@ -64401,7 +63839,9 @@
     "label": "BAföG/scholarship/vocational training allowance months 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "BAföG/Stipendium/BAB Monate 2017",
@@ -64423,7 +63863,9 @@
     "label": "BAföG/scholarship/vocational training allowance gross amount/month 2017 in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "BAföG/Stipendium/BAB € Brutto/Monat 2017",
@@ -64509,7 +63951,9 @@
     "label": "Maintenance payments from former spouse/child support months 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterhalt von früherem Partner/Kindesunterhalt Monate 2017",
@@ -64531,7 +63975,9 @@
     "label": "Maintenance payments from former spouse/child support gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterhalt von früherem Partner/Kindesunterhalt Brutto/Monat 2017",
@@ -64617,7 +64063,9 @@
     "label": "Advance maintenance payment from child maintenance funds (Vorschusskassen) month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterhaltszahlung (Vorschusskassen) Monate 2017",
@@ -64639,7 +64087,9 @@
     "label": "Advance maintenance payment from child maintenance funds (Vorschusskassen) gross",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterhaltszahlung (Vorschusskassen) € Brutto/Monat 2017",
@@ -64725,7 +64175,9 @@
     "label": "Other financial assistance outside HH months 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sonstige Unterstützung außerhalb HH Monate 2017",
@@ -64747,7 +64199,9 @@
     "label": "Other financial assistance outside HH gross amount/month 2017 in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sonstige Unterstützung außerhalb HH € Brutto/Monat 2017",
@@ -64897,7 +64351,9 @@
     "label": "13. month salary gross amount 2017 in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "13. Monatsgehalt € Brutto 2017",
@@ -64983,7 +64439,9 @@
     "label": "14. month salary gross amount 2017 in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "14. Monatsgehalt € Brutto 2017",
@@ -65069,7 +64527,9 @@
     "label": "Additional Christmas bonus gross amount 2017 in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zusätzliches Weihnachtsgeld € Brutto 2017",
@@ -65155,7 +64615,9 @@
     "label": "Vacation pay gross amount 2017 in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Urlaubsgeld € Brutto 2017",
@@ -65241,7 +64703,9 @@
     "label": "Profit-sharing/premiums/bonus gross amount 2017 in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Gewinnbeteiligung/Gratifikation/Prämie € Brutto 2017",
@@ -65327,7 +64791,9 @@
     "label": "Other extra pay gross amount 2017 in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sonstige Sondervergütung € Brutto 2017",
@@ -65482,7 +64948,9 @@
     "label": "Travel expenses/allowance to cover use of local public transit 2017 amount in eu",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Fahrtgeld/Zuschuss öffentlicher Nahverkehr € 2017",
@@ -65504,7 +64972,9 @@
     "label": "German Pension Insurance pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Deutsche Rentenversicherung Rente € Brutto/Monat 2017",
@@ -65526,7 +64996,9 @@
     "label": "Civil service pension scheme pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beamtenversorgung Rente € Brutto/Monat 2017",
@@ -65548,7 +65020,9 @@
     "label": "Supplementary insurance pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zusatzversorgung Rente € Brutto/Monat 2017",
@@ -65570,7 +65044,9 @@
     "label": "Occupational pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betriebliche Altersversorgung Rente € Brutto/Monat 2017",
@@ -65592,7 +65068,9 @@
     "label": "Professional pension scheme pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Berufsständische Versorgung Rente € Brutto/Monat 2017",
@@ -65614,7 +65092,9 @@
     "label": "Riester pension plan pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Riesterrente € Brutto/Monat 2017",
@@ -65636,7 +65116,9 @@
     "label": "Private pension scheme pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Private RV Rente € Brutto/Monat 2017",
@@ -65658,7 +65140,9 @@
     "label": "Accident insurance pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unfallversicherung Rente € Brutto/Monat 2017",
@@ -65680,7 +65164,9 @@
     "label": "Pensions from another country pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Rente aus dem Ausland € Brutto/Monat 2017",
@@ -65702,7 +65188,9 @@
     "label": "Other pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sonstiger Träger Rente € Brutto/Monat 2017",
@@ -65724,7 +65212,9 @@
     "label": "Pensions, Item Non Response",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Gesamt KA Rente",
@@ -65746,7 +65236,9 @@
     "label": "German Pension Insurance widower´s/orphan´s pension gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Deutsche Rentenversicherung Witwen-/Waisenrente € Brutto/Monat 2017",
@@ -65768,7 +65260,9 @@
     "label": "Civil service pension scheme widower´s/orphan´s pension gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beamtenversorgung Witwen-/Waisenrente € Brutto/Monat 2017",
@@ -65790,7 +65284,9 @@
     "label": "Supplementary insurance widower´s/orphan´s pension gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zusatzversorgung Witwen-/Waisenrente € Brutto/Monat 2017",
@@ -65812,7 +65308,9 @@
     "label": "Occupational pension widower´s/orphan´s pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betriebliche Altersversorgung Witwen-/Waisenrente € Brutto/Monat 2017",
@@ -65834,7 +65332,9 @@
     "label": "Professional pension scheme widower´s/orphan´s pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Berufsständische Versorgung Witwen-/Waisenrente € Brutto/Monat 2017",
@@ -65856,7 +65356,9 @@
     "label": "Riester pension plan widower´s/orphan´s pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Riesterrente Witwen-/Waisenrente € Brutto/Monat 2017",
@@ -65878,7 +65380,9 @@
     "label": "Private pension scheme widower´s/orphan´s pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Private RV Witwen-/Waisenrente € Brutto/Monat 2017",
@@ -65900,7 +65404,9 @@
     "label": "Accident insurance widower´s/orphan´s pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unfallversicherung Witwen-/Waisenrente € Brutto/Monat 2017",
@@ -65922,7 +65428,9 @@
     "label": "Pensions from another country widower´s/orphan´s pension € gross amount/month 20",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Witwen-/Waisenrente aus dem Ausland € Brutto/Monat 2017",
@@ -65944,7 +65452,9 @@
     "label": "Other widower´s/orphan´s pension € gross amount/month 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sonstiger Träger Witwen-/Waisenrente Rente € Brutto/Monat 2017",
@@ -66015,7 +65525,9 @@
     "label": "Employed full-time",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "24",
     "label_de": "Voll erwerbstätig",
@@ -66028,7 +65540,9 @@
     "label": "Employed part-time",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "24",
     "label_de": "Teilzeitbeschäftigt",
@@ -66041,7 +65555,9 @@
     "label": "Mini-Job (Up To 450 EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "24",
     "label_de": "Mini-Job (bis 450 )",
@@ -66054,7 +65570,9 @@
     "label": "Initial Occupational Training",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "24",
     "label_de": "Betriebliche Erstausbildung/Lehre",
@@ -66136,7 +65654,9 @@
     "label": "Further Training",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "24",
     "label_de": "Fortbildung/Umschulung/Weiterbildung",
@@ -66149,7 +65669,9 @@
     "label": "pension/early retirement",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "24",
     "label_de": "Rente/Pension/Vorruhestand",
@@ -66162,7 +65684,9 @@
     "label": "Maternity, Paternity Leave",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "24",
     "label_de": "Mutterschutz/Elternzeit",
@@ -66175,7 +65699,9 @@
     "label": "School/University/Vocational School",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "24",
     "label_de": "Schule/Hoch-/Fachschule",
@@ -66188,7 +65714,9 @@
     "label": "Federal Voluntary Srvc",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "24",
     "label_de": "Freiwilligendienst",
@@ -66201,7 +65729,9 @@
     "label": "Housewife,Househusband Apr Prev Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "24",
     "label_de": "Hausfrau/-mann",
@@ -66214,7 +65744,9 @@
     "label": "[de] Sonstiges",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "24",
     "label_de": "Sonstiges",
@@ -66370,7 +65902,9 @@
     "label": "Accrued monthly pension claims amount in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Bislang erworbene monatl. Ansprüche gesetzliche Rentenversicherung, Betrag in €",
@@ -66716,7 +66250,9 @@
     "label": "[de] Riester- oder Rürup-Rente  2017 Einzahlungen geleistet, Monate",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Riester- oder Rürup-Rente  2017 Einzahlungen geleistet, Monate",
@@ -66738,7 +66274,9 @@
     "label": "[de] Riester- oder Rürup-Rente  2017 Einzahlungen geleistet, € pro Monat",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Riester- oder Rürup-Rente  2017 Einzahlungen geleistet, € pro Monat",
@@ -66981,69 +66519,40 @@
         -5,
         -3,
         -2,
-        -1,
-        1,
-        2,
-        0,
-        3,
-        4,
-        5,
-        10
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "1",
-        "2",
-        "0",
-        "3",
-        "4",
-        "5",
-        "10"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         4422,
         1,
         20197,
-        231,
-        4846,
-        446,
-        86,
-        63,
-        9,
-        3,
-        2
+        231
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Anzahl Betriebsrentenverträge insgesamt",
     "study": "soep-core",
     "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 1.0,
+      "Median": 1.0,
+      "Mean": 1.0995416641235352,
+      "3rd Qu.": 1.0,
+      "Max.": 10.0,
       "valid": 5455,
       "invalid": 24851
     }
@@ -67123,7 +66632,9 @@
     "label": "Accrued monthly occupational pension entitlements, amount in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Bislang erworbene monatl. Ansprüche betriebl. Altersversorgung, Betrag in €",
@@ -68335,7 +67846,9 @@
     "label": "Degree of Disability",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Grad der Behinderung",
@@ -68426,7 +67939,9 @@
     "label": "Number of cigarettes",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zigaretten",
@@ -68448,7 +67963,9 @@
     "label": "Number of pipes",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Pfeifen",
@@ -68470,7 +67987,9 @@
     "label": "Number of cigars/cigarillos",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zigarren/Zigarillos",
@@ -68492,7 +68011,9 @@
     "label": "Smoking no answer",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Rauchen GesamtKA",
@@ -68924,7 +68445,9 @@
     "label": "Height",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Körpergröße",
@@ -68946,7 +68469,9 @@
     "label": "weight",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Gewicht",
@@ -69037,7 +68562,9 @@
     "label": "Number of visits to a doctor in the last three months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl Arztbesuche in den letzten 3 Monaten",
@@ -69192,7 +68719,9 @@
     "label": "Number nights in the hospital 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl Nächte im Krankenhaus 2017",
@@ -69214,7 +68743,9 @@
     "label": "Number hospital stays",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl Krankenhausaufenthalte 2017",
@@ -69379,7 +68910,9 @@
     "label": "Number of missed days due to illness 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl Kranktage 2017",
@@ -69465,7 +68998,9 @@
     "label": "Number of missed days due to sick child 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl Fehltage wegen Krankheit des Kindes 2017",
@@ -69551,7 +69086,9 @@
     "label": "Number of missed days because of care for a relative 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl Fehltage wegen Pflege eines Angehörigen 2017",
@@ -69637,7 +69174,9 @@
     "label": "Number of missed days due to other reasons 2017",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl Fehltage andere Gründe 2017",
@@ -69792,7 +69331,9 @@
     "label": "Private supplemental long-term care insurance amount/month in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monatlicher Beitrag für private Pflegezusatzversicherung",
@@ -69817,41 +69358,37 @@
         -7,
         -5,
         -2,
-        -1,
-        1
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "1"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
         true,
-        true,
-        false
+        true
       ],
       "frequencies": [
         0,
         4422,
         25297,
-        48,
-        539
+        48
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Monatlicher Beitrag für private Pflegezusatzversicherung Weiß nicht",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 1.0,
+      "Median": 1.0,
+      "Mean": 1.0,
+      "3rd Qu.": 1.0,
+      "Max.": 1.0,
       "valid": 539,
       "invalid": 29767
     }
@@ -70331,7 +69868,9 @@
     "label": "Supplementary private health insurance amount/month in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monatlicher Beitrag für private Zusatzkrankenversicherung",
@@ -70740,7 +70279,9 @@
     "label": "Health insurance amount/month in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monatlicher Beitrag private Krankenversicherung",
@@ -70863,61 +70404,37 @@
         -7,
         -5,
         -2,
-        -1,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         4422,
         25315,
-        1,
-        286,
-        175,
-        82,
-        22,
-        2,
         1
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Anzahl weitere Personen in privater Krankenversicherung",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 1.0,
+      "Median": 1.0,
+      "Mean": 1.7359155416488647,
+      "3rd Qu.": 2.0,
+      "Max.": 6.0,
       "valid": 568,
       "invalid": 29738
     }
@@ -70997,7 +70514,9 @@
     "label": "Co-payment in percent",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Form der Selbstbeteiligung prozentual",
@@ -71019,7 +70538,9 @@
     "label": "General deductible amount in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Form der Selbstbeteiligung pauschal in €",
@@ -77234,7 +76755,9 @@
     "label": "Serial Person Number Partner in HH",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lfd. Personennummer Partner im HH",
@@ -78235,7 +77758,9 @@
     "label": "Donation amount in euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Spendenbetrag €",
@@ -78321,7 +77846,9 @@
     "label": "€ amount 2017 parents/parents-in-law",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "€ Betrag 2017 an Eltern/Schwiegereltern",
@@ -78535,7 +78062,9 @@
     "label": "€ amount 2017 children",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "€ Betrag 2017 an Kinder",
@@ -78749,7 +78278,9 @@
     "label": "€ amount 2017 (divorced) spouse",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "€ Betrag 2017 an (geschiedenen) Ehepartner",
@@ -78963,7 +78494,9 @@
     "label": "€ amount 2017 other relatives",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "€ Betrag 2017 an sonstige Verwandte",
@@ -79177,7 +78710,9 @@
     "label": "€ amount 2017 non-relatives",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "€ Betrag 2017 an nicht Verwandte",
@@ -84413,24 +83948,7 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        4,
-        2,
-        3,
-        5,
-        6,
-        8,
-        7,
-        12,
-        9,
-        10,
-        11,
-        16,
-        18,
-        20,
-        15,
-        14
+        0
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -84440,24 +83958,7 @@
         "[-3] Not valid",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[0] Does not apply",
-        "1",
-        "4",
-        "2",
-        "3",
-        "5",
-        "6",
-        "8",
-        "7",
-        "12",
-        "9",
-        "10",
-        "11",
-        "16",
-        "18",
-        "20",
-        "15",
-        "14"
+        "[0] Does not apply"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -84477,23 +83978,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -84504,24 +83988,7 @@
         0,
         0,
         47,
-        1395,
-        797,
-        590,
-        573,
-        303,
-        285,
-        143,
-        95,
-        55,
-        19,
-        16,
-        16,
-        3,
-        2,
-        2,
-        1,
-        1,
-        1
+        1395
       ]
     },
     "scale": "cat",
@@ -84758,20 +84225,7 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        8,
-        10,
-        12,
-        7,
-        20,
-        15,
-        16
+        0
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -84781,20 +84235,7 @@
         "[-3] Not valid",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[0] Does not apply",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "8",
-        "10",
-        "12",
-        "7",
-        "20",
-        "15",
-        "16"
+        "[0] Does not apply"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -84814,19 +84255,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -84837,20 +84265,7 @@
         0,
         0,
         124,
-        2660,
-        752,
-        369,
-        128,
-        107,
-        80,
-        46,
-        26,
-        25,
-        14,
-        6,
-        5,
-        1,
-        1
+        2660
       ]
     },
     "scale": "cat",
@@ -90702,7 +90117,9 @@
     "label": "Integration Course BAMF: Year Started Course",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Kursbeginn, Integrationskurs des BAMF",
@@ -90724,7 +90141,9 @@
     "label": "Integration Course BAMF: Month Started Course",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat Kursbeginn, Integrationskurs des BAMF",
@@ -90746,7 +90165,9 @@
     "label": "Integration Course BAMF: Year Ended Course",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Kursende, Integrationskurs des BAMF",
@@ -90768,7 +90189,9 @@
     "label": "Integration Course BAMF: Month Ended Course",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat Kursende, Integrationskurs des BAMF",
@@ -91155,7 +90578,9 @@
     "label": "ESF-BAMF Course: Month Started",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Kursbeginn, ESF-BAMF-Kurs",
@@ -91177,7 +90602,9 @@
     "label": "ESF-BAMF Course: Month Started",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat Kursbeginn, ESF-BAMF-Kurs",
@@ -91199,7 +90626,9 @@
     "label": "ESF-BAMF Course: Year Ended",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Kursende, ESF-BAMF-Kurs",
@@ -91221,7 +90650,9 @@
     "label": "ESF-BAMF Course: Month Ended",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat Kursende, ESF-BAMF-Kurs",
@@ -91823,7 +91254,9 @@
     "label": "Year course start 'Prospects for female refugees'",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Kursbeginn Perspektiven für weibliche Flüchtlinge",
@@ -91949,7 +91382,9 @@
     "label": "Year course end 'Prospects for female refugees'",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Kursende Perspektiven für weibliche Flüchtlinge",
@@ -91971,7 +91406,9 @@
     "label": "Month course end 'Prospects for female refugees'",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat Kursende Perspektiven für weibliche Flüchtlinge",
@@ -92190,7 +91627,9 @@
     "label": "Year course start 'Prospects for young refugees'",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Kursbeginn, Perspektiven für jugendliche Flüchtlinge",
@@ -92316,7 +91755,9 @@
     "label": "Year course end 'Prospects for young refugees'",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Kursende, Perspektiven für jugendliche Flüchtlinge",
@@ -92634,7 +92075,9 @@
     "label": "Year course start 'Prospects for refugees'",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Kursbeginn, Perspektiven für Flüchtlinge",
@@ -92656,7 +92099,9 @@
     "label": "Month course start 'Prospects for refugees'",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat Kursbeginn, Perspektiven für Flüchtlinge",
@@ -92678,7 +92123,9 @@
     "label": "Year course end 'Prospects for refugees'",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Kursende, Perspektiven für Flüchtlinge",
@@ -93016,7 +92463,9 @@
     "label": "Start year: KompAS",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Kursbeginn KompAS",
@@ -93038,7 +92487,9 @@
     "label": "Start month: KompAS",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat Kursbeginn KompAS",
@@ -93060,7 +92511,9 @@
     "label": "End year: KompAS",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Kursende KompAS",
@@ -93082,7 +92535,9 @@
     "label": "End month: KompAS",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat Kursende KompAS",
@@ -93365,7 +92820,9 @@
     "label": "Other German Language Course: Year Started",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Kursbeginn, Anderer Deutschsprachkurs",
@@ -93387,7 +92844,9 @@
     "label": "Other German Language Course: Month Started",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat Kursbeginn, Anderer Deutschsprachkurs",
@@ -93409,7 +92868,9 @@
     "label": "Year course end: other German language course",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Kursende, Anderer Deutschsprachkurs",
@@ -93431,7 +92892,9 @@
     "label": "Other German Language Course: Month Ended",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat Kursende, Anderer Deutschsprachkurs",
@@ -93502,7 +92965,9 @@
     "label": "Other German Language Course: Number of Hours",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anderer Deutschsprachkurs: Anzahl Stunden",
@@ -93707,7 +93172,9 @@
     "label": "Year BueMA/proof of arrival",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr BÜMA/Ankunftsnachweis",
@@ -93729,7 +93196,9 @@
     "label": "Month BueMA/proof of arrival",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat BÜMA/Ankunftsnachweis",
@@ -93800,7 +93269,9 @@
     "label": "Application for Asylum, Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Asylantrag",
@@ -93822,7 +93293,9 @@
     "label": "Application for Asylum, Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat Asylantrag",
@@ -93844,7 +93317,9 @@
     "label": "Year hearing",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Anhörung",
@@ -93866,7 +93341,9 @@
     "label": "Month hearing",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat Anhörung",
@@ -93957,7 +93434,9 @@
     "label": "1st Application for Asylum, Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr erster Asylantrag",
@@ -93979,7 +93458,9 @@
     "label": "1st Application for Asylum, Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat erster Asylantrag",
@@ -94075,7 +93556,9 @@
     "label": "Year hearing",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Anhörung",
@@ -94097,7 +93580,9 @@
     "label": "Month hearing",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat Anhörung",
@@ -94257,7 +93742,9 @@
     "label": "Year decision on asylum application",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Entscheidung über Asylantrag",
@@ -94279,7 +93766,9 @@
     "label": "Month decision on asylum application",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat Entscheidung über Asylantrag",
@@ -94711,7 +94200,9 @@
     "label": "Stay in Germany permitted until, Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat Aufenthalt in Deutschland bis wann gestattet",
@@ -94733,7 +94224,9 @@
     "label": "Stay in Germany permitted until, Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr Aufenthalt in Deutschland bis wann gestattet",
@@ -97196,7 +96689,9 @@
     "label": "German profession: recognition of degree - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Deutscher Beruf: Anerkennung des Abschlusses - Jahr",
@@ -97218,7 +96713,9 @@
     "label": "German profession: recognition of degree - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Deutscher Beruf: Anerkennung des Abschlusses - Monat",
@@ -97388,7 +96885,9 @@
     "label": "German profession: notification of recognition - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Deutscher Beruf: Bescheid über Anerkennung - Jahr",
@@ -97410,7 +96909,9 @@
     "label": "German profession: notification of recognition - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Deutscher Beruf: Bescheid über Anerkennung - Monat",
@@ -99279,7 +98780,9 @@
     "label": "No discontinued education abroad",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kein ausländischer Ausbildungsabbruch",
@@ -99308,45 +98811,7 @@
         -3,
         -2,
         -1,
-        9998,
-        2015,
-        2014,
-        2012,
-        2013,
-        2011,
-        2010,
-        2008,
-        2006,
-        2005,
-        2016,
-        2000,
-        2007,
-        2002,
-        1984,
-        2009,
-        1991,
-        1990,
-        1994,
-        1995,
-        1999,
-        2004,
-        2003,
-        2001,
-        1980,
-        1985,
-        1993,
-        1982,
-        1997,
-        1998,
-        1950,
-        1996,
-        1973,
-        1974,
-        1988,
-        1987,
-        1975,
-        1978,
-        1992
+        9998
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -99356,45 +98821,7 @@
         "[-3] Not valid",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[9998] Do not know",
-        "2015",
-        "2014",
-        "2012",
-        "2013",
-        "2011",
-        "2010",
-        "2008",
-        "2006",
-        "2005",
-        "2016",
-        "2000",
-        "2007",
-        "2002",
-        "1984",
-        "2009",
-        "1991",
-        "1990",
-        "1994",
-        "1995",
-        "1999",
-        "2004",
-        "2003",
-        "2001",
-        "1980",
-        "1985",
-        "1993",
-        "1982",
-        "1997",
-        "1998",
-        "1950",
-        "1996",
-        "1973",
-        "1974",
-        "1988",
-        "1987",
-        "1975",
-        "1978",
-        "1992"
+        "[9998] Do not know"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -99414,44 +98841,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -99462,45 +98851,7 @@
         0,
         3598,
         27,
-        50,
-        44,
-        26,
-        20,
-        14,
-        12,
-        10,
-        9,
-        8,
-        7,
-        6,
-        6,
-        6,
-        6,
-        5,
-        5,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        3,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
+        50
       ]
     },
     "scale": "cat",
@@ -100329,7 +99680,9 @@
     "label": "Amount Just Net Income",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betrag Nettoverdienst gerecht",
@@ -100607,7 +99960,9 @@
     "label": "How much pension/retirement payment last year - per month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie viel Rente / Pension im letzten Jahr pro Monat",
@@ -100925,7 +100280,9 @@
     "label": "Unemployment benefit fair to you",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Für Sie ein gerechtes Arbeitslosengelg",
@@ -101458,7 +100815,9 @@
     "label": "Other financial support last year: number of months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl Monate andere finanzielle Unterstützungen im letzten Jahr",
@@ -101480,7 +100839,9 @@
     "label": "Other financial support last year - amount",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Höhe Betrag andere finanzielle Unterstützungen im letzten Jahr",
@@ -101502,7 +100863,9 @@
     "label": "Other financial support last month - amount",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Höhe Betrag andere finanzielle Unterstützungen im letzten Monat",
@@ -101524,7 +100887,9 @@
     "label": "Employed in short-time work",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "24",
     "label_de": "In Kurzarbeit",
@@ -101537,7 +100902,9 @@
     "label": "Split vignette training/education",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Split Vignette Ausbildung",
@@ -104428,7 +103795,9 @@
     "label": "Marriage partner person number",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ehepartner/in Personennr.",
@@ -104593,7 +103962,9 @@
     "label": "When did your spouse come to Germany - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist Ihr/e Ehepartner/in nach Deutschland gekommen Monat",
@@ -104615,7 +103986,9 @@
     "label": "When did your spouse come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist Ihr/e Ehepartner/in nach Deutschland gekommen Jahr",
@@ -104790,7 +104163,9 @@
     "label": "Life partner person number",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lebenspartner/in Personennr.",
@@ -104960,7 +104335,9 @@
     "label": "When did your partner come to Germany - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist Ihr/e Lebenspartner/in nach Deutschland gekommen Monat",
@@ -104982,7 +104359,9 @@
     "label": "When did your partner come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist Ihr/e Lebenspartner/in nach Deutschland gekommen Jahr",
@@ -105147,7 +104526,9 @@
     "label": "How many of your children came to Germany after you",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie viele Ihrer Kinder sind nach Ihnen nach Deutschland gekommen",
@@ -105169,7 +104550,9 @@
     "label": "When did this child come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist dieses Kind nach Deutschland gekommen Jahr",
@@ -105191,7 +104574,9 @@
     "label": "When did this child come to Germany - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist dieses Kind nach Deutschland gekommen Monat",
@@ -105282,7 +104667,9 @@
     "label": "When did your children come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann sind Ihre Kinder nach Deutschland gekommen Jahr",
@@ -105304,7 +104691,9 @@
     "label": "When did your children come to Germany - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann sind Ihre Kinder nach Deutschland gekommen Monat",
@@ -105326,7 +104715,9 @@
     "label": "When did the 1st child come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist das 1. Kind nach Deutschland gekommen Jahr",
@@ -105348,7 +104739,9 @@
     "label": "When did the 1st child come to Germany - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist das 1. Kind nach Deutschland gekommen Monat",
@@ -105370,7 +104763,9 @@
     "label": "When did the 2nd child come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist das 2. Kind nach Deutschland gekommen Jahr",
@@ -105392,7 +104787,9 @@
     "label": "When did the 2nd child come to Germany - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist das 2. Kind nach Deutschland gekommen Monat",
@@ -105414,7 +104811,9 @@
     "label": "When did the 3rd child come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist das 3. Kind nach Deutschland gekommen Jahr",
@@ -105436,7 +104835,9 @@
     "label": "When did the 3rd child come to Germany - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist das 3. Kind nach Deutschland gekommen Monat",
@@ -105458,7 +104859,9 @@
     "label": "When did the 4th child come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist das 4. Kind nach Deutschland gekommen Jahr",
@@ -105480,7 +104883,9 @@
     "label": "When did the 4th child come to Germany - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist das 4. Kind nach Deutschland gekommen Monat",
@@ -105502,7 +104907,9 @@
     "label": "When did the 5th child come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist das 5. Kind nach Deutschland gekommen Jahr",
@@ -105583,7 +104990,9 @@
     "label": "When did the 6th child come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist das 6. Kind nach Deutschland gekommen Jahr",
@@ -105659,7 +105068,9 @@
     "label": "When did the 7th child come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist das 7. Kind nach Deutschland gekommen Jahr",
@@ -105730,7 +105141,9 @@
     "label": "When did the 8th child come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist das 8. Kind nach Deutschland gekommen Jahr",
@@ -105868,81 +105281,37 @@
         -7,
         -5,
         -2,
-        -1,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        11,
-        10,
-        9
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "11",
-        "10",
-        "9"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         26395,
         3294,
-        11,
-        344,
-        126,
-        67,
-        35,
-        19,
-        7,
-        3,
-        2,
-        1,
-        1,
-        1
+        11
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Wie viele Ihrer Geschwister sind nach Ihnen nach Deutschland gekommen",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 1.0,
+      "Median": 1.0,
+      "Mean": 1.882838249206543,
+      "3rd Qu.": 2.0,
+      "Max.": 11.0,
       "valid": 606,
       "invalid": 29700
     }
@@ -105953,7 +105322,9 @@
     "label": "When did this sibling come to Germany",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist dieses Geschwister nach Deutschland gekommen Jahr",
@@ -105975,7 +105346,9 @@
     "label": "When did this sibling come to Germany - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist dieses Geschwister nach Deutschland gekommen Monat",
@@ -106066,7 +105439,9 @@
     "label": "When did your siblings come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann sind Ihre Geschwister nach Deutschland gekommen Jahr",
@@ -106088,7 +105463,9 @@
     "label": "When did your siblings come to Germany - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann sind Ihre Geschwister nach Deutschland gekommen Monat",
@@ -106110,7 +105487,9 @@
     "label": "When did your 1st sibling come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist Ihr 1. Geschwister nach Deutschland gekommen Jahr",
@@ -106132,7 +105511,9 @@
     "label": "When did your 1st sibling come to Germany - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist Ihr 1. Geschwister nach Deutschland gekommen Monat",
@@ -106154,7 +105535,9 @@
     "label": "When did your 2nd sibling come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist Ihr 2. Geschwister nach Deutschland gekommen Jahr",
@@ -106176,7 +105559,9 @@
     "label": "When did your 2nd sibling come to Germany - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist Ihr 2. Geschwister nach Deutschland gekommen Monat",
@@ -106198,7 +105583,9 @@
     "label": "When did your 3rd sibling come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist Ihr 3. Geschwister nach Deutschland gekommen Jahr",
@@ -106220,7 +105607,9 @@
     "label": "When did your 3rd sibling come to Germany - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist Ihr 3. Geschwister nach Deutschland gekommen Monat",
@@ -106242,7 +105631,9 @@
     "label": "When did your 4th sibling come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist Ihr 4. Geschwister nach Deutschland gekommen Jahr",
@@ -106264,7 +105655,9 @@
     "label": "When did your 4th sibling come to Germany - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist Ihr 4. Geschwister nach Deutschland gekommen Monat",
@@ -106286,7 +105679,9 @@
     "label": "When did your 5th sibling come to Germany - year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist Ihr 5. Geschwister nach Deutschland gekommen Jahr",
@@ -106308,7 +105703,9 @@
     "label": "When did your 5th sibling come to Germany - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann ist Ihr 5. Geschwister nach Deutschland gekommen Monat",
@@ -106974,7 +106371,9 @@
     "label": "When did you acquire German citizenship",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann haben Sie die deutsche Staatsangehörigkeit erhalten Jahr",
@@ -110131,7 +109530,9 @@
     "label": "[de] Welche Verkehrsmittel Kind zum Kindergarten/zur Schule/zu Freunden usw. geb",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Welche Verkehrsmittel Kind zum Kindergarten/zur Schule/zu Freunden usw. gebracht",
@@ -110735,7 +110136,9 @@
     "label": "Mode of transport internship: motorcycle, moped, motor scooter",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Welche Verkehrsmittel Weg zum Praktikum: Motorrad, Moped, Mofa",
@@ -111626,7 +111029,9 @@
     "label": "Tandem ended - month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann wurde Ihr Tandem beendet Monat",
@@ -111736,7 +111141,9 @@
     "label": "Reason tandem ended: lived too far apart",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Warum wurde das Tandem beendet: Große Distanz zwischen Wohnorten",
@@ -111758,7 +111165,9 @@
     "label": "Reason tandem ended: I didn't have time",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Warum wurde das Tandem beendet: Mangel an Zeit meinerseits",
@@ -111824,7 +111233,9 @@
     "label": "Reason tandem ended: our interests differed (hobbies etc.)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Warum wurde das Tandem beendet: Unterschiedliche Interessen (Hobbies, usw.)",
@@ -111846,7 +111257,9 @@
     "label": "Reason tandem ended: language barrier",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Warum wurde das Tandem beendet: Sprachbarriere",
@@ -111956,7 +111369,9 @@
     "label": "Reason tandem ended: tandem partner was rather indifferent",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Warum wurde das Tandem beendet: Tandempartner/in eher teilnahmslos",
@@ -111978,7 +111393,9 @@
     "label": "Reason tandem ended: had problem with my partner's attitudes (e.g. politics, mor",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Warum wurde das Tandem beendet: Tandempartner/in legt Einstellungen an den Tag,",
@@ -112000,7 +111417,9 @@
     "label": "Reason tandem ended: didn't like my tandem partner",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Warum wurde das Tandem beendet: Mein/e Tandempartner/in ist mir nicht sympathisc",
@@ -112022,7 +111441,9 @@
     "label": "Reason tandem ended: partner flirted with me, that made me feel uncomfortable",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Warum wurde das Tandem beendet: Mein/e Tandempartner/in flirtet mit mir und mir",
@@ -112044,7 +111465,9 @@
     "label": "Reason tandem ended: tandem partner unfriendly",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Warum wurde das Tandem beendet: Tandempartner/in ist unfreundlich",
@@ -112184,7 +111607,9 @@
     "label": "Tandem: how much travel costs per meeting (on average)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie viel Euro haben Sie für Fahrtkosten bei einem Treffen durchschnittlich ausge",
@@ -112206,7 +111631,9 @@
     "label": "Tandem: travel time to meeting (incl. return) - minutes",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie viel Minuten Fahrtzeit haben sie pro Treffen in dem Tandem hin und zurück be",
@@ -113771,7 +113198,9 @@
     "label": "[de] Dinge, die die Beziehung zu einem/einer Tandempartner/in erschweren können:",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Dinge, die die Beziehung zu einem/einer Tandempartner/in erschweren können: Tand",
@@ -113793,7 +113222,9 @@
     "label": "[de] Dinge, die die Beziehung zu einem/einer Tandempartner/in erschweren können:",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Dinge, die die Beziehung zu einem/einer Tandempartner/in erschweren können: Mein",
@@ -113952,7 +113383,9 @@
     "label": "Makes tandem difficult: nothing made things difficult",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Dinge, die die Beziehung zu einem/einer Tandempartner/in erschweren können: Kein",
@@ -115200,7 +114633,9 @@
     "label": "Desired length of stay in Germany: number of years",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Gewünschte Aufenthaltsdauer in Dtld: Anzahl Jahre",
@@ -116179,7 +115614,9 @@
     "label": "Cautious Trusting Strangers",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Vorsicht vor Vertrauen bei Fremden",
@@ -116994,7 +116431,9 @@
     "label": "Pri. Recr. Ag. With Activation/Replacement Voucher",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Private Vermittlung mit Aktivierungsschein",
@@ -117410,7 +116849,9 @@
     "label": "Sought For Work Item Non Response",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "GesamtKA (Stellensuche)",
@@ -119492,7 +118933,9 @@
     "label": "€ Amount of asylum benefits (AslybLG) last month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "€ Betrag AsylbLG Leistungen im letzten Monat",
@@ -119588,7 +119031,9 @@
     "label": "€ Amount of social benefit last month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "€ Betrag Sozialgeld im letzten Monat",
@@ -119832,7 +119277,9 @@
     "label": "Number of new acquaintances from country of origin",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl neue Bekannte aus dem Herkunftsland",
@@ -119918,7 +119365,9 @@
     "label": "Number of new acquaintances from Germany",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl neue Bekannte aus Deutschland",
@@ -120004,7 +119453,9 @@
     "label": "Number of new acquaintances from other countries",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl neue Bekannte aus anderen Ländern",
@@ -125631,7 +125082,9 @@
     "label": "Written interview lenght",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewdauer Selbstausfüller",
@@ -125653,7 +125106,9 @@
     "label": "[de] Interviewdauer mündlich",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewdauer mündlich",
@@ -125794,7 +125249,9 @@
     "label": "Day of interview",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewtag",
@@ -125816,7 +125273,9 @@
     "label": "[de] Interview beendet Uhrzeit (Stunde)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interview beendet Uhrzeit (Stunde)",
@@ -125838,7 +125297,9 @@
     "label": "[de] Interview beendet Uhrzeit (Minuten)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interview beendet Uhrzeit (Minuten)",
@@ -127672,7 +127133,9 @@
     "label": "Interviewer ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewer ID",
@@ -127694,7 +127157,9 @@
     "label": "Respondent ID (CAPI, current wave only)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Befragten-ID (CAPI nur akt. Welle)",

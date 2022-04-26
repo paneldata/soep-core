@@ -1,36 +1,16 @@
 [
   {
-    "name": "hhnr",
-    "dataset": "migspell",
-    "label": "Original Household Number",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 2424927.0,
-      "1st Qu.": 3182915.0,
-      "Median": 3266701.0,
-      "Mean": 3221288.7803417393,
-      "3rd Qu.": 3400882.0,
-      "Max.": 3499900.0,
-      "valid": 18201,
-      "invalid": 0
-    }
-  },
-  {
     "name": "pid",
     "dataset": "migspell",
     "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Unveraenderliche Personennummer",
+    "label_de": "Unveränderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 24249202.0,
@@ -46,10 +26,12 @@
   {
     "name": "cid",
     "dataset": "migspell",
-    "label": "Original Household Number",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
@@ -61,28 +43,6 @@
       "Mean": 3221288.7803417393,
       "3rd Qu.": 3400882.0,
       "Max.": 3499900.0,
-      "valid": 18201,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "persnr",
-    "dataset": "migspell",
-    "label": "Never Changing Person ID",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Unveraenderliche Personennummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 24249202.0,
-      "1st Qu.": 31841203.0,
-      "Median": 32691601.0,
-      "Mean": 32221134.21608703,
-      "3rd Qu.": 34007402.0,
-      "Max.": 34999001.0,
       "valid": 18201,
       "invalid": 0
     }
@@ -125,15 +85,18 @@
         29,
         30,
         31,
+        36,
+        37,
+        39,
+        40,
+        41,
         60,
         61,
         62,
         63,
         64,
         65,
-        66,
-        36,
-        37
+        66
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -168,15 +131,18 @@
         "[29] M2 2015 Migration (2009-2013)",
         "[30] M3 2016 Refugee (2013-2015)",
         "[31] M4 2016 Refugee/Families (2013-2015)",
+        "[36] P 2019 Refreshment (High Income)",
+        "[37] Q 2019 Refreshment (LGB)",
+        "[39] M7 2020 Migration",
+        "[40] M8 2020 Migration Professionals",
+        "[41] M6 2020 Refugees Refreshment",
         "[60] L2/3 FiD Screening, Low Income",
         "[61] L2/3 FiD Screening, Single Parent",
         "[62] L2/3 FiD Screening, Families with Several Children",
         "[63] L1 FiD Birth Cohort 2007",
         "[64] L1 FiD Birth Cohort 2008",
         "[65] L1 FiD Birth Cohort 2009",
-        "[66] L1 FiD Birth Cohort 2010",
-        "36",
-        "37"
+        "[66] L1 FiD Birth Cohort 2010"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -211,6 +177,11 @@
         "[29] M2 2015 Migration (2009-2013)",
         "[30] M3 2016 Flucht (2013-2015)",
         "[31] M4 2016 Flucht/Familien (2013-2015)",
+        "[36] P 2019 Aufstockung (Hochvermögende)",
+        "[37] Q 2019 Aufstockung (LGB)",
+        "[39] Aufstockung 2020/Stichprobe M7",
+        "[40] Aufstockung 2020/Stichprobe M8",
+        "[41] Schutzsuchende 2020/Stichprobe M6 ",
         "[60] L2/3 FiD Screening 2010/11 Niedrigeinkommen",
         "[61] L2/3 FiD Screening 2010/11 Alleinerziehende",
         "[62] L2/3 FiD Screening 2010/11 Mehrkindfamilien",
@@ -227,6 +198,9 @@
         true,
         true,
         true,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -295,15 +269,18 @@
         4636,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         1698,
-        504
+        504,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
       ]
     },
     "scale": "cat",
@@ -389,7 +366,9 @@
     "label": "Running no. of move",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "lauf. Nummer d. Migration",
@@ -411,7 +390,9 @@
     "label": "Number of spells",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl Spells der Person",
@@ -700,12 +681,12 @@
         191,
         192,
         193,
+        196,
         222,
         333,
         444,
-        999,
-        196,
-        998
+        998,
+        999
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -906,12 +887,12 @@
         "[191] Gabon",
         "[192] Comoros",
         "[193] Qatar",
+        "[196] Kosovo",
         "[222] Eastern Europe",
         "[333] Other Unspecified Foreign Country",
         "[444] EU-Member State (unspecif.)",
-        "[999] Answer not assignable",
-        "196",
-        "998"
+        "[998] ethnic minorities (e.g. Yazidi, Roma)",
+        "[999] Answer not assignable"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1112,9 +1093,11 @@
         "[191] Gabun",
         "[192] Komoren",
         "[193] Katar",
+        "[196] Kosovo ",
         "[222] Eastern Europe",
         "[333] sonst. unspez. Ausland",
         "[444] unspez. EU-Mitgliedstaat",
+        "[998] Ethnische Minderheiten (z.B. Jesiden, Roma)",
         "[999] Angabe unklar/nicht zuordenbar"
       ],
       "missings": [
@@ -1522,12 +1505,12 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
         3,
-        1
+        0,
+        0,
+        0,
+        1,
+        0
       ]
     },
     "scale": "cat",
@@ -1544,7 +1527,9 @@
     "label": "Start year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Startjahr",
@@ -1685,7 +1670,9 @@
     "label": "Start year imputed",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Startjahr imputiert",
@@ -3236,27 +3223,7 @@
         1401,
         1402,
         1403,
-        1404,
-        1423,
-        1411,
-        1409,
-        1424,
-        1435,
-        1413,
-        1420,
-        1419,
-        1416,
-        1425,
-        1410,
-        1417,
-        1433,
-        1418,
-        1422,
-        1412,
-        1414,
-        1437,
-        1421,
-        1415
+        1404
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -4669,27 +4636,7 @@
         "[1401] 2016 Sep",
         "[1402] 2016 Oct",
         "[1403] 2016 Nov",
-        "[1404] 2016 Dec",
-        "1423",
-        "1411",
-        "1409",
-        "1424",
-        "1435",
-        "1413",
-        "1420",
-        "1419",
-        "1416",
-        "1425",
-        "1410",
-        "1417",
-        "1433",
-        "1418",
-        "1422",
-        "1412",
-        "1414",
-        "1437",
-        "1421",
-        "1415"
+        "[1404] 2016 Dec"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -6112,26 +6059,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false,
         false,
         false,
@@ -8948,27 +8875,7 @@
         5,
         1,
         3,
-        4,
-        29,
-        6,
-        5,
-        4,
-        4,
-        3,
-        3,
-        2,
-        2,
-        2,
-        2,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
+        4
       ]
     },
     "scale": "cat",
@@ -10395,37 +10302,7 @@
         1401,
         1402,
         1403,
-        1404,
-        1437,
-        1435,
-        1431,
-        1433,
-        1432,
-        1430,
-        1438,
-        1436,
-        1434,
-        1439,
-        1422,
-        1409,
-        1410,
-        1408,
-        1429,
-        1421,
-        1440,
-        1411,
-        1423,
-        1420,
-        1412,
-        1424,
-        1419,
-        1415,
-        1418,
-        1425,
-        1416,
-        1414,
-        1417,
-        1413
+        1404
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -11838,37 +11715,7 @@
         "[1401] 2016 Sep",
         "[1402] 2016 Oct",
         "[1403] 2016 Nov",
-        "[1404] 2016 Dec",
-        "1437",
-        "1435",
-        "1431",
-        "1433",
-        "1432",
-        "1430",
-        "1438",
-        "1436",
-        "1434",
-        "1439",
-        "1422",
-        "1409",
-        "1410",
-        "1408",
-        "1429",
-        "1421",
-        "1440",
-        "1411",
-        "1423",
-        "1420",
-        "1412",
-        "1424",
-        "1419",
-        "1415",
-        "1418",
-        "1425",
-        "1416",
-        "1414",
-        "1417",
-        "1413"
+        "[1404] 2016 Dec"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -13291,36 +13138,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false,
         false,
         false,
@@ -16137,37 +15954,7 @@
         1,
         3,
         4,
-        0,
-        92,
-        86,
-        85,
-        63,
-        63,
-        52,
-        51,
-        51,
-        48,
-        42,
-        41,
-        39,
-        38,
-        25,
-        25,
-        21,
-        20,
-        15,
-        14,
-        9,
-        8,
-        6,
-        3,
-        2,
-        2,
-        1,
-        1,
-        1,
-        1,
-        1
+        0
       ]
     },
     "scale": "cat",
@@ -16184,7 +15971,9 @@
     "label": "Duration of stay (months)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Aufenthaltsdauer in Monaten",
@@ -17077,12 +16866,12 @@
         191,
         192,
         193,
+        196,
         222,
         333,
         444,
-        999,
-        196,
-        998
+        998,
+        999
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -17283,12 +17072,12 @@
         "[191] Gabon",
         "[192] Comoros",
         "[193] Qatar",
+        "[196] Kosovo",
         "[222] Eastern Europe",
         "[333] Other Unspecified Foreign Country",
         "[444] EU-Member State (unspecif.)",
-        "[999] Answer not assignable",
-        "196",
-        "998"
+        "[998] ethnic minorities (e.g. Yazidi, Roma)",
+        "[999] Answer not assignable"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -17489,9 +17278,11 @@
         "[191] Gabun",
         "[192] Komoren",
         "[193] Katar",
+        "[196] Kosovo ",
         "[222] Eastern Europe",
         "[333] sonst. unspez. Ausland",
         "[444] unspez. EU-Mitgliedstaat",
+        "[998] Ethnische Minderheiten (z.B. Jesiden, Roma)",
         "[999] Angabe unklar/nicht zuordenbar"
       ],
       "missings": [
@@ -17899,12 +17690,12 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
         3,
-        1
+        0,
+        0,
+        0,
+        1,
+        0
       ]
     },
     "scale": "cat",
@@ -18119,9 +17910,11 @@
         191,
         192,
         193,
+        196,
         222,
         333,
         444,
+        998,
         999
       ],
       "labels": [
@@ -18323,9 +18116,11 @@
         "[191] Gabon",
         "[192] Comoros",
         "[193] Qatar",
+        "[196] Kosovo",
         "[222] Eastern Europe",
         "[333] Other Unspecified Foreign Country",
         "[444] EU-Member State (unspecif.)",
+        "[998] ethnic minorities (e.g. Yazidi, Roma)",
         "[999] Answer not assignable"
       ],
       "labels_de": [
@@ -18527,9 +18322,11 @@
         "[191] Gabun",
         "[192] Komoren",
         "[193] Katar",
+        "[196] Kosovo ",
         "[222] Eastern Europe",
         "[333] sonst. unspez. Ausland",
         "[444] unspez. EU-Mitgliedstaat",
+        "[998] Ethnische Minderheiten (z.B. Jesiden, Roma)",
         "[999] Angabe unklar/nicht zuordenbar"
       ],
       "missings": [
@@ -18540,6 +18337,8 @@
         true,
         true,
         true,
+        false,
+        false,
         false,
         false,
         false,
@@ -18938,6 +18737,8 @@
         0,
         0,
         0,
+        0,
+        0,
         0
       ]
     },
@@ -18955,7 +18756,9 @@
     "label": "Year of last move to Germany",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "letzter Zuzug n. DE aus starty",
@@ -18977,7 +18780,9 @@
     "label": "Year of last move to Germany (imputed version)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "letzter Zuzug n. DE aus starty_imp",
@@ -18999,7 +18804,9 @@
     "label": "Flag: startmo imputed",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Imputationszeiger startmo",
@@ -19021,7 +18828,9 @@
     "label": "Flag: starty imputed",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Imputationszeiger starty",
@@ -19043,7 +18852,9 @@
     "label": "Flag: birth date updated from ppfad",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zeiger: Gebdatum aus ppfad uebernommen",
@@ -19065,7 +18876,9 @@
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Befragungsjahr",

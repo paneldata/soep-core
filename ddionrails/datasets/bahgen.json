@@ -1,36 +1,16 @@
 [
   {
-    "name": "hhnr",
-    "dataset": "bahgen",
-    "label": "Original Household Number",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 60.0,
-      "1st Qu.": 262564.75,
-      "Median": 507139.0,
-      "Mean": 867563.5053198391,
-      "3rd Qu.": 2009705.5,
-      "Max.": 2153664.0,
-      "valid": 15414,
-      "invalid": 0
-    }
-  },
-  {
     "name": "hid",
     "dataset": "bahgen",
-    "label": "Current Wave HH Number (=BAHHNR)",
+    "label": "Current Wave HH Number (=hid_2010)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=BAHHNR)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_2010)",
     "study": "soep-core",
     "statistics": {
       "Min.": 60.0,
@@ -49,7 +29,9 @@
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erhebungsjahr",
@@ -68,10 +50,12 @@
   {
     "name": "cid",
     "dataset": "bahgen",
-    "label": "Original Household Number",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
@@ -88,37 +72,17 @@
     }
   },
   {
-    "name": "bahhnr",
+    "name": "hid_2010",
     "dataset": "bahgen",
-    "label": "current household number",
+    "label": "Current Wave HH Number (=hid)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 60.0,
-      "1st Qu.": 255321.0,
-      "Median": 502268.5,
-      "Mean": 866985.9763851045,
-      "3rd Qu.": 2009705.5,
-      "Max.": 2153664.0,
-      "valid": 15414,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hhnrakt",
-    "dataset": "bahgen",
-    "label": "current household number (=BAHHNR)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=BAHHNR)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 60.0,
@@ -226,7 +190,9 @@
     "label": "Year Moved Into Dwelling",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr des Einzugs",
@@ -235,7 +201,7 @@
       "Min.": 1907.0,
       "1st Qu.": 1991.0,
       "Median": 2002.0,
-      "Mean": 1996.041748046875,
+      "Mean": 1996.0518798828125,
       "3rd Qu.": 2007.0,
       "Max.": 2010.0,
       "valid": 15265,
@@ -248,7 +214,9 @@
     "label": "Earliest Possible Construction Year of Dwelling",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Fruehestmoegliches Baujahr des Hauses",
@@ -257,7 +225,7 @@
       "Min.": 0.0,
       "1st Qu.": 1919.0,
       "Median": 1949.0,
-      "Mean": 1698.1990966796875,
+      "Mean": 1698.238037109375,
       "3rd Qu.": 1981.0,
       "Max.": 2010.0,
       "valid": 14940,
@@ -270,7 +238,9 @@
     "label": "Latest Possible Construction Year of Dwelling",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Spaetestmoegliches Baujahr des Hauses",
@@ -279,7 +249,7 @@
       "Min.": 1918.0,
       "1st Qu.": 1948.0,
       "Median": 1971.0,
-      "Mean": 1969.4080810546875,
+      "Mean": 1969.3477783203125,
       "3rd Qu.": 1990.0,
       "Max.": 2010.0,
       "valid": 14940,
@@ -1447,6 +1417,80 @@
     }
   },
   {
+    "name": "eqpfire10",
+    "dataset": "bahgen",
+    "label": "Dwelling Has Fireplace or Ceramic Tiled Stove",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes",
+        "[2] No"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] Nicht valide",
+        "[-2] Trifft nicht zu",
+        "[-1] Keine Angabe",
+        "[1] Ja",
+        "[2] Nein"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        15414,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Ausstattung: Kaminofen oder Kachelofen",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 0,
+      "invalid": 15414
+    }
+  },
+  {
     "name": "eqpair10",
     "dataset": "bahgen",
     "label": "Dwelling Has Air Conditioner",
@@ -1674,7 +1718,9 @@
     "label": "Size Of Housing Unit In Sq M",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wohnflaeche in qm",
@@ -1683,7 +1729,7 @@
       "Min.": 8.0,
       "1st Qu.": 70.0,
       "Median": 95.0,
-      "Mean": 103.1872329711914,
+      "Mean": 103.1845703125,
       "3rd Qu.": 125.0,
       "Max.": 550.0,
       "valid": 15414,
@@ -1696,7 +1742,9 @@
     "label": "Number Of Rooms Larger Than 6 Sq M",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zahl der Wohnraeume ueber 6 qm",
@@ -1705,7 +1753,7 @@
       "Min.": 1.0,
       "1st Qu.": 3.0,
       "Median": 4.0,
-      "Mean": 4.061761856079102,
+      "Mean": 4.061826705932617,
       "3rd Qu.": 5.0,
       "Max.": 24.0,
       "valid": 15414,
@@ -1718,17 +1766,19 @@
     "label": "Amount Of Rent Minus Heating Costs",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monatl. Bruttokaltmiete (EUR)",
     "study": "soep-core",
     "statistics": {
-      "Min.": 15.0,
-      "1st Qu.": 343.0,
-      "Median": 445.0,
-      "Mean": 486.46038818359375,
-      "3rd Qu.": 570.0,
+      "Min.": 20.0,
+      "1st Qu.": 345.0,
+      "Median": 443.0,
+      "Mean": 487.270263671875,
+      "3rd Qu.": 575.0,
       "Max.": 4700.0,
       "valid": 7826,
       "invalid": 7588
@@ -1740,7 +1790,9 @@
     "label": "Costs Of Warm Water, Gen",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monatl. Heiz- und Warmwasserkosten (EUR)",
@@ -1749,7 +1801,7 @@
       "Min.": 0.0,
       "1st Qu.": 60.0,
       "Median": 84.0,
-      "Mean": 94.7802505493164,
+      "Mean": 94.56690979003906,
       "3rd Qu.": 120.0,
       "Max.": 503.0,
       "valid": 7809,
@@ -1762,7 +1814,9 @@
     "label": "Other Monthly Utility Costs",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monatl. Umlagen (EUR)",
@@ -1771,7 +1825,7 @@
       "Min.": 3.0,
       "1st Qu.": 40.0,
       "Median": 65.0,
-      "Mean": 73.6611557006836,
+      "Mean": 75.20709991455078,
       "3rd Qu.": 100.0,
       "Max.": 700.0,
       "valid": 7803,
@@ -1784,7 +1838,9 @@
     "label": "Costs of Electricity (gen)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monatl. Stromkosten (EUR)",
@@ -1793,7 +1849,7 @@
       "Min.": 1.0,
       "1st Qu.": 38.0,
       "Median": 50.0,
-      "Mean": 57.747215270996094,
+      "Mean": 57.94150924682617,
       "3rd Qu.": 70.0,
       "Max.": 400.0,
       "valid": 7813,
@@ -1806,7 +1862,9 @@
     "label": "Costs of Gas (EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monatl. Gaskosten (EUR)",
@@ -2495,9 +2553,9 @@
         0,
         0,
         11470,
-        3187,
-        638,
-        119
+        3195,
+        641,
+        108
       ]
     },
     "scale": "cat",
@@ -2635,19 +2693,19 @@
         0,
         0,
         11470,
-        1466,
-        2015,
+        1468,
+        2024,
         0,
-        192,
+        189,
         0,
         0,
         0,
-        222,
-        15,
-        15,
-        13,
+        214,
+        6,
+        17,
+        19,
         0,
-        4,
+        5,
         0,
         0,
         0,
@@ -2729,8 +2787,8 @@
         0,
         0,
         13361,
-        1128,
-        925
+        1129,
+        924
       ]
     },
     "scale": "cat",
@@ -3290,10 +3348,10 @@
         0,
         0,
         0,
-        3106,
-        3839,
-        1948,
-        4553,
+        3119,
+        3826,
+        1951,
+        4550,
         1086,
         669,
         119,
@@ -3467,20 +3525,20 @@
         0,
         0,
         0,
-        568,
-        994,
-        1544,
+        570,
+        1004,
+        1545,
         0,
         0,
         0,
-        3839,
-        862,
+        3826,
+        865,
         516,
         294,
         77,
         113,
         86,
-        1585,
+        1582,
         1969,
         999,
         713,
@@ -3509,7 +3567,9 @@
     "label": "Monthly Household Net Income (EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monatl. Haushaltsnettoeinkommen (EUR)",
@@ -3531,7 +3591,9 @@
     "label": "1. Imputed Monthly Net Household Income (EUR) [1/5]",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "1.Imput.monatl.HH-Nettoeinkommen (EUR) [1/5]",
@@ -3553,7 +3615,9 @@
     "label": "2. Imputed Monthly Net Household Income (EUR) [2/5]",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "2.Imput.monatl.HH-Nettoeinkommen (EUR) [2/5]",
@@ -3575,7 +3639,9 @@
     "label": "3. Imputed Monthly Net Household Income (EUR) [3/5]",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "3.Imput.monatl.HH-Nettoeinkommen (EUR) [3/5]",
@@ -3597,7 +3663,9 @@
     "label": "4. Imputed Monthly Net Household Income (EUR) [4/5]",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "4.Imput.monatl.HH-Nettoeinkommen (EUR) [4/5]",
@@ -3619,7 +3687,9 @@
     "label": "5. Imputed Monthly Net Household Income (EUR) [5/5]",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "5.Imput.monatl.HH-Nettoeinkommen (EUR) [5/5]",

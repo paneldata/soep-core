@@ -1,36 +1,16 @@
 [
   {
-    "name": "hhnr",
-    "dataset": "gpbrutto",
-    "label": "Original Household Number",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 19.0,
-      "1st Qu.": 23673.25,
-      "Median": 46272.0,
-      "Mean": 182620.6516397656,
-      "3rd Qu.": 504319.0,
-      "Max.": 521795.0,
-      "valid": 19454,
-      "invalid": 0
-    }
-  },
-  {
     "name": "hid",
     "dataset": "gpbrutto",
-    "label": "Current Wave HH Number (=GHHNR)",
+    "label": "Current Wave HH Number (=hid_1990)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=GHHNR)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_1990)",
     "study": "soep-core",
     "statistics": {
       "Min.": 19.0,
@@ -44,34 +24,14 @@
     }
   },
   {
-    "name": "persnr",
-    "dataset": "gpbrutto",
-    "label": "Never Changing Person ID",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Unveraenderliche Personennummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 101.0,
-      "1st Qu.": 250703.25,
-      "Median": 491701.5,
-      "Mean": 1844935.8996093348,
-      "3rd Qu.": 5043103.75,
-      "Max.": 5217903.0,
-      "valid": 19454,
-      "invalid": 0
-    }
-  },
-  {
     "name": "syear",
     "dataset": "gpbrutto",
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erhebungsjahr",
@@ -90,10 +50,12 @@
   {
     "name": "cid",
     "dataset": "gpbrutto",
-    "label": "Original Household Number",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
@@ -110,37 +72,17 @@
     }
   },
   {
-    "name": "ghhnr",
+    "name": "hid_1990",
     "dataset": "gpbrutto",
-    "label": "Current Wave HH Number (=HHNRAKT)",
+    "label": "Current Wave HH Number (=hid)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=HHNRAKT)",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 19.0,
-      "1st Qu.": 27456.0,
-      "Median": 53198.0,
-      "Mean": 186918.29006888042,
-      "3rd Qu.": 504319.0,
-      "Max.": 521795.0,
-      "valid": 19454,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hhnrakt",
-    "dataset": "gpbrutto",
-    "label": "Current Wave HH Number (=GHHNR)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=GHHNR)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 19.0,
@@ -159,10 +101,12 @@
     "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Unveraenderliche Personennummer",
+    "label_de": "Unveränderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 101.0,
@@ -181,7 +125,9 @@
     "label": "Serial Person Number",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Laufende Nr. der Person im Haushalt",
@@ -203,7 +149,9 @@
     "label": "Year Of Birth",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr",
@@ -981,19 +929,7 @@
         -3,
         -2,
         -1,
-        99,
-        8,
-        1,
-        5,
-        10,
-        3,
-        11,
-        9,
-        7,
-        6,
-        12,
-        4,
-        2
+        99
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -1003,19 +939,7 @@
         "[-3] Answer improbable",
         "[-2] Does not apply",
         "[-1] No Answer",
-        "[99] No Answer",
-        "8",
-        "1",
-        "5",
-        "10",
-        "3",
-        "11",
-        "9",
-        "7",
-        "6",
-        "12",
-        "4",
-        "2"
+        "[99] No Answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1035,18 +959,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -1057,19 +969,7 @@
         0,
         18588,
         174,
-        0,
-        78,
-        74,
-        62,
-        60,
-        60,
-        54,
-        53,
-        53,
-        53,
-        52,
-        48,
-        45
+        0
       ]
     },
     "scale": "cat",
@@ -1093,18 +993,7 @@
         -3,
         -2,
         -1,
-        99,
-        89,
-        90,
-        88,
-        73,
-        79,
-        78,
-        74,
-        87,
-        86,
-        85,
-        69
+        99
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -1114,18 +1003,7 @@
         "[-3] Answer improbable",
         "[-2] Does not apply",
         "[-1] No Answer",
-        "[99] No Answer",
-        "89",
-        "90",
-        "88",
-        "73",
-        "79",
-        "78",
-        "74",
-        "87",
-        "86",
-        "85",
-        "69"
+        "[99] No Answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1145,17 +1023,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -1166,18 +1033,7 @@
         0,
         18588,
         107,
-        0,
-        540,
-        188,
-        20,
-        3,
-        2,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1
+        0
       ]
     },
     "scale": "cat",
@@ -1799,7 +1655,9 @@
     "label": "Old Household And Person Number",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Alte Haushalts- und Personennummer",
@@ -2009,7 +1867,9 @@
     "label": "Person Supplying Address Information",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Adressenermittlung Person, 2-Steller",
@@ -2110,7 +1970,9 @@
     "label": "New Household And Person Number",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Neue Haushalts- und Personennummer",

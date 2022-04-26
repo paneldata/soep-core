@@ -1,77 +1,13 @@
 [
   {
-    "name": "hhnr",
-    "dataset": "yp",
-    "label": "Original Household Number",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 27.0,
-      "1st Qu.": 52340.25,
-      "Median": 282394.0,
-      "Mean": 299548.9706360496,
-      "3rd Qu.": 500518.0,
-      "Max.": 824984.0,
-      "valid": 19684,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hhnrakt",
-    "dataset": "yp",
-    "label": "Current Household Nummber (=YHHNR)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=YHHNR)",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 27.0,
-      "1st Qu.": 115849.0,
-      "Median": 281413.0,
-      "Mean": 302752.9897378582,
-      "3rd Qu.": 386245.0,
-      "Max.": 827703.0,
-      "valid": 19684,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "persnr",
-    "dataset": "yp",
-    "label": "Never Changing Person ID",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Unveraenderliche Personennummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 201.0,
-      "1st Qu.": 941952.0,
-      "Median": 2821101.5,
-      "Mean": 3024618.978561268,
-      "3rd Qu.": 3890527.0,
-      "Max.": 8276802.0,
-      "valid": 19684,
-      "invalid": 0
-    }
-  },
-  {
     "name": "syear",
     "dataset": "yp",
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Befragungsjahr",
@@ -90,10 +26,12 @@
   {
     "name": "cid",
     "dataset": "yp",
-    "label": "Original Household Number",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
@@ -110,15 +48,17 @@
     }
   },
   {
-    "name": "yhhnr",
+    "name": "hid_2008",
     "dataset": "yp",
-    "label": "Current Wave HH Number (=HHNRAKT)",
+    "label": "Current Wave HH Number (=hid)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=HHNRAKT)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 27.0,
@@ -134,13 +74,15 @@
   {
     "name": "hid",
     "dataset": "yp",
-    "label": "Current Wave HH Number (=WHHNR)",
+    "label": "Current Wave HH Number (=hid_2008)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=YHHNR)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_2008)",
     "study": "soep-core",
     "statistics": {
       "Min.": 27.0,
@@ -159,10 +101,12 @@
     "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Unveraenderliche Personennummer",
+    "label_de": "Unveränderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 201.0,
@@ -181,7 +125,9 @@
     "label": "sample Indicator",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Befragungswelle (Erhebungsjahr)",
@@ -422,7 +368,9 @@
     "label": "Person Number Surveyed",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lfd. Personennummer",
@@ -2409,7 +2357,9 @@
     "label": "Amount Of Closed Friends",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl enge Freunde",
@@ -3094,7 +3044,9 @@
     "label": "Hours Weekday Job, Training",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beruf, Lehre, Nebenerw. Std., Werktg.",
@@ -3116,7 +3068,9 @@
     "label": "Hours Weekdays Running Errands",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Besorgungen Std., Werktg.",
@@ -3138,7 +3092,9 @@
     "label": "Hours Weekday Housework",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hausarbeit Std., Werktg.",
@@ -3160,7 +3116,9 @@
     "label": "Hours Weekday Child Care",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kinderbetreuung Std., Werktg.",
@@ -3182,7 +3140,9 @@
     "label": "Support Persons In Care, Weekday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Versorgung Pflegebeduerftiger, Werktg.",
@@ -3204,7 +3164,9 @@
     "label": "Hours Weekdays Training, Education",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Aus- u. Weiterb., Lernen Std., Werktg.",
@@ -3226,7 +3188,9 @@
     "label": "Hours Weekday Repairs",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Reparaturen etc. Std., Werktag",
@@ -3248,7 +3212,9 @@
     "label": "Hours Weekday Leisure, Hobbies",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hobbies, Freizeit Std., Werktg.",
@@ -3270,7 +3236,9 @@
     "label": "Total Item Nonresponse, Weekday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Gesamt k.A. Werktag",
@@ -3988,7 +3956,9 @@
     "label": "Total Item Nonresponce, Training",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ausbildung - Gesamt k.A.",
@@ -5942,7 +5912,9 @@
     "label": "Monthly Salary At Which Would Take Job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hoehe Nettoverdienst fuer Stellenannahme",
@@ -6028,7 +6000,9 @@
     "label": "number of hours for netincome",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anz. Arbeitsstunden fuer Nettoverdienst",
@@ -6257,7 +6231,9 @@
     "label": "Vermittlungsgutschein Value In Euro",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Vermittlungsgutschein Hoehe Euro",
@@ -6591,7 +6567,9 @@
     "label": "Current Position Began - Item Nonresponse",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jetzige Stelle angetreten K.A.",
@@ -7023,7 +7001,9 @@
     "label": "Vermittlungsgutschein Value In Euro",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Vermittlungsgutschein Hoehe Euro",
@@ -7395,7 +7375,9 @@
     "label": "Introductory Training, Item Nonresponse",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Einarbeitung - Gesamt k.A.",
@@ -7704,7 +7686,9 @@
     "label": "At Current Employer Since-Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Bei jetzigen Arbeitgeber, Jahr",
@@ -8555,7 +8539,9 @@
     "label": "Current Occ Status Item Nonresponse",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Derzeitige Stellung K.A.",
@@ -9322,7 +9308,9 @@
     "label": "Distance To Work-Km",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Entfernung von Wohnung zur Arbeit in km",
@@ -9413,7 +9401,9 @@
     "label": "Desired Weekly Work Hours",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wochenstunden gewuenscht",
@@ -9435,7 +9425,9 @@
     "label": "Working Days Per Week",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Arbeitstage pro Woche",
@@ -9526,7 +9518,9 @@
     "label": "Working Hours Per Working Day",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Arbeitsstd. pro Arbeitstag",
@@ -9612,7 +9606,9 @@
     "label": "Start Working, Hour",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Arbeitsbeginn Stunde",
@@ -9634,7 +9630,9 @@
     "label": "Start Working Minute",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Arbeitsbeginn Minute",
@@ -9720,7 +9718,9 @@
     "label": "Contracted Working Hours",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wochenstunden vereinbart",
@@ -9806,7 +9806,9 @@
     "label": "Hours Per Week Actual",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wochenstunden tatsaechlich",
@@ -10474,7 +10476,9 @@
     "label": "Hours Of Overtime Last Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ueberstunden letzten Monat Anzahl",
@@ -10496,7 +10500,9 @@
     "label": "Hours Of Overtime Last Month Paid For",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ueberstunden im letzten Monat, bezahlt",
@@ -10518,7 +10524,9 @@
     "label": "Gross Income Last Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Bruttoverdienst letzten Monat",
@@ -10540,7 +10548,9 @@
     "label": "Net Income Last Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Nettoverdienst letzten Monat",
@@ -11714,7 +11724,9 @@
     "label": "Second Job, Days Per Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Nebentaetigkeit: Anzahl Tage pro Monat",
@@ -11736,7 +11748,9 @@
     "label": "Second Job, Hours Per Day",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Nebentaetigkeit: Stunden pro Tag",
@@ -11758,7 +11772,9 @@
     "label": "Second Job, Months Per Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Nebentaetigkeit: Anzahl Monate im Jahr",
@@ -11780,7 +11796,9 @@
     "label": "Second Job, Gross Income last Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Nebentaetigkeit: Bruttoverdienst im letzten Monat",
@@ -11866,7 +11884,9 @@
     "label": "Gross Amt. Of Old-Age,Invalid Pension,Mo",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Altersrente Bruttobetrag pro Monat",
@@ -11952,7 +11972,9 @@
     "label": "Gross Amt Of Widow-Er,Orphan Benefit,Mo",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Witwenrente Bruttobetrag pro Monat",
@@ -12038,7 +12060,9 @@
     "label": "Gross Amt.Of Unemployment Benefit,Mo",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Arbeitslosengeld Bruttobetrag pro Monat",
@@ -12188,7 +12212,9 @@
     "label": "Gross Amt. Of Subsistence, Transition Pay",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterhaltsgeld, Uebergangsgeld Bruttobetrag pro Monat",
@@ -12274,7 +12300,9 @@
     "label": "Gross Amt. Of Early Rtiremnt Benefits,Mo",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Vorruhestandszahlungen Bruttobetrag pro Monat",
@@ -12360,7 +12388,9 @@
     "label": "Gross Amount Of Maternity Benefit",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Mutterschaftsgeld Bruttobetrag pro Monat",
@@ -12446,7 +12476,9 @@
     "label": "Gross Amount Of Student Grant,Mo",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Bafoeg, Stipendium Bruttobetrag pro Monat",
@@ -12532,7 +12564,9 @@
     "label": "Gross Amt. Military,Civilian Pay,Mo",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wehr-, Zivildienstsold Bruttobetrag pro Monat",
@@ -12618,7 +12652,9 @@
     "label": "Gross Amt. Alimony, C Support Ex-Partner",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterhaltszahl Bruttobetrag pro Monat",
@@ -12704,7 +12740,9 @@
     "label": "Gross Amt. Income-Persons Not In HH,Mo",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterstuetzung Bruttobetrag pro Monat",
@@ -14093,7 +14131,9 @@
     "label": "1.3.J Number Of Further Professional Education Courses",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Zahl Kurse, Lehrgaenge",
@@ -14115,7 +14155,9 @@
     "label": "1.3.J Course1, Start, Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs1, Beginn, Jahr",
@@ -14137,7 +14179,9 @@
     "label": "1.3.J Course2, Start, Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs2, Beginn, Jahr",
@@ -14159,7 +14203,9 @@
     "label": "1.3.J Course3, Start, Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs3, Beginn, Jahr",
@@ -14181,7 +14227,9 @@
     "label": "1.3.J Course 1, Start, month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs1, Beginn, Monat",
@@ -14203,7 +14251,9 @@
     "label": "1.3.J Course2, Start, month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs2, Beginn, Monat",
@@ -14225,7 +14275,9 @@
     "label": "1.3.J Course3, Start, month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs3, Beginn, Monat",
@@ -14247,7 +14299,9 @@
     "label": "1.3.J Course1, Length, Days",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs1, Dauer, Tage",
@@ -14269,7 +14323,9 @@
     "label": "1.3.J Course2, Length, Days",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs2, Dauer, Tage",
@@ -14291,7 +14347,9 @@
     "label": "1.3.J Course3, Length, Days",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs3, Dauer, Tage",
@@ -14313,7 +14371,9 @@
     "label": "1.3.J Course1, Length, Weeks",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs1, Dauer, Wochen",
@@ -14335,7 +14395,9 @@
     "label": "1.3.J Course2, Length, Weeks",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs2, Dauer, Wochen",
@@ -14357,7 +14419,9 @@
     "label": "1.3.J Course1, Length, Weeks",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs3, Dauer, Wochen",
@@ -14379,7 +14443,9 @@
     "label": "1.3.J Course2, Length, Months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs1, Dauer, Monate",
@@ -14401,7 +14467,9 @@
     "label": "1.3.J Course3, Length, Months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs2, Dauer, Monate",
@@ -14423,7 +14491,9 @@
     "label": "1.3.J Course, Length, Months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs3, Dauer, Monate",
@@ -14445,7 +14515,9 @@
     "label": "1.3.J Course, No. Hours Per Week",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs1, Anz. Stunden p. Woche",
@@ -14467,7 +14539,9 @@
     "label": "1.3.J Course, No. Hours Per Week",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs2, Anz. Stunden p. Woche",
@@ -14489,7 +14563,9 @@
     "label": "1.3.J Course, No. Hours Per Week",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs3, Anz. Stunden p. Woche",
@@ -15900,7 +15976,9 @@
     "label": "1.3.J Course, Own Costs In Euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs1, Eigene Kosten in Euro",
@@ -15922,7 +16000,9 @@
     "label": "1.3.J Course, Own Costs In Euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs2, Eigene Kosten in Euro",
@@ -15944,7 +16024,9 @@
     "label": "1.3.J Course, Own Costs In Euros",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "l.3.J. - Kurs3, Eigene Kosten in Euro",
@@ -17695,7 +17777,9 @@
     "label": "Training Completed - Item Nonresponse",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ausbildung abgeschlossen K.A.",
@@ -20194,7 +20278,9 @@
     "label": "Eductional Degree - Total Item Nonresponse",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Bildungsabschluss - Gesamt k.A.",
@@ -20528,7 +20614,9 @@
     "label": "Last Job Ended - Item Nonresponse",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende letzte Stelle K.A.",
@@ -20550,7 +20638,9 @@
     "label": "Years Worked On Last Job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Dauer letzte Stelle, Jahre",
@@ -20572,7 +20662,9 @@
     "label": "Months Worked On Last Job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Dauer letzte Stelle, Monate",
@@ -20762,7 +20854,9 @@
     "label": "Amt. Of Severance Package, Compensation",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Abfindung Betrag",
@@ -20863,7 +20957,9 @@
     "label": "Employed Full-Time Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Voll erwerbstaetig, Jan-Dez Vorjahr",
@@ -20876,7 +20972,9 @@
     "label": "Employed Part-Time Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Teilzeit, Jan-Dez Vorjahr",
@@ -20889,7 +20987,9 @@
     "label": "Mini-Job Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Mini-Job, Jan-Dez Vorjahr",
@@ -20902,7 +21002,9 @@
     "label": "Education, Training Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Ausbildung, Jan-Dez Vorjahr",
@@ -20915,7 +21017,9 @@
     "label": "Further Education, Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Fortbilung,Jan-Dez Vorjahr",
@@ -20928,7 +21032,9 @@
     "label": "Registered Unemployed Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Arbeitslos gemeldet,Jan-Dez Vorjahr",
@@ -20941,7 +21047,9 @@
     "label": "Retired Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "In Rente etc.,Jan-Dez Vorjahr",
@@ -20954,7 +21062,9 @@
     "label": "Maternity Leave Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Mutterschutz etc.,Jan-Dez Vorjahr",
@@ -20967,7 +21077,9 @@
     "label": "In School,College Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Schule etc.,Jan-Dez Vorjahr",
@@ -21054,7 +21166,9 @@
     "label": "Military,Comm Srvce Jan-Dec Prv. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Wehr-,Zivildienst, Jan-Dez Vorjahr",
@@ -21067,7 +21181,9 @@
     "label": "Housewife,Househusband Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Hausfrau,-mann,Jan-Dez Vorjahr",
@@ -21080,7 +21196,9 @@
     "label": "Other Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Sonstiges, Jan-Dez Vorjahr",
@@ -21157,7 +21275,9 @@
     "label": "Mths Of Wages,Salary Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Brutto Lohn als Arbeitnehmer Monate Vorjahr",
@@ -21179,7 +21299,9 @@
     "label": "Gross Amount Of Wages, Salary Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Brutto Lohn als Arbeitnehmer Betrag Vorjahr",
@@ -21201,7 +21323,9 @@
     "label": "Net Amount Of Wages, Salary Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Netto Lohn als Arbeitnehmer Betrag Vorjahr",
@@ -21287,7 +21411,9 @@
     "label": "Mths Of Self-Employment Income Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Brutto Einkuenfte a. selbstaendiger Taetigkeit Mon. Vorjahr",
@@ -21309,7 +21435,9 @@
     "label": "Gross Amt. Of Self-Empl.Income Prv. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Brutto Einkuenfte a. selbstaendiger Taetigkeit Btr. Vorjahr",
@@ -21331,7 +21459,9 @@
     "label": "Net Amt. Of Self-Empl.Income Prv. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Netto Einkuenfte a. selbstaendiger Taetigkeit Btr. Vorjahr",
@@ -21417,7 +21547,9 @@
     "label": "Mths Of Second Job Income Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Einkuenfte a. Nebenerwerb Monate Vorjahr",
@@ -21439,7 +21571,9 @@
     "label": "Gross Amount Second Job Income Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Einkuenfte a. Nebenerwerb Betrag Vorjahr",
@@ -21525,7 +21659,9 @@
     "label": "Mths Of Old-Age,Invalid Pension Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Altersrente etc Monate Vorjahr",
@@ -21611,7 +21747,9 @@
     "label": "Mths Of Widow-Er,Orphan Benefit Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Witwenrente etc Monate Vorjahr",
@@ -21697,7 +21835,9 @@
     "label": "Mths Of Unemployment Benefit Prev Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Arbeitslosengeld Monate Vorjahr",
@@ -21719,7 +21859,9 @@
     "label": "Gross Amt Unemployment Benefit Prev Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Arbeitslosengeld Betrag Vorjahr",
@@ -21805,7 +21947,9 @@
     "label": "Mths Unemployment Subsidy II, Social Subsidy Prev Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "ALG_II Sozialgeld Monate Vorjahr",
@@ -21891,7 +22035,9 @@
     "label": "Mths Education Support, Transition Benefit Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterhaltsgeld Monate Vorjahr",
@@ -21913,7 +22059,9 @@
     "label": "Gross Amt Edu Support, Transition Benefit Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterhaltsgeld Betrag Vorjahr",
@@ -21999,7 +22147,9 @@
     "label": "Mths Of Maternity Benefit Prev Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Mutterschaftsgeld Monate Vorjahr",
@@ -22021,7 +22171,9 @@
     "label": "Gross Amount Of Maternity Benefit",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Mutterschaftsgeld Betrag Vorjahr",
@@ -22107,7 +22259,9 @@
     "label": "Mths Of Student Grant Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "BAfoeG, Stipendium Monate Vorjahr",
@@ -22129,7 +22283,9 @@
     "label": "Gross Amount Of Student Grant",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "BAfoeG, Stipendium Betrag Vorjahr",
@@ -22215,7 +22371,9 @@
     "label": "Months Military,Comm Serv Pay Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wehr-, Zivildienstsold Monate Vorjahr",
@@ -22237,7 +22395,9 @@
     "label": "Gross Amount Military,Com.Pay Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wehr-, Zivildienstsold Betrag Vorjahr",
@@ -22323,7 +22483,9 @@
     "label": "Mths Of Alimony, Child Support Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "gesetzliche Unterhaltszahlung v. frueh Ehepartn Monate Vorjahr",
@@ -22345,7 +22507,9 @@
     "label": "Gross Amt. Alimony, C Support Prev Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "gesetzliche Unterhaltszahlung v. frueh Ehepartn Betrag Vorjahr",
@@ -22431,7 +22595,9 @@
     "label": "Mths Of Income-Prsons Not InHH Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterstuetzung ausserhalb des HH Monate Vorjahr",
@@ -22453,7 +22619,9 @@
     "label": "Gross Amount Of Income-Persons Not In HH Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterstuetzung ausserhalb des HH Betrag Vorjahr",
@@ -22603,7 +22771,9 @@
     "label": "Amount Of 13th Month Pay Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "13. Monatsgehalt Vorjahr Betrag",
@@ -22689,7 +22859,9 @@
     "label": "Amount Of 14th Month Pay Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "14. Monatsgehalt Vorjahr Betrag",
@@ -22775,7 +22947,9 @@
     "label": "Amount Of Christmas Bonus Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Weihnachtsgeld Vorjahr Betrag",
@@ -22861,7 +23035,9 @@
     "label": "Amount Of Vacation Bonus Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Urlaubsgeld Vorjahr Betrag",
@@ -22947,7 +23123,9 @@
     "label": "Amount Of Profit-Sharing Bonus Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Gewinnbeteiligung Vorjahr Betrag",
@@ -23033,7 +23211,9 @@
     "label": "Amount Of Other Bonuses Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sonstige Sonderverguetung Vorjahr Betrag",
@@ -23188,7 +23368,9 @@
     "label": "Amt. of bonus to cover travel expenses (public transport EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zuschuesse fuer oeffentlichen Nahverkehr: Betrag (in EURO)",
@@ -23210,7 +23392,9 @@
     "label": "Amt. Pension payments (EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Altersrente gesetzliche Rentenversicherung (in EURO)",
@@ -23232,7 +23416,9 @@
     "label": "Amt. Widow's Pension (compulsory EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Witwenrente gesetzliche Rentenversicherung (in EURO)",
@@ -23254,7 +23440,9 @@
     "label": "Amt. Civil Servant Pension-Self  (EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Altersrente Beamtenversorgung (in EURO)",
@@ -23276,7 +23464,9 @@
     "label": "Amt. Civil Servant Pension-Dependent  (EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Witwenrente Beamtenversorgung (in EURO)",
@@ -23298,7 +23488,9 @@
     "label": "Amt. War Victim Pension-Self  (EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Altersrente Kriegsopferversorgung (in EURO)",
@@ -23320,7 +23512,9 @@
     "label": "Amt. War Victim Pension-Dependent  (EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Witwenrente Kriegsopferversorgung (in EURO)",
@@ -23342,7 +23536,9 @@
     "label": "Amt. Worker Accident Pension-Self  (EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Altersrente Unfallversicherung (in EURO)",
@@ -23364,7 +23560,9 @@
     "label": "Amt. Worker Accident Pension-Dependent  (EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Witwenrente Unfallversicherung (in EURO)",
@@ -23386,7 +23584,9 @@
     "label": "Amt. Supp. Civil Servant Pension-Self  (EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Altersrente Zusatzversorgung oeffentlicher Dienst (in EURO)",
@@ -23408,7 +23608,9 @@
     "label": "Amt. Supp. Civil Servant Pension-Dependent  (EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Witwenrente Zusatzversorgung oeffentlicher Dienst (in EURO)",
@@ -23430,7 +23632,9 @@
     "label": "Amt. Company Pension-Self  (EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Altersrente betriebliche Altersversorgung (in EURO)",
@@ -23452,7 +23656,9 @@
     "label": "Amt. Company Pension-Dependent  (EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Witwenrente betriebliche Altersversorgung (in EURO)",
@@ -23474,7 +23680,9 @@
     "label": "Amt. Private Pension-Self",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "private Altersrente (in EURO)",
@@ -23496,7 +23704,9 @@
     "label": "Amt. Private Pension-Dependent",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "private Witwenrente (in EURO)",
@@ -23518,7 +23728,9 @@
     "label": "Amt. Other Pension-Self  (EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Altersrente sonstige (in EURO)",
@@ -23540,7 +23752,9 @@
     "label": "Amt. Other Pension-Dependent  (EUR)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Witwenrente sonstige (in EURO)",
@@ -23562,7 +23776,9 @@
     "label": "Old-Age,Invalid Pension, Total Item Nonresponse",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Altersrente - Gesamt k.A.",
@@ -23584,7 +23800,9 @@
     "label": "Widow-Er,Orphan Benefit, Total Item Nonresponse",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Witwenrente - Gesamt k.A.",
@@ -24678,7 +24896,9 @@
     "label": "Hours Of Sleep, Normal Workday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stunden Schlaf, normaler Werktag",
@@ -24700,7 +24920,9 @@
     "label": "Hours Of Sleep, Weekend",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Stunden Schlaf, am Wochenende",
@@ -25186,7 +25408,9 @@
     "label": "Number Of Cigarettes Per Day",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Rauchen: Anzahl Zigaretten pro Tag",
@@ -25208,7 +25432,9 @@
     "label": "Number Of Pipes per Day",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Rauchen: Anzahl Pfeifen pro Tag",
@@ -25230,7 +25456,9 @@
     "label": "Number Of Cigars Per Day",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Rauchen: Anzahl Zigarren pro Tag",
@@ -25252,7 +25480,9 @@
     "label": "Smoking: Total Item Nonresponse",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Rauchen: Gesamt k.A.",
@@ -25274,7 +25504,9 @@
     "label": "Height In cm",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Koerpergroesse in cm",
@@ -25296,7 +25528,9 @@
     "label": "Weight in kg",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Koerpergewicht in kg",
@@ -25387,7 +25621,9 @@
     "label": "Legally Handicapped, Reduced Employment",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Behinderungsgrad in Prozent",
@@ -25409,7 +25645,9 @@
     "label": "Number Of Visits To Doctor",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Arztbesuche Anzahl",
@@ -25564,7 +25802,9 @@
     "label": "Number Of Nights In Hospital 2007",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Krankenhausaufenthalt Vorjahr Naechte",
@@ -25586,7 +25826,9 @@
     "label": "Number Of Hospital Stays 2007",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Krankenhausaufenthalt Vorjahr Anzahl",
@@ -25751,7 +25993,9 @@
     "label": "Number Of Days Off Work Sick 2007",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wegen Krankheit nicht gearbeitet Vorjahr, Tage",
@@ -26764,7 +27008,9 @@
     "label": "CHI - Alternative Tariff, Total",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "GKV Wahltarif, Gesamt KA",
@@ -26855,7 +27101,9 @@
     "label": "Amt. Addtnl. Private Insurance",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beitrag fuer private Zusatzkrankenversicherung",
@@ -27394,7 +27642,9 @@
     "label": "Amt. Monthly Private Health Insurance",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monatsbeitrag private Krankenversicherung",
@@ -27544,7 +27794,9 @@
     "label": "Number Of Additional Persons Covered",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "private Krankenversicherung: Anzahl Mitversicherte",
@@ -27635,7 +27887,9 @@
     "label": "Amt. Of Co-Payment",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anteil der Selbstbeteiligung (in Prozent)",
@@ -27657,7 +27911,9 @@
     "label": "General Deductible",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Pauschale Selbstbeteiligung",
@@ -31991,7 +32247,9 @@
     "label": "How Long Wish To Remain Germany",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Aufenthaltsdauer, Anzahl der Jahre-Wunsch",
@@ -32383,7 +32641,9 @@
     "label": "Year Of Birth",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr",
@@ -32627,7 +32887,9 @@
     "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lfd. PNR d. Partners",
@@ -32787,7 +33049,9 @@
     "label": "Amount Of Pay To Parents,-Inlaw",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "An Eltern, Schwiegereltern Betrag",
@@ -33001,7 +33265,9 @@
     "label": "Amount Of Payments To Children",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "An Kinder Betrag",
@@ -33215,7 +33481,9 @@
     "label": "Amount Of Payments To Spouse",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "An Ehepartner Betrag",
@@ -33429,7 +33697,9 @@
     "label": "Amt. Of Payments To Other Relatives",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "An sonst. Verwandte Betrag",
@@ -33643,7 +33913,9 @@
     "label": "Amount Of Payments To Others",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "An nicht verwandte Person Betrag",
@@ -37986,7 +38258,9 @@
     "label": "Length In Minutes Oral Interview",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewdauer muendlich in Minuten",
@@ -38008,7 +38282,9 @@
     "label": "Length In Minutes Written Interview",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Selbstausfuellen schriftlich in Minuten",
@@ -38030,7 +38306,9 @@
     "label": "Day Of Interview",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Tag des Interviews",
@@ -66650,7 +66928,9 @@
     "label": "Interviewer ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewer ID",

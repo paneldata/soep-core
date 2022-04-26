@@ -2,10 +2,12 @@
   {
     "name": "cid",
     "dataset": "zvp",
-    "label": "Original Household Number",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
@@ -24,13 +26,15 @@
   {
     "name": "hid",
     "dataset": "zvp",
-    "label": "Current Household Number (=HHNRAKT)",
+    "label": "Current Wave HH Number (=hid_2009)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=ZHHNR)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_2009)",
     "study": "soep-core",
     "statistics": {
       "Min.": 230.0,
@@ -46,13 +50,15 @@
   {
     "name": "pid",
     "dataset": "zvp",
-    "label": "ID person surveyed",
+    "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Personennummer der Befragungsperson",
+    "label_de": "Unveränderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 2301.0,
@@ -71,7 +77,9 @@
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Befragungsjahr",
@@ -88,37 +96,17 @@
     }
   },
   {
-    "name": "hhnr",
+    "name": "hid_2009",
     "dataset": "zvp",
-    "label": "Original Household Number",
+    "label": "Current Wave HH Number (=hid)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 230.0,
-      "1st Qu.": 48451.5,
-      "Median": 279145.0,
-      "Mean": 281184.6666666667,
-      "3rd Qu.": 332221.25,
-      "Max.": 824968.0,
-      "valid": 264,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "zhhnr",
-    "dataset": "zvp",
-    "label": "Current Wave HH Number (=HHNRAKT)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=HHNRAKT)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 230.0,
@@ -129,72 +117,6 @@
       "Max.": 824968.0,
       "valid": 264,
       "invalid": 0
-    }
-  },
-  {
-    "name": "hhnrakt",
-    "dataset": "zvp",
-    "label": "Current household Number (ZHHNR)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=ZHHNR)",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 230.0,
-      "1st Qu.": 104684.5,
-      "Median": 279300.0,
-      "Mean": 285478.1590909091,
-      "3rd Qu.": 335281.25,
-      "Max.": 824968.0,
-      "valid": 264,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "persnr",
-    "dataset": "zvp",
-    "label": "ID person surveyed",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Personennummer der Befragungsperson",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 2301.0,
-      "1st Qu.": 570777.0,
-      "Median": 2799853.5,
-      "Mean": 2857637.087121212,
-      "3rd Qu.": 3352776.25,
-      "Max.": 8249602.0,
-      "valid": 264,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "vpersnr",
-    "dataset": "zvp",
-    "label": "ID person died",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Personennummer der verstorbenen Person",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 2305.0,
-      "1st Qu.": 454702.0,
-      "Median": 2707702.0,
-      "Mean": 2609775.426356589,
-      "3rd Qu.": 3211601.0,
-      "Max.": 8249601.0,
-      "valid": 129,
-      "invalid": 135
     }
   },
   {
@@ -203,7 +125,9 @@
     "label": "sample Indicator",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Befragungswelle (Erhebungsjahr)",
@@ -444,7 +368,9 @@
     "label": "serial number person surveyed",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lfd. Nr. der Befragungsperson",
@@ -466,7 +392,9 @@
     "label": "serial number person died",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lfd.Nr.der Angaben zu Verstorbenen",
@@ -557,7 +485,9 @@
     "label": "year of birth person died",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr der verstorbenen Person",
@@ -658,7 +588,9 @@
     "label": "age of person died",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Alter der verstorbenen Person",
@@ -3063,7 +2995,9 @@
     "label": "Day Of Interview",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Tag des Interviews",
@@ -3201,10 +3135,12 @@
   {
     "name": "vpid",
     "dataset": "zvp",
-    "label": "ID person deceased",
+    "label": "Unchanging ID Person deceased",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Personennummer des Verstorbenen",

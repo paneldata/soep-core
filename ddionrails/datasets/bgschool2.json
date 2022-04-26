@@ -2,10 +2,12 @@
   {
     "name": "cid",
     "dataset": "bgschool2",
-    "label": "Original Household Number",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
@@ -22,56 +24,14 @@
     }
   },
   {
-    "name": "hhnrakt",
-    "dataset": "bgschool2",
-    "label": "Current Wave HH Number (=BGHHNR)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=BGHHNR)",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 2399.0,
-      "1st Qu.": 817779.0,
-      "Median": 2026875.0,
-      "Mean": 1819508.7853107345,
-      "3rd Qu.": 2121618.5,
-      "Max.": 3501590.0,
-      "valid": 531,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "persnr",
-    "dataset": "bgschool2",
-    "label": "Never Changing Person ID",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "unveraenderliche personennr.",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 23908.0,
-      "1st Qu.": 8199103.5,
-      "Median": 20270103.0,
-      "Mean": 18350098.981167607,
-      "3rd Qu.": 21254203.0,
-      "Max.": 34944206.0,
-      "valid": 531,
-      "invalid": 0
-    }
-  },
-  {
     "name": "syear",
     "dataset": "bgschool2",
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "erhebungsjahr",
@@ -88,37 +48,17 @@
     }
   },
   {
-    "name": "hhnr",
-    "dataset": "bgschool2",
-    "label": "Original Household Number",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 1554.0,
-      "1st Qu.": 819916.0,
-      "Median": 2026816.0,
-      "Mean": 1825436.7532956686,
-      "3rd Qu.": 2125428.5,
-      "Max.": 3494429.0,
-      "valid": 531,
-      "invalid": 0
-    }
-  },
-  {
     "name": "hid",
     "dataset": "bgschool2",
-    "label": "Current Wave HH Number (=BGHHNR)",
+    "label": "Current Wave HH Number (=hid_2016)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=BGHHNR)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_2016)",
     "study": "soep-core",
     "statistics": {
       "Min.": 2399.0,
@@ -132,15 +72,17 @@
     }
   },
   {
-    "name": "bghhnr",
+    "name": "hid_2016",
     "dataset": "bgschool2",
-    "label": "Current Wave HH Number (=HHNRAKT)",
+    "label": "Current Wave HH Number (=hid)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=HHNRAKT)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 2399.0,
@@ -159,10 +101,12 @@
     "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "unveraenderliche personennr.",
+    "label_de": "Unveränderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 23908.0,
@@ -400,7 +344,9 @@
     "label": "Person Number Surveyed",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "lfd. personennummer",
@@ -422,7 +368,9 @@
     "label": "Year Of Birth",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "geburtsjahr",
@@ -444,7 +392,9 @@
     "label": "Month Of Birth",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "geburtsmonat",
@@ -2392,57 +2342,34 @@
       "values": [
         -7,
         -3,
-        -1,
-        8,
-        7,
-        9,
-        6,
-        5,
-        10
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-3] Answer improbable",
-        "[-1] No Answer",
-        "8",
-        "7",
-        "9",
-        "6",
-        "5",
-        "10"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-3] nicht valide",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         1,
-        1,
-        260,
-        129,
-        110,
-        27,
-        2,
         1
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Wievielte Klasse",
     "study": "soep-core",
     "statistics": {
+      "Min.": 5.0,
+      "1st Qu.": 7.0,
+      "Median": 8.0,
+      "Mean": 7.854442344045369,
+      "3rd Qu.": 8.0,
+      "Max.": 10.0,
       "valid": 529,
       "invalid": 2
     }
@@ -2453,7 +2380,9 @@
     "label": "number of students in class",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie viele Schueler",
@@ -2475,7 +2404,9 @@
     "label": "number of students not german",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie viele Schueler nicht Deutsch",
@@ -2844,53 +2775,34 @@
       "values": [
         -7,
         -2,
-        -1,
-        3,
-        2,
-        4,
-        1,
-        5
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "3",
-        "2",
-        "4",
-        "1",
-        "5"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         20,
-        3,
-        231,
-        151,
-        96,
-        23,
-        7
+        3
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Note Deutsch",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 2.0,
+      "Median": 3.0,
+      "Mean": 2.828740157480315,
+      "3rd Qu.": 3.0,
+      "Max.": 5.0,
       "valid": 508,
       "invalid": 23
     }
@@ -2903,57 +2815,34 @@
       "values": [
         -7,
         -2,
-        -1,
-        3,
-        2,
-        4,
-        1,
-        5,
-        6
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "3",
-        "2",
-        "4",
-        "1",
-        "5",
-        "6"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         20,
-        2,
-        192,
-        143,
-        119,
-        33,
-        20,
         2
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Note Mathematik",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 2.0,
+      "Median": 3.0,
+      "Mean": 2.913555992141454,
+      "3rd Qu.": 4.0,
+      "Max.": 6.0,
       "valid": 509,
       "invalid": 22
     }
@@ -2966,57 +2855,34 @@
       "values": [
         -7,
         -2,
-        -1,
-        3,
-        2,
-        4,
-        1,
-        5,
-        6
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "3",
-        "2",
-        "4",
-        "1",
-        "5",
-        "6"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         20,
-        6,
-        211,
-        148,
-        86,
-        40,
-        18,
-        2
+        6
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Note erste Fremdsprache",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 2.0,
+      "Median": 3.0,
+      "Mean": 2.801980198019802,
+      "3rd Qu.": 3.0,
+      "Max.": 6.0,
       "valid": 505,
       "invalid": 26
     }
@@ -3536,41 +3402,31 @@
     "categories": {
       "values": [
         -7,
-        -1,
-        7,
-        8,
-        9
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
-        "[-1] No Answer",
-        "7",
-        "8",
-        "9"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
-        true,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
-        10,
-        265,
-        251,
-        5
+        10
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Beginn Montag (Stunde)",
     "study": "soep-core",
     "statistics": {
+      "Min.": 7.0,
+      "1st Qu.": 7.0,
+      "Median": 7.0,
+      "Mean": 7.500959692898273,
+      "3rd Qu.": 8.0,
+      "Max.": 9.0,
       "valid": 521,
       "invalid": 10
     }
@@ -3581,7 +3437,9 @@
     "label": "minute school begins monday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beginn Montag (Minute)",
@@ -3604,45 +3462,31 @@
     "categories": {
       "values": [
         -7,
-        -1,
-        7,
-        8,
-        9,
-        11
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
-        "[-1] No Answer",
-        "7",
-        "8",
-        "9",
-        "11"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
-        true,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
-        11,
-        273,
-        241,
-        5,
-        1
+        11
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Beginn Dienstag (Stunde)",
     "study": "soep-core",
     "statistics": {
+      "Min.": 7.0,
+      "1st Qu.": 7.0,
+      "Median": 7.0,
+      "Mean": 7.490384615384615,
+      "3rd Qu.": 8.0,
+      "Max.": 11.0,
       "valid": 520,
       "invalid": 11
     }
@@ -3653,7 +3497,9 @@
     "label": "minute school begins tuesday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beginn Dienstag (Minute)",
@@ -3676,45 +3522,31 @@
     "categories": {
       "values": [
         -7,
-        -1,
-        7,
-        8,
-        9,
-        10
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
-        "[-1] No Answer",
-        "7",
-        "8",
-        "9",
-        "10"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
-        true,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
-        11,
-        272,
-        241,
-        6,
-        1
+        11
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Beginn Mittwoch (Stunde)",
     "study": "soep-core",
     "statistics": {
+      "Min.": 7.0,
+      "1st Qu.": 7.0,
+      "Median": 7.0,
+      "Mean": 7.492307692307692,
+      "3rd Qu.": 8.0,
+      "Max.": 10.0,
       "valid": 520,
       "invalid": 11
     }
@@ -3725,7 +3557,9 @@
     "label": "minute school begins wednesday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beginn Mittwoch (Minute)",
@@ -3748,41 +3582,31 @@
     "categories": {
       "values": [
         -7,
-        -1,
-        7,
-        8,
-        9
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
-        "[-1] No Answer",
-        "7",
-        "8",
-        "9"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
-        true,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
-        11,
-        271,
-        242,
-        7
+        11
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Beginn Donnerstag (Stunde)",
     "study": "soep-core",
     "statistics": {
+      "Min.": 7.0,
+      "1st Qu.": 7.0,
+      "Median": 7.0,
+      "Mean": 7.492307692307692,
+      "3rd Qu.": 8.0,
+      "Max.": 9.0,
       "valid": 520,
       "invalid": 11
     }
@@ -3793,7 +3617,9 @@
     "label": "minute school begins thursday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beginn Donnerstag (Minute)",
@@ -3816,45 +3642,31 @@
     "categories": {
       "values": [
         -7,
-        -1,
-        7,
-        8,
-        9,
-        10
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
-        "[-1] No Answer",
-        "7",
-        "8",
-        "9",
-        "10"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
-        true,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
-        11,
-        274,
-        241,
-        4,
-        1
+        11
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Beginn Freitag (Stunde)",
     "study": "soep-core",
     "statistics": {
+      "Min.": 7.0,
+      "1st Qu.": 7.0,
+      "Median": 7.0,
+      "Mean": 7.484615384615385,
+      "3rd Qu.": 8.0,
+      "Max.": 10.0,
       "valid": 520,
       "invalid": 11
     }
@@ -3865,7 +3677,9 @@
     "label": "minute school begins friday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beginn Freitag (Minute)",
@@ -3890,49 +3704,37 @@
         -7,
         -3,
         -2,
-        -1,
-        7,
-        8,
-        9
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "7",
-        "8",
-        "9"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
         true,
-        true,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         1,
         464,
-        33,
-        16,
-        15,
-        2
+        33
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Beginn Samstag (Stunde)",
     "study": "soep-core",
     "statistics": {
+      "Min.": 7.0,
+      "1st Qu.": 7.0,
+      "Median": 8.0,
+      "Mean": 7.575757575757576,
+      "3rd Qu.": 8.0,
+      "Max.": 9.0,
       "valid": 33,
       "invalid": 498
     }
@@ -3943,7 +3745,9 @@
     "label": "minute school begins saturday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beginn Samstag (Minute)",
@@ -3965,7 +3769,9 @@
     "label": "hour school ends monday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Montag (Stunde)",
@@ -3987,7 +3793,9 @@
     "label": "minute school ends monday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Montag (Minute)",
@@ -4009,7 +3817,9 @@
     "label": "hour school ends tuesday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Dienstag (Stunde)",
@@ -4031,7 +3841,9 @@
     "label": "minute school ends tuesday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Dienstag (Minute)",
@@ -4053,7 +3865,9 @@
     "label": "hour school ends wednesday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Mittwoch (Stunde)",
@@ -4075,7 +3889,9 @@
     "label": "minute school ends wednesday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Mittwoch (Minute)",
@@ -4097,7 +3913,9 @@
     "label": "hour school ends thursday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Donnerstag (Stunde)",
@@ -4119,7 +3937,9 @@
     "label": "minute school ends thursday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Donnerstag (Minute)",
@@ -4141,7 +3961,9 @@
     "label": "hour school ends friday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Freitag (Stunde)",
@@ -4163,7 +3985,9 @@
     "label": "minute school ends friday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Freitag (Minute)",
@@ -4185,7 +4009,9 @@
     "label": "hour school ends saturday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Samstag (Stunde)",
@@ -4207,7 +4033,9 @@
     "label": "minute school ends saturday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Samstag (Minute)",
@@ -7056,7 +6884,9 @@
     "label": "Fernsehen std. pro Tag Schulwoche",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Fernsehen std. pro Tag Schulwoche",
@@ -7078,7 +6908,9 @@
     "label": "Fernsehen std. pro Tag Wochenende",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Fernsehen std. pro Tag Wochenende",
@@ -7100,7 +6932,9 @@
     "label": "Computerspiele Std. pro Tag Schulwoche",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Computerspiele Std. pro Tag Schulwoche",
@@ -7122,7 +6956,9 @@
     "label": "Computerspiele Std. pro Tag Wochenende",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Computerspiele Std. pro Tag Wochenende",
@@ -7144,7 +6980,9 @@
     "label": "Soziale Netzwerke Std. pro Tag Schulwoche",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Soziale Netzwerke Std. pro Tag Schulwoche",
@@ -7166,7 +7004,9 @@
     "label": "Soziale Netzwerke Std. pro Tag Wochenende",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Soziale Netzwerke Std. pro Tag Wochenende",
@@ -7188,7 +7028,9 @@
     "label": "Musik machen Std. pro Tag Schulwoche",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Musik machen Std. pro Tag Schulwoche",
@@ -7210,7 +7052,9 @@
     "label": "Musik machen std. pro Tag Wochenende",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Musik machen std. pro Tag Wochenende",
@@ -7232,7 +7076,9 @@
     "label": "Sport treiben Std. pro Tag Schulwoche",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sport treiben Std. pro Tag Schulwoche",
@@ -7254,7 +7100,9 @@
     "label": "Sport treiben Std. pro Tag Wochenende",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sport treiben Std. pro Tag Wochenende",
@@ -11371,7 +11219,9 @@
     "label": "how many friends",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie viele Freunde",
@@ -12292,7 +12142,9 @@
     "label": "Pocket Money per Week",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Taschengeld/Woche",
@@ -12314,7 +12166,9 @@
     "label": "Pocket Money per Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Taschengeld/Monat",
@@ -12410,7 +12264,9 @@
     "label": "Monthly Savings",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sparbetrag/Monat",
@@ -15471,7 +15327,9 @@
     "label": "height",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Groesse",
@@ -15493,7 +15351,9 @@
     "label": "weight",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Gewicht",
@@ -15931,7 +15791,9 @@
     "label": "Interview Length Oral",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "interviewdauer muendlich",
@@ -15953,7 +15815,9 @@
     "label": "interview lenght written",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "interviewdauer selbstausfueller",
@@ -15975,7 +15839,9 @@
     "label": "day of interview",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "interviewtag",
@@ -16081,7 +15947,9 @@
     "label": "End of Interview (Hour)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "interview beendet uhrzeit (stunde)",
@@ -16103,7 +15971,9 @@
     "label": "End of Interview (Minute)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "interview beendet uhrzeit (minuten)",
@@ -16372,7 +16242,9 @@
     "label": "Interviewer ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewer ID",

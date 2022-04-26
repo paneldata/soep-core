@@ -2,13 +2,15 @@
   {
     "name": "cid",
     "dataset": "bischool",
-    "label": "Case-ID, Original Household Number (=hhnr)",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer (=hhnr)",
+    "label_de": "Ursprungshaushaltsnummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 868.0,
@@ -24,13 +26,15 @@
   {
     "name": "hid",
     "dataset": "bischool",
-    "label": "Current wave household number (=HHNRAKT)",
+    "label": "Current Wave HH Number (=hid_2018)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=hhnrakt)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_2018)",
     "study": "soep-core",
     "statistics": {
       "Min.": 36250.0,
@@ -46,13 +50,15 @@
   {
     "name": "pid",
     "dataset": "bischool",
-    "label": "Never Changing Person ID (=persnr)",
+    "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Unveraenderliche Personennummer (=persnr)",
+    "label_de": "Unveränderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 362504.0,
@@ -71,7 +77,9 @@
     "label": "Survey year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erhebungsjahr",
@@ -88,37 +96,17 @@
     }
   },
   {
-    "name": "hhnr",
+    "name": "hid_2018",
     "dataset": "bischool",
-    "label": "Original Household Number (Case ID)",
+    "label": "Current Wave HH Number (=hid)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Urhaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 868.0,
-      "1st Qu.": 2022227.75,
-      "Median": 2159282.5,
-      "Mean": 2503602.9347133758,
-      "3rd Qu.": 3496917.0,
-      "Max.": 3923568.0,
-      "valid": 628,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hhnrakt",
-    "dataset": "bischool",
-    "label": "Current Household Number (Household ID)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Haushaltsnummer",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 36250.0,
@@ -127,50 +115,6 @@
       "Mean": 2496022.108280255,
       "3rd Qu.": 3499317.5,
       "Max.": 3923568.0,
-      "valid": 628,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "bihhnr",
-    "dataset": "bischool",
-    "label": "Current Household Number (Household ID)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Haushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 36250.0,
-      "1st Qu.": 2023353.25,
-      "Median": 2158143.5,
-      "Mean": 2496022.108280255,
-      "3rd Qu.": 3499317.5,
-      "Max.": 3923568.0,
-      "valid": 628,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "persnr",
-    "dataset": "bischool",
-    "label": "Never changing person ID",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Unveränderliche Personennr.",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 362504.0,
-      "1st Qu.": 20233529.75,
-      "Median": 21592803.0,
-      "Mean": 25045500.315286625,
-      "3rd Qu.": 34990253.5,
-      "Max.": 39235605.0,
       "valid": 628,
       "invalid": 0
     }
@@ -430,7 +374,9 @@
     "label": "Seq. person number",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lfd. Personennummer",
@@ -452,7 +398,9 @@
     "label": "Year of birth",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr",
@@ -474,7 +422,9 @@
     "label": "Month of birth",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Geburtsmonat",
@@ -2605,57 +2555,34 @@
       "values": [
         -7,
         -2,
-        -1,
-        6,
-        5,
-        7,
-        4,
-        8,
-        9
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "6",
-        "5",
-        "7",
-        "4",
-        "8",
-        "9"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         26,
-        2,
-        290,
-        173,
-        107,
-        25,
-        4,
-        1
+        2
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Wievielte Klasse",
     "study": "soep-core",
     "statistics": {
+      "Min.": 4.0,
+      "1st Qu.": 5.0,
+      "Median": 6.0,
+      "Mean": 5.824999809265137,
+      "3rd Qu.": 6.0,
+      "Max.": 9.0,
       "valid": 600,
       "invalid": 28
     }
@@ -2666,7 +2593,9 @@
     "label": "[de] Wie viele Schüler",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie viele Schüler",
@@ -2688,7 +2617,9 @@
     "label": "[de] Wie viele Schüler nicht deutsch",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie viele Schüler nicht deutsch",
@@ -3056,49 +2987,31 @@
     "categories": {
       "values": [
         -7,
-        -2,
-        3,
-        2,
-        4,
-        1,
-        5
+        -2
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
-        "[-2] Does not apply",
-        "3",
-        "2",
-        "4",
-        "1",
-        "5"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-2] trifft nicht zu"
+        "[-2] Does not apply"
       ],
       "missings": [
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
-        88,
-        205,
-        197,
-        89,
-        42,
-        7
+        88
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Note Deutsch",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 2.0,
+      "Median": 3.0,
+      "Mean": 2.67037034034729,
+      "3rd Qu.": 3.0,
+      "Max.": 5.0,
       "valid": 540,
       "invalid": 88
     }
@@ -3111,57 +3024,34 @@
       "values": [
         -7,
         -2,
-        -1,
-        3,
-        2,
-        4,
-        1,
-        5,
-        6
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "3",
-        "2",
-        "4",
-        "1",
-        "5",
-        "6"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         84,
-        1,
-        209,
-        174,
-        86,
-        55,
-        18,
         1
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Note Mathematik",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 2.0,
+      "Median": 3.0,
+      "Mean": 2.7071824073791504,
+      "3rd Qu.": 3.0,
+      "Max.": 6.0,
       "valid": 543,
       "invalid": 85
     }
@@ -3174,57 +3064,34 @@
       "values": [
         -7,
         -2,
-        -1,
-        2,
-        3,
-        4,
-        1,
-        5,
-        6
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "2",
-        "3",
-        "4",
-        "1",
-        "5",
-        "6"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         99,
-        7,
-        200,
-        177,
-        76,
-        57,
-        11,
-        1
+        7
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Note erste Fremdsprache",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 2.0,
+      "Median": 3.0,
+      "Mean": 2.591953992843628,
+      "3rd Qu.": 3.0,
+      "Max.": 6.0,
       "valid": 522,
       "invalid": 106
     }
@@ -3602,45 +3469,34 @@
       "values": [
         -7,
         -5,
-        -1,
-        7,
-        8,
-        9
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
-        "[-1] No Answer",
-        "7",
-        "8",
-        "9"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         156,
-        11,
-        234,
-        221,
-        6
+        11
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Beginn Montag (Stunde)",
     "study": "soep-core",
     "statistics": {
+      "Min.": 7.0,
+      "1st Qu.": 7.0,
+      "Median": 7.0,
+      "Mean": 7.505423069000244,
+      "3rd Qu.": 8.0,
+      "Max.": 9.0,
       "valid": 461,
       "invalid": 167
     }
@@ -3651,7 +3507,9 @@
     "label": "minute school begins monday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beginn Montag (Minute)",
@@ -3673,7 +3531,9 @@
     "label": "hour school begins tuesday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beginn Dienstag (Stunde)",
@@ -3695,7 +3555,9 @@
     "label": "minute school begins tuesday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beginn Dienstag (Minute)",
@@ -3719,49 +3581,34 @@
       "values": [
         -7,
         -5,
-        -1,
-        7,
-        8,
-        10,
-        9
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
-        "[-1] No Answer",
-        "7",
-        "8",
-        "10",
-        "9"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         156,
-        11,
-        236,
-        221,
-        2,
-        2
+        11
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Beginn Mittwoch (Stunde)",
     "study": "soep-core",
     "statistics": {
+      "Min.": 7.0,
+      "1st Qu.": 7.0,
+      "Median": 7.0,
+      "Mean": 7.501084804534912,
+      "3rd Qu.": 8.0,
+      "Max.": 10.0,
       "valid": 461,
       "invalid": 167
     }
@@ -3772,7 +3619,9 @@
     "label": "minute school begins wednesday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beginn Mittwoch (Minute)",
@@ -3794,7 +3643,9 @@
     "label": "hour school begins thursday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beginn Donnerstag (Stunde)",
@@ -3816,7 +3667,9 @@
     "label": "minute school begins thursday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beginn Donnerstag (Minute)",
@@ -3840,49 +3693,34 @@
       "values": [
         -7,
         -5,
-        -1,
-        7,
-        8,
-        9,
-        10
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
-        "[-1] No Answer",
-        "7",
-        "8",
-        "9",
-        "10"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         156,
-        11,
-        235,
-        221,
-        4,
-        1
+        11
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Beginn Freitag (Stunde)",
     "study": "soep-core",
     "statistics": {
+      "Min.": 7.0,
+      "1st Qu.": 7.0,
+      "Median": 7.0,
+      "Mean": 7.503253936767578,
+      "3rd Qu.": 8.0,
+      "Max.": 10.0,
       "valid": 461,
       "invalid": 167
     }
@@ -3893,7 +3731,9 @@
     "label": "minute school begins friday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beginn Freitag (Minute)",
@@ -3915,7 +3755,9 @@
     "label": "hour school ends monday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Montag (Stunde)",
@@ -3937,7 +3779,9 @@
     "label": "minute school ends monday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Montag (Minute)",
@@ -3959,7 +3803,9 @@
     "label": "hour school ends tuesday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Dienstag (Stunde)",
@@ -3981,7 +3827,9 @@
     "label": "minute school ends tuesday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Dienstag (Minute)",
@@ -4003,7 +3851,9 @@
     "label": "hour school ends wednesday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Mittwoch (Stunde)",
@@ -4025,7 +3875,9 @@
     "label": "minute school ends wednesday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Mittwoch (Minute)",
@@ -4047,7 +3899,9 @@
     "label": "hour school ends thursday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Donnerstag (Stunde)",
@@ -4069,7 +3923,9 @@
     "label": "minute school ends thursday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Donnerstag (Minute)",
@@ -4091,7 +3947,9 @@
     "label": "hour school ends friday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Freitag (Stunde)",
@@ -4113,7 +3971,9 @@
     "label": "minute school ends friday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Freitag (Minute)",
@@ -4217,45 +4077,37 @@
         -7,
         -5,
         -2,
-        -1,
-        8,
-        7
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "8",
-        "7"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
         true,
-        true,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         156,
         467,
-        3,
-        1,
-        1
+        3
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Beginn Samstag (Stunde)",
     "study": "soep-core",
     "statistics": {
+      "Min.": 7.0,
+      "1st Qu.": 7.25,
+      "Median": 7.5,
+      "Mean": 7.5,
+      "3rd Qu.": 7.75,
+      "Max.": 8.0,
       "valid": 2,
       "invalid": 626
     }
@@ -4266,7 +4118,9 @@
     "label": "minute school begins saturday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Beginn Samstag (Minute)",
@@ -4291,41 +4145,37 @@
         -7,
         -5,
         -2,
-        -1,
-        11
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "11"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
         true,
-        true,
-        false
+        true
       ],
       "frequencies": [
         0,
         156,
         467,
-        2,
-        3
+        2
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Ende Samstag (Stunde)",
     "study": "soep-core",
     "statistics": {
+      "Min.": 11.0,
+      "1st Qu.": 11.0,
+      "Median": 11.0,
+      "Mean": 11.0,
+      "3rd Qu.": 11.0,
+      "Max.": 11.0,
       "valid": 3,
       "invalid": 625
     }
@@ -4336,7 +4186,9 @@
     "label": "minute school ends saturday",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Samstag (Minute)",
@@ -4358,7 +4210,9 @@
     "label": "[de] Hort Werktag",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hort Werktag",
@@ -4380,7 +4234,9 @@
     "label": "[de] Hort Samstag",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hort Samstag",
@@ -4402,7 +4258,9 @@
     "label": "[de] Jugendzentrum Werktag",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jugendzentrum Werktag",
@@ -4425,61 +4283,31 @@
     "categories": {
       "values": [
         -7,
-        -1,
-        0,
-        1,
-        2,
-        4,
-        3,
-        5,
-        8,
-        10
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
-        "[-1] No Answer",
-        "0",
-        "1",
-        "2",
-        "4",
-        "3",
-        "5",
-        "8",
-        "10"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
-        70,
-        527,
-        9,
-        9,
-        6,
-        3,
-        2,
-        1,
-        1
+        70
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Jugendzentrum Samstag",
     "study": "soep-core",
     "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 0.0,
+      "Median": 0.0,
+      "Mean": 0.1577060967683792,
+      "3rd Qu.": 0.0,
+      "Max.": 10.0,
       "valid": 558,
       "invalid": 70
     }
@@ -4490,7 +4318,9 @@
     "label": "[de] Sportverein Werktag",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sportverein Werktag",
@@ -4512,7 +4342,9 @@
     "label": "[de] Sportverein Samstag",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sportverein Samstag",
@@ -7089,7 +6921,9 @@
     "label": "[de] € Taschengeld/Woche",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "€ Taschengeld/Woche",
@@ -7111,7 +6945,9 @@
     "label": "[de] € Taschengeld/Monat",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "€ Taschengeld/Monat",
@@ -7133,7 +6969,9 @@
     "label": "how many friends",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie viele Freunde",
@@ -8613,7 +8451,9 @@
     "label": "[de] Größe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Größe",
@@ -8635,7 +8475,9 @@
     "label": "weight",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Gewicht",
@@ -15374,7 +15216,9 @@
     "label": "Left Country of Birth When, Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann Geburtsland verlassen Monat",
@@ -15396,7 +15240,9 @@
     "label": "Left Country of Birth When, Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann Geburtsland verlassen Jahr",
@@ -15418,7 +15264,9 @@
     "label": "Arrived in Germany, Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann in Deutschland angekommen Monat",
@@ -15440,7 +15288,9 @@
     "label": "[de] Wann in Deutschland angekommen Jahr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wann in Deutschland angekommen Jahr",
@@ -15946,7 +15796,9 @@
     "label": "[de] Sprachförderung: Anzahl Stunden pro Woche",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachförderung: Anzahl Stunden pro Woche",
@@ -16100,7 +15952,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Armenisch",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Armenisch",
@@ -16122,7 +15976,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Bengalisch",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Bengalisch",
@@ -16144,7 +16000,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Bosnisch",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Bosnisch",
@@ -16342,7 +16200,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Fula",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Fula",
@@ -16408,7 +16268,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Haussa",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Haussa",
@@ -16430,7 +16292,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Hindi",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Hindi",
@@ -16452,7 +16316,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Igbo",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Igbo",
@@ -16474,7 +16340,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Kroatisch",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Kroatisch",
@@ -16584,7 +16452,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Kurdisch-Südkurdisch",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Kurdisch-Südkurdisch",
@@ -16606,7 +16476,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Mandinka",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Mandinka",
@@ -16628,7 +16500,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Mazedonisch",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Mazedonisch",
@@ -16694,7 +16568,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Punjabi",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Punjabi",
@@ -16716,7 +16592,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Rumänisch",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Rumänisch",
@@ -16782,7 +16660,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Saraiki",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Saraiki",
@@ -16848,7 +16728,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Somali",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Somali",
@@ -16870,7 +16752,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Tamazight",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Tamazight",
@@ -17024,7 +16908,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Ukrainisch",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Ukrainisch",
@@ -17090,7 +16976,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Wolof",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Wolof",
@@ -17112,7 +17000,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Yoruba",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Yoruba",
@@ -17178,7 +17068,9 @@
     "label": "[de] Sprachfähigkeiten außer Deutsch: Keine weitere Sprache",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachfähigkeiten außer Deutsch: Keine weitere Sprache",
@@ -18308,7 +18200,9 @@
     "label": "School Enrollment, Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Einschulung Monat",
@@ -18330,7 +18224,9 @@
     "label": "School Enrollment, Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Einschulung Jahr",
@@ -19527,61 +19423,37 @@
         -7,
         -5,
         -2,
-        -1,
-        3,
-        2,
-        1,
-        4,
-        6,
-        5
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "3",
-        "2",
-        "1",
-        "4",
-        "6",
-        "5"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         472,
         36,
-        1,
-        40,
-        32,
-        22,
-        18,
-        4,
-        3
+        1
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Dauer Schulbesuch 1. Schule Jahre",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 2.0,
+      "Median": 3.0,
+      "Mean": 2.663865566253662,
+      "3rd Qu.": 3.0,
+      "Max.": 6.0,
       "valid": 119,
       "invalid": 509
     }
@@ -19592,7 +19464,9 @@
     "label": "Duration of School Attendance 1st School, Months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Dauer Schulbesuch 1. Schule Monate",
@@ -20783,57 +20657,34 @@
       "values": [
         -7,
         -5,
-        -2,
-        1,
-        2,
-        4,
-        5,
-        3,
-        6
+        -2
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
-        "[-2] Does not apply",
-        "1",
-        "2",
-        "4",
-        "5",
-        "3",
-        "6"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-2] trifft nicht zu"
+        "[-2] Does not apply"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         472,
-        145,
-        4,
-        2,
-        2,
-        1,
-        1,
-        1
+        145
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "1. Dauer Schulbesuch Ausland Jahre",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 1.0,
+      "Median": 2.0,
+      "Mean": 2.7272727489471436,
+      "3rd Qu.": 4.0,
+      "Max.": 6.0,
       "valid": 11,
       "invalid": 617
     }
@@ -20846,45 +20697,34 @@
       "values": [
         -7,
         -5,
-        -2,
-        1,
-        2,
-        6
+        -2
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
-        "[-2] Does not apply",
-        "1",
-        "2",
-        "6"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-2] trifft nicht zu"
+        "[-2] Does not apply"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         472,
-        152,
-        2,
-        1,
-        1
+        152
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "1. Dauer Schulbesuch Ausland Monate",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 1.0,
+      "Median": 1.5,
+      "Mean": 2.5,
+      "3rd Qu.": 3.0,
+      "Max.": 6.0,
       "valid": 4,
       "invalid": 624
     }
@@ -22062,7 +21902,9 @@
     "label": "2nd Duration of School Attendance Abroad, Years",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "2. Dauer Schulbesuch Ausland Jahre",
@@ -22084,7 +21926,9 @@
     "label": "2nd Duration of School Attendance Abroad, Months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "2. Dauer Schulbesuch Ausland Monate",
@@ -23273,7 +23117,9 @@
     "label": "3rd Duration of School Attendance Abroad, Years",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "3. Dauer Schulbesuch Ausland Jahre",
@@ -23295,7 +23141,9 @@
     "label": "3rd Duration of School Attendance Abroad, Months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "3. Dauer Schulbesuch Ausland Monate",
@@ -24484,7 +24332,9 @@
     "label": "4th Duration of School Attendance Abroad, Years",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "4. Dauer Schulbesuch Ausland Jahre",
@@ -24506,7 +24356,9 @@
     "label": "4th Duration of School Attendance Abroad, Months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "4. Dauer Schulbesuch Ausland Monate",
@@ -25695,7 +25547,9 @@
     "label": "5th Duration of School Attendance Abroad, Years",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "5. Dauer Schulbesuch Ausland Jahre",
@@ -25717,7 +25571,9 @@
     "label": "5th Duration of School Attendance Abroad, Months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "5. Dauer Schulbesuch Ausland Monate",
@@ -26906,7 +26762,9 @@
     "label": "6th Duration of School Attendance Abroad, Years",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "6. Dauer Schulbesuch Ausland Jahre",
@@ -26928,7 +26786,9 @@
     "label": "6th Duration of School Attendance Abroad, Months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "6. Dauer Schulbesuch Ausland Monate",
@@ -28117,7 +27977,9 @@
     "label": "7th Duration of School Attendance Abroad, Years",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "7. Dauer Schulbesuch Ausland Jahre",
@@ -28139,7 +28001,9 @@
     "label": "7th Duration of School Attendance Abroad, Months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "7. Dauer Schulbesuch Ausland Monate",
@@ -29328,7 +29192,9 @@
     "label": "8th Duration of School Attendance Abroad, Years",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "8. Dauer Schulbesuch Ausland Jahre",
@@ -29350,7 +29216,9 @@
     "label": "8th Duration of School Attendance Abroad, Months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "8. Dauer Schulbesuch Ausland Monate",
@@ -30539,7 +30407,9 @@
     "label": "9th Duration of School Attendance Abroad, Years",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "9. Dauer Schulbesuch Ausland Jahre",
@@ -30561,7 +30431,9 @@
     "label": "9th Duration of School Attendance Abroad, Months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "9. Dauer Schulbesuch Ausland Monate",
@@ -31750,7 +31622,9 @@
     "label": "10th Duration of School Attendance Abroad, Years",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "10. Dauer Schulbesuch Ausland Jahre",
@@ -31772,7 +31646,9 @@
     "label": "10th Duration of School Attendance Abroad, Months",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "10. Dauer Schulbesuch Ausland Monate",
@@ -31878,7 +31754,9 @@
     "label": "Since When in School in Germany, Month",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Seit wann in Deutschland zur Schule Monat",
@@ -31900,7 +31778,9 @@
     "label": "Since When in School in Germany, Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Seit wann in Deutschland zur Schule Jahr",
@@ -31922,7 +31802,9 @@
     "label": "[de] Geht noch nicht in Deutschland zur Schule",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Geht noch nicht in Deutschland zur Schule",
@@ -32018,7 +31900,9 @@
     "label": "[de] Wie lange auch Flüchtlingsklasse Monate",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie lange auch Flüchtlingsklasse Monate",
@@ -32042,41 +31926,34 @@
       "values": [
         -7,
         -5,
-        -2,
-        1,
-        2
+        -2
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
-        "[-2] Does not apply",
-        "1",
-        "2"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-2] trifft nicht zu"
+        "[-2] Does not apply"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         472,
-        144,
-        9,
-        3
+        144
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Wie lange auch Flüchtlingsklasse Jahre",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 1.0,
+      "Median": 1.0,
+      "Mean": 1.25,
+      "3rd Qu.": 1.25,
+      "Max.": 2.0,
       "valid": 12,
       "invalid": 616
     }
@@ -32136,7 +32013,9 @@
     "label": "[de] Wie lange ausschließlich Flüchtlingsklasse Monate",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie lange ausschließlich Flüchtlingsklasse Monate",
@@ -32160,41 +32039,34 @@
       "values": [
         -7,
         -5,
-        -2,
-        1,
-        2
+        -2
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
-        "[-2] Does not apply",
-        "1",
-        "2"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-2] trifft nicht zu"
+        "[-2] Does not apply"
       ],
       "missings": [
         true,
         true,
-        true,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         472,
-        142,
-        9,
-        5
+        142
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Wie lange ausschließlich Flüchtlingsklasse Jahre",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 1.0,
+      "Median": 1.0,
+      "Mean": 1.3571428060531616,
+      "3rd Qu.": 2.0,
+      "Max.": 2.0,
       "valid": 14,
       "invalid": 614
     }
@@ -32252,65 +32124,37 @@
         -7,
         -5,
         -2,
-        -1,
-        3,
-        4,
-        2,
-        5,
-        1,
-        6,
-        7
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "3",
-        "4",
-        "2",
-        "5",
-        "1",
-        "6",
-        "7"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         472,
         25,
-        1,
-        51,
-        31,
-        19,
-        13,
-        10,
-        4,
-        2
+        1
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Erste Klassenstufe in Deutschland nach Zuzug",
     "study": "soep-core",
     "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 3.0,
+      "Median": 3.0,
+      "Mean": 3.2923076152801514,
+      "3rd Qu.": 4.0,
+      "Max.": 7.0,
       "valid": 130,
       "invalid": 498
     }
@@ -32532,61 +32376,37 @@
         -7,
         -5,
         -2,
-        -1,
-        5,
-        4,
-        6,
-        3,
-        7,
-        8
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
         "[-5] Not included in this version of the questionnaire",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "5",
-        "4",
-        "6",
-        "3",
-        "7",
-        "8"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] No Answer"
       ],
       "missings": [
         true,
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
         472,
         27,
-        2,
-        58,
-        30,
-        30,
-        5,
-        3,
-        1
+        2
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Erste Klassenstufe in Deutschland eingeschult",
     "study": "soep-core",
     "statistics": {
+      "Min.": 3.0,
+      "1st Qu.": 4.0,
+      "Median": 5.0,
+      "Mean": 4.992125988006592,
+      "3rd Qu.": 6.0,
+      "Max.": 8.0,
       "valid": 127,
       "invalid": 501
     }
@@ -32597,7 +32417,9 @@
     "label": "1 Waiting for school or further education to start",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Warte auf den Schulbeginn",
@@ -32619,7 +32441,9 @@
     "label": "Waiting for vocational training to start",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Warte auf den Berufsausbildungsbeginn",
@@ -32641,7 +32465,9 @@
     "label": "I am enrolled in a vocational integration course",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Bin in einem beruflichen Eingliederungslehrgang",
@@ -32663,7 +32489,9 @@
     "label": "Doing a vocational preparation year, pre-vocational training year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Bin in einem Berufsvorbereitungsjahr, Berufsgrundbildungsjahr",
@@ -32685,7 +32513,9 @@
     "label": "5 Attend Vocational School",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Besuche eine berufsbildende Schule",
@@ -32707,7 +32537,9 @@
     "label": "Am in vocational training / apprenticeship",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Bin in einer beruflichen Ausbildung / Lehre",
@@ -32729,7 +32561,9 @@
     "label": "Am in Internship, traineeship",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Bin in einem Praktikum, Volontariat",
@@ -32751,7 +32585,9 @@
     "label": "[de] Bin erwerbstätig",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Bin erwerbstätig",
@@ -32773,7 +32609,9 @@
     "label": "None of the above",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Nichts davon",
@@ -32795,7 +32633,9 @@
     "label": "Status no answer",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Status keine Angabe",
@@ -32817,7 +32657,9 @@
     "label": "[de] SchülerInnen in Schulklasse mit Migrationshintergrund",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "SchülerInnen in Schulklasse mit Migrationshintergrund",
@@ -35109,7 +34951,9 @@
     "label": "Number of close Friends Living in Country of Origin",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl enge Freunde in Herkunftsland lebend",
@@ -35131,7 +34975,9 @@
     "label": "Number of close Friends Living in Germany",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl enge Freunde in Deutschland lebend",
@@ -35153,7 +34999,9 @@
     "label": "Number of close Friends Living in Other Country",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl enge Freunde in anderem Land lebend",
@@ -35175,7 +35023,9 @@
     "label": "Number of Friends Coming from Germany",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl meiner Freunde aus Deutschland kommend",
@@ -35197,7 +35047,9 @@
     "label": "Number of Friends Coming from Country of Origin",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl meiner Freunde aus meinem Herkunftsland kommend",
@@ -35219,7 +35071,9 @@
     "label": "Number of Friends Coming from Other Country",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Anzahl meiner Freunde aus einem anderen Land kommend",
@@ -36200,7 +36054,9 @@
     "label": "Written interview lenght",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewdauer Selbstausfüller",
@@ -36222,7 +36078,9 @@
     "label": "[de] Interviewdauer mündlich",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewdauer mündlich",
@@ -36244,7 +36102,9 @@
     "label": "[de] Interviewmonat",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewmonat",
@@ -36266,7 +36126,9 @@
     "label": "Day of interview",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewtag",
@@ -36288,7 +36150,9 @@
     "label": "[de] Interview beendet Uhrzeit (Stunde)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interview beendet Uhrzeit (Stunde)",
@@ -36310,7 +36174,9 @@
     "label": "[de] Interview beendet Uhrzeit (Minuten)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interview beendet Uhrzeit (Minuten)",
@@ -36668,7 +36534,9 @@
     "label": "Interviewer ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewer ID",

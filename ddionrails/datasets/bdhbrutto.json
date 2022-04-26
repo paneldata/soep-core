@@ -2,10 +2,12 @@
   {
     "name": "cid",
     "dataset": "bdhbrutto",
-    "label": "Original Household Number",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
@@ -24,13 +26,15 @@
   {
     "name": "hid",
     "dataset": "bdhbrutto",
-    "label": "Current Wave HH Number (=BDHHNR)",
+    "label": "Current Wave HH Number (=hid_2013)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=BDHNNR)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_2013)",
     "study": "soep-core",
     "statistics": {
       "Min.": 60.0,
@@ -49,7 +53,9 @@
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erhebungsjahr",
@@ -66,59 +72,17 @@
     }
   },
   {
-    "name": "hhnr",
+    "name": "hid_2013",
     "dataset": "bdhbrutto",
-    "label": "Original Household Number",
+    "label": "Current Wave HH Number (=hid)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 60.0,
-      "1st Qu.": 304392.5,
-      "Median": 2023620.0,
-      "Mean": 1684738.605524282,
-      "3rd Qu.": 3069890.0,
-      "Max.": 3343277.0,
-      "valid": 20962,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "bdhhnr",
-    "dataset": "bdhbrutto",
-    "label": "Current Wave HH Number (=HHNRAKT)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=HHNRAKT)",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 60.0,
-      "1st Qu.": 298429.0,
-      "Median": 2026332.0,
-      "Mean": 1683551.9664631237,
-      "3rd Qu.": 3072789.5,
-      "Max.": 3502227.0,
-      "valid": 20962,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hhnrakt",
-    "dataset": "bdhbrutto",
-    "label": "Current Wave HH Number (=BDHHNR)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=BDHNNR)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 60.0,
@@ -876,20 +840,7 @@
         -3,
         -2,
         -1,
-        0,
-        2,
-        1,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13
+        0
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -899,20 +850,7 @@
         "[-3] Answer improbable",
         "[-2] Does not apply",
         "[-1] No Answer",
-        "[0] HH Dissolved/ Not Processed",
-        "2",
-        "1",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13"
+        "[0] HH Dissolved/ Not Processed"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -932,19 +870,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -955,20 +880,7 @@
         0,
         0,
         0,
-        101,
-        6911,
-        4830,
-        3429,
-        3378,
-        1644,
-        462,
-        131,
-        45,
-        14,
-        9,
-        5,
-        2,
-        1
+        101
       ]
     },
     "scale": "cat",
@@ -985,7 +897,9 @@
     "label": "Highest Person Number In Household",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Hoechste vergebene Personennummer im HH",
@@ -1014,38 +928,7 @@
         -3,
         -2,
         -1,
-        0,
-        1,
-        15,
-        22,
-        18,
-        13,
-        4,
-        11,
-        26,
-        25,
-        19,
-        8,
-        20,
-        6,
-        5,
-        12,
-        21,
-        27,
-        23,
-        14,
-        16,
-        2,
-        10,
-        24,
-        28,
-        7,
-        3,
-        17,
-        9,
-        29,
-        30,
-        31
+        0
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -1055,38 +938,7 @@
         "[-3] Answer improbable",
         "[-2] Does not apply",
         "[-1] No Answer",
-        "[0] No Interview",
-        "1",
-        "15",
-        "22",
-        "18",
-        "13",
-        "4",
-        "11",
-        "26",
-        "25",
-        "19",
-        "8",
-        "20",
-        "6",
-        "5",
-        "12",
-        "21",
-        "27",
-        "23",
-        "14",
-        "16",
-        "2",
-        "10",
-        "24",
-        "28",
-        "7",
-        "3",
-        "17",
-        "9",
-        "29",
-        "30",
-        "31"
+        "[0] No Interview"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1106,37 +958,6 @@
         true,
         true,
         true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -1147,38 +968,7 @@
         0,
         0,
         0,
-        101,
-        1089,
-        898,
-        889,
-        884,
-        846,
-        844,
-        816,
-        800,
-        799,
-        774,
-        741,
-        734,
-        721,
-        708,
-        686,
-        679,
-        667,
-        661,
-        611,
-        598,
-        597,
-        596,
-        593,
-        550,
-        547,
-        519,
-        518,
-        509,
-        413,
-        389,
-        185
+        101
       ]
     },
     "scale": "cat",
@@ -1319,7 +1109,9 @@
     "label": "Calendar Year Of Interview",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewjahr",
@@ -1519,7 +1311,9 @@
     "label": "Wave When Moved To This Address",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Welle Einzug an diese Adresse",
@@ -1748,7 +1542,9 @@
     "label": "Interviewer ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewer ID",
@@ -1770,7 +1566,9 @@
     "label": "ID First Interviewer",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "ID des zuerst eingesetzten Interviewers",

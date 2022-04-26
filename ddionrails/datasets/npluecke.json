@@ -2,10 +2,12 @@
   {
     "name": "cid",
     "dataset": "npluecke",
-    "label": "Original Household Number",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
@@ -27,10 +29,12 @@
     "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "unveraenderliche Personennummer",
+    "label_de": "Unveränderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 17704.0,
@@ -46,13 +50,15 @@
   {
     "name": "hid",
     "dataset": "npluecke",
-    "label": "Current Wave HH Number (=NHHNR)",
+    "label": "Current Wave HH Number (=hid_1997)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=N)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_1997)",
     "study": "soep-core",
     "statistics": {
       "Min.": 4421.0,
@@ -66,37 +72,17 @@
     }
   },
   {
-    "name": "hhnr",
+    "name": "hid_1997",
     "dataset": "npluecke",
-    "label": "Original Household Number",
+    "label": "Current Wave HH Number (=hid)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 1775.0,
-      "1st Qu.": 26717.5,
-      "Median": 49921.0,
-      "Mean": 223392.4961832061,
-      "3rd Qu.": 504447.5,
-      "Max.": 723711.0,
-      "valid": 131,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "nhhnr",
-    "dataset": "npluecke",
-    "label": "Current Wave HH Number (=HHNRAKT)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Haushaltsnummer Welle N",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 4421.0,
@@ -105,50 +91,6 @@
       "Mean": 247421.41984732824,
       "3rd Qu.": 514454.0,
       "Max.": 725862.0,
-      "valid": 131,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hhnrakt",
-    "dataset": "npluecke",
-    "label": "Current Wave HH Number (=NHHNR)",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=N)",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 4421.0,
-      "1st Qu.": 48737.5,
-      "Median": 102016.0,
-      "Mean": 247421.41984732824,
-      "3rd Qu.": 514454.0,
-      "Max.": 725862.0,
-      "valid": 131,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "persnr",
-    "dataset": "npluecke",
-    "label": "Never Changing Person ID",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "unveraenderliche Personennummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 17704.0,
-      "1st Qu.": 306203.0,
-      "Median": 527304.0,
-      "Mean": 2285881.9083969467,
-      "3rd Qu.": 5097651.5,
-      "Max.": 7237102.0,
       "valid": 131,
       "invalid": 0
     }
@@ -159,7 +101,9 @@
     "label": "Survey Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erhebungsjahr",
@@ -181,7 +125,9 @@
     "label": "Seq. person number of survey year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lfd. Personennummer Erhebungsjahr",
@@ -203,7 +149,9 @@
     "label": "Seq. person number previous year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lfd. Personennummer im Vorjahr",
@@ -233,8 +181,7 @@
         -2,
         -1,
         1,
-        2,
-        0
+        2
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -245,8 +192,7 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Yes",
-        "[2] No",
-        "0"
+        "[2] No"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -268,7 +214,6 @@
         true,
         true,
         false,
-        false,
         false
       ],
       "frequencies": [
@@ -280,8 +225,7 @@
         0,
         0,
         9,
-        120,
-        2
+        120
       ]
     },
     "scale": "cat",
@@ -298,7 +242,9 @@
     "label": "Completed Training Month Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Seit 96 Ausbild. Monat",
@@ -331,8 +277,7 @@
         2,
         3,
         4,
-        5,
-        0
+        5
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -346,8 +291,7 @@
         "[2] Intermediate School Degree",
         "[3] Technical School Degree",
         "[4] Upper Secondary Degree",
-        "[5] Other Degree",
-        "0"
+        "[5] Other Degree"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -375,7 +319,6 @@
         false,
         false,
         false,
-        false,
         false
       ],
       "frequencies": [
@@ -390,8 +333,7 @@
         2,
         0,
         1,
-        0,
-        127
+        0
       ]
     },
     "scale": "cat",
@@ -416,8 +358,7 @@
         -2,
         -1,
         1,
-        2,
-        0
+        2
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -428,8 +369,7 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Technical College",
-        "[2] University, College",
-        "0"
+        "[2] University, College"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -451,7 +391,6 @@
         true,
         true,
         false,
-        false,
         false
       ],
       "frequencies": [
@@ -463,8 +402,7 @@
         0,
         0,
         0,
-        1,
-        130
+        1
       ]
     },
     "scale": "cat",
@@ -545,9 +483,7 @@
         94,
         95,
         96,
-        97,
-        0,
-        99
+        97
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -614,9 +550,7 @@
         "[94] Yes",
         "[95] Other Degree",
         "[96] Degree Not in FRG",
-        "[97] No Degree Obtained",
-        "0",
-        "99"
+        "[97] No Degree Obtained"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -750,8 +684,6 @@
         false,
         false,
         false,
-        false,
-        false,
         false
       ],
       "frequencies": [
@@ -819,9 +751,7 @@
         0,
         0,
         0,
-        0,
-        130,
-        1
+        0
       ]
     },
     "scale": "cat",
@@ -906,8 +836,7 @@
         61,
         62,
         98,
-        99,
-        0
+        99
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -978,8 +907,7 @@
         "[61] Music",
         "[62] College Prep. Course",
         "[98] Other",
-        "[99] Undeclared",
-        "0"
+        "[99] Undeclared"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1121,7 +1049,6 @@
         false,
         false,
         false,
-        false,
         false
       ],
       "frequencies": [
@@ -1193,8 +1120,7 @@
         0,
         0,
         1,
-        0,
-        130
+        0
       ]
     },
     "scale": "cat",
@@ -1297,8 +1223,7 @@
         9122,
         9212,
         9342,
-        9998,
-        0
+        9998
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -1387,8 +1312,7 @@
         "[9122] Restaurant Specialist",
         "[9212] Home Economist",
         "[9342] Building Structure Cleaner",
-        "[9998] Other",
-        "0"
+        "[9998] Other"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1566,7 +1490,6 @@
         false,
         false,
         false,
-        false,
         false
       ],
       "frequencies": [
@@ -1656,8 +1579,7 @@
         0,
         0,
         0,
-        1,
-        130
+        1
       ]
     },
     "scale": "cat",
@@ -1687,8 +1609,7 @@
         4,
         5,
         6,
-        7,
-        0
+        7
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -1704,8 +1625,7 @@
         "[4] Technical School",
         "[5] Civil Service Training",
         "[6] Company Retraining",
-        "[7] Other Training",
-        "0"
+        "[7] Other Training"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1737,7 +1657,6 @@
         false,
         false,
         false,
-        false,
         false
       ],
       "frequencies": [
@@ -1754,8 +1673,7 @@
         1,
         0,
         1,
-        0,
-        129
+        0
       ]
     },
     "scale": "cat",
@@ -1780,8 +1698,7 @@
         -2,
         -1,
         1,
-        2,
-        0
+        2
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -1792,8 +1709,7 @@
         "[-2] Does not apply",
         "[-1] No Answer",
         "[1] Yes",
-        "[2] No",
-        "0"
+        "[2] No"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1815,7 +1731,6 @@
         true,
         true,
         false,
-        false,
         false
       ],
       "frequencies": [
@@ -1827,8 +1742,7 @@
         0,
         0,
         15,
-        111,
-        5
+        111
       ]
     },
     "scale": "cat",
@@ -1845,7 +1759,9 @@
     "label": "Month Last Job Ended Previous Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende letzte Stelle Monat 96",
@@ -1867,7 +1783,9 @@
     "label": "Years Worked On Last Job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Dauer letzte Stelle Jahre",
@@ -1889,7 +1807,9 @@
     "label": "Months Worked On Last Job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Dauer letzte Stelle Monate",
@@ -1911,7 +1831,9 @@
     "label": "Company Closed Down",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betriebsstillegung",
@@ -1933,7 +1855,9 @@
     "label": "Retired",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Rente, Pension gegangen",
@@ -1955,7 +1879,9 @@
     "label": "Early Retirement Rules",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Vorruhestandsregelung",
@@ -1977,7 +1903,9 @@
     "label": "Limited Term Employment Relationship",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Befristung",
@@ -1999,7 +1927,9 @@
     "label": "Education,Training Completed",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ende Ausbildung",
@@ -2021,7 +1951,9 @@
     "label": "Terminated By Employer",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kuendigung durch Arbeitgeber",
@@ -2043,7 +1975,9 @@
     "label": "Quit The Job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Eigene Kuendigung",
@@ -2065,7 +1999,9 @@
     "label": "Employee Requested Transfer",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Versetzung auf eig. Wunsch",
@@ -2087,7 +2023,9 @@
     "label": "Company Transferred Employee",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Versetzung durch Betrieb",
@@ -2109,7 +2047,9 @@
     "label": "Ended Self-Employment",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Aufgabe d.eigenen Betriebs",
@@ -2131,7 +2071,9 @@
     "label": "On Leave Or Laid-Off",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lediglich beurlaubt, freigestellt",
@@ -2153,7 +2095,9 @@
     "label": "Other Reasons For Loss Of Job",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sonstige Gruende Stellenausscheidung",
@@ -2175,7 +2119,9 @@
     "label": "Employed Full-Time Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Voll erwerbstaetig,Jan-Dez 96",
@@ -2188,7 +2134,9 @@
     "label": "Employed Part-Time Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Teilzeit,Jan-Dez96",
@@ -2201,7 +2149,9 @@
     "label": "Education,Retraining Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Aus-,Fortbildung,Jan-Dez96",
@@ -2214,7 +2164,9 @@
     "label": "Registered Unemployed Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Arbeitslos gemeldet,Jan-Dez96",
@@ -2227,7 +2179,9 @@
     "label": "Retired Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "In Rente etc.,Jan-Dez96",
@@ -2240,7 +2194,9 @@
     "label": "Maternity Leave Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Mutterschafts etc.,Jan-Dez96",
@@ -2253,7 +2209,9 @@
     "label": "In School,College Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Schule etc.,Jan-Dez96",
@@ -2266,7 +2224,9 @@
     "label": "Military,Community Srvce Jan-Dec Prv. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "1",
     "label_de": "Wehr-,Zivildienst,Jan-Dez96",
@@ -2279,7 +2239,9 @@
     "label": "Housewife,Househusband Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Hausfrau,-mann,Jan-Dez96",
@@ -2292,7 +2254,9 @@
     "label": "Other Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "25",
     "label_de": "Sonstiges,Jan-Dez96",
@@ -2305,7 +2269,9 @@
     "label": "Unemployment Benefit Jan-Dec Prev Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Arbeitslosengeld bezogen 96",
@@ -2327,7 +2293,9 @@
     "label": "Mths Of Unemployment Benefit Prev Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Arbeitslosengeld Monate 96",
@@ -2349,7 +2317,9 @@
     "label": "Unemployment Relief Jan-Dec Prev Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Arbeitslosenhilfe bezogen 96",
@@ -2371,7 +2341,9 @@
     "label": "Mths Of Unemployment Relief Prev Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Arbeitslosenhilfe Monate 96",
@@ -2393,7 +2365,9 @@
     "label": "Maint.Support,Training Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterhaltsgeld bezogen 96",
@@ -2415,7 +2389,9 @@
     "label": "Mths Maint.Support,Training Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Unterhaltsgeld Monate 96",
@@ -2437,7 +2413,9 @@
     "label": "Student Grant Jan-Dec Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "BAFOEG,Stipendium bezogen 96",
@@ -2459,7 +2437,9 @@
     "label": "Mths Of Student Grant Prev. Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "BAFOEG,Stipendium Monate 96",
@@ -2550,7 +2530,9 @@
     "label": "Year Of Birth",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Geburtsjahr",
@@ -2572,7 +2554,9 @@
     "label": "Month Married Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Heirat Mon.96",
@@ -2594,7 +2578,9 @@
     "label": "Month Moved In Together Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zusammenzug mit Partner Mon.96",
@@ -2616,7 +2602,9 @@
     "label": "Month Divorced Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Scheidung Mon.96",
@@ -2638,7 +2626,9 @@
     "label": "Month Separated Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Trennung von Partner Mon.96",
@@ -2660,7 +2650,9 @@
     "label": "Month Partner Died Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Tod des Partners Mon.96",
@@ -2682,7 +2674,9 @@
     "label": "Month Child Moved Out Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind hat HH verlassen Mon.96",
@@ -2704,7 +2698,9 @@
     "label": "Month Other HH Comp Change Previous Yr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sonst. fam.Veraenderung Mon.96",
@@ -2726,7 +2722,9 @@
     "label": "Month Child Born Previous Year",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind geboren Mon.96",
@@ -2748,7 +2746,9 @@
     "label": "No Change In HH Composition",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Keine fam.Veraenderung",
@@ -2864,7 +2864,9 @@
     "label": "Length In Minutes Oral Interview",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewdauer muendl.Minuten",
@@ -2886,7 +2888,9 @@
     "label": "Length In Minutes Written Interview",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Selbstausfuellen schriftl.Minuten",
@@ -2908,7 +2912,9 @@
     "label": "Day Of Interview",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Tag des Interviews",
@@ -2930,7 +2936,9 @@
     "label": "Month Of Interview",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Monat des Interviews",
@@ -4521,7 +4529,9 @@
     "label": "Interviewer ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewer ID",

@@ -2,44 +2,48 @@
   {
     "name": "cid",
     "dataset": "bioregion",
-    "label": "[de] Ursprungshaushaltsnummer",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ursprungshaushaltsnummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 60.0,
-      "1st Qu.": 333093.0,
-      "Median": 2179035.0,
-      "Mean": 1914492.4409892322,
-      "3rd Qu.": 3160482.0,
-      "Max.": 3923568.0,
-      "valid": 42255,
-      "invalid": 15687
+      "1st Qu.": 2028169.0,
+      "Median": 3192970.0,
+      "Mean": 2706759.5930605903,
+      "3rd Qu.": 3774856.0,
+      "Max.": 5540404.0,
+      "valid": 67585,
+      "invalid": 0
     }
   },
   {
     "name": "pid",
     "dataset": "bioregion",
-    "label": "[de] Unveraenderliche Personennummer",
+    "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Unveraenderliche Personennummer",
+    "label_de": "Unveränderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 602.0,
-      "1st Qu.": 8016601.5,
-      "Median": 30617501.5,
-      "Mean": 24179893.166839253,
-      "3rd Qu.": 36393101.0,
-      "Max.": 39238701.0,
-      "valid": 57942,
+      "1st Qu.": 20267303.0,
+      "Median": 31962102.0,
+      "Mean": 27013303.430287786,
+      "3rd Qu.": 37768902.0,
+      "Max.": 55404001.0,
+      "valid": 67585,
       "invalid": 0
     }
   },
@@ -59,7 +63,8 @@
         -1,
         1,
         2,
-        3
+        3,
+        11
       ],
       "labels": [
         "[-8] Question this year not part of survey",
@@ -72,7 +77,8 @@
         "[-1] No answer",
         "[1] Place of birth",
         "[2] Place of first residence in Germany",
-        "[3] Place of longest residence in Germany"
+        "[3] Place of longest residence in Germany",
+        "[11] Place of first residence in Germany from housing history"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprograms",
@@ -85,7 +91,8 @@
         "[-1] keine Angabe",
         "[1] Geburtsort",
         "[2] Zuzugsort",
-        "[3] erster laengster Wohnort in D"
+        "[3] erster laengster Wohnort in D",
+        "[11] erster Wohnort in D aus Wohnorthistorie"
       ],
       "missings": [
         true,
@@ -96,6 +103,7 @@
         true,
         true,
         true,
+        false,
         false,
         false,
         false
@@ -109,16 +117,17 @@
         0,
         0,
         0,
-        45165,
-        4931,
-        7846
+        47795,
+        7042,
+        7846,
+        4902
       ]
     },
     "scale": "cat",
     "label_de": "Art der Ortsangabe (Geburtsort oder Zuzugsort)",
     "study": "soep-core",
     "statistics": {
-      "valid": 57942,
+      "valid": 67585,
       "invalid": 0
     }
   },
@@ -128,7 +137,9 @@
     "label": "[de] Jahr der Erhebung",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Jahr der Erhebung",
@@ -136,11 +147,11 @@
     "statistics": {
       "Min.": 2012.0,
       "1st Qu.": 2012.0,
-      "Median": 2015.0,
-      "Mean": 2014.895240067654,
+      "Median": 2016.0,
+      "Mean": 2015.5688688318414,
       "3rd Qu.": 2017.0,
-      "Max.": 2019.0,
-      "valid": 57942,
+      "Max.": 2020.0,
+      "valid": 67585,
       "invalid": 0
     }
   },
@@ -171,9 +182,9 @@
         "[-3] Not valid",
         "[-2] Does not apply",
         "[-1] No location available",
-        "[0] No assignment possible ",
+        "[0] No assignment possible",
         "[1] Unique assignment",
-        "[2] Ambiguous assignment "
+        "[2] Ambiguous assignment"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprograms",
@@ -209,18 +220,18 @@
         0,
         0,
         0,
-        2059,
-        2825,
-        42386,
-        2831
+        2081,
+        3684,
+        50242,
+        3737
       ]
     },
     "scale": "cat",
     "label_de": "Returncode der Ortsangabe Vercodung",
     "study": "soep-core",
     "statistics": {
-      "valid": 48042,
-      "invalid": 9900
+      "valid": 57663,
+      "invalid": 9922
     }
   },
   {
@@ -284,12 +295,12 @@
         294,
         0,
         0,
-        2,
         0,
         0,
         0,
         0,
-        56988,
+        0,
+        66633,
         593,
         65
       ]
@@ -298,8 +309,8 @@
     "label_de": "Bezugsperson",
     "study": "soep-core",
     "statistics": {
-      "valid": 57646,
-      "invalid": 296
+      "valid": 67291,
+      "invalid": 294
     }
   },
   {
@@ -308,7 +319,9 @@
     "label": "[de] Ortsangabe, Teil 1",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ortsangabe, Teil 1",
@@ -321,7 +334,9 @@
     "label": "[de] Ortsangabe, Teil 2",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ortsangabe, Teil 2",
@@ -334,20 +349,22 @@
     "label": "[de] Lat Koordinate, dezimal WGS84",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lat Koordinate, dezimal WGS84",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "1st Qu.": 7.346921,
+      "Median": 9.65241220727539,
+      "Mean": 11.709090012959557,
+      "3rd Qu.": 12.374845,
+      "Max.": 176.5567423,
+      "valid": 51404,
+      "invalid": 16181
     }
   },
   {
@@ -356,20 +373,22 @@
     "label": "[de] Lon Koordinate Ortsangabe, dezimal WGS84",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Lon Koordinate Ortsangabe, dezimal WGS84",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "1st Qu.": 48.106937,
+      "Median": 50.58116149902344,
+      "Mean": 43.21786255564758,
+      "3rd Qu.": 51.774281,
+      "Max.": 68.480686,
+      "valid": 51709,
+      "invalid": 15876
     }
   },
   {
@@ -1177,192 +1196,192 @@
         0,
         0,
         1,
-        7881,
-        41427,
-        86,
+        12787,
+        44293,
+        107,
         1,
-        13,
-        18,
-        6,
-        0,
-        20,
-        15,
-        0,
-        2,
-        8,
-        2,
-        4,
-        1,
-        6,
-        13,
-        4,
-        33,
-        115,
-        1,
-        237,
-        0,
-        15,
-        0,
-        3,
-        11,
-        4026,
-        12,
-        167,
-        0,
-        2,
-        1,
-        0,
-        1,
-        5,
-        0,
-        0,
-        2,
         16,
-        990,
-        2,
-        0,
         22,
-        34,
+        4,
         0,
-        14,
-        10,
+        20,
+        15,
+        0,
         3,
-        10,
-        0,
-        64,
-        0,
+        11,
+        4,
+        5,
         1,
-        0,
-        0,
+        35,
+        17,
+        6,
+        247,
+        348,
+        6,
+        257,
+        13,
+        17,
         1,
-        1124,
-        7,
-        0,
-        0,
-        1,
+        4,
+        283,
+        4083,
         14,
-        1,
-        23,
-        5,
+        203,
         0,
-        0,
-        0,
-        0,
-        5,
-        34,
-        72,
-        53,
-        8,
-        43,
+        14,
         12,
         0,
-        19,
-        8,
-        2,
-        125,
-        143,
-        2,
-        11,
-        0,
-        326,
-        6,
-        0,
-        0,
-        0,
-        2,
         1,
-        1,
-        7,
-        0,
-        0,
-        0,
-        0,
-        1,
-        2,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
+        22,
         5,
-        31,
-        0,
-        0,
-        0,
-        0,
-        1,
-        2,
-        13,
         11,
-        19,
+        8,
+        110,
+        1005,
+        8,
+        0,
+        25,
         34,
-        3,
-        3,
-        0,
-        20,
-        19,
-        5,
-        0,
-        0,
+        15,
+        23,
         18,
+        9,
+        34,
         0,
+        76,
+        5,
+        3,
         1,
-        2,
-        0,
-        1,
-        0,
         0,
         3,
-        13,
-        77,
-        28,
-        20,
-        8,
-        0,
-        2,
-        4,
-        5,
-        31,
+        1147,
+        42,
         0,
         0,
         5,
+        15,
+        5,
+        42,
         16,
         0,
-        3,
+        0,
+        0,
+        0,
+        16,
+        39,
+        153,
+        57,
+        9,
+        78,
+        13,
+        0,
+        25,
+        10,
+        20,
+        126,
+        154,
+        7,
+        12,
+        0,
+        329,
+        10,
+        0,
+        1,
+        0,
+        2,
+        1,
+        4,
+        13,
+        0,
+        0,
+        0,
+        0,
         1,
         2,
         0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        9,
+        33,
+        0,
+        0,
+        0,
+        0,
+        1,
         3,
+        15,
+        13,
+        124,
+        87,
+        5,
+        5,
         0,
+        21,
+        19,
+        5,
         0,
+        1,
+        21,
+        0,
+        7,
+        3,
         0,
         4,
         0,
         0,
-        85,
-        27,
+        3,
+        18,
+        77,
+        36,
+        20,
+        8,
+        2,
+        4,
+        5,
+        5,
+        35,
         0,
+        0,
+        6,
+        16,
+        0,
+        6,
+        2,
+        2,
+        0,
+        4,
+        0,
+        0,
+        0,
+        7,
+        1,
+        0,
+        157,
+        31,
+        1,
+        13,
+        0,
+        0,
+        0,
+        0,
+        6,
         7,
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
+        2,
         0,
         0,
         1,
         2,
-        25,
+        26,
         1,
         1,
         1,
-        1,
+        68,
         0,
         0,
         1
@@ -1372,8 +1391,8 @@
     "label_de": "Nation Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 50049,
-      "invalid": 7893
+      "valid": 54786,
+      "invalid": 12799
     }
   },
   {
@@ -1382,20 +1401,22 @@
     "label": "[de] Eindeutige Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Eindeutige Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 1001000.0,
+      "1st Qu.": 5358024.0,
+      "Median": 8117024.0,
+      "Mean": 8148904.955829293,
+      "3rd Qu.": 10044112.0,
+      "Max.": 16077055.0,
+      "valid": 43513,
+      "invalid": 24072
     }
   },
   {
@@ -1404,20 +1425,22 @@
     "label": "[de] Eindeutige Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Eindeutige Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 1001.0,
+      "1st Qu.": 5358.0,
+      "Median": 8117.0,
+      "Mean": 8148.853652931308,
+      "3rd Qu.": 10044.0,
+      "Max.": 16077.0,
+      "valid": 43513,
+      "invalid": 24072
     }
   },
   {
@@ -1490,7 +1513,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -1536,32 +1559,32 @@
         7841,
         0,
         0,
-        1328,
-        11829,
-        1146,
-        858,
-        3615,
-        392,
-        7236,
-        2546,
-        1704,
-        4189,
-        5230,
-        447,
-        1394,
-        1523,
-        903,
-        2598,
-        1590,
-        1573
+        1329,
+        13878,
+        1440,
+        1051,
+        4381,
+        546,
+        9068,
+        3158,
+        1955,
+        4970,
+        6521,
+        619,
+        1819,
+        1681,
+        1001,
+        2817,
+        1775,
+        1735
       ]
     },
     "scale": "cat",
     "label_de": "Eindeutiges Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 36944,
-      "invalid": 20998
+      "valid": 44537,
+      "invalid": 23048
     }
   },
   {
@@ -1634,7 +1657,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -1677,7 +1700,7 @@
         0,
         0,
         0,
-        50096,
+        59739,
         0,
         0,
         1307,
@@ -1705,7 +1728,7 @@
     "study": "soep-core",
     "statistics": {
       "valid": 3513,
-      "invalid": 54429
+      "invalid": 64072
     }
   },
   {
@@ -1778,7 +1801,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -1825,31 +1848,31 @@
         0,
         0,
         0,
-        8938,
-        1092,
-        721,
-        3496,
-        313,
-        6687,
-        2310,
-        1680,
-        3552,
-        4541,
-        310,
-        1231,
-        1347,
-        784,
-        2403,
-        1477,
-        1373
+        11010,
+        1462,
+        896,
+        4426,
+        467,
+        8447,
+        2939,
+        1967,
+        4337,
+        5734,
+        474,
+        1647,
+        1508,
+        856,
+        2613,
+        1612,
+        1503
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 33317,
-      "invalid": 24625
+      "valid": 40888,
+      "invalid": 26697
     }
   },
   {
@@ -1922,7 +1945,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -1969,31 +1992,31 @@
         0,
         0,
         0,
-        39944,
-        24,
+        48824,
+        46,
         0,
-        251,
+        376,
         0,
-        288,
-        159,
-        453,
-        193,
-        394,
-        6,
+        404,
+        209,
+        558,
+        233,
+        511,
+        7,
         0,
-        230,
-        123,
-        67,
-        28,
-        95
+        371,
+        147,
+        76,
+        31,
+        105
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 2311,
-      "invalid": 55631
+      "valid": 3074,
+      "invalid": 64511
     }
   },
   {
@@ -2066,7 +2089,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -2113,31 +2136,31 @@
         0,
         0,
         0,
-        41425,
+        50770,
         0,
         0,
-        77,
+        99,
         0,
-        78,
-        15,
-        263,
-        41,
-        209,
+        147,
+        25,
+        324,
+        54,
+        261,
         0,
         0,
-        11,
-        92,
-        16,
+        21,
+        133,
+        20,
         0,
-        28
+        44
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 830,
-      "invalid": 57112
+      "valid": 1128,
+      "invalid": 66457
     }
   },
   {
@@ -2210,7 +2233,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -2257,31 +2280,31 @@
         0,
         0,
         0,
-        41772,
+        51245,
         0,
         0,
+        1,
+        0,
+        92,
+        0,
+        135,
+        43,
+        208,
         0,
         0,
-        73,
-        0,
-        105,
-        39,
-        158,
-        0,
-        0,
-        10,
-        7,
-        13,
-        64,
-        14
+        11,
+        9,
+        14,
+        125,
+        15
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 483,
-      "invalid": 57459
+      "valid": 653,
+      "invalid": 66932
     }
   },
   {
@@ -2354,7 +2377,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -2401,31 +2424,31 @@
         0,
         0,
         0,
-        42033,
+        51615,
+        0,
+        0,
+        1,
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        9,
+        16,
         12,
-        165,
+        205,
         0,
         0,
         0,
-        6,
-        0,
+        12,
+        1,
         9,
-        21
+        27
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 222,
-      "invalid": 57720
+      "valid": 283,
+      "invalid": 67302
     }
   },
   {
@@ -2498,7 +2521,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -2545,31 +2568,31 @@
         0,
         0,
         0,
-        42180,
+        51807,
+        0,
+        0,
+        1,
         0,
         0,
         0,
+        16,
         0,
-        0,
-        0,
-        9,
-        0,
-        2,
-        39,
+        4,
+        43,
         0,
         12,
         9,
         2,
         0,
-        2
+        4
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 75,
-      "invalid": 57867
+      "valid": 91,
+      "invalid": 67494
     }
   },
   {
@@ -2642,7 +2665,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -2689,31 +2712,31 @@
         0,
         0,
         0,
-        42234,
+        51868,
         0,
         0,
         0,
         0,
+        1,
         0,
         0,
         0,
-        0,
-        9,
+        16,
         0,
         0,
         0,
         0,
         11,
         0,
-        1
+        2
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 21,
-      "invalid": 57921
+      "valid": 30,
+      "invalid": 67555
     }
   },
   {
@@ -2786,7 +2809,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -2833,7 +2856,7 @@
         0,
         0,
         0,
-        42244,
+        51879,
         0,
         0,
         0,
@@ -2842,11 +2865,11 @@
         0,
         0,
         0,
-        9,
+        16,
         0,
         0,
         0,
-        0,
+        1,
         0,
         0,
         2
@@ -2856,8 +2879,8 @@
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 11,
-      "invalid": 57931
+      "valid": 19,
+      "invalid": 67566
     }
   },
   {
@@ -2930,7 +2953,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -2977,7 +3000,7 @@
         0,
         0,
         0,
-        42246,
+        51881,
         0,
         0,
         0,
@@ -2986,11 +3009,11 @@
         0,
         0,
         0,
-        9,
+        16,
         0,
         0,
         0,
-        0,
+        1,
         0,
         0,
         0
@@ -3000,8 +3023,8 @@
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 17,
+      "invalid": 67568
     }
   },
   {
@@ -3074,7 +3097,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -3121,7 +3144,7 @@
         0,
         0,
         0,
-        42246,
+        51881,
         0,
         0,
         0,
@@ -3130,11 +3153,11 @@
         0,
         0,
         0,
-        9,
+        16,
         0,
         0,
         0,
-        0,
+        1,
         0,
         0,
         0
@@ -3144,8 +3167,8 @@
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 17,
+      "invalid": 67568
     }
   },
   {
@@ -3218,7 +3241,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -3265,7 +3288,7 @@
         0,
         0,
         0,
-        42246,
+        51881,
         0,
         0,
         0,
@@ -3274,11 +3297,11 @@
         0,
         0,
         0,
-        9,
+        16,
         0,
         0,
         0,
-        0,
+        1,
         0,
         0,
         0
@@ -3288,8 +3311,8 @@
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 17,
+      "invalid": 67568
     }
   },
   {
@@ -3362,7 +3385,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -3409,7 +3432,7 @@
         0,
         0,
         0,
-        42246,
+        51882,
         0,
         0,
         0,
@@ -3418,7 +3441,7 @@
         0,
         0,
         0,
-        9,
+        16,
         0,
         0,
         0,
@@ -3432,8 +3455,8 @@
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -3506,7 +3529,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -3553,7 +3576,7 @@
         0,
         0,
         0,
-        42246,
+        51882,
         0,
         0,
         0,
@@ -3565,7 +3588,7 @@
         0,
         0,
         0,
-        9,
+        16,
         0,
         0,
         0,
@@ -3576,8 +3599,8 @@
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -3650,7 +3673,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -3697,7 +3720,7 @@
         0,
         0,
         0,
-        42246,
+        51882,
         0,
         0,
         0,
@@ -3710,7 +3733,7 @@
         0,
         0,
         0,
-        9,
+        16,
         0,
         0,
         0
@@ -3720,8 +3743,8 @@
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -3794,7 +3817,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -3841,7 +3864,7 @@
         0,
         0,
         0,
-        42246,
+        51882,
         0,
         0,
         0,
@@ -3855,7 +3878,7 @@
         0,
         0,
         0,
-        9,
+        16,
         0,
         0
       ]
@@ -3864,8 +3887,8 @@
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -3938,7 +3961,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -3985,7 +4008,7 @@
         0,
         0,
         0,
-        42246,
+        51882,
         0,
         0,
         0,
@@ -3999,7 +4022,7 @@
         0,
         0,
         0,
-        9,
+        16,
         0,
         0
       ]
@@ -4008,8 +4031,8 @@
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -4082,7 +4105,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -4129,7 +4152,7 @@
         0,
         0,
         0,
-        42246,
+        51882,
         0,
         0,
         0,
@@ -4145,15 +4168,15 @@
         0,
         0,
         0,
-        9
+        16
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -4226,7 +4249,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -4273,7 +4296,7 @@
         0,
         0,
         0,
-        42246,
+        51882,
         0,
         0,
         0,
@@ -4289,15 +4312,15 @@
         0,
         0,
         0,
-        9
+        16
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -4370,7 +4393,7 @@
         "[2] Hamburg",
         "[3] Niedersachsen",
         "[4] Bremen",
-        "[5] Nordrhein-Westfahlen",
+        "[5] Nordrhein-Westfalen",
         "[6] Hessen",
         "[7] Rheinland-Pfalz",
         "[8] Baden-Wuerttemberg",
@@ -4417,7 +4440,7 @@
         0,
         0,
         0,
-        42246,
+        51882,
         0,
         0,
         0,
@@ -4433,15 +4456,15 @@
         0,
         0,
         0,
-        9
+        16
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -4504,18 +4527,18 @@
         7841,
         0,
         0,
-        1328,
-        11829,
-        27363,
-        9581
+        1329,
+        13878,
+        33709,
+        10828
       ]
     },
     "scale": "cat",
     "label_de": "Eindeutiges Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 36944,
-      "invalid": 20998
+      "valid": 44537,
+      "invalid": 23048
     }
   },
   {
@@ -4575,7 +4598,7 @@
         0,
         0,
         0,
-        50096,
+        59739,
         0,
         0,
         1307,
@@ -4589,7 +4612,7 @@
     "study": "soep-core",
     "statistics": {
       "valid": 3513,
-      "invalid": 54429
+      "invalid": 64072
     }
   },
   {
@@ -4653,17 +4676,17 @@
         0,
         0,
         0,
-        8938,
-        24702,
-        8615
+        11010,
+        31149,
+        9739
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 33317,
-      "invalid": 24625
+      "valid": 40888,
+      "invalid": 26697
     }
   },
   {
@@ -4727,17 +4750,17 @@
         0,
         0,
         0,
-        39944,
-        1768,
-        543
+        48824,
+        2344,
+        730
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 2311,
-      "invalid": 55631
+      "valid": 3074,
+      "invalid": 64511
     }
   },
   {
@@ -4801,17 +4824,17 @@
         0,
         0,
         0,
-        41425,
-        683,
-        147
+        50770,
+        910,
+        218
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 830,
-      "invalid": 57112
+      "valid": 1128,
+      "invalid": 66457
     }
   },
   {
@@ -4875,17 +4898,17 @@
         0,
         0,
         0,
-        41772,
-        375,
-        108
+        51245,
+        479,
+        174
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 483,
-      "invalid": 57459
+      "valid": 653,
+      "invalid": 66932
     }
   },
   {
@@ -4949,17 +4972,17 @@
         0,
         0,
         0,
-        42033,
-        186,
-        36
+        51615,
+        234,
+        49
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 222,
-      "invalid": 57720
+      "valid": 283,
+      "invalid": 67302
     }
   },
   {
@@ -5023,17 +5046,17 @@
         0,
         0,
         0,
-        42180,
-        50,
-        25
+        51807,
+        64,
+        27
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 75,
-      "invalid": 57867
+      "valid": 91,
+      "invalid": 67494
     }
   },
   {
@@ -5097,17 +5120,17 @@
         0,
         0,
         0,
-        42234,
-        9,
-        12
+        51868,
+        17,
+        13
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 21,
-      "invalid": 57921
+      "valid": 30,
+      "invalid": 67555
     }
   },
   {
@@ -5171,17 +5194,17 @@
         0,
         0,
         0,
-        42244,
-        9,
-        2
+        51879,
+        16,
+        3
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 11,
-      "invalid": 57931
+      "valid": 19,
+      "invalid": 67566
     }
   },
   {
@@ -5245,17 +5268,17 @@
         0,
         0,
         0,
-        42246,
-        9,
-        0
+        51881,
+        16,
+        1
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 17,
+      "invalid": 67568
     }
   },
   {
@@ -5319,17 +5342,17 @@
         0,
         0,
         0,
-        42246,
-        9,
-        0
+        51881,
+        16,
+        1
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 17,
+      "invalid": 67568
     }
   },
   {
@@ -5393,17 +5416,17 @@
         0,
         0,
         0,
-        42246,
-        9,
-        0
+        51881,
+        16,
+        1
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 17,
+      "invalid": 67568
     }
   },
   {
@@ -5467,8 +5490,8 @@
         0,
         0,
         0,
-        42246,
-        9,
+        51882,
+        16,
         0
       ]
     },
@@ -5476,8 +5499,8 @@
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -5541,17 +5564,17 @@
         0,
         0,
         0,
-        42246,
+        51882,
         0,
-        9
+        16
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -5615,17 +5638,17 @@
         0,
         0,
         0,
-        42246,
+        51882,
         0,
-        9
+        16
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -5689,17 +5712,17 @@
         0,
         0,
         0,
-        42246,
+        51882,
         0,
-        9
+        16
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -5763,17 +5786,17 @@
         0,
         0,
         0,
-        42246,
+        51882,
         0,
-        9
+        16
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -5837,17 +5860,17 @@
         0,
         0,
         0,
-        42246,
+        51882,
         0,
-        9
+        16
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -5911,17 +5934,17 @@
         0,
         0,
         0,
-        42246,
+        51882,
         0,
-        9
+        16
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -5985,17 +6008,17 @@
         0,
         0,
         0,
-        42246,
+        51882,
         0,
-        9
+        16
       ]
     },
     "scale": "cat",
     "label_de": "Moegliches Bundesland Ortsangabe (East-West Version)",
     "study": "soep-core",
     "statistics": {
-      "valid": 9,
-      "invalid": 57933
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6004,20 +6027,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 1001.0,
+      "1st Qu.": 5315.0,
+      "Median": 7337.0,
+      "Mean": 8024.584817061241,
+      "3rd Qu.": 9780.0,
+      "Max.": 16077.0,
+      "valid": 40888,
+      "invalid": 26697
     }
   },
   {
@@ -6026,20 +6051,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 1053.0,
+      "1st Qu.": 5554.0,
+      "Median": 7336.0,
+      "Mean": 8225.612882238127,
+      "3rd Qu.": 9778.0,
+      "Max.": 16076.0,
+      "valid": 3074,
+      "invalid": 64511
     }
   },
   {
@@ -6048,20 +6075,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 3257.0,
+      "1st Qu.": 7135.0,
+      "Median": 7337.0,
+      "Mean": 8553.61790780142,
+      "3rd Qu.": 9779.0,
+      "Max.": 16075.0,
+      "valid": 1128,
+      "invalid": 66457
     }
   },
   {
@@ -6070,20 +6099,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 3358.0,
+      "1st Qu.": 7331.0,
+      "Median": 9185.0,
+      "Mean": 9799.128637059724,
+      "3rd Qu.": 12071.0,
+      "Max.": 16076.0,
+      "valid": 653,
+      "invalid": 66932
     }
   },
   {
@@ -6092,20 +6123,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 3359.0,
+      "1st Qu.": 9190.0,
+      "Median": 9190.0,
+      "Mean": 10158.169611307421,
+      "3rd Qu.": 9676.0,
+      "Max.": 16071.0,
+      "valid": 283,
+      "invalid": 67302
     }
   },
   {
@@ -6114,20 +6147,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 3459.0,
+      "1st Qu.": 10041.0,
+      "Median": 10043.0,
+      "Mean": 10405.164835164835,
+      "3rd Qu.": 12071.0,
+      "Max.": 16073.0,
+      "valid": 91,
+      "invalid": 67494
     }
   },
   {
@@ -6136,20 +6171,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 5566.0,
+      "1st Qu.": 9273.0,
+      "Median": 9273.0,
+      "Mean": 11534.0,
+      "3rd Qu.": 14523.0,
+      "Max.": 16063.0,
+      "valid": 30,
+      "invalid": 67555
     }
   },
   {
@@ -6158,20 +6195,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 9374.0,
+      "1st Qu.": 9374.0,
+      "Median": 9374.0,
+      "Mean": 10273.842105263158,
+      "3rd Qu.": 9374.0,
+      "Max.": 16074.0,
+      "valid": 19,
+      "invalid": 67566
     }
   },
   {
@@ -6180,20 +6219,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 9374.0,
+      "1st Qu.": 9374.0,
+      "Median": 9374.0,
+      "Mean": 9591.70588235294,
+      "3rd Qu.": 9374.0,
+      "Max.": 13075.0,
+      "valid": 17,
+      "invalid": 67568
     }
   },
   {
@@ -6202,20 +6243,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 9473.0,
+      "1st Qu.": 9473.0,
+      "Median": 9473.0,
+      "Mean": 9684.882352941177,
+      "3rd Qu.": 9473.0,
+      "Max.": 13075.0,
+      "valid": 17,
+      "invalid": 67568
     }
   },
   {
@@ -6224,20 +6267,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 9575.0,
+      "1st Qu.": 9575.0,
+      "Median": 9575.0,
+      "Mean": 9780.764705882353,
+      "3rd Qu.": 9575.0,
+      "Max.": 13073.0,
+      "valid": 17,
+      "invalid": 67568
     }
   },
   {
@@ -6246,20 +6291,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 9677.0,
+      "1st Qu.": 9677.0,
+      "Median": 9677.0,
+      "Mean": 9677.0,
+      "3rd Qu.": 9677.0,
+      "Max.": 9677.0,
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6268,20 +6315,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 12068.0,
+      "1st Qu.": 12068.0,
+      "Median": 12068.0,
+      "Mean": 12068.0,
+      "3rd Qu.": 12068.0,
+      "Max.": 12068.0,
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6290,20 +6339,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 13054.0,
+      "1st Qu.": 13054.0,
+      "Median": 13054.0,
+      "Mean": 13054.0,
+      "3rd Qu.": 13054.0,
+      "Max.": 13054.0,
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6312,20 +6363,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 14523.0,
+      "1st Qu.": 14523.0,
+      "Median": 14523.0,
+      "Mean": 14523.0,
+      "3rd Qu.": 14523.0,
+      "Max.": 14523.0,
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6334,20 +6387,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 14628.0,
+      "1st Qu.": 14628.0,
+      "Median": 14628.0,
+      "Mean": 14628.0,
+      "3rd Qu.": 14628.0,
+      "Max.": 14628.0,
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6356,20 +6411,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 16062.0,
+      "1st Qu.": 16062.0,
+      "Median": 16062.0,
+      "Mean": 16062.0,
+      "3rd Qu.": 16062.0,
+      "Max.": 16062.0,
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6378,20 +6435,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 16070.0,
+      "1st Qu.": 16070.0,
+      "Median": 16070.0,
+      "Mean": 16070.0,
+      "3rd Qu.": 16070.0,
+      "Max.": 16070.0,
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6400,20 +6459,22 @@
     "label": "[de] Moegliche Kreiskennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Kreiskennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 16075.0,
+      "1st Qu.": 16075.0,
+      "Median": 16075.0,
+      "Mean": 16075.0,
+      "3rd Qu.": 16075.0,
+      "Max.": 16075.0,
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6422,20 +6483,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 1001000.0,
+      "1st Qu.": 5315000.0,
+      "Median": 7337029.0,
+      "Mean": 8024637.085917628,
+      "3rd Qu.": 9780143.0,
+      "Max.": 16077055.0,
+      "valid": 40888,
+      "invalid": 26697
     }
   },
   {
@@ -6444,20 +6507,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 1053018.0,
+      "1st Qu.": 5554020.0,
+      "Median": 7336052.5,
+      "Mean": 8225663.560832791,
+      "3rd Qu.": 9778111.0,
+      "Max.": 16076061.0,
+      "valid": 3074,
+      "invalid": 64511
     }
   },
   {
@@ -6466,20 +6531,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 3257008.0,
+      "1st Qu.": 7135032.0,
+      "Median": 7337058.0,
+      "Mean": 8553689.54609929,
+      "3rd Qu.": 9779187.0,
+      "Max.": 16075046.0,
+      "valid": 1128,
+      "invalid": 66457
     }
   },
   {
@@ -6488,20 +6555,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 3358017.0,
+      "1st Qu.": 7331038.0,
+      "Median": 9185150.0,
+      "Mean": 9799193.877488514,
+      "3rd Qu.": 12071301.0,
+      "Max.": 16076028.0,
+      "valid": 653,
+      "invalid": 66932
     }
   },
   {
@@ -6510,20 +6579,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 3359033.0,
+      "1st Qu.": 9190135.0,
+      "Median": 9190135.0,
+      "Mean": 10158294.360424029,
+      "3rd Qu.": 9676143.0,
+      "Max.": 16071081.0,
+      "valid": 283,
+      "invalid": 67302
     }
   },
   {
@@ -6532,20 +6603,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 3459027.0,
+      "1st Qu.": 10041518.0,
+      "Median": 10043114.0,
+      "Mean": 10405271.131868131,
+      "3rd Qu.": 12071076.0,
+      "Max.": 16073074.0,
+      "valid": 91,
+      "invalid": 67494
     }
   },
   {
@@ -6554,20 +6627,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 5566060.0,
+      "1st Qu.": 9273152.0,
+      "Median": 9273152.0,
+      "Mean": 11534140.266666668,
+      "3rd Qu.": 14523050.0,
+      "Max.": 16063073.0,
+      "valid": 30,
+      "invalid": 67555
     }
   },
   {
@@ -6576,20 +6651,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 9374139.0,
+      "1st Qu.": 9374139.0,
+      "Median": 9374139.0,
+      "Mean": 10273972.736842105,
+      "3rd Qu.": 9374139.0,
+      "Max.": 16074075.0,
+      "valid": 19,
+      "invalid": 67566
     }
   },
   {
@@ -6598,20 +6675,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 9374140.0,
+      "1st Qu.": 9374140.0,
+      "Median": 9374140.0,
+      "Mean": 9591843.588235294,
+      "3rd Qu.": 9374140.0,
+      "Max.": 13075101.0,
+      "valid": 17,
+      "invalid": 67568
     }
   },
   {
@@ -6620,20 +6699,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 9473151.0,
+      "1st Qu.": 9473151.0,
+      "Median": 9473151.0,
+      "Mean": 9685030.470588235,
+      "3rd Qu.": 9473151.0,
+      "Max.": 13075102.0,
+      "valid": 17,
+      "invalid": 67568
     }
   },
   {
@@ -6642,20 +6723,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 9575153.0,
+      "1st Qu.": 9575153.0,
+      "Median": 9575153.0,
+      "Mean": 9780912.176470589,
+      "3rd Qu.": 9575153.0,
+      "Max.": 13073059.0,
+      "valid": 17,
+      "invalid": 67568
     }
   },
   {
@@ -6664,20 +6747,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 9677166.0,
+      "1st Qu.": 9677166.0,
+      "Median": 9677166.0,
+      "Mean": 9677166.0,
+      "3rd Qu.": 9677166.0,
+      "Max.": 9677166.0,
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6686,20 +6771,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 12068324.0,
+      "1st Qu.": 12068324.0,
+      "Median": 12068324.0,
+      "Mean": 12068324.0,
+      "3rd Qu.": 12068324.0,
+      "Max.": 12068324.0,
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6708,20 +6795,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 13054081.0,
+      "1st Qu.": 13054081.0,
+      "Median": 13054081.0,
+      "Mean": 13054081.0,
+      "3rd Qu.": 13054081.0,
+      "Max.": 13054081.0,
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6730,20 +6819,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 14523290.0,
+      "1st Qu.": 14523290.0,
+      "Median": 14523290.0,
+      "Mean": 14523290.0,
+      "3rd Qu.": 14523290.0,
+      "Max.": 14523290.0,
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6752,20 +6843,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 14628260.0,
+      "1st Qu.": 14628260.0,
+      "Median": 14628260.0,
+      "Mean": 14628260.0,
+      "3rd Qu.": 14628260.0,
+      "Max.": 14628260.0,
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6774,20 +6867,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 16062036.0,
+      "1st Qu.": 16062036.0,
+      "Median": 16062036.0,
+      "Mean": 16062036.0,
+      "3rd Qu.": 16062036.0,
+      "Max.": 16062036.0,
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6796,20 +6891,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 16070038.0,
+      "1st Qu.": 16070038.0,
+      "Median": 16070038.0,
+      "Mean": 16070038.0,
+      "3rd Qu.": 16070038.0,
+      "Max.": 16070038.0,
+      "valid": 16,
+      "invalid": 67569
     }
   },
   {
@@ -6818,20 +6915,22 @@
     "label": "[de] Moegliche Gemeindekennziffer Ortsangabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Moegliche Gemeindekennziffer Ortsangabe",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 57942
+      "Min.": 16075073.0,
+      "1st Qu.": 16075073.0,
+      "Median": 16075073.0,
+      "Mean": 16075073.0,
+      "3rd Qu.": 16075073.0,
+      "Max.": 16075073.0,
+      "valid": 16,
+      "invalid": 67569
     }
   }
 ]

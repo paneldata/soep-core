@@ -2,13 +2,15 @@
   {
     "name": "cid",
     "dataset": "bjkind",
-    "label": "[de] Ursprungshaushaltsnummer (=hhnr)",
+    "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Ursprungshaushaltsnummer (=hhnr)",
+    "label_de": "Ursprungshaushaltsnummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 604.0,
@@ -24,13 +26,15 @@
   {
     "name": "hid",
     "dataset": "bjkind",
-    "label": "[de] Aktuelle Haushaltsnummer (=hhnrakt)",
+    "label": "Current Wave HH Number (=hid_2019)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=hhnrakt)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_2019)",
     "study": "soep-core",
     "statistics": {
       "Min.": 14575.0,
@@ -46,13 +50,15 @@
   {
     "name": "pid",
     "dataset": "bjkind",
-    "label": "[de] Unveränderliche Personennummer (=persnr)",
+    "label": "Never Changing Person ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Unveränderliche Personennummer (=persnr)",
+    "label_de": "Unveränderliche Personennummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 145705.0,
@@ -71,7 +77,9 @@
     "label": "[de] Erhebungsjahr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Erhebungsjahr",
@@ -342,7 +350,9 @@
     "label": "[de] Personennr. Kind",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Personennr. Kind",
@@ -370,17 +380,7 @@
         -4,
         -3,
         -2,
-        -1,
-        2,
-        3,
-        1,
-        4,
-        5,
-        6,
-        7,
-        8,
-        0,
-        9
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -389,26 +389,7 @@
         "[-4] [de] Unzulaessige Mehrfachantwort",
         "[-3] [de] nicht valide",
         "[-2] [de] trifft nicht zu",
-        "[-1] [de] keine Angabe",
-        "2",
-        "3",
-        "1",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "0",
-        "9"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe"
+        "[-1] [de] keine Angabe"
       ],
       "missings": [
         true,
@@ -417,17 +398,7 @@
         true,
         true,
         true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
@@ -436,23 +407,19 @@
         0,
         0,
         0,
-        2,
-        4751,
-        2942,
-        2606,
-        1430,
-        761,
-        291,
-        134,
-        72,
-        30,
-        27
+        2
       ]
     },
-    "scale": "cat",
+    "scale": "number",
     "label_de": "Anzahl der Kinder (bis 16 Jahre) im HH",
     "study": "soep-core",
     "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 2.0,
+      "Median": 2.0,
+      "Mean": 2.6036491873658387,
+      "3rd Qu.": 3.0,
+      "Max.": 9.0,
       "valid": 13044,
       "invalid": 2
     }
@@ -463,20 +430,22 @@
     "label": "[de] Zeiger auf Mutter",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zeiger auf Mutter",
     "study": "soep-core",
     "statistics": {
       "Min.": 6003.0,
-      "1st Qu.": 21176501.0,
-      "Median": 26847202.0,
-      "Mean": 27044150.174123336,
-      "3rd Qu.": 37476203.0,
+      "1st Qu.": 21190502.0,
+      "Median": 27303102.0,
+      "Mean": 27251098.414695878,
+      "3rd Qu.": 37658802.0,
       "Max.": 39237802.0,
-      "valid": 12405,
-      "invalid": 641
+      "valid": 12643,
+      "invalid": 403
     }
   },
   {
@@ -485,7 +454,9 @@
     "label": "[de] Zeiger auf HV",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zeiger auf HV",
@@ -507,20 +478,22 @@
     "label": "[de] Zeiger auf Partner des HV",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zeiger auf Partner des HV",
     "study": "soep-core",
     "statistics": {
-      "Min.": 5.0,
-      "1st Qu.": 21257002.0,
-      "Median": 30312502.0,
-      "Mean": 27470962.006207876,
+      "Min.": 67103.0,
+      "1st Qu.": 21258952.0,
+      "Median": 30331602.0,
+      "Mean": 27492905.612585425,
       "3rd Qu.": 37910702.0,
       "Max.": 39238002.0,
-      "valid": 11276,
-      "invalid": 1770
+      "valid": 11267,
+      "invalid": 1779
     }
   },
   {
@@ -529,20 +502,22 @@
     "label": "[de] Zeiger auf Partner der Mutter",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Zeiger auf Partner der Mutter",
     "study": "soep-core",
     "statistics": {
-      "Min.": 5.0,
-      "1st Qu.": 21233802.0,
-      "Median": 30158001.0,
-      "Mean": 27343919.99102692,
-      "3rd Qu.": 37767501.0,
+      "Min.": 8603.0,
+      "1st Qu.": 21253526.25,
+      "Median": 30465501.0,
+      "Mean": 27524360.958482143,
+      "3rd Qu.": 37882702.0,
       "Max.": 39237801.0,
-      "valid": 11033,
-      "invalid": 2013
+      "valid": 11200,
+      "invalid": 1846
     }
   },
   {
@@ -551,7 +526,9 @@
     "label": "[de] Kind Geburtsjahr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind Geburtsjahr",
@@ -1096,7 +1073,9 @@
     "label": "[de] Kind Kosten Schule",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind Kosten Schule",
@@ -1118,7 +1097,9 @@
     "label": "[de] Kind Kosten Schule",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind Kosten Schule",
@@ -1140,7 +1121,9 @@
     "label": "[de] Kind derzeit keine Einrichtung",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind derzeit keine Einrichtung",
@@ -1162,7 +1145,9 @@
     "label": "[de] Kind Einrichtung Std./Tag",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind Einrichtung Std./Tag",
@@ -1337,7 +1322,9 @@
     "label": "[de] Kind Kosten Einrichtung",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind Kosten Einrichtung",
@@ -1359,7 +1346,9 @@
     "label": "[de] Kind Keine Kosten",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind Keine Kosten",
@@ -1381,7 +1370,9 @@
     "label": "[de] Kind Besuch seit Jahr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind Besuch seit Jahr",
@@ -1403,7 +1394,9 @@
     "label": "[de] Kind Betreuung durch Tagesmutter außerhalb HH",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind Betreuung durch Tagesmutter außerhalb HH",
@@ -1425,7 +1418,9 @@
     "label": "[de] Kind Betreuung im Haus",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind Betreuung im Haus",
@@ -1447,7 +1442,9 @@
     "label": "[de] Kind Verwandte",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind Verwandte",
@@ -1469,7 +1466,9 @@
     "label": "[de] Kind Freunde",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind Freunde",
@@ -1491,7 +1490,9 @@
     "label": "[de] Kind keine Betreuung",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind keine Betreuung",
@@ -1513,7 +1514,9 @@
     "label": "[de] Kind Ehrenamtliche Betreuung",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind Ehrenamtliche Betreuung",
@@ -1535,7 +1538,9 @@
     "label": "[de] Kind Keine Kosten",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kind Keine Kosten",
@@ -1557,7 +1562,9 @@
     "label": "[de] Geburtsmonat",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Geburtsmonat",
@@ -1895,7 +1902,9 @@
     "label": "[de] Wie lange ausschließlich Flüchtlingsklasse Jahre",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie lange ausschließlich Flüchtlingsklasse Jahre",
@@ -1917,7 +1926,9 @@
     "label": "[de] Wie lange ausschließlich Flüchtlingsklasse Monate",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie lange ausschließlich Flüchtlingsklasse Monate",
@@ -1939,7 +1950,9 @@
     "label": "[de] Besuche immer noch auschließlich spezielle Klasse",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Besuche immer noch auschließlich spezielle Klasse",
@@ -1961,7 +1974,9 @@
     "label": "[de] Wie lange auch Flüchtlingsklasse Jahre",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie lange auch Flüchtlingsklasse Jahre",
@@ -1983,7 +1998,9 @@
     "label": "[de] Wie lange auch Flüchtlingsklasse Monate",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie lange auch Flüchtlingsklasse Monate",
@@ -2005,7 +2022,9 @@
     "label": "[de] Besuche immer noch auch spezielle Klasse",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Besuche immer noch auch spezielle Klasse",
@@ -2096,7 +2115,9 @@
     "label": "[de] Betreuungseinrichtung Hort Stunden pro Woche",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuungseinrichtung Hort Stunden pro Woche",
@@ -2118,7 +2139,9 @@
     "label": "[de] Sprachförderung außerhalb Schule",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachförderung außerhalb Schule",
@@ -2140,7 +2163,9 @@
     "label": "[de] Sport, Tanzen, Gymnastik, Ballett außerhalb der Schule",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sport, Tanzen, Gymnastik, Ballett außerhalb der Schule",
@@ -2162,7 +2187,9 @@
     "label": "[de] Musikunterricht/Gesangsunterricht außerhalb der Schule",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Musikunterricht/Gesangsunterricht außerhalb der Schule",
@@ -2184,7 +2211,9 @@
     "label": "[de] Kunsterziehung/Malen außerhalb der Schule",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kunsterziehung/Malen außerhalb der Schule",
@@ -2206,7 +2235,9 @@
     "label": "[de] Nein, nichts davon außerhalb der Schule",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Nein, nichts davon außerhalb der Schule",
@@ -2228,7 +2259,9 @@
     "label": "[de] Keine Angabe von Aktivitäten außerhalb der Schule",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Keine Angabe von Aktivitäten außerhalb der Schule",
@@ -2250,7 +2283,9 @@
     "label": "[de] Wie viele Stunden pro Woche erhält dieses Kind insgesamt Sprachförderung",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie viele Stunden pro Woche erhält dieses Kind insgesamt Sprachförderung",
@@ -2341,7 +2376,9 @@
     "label": "[de] Wie viele Stunden pro Tag übernimmt Einrichtung die Betreuung",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie viele Stunden pro Tag übernimmt Einrichtung die Betreuung",
@@ -2363,7 +2400,9 @@
     "label": "[de] KiTa Betreuung Tage pro Woche",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "KiTa Betreuung Tage pro Woche",
@@ -2612,7 +2651,9 @@
     "label": "[de] Wie viele Stunden pro Tag übernimmt die Tagesmutter die Betreuung",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wie viele Stunden pro Tag übernimmt die Tagesmutter die Betreuung",
@@ -2634,7 +2675,9 @@
     "label": "[de] Tagesmutter Betreuung Tage pro Woche",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Tagesmutter Betreuung Tage pro Woche",
@@ -2814,7 +2857,9 @@
     "label": "[de] Betreuung Tagesmutter durchschnittl. monatl. Kosten in €",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung Tagesmutter durchschnittl. monatl. Kosten in €",
@@ -2836,7 +2881,9 @@
     "label": "[de] Betreuung Tagesmutter keine Kosten",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung Tagesmutter keine Kosten",
@@ -2858,7 +2905,9 @@
     "label": "[de] Betreuung Tagesmutter seit Jahr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung Tagesmutter seit Jahr",
@@ -2880,7 +2929,9 @@
     "label": "[de] Sprachförderung",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sprachförderung",
@@ -2902,7 +2953,9 @@
     "label": "[de] Kinderturnen, Kindersport, Kinderschwimmen",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Kinderturnen, Kindersport, Kinderschwimmen",
@@ -2924,7 +2977,9 @@
     "label": "[de] Frühkindliche Musikerziehung",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Frühkindliche Musikerziehung",
@@ -2946,7 +3001,9 @@
     "label": "[de] Künstlerische Aktivitäten",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Künstlerische Aktivitäten",
@@ -2968,7 +3025,9 @@
     "label": "[de] Sonstige Eltern-Kind-Gruppe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Sonstige Eltern-Kind-Gruppe",
@@ -2990,7 +3049,9 @@
     "label": "[de] Aktivitäten Nein, nichts davon",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Aktivitäten Nein, nichts davon",
@@ -3012,7 +3073,9 @@
     "label": "[de] Aktivitäten KA",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Aktivitäten KA",
@@ -3034,7 +3097,9 @@
     "label": "[de] Wartet auf den Schulbeginn oder Ausbildungsbeginn",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wartet auf den Schulbeginn oder Ausbildungsbeginn",
@@ -3056,7 +3121,9 @@
     "label": "[de] Wartet auf den Berufsausbildungsbeginn",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Wartet auf den Berufsausbildungsbeginn",
@@ -3078,7 +3145,9 @@
     "label": "[de] Ist in einem Berufsvorbereitungsjahr, Berufsgrundbildungsjahr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ist in einem Berufsvorbereitungsjahr, Berufsgrundbildungsjahr",
@@ -3100,7 +3169,9 @@
     "label": "[de] Besucht eine berufsbildende Schule",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Besucht eine berufsbildende Schule",
@@ -3122,7 +3193,9 @@
     "label": "[de] Ist in einer beruflichen Ausbildung / Lehre / betrieblichem Praktikum",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ist in einer beruflichen Ausbildung / Lehre / betrieblichem Praktikum",
@@ -3144,7 +3217,9 @@
     "label": "[de] Ist erwerbstätig",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Ist erwerbstätig",
@@ -3166,7 +3241,9 @@
     "label": "[de] Bekommt eine Sprachförderung",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Bekommt eine Sprachförderung",
@@ -3188,7 +3265,9 @@
     "label": "[de] Nichts davon",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Nichts davon",
@@ -3210,7 +3289,9 @@
     "label": "[de] Status keine Angabe",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Status keine Angabe",
@@ -3232,7 +3313,9 @@
     "label": "[de] Betreuung Vater/Mutter des Kindes, der/die außerhalb des Haushalts lebt",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung Vater/Mutter des Kindes, der/die außerhalb des Haushalts lebt",
@@ -3254,7 +3337,9 @@
     "label": "[de] Betreuung Bezahlte Betreuungsperson kommt ins Haus",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung Bezahlte Betreuungsperson kommt ins Haus",
@@ -3276,7 +3361,9 @@
     "label": "[de] Betreuung Großeltern des Kindes",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung Großeltern des Kindes",
@@ -3298,7 +3385,9 @@
     "label": "[de] Betreuung Ältere Geschwister des Kindes",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung Ältere Geschwister des Kindes",
@@ -3320,7 +3409,9 @@
     "label": "[de] Betreuung Andere Verwandte",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung Andere Verwandte",
@@ -3342,7 +3433,9 @@
     "label": "[de] Betreuung Freunde, Bekannte oder Nachbarn",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung Freunde, Bekannte oder Nachbarn",
@@ -3364,7 +3457,9 @@
     "label": "[de] Betreuung Ehrenamtlicher Betreuer/-in",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung Ehrenamtlicher Betreuer/-in",
@@ -3386,7 +3481,9 @@
     "label": "[de] Betreuung Soziale Einrichtungen, Zentren, Freizeitorganisationen",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung Soziale Einrichtungen, Zentren, Freizeitorganisationen",
@@ -3408,7 +3505,9 @@
     "label": "[de] Betreuung Andere",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung Andere",
@@ -3430,7 +3529,9 @@
     "label": "[de] Nein, keine Person oder Einrichtung",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Nein, keine Person oder Einrichtung",
@@ -3452,7 +3553,9 @@
     "label": "[de] Betreuung durch andere Personen und Einrichtungen Durchschnittl. monatl. Ko",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung durch andere Personen und Einrichtungen Durchschnittl. monatl. Kosten",
@@ -3474,7 +3577,9 @@
     "label": "[de] Betreuung durch andere Personen und Einrichtungen Keine Kosten",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung durch andere Personen und Einrichtungen Keine Kosten",
@@ -3496,7 +3601,9 @@
     "label": "[de] Betreuung durch Vater/Mutter Stunden",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung durch Vater/Mutter Stunden",
@@ -3518,7 +3625,9 @@
     "label": "[de] Betreuung durch Großeltern Stunden",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung durch Großeltern Stunden",
@@ -3540,7 +3649,9 @@
     "label": "[de] Betreuung durch ältere Geschwister Stunden",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung durch ältere Geschwister Stunden",
@@ -3562,7 +3673,9 @@
     "label": "[de] Betreuung durch soziale Einrichtungen, Zentren, Freizeitorga. Stunden",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung durch soziale Einrichtungen, Zentren, Freizeitorga. Stunden",
@@ -3584,7 +3697,9 @@
     "label": "[de] Betreuung durch Andere Stunden",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Betreuung durch Andere Stunden",
@@ -3606,7 +3721,9 @@
     "label": "[de] Adresstranche",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Adresstranche",
@@ -3628,7 +3745,9 @@
     "label": "[de] Interviewmonat",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewmonat",
@@ -3650,7 +3769,9 @@
     "label": "[de] Interviewtag",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewtag",
@@ -3672,7 +3793,9 @@
     "label": "[de] Interviewjahr",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewjahr",
@@ -3694,7 +3817,9 @@
     "label": "[de] Interview beendet Uhrzeit (Stunde)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interview beendet Uhrzeit (Stunde)",
@@ -3716,7 +3841,9 @@
     "label": "[de] Interview beendet Uhrzeit (Minuten)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interview beendet Uhrzeit (Minuten)",
@@ -3842,7 +3969,9 @@
     "label": "[de] Interviewer-ID",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
     "label_de": "Interviewer-ID",
@@ -3859,81 +3988,17 @@
     }
   },
   {
-    "name": "persnr",
+    "name": "hid_2019",
     "dataset": "bjkind",
-    "label": "[de] Unveränderliche Personennr.",
+    "label": "Current Wave HH Number (=hid)",
     "categories": {
       "values": [],
-      "labels": []
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
     "scale": "number",
-    "label_de": "Unveränderliche Personennr.",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 145705.0,
-      "1st Qu.": 21202103.25,
-      "Median": 27406752.5,
-      "Mean": 27289401.864556186,
-      "3rd Qu.": 37797404.75,
-      "Max.": 39238005.0,
-      "valid": 13046,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "bjhhnr",
-    "dataset": "bjkind",
-    "label": "[de] Haushaltsnummer",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Haushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 14575.0,
-      "1st Qu.": 2119038.75,
-      "Median": 2739562.5,
-      "Mean": 2721773.4701057794,
-      "3rd Qu.": 3781925.0,
-      "Max.": 3923800.0,
-      "valid": 13046,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hhnr",
-    "dataset": "bjkind",
-    "label": "[de] Urhaushaltsnummer",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Urhaushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 604.0,
-      "1st Qu.": 2120555.75,
-      "Median": 3001666.0,
-      "Mean": 2737012.692396137,
-      "3rd Qu.": 3766853.0,
-      "Max.": 3923800.0,
-      "valid": 13046,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hhnrakt",
-    "dataset": "bjkind",
-    "label": "[de] Aktuelle Haushaltsnummer",
-    "categories": {
-      "values": [],
-      "labels": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
     "study": "soep-core",
     "statistics": {
       "Min.": 14575.0,
