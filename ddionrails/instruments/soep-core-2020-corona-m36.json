@@ -1,0 +1,4464 @@
+{
+  "study": "soep-core",
+  "name": "soep-core-2020-corona-m36",
+  "label": "Corona 2020 (M3-M6)",
+  "label_de": "Corona 2020 (M3-M6)",
+  "period": 2020,
+  "mode": "CATI",
+  "instrument": "soep-core-2020-corona-m36",
+  "questions": {
+    "Q001": {
+      "question": "Q001",
+      "name": "Q001",
+      "label": "[de] In welcher Art von Unterkunft leben Sie jetzt?",
+      "label_de": "In welcher Art von Unterkunft leben Sie jetzt?",
+      "items": [
+        {
+          "item": "pcovunt",
+          "text": "[de] In welcher Art von Unterkunft leben Sie jetzt?",
+          "text_de": "In welcher Art von Unterkunft leben Sie jetzt?",
+          "concept": "pcovunt",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "In shared accommodation",
+              "label_de": "In einer Gemeinschaftsunterkunft"
+            },
+            {
+              "value": 2,
+              "label": "In a private apartment, a private house",
+              "label_de": "In einer privaten Wohnung, einem privaten Haus"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 0,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B100 – B1": {
+      "question": "B100 – B1",
+      "name": "B100 – B1",
+      "label": "Health Behavior and Health Inequality",
+      "label_de": "Gesundheitsverhalten und gesundheitliche Ungleichheit",
+      "items": [
+        {
+          "item": "1",
+          "text": "Health Behavior and Health Inequality",
+          "text_de": "Gesundheitsverhalten und gesundheitliche Ungleichheit",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 1,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B101 – B1_1": {
+      "question": "B101 – B1_1",
+      "name": "B101 – B1_1",
+      "label": "[de] Gesundheitliche Prävalenzen",
+      "label_de": "Gesundheitliche Prävalenzen",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Gesundheitliche Prävalenzen",
+          "text_de": "Gesundheitliche Prävalenzen",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 2,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q002": {
+      "question": "Q002",
+      "name": "Q002",
+      "label": "[de] Wurden Sie bereits auf das Corona-Virus getestet?",
+      "label_de": "Wurden Sie bereits auf das Corona-Virus getestet?",
+      "items": [
+        {
+          "item": "pcovtest",
+          "text": "[de] Wurden Sie bereits auf das Corona-Virus getestet?",
+          "text_de": "Wurden Sie bereits auf das Corona-Virus getestet?",
+          "concept": "pcovtest",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 3,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q003": {
+      "question": "Q003",
+      "name": "Q003",
+      "label": "[de] Wann wurden Sie getestet?",
+      "label_de": "Wann wurden Sie getestet?",
+      "items": [
+        {
+          "item": "pcovtestx",
+          "text": "[de] Wann wurden Sie getestet?",
+          "text_de": "Wann wurden Sie getestet?",
+          "filter": "Q002:pcovtest=1",
+          "concept": "pcovtestx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovtestm",
+          "text": "[de] Monat:",
+          "text_de": "Monat:",
+          "concept": "pcovtestm",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovtestt",
+          "text": "[de] Tag:",
+          "text_de": "Tag:",
+          "concept": "pcovtestt",
+          "scale": "int",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "1",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        }
+      ],
+      "sn": 4,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q004": {
+      "question": "Q004",
+      "name": "Q004",
+      "label": "[de] Wie lautete das Ergebnis?",
+      "label_de": "Wie lautete das Ergebnis?",
+      "items": [
+        {
+          "item": "pcovteste",
+          "text": "[de] Wie lautete das Ergebnis?",
+          "text_de": "Wie lautete das Ergebnis?",
+          "filter": "Q002:pcovtest=1",
+          "concept": "pcovteste",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Infiziert, also positiv getestet",
+              "label_de": "Infiziert, also positiv getestet"
+            },
+            {
+              "value": 2,
+              "label": "[de] Nicht infiziert, also negativ getestet",
+              "label_de": "Nicht infiziert, also negativ getestet"
+            },
+            {
+              "value": 3,
+              "label": "[de] Das Ergebnis liegt noch nicht vor",
+              "label_de": "Das Ergebnis liegt noch nicht vor"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 5,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q005": {
+      "question": "Q005",
+      "name": "Q005",
+      "label": "[de] Unabhängig, ob Sie getestet wurden: Befinden Sie sich aktuell in Heimquarantäne?",
+      "label_de": "Unabhängig, ob Sie getestet wurden: Befinden Sie sich aktuell in Heimquarantäne?",
+      "items": [
+        {
+          "item": "phqua_n",
+          "text": "[de] Unabhängig, ob Sie getestet wurden: Befinden Sie sich aktuell in Heimquarantäne?",
+          "text_de": "Unabhängig, ob Sie getestet wurden: Befinden Sie sich aktuell in Heimquarantäne?",
+          "concept": "phqua_n",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Ja, verordnet ",
+              "label_de": "Ja, verordnet "
+            },
+            {
+              "value": 2,
+              "label": "[de] Ja, freiwillig",
+              "label_de": "Ja, freiwillig"
+            },
+            {
+              "value": 3,
+              "label": "[de] Nein",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 6,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q006": {
+      "question": "Q006",
+      "name": "Q006",
+      "label": "[de] Haben Sie derzeit grippeähnliche Symptome wie z.B. Fieber oder Husten?",
+      "label_de": "Haben Sie derzeit grippeähnliche Symptome wie z.B. Fieber oder Husten?",
+      "items": [
+        {
+          "item": "pgrippe",
+          "text": "[de] Haben Sie derzeit grippeähnliche Symptome wie z.B. Fieber oder Husten?",
+          "text_de": "Haben Sie derzeit grippeähnliche Symptome wie z.B. Fieber oder Husten?",
+          "concept": "pgrippe",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 7,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B102 – B1_2": {
+      "question": "B102 – B1_2",
+      "name": "B102 – B1_2",
+      "label": "[de] Weitere Personen im HH",
+      "label_de": "Weitere Personen im HH",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Weitere Personen im HH",
+          "text_de": "Weitere Personen im HH",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 8,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q007": {
+      "question": "Q007",
+      "name": "Q007",
+      "label": "[de] Wurde mindestens eine weitere Person in Ihrem Haushalt auf das Corona-Virus getestet?",
+      "label_de": "Wurde mindestens eine weitere Person in Ihrem Haushalt auf das Corona-Virus getestet?",
+      "items": [
+        {
+          "item": "pcovtestwp",
+          "text": "[de] Wurde mindestens eine weitere Person in Ihrem Haushalt auf das Corona-Virus getestet?",
+          "text_de": "Wurde mindestens eine weitere Person in Ihrem Haushalt auf das Corona-Virus getestet?",
+          "concept": "pcovtestwp",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Ja",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "[de] Nein",
+              "label_de": "Nein"
+            },
+            {
+              "value": 3,
+              "label": "[de] Trifft nicht zu, lebe alleine",
+              "label_de": "Trifft nicht zu, lebe alleine"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 9,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q008": {
+      "question": "Q008",
+      "name": "Q008",
+      "label": "[de] War mindestens eine weitere Person in Ihrem Haushalt mit dem Corona-Virus infiziert?",
+      "label_de": "War mindestens eine weitere Person in Ihrem Haushalt mit dem Corona-Virus infiziert?",
+      "items": [
+        {
+          "item": "pcovtestwpe",
+          "text": "[de] War mindestens eine weitere Person in Ihrem Haushalt mit dem Corona-Virus infiziert?",
+          "text_de": "War mindestens eine weitere Person in Ihrem Haushalt mit dem Corona-Virus infiziert?",
+          "filter": "Q007:pcovtestwp=1",
+          "concept": "pcovtestwpe",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Ja",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "[de] Nein",
+              "label_de": "Nein"
+            },
+            {
+              "value": 3,
+              "label": "[de] Es gibt noch kein Ergebnis",
+              "label_de": "Es gibt noch kein Ergebnis"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 10,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q009": {
+      "question": "Q009",
+      "name": "Q009",
+      "label": "[de] Kennen Sie jemanden außerhalb Ihres Haushalts, der positiv auf das Corona-Virus getestet wurde?",
+      "label_de": "Kennen Sie jemanden außerhalb Ihres Haushalts, der positiv auf das Corona-Virus getestet wurde?",
+      "items": [
+        {
+          "item": "pcovtestpahx",
+          "text": "[de] Kennen Sie jemanden außerhalb Ihres Haushalts, der positiv auf das Corona-Virus getestet wurde?",
+          "text_de": "Kennen Sie jemanden außerhalb Ihres Haushalts, der positiv auf das Corona-Virus getestet wurde?",
+          "instruction": "[de] Bitte geben Sie alles Zutreffende an.",
+          "instruction_de": "Bitte geben Sie alles Zutreffende an.",
+          "concept": "pcovtestpahx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovtestpah1",
+          "text": "[de] Ja, Familienangehörige/Verwandte",
+          "text_de": "Ja, Familienangehörige/Verwandte",
+          "concept": "pcovtestpah1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovtestpah2",
+          "text": "[de] Ja, Freunde/Bekannte",
+          "text_de": "Ja, Freunde/Bekannte",
+          "concept": "pcovtestpah2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "pcovtestpah3",
+          "text": "[de] Nein",
+          "text_de": "Nein",
+          "concept": "pcovtestpah3",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "1",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        }
+      ],
+      "sn": 11,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B200 – B2": {
+      "question": "B200 – B2",
+      "name": "B200 – B2",
+      "label": "[de] Gesundheitsverhalten",
+      "label_de": "Gesundheitsverhalten",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Gesundheitsverhalten",
+          "text_de": "Gesundheitsverhalten",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 12,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q010": {
+      "question": "Q010",
+      "name": "Q010",
+      "label": "[de] In welcher Sprache beziehen Sie hauptsächlich Ihre täglichen Informationen über die Entwicklungen zum Corona-Virus?",
+      "label_de": "In welcher Sprache beziehen Sie hauptsächlich Ihre täglichen Informationen über die Entwicklungen zum Corona-Virus?",
+      "items": [
+        {
+          "item": "pcovisprax",
+          "text": "[de] In welcher Sprache beziehen Sie hauptsächlich Ihre täglichen Informationen über die Entwicklungen zum Corona-Virus?",
+          "text_de": "In welcher Sprache beziehen Sie hauptsächlich Ihre täglichen Informationen über die Entwicklungen zum Corona-Virus?",
+          "instruction": "[de] Bitte geben Sie alles Zutreffende an.",
+          "instruction_de": "Bitte geben Sie alles Zutreffende an.",
+          "concept": "pcovisprax",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovispra1",
+          "text": "[de] Deutsch",
+          "text_de": "Deutsch",
+          "concept": "pcovispra1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovispra2",
+          "text": "[de] Englisch",
+          "text_de": "Englisch",
+          "concept": "pcovispra2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "pcovispra3",
+          "text": "[de] Andere Sprache",
+          "text_de": "Andere Sprache",
+          "concept": "pcovispra3",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "pcovispra4",
+          "text": "[de] Ich informiere mich nicht",
+          "text_de": "Ich informiere mich nicht",
+          "concept": "pcovispra4",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "1",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        }
+      ],
+      "sn": 13,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q011": {
+      "question": "Q011",
+      "name": "Q011",
+      "label": "[de] Zum Schutz vor dem neuen Corona-Virus werden verschiedene Verhaltensweisen für den Alltag und das tägliche Miteinander empfohlen. Denken Sie bitte an die letzten 7 Tage: Haben Sie da…",
+      "label_de": "Zum Schutz vor dem neuen Corona-Virus werden verschiedene Verhaltensweisen für den Alltag und das tägliche Miteinander empfohlen. Denken Sie bitte an die letzten 7 Tage: Haben Sie da…",
+      "items": [
+        {
+          "item": "pcovverhx",
+          "text": "[de] Zum Schutz vor dem neuen Corona-Virus werden verschiedene Verhaltensweisen für den Alltag und das tägliche Miteinander empfohlen. Denken Sie bitte an die letzten 7 Tage: Haben Sie da…",
+          "text_de": "Zum Schutz vor dem neuen Corona-Virus werden verschiedene Verhaltensweisen für den Alltag und das tägliche Miteinander empfohlen. Denken Sie bitte an die letzten 7 Tage: Haben Sie da…",
+          "instruction": "[de] Bitte geben Sie alles Zutreffende an.",
+          "instruction_de": "Bitte geben Sie alles Zutreffende an.",
+          "concept": "pcovverhx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovverh1",
+          "text": "[de] den Kontakt mit älteren, hochbetagten oder chronisch kranken Menschen vermieden?",
+          "text_de": "den Kontakt mit älteren, hochbetagten oder chronisch kranken Menschen vermieden?",
+          "concept": "pcovverh1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovverh2",
+          "text": "[de] auf Nutzung des öffentlichen Nahverkehrs verzichtet?",
+          "text_de": "auf Nutzung des öffentlichen Nahverkehrs verzichtet?",
+          "concept": "pcovverh2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "pcovverh3",
+          "text": "[de] auf Reisen, auch innerhalb Deutschlands, verzichtet?",
+          "text_de": "auf Reisen, auch innerhalb Deutschlands, verzichtet?",
+          "concept": "pcovverh3",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "pcovverh10",
+          "text": "[de] eine Schutzmaske bei Besorgungen oder im öffentichen Nahverkehr getragen?",
+          "text_de": "eine Schutzmaske bei Besorgungen oder im öffentichen Nahverkehr getragen?",
+          "concept": "pcovverh10",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "pcovverh5",
+          "text": "[de] das Einkaufen zu Stoßzeiten vermieden?",
+          "text_de": "das Einkaufen zu Stoßzeiten vermieden?",
+          "concept": "pcovverh5",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "pcovverh6",
+          "text": "[de] sich von Menschenansammlungen ferngehalten?",
+          "text_de": "sich von Menschenansammlungen ferngehalten?",
+          "concept": "pcovverh6",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "pcovverh7",
+          "text": "[de] Abstand zu Menschen, die Husten, Schnupfen oder Fieber haben, gehalten?",
+          "text_de": "Abstand zu Menschen, die Husten, Schnupfen oder Fieber haben, gehalten?",
+          "concept": "pcovverh7",
+          "scale": "bin",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "pcovverh8",
+          "text": "[de] Berührungen wie z. B. Händeschütteln oder Umarmungen vermieden?",
+          "text_de": "Berührungen wie z. B. Händeschütteln oder Umarmungen vermieden?",
+          "concept": "pcovverh8",
+          "scale": "bin",
+          "sn": 8,
+          "number": ""
+        },
+        {
+          "item": "pcovverh9",
+          "text": "[de] regelmäßig Ihre Hände gewaschen (mindestens 20 Sekunden mit Wasser und Seife)?",
+          "text_de": "regelmäßig Ihre Hände gewaschen (mindestens 20 Sekunden mit Wasser und Seife)?",
+          "concept": "pcovverh9",
+          "scale": "bin",
+          "sn": 9,
+          "number": ""
+        },
+        {
+          "item": "1",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 10,
+          "number": ""
+        }
+      ],
+      "sn": 14,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B300 – B3": {
+      "question": "B300 – B3",
+      "name": "B300 – B3",
+      "label": "[de] Gesundheitliche Ungleichheit",
+      "label_de": "Gesundheitliche Ungleichheit",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Gesundheitliche Ungleichheit",
+          "text_de": "Gesundheitliche Ungleichheit",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 15,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q012": {
+      "question": "Q012",
+      "name": "Q012",
+      "label": "How would you describe your current health?",
+      "label_de": "Wie würden Sie Ihren gegenwärtigen Gesundheitszustand beschreiben?",
+      "items": [
+        {
+          "item": "pges01",
+          "text": "How would you describe your current health?",
+          "text_de": "Wie würden Sie Ihren gegenwärtigen Gesundheitszustand beschreiben?",
+          "concept": "pges01",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Very good",
+              "label_de": "Sehr gut"
+            },
+            {
+              "value": 2,
+              "label": "Good",
+              "label_de": "Gut"
+            },
+            {
+              "value": 3,
+              "label": "Satisfactory",
+              "label_de": "Zufriedenstellend"
+            },
+            {
+              "value": 4,
+              "label": "Poor",
+              "label_de": "Weniger gut"
+            },
+            {
+              "value": 5,
+              "label": "Bad",
+              "label_de": "Schlecht"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 16,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q013": {
+      "question": "Q013",
+      "name": "Q013",
+      "label": "[de] Leiden Sie an einer schweren oder chronischen Erkrankung wie Asthma, Diabetes, Krebs und ähnlichem?",
+      "label_de": "Leiden Sie an einer schweren oder chronischen Erkrankung wie Asthma, Diabetes, Krebs und ähnlichem?",
+      "items": [
+        {
+          "item": "pkr33",
+          "text": "[de] Leiden Sie an einer schweren oder chronischen Erkrankung wie Asthma, Diabetes, Krebs und ähnlichem?",
+          "text_de": "Leiden Sie an einer schweren oder chronischen Erkrankung wie Asthma, Diabetes, Krebs und ähnlichem?",
+          "concept": "pkr33",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 17,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q14_1": {
+      "question": "Q14_1",
+      "name": "Q14_1",
+      "label": "[de] Für wie groß halten Sie die Wahrscheinlichkeit, dass Sie in Folge der Maßnahmen zur Bekämpfung und langsameren Verbreitung des Corona-Virus innerhalb der nächsten zwölf Monate Ihren Arbeitsplatz aufgrund einer Kündigung/Betriebsschließung verlieren werden?",
+      "label_de": "Für wie groß halten Sie die Wahrscheinlichkeit, dass Sie in Folge der Maßnahmen zur Bekämpfung und langsameren Verbreitung des Corona-Virus innerhalb der nächsten zwölf Monate Ihren Arbeitsplatz aufgrund einer Kündigung/Betriebsschließung verlieren werden?",
+      "items": [
+        {
+          "item": "pcovwktx",
+          "text": "[de] Für wie groß halten Sie die Wahrscheinlichkeit, dass Sie in Folge der Maßnahmen zur Bekämpfung und langsameren Verbreitung des Corona-Virus innerhalb der nächsten zwölf Monate Ihren Arbeitsplatz aufgrund einer Kündigung/Betriebsschließung verlieren werden?",
+          "text_de": "Für wie groß halten Sie die Wahrscheinlichkeit, dass Sie in Folge der Maßnahmen zur Bekämpfung und langsameren Verbreitung des Corona-Virus innerhalb der nächsten zwölf Monate Ihren Arbeitsplatz aufgrund einer Kündigung/Betriebsschließung verlieren werden?",
+          "instruction": "[de] Wenn es nicht bereits passiert ist, geben Sie bitte einen Prozentwert zwischen 0 und 100 an. 0 bedeutet „überhaupt nicht wahrscheinlich“, 100 bedeutet „absolut wahrscheinlich“. Mit den Prozentwerten dazwischen können Sie abstufen.",
+          "instruction_de": "Wenn es nicht bereits passiert ist, geben Sie bitte einen Prozentwert zwischen 0 und 100 an. 0 bedeutet „überhaupt nicht wahrscheinlich“, 100 bedeutet „absolut wahrscheinlich“. Mit den Prozentwerten dazwischen können Sie abstufen.",
+          "concept": "pcovwktx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovwkt3",
+          "text": "[de] Prozent:",
+          "text_de": "Prozent:",
+          "concept": "pcovwkt3",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovwkt4",
+          "text": "[de] Das ist bereits passiert",
+          "text_de": "Das ist bereits passiert",
+          "concept": "pcovwkt4",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "1",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        }
+      ],
+      "sn": 18,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q14_2": {
+      "question": "Q14_2",
+      "name": "Q14_2",
+      "label": "[de] Für wie groß halten Sie die Wahrscheinlichkeit, dass Sie in Folge der Maßnahmen zur Bekämpfung und langsameren Verbreitung des Corona-Virus innerhalb der nächsten zwölf Monate in Zahlungsschwierigkeiten geraten werden?",
+      "label_de": "Für wie groß halten Sie die Wahrscheinlichkeit, dass Sie in Folge der Maßnahmen zur Bekämpfung und langsameren Verbreitung des Corona-Virus innerhalb der nächsten zwölf Monate in Zahlungsschwierigkeiten geraten werden?",
+      "items": [
+        {
+          "item": "pcovwktx",
+          "text": "[de] Für wie groß halten Sie die Wahrscheinlichkeit, dass Sie in Folge der Maßnahmen zur Bekämpfung und langsameren Verbreitung des Corona-Virus innerhalb der nächsten zwölf Monate in Zahlungsschwierigkeiten geraten werden?",
+          "text_de": "Für wie groß halten Sie die Wahrscheinlichkeit, dass Sie in Folge der Maßnahmen zur Bekämpfung und langsameren Verbreitung des Corona-Virus innerhalb der nächsten zwölf Monate in Zahlungsschwierigkeiten geraten werden?",
+          "instruction": "[de] Wenn es nicht bereits passiert ist, geben Sie bitte einen Prozentwert zwischen 0 und 100 an. 0 bedeutet „überhaupt nicht wahrscheinlich“, 100 bedeutet „absolut wahrscheinlich“. Mit den Prozentwerten dazwischen können Sie abstufen.",
+          "instruction_de": "Wenn es nicht bereits passiert ist, geben Sie bitte einen Prozentwert zwischen 0 und 100 an. 0 bedeutet „überhaupt nicht wahrscheinlich“, 100 bedeutet „absolut wahrscheinlich“. Mit den Prozentwerten dazwischen können Sie abstufen.",
+          "concept": "pcovwktx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovwkt13",
+          "text": "[de] Prozent:",
+          "text_de": "Prozent:",
+          "concept": "pcovwkt13",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovwkt14",
+          "text": "[de] Das ist bereits passiert",
+          "text_de": "Das ist bereits passiert",
+          "concept": "pcovwkt14",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "1",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        }
+      ],
+      "sn": 19,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q14_3": {
+      "question": "Q14_3",
+      "name": "Q14_3",
+      "label": "[de] Für wie groß halten Sie die Wahrscheinlichkeit, dass Sie in Folge der Maßnahmen zur Bekämpfung und langsameren Verbreitung des Corona-Virus innerhalb der nächsten zwölf Monate Ihren Lebensstandard drastisch einschränken müssen?",
+      "label_de": "Für wie groß halten Sie die Wahrscheinlichkeit, dass Sie in Folge der Maßnahmen zur Bekämpfung und langsameren Verbreitung des Corona-Virus innerhalb der nächsten zwölf Monate Ihren Lebensstandard drastisch einschränken müssen?",
+      "items": [
+        {
+          "item": "pcovwktx",
+          "text": "[de] Für wie groß halten Sie die Wahrscheinlichkeit, dass Sie in Folge der Maßnahmen zur Bekämpfung und langsameren Verbreitung des Corona-Virus innerhalb der nächsten zwölf Monate Ihren Lebensstandard drastisch einschränken müssen?",
+          "text_de": "Für wie groß halten Sie die Wahrscheinlichkeit, dass Sie in Folge der Maßnahmen zur Bekämpfung und langsameren Verbreitung des Corona-Virus innerhalb der nächsten zwölf Monate Ihren Lebensstandard drastisch einschränken müssen?",
+          "instruction": "[de] Wenn es nicht bereits passiert ist, geben Sie bitte einen Prozentwert zwischen 0 und 100 an. 0 bedeutet „überhaupt nicht wahrscheinlich“, 100 bedeutet „absolut wahrscheinlich“. Mit den Prozentwerten dazwischen können Sie abstufen.",
+          "instruction_de": "Wenn es nicht bereits passiert ist, geben Sie bitte einen Prozentwert zwischen 0 und 100 an. 0 bedeutet „überhaupt nicht wahrscheinlich“, 100 bedeutet „absolut wahrscheinlich“. Mit den Prozentwerten dazwischen können Sie abstufen.",
+          "concept": "pcovwktx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovwkt11",
+          "text": "[de] Prozent:",
+          "text_de": "Prozent:",
+          "concept": "pcovwkt11",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovwkt12",
+          "text": "[de] Das ist bereits passiert",
+          "text_de": "Das ist bereits passiert",
+          "concept": "pcovwkt12",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "1",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        }
+      ],
+      "sn": 20,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B400 – B4": {
+      "question": "B400 – B4",
+      "name": "B400 – B4",
+      "label": "[de] Maßnahmeteilnahme",
+      "label_de": "Maßnahmeteilnahme",
+      "items": [
+        {
+          "text": "[de] Maßnahmeteilnahme",
+          "text_de": "Maßnahmeteilnahme",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        }
+      ],
+      "sn": 21,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q015": {
+      "question": "Q015",
+      "name": "Q015",
+      "label": "[de] Haben Sie unmittelbar vor der Corona-Krise an einem Integrations- oder Sprachkurs teilgenommen?",
+      "label_de": "Haben Sie unmittelbar vor der Corona-Krise an einem Integrations- oder Sprachkurs teilgenommen?",
+      "items": [
+        {
+          "item": "pcovintsprak",
+          "text": "[de] Haben Sie unmittelbar vor der Corona-Krise an einem Integrations- oder Sprachkurs teilgenommen?",
+          "text_de": "Haben Sie unmittelbar vor der Corona-Krise an einem Integrations- oder Sprachkurs teilgenommen?",
+          "concept": "pcovintsprak",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 22,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q016": {
+      "question": "Q016",
+      "name": "Q016",
+      "label": "[de] Welche Auswirkungen hatte die Corona-Krise auf Ihren Kurs?",
+      "label_de": "Welche Auswirkungen hatte die Corona-Krise auf Ihren Kurs?",
+      "items": [
+        {
+          "item": "pcovausw",
+          "text": "[de] Welche Auswirkungen hatte die Corona-Krise auf Ihren Kurs?",
+          "text_de": "Welche Auswirkungen hatte die Corona-Krise auf Ihren Kurs?",
+          "filter": "Q015:pcovintsprak=1",
+          "concept": "pcovausw",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Der Kurs ist vorübergehend unterbrochen",
+              "label_de": "Der Kurs ist vorübergehend unterbrochen"
+            },
+            {
+              "value": 2,
+              "label": "[de] Der Kurs wurde komplett abgesagt",
+              "label_de": "Der Kurs wurde komplett abgesagt"
+            },
+            {
+              "value": 3,
+              "label": "[de] Der Kurs findet ganz oder teilweise online statt",
+              "label_de": "Der Kurs findet ganz oder teilweise online statt"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 23,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q017": {
+      "question": "Q017",
+      "name": "Q017",
+      "label": "[de] Haben Sie das Online-Angebot in Anspruch genommen?",
+      "label_de": "Haben Sie das Online-Angebot in Anspruch genommen?",
+      "items": [
+        {
+          "item": "pcovonang",
+          "text": "[de] Haben Sie das Online-Angebot in Anspruch genommen?",
+          "text_de": "Haben Sie das Online-Angebot in Anspruch genommen?",
+          "filter": "Q016:pcovausw=3",
+          "concept": "pcovonang",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes, regularly",
+              "label_de": "Ja, regelmäßig"
+            },
+            {
+              "value": 2,
+              "label": "Yes, sometimes/occasionally",
+              "label_de": "Ja, unregelmäßig/selten"
+            },
+            {
+              "value": 3,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 24,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q17a": {
+      "question": "Q17a",
+      "name": "Q17a",
+      "label": "[de] Fanden Sie das Online-Angebot hilfreich, um Ihre (Sprach-)Kenntnisse zu festigen oder sogar zu verbessern?",
+      "label_de": "Fanden Sie das Online-Angebot hilfreich, um Ihre (Sprach-)Kenntnisse zu festigen oder sogar zu verbessern?",
+      "items": [
+        {
+          "item": "pcovspraf",
+          "text": "[de] Fanden Sie das Online-Angebot hilfreich, um Ihre (Sprach-)Kenntnisse zu festigen oder sogar zu verbessern?",
+          "text_de": "Fanden Sie das Online-Angebot hilfreich, um Ihre (Sprach-)Kenntnisse zu festigen oder sogar zu verbessern?",
+          "filter": "Q017:pcovonang=1",
+          "concept": "pcovspraf",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": 3,
+              "label": "Don't know",
+              "label_de": "Weiß nicht"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 25,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q17b": {
+      "question": "Q17b",
+      "name": "Q17b",
+      "label": "[de] Weshalb fanden Sie das Online-Angebot nicht hilfreich?",
+      "label_de": "Weshalb fanden Sie das Online-Angebot nicht hilfreich?",
+      "items": [
+        {
+          "item": "covonhilfx",
+          "text": "[de] Weshalb fanden Sie das Online-Angebot nicht hilfreich?",
+          "text_de": "Weshalb fanden Sie das Online-Angebot nicht hilfreich?",
+          "instruction": "[de] Bitte geben Sie alles Zutreffende an.",
+          "instruction_de": "Bitte geben Sie alles Zutreffende an.",
+          "filter": "Q1701:pcovspraf=2",
+          "concept": "covonhilfx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovonhilf1",
+          "text": "[de] Ich hatte technische Schwierigkeiten",
+          "text_de": "Ich hatte technische Schwierigkeiten",
+          "concept": "pcovonhilf1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovonhilf2",
+          "text": "[de] Ich wurde oft gestört bzw. abgelenkt",
+          "text_de": "Ich wurde oft gestört bzw. abgelenkt",
+          "concept": "pcovonhilf2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "pcovonhilf3",
+          "text": "[de] Das Online-Angebot war nicht gut gestaltet",
+          "text_de": "Das Online-Angebot war nicht gut gestaltet",
+          "concept": "pcovonhilf3",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "pcovonhilf4",
+          "text": "[de] Das Sprachniveau war zu hoch",
+          "text_de": "Das Sprachniveau war zu hoch",
+          "concept": "pcovonhilf4",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "pcovonhilf5",
+          "text": "[de] Sonstiges",
+          "text_de": "Sonstiges",
+          "concept": "pcovonhilf5",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "1",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        }
+      ],
+      "sn": 26,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q17c": {
+      "question": "Q17c",
+      "name": "Q17c",
+      "label": "[de] Weshalb haben Sie das Online-Angebot nicht oder nur unregelmäßig oder selten in Anspruch genommen?",
+      "label_de": "Weshalb haben Sie das Online-Angebot nicht oder nur unregelmäßig oder selten in Anspruch genommen?",
+      "items": [
+        {
+          "item": "pcovonseltx",
+          "text": "[de] Weshalb haben Sie das Online-Angebot nicht oder nur unregelmäßig oder selten in Anspruch genommen?",
+          "text_de": "Weshalb haben Sie das Online-Angebot nicht oder nur unregelmäßig oder selten in Anspruch genommen?",
+          "instruction": "[de] Bitte geben Sie alles Zutreffende an.",
+          "instruction_de": "Bitte geben Sie alles Zutreffende an.",
+          "filter": "Q017:pcovonang=2:3",
+          "concept": "pcovonseltx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovonselt1",
+          "text": "[de] Fehlende technische Ausstattung (z.B. Internetverbindung)",
+          "text_de": "Fehlende technische Ausstattung (z.B. Internetverbindung)",
+          "concept": "pcovonselt1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovonselt2",
+          "text": "[de] Ich konnte dem Angebot nicht ungestört folgen (etwa wegen Kinderbetreuung oder keiner ruhigen Räumlichkeit)",
+          "text_de": "Ich konnte dem Angebot nicht ungestört folgen (etwa wegen Kinderbetreuung oder keiner ruhigen Räumlichkeit)",
+          "concept": "pcovonselt2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "pcovonselt3",
+          "text": "[de] Kein Interesse",
+          "text_de": "Kein Interesse",
+          "concept": "pcovonselt3",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "pcovonselt4",
+          "text": "[de] Sonstiges",
+          "text_de": "Sonstiges",
+          "concept": "pcovonselt4",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "1",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        }
+      ],
+      "sn": 27,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q018": {
+      "question": "Q018",
+      "name": "Q018",
+      "label": "[de] Wie schätzen Sie den Einfluss der Corona-Krise auf Ihre Deutschkenntnisse ein?",
+      "label_de": "Wie schätzen Sie den Einfluss der Corona-Krise auf Ihre Deutschkenntnisse ein?",
+      "items": [
+        {
+          "item": "pcovmusp",
+          "text": "[de] Wie schätzen Sie den Einfluss der Corona-Krise auf Ihre Deutschkenntnisse ein?",
+          "text_de": "Wie schätzen Sie den Einfluss der Corona-Krise auf Ihre Deutschkenntnisse ein?",
+          "concept": "pcovmusp",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Verbesserung",
+              "label_de": "Verbesserung"
+            },
+            {
+              "value": 2,
+              "label": "[de] Verschlechterung",
+              "label_de": "Verschlechterung"
+            },
+            {
+              "value": 3,
+              "label": "[de] kein Einfluss",
+              "label_de": "kein Einfluss"
+            },
+            {
+              "value": 4,
+              "label": "[de] Weiß ich nicht",
+              "label_de": "Weiß ich nicht"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 28,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B500 – B5": {
+      "question": "B500 – B5",
+      "name": "B500 – B5",
+      "label": "[de] Bildungsteilnahme",
+      "label_de": "Bildungsteilnahme",
+      "items": [
+        {
+          "text": "[de] Bildungsteilnahme",
+          "text_de": "Bildungsteilnahme",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        }
+      ],
+      "sn": 29,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q019": {
+      "question": "Q019",
+      "name": "Q019",
+      "label": "[de] Sind Sie derzeit in Ausbildung? Gemeint sind Schule oder Hochschule, Berufsausbildung oder Weiterbildung?",
+      "label_de": "Sind Sie derzeit in Ausbildung? Gemeint sind Schule oder Hochschule, Berufsausbildung oder Weiterbildung?",
+      "items": [
+        {
+          "item": "pcovaus1",
+          "text": "[de] Sind Sie derzeit in Ausbildung? Gemeint sind Schule oder Hochschule, Berufsausbildung oder Weiterbildung?",
+          "text_de": "Sind Sie derzeit in Ausbildung? Gemeint sind Schule oder Hochschule, Berufsausbildung oder Weiterbildung?",
+          "concept": "pcovaus1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 30,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q020": {
+      "question": "Q020",
+      "name": "Q020",
+      "label": "[de] Haben sich im Zuge der Corona-Krise folgende Änderungen in der Teilnahme an der Bildungsmaßnahme ergeben?",
+      "label_de": "Haben sich im Zuge der Corona-Krise folgende Änderungen in der Teilnahme an der Bildungsmaßnahme ergeben?",
+      "items": [
+        {
+          "item": "pcovaust",
+          "text": "[de] Haben sich im Zuge der Corona-Krise folgende Änderungen in der Teilnahme an der Bildungsmaßnahme ergeben?",
+          "text_de": "Haben sich im Zuge der Corona-Krise folgende Änderungen in der Teilnahme an der Bildungsmaßnahme ergeben?",
+          "filter": "Q019:pcovaus1=1",
+          "concept": "pcovaust",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Ja, vorübergehende Unterbrechung",
+              "label_de": "Ja, vorübergehende Unterbrechung"
+            },
+            {
+              "value": 2,
+              "label": "[de] Ja, komplett abgesagt",
+              "label_de": "Ja, komplett abgesagt"
+            },
+            {
+              "value": 3,
+              "label": "[de] Ja, findet online statt",
+              "label_de": "Ja, findet online statt"
+            },
+            {
+              "value": 4,
+              "label": "[de] Nein",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 31,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B600 – B6": {
+      "question": "B600 – B6",
+      "name": "B600 – B6",
+      "label": "Labor Market and Employment",
+      "label_de": "Arbeitsmarkt und Erwerbsarbeit",
+      "items": [
+        {
+          "item": "1",
+          "text": "Labor Market and Employment",
+          "text_de": "Arbeitsmarkt und Erwerbsarbeit",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 32,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B601 – B6_1": {
+      "question": "B601 – B6_1",
+      "name": "B601 – B6_1",
+      "label": "Current employment",
+      "label_de": "Derzeitige Erwerbstätigkeit",
+      "items": [
+        {
+          "item": "1",
+          "text": "Current employment",
+          "text_de": "Derzeitige Erwerbstätigkeit",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 33,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q021": {
+      "question": "Q021",
+      "name": "Q021",
+      "label": "Have you done any paid work in the last seven days, even if it was just for an hour or a few hours?",
+      "label_de": "Haben Sie während der letzten 7 Tage irgendeine bezahlte Arbeit ausgeübt, auch wenn dies nur für eine Stunde oder für wenige Stunden war?",
+      "items": [
+        {
+          "item": "p7tag",
+          "text": "Have you done any paid work in the last seven days, even if it was just for an hour or a few hours?",
+          "text_de": "Haben Sie während der letzten 7 Tage irgendeine bezahlte Arbeit ausgeübt, auch wenn dies nur für eine Stunde oder für wenige Stunden war?",
+          "instruction": "Please answer “yes” even if vacation, illness, bad weather, or other reasons prevented you from working part of the time you would normally have worked in the last seven days.",
+          "instruction_de": "Bitte antworten Sie auch mit \"Ja\", wenn Sie in den letzten sieben Tagen normalerweise gearbeitet hätten, aber wegen Urlaub, Krankheit, schlechtem Wetter oder anderen Gründen zeitweise abwesend waren.",
+          "concept": "p7tag",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 34,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q022": {
+      "question": "Q022",
+      "name": "Q022",
+      "label": "[de] Üben Sie derzeit eine Erwerbstätigkeit aus? Was trifft für Sie zu?",
+      "label_de": "Üben Sie derzeit eine Erwerbstätigkeit aus? Was trifft für Sie zu?",
+      "items": [
+        {
+          "item": "perw_rn",
+          "text": "[de] Üben Sie derzeit eine Erwerbstätigkeit aus? Was trifft für Sie zu?",
+          "text_de": "Üben Sie derzeit eine Erwerbstätigkeit aus? Was trifft für Sie zu?",
+          "instruction": "[de] Rentner oder Personen im Bundesfreiwilligendienst, die zusätzlich eine Erwerbstätigkeit ausüben, geben hier bitte die Erwerbstätigkeit an.",
+          "instruction_de": "Rentner oder Personen im Bundesfreiwilligendienst, die zusätzlich eine Erwerbstätigkeit ausüben, geben hier bitte die Erwerbstätigkeit an.",
+          "concept": "perw_rn",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Voll erwerbstätig",
+              "label_de": "Voll erwerbstätig"
+            },
+            {
+              "value": 2,
+              "label": "[de] In Teilzeitbeschäftigung",
+              "label_de": "In Teilzeitbeschäftigung"
+            },
+            {
+              "value": 3,
+              "label": "[de] In Kurzarbeit",
+              "label_de": "In Kurzarbeit"
+            },
+            {
+              "value": 4,
+              "label": "[de] In betrieblicher Ausbildung / Lehre oder betrieblicher Umschulung",
+              "label_de": "In betrieblicher Ausbildung / Lehre oder betrieblicher Umschulung"
+            },
+            {
+              "value": 5,
+              "label": "[de] In einem Praktikum",
+              "label_de": "In einem Praktikum"
+            },
+            {
+              "value": 6,
+              "label": "[de] Geringfügig oder unregelmäßig erwerbstätig",
+              "label_de": "Geringfügig oder unregelmäßig erwerbstätig"
+            },
+            {
+              "value": 7,
+              "label": "[de] In Altersteilzeit mit Arbeitszeit Null",
+              "label_de": "In Altersteilzeit mit Arbeitszeit Null"
+            },
+            {
+              "value": 8,
+              "label": "[de] Im Freiwilligen Sozialen / Ökologischen Jahr, im Bundesfreiwilligendienst",
+              "label_de": "Im Freiwilligen Sozialen / Ökologischen Jahr, im Bundesfreiwilligendienst"
+            },
+            {
+              "value": 9,
+              "label": "[de] Nicht erwerbstätig",
+              "label_de": "Nicht erwerbstätig"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 35,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q023": {
+      "question": "Q023",
+      "name": "Q023",
+      "label": "[de] In welcher beruflichen Stellung sind Sie derzeit beschäftigt?",
+      "label_de": "In welcher beruflichen Stellung sind Sie derzeit beschäftigt?",
+      "items": [
+        {
+          "item": "pstell_r",
+          "text": "[de] In welcher beruflichen Stellung sind Sie derzeit beschäftigt?",
+          "text_de": "In welcher beruflichen Stellung sind Sie derzeit beschäftigt?",
+          "instruction": "[de] Gemeint ist Ihre derzeitige berufliche Haupttätigkeit.",
+          "instruction_de": "Gemeint ist Ihre derzeitige berufliche Haupttätigkeit.",
+          "filter": "Q022:perw_rn=1:8",
+          "concept": "pstell_r",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Selbständige (einschl. mithelfende Familienangehörige)",
+              "label_de": "Selbständige (einschl. mithelfende Familienangehörige)"
+            },
+            {
+              "value": 2,
+              "label": "[de] Arbeiter (auch in der Landwirtschaft)",
+              "label_de": "Arbeiter (auch in der Landwirtschaft)"
+            },
+            {
+              "value": 3,
+              "label": "[de] Auszubildende und Praktikanten",
+              "label_de": "Auszubildende und Praktikanten"
+            },
+            {
+              "value": 4,
+              "label": "[de] Angestellte",
+              "label_de": "Angestellte"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 36,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q024": {
+      "question": "Q024",
+      "name": "Q024",
+      "label": "[de] Gab es im Zuge der Corona-Krise folgende kurzfristige Änderungen in Ihrer Arbeitssituation?",
+      "label_de": "Gab es im Zuge der Corona-Krise folgende kurzfristige Änderungen in Ihrer Arbeitssituation?",
+      "items": [
+        {
+          "item": "pcovjobx",
+          "text": "[de] Gab es im Zuge der Corona-Krise folgende kurzfristige Änderungen in Ihrer Arbeitssituation?",
+          "text_de": "Gab es im Zuge der Corona-Krise folgende kurzfristige Änderungen in Ihrer Arbeitssituation?",
+          "instruction": "[de] Bitte geben Sie alles Zutreffende an.",
+          "instruction_de": "Bitte geben Sie alles Zutreffende an.",
+          "filter": "Q022:perw_rn=1:8 & Q023:pstell_r=2:5",
+          "concept": "pcovjobx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovjob1",
+          "text": "[de] Ich arbeite in Kurzarbeit",
+          "text_de": "Ich arbeite in Kurzarbeit",
+          "concept": "pcovjob1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovjob2",
+          "text": "[de] Ich arbeite vollständig im Home Office",
+          "text_de": "Ich arbeite vollständig im Home Office",
+          "concept": "pcovjob2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "pcovjob3",
+          "text": "[de] Ich arbeite teilweise im Home Office",
+          "text_de": "Ich arbeite teilweise im Home Office",
+          "concept": "pcovjob3",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "pcovjob4",
+          "text": "[de] Ich baue Überstunden ab",
+          "text_de": "Ich baue Überstunden ab",
+          "concept": "pcovjob4",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "pcovjob5",
+          "text": "[de] Ich baue Überstunden auf",
+          "text_de": "Ich baue Überstunden auf",
+          "concept": "pcovjob5",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "pcovjob8",
+          "text": "[de] Ich habe flexiblere Arbeitszeiten",
+          "text_de": "Ich habe flexiblere Arbeitszeiten",
+          "concept": "pcovjob8",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "pcovjob10",
+          "text": "[de] Ich habe eine Kündigung erhalten, bin aber zunächst noch bei meinem Arbeitgeber beschäftigt.",
+          "text_de": "Ich habe eine Kündigung erhalten, bin aber zunächst noch bei meinem Arbeitgeber beschäftigt.",
+          "concept": "pcovjob10",
+          "scale": "bin",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "pcovjob11",
+          "text": "[de] Aufnahme einer Aushilfstätigkeit (z.B. im Supermarkt oder Pflegebereich)",
+          "text_de": "Aufnahme einer Aushilfstätigkeit (z.B. im Supermarkt oder Pflegebereich)",
+          "concept": "pcovjob11",
+          "scale": "bin",
+          "sn": 8,
+          "number": ""
+        },
+        {
+          "item": "pcovjob9",
+          "text": "[de] Nein, nichts davon trifft zu",
+          "text_de": "Nein, nichts davon trifft zu",
+          "concept": "pcovjob9",
+          "scale": "bin",
+          "sn": 9,
+          "number": ""
+        },
+        {
+          "item": "1",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 10,
+          "number": ""
+        }
+      ],
+      "sn": 37,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q025": {
+      "question": "Q025",
+      "name": "Q025",
+      "label": "[de] Hat die Corona-Krise das Risiko, Ihre Arbeitsstelle zu verlieren, erhöht?",
+      "label_de": "Hat die Corona-Krise das Risiko, Ihre Arbeitsstelle zu verlieren, erhöht?",
+      "items": [
+        {
+          "item": "pcovriskav",
+          "text": "[de] Hat die Corona-Krise das Risiko, Ihre Arbeitsstelle zu verlieren, erhöht?",
+          "text_de": "Hat die Corona-Krise das Risiko, Ihre Arbeitsstelle zu verlieren, erhöht?",
+          "filter": "Q022:perw_rn=1:8 & Q023:pstell_r=2:5",
+          "concept": "pcovriskav",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Ja, das Risiko hat sich erhöht",
+              "label_de": "Ja, das Risiko hat sich erhöht"
+            },
+            {
+              "value": 2,
+              "label": "[de] Nein, das Risiko ist gleich geblieben",
+              "label_de": "Nein, das Risiko ist gleich geblieben"
+            },
+            {
+              "value": 3,
+              "label": "[de] Nein, das Risiko hat sich verringert",
+              "label_de": "Nein, das Risiko hat sich verringert"
+            },
+            {
+              "value": 4,
+              "label": "[de] Weiß nicht",
+              "label_de": "Weiß nicht"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 38,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q026": {
+      "question": "Q026",
+      "name": "Q026",
+      "label": "[de] Hat sich im Zuge der Corona-Krise der Umfang Ihrer vereinbarten Arbeitszeit verändert?",
+      "label_de": "Hat sich im Zuge der Corona-Krise der Umfang Ihrer vereinbarten Arbeitszeit verändert?",
+      "items": [
+        {
+          "item": "pcovazt",
+          "text": "[de] Hat sich im Zuge der Corona-Krise der Umfang Ihrer vereinbarten Arbeitszeit verändert?",
+          "text_de": "Hat sich im Zuge der Corona-Krise der Umfang Ihrer vereinbarten Arbeitszeit verändert?",
+          "filter": "Q022:perw_rn=1:8 & Q023:pstell_r=2:5",
+          "concept": "pcovazt",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Ja, hat sich erhöht",
+              "label_de": "Ja, hat sich erhöht"
+            },
+            {
+              "value": 2,
+              "label": "[de] Ja, hat sich verringert",
+              "label_de": "Ja, hat sich verringert"
+            },
+            {
+              "value": 3,
+              "label": "[de] Nein",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 39,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q027": {
+      "question": "Q027",
+      "name": "Q027",
+      "label": "[de] Um wie viele Stunden pro Woche hat sich Ihre vereinbarte Arbeitszeit erhöht?",
+      "label_de": "Um wie viele Stunden pro Woche hat sich Ihre vereinbarte Arbeitszeit erhöht?",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Um wie viele Stunden pro Woche hat sich Ihre vereinbarte Arbeitszeit erhöht?",
+          "text_de": "Um wie viele Stunden pro Woche hat sich Ihre vereinbarte Arbeitszeit erhöht?",
+          "filter": "Q026:pcovazt=1",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovazte",
+          "text": "[de] Stunden pro Woche:",
+          "text_de": "Stunden pro Woche:",
+          "concept": "pcovazte",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        }
+      ],
+      "sn": 40,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q028": {
+      "question": "Q028",
+      "name": "Q028",
+      "label": "[de] Um wie viele Stunden pro Woche hat sich Ihre vereinbarte Arbeitszeit verringert?",
+      "label_de": "Um wie viele Stunden pro Woche hat sich Ihre vereinbarte Arbeitszeit verringert?",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Um wie viele Stunden pro Woche hat sich Ihre vereinbarte Arbeitszeit verringert?",
+          "text_de": "Um wie viele Stunden pro Woche hat sich Ihre vereinbarte Arbeitszeit verringert?",
+          "filter": "Q026:pcovazt=2",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovaztv",
+          "text": "[de] Stunden pro Woche:",
+          "text_de": "Stunden pro Woche:",
+          "concept": "pcovaztv",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        }
+      ],
+      "sn": 41,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q029": {
+      "question": "Q029",
+      "name": "Q029",
+      "label": "[de] Und hat sich im Zuge der Corona-Krise Ihr Bruttoerwerbseinkommen verändert? Ist Ihr Bruttoerwerbseinkommen (inklusive Zulagen)…",
+      "label_de": "Und hat sich im Zuge der Corona-Krise Ihr Bruttoerwerbseinkommen verändert? Ist Ihr Bruttoerwerbseinkommen (inklusive Zulagen)…",
+      "items": [
+        {
+          "item": "pcoveink_n",
+          "text": "[de] Und hat sich im Zuge der Corona-Krise Ihr Bruttoerwerbseinkommen verändert? Ist Ihr Bruttoerwerbseinkommen (inklusive Zulagen)…",
+          "text_de": "Und hat sich im Zuge der Corona-Krise Ihr Bruttoerwerbseinkommen verändert? Ist Ihr Bruttoerwerbseinkommen (inklusive Zulagen)…",
+          "filter": "Q022:perw_rn=1:8 & Q023:pstell_r=2:5",
+          "concept": "pcoveink_n",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Etwa gleich geblieben",
+              "label_de": "Etwa gleich geblieben"
+            },
+            {
+              "value": 2,
+              "label": "[de] Gestiegen",
+              "label_de": "Gestiegen"
+            },
+            {
+              "value": 3,
+              "label": "[de] Gesunken",
+              "label_de": "Gesunken"
+            },
+            {
+              "value": 4,
+              "label": "[de] Weiß nicht",
+              "label_de": "Weiß nicht"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 42,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q030": {
+      "question": "Q030",
+      "name": "Q030",
+      "label": "[de] Wurde Ihnen Lohn bzw. Gehalt seit der Corona-Krise von Ihrem Arbeitgeber…",
+      "label_de": "Wurde Ihnen Lohn bzw. Gehalt seit der Corona-Krise von Ihrem Arbeitgeber…",
+      "items": [
+        {
+          "item": "pcoveinkfg",
+          "text": "[de] Wurde Ihnen Lohn bzw. Gehalt seit der Corona-Krise von Ihrem Arbeitgeber…",
+          "text_de": "Wurde Ihnen Lohn bzw. Gehalt seit der Corona-Krise von Ihrem Arbeitgeber…",
+          "filter": "Q022:perw_rn=1:8 & Q023:pstell_r=2:5",
+          "concept": "pcoveinkfg",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] weiter fristgerecht ausgezahlt",
+              "label_de": "weiter fristgerecht ausgezahlt"
+            },
+            {
+              "value": 2,
+              "label": "[de] unpünktlich oder unvollständig ausgezahlt",
+              "label_de": "unpünktlich oder unvollständig ausgezahlt"
+            },
+            {
+              "value": 3,
+              "label": "[de] noch gar nicht ausgezahlt",
+              "label_de": "noch gar nicht ausgezahlt"
+            },
+            {
+              "value": 4,
+              "label": "[de] trifft nicht zu, weil noch keine Zahlungen fällig waren",
+              "label_de": "trifft nicht zu, weil noch keine Zahlungen fällig waren"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 43,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B602 – B6_2": {
+      "question": "B602 – B6_2",
+      "name": "B602 – B6_2",
+      "label": "[de] Nur an Selbstständige",
+      "label_de": "Nur an Selbstständige",
+      "items": [
+        {
+          "text": "[de] Nur an Selbstständige",
+          "text_de": "Nur an Selbstständige",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        }
+      ],
+      "sn": 44,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q031": {
+      "question": "Q031",
+      "name": "Q031",
+      "label": "[de] Wie viele Mitarbeitende hat Ihr Betrieb?",
+      "label_de": "Wie viele Mitarbeitende hat Ihr Betrieb?",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Wie viele Mitarbeitende hat Ihr Betrieb?",
+          "text_de": "Wie viele Mitarbeitende hat Ihr Betrieb?",
+          "instruction": "[de] Falls keine weiteren Mitarbeitenden, bitte '0' eintragen.",
+          "instruction_de": "Falls keine weiteren Mitarbeitenden, bitte '0' eintragen.",
+          "filter": "Q023:pstell_r=1",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovsstanz",
+          "text": "[de] Anzahl:",
+          "text_de": "Anzahl:",
+          "concept": "pcovsstanz",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        }
+      ],
+      "sn": 45,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q032": {
+      "question": "Q032",
+      "name": "Q032",
+      "label": "[de] Gab es im Zuge der Corona-Krise folgende kurzfristige Änderungen in Ihrer Arbeitssituation?",
+      "label_de": "Gab es im Zuge der Corona-Krise folgende kurzfristige Änderungen in Ihrer Arbeitssituation?",
+      "items": [
+        {
+          "item": "pcovsstx",
+          "text": "[de] Gab es im Zuge der Corona-Krise folgende kurzfristige Änderungen in Ihrer Arbeitssituation?",
+          "text_de": "Gab es im Zuge der Corona-Krise folgende kurzfristige Änderungen in Ihrer Arbeitssituation?",
+          "instruction": "[de] Bitte geben Sie alles Zutreffende an.",
+          "instruction_de": "Bitte geben Sie alles Zutreffende an.",
+          "filter": "Q023:pstell_r=1",
+          "concept": "pcovsstx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovsst1",
+          "text": "[de] Mein Betrieb ist direkt von neuen Regelungen etwa zu Öffnungszeiten oder anderen Beschränkungen betroffen.",
+          "text_de": "Mein Betrieb ist direkt von neuen Regelungen etwa zu Öffnungszeiten oder anderen Beschränkungen betroffen.",
+          "concept": "pcovsst1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovsst2",
+          "text": "[de] Mein Betrieb ist direkt davon betroffen, dass meine Zulieferer mich nicht mit den für meinen Betrieb notwendigen Vorprodukten beliefern können.",
+          "text_de": "Mein Betrieb ist direkt davon betroffen, dass meine Zulieferer mich nicht mit den für meinen Betrieb notwendigen Vorprodukten beliefern können.",
+          "concept": "pcovsst2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "pcovsst3",
+          "text": "[de] Mein Betrieb ist direkt davon betroffen, dass Kunden ihre Bestellungen für meine Produkte storniert haben bzw. meine Dienstleistungen derzeit nicht nachfragen.",
+          "text_de": "Mein Betrieb ist direkt davon betroffen, dass Kunden ihre Bestellungen für meine Produkte storniert haben bzw. meine Dienstleistungen derzeit nicht nachfragen.",
+          "concept": "pcovsst3",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "pcovsst11",
+          "text": "[de] Mein Betrieb ist direkt davon betroffen, weil meine Kunden nicht mehr oder nicht mehr pünktlich zahlen.",
+          "text_de": "Mein Betrieb ist direkt davon betroffen, weil meine Kunden nicht mehr oder nicht mehr pünktlich zahlen.",
+          "concept": "pcovsst11",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "pcovsst4",
+          "text": "[de] Ich mache bei meinen Mitarbeitenden Gebrauch von Regelungen der Kurzarbeit.",
+          "text_de": "Ich mache bei meinen Mitarbeitenden Gebrauch von Regelungen der Kurzarbeit.",
+          "concept": "pcovsst4",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "pcovsst5",
+          "text": "[de] Ich mache bei meinen Mitarbeitenden Gebrauch von Regelungen des Sonderurlaubs mit Lohnausgleich.",
+          "text_de": "Ich mache bei meinen Mitarbeitenden Gebrauch von Regelungen des Sonderurlaubs mit Lohnausgleich.",
+          "concept": "pcovsst5",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "pcovsst6",
+          "text": "[de] Ich mache bei meinen Mitarbeitenden Gebrauch von Regelungen des Sonderurlaubs ohne Lohnausgleich.",
+          "text_de": "Ich mache bei meinen Mitarbeitenden Gebrauch von Regelungen des Sonderurlaubs ohne Lohnausgleich.",
+          "concept": "pcovsst6",
+          "scale": "bin",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "pcovsst12",
+          "text": "[de] Ich mache bei meinen Mitarbeitenden Gebrauch von neu eingeführten Arbeitszeitkonten.",
+          "text_de": "Ich mache bei meinen Mitarbeitenden Gebrauch von neu eingeführten Arbeitszeitkonten.",
+          "concept": "pcovsst12",
+          "scale": "bin",
+          "sn": 8,
+          "number": ""
+        },
+        {
+          "item": "pcovsst7",
+          "text": "[de] Ich musste Mitarbeitende entlassen.",
+          "text_de": "Ich musste Mitarbeitende entlassen.",
+          "concept": "pcovsst7",
+          "scale": "bin",
+          "sn": 9,
+          "number": ""
+        },
+        {
+          "item": "pcovsst8",
+          "text": "[de] Ich arbeite vollständig im Home Office.",
+          "text_de": "Ich arbeite vollständig im Home Office.",
+          "concept": "pcovsst8",
+          "scale": "bin",
+          "sn": 10,
+          "number": ""
+        },
+        {
+          "item": "pcovsst9",
+          "text": "[de] Ich arbeite teilweise im Home Office.",
+          "text_de": "Ich arbeite teilweise im Home Office.",
+          "concept": "pcovsst9",
+          "scale": "bin",
+          "sn": 11,
+          "number": ""
+        },
+        {
+          "item": "pcovsst10",
+          "text": "[de] Nein, nichts davon trifft zu.",
+          "text_de": "Nein, nichts davon trifft zu.",
+          "concept": "pcovsst10",
+          "scale": "bin",
+          "sn": 12,
+          "number": ""
+        },
+        {
+          "item": "1",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 13,
+          "number": ""
+        }
+      ],
+      "sn": 46,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q033": {
+      "question": "Q033",
+      "name": "Q033",
+      "label": "[de] Wie viele Mitarbeitende mussten Sie entlassen?",
+      "label_de": "Wie viele Mitarbeitende mussten Sie entlassen?",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Wie viele Mitarbeitende mussten Sie entlassen?",
+          "text_de": "Wie viele Mitarbeitende mussten Sie entlassen?",
+          "filter": "Q032:pcovsst7=1",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcoventl",
+          "text": "[de] Anzahl:",
+          "text_de": "Anzahl:",
+          "concept": "pcoventl",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        }
+      ],
+      "sn": 47,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B603 – B6_3": {
+      "question": "B603 – B6_3",
+      "name": "B603 – B6_3",
+      "label": "For Non-Working People Only",
+      "label_de": "Nur an Nicht-Erwerbstätige",
+      "items": [
+        {
+          "text": "For Non-Working People Only",
+          "text_de": "Nur an Nicht-Erwerbstätige",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        }
+      ],
+      "sn": 48,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q034": {
+      "question": "Q034",
+      "name": "Q034",
+      "label": "[de] Waren Sie schon unmittelbar vor der Corona-Krise nicht erwerbstätig?",
+      "label_de": "Waren Sie schon unmittelbar vor der Corona-Krise nicht erwerbstätig?",
+      "items": [
+        {
+          "item": "pcovnojv",
+          "text": "[de] Waren Sie schon unmittelbar vor der Corona-Krise nicht erwerbstätig?",
+          "text_de": "Waren Sie schon unmittelbar vor der Corona-Krise nicht erwerbstätig?",
+          "filter": "Q022:perw_rn=9",
+          "concept": "pcovnojv",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Ja, ich war schon vor der Corona-Krise nicht-erwerbstätig",
+              "label_de": "Ja, ich war schon vor der Corona-Krise nicht-erwerbstätig"
+            },
+            {
+              "value": 2,
+              "label": "[de] Nein, das hat sich erst durch die Corona-Krise ergeben",
+              "label_de": "Nein, das hat sich erst durch die Corona-Krise ergeben"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 49,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q035": {
+      "question": "Q035",
+      "name": "Q035",
+      "label": "[de] Wie hat sich die Corona-Krise auf Ihre Aussichten, eine Arbeitsstelle zu finden, ausgewirkt?",
+      "label_de": "Wie hat sich die Corona-Krise auf Ihre Aussichten, eine Arbeitsstelle zu finden, ausgewirkt?",
+      "items": [
+        {
+          "item": "pcovjoba",
+          "text": "[de] Wie hat sich die Corona-Krise auf Ihre Aussichten, eine Arbeitsstelle zu finden, ausgewirkt?",
+          "text_de": "Wie hat sich die Corona-Krise auf Ihre Aussichten, eine Arbeitsstelle zu finden, ausgewirkt?",
+          "filter": "Q022:perw_rn=9",
+          "concept": "pcovjoba",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "My chances have worsened",
+              "label_de": "Sie haben sich verschlechtert"
+            },
+            {
+              "value": 2,
+              "label": "My chances have improved",
+              "label_de": "Sie haben sich verbessert"
+            },
+            {
+              "value": 3,
+              "label": "My chances have remained the same",
+              "label_de": "Sie sind gleich geblieben"
+            },
+            {
+              "value": 4,
+              "label": "I’m not looking for a job",
+              "label_de": "Ich suche keine Arbeit"
+            },
+            {
+              "value": 5,
+              "label": "Don't know",
+              "label_de": "Weiß nicht"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 50,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B700 – B7": {
+      "question": "B700 – B7",
+      "name": "B700 – B7",
+      "label": "Social Life, Networks, and Mobility",
+      "label_de": "Soziales Leben, Netzwerke und Mobilität",
+      "items": [
+        {
+          "item": "1",
+          "text": "Social Life, Networks, and Mobility",
+          "text_de": "Soziales Leben, Netzwerke und Mobilität",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 51,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B701 – B7_1": {
+      "question": "B701 – B7_1",
+      "name": "B701 – B7_1",
+      "label": "[de] Kontakte",
+      "label_de": "Kontakte",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Kontakte",
+          "text_de": "Kontakte",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 52,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q036": {
+      "question": "Q036",
+      "name": "Q036",
+      "label": "[de] Wie hat sich Ihre persönliche Kontakthäufigkeit (nicht über Telefon/Internet) zu folgenden Personen außerhalb Ihres Haushalts im Zuge der Corona-Krise geändert?",
+      "label_de": "Wie hat sich Ihre persönliche Kontakthäufigkeit (nicht über Telefon/Internet) zu folgenden Personen außerhalb Ihres Haushalts im Zuge der Corona-Krise geändert?",
+      "items": [
+        {
+          "item": "pcovkohax",
+          "text": "[de] Wie hat sich Ihre persönliche Kontakthäufigkeit (nicht über Telefon/Internet) zu folgenden Personen außerhalb Ihres Haushalts im Zuge der Corona-Krise geändert?",
+          "text_de": "Wie hat sich Ihre persönliche Kontakthäufigkeit (nicht über Telefon/Internet) zu folgenden Personen außerhalb Ihres Haushalts im Zuge der Corona-Krise geändert?",
+          "concept": "pcovkohax",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovkoha1",
+          "text": "[de] Personen im Arbeitsumfeld (nur an Erwebstätige)",
+          "text_de": "Personen im Arbeitsumfeld (nur an Erwebstätige)",
+          "concept": "pcovkoha1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] viel seltener geworden",
+              "label_de": "viel seltener geworden"
+            },
+            {
+              "value": 2,
+              "label": "[de] etwas seltener geworden",
+              "label_de": "etwas seltener geworden"
+            },
+            {
+              "value": 3,
+              "label": "[de] gleich geblieben",
+              "label_de": "gleich geblieben"
+            },
+            {
+              "value": 4,
+              "label": "[de] etwas häufiger geworden",
+              "label_de": "etwas häufiger geworden"
+            },
+            {
+              "value": 5,
+              "label": "[de] viel häufiger geworden",
+              "label_de": "viel häufiger geworden"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovkoha2",
+          "text": "[de] Familienangehörige (falls nicht im Haushalt)",
+          "text_de": "Familienangehörige (falls nicht im Haushalt)",
+          "concept": "pcovkoha2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] viel seltener geworden",
+              "label_de": "viel seltener geworden"
+            },
+            {
+              "value": 2,
+              "label": "[de] etwas seltener geworden",
+              "label_de": "etwas seltener geworden"
+            },
+            {
+              "value": 3,
+              "label": "[de] gleich geblieben",
+              "label_de": "gleich geblieben"
+            },
+            {
+              "value": 4,
+              "label": "[de] etwas häufiger geworden",
+              "label_de": "etwas häufiger geworden"
+            },
+            {
+              "value": 5,
+              "label": "[de] viel häufiger geworden",
+              "label_de": "viel häufiger geworden"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "pcovkoha3",
+          "text": "[de] Freunde und Bekannte",
+          "text_de": "Freunde und Bekannte",
+          "concept": "pcovkoha3",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] viel seltener geworden",
+              "label_de": "viel seltener geworden"
+            },
+            {
+              "value": 2,
+              "label": "[de] etwas seltener geworden",
+              "label_de": "etwas seltener geworden"
+            },
+            {
+              "value": 3,
+              "label": "[de] gleich geblieben",
+              "label_de": "gleich geblieben"
+            },
+            {
+              "value": 4,
+              "label": "[de] etwas häufiger geworden",
+              "label_de": "etwas häufiger geworden"
+            },
+            {
+              "value": 5,
+              "label": "[de] viel häufiger geworden",
+              "label_de": "viel häufiger geworden"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "pcovkoha4",
+          "text": "[de] Andere Personen",
+          "text_de": "Andere Personen",
+          "concept": "pcovkoha4",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] viel seltener geworden",
+              "label_de": "viel seltener geworden"
+            },
+            {
+              "value": 2,
+              "label": "[de] etwas seltener geworden",
+              "label_de": "etwas seltener geworden"
+            },
+            {
+              "value": 3,
+              "label": "[de] gleich geblieben",
+              "label_de": "gleich geblieben"
+            },
+            {
+              "value": 4,
+              "label": "[de] etwas häufiger geworden",
+              "label_de": "etwas häufiger geworden"
+            },
+            {
+              "value": 5,
+              "label": "[de] viel häufiger geworden",
+              "label_de": "viel häufiger geworden"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        }
+      ],
+      "sn": 53,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q037": {
+      "question": "Q037",
+      "name": "Q037",
+      "label": "[de] Wie oft verbringen Sie in der gegenwärtigen Situation Zeit mit Deutschen?",
+      "label_de": "Wie oft verbringen Sie in der gegenwärtigen Situation Zeit mit Deutschen?",
+      "items": [
+        {
+          "item": "pcoverz2",
+          "text": "[de] Wie oft verbringen Sie in der gegenwärtigen Situation Zeit mit Deutschen?",
+          "text_de": "Wie oft verbringen Sie in der gegenwärtigen Situation Zeit mit Deutschen?",
+          "concept": "pcoverz2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Every day",
+              "label_de": "Täglich"
+            },
+            {
+              "value": 2,
+              "label": "Several times per week",
+              "label_de": "Mehrmals pro Woche"
+            },
+            {
+              "value": 3,
+              "label": "Every week",
+              "label_de": "Jede Woche"
+            },
+            {
+              "value": 4,
+              "label": "Every month",
+              "label_de": "Jeden Monat"
+            },
+            {
+              "value": 5,
+              "label": "Less often",
+              "label_de": "Seltener"
+            },
+            {
+              "value": 6,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 54,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q038": {
+      "question": "Q038",
+      "name": "Q038",
+      "label": "[de] Wie oft verbringen Sie in der gegenwärtigen Situation Zeit mit Personen aus Ihrem Herkunftsland, die nicht mit Ihnen verwandt sind?",
+      "label_de": "Wie oft verbringen Sie in der gegenwärtigen Situation Zeit mit Personen aus Ihrem Herkunftsland, die nicht mit Ihnen verwandt sind?",
+      "items": [
+        {
+          "item": "pcoverz1",
+          "text": "[de] Wie oft verbringen Sie in der gegenwärtigen Situation Zeit mit Personen aus Ihrem Herkunftsland, die nicht mit Ihnen verwandt sind?",
+          "text_de": "Wie oft verbringen Sie in der gegenwärtigen Situation Zeit mit Personen aus Ihrem Herkunftsland, die nicht mit Ihnen verwandt sind?",
+          "concept": "pcoverz1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Every day",
+              "label_de": "Täglich"
+            },
+            {
+              "value": 2,
+              "label": "Several times per week",
+              "label_de": "Mehrmals pro Woche"
+            },
+            {
+              "value": 3,
+              "label": "Every week",
+              "label_de": "Jede Woche"
+            },
+            {
+              "value": 4,
+              "label": "Every month",
+              "label_de": "Jeden Monat"
+            },
+            {
+              "value": 5,
+              "label": "Less often",
+              "label_de": "Seltener"
+            },
+            {
+              "value": 6,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 55,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B702 – B7_2": {
+      "question": "B702 – B7_2",
+      "name": "B702 – B7_2",
+      "label": "Childcare",
+      "label_de": "Kinderbetreuung",
+      "items": [
+        {
+          "item": "1",
+          "text": "Childcare",
+          "text_de": "Kinderbetreuung",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 56,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q039": {
+      "question": "Q039",
+      "name": "Q039",
+      "label": "Are there children living in your household who are not in school?",
+      "label_de": "Leben in Ihrem Haushalt Kinder, die noch nicht in die Schule gehen?",
+      "items": [
+        {
+          "item": "pkkinder",
+          "text": "Are there children living in your household who are not in school?",
+          "text_de": "Leben in Ihrem Haushalt Kinder, die noch nicht in die Schule gehen?",
+          "concept": "pkkinder",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 57,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q040": {
+      "question": "Q040",
+      "name": "Q040",
+      "label": "[de] Gibt es außer Ihnen andere Personen oder Einrichtungen, die die Betreuung des Kindes in den letzten Wochen übernommen haben?",
+      "label_de": "Gibt es außer Ihnen andere Personen oder Einrichtungen, die die Betreuung des Kindes in den letzten Wochen übernommen haben?",
+      "items": [
+        {
+          "item": "pcovbekx",
+          "text": "[de] Gibt es außer Ihnen andere Personen oder Einrichtungen, die die Betreuung des Kindes in den letzten Wochen übernommen haben?",
+          "text_de": "Gibt es außer Ihnen andere Personen oder Einrichtungen, die die Betreuung des Kindes in den letzten Wochen übernommen haben?",
+          "instruction": "[de] Beziehen Sie sich bitte auf das älteste Kind, das noch nicht zur Schule geht. Bitte geben Sie alles Zutreffende an.",
+          "instruction_de": "Beziehen Sie sich bitte auf das älteste Kind, das noch nicht zur Schule geht. Bitte geben Sie alles Zutreffende an.",
+          "filter": "Q039:pkkinder=1",
+          "concept": "pcovbekx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovbek1",
+          "text": "[de] Ja, (Ehe) Partner",
+          "text_de": "Ja, (Ehe) Partner",
+          "concept": "pcovbek1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovbek2",
+          "text": "[de] Ja, Familienangehörige oder Verwandte (falls nicht im Haushalt)",
+          "text_de": "Ja, Familienangehörige oder Verwandte (falls nicht im Haushalt)",
+          "concept": "pcovbek2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "pcovbek3",
+          "text": "[de] Ja, Kindergarten, Kindertageseinrichtung, Hort",
+          "text_de": "Ja, Kindergarten, Kindertageseinrichtung, Hort",
+          "concept": "pcovbek3",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "pcovbek4",
+          "text": "[de] Ja, Andere (z.B. Eltern anderer Kinder, Tagesmutter, Freunde, Nachbarn)",
+          "text_de": "Ja, Andere (z.B. Eltern anderer Kinder, Tagesmutter, Freunde, Nachbarn)",
+          "concept": "pcovbek4",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "pcovbekno",
+          "text": "[de] Nein",
+          "text_de": "Nein",
+          "concept": "pcovbekno",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "1",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        }
+      ],
+      "sn": 58,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q041": {
+      "question": "Q041",
+      "name": "Q041",
+      "label": "[de] Leben in Ihrem Haushalt Schulkinder?",
+      "label_de": "Leben in Ihrem Haushalt Schulkinder?",
+      "items": [
+        {
+          "item": "pskinder",
+          "text": "[de] Leben in Ihrem Haushalt Schulkinder?",
+          "text_de": "Leben in Ihrem Haushalt Schulkinder?",
+          "concept": "pskinder",
+          "scale": "bin",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 59,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q042": {
+      "question": "Q042",
+      "name": "Q042",
+      "label": "[de] Gibt es außer Ihnen andere Personen oder Einrichtungen, die die Betreuung des Kindes in den letzten Wochen übernommen haben?",
+      "label_de": "Gibt es außer Ihnen andere Personen oder Einrichtungen, die die Betreuung des Kindes in den letzten Wochen übernommen haben?",
+      "items": [
+        {
+          "item": "pcovbeskx",
+          "text": "[de] Gibt es außer Ihnen andere Personen oder Einrichtungen, die die Betreuung des Kindes in den letzten Wochen übernommen haben?",
+          "text_de": "Gibt es außer Ihnen andere Personen oder Einrichtungen, die die Betreuung des Kindes in den letzten Wochen übernommen haben?",
+          "instruction": "[de] Beziehen Sie sich bitte auf das jüngste Schulkind im Haushalt. Bitte geben Sie alles Zutreffende an.",
+          "instruction_de": "Beziehen Sie sich bitte auf das jüngste Schulkind im Haushalt. Bitte geben Sie alles Zutreffende an.",
+          "filter": "Q041:pskinder=1",
+          "concept": "pcovbeskx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovbesk1",
+          "text": "[de] Ja, (Ehe) Partner",
+          "text_de": "Ja, (Ehe) Partner",
+          "concept": "pcovbesk1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovbesk2",
+          "text": "[de] Ja, Familienangehörige oder Verwandte (falls nicht im Haushalt)",
+          "text_de": "Ja, Familienangehörige oder Verwandte (falls nicht im Haushalt)",
+          "concept": "pcovbesk2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "pcovbesk3",
+          "text": "[de] Ja, Kindergarten, Kindertageseinrichtung, Hort",
+          "text_de": "Ja, Kindergarten, Kindertageseinrichtung, Hort",
+          "concept": "pcovbesk3",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "pcovbesk4",
+          "text": "[de] Ja, Andere (z.B. Eltern anderer Kinder, Tagesmutter, Freunde, Nachbarn)",
+          "text_de": "Ja, Andere (z.B. Eltern anderer Kinder, Tagesmutter, Freunde, Nachbarn)",
+          "concept": "pcovbesk4",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "pcovbeskno",
+          "text": "[de] Nein",
+          "text_de": "Nein",
+          "concept": "pcovbeskno",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "1",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        }
+      ],
+      "sn": 60,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q043": {
+      "question": "Q043",
+      "name": "Q043",
+      "label": "[de] Denken Sie bitte an das jüngste Schulkind im Haushalt: Wie gewährleistet die Schule, dass das Kind weiterhin Lernstoff erhält?",
+      "label_de": "Denken Sie bitte an das jüngste Schulkind im Haushalt: Wie gewährleistet die Schule, dass das Kind weiterhin Lernstoff erhält?",
+      "items": [
+        {
+          "item": "pcovsklx",
+          "text": "[de] Denken Sie bitte an das jüngste Schulkind im Haushalt: Wie gewährleistet die Schule, dass das Kind weiterhin Lernstoff erhält?",
+          "text_de": "Denken Sie bitte an das jüngste Schulkind im Haushalt: Wie gewährleistet die Schule, dass das Kind weiterhin Lernstoff erhält?",
+          "instruction": "[de] Bitte geben Sie alles Zutreffende an.",
+          "instruction_de": "Bitte geben Sie alles Zutreffende an.",
+          "filter": "Q041:pskinder=1",
+          "concept": "pcovsklx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovskl7",
+          "text": "[de] Schulunterlagen bzw. Arbeitsmaterialien werden digital versandt oder bereitgestellt",
+          "text_de": "Schulunterlagen bzw. Arbeitsmaterialien werden digital versandt oder bereitgestellt",
+          "concept": "pcovskl7",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovskl3",
+          "text": "[de] Kinder haben Arbeitsmaterialien vor Schulschließung erhalten",
+          "text_de": "Kinder haben Arbeitsmaterialien vor Schulschließung erhalten",
+          "concept": "pcovskl3",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "pcovskl4",
+          "text": "[de] E-Learning mit Konferenzschaltung",
+          "text_de": "E-Learning mit Konferenzschaltung",
+          "concept": "pcovskl4",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "pcovskl5",
+          "text": "[de] Schule hat bislang noch nichts organisiert",
+          "text_de": "Schule hat bislang noch nichts organisiert",
+          "concept": "pcovskl5",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "pcovskl6",
+          "text": "[de] Anderes",
+          "text_de": "Anderes",
+          "concept": "pcovskl6",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "pcovskl10",
+          "text": "[de] Die Schule wurde teilweise wiedereröffnet",
+          "text_de": "Die Schule wurde teilweise wiedereröffnet",
+          "concept": "pcovskl10",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "pcovskl11",
+          "text": "[de] Die Schule wurde vollständig wiedereröffnet",
+          "text_de": "Die Schule wurde vollständig wiedereröffnet",
+          "concept": "pcovskl11",
+          "scale": "bin",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "1",
+          "text": "[de] Keine Angabe",
+          "text_de": "Keine Angabe",
+          "scale": "bin",
+          "sn": 8,
+          "number": ""
+        }
+      ],
+      "sn": 61,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q4301": {
+      "question": "Q4301",
+      "name": "Q4301",
+      "label": "[de] Wie zufrieden sind Sie mit dem Krisenmanagement zur Eindämmung des Corona-Virus seitens der Schule Ihres jüngsten Schulkinds?",
+      "label_de": "Wie zufrieden sind Sie mit dem Krisenmanagement zur Eindämmung des Corona-Virus seitens der Schule Ihres jüngsten Schulkinds?",
+      "items": [
+        {
+          "item": "pcovzuf4",
+          "text": "[de] Wie zufrieden sind Sie mit dem Krisenmanagement zur Eindämmung des Corona-Virus seitens der Schule Ihres jüngsten Schulkinds?",
+          "text_de": "Wie zufrieden sind Sie mit dem Krisenmanagement zur Eindämmung des Corona-Virus seitens der Schule Ihres jüngsten Schulkinds?",
+          "instruction": "[de] Bitte verwenden Sie eine Skala, die von 0 „ganz und gar unzufrieden“ bis 10 „ganz und gar zufrieden“ reicht. Mit den Werten dazwischen können Sie Ihre Meinung abstufen.",
+          "instruction_de": "Bitte verwenden Sie eine Skala, die von 0 „ganz und gar unzufrieden“ bis 10 „ganz und gar zufrieden“ reicht. Mit den Werten dazwischen können Sie Ihre Meinung abstufen.",
+          "filter": "Q041:pskinder=1",
+          "concept": "pcovzuf4",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 0,
+              "label": "Completely dissatisfied 0",
+              "label_de": "ganz und gar unzufrieden 0"
+            },
+            {
+              "value": 1,
+              "label": "1",
+              "label_de": "1"
+            },
+            {
+              "value": 2,
+              "label": "2",
+              "label_de": "2"
+            },
+            {
+              "value": 3,
+              "label": "3",
+              "label_de": "3"
+            },
+            {
+              "value": 4,
+              "label": "4",
+              "label_de": "4"
+            },
+            {
+              "value": 5,
+              "label": "5",
+              "label_de": "5"
+            },
+            {
+              "value": 6,
+              "label": "6",
+              "label_de": "6"
+            },
+            {
+              "value": 7,
+              "label": "7",
+              "label_de": "7"
+            },
+            {
+              "value": 8,
+              "label": "8",
+              "label_de": "8"
+            },
+            {
+              "value": 9,
+              "label": "9",
+              "label_de": "9"
+            },
+            {
+              "value": 10,
+              "label": "Completely satisfied 10",
+              "label_de": "ganz und gar zufrieden 10"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 62,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B703 – B7_3": {
+      "question": "B703 – B7_3",
+      "name": "B703 – B7_3",
+      "label": "Satisfaction and Well-Being",
+      "label_de": "Zufriedenheit und Wohlbefinden",
+      "items": [
+        {
+          "item": "1",
+          "text": "Satisfaction and Well-Being",
+          "text_de": "Zufriedenheit und Wohlbefinden",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 63,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q044": {
+      "question": "Q044",
+      "name": "Q044",
+      "label": "[de] Wie zufrieden sind Sie mit dem Krisenmanagement zur Eindämmung des Corona-Virus seitens der Bundesregierung?",
+      "label_de": "Wie zufrieden sind Sie mit dem Krisenmanagement zur Eindämmung des Corona-Virus seitens der Bundesregierung?",
+      "items": [
+        {
+          "item": "pcovzuf1",
+          "text": "[de] Wie zufrieden sind Sie mit dem Krisenmanagement zur Eindämmung des Corona-Virus seitens der Bundesregierung?",
+          "text_de": "Wie zufrieden sind Sie mit dem Krisenmanagement zur Eindämmung des Corona-Virus seitens der Bundesregierung?",
+          "instruction": "[de] Bitte verwenden Sie eine Skala, die von 0 „ganz und gar unzufrieden“ bis 10 „ganz und gar zufrieden“ reicht. Mit den Werten dazwischen können Sie Ihre Meinung abstufen.",
+          "instruction_de": "Bitte verwenden Sie eine Skala, die von 0 „ganz und gar unzufrieden“ bis 10 „ganz und gar zufrieden“ reicht. Mit den Werten dazwischen können Sie Ihre Meinung abstufen.",
+          "concept": "pcovzuf1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 0,
+              "label": "Completely dissatisfied 0",
+              "label_de": "ganz und gar unzufrieden 0"
+            },
+            {
+              "value": 1,
+              "label": "1",
+              "label_de": "1"
+            },
+            {
+              "value": 2,
+              "label": "2",
+              "label_de": "2"
+            },
+            {
+              "value": 3,
+              "label": "3",
+              "label_de": "3"
+            },
+            {
+              "value": 4,
+              "label": "4",
+              "label_de": "4"
+            },
+            {
+              "value": 5,
+              "label": "5",
+              "label_de": "5"
+            },
+            {
+              "value": 6,
+              "label": "6",
+              "label_de": "6"
+            },
+            {
+              "value": 7,
+              "label": "7",
+              "label_de": "7"
+            },
+            {
+              "value": 8,
+              "label": "8",
+              "label_de": "8"
+            },
+            {
+              "value": 9,
+              "label": "9",
+              "label_de": "9"
+            },
+            {
+              "value": 10,
+              "label": "Completely satisfied 10",
+              "label_de": "ganz und gar zufrieden 10"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 64,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q442": {
+      "question": "Q442",
+      "name": "Q442",
+      "label": "[de] Wie oft haben Sie in der gegenwärtigen Situation das Gefühl, ... ",
+      "label_de": "Wie oft haben Sie in der gegenwärtigen Situation das Gefühl, ... ",
+      "items": [
+        {
+          "item": "pgefx",
+          "text": "[de] Wie oft haben Sie in der gegenwärtigen Situation das Gefühl, ... ",
+          "text_de": "Wie oft haben Sie in der gegenwärtigen Situation das Gefühl, ... ",
+          "concept": "pgefx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pgef5_n",
+          "text": "[de] dass Ihnen die Gesellschaft anderer fehlt?",
+          "text_de": "dass Ihnen die Gesellschaft anderer fehlt?",
+          "concept": "pgef5_n",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Very often",
+              "label_de": "Sehr oft"
+            },
+            {
+              "value": 2,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Seldom",
+              "label_de": "Selten"
+            },
+            {
+              "value": 5,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pgef6_n",
+          "text": "[de] außen vor zu sein?",
+          "text_de": "außen vor zu sein?",
+          "concept": "pgef6_n",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Very often",
+              "label_de": "Sehr oft"
+            },
+            {
+              "value": 2,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Seldom",
+              "label_de": "Selten"
+            },
+            {
+              "value": 5,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "pgef7_n",
+          "text": "[de] dass Sie sozial isoliert sind?",
+          "text_de": "dass Sie sozial isoliert sind?",
+          "concept": "pgef7_n",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Very often",
+              "label_de": "Sehr oft"
+            },
+            {
+              "value": 2,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Seldom",
+              "label_de": "Selten"
+            },
+            {
+              "value": 5,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        }
+      ],
+      "sn": 65,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B800 – B8": {
+      "question": "B800 – B8",
+      "name": "B800 – B8",
+      "label": "Mental Health",
+      "label_de": "Psychische Gesundheit",
+      "items": [
+        {
+          "item": "1",
+          "text": "Mental Health",
+          "text_de": "Psychische Gesundheit",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 66,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B801 – B8_1": {
+      "question": "B801 – B8_1",
+      "name": "B801 – B8_1",
+      "label": "[de] Resilienz",
+      "label_de": "Resilienz",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Resilienz",
+          "text_de": "Resilienz",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 67,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q045": {
+      "question": "Q045",
+      "name": "Q045",
+      "label": "[de] Im Folgenden möchten wir wissen, wie Sie generell im Leben mit schwierigen Zeiten umgehen. Ich neige dazu, mich nach schwierigen Zeiten schnell zu erholen.",
+      "label_de": "Im Folgenden möchten wir wissen, wie Sie generell im Leben mit schwierigen Zeiten umgehen. Ich neige dazu, mich nach schwierigen Zeiten schnell zu erholen.",
+      "items": [
+        {
+          "item": "presili1",
+          "text": "[de] Im Folgenden möchten wir wissen, wie Sie generell im Leben mit schwierigen Zeiten umgehen. Ich neige dazu, mich nach schwierigen Zeiten schnell zu erholen.",
+          "text_de": "Im Folgenden möchten wir wissen, wie Sie generell im Leben mit schwierigen Zeiten umgehen. Ich neige dazu, mich nach schwierigen Zeiten schnell zu erholen.",
+          "concept": "presili1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "disagree completely",
+              "label_de": "Stimme überhaupt nicht zu"
+            },
+            {
+              "value": 2,
+              "label": "disagree somewhat",
+              "label_de": "Stimme eher nicht zu"
+            },
+            {
+              "value": 3,
+              "label": "partly agree, partly disagree",
+              "label_de": "Teils-teils"
+            },
+            {
+              "value": 4,
+              "label": "agree somewhat",
+              "label_de": "Stimme eher zu"
+            },
+            {
+              "value": 5,
+              "label": "agree completely",
+              "label_de": "Stimme voll zu"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 68,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q046": {
+      "question": "Q046",
+      "name": "Q046",
+      "label": "[de] Sind Sie im Besitz einer elektronischen Gesundheitskarte [also einer Chipkarte im Scheckkartenformat]?",
+      "label_de": "Sind Sie im Besitz einer elektronischen Gesundheitskarte [also einer Chipkarte im Scheckkartenformat]?",
+      "items": [
+        {
+          "item": "pcovgkart",
+          "text": "[de] Sind Sie im Besitz einer elektronischen Gesundheitskarte [also einer Chipkarte im Scheckkartenformat]?",
+          "text_de": "Sind Sie im Besitz einer elektronischen Gesundheitskarte [also einer Chipkarte im Scheckkartenformat]?",
+          "concept": "pcovgkart",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Ja",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "[de] Nein",
+              "label_de": "Nein"
+            },
+            {
+              "value": 3,
+              "label": "[de] Ich weiß nicht, was damit gemeint ist",
+              "label_de": "Ich weiß nicht, was damit gemeint ist"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 69,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q047": {
+      "question": "Q047",
+      "name": "Q047",
+      "label": "[de] Jetzt geht es um die letzten zwei Wochen. Wie oft fühlten Sie sich da durch die folgenden Beschwerden beeinträchtigt?",
+      "label_de": "Jetzt geht es um die letzten zwei Wochen. Wie oft fühlten Sie sich da durch die folgenden Beschwerden beeinträchtigt?",
+      "items": [
+        {
+          "item": "pbes2wx",
+          "text": "[de] Jetzt geht es um die letzten zwei Wochen. Wie oft fühlten Sie sich da durch die folgenden Beschwerden beeinträchtigt?",
+          "text_de": "Jetzt geht es um die letzten zwei Wochen. Wie oft fühlten Sie sich da durch die folgenden Beschwerden beeinträchtigt?",
+          "concept": "pbes2wx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pbes2w1",
+          "text": "[de] Wenig Interesse oder Freude an Ihren Tätigkeiten",
+          "text_de": "Wenig Interesse oder Freude an Ihren Tätigkeiten",
+          "concept": "pbes2w1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Not at all",
+              "label_de": "Überhaupt nicht"
+            },
+            {
+              "value": 2,
+              "label": "On some days",
+              "label_de": "An einzelnen Tagen"
+            },
+            {
+              "value": 3,
+              "label": "On more than half the days",
+              "label_de": "An mehr als der Hälfte der Tage"
+            },
+            {
+              "value": 4,
+              "label": "(Almost) every day",
+              "label_de": "(Fast) jeden Tag"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pbes2w2",
+          "text": "[de] Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit",
+          "text_de": "Niedergeschlagenheit, Schwermut oder Hoffnungslosigkeit",
+          "concept": "pbes2w2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Not at all",
+              "label_de": "Überhaupt nicht"
+            },
+            {
+              "value": 2,
+              "label": "On some days",
+              "label_de": "An einzelnen Tagen"
+            },
+            {
+              "value": 3,
+              "label": "On more than half the days",
+              "label_de": "An mehr als der Hälfte der Tage"
+            },
+            {
+              "value": 4,
+              "label": "(Almost) every day",
+              "label_de": "(Fast) jeden Tag"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "pbes2w3",
+          "text": "[de] Nervosität, Ängstlichkeit oder Anspannung",
+          "text_de": "Nervosität, Ängstlichkeit oder Anspannung",
+          "concept": "pbes2w3",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Not at all",
+              "label_de": "Überhaupt nicht"
+            },
+            {
+              "value": 2,
+              "label": "On some days",
+              "label_de": "An einzelnen Tagen"
+            },
+            {
+              "value": 3,
+              "label": "On more than half the days",
+              "label_de": "An mehr als der Hälfte der Tage"
+            },
+            {
+              "value": 4,
+              "label": "(Almost) every day",
+              "label_de": "(Fast) jeden Tag"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "pbes2w4",
+          "text": "[de] Nicht in der Lage sein, Sorgen zu stoppen oder zu kontrollieren",
+          "text_de": "Nicht in der Lage sein, Sorgen zu stoppen oder zu kontrollieren",
+          "concept": "pbes2w4",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Not at all",
+              "label_de": "Überhaupt nicht"
+            },
+            {
+              "value": 2,
+              "label": "On some days",
+              "label_de": "An einzelnen Tagen"
+            },
+            {
+              "value": 3,
+              "label": "On more than half the days",
+              "label_de": "An mehr als der Hälfte der Tage"
+            },
+            {
+              "value": 4,
+              "label": "(Almost) every day",
+              "label_de": "(Fast) jeden Tag"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        }
+      ],
+      "sn": 70,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B802 – B8_2": {
+      "question": "B802 – B8_2",
+      "name": "B802 – B8_2",
+      "label": "Worries",
+      "label_de": "Sorgen",
+      "items": [
+        {
+          "item": "1",
+          "text": "Worries",
+          "text_de": "Sorgen",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 71,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q048": {
+      "question": "Q048",
+      "name": "Q048",
+      "label": "[de] Wie ist es mit den folgenden Gebieten - machen Sie sich da Sorgen?",
+      "label_de": "Wie ist es mit den folgenden Gebieten - machen Sie sich da Sorgen?",
+      "items": [
+        {
+          "item": "psorx",
+          "text": "[de] Wie ist es mit den folgenden Gebieten - machen Sie sich da Sorgen?",
+          "text_de": "Wie ist es mit den folgenden Gebieten - machen Sie sich da Sorgen?",
+          "concept": "psorx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "psor01",
+          "text": "[de] Um die allgemeine wirtschaftliche Entwicklung in Deutschland",
+          "text_de": "Um die allgemeine wirtschaftliche Entwicklung in Deutschland",
+          "concept": "psor01",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Very concerned",
+              "label_de": "Große Sorgen"
+            },
+            {
+              "value": 2,
+              "label": "Somewhat concerned",
+              "label_de": "Einige Sorgen"
+            },
+            {
+              "value": 3,
+              "label": "Not concerned at all",
+              "label_de": "Keine Sorgen"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "psor31",
+          "text": "[de] Um die allgemeine wirtschaftliche Entwicklung in meinem Herkunftsland",
+          "text_de": "Um die allgemeine wirtschaftliche Entwicklung in meinem Herkunftsland",
+          "concept": "psor31",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Very concerned",
+              "label_de": "Große Sorgen"
+            },
+            {
+              "value": 2,
+              "label": "Somewhat concerned",
+              "label_de": "Einige Sorgen"
+            },
+            {
+              "value": 3,
+              "label": "Not concerned at all",
+              "label_de": "Keine Sorgen"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "psor02",
+          "text": "[de] Um Ihre eigene wirtschaftliche Situation",
+          "text_de": "Um Ihre eigene wirtschaftliche Situation",
+          "concept": "psor02",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Very concerned",
+              "label_de": "Große Sorgen"
+            },
+            {
+              "value": 2,
+              "label": "Somewhat concerned",
+              "label_de": "Einige Sorgen"
+            },
+            {
+              "value": 3,
+              "label": "Not concerned at all",
+              "label_de": "Keine Sorgen"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "psor32",
+          "text": "[de] Um die wirtschaftliche Situation von Verwandten und Freunden",
+          "text_de": "Um die wirtschaftliche Situation von Verwandten und Freunden",
+          "concept": "psor32",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Very concerned",
+              "label_de": "Große Sorgen"
+            },
+            {
+              "value": 2,
+              "label": "Somewhat concerned",
+              "label_de": "Einige Sorgen"
+            },
+            {
+              "value": 3,
+              "label": "Not concerned at all",
+              "label_de": "Keine Sorgen"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "psor03",
+          "text": "[de] Um Ihre Gesundheit",
+          "text_de": "Um Ihre Gesundheit",
+          "concept": "psor03",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Very concerned",
+              "label_de": "Große Sorgen"
+            },
+            {
+              "value": 2,
+              "label": "Somewhat concerned",
+              "label_de": "Einige Sorgen"
+            },
+            {
+              "value": 3,
+              "label": "Not concerned at all",
+              "label_de": "Keine Sorgen"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "psor33",
+          "text": "[de] Um die Gesundheit von Verwandten und Freunden",
+          "text_de": "Um die Gesundheit von Verwandten und Freunden",
+          "concept": "psor33",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Very concerned",
+              "label_de": "Große Sorgen"
+            },
+            {
+              "value": 2,
+              "label": "Somewhat concerned",
+              "label_de": "Einige Sorgen"
+            },
+            {
+              "value": 3,
+              "label": "Not concerned at all",
+              "label_de": "Keine Sorgen"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 6,
+          "number": ""
+        }
+      ],
+      "sn": 72,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B900 – B9": {
+      "question": "B900 – B9",
+      "name": "B900 – B9",
+      "label": "Social Cohesion",
+      "label_de": "Gesellschaftlicher Zusammenhalt",
+      "items": [
+        {
+          "item": "1",
+          "text": "Social Cohesion",
+          "text_de": "Gesellschaftlicher Zusammenhalt",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 73,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B901 – B9_1": {
+      "question": "B901 – B9_1",
+      "name": "B901 – B9_1",
+      "label": "Trust and Fairness",
+      "label_de": "Vertrauen und Fairness",
+      "items": [
+        {
+          "item": "1",
+          "text": "Trust and Fairness",
+          "text_de": "Vertrauen und Fairness",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 74,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q049": {
+      "question": "Q049",
+      "name": "Q049",
+      "label": "[de] Wie ist Ihre Meinung zu den folgenden drei Aussagen?",
+      "label_de": "Wie ist Ihre Meinung zu den folgenden drei Aussagen?",
+      "items": [
+        {
+          "item": "pbezx",
+          "text": "[de] Wie ist Ihre Meinung zu den folgenden drei Aussagen?",
+          "text_de": "Wie ist Ihre Meinung zu den folgenden drei Aussagen?",
+          "concept": "pbezx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pbez01",
+          "text": "[de] Im Allgemeinen kann man den Menschen vertrauen",
+          "text_de": "Im Allgemeinen kann man den Menschen vertrauen",
+          "concept": "pbez01",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Agree completely",
+              "label_de": "Stimme voll zu"
+            },
+            {
+              "value": 2,
+              "label": "Rather agree",
+              "label_de": "Stimme eher zu"
+            },
+            {
+              "value": 3,
+              "label": "Rather Disagree",
+              "label_de": "Lehne eher ab"
+            },
+            {
+              "value": 4,
+              "label": "Totally disagree",
+              "label_de": "Lehne voll ab"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pbez02",
+          "text": "[de] Heutzutage kann man sich auf niemanden mehr verlassen",
+          "text_de": "Heutzutage kann man sich auf niemanden mehr verlassen",
+          "concept": "pbez02",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Agree completely",
+              "label_de": "Stimme voll zu"
+            },
+            {
+              "value": 2,
+              "label": "Rather agree",
+              "label_de": "Stimme eher zu"
+            },
+            {
+              "value": 3,
+              "label": "Rather Disagree",
+              "label_de": "Lehne eher ab"
+            },
+            {
+              "value": 4,
+              "label": "Totally disagree",
+              "label_de": "Lehne voll ab"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "pbez03",
+          "text": "[de] Wenn man mit Fremden zu tun hat, ist es besser, vorsichtig zu sein, bevor man ihnen vertraut",
+          "text_de": "Wenn man mit Fremden zu tun hat, ist es besser, vorsichtig zu sein, bevor man ihnen vertraut",
+          "concept": "pbez03",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Agree completely",
+              "label_de": "Stimme voll zu"
+            },
+            {
+              "value": 2,
+              "label": "Rather agree",
+              "label_de": "Stimme eher zu"
+            },
+            {
+              "value": 3,
+              "label": "Rather Disagree",
+              "label_de": "Lehne eher ab"
+            },
+            {
+              "value": 4,
+              "label": "Totally disagree",
+              "label_de": "Lehne voll ab"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        }
+      ],
+      "sn": 75,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B902 – B9_2": {
+      "question": "B902 – B9_2",
+      "name": "B902 – B9_2",
+      "label": "[de] Wahrnehmung von gesellschaftlichem Zusammenhalt",
+      "label_de": "Wahrnehmung von gesellschaftlichem Zusammenhalt",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Wahrnehmung von gesellschaftlichem Zusammenhalt",
+          "text_de": "Wahrnehmung von gesellschaftlichem Zusammenhalt",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 76,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q050": {
+      "question": "Q050",
+      "name": "Q050",
+      "label": "How often have you personally experienced being disadvantaged in Germany because of your origin?",
+      "label_de": "Wie häufig haben Sie persönlich die Erfahrung gemacht, hier in Deutschland aufgrund Ihrer Herkunft benachteiligt worden zu sein?",
+      "items": [
+        {
+          "item": "pna09",
+          "text": "How often have you personally experienced being disadvantaged in Germany because of your origin?",
+          "text_de": "Wie häufig haben Sie persönlich die Erfahrung gemacht, hier in Deutschland aufgrund Ihrer Herkunft benachteiligt worden zu sein?",
+          "concept": "pna09",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Frequently",
+              "label_de": "Häufig"
+            },
+            {
+              "value": 2,
+              "label": "Seldom",
+              "label_de": "Selten"
+            },
+            {
+              "value": 3,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 77,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q051": {
+      "question": "Q051",
+      "name": "Q051",
+      "label": "[de] Wie ist Ihre Einschätzung zu den folgenden Aussagen?",
+      "label_de": "Wie ist Ihre Einschätzung zu den folgenden Aussagen?",
+      "items": [
+        {
+          "item": "pcovzhx",
+          "text": "[de] Wie ist Ihre Einschätzung zu den folgenden Aussagen?",
+          "text_de": "Wie ist Ihre Einschätzung zu den folgenden Aussagen?",
+          "concept": "pcovzhx",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "pcovzh1",
+          "text": "[de] Der Umgang mit dem Corona-Virus in Deutschland zeigt, dass wir uns auf den gesellschaftlichen Zusammenhalt verlassen können.",
+          "text_de": "Der Umgang mit dem Corona-Virus in Deutschland zeigt, dass wir uns auf den gesellschaftlichen Zusammenhalt verlassen können.",
+          "concept": "pcovzh1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] trifft überhaupt nicht zu",
+              "label_de": "trifft überhaupt nicht zu"
+            },
+            {
+              "value": 2,
+              "label": "[de] trifft eher nicht zu",
+              "label_de": "trifft eher nicht zu"
+            },
+            {
+              "value": 3,
+              "label": "[de] teils, teils",
+              "label_de": "teils, teils"
+            },
+            {
+              "value": 4,
+              "label": "[de] trifft eher zu",
+              "label_de": "trifft eher zu"
+            },
+            {
+              "value": 5,
+              "label": "[de] trifft voll und ganz zu",
+              "label_de": "trifft voll und ganz zu"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "pcovzh3",
+          "text": "[de] Menschen mit hohem Einkommen und höhergestellten Berufen werden jetzt die besten Möglichkeiten haben, sich vor einer Ansteckung mit dem Corona-Virus zu schützen.",
+          "text_de": "Menschen mit hohem Einkommen und höhergestellten Berufen werden jetzt die besten Möglichkeiten haben, sich vor einer Ansteckung mit dem Corona-Virus zu schützen.",
+          "concept": "pcovzh3",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] trifft überhaupt nicht zu",
+              "label_de": "trifft überhaupt nicht zu"
+            },
+            {
+              "value": 2,
+              "label": "[de] trifft eher nicht zu",
+              "label_de": "trifft eher nicht zu"
+            },
+            {
+              "value": 3,
+              "label": "[de] teils, teils",
+              "label_de": "teils, teils"
+            },
+            {
+              "value": 4,
+              "label": "[de] trifft eher zu",
+              "label_de": "trifft eher zu"
+            },
+            {
+              "value": 5,
+              "label": "[de] trifft voll und ganz zu",
+              "label_de": "trifft voll und ganz zu"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "pcovzh5",
+          "text": "[de] Deutsche ohne Migrationshintergrund haben bessere Möglichkeiten als Personen mit Migrationshintergrund, sich vor einer Ansteckung mit dem Corona-Virus zu schützen.",
+          "text_de": "Deutsche ohne Migrationshintergrund haben bessere Möglichkeiten als Personen mit Migrationshintergrund, sich vor einer Ansteckung mit dem Corona-Virus zu schützen.",
+          "concept": "pcovzh5",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] trifft überhaupt nicht zu",
+              "label_de": "trifft überhaupt nicht zu"
+            },
+            {
+              "value": 2,
+              "label": "[de] trifft eher nicht zu",
+              "label_de": "trifft eher nicht zu"
+            },
+            {
+              "value": 3,
+              "label": "[de] teils, teils",
+              "label_de": "teils, teils"
+            },
+            {
+              "value": 4,
+              "label": "[de] trifft eher zu",
+              "label_de": "trifft eher zu"
+            },
+            {
+              "value": 5,
+              "label": "[de] trifft voll und ganz zu",
+              "label_de": "trifft voll und ganz zu"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "pcovzh4",
+          "text": "[de] Alle Bürgerinnen und Bürger haben die gleiche Chance, die notwendige Versorgung zu erhalten.  ",
+          "text_de": "Alle Bürgerinnen und Bürger haben die gleiche Chance, die notwendige Versorgung zu erhalten.  ",
+          "concept": "pcovzh4",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] trifft überhaupt nicht zu",
+              "label_de": "trifft überhaupt nicht zu"
+            },
+            {
+              "value": 2,
+              "label": "[de] trifft eher nicht zu",
+              "label_de": "trifft eher nicht zu"
+            },
+            {
+              "value": 3,
+              "label": "[de] teils, teils",
+              "label_de": "teils, teils"
+            },
+            {
+              "value": 4,
+              "label": "[de] trifft eher zu",
+              "label_de": "trifft eher zu"
+            },
+            {
+              "value": 5,
+              "label": "[de] trifft voll und ganz zu",
+              "label_de": "trifft voll und ganz zu"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "pcovzh6",
+          "text": "[de] Die Einstellung der Deutschen gegenüber Personen mit Migrationshintergrund hat sich seit der Corona-Krise verschlechtert.",
+          "text_de": "Die Einstellung der Deutschen gegenüber Personen mit Migrationshintergrund hat sich seit der Corona-Krise verschlechtert.",
+          "concept": "pcovzh6",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] trifft überhaupt nicht zu",
+              "label_de": "trifft überhaupt nicht zu"
+            },
+            {
+              "value": 2,
+              "label": "[de] trifft eher nicht zu",
+              "label_de": "trifft eher nicht zu"
+            },
+            {
+              "value": 3,
+              "label": "[de] teils, teils",
+              "label_de": "teils, teils"
+            },
+            {
+              "value": 4,
+              "label": "[de] trifft eher zu",
+              "label_de": "trifft eher zu"
+            },
+            {
+              "value": 5,
+              "label": "[de] trifft voll und ganz zu",
+              "label_de": "trifft voll und ganz zu"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        }
+      ],
+      "sn": 78,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "B903 – B9_3": {
+      "question": "B903 – B9_3",
+      "name": "B903 – B9_3",
+      "label": "Life Satisfaction",
+      "label_de": "Lebenszufriedenheit",
+      "items": [
+        {
+          "item": "1",
+          "text": "Life Satisfaction",
+          "text_de": "Lebenszufriedenheit",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 79,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q052": {
+      "question": "Q052",
+      "name": "Q052",
+      "label": "[de] Zum Schluss möchten wir Sie noch nach Ihrer Zufriedenheit mit Ihrem Leben insgesamt fragen. Wie zufrieden sind Sie in der gegenwärtigen Situation, alles in allem, mit Ihrem Leben?",
+      "label_de": "Zum Schluss möchten wir Sie noch nach Ihrer Zufriedenheit mit Ihrem Leben insgesamt fragen. Wie zufrieden sind Sie in der gegenwärtigen Situation, alles in allem, mit Ihrem Leben?",
+      "items": [
+        {
+          "item": "pzule_n",
+          "text": "[de] Zum Schluss möchten wir Sie noch nach Ihrer Zufriedenheit mit Ihrem Leben insgesamt fragen. Wie zufrieden sind Sie in der gegenwärtigen Situation, alles in allem, mit Ihrem Leben?",
+          "text_de": "Zum Schluss möchten wir Sie noch nach Ihrer Zufriedenheit mit Ihrem Leben insgesamt fragen. Wie zufrieden sind Sie in der gegenwärtigen Situation, alles in allem, mit Ihrem Leben?",
+          "instruction": "[de] Bitte verwenden Sie eine Skala, die von 0 \"ganz und gar unzufrieden\" bis 10 „ganz und gar zufrieden“ reicht. Mit den Werten dazwischen können Sie Ihre Einschätzung abstufen.",
+          "instruction_de": "Bitte verwenden Sie eine Skala, die von 0 \"ganz und gar unzufrieden\" bis 10 „ganz und gar zufrieden“ reicht. Mit den Werten dazwischen können Sie Ihre Einschätzung abstufen.",
+          "concept": "pzule_n",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 0,
+              "label": "Completely dissatisfied 0",
+              "label_de": "ganz und gar unzufrieden 0"
+            },
+            {
+              "value": 1,
+              "label": "1",
+              "label_de": "1"
+            },
+            {
+              "value": 2,
+              "label": "2",
+              "label_de": "2"
+            },
+            {
+              "value": 3,
+              "label": "3",
+              "label_de": "3"
+            },
+            {
+              "value": 4,
+              "label": "4",
+              "label_de": "4"
+            },
+            {
+              "value": 5,
+              "label": "5",
+              "label_de": "5"
+            },
+            {
+              "value": 6,
+              "label": "6",
+              "label_de": "6"
+            },
+            {
+              "value": 7,
+              "label": "7",
+              "label_de": "7"
+            },
+            {
+              "value": 8,
+              "label": "8",
+              "label_de": "8"
+            },
+            {
+              "value": 9,
+              "label": "9",
+              "label_de": "9"
+            },
+            {
+              "value": 10,
+              "label": "Completely satisfied 10",
+              "label_de": "ganz und gar zufrieden 10"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 80,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    },
+    "Q053": {
+      "question": "Q053",
+      "name": "Q053",
+      "label": "[de] Und was glauben Sie, wie wird es wohl in einem Jahr sein?",
+      "label_de": "Und was glauben Sie, wie wird es wohl in einem Jahr sein?",
+      "items": [
+        {
+          "item": "pzule3",
+          "text": "[de] Und was glauben Sie, wie wird es wohl in einem Jahr sein?",
+          "text_de": "Und was glauben Sie, wie wird es wohl in einem Jahr sein?",
+          "instruction": "[de] Bitte verwenden Sie eine Skala, die von 0 \"ganz und gar unzufrieden\" bis 10 „ganz und gar zufrieden“ reicht. Mit den Werten dazwischen können Sie Ihre Einschätzung abstufen.",
+          "instruction_de": "Bitte verwenden Sie eine Skala, die von 0 \"ganz und gar unzufrieden\" bis 10 „ganz und gar zufrieden“ reicht. Mit den Werten dazwischen können Sie Ihre Einschätzung abstufen.",
+          "concept": "pzule3",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 0,
+              "label": "Completely dissatisfied 0",
+              "label_de": "ganz und gar unzufrieden 0"
+            },
+            {
+              "value": 1,
+              "label": "1",
+              "label_de": "1"
+            },
+            {
+              "value": 2,
+              "label": "2",
+              "label_de": "2"
+            },
+            {
+              "value": 3,
+              "label": "3",
+              "label_de": "3"
+            },
+            {
+              "value": 4,
+              "label": "4",
+              "label_de": "4"
+            },
+            {
+              "value": 5,
+              "label": "5",
+              "label_de": "5"
+            },
+            {
+              "value": 6,
+              "label": "6",
+              "label_de": "6"
+            },
+            {
+              "value": 7,
+              "label": "7",
+              "label_de": "7"
+            },
+            {
+              "value": 8,
+              "label": "8",
+              "label_de": "8"
+            },
+            {
+              "value": 9,
+              "label": "9",
+              "label_de": "9"
+            },
+            {
+              "value": 10,
+              "label": "Completely satisfied 10",
+              "label_de": "ganz und gar zufrieden 10"
+            },
+            {
+              "value": -1,
+              "label": "No answer",
+              "label_de": "Keine Angabe"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 81,
+      "instrument": "soep-core-2020-corona-m36",
+      "study": "soep-core"
+    }
+  }
+}
