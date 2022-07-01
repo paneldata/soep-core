@@ -9,10 +9,11 @@ jobs:
 
         steps:	
             - uses: actions/checkout@v2	
-            - name: Install	
-              run: |	
-                python3 -m pip install setuptools	
-                python3 -m pip install goodtables	
-            - name: Test	
-              run: |	
-                python3 -m goodtables validate --skip-checks extra-header metadata/datapackage.json
+            - name: Install
+              run: |
+                sudo apt install python3.8
+                python3.8 -m pip install setuptools
+                python3.8 -m pip install git+https://github.com/ddionrails/paneldata_pipeline@master#egg=paneldata_pipeline
+            - name: Test Relations
+              run: |
+                python3.8 -m paneldata_pipeline.check_metadata -i metadata
