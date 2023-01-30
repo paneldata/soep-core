@@ -13,12 +13,12 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install data pipeline
         run: |
-          sudo apt install python3.9
-          python3.9 -m pip install setuptools
-          python3.9 -m pip install git+https://github.com/ddionrails/paneldata_pipeline@master#egg=paneldata_pipeline
+          sudo apt install python3
+          python3 -m pip install setuptools
+          python3 -m pip install git+https://github.com/ddionrails/paneldata_pipeline@master#egg=paneldata_pipeline
       - name: Process Data
         run: |
-          python3.9 -m paneldata_pipeline -i metadata/ -o ddionrails/ -s soep-core -w ${{ secrets.study_version }} -g -u -r -q
+          python3 -m paneldata_pipeline -i metadata/ -o ddionrails/ -s soep-core -w ${{ secrets.study_version }} -g -u -r -q
       - name: Install data compliance check
         run: |
           python3 -m pip install setuptools

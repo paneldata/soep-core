@@ -11,9 +11,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install
         run: |
-          sudo apt install python3.9
-          python3.9 -m pip install setuptools
-          python3.9 -m pip install git+https://github.com/ddionrails/paneldata_pipeline@master#egg=paneldata_pipeline
+          sudo apt install python3
+          python3 -m pip install setuptools
+          python3 -m pip install git+https://github.com/ddionrails/paneldata_pipeline@master#egg=paneldata_pipeline
       - name: Test Relations
         run: |
-          python3.9 -m paneldata_pipeline.check_metadata -i metadata
+          python3 -m paneldata_pipeline.check_metadata -i metadata
