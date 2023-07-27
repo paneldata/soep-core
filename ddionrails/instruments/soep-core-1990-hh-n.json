@@ -8,5 +8,3311 @@
   "type": "Household",
   "type_de": "Haushalt",
   "instrument": "soep-core-1990-hh-n",
-  "questions": {}
+  "questions": {
+    "Intro": {
+      "question": "Intro",
+      "name": "Intro",
+      "label": "Household questionnaire for households, who have not moved (green with privacy protection sheet)",
+      "label_de": "Haushaltsfragebogen für umgezogene und „neue“ Haushalte (blau, mit Datenschutzblatt)",
+      "items": [
+        {
+          "text": "Household questionnaire for households, who have not moved (green with privacy protection sheet)",
+          "text_de": "Haushaltsfragebogen für umgezogene und „neue“ Haushalte (blau, mit Datenschutzblatt)",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "In this section, we are interested in the composition of your household. Therefore, I would like to register all persons in your household in a survey. If there is a person, who is normally lives in your household but is currently absent due to a hospital stay, long trip, boarding school or rest home (asylum*), military or civil service, etc. please include this person.\nFor each person, the gender, birthdate, and position in the household should be written.\nSo there is no confusion, the first name should be included. \nWe will start with the principle earner (hv). \nThe persons should be listed in sequence of their age, from oldest to youngest.",
+          "text_de": "Haushaltsfragebogen\nIn diesem Fragebogen geht es um Fragen, die sich nicht auf die einzelnen Personen Ihres Haushalts,\nsondern auf den Haushalt als ganzen beziehen. Der Fragebogen soll vom Haushaltsvorstand oder von einem anderen Haushaltsmitglied beantwortet werden, das sich gut auskennt.\nIhre Mitarbeit ist freiwillig. Die wissenschaftliche Aussagekraft dieser Untersuchung hängt aber entscheidend\ndavon ab, daß alle Haushalte mitmachen.\nDarum bitten wir Sie herzlich,\n– unserem Mitarbeiter dieses Interview zu gewähren\n– oder den Fragebogen sorgfältig selbst auszufüllen.",
+          "scale": "txt",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "Please fill out the address protocol before handing in questionnaire",
+          "text_de": "Bitte vor Übergabe unbedingt eintragen lt. Adressenprotokoll:",
+          "scale": "txt",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hnr",
+          "text": "Household number:",
+          "text_de": "Nr. des Haushalts:",
+          "concept": "hnr",
+          "scale": "int",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "4",
+          "text": "The household questionnaire was answered by:",
+          "text_de": "Der Haushaltsfragebogen wurde beantwortet von:",
+          "scale": "txt",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "name",
+          "text": "First name:",
+          "text_de": "Vorname",
+          "concept": "name",
+          "scale": "chr",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "pnr",
+          "text": "Person nr.",
+          "text_de": "Person Nr.",
+          "concept": "pnr",
+          "scale": "int",
+          "sn": 6,
+          "number": ""
+        }
+      ],
+      "sn": 0,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "B1": {
+      "question": "B1",
+      "name": "B1",
+      "label": "Is there in your household…?",
+      "label_de": "Gibt es in Ihrem Haushalt…?",
+      "items": [
+        {
+          "item": "1",
+          "text": "Is there in your household…?",
+          "text_de": "Gibt es in Ihrem Haushalt…?",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 1,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "1": {
+      "question": "1",
+      "name": "1",
+      "label": "Are their children in your household born in 1974 or later?",
+      "label_de": "Gibt es in Ihrem Haushalt Kinder, die erst 1974 oder später geboren sind?",
+      "items": [
+        {
+          "text": "Are their children in your household born in 1974 or later?",
+          "text_de": "Gibt es in Ihrem Haushalt Kinder, die erst 1974 oder später geboren sind?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hkind",
+          "concept": "hkind",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 2,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "2": {
+      "question": "2",
+      "name": "2",
+      "label": "In what year were these children born",
+      "label_de": "In welchem Jahr sind diese Kinder geboren?",
+      "items": [
+        {
+          "text": "In what year were these children born",
+          "text_de": "In welchem Jahr sind diese Kinder geboren?",
+          "instruction": "Please list every child separate, beginning with the oldest and the youngest last.",
+          "instruction_de": "Bitte geben Sie es getrennt für jedes Kind an, beginnend mit dem ältesten Kind,\nDas 1975 oder danach geboren ist, und dann dem Alter nach, das jüngste Kind zuletzt.",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hknama",
+          "text": "[1st child] first name:",
+          "text_de": "[1. Kind] Vorname:",
+          "instruction": "Please respond",
+          "instruction_de": "Bitte eintragen",
+          "concept": "hknama",
+          "scale": "chr",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hknamb",
+          "text": "[2nd child] first name:",
+          "text_de": "[2. Kind] Vorname:",
+          "concept": "hknamb",
+          "scale": "chr",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hknamc",
+          "text": "[3rd child] first name:",
+          "text_de": "[3. Kind] Vorname:",
+          "concept": "hknamc",
+          "scale": "chr",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "hknamd",
+          "text": "[4th child] first name:",
+          "text_de": "[4. Kind] Vorname:",
+          "concept": "hknamd",
+          "scale": "chr",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "hkgeba",
+          "text": "[1st child] date of birth: 19",
+          "text_de": "[1. Kind] Geburtsjahr: 19",
+          "concept": "hkgeba",
+          "scale": "int",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "hkgebb",
+          "text": "[2nd child] date of birth: 19",
+          "text_de": "[2. Kind] Geburtsjahr: 19",
+          "concept": "hkgebb",
+          "scale": "int",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "hkgebc",
+          "text": "[3rd child] date of birth: 19",
+          "text_de": "[3. Kind] Geburtsjahr: 19",
+          "concept": "hkgebc",
+          "scale": "int",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "hkgebd",
+          "text": "[4th child] date of birth: 19",
+          "text_de": "[4. Kind] Geburtsjahr: 19",
+          "concept": "hkgebd",
+          "scale": "int",
+          "sn": 8,
+          "number": ""
+        }
+      ],
+      "sn": 3,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "3": {
+      "question": "3",
+      "name": "3",
+      "label": "Which of the following does the child attend at the moment?",
+      "label_de": "Welche der folgenden Einrichtungen\nbesuchen diese Kinder derzeit?",
+      "items": [
+        {
+          "text": "Which of the following does the child attend at the moment?",
+          "text_de": "Welche der folgenden Einrichtungen\nbesuchen diese Kinder derzeit?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hein1a",
+          "text": "[1st child] kindergarten or day care",
+          "text_de": "[1. Kind] Kinderkrippe, -garten,\n-hort, Tagesmutter o.ä.",
+          "concept": "hein1a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Half days",
+              "label_de": "halbtags"
+            },
+            {
+              "value": 2,
+              "label": "Full days",
+              "label_de": "ganztags"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hein1b",
+          "text": "[2nd child] kindergarten or day care",
+          "text_de": "[2. Kind] Kinderkrippe, -garten,\n-hort, Tagesmutter o.ä.",
+          "concept": "hein1b",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Half days",
+              "label_de": "halbtags"
+            },
+            {
+              "value": 2,
+              "label": "Full days",
+              "label_de": "ganztags"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hein1c",
+          "text": "[3rd child] kindergarten or day care",
+          "text_de": "[3. Kind] Kinderkrippe, -garten,\n-hort, Tagesmutter o.ä.",
+          "concept": "hein1c",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Half days",
+              "label_de": "halbtags"
+            },
+            {
+              "value": 2,
+              "label": "Full days",
+              "label_de": "ganztags"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "hein1d",
+          "text": "[4th child] kindergarten or daycare",
+          "text_de": "[4. Kind] Kinderkrippe, -garten,\n-hort, Tagesmutter o.ä.",
+          "concept": "hein1d",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Half days",
+              "label_de": "halbtags"
+            },
+            {
+              "value": 2,
+              "label": "Full days",
+              "label_de": "ganztags"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "hein3a",
+          "text": "[1st child]",
+          "text_de": "1. Kind",
+          "concept": "hein3a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Primary school",
+              "label_de": "Grundschule/Förderstufe"
+            },
+            {
+              "value": 2,
+              "label": "Secondary school 4-9",
+              "label_de": "Hauptschule"
+            },
+            {
+              "value": 3,
+              "label": "School for handicapped children",
+              "label_de": "Sonderschule"
+            },
+            {
+              "value": 4,
+              "label": "Secondary school",
+              "label_de": "Realschule"
+            },
+            {
+              "value": 5,
+              "label": "Comprehensive school",
+              "label_de": "Gesamtschule"
+            },
+            {
+              "value": 6,
+              "label": "Secondary school university track",
+              "label_de": "Gymnasium"
+            },
+            {
+              "value": 7,
+              "label": "Year of vocational training",
+              "label_de": "Berufsgrundbildungsjahr"
+            },
+            {
+              "value": 8,
+              "label": "Vocational school without apprenticeship",
+              "label_de": "Berufsschule ohne Lehre"
+            },
+            {
+              "value": 9,
+              "label": "Vocational school with apprenticeship",
+              "label_de": "Berufsschule mit Lehre"
+            },
+            {
+              "value": 10,
+              "label": "Vocational school",
+              "label_de": "Berufsfachschule"
+            },
+            {
+              "value": 11,
+              "label": "Other schooling",
+              "label_de": "Sonstige Schule"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "hein3b",
+          "text": "[2nd child]",
+          "text_de": "2. Kind",
+          "concept": "hein3b",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Primary school",
+              "label_de": "Grundschule/Förderstufe"
+            },
+            {
+              "value": 2,
+              "label": "Secondary school 4-9",
+              "label_de": "Hauptschule"
+            },
+            {
+              "value": 3,
+              "label": "School for handicapped children",
+              "label_de": "Sonderschule"
+            },
+            {
+              "value": 4,
+              "label": "Secondary school",
+              "label_de": "Realschule"
+            },
+            {
+              "value": 5,
+              "label": "Comprehensive school",
+              "label_de": "Gesamtschule"
+            },
+            {
+              "value": 6,
+              "label": "Secondary school university track",
+              "label_de": "Gymnasium"
+            },
+            {
+              "value": 7,
+              "label": "Year of vocational training",
+              "label_de": "Berufsgrundbildungsjahr"
+            },
+            {
+              "value": 8,
+              "label": "Vocational school without apprenticeship",
+              "label_de": "Berufsschule ohne Lehre"
+            },
+            {
+              "value": 9,
+              "label": "Vocational school with apprenticeship",
+              "label_de": "Berufsschule mit Lehre"
+            },
+            {
+              "value": 10,
+              "label": "Vocational school",
+              "label_de": "Berufsfachschule"
+            },
+            {
+              "value": 11,
+              "label": "Other schooling",
+              "label_de": "Sonstige Schule"
+            }
+          ],
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "hein3c",
+          "text": "[3rd child]",
+          "text_de": "3. Kind",
+          "concept": "hein3c",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Primary school",
+              "label_de": "Grundschule/Förderstufe"
+            },
+            {
+              "value": 2,
+              "label": "Secondary school 4-9",
+              "label_de": "Hauptschule"
+            },
+            {
+              "value": 3,
+              "label": "School for handicapped children",
+              "label_de": "Sonderschule"
+            },
+            {
+              "value": 4,
+              "label": "Secondary school",
+              "label_de": "Realschule"
+            },
+            {
+              "value": 5,
+              "label": "Comprehensive school",
+              "label_de": "Gesamtschule"
+            },
+            {
+              "value": 6,
+              "label": "Secondary school university track",
+              "label_de": "Gymnasium"
+            },
+            {
+              "value": 7,
+              "label": "Year of vocational training",
+              "label_de": "Berufsgrundbildungsjahr"
+            },
+            {
+              "value": 8,
+              "label": "Vocational school without apprenticeship",
+              "label_de": "Berufsschule ohne Lehre"
+            },
+            {
+              "value": 9,
+              "label": "Vocational school with apprenticeship",
+              "label_de": "Berufsschule mit Lehre"
+            },
+            {
+              "value": 10,
+              "label": "Vocational school",
+              "label_de": "Berufsfachschule"
+            },
+            {
+              "value": 11,
+              "label": "Other schooling",
+              "label_de": "Sonstige Schule"
+            }
+          ],
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "hein3d",
+          "text": "[4th child]",
+          "text_de": "4. Kind",
+          "concept": "hein3d",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Primary school",
+              "label_de": "Grundschule/Förderstufe"
+            },
+            {
+              "value": 2,
+              "label": "Secondary school 4-9",
+              "label_de": "Hauptschule"
+            },
+            {
+              "value": 3,
+              "label": "School for handicapped children",
+              "label_de": "Sonderschule"
+            },
+            {
+              "value": 4,
+              "label": "Secondary school",
+              "label_de": "Realschule"
+            },
+            {
+              "value": 5,
+              "label": "Comprehensive school",
+              "label_de": "Gesamtschule"
+            },
+            {
+              "value": 6,
+              "label": "Secondary school university track",
+              "label_de": "Gymnasium"
+            },
+            {
+              "value": 7,
+              "label": "Year of vocational training",
+              "label_de": "Berufsgrundbildungsjahr"
+            },
+            {
+              "value": 8,
+              "label": "Vocational school without apprenticeship",
+              "label_de": "Berufsschule ohne Lehre"
+            },
+            {
+              "value": 9,
+              "label": "Vocational school with apprenticeship",
+              "label_de": "Berufsschule mit Lehre"
+            },
+            {
+              "value": 10,
+              "label": "Vocational school",
+              "label_de": "Berufsfachschule"
+            },
+            {
+              "value": 11,
+              "label": "Other schooling",
+              "label_de": "Sonstige Schule"
+            }
+          ],
+          "sn": 8,
+          "number": ""
+        },
+        {
+          "item": "hein4a",
+          "text": "[1st child] none of these",
+          "text_de": "[1. Kind] Besucht keine dieser Einrichtungen",
+          "concept": "hein4a",
+          "scale": "bin",
+          "sn": 9,
+          "number": ""
+        },
+        {
+          "item": "hein4b",
+          "text": "[2nd child] none of these",
+          "text_de": "[2. Kind] Besucht keine dieser Einrichtungen",
+          "concept": "hein4b",
+          "scale": "bin",
+          "sn": 10,
+          "number": ""
+        },
+        {
+          "item": "hein4c",
+          "text": "[3rd child] none of these",
+          "text_de": "[3. Kind] Besucht keine dieser Einrichtungen",
+          "concept": "hein4c",
+          "scale": "bin",
+          "sn": 11,
+          "number": ""
+        },
+        {
+          "item": "hein4d",
+          "text": "[4th child] none of these",
+          "text_de": "[4. Kind] Besucht keine dieser Einrichtungen",
+          "concept": "hein4d",
+          "scale": "bin",
+          "sn": 12,
+          "number": ""
+        }
+      ],
+      "sn": 4,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "4": {
+      "question": "4",
+      "name": "4",
+      "label": "Is there someone in your household, who is in need of care due to age or health?",
+      "label_de": "Gibt es in Ihrem Haushalt jemand, der aus Alters- oder Krankheitsgründen\ndauernd hilfebedürftig ist?",
+      "items": [
+        {
+          "text": "Is there someone in your household, who is in need of care due to age or health?",
+          "text_de": "Gibt es in Ihrem Haushalt jemand, der aus Alters- oder Krankheitsgründen\ndauernd hilfebedürftig ist?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hpfleg",
+          "goto": "2@6",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 5,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "5A": {
+      "question": "5A",
+      "name": "5A",
+      "label": "In what way is this person in need of care?",
+      "label_de": "In welcher Hinsicht ist diese Person pflegebedürftig?",
+      "items": [
+        {
+          "text": "In what way is this person in need of care?",
+          "text_de": "In welcher Hinsicht ist diese Person pflegebedürftig?",
+          "instruction": "Please state their first name. If more than one person is in need of care, answer 5A/5B.",
+          "instruction_de": "Bitte Vornamen dieser Person eintragen.\nFalls mehr als eine Person in Ihrem Haushalt pflegebedürftig ist, beantworten Sie Frage 5A / 5B bitte auch für die zweite Person!",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hpnr",
+          "text": "1st person in need of care",
+          "text_de": "[Vornamen bitte eintragen] Pflegebedürftige 1. Person",
+          "concept": "hpnam",
+          "scale": "chr",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "_2756_h_iih",
+          "text": "2nd person in need of care",
+          "text_de": "[Vornamen bitte eintragen] Pflegebedürftige 2. Person",
+          "concept": "hpnr",
+          "scale": "chr",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "_2553_h_ity_1",
+          "text": "Person is permanently bedridden",
+          "text_de": "Person ist dauerhaft bettlägerig",
+          "concept": "_2553_h_ity_1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "1st person in need of care",
+              "label_de": "Pflegebedürftige 1. Person"
+            },
+            {
+              "value": 2,
+              "label": "2nd person in need of care",
+              "label_de": "Pflegebedürftige 2. Person"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "_2553_h_ity_2",
+          "text": "Person is not bedridden but needs help in daily life",
+          "text_de": "Person ist nicht bettlägerig, braucht aber Hilfe bei den täglichen Verrichtungen im Haushalt",
+          "concept": "_2553_h_ity_2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "1st person in need of care",
+              "label_de": "Pflegebedürftige 1. Person"
+            },
+            {
+              "value": 2,
+              "label": "2nd person in need of care",
+              "label_de": "Pflegebedürftige 2. Person"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "_2553_h_ity_3",
+          "text": "Person needs help with errands and chores outside of the home",
+          "text_de": "Person braucht Hilfe bei Besorgungen / Erledigungen außerhalb des Haushalts",
+          "concept": "_2553_h_ity_3",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "1st person in need of care",
+              "label_de": "Pflegebedürftige 1. Person"
+            },
+            {
+              "value": 2,
+              "label": "2nd person in need of care",
+              "label_de": "Pflegebedürftige 2. Person"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        }
+      ],
+      "sn": 6,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "5B": {
+      "question": "5B",
+      "name": "5B",
+      "label": "Who takes care of the person/s in need of care?",
+      "label_de": "Von wem wird diese Person gepflegt oder betreut? Von -",
+      "items": [
+        {
+          "text": "Who takes care of the person/s in need of care?",
+          "text_de": "Von wem wird diese Person gepflegt oder betreut? Von -",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hhvon2",
+          "text": "– visiting nurse, social worker",
+          "text_de": "– Gemeindeschwester, Sozialhelfer o.ä.",
+          "concept": "hhvon2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "1st person in need of care",
+              "label_de": "Pflegebedürftige 1. Person"
+            },
+            {
+              "value": 2,
+              "label": "2nd person in need of care",
+              "label_de": "Pflegebedürftige 2. Person"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hhvon4",
+          "text": "– friends, acquaintance",
+          "text_de": "– Freunden / Bekannten",
+          "concept": "hhvon4",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "1st person in need of care",
+              "label_de": "Pflegebedürftige 1. Person"
+            },
+            {
+              "value": 2,
+              "label": "2nd person in need of care",
+              "label_de": "Pflegebedürftige 2. Person"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hhvon5",
+          "text": "– neighbors",
+          "text_de": "– Nachbarn",
+          "concept": "hhvon5",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "1st person in need of care",
+              "label_de": "Pflegebedürftige 1. Person"
+            },
+            {
+              "value": 2,
+              "label": "2nd person in need of care",
+              "label_de": "Pflegebedürftige 2. Person"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "hhvon6",
+          "text": "– family living outside of the household",
+          "text_de": "– Angehörigen außerhalb des Haushalts",
+          "concept": "hhvon6",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "1st person in need of care",
+              "label_de": "Pflegebedürftige 1. Person"
+            },
+            {
+              "value": 2,
+              "label": "2nd person in need of care",
+              "label_de": "Pflegebedürftige 2. Person"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "hhvon1",
+          "text": "– family living in the household",
+          "text_de": "– Angehörigen im Haushalt",
+          "concept": "hhvon1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "1st person in need of care",
+              "label_de": "Pflegebedürftige 1. Person"
+            },
+            {
+              "value": 2,
+              "label": "2nd person in need of care",
+              "label_de": "Pflegebedürftige 2. Person"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "_2423_h_ihc",
+          "text": "No particular care necessary",
+          "text_de": "Keine besondere Betreuung notwendig",
+          "concept": "_2423_h_ihc",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "1st person in need of care",
+              "label_de": "Pflegebedürftige 1. Person"
+            },
+            {
+              "value": 2,
+              "label": "2nd person in need of care",
+              "label_de": "Pflegebedürftige 2. Person"
+            }
+          ],
+          "sn": 6,
+          "number": ""
+        }
+      ],
+      "sn": 7,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "B2": {
+      "question": "B2",
+      "name": "B2",
+      "label": "Living and its costs",
+      "label_de": "Wohnen und was es kostet",
+      "items": [
+        {
+          "item": "1",
+          "text": "Living and its costs",
+          "text_de": "Wohnen und was es kostet",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 8,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "6": {
+      "question": "6",
+      "name": "6",
+      "label": "How long has your family lived in your current place of residence? In case you moved in last year (1989) or this year (1990) please list the month.",
+      "label_de": "Seit wann lebt dieser Haushalt in dieser Wohnung?\nFalls Sie erst 1989 oder 1990 hier wohnen, geben Sie bitte auch den Monat Ihres letztes Umzugs an.",
+      "items": [
+        {
+          "text": "How long has your family lived in your current place of residence? In case you moved in last year (1989) or this year (1990) please list the month.",
+          "text_de": "Seit wann lebt dieser Haushalt in dieser Wohnung?\nFalls Sie erst 1989 oder 1990 hier wohnen, geben Sie bitte auch den Monat Ihres letztes Umzugs an.",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Since 1989",
+          "text_de": "Seit 1989",
+          "scale": "txt",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "_2556_h_mdt",
+          "text": "Month in 1989",
+          "text_de": "[Seit 1989] Monat",
+          "scale": "int",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "Since 1990",
+          "text_de": "Seit 1990",
+          "scale": "txt",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "_2557_h_mdt",
+          "text": "Month in 1990",
+          "text_de": "[Seit 1990] Monat",
+          "scale": "int",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "_2558_h_mdt",
+          "text": "Longer, since 19",
+          "text_de": "Schon länger, und zwar seit 19",
+          "filter": "1@9",
+          "scale": "int",
+          "sn": 5,
+          "number": ""
+        }
+      ],
+      "sn": 9,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "7": {
+      "question": "7",
+      "name": "7",
+      "label": "What was the main reason for moving your residence?",
+      "label_de": "Welches war der Hauptgrund für Ihren letzten Wohnungswechsel?",
+      "items": [
+        {
+          "text": "What was the main reason for moving your residence?",
+          "text_de": "Welches war der Hauptgrund für Ihren letzten Wohnungswechsel?",
+          "instruction": "Please give the most important reason",
+          "instruction_de": "Bitte geben Sie den wichtigsten Grund an!",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "humz10",
+          "concept": "humz01",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Termination from landlord",
+              "label_de": "Kündigung durch den Vermieter"
+            },
+            {
+              "value": 2,
+              "label": "Rented apartment changed to condominium",
+              "label_de": "Vorherige Mietwohnung wurde in Eigentumswohnung umgewandelt"
+            },
+            {
+              "value": 3,
+              "label": "Purchased own home or condominium",
+              "label_de": "Erwerb eines Eigenheims / einer Eigentumswohnung"
+            },
+            {
+              "value": 4,
+              "label": "Professional reasons",
+              "label_de": "Berufliche Gründe"
+            },
+            {
+              "value": 5,
+              "label": "Family reasons (marriage, inheritance, divorce, moving out of parents house)",
+              "label_de": "Familiäre Gründe (z.B. Heirat, Erbschaft, Trennung / Scheidung, Fortzug aus dem Elternhaus)"
+            },
+            {
+              "value": 6,
+              "label": "Size of the residence",
+              "label_de": "Größe der Wohnung"
+            },
+            {
+              "value": 7,
+              "label": "Other reasons related to the residence (lower rent, better location, amenities)",
+              "label_de": "Andere Gründe im Zusammenhang mit der Wohnung (z.B. günstigere Miete, bessere Lage, Ausstattung)"
+            },
+            {
+              "value": 8,
+              "label": "Other reasons",
+              "label_de": "Sonstiger Grund"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "humzso",
+          "text": "Other:",
+          "text_de": "[Sonstiger Grund] und zwar:",
+          "concept": "humzso",
+          "scale": "chr",
+          "sn": 2,
+          "number": ""
+        }
+      ],
+      "sn": 10,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "8": {
+      "question": "8",
+      "name": "8",
+      "label": "How do you judge your place of residence now in comparison to your previous one? Is it better, the same, or worse? How is it in relation to –",
+      "label_de": "Und wie beurteilen Sie Ihre jetzige Wohnung im Vergleich zur letzten?\nHaben Sie sich gegenüber Ihrer letzten Wohnung verbessert, ist Ihre heutige Wohnung\nin etwa gleichwertig, oder haben Sie sich verschlechtert?\nWie ist das in bezug auf – ",
+      "items": [
+        {
+          "text": "How do you judge your place of residence now in comparison to your previous one? Is it better, the same, or worse? How is it in relation to –",
+          "text_de": "Und wie beurteilen Sie Ihre jetzige Wohnung im Vergleich zur letzten?\nHaben Sie sich gegenüber Ihrer letzten Wohnung verbessert, ist Ihre heutige Wohnung\nin etwa gleichwertig, oder haben Sie sich verschlechtert?\nWie ist das in bezug auf – ",
+          "instruction": "In each row please give one answer.",
+          "instruction_de": "In jeder Zeile bitte eine Nennung!",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hwohn01",
+          "text": "– the financial costs (rent)",
+          "text_de": "– die finanzielle Belastung (z.B. Miete)",
+          "concept": "hwohn01",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Better",
+              "label_de": "Verbessert"
+            },
+            {
+              "value": 2,
+              "label": "About the same",
+              "label_de": "Etwa gleichwertig"
+            },
+            {
+              "value": 3,
+              "label": "Worse",
+              "label_de": "Verschlechtert"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hwohn02",
+          "text": "– the size",
+          "text_de": "– die Wohnungsgröße",
+          "concept": "hwohn02",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Better",
+              "label_de": "Verbessert"
+            },
+            {
+              "value": 2,
+              "label": "About the same",
+              "label_de": "Etwa gleichwertig"
+            },
+            {
+              "value": 3,
+              "label": "Worse",
+              "label_de": "Verschlechtert"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hwohn03",
+          "text": "– the amenities",
+          "text_de": "– die Wohnungsausstattung",
+          "concept": "hwohn03",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Better",
+              "label_de": "Verbessert"
+            },
+            {
+              "value": 2,
+              "label": "About the same",
+              "label_de": "Etwa gleichwertig"
+            },
+            {
+              "value": 3,
+              "label": "Worse",
+              "label_de": "Verschlechtert"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "hwohn04",
+          "text": "– the location and area",
+          "text_de": "– die Wohngegend / Wohnlage",
+          "concept": "hwohn04",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Better",
+              "label_de": "Verbessert"
+            },
+            {
+              "value": 2,
+              "label": "About the same",
+              "label_de": "Etwa gleichwertig"
+            },
+            {
+              "value": 3,
+              "label": "Worse",
+              "label_de": "Verschlechtert"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "hwohn05",
+          "text": "– the environment (pollution, noise, etc.)",
+          "text_de": "– die Wohnumwelt (Lärm, Abgase, Schmutz)",
+          "concept": "hwohn05",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Better",
+              "label_de": "Verbessert"
+            },
+            {
+              "value": 2,
+              "label": "About the same",
+              "label_de": "Etwa gleichwertig"
+            },
+            {
+              "value": 3,
+              "label": "Worse",
+              "label_de": "Verschlechtert"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "hwohn06",
+          "text": "– transportation",
+          "text_de": "– die Verkehrsverbindungen",
+          "concept": "hwohn06",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Better",
+              "label_de": "Verbessert"
+            },
+            {
+              "value": 2,
+              "label": "About the same",
+              "label_de": "Etwa gleichwertig"
+            },
+            {
+              "value": 3,
+              "label": "Worse",
+              "label_de": "Verschlechtert"
+            }
+          ],
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "hwohn07",
+          "text": "– contact and relationship with neighbors",
+          "text_de": "– Beziehungen / Kontakte zur Nachbarschaft?",
+          "concept": "hwohn07",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Better",
+              "label_de": "Verbessert"
+            },
+            {
+              "value": 2,
+              "label": "About the same",
+              "label_de": "Etwa gleichwertig"
+            },
+            {
+              "value": 3,
+              "label": "Worse",
+              "label_de": "Verschlechtert"
+            }
+          ],
+          "sn": 7,
+          "number": ""
+        }
+      ],
+      "sn": 11,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "9": {
+      "question": "9",
+      "name": "9",
+      "label": "When was your current place of residence built?",
+      "label_de": "Wann wurde das Haus, in dem Ihre Wohnung liegt, etwa erbaut?",
+      "items": [
+        {
+          "text": "When was your current place of residence built?",
+          "text_de": "Wann wurde das Haus, in dem Ihre Wohnung liegt, etwa erbaut?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hwohn09",
+          "concept": "hwohn09",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Before 1919",
+              "label_de": "vor 1919"
+            },
+            {
+              "value": 2,
+              "label": "1919-1948",
+              "label_de": "1919 bis 1948"
+            },
+            {
+              "value": 3,
+              "label": "1949-1971",
+              "label_de": "1949 bis 1971"
+            },
+            {
+              "value": 4,
+              "label": "1972 or later",
+              "label_de": "1972 oder später"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 12,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "10": {
+      "question": "10",
+      "name": "10",
+      "label": "Do you think your place of residence is or is not in need of renovations?",
+      "label_de": "Halten Sie das Haus, in dem Sie wohnen, ganz oder teilweise für renovierungsbedürftig oder ist es nicht renovierungsbedürftig?",
+      "items": [
+        {
+          "text": "Do you think your place of residence is or is not in need of renovations?",
+          "text_de": "Halten Sie das Haus, in dem Sie wohnen, ganz oder teilweise für renovierungsbedürftig oder ist es nicht renovierungsbedürftig?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hzus",
+          "concept": "hzus",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Completely in need of renovations",
+              "label_de": "Ganz renovierungsbedürftig"
+            },
+            {
+              "value": 2,
+              "label": "Partly in need of renovations",
+              "label_de": "Teilweise renovierungsbedürftig"
+            },
+            {
+              "value": 3,
+              "label": "Not in need of renovations",
+              "label_de": "Nicht renovierungsbedürftig"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 13,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "11": {
+      "question": "11",
+      "name": "11",
+      "label": "How are the amenities? Is there a –",
+      "label_de": "Wie ist Ihre Wohnung ausgestattet?\nGehört zu Ihrer Wohnung – ",
+      "items": [
+        {
+          "text": "How are the amenities? Is there a –",
+          "text_de": "Wie ist Ihre Wohnung ausgestattet?\nGehört zu Ihrer Wohnung – ",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hwohn10",
+          "text": "– kitchen",
+          "text_de": "– Küche",
+          "concept": "hwohn10",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hwohn11",
+          "text": "– bath/shower inside your residence",
+          "text_de": "– Bad / Dusche innerhalb der Wohnung",
+          "concept": "hwohn11",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hwohn13",
+          "text": "– wc inside your residence",
+          "text_de": "– WC innerhalb der Wohnung",
+          "concept": "hwohn13",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "hwohn14",
+          "text": "– central heating or self contained central heating",
+          "text_de": "– Zentralheizung oder Etagenheizung",
+          "concept": "hwohn14",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "hwohn15",
+          "text": "– balcony or terrace",
+          "text_de": "– Balkon / Terrasse",
+          "concept": "hwohn15",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "hwohn16",
+          "text": "– cellar or storage room",
+          "text_de": "– Keller / Abstellräume",
+          "concept": "hwohn16",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "hwohn17",
+          "text": "– garden or access to the garden",
+          "text_de": "– Eigener Garten / Gartenbenutzung?",
+          "concept": "hwohn17",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 7,
+          "number": ""
+        }
+      ],
+      "sn": 14,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "12": {
+      "question": "12",
+      "name": "12",
+      "label": "How large is the total living area of your place of residence?",
+      "label_de": "Wie groß ist die Wohnfläche dieser Wohnung insgesamt?",
+      "items": [
+        {
+          "text": "How large is the total living area of your place of residence?",
+          "text_de": "Wie groß ist die Wohnfläche dieser Wohnung insgesamt?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hqm",
+          "text": "Sqm",
+          "text_de": "qm",
+          "concept": "hqm",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 15,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "13": {
+      "question": "13",
+      "name": "13",
+      "label": "How many rooms does your place of residence have excluding the kitchen, bathroom, and rooms under 6 sqm?",
+      "label_de": "Wie viele Räume hat Ihre Wohnung ohne Küche, Bad und ohne Räume unter 6 qm?",
+      "items": [
+        {
+          "text": "How many rooms does your place of residence have excluding the kitchen, bathroom, and rooms under 6 sqm?",
+          "text_de": "Wie viele Räume hat Ihre Wohnung ohne Küche, Bad und ohne Räume unter 6 qm?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hraum",
+          "text": "Rooms",
+          "text_de": "Räume",
+          "concept": "hraum",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 16,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "14": {
+      "question": "14",
+      "name": "14",
+      "label": "How would you judge the spaciousness of your place of residence? It is for my household –",
+      "label_de": "Wie beurteilen Sie insgesamt die Größe Ihrer Wohnung? Ist sie für Ihren Haushalt –",
+      "items": [
+        {
+          "text": "How would you judge the spaciousness of your place of residence? It is for my household –",
+          "text_de": "Wie beurteilen Sie insgesamt die Größe Ihrer Wohnung? Ist sie für Ihren Haushalt –",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hgr",
+          "concept": "hgr",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Much too small",
+              "label_de": "viel zu klein"
+            },
+            {
+              "value": 2,
+              "label": "A bit too small",
+              "label_de": "etwas zu klein"
+            },
+            {
+              "value": 3,
+              "label": "Just right",
+              "label_de": "gerade richtig"
+            },
+            {
+              "value": 4,
+              "label": "A bit too large",
+              "label_de": "etwas zu groß"
+            },
+            {
+              "value": 5,
+              "label": "Much too large?",
+              "label_de": "viel zu groß?"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 17,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "15": {
+      "question": "15",
+      "name": "15",
+      "label": "Are you the main tenant, subtenant, or owner?",
+      "label_de": "Bewohnen Sie diese Wohnung als Hauptmieter, Untermieter oder Eigentümer?",
+      "items": [
+        {
+          "text": "Are you the main tenant, subtenant, or owner?",
+          "text_de": "Bewohnen Sie diese Wohnung als Hauptmieter, Untermieter oder Eigentümer?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hm01",
+          "goto": "1@23, 2,3@16",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Main tenant",
+              "label_de": "Hauptmieter"
+            },
+            {
+              "value": 2,
+              "label": "Subtenant",
+              "label_de": "Untermieter"
+            },
+            {
+              "value": 3,
+              "label": "Owner",
+              "label_de": "Eigentümer"
+            },
+            {
+              "value": 4,
+              "label": "Residential home",
+              "label_de": "Wohnheim"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 18,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "16": {
+      "question": "16",
+      "name": "16",
+      "label": "Are you living in a reduced rent from owner apartment, for example from employer, relative, or through janitorial/ care take status?",
+      "label_de": "Handelt es sich um eine vom Eigentümer verbilligt überlassene Wohnung, z.B. vom Arbeitgeber oder von Verwandten oder wegen Hauswartstätigkeiten?",
+      "items": [
+        {
+          "text": "Are you living in a reduced rent from owner apartment, for example from employer, relative, or through janitorial/ care take status?",
+          "text_de": "Handelt es sich um eine vom Eigentümer verbilligt überlassene Wohnung, z.B. vom Arbeitgeber oder von Verwandten oder wegen Hauswartstätigkeiten?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hm02",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 19,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "17": {
+      "question": "17",
+      "name": "17",
+      "label": "What is the monthly rent? Please include water and waste disposal but not for heating and domestic hot water.",
+      "label_de": "Wie hoch ist derzeit die monatliche Miete? Rechnen Sie zur Miete bitte die Umlagen für Wasser, Müllabfuhr usw., aber nicht die Heizungs- und Warmwasserkosten.",
+      "items": [
+        {
+          "text": "What is the monthly rent? Please include water and waste disposal but not for heating and domestic hot water.",
+          "text_de": "Wie hoch ist derzeit die monatliche Miete? Rechnen Sie zur Miete bitte die Umlagen für Wasser, Müllabfuhr usw., aber nicht die Heizungs- und Warmwasserkosten.",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hm04",
+          "text": "DM",
+          "text_de": "DM",
+          "concept": "hm04",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hm05",
+          "text": "Pay no rent",
+          "text_de": "Zahle keine Miete",
+          "concept": "hm05",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        }
+      ],
+      "sn": 20,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "18": {
+      "question": "18",
+      "name": "18",
+      "label": "What are the monthly costs for heating and warm water?",
+      "label_de": "Wie hoch sind die monatlichen Kosten für Heizung und Warmwasser?",
+      "items": [
+        {
+          "text": "What are the monthly costs for heating and warm water?",
+          "text_de": "Wie hoch sind die monatlichen Kosten für Heizung und Warmwasser?",
+          "instruction": "If not exactly know, please give estimate",
+          "instruction_de": "Falls nicht genau bekannt: bitte schätzen!",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hm07",
+          "text": "DM",
+          "text_de": "DM",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 21,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "19": {
+      "question": "19",
+      "name": "19",
+      "label": "When you think of a comparable place of residence, do you find your rent-",
+      "label_de": "Wenn Sie an vergleichbare Wohnungen denken, finden Sie ihre Miete dann – ",
+      "items": [
+        {
+          "text": "When you think of a comparable place of residence, do you find your rent-",
+          "text_de": "Wenn Sie an vergleichbare Wohnungen denken, finden Sie ihre Miete dann – ",
+          "instruction": "Omit question 31",
+          "instruction_de": "Frage 31 entfällt",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hm12",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "– very cheap",
+              "label_de": "– sehr günstig"
+            },
+            {
+              "value": 2,
+              "label": "– cheap",
+              "label_de": "– günstig"
+            },
+            {
+              "value": 3,
+              "label": "– fair",
+              "label_de": "– angemessen"
+            },
+            {
+              "value": 4,
+              "label": "– somewhat to expensive",
+              "label_de": "– etwas zu hoch"
+            },
+            {
+              "value": 5,
+              "label": "– much too expensive",
+              "label_de": "– viel zu hoch"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 22,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "20": {
+      "question": "20",
+      "name": "20",
+      "label": "Are you living in public housing? Meant is a fixed price for which you need to provide a certificate of eligibility.",
+      "label_de": "Handelt es sich um eine Sozialwohnung? Gemeint ist eine preisgebundene Wohnung, für deren Bezug Sie einen Wohnberechtigungsschein vorlegen mußten.",
+      "items": [
+        {
+          "text": "Are you living in public housing? Meant is a fixed price for which you need to provide a certificate of eligibility.",
+          "text_de": "Handelt es sich um eine Sozialwohnung? Gemeint ist eine preisgebundene Wohnung, für deren Bezug Sie einen Wohnberechtigungsschein vorlegen mußten.",
+          "concept": "hm03",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hm03",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes, and it is still subsidized",
+              "label_de": "Ja, mit bestehender Sozialbindung"
+            },
+            {
+              "value": 2,
+              "label": "Yes, but it is no longer subsidized",
+              "label_de": "Ja, aber mit abgelaufener Sozialbindung"
+            },
+            {
+              "value": 3,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 23,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "21": {
+      "question": "21",
+      "name": "21",
+      "label": "Have you through your own cost renovated your place of residence through one or more of the measures listed?",
+      "label_de": "Haben Sie an Ihrer Wohnung auf eigene Kosten eine oder mehrere der folgenden Modernisierungen vorgenommen?",
+      "items": [
+        {
+          "text": "Have you through your own cost renovated your place of residence through one or more of the measures listed?",
+          "text_de": "Haben Sie an Ihrer Wohnung auf eigene Kosten eine oder mehrere der folgenden Modernisierungen vorgenommen?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hbau1",
+          "text": "Built in a kitchen",
+          "text_de": "Eine Küche eingebaut",
+          "concept": "hbau1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hbau2",
+          "text": "Built in a bath, kitchen, or wc",
+          "text_de": "Bad, Dusche oder WC innerhalb der Wohnung eingebaut",
+          "concept": "hbau2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hbau3",
+          "text": "Central heating or self contained central heating",
+          "text_de": "Zentralheizung oder Etagenheizung eingebaut",
+          "concept": "hbau3",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "hbau4",
+          "text": "Installed a new window",
+          "text_de": "Neue Fenster eingebaut?",
+          "concept": "hbau4",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "hbau6",
+          "text": "No, none of these",
+          "text_de": "Nein, nichts davon",
+          "concept": "hbau6",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        }
+      ],
+      "sn": 24,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "22": {
+      "question": "22",
+      "name": "22",
+      "label": "When moving in did you purchase or remove amenities from the previous tenant?",
+      "label_de": "Haben Sie beim Einzug derartige Einrichtungen von Ihrem Vormieter erworben oder abgelöst?",
+      "items": [
+        {
+          "text": "When moving in did you purchase or remove amenities from the previous tenant?",
+          "text_de": "Haben Sie beim Einzug derartige Einrichtungen von Ihrem Vormieter erworben oder abgelöst?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "_2559_h_mmd",
+          "concept": "_2559_h_mmd",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 25,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "23": {
+      "question": "23",
+      "name": "23",
+      "label": "Did you purchase or build your house or condominium?",
+      "label_de": "Haben Sie Ihr Haus / Ihre Eigentumswohnung neu gekauft bzw. gebaut, oder was trifft zu?",
+      "items": [
+        {
+          "text": "Did you purchase or build your house or condominium?",
+          "text_de": "Haben Sie Ihr Haus / Ihre Eigentumswohnung neu gekauft bzw. gebaut, oder was trifft zu?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hew3",
+          "concept": "hew3",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Newly bought or built",
+              "label_de": "Neu gekauft oder gebaut"
+            },
+            {
+              "value": 2,
+              "label": "From previous owner bought",
+              "label_de": "Vom Vorbesitzer gekauft"
+            },
+            {
+              "value": 3,
+              "label": "Through inheritance / gifting",
+              "label_de": "Durch Erbschaft / Schenkung erworben"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 26,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "24": {
+      "question": "24",
+      "name": "24",
+      "label": "Does your place of residence have a public loan or credit?",
+      "label_de": "Ist Ihr Haus / Ihre Wohnung mit öffentlichen Darlehen oder Zuschüssen gefördert worden?",
+      "items": [
+        {
+          "text": "Does your place of residence have a public loan or credit?",
+          "text_de": "Ist Ihr Haus / Ihre Wohnung mit öffentlichen Darlehen oder Zuschüssen gefördert worden?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "_2634_h_fow",
+          "concept": "_2634_h_fow",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 27,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "25": {
+      "question": "25",
+      "name": "25",
+      "label": "How high are the payments with the amortization and interest rate for your place of residence? Please list the monthly installments separately -amortization and interest rate for the mortgage",
+      "label_de": "Wie hoch ist derzeit die finanzielle Belastung durch Tilgung und Zinsen, die Sie für Ihre Wohnung zu tragen haben? Bitte geben Sie den monatlichen Betrag für Tilgung und Zinsen für Hypotheken und Bauspardarlehen an.",
+      "items": [
+        {
+          "text": "How high are the payments with the amortization and interest rate for your place of residence? Please list the monthly installments separately -amortization and interest rate for the mortgage",
+          "text_de": "Wie hoch ist derzeit die finanzielle Belastung durch Tilgung und Zinsen, die Sie für Ihre Wohnung zu tragen haben? Bitte geben Sie den monatlichen Betrag für Tilgung und Zinsen für Hypotheken und Bauspardarlehen an.",
+          "instruction": "If the exact amount is not known for the following, please estimate.",
+          "instruction_de": "Falls Beträge hier und in den folgenden Fragen nicht genau bekannt: bitte schätzen!",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "he02",
+          "text": "Amortization and interest rate in DM",
+          "text_de": "Tilgung und Zinsen: DM pro Monat",
+          "concept": "he02",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "_2472_h_fow",
+          "text": "Interest rate payment: DM per month",
+          "text_de": "davon Zinsen: DM pro Monat",
+          "concept": "_2472_h_fow",
+          "scale": "int",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "he01",
+          "text": "No amortization or interest",
+          "text_de": "Keine Tilgung und Zinsen",
+          "concept": "he01",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        }
+      ],
+      "sn": 28,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "26": {
+      "question": "26",
+      "name": "26",
+      "label": "How high are the monthly costs for water, waste disposal, and street cleaning -do not include heating or maintenance costs?",
+      "label_de": "Und wie hoch sind die monatlichen Kosten für Wasser, Müllabfuhr, Straßenreinigung usw., aber ohne die Kosten für Instandhaltung und Heizung?",
+      "items": [
+        {
+          "text": "How high are the monthly costs for water, waste disposal, and street cleaning -do not include heating or maintenance costs?",
+          "text_de": "Und wie hoch sind die monatlichen Kosten für Wasser, Müllabfuhr, Straßenreinigung usw., aber ohne die Kosten für Instandhaltung und Heizung?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "he05",
+          "text": "DM per month",
+          "text_de": "DM pro Monat",
+          "concept": "he05",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 29,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "27": {
+      "question": "27",
+      "name": "27",
+      "label": "What were the maintenance costs in 1989?",
+      "label_de": "Wie hoch waren die Instandhaltungskosten für Ihre Wohnung im letzten Jahr, also 1989?",
+      "items": [
+        {
+          "text": "What were the maintenance costs in 1989?",
+          "text_de": "Wie hoch waren die Instandhaltungskosten für Ihre Wohnung im letzten Jahr, also 1989?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "he03",
+          "text": "DM",
+          "text_de": "DM im Jahr 1989",
+          "concept": "he03",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 30,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "28": {
+      "question": "28",
+      "name": "28",
+      "label": "How high were the heating costs in 1989?",
+      "label_de": "Wie hoch waren die Heizkosten für Ihre Wohnung im letzten Jahr, also 1989?",
+      "items": [
+        {
+          "text": "How high were the heating costs in 1989?",
+          "text_de": "Wie hoch waren die Heizkosten für Ihre Wohnung im letzten Jahr, also 1989?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "he04",
+          "text": "DM",
+          "text_de": "DM im Jahr 1989",
+          "concept": "he04",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 31,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "29": {
+      "question": "29",
+      "name": "29",
+      "label": "If you think of a comparable rented apartment, how do the costs compare?",
+      "label_de": "Wenn Sie an eine vergleichbare Mietwohnung denken, finden Sie diese Belastungen dann – ",
+      "items": [
+        {
+          "text": "If you think of a comparable rented apartment, how do the costs compare?",
+          "text_de": "Wenn Sie an eine vergleichbare Mietwohnung denken, finden Sie diese Belastungen dann – ",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "he08",
+          "concept": "he08",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "– very cheap",
+              "label_de": "– sehr günstig"
+            },
+            {
+              "value": 2,
+              "label": "– cheap",
+              "label_de": "– günstig"
+            },
+            {
+              "value": 3,
+              "label": "– fair",
+              "label_de": "– angemessen"
+            },
+            {
+              "value": 4,
+              "label": "– somewhat to expensive",
+              "label_de": "– etwas zu hoch"
+            },
+            {
+              "value": 5,
+              "label": "– much too expensive",
+              "label_de": "– viel zu hoch"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 32,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "30": {
+      "question": "30",
+      "name": "30",
+      "label": "And supposing you rent in this apartment or house: how high is the monthly rent without heating?",
+      "label_de": "Und angenommen, Sie wohnten in dieser Wohnung / diesem Haus zur Miete: Wie hoch wären dann schätzungsweise die monatlichen Mietkosten ohne Heizung?",
+      "items": [
+        {
+          "text": "And supposing you rent in this apartment or house: how high is the monthly rent without heating?",
+          "text_de": "Und angenommen, Sie wohnten in dieser Wohnung / diesem Haus zur Miete: Wie hoch wären dann schätzungsweise die monatlichen Mietkosten ohne Heizung?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "he09",
+          "text": "DM",
+          "text_de": "Etwa: DM",
+          "concept": "he09",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "he10",
+          "text": "Do not know",
+          "text_de": "Weiß nicht",
+          "concept": "he10",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        }
+      ],
+      "sn": 33,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "31": {
+      "question": "31",
+      "name": "31",
+      "label": "Have you or someone in your household received housing benefits from the state in the last year, 1989?",
+      "label_de": "Haben Sie oder jemand anderer im Haushalt im letzten Jahr, also 1989, vom Staat Wohngeld oder Lastenzuschuß erhalten?",
+      "items": [
+        {
+          "text": "Have you or someone in your household received housing benefits from the state in the last year, 1989?",
+          "text_de": "Haben Sie oder jemand anderer im Haushalt im letzten Jahr, also 1989, vom Staat Wohngeld oder Lastenzuschuß erhalten?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hlwg1",
+          "concept": "hlwg1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Yes, how many months?",
+          "text_de": "[Ja] Wieviel Monate haben Sie 1989 Wohngeld oder Lastenzuschuß bezogen?",
+          "scale": "txt",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hlwg2",
+          "text": "Month",
+          "text_de": "Monate",
+          "concept": "hlwg2",
+          "scale": "int",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "How much per month?",
+          "text_de": "Wieviel Wohngeld oder Lastenzuschuß haben Sie pro Monat etwa erhalten?",
+          "scale": "txt",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "hlwg3",
+          "text": "DM",
+          "text_de": "DM pro Monat",
+          "concept": "hlwg3",
+          "scale": "int",
+          "sn": 5,
+          "number": ""
+        }
+      ],
+      "sn": 34,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "32": {
+      "question": "32",
+      "name": "32",
+      "label": "Have you or someone in your household received social welfare from the social welfare office in the last year, 1989?",
+      "label_de": "Haben Sie oder ein anderes Haushaltsmitglied letztes Jahr, also 1989, Sozialhilfe vom Sozialamt bezogen?",
+      "items": [
+        {
+          "text": "Have you or someone in your household received social welfare from the social welfare office in the last year, 1989?",
+          "text_de": "Haben Sie oder ein anderes Haushaltsmitglied letztes Jahr, also 1989, Sozialhilfe vom Sozialamt bezogen?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hlsh",
+          "concept": "hlsh",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 35,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "33": {
+      "question": "33",
+      "name": "33",
+      "label": "Is it an on going living assistance?",
+      "label_de": "Handelte es sich um sogenannte laufende Hilfe zum Lebensunterhalt?",
+      "items": [
+        {
+          "item": "2",
+          "text": "Is it an on going living assistance?",
+          "text_de": "Handelte es sich um sogenannte laufende Hilfe zum Lebensunterhalt?",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "hlsh1",
+          "concept": "hlsh1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "How many months last year, 1989, was living assistance received?",
+          "text_de": "Wie viele Monate wurde im letzten Jahr diese laufende Hilfe zum Lebensunterhalt bezogen?",
+          "scale": "txt",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hlsh2",
+          "text": "Months",
+          "text_de": "Monate",
+          "concept": "hlsh2",
+          "scale": "int",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "4",
+          "text": "And how much was the monthly amount?",
+          "text_de": "Und wie hoch war der monatliche Betrag?",
+          "instruction": "If exact amount not know, please estimate.",
+          "instruction_de": "Falls nicht genau bekannt: Bitte schätzen!",
+          "scale": "txt",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "hlsh3",
+          "text": "DM",
+          "text_de": "DM im Monat",
+          "concept": "hlsh3",
+          "scale": "int",
+          "sn": 5,
+          "number": ""
+        }
+      ],
+      "sn": 36,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "34": {
+      "question": "34",
+      "name": "34",
+      "label": "Did you receive in the last year assistance from the social welfare office for special life circumstances, for example assistance for the disabled, home care, or illness?",
+      "label_de": "Haben Sie oder jemand anderer im Haushalt letztes Jahr vom Sozialamt sogenannte Hilfe in besonderen Lebenslagen, also z.B. Eingliederungshilfe für Behinderte, Hilfe zur Pflege, Krankenhilfe u.ä. bezogen?",
+      "items": [
+        {
+          "text": "Did you receive in the last year assistance from the social welfare office for special life circumstances, for example assistance for the disabled, home care, or illness?",
+          "text_de": "Haben Sie oder jemand anderer im Haushalt letztes Jahr vom Sozialamt sogenannte Hilfe in besonderen Lebenslagen, also z.B. Eingliederungshilfe für Behinderte, Hilfe zur Pflege, Krankenhilfe u.ä. bezogen?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hlshb",
+          "concept": "hlshb",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "How many months last year, 1989, was this assistance received?",
+          "text_de": "Wie viele Monate wurde im letzten Jahr diese laufende Hilfe zum Lebensunterhalt bezogen?",
+          "scale": "txt",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hlshb1",
+          "text": "Months",
+          "text_de": "Monate",
+          "concept": "hlshb1",
+          "scale": "int",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "How much per month?",
+          "text_de": "Und wie hoch war der monatliche Betrag?",
+          "scale": "txt",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "hlshb2",
+          "text": "DM",
+          "text_de": "DM im Monat",
+          "concept": "hlshb2",
+          "scale": "int",
+          "sn": 5,
+          "number": ""
+        }
+      ],
+      "sn": 37,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "35": {
+      "question": "35",
+      "name": "35",
+      "label": "Have you or someone in your household received one time assistance from the social welfare office for clothing expenses or living costs?",
+      "label_de": "Haben Sie oder jemand anderer im Haushalt letztes Jahr vom Sozialamt sogenannte einmalige Hilfe zum Lebensunterhalt, also z.B. Kleiderhilfe, Heizkostenbeihilfe oder ähnliches erhalten?",
+      "items": [
+        {
+          "text": "Have you or someone in your household received one time assistance from the social welfare office for clothing expenses or living costs?",
+          "text_de": "Haben Sie oder jemand anderer im Haushalt letztes Jahr vom Sozialamt sogenannte einmalige Hilfe zum Lebensunterhalt, also z.B. Kleiderhilfe, Heizkostenbeihilfe oder ähnliches erhalten?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hdsh1",
+          "concept": "hdsh1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 38,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "36": {
+      "question": "36",
+      "name": "36",
+      "label": "Have you or someone in your household received child or family benefits from the state in the last year, 1989? ",
+      "label_de": "Haben Sie oder ein anderes Haushaltsmitglied letztes Jahr, also 1989, Kindergeld erhalten? Wenn ja, für wie viele Kinder?",
+      "items": [
+        {
+          "text": "Have you or someone in your household received child or family benefits from the state in the last year, 1989? ",
+          "text_de": "Haben Sie oder ein anderes Haushaltsmitglied letztes Jahr, also 1989, Kindergeld erhalten? Wenn ja, für wie viele Kinder?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hlkg1",
+          "text": "No",
+          "text_de": "Nein",
+          "concept": "hlkg1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hlkg2",
+          "text": "[yes], for: children",
+          "text_de": "[Ja], für Kinder",
+          "concept": "hlkg2",
+          "scale": "int",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "How much was the monthly amount for all children?",
+          "text_de": "Wie hoch war der Betrag pro Monat für alle Kinder zusammen?",
+          "scale": "txt",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "hlkg3",
+          "text": "DM",
+          "text_de": "DM im Monat",
+          "concept": "hlkg3",
+          "scale": "int",
+          "sn": 4,
+          "number": ""
+        }
+      ],
+      "sn": 39,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "37": {
+      "question": "37",
+      "name": "37",
+      "label": "Have you or someone in your household received income from rental properties?\nThis means gross income and not net.",
+      "label_de": "Hatten Sie oder jemand anderer in Ihrem Haushalt letztes Jahr Einnahmen aus Vermietung oder Verpachtung von Grund- oder Hausbesitz?\nGemeint sind tatsächliche Bruttoeinnahmen, nicht der steuerliche Wert für Eigennutzung.",
+      "items": [
+        {
+          "text": "Have you or someone in your household received income from rental properties?\nThis means gross income and not net.",
+          "text_de": "Hatten Sie oder jemand anderer in Ihrem Haushalt letztes Jahr Einnahmen aus Vermietung oder Verpachtung von Grund- oder Hausbesitz?\nGemeint sind tatsächliche Bruttoeinnahmen, nicht der steuerliche Wert für Eigennutzung.",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hverm1",
+          "concept": "hverm1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 40,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "38": {
+      "question": "38",
+      "name": "38",
+      "label": "How much was the income last year, 1989? Please the gross income for the year 1989.",
+      "label_de": "Wie hoch waren diese Einnahmen letztes Jahr, also 1989, ungefähr?\nBitte geben Sie die Bruttoeinnahmen (einschließlich Umlagezahlungen) für das Jahr 1989 an.",
+      "items": [
+        {
+          "text": "How much was the income last year, 1989? Please the gross income for the year 1989.",
+          "text_de": "Wie hoch waren diese Einnahmen letztes Jahr, also 1989, ungefähr?\nBitte geben Sie die Bruttoeinnahmen (einschließlich Umlagezahlungen) für das Jahr 1989 an.",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hverm2",
+          "text": "DM",
+          "text_de": "Im Jahr 1989: DM",
+          "concept": "hverm2",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 41,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "39": {
+      "question": "39",
+      "name": "39",
+      "label": "What costs were associated with this last year?\nPlease list the costs separately\n– operating and maintenance costs\n– amortization and interest for mortgages \n– interest rate for the mortgage",
+      "label_de": "Welche Belastungen standen dem im letzten Jahr ungefähr gegenüber?\nBitte geben Sie es getrennt an für \n– Betriebs- und Instandhaltungskosten, \n– Tilgungszahlungen und Zinsen für Hypotheken oder Bauspardarlehen.",
+      "items": [
+        {
+          "text": "What costs were associated with this last year?\nPlease list the costs separately\n– operating and maintenance costs\n– amortization and interest for mortgages \n– interest rate for the mortgage",
+          "text_de": "Welche Belastungen standen dem im letzten Jahr ungefähr gegenüber?\nBitte geben Sie es getrennt an für \n– Betriebs- und Instandhaltungskosten, \n– Tilgungszahlungen und Zinsen für Hypotheken oder Bauspardarlehen.",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hverm3",
+          "text": "Operating and maintenance costs: DM",
+          "text_de": "Betriebs- und Instandhaltungskosten im Jahr 1989: DM",
+          "concept": "hverm3",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hverm4",
+          "text": "Amortization and interest: DM",
+          "text_de": "Tilgung und Zinsen im Jahr 1989: DM",
+          "concept": "hverm4",
+          "scale": "int",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "_2560_h_dtl",
+          "text": "Interest: DM",
+          "text_de": "davon Zinsen im Jahr 1989: DM",
+          "concept": "_2560_h_dtl",
+          "scale": "int",
+          "sn": 3,
+          "number": ""
+        }
+      ],
+      "sn": 42,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "40": {
+      "question": "40",
+      "name": "40",
+      "label": "Did you or someone in your household have one or more of the following investments in the last year, 1989?\n",
+      "label_de": "Besaßen Sie oder andere Personen im Haushalt letztes Jahr eine oder mehrere\nder folgenden Wertanlagen?",
+      "items": [
+        {
+          "text": "Did you or someone in your household have one or more of the following investments in the last year, 1989?\n",
+          "text_de": "Besaßen Sie oder andere Personen im Haushalt letztes Jahr eine oder mehrere\nder folgenden Wertanlagen?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hwa1",
+          "text": "Savings account",
+          "text_de": "Sparbuch",
+          "concept": "hwa1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hwa2",
+          "text": "Building savings contract",
+          "text_de": "Bausparvertrag",
+          "concept": "hwa2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "hwa3",
+          "text": "Life insurance",
+          "text_de": "Lebensversicherung",
+          "concept": "hwa3",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "hwa4",
+          "text": "Securities: savings bond, public mortgage bonds, bonds, employee shares or anything of the sort",
+          "text_de": "Wertpapiere\n(Sparbriefe, Pfandbriefe, Anleihen, Aktien u.ä.)",
+          "concept": "hwa4",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "hwa6",
+          "text": "Business assets: your own company, share of a company, agricultural business assets",
+          "text_de": "Betriebsvermögen (eigenes Unternehmen,\nBeteiligungen an Unternehmen, landwirtschaftliches\nBetriebsvermögen)",
+          "concept": "hwa6",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "hwa7",
+          "text": "None of the listed investments",
+          "text_de": "Nein, keine\ndieser Wertanlagen",
+          "goto": "1@42",
+          "concept": "hwa7",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        }
+      ],
+      "sn": 43,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "41": {
+      "question": "41",
+      "name": "41",
+      "label": "How high was the income from interest and dividends last year?",
+      "label_de": "Wie hoch waren die Einnahmen aus Zinsen und Dividenden im letzten Jahr, also 1989, alles in allem?",
+      "items": [
+        {
+          "text": "How high was the income from interest and dividends last year?",
+          "text_de": "Wie hoch waren die Einnahmen aus Zinsen und Dividenden im letzten Jahr, also 1989, alles in allem?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hzins1",
+          "text": "DM",
+          "text_de": "Im Jahr 1989: DM",
+          "concept": "hzins1",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hzins2",
+          "text": "If not known exactly, please estimate on hand the provided list:",
+          "text_de": "Falls nicht genau bekannt:\nbitte schätzen Sie den Betrag anhand dieser Liste:",
+          "concept": "hzins2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Less than 500 DM",
+              "label_de": "Unter 500 DM"
+            },
+            {
+              "value": 2,
+              "label": "500-2000 DM",
+              "label_de": "500 bis unter 2.000 DM"
+            },
+            {
+              "value": 3,
+              "label": "2000-5000 DM",
+              "label_de": "2.000 bis unter 5.000 DM"
+            },
+            {
+              "value": 4,
+              "label": "5000-10000 DM",
+              "label_de": "5.000 bis unter 10.000 DM"
+            },
+            {
+              "value": 5,
+              "label": "10000-20000 DM",
+              "label_de": "10.000 bis unter 20.000 DM"
+            },
+            {
+              "value": 6,
+              "label": "20000 or more DM",
+              "label_de": "20.000 DM und mehr"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        }
+      ],
+      "sn": 44,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "42": {
+      "question": "42",
+      "name": "42",
+      "label": "If you put all the income together, how much is the monthly income of every household member today?\nPlease give the monthly net income, ie after taxes and social insurance.\nPlease include housing benefits, child or family benefits, federal assistance for education or training, etc!",
+      "label_de": "Wenn man mal alles zusammennimmt:\nWie hoch ist das monatliche Haushaltseinkommen aller Haushaltsmitglieder heute?\nBitte geben Sie den monatlichen Netto-Betrag an, also nach Abzug von Steuern und Sozialabgaben.\nRegelmäßige Zahlungen wie Wohngeld, Kindergeld, BAföG, Unterhaltszahlungen usw.\nrechnen Sie bitte dazu!",
+      "items": [
+        {
+          "item": "1",
+          "text": "If you put all the income together, how much is the monthly income of every household member today?\nPlease give the monthly net income, ie after taxes and social insurance.\nPlease include housing benefits, child or family benefits, federal assistance for education or training, etc!",
+          "text_de": "Wenn man mal alles zusammennimmt:\nWie hoch ist das monatliche Haushaltseinkommen aller Haushaltsmitglieder heute?\nBitte geben Sie den monatlichen Netto-Betrag an, also nach Abzug von Steuern und Sozialabgaben.\nRegelmäßige Zahlungen wie Wohngeld, Kindergeld, BAföG, Unterhaltszahlungen usw.\nrechnen Sie bitte dazu!",
+          "instruction": "If the exact amount is not known for the following, please estimate.",
+          "instruction_de": "Falls nicht genau bekannt:\nBitte schätzen Sie den monatlichen Betrag.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "hnetto",
+          "text": "DM",
+          "text_de": "DM im Monat",
+          "concept": "hnetto",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 45,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "B3": {
+      "question": "B3",
+      "name": "B3",
+      "label": "To be answered by the interviewer",
+      "label_de": "Vom Interviewer zu beantworten",
+      "items": [
+        {
+          "item": "1",
+          "text": "To be answered by the interviewer",
+          "text_de": "Vom Interviewer zu beantworten",
+          "instruction": "Please answer all of the following questions fully. They are important for sampling quality.",
+          "instruction_de": "Bitte beantworten Sie die folgenden Fragen in allen Fällen – auch wenn kein Interview zustande kam. Die Informationen sind für und zur Beurteilung der Stichprobenqualität wichtig!",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 46,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "I": {
+      "question": "I",
+      "name": "I",
+      "label": "In what type of house does the interviewee live?",
+      "label_de": "ln welchem Haustyp wohnt der Zielhaushalt?",
+      "items": [
+        {
+          "text": "In what type of house does the interviewee live?",
+          "text_de": "ln welchem Haustyp wohnt der Zielhaushalt?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hhtyp",
+          "concept": "hhtyp",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Agricultural building",
+              "label_de": "Landwirtschaftliches Wohngebäude"
+            },
+            {
+              "value": 2,
+              "label": "A one or two family house",
+              "label_de": "Freistehendes Ein- / Zweifamilienhaus"
+            },
+            {
+              "value": 3,
+              "label": "A town house",
+              "label_de": "Ein- / Zweifamilienhaus als Reihenhaus oder Doppelhaus"
+            },
+            {
+              "value": 4,
+              "label": "Apartment building with 3-4 apartments",
+              "label_de": "Wohnhaus mit 3 bis 4 Wohnungen"
+            },
+            {
+              "value": 5,
+              "label": "Apartment building with 5-8 apartments",
+              "label_de": "Wohnhaus mit 5 bis 8 Wohnungen"
+            },
+            {
+              "value": 6,
+              "label": "Apartment building with 9 or more apartments (but not a high rise building)",
+              "label_de": "Wohnhaus mit 9 und mehr Wohnungen\n(aber höchstens 8 Stockwerken; also kein Hochhaus)"
+            },
+            {
+              "value": 7,
+              "label": "High rise apartment building with 9 or more apartments",
+              "label_de": "Hochhaus (9 und mehr Stockwerke, Wohnungen unbegrenzt)"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 47,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "II": {
+      "question": "II",
+      "name": "II",
+      "label": "Is it a residential home?",
+      "label_de": "Handelt es sich um ein Wohnheim?",
+      "items": [
+        {
+          "text": "Is it a residential home?",
+          "text_de": "Handelt es sich um ein Wohnheim?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hheim",
+          "concept": "hheim",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": 2,
+              "label": "Yes, in student housing (school)",
+              "label_de": "Ja und zwar: Schüler- / Jugendlichenwohnheim"
+            },
+            {
+              "value": 3,
+              "label": "Yes, in student housing (university)",
+              "label_de": "Ja und zwar: Studenten-Wohnheim"
+            },
+            {
+              "value": 4,
+              "label": "Yes, in home for workers / singles",
+              "label_de": "Ja und zwar: Berufstätigen- / Ledigenwohnheim"
+            },
+            {
+              "value": 5,
+              "label": "Yes, in retirement home",
+              "label_de": "Ja und zwar: Altenheim"
+            },
+            {
+              "value": 6,
+              "label": "Yes, in retirement home",
+              "label_de": "Ja und zwar: Altenwohnheim"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 48,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "III": {
+      "question": "III",
+      "name": "III",
+      "label": "How would describe the neighborhood?",
+      "label_de": "Wie würden Sie die Wohngegend hier beschreiben?",
+      "items": [
+        {
+          "text": "How would describe the neighborhood?",
+          "text_de": "Wie würden Sie die Wohngegend hier beschreiben?",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "hwohn08",
+          "concept": "hwohn08",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "A residential area with mostly old buildings (before WW2)",
+              "label_de": "Ein reines Wohngebiet mit überwiegend Altbauten (Vorkriegsbauten)"
+            },
+            {
+              "value": 2,
+              "label": "A residential area with mostly new buildings",
+              "label_de": "Ein reines Wohngebiet mit überwiegend Neubauten"
+            },
+            {
+              "value": 3,
+              "label": "A mixed area with residences, shops, and stores",
+              "label_de": "Ein Mischgebiet mit Wohnungen und Geschäften bzw. Gewerbebetrieben"
+            },
+            {
+              "value": 4,
+              "label": "A commercial area (stores, banks, businesses) with few residences ",
+              "label_de": "Ein Geschäftszentrum (Läden, Banken, Verwaltungen) mit wenigen Wohnungen"
+            },
+            {
+              "value": 5,
+              "label": "A industrial area with few residences",
+              "label_de": "Ein Gewerbe- bzw. Industriegebiet mit wenigen Wohnungen"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 49,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "A_1": {
+      "question": "A_1",
+      "name": "A_1",
+      "label": "Thank you! Please do not forget to fill out the person questionnaire.",
+      "label_de": "VIELEN DANK! \nBitte vergessen Sie nicht, noch Ihren „Personenbogen auszufüllen!",
+      "items": [
+        {
+          "item": "1",
+          "text": "Thank you! Please do not forget to fill out the person questionnaire.",
+          "text_de": "VIELEN DANK! \nBitte vergessen Sie nicht, noch Ihren „Personenbogen auszufüllen!",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 50,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "B4": {
+      "question": "B4",
+      "name": "B4",
+      "label": "Registration of the interviewer",
+      "label_de": "Eintragungen des Interviewers",
+      "items": [
+        {
+          "item": "1",
+          "text": "Registration of the interviewer",
+          "text_de": "Eintragungen des Interviewers",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 51,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "A": {
+      "question": "A",
+      "name": "A",
+      "label": "How was the survey completed?",
+      "label_de": "Wie wurde die Befragung durchgeführt?",
+      "items": [
+        {
+          "item": "hform",
+          "text": "How was the survey completed?",
+          "text_de": "Wie wurde die Befragung durchgeführt?",
+          "concept": "hform",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Oral interview",
+              "label_de": "Mündliches Interview"
+            },
+            {
+              "value": 2,
+              "label": "Interviewee filled out the questionnaire themselves – in presence of interviewer",
+              "label_de": "Befragter hat den Fragebogen selbst ausgefüllt – in Anwesenheit des Interviewers"
+            },
+            {
+              "value": 3,
+              "label": "Interviewee filled out the questionnaire themselves – in absence of interviewer",
+              "label_de": "Befragter hat den Fragebogen selbst ausgefüllt – in Abwesenheit des Interviewers"
+            },
+            {
+              "value": 4,
+              "label": "Partly oral, partly written",
+              "label_de": "Teils mündlich, teils selbst ausgefüllt"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 52,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "B": {
+      "question": "B",
+      "name": "B",
+      "label": "Length of interview:",
+      "label_de": "Interviewdauer:",
+      "items": [
+        {
+          "item": "1",
+          "text": "Length of interview:",
+          "text_de": "Interviewdauer:",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "hdauer1",
+          "text": "The oral portion of the interview was … minutes",
+          "text_de": "Das mündliche (Teil-)Interview dauerte ... Minuten",
+          "concept": "hdauer1",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "hdauer2",
+          "text": ".. minutes to fill out the questionnaire themselves",
+          "text_de": "Befragter brauchte zum Selbstausfüllen ... Minuten",
+          "concept": "hdauer2",
+          "scale": "int",
+          "sn": 2,
+          "number": ""
+        }
+      ],
+      "sn": 53,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    },
+    "IN": {
+      "question": "IN",
+      "name": "IN",
+      "label": "",
+      "label_de": "",
+      "items": [
+        {
+          "item": "1",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "listnr",
+          "text": "List nr:",
+          "text_de": "Listen-Nr.",
+          "concept": "listnr",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "lfdnr",
+          "text": "Lfd nr:",
+          "text_de": "Lfd. Nr",
+          "concept": "lfdnr",
+          "scale": "int",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "I confirm the correct completion of this interview:",
+          "text_de": "Ich bestätige die korrekte Durchführung\ndes Interviews:",
+          "scale": "txt",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "hdatt",
+          "text": "Day",
+          "text_de": "Tag",
+          "concept": "hdatt",
+          "scale": "int",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "hdatm",
+          "text": "Month",
+          "text_de": "Monat",
+          "concept": "hdatm",
+          "scale": "int",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "hintnr",
+          "text": "Tally number",
+          "text_de": "Abrechnungs-Nummer",
+          "concept": "hintnr",
+          "scale": "int",
+          "sn": 6,
+          "number": ""
+        }
+      ],
+      "sn": 54,
+      "instrument": "soep-core-1990-hh-n",
+      "study": "soep-core"
+    }
+  }
 }
