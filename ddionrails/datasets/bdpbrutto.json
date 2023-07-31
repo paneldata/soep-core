@@ -1932,9 +1932,9 @@
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
         "[1] Stammperson d.Stprb. alt",
-        "[2] Nicht-Stprb.mitgld.  alt",
-        "[3] Stichprobenmitglied  neu",
-        "[4] Nicht-Stprb.mitgld.  neu"
+        "[2] Nicht-Stprb.mitgld. alt",
+        "[3] Stichprobenmitglied neu",
+        "[4] Nicht-Stprb.mitgld. neu"
       ],
       "missings": [
         true,
@@ -4667,6 +4667,90 @@
     "statistics": {
       "valid": 286,
       "invalid": 54741
+    }
+  },
+  {
+    "name": "bdsv",
+    "dataset": "bdpbrutto",
+    "label": "Result Record Linkage",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Consent given",
+        "[2] Consent missing",
+        "[3] Consent denied in CAPI, declaration present",
+        "[4] Consent denied",
+        "[5] Consent given, should not have been asked / not part of sample"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Einverständniserklärung gegeben ",
+        "[2] Einverständniserklärung fehlt ",
+        "[3] im CAPI verweigert, dann Einverständniserklärung doch gegeben ",
+        "[4] Einverständniserklärung verweigert ",
+        "[5] Einverständniserklärung gegeben, obwohl nicht für Teilstichprobe vorgesehen "
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        46505,
+        0,
+        0,
+        4567,
+        0,
+        1583,
+        79,
+        21,
+        2212,
+        60
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Ergebnis Einverständniserklärung",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3955,
+      "invalid": 51072
     }
   },
   {
