@@ -1,7 +1,7 @@
 ---
 name: soep-core
 label: SOEP-Core
-doi: 10.5684/soep.core.v37o
+doi: 10.5684/soep.core.v38o
 config:
     variables:
         label_table: True
@@ -16,7 +16,7 @@ config:
 ## Citation
 
 * **Title:** German Socio-Economic Panel Study (SOEP-Core)
-* **Authors:** Jan Goebel, Markus Grabka, Carsten Schröder, Sabine Zinn, Charlotte Bartels, Andreas Franken, Martin Gerike, Florian Griese, Christoph Halbmeier, Selin Kara, Peter Krause, Elisabeth Liebau, Jana Nebelin, Marvin Petrenz, Sarah Satilmis, Rainer Siegers, Hans Walter Steinhauer, Knut Wenzig, Stefan Zimmermann 
+* **Authors:** Jan Goebel, Markus Grabka, Carsten Schröder, Sabine Zinn, Charlotte Bartels, Andreas Franken, Martin Gerike, Florian Griese, Christoph Halbmeier, Selin Kara, Peter Krause, Elisabeth Liebau, Jana Nebelin, Marvin Petrenz, Sarah Satilmis, Rainer Siegers, Hans Walter Steinhauer, Felix Süttmann, Knut Wenzig, Stefan Zimmermann 
 
 Publications using these data should cite the DOI (doi:10.5684/soep-core.v38o) and include one of the following references:
 
