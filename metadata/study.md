@@ -73,6 +73,7 @@ In some samples adapted versions of the instruments were used:
 | [Individual and Biography, Initial Interview](inst/soep-core-2021-pb-m3456-erst) | PDF                                                                                          | PDF                         |
 | [Childhood, 0-10-year-olds](inst/soep-core-2021-ki-m3456)                         | PDF                                                                                          | PDF                         |
 | [Youth (11-17-year-olds)](inst/soep-core-2021-ju-m3456)                           | PDF                                                                                          | PDF                         |
+
 | Samples M7-M8a (“Refugee Samples”)                                                |                                                                                              |                             |
 | [Individual](inst/soep-core-2021-pe2-m78)                                         | PDF | PDF                         |
 | [Biography](inst/soep-core-2021-ll-m78)                                          | PDF  | PDF                         |
