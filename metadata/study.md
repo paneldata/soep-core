@@ -7,7 +7,6 @@ config:
         label_table: True
     script_generators:
         -   soep-stata
-        -   soep-spss
         -   soep-r
 ---
 
