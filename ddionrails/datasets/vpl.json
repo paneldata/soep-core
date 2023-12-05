@@ -374,66 +374,6 @@
     }
   },
   {
-    "name": "syear",
-    "dataset": "vpl",
-    "label": "Survey Year",
-    "categories": {
-      "values": [
-        -8,
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1
-      ],
-      "labels": [
-        "[-8] Question this year not part of survey",
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissable multiple response",
-        "[-3] Implausible value",
-        "[-2] Does not apply",
-        "[-1] No answer"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    "scale": "number",
-    "label_de": "Befragungsjahr",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 2009.0,
-      "1st Qu.": 2013.0,
-      "Median": 2016.0,
-      "Mean": 2016.1653270003653,
-      "3rd Qu.": 2020.0,
-      "Max.": 2021.0,
-      "valid": 5474,
-      "invalid": 0
-    }
-  },
-  {
     "name": "dl001",
     "dataset": "vpl",
     "label": "Gender",
@@ -3211,6 +3151,140 @@
     }
   },
   {
+    "name": "instrument",
+    "dataset": "vpl",
+    "label": "[de] Fragebogenversion",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        260,
+        261
+      ],
+      "labels": [
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[260] [de] Verstorbene Person (PAPI) 2021",
+        "[261] [de] Verstorbene Person (techn) 2021"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[260] Verstorbene Person (PAPI) 2021",
+        "[261] Verstorbene Person (techn) 2021"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        4420,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        523,
+        531
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Fragebogenversion",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 1054,
+      "invalid": 4420
+    }
+  },
+  {
+    "name": "intday",
+    "dataset": "vpl",
+    "label": "day of interview",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        1054,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        14
+      ]
+    },
+    "scale": "number",
+    "label_de": "Zeitpunkt des Interviews: Tag",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 8.25,
+      "Median": 16.0,
+      "Mean": 15.490921470721743,
+      "3rd Qu.": 22.0,
+      "Max.": 31.0,
+      "valid": 4406,
+      "invalid": 1068
+    }
+  },
+  {
     "name": "intdevice",
     "dataset": "vpl",
     "label": "Device",
@@ -3295,250 +3369,6 @@
     }
   },
   {
-    "name": "intyear",
-    "dataset": "vpl",
-    "label": "year of interview",
-    "categories": {
-      "values": [
-        -8,
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1
-      ],
-      "labels": [
-        "[-8] Question this year not part of survey",
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissable multiple response",
-        "[-3] Implausible value",
-        "[-2] Does not apply",
-        "[-1] No answer"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "frequencies": [
-        5203,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    "scale": "number",
-    "label_de": "Jahr des Interviews",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 2010.0,
-      "1st Qu.": 2010.0,
-      "Median": 2010.0,
-      "Mean": 2010.0073800738007,
-      "3rd Qu.": 2010.0,
-      "Max.": 2011.0,
-      "valid": 271,
-      "invalid": 5203
-    }
-  },
-  {
-    "name": "intmonth",
-    "dataset": "vpl",
-    "label": "month of interview",
-    "categories": {
-      "values": [
-        -8,
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12
-      ],
-      "labels": [
-        "[-8] Question this year not part of survey",
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissable multiple response",
-        "[-3] Implausible value",
-        "[-2] Does not apply",
-        "[-1] No answer",
-        "[1] January",
-        "[2] February",
-        "[3] March",
-        "[4] April",
-        "[5] May",
-        "[6] June",
-        "[7] July",
-        "[8] August",
-        "[9] September",
-        "[10] October",
-        "[11] November",
-        "[12] December"
-      ],
-      "labels_de": [
-        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
-        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] in Fragebogenversion nicht enthalten",
-        "[-4] unzulaessige Mehrfachantwort",
-        "[-3] unplausibler Wert",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Januar",
-        "[2] Februar",
-        "[3] Maerz",
-        "[4] April",
-        "[5] Mai",
-        "[6] Juni",
-        "[7] Juli",
-        "[8] August",
-        "[9] September",
-        "[10] Oktober",
-        "[11] November",
-        "[12] Dezember"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      "frequencies": [
-        1054,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        13,
-        6,
-        1215,
-        1196,
-        724,
-        474,
-        255,
-        207,
-        163,
-        71,
-        56,
-        36,
-        4
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Zeitpunkt des Interviews: Monat",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 4407,
-      "invalid": 1067
-    }
-  },
-  {
-    "name": "intday",
-    "dataset": "vpl",
-    "label": "day of interview",
-    "categories": {
-      "values": [
-        -8,
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1
-      ],
-      "labels": [
-        "[-8] Question this year not part of survey",
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissable multiple response",
-        "[-3] Implausible value",
-        "[-2] Does not apply",
-        "[-1] No answer"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "frequencies": [
-        1054,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        14
-      ]
-    },
-    "scale": "number",
-    "label_de": "Zeitpunkt des Interviews: Tag",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 8.25,
-      "Median": 16.0,
-      "Mean": 15.490921470721743,
-      "3rd Qu.": 22.0,
-      "Max.": 31.0,
-      "valid": 4406,
-      "invalid": 1068
-    }
-  },
-  {
     "name": "inthour",
     "dataset": "vpl",
     "label": "End of Interview (Hour)",
@@ -3596,6 +3426,66 @@
       "Max.": 23.0,
       "valid": 3285,
       "invalid": 2189
+    }
+  },
+  {
+    "name": "intid",
+    "dataset": "vpl",
+    "label": "Interviewer ID",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        535,
+        0,
+        0,
+        0,
+        0,
+        0,
+        749,
+        31
+      ]
+    },
+    "scale": "number",
+    "label_de": "Interviewer-ID",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 1001679.0,
+      "Median": 1003078.0,
+      "Mean": 892637.223611445,
+      "3rd Qu.": 1004398.5,
+      "Max.": 1006092.0,
+      "valid": 4159,
+      "invalid": 1315
     }
   },
   {
@@ -3768,9 +3658,9 @@
     }
   },
   {
-    "name": "instrument",
+    "name": "intmonth",
     "dataset": "vpl",
-    "label": "[de] Fragebogenversion",
+    "label": "month of interview",
     "categories": {
       "values": [
         -8,
@@ -3781,8 +3671,18 @@
         -3,
         -2,
         -1,
-        260,
-        261
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
       ],
       "labels": [
         "[-8] Question this year not part of survey",
@@ -3793,8 +3693,18 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[260] [de] Verstorbene Person (PAPI) 2021",
-        "[261] [de] Verstorbene Person (techn) 2021"
+        "[1] January",
+        "[2] February",
+        "[3] March",
+        "[4] April",
+        "[5] May",
+        "[6] June",
+        "[7] July",
+        "[8] August",
+        "[9] September",
+        "[10] October",
+        "[11] November",
+        "[12] December"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -3805,8 +3715,18 @@
         "[-3] unplausibler Wert",
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
-        "[260] Verstorbene Person (PAPI) 2021",
-        "[261] Verstorbene Person (techn) 2021"
+        "[1] Januar",
+        "[2] Februar",
+        "[3] Maerz",
+        "[4] April",
+        "[5] Mai",
+        "[6] Juni",
+        "[7] Juli",
+        "[8] August",
+        "[9] September",
+        "[10] Oktober",
+        "[11] November",
+        "[12] Dezember"
       ],
       "missings": [
         true,
@@ -3818,33 +3738,53 @@
         true,
         true,
         false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false
       ],
       "frequencies": [
-        4420,
+        1054,
         0,
         0,
         0,
         0,
         0,
         0,
-        0,
-        523,
-        531
+        13,
+        6,
+        1215,
+        1196,
+        724,
+        474,
+        255,
+        207,
+        163,
+        71,
+        56,
+        36,
+        4
       ]
     },
     "scale": "cat",
-    "label_de": "Fragebogenversion",
+    "label_de": "Zeitpunkt des Interviews: Monat",
     "study": "soep-core",
     "statistics": {
-      "valid": 1054,
-      "invalid": 4420
+      "valid": 4407,
+      "invalid": 1067
     }
   },
   {
-    "name": "intid",
+    "name": "intyear",
     "dataset": "vpl",
-    "label": "Interviewer ID",
+    "label": "year of interview",
     "categories": {
       "values": [
         -8,
@@ -3877,28 +3817,88 @@
         true
       ],
       "frequencies": [
-        535,
+        5203,
         0,
         0,
         0,
         0,
         0,
-        749,
-        31
+        0,
+        0
       ]
     },
     "scale": "number",
-    "label_de": "Interviewer-ID",
+    "label_de": "Jahr des Interviews",
     "study": "soep-core",
     "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 1001679.0,
-      "Median": 1003078.0,
-      "Mean": 892637.223611445,
-      "3rd Qu.": 1004398.5,
-      "Max.": 1006092.0,
-      "valid": 4159,
-      "invalid": 1315
+      "Min.": 2010.0,
+      "1st Qu.": 2010.0,
+      "Median": 2010.0,
+      "Mean": 2010.0073800738007,
+      "3rd Qu.": 2010.0,
+      "Max.": 2011.0,
+      "valid": 271,
+      "invalid": 5203
+    }
+  },
+  {
+    "name": "syear",
+    "dataset": "vpl",
+    "label": "Survey Year",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "scale": "number",
+    "label_de": "Befragungsjahr",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 2009.0,
+      "1st Qu.": 2013.0,
+      "Median": 2016.0,
+      "Mean": 2016.1653270003653,
+      "3rd Qu.": 2020.0,
+      "Max.": 2021.0,
+      "valid": 5474,
+      "invalid": 0
     }
   },
   {
