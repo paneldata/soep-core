@@ -642,6 +642,7 @@
         2353,
         2354,
         2400,
+        2900,
         3110,
         3180,
         3190,
@@ -679,6 +680,7 @@
         "[2353] (2 353) Missing household interview and at least one person interview",
         "[2354] (2 354) Lack of data",
         "[2400] (2.4) New address after field period",
+        "[2900] (2.9) Miscellaneous",
         "[3110] (3.11) Not attempted or worked",
         "[3180] (3.18) Unable to locate address",
         "[3190] (3.19) Others (no information on person)",
@@ -716,6 +718,7 @@
         "[2353] (2 353) Missing household interview and at least one person interview",
         "[2354] (2 354) Lack of data",
         "[2400] (2.4) New address after field period",
+        "[2900] (2.9) Miscellaneous",
         "[3110] (3.11) Not attempted or worked",
         "[3180] (3.18) Unable to locate address",
         "[3190] (3.19) Others (no information on person)",
@@ -759,6 +762,7 @@
         false,
         false,
         false,
+        false,
         false
       ],
       "frequencies": [
@@ -770,15 +774,15 @@
         0,
         0,
         0,
-        53475,
+        53315,
         2563,
         696,
         643,
-        10917,
+        10914,
         4653,
         0,
-        2240,
-        527,
+        2237,
+        525,
         4556,
         139,
         203,
@@ -786,17 +790,18 @@
         284,
         511,
         903,
-        14599,
+        14589,
         12,
         17,
         312,
+        347,
         83,
         1038,
         773,
-        77,
+        76,
         24,
         670,
-        39317
+        39149
       ]
     },
     "scale": "cat",
@@ -1045,6 +1050,85 @@
       "Max.": 12.0,
       "valid": 172865,
       "invalid": 1095997
+    }
+  },
+  {
+    "name": "sex_h",
+    "dataset": "pbrutto",
+    "label": "[de] Geschlecht [harmonisiert]",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        9
+      ],
+      "labels": [
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[1] [de] männlich",
+        "[2] [de] weiblich",
+        "[9] [de] unbekannt"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] männlich",
+        "[2] weiblich",
+        "[9] unbekannt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        44,
+        0,
+        0,
+        25,
+        393,
+        625818,
+        642517,
+        65
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Geschlecht [harmonisiert]",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 1268400,
+      "invalid": 462
     }
   },
   {
@@ -2325,7 +2409,7 @@
         10,
         161,
         0,
-        229,
+        12,
         3209,
         118,
         0,
@@ -2456,7 +2540,7 @@
         0,
         0,
         4872,
-        4044,
+        4261,
         11,
         0,
         0,
@@ -6463,27 +6547,27 @@
         1211455,
         0,
         0,
-        56716,
+        56540,
         0,
         0,
         0,
-        78,
+        168,
         318,
-        118,
-        30,
-        134,
+        128,
+        43,
+        165,
+        10,
         3,
-        1,
-        4,
-        5
+        5,
+        27
       ]
     },
     "scale": "cat",
     "label_de": "Stellung zum HV, Bezugsperson PAPI [2021]",
     "study": "soep-core",
     "statistics": {
-      "valid": 613,
-      "invalid": 1268249
+      "valid": 699,
+      "invalid": 1268163
     }
   },
   {
@@ -10468,7 +10552,9 @@
         -4,
         -3,
         -2,
-        -1
+        -1,
+        1,
+        2
       ],
       "labels": [
         "[-8] Question this year not part of survey",
@@ -10478,7 +10564,21 @@
         "[-4] Inadmissable multiple response",
         "[-3] Implausible value",
         "[-2] Does not apply",
-        "[-1] No answer"
+        "[-1] No answer",
+        "[1] [de] 1. Tranche",
+        "[2] [de] 2. Tranche"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] 1. Tranche",
+        "[2] 2. Tranche"
       ],
       "missings": [
         true,
@@ -10488,7 +10588,9 @@
         true,
         true,
         true,
-        true
+        true,
+        false,
+        false
       ],
       "frequencies": [
         1206695,
@@ -10498,19 +10600,15 @@
         0,
         0,
         0,
-        0
+        0,
+        3339,
+        1860
       ]
     },
-    "scale": "number",
+    "scale": "cat",
     "label_de": "Adresstranche",
     "study": "soep-core",
     "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 1.0,
-      "Median": 1.0,
-      "Mean": 1.3577611079053664,
-      "3rd Qu.": 2.0,
-      "Max.": 2.0,
       "valid": 5199,
       "invalid": 1263663
     }
@@ -10672,7 +10770,9 @@
         -4,
         -3,
         -2,
-        -1
+        -1,
+        1,
+        2
       ],
       "labels": [
         "[-8] Question this year not part of survey",
@@ -10682,7 +10782,21 @@
         "[-4] Inadmissable multiple response",
         "[-3] Implausible value",
         "[-2] Does not apply",
-        "[-1] No answer"
+        "[-1] No answer",
+        "[1] [de] 1. Tranche",
+        "[2] [de] 2. Tranche"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] 1. Tranche",
+        "[2] 2. Tranche"
       ],
       "missings": [
         true,
@@ -10692,7 +10806,9 @@
         true,
         true,
         true,
-        true
+        true,
+        false,
+        false
       ],
       "frequencies": [
         1219268,
@@ -10702,19 +10818,15 @@
         0,
         0,
         0,
-        0
+        0,
+        3498,
+        636
       ]
     },
-    "scale": "number",
+    "scale": "cat",
     "label_de": "Tranche 'Kindheit im (Nach-)Kriegskontext'",
     "study": "soep-core",
     "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 1.0,
-      "Median": 1.0,
-      "Mean": 1.1538461538461537,
-      "3rd Qu.": 1.0,
-      "Max.": 2.0,
       "valid": 4134,
       "invalid": 1264728
     }
@@ -12192,33 +12304,33 @@
         0,
         0,
         0,
-        342549,
+        342381,
         1028,
         1590,
-        679014,
+        678854,
         55393,
         451,
         35,
         12412,
         2474,
         1416,
-        14448,
+        14795,
         52,
         287,
         84,
         741,
-        3664,
+        3662,
         182,
-        1007,
-        36979,
+        1003,
+        36977,
         835,
-        15401,
+        15395,
         3,
-        2450,
-        72201,
+        2449,
+        72198,
         1205,
         668,
-        84,
+        83,
         145,
         24,
         2996,
@@ -12229,8 +12341,8 @@
     "label_de": "Bearbeitungsergebnis 2-Steller",
     "study": "soep-core",
     "statistics": {
-      "valid": 909033,
-      "invalid": 359829
+      "valid": 909201,
+      "invalid": 359661
     }
   },
   {
@@ -14741,9 +14853,9 @@
         228019,
         0,
         0,
-        238618,
+        240727,
         0,
-        19771,
+        17662,
         33540
       ]
     },
@@ -14751,8 +14863,8 @@
     "label_de": "Ergebnis Einverstaendniserklaerung fuer Record Linkage IAB [harmonisiert]",
     "study": "soep-core",
     "statistics": {
-      "valid": 53311,
-      "invalid": 1215551
+      "valid": 51202,
+      "invalid": 1217660
     }
   },
   {
@@ -15001,10 +15113,10 @@
         73833,
         0,
         0,
-        77335,
+        79444,
         0,
         20100,
-        4122,
+        2013,
         6551,
         80
       ]
@@ -15013,8 +15125,8 @@
     "label_de": "Ergebnis Record Linkage IAB [2019-2021]",
     "study": "soep-core",
     "statistics": {
-      "valid": 30853,
-      "invalid": 1238009
+      "valid": 28744,
+      "invalid": 1240118
     }
   },
   {
@@ -16904,10 +17016,10 @@
         0,
         0,
         0,
-        19388,
+        19735,
         604,
-        37015,
-        400
+        36670,
+        398
       ]
     },
     "scale": "cat",

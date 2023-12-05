@@ -2,7 +2,7 @@
   {
     "name": "cid",
     "dataset": "instrumentation",
-    "label": "[de] Ursprungshaushaltsnummer",
+    "label": "Original Household ID",
     "categories": {
       "values": [
         -8,
@@ -62,7 +62,7 @@
   {
     "name": "hid",
     "dataset": "instrumentation",
-    "label": "Current Householdnummer (=hid_2021)",
+    "label": "Current Wave Household ID ",
     "categories": {
       "values": [
         -8,
@@ -106,7 +106,7 @@
       ]
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=hid_2021)",
+    "label_de": "Aktuelle Haushaltsnummer",
     "study": "soep-core",
     "statistics": {
       "Min.": 94.0,
@@ -122,7 +122,7 @@
   {
     "name": "pid",
     "dataset": "instrumentation",
-    "label": "[de] Unveränderliche Personennummer",
+    "label": "Never Changing Personal ID",
     "categories": {
       "values": [
         -8,
@@ -182,7 +182,7 @@
   {
     "name": "syear",
     "dataset": "instrumentation",
-    "label": "[de] Erhebungsjahr",
+    "label": "Survey Year",
     "categories": {
       "values": [
         -8,
@@ -242,7 +242,7 @@
   {
     "name": "sample1",
     "dataset": "instrumentation",
-    "label": "[de] Stichprobenkennzeichen",
+    "label": "Subsample ID",
     "categories": {
       "values": [
         -8,
@@ -327,9 +327,9 @@
         "[35] O 2018 Social City",
         "[36] P 2019 High Net‐Worth Individuals",
         "[37] Q 2019 LGB",
-        "[39] [de] Aufstockung 2020/Stichprobe M7",
-        "[40] [de] Aufstockung 2020/Stichprobe M8",
-        "[41] [de] Schutzsuchende 2020/Stichprobe M6",
+        "[39] M7 Refreshmnet, 2020",
+        "[40] M8 Refreshment, 2020",
+        "[41] M6 Refugee Sample (2013-2016, 2017-2019), 2020",
         "[60] L2/3 FiD Screening, Low Income, 2010/11",
         "[61] L2/3 FiD Screening, Single Parent, 2010/11",
         "[62] L2/3 FiD Screening, Families with Several Children, 2010/11",
@@ -491,7 +491,7 @@
   {
     "name": "instrument",
     "dataset": "instrumentation",
-    "label": "[de] Erhebungsinstrument",
+    "label": "Survey instrument",
     "categories": {
       "values": [
         -8,
@@ -537,7 +537,8 @@
         292,
         293,
         294,
-        297
+        297,
+        298
       ],
       "labels": [
         "[-8] Question not part of the survey program this year",
@@ -583,7 +584,8 @@
         "[292] soep-core-2021-hh-m3456",
         "[293] soep-core-2021-ll-m78",
         "[294] soep-core-2021-pe-m78",
-        "[297] soep-core-2021-ll2-m3456"
+        "[297] soep-core-2021-ll2-m3456",
+        "[298] soep-core-2021-pe2-m3456"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -629,7 +631,8 @@
         "[292] soep-core-2021-hh-m3456",
         "[293] soep-core-2021-ll-m78",
         "[294] soep-core-2021-pe-m78",
-        "[297] soep-core-2021-ll2-m3456"
+        "[297] soep-core-2021-ll2-m3456",
+        "[298] soep-core-2021-pe2-m3456"
       ],
       "missings": [
         true,
@@ -640,6 +643,7 @@
         true,
         true,
         true,
+        false,
         false,
         false,
         false,
@@ -713,7 +717,7 @@
         290,
         3957,
         2273,
-        3258,
+        2639,
         2886,
         585,
         1717,
@@ -721,7 +725,8 @@
         3887,
         7,
         470,
-        269
+        269,
+        619
       ]
     },
     "scale": "cat",
@@ -735,7 +740,7 @@
   {
     "name": "datatype",
     "dataset": "instrumentation",
-    "label": "[de] Datensatztyp",
+    "label": "Datatype",
     "categories": {
       "values": [
         -8,
@@ -874,7 +879,7 @@
   {
     "name": "mode",
     "dataset": "instrumentation",
-    "label": "[de] Erhebungsmodus",
+    "label": "Survey mode",
     "categories": {
       "values": [
         -8,
@@ -968,7 +973,7 @@
   {
     "name": "status",
     "dataset": "instrumentation",
-    "label": "[de] Bearbeitungsstatus",
+    "label": "Processing status of the survey instrument",
     "categories": {
       "values": [
         -8,
@@ -999,16 +1004,16 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[1] complete",
-        "[2] refusal",
-        "[3] [de] Abgebrochen",
-        "[4] [de] Nichtrealisierung ohne konkrete Ablehnung",
-        "[5] [de] Nicht vorgelegt",
-        "[6] [de] Irrtümlich nicht vorgelegt",
-        "[7] [de] Nicht vorgelegt, da Haushaltsmatrix nicht realisiert",
-        "[10] [de] liegt nicht vor CAPIbyPhone/CAPI/CASI",
-        "[11] [de] liegt nicht vor PAPI",
-        "[12] [de] liegt nicht vor CAWI"
+        "[1] Complete",
+        "[2] Refusal",
+        "[3] Terminated",
+        "[4] Not realized without explicit rejection ",
+        "[5] Not submitted",
+        "[6] Not submitted in error",
+        "[7] Not submitted due to not realised hhmatrix",
+        "[10] Not available CAPIbyPhone/CAPI/CASI",
+        "[11] Not available PAPI",
+        "[12] Not available CAWI"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -1082,7 +1087,7 @@
   {
     "name": "start",
     "dataset": "instrumentation",
-    "label": "[de] Interviewstart (nicht vorhanden für PAPI- Interviews)",
+    "label": "Start of the interview",
     "categories": {
       "values": [],
       "labels": [],
@@ -1097,7 +1102,7 @@
   {
     "name": "end",
     "dataset": "instrumentation",
-    "label": "[de] Interviewende",
+    "label": "End of the interview",
     "categories": {
       "values": [],
       "labels": [],
@@ -1112,7 +1117,7 @@
   {
     "name": "switchwish",
     "dataset": "instrumentation",
-    "label": "[de] Switch auf Wunsch",
+    "label": "Switch in the survey mode",
     "categories": {
       "values": [
         -8,
@@ -1186,7 +1191,7 @@
   {
     "name": "duration",
     "dataset": "instrumentation",
-    "label": "[de] Instrumentendauer",
+    "label": "Duration of the interview",
     "categories": {
       "values": [
         -8,
@@ -1246,7 +1251,7 @@
   {
     "name": "conduct",
     "dataset": "instrumentation",
-    "label": "[de] Administration",
+    "label": "Administration",
     "categories": {
       "values": [
         -8,
@@ -1271,10 +1276,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[1] [de] Mündliches Interview",
-        "[2] [de] Befragter hat den Fragebogen in Anwesenheit des Interviewers / der Interviewerin selbst ausgefüllt",
-        "[3] [de] Befragter hat den Fragebogen in Abwesenheit des Interviewers / der Interviewerin selbst ausgefüllt",
-        "[4] [de] Teils mündlich, teils selbst ausgefüllt"
+        "[1] Oral interview",
+        "[2] Respondent filled in the questionnaire in the presence of the interviewer",
+        "[3] Respondent filled in the questionnaire in the absence of the interviewer",
+        "[4] Partly oral, partly self-completed"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -1330,7 +1335,7 @@
   {
     "name": "start_language",
     "dataset": "instrumentation",
-    "label": "[de] Ursprungssprache",
+    "label": "Language at the beginning of the interview",
     "categories": {
       "values": [
         -8,
@@ -1439,7 +1444,7 @@
   {
     "name": "end_language",
     "dataset": "instrumentation",
-    "label": "[de] Endsprache",
+    "label": "Language at the end of the interview",
     "categories": {
       "values": [
         -8,
@@ -1548,7 +1553,7 @@
   {
     "name": "viewph_first",
     "dataset": "instrumentation",
-    "label": "[de] Viewport (JavaScript) erste Fragebogenseite Höhe",
+    "label": "Viewport (JavaScript) first questionaire page height",
     "categories": {
       "values": [
         -8,
@@ -1608,7 +1613,7 @@
   {
     "name": "viewpb_first",
     "dataset": "instrumentation",
-    "label": "[de] Viewport (JavaScript) erste Fragebogenseite Breite",
+    "label": "Viewport (JavaScript) first questionaire page width",
     "categories": {
       "values": [
         -8,
@@ -1668,7 +1673,7 @@
   {
     "name": "viewph_last",
     "dataset": "instrumentation",
-    "label": "[de] Viewport (JavaScript) letzte Fragebogenseite Höhe",
+    "label": "Viewport (JavaScript) last questionaire page height",
     "categories": {
       "values": [
         -8,
@@ -1728,7 +1733,7 @@
   {
     "name": "viewpb_last",
     "dataset": "instrumentation",
-    "label": "[de] Viewport (JavaScript) letzte Fragebogenseite Breite",
+    "label": "Viewport (JavaScript) last questionaire page width",
     "categories": {
       "values": [
         -8,
@@ -1788,7 +1793,7 @@
   {
     "name": "pid2",
     "dataset": "instrumentation",
-    "label": "[de] Unveränderliche Personennr der anderen Person",
+    "label": "Never Changing Personal ID Person 2",
     "categories": {
       "values": [
         -8,
@@ -1848,7 +1853,7 @@
   {
     "name": "pbrutto",
     "dataset": "instrumentation",
-    "label": "[de] Bestandteil der bereinigten Bruttostichprobe",
+    "label": "Component of the adjusted personal gross sample (pbrutto)",
     "categories": {
       "values": [
         -8,
@@ -1873,10 +1878,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[0] [de] nicht Teil der bereinigten Bruttostichprobe",
-        "[1] [de] Teil der bereinigten Bruttostichprobe",
-        "[2] [de] Person nicht unter dieser HID Teil der bereinigten Bruttostichprobe",
-        "[3] [de] Nicht Teil der bereinigten Bruttostichprobe"
+        "[0] Not part of the adjusted gross sample",
+        "[1] Part of the adjusted gross sample",
+        "[2] Not part of the adjusted gross sample under this hid",
+        "[3] Not (anymore) part of the adjusted gross sample"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -1889,7 +1894,7 @@
         "[-1] keine Angabe/weiß nicht",
         "[0] nicht Teil der bereinigten Bruttostichprobe",
         "[1] Teil der bereinigten Bruttostichprobe",
-        "[2] Person nicht unter dieser HID Teil der bereinigten Bruttostichprobe",
+        "[2] Person nicht unter dieser hid Teil der bereinigten Bruttostichprobe",
         "[3] Nicht Teil der bereinigten Bruttostichprobe"
       ],
       "missings": [
@@ -1932,7 +1937,7 @@
   {
     "name": "valid",
     "dataset": "instrumentation",
-    "label": "[de] Kennzeichnung Interview gültig/ungültig",
+    "label": "Survey validity",
     "categories": {
       "values": [
         -8,
@@ -1955,8 +1960,8 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[0] [de] ungültig",
-        "[1] [de] gültig"
+        "[0] Not valid",
+        "[1] Valid"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -1989,24 +1994,24 @@
         0,
         0,
         0,
-        45171,
+        45101,
         0,
-        329,
-        41581
+        684,
+        41296
       ]
     },
     "scale": "cat",
     "label_de": "Kennzeichnung Interview gültig/ungültig",
     "study": "soep-core",
     "statistics": {
-      "valid": 41910,
-      "invalid": 45171
+      "valid": 41980,
+      "invalid": 45101
     }
   },
   {
     "name": "present5",
     "dataset": "instrumentation",
-    "label": "[de] Anwesenheit beim Ausfuellen: Vater/Mutter",
+    "label": "Presence during completion: Father/Mother ",
     "categories": {
       "values": [
         -8,
@@ -2029,8 +2034,8 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[0] [de] nicht genannt",
-        "[1] [de] genannt"
+        "[0] Not mentioned",
+        "[1] Mentioned"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -2060,11 +2065,11 @@
         0,
         0,
         0,
-        86416,
+        86469,
         0,
         0,
-        514,
-        12,
+        467,
+        6,
         0,
         139
       ]
@@ -2080,7 +2085,7 @@
   {
     "name": "present1",
     "dataset": "instrumentation",
-    "label": "[de] Anwesenheit beim Ausfuellen: Ehe-/Lebenspartner",
+    "label": "Presence during completion: Spouse/Partner ",
     "categories": {
       "values": [
         -8,
@@ -2103,8 +2108,8 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[0] [de] nicht genannt",
-        "[1] [de] genannt"
+        "[0] Not mentioned",
+        "[1] Mentioned"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -2134,27 +2139,27 @@
         0,
         0,
         0,
-        77047,
+        77100,
         0,
         0,
-        7940,
-        174,
+        7898,
+        168,
         0,
-        1920
+        1915
       ]
     },
     "scale": "cat",
     "label_de": "Anwesenheit beim Ausfuellen: Ehe-/Lebenspartner",
     "study": "soep-core",
     "statistics": {
-      "valid": 1920,
-      "invalid": 85161
+      "valid": 1915,
+      "invalid": 85166
     }
   },
   {
     "name": "present2",
     "dataset": "instrumentation",
-    "label": "[de] Anwesenheit beim Ausfuellen: andere Person im HH",
+    "label": "Presence during completion: other household member",
     "categories": {
       "values": [
         -8,
@@ -2177,8 +2182,8 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[0] [de] nicht genannt",
-        "[1] [de] genannt"
+        "[0] Not mentioned",
+        "[1] Mentioned"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -2208,27 +2213,27 @@
         0,
         0,
         0,
-        76828,
+        76881,
         0,
         0,
-        9412,
-        174,
+        9373,
+        168,
         0,
-        667
+        659
       ]
     },
     "scale": "cat",
     "label_de": "Anwesenheit beim Ausfuellen: andere Person im HH",
     "study": "soep-core",
     "statistics": {
-      "valid": 667,
-      "invalid": 86414
+      "valid": 659,
+      "invalid": 86422
     }
   },
   {
     "name": "present3",
     "dataset": "instrumentation",
-    "label": "[de] Anwesenheit beim Ausfuellen: andere Person ausserhalb HH",
+    "label": "Presence during completion: other non-household person",
     "categories": {
       "values": [
         -8,
@@ -2251,8 +2256,8 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[0] [de] nicht genannt",
-        "[1] [de] genannt"
+        "[0] Not mentioned",
+        "[1] Mentioned"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -2282,27 +2287,27 @@
         0,
         0,
         0,
-        76828,
+        76881,
         0,
         0,
-        9909,
-        174,
+        9863,
+        168,
         0,
-        170
+        169
       ]
     },
     "scale": "cat",
     "label_de": "Anwesenheit beim Ausfuellen: andere Person ausserhalb HH",
     "study": "soep-core",
     "statistics": {
-      "valid": 170,
-      "invalid": 86911
+      "valid": 169,
+      "invalid": 86912
     }
   },
   {
     "name": "present4",
     "dataset": "instrumentation",
-    "label": "[de] Anwesenheit beim Ausfuellen: Niemand",
+    "label": "Presence during completion: Nobody ",
     "categories": {
       "values": [
         -8,
@@ -2325,8 +2330,8 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[0] [de] nicht genannt",
-        "[1] [de] genannt"
+        "[0] Not mentioned",
+        "[1] Mentioned"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -2356,27 +2361,27 @@
         0,
         0,
         0,
-        76828,
+        76881,
         0,
         0,
-        2688,
-        174,
+        2673,
+        168,
         0,
-        7391
+        7359
       ]
     },
     "scale": "cat",
     "label_de": "Anwesenheit beim Ausfuellen: Niemand",
     "study": "soep-core",
     "statistics": {
-      "valid": 7391,
-      "invalid": 79690
+      "valid": 7359,
+      "invalid": 79722
     }
   },
   {
     "name": "distract",
     "dataset": "instrumentation",
-    "label": "[de] Störung durch anwesende Person",
+    "label": "Survey distractions ",
     "categories": {
       "values": [
         -8,
@@ -2430,27 +2435,27 @@
         0,
         0,
         0,
-        76828,
+        76881,
         0,
         0,
-        7476,
+        7436,
         118,
         126,
-        2533
+        2520
       ]
     },
     "scale": "cat",
     "label_de": "Störung durch anwesende Person",
     "study": "soep-core",
     "statistics": {
-      "valid": 2659,
-      "invalid": 84422
+      "valid": 2646,
+      "invalid": 84435
     }
   },
   {
     "name": "feedback",
     "dataset": "instrumentation",
-    "label": "[de] Rückmeldungen zum Fragebogen",
+    "label": "Feedback on the questionaire",
     "categories": {
       "values": [],
       "labels": [],
@@ -2465,7 +2470,7 @@
   {
     "name": "device_01",
     "dataset": "instrumentation",
-    "label": "[de] Gerätetyp: stationärer Computer/PC",
+    "label": "Device: stationary computer",
     "categories": {
       "values": [
         -8,
@@ -2488,8 +2493,8 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[0] [de] nicht genannt",
-        "[1] [de] genannt"
+        "[0] Not mentioned",
+        "[1] Mentioned"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -2519,10 +2524,10 @@
         0,
         0,
         0,
-        83668,
+        83684,
         0,
         0,
-        2589,
+        2573,
         19,
         0,
         805
@@ -2539,7 +2544,7 @@
   {
     "name": "device_02",
     "dataset": "instrumentation",
-    "label": "[de] Gerätetyp: Laptop/Notebook",
+    "label": "Device: Laptop/Notebook",
     "categories": {
       "values": [
         -8,
@@ -2562,8 +2567,8 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[0] [de] nicht genannt",
-        "[1] [de] genannt"
+        "[0] Not mentioned",
+        "[1] Mentioned"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -2593,27 +2598,27 @@
         0,
         0,
         0,
-        83668,
+        83684,
         0,
         0,
-        2135,
+        2120,
         19,
         0,
-        1259
+        1258
       ]
     },
     "scale": "cat",
     "label_de": "Gerätetyp: Laptop/Notebook",
     "study": "soep-core",
     "statistics": {
-      "valid": 1259,
-      "invalid": 85822
+      "valid": 1258,
+      "invalid": 85823
     }
   },
   {
     "name": "device_03",
     "dataset": "instrumentation",
-    "label": "[de] Gerätetyp: Tablet",
+    "label": "Device: Tablet",
     "categories": {
       "values": [
         -8,
@@ -2636,8 +2641,8 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[0] [de] nicht genannt",
-        "[1] [de] genannt"
+        "[0] Not mentioned",
+        "[1] Mentioned"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -2667,27 +2672,27 @@
         0,
         0,
         0,
-        83249,
+        83302,
         0,
         0,
-        2993,
+        2978,
         19,
         0,
-        820
+        782
       ]
     },
     "scale": "cat",
     "label_de": "Gerätetyp: Tablet",
     "study": "soep-core",
     "statistics": {
-      "valid": 820,
-      "invalid": 86261
+      "valid": 782,
+      "invalid": 86299
     }
   },
   {
     "name": "device_04",
     "dataset": "instrumentation",
-    "label": "[de] Gerätetyp: Smartphone",
+    "label": "Device: Smartphone",
     "categories": {
       "values": [
         -8,
@@ -2710,8 +2715,8 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[0] [de] nicht genannt",
-        "[1] [de] genannt"
+        "[0] Not mentioned",
+        "[1] Mentioned"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -2741,27 +2746,27 @@
         0,
         0,
         0,
-        83668,
+        83684,
         0,
         0,
-        2392,
+        2388,
         19,
         0,
-        1002
+        990
       ]
     },
     "scale": "cat",
     "label_de": "Gerätetyp: Smartphone",
     "study": "soep-core",
     "statistics": {
-      "valid": 1002,
-      "invalid": 86079
+      "valid": 990,
+      "invalid": 86091
     }
   },
   {
     "name": "device_05",
     "dataset": "instrumentation",
-    "label": "[de] Gerätetyp: Sonstiges",
+    "label": "Device: Other",
     "categories": {
       "values": [
         -8,
@@ -2784,8 +2789,8 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[0] [de] nicht genannt",
-        "[1] [de] genannt"
+        "[0] Not mentioned",
+        "[1] Mentioned"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -2815,27 +2820,27 @@
         0,
         0,
         0,
-        83668,
+        83684,
         0,
         0,
-        3383,
+        3368,
         19,
         0,
-        11
+        10
       ]
     },
     "scale": "cat",
     "label_de": "Gerätetyp: Sonstiges",
     "study": "soep-core",
     "statistics": {
-      "valid": 11,
-      "invalid": 87070
+      "valid": 10,
+      "invalid": 87071
     }
   },
   {
     "name": "device_05_open",
     "dataset": "instrumentation",
-    "label": "[de] Gerätetyp: Sonstiges (offen)",
+    "label": "Destriction of the other device used",
     "categories": {
       "values": [],
       "labels": [],
@@ -2850,7 +2855,7 @@
   {
     "name": "location",
     "dataset": "instrumentation",
-    "label": "[de] Ort der Befragungsdurchführung",
+    "label": "Location of survey administration",
     "categories": {
       "values": [
         -8,
@@ -2876,11 +2881,11 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[1] [de] zu Hause",
-        "[2] [de] unterwegs (z. B. im Zug, in der U-/S-Bahn)",
-        "[3] [de] im Büro/in der Bibliothek/im Computerpool",
-        "[4] [de] in der Mensa/in der Cafeteria/im Restaurant/im Café",
-        "[5] [de] Sonstiges"
+        "[1] At home  ",
+        "[2] On the road ",
+        "[3] In the office/library/computer pool ",
+        "[4] In the canteen/cafeteria/restaurant/café  ",
+        "[5] Other location"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -2916,12 +2921,12 @@
         0,
         0,
         0,
-        83668,
+        83684,
         0,
         0,
-        40,
+        39,
         18,
-        3214,
+        3199,
         33,
         89,
         5,
@@ -2932,14 +2937,14 @@
     "label_de": "Ort der Befragungsdurchführung",
     "study": "soep-core",
     "statistics": {
-      "valid": 3355,
-      "invalid": 83726
+      "valid": 3340,
+      "invalid": 83741
     }
   },
   {
     "name": "location_open",
     "dataset": "instrumentation",
-    "label": "[de] Ort der Befragungsdurchführung: Sonstiges (offen)",
+    "label": "Description of the location of survey administration",
     "categories": {
       "values": [],
       "labels": [],
@@ -2954,7 +2959,7 @@
   {
     "name": "evalhh",
     "dataset": "instrumentation",
-    "label": "[de] Einschätzung des Interviewers zur Realitätsnähe des Haushaltsinterviews",
+    "label": "Assessment of the realism of the household interview from the interviewer",
     "categories": {
       "values": [
         -8,
@@ -2980,11 +2985,11 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[1] [de] Sehr realitätsnah",
-        "[2] [de] Eher realitätsnah",
-        "[3] [de] Eher realitätsfern",
-        "[4] [de] Sehr realitätsfern",
-        "[5] [de] Kann ich nicht sagen"
+        "[1] Very close to reality  ",
+        "[2] Rather close to reality  ",
+        "[3] Rather unrealistic  ",
+        "[4] Very unrealistic  ",
+        "[5] I cannot say "
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -3020,12 +3025,12 @@
         0,
         0,
         0,
-        81968,
+        82137,
         0,
         0,
-        3253,
+        3085,
         0,
-        1503,
+        1502,
         305,
         29,
         5,
@@ -3036,14 +3041,14 @@
     "label_de": "Einschätzung des Interviewers zur Realitätsnähe des Haushaltsinterviews",
     "study": "soep-core",
     "statistics": {
-      "valid": 1860,
-      "invalid": 85221
+      "valid": 1859,
+      "invalid": 85222
     }
   },
   {
     "name": "evalopenhh",
     "dataset": "instrumentation",
-    "label": "[de] Offene Anmerkung des Haushaltsinterviews",
+    "label": "Open remark from the interviewer",
     "categories": {
       "values": [],
       "labels": [],
@@ -3058,7 +3063,7 @@
   {
     "name": "evalp",
     "dataset": "instrumentation",
-    "label": "[de] Einschätzung des Interviewers zur Realitätsnähe des Personeninterviews",
+    "label": "Assessment of the realism of the personal interview from the interviewer",
     "categories": {
       "values": [
         -8,
@@ -3084,11 +3089,11 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer / don’t know",
-        "[1] [de] Sehr realitätsnah",
-        "[2] [de] Eher realitätsnah",
-        "[3] [de] Eher realitätsfern",
-        "[4] [de] Sehr realitätsfern",
-        "[5] [de] Kann ich nicht sagen"
+        "[1] Very close to reality  ",
+        "[2] Rather close to reality  ",
+        "[3] Rather unrealistic  ",
+        "[4] Very unrealistic  ",
+        "[5] I cannot say "
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -3124,30 +3129,30 @@
         0,
         0,
         0,
-        81968,
+        82137,
         0,
         0,
-        1984,
-        143,
-        2053,
-        725,
-        130,
-        17,
-        61
+        1982,
+        142,
+        1958,
+        673,
+        116,
+        15,
+        58
       ]
     },
     "scale": "cat",
     "label_de": "Einschätzung des Interviewers zur Realitätsnähe des Personeninterviews",
     "study": "soep-core",
     "statistics": {
-      "valid": 2986,
-      "invalid": 84095
+      "valid": 2820,
+      "invalid": 84261
     }
   },
   {
     "name": "evalopenp",
     "dataset": "instrumentation",
-    "label": "[de] Offene Anmerkung des Personeninterviews",
+    "label": "Open remark from the interviewer",
     "categories": {
       "values": [],
       "labels": [],
@@ -3160,9 +3165,83 @@
     "statistics": {}
   },
   {
+    "name": "improper",
+    "dataset": "instrumentation",
+    "label": "Improperly conducted interview",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know",
+        "[0] Properly conducted ",
+        "[1] Improperly conducted in some criteria"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht",
+        "[0] sachgemäß",
+        "[1] unsachgemäß in einigen Kriterien"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Unsachgemäß durchgeführtes Interview",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 0,
+      "invalid": 87081
+    }
+  },
+  {
     "name": "intid",
     "dataset": "instrumentation",
-    "label": "[de] Interviewer ID",
+    "label": "Interviewer ID ",
     "categories": {
       "values": [
         -8,
@@ -3222,7 +3301,7 @@
   {
     "name": "hid_2021",
     "dataset": "instrumentation",
-    "label": "Current Householdnummer (=hid)",
+    "label": "Current Householdnummer in 2021",
     "categories": {
       "values": [
         -8,
@@ -3266,7 +3345,7 @@
       ]
     },
     "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=hid)",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_2021)",
     "study": "soep-core",
     "statistics": {
       "Min.": 94.0,
