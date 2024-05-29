@@ -7,7 +7,7 @@
   "period": 2021,
   "value": 283.0,
   "mode": "CAI",
-  "type_position": 5.0,
+  "type_position": 5,
   "type": "Individual",
   "type_de": "Person",
   "instrument": "soep-core-2021-pe2",
@@ -4974,12 +4974,12 @@
     "22": {
       "question": "22",
       "name": "22",
-      "label": "Did you obtain this degree / certificate / diploma in Germany or in another country?",
+      "label": "Did you complete this degree / certificate / diploma in Germany or in another country?",
       "label_de": "Haben Sie diesen Abschluss in Deutschland oder in einem anderen Land gemacht?",
       "items": [
         {
           "item": "plg0077",
-          "text": "Did you obtain this degree / certificate / diploma in Germany or in another country?",
+          "text": "Did you complete this degree / certificate / diploma in Germany or in another country?",
           "text_de": "Haben Sie diesen Abschluss in Deutschland oder in einem anderen Land gemacht?",
           "filter": "(19;plg0072=1)&(21;plg0076=1)",
           "concept": "pab4a",
@@ -5545,12 +5545,12 @@
     "27b": {
       "question": "27b",
       "name": "27b",
-      "label": "Your entry \"*? years\" seems a bit high compared to your year of birth (*?). Do we perhaps need to correct it?",
+      "label": "Your answer \"*? years\" seems a bit high compared to your year of birth (*?). Should we correct that?",
       "label_de": "Ihre Angabe „*? Jahre“ erscheint, verglichen mit Ihrem Geburtsjahr (*?) etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "plb0301_CONb",
-          "text": "Your entry \"*? years\" seems a bit high compared to your year of birth (*?). Do we perhaps need to correct it?",
+          "text": "Your answer \"*? years\" seems a bit high compared to your year of birth (*?). Should we correct that?",
           "text_de": "Ihre Angabe „*? Jahre“ erscheint, verglichen mit Ihrem Geburtsjahr (*?) etwas hoch. Müssen wir sie vielleicht korrigieren?",
           "filter": "(25;plb0282_v2=1)&(27;plb0301>45)",
           "goto": "1@27; 2@27c; -1@28",
@@ -5697,12 +5697,12 @@
     "29a": {
       "question": "29a",
       "name": "29a",
-      "label": "Your indication: \"*? Euro\" seems a bit low. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros\" seems a bit low. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro“ erscheint etwas niedrig. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0041_v2_CONa",
-          "text": "Your indication: \"*? Euro\" seems a bit low. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros\" seems a bit low. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro“ erscheint etwas niedrig. Müssen wir sie vielleicht korrigieren?",
           "filter": "(25;plb0282_v2=1)&(29;plc0041_v2>0)&(29;plc0041_v2<250)",
           "goto": "1@32; 2@32b; -1@30",
@@ -5746,9 +5746,10 @@
         },
         {
           "item": "1",
-          "text": "Can not / Prefer not to answer",
-          "text_de": "Kann / möchte ich nicht beantworten",
-          "scale": "bin",
+          "text": "Please further explain why the amount is so low.",
+          "text_de": "Bitte erklären Sie uns noch, warum der Betrag so niedrig ist.",
+          "concept": "P32AI",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
@@ -5809,9 +5810,10 @@
         },
         {
           "item": "2",
-          "text": "Can not / Prefer not to answer",
-          "text_de": "Kann / möchte ich nicht beantworten",
-          "scale": "bin",
+          "text": "Please further explain why the amount is so high.",
+          "text_de": "Bitte erklären Sie uns noch, warum der Betrag so hoch ist.",
+          "concept": "P32AI",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
@@ -5936,12 +5938,12 @@
     "31a": {
       "question": "31a",
       "name": "31a",
-      "label": "You have indicated that you are currently employed full-time. Earlier you stated that you were on maternity or parental leave. Which of the statements is correct?",
+      "label": "You have indicated that you are currently employed full-time. Earlier you stated that you were on maternity or parental leave. Which of the statement is correct?",
       "label_de": "Sie haben angegeben, dass Sie derzeit voll erwerbstätig sind. Früher haben Sie angegeben, Sie seien im Mutterschutz oder Elternzeit. Welche von den Angaben ist korrekt?",
       "items": [
         {
           "item": "plb0022_v9_CONa",
-          "text": "You have indicated that you are currently employed full-time. Earlier you stated that you were on maternity or parental leave. Which of the statements is correct?",
+          "text": "You have indicated that you are currently employed full-time. Earlier you stated that you were on maternity or parental leave. Which of the statement is correct?",
           "text_de": "Sie haben angegeben, dass Sie derzeit voll erwerbstätig sind. Früher haben Sie angegeben, Sie seien im Mutterschutz oder Elternzeit. Welche von den Angaben ist korrekt?",
           "filter": "(31;plb0022_v9=1)&(14;plb0019_v2=1|2)",
           "goto": "1@31; 2@14; 3@31b",
@@ -5996,12 +5998,12 @@
     "31c": {
       "question": "31c",
       "name": "31c",
-      "label": "You have indicated that you are currently NOT employed. Previously, for \"Job, apprenticeship, second job (including travel time to and from work)\" on an typical weekday, you indicated *? hours. Which of these statements is correct?",
+      "label": "You have indicated that you are currently NOT employed. Previously, for \"Job, apprenticeship, second job (including travel time to and from work)\" on an typical weekday, you indicated *? hours. Which statement is correct?",
       "label_de": "Sie haben angegeben, dass Sie derzeit NICHT erwerbstätig sind. Vorher haben Sie für „Berufstätigkeit, Lehre“ an einem durchschnittlichen Werktag *? Stunden angegeben. Welche dieser Angaben ist korrekt?",
       "items": [
         {
           "item": "plb0022_v9_CONc",
-          "text": "You have indicated that you are currently NOT employed. Previously, for \"Job, apprenticeship, second job (including travel time to and from work)\" on an typical weekday, you indicated *? hours. Which of these statements is correct?",
+          "text": "You have indicated that you are currently NOT employed. Previously, for \"Job, apprenticeship, second job (including travel time to and from work)\" on an typical weekday, you indicated *? hours. Which statement is correct?",
           "text_de": "Sie haben angegeben, dass Sie derzeit NICHT erwerbstätig sind. Vorher haben Sie für „Berufstätigkeit, Lehre“ an einem durchschnittlichen Werktag *? Stunden angegeben. Welche dieser Angaben ist korrekt?",
           "filter": "(31;plb0022_v9=9)&(11;pli0038_v4>5)",
           "goto": "1@31; 2@11; 3@31d",
@@ -6056,12 +6058,12 @@
     "31e": {
       "question": "31e",
       "name": "31e",
-      "label": "You have indicated that you are currently *? (31:perw). Earlier you indicated that you were unemployed. Which of the statements is correct?",
+      "label": "You stated that you are currently *? (31:perw). Earlier you stated that you were unemployed. Which statements is correct?",
       "label_de": "Sie haben angegeben, dass Sie derzeit *? (31:perw) sind. Früher haben Sie angegeben, Sie seien arbeitslos. Welche von den Angaben ist korrekt?",
       "items": [
         {
           "item": "plb0022_v9_CONe",
-          "text": "You have indicated that you are currently *? (31:perw). Earlier you indicated that you were unemployed. Which of the statements is correct?",
+          "text": "You stated that you are currently *? (31:perw). Earlier you stated that you were unemployed. Which statements is correct?",
           "text_de": "Sie haben angegeben, dass Sie derzeit *? (31:perw) sind. Früher haben Sie angegeben, Sie seien arbeitslos. Welche von den Angaben ist korrekt?",
           "filter": "(31;plb0022_v9=1|3)&(16;plb0021=1)",
           "goto": "1@31; 2@25; 2@31f",
@@ -6116,12 +6118,12 @@
     "31g": {
       "question": "31g",
       "name": "31g",
-      "label": "You have indicated that you are currently undergoing In-service retraining. Earlier you indicated that you are not in training. Which statement is correct?",
+      "label": "You stated that you are currently undergoing in-service retraining. Earlier you stated that you were not in training. Which statement is correct?",
       "label_de": "Sie haben angegeben, dass sie derzeit in betrieblicher Ausbildung / Lehre oder betrieblicher Umschulung sind. Früher haben Sie angegeben, dass Sie nicht in Ausbildung sind. Welche Angabe ist korrekt?",
       "items": [
         {
           "item": "plb0022_v9_CONg",
-          "text": "You have indicated that you are currently undergoing In-service retraining. Earlier you indicated that you are not in training. Which statement is correct?",
+          "text": "You stated that you are currently undergoing in-service retraining. Earlier you stated that you were not in training. Which statement is correct?",
           "text_de": "Sie haben angegeben, dass sie derzeit in betrieblicher Ausbildung / Lehre oder betrieblicher Umschulung sind. Früher haben Sie angegeben, dass Sie nicht in Ausbildung sind. Welche Angabe ist korrekt?",
           "filter": "(31;plb0022_v9=3)&(17;paus1_n=2)",
           "goto": "1@17; 2@31",
@@ -6401,12 +6403,12 @@
     "35a": {
       "question": "35a",
       "name": "35a",
-      "label": "Is the entry \"*? euros\" correct?",
+      "label": "Is the answer \"*? euros\" correct?",
       "label_de": "Ist der Betrag „*? Euro“ richtig?",
       "items": [
         {
           "item": "plb0420_v2_CONa",
-          "text": "Is the entry \"*? euros\" correct?",
+          "text": "Is the answer \"*? euros\" correct?",
           "text_de": "Ist der Betrag „*? Euro“ richtig?",
           "filter": "(31;plb0022_v9=7,9)&(32;plb0417_v2=2:4)&(35;plb0420_v2>9999)",
           "goto": "2@35",
@@ -7052,12 +7054,12 @@
     "46a": {
       "question": "46a",
       "name": "46a",
-      "label": "You previously indicated that you started working for the first time in your life. Now you have indicated that you have returned to the previous employer. Which of these statements is correct?",
+      "label": "You previously indicate that you started working for the first time in your life. Now you have indicated that you have returned to the previous employer. Which of these statements is correct?",
       "label_de": "Sie haben früher angegeben, dass Sie erstmals in Ihrem Leben eine Erwerbstätigkeit aufgenommen haben. Jetzt haben sie angegeben, dass Sie zum früheren Arbeitgeber zurückgekehrt sind. Welche von diesen Angaben ist korrekt?",
       "items": [
         {
           "item": "plb0358_v13_CONa",
-          "text": "You previously indicated that you started working for the first time in your life. Now you have indicated that you have returned to the previous employer. Which of these statements is correct?",
+          "text": "You previously indicate that you started working for the first time in your life. Now you have indicated that you have returned to the previous employer. Which of these statements is correct?",
           "text_de": "Sie haben früher angegeben, dass Sie erstmals in Ihrem Leben eine Erwerbstätigkeit aufgenommen haben. Jetzt haben sie angegeben, dass Sie zum früheren Arbeitgeber zurückgekehrt sind. Welche von diesen Angaben ist korrekt?",
           "filter": "(31;plb0022_v9=1:4)&(39;plb0031_v2=1)&(42;plb0284_v2=1)&(46;plb0358_v13=8)",
           "goto": "1@46; 2@42; 3@46b; -1@47",
@@ -7124,7 +7126,7 @@
           "item": "pber",
           "text": "What is your current position / occupation?",
           "text_de": "Welche berufliche Tätigkeit üben Sie derzeit aus?",
-          "instruction": "Please state the exact title in German. For example, do not write “kaufmännische Angestellte” (clerk), but “Speditionskauffrau” (shipping clerk); not “Arbeiter” (blue-collar worker), but “Maschinenschlosser”(machine metalworker). If you are a civil servant, please give your official title, for example, “Polizeimeister” (police chief) or “Studienrat” (secondary school teacher). If you are an apprentice or in vocational training, please state the occupation for which you were trained.\nIf you are currently working in more than one job, please answer the following questions for your main job only.",
+          "instruction": "Please state the exact title in German. For example, do not write “kaufmännische Angestellte” (clerk), but “Speditionskauffrau” (shipping clerk); not “Arbeiter” (blue-collar worker), but “Maschinenschlosser”(machine metalworker). If you are a civil servant, please give your official title, for example, “Polizeimeister” (police chief) or “Studienrat” (secondary school teacher). If you are an apprentice or in vocational training, please state the occupation for which you are being trained.\nIf you are currently working in more than one job, please answer the following questions for your main job only.",
           "instruction_de": "Bitte geben Sie die genaue Tätigkeitsbezeichnung an, also z. B. nicht „kaufmännische Angestellte“, sondern: „Speditionskauffrau”, nicht „Arbeiter“, sondern: „Maschinenschlosser“. Wenn Sie Beamter sind, geben Sie bitte Ihre Amtsbezeichnung an, z. B. „Polizeimeister“, oder „Studienrat“. Wenn Sie Auszubildender sind, geben Sie bitte Ihren Ausbildungsberuf an. \n\nWenn Sie mehr als eine berufliche Tätigkeit ausüben, beantworten Sie die folgenden Fragen bitte nur für Ihre derzeitige berufliche Haupttätigkeit.",
           "filter": "31;plb0022_v9=1:4,10",
           "concept": "pber",
@@ -11831,10 +11833,11 @@
         },
         {
           "item": "2",
-          "text": "Can not / Prefer not to answer",
-          "text_de": "Kann / möchte ich nicht beantworten",
+          "text": "Please further explain why the amount is so low.",
+          "text_de": "Bitte erklären Sie uns noch, warum der Betrag so niedrig ist.",
           "goto": "1@87",
-          "scale": "bin",
+          "concept": "P70I3",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
@@ -11895,10 +11898,11 @@
         },
         {
           "item": "2",
-          "text": "Can not / Prefer not to answer",
-          "text_de": "Kann / möchte ich nicht beantworten",
+          "text": "Please further explain why the amount is so high.",
+          "text_de": "Bitte erklären Sie uns noch, warum der Betrag so hoch ist.",
           "goto": "1@87",
-          "scale": "bin",
+          "concept": "P70I3",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
@@ -12772,12 +12776,12 @@
     "101a": {
       "question": "101a",
       "name": "101a",
-      "label": "Your indication: \"*? overtime in the last month\" seems a bit high. Do we perhaps need to correct it?",
+      "label": "Your indication: \"*? overtime in the last month\" seems a bit high.  Should we correct that?",
       "label_de": "Ihre Angabe: „*? Überstunden im letzten Monat“ scheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "plb0196_v3_CONa",
-          "text": "Your indication: \"*? overtime in the last month\" seems a bit high. Do we perhaps need to correct it?",
+          "text": "Your indication: \"*? overtime in the last month\" seems a bit high.  Should we correct that?",
           "text_de": "Ihre Angabe: „*? Überstunden im letzten Monat“ scheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
           "filter": "(31;plb0022_v9=1:4)&(99;plb0193=1)&(101;plb0196_v3=1)&(101;plb0197>80)",
           "goto": "1@101",
@@ -13015,12 +13019,12 @@
     "104b": {
       "question": "104b",
       "name": "104b",
-      "label": "Net earnings are usually lower than gross earnings. You have *? Euro for the net earnings and *? Euro for the gross earnings! Do you want to change your entry?",
+      "label": "Net earnings are usually lower than gross earnings. You have *? euros for the net earnings and *? euros for the gross earnings! Do you want to change your answer?",
       "label_de": "Der Nettoverdienst ist in der Regel geringer als der Bruttoverdienst. Sie haben *? Euro für den Nettoverdienst und *? Euro für den Bruttoverdienst eingegeben! Möchten Sie Ihre Angabe ändern?",
       "items": [
         {
           "item": "plc0013_v2_CONb",
-          "text": "Net earnings are usually lower than gross earnings. You have *? Euro for the net earnings and *? Euro for the gross earnings! Do you want to change your entry?",
+          "text": "Net earnings are usually lower than gross earnings. You have *? euros for the net earnings and *? euros for the gross earnings! Do you want to change your answer?",
           "text_de": "Der Nettoverdienst ist in der Regel geringer als der Bruttoverdienst. Sie haben *? Euro für den Nettoverdienst und *? Euro für den Bruttoverdienst eingegeben! Möchten Sie Ihre Angabe ändern?",
           "filter": "(31;plb0022_v9=1:5)&(104;plc0013_v2>0)&(104;plc0014_v2>0)&((104;plc0014_v2>104;plc0013_v2)|((104;plc0014_v2=104;plc0013_v2)&(104;plc0013_v2>750)))",
           "goto": "1@87; 2@87c; -1@105",
@@ -13070,12 +13074,12 @@
     "104d": {
       "question": "104d",
       "name": "104d",
-      "label": "Your indication: \"Gross: *? Euro, Net: *? Euro\" seems a bit low compared to your actual working time of *? hours per week. Do we perhaps need to correct it?",
+      "label": "Your indication:\"gross *? euros, net *? euros\" sseems a bit low compared to your actual working time of *? hours per week. Do we perhaps need to correct it?",
       "label_de": "Ihre Angabe: „Brutto: *? Euro, Netto: *? Euro“ erscheint im Vergleich mit Ihrer tatsächlichen Arbeitszeit von *? Stunden pro Woche etwas gering. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0013_v2_CONd",
-          "text": "Your indication: \"Gross: *? Euro, Net: *? Euro\" seems a bit low compared to your actual working time of *? hours per week. Do we perhaps need to correct it?",
+          "text": "Your indication:\"gross *? euros, net *? euros\" sseems a bit low compared to your actual working time of *? hours per week. Do we perhaps need to correct it?",
           "text_de": "Ihre Angabe: „Brutto: *? Euro, Netto: *? Euro“ erscheint im Vergleich mit Ihrer tatsächlichen Arbeitszeit von *? Stunden pro Woche etwas gering. Müssen wir sie vielleicht korrigieren?",
           "filter": "((31;plb0022_v9=1:5)&(((104;plc0013_v2/(87;plb0186_v3*4.35))>0)&(104;plc0013_v2/(87;plb0186_v3*4.35)<3))|((104;plc0014_v2/(87;plb0186_v3*4.35)>0)&(104;plc0014_v2/(87;plb0186_v3*4.35)<3)))",
           "goto": "1@87; 2@71; 3@87e; -1@105",
@@ -13135,12 +13139,12 @@
     "104f": {
       "question": "104f",
       "name": "104f",
-      "label": "Are the following amounts correct? \"*? Euro last month\" Net: \"*? Euro in the last month\"",
+      "label": "Are the following amounts correct? Gross “*? euros in the last month” Net “*? euros in the last month",
       "label_de": "Sind die folgenden Beträge richtig? Brutto: „*? Euro im letzten Monat“ Netto: „*? Euro im letzten Monat“",
       "items": [
         {
           "item": "plc0013_v2_CONf",
-          "text": "Are the following amounts correct? \"*? Euro last month\" Net: \"*? Euro in the last month\"",
+          "text": "Are the following amounts correct? Gross “*? euros in the last month” Net “*? euros in the last month",
           "text_de": "Sind die folgenden Beträge richtig? Brutto: „*? Euro im letzten Monat“ Netto: „*? Euro im letzten Monat“",
           "filter": "(31;plb0022_v9=1:5)&((104;plc0013_v2>30000)|(104;plc0014_v2>15000))",
           "goto": "1@87; 2@87g; -1@105",
@@ -13190,12 +13194,12 @@
     "104h": {
       "question": "104h",
       "name": "104h",
-      "label": "You have entered \"Gross: *? Euro and net: *? Euro\". That is, your deductions exceed 77% of the gross salary. Do we perhaps need to correct the information?",
+      "label": "You have entered \"Gross: *? euros and net: *? euros\". That is, your deductions exceed 77% of your gross salary. Do we perhaps need to correct the information?",
       "label_de": "Sie haben „Brutto: *? Euro und Netto: *? Euro“ angegeben. D. h. Ihre Abzüge übersteigen 77% des Bruttolohnes. Müssen wir die Angaben vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0013_v2_CONh",
-          "text": "You have entered \"Gross: *? Euro and net: *? Euro\". That is, your deductions exceed 77% of the gross salary. Do we perhaps need to correct the information?",
+          "text": "You have entered \"Gross: *? euros and net: *? euros\". That is, your deductions exceed 77% of your gross salary. Do we perhaps need to correct the information?",
           "text_de": "Sie haben „Brutto: *? Euro und Netto: *? Euro“ angegeben. D. h. Ihre Abzüge übersteigen 77% des Bruttolohnes. Müssen wir die Angaben vielleicht korrigieren?",
           "filter": "(31;plb0022_v9=1:5)&(104;plc0013_v2>0)&(104;plc0014_v2>0)&(((104;plc0013_v2)/(104;plc0014_v2))>4.3478)",
           "goto": "1@87; 2@87i; -1@105",
@@ -14770,12 +14774,12 @@
     "122a": {
       "question": "122a",
       "name": "122a",
-      "label": "Your indication: \"*? hours per week\" seems a bit high. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? hours per week\" seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plb0632_CONa",
-          "text": "Your indication: \"*? hours per week\" seems a bit high. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? hours per week\" seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(114;plb0618=1)&(122;plb0632>30)",
           "goto": "1@122",
@@ -14852,13 +14856,14 @@
     "123a": {
       "question": "123a",
       "name": "123a",
-      "label": "Is the amount \"*?\" correct?",
+      "label": "Is the amount \"*? euros\" correct?",
       "label_de": "Ist der Betrag: „*? Euro“ richtig?",
       "items": [
         {
           "item": "plc0541_CONa",
-          "text": "Is the amount \"*?\" correct?",
+          "text": "Is the amount \"*? euros\" correct?",
           "text_de": "Ist der Betrag: „*? Euro“ richtig?",
+          "instruction": "Please refer to your first side job or volunteer position.",
           "filter": "(114;plb0618=1)&((123;plc0541<20)|(123;plc0541>2000))",
           "goto": "2@123",
           "concept": "P104AR3",
@@ -15296,12 +15301,12 @@
     "123i*": {
       "question": "123i*",
       "name": "123i*",
-      "label": "Your indication: \"*? hours per week\" seems a bit high. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? hours per week\" seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plb0633_CONi",
-          "text": "Your indication: \"*? hours per week\" seems a bit high. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? hours per week\" seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "123i;plb0633>30",
           "scale": "cat",
@@ -15366,13 +15371,14 @@
     "123j*": {
       "question": "123j*",
       "name": "123j*",
-      "label": "Is the amount \"*?\" correct?",
+      "label": "\"Is the amount \"*? euros\" correct?",
       "label_de": "Ist der Betrag: „*? Euro“ richtig?",
       "items": [
         {
           "item": "plc0543_CONj",
-          "text": "Is the amount \"*?\" correct?",
+          "text": "\"Is the amount \"*? euros\" correct?",
           "text_de": "Ist der Betrag: „*? Euro“ richtig?",
+          "instruction": "Please refer to your second side job or volunteer position.",
           "filter": "(123j;plc0543<20)|(123j;plc0543>2000)",
           "scale": "cat",
           "answers": [
@@ -15808,12 +15814,12 @@
     "123p*": {
       "question": "123p*",
       "name": "123p*",
-      "label": "Your indication: \"*? hours per week\" seems a bit high. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? hours per week\" seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plb0634_CONp",
-          "text": "Your indication: \"*? hours per week\" seems a bit high. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? hours per week\" seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "123p;plb0634>30",
           "scale": "cat",
@@ -15870,13 +15876,14 @@
     "123q*": {
       "question": "123q*",
       "name": "123q*",
-      "label": "Is the amount \"*?\" correct?",
+      "label": "\"Is the amount \"*? euros\" correct?",
       "label_de": "Ist der Betrag: „*? Euro“ richtig?",
       "items": [
         {
           "item": "plc0545_CONq",
-          "text": "Is the amount \"*?\" correct?",
+          "text": "\"Is the amount \"*? euros\" correct?",
           "text_de": "Ist der Betrag: „*? Euro“ richtig?",
+          "instruction": "Please refer to your second side job or volunteer position.",
           "filter": "(123q;plc0545<20)|(123q;plc0545>2000)",
           "scale": "cat",
           "answers": [
@@ -16192,12 +16199,12 @@
     "124b": {
       "question": "124b",
       "name": "124b",
-      "label": "Your indication: \"*? euros\" (Retirement, pension) seems a bit low. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros\" (Own retirement, pension) seems a bit low. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro“ (Eigene Rente, Pension) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0232_CONb",
-          "text": "Your indication: \"*? euros\" (Retirement, pension) seems a bit low. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros\" (Own retirement, pension) seems a bit low. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro“ (Eigene Rente, Pension) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0232=1)&(124;plc0233_v2<55)",
           "goto": "1@124",
@@ -16226,13 +16233,13 @@
     "124c": {
       "question": "124c",
       "name": "124c",
-      "label": "Your indication: \"*? euros\" (Retirement, pension) seems a bit high. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“  (Eigene Rente, Pension) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" (Own retirement, pension) seems a bit high. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ (Eigene Rente, Pension) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0232_CONc",
-          "text": "Your indication: \"*? euros\" (Retirement, pension) seems a bit high. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“  (Eigene Rente, Pension) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" (Own retirement, pension) seems a bit high. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ (Eigene Rente, Pension) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0232=1)&(124;plc0233_v2>3500)",
           "goto": "1@124",
           "concept": "P117AR1",
@@ -16260,13 +16267,13 @@
     "124d": {
       "question": "124d",
       "name": "124d",
-      "label": "Your indication: \"*? euros\" (Widow’s / widower’s / orphan’s pension) seems a bit low. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“  (Witwenrente, Witwenpension, Waisenrente) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" (Widow’s / widower’s / orphan’s pension) seems a bit low. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ (Witwenrente, Witwenpension, Waisenrente) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0273_CONd",
-          "text": "Your indication: \"*? euros\" (Widow’s / widower’s / orphan’s pension) seems a bit low. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“  (Witwenrente, Witwenpension, Waisenrente) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" (Widow’s / widower’s / orphan’s pension) seems a bit low. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ (Witwenrente, Witwenpension, Waisenrente) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0273=1)&(124;plc0274_v2<50)",
           "goto": "1@124",
           "concept": "P117AR1",
@@ -16294,12 +16301,12 @@
     "124e": {
       "question": "124e",
       "name": "124e",
-      "label": "Your indication: \"*? euros\" (Widow’s / widower’s / orphan’s pension) seems a bit high. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros\" (Widow’s / widower’s / orphan’s pension) seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro“ (Witwenrente, Witwenpension, Waisenrente)  erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0273_CONe",
-          "text": "Your indication: \"*? euros\" (Widow’s / widower’s / orphan’s pension) seems a bit high. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros\" (Widow’s / widower’s / orphan’s pension) seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro“ (Witwenrente, Witwenpension, Waisenrente)  erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0273=1)&(124;plc0274_v2>2500)",
           "goto": "1@124",
@@ -16328,12 +16335,12 @@
     "124f": {
       "question": "124f",
       "name": "124f",
-      "label": "Your indication: \"*? euros\" (Unemployment benefits (also while attending\nfurther education / retraining or while receiving\na transitional allowance) seems a bit low. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros\" (Unemployment benefits, also while attending\nfurther education / retraining or while receiving\na transitional allowance) seems a bit low. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro“ (Arbeitslosengeld (auch bei Fortbildung / Umschulung oder Übergangsgeld)) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0130_v2_CONf",
-          "text": "Your indication: \"*? euros\" (Unemployment benefits (also while attending\nfurther education / retraining or while receiving\na transitional allowance) seems a bit low. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros\" (Unemployment benefits, also while attending\nfurther education / retraining or while receiving\na transitional allowance) seems a bit low. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro“ (Arbeitslosengeld (auch bei Fortbildung / Umschulung oder Übergangsgeld)) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0130_v2=1)&(124;plc0131_v2<100)",
           "goto": "1@124",
@@ -16362,12 +16369,12 @@
     "124g": {
       "question": "124g",
       "name": "124g",
-      "label": "Your indication: \"*? euros\" (Unemployment benefits (also while attending\nfurther education / retraining or while receiving\na transitional allowance)) seems a bit high. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros\" (Unemployment benefits, also while attending\nfurther education / retraining or while receiving\na transitional allowance) seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro“ (Arbeitslosengeld (auch bei Fortbildung / Umschulung oder Übergangsgeld)) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0130_v2_CONg",
-          "text": "Your indication: \"*? euros\" (Unemployment benefits (also while attending\nfurther education / retraining or while receiving\na transitional allowance)) seems a bit high. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros\" (Unemployment benefits, also while attending\nfurther education / retraining or while receiving\na transitional allowance) seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro“ (Arbeitslosengeld (auch bei Fortbildung / Umschulung oder Übergangsgeld)) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0130_v2=1)&(124;plc0131_v2>1900)",
           "goto": "1@124",
@@ -16396,12 +16403,12 @@
     "124h": {
       "question": "124h",
       "name": "124h",
-      "label": "Your indication: \"*? euros\" (Parental allowance / maternity allowance) seems a bit low. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros\" (Parental allowance / maternity allowance) seems a bit low. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro“ (Elterngeld / Mutterschaftsgeld) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0152_CONh",
-          "text": "Your indication: \"*? euros\" (Parental allowance / maternity allowance) seems a bit low. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros\" (Parental allowance / maternity allowance) seems a bit low. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro“ (Elterngeld / Mutterschaftsgeld) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0152=1)&(124;plc0153_v2<50)",
           "goto": "1@124",
@@ -16430,12 +16437,12 @@
     "124i": {
       "question": "124i",
       "name": "124i",
-      "label": "Your indication: \"*? euros\" (Parental allowance / maternity allowance) seems a bit high. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros\" (Parental allowance / maternity allowance) seems a bit low. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro“(Elterngeld / Mutterschaftsgeld) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0152_CONi",
-          "text": "Your indication: \"*? euros\" (Parental allowance / maternity allowance) seems a bit high. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros\" (Parental allowance / maternity allowance) seems a bit low. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro“(Elterngeld / Mutterschaftsgeld) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0152=1)&(124;plc0153_v2>1500)",
           "goto": "1@124",
@@ -16464,12 +16471,12 @@
     "124j": {
       "question": "124j",
       "name": "124j",
-      "label": "Your indication: \"*? euros\" (BAföG grant, scholarship, vocational training allowance) seems a bit low. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros\" (BAföG grant, scholarship, vocational training allowance) seems a bit low. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro“(BAföG, Stipendium, Berufsausbildungsbeihilfe) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0167_v2_CONj",
-          "text": "Your indication: \"*? euros\" (BAföG grant, scholarship, vocational training allowance) seems a bit low. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros\" (BAföG grant, scholarship, vocational training allowance) seems a bit low. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro“(BAföG, Stipendium, Berufsausbildungsbeihilfe) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0167_v2=1)&(124,plc0168_v2<20)",
           "goto": "1@124",
@@ -16498,12 +16505,12 @@
     "124k": {
       "question": "124k",
       "name": "124k",
-      "label": "Your indication: \"*? euros\" (BAföG grant, scholarship, vocational training allowance) seems a bit high. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros\" (BAföG grant, scholarship, vocational training allowance) seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro“ (BAföG, Stipendium, Berufsausbildungsbeihilfe) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0167_v2_CONk",
-          "text": "Your indication: \"*? euros\" (BAföG grant, scholarship, vocational training allowance) seems a bit high. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros\" (BAföG grant, scholarship, vocational training allowance) seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro“ (BAföG, Stipendium, Berufsausbildungsbeihilfe) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0167_v2=1)&(124;plc0168_v2>853)",
           "goto": "1@124",
@@ -16532,12 +16539,12 @@
     "124l": {
       "question": "124l",
       "name": "124l",
-      "label": "Your indication: \"*? euros\" (Maintenance payments from former spouse\nor life partner / including child support) seems a bit low. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros\" (Maintenance payments from former spouse or life partner / including child support) seems a bit low. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro“ (Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0534_CONl",
-          "text": "Your indication: \"*? euros\" (Maintenance payments from former spouse\nor life partner / including child support) seems a bit low. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros\" (Maintenance payments from former spouse or life partner / including child support) seems a bit low. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro“ (Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0534=1)&(124;plc0535<20)",
           "goto": "1@124",
@@ -16566,12 +16573,12 @@
     "124m": {
       "question": "124m",
       "name": "124m",
-      "label": "Your indication: \"*? euros\" (Maintenance payments from former spouse\nor life partner / including child support)seems a bit high. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros\" (Maintenance payments from former spouse or life partner / including child support) seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro“ (Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0534_CONm",
-          "text": "Your indication: \"*? euros\" (Maintenance payments from former spouse\nor life partner / including child support)seems a bit high. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros\" (Maintenance payments from former spouse or life partner / including child support) seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro“ (Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0534=1)&(124;plc0535>2000)",
           "goto": "1@124",
@@ -16600,12 +16607,12 @@
     "124n": {
       "question": "124n",
       "name": "124n",
-      "label": "Your indication: \"*? euros\" (Advance maintenance payment from\nchild maintenance funds) seems a bit low. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros\" (Advance maintenance payment from child maintenance funds) seems a bit low. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro“ (Unterhalt von Unterhaltsvorschusskassen) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0183_CONn",
-          "text": "Your indication: \"*? euros\" (Advance maintenance payment from\nchild maintenance funds) seems a bit low. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros\" (Advance maintenance payment from child maintenance funds) seems a bit low. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro“ (Unterhalt von Unterhaltsvorschusskassen) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0183=1)&(124;plc0184<20)",
           "goto": "1@124",
@@ -16634,12 +16641,12 @@
     "124o": {
       "question": "124o",
       "name": "124o",
-      "label": "Your indication: \"*? euros\" (Advance maintenance payment from\nchild maintenance funds) seems a bit high. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros\" (Advance maintenance payment from child maintenance funds) seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro“ (Unterhalt von Unterhaltsvorschusskassen) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0183_CONo",
-          "text": "Your indication: \"*? euros\" (Advance maintenance payment from\nchild maintenance funds) seems a bit high. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros\" (Advance maintenance payment from child maintenance funds) seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro“ (Unterhalt von Unterhaltsvorschusskassen) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0183=1)&(124;plc0184>2000)",
           "goto": "1@124",
@@ -16668,12 +16675,12 @@
     "124p": {
       "question": "124p",
       "name": "124p",
-      "label": "Your indication: \"*? euros\" (Other support from persons who do not\nlive in the household) seems a bit low. Do we perhaps need to correct it?",
+      "label": "Your response: \"*? euros\" (other support from persons who do not live in your household) seems a bit low. Would you perhaps like to correct your response?",
       "label_de": "Ihre Angabe: „*? Euro“ (Sonstige Unterstützung von Personen die nicht im Haushalt leben) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0202_v2_CONp",
-          "text": "Your indication: \"*? euros\" (Other support from persons who do not\nlive in the household) seems a bit low. Do we perhaps need to correct it?",
+          "text": "Your response: \"*? euros\" (other support from persons who do not live in your household) seems a bit low. Would you perhaps like to correct your response?",
           "text_de": "Ihre Angabe: „*? Euro“ (Sonstige Unterstützung von Personen die nicht im Haushalt leben) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0202_v2=1)&(124;plc0203_v2<20)",
           "goto": "1@124",
@@ -16702,12 +16709,12 @@
     "124q": {
       "question": "124q",
       "name": "124q",
-      "label": "[de] Ihre Angabe: „*? Euro“ (Sonstige Unterstützung von Personen die nicht im Haushalt leben) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your response: \"*? euros\" (other support from persons who do not live in your household) seems a bit high. Would you perhaps like to correct your response?",
       "label_de": "Ihre Angabe: „*? Euro“ (Sonstige Unterstützung von Personen die nicht im Haushalt leben) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0202_v2_CONq",
-          "text": "[de] Ihre Angabe: „*? Euro“ (Sonstige Unterstützung von Personen die nicht im Haushalt leben) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your response: \"*? euros\" (other support from persons who do not live in your household) seems a bit high. Would you perhaps like to correct your response?",
           "text_de": "Ihre Angabe: „*? Euro“ (Sonstige Unterstützung von Personen die nicht im Haushalt leben) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(124;plc0202_v2=1)&(124;plc0203_v2>2000)",
           "goto": "1@124",
@@ -17292,13 +17299,13 @@
     "125c": {
       "question": "125c",
       "name": "125c",
-      "label": "Your indication: \"*? euros\" Wages or salary as employee\n(including income received\nduring training, partial\nretirement or sick leave) seems a bit high. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“ Lohn / Gehalt als Arbeitnehmer (einschließlich Ausbildungsvergütung, Altersteilzeitbezüge, Lohnfortzahlung)) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" in wages or salary as an employee (including income received\nduring training, partial retirement, or sick leave) seems a bit high. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ Lohn / Gehalt als Arbeitnehmer (einschließlich Ausbildungsvergütung, Altersteilzeitbezüge, Lohnfortzahlung)) erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0016_CONc",
-          "text": "Your indication: \"*? euros\" Wages or salary as employee\n(including income received\nduring training, partial\nretirement or sick leave) seems a bit high. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“ Lohn / Gehalt als Arbeitnehmer (einschließlich Ausbildungsvergütung, Altersteilzeitbezüge, Lohnfortzahlung)) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" in wages or salary as an employee (including income received\nduring training, partial retirement, or sick leave) seems a bit high. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ Lohn / Gehalt als Arbeitnehmer (einschließlich Ausbildungsvergütung, Altersteilzeitbezüge, Lohnfortzahlung)) erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(125;plc0016=1)&(125aa;plb0471_v2>30000)",
           "goto": "1@125",
           "scale": "cat",
@@ -17325,13 +17332,13 @@
     "125d": {
       "question": "125d",
       "name": "125d",
-      "label": "Your indication: \"*? euros\" Income from independent / freelance / commercial\nactivities / including profit distribution seems a bit high. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“ Einkünfte aus selbständiger / freiberuflicher / gewerblicher Tätigkeit erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" income from self-employed / freelance / commercial work / including profit distribution seems a bit high. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ Einkünfte aus selbständiger / freiberuflicher / gewerblicher Tätigkeit erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0074_CONd",
-          "text": "Your indication: \"*? euros\" Income from independent / freelance / commercial\nactivities / including profit distribution seems a bit high. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“ Einkünfte aus selbständiger / freiberuflicher / gewerblicher Tätigkeit erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" income from self-employed / freelance / commercial work / including profit distribution seems a bit high. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ Einkünfte aus selbständiger / freiberuflicher / gewerblicher Tätigkeit erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(125;plc0074=1)&(125aa;plb0474_v2>30000)",
           "goto": "1@125",
           "scale": "cat",
@@ -17358,13 +17365,13 @@
     "125e": {
       "question": "125e",
       "name": "125e",
-      "label": "Your indication: \"*? euros\" Second job, side job seems a bit low. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“ (Nebentätigkeit, Nebenverdienst) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" from a second job or side job seems a bit low. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ (Nebentätigkeit, Nebenverdienst) erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0065_CONe",
-          "text": "Your indication: \"*? euros\" Second job, side job seems a bit low. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“ (Nebentätigkeit, Nebenverdienst) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" from a second job or side job seems a bit low. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ (Nebentätigkeit, Nebenverdienst) erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(125;plc0065=1)&(125aa;plb0477_v2<20)",
           "goto": "1@125",
           "scale": "cat",
@@ -17391,13 +17398,13 @@
     "125f": {
       "question": "125f",
       "name": "125f",
-      "label": "Your indication: \"*? euros\" Second job, side job seems a bit high. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“ (Nebentätigkeit, Nebenverdienst) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" from a second job or side job seems a bit high. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ (Nebentätigkeit, Nebenverdienst) erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0065_CONf",
-          "text": "Your indication: \"*? euros\" Second job, side job seems a bit high. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“ (Nebentätigkeit, Nebenverdienst) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" from a second job or side job seems a bit high. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ (Nebentätigkeit, Nebenverdienst) erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(125;plc0065=1)&(125aa;plb0477_v2>2000)",
           "goto": "1@125",
           "scale": "cat",
@@ -17424,13 +17431,13 @@
     "125g": {
       "question": "125g",
       "name": "125g",
-      "label": "Your indication: \"*? euros\" Unemployment benefits (also while attending further education / retraining or while receiving a transitional allowance) seems a bit low. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“ (Arbeitslosengeld (auch bei Fortbildung / Umschulung oder Übergangsgeld)) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" in unemployment benefits (also while attending further education / retraining or while receiving a transitional allowance) seems a bit low. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ (Arbeitslosengeld (auch bei Fortbildung / Umschulung oder Übergangsgeld)) erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0136_CONg",
-          "text": "Your indication: \"*? euros\" Unemployment benefits (also while attending further education / retraining or while receiving a transitional allowance) seems a bit low. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“ (Arbeitslosengeld (auch bei Fortbildung / Umschulung oder Übergangsgeld)) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" in unemployment benefits (also while attending further education / retraining or while receiving a transitional allowance) seems a bit low. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ (Arbeitslosengeld (auch bei Fortbildung / Umschulung oder Übergangsgeld)) erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(125;plc0136=1)&(125aa;plc0137_v2<50)",
           "goto": "1@125",
           "scale": "cat",
@@ -17457,13 +17464,13 @@
     "125h": {
       "question": "125h",
       "name": "125h",
-      "label": "Your indication: \"*? euros\" Unemployment benefits (also while attending further education / retraining or while receiving a transitional allowance) seems a bit high. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“ (Arbeitslosengeld (auch bei Fortbildung / Umschulung oder Übergangsgeld)) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" in unemployment benefits (also while attending further education / retraining or while receiving a transitional allowance) seems a bit high. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ (Arbeitslosengeld (auch bei Fortbildung / Umschulung oder Übergangsgeld)) erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0136_CONh",
-          "text": "Your indication: \"*? euros\" Unemployment benefits (also while attending further education / retraining or while receiving a transitional allowance) seems a bit high. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“ (Arbeitslosengeld (auch bei Fortbildung / Umschulung oder Übergangsgeld)) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" in unemployment benefits (also while attending further education / retraining or while receiving a transitional allowance) seems a bit high. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ (Arbeitslosengeld (auch bei Fortbildung / Umschulung oder Übergangsgeld)) erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(125;plc0136=1)&(125aa;plc0137_v2>1500)",
           "goto": "1@125",
           "scale": "cat",
@@ -17490,13 +17497,13 @@
     "125i": {
       "question": "125i",
       "name": "125i",
-      "label": "Your indication: \"*? euros\" Parental allowance / maternity allowance seems a bit low. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“ (Elterngeld / Mutterschaftsgeld) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" in parental allowance / maternity allowance seems a bit low. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ (Elterngeld / Mutterschaftsgeld) erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0154_CONi",
-          "text": "Your indication: \"*? euros\" Parental allowance / maternity allowance seems a bit low. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“ (Elterngeld / Mutterschaftsgeld) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" in parental allowance / maternity allowance seems a bit low. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ (Elterngeld / Mutterschaftsgeld) erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(125;plc0154=1)&(125aa;plc0155_v2<20)",
           "goto": "1@125",
           "scale": "cat",
@@ -17523,13 +17530,13 @@
     "125j": {
       "question": "125j",
       "name": "125j",
-      "label": "Your indication: \"*? euros\" Parental allowance / maternity allowance seems a bit high. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“ (Elterngeld / Mutterschaftsgeld) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" in parental allowance / maternity allowance seems a bit high. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ (Elterngeld / Mutterschaftsgeld) erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0154_CONj",
-          "text": "Your indication: \"*? euros\" Parental allowance / maternity allowance seems a bit high. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“ (Elterngeld / Mutterschaftsgeld) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" in parental allowance / maternity allowance seems a bit high. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ (Elterngeld / Mutterschaftsgeld) erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(125;plc0154=1)&(125aa;plc0155_v2>2000)",
           "goto": "1@125",
           "scale": "cat",
@@ -17556,13 +17563,13 @@
     "125k": {
       "question": "125k",
       "name": "125k",
-      "label": "Your indication: \"*? euros\"BAföG grant, scholarship, vocational training allowance seems a bit low. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“ (BAföG, Stipendium, Berufsausbildungsbeihilfe) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" in BAföG grants, scholarships, vocational training allowances seems a bit low. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ (BAföG, Stipendium, Berufsausbildungsbeihilfe) erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0170_CONk",
-          "text": "Your indication: \"*? euros\"BAföG grant, scholarship, vocational training allowance seems a bit low. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“ (BAföG, Stipendium, Berufsausbildungsbeihilfe) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" in BAföG grants, scholarships, vocational training allowances seems a bit low. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ (BAföG, Stipendium, Berufsausbildungsbeihilfe) erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(125;plc0170=1)&(125aa;plc0171_v2<20)",
           "goto": "1@125",
           "scale": "cat",
@@ -17589,13 +17596,13 @@
     "125l": {
       "question": "125l",
       "name": "125l",
-      "label": "Your indication: \"*? euros\"BAföG grant, scholarship, vocational training allowance seems a bit high. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“ (BAföG, Stipendium, Berufsausbildungsbeihilfe) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" in BAföG grants, scholarships, vocational training allowances seems a bit high. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ (BAföG, Stipendium, Berufsausbildungsbeihilfe) erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0170_CONl",
-          "text": "Your indication: \"*? euros\"BAföG grant, scholarship, vocational training allowance seems a bit high. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“ (BAföG, Stipendium, Berufsausbildungsbeihilfe) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" in BAföG grants, scholarships, vocational training allowances seems a bit high. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ (BAföG, Stipendium, Berufsausbildungsbeihilfe) erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(125;plc0170=1)&(125aa;plc0171_v2>853)",
           "goto": "1@125",
           "scale": "cat",
@@ -17622,13 +17629,13 @@
     "125m": {
       "question": "125m",
       "name": "125m",
-      "label": "Your indication: \"*? euros\" Maintenance payments from\nformer spouse or life partner / including child support seems a bit low. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“ (Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" in maintenance payments from former spouse or life partner / including child support seems a bit low. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ (Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt) erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0527_CONm",
-          "text": "Your indication: \"*? euros\" Maintenance payments from\nformer spouse or life partner / including child support seems a bit low. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“ (Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" in maintenance payments from former spouse or life partner / including child support seems a bit low. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ (Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt) erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(125;plc0527=1)&(125aa;plc0528<20)",
           "goto": "1@125",
           "scale": "cat",
@@ -17655,13 +17662,13 @@
     "125n": {
       "question": "125n",
       "name": "125n",
-      "label": "Your indication: \"*? euros\" Maintenance payments from\nformer spouse or life partner / including child support seems a bit high. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“ (Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" in maintenance payments from former spouse or life partner / including child support seems a bit high. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ (Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt) erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0527_CONn",
-          "text": "Your indication: \"*? euros\" Maintenance payments from\nformer spouse or life partner / including child support seems a bit high. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“ (Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" in maintenance payments from former spouse or life partner / including child support seems a bit high. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ (Unterhalt vom früheren Ehepartner oder Lebenspartner / einschließlich Kindesunterhalt) erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(125;plc0527=1)&(125aa;plc0528>2000)",
           "goto": "1@125",
           "scale": "cat",
@@ -17688,13 +17695,13 @@
     "125o": {
       "question": "125o",
       "name": "125o",
-      "label": "Your indication: \"*? euros\" Advance maintenance\npayment from child maintenance funds seems a bit low. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“ (Unterhalt von Unterhaltsvorschusskassen) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" in advance maintenance payment from child maintenance funds seems a bit low. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ (Unterhalt von Unterhaltsvorschusskassen) erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0189_v2_CONo",
-          "text": "Your indication: \"*? euros\" Advance maintenance\npayment from child maintenance funds seems a bit low. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“ (Unterhalt von Unterhaltsvorschusskassen) erscheint etwas niedrig. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" in advance maintenance payment from child maintenance funds seems a bit low. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ (Unterhalt von Unterhaltsvorschusskassen) erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(125;plc0189_v2=1)&(125aa;plc0190_v2<20)",
           "goto": "1@125",
           "scale": "cat",
@@ -17721,13 +17728,13 @@
     "125p": {
       "question": "125p",
       "name": "125p",
-      "label": "Your indication: \"*? euros\" Advance maintenance\npayment from child maintenance funds seems a bit high. Do we perhaps need to correct it?",
-      "label_de": "Ihre Angabe: „*? Euro“ (Unterhalt von Unterhaltsvorschusskassen) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" in advance maintenance payment from child maintenance funds seems a bit high. Should we correct that?",
+      "label_de": "Ihre Angabe: „*? Euro“ (Unterhalt von Unterhaltsvorschusskassen) erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0189_v2_CONp",
-          "text": "Your indication: \"*? euros\" Advance maintenance\npayment from child maintenance funds seems a bit high. Do we perhaps need to correct it?",
-          "text_de": "Ihre Angabe: „*? Euro“ (Unterhalt von Unterhaltsvorschusskassen) erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" in advance maintenance payment from child maintenance funds seems a bit high. Should we correct that?",
+          "text_de": "Ihre Angabe: „*? Euro“ (Unterhalt von Unterhaltsvorschusskassen) erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(125;plc0189_v2=1)&(125aa;plc0190_v2>2000)",
           "goto": "1@125",
           "scale": "cat",
@@ -18255,12 +18262,12 @@
     "127a": {
       "question": "127a",
       "name": "127a",
-      "label": "Your indication: \"*? euros\" to cover travel expenses seems a bit high. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros\" for travel expenses or public transport tickets seems a bit high. Do we perhaps need to correct it?",
       "label_de": "Ihre Angabe: „*? Euro“ für Fahrtgeld oder Zuschüsse für den öffentlichen Nahverkehr erscheint mir etwas hoch. Müssen wie sie vielleicht korrigieren?",
       "items": [
         {
           "item": "plc0055_CONa",
-          "text": "Your indication: \"*? euros\" to cover travel expenses seems a bit high. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros\" for travel expenses or public transport tickets seems a bit high. Do we perhaps need to correct it?",
           "text_de": "Ihre Angabe: „*? Euro“ für Fahrtgeld oder Zuschüsse für den öffentlichen Nahverkehr erscheint mir etwas hoch. Müssen wie sie vielleicht korrigieren?",
           "filter": "(127;plc0055=1)&(127;plc0056>2499)",
           "goto": "1@127",
@@ -18698,12 +18705,12 @@
     "132a*": {
       "question": "132a*",
       "name": "132a*",
-      "label": "Your indication: \"*? euros from the German Pension Insurance\" seems a bit low. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros from the German Pension Insurance\" seems a bit low. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro von der Rentenversicherung für Arbeiter und Angestellte“ erscheint mir etwas niedrig. Müssen wir sie korrigieren?",
       "items": [
         {
           "item": "plc0220_v3_CONa",
-          "text": "Your indication: \"*? euros from the German Pension Insurance\" seems a bit low. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros from the German Pension Insurance\" seems a bit low. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro von der Rentenversicherung für Arbeiter und Angestellte“ erscheint mir etwas niedrig. Müssen wir sie korrigieren?",
           "filter": "(125;plc0234=1)&(132a;plc0220_v3<50)",
           "goto": "1@132",
@@ -18737,12 +18744,12 @@
     "132b*": {
       "question": "132b*",
       "name": "132b*",
-      "label": "Your indication: \"*? euros from the German Pension Insurance\" seems a bit high. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros from the German Pension Insurance\" seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro von der Rentenversicherung für Arbeiter und Angestellte“ erscheint mir etwas hoch. Müssen wir sie korrigieren?",
       "items": [
         {
           "item": "par1_CONb",
-          "text": "Your indication: \"*? euros from the German Pension Insurance\" seems a bit high. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros from the German Pension Insurance\" seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro von der Rentenversicherung für Arbeiter und Angestellte“ erscheint mir etwas hoch. Müssen wir sie korrigieren?",
           "filter": "(125;plc0234=1)&(132a;plc0220_v3>2500)",
           "goto": "1@132",
@@ -19039,12 +19046,12 @@
     "132c": {
       "question": "132c",
       "name": "132c",
-      "label": "Your indication: \"*? euros from the German Pension Insurance\" seems a bit low. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros from the German Pension Insurance\" seems a bit low. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro von der Rentenversicherung für Arbeiter und Angestellte“ erscheint mir etwas niedrig. Müssen wir sie korrigieren?",
       "items": [
         {
           "item": "plc0268_v3_CONc",
-          "text": "Your indication: \"*? euros from the German Pension Insurance\" seems a bit low. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros from the German Pension Insurance\" seems a bit low. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro von der Rentenversicherung für Arbeiter und Angestellte“ erscheint mir etwas niedrig. Müssen wir sie korrigieren?",
           "filter": "(125;plc0275=1)&(132b;plc0268_v3<100)",
           "goto": "1@132",
@@ -19078,12 +19085,12 @@
     "132d": {
       "question": "132d",
       "name": "132d",
-      "label": "Your indication: \"*? euros from the German Pension Insurance\" seems a bit high. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros from the German Pension Insurance\" seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro von der Rentenversicherung für Arbeiter und Angestellte“ erscheint mir etwas hoch. Müssen wir sie korrigieren?",
       "items": [
         {
           "item": "plc0268_v3_CONd",
-          "text": "Your indication: \"*? euros from the German Pension Insurance\" seems a bit high. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros from the German Pension Insurance\" seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro von der Rentenversicherung für Arbeiter und Angestellte“ erscheint mir etwas hoch. Müssen wir sie korrigieren?",
           "filter": "(125;plc0275=1)&(132b;plc0268_v3>1900)",
           "goto": "1@132",
@@ -20979,7 +20986,7 @@
         },
         {
           "item": "V133_erwerb1",
-          "text": "Employed full-time (including full-time ABM / SAM job creation measures)",
+          "text": "Fully employed",
           "text_de": "Voll erwerbstätig",
           "concept": "V133_erwerb1",
           "scale": "bin",
@@ -20997,7 +21004,7 @@
         },
         {
           "item": "V133_kurz1",
-          "text": "Working reduced hours (short-time work)",
+          "text": "In short-time work",
           "text_de": "In Kurzarbeit",
           "concept": "V133_kurz1",
           "scale": "bin",
@@ -21006,7 +21013,7 @@
         },
         {
           "item": "V133_mini1",
-          "text": "Working at a Mini-Job (up to 450€)",
+          "text": "In a mini-job (up to €450)",
           "text_de": "In einem Mini-Job (bis 450€)",
           "concept": "V133_mini1",
           "scale": "bin",
@@ -21015,7 +21022,7 @@
         },
         {
           "item": "V133_lehre1",
-          "text": "In first-time in-service training (betriebliche Erstausbildung) / apprenticeship (Lehre)\n",
+          "text": "In in-company initial training / apprenticeship",
           "text_de": "In betrieblicher Erstausbildung / Lehre",
           "concept": "V133_lehre1",
           "scale": "bin",
@@ -21033,7 +21040,7 @@
         },
         {
           "item": "V133_arb1",
-          "text": "Registered unemployed",
+          "text": "Registered as unemployed",
           "text_de": "Arbeitslos gemeldet",
           "concept": "V133_arb1",
           "scale": "bin",
@@ -21042,7 +21049,7 @@
         },
         {
           "item": "V133_pen1",
-          "text": "In retirement / early retirement (Vorruhestand)",
+          "text": "In retirement or early retirement",
           "text_de": "In Rente / Pension oder Vorruhestand",
           "concept": "V133_pen1",
           "scale": "bin",
@@ -21051,7 +21058,7 @@
         },
         {
           "item": "V133_mutt1",
-          "text": "On maternity leave (Mutterschutz) / childcare leave (Erziehungsurlaub) / parental leave (Elternzeit)",
+          "text": "On maternity leave / parental leave",
           "text_de": "Im Mutterschutz / Elternzeit",
           "concept": "V133_mutt1",
           "scale": "bin",
@@ -21060,7 +21067,7 @@
         },
         {
           "item": "V133_schul1",
-          "text": "Attending school / university / or vocational school (Fachschule)",
+          "text": "At school / technical college / college / university",
           "text_de": "Auf der Schule / Fachschule / Hochschule / Universität\n",
           "concept": "V133_schul1",
           "scale": "bin",
@@ -21069,7 +21076,7 @@
         },
         {
           "item": "V133_frei1",
-          "text": "Voluntary or compulsory military service (Wehrdienst) / reserve dutytraining (Wehrübung) / Community service (Zivildienst) / voluntary social / ecological year (freiwilliges soziales / ökologisches Jahr) / federal volunteer service (Bundesfreiwilligendienst)",
+          "text": "In voluntary social / ecological year, in the Federal Voluntary Service",
           "text_de": "Im Freiwilligen Sozialen / Ökologischen Jahr, im Bundesfreiwilligendienst",
           "concept": "V133_frei1",
           "scale": "bin",
@@ -21078,7 +21085,7 @@
         },
         {
           "item": "V133_haus1",
-          "text": "Homemaker",
+          "text": "Housewife / House husband",
           "text_de": "Hausfrau / Hausmann",
           "concept": "V133_haus1",
           "scale": "bin",
@@ -21096,7 +21103,7 @@
         },
         {
           "item": "V133_sonstt1",
-          "text": "\n[Other] Please state:",
+          "text": "\n[Other]:",
           "text_de": "[Sonstiges], und zwar...",
           "filter": "133a_1;V133_sonst1=1",
           "concept": "V133_sonstt1",
@@ -21128,7 +21135,7 @@
         },
         {
           "item": "V133_erwerb2",
-          "text": "Employed full-time (including full-time ABM / SAM job creation measures)",
+          "text": "Fully employed",
           "text_de": "Voll erwerbstätig",
           "concept": "V133_erwerb2",
           "scale": "bin",
@@ -21146,7 +21153,7 @@
         },
         {
           "item": "V133_kurz2",
-          "text": "Working reduced hours (short-time work)",
+          "text": "In short-time work",
           "text_de": "In Kurzarbeit",
           "concept": "V133_kurz2",
           "scale": "bin",
@@ -21155,7 +21162,7 @@
         },
         {
           "item": "V133_mini2",
-          "text": "Working at a Mini-Job (up to 450€)",
+          "text": "In a mini-job (up to €450)",
           "text_de": "In einem Mini-Job (bis 450€)",
           "concept": "V133_mini2",
           "scale": "bin",
@@ -21164,7 +21171,7 @@
         },
         {
           "item": "V133_lehre2",
-          "text": "In first-time in-service training (betriebliche Erstausbildung) / apprenticeship (Lehre)",
+          "text": "In in-company initial training / apprenticeship",
           "text_de": "In betrieblicher Erstausbildung / Lehre",
           "concept": "V133_lehre2",
           "scale": "bin",
@@ -21182,7 +21189,7 @@
         },
         {
           "item": "V133_arb2",
-          "text": "Registered unemployed",
+          "text": "Registered as unemployed",
           "text_de": "Arbeitslos gemeldet",
           "concept": "V133_arb2",
           "scale": "bin",
@@ -21191,7 +21198,7 @@
         },
         {
           "item": "V133_pen2",
-          "text": "In retirement / early retirement (Vorruhestand)",
+          "text": "In retirement or early retirement",
           "text_de": "In Rente / Pension oder Vorruhestand",
           "concept": "V133_pen2",
           "scale": "bin",
@@ -21200,7 +21207,7 @@
         },
         {
           "item": "V133_mutt2",
-          "text": "On maternity leave (Mutterschutz) / childcare leave (Erziehungsurlaub) / parental leave (Elternzeit)",
+          "text": "On maternity leave / parental leave",
           "text_de": "Im Mutterschutz / Elternzeit",
           "concept": "V133_mutt2",
           "scale": "bin",
@@ -21209,7 +21216,7 @@
         },
         {
           "item": "V133_schul2",
-          "text": "Attending school / university / or vocational school (Fachschule)",
+          "text": "At school / technical college / college / university",
           "text_de": "Auf der Schule / Fachschule / Hochschule / Universität\n",
           "concept": "V133_schul2",
           "scale": "bin",
@@ -21218,7 +21225,7 @@
         },
         {
           "item": "V133_frei2",
-          "text": "Voluntary or compulsory military service (Wehrdienst) / reserve dutytraining (Wehrübung) / Community service (Zivildienst) / voluntary social / ecological year (freiwilliges soziales / ökologisches Jahr) / federal volunteer service (Bundesfreiwilligendienst)",
+          "text": "In voluntary social / ecological year, in the Federal Voluntary Service",
           "text_de": "Im Freiwilligen Sozialen / Ökologischen Jahr, im Bundesfreiwilligendienst",
           "concept": "V133_frei2",
           "scale": "bin",
@@ -21227,7 +21234,7 @@
         },
         {
           "item": "V133_haus2",
-          "text": "Homemaker",
+          "text": "Housewife / House husband",
           "text_de": "Hausfrau / Hausmann",
           "concept": "V133_haus2",
           "scale": "bin",
@@ -21245,7 +21252,7 @@
         },
         {
           "item": "V133_sonstt2",
-          "text": "[Other] Please state:",
+          "text": "[Other]:",
           "text_de": "[Sonstiges], und zwar...",
           "filter": "133a_2; V133_sonst2=1",
           "concept": "V133_sonstt2",
@@ -21277,7 +21284,7 @@
         },
         {
           "item": "V133_erwerb3",
-          "text": "Employed full-time (including full-time ABM / SAM job creation measures)",
+          "text": "Fully employed",
           "text_de": "Voll erwerbstätig",
           "concept": "V133_erwerb3",
           "scale": "bin",
@@ -21295,7 +21302,7 @@
         },
         {
           "item": "V133_kurz3",
-          "text": "Working reduced hours (short-time work)",
+          "text": "In short-time work",
           "text_de": "In Kurzarbeit",
           "concept": "V133_kurz3",
           "scale": "bin",
@@ -21304,7 +21311,7 @@
         },
         {
           "item": "V133_mini3",
-          "text": "Working at a Mini-Job (up to 450€)",
+          "text": "In a mini-job (up to €450)",
           "text_de": "In einem Mini-Job (bis 450€)",
           "concept": "V133_mini3",
           "scale": "bin",
@@ -21313,7 +21320,7 @@
         },
         {
           "item": "V133_lehre3",
-          "text": "In first-time in-service training (betriebliche Erstausbildung) / apprenticeship (Lehre)",
+          "text": "In in-company initial training / apprenticeship",
           "text_de": "In betrieblicher Erstausbildung / Lehre",
           "concept": "V133_lehre3",
           "scale": "bin",
@@ -21331,7 +21338,7 @@
         },
         {
           "item": "V133_arb3",
-          "text": "Registered unemployed",
+          "text": "Registered as unemployed",
           "text_de": "Arbeitslos gemeldet",
           "concept": "V133_arb3",
           "scale": "bin",
@@ -21340,7 +21347,7 @@
         },
         {
           "item": "V133_pen3",
-          "text": "In retirement / early retirement (Vorruhestand)",
+          "text": "In retirement or early retirement",
           "text_de": "In Rente / Pension oder Vorruhestand",
           "concept": "V133_pen3",
           "scale": "bin",
@@ -21349,7 +21356,7 @@
         },
         {
           "item": "V133_mutt3",
-          "text": "On maternity leave (Mutterschutz) / childcare leave (Erziehungsurlaub) / parental leave (Elternzeit)",
+          "text": "On maternity leave / parental leave",
           "text_de": "Im Mutterschutz / Elternzeit",
           "concept": "V133_mutt3",
           "scale": "bin",
@@ -21358,7 +21365,7 @@
         },
         {
           "item": "V133_schul3",
-          "text": "Attending school / university / or vocational school (Fachschule)",
+          "text": "At school / technical college / college / university",
           "text_de": "Auf der Schule / Fachschule / Hochschule / Universität\n",
           "concept": "V133_schul3",
           "scale": "bin",
@@ -21367,7 +21374,7 @@
         },
         {
           "item": "V133_frei3",
-          "text": "Voluntary or compulsory military service (Wehrdienst) / reserve dutytraining (Wehrübung) / Community service (Zivildienst) / voluntary social / ecological year (freiwilliges soziales / ökologisches Jahr) / federal volunteer service (Bundesfreiwilligendienst)",
+          "text": "In voluntary social / ecological year, in the Federal Voluntary Service",
           "text_de": "Im Freiwilligen Sozialen / Ökologischen Jahr, im Bundesfreiwilligendienst",
           "concept": "V133_frei3",
           "scale": "bin",
@@ -21376,7 +21383,7 @@
         },
         {
           "item": "V133_haus3",
-          "text": "Homemaker",
+          "text": "Housewife / House husband",
           "text_de": "Hausfrau / Hausmann",
           "concept": "V133_haus3",
           "scale": "bin",
@@ -21394,7 +21401,7 @@
         },
         {
           "item": "V133_sonstt3",
-          "text": "[Other] Please state:",
+          "text": "[Other]:",
           "text_de": "[Sonstiges], und zwar...",
           "filter": "133a_3; V133_sonst3=1",
           "concept": "V133_sonstt3",
@@ -21426,7 +21433,7 @@
         },
         {
           "item": "V133_erwerb4",
-          "text": "Employed full-time (including full-time ABM / SAM job creation measures)",
+          "text": "Fully employed",
           "text_de": "Voll erwerbstätig",
           "concept": "V133_erwerb4",
           "scale": "bin",
@@ -21444,7 +21451,7 @@
         },
         {
           "item": "V133_kurz4",
-          "text": "Working reduced hours (short-time work)",
+          "text": "In short-time work",
           "text_de": "In Kurzarbeit",
           "concept": "V133_kurz4",
           "scale": "bin",
@@ -21453,7 +21460,7 @@
         },
         {
           "item": "V133_mini4",
-          "text": "Working at a Mini-Job (up to 450€)",
+          "text": "In a mini-job (up to €450)",
           "text_de": "In einem Mini-Job (bis 450€)",
           "concept": "V133_mini4",
           "scale": "bin",
@@ -21462,7 +21469,7 @@
         },
         {
           "item": "V133_lehre4",
-          "text": "In first-time in-service training (betriebliche Erstausbildung) / apprenticeship (Lehre)",
+          "text": "In in-company initial training / apprenticeship",
           "text_de": "In betrieblicher Erstausbildung / Lehre",
           "concept": "V133_lehre4",
           "scale": "bin",
@@ -21480,7 +21487,7 @@
         },
         {
           "item": "V133_arb4",
-          "text": "Registered unemployed",
+          "text": "Registered as unemployed",
           "text_de": "Arbeitslos gemeldet",
           "concept": "V133_arb4",
           "scale": "bin",
@@ -21489,7 +21496,7 @@
         },
         {
           "item": "V133_pen4",
-          "text": "In retirement / early retirement (Vorruhestand)",
+          "text": "In retirement or early retirement",
           "text_de": "In Rente / Pension oder Vorruhestand",
           "concept": "V133_pen4",
           "scale": "bin",
@@ -21498,7 +21505,7 @@
         },
         {
           "item": "V133_mutt4",
-          "text": "On maternity leave (Mutterschutz) / childcare leave (Erziehungsurlaub) / parental leave (Elternzeit)",
+          "text": "On maternity leave / parental leave",
           "text_de": "Im Mutterschutz / Elternzeit",
           "concept": "V133_mutt4",
           "scale": "bin",
@@ -21507,7 +21514,7 @@
         },
         {
           "item": "V133_schul4",
-          "text": "Attending school / university / or vocational school (Fachschule)",
+          "text": "At school / technical college / college / university",
           "text_de": "Auf der Schule / Fachschule / Hochschule / Universität\n",
           "concept": "V133_schul4",
           "scale": "bin",
@@ -21516,7 +21523,7 @@
         },
         {
           "item": "V133_frei4",
-          "text": "Voluntary or compulsory military service (Wehrdienst) / reserve dutytraining (Wehrübung) / Community service (Zivildienst) / voluntary social / ecological year (freiwilliges soziales / ökologisches Jahr) / federal volunteer service (Bundesfreiwilligendienst)",
+          "text": "In voluntary social / ecological year, in the Federal Voluntary Service",
           "text_de": "Im Freiwilligen Sozialen / Ökologischen Jahr, im Bundesfreiwilligendienst",
           "concept": "V133_frei4",
           "scale": "bin",
@@ -21525,7 +21532,7 @@
         },
         {
           "item": "V133_haus4",
-          "text": "Homemaker",
+          "text": "Housewife / House husband",
           "text_de": "Hausfrau / Hausmann",
           "concept": "V133_haus4",
           "scale": "bin",
@@ -21543,7 +21550,7 @@
         },
         {
           "item": "V133_sonstt4",
-          "text": "[Other] Please state:",
+          "text": "[Other]:",
           "text_de": "[Sonstiges], und zwar...",
           "filter": "133a_4;V133_sonst4=1",
           "concept": "V133_sonstt4",
@@ -21575,7 +21582,7 @@
         },
         {
           "item": "V133_erwerb5",
-          "text": "Employed full-time (including full-time ABM / SAM job creation measures)",
+          "text": "Fully employed",
           "text_de": "Voll erwerbstätig",
           "concept": "V133_erwerb5",
           "scale": "bin",
@@ -21593,7 +21600,7 @@
         },
         {
           "item": "V133_kurz5",
-          "text": "Working reduced hours (short-time work)",
+          "text": "In short-time work",
           "text_de": "In Kurzarbeit",
           "concept": "V133_kurz5",
           "scale": "bin",
@@ -21602,7 +21609,7 @@
         },
         {
           "item": "V133_mini5",
-          "text": "Working at a Mini-Job (up to 450€)",
+          "text": "In a mini-job (up to €450)",
           "text_de": "In einem Mini-Job (bis 450€)",
           "concept": "V133_mini5",
           "scale": "bin",
@@ -21611,7 +21618,7 @@
         },
         {
           "item": "V133_lehre5",
-          "text": "In first-time in-service training (betriebliche Erstausbildung) / apprenticeship (Lehre)",
+          "text": "In in-company initial training / apprenticeship",
           "text_de": "In betrieblicher Erstausbildung / Lehre",
           "concept": "V133_lehre5",
           "scale": "bin",
@@ -21629,7 +21636,7 @@
         },
         {
           "item": "V133_arb5",
-          "text": "Registered unemployed",
+          "text": "Registered as unemployed",
           "text_de": "Arbeitslos gemeldet",
           "concept": "V133_arb5",
           "scale": "bin",
@@ -21638,7 +21645,7 @@
         },
         {
           "item": "V133_pen5",
-          "text": "In retirement / early retirement (Vorruhestand)",
+          "text": "In retirement or early retirement",
           "text_de": "In Rente / Pension oder Vorruhestand",
           "concept": "V133_pen5",
           "scale": "bin",
@@ -21647,7 +21654,7 @@
         },
         {
           "item": "V133_mutt5",
-          "text": "On maternity leave (Mutterschutz) / childcare leave (Erziehungsurlaub) / parental leave (Elternzeit)",
+          "text": "On maternity leave / parental leave",
           "text_de": "Im Mutterschutz / Elternzeit",
           "concept": "V133_mutt5",
           "scale": "bin",
@@ -21656,7 +21663,7 @@
         },
         {
           "item": "V133_schul5",
-          "text": "Attending school / university / or vocational school (Fachschule)",
+          "text": "At school / technical college / college / university",
           "text_de": "Auf der Schule / Fachschule / Hochschule / Universität\n",
           "concept": "V133_schul5",
           "scale": "bin",
@@ -21665,7 +21672,7 @@
         },
         {
           "item": "V133_frei5",
-          "text": "Voluntary or compulsory military service (Wehrdienst) / reserve dutytraining (Wehrübung) / Community service (Zivildienst) / voluntary social / ecological year (freiwilliges soziales / ökologisches Jahr) / federal volunteer service (Bundesfreiwilligendienst)",
+          "text": "In voluntary social / ecological year, in the Federal Voluntary Service",
           "text_de": "Im Freiwilligen Sozialen / Ökologischen Jahr, im Bundesfreiwilligendienst",
           "concept": "V133_frei5",
           "scale": "bin",
@@ -21674,7 +21681,7 @@
         },
         {
           "item": "V133_haus5",
-          "text": "Homemaker",
+          "text": "Housewife / House husband",
           "text_de": "Hausfrau / Hausmann",
           "concept": "V133_haus5",
           "scale": "bin",
@@ -21692,7 +21699,7 @@
         },
         {
           "item": "V133_sonstt5",
-          "text": "[Other] Please state:",
+          "text": "[Other]:",
           "text_de": "[Sonstiges], und zwar...",
           "filter": "133a_5;V133_sonst5=1",
           "concept": "V133_sonstt5",
@@ -21724,7 +21731,7 @@
         },
         {
           "item": "V133_erwerb6",
-          "text": "Employed full-time (including full-time ABM / SAM job creation measures)",
+          "text": "Fully employed",
           "text_de": "Voll erwerbstätig",
           "concept": "V133_erwerb6",
           "scale": "bin",
@@ -21742,7 +21749,7 @@
         },
         {
           "item": "V133_kurz6",
-          "text": "Working reduced hours (short-time work)",
+          "text": "In short-time work",
           "text_de": "In Kurzarbeit",
           "concept": "V133_kurz6",
           "scale": "bin",
@@ -21751,7 +21758,7 @@
         },
         {
           "item": "V133_mini6",
-          "text": "Working at a Mini-Job (up to 450€)",
+          "text": "In a mini-job (up to €450)",
           "text_de": "In einem Mini-Job (bis 450€)",
           "concept": "V133_mini6",
           "scale": "bin",
@@ -21760,7 +21767,7 @@
         },
         {
           "item": "V133_lehre6",
-          "text": "In first-time in-service training (betriebliche Erstausbildung) / apprenticeship (Lehre)",
+          "text": "In in-company initial training / apprenticeship",
           "text_de": "In betrieblicher Erstausbildung / Lehre",
           "concept": "V133_lehre6",
           "scale": "bin",
@@ -21778,7 +21785,7 @@
         },
         {
           "item": "V133_arb6",
-          "text": "Registered unemployed",
+          "text": "Registered as unemployed",
           "text_de": "Arbeitslos gemeldet",
           "concept": "V133_arb6",
           "scale": "bin",
@@ -21787,7 +21794,7 @@
         },
         {
           "item": "V133_pen6",
-          "text": "In retirement / early retirement (Vorruhestand)",
+          "text": "In retirement or early retirement",
           "text_de": "In Rente / Pension oder Vorruhestand",
           "concept": "V133_pen6",
           "scale": "bin",
@@ -21796,7 +21803,7 @@
         },
         {
           "item": "V133_mutt6",
-          "text": "On maternity leave (Mutterschutz) / childcare leave (Erziehungsurlaub) / parental leave (Elternzeit)\n",
+          "text": "On maternity leave / parental leave",
           "text_de": "Im Mutterschutz / Elternzeit",
           "concept": "V133_mutt6",
           "scale": "bin",
@@ -21805,7 +21812,7 @@
         },
         {
           "item": "V133_schul6",
-          "text": "Attending school / university / or vocational school (Fachschule)",
+          "text": "At school / technical college / college / university",
           "text_de": "Auf der Schule / Fachschule / Hochschule / Universität\n",
           "concept": "V133_schul6",
           "scale": "bin",
@@ -21814,7 +21821,7 @@
         },
         {
           "item": "V133_frei6",
-          "text": "Voluntary or compulsory military service (Wehrdienst) / reserve dutytraining (Wehrübung) / Community service (Zivildienst) / voluntary social / ecological year (freiwilliges soziales / ökologisches Jahr) / federal volunteer service (Bundesfreiwilligendienst)",
+          "text": "In voluntary social / ecological year, in the Federal Voluntary Service",
           "text_de": "Im Freiwilligen Sozialen / Ökologischen Jahr, im Bundesfreiwilligendienst",
           "concept": "V133_frei6",
           "scale": "bin",
@@ -21823,7 +21830,7 @@
         },
         {
           "item": "V133_haus6",
-          "text": "Homemaker",
+          "text": "Housewife / House husband",
           "text_de": "Hausfrau / Hausmann",
           "concept": "V133_haus6",
           "scale": "bin",
@@ -21841,7 +21848,7 @@
         },
         {
           "item": "V133_sonstt6",
-          "text": "[Other] Please state:",
+          "text": "[Other]:",
           "text_de": "[Sonstiges], und zwar...",
           "filter": "133a_6;V133_sonst6=1",
           "concept": "V133_sonstt6",
@@ -21873,7 +21880,7 @@
         },
         {
           "item": "V133_erwerb7",
-          "text": "Employed full-time (including full-time ABM / SAM job creation measures)",
+          "text": "Fully employed",
           "text_de": "Voll erwerbstätig",
           "concept": "V133_erwerb7",
           "scale": "bin",
@@ -21891,7 +21898,7 @@
         },
         {
           "item": "V133_kurz7",
-          "text": "Working reduced hours (short-time work)",
+          "text": "In short-time work",
           "text_de": "In Kurzarbeit",
           "concept": "V133_kurz7",
           "scale": "bin",
@@ -21900,7 +21907,7 @@
         },
         {
           "item": "V133_mini7",
-          "text": "Working at a Mini-Job (up to 450€)",
+          "text": "In a mini-job (up to €450)",
           "text_de": "In einem Mini-Job (bis 450€)",
           "concept": "V133_mini7",
           "scale": "bin",
@@ -21909,7 +21916,7 @@
         },
         {
           "item": "V133_lehre7",
-          "text": "In first-time in-service training (betriebliche Erstausbildung) / apprenticeship (Lehre)",
+          "text": "In in-company initial training / apprenticeship",
           "text_de": "In betrieblicher Erstausbildung / Lehre",
           "concept": "V133_lehre7",
           "scale": "bin",
@@ -21927,7 +21934,7 @@
         },
         {
           "item": "V133_arb7",
-          "text": "Registered unemployed",
+          "text": "Registered as unemployed",
           "text_de": "Arbeitslos gemeldet",
           "concept": "V133_arb7",
           "scale": "bin",
@@ -21936,7 +21943,7 @@
         },
         {
           "item": "V133_pen7",
-          "text": "In retirement / early retirement (Vorruhestand)",
+          "text": "In retirement or early retirement",
           "text_de": "In Rente / Pension oder Vorruhestand",
           "concept": "V133_pen7",
           "scale": "bin",
@@ -21945,7 +21952,7 @@
         },
         {
           "item": "V133_mutt7",
-          "text": "On maternity leave (Mutterschutz) / childcare leave (Erziehungsurlaub) / parental leave (Elternzeit)",
+          "text": "On maternity leave / parental leave",
           "text_de": "Im Mutterschutz / Elternzeit",
           "concept": "V133_mutt7",
           "scale": "bin",
@@ -21954,7 +21961,7 @@
         },
         {
           "item": "V133_schul7",
-          "text": "Attending school / university / or vocational school (Fachschule)",
+          "text": "At school / technical college / college / university",
           "text_de": "Auf der Schule / Fachschule / Hochschule / Universität\n",
           "concept": "V133_schul7",
           "scale": "bin",
@@ -21963,7 +21970,7 @@
         },
         {
           "item": "V133_frei7",
-          "text": "Voluntary or compulsory military service (Wehrdienst) / reserve dutytraining (Wehrübung) / Community service (Zivildienst) / voluntary social / ecological year (freiwilliges soziales / ökologisches Jahr) / federal volunteer service (Bundesfreiwilligendienst)",
+          "text": "In voluntary social / ecological year, in the Federal Voluntary Service",
           "text_de": "Im Freiwilligen Sozialen / Ökologischen Jahr, im Bundesfreiwilligendienst",
           "concept": "V133_frei7",
           "scale": "bin",
@@ -21972,7 +21979,7 @@
         },
         {
           "item": "V133_haus7",
-          "text": "Homemaker",
+          "text": "Housewife / House husband",
           "text_de": "Hausfrau / Hausmann",
           "concept": "V133_haus7",
           "scale": "bin",
@@ -21990,7 +21997,7 @@
         },
         {
           "item": "V133_sonstt7",
-          "text": "[Other] Please state:",
+          "text": "[Other]:",
           "text_de": "[Sonstiges], und zwar...",
           "filter": "133a_7;V133_sonst7=1",
           "concept": "V133_sonstt7",
@@ -22022,7 +22029,7 @@
         },
         {
           "item": "V133_erwerb8",
-          "text": "Employed full-time (including full-time ABM / SAM job creation measures)",
+          "text": "Fully employed",
           "text_de": "Voll erwerbstätig",
           "concept": "V133_erwerb8",
           "scale": "bin",
@@ -22040,7 +22047,7 @@
         },
         {
           "item": "V133_kurz8",
-          "text": "Working reduced hours (short-time work)",
+          "text": "In short-time work",
           "text_de": "In Kurzarbeit",
           "concept": "V133_kurz8",
           "scale": "bin",
@@ -22049,7 +22056,7 @@
         },
         {
           "item": "V133_mini8",
-          "text": "Working at a Mini-Job (up to 450€)",
+          "text": "In a mini-job (up to €450)",
           "text_de": "In einem Mini-Job (bis 450€)",
           "concept": "V133_mini8",
           "scale": "bin",
@@ -22058,7 +22065,7 @@
         },
         {
           "item": "V133_lehre8",
-          "text": "In first-time in-service training (betriebliche Erstausbildung) / apprenticeship (Lehre)",
+          "text": "In in-company initial training / apprenticeship",
           "text_de": "In betrieblicher Erstausbildung / Lehre",
           "concept": "V133_lehre8",
           "scale": "bin",
@@ -22076,7 +22083,7 @@
         },
         {
           "item": "V133_arb8",
-          "text": "Registered unemployed",
+          "text": "Registered as unemployed",
           "text_de": "Arbeitslos gemeldet",
           "concept": "V133_arb8",
           "scale": "bin",
@@ -22085,7 +22092,7 @@
         },
         {
           "item": "V133_pen8",
-          "text": "In retirement / early retirement (Vorruhestand)",
+          "text": "In retirement or early retirement",
           "text_de": "In Rente / Pension oder Vorruhestand",
           "concept": "V133_pen8",
           "scale": "bin",
@@ -22094,7 +22101,7 @@
         },
         {
           "item": "V133_mutt8",
-          "text": "On maternity leave (Mutterschutz) / childcare leave (Erziehungsurlaub) / parental leave (Elternzeit)",
+          "text": "On maternity leave / parental leave",
           "text_de": "Im Mutterschutz / Elternzeit",
           "concept": "V133_mutt8",
           "scale": "bin",
@@ -22103,7 +22110,7 @@
         },
         {
           "item": "V133_schul8",
-          "text": "Attending school / university / or vocational school (Fachschule)",
+          "text": "At school / technical college / college / university",
           "text_de": "Auf der Schule / Fachschule / Hochschule / Universität\n",
           "concept": "V133_schul8",
           "scale": "bin",
@@ -22112,7 +22119,7 @@
         },
         {
           "item": "V133_frei8",
-          "text": "Voluntary or compulsory military service (Wehrdienst) / reserve dutytraining (Wehrübung) / Community service (Zivildienst) / voluntary social / ecological year (freiwilliges soziales / ökologisches Jahr) / federal volunteer service (Bundesfreiwilligendienst)",
+          "text": "In voluntary social / ecological year, in the Federal Voluntary Service",
           "text_de": "Im Freiwilligen Sozialen / Ökologischen Jahr, im Bundesfreiwilligendienst",
           "concept": "V133_frei8",
           "scale": "bin",
@@ -22121,7 +22128,7 @@
         },
         {
           "item": "V133_haus8",
-          "text": "Homemaker",
+          "text": "Housewife / House husband",
           "text_de": "Hausfrau / Hausmann",
           "concept": "V133_haus8",
           "scale": "bin",
@@ -22139,7 +22146,7 @@
         },
         {
           "item": "V133_sonstt8",
-          "text": "[Other] Please state:",
+          "text": "[Other]:",
           "text_de": "[Sonstiges], und zwar...",
           "filter": "133a_8;V133_sonst8=1",
           "concept": "V133_sonstt8",
@@ -22171,7 +22178,7 @@
         },
         {
           "item": "V133_erwerb9",
-          "text": "Employed full-time (including full-time ABM / SAM job creation measures)",
+          "text": "Fully employed",
           "text_de": "Voll erwerbstätig",
           "concept": "V133_erwerb9",
           "scale": "bin",
@@ -22189,7 +22196,7 @@
         },
         {
           "item": "V133_kurz9",
-          "text": "Working reduced hours (short-time work)",
+          "text": "In short-time work",
           "text_de": "In Kurzarbeit",
           "concept": "V133_kurz9",
           "scale": "bin",
@@ -22198,7 +22205,7 @@
         },
         {
           "item": "V133_mini9",
-          "text": "Working at a Mini-Job (up to 450€)",
+          "text": "In a mini-job (up to €450)",
           "text_de": "In einem Mini-Job (bis 450€)",
           "concept": "V133_mini9",
           "scale": "bin",
@@ -22207,7 +22214,7 @@
         },
         {
           "item": "V133_lehre9",
-          "text": "In first-time in-service training (betriebliche Erstausbildung) / apprenticeship (Lehre)",
+          "text": "In in-company initial training / apprenticeship",
           "text_de": "In betrieblicher Erstausbildung / Lehre",
           "concept": "V133_lehre9",
           "scale": "bin",
@@ -22225,7 +22232,7 @@
         },
         {
           "item": "V133_arb9",
-          "text": "Registered unemployed",
+          "text": "Registered as unemployed",
           "text_de": "Arbeitslos gemeldet",
           "concept": "V133_arb9",
           "scale": "bin",
@@ -22234,7 +22241,7 @@
         },
         {
           "item": "V133_pen9",
-          "text": "In retirement / early retirement (Vorruhestand)",
+          "text": "In retirement or early retirement",
           "text_de": "In Rente / Pension oder Vorruhestand",
           "concept": "V133_pen9",
           "scale": "bin",
@@ -22243,7 +22250,7 @@
         },
         {
           "item": "V133_mutt9",
-          "text": "On maternity leave (Mutterschutz) / childcare leave (Erziehungsurlaub) / parental leave (Elternzeit)",
+          "text": "On maternity leave / parental leave",
           "text_de": "Im Mutterschutz / Elternzeit",
           "concept": "V133_mutt9",
           "scale": "bin",
@@ -22252,7 +22259,7 @@
         },
         {
           "item": "V133_schul9",
-          "text": "Attending school / university / or vocational school (Fachschule)",
+          "text": "At school / technical college / college / university",
           "text_de": "Auf der Schule / Fachschule / Hochschule / Universität\n",
           "concept": "V133_schul9",
           "scale": "bin",
@@ -22261,7 +22268,7 @@
         },
         {
           "item": "V133_frei9",
-          "text": "Voluntary or compulsory military service (Wehrdienst) / reserve dutytraining (Wehrübung) / Community service (Zivildienst) / voluntary social / ecological year (freiwilliges soziales / ökologisches Jahr) / federal volunteer service (Bundesfreiwilligendienst)",
+          "text": "In voluntary social / ecological year, in the Federal Voluntary Service",
           "text_de": "Im Freiwilligen Sozialen / Ökologischen Jahr, im Bundesfreiwilligendienst",
           "concept": "V133_frei9",
           "scale": "bin",
@@ -22270,7 +22277,7 @@
         },
         {
           "item": "V133_haus9",
-          "text": "Homemaker",
+          "text": "Housewife / House husband",
           "text_de": "Hausfrau / Hausmann",
           "concept": "V133_haus9",
           "scale": "bin",
@@ -22288,7 +22295,7 @@
         },
         {
           "item": "V133_sonstt9",
-          "text": "[Other] Please state:",
+          "text": "[Other]:",
           "text_de": "[Sonstiges], und zwar...",
           "filter": "133a_9;V133_sonst9=1",
           "concept": "V133_sonstt9",
@@ -22320,7 +22327,7 @@
         },
         {
           "item": "V133_erwerb10",
-          "text": "Employed full-time (including full-time ABM / SAM job creation measures)",
+          "text": "Fully employed",
           "text_de": "Voll erwerbstätig",
           "concept": "V133_erwerb10",
           "scale": "bin",
@@ -22338,7 +22345,7 @@
         },
         {
           "item": "V133_kurz10",
-          "text": "Working reduced hours (short-time work)",
+          "text": "In short-time work",
           "text_de": "In Kurzarbeit",
           "concept": "V133_kurz10",
           "scale": "bin",
@@ -22347,7 +22354,7 @@
         },
         {
           "item": "V133_mini10",
-          "text": "Working at a Mini-Job (up to 450€)",
+          "text": "In a mini-job (up to €450)",
           "text_de": "In einem Mini-Job (bis 450€)",
           "concept": "V133_mini10",
           "scale": "bin",
@@ -22356,7 +22363,7 @@
         },
         {
           "item": "V133_lehre10",
-          "text": "In first-time in-service training (betriebliche Erstausbildung) / apprenticeship (Lehre)\n",
+          "text": "In in-company initial training / apprenticeship",
           "text_de": "In betrieblicher Erstausbildung / Lehre",
           "concept": "V133_lehre10",
           "scale": "bin",
@@ -22374,7 +22381,7 @@
         },
         {
           "item": "V133_arb10",
-          "text": "Registered unemployed",
+          "text": "Registered as unemployed",
           "text_de": "Arbeitslos gemeldet",
           "concept": "V133_arb10",
           "scale": "bin",
@@ -22383,7 +22390,7 @@
         },
         {
           "item": "V133_pen10",
-          "text": "In retirement / early retirement (Vorruhestand)",
+          "text": "In retirement or early retirement",
           "text_de": "In Rente / Pension oder Vorruhestand",
           "concept": "V133_pen10",
           "scale": "bin",
@@ -22392,7 +22399,7 @@
         },
         {
           "item": "V133_mutt10",
-          "text": "On maternity leave (Mutterschutz) / childcare leave (Erziehungsurlaub) / parental leave (Elternzeit)",
+          "text": "On maternity leave / parental leave",
           "text_de": "Im Mutterschutz / Elternzeit",
           "concept": "V133_mutt10",
           "scale": "bin",
@@ -22401,7 +22408,7 @@
         },
         {
           "item": "V133_schul10",
-          "text": "Attending school / university / or vocational school (Fachschule)",
+          "text": "At school / technical college / college / university",
           "text_de": "Auf der Schule / Fachschule / Hochschule / Universität\n",
           "concept": "V133_schul10",
           "scale": "bin",
@@ -22410,7 +22417,7 @@
         },
         {
           "item": "V133_frei10",
-          "text": "Voluntary or compulsory military service (Wehrdienst) / reserve dutytraining (Wehrübung) / Community service (Zivildienst) / voluntary social / ecological year (freiwilliges soziales / ökologisches Jahr) / federal volunteer service (Bundesfreiwilligendienst)",
+          "text": "In voluntary social / ecological year, in the Federal Voluntary Service",
           "text_de": "Im Freiwilligen Sozialen / Ökologischen Jahr, im Bundesfreiwilligendienst",
           "concept": "V133_frei10",
           "scale": "bin",
@@ -22419,7 +22426,7 @@
         },
         {
           "item": "V133_haus10",
-          "text": "Homemaker",
+          "text": "Housewife / House husband",
           "text_de": "Hausfrau / Hausmann",
           "concept": "V133_haus10",
           "scale": "bin",
@@ -22437,7 +22444,7 @@
         },
         {
           "item": "V133_sonstt10",
-          "text": "[Other] Please state:",
+          "text": "[Other]:",
           "text_de": "[Sonstiges], und zwar...",
           "filter": "133a_10;V133_sonst10=1",
           "concept": "V133_sonstt10",
@@ -22469,7 +22476,7 @@
         },
         {
           "item": "V133_erwerb11",
-          "text": "Employed full-time (including full-time ABM / SAM job creation measures)",
+          "text": "Fully employed",
           "text_de": "Voll erwerbstätig",
           "concept": "V133_erwerb11",
           "scale": "bin",
@@ -22487,7 +22494,7 @@
         },
         {
           "item": "V133_kurz11",
-          "text": "Working reduced hours (short-time work)",
+          "text": "In short-time work",
           "text_de": "In Kurzarbeit",
           "concept": "V133_kurz11",
           "scale": "bin",
@@ -22496,7 +22503,7 @@
         },
         {
           "item": "V133_mini11",
-          "text": "Working at a Mini-Job (up to 450€)",
+          "text": "In a mini-job (up to €450)",
           "text_de": "In einem Mini-Job (bis 450€)",
           "concept": "V133_mini11",
           "scale": "bin",
@@ -22505,7 +22512,7 @@
         },
         {
           "item": "V133_lehre11",
-          "text": "In first-time in-service training (betriebliche Erstausbildung) / apprenticeship (Lehre)",
+          "text": "In in-company initial training / apprenticeship",
           "text_de": "In betrieblicher Erstausbildung / Lehre",
           "concept": "V133_lehre11",
           "scale": "bin",
@@ -22523,7 +22530,7 @@
         },
         {
           "item": "V133_arb11",
-          "text": "Registered unemployed",
+          "text": "Registered as unemployed",
           "text_de": "Arbeitslos gemeldet",
           "concept": "V133_arb11",
           "scale": "bin",
@@ -22532,7 +22539,7 @@
         },
         {
           "item": "V133_pen11",
-          "text": "In retirement / early retirement (Vorruhestand)",
+          "text": "In retirement or early retirement",
           "text_de": "In Rente / Pension oder Vorruhestand",
           "concept": "V133_pen11",
           "scale": "bin",
@@ -22541,7 +22548,7 @@
         },
         {
           "item": "V133_mutt11",
-          "text": "On maternity leave (Mutterschutz) / childcare leave (Erziehungsurlaub) / parental leave (Elternzeit)",
+          "text": "On maternity leave / parental leave",
           "text_de": "Im Mutterschutz / Elternzeit",
           "concept": "V133_mutt11",
           "scale": "bin",
@@ -22550,7 +22557,7 @@
         },
         {
           "item": "V133_schul11",
-          "text": "Attending school / university / or vocational school (Fachschule)",
+          "text": "At school / technical college / college / university",
           "text_de": "Auf der Schule / Fachschule / Hochschule / Universität\n",
           "concept": "V133_schul11",
           "scale": "bin",
@@ -22559,7 +22566,7 @@
         },
         {
           "item": "V133_frei11",
-          "text": "Voluntary or compulsory military service (Wehrdienst) / reserve dutytraining (Wehrübung) / Community service (Zivildienst) / voluntary social / ecological year (freiwilliges soziales / ökologisches Jahr) / federal volunteer service (Bundesfreiwilligendienst)\n",
+          "text": "In voluntary social / ecological year, in the Federal Voluntary Service",
           "text_de": "Im Freiwilligen Sozialen / Ökologischen Jahr, im Bundesfreiwilligendienst",
           "concept": "V133_frei11",
           "scale": "bin",
@@ -22568,7 +22575,7 @@
         },
         {
           "item": "V133_haus11",
-          "text": "Homemaker",
+          "text": "Housewife / House husband",
           "text_de": "Hausfrau / Hausmann",
           "concept": "V133_haus11",
           "scale": "bin",
@@ -22586,7 +22593,7 @@
         },
         {
           "item": "V133_sonstt11",
-          "text": "[Other] Please state:",
+          "text": "[Other]:",
           "text_de": "[Sonstiges], und zwar...",
           "filter": "133a_11;V133_sonst11=1",
           "concept": "V133_sonstt11",
@@ -22618,7 +22625,7 @@
         },
         {
           "item": "V133_erwerb12",
-          "text": "Employed full-time (including full-time ABM / SAM job creation measures)",
+          "text": "Fully employed",
           "text_de": "Voll erwerbstätig",
           "concept": "V133_erwerb12",
           "scale": "bin",
@@ -22636,7 +22643,7 @@
         },
         {
           "item": "V133_kurz12",
-          "text": "Working reduced hours (short-time work)",
+          "text": "In short-time work",
           "text_de": "In Kurzarbeit",
           "concept": "V133_kurz12",
           "scale": "bin",
@@ -22645,7 +22652,7 @@
         },
         {
           "item": "V133_mini12",
-          "text": "Working at a Mini-Job (up to 450€)",
+          "text": "In a mini-job (up to €450)",
           "text_de": "In einem Mini-Job (bis 450€)",
           "concept": "V133_mini12",
           "scale": "bin",
@@ -22654,7 +22661,7 @@
         },
         {
           "item": "V133_lehre12",
-          "text": "In first-time in-service training (betriebliche Erstausbildung) / apprenticeship (Lehre)",
+          "text": "In in-company initial training / apprenticeship",
           "text_de": "In betrieblicher Erstausbildung / Lehre",
           "concept": "V133_lehre12",
           "scale": "bin",
@@ -22672,7 +22679,7 @@
         },
         {
           "item": "V133_arb12",
-          "text": "Registered unemployed",
+          "text": "Registered as unemployed",
           "text_de": "Arbeitslos gemeldet",
           "concept": "V133_arb12",
           "scale": "bin",
@@ -22681,7 +22688,7 @@
         },
         {
           "item": "V133_pen12",
-          "text": "In retirement / early retirement (Vorruhestand)",
+          "text": "In retirement or early retirement",
           "text_de": "In Rente / Pension oder Vorruhestand",
           "concept": "V133_pen12",
           "scale": "bin",
@@ -22690,7 +22697,7 @@
         },
         {
           "item": "V133_mutt12",
-          "text": "On maternity leave (Mutterschutz) / childcare leave (Erziehungsurlaub) / parental leave (Elternzeit)",
+          "text": "On maternity leave / parental leave",
           "text_de": "Im Mutterschutz / Elternzeit",
           "concept": "V133_mutt12",
           "scale": "bin",
@@ -22699,7 +22706,7 @@
         },
         {
           "item": "V133_schul12",
-          "text": "Attending school / university / or vocational school (Fachschule)",
+          "text": "At school / technical college / college / university",
           "text_de": "Auf der Schule / Fachschule / Hochschule / Universität\n",
           "concept": "V133_schul12",
           "scale": "bin",
@@ -22708,7 +22715,7 @@
         },
         {
           "item": "V133_frei12",
-          "text": "Voluntary or compulsory military service (Wehrdienst) / reserve dutytraining (Wehrübung) / Community service (Zivildienst) / voluntary social / ecological year (freiwilliges soziales / ökologisches Jahr) / federal volunteer service (Bundesfreiwilligendienst)",
+          "text": "In voluntary social / ecological year, in the Federal Voluntary Service",
           "text_de": "Im Freiwilligen Sozialen / Ökologischen Jahr, im Bundesfreiwilligendienst",
           "concept": "V133_frei12",
           "scale": "bin",
@@ -22717,7 +22724,7 @@
         },
         {
           "item": "V133_haus12",
-          "text": "Homemaker",
+          "text": "Housewife / House husband",
           "text_de": "Hausfrau / Hausmann",
           "concept": "V133_haus12",
           "scale": "bin",
@@ -22735,7 +22742,7 @@
         },
         {
           "item": "V133_sonstt12",
-          "text": "[Other] Please state:",
+          "text": "[Other]:",
           "text_de": "[Sonstiges], und zwar...",
           "filter": "133a_12; V133_sonst12=1",
           "concept": "V133_sonstt12",
@@ -22751,13 +22758,13 @@
     "133b_1": {
       "question": "133b_1",
       "name": "133b_1",
-      "label": "You made more than three entries for January. Did that really all take place in that one month?",
-      "label_de": "Sie haben für Januar mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+      "label": "You have provided more than three answers for the month of January. Did all this really occur in that one month?",
+      "label_de": "Sie haben für den Monat Januar mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
       "items": [
         {
           "item": "jan_CON",
-          "text": "You made more than three entries for January. Did that really all take place in that one month?",
-          "text_de": "Sie haben für Januar mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+          "text": "You have provided more than three answers for the month of January. Did all this really occur in that one month?",
+          "text_de": "Sie haben für den Monat Januar mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
           "filter": "(EGEN multiple_january = anycount(*jan), VALUES (1))>=3",
           "scale": "cat",
           "answers": [
@@ -22783,13 +22790,13 @@
     "133b_2": {
       "question": "133b_2",
       "name": "133b_2",
-      "label": "You made more than three entries for February. Did that really all take place in that one month?",
-      "label_de": "Sie haben für Februar mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+      "label": "You have provided more than three answers for the month of February. Did all this really occur in that one month?",
+      "label_de": "Sie haben für den Monat Februar mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
       "items": [
         {
           "item": "feb_CON",
-          "text": "You made more than three entries for February. Did that really all take place in that one month?",
-          "text_de": "Sie haben für Februar mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+          "text": "You have provided more than three answers for the month of February. Did all this really occur in that one month?",
+          "text_de": "Sie haben für den Monat Februar mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
           "filter": "(EGEN multiple_february = anycount(*feb), VALUES (1))>=3",
           "scale": "cat",
           "answers": [
@@ -22815,13 +22822,13 @@
     "133b_3": {
       "question": "133b_3",
       "name": "133b_3",
-      "label": "You made more than three entries for March. Did that really all take place in that one month?",
-      "label_de": "Sie haben für März mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+      "label": "You have provided more than three answers for the month of March. Did all this really occur in that one month?",
+      "label_de": "Sie haben für den Monat März mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
       "items": [
         {
           "item": "mar_CON",
-          "text": "You made more than three entries for March. Did that really all take place in that one month?",
-          "text_de": "Sie haben für März mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+          "text": "You have provided more than three answers for the month of March. Did all this really occur in that one month?",
+          "text_de": "Sie haben für den Monat März mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
           "filter": "(EGEN multiple_march = anycount(*mar), VALUES (1))>=3",
           "scale": "cat",
           "answers": [
@@ -22847,13 +22854,13 @@
     "133b_4": {
       "question": "133b_4",
       "name": "133b_4",
-      "label": "You made more than three entries for April. Did that really all take place in that one month?",
-      "label_de": "Sie haben für April mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+      "label": "You have provided more than three answers for the month of April. Did all this really occur in that one month?",
+      "label_de": "Sie haben für den Monat April mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
       "items": [
         {
           "item": "apr_CON",
-          "text": "You made more than three entries for April. Did that really all take place in that one month?",
-          "text_de": "Sie haben für April mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+          "text": "You have provided more than three answers for the month of April. Did all this really occur in that one month?",
+          "text_de": "Sie haben für den Monat April mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
           "filter": "(EGEN multiple_april = anycount(*apr), VALUES (1))>=3",
           "scale": "cat",
           "answers": [
@@ -22879,13 +22886,13 @@
     "133b_5": {
       "question": "133b_5",
       "name": "133b_5",
-      "label": "You made more than three entries for May. Did that really all take place in that one month?",
-      "label_de": "Sie haben für Mai mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+      "label": "You have provided more than three answers for the month of May. Did all this really occur in that one month?",
+      "label_de": "Sie haben für den Monat Mai mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
       "items": [
         {
           "item": "may_CON",
-          "text": "You made more than three entries for May. Did that really all take place in that one month?",
-          "text_de": "Sie haben für Mai mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+          "text": "You have provided more than three answers for the month of May. Did all this really occur in that one month?",
+          "text_de": "Sie haben für den Monat Mai mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
           "filter": "(EGEN multiple_may = anycount(*may), VALUES (1))>=3",
           "scale": "cat",
           "answers": [
@@ -22911,13 +22918,13 @@
     "133b_6": {
       "question": "133b_6",
       "name": "133b_6",
-      "label": "You made more than three entries for June. Did that really all take place in that one month?",
-      "label_de": "Sie haben für Juni mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+      "label": "You have provided more than three answers for the month of June. Did all this really occur in that one month?",
+      "label_de": "Sie haben für den Monat Juni mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
       "items": [
         {
           "item": "jun_CON",
-          "text": "You made more than three entries for June. Did that really all take place in that one month?",
-          "text_de": "Sie haben für Juni mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+          "text": "You have provided more than three answers for the month of June. Did all this really occur in that one month?",
+          "text_de": "Sie haben für den Monat Juni mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
           "filter": "(EGEN multiple_jun = anycount(*jun), VALUES (1))>=3",
           "scale": "cat",
           "answers": [
@@ -22943,13 +22950,13 @@
     "133b_7": {
       "question": "133b_7",
       "name": "133b_7",
-      "label": "You made more than three entries for July. Did that really all take place in that one month?",
-      "label_de": "Sie haben für Juli mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+      "label": "You have provided more than three answers for the month of July. Did all this really occur in that one month?",
+      "label_de": "Sie haben für den Monat Juli mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
       "items": [
         {
           "item": "jul_CON",
-          "text": "You made more than three entries for July. Did that really all take place in that one month?",
-          "text_de": "Sie haben für Juli mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+          "text": "You have provided more than three answers for the month of July. Did all this really occur in that one month?",
+          "text_de": "Sie haben für den Monat Juli mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
           "filter": "(EGEN multiple_jul = anycount(*jul), VALUES (1))>=3",
           "scale": "cat",
           "answers": [
@@ -22975,13 +22982,13 @@
     "133b_8": {
       "question": "133b_8",
       "name": "133b_8",
-      "label": "You made more than three entries for August. Did that really all take place in that one month?",
-      "label_de": "Sie haben für August mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+      "label": "You have provided more than three answers for the month of August. Did all this really occur in that one month?",
+      "label_de": "Sie haben für den Monat August mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
       "items": [
         {
           "item": "aug_CON",
-          "text": "You made more than three entries for August. Did that really all take place in that one month?",
-          "text_de": "Sie haben für August mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+          "text": "You have provided more than three answers for the month of August. Did all this really occur in that one month?",
+          "text_de": "Sie haben für den Monat August mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
           "filter": "(EGEN multiple_aug = anycount(*aug), VALUES (1))>=3",
           "scale": "cat",
           "answers": [
@@ -23007,13 +23014,13 @@
     "133b_9": {
       "question": "133b_9",
       "name": "133b_9",
-      "label": "You made more than three entries for September. Did that really all take place in that one month?",
-      "label_de": "Sie haben für September mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+      "label": "You have provided more than three answers for the month of September. Did all this really occur in that one month?",
+      "label_de": "Sie haben für den Monat September mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
       "items": [
         {
           "item": "sep_CON",
-          "text": "You made more than three entries for September. Did that really all take place in that one month?",
-          "text_de": "Sie haben für September mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+          "text": "You have provided more than three answers for the month of September. Did all this really occur in that one month?",
+          "text_de": "Sie haben für den Monat September mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
           "filter": "(EGEN multiple_sep = anycount(*sep), VALUES (1))>=3",
           "scale": "cat",
           "answers": [
@@ -23039,13 +23046,13 @@
     "133b_10": {
       "question": "133b_10",
       "name": "133b_10",
-      "label": "You made more than three entries for October. Did that really all take place in that one month?",
-      "label_de": "Sie haben für Oktober mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+      "label": "You have provided more than three answers for the month of October. Did all this really occur in that one month?",
+      "label_de": "Sie haben für den Monat Oktober mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
       "items": [
         {
           "item": "oct_CON",
-          "text": "You made more than three entries for October. Did that really all take place in that one month?",
-          "text_de": "Sie haben für Oktober mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+          "text": "You have provided more than three answers for the month of October. Did all this really occur in that one month?",
+          "text_de": "Sie haben für den Monat Oktober mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
           "filter": "(EGEN multiple_oct = anycount(*oct), VALUES (1))>=3",
           "scale": "cat",
           "answers": [
@@ -23071,13 +23078,13 @@
     "133b_11": {
       "question": "133b_11",
       "name": "133b_11",
-      "label": "You made more than three entries for November. Did that really all take place in that one month?",
-      "label_de": "Sie haben für November mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+      "label": "You have provided more than three answers for the month of November. Did all this really occur in that one month?",
+      "label_de": "Sie haben für den Monat November mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
       "items": [
         {
           "item": "nov_CON",
-          "text": "You made more than three entries for November. Did that really all take place in that one month?",
-          "text_de": "Sie haben für November mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+          "text": "You have provided more than three answers for the month of November. Did all this really occur in that one month?",
+          "text_de": "Sie haben für den Monat November mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
           "filter": "(EGEN multiple_nov = anycount(*nov), VALUES (1))>=3",
           "scale": "cat",
           "answers": [
@@ -23103,13 +23110,13 @@
     "133b_12": {
       "question": "133b_12",
       "name": "133b_12",
-      "label": "You made more than three entries for December. Did that really all take place in that one month?",
-      "label_de": "Sie haben für Dezember mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+      "label": "You have provided more than three answers for the month of December. Did all this really occur in that one month?",
+      "label_de": "Sie haben für den Monat Dezember mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
       "items": [
         {
           "item": "dec_CON",
-          "text": "You made more than three entries for December. Did that really all take place in that one month?",
-          "text_de": "Sie haben für Dezember mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
+          "text": "You have provided more than three answers for the month of December. Did all this really occur in that one month?",
+          "text_de": "Sie haben für den Monat Dezember mehr als drei Angaben gemacht. Fand das wirklich alles in dem einen Monat statt?",
           "filter": "(EGEN multiple_dec = anycount(*dec), VALUES (1))>=3",
           "scale": "cat",
           "answers": [
@@ -24581,12 +24588,12 @@
     "144b": {
       "question": "144b",
       "name": "144b",
-      "label": "Please further explain why your entry is so high.",
+      "label": "Please explain why your response is so high.",
       "label_de": "Bitte erklären Sie uns noch, warum die Angabe so hoch ist.",
       "items": [
         {
           "item": "ple0072_CONb",
-          "text": "Please further explain why your entry is so high.",
+          "text": "Please explain why your response is so high.",
           "text_de": "Bitte erklären Sie uns noch, warum die Angabe so hoch ist.",
           "filter": "144a;ple0072_CONa=2",
           "concept": "P143I3",
@@ -24714,12 +24721,12 @@
     "147a": {
       "question": "147a",
       "name": "147a",
-      "label": "Your indication: \"*? nights\" seems a bit high. Do we perhaps need to correct it?\n",
+      "label": "Your answer \"*? nights\" seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Nächte“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "ple0056_CONa",
-          "text": "Your indication: \"*? nights\" seems a bit high. Do we perhaps need to correct it?\n",
+          "text": "Your answer \"*? nights\" seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Nächte“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
           "filter": "(145;ple0053=1)&(146;ple0056>50)",
           "goto": "1@144; 2@147b",
@@ -24774,12 +24781,12 @@
     "147c": {
       "question": "147c",
       "name": "147c",
-      "label": "According to your answers, you have spent *? nights in the hospital and had to go to the hospital just as often for at least one night. Did you have to go to hospital again for each night you spent in hospital, or do we perhaps need to correct the answer?",
+      "label": "According to your answers, you have spent *? nights in the hospital and had to go to the hospital for at least one night the same number of times. Did you have to go to hospital again for each night you spent in hospital, or should we correct that answer?",
       "label_de": "Ihren Angaben zufolge haben Sie *? Nächte im Krankenhaus verbracht und mussten genauso oft für mindestens eine Nacht ins Krankenhaus. Mussten Sie für jede Nacht, die Sie im Krankenhaus verbracht haben, erneut ins  Krankenhaus, oder müssen wir die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "ple0055_CONc",
-          "text": "According to your answers, you have spent *? nights in the hospital and had to go to the hospital just as often for at least one night. Did you have to go to hospital again for each night you spent in hospital, or do we perhaps need to correct the answer?",
+          "text": "According to your answers, you have spent *? nights in the hospital and had to go to the hospital for at least one night the same number of times. Did you have to go to hospital again for each night you spent in hospital, or should we correct that answer?",
           "text_de": "Ihren Angaben zufolge haben Sie *? Nächte im Krankenhaus verbracht und mussten genauso oft für mindestens eine Nacht ins Krankenhaus. Mussten Sie für jede Nacht, die Sie im Krankenhaus verbracht haben, erneut ins  Krankenhaus, oder müssen wir die Angabe vielleicht korrigieren?",
           "filter": "(145;ple0053=1)&(146;ple0056=147;ple0055)&(147;ple0055!=-1)",
           "goto": "1@147",
@@ -32487,12 +32494,12 @@
     "199": {
       "question": "199",
       "name": "199",
-      "label": "What is the first name of your (marital) partner?",
+      "label": "What is your partner's first name?",
       "label_de": "Wie ist der Vorname dieses Partners / dieser Partnerin?",
       "items": [
         {
           "item": "pfpnam",
-          "text": "What is the first name of your (marital) partner?",
+          "text": "What is your partner's first name?",
           "text_de": "Wie ist der Vorname dieses Partners / dieser Partnerin?",
           "filter": "197;pld0132_v1=1",
           "concept": "pfpnam",
@@ -32909,12 +32916,12 @@
     "202a": {
       "question": "202a",
       "name": "202a",
-      "label": "Your indication: \"*? euros to oarents / parents-in-law\" seems a bit high. Do we perhaps need to correct it?\n",
+      "label": "Your indication: \"*? euros to oarents / parents-in-law\" seems a bit high. Do we perhaps need to correct it?",
       "label_de": "Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ihre Eltern/Schwiegereltern erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "plj0131_CONa",
-          "text": "Your indication: \"*? euros to oarents / parents-in-law\" seems a bit high. Do we perhaps need to correct it?\n",
+          "text": "Your indication: \"*? euros to oarents / parents-in-law\" seems a bit high. Do we perhaps need to correct it?",
           "text_de": "Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ihre Eltern/Schwiegereltern erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
           "filter": "(202;plj0131=1)&(202;plj0132_v2>15000)",
           "goto": "1@202",
@@ -32972,12 +32979,12 @@
     "202c": {
       "question": "202c",
       "name": "202c",
-      "label": "Your indication: \"*? euros to children (also son-in-law / daughter-in-law)\" seems a bit high. Do we perhaps need to correct it?",
+      "label": "Your answer \"*? euros to children (also son-in-law / daughter-in-law)\" seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ihre Kinder (auch Schwiegersohn/ -tochter) erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "plj0135_CONc",
-          "text": "Your indication: \"*? euros to children (also son-in-law / daughter-in-law)\" seems a bit high. Do we perhaps need to correct it?",
+          "text": "Your answer \"*? euros to children (also son-in-law / daughter-in-law)\" seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ihre Kinder (auch Schwiegersohn/ -tochter) erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
           "filter": "(202;plj0135=1)&(202;plj0136_v2>30000)",
           "goto": "1@202",

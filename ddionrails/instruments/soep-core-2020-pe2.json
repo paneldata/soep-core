@@ -7,7 +7,7 @@
   "period": 2020,
   "value": 212.0,
   "mode": "CAPI",
-  "type_position": 5.0,
+  "type_position": 5,
   "type": "Individual",
   "type_de": "Person",
   "instrument": "soep-core-2020-pe2",
@@ -3617,12 +3617,12 @@
     "18": {
       "question": "18",
       "name": "18",
-      "label": "Did you obtain this degree / certificate / diploma in Germany or in another country?",
+      "label": "Did you complete this degree / certificate / diploma in Germany or in another country?",
       "label_de": "Haben Sie diesen Abschluss in Deutschland oder in einem anderen Land gemacht?",
       "items": [
         {
           "item": "pab4a",
-          "text": "Did you obtain this degree / certificate / diploma in Germany or in another country?",
+          "text": "Did you complete this degree / certificate / diploma in Germany or in another country?",
           "text_de": "Haben Sie diesen Abschluss in Deutschland oder in einem anderen Land gemacht?",
           "filter": "(15;pab1=1)&(17;pab4=1)",
           "goto": "1@20",
@@ -4552,12 +4552,12 @@
     "32a": {
       "question": "32a",
       "name": "32a",
-      "label": "[de] Ihre Angabe: „*? Euro“ erscheint etwas niedrig. Müssen wir sie vielleicht korrigieren?",
+      "label": "Your answer \"*? euros\" seems a bit low. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro“ erscheint etwas niedrig. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "pend8_CONa",
-          "text": "[de] Ihre Angabe: „*? Euro“ erscheint etwas niedrig. Müssen wir sie vielleicht korrigieren?",
+          "text": "Your answer \"*? euros\" seems a bit low. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro“ erscheint etwas niedrig. Müssen wir sie vielleicht korrigieren?",
           "filter": "(28;pend1=1)&(32;pend8>0)&(32;pend8<250)",
           "goto": "1@32; 2@32b",
@@ -4607,12 +4607,12 @@
     "32c": {
       "question": "32c",
       "name": "32c",
-      "label": "[de] Ihre Angabe: „*? Euro“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+      "label": "Your indication: \"*? Euro\" seems a bit high. Do we perhaps need to correct it?",
       "label_de": "Ihre Angabe: „*? Euro“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "pend8_CONc",
-          "text": "[de] Ihre Angabe: „*? Euro“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+          "text": "Your indication: \"*? Euro\" seems a bit high. Do we perhaps need to correct it?",
           "text_de": "Ihre Angabe: „*? Euro“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
           "filter": "(28;pend1=1)&(32;pend8>75000)",
           "goto": "1@32; 2@32d",
@@ -4804,12 +4804,12 @@
     "34b": {
       "question": "34b",
       "name": "34b",
-      "label": "[de] Bitte erklären Sie uns noch, warum Sie derzeit voll erwerbstätig und im Mutterschutz oder Elternzeit sind.",
+      "label": "Please further explain why you are currently employed full-time and on maternity or parental leave.",
       "label_de": "Bitte erklären Sie uns noch, warum Sie derzeit voll erwerbstätig und im Mutterschutz oder Elternzeit sind.",
       "items": [
         {
           "item": "perw_CONb",
-          "text": "[de] Bitte erklären Sie uns noch, warum Sie derzeit voll erwerbstätig und im Mutterschutz oder Elternzeit sind.",
+          "text": "Please further explain why you are currently employed full-time and on maternity or parental leave.",
           "text_de": "Bitte erklären Sie uns noch, warum Sie derzeit voll erwerbstätig und im Mutterschutz oder Elternzeit sind.",
           "filter": "34a,perw_CONa=3",
           "concept": "P34I1",
@@ -4945,12 +4945,12 @@
     "34g": {
       "question": "34g",
       "name": "34g",
-      "label": "[de] Sie haben angegeben, dass sie derzeit in betrieblicher Ausbildung / Lehre oder betrieblicher Umschulung sind. Früher haben Sie angegeben, dass Sie nicht in Ausbildung sind. Welche Angabe ist korrekt?",
+      "label": "You stated that you are currently undergoing in-service retraining. Earlier you stated that you were not in training. Which statement is correct?",
       "label_de": "Sie haben angegeben, dass sie derzeit in betrieblicher Ausbildung / Lehre oder betrieblicher Umschulung sind. Früher haben Sie angegeben, dass Sie nicht in Ausbildung sind. Welche Angabe ist korrekt?",
       "items": [
         {
           "item": "perw_CONg",
-          "text": "[de] Sie haben angegeben, dass sie derzeit in betrieblicher Ausbildung / Lehre oder betrieblicher Umschulung sind. Früher haben Sie angegeben, dass Sie nicht in Ausbildung sind. Welche Angabe ist korrekt?",
+          "text": "You stated that you are currently undergoing in-service retraining. Earlier you stated that you were not in training. Which statement is correct?",
           "text_de": "Sie haben angegeben, dass sie derzeit in betrieblicher Ausbildung / Lehre oder betrieblicher Umschulung sind. Früher haben Sie angegeben, dass Sie nicht in Ausbildung sind. Welche Angabe ist korrekt?",
           "filter": "(34;perw=3)&(13;paus1_n=2)",
           "goto": "1@13; 2@34",
@@ -5341,12 +5341,12 @@
     "42": {
       "question": "42",
       "name": "42",
-      "label": "Have you actively looked for work within the last four weeks?",
+      "label": "Have you actively looked for a job during the last four weeks?",
       "label_de": "Haben Sie innerhalb der letzten vier Wochen aktiv nach einer Stelle gesucht?",
       "items": [
         {
           "item": "pnerw10",
-          "text": "Have you actively looked for work within the last four weeks?",
+          "text": "Have you actively looked for a job during the last four weeks?",
           "text_de": "Haben Sie innerhalb der letzten vier Wochen aktiv nach einer Stelle gesucht?",
           "filter": "(34;pnerw=7,9)&(35;pnerw02=2:4)",
           "concept": "pnerw10",
@@ -5822,13 +5822,13 @@
     "48": {
       "question": "48",
       "name": "48",
-      "label": "Was your career interrupted by the birth of one or more children, e.g., maternity leave (Mutterschutz) or parental leave (Elternzeit)?",
-      "label_de": "Wurde die Tätigkeit wegen eines oder mehrerer Kinder unterbrochen, z.B. Mutterschutz oder Elternzeit?",
+      "label": "Did you take a break from your work because of one or more children, for example, maternity leave (Mutterschutz) or parental leave (Elternzeit)?",
+      "label_de": "Wurde die Tätigkeit wegen eines oder mehrerer Kinder unterbrochen, z. B. Mutterschutz oder Elternzeit?",
       "items": [
         {
           "item": "pwexelt",
-          "text": "Was your career interrupted by the birth of one or more children, e.g., maternity leave (Mutterschutz) or parental leave (Elternzeit)?",
-          "text_de": "Wurde die Tätigkeit wegen eines oder mehrerer Kinder unterbrochen, z.B. Mutterschutz oder Elternzeit?",
+          "text": "Did you take a break from your work because of one or more children, for example, maternity leave (Mutterschutz) or parental leave (Elternzeit)?",
+          "text_de": "Wurde die Tätigkeit wegen eines oder mehrerer Kinder unterbrochen, z. B. Mutterschutz oder Elternzeit?",
           "filter": "(34;pnerw=1:4)&(44;pwexl1=1)&(47;pwexl4=2)",
           "goto": "2@50",
           "concept": "pwexelt",
@@ -6047,12 +6047,12 @@
     "51b": {
       "question": "51b",
       "name": "51b",
-      "label": "[de] Bitte erklären Sie den Sachverhalt!",
+      "label": "Please further explain the situation!",
       "label_de": "Bitte erklären Sie den Sachverhalt!",
       "items": [
         {
           "item": "psuch2_CONb",
-          "text": "[de] Bitte erklären Sie den Sachverhalt!",
+          "text": "Please further explain the situation!",
           "text_de": "Bitte erklären Sie den Sachverhalt!",
           "filter": "(34;pnerw=1:4)&(44;pwexl1=1)&(51a;psuch2_CONa=3)",
           "concept": "P51R2",
@@ -6186,7 +6186,7 @@
           "text": "What sector of business or industry is your company or institution active in for the most part?",
           "text_de": "In welchem Wirtschaftszweig / welcher Branche / welchem Dienstleistungsbereich ist das Unternehmen bzw. die Einrichtung überwiegend tätig?",
           "instruction": "Please state the exact sector in German. For example, do not write “Industrie” (industry), but “Elektroindustrie” (electronics industry); not “Handel” (trade), but “Einzelhandel” (retail trade); not “öffentlicher Dienst” (public service), but “Krankenhaus” (hospital).",
-          "instruction_de": "Bitte geben Sie die genaue Bezeichnung an, z.B. nicht „Industrie“, sondern „Elektroindustrie“; nicht „Handel“, sondern „Einzelhandel“; nicht „öffentlicher Dienst“, sondern „Krankenhaus“.",
+          "instruction_de": "Bitte geben Sie die genaue Bezeichnung an, z. B. nicht „Industrie“, sondern „Elektroindustrie“; nicht „Handel“, sondern „Einzelhandel“; nicht „öffentlicher Dienst“, sondern „Krankenhaus“.",
           "filter": "(34;pnerw=1:4)&(44;pwexl1=1)",
           "concept": "pbra",
           "scale": "chr",
@@ -6336,12 +6336,12 @@
     "56d": {
       "question": "56d",
       "name": "56d",
-      "label": "[de] Bitte erklären Sie den Sachverhalt!",
+      "label": "Please further explain the situation!",
       "label_de": "Bitte erklären Sie den Sachverhalt!",
       "items": [
         {
           "item": "pseitj_CONd",
-          "text": "[de] Bitte erklären Sie den Sachverhalt!",
+          "text": "Please further explain the situation!",
           "text_de": "Bitte erklären Sie den Sachverhalt!",
           "filter": "(34;pnerw=1:4)&(56c;pseitj_CONc=2)",
           "concept": "P56I3",
@@ -6357,12 +6357,12 @@
     "56e": {
       "question": "56e",
       "name": "56e",
-      "label": "[de] Ihre Angabe: „seit *?“ erscheint etwas unplausibel. Müssen wir sie vielleicht korrigieren?",
+      "label": "Your answer: \"since *?\" seems somewhat implausible. Do we perhaps need to correct it? ",
       "label_de": "Ihre Angabe: „seit *?“ erscheint etwas unplausibel. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "pseitj_CONe",
-          "text": "[de] Ihre Angabe: „seit *?“ erscheint etwas unplausibel. Müssen wir sie vielleicht korrigieren?",
+          "text": "Your answer: \"since *?\" seems somewhat implausible. Do we perhaps need to correct it? ",
           "text_de": "Ihre Angabe: „seit *?“ erscheint etwas unplausibel. Müssen wir sie vielleicht korrigieren?",
           "filter": "(34;pnerw=1:4)&(56;seitj>0)&(56;seitj<1930)",
           "goto": "1@56; 2@56f",
@@ -6456,12 +6456,12 @@
     "56h": {
       "question": "56h",
       "name": "56h",
-      "label": "[de] Bitte erklären Sie den Sachverhalt!",
+      "label": "Please further explain the situation!",
       "label_de": "Bitte erklären Sie den Sachverhalt!",
       "items": [
         {
           "item": "pseitj_CONh",
-          "text": "[de] Bitte erklären Sie den Sachverhalt!",
+          "text": "Please further explain the situation!",
           "text_de": "Bitte erklären Sie den Sachverhalt!",
           "filter": "(34;pnerw=1:4)&(56g;pseitj_CONg=4)",
           "concept": "P56I5",
@@ -6521,12 +6521,12 @@
     "56j": {
       "question": "56j",
       "name": "56j",
-      "label": "[de] Bitte erklären Sie den Sachverhalt!",
+      "label": "Please further explain the situation!",
       "label_de": "Bitte erklären Sie den Sachverhalt!",
       "items": [
         {
           "item": "pseitj_CONj",
-          "text": "[de] Bitte erklären Sie den Sachverhalt!",
+          "text": "Please further explain the situation!",
           "text_de": "Bitte erklären Sie den Sachverhalt!",
           "filter": "(34;pnerw=1:4)&(56i;pseitj_CONi=4)",
           "concept": "P56I6",
@@ -6862,12 +6862,12 @@
     "58": {
       "question": "58",
       "name": "58",
-      "label": "Do you work for a public sector employer?",
+      "label": "Is the organization you work for part of the civil service?",
       "label_de": "Gehört der Betrieb, in dem Sie arbeiten, zum öffentlichen Dienst?",
       "items": [
         {
           "item": "poed",
-          "text": "Do you work for a public sector employer?",
+          "text": "Is the organization you work for part of the civil service?",
           "text_de": "Gehört der Betrieb, in dem Sie arbeiten, zum öffentlichen Dienst?",
           "filter": "(34;pnerw=1:4)&(57;psst=-1,pang=-1:6))",
           "concept": "poed",
@@ -6928,12 +6928,12 @@
     "60": {
       "question": "60",
       "name": "60",
-      "label": "Do you have a fixed-term or permanent employment contract?",
+      "label": "Do you have a permanent or a fixed-term employment contract?",
       "label_de": "Haben Sie einen unbefristeten Arbeitsvertrag oder ein befristetes Arbeitsverhältnis?",
       "items": [
         {
           "item": "pbefr1",
-          "text": "Do you have a fixed-term or permanent employment contract?",
+          "text": "Do you have a permanent or a fixed-term employment contract?",
           "text_de": "Haben Sie einen unbefristeten Arbeitsvertrag oder ein befristetes Arbeitsverhältnis?",
           "filter": "(34;pnerw=1:4)&(57;psst=-1,pang=-1:6))",
           "concept": "pbefr1",
@@ -6966,12 +6966,12 @@
     "61": {
       "question": "61",
       "name": "61",
-      "label": "Is the job part of a job-creation measure (ABM) or is it a \"1-Euro Job\" (community work)?",
+      "label": "Is it a job scheme offered by Federal Employment Agency (Agentur für Arbeit) or the Jobcenter (including 1 euro jobs)?",
       "label_de": "Handelt es sich um eine Maßnahme der Agentur für Arbeit oder eines Jobcenters (auch 1-Euro-Job)?",
       "items": [
         {
           "item": "pmasaa",
-          "text": "Is the job part of a job-creation measure (ABM) or is it a \"1-Euro Job\" (community work)?",
+          "text": "Is it a job scheme offered by Federal Employment Agency (Agentur für Arbeit) or the Jobcenter (including 1 euro jobs)?",
           "text_de": "Handelt es sich um eine Maßnahme der Agentur für Arbeit oder eines Jobcenters (auch 1-Euro-Job)?",
           "filter": "(34;pnerw=1:4)&(57;psst=-1,pang=-1:6))",
           "concept": "pmasaa",
@@ -7488,7 +7488,7 @@
         },
         {
           "item": "paz09",
-          "text": "No set hours",
+          "text": "No fixed working hours",
           "text_de": "Keine festgelegte Arbeitszeit",
           "concept": "paz09",
           "scale": "bin",
@@ -7503,12 +7503,12 @@
     "70a": {
       "question": "70a",
       "name": "70a",
-      "label": "[de] Ihre Angabe: „*? Wochenstunden“ erscheint etwas niedrig. Müssen wir sie vielleicht korrigieren?",
+      "label": "Your indication: \"*? hours per week\" seems a bit low. Do we perhaps need to correct it?",
       "label_de": "Ihre Angabe: „*? Wochenstunden“ erscheint etwas niedrig. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "paz08a_CONa",
-          "text": "[de] Ihre Angabe: „*? Wochenstunden“ erscheint etwas niedrig. Müssen wir sie vielleicht korrigieren?",
+          "text": "Your indication: \"*? hours per week\" seems a bit low. Do we perhaps need to correct it?",
           "text_de": "Ihre Angabe: „*? Wochenstunden“ erscheint etwas niedrig. Müssen wir sie vielleicht korrigieren?",
           "filter": "(34;pnerw=1:4)&(70;paz08a>0)&(70;paz08a<4)",
           "goto": "1@70; 2@70b",
@@ -7558,12 +7558,12 @@
     "70c": {
       "question": "70c",
       "name": "70c",
-      "label": "[de] Ihre Angabe: „*? Wochenstunden“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+      "label": "Your indication: \"*? hours per week\" seems a bit high. Do we perhaps need to correct it?",
       "label_de": "Ihre Angabe: „*? Wochenstunden“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "paz08a_CONc",
-          "text": "[de] Ihre Angabe: „*? Wochenstunden“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+          "text": "Your indication: \"*? hours per week\" seems a bit high. Do we perhaps need to correct it?",
           "text_de": "Ihre Angabe: „*? Wochenstunden“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
           "filter": "(34;pnerw=1:4)&(70;paz08a>60)",
           "goto": "1@70; 2@70d",
@@ -7765,12 +7765,12 @@
     "71c": {
       "question": "71c",
       "name": "71c",
-      "label": "[de] Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Müssen wir Sie vielleicht korrigieren?",
+      "label": "Your indication: \"*? hours per week\" seems a bit high. Do we perhaps need to correct it?",
       "label_de": "Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Müssen wir Sie vielleicht korrigieren?",
       "items": [
         {
           "item": "paz10a_CONc",
-          "text": "[de] Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Müssen wir Sie vielleicht korrigieren?",
+          "text": "Your indication: \"*? hours per week\" seems a bit high. Do we perhaps need to correct it?",
           "text_de": "Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Müssen wir Sie vielleicht korrigieren?",
           "filter": "(34;pnerw=1:4)&(71;paz10a>80)",
           "goto": "1@71; 2@71d",
@@ -7799,12 +7799,12 @@
     "71d": {
       "question": "71d",
       "name": "71d",
-      "label": "[de] Bitte erklären Sie uns noch, warum die Angabe so hoch ist.",
+      "label": "Please further explain why the amount is so high.",
       "label_de": "Bitte erklären Sie uns noch, warum die Angabe so hoch ist.",
       "items": [
         {
           "item": "paz10a_CONd",
-          "text": "[de] Bitte erklären Sie uns noch, warum die Angabe so hoch ist.",
+          "text": "Please further explain why the amount is so high.",
           "text_de": "Bitte erklären Sie uns noch, warum die Angabe so hoch ist.",
           "filter": "(34;pnerw=1:4)&(71c;paz10a_CONc=2)",
           "concept": "P71I1",
@@ -7912,12 +7912,12 @@
     "73": {
       "question": "73",
       "name": "73",
-      "label": "Do you provide voluntary contributions to pension insurance for your mini-job?",
+      "label": "Do you make a voluntary pension contribution for your Mini-Job?",
       "label_de": "Leisten Sie für Ihren Mini-Job die freiwillige Beitragsaufstockung zur Rentenversicherung?",
       "items": [
         {
           "item": "paz11a",
-          "text": "Do you provide voluntary contributions to pension insurance for your mini-job?",
+          "text": "Do you make a voluntary pension contribution for your Mini-Job?",
           "text_de": "Leisten Sie für Ihren Mini-Job die freiwillige Beitragsaufstockung zur Rentenversicherung?",
           "filter": "(34;pnerw=1:4)&(71;paz10a=0:30)&(72;paz11_n=1)",
           "concept": "xxx6",
@@ -7945,12 +7945,12 @@
     "74": {
       "question": "74",
       "name": "74",
-      "label": "Is this part-time work provided for under the Federal Parental Part-Time Work Act\n(Bundeselterngeld und Elternzeitgesetz, BEEG)?",
+      "label": "Is this part-time employment under the German Parental Allowances and Parental Leave Act (Bundeselterngeld- und Elternzeitgesetz – BEEG)?",
       "label_de": "Ist das eine Teilzeitbeschäftigung nach dem Bundeselterngeld- und Elternzeitgesetz (BEEG)?",
       "items": [
         {
           "item": "paz12",
-          "text": "Is this part-time work provided for under the Federal Parental Part-Time Work Act\n(Bundeselterngeld und Elternzeitgesetz, BEEG)?",
+          "text": "Is this part-time employment under the German Parental Allowances and Parental Leave Act (Bundeselterngeld- und Elternzeitgesetz – BEEG)?",
           "text_de": "Ist das eine Teilzeitbeschäftigung nach dem Bundeselterngeld- und Elternzeitgesetz (BEEG)?",
           "filter": "(34;pnerw=1:4)&(71;paz10a=0:30)",
           "concept": "paz12",
@@ -8750,12 +8750,12 @@
     "85a": {
       "question": "85a",
       "name": "85a",
-      "label": "[de] Ihre Angabe: „*? Überstunden abgefeiert im letzten Monat“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+      "label": "Your indication: \"*? overtime in the last month\" seems a bit high. Do we perhaps need to correct it?",
       "label_de": "Ihre Angabe: „*? Überstunden abgefeiert im letzten Monat“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "pustd10_CONa",
-          "text": "[de] Ihre Angabe: „*? Überstunden abgefeiert im letzten Monat“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+          "text": "Your indication: \"*? overtime in the last month\" seems a bit high. Do we perhaps need to correct it?",
           "text_de": "Ihre Angabe: „*? Überstunden abgefeiert im letzten Monat“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
           "filter": "(34;pnerw=1:4)&(81;pustd1=1)&(85;pustd9=1)&(85;pustd10>80)",
           "goto": "1@85",
@@ -8867,12 +8867,12 @@
     "87a": {
       "question": "87a",
       "name": "87a",
-      "label": "[de] Bitte erklären Sie uns noch, warum Sie kein Einkommen haben.",
+      "label": "Please further explain why you don't have an income.",
       "label_de": "Bitte erklären Sie uns noch, warum Sie kein Einkommen haben.",
       "items": [
         {
           "item": "pbrut_pnett_CONa",
-          "text": "[de] Bitte erklären Sie uns noch, warum Sie kein Einkommen haben.",
+          "text": "Please further explain why you don't have an income.",
           "text_de": "Bitte erklären Sie uns noch, warum Sie kein Einkommen haben.",
           "filter": "(34;pnerw=1:5)&(87;pbrut=0)&(87;pnett=0)",
           "concept": "P87I",
@@ -8888,12 +8888,12 @@
     "87b": {
       "question": "87b",
       "name": "87b",
-      "label": "[de] Der Nettoverdienst ist in der Regel geringer als der Bruttoverdienst. Sie haben *? Euro für den Nettoverdienst und *? Euro für den Bruttoverdienst eingegeben! Möchten Sie Ihre Angabe ändern?",
+      "label": "Net earnings are usually lower than gross earnings. You have *? euros for the net earnings and *? euros for the gross earnings! Do you want to change your answer?",
       "label_de": "Der Nettoverdienst ist in der Regel geringer als der Bruttoverdienst. Sie haben *? Euro für den Nettoverdienst und *? Euro für den Bruttoverdienst eingegeben! Möchten Sie Ihre Angabe ändern?",
       "items": [
         {
           "item": "pbrut_pnett_CONb",
-          "text": "[de] Der Nettoverdienst ist in der Regel geringer als der Bruttoverdienst. Sie haben *? Euro für den Nettoverdienst und *? Euro für den Bruttoverdienst eingegeben! Möchten Sie Ihre Angabe ändern?",
+          "text": "Net earnings are usually lower than gross earnings. You have *? euros for the net earnings and *? euros for the gross earnings! Do you want to change your answer?",
           "text_de": "Der Nettoverdienst ist in der Regel geringer als der Bruttoverdienst. Sie haben *? Euro für den Nettoverdienst und *? Euro für den Bruttoverdienst eingegeben! Möchten Sie Ihre Angabe ändern?",
           "filter": "(34;pnerw=1:5)&(87;pbrut>0)&(87;pnett>0)&((87;pnett>87;pbrut)|((87;pnett=87;pbrut)&(87;pbrut>750)))",
           "goto": "1@87; 2@87c",
@@ -8922,12 +8922,12 @@
     "87c": {
       "question": "87c",
       "name": "87c",
-      "label": "[de] Bitte erklären Sie, weshalb Ihr Bruttoverdienst nicht größer als Ihr Nettoverdienst ist!",
+      "label": "Please further explain why your gross earnings are not higher than your net earnings!",
       "label_de": "Bitte erklären Sie, weshalb Ihr Bruttoverdienst nicht größer als Ihr Nettoverdienst ist!",
       "items": [
         {
           "item": "pbrut_pnett_CONc",
-          "text": "[de] Bitte erklären Sie, weshalb Ihr Bruttoverdienst nicht größer als Ihr Nettoverdienst ist!",
+          "text": "Please further explain why your gross earnings are not higher than your net earnings!",
           "text_de": "Bitte erklären Sie, weshalb Ihr Bruttoverdienst nicht größer als Ihr Nettoverdienst ist!",
           "filter": "(34;pnerw=1:5)&(87b;pbrut_pnett_CONb=2)",
           "concept": "P87I2",
@@ -8982,12 +8982,12 @@
     "87e": {
       "question": "87e",
       "name": "87e",
-      "label": "[de] Bitte erklären Sie uns noch, warum Ihr Einkommen in Relation zu den Wochenstunden so gering ist.",
+      "label": "Please further explain why your income is relatively low compared to your actual working time.",
       "label_de": "Bitte erklären Sie uns noch, warum Ihr Einkommen in Relation zu den Wochenstunden so gering ist.",
       "items": [
         {
           "item": "pbrut_pnett_CONe",
-          "text": "[de] Bitte erklären Sie uns noch, warum Ihr Einkommen in Relation zu den Wochenstunden so gering ist.",
+          "text": "Please further explain why your income is relatively low compared to your actual working time.",
           "text_de": "Bitte erklären Sie uns noch, warum Ihr Einkommen in Relation zu den Wochenstunden so gering ist.",
           "filter": "(34;pnerw=1:5)&(87d;pbrut_pnett_CONd=3)",
           "concept": "P87I3",
@@ -9003,12 +9003,12 @@
     "87f": {
       "question": "87f",
       "name": "87f",
-      "label": "[de] Sind die folgenden Beträge richtig? Brutto: „*? Euro im letzten Monat“ Netto: „*? Euro im letzten Monat“",
+      "label": "Are the following amounts correct? Gross “*? euros in the last month” Net “*? euros in the last month",
       "label_de": "Sind die folgenden Beträge richtig? Brutto: „*? Euro im letzten Monat“ Netto: „*? Euro im letzten Monat“",
       "items": [
         {
           "item": "pbrut_pnett_CONf",
-          "text": "[de] Sind die folgenden Beträge richtig? Brutto: „*? Euro im letzten Monat“ Netto: „*? Euro im letzten Monat“",
+          "text": "Are the following amounts correct? Gross “*? euros in the last month” Net “*? euros in the last month",
           "text_de": "Sind die folgenden Beträge richtig? Brutto: „*? Euro im letzten Monat“ Netto: „*? Euro im letzten Monat“",
           "filter": "(34;pnerw=1:5)&((87;pbrut>30000)|(87;pnett>15000))",
           "goto": "1@87; 2@87g",
@@ -9037,12 +9037,12 @@
     "87g": {
       "question": "87g",
       "name": "87g",
-      "label": "[de] Bitte erklären Sie, warum der Betrag  so hoch ist!",
+      "label": "Please further explain why the amount is so high!",
       "label_de": "Bitte erklären Sie, warum der Betrag  so hoch ist!",
       "items": [
         {
           "item": "pbrut_pnett_CONg",
-          "text": "[de] Bitte erklären Sie, warum der Betrag  so hoch ist!",
+          "text": "Please further explain why the amount is so high!",
           "text_de": "Bitte erklären Sie, warum der Betrag  so hoch ist!",
           "filter": "(34;pnerw=1:5)&(87f;pbrut_pnett_CONf=3)",
           "concept": "P087I4",
@@ -9058,12 +9058,12 @@
     "87h": {
       "question": "87h",
       "name": "87h",
-      "label": "[de] Sie haben „Brutto: *? Euro und Netto: *? Euro“ angegeben. D. h. Ihre Abzüge übersteigen 77% des Bruttolohnes. Müssen wir die Angaben vielleicht korrigieren?",
+      "label": "You have entered \"Gross: *? euros and net: *? euros\". That is, your deductions exceed 77% of your gross salary. Do we perhaps need to correct the information?",
       "label_de": "Sie haben „Brutto: *? Euro und Netto: *? Euro“ angegeben. D. h. Ihre Abzüge übersteigen 77% des Bruttolohnes. Müssen wir die Angaben vielleicht korrigieren?",
       "items": [
         {
           "item": "pbrut_pnett_CONh",
-          "text": "[de] Sie haben „Brutto: *? Euro und Netto: *? Euro“ angegeben. D. h. Ihre Abzüge übersteigen 77% des Bruttolohnes. Müssen wir die Angaben vielleicht korrigieren?",
+          "text": "You have entered \"Gross: *? euros and net: *? euros\". That is, your deductions exceed 77% of your gross salary. Do we perhaps need to correct the information?",
           "text_de": "Sie haben „Brutto: *? Euro und Netto: *? Euro“ angegeben. D. h. Ihre Abzüge übersteigen 77% des Bruttolohnes. Müssen wir die Angaben vielleicht korrigieren?",
           "filter": "(34;pnerw=1:5)&(87;pbrut>0)&(87;pnett>0)&((87;pbrut/87;pnett)>4.3478)",
           "goto": "1@87; 2@87i",
@@ -9092,12 +9092,12 @@
     "87i": {
       "question": "87i",
       "name": "87i",
-      "label": "[de] Bitte erklären Sie uns noch, warum der Betrag Ihrer Abzüge so hoch ist!",
+      "label": "Please further explain why your deductions are so high!",
       "label_de": "Bitte erklären Sie uns noch, warum der Betrag Ihrer Abzüge so hoch ist!",
       "items": [
         {
           "item": "pbrut_pnett_CONi",
-          "text": "[de] Bitte erklären Sie uns noch, warum der Betrag Ihrer Abzüge so hoch ist!",
+          "text": "Please further explain why your deductions are so high!",
           "text_de": "Bitte erklären Sie uns noch, warum der Betrag Ihrer Abzüge so hoch ist!",
           "filter": "(34;pnerw=1:5)&(87g;pbrut_pnett_CONh=2)",
           "concept": "P87I5",
@@ -10858,15 +10858,15 @@
     "95": {
       "question": "95",
       "name": "95",
-      "label": "In addition to the main activity one can still carry out secondary activities or volunteer activities. Do you practice one or more secondary or voluntary activities?",
+      "label": "Sometimes people have a side job or do volunteer work alongside their main job. Do you currently have one or more side jobs or volunteer positions?",
       "label_de": "Neben der Haupttätigkeit kann man ja noch Nebentätigkeiten oder ehrenamtliche Tätigkeiten ausüben. Üben Sie eine oder mehrere Nebentätigkeiten oder ehrenamtliche Tätigkeiten aus?",
       "items": [
         {
           "item": "pnebt",
-          "text": "In addition to the main activity one can still carry out secondary activities or volunteer activities. Do you practice one or more secondary or voluntary activities?",
+          "text": "Sometimes people have a side job or do volunteer work alongside their main job. Do you currently have one or more side jobs or volunteer positions?",
           "text_de": "Neben der Haupttätigkeit kann man ja noch Nebentätigkeiten oder ehrenamtliche Tätigkeiten ausüben. Üben Sie eine oder mehrere Nebentätigkeiten oder ehrenamtliche Tätigkeiten aus?",
-          "instruction": "Your main job described in the previous sections should not be included!",
-          "instruction_de": "Nicht gemeint ist die schon beschriebene Erwerbstätigkeit!",
+          "instruction": "We are not referring here to the job described above!",
+          "instruction_de": "Nicht gemeint ist die schon beschriebene Erwerbstätigkeit.",
           "goto": "2@105",
           "concept": "xxx9",
           "scale": "cat",
@@ -10907,7 +10907,7 @@
         },
         {
           "item": "pnebanz",
-          "text": "Secondary / volunteer activities",
+          "text": "Side jobs / volunteer positions",
           "text_de": "Nebentätigkeiten / ehrenamtliche Tätigkeiten",
           "scale": "int",
           "sn": 1,
@@ -11484,12 +11484,12 @@
     "103a": {
       "question": "103a",
       "name": "103a",
-      "label": "[de] Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? hours per week\" seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "pnebsa_CONa",
-          "text": "[de] Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? hours per week\" seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(95;pnebt=1)&(1003;pnebsa>30)",
           "goto": "1@103",
@@ -11518,12 +11518,12 @@
     "103b": {
       "question": "103b",
       "name": "103b",
-      "label": "[de] Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? hours per week\" seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "pnebsb_CONb",
-          "text": "[de] Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? hours per week\" seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(95;pnebt=1)&(1003;pnebsb>30)",
           "goto": "1@103",
@@ -11552,12 +11552,12 @@
     "103c": {
       "question": "103c",
       "name": "103c",
-      "label": "[de] Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+      "label": "Your answer \"*? hours per week\" seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "pnebsc_CONc",
-          "text": "[de] Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
+          "text": "Your answer \"*? hours per week\" seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Stunden pro Woche“ erscheint etwas hoch. Möchten Sie die Angabe vielleicht korrigieren?",
           "filter": "(95;pnebt=1)&(1003;pnebsc>30)",
           "goto": "1@103",
@@ -11660,13 +11660,14 @@
     "104a": {
       "question": "104a",
       "name": "104a",
-      "label": "[de] Ist der Betrag: „*? Euro“ richtig?",
+      "label": "Is the amount \"*? euros\" correct?",
       "label_de": "Ist der Betrag: „*? Euro“ richtig?",
       "items": [
         {
           "item": "pnebbra_CONa",
-          "text": "[de] Ist der Betrag: „*? Euro“ richtig?",
+          "text": "Is the amount \"*? euros\" correct?",
           "text_de": "Ist der Betrag: „*? Euro“ richtig?",
+          "instruction": "Please refer to your first side job or volunteer position.",
           "filter": "(95;pnebt=1)&((104;pnebbra<20)|(104;pnebbra>2000))",
           "goto": "2@104",
           "concept": "P104AR3",
@@ -11694,13 +11695,14 @@
     "104b": {
       "question": "104b",
       "name": "104b",
-      "label": "[de] Ist der Betrag: „*? Euro“ richtig?",
+      "label": "Is the amount \"*? euros\" correct?",
       "label_de": "Ist der Betrag: „*? Euro“ richtig?",
       "items": [
         {
           "item": "pnebbrb_CONb",
-          "text": "[de] Ist der Betrag: „*? Euro“ richtig?",
+          "text": "Is the amount \"*? euros\" correct?",
           "text_de": "Ist der Betrag: „*? Euro“ richtig?",
+          "instruction": "Please refer to your first side job or volunteer position.",
           "filter": "(95;pnebt=1)&((104;pnebbrb<20)|(104;pnebbrb>2000))",
           "goto": "2@104",
           "concept": "P104AR3",
@@ -11728,13 +11730,14 @@
     "104c": {
       "question": "104c",
       "name": "104c",
-      "label": "[de] Ist der Betrag: „*? Euro“ richtig?",
+      "label": "Is the amount \"*? euros\" correct?",
       "label_de": "Ist der Betrag: „*? Euro“ richtig?",
       "items": [
         {
           "item": "pnebbrc_CONc",
-          "text": "[de] Ist der Betrag: „*? Euro“ richtig?",
+          "text": "Is the amount \"*? euros\" correct?",
           "text_de": "Ist der Betrag: „*? Euro“ richtig?",
+          "instruction": "Please refer to your first side job or volunteer position.",
           "filter": "(95;pnebt=1)&((104;pnebbrc<20)|(104;pnebbrc>2000))",
           "goto": "2@104",
           "concept": "P104AR3",
@@ -16346,12 +16349,12 @@
     "143b": {
       "question": "143b",
       "name": "143b",
-      "label": "[de] Bitte erklären Sie uns noch, warum die Angabe so hoch ist.",
+      "label": "Please explain why your response is so high.",
       "label_de": "Bitte erklären Sie uns noch, warum die Angabe so hoch ist.",
       "items": [
         {
           "item": "pdr1_CONb",
-          "text": "[de] Bitte erklären Sie uns noch, warum die Angabe so hoch ist.",
+          "text": "Please explain why your response is so high.",
           "text_de": "Bitte erklären Sie uns noch, warum die Angabe so hoch ist.",
           "filter": "143a;pdr1_CONa=2",
           "concept": "P143I3",
@@ -16447,12 +16450,12 @@
     "145a": {
       "question": "145a",
       "name": "145a",
-      "label": "[de] Ihre Angabe: „*? Nächte“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+      "label": "Your answer \"*? nights\" seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Nächte“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "pkr2_CONa",
-          "text": "[de] Ihre Angabe: „*? Nächte“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+          "text": "Your answer \"*? nights\" seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Nächte“ erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
           "filter": "(145;pkr1=1)&(145;pkr2>50)",
           "goto": "1@145; 2@145b",
@@ -16481,12 +16484,12 @@
     "145b": {
       "question": "145b",
       "name": "145b",
-      "label": "[de] Bitte erklären Sie uns noch, warum die Angabe so hoch ist!",
+      "label": "Please further explain why your entry is so high.",
       "label_de": "Bitte erklären Sie uns noch, warum die Angabe so hoch ist!",
       "items": [
         {
           "item": "pkr2_CONb",
-          "text": "[de] Bitte erklären Sie uns noch, warum die Angabe so hoch ist!",
+          "text": "Please further explain why your entry is so high.",
           "text_de": "Bitte erklären Sie uns noch, warum die Angabe so hoch ist!",
           "filter": "(145;pkr1=1)&(145a;pkr2_CONa=2)",
           "concept": "P145I",
@@ -20211,12 +20214,12 @@
     "198a": {
       "question": "198a",
       "name": "198a",
-      "label": "[de] Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ihre Eltern/Schwiegereltern erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+      "label": "Your indication: \"*? euros to oarents / parents-in-law\" seems a bit high. Do we perhaps need to correct it?",
       "label_de": "Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ihre Eltern/Schwiegereltern erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "punt12_CONa",
-          "text": "[de] Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ihre Eltern/Schwiegereltern erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+          "text": "Your indication: \"*? euros to oarents / parents-in-law\" seems a bit high. Do we perhaps need to correct it?",
           "text_de": "Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ihre Eltern/Schwiegereltern erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
           "filter": "(198;punt11=1)&(198;punt12>15000)",
           "goto": "1@198; 2@198b",
@@ -20266,12 +20269,12 @@
     "198c": {
       "question": "198c",
       "name": "198c",
-      "label": "[de] Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ihre Kinder (auch Schwiegersohn/ -tochter) erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+      "label": "Your answer \"*? euros to children (also son-in-law / daughter-in-law)\" seems a bit high. Should we correct that?",
       "label_de": "Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ihre Kinder (auch Schwiegersohn/ -tochter) erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "punt22_CONc",
-          "text": "[de] Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ihre Kinder (auch Schwiegersohn/ -tochter) erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+          "text": "Your answer \"*? euros to children (also son-in-law / daughter-in-law)\" seems a bit high. Should we correct that?",
           "text_de": "Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ihre Kinder (auch Schwiegersohn/ -tochter) erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
           "filter": "(198;punt21=1)&(198;punt22>30000)",
           "goto": "1@198; 2@198d",
@@ -20321,12 +20324,12 @@
     "198e": {
       "question": "198e",
       "name": "198e",
-      "label": "[de] Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ehepartner/ geschiedenen Ehepartner erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+      "label": "Your indication: \"*? euros to spouse or divorced spouse\" seems a bit high. Do we perhaps need to correct it?",
       "label_de": "Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ehepartner/ geschiedenen Ehepartner erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "punt32_CONe",
-          "text": "[de] Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ehepartner/ geschiedenen Ehepartner erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+          "text": "Your indication: \"*? euros to spouse or divorced spouse\" seems a bit high. Do we perhaps need to correct it?",
           "text_de": "Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an Ehepartner/ geschiedenen Ehepartner erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
           "filter": "(198;punt31=1)&(198;punt32>15000)",
           "goto": "1@198; 2@198f",
@@ -20376,12 +20379,12 @@
     "198g": {
       "question": "198g",
       "name": "198g",
-      "label": "[de] Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an sonstige Verwandte erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+      "label": "Your indication: \"*? euros to other relatives\" seems a bit high. Do we perhaps need to correct it?",
       "label_de": "Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an sonstige Verwandte erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "punt42_CONg",
-          "text": "[de] Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an sonstige Verwandte erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+          "text": "Your indication: \"*? euros to other relatives\" seems a bit high. Do we perhaps need to correct it?",
           "text_de": "Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an sonstige Verwandte erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
           "filter": "(198;punt41=1)&(198;punt42>15000)",
           "goto": "1@198; 2@198h",
@@ -20431,12 +20434,12 @@
     "198i": {
       "question": "198i",
       "name": "198i",
-      "label": "[de] Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an nicht verwandte Personen erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+      "label": "Your indication: \"*? euros to non-relatives\" seems a bit high. Do we perhaps need to correct it?",
       "label_de": "Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an nicht verwandte Personen erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
       "items": [
         {
           "item": "punt52_CONi",
-          "text": "[de] Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an nicht verwandte Personen erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
+          "text": "Your indication: \"*? euros to non-relatives\" seems a bit high. Do we perhaps need to correct it?",
           "text_de": "Ihre Angabe: „*? Euro für Zahlung oder Unterstützung an nicht verwandte Personen erscheint etwas hoch. Müssen wir sie vielleicht korrigieren?",
           "filter": "(198;punt51=1)&(198;punt52>15000)",
           "goto": "1@198; 2@198j",

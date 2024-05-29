@@ -7,7 +7,7 @@
   "period": 2021,
   "value": 279.0,
   "mode": "CAI",
-  "type_position": 13.0,
+  "type_position": 13,
   "type": "Youth (16-17-year-olds)",
   "type_de": "Jugend (16-17 Jahre)",
   "instrument": "soep-core-2021-ju2",
@@ -3459,7 +3459,7 @@
         },
         {
           "item": "jschab2",
-          "text": "[Left school without graduation certificate] Please state: Type of school",
+          "text": "[Left school without certificate] Please state: Type of school",
           "text_de": "[Schule ohne Abschluss verlassen], bitte Art der Schule angeben:",
           "filter": "(18;jl0125_v3=5|6,-1)&(21;jl0127_v2= 1)",
           "concept": "jschab2",
@@ -3469,7 +3469,7 @@
         },
         {
           "item": "jschab3",
-          "text": "[Other degree/certificate] Please state: Type of graduation certificate",
+          "text": "[Other school-leaving certificate] Please state: Type of graduation certificate",
           "text_de": "[Sonstiger Abschluss], bitte Art des Abschlusses angeben:",
           "filter": "(18;jl0125_v3=5|6,-1)&(21;jl0127_v2= 6)",
           "concept": "jschab3",
@@ -9641,12 +9641,12 @@
     "56a": {
       "question": "56a",
       "name": "56a",
-      "label": "Net earnings are usually lower than gross earnings. You have *? Euro for the net earnings and *? Euro for the gross earnings. Would you like to change your answer?",
+      "label": "Net earnings are usually lower than gross earnings. You stated *? euros for net earnings and *? euros for gross earnings. Would you like to change your answer?",
       "label_de": "Der Nettoverdienst ist in der Regel geringer als der Bruttoverdienst. Sie haben *? Euro für den Nettoverdienst und *? Euro für den Bruttoverdienst angegeben. Möchten Sie Ihre Angaben ändern?",
       "items": [
         {
           "item": "jl0536_CONa",
-          "text": "Net earnings are usually lower than gross earnings. You have *? Euro for the net earnings and *? Euro for the gross earnings. Would you like to change your answer?",
+          "text": "Net earnings are usually lower than gross earnings. You stated *? euros for net earnings and *? euros for gross earnings. Would you like to change your answer?",
           "text_de": "Der Nettoverdienst ist in der Regel geringer als der Bruttoverdienst. Sie haben *? Euro für den Nettoverdienst und *? Euro für den Bruttoverdienst angegeben. Möchten Sie Ihre Angaben ändern?",
           "filter": "(55;jl0013=1)&(56;jl0535>0)&(56;jl0536>0)&((56;jl0536>56;jl0535)|((56;jl0536=56;jl0535)&(56;jl0535>750)))",
           "goto": "1@56; 2@56b",
@@ -9675,12 +9675,12 @@
     "56b": {
       "question": "56b",
       "name": "56b",
-      "label": "Please further explain why your gross earnings are not higher than your net earnings.",
+      "label": "Please explain why your gross earnings are not higher than your net earnings.",
       "label_de": "Bitte erklären Sie, weshalb Ihr Bruttoverdienst nicht größer als Ihr Nettoverdienst ist.",
       "items": [
         {
           "item": "jl0536_CONb",
-          "text": "Please further explain why your gross earnings are not higher than your net earnings.",
+          "text": "Please explain why your gross earnings are not higher than your net earnings.",
           "text_de": "Bitte erklären Sie, weshalb Ihr Bruttoverdienst nicht größer als Ihr Nettoverdienst ist.",
           "filter": "(55;jl0013=1)&(56a;jl0536_CONa=2)",
           "concept": "J58R2",
@@ -9690,9 +9690,10 @@
         },
         {
           "item": "2",
-          "text": "Can not / Prefer not to answer",
-          "text_de": "Kann / möchte ich nicht beantworten",
-          "scale": "bin",
+          "text": "Please explain why your gross earnings are not higher than your net earnings.",
+          "text_de": "Bitte erklären Sie, weshalb Ihr Bruttoverdienst nicht größer als Ihr Nettoverdienst ist.",
+          "concept": "J58R2",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
@@ -9704,12 +9705,12 @@
     "56c": {
       "question": "56c",
       "name": "56c",
-      "label": "Your indication: \"*? euro gross earnings\" seems a bit high. Would you like to correct it?",
+      "label": "Your answer: \"*? euros gross earnings\" seems a bit high. Would you like to correct it?",
       "label_de": "Ihre Angabe „*? Euro Bruttoverdienst“ erscheint etwas hoch. Möchten Sie sie vielleicht korrigieren?",
       "items": [
         {
           "item": "jl0535_CONc",
-          "text": "Your indication: \"*? euro gross earnings\" seems a bit high. Would you like to correct it?",
+          "text": "Your answer: \"*? euros gross earnings\" seems a bit high. Would you like to correct it?",
           "text_de": "Ihre Angabe „*? Euro Bruttoverdienst“ erscheint etwas hoch. Möchten Sie sie vielleicht korrigieren?",
           "filter": "(55;jl0013=1)&(56;jl0535>30000)",
           "goto": "1@56; 2@56d",
@@ -9738,12 +9739,12 @@
     "56d": {
       "question": "56d",
       "name": "56d",
-      "label": "Please further explain why the amount is so high.",
+      "label": "Please explain why the amount is so high.",
       "label_de": "Bitte erklären Sie, warum der Betrag so hoch ist. ",
       "items": [
         {
           "item": "jl0535_CONd",
-          "text": "Please further explain why the amount is so high.",
+          "text": "Please explain why the amount is so high.",
           "text_de": "Bitte erklären Sie, warum der Betrag so hoch ist. ",
           "filter": "(55;jl0013=1)&(56c;jl0535_CONc=2)",
           "concept": "J58R4",
@@ -9753,9 +9754,10 @@
         },
         {
           "item": "2",
-          "text": "Can not / Prefer not to answer",
-          "text_de": "Kann / möchte ich nicht beantworten",
-          "scale": "bin",
+          "text": "Please explain why the amount is so high.",
+          "text_de": "Bitte erklären Sie, warum der Betrag so hoch ist. ",
+          "concept": "J58R4",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
@@ -9767,12 +9769,12 @@
     "56e": {
       "question": "56e",
       "name": "56e",
-      "label": "Your indication: \"*? net gross earnings\" seems a bit high. Would you like to correct it?",
+      "label": "Your answer: \"*? net gross earnings\" seems a bit high. Would you like to correct it?",
       "label_de": "Ihre Angabe „*? Euro Nettoverdienst“ erscheint etwas hoch. Möchten Sie sie vielleicht korrigieren?",
       "items": [
         {
           "item": "jl0536_CONe",
-          "text": "Your indication: \"*? net gross earnings\" seems a bit high. Would you like to correct it?",
+          "text": "Your answer: \"*? net gross earnings\" seems a bit high. Would you like to correct it?",
           "text_de": "Ihre Angabe „*? Euro Nettoverdienst“ erscheint etwas hoch. Möchten Sie sie vielleicht korrigieren?",
           "filter": "(55;jl0013=1)&(56;jl0536>15000)",
           "goto": "1@56; 2@56f",
@@ -9801,12 +9803,12 @@
     "56f": {
       "question": "56f",
       "name": "56f",
-      "label": "Please further explain why the amount is so high.",
+      "label": "Please explain why the amount is so high.",
       "label_de": "Bitte erklären Sie, warum der Betrag so hoch ist.",
       "items": [
         {
           "item": "jl0536_CONf",
-          "text": "Please further explain why the amount is so high.",
+          "text": "Please explain why the amount is so high.",
           "text_de": "Bitte erklären Sie, warum der Betrag so hoch ist.",
           "filter": "(55;jl0013=1)&(56e;jl0536_CONe=2)",
           "concept": "J58R4",
@@ -9816,9 +9818,10 @@
         },
         {
           "item": "2",
-          "text": "Can not / Prefer not to answer",
-          "text_de": "Kann / möchte ich nicht beantworten",
-          "scale": "bin",
+          "text": "Please explain why the amount is so high.",
+          "text_de": "Bitte erklären Sie, warum der Betrag so hoch ist.",
+          "concept": "J58R4",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
@@ -9830,12 +9833,12 @@
     "56g": {
       "question": "56g",
       "name": "56g",
-      "label": "You have gross: \"*? Euro\" and net: \"*? *? Euro\". I.e. your deductions exceed 77% of the gross salary. Would you like to correct your answer?",
+      "label": "You stated gross: \"*? euros\" and net: \"*? *? euros\". In other words, your deductions exceed 77% of your gross earnings. Would you like to correct your answer?",
       "label_de": "Sie haben Brutto: „*? Euro“ und Netto: „*? *? Euro“ angegeben. D.h. Ihre Abzüge übersteigen 77% des Bruttolohns. Möchten Sie Ihre Angaben vielleicht korrigieren?",
       "items": [
         {
           "item": "jl0536_CONg",
-          "text": "You have gross: \"*? Euro\" and net: \"*? *? Euro\". I.e. your deductions exceed 77% of the gross salary. Would you like to correct your answer?",
+          "text": "You stated gross: \"*? euros\" and net: \"*? *? euros\". In other words, your deductions exceed 77% of your gross earnings. Would you like to correct your answer?",
           "text_de": "Sie haben Brutto: „*? Euro“ und Netto: „*? *? Euro“ angegeben. D.h. Ihre Abzüge übersteigen 77% des Bruttolohns. Möchten Sie Ihre Angaben vielleicht korrigieren?",
           "filter": "(55;jl0013=1)&(56;jl0535>0)&(56;jl0536>0)&(((56;jl0536/(56;jl0535*100))<23)",
           "goto": "1@56; 2@56h",
@@ -9864,12 +9867,12 @@
     "56h": {
       "question": "56h",
       "name": "56h",
-      "label": "Please further explain why the amount of deductions is so high.",
+      "label": "Please explain why the amount of deductions is so high.",
       "label_de": "Bitte erklären Sie, warum der Betrag Ihrer Abzüge so hoch ist.",
       "items": [
         {
           "item": "jl0536_CONh",
-          "text": "Please further explain why the amount of deductions is so high.",
+          "text": "Please explain why the amount of deductions is so high.",
           "text_de": "Bitte erklären Sie, warum der Betrag Ihrer Abzüge so hoch ist.",
           "filter": "(55;jl0013=1)&(56g;jl0536_CONg=2)",
           "concept": "J58R6",
@@ -9879,9 +9882,10 @@
         },
         {
           "item": "1",
-          "text": "Can not / Prefer not to answer",
-          "text_de": "Kann / möchte ich nicht beantworten",
-          "scale": "bin",
+          "text": "Please explain why the amount of deductions is so high.",
+          "text_de": "Bitte erklären Sie, warum der Betrag Ihrer Abzüge so hoch ist.",
+          "concept": "J58R6",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
@@ -10015,12 +10019,12 @@
     "59a": {
       "question": "59a",
       "name": "59a",
-      "label": "Your indication: \"I was ... years old when starting doing side jobs or earning money\" seems a bit young. Would you like to correct it?",
+      "label": "Your answer: \"I was ... years old when I started doing side jobs or earning money\" seems a bit young. Would you like to correct it?",
       "label_de": "Ihre Angabe: „Habe im Alter von *? mit „Jobben“ angefangen“ erscheint etwas jung. Möchten Sie sie korrigieren?",
       "items": [
         {
           "item": "jl0018_CONa",
-          "text": "Your indication: \"I was ... years old when starting doing side jobs or earning money\" seems a bit young. Would you like to correct it?",
+          "text": "Your answer: \"I was ... years old when I started doing side jobs or earning money\" seems a bit young. Would you like to correct it?",
           "text_de": "Ihre Angabe: „Habe im Alter von *? mit „Jobben“ angefangen“ erscheint etwas jung. Möchten Sie sie korrigieren?",
           "filter": "(58;jl0017=1)&(59;jl0018<12)",
           "goto": "1@59; 2@59b",
@@ -10049,12 +10053,12 @@
     "59b": {
       "question": "59b",
       "name": "59b",
-      "label": "Please further explain why you were so young when first starting a side job.",
+      "label": "Please explain why you were so young when first starting a side job.",
       "label_de": "Bitte erklären Sie, warum sie in so jungen Jahren erstmals mit „Jobben“ angefangen haben.",
       "items": [
         {
           "item": "jl0018_CONb",
-          "text": "Please further explain why you were so young when first starting a side job.",
+          "text": "Please explain why you were so young when first starting a side job.",
           "text_de": "Bitte erklären Sie, warum sie in so jungen Jahren erstmals mit „Jobben“ angefangen haben.",
           "filter": "(58;jl0017=1)&(59;jl0018_CONa=2)",
           "concept": "J61I1",
@@ -10064,9 +10068,10 @@
         },
         {
           "item": "2",
-          "text": "Can not / Prefer not to answer",
-          "text_de": "Kann / möchte ich nicht beantworten",
-          "scale": "bin",
+          "text": "Please explain why you were so young when first starting a side job.",
+          "text_de": "Bitte erklären Sie, warum sie in so jungen Jahren erstmals mit „Jobben“ angefangen haben.",
+          "concept": "J61I1",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
@@ -10213,12 +10218,12 @@
     "62a": {
       "question": "62a",
       "name": "62a",
-      "label": "Your indication: \"*? euros per week\" seems a bit low. Would you like to correct it?",
+      "label": "Your answer: \"*? euros per week\" seems a bit low. Would you like to correct it?",
       "label_de": "Ihr Angabe: „*? Euro Taschengeld oder Zuschuss pro Woche“ erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "jl0021_v2_CONa",
-          "text": "Your indication: \"*? euros per week\" seems a bit low. Would you like to correct it?",
+          "text": "Your answer: \"*? euros per week\" seems a bit low. Would you like to correct it?",
           "text_de": "Ihr Angabe: „*? Euro Taschengeld oder Zuschuss pro Woche“ erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(61;jl0020=1)&(62;jl0021_v2<2)",
           "goto": "1@62; 1@62b",
@@ -10247,12 +10252,12 @@
     "62b": {
       "question": "62b",
       "name": "62b",
-      "label": "Please further explain why your weekly allowance is so low.",
+      "label": "Please explain why your weekly allowance is so low.",
       "label_de": "Bitte erklären Sie, warum Ihr Taschengeld oder Zuschuss pro Woche so niedrig ist.",
       "items": [
         {
           "item": "jl0021_v2_CONb",
-          "text": "Please further explain why your weekly allowance is so low.",
+          "text": "Please explain why your weekly allowance is so low.",
           "text_de": "Bitte erklären Sie, warum Ihr Taschengeld oder Zuschuss pro Woche so niedrig ist.",
           "filter": "(61;jl0020=1)&(62a;jl0021_v2_CONa=2)",
           "concept": "J64I",
@@ -10268,12 +10273,12 @@
     "62c": {
       "question": "62c",
       "name": "62c",
-      "label": "Your indication: \"*? euros per week\" seems a bit high. Would you like to correct it?",
+      "label": "Your answer: \"*? euros per week\" seems a bit high. Would you like to correct it?",
       "label_de": "Ihr Angabe: „*? Euro Taschengeld oder Zuschuss pro Woche“ erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "jl0021_v2_CONc",
-          "text": "Your indication: \"*? euros per week\" seems a bit high. Would you like to correct it?",
+          "text": "Your answer: \"*? euros per week\" seems a bit high. Would you like to correct it?",
           "text_de": "Ihr Angabe: „*? Euro Taschengeld oder Zuschuss pro Woche“ erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(61;jl0020=1)&(62;jl0021_v2>150)",
           "goto": "1@62; 1@62d",
@@ -10302,12 +10307,12 @@
     "62d": {
       "question": "62d",
       "name": "62d",
-      "label": "Please further explain why your weekly allowance is so high.",
+      "label": "Please explain why your weekly allowance is so high.",
       "label_de": "Bitte erklären Sie, warum Ihr Taschengeld oder Zuschuss pro Woche so hoch ist.",
       "items": [
         {
           "item": "jl0021_v2_CONd",
-          "text": "Please further explain why your weekly allowance is so high.",
+          "text": "Please explain why your weekly allowance is so high.",
           "text_de": "Bitte erklären Sie, warum Ihr Taschengeld oder Zuschuss pro Woche so hoch ist.",
           "filter": "(61;jl0020=1)&(62c;jl0021_v2_CONc=2)",
           "concept": "J64I",
@@ -10323,12 +10328,12 @@
     "62e": {
       "question": "62e",
       "name": "62e",
-      "label": "Your indication: \"*? euros per month\" seems a bit low. Would you like to correct it?",
+      "label": "Your answer: \"*? euros per month\" seems a bit low. Would you like to correct it?",
       "label_de": "Ihr Angabe: „*? Euro Taschengeld oder Zuschuss pro Monat“ erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "jl0022_v2_CONe",
-          "text": "Your indication: \"*? euros per month\" seems a bit low. Would you like to correct it?",
+          "text": "Your answer: \"*? euros per month\" seems a bit low. Would you like to correct it?",
           "text_de": "Ihr Angabe: „*? Euro Taschengeld oder Zuschuss pro Monat“ erscheint etwas niedrig. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(61;jl0020=1)&(62;jl0022_v2<5)",
           "goto": "1@62; 1@62f",
@@ -10357,12 +10362,12 @@
     "62f": {
       "question": "62f",
       "name": "62f",
-      "label": "Please further explain why your monthly allowance is so low.",
+      "label": "Please explain why your monthly allowance is so low.",
       "label_de": "Bitte erklären Sie, warum Ihr Taschengeld oder Zuschuss pro Monat so niedrig ist.",
       "items": [
         {
           "item": "jl0022_v2_CONf",
-          "text": "Please further explain why your monthly allowance is so low.",
+          "text": "Please explain why your monthly allowance is so low.",
           "text_de": "Bitte erklären Sie, warum Ihr Taschengeld oder Zuschuss pro Monat so niedrig ist.",
           "filter": "(61;jl0020=1)&(62e;jl0022_v2_CONe=2)",
           "concept": "J64I",
@@ -10378,12 +10383,12 @@
     "62g": {
       "question": "62g",
       "name": "62g",
-      "label": "Your indication: \"*? euros per month\" seems a bit high. Would you like to correct it?",
+      "label": "Your answer: \"*? euros per month\" seems a bit high. Would you like to correct it?",
       "label_de": "Ihr Angabe: „*? Euro Taschengeld oder Zuschuss pro Monat“ erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "jl0022_v2_CONg",
-          "text": "Your indication: \"*? euros per month\" seems a bit high. Would you like to correct it?",
+          "text": "Your answer: \"*? euros per month\" seems a bit high. Would you like to correct it?",
           "text_de": "Ihr Angabe: „*? Euro Taschengeld oder Zuschuss pro Monat“ erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(61;jl0020=1)&(62;jl0022_v2>500)",
           "goto": "1@62; 1@62h",
@@ -10412,12 +10417,12 @@
     "62h": {
       "question": "62h",
       "name": "62h",
-      "label": "Please further explain why your monthly allowance is so high.",
+      "label": "Please explain why your monthly allowance is so high.",
       "label_de": "Bitte erklären Sie, warum Ihr Taschengeld oder Zuschuss pro Monat so niedrig ist.",
       "items": [
         {
           "item": "jl0022_v2_CONh",
-          "text": "Please further explain why your monthly allowance is so high.",
+          "text": "Please explain why your monthly allowance is so high.",
           "text_de": "Bitte erklären Sie, warum Ihr Taschengeld oder Zuschuss pro Monat so niedrig ist.",
           "filter": "(61;jl0020=1)&(62g;jl0022_v2_CONg=2)",
           "concept": "J64I",
@@ -10427,9 +10432,10 @@
         },
         {
           "item": "1",
-          "text": "Can not / Prefer not to answer",
-          "text_de": "Kann / möchte ich nicht beantworten",
-          "scale": "bin",
+          "text": "Please explain why your monthly allowance is so high.",
+          "text_de": "Bitte erklären Sie, warum Ihr Taschengeld oder Zuschuss pro Monat so niedrig ist.",
+          "concept": "J64I",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
@@ -10530,12 +10536,12 @@
     "64a": {
       "question": "64a",
       "name": "64a",
-      "label": "Your indication: \"I save *? euros per month\" seems a bit high. Would you like to correct it?",
+      "label": "Your answer: \"I save *? euros per month\" seems a bit high. Would you like to correct it?",
       "label_de": "Ihre Angabe: „Spare *? Euro pro Monat“ erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
       "items": [
         {
           "item": "jl0024_v2_CONa",
-          "text": "Your indication: \"I save *? euros per month\" seems a bit high. Would you like to correct it?",
+          "text": "Your answer: \"I save *? euros per month\" seems a bit high. Would you like to correct it?",
           "text_de": "Ihre Angabe: „Spare *? Euro pro Monat“ erscheint etwas hoch. Möchten Sie Ihre Angabe vielleicht korrigieren?",
           "filter": "(63;jl0023=1|2)&(64;jl0025>250)",
           "goto": "1@64; 2@64b",
@@ -10564,12 +10570,12 @@
     "64b": {
       "question": "64b",
       "name": "64b",
-      "label": "Please further explain why you are able to save that much.",
+      "label": "Please explain why you are able to save that much.",
       "label_de": "Bitte erklären Sie, warum der Sparbetrag pro Monat so hoch ist.",
       "items": [
         {
           "item": "jl0024_v2_CONb",
-          "text": "Please further explain why you are able to save that much.",
+          "text": "Please explain why you are able to save that much.",
           "text_de": "Bitte erklären Sie, warum der Sparbetrag pro Monat so hoch ist.",
           "filter": "(63;jl0023=1|2)&(64;jl0024_v2_CONa=2)",
           "concept": "J66I",
@@ -10579,9 +10585,10 @@
         },
         {
           "item": "1",
-          "text": "Can not / Prefer not to answer",
-          "text_de": "Kann / möchte ich nicht beantworten",
-          "scale": "bin",
+          "text": "Please explain why you are able to save that much.",
+          "text_de": "Bitte erklären Sie, warum der Sparbetrag pro Monat so hoch ist.",
+          "concept": "J66I",
+          "scale": "chr",
           "sn": 1,
           "number": ""
         }
