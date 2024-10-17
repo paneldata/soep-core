@@ -1,53 +1,5 @@
 [
   {
-    "name": "hid",
-    "dataset": "yh",
-    "label": "Current Wave HH Number (=hid_2008)",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=hid_2008)",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 27.0,
-      "1st Qu.": 116473.0,
-      "Median": 279556.0,
-      "Mean": 295790.7977934527,
-      "3rd Qu.": 383256.0,
-      "Max.": 827703.0,
-      "valid": 11058,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "syear",
-    "dataset": "yh",
-    "label": "Survey Year",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Befragungsjahr",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 2008.0,
-      "1st Qu.": 2008.0,
-      "Median": 2008.0,
-      "Mean": 2008.0,
-      "3rd Qu.": 2008.0,
-      "Max.": 2008.0,
-      "valid": 11058,
-      "invalid": 0
-    }
-  },
-  {
     "name": "cid",
     "dataset": "yh",
     "label": "Original Houshold Number, Case ID",
@@ -67,6 +19,30 @@
       "Mean": 293749.5369867969,
       "3rd Qu.": 348428.75,
       "Max.": 824984.0,
+      "valid": 11058,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "hid",
+    "dataset": "yh",
+    "label": "Current Wave HH Number (=hid_2008)",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_2008)",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 27.0,
+      "1st Qu.": 116473.0,
+      "Median": 279556.0,
+      "Mean": 295790.7977934527,
+      "3rd Qu.": 383256.0,
+      "Max.": 827703.0,
       "valid": 11058,
       "invalid": 0
     }
@@ -96,9 +72,9 @@
     }
   },
   {
-    "name": "welle",
+    "name": "intid",
     "dataset": "yh",
-    "label": "Survey Year (1984 = 1)",
+    "label": "Interviewer ID",
     "categories": {
       "values": [],
       "labels": [],
@@ -106,17 +82,17 @@
       "frequencies": []
     },
     "scale": "number",
-    "label_de": "Befragungswelle (1984=1)",
+    "label_de": "Interviewer ID",
     "study": "soep-core",
     "statistics": {
-      "Min.": 2008.0,
-      "1st Qu.": 2008.0,
-      "Median": 2008.0,
-      "Mean": 2008.0,
-      "3rd Qu.": 2008.0,
-      "Max.": 2008.0,
-      "valid": 11058,
-      "invalid": 0
+      "Min.": 1001004.0,
+      "1st Qu.": 1001888.0,
+      "Median": 1002740.0,
+      "Mean": 1002847.7828839646,
+      "3rd Qu.": 1003846.0,
+      "Max.": 1004760.0,
+      "valid": 9161,
+      "invalid": 1897
     }
   },
   {
@@ -186,18 +162,18 @@
         "[11] E2 Refreshment (CAPI), 1998",
         "[12] F1 Refreshment, 2000",
         "[13] F2 Refreshment, Additional Foreigner Addresses, 2000",
-        "[14] G1 High Income (PreTest), 2002",
+        "[14] G1 High Income Pretest, 2002",
         "[15] G2 High Income, 2002",
         "[16] H Refreshment, 2006",
-        "[19] I Refreshment, Incentivation, 2009",
+        "[19] I Refreshment, Incentivation 2009",
         "[20] J Refreshment, 2011",
         "[21] K Refreshment, 2012",
-        "[22] I2 Refreshment IS, 2012",
+        "[22] Refreshment SOEP-IS, Supplementary Sample 2012",
         "[23] Special Survey (Laboratory Sample), 2012",
-        "[24] M1 Migration (1995-2011), 2013",
-        "[29] M2 Migration (2009-2013), 2015",
-        "[30] M3 Refugees (01/2013-01/2016), 2016",
-        "[31] M4 Refugee Families (01/2013-01/2016), 2016",
+        "[24] M1 IAB-SOEP 2013 Migration (1995-2011)",
+        "[29] M2 IAB-SOEP Migration (2009-2013), 2015",
+        "[30] M3 IAB-BAMF-SOEP 2016 Refugee (2013-2015)",
+        "[31] M4 IAB-BAMF-SOEP 2016 Refugee/ Families (2013-2015)",
         "[60] L2/3 FiD Screening, Low Income, 2010/11",
         "[61] L2/3 FiD Screening, Single Parent, 2010/11",
         "[62] L2/3 FiD Screening, Families with Several Children, 2010/11",
@@ -214,38 +190,38 @@
         "[-3] nicht valide",
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
-        "[1] A Deutscher HV (West)",
-        "[2] B1 Tuerkischer HV",
-        "[3] B2 Jugoslawischer HV",
-        "[4] B3 Griechischer HV",
-        "[5] B4 Italienischer HV",
-        "[6] B5 Spanischer HV",
-        "[7] C Deutscher HV (Ost)",
-        "[8] D1 Zuwanderung nach Westdeutschland",
-        "[9] D2 Zuwanderung nach Westdeutschland",
-        "[10] E1 (PAPI)",
-        "[11] E2 (CAPI)",
-        "[12] F1 ISOEP (Innovation)",
-        "[13] F2 ISOEP, Zusatzbegehung Auslaenderadr.",
-        "[14] G1 Hocheinkommensbezieher (PreTest)",
-        "[15] G2 Hocheinkommensbezieher",
-        "[16] H Ergaenzung 2006",
-        "[19] I Incentivierung 2009",
-        "[20] J Aufstockung 2011",
-        "[21] K Aufstockung 2012",
-        "[22] I2 Aufstockung IS 2012",
+        "[1] Westdeutsche/sonstige Ausländer Stichprobe A",
+        "[2] Türken Stichprobe B",
+        "[3] Jugoslawen Stichprobe B",
+        "[4] Griechen Stichprobe B",
+        "[5] Italiener Stichprobe B",
+        "[6] Spanier Stichprobe B",
+        "[7] Ostdeutsche/sonstige Ausländer Stichprobe C",
+        "[8] Zuwanderer Stichprobe D1",
+        "[9] Zuwanderer Stichprobe D2",
+        "[10] Aufstockung 1998/PAPI Stichprobe E1",
+        "[11] Aufstockung 1998/CAPI Stichprobe E2",
+        "[12] Aufstockung 2000/Adresse 1-12 Stichprobe F",
+        "[13] Aufstockung 2000/Adresse 13-24 Stichprobe F",
+        "[14] G1 Hocheinkommensbezieher (PreTest), 2002",
+        "[15] Aufstockung 2002/Stichprobe G2",
+        "[16] Aufstockung 2006/Stichprobe H",
+        "[19] Aufstockung 2009/ Incentivierung I",
+        "[20] Aufstockung 2011/Stichprobe J",
+        "[21] Aufstockung 2012/Stichprobe K",
+        "[22] Innovationssample 2012 Aufstockung",
         "[23] Sondererhebung 2012 (Laborstichprobe)",
-        "[24] M1 2013 Migration (1995-2010)",
-        "[29] M2 2015 Migration (2009-2013)",
-        "[30] M3 2016 Flucht (2013-2015)",
-        "[31] M4 2016 Flucht/Familien (2013-2015)",
-        "[60] L2/3 FiD Screening 2010/11 Niedrigeinkommen",
-        "[61] L2/3 FiD Screening 2010/11 Alleinerziehende",
-        "[62] L2/3 FiD Screening 2010/11 Mehrkindfamilien",
-        "[63] L1 FiD Geburtskohorte 2007",
-        "[64] L1 FiD Geburtskohorte 2008",
-        "[65] L1 FiD Geburtskohorte 2009",
-        "[66] L1 FiD Geburtskohorte 2010"
+        "[24] M1 IAB-SOEP 2013 Migration (1995-2011)",
+        "[29] M2 IAB-SOEP Migration 2015 (2009-2013)",
+        "[30] M3 IAB-BAMF-SOEP 2016 Flucht (2013-2015)",
+        "[31] M4 IAB-BAMF-SOEP 2016 Flucht/Familien (2013-2015)",
+        "[60] FiD Screening 2010/11 - Niedrigeinkommen/Stichprobe L2/3",
+        "[61] FiD Screening 2010/11 - Alleinerziehende/Stichprobe L2/3",
+        "[62] FiD Screening 2010/11 - Mehrkindfamilien/Stichprobe L2/3",
+        "[63] FiD Geburtskohorte 2007/Stichprobe L1",
+        "[64] FiD Geburtskohorte 2008/Stichprobe L1",
+        "[65] FiD Geburtskohorte 2009/Stichprobe L1",
+        "[66] FiD Geburtskohorte 2010/Stichprobe L1"
       ],
       "missings": [
         true,
@@ -339,6 +315,54 @@
     }
   },
   {
+    "name": "syear",
+    "dataset": "yh",
+    "label": "Survey Year",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Befragungsjahr",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 2008.0,
+      "1st Qu.": 2008.0,
+      "Median": 2008.0,
+      "Mean": 2008.0,
+      "3rd Qu.": 2008.0,
+      "Max.": 2008.0,
+      "valid": 11058,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "welle",
+    "dataset": "yh",
+    "label": "Survey Year (1984 = 1)",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Befragungswelle (1984=1)",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 2008.0,
+      "1st Qu.": 2008.0,
+      "Median": 2008.0,
+      "Mean": 2008.0,
+      "3rd Qu.": 2008.0,
+      "Max.": 2008.0,
+      "valid": 11058,
+      "invalid": 0
+    }
+  },
+  {
     "name": "yausku",
     "dataset": "yh",
     "label": "ID Number Of Person Interviewed",
@@ -358,6 +382,30 @@
       "Mean": 1.2859468258274553,
       "3rd Qu.": 1.0,
       "Max.": 9.0,
+      "valid": 11058,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "ycalcinc",
+    "dataset": "yh",
+    "label": "Calculated Mon. HH Net Income, Infratest",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Errechn. monatl. HH-Nettoeink., Infratest",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 1156.25,
+      "Median": 1906.5,
+      "Mean": 2255.793904865256,
+      "3rd Qu.": 2985.0,
+      "Max.": 24906.0,
       "valid": 11058,
       "invalid": 0
     }
@@ -2029,6 +2077,30 @@
     }
   },
   {
+    "name": "yh0402",
+    "dataset": "yh",
+    "label": "In This Dwelling Since, Year",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Seit wann in dieser Wohnung, Jahr",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1993.0,
+      "1st Qu.": 2007.0,
+      "Median": 2007.0,
+      "Mean": 2007.1917372881355,
+      "3rd Qu.": 2007.0,
+      "Max.": 2008.0,
+      "valid": 944,
+      "invalid": 10114
+    }
+  },
+  {
     "name": "yh05",
     "dataset": "yh",
     "label": "Neighborhood Of Household",
@@ -2110,30 +2182,6 @@
     "statistics": {
       "valid": 887,
       "invalid": 10171
-    }
-  },
-  {
-    "name": "yh0402",
-    "dataset": "yh",
-    "label": "In This Dwelling Since, Year",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Seit wann in dieser Wohnung, Jahr",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 1993.0,
-      "1st Qu.": 2007.0,
-      "Median": 2007.0,
-      "Mean": 2007.1917372881355,
-      "3rd Qu.": 2007.0,
-      "Max.": 2008.0,
-      "valid": 944,
-      "invalid": 10114
     }
   },
   {
@@ -2723,75 +2771,6 @@
     }
   },
   {
-    "name": "yh1402",
-    "dataset": "yh",
-    "label": "Dwelling  With Indoor Bath, Shower",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1,
-        2
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Yes",
-        "[2] No"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Ja",
-        "[2] Nein"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        22,
-        10989,
-        47
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Wohnung mit Innenbad,-dusche",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 11036,
-      "invalid": 22
-    }
-  },
-  {
     "name": "yh1401",
     "dataset": "yh",
     "label": "Dwelling  With Kitchen",
@@ -2861,9 +2840,9 @@
     }
   },
   {
-    "name": "yh1404",
+    "name": "yh1402",
     "dataset": "yh",
-    "label": "Dwelling  With Indoor Toilet",
+    "label": "Dwelling  With Indoor Bath, Shower",
     "categories": {
       "values": [
         -7,
@@ -2916,17 +2895,17 @@
         0,
         0,
         0,
-        27,
-        10976,
-        55
+        22,
+        10989,
+        47
       ]
     },
     "scale": "cat",
-    "label_de": "Wohnung mit Innen-WC",
+    "label_de": "Wohnung mit Innenbad,-dusche",
     "study": "soep-core",
     "statistics": {
-      "valid": 11031,
-      "invalid": 27
+      "valid": 11036,
+      "invalid": 22
     }
   },
   {
@@ -2996,6 +2975,75 @@
     "statistics": {
       "valid": 11025,
       "invalid": 33
+    }
+  },
+  {
+    "name": "yh1404",
+    "dataset": "yh",
+    "label": "Dwelling  With Indoor Toilet",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes",
+        "[2] No"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja",
+        "[2] Nein"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        27,
+        10976,
+        55
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Wohnung mit Innen-WC",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 11031,
+      "invalid": 27
     }
   },
   {
@@ -4674,6 +4722,30 @@
     }
   },
   {
+    "name": "yh25",
+    "dataset": "yh",
+    "label": "Cost Of Heat And Hot Water Per Month",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Monatl. Heizkosten, durchschnittl.",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 10.0,
+      "1st Qu.": 55.0,
+      "Median": 80.0,
+      "Mean": 90.16797312430012,
+      "3rd Qu.": 110.0,
+      "Max.": 930.0,
+      "valid": 3572,
+      "invalid": 7486
+    }
+  },
+  {
     "name": "yh2601",
     "dataset": "yh",
     "label": "Cost Of Heat And Hot Water Per Month",
@@ -4735,30 +4807,6 @@
     "statistics": {
       "valid": 1595,
       "invalid": 9463
-    }
-  },
-  {
-    "name": "yh25",
-    "dataset": "yh",
-    "label": "Cost Of Heat And Hot Water Per Month",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Monatl. Heizkosten, durchschnittl.",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 10.0,
-      "1st Qu.": 55.0,
-      "Median": 80.0,
-      "Mean": 90.16797312430012,
-      "3rd Qu.": 110.0,
-      "Max.": 930.0,
-      "valid": 3572,
-      "invalid": 7486
     }
   },
   {
@@ -4836,9 +4884,33 @@
     }
   },
   {
-    "name": "yh2604",
+    "name": "yh2603",
     "dataset": "yh",
     "label": "Cost Of Water, Etc.  Per Month",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Monatl Hoehe der Umlagen",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 2.0,
+      "1st Qu.": 40.0,
+      "Median": 60.0,
+      "Mean": 70.1977886977887,
+      "3rd Qu.": 90.0,
+      "Max.": 930.0,
+      "valid": 1628,
+      "invalid": 9430
+    }
+  },
+  {
+    "name": "yh2604",
+    "dataset": "yh",
+    "label": "No Shared Costs",
     "categories": {
       "values": [
         -7,
@@ -4892,35 +4964,11 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Monatl Hoehe der Umlagen",
+    "label_de": "Keine Umlagekosten",
     "study": "soep-core",
     "statistics": {
       "valid": 2088,
       "invalid": 8970
-    }
-  },
-  {
-    "name": "yh2603",
-    "dataset": "yh",
-    "label": "Cost Of Water, Etc.  Per Month",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Monatl Hoehe der Umlagen",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 2.0,
-      "1st Qu.": 40.0,
-      "Median": 60.0,
-      "Mean": 70.1977886977887,
-      "3rd Qu.": 90.0,
-      "Max.": 930.0,
-      "valid": 1628,
-      "invalid": 9430
     }
   },
   {
@@ -6896,30 +6944,6 @@
     }
   },
   {
-    "name": "yh4705",
-    "dataset": "yh",
-    "label": "Winnings, Inheritance Item Nonresponse",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "unerwartete Geldbetraege,Sachwerte k.A.",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.0,
-      "3rd Qu.": 0.0,
-      "Max.": 0.0,
-      "valid": 0,
-      "invalid": 11058
-    }
-  },
-  {
     "name": "yh4704",
     "dataset": "yh",
     "label": "Lottery Winnings",
@@ -6981,6 +7005,30 @@
     "statistics": {
       "valid": 28,
       "invalid": 11030
+    }
+  },
+  {
+    "name": "yh4705",
+    "dataset": "yh",
+    "label": "Winnings, Inheritance Item Nonresponse",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "unerwartete Geldbetraege,Sachwerte k.A.",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 0.0,
+      "Median": 0.0,
+      "Mean": 0.0,
+      "3rd Qu.": 0.0,
+      "Max.": 0.0,
+      "valid": 0,
+      "invalid": 11058
     }
   },
   {
@@ -7101,6 +7149,30 @@
     }
   },
   {
+    "name": "yh4903",
+    "dataset": "yh",
+    "label": "Child Allowance Previous Yr. Amt./Month",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Kindergeld letzt.J Betrag(Monat)",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 70.0,
+      "1st Qu.": 154.0,
+      "Median": 159.0,
+      "Mean": 253.76907001044933,
+      "3rd Qu.": 308.0,
+      "Max.": 1800.0,
+      "valid": 3828,
+      "invalid": 7230
+    }
+  },
+  {
     "name": "yh4904",
     "dataset": "yh",
     "label": "Unemployment Subsidy II, Social Subsidy Prev. Year",
@@ -7170,30 +7242,6 @@
     }
   },
   {
-    "name": "yh4903",
-    "dataset": "yh",
-    "label": "Child Allowance Previous Yr. Amt./Month",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Kindergeld letzt.J Betrag(Monat)",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 70.0,
-      "1st Qu.": 154.0,
-      "Median": 159.0,
-      "Mean": 253.76907001044933,
-      "3rd Qu.": 308.0,
-      "Max.": 1800.0,
-      "valid": 3828,
-      "invalid": 7230
-    }
-  },
-  {
     "name": "yh4905",
     "dataset": "yh",
     "label": "Unemployment Subsidy II, Social Subsidy Prev. Year , Months",
@@ -7215,6 +7263,30 @@
       "Max.": 12.0,
       "valid": 779,
       "invalid": 10279
+    }
+  },
+  {
+    "name": "yh4906",
+    "dataset": "yh",
+    "label": "Unemployment Subsidy II, Social Subsidy Prev. Year , Amt./ Months",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "ALG2, Sozialgeld im letzten Jahr: Betrag pro Monat",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 19.0,
+      "1st Qu.": 347.0,
+      "Median": 550.0,
+      "Mean": 580.0617760617761,
+      "3rd Qu.": 711.0,
+      "Max.": 2050.0,
+      "valid": 777,
+      "invalid": 10281
     }
   },
   {
@@ -7287,30 +7359,6 @@
     }
   },
   {
-    "name": "yh4906",
-    "dataset": "yh",
-    "label": "Unemployment Subsidy II, Social Subsidy Prev. Year , Amt./ Months",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "ALG2, Sozialgeld im letzten Jahr: Betrag pro Monat",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 19.0,
-      "1st Qu.": 347.0,
-      "Median": 550.0,
-      "Mean": 580.0617760617761,
-      "3rd Qu.": 711.0,
-      "Max.": 2050.0,
-      "valid": 777,
-      "invalid": 10281
-    }
-  },
-  {
     "name": "yh4908",
     "dataset": "yh",
     "label": "Housing Assistance Prev. Year , Months",
@@ -7356,30 +7404,6 @@
       "Max.": 1168.0,
       "valid": 291,
       "invalid": 10767
-    }
-  },
-  {
-    "name": "yh4911",
-    "dataset": "yh",
-    "label": "Compulsory Long Term Care Insurance, prev. year, Months",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Leistungen der Pflegeversicherung Monate",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 12.0,
-      "Median": 12.0,
-      "Mean": 11.201612903225806,
-      "3rd Qu.": 12.0,
-      "Max.": 12.0,
-      "valid": 248,
-      "invalid": 10810
     }
   },
   {
@@ -7449,6 +7473,30 @@
     "statistics": {
       "valid": 11047,
       "invalid": 11
+    }
+  },
+  {
+    "name": "yh4911",
+    "dataset": "yh",
+    "label": "Compulsory Long Term Care Insurance, prev. year, Months",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Leistungen der Pflegeversicherung Monate",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 12.0,
+      "Median": 12.0,
+      "Mean": 11.201612903225806,
+      "3rd Qu.": 12.0,
+      "Max.": 12.0,
+      "valid": 248,
+      "invalid": 10810
     }
   },
   {
@@ -8877,7 +8925,7 @@
   {
     "name": "yh5402",
     "dataset": "yh",
-    "label": "Car In HH",
+    "label": "Car Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -8931,7 +8979,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Auto im HH",
+    "label_de": "Auto Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 922,
@@ -9005,7 +9053,7 @@
   {
     "name": "yh5404",
     "dataset": "yh",
-    "label": "Motorcycle In HH",
+    "label": "Motorcycle, Moped Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -9059,7 +9107,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Motorrad,Moped im HH",
+    "label_de": "Motorrad,Moped Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 401,
@@ -9131,6 +9179,70 @@
     }
   },
   {
+    "name": "yh5406",
+    "dataset": "yh",
+    "label": "Microwave Acquired In Last 12 Months",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes, Bought In The Last 12 Month"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja, in letzten 12 Mon gekauft"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10690,
+        0,
+        368
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Mikrowelle Anschaffung in letzten 12 Monaten",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 368,
+      "invalid": 10690
+    }
+  },
+  {
     "name": "yh5407",
     "dataset": "yh",
     "label": "Dishwascher In HH",
@@ -9195,73 +9307,9 @@
     }
   },
   {
-    "name": "yh5406",
-    "dataset": "yh",
-    "label": "Microwave In HH",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Yes, Bought In The Last 12 Month"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Ja, in letzten 12 Mon gekauft"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        10690,
-        0,
-        368
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Mikrowelle im HH",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 368,
-      "invalid": 10690
-    }
-  },
-  {
     "name": "yh5408",
     "dataset": "yh",
-    "label": "Dishwascher In HH",
+    "label": "Dishwasher Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -9315,7 +9363,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Geschirrspuelmaschine im HH",
+    "label_de": "Geschirrspuelmaschine Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 495,
@@ -9389,7 +9437,7 @@
   {
     "name": "yh5410",
     "dataset": "yh",
-    "label": "Washing Machine In HH",
+    "label": "Washing Machine Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -9443,7 +9491,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Waschmaschine im HH",
+    "label_de": "Waschmaschine Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 499,
@@ -9517,7 +9565,7 @@
   {
     "name": "yh5412",
     "dataset": "yh",
-    "label": "Stereo In HH",
+    "label": "Stereo Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -9571,75 +9619,11 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Stereoanlage im HH",
+    "label_de": "Stereoanlage Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 237,
       "invalid": 10821
-    }
-  },
-  {
-    "name": "yh5414",
-    "dataset": "yh",
-    "label": "Colour TV In HH",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Yes, Bought In The Last 12 Month"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Ja, in letzten 12 Mon gekauft"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        10320,
-        0,
-        738
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Farb-TV im HH",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 738,
-      "invalid": 10320
     }
   },
   {
@@ -9704,6 +9688,70 @@
     "statistics": {
       "valid": 10695,
       "invalid": 363
+    }
+  },
+  {
+    "name": "yh5414",
+    "dataset": "yh",
+    "label": "Color TV Acquired In Last 12 Months",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes, Bought In The Last 12 Month"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja, in letzten 12 Mon gekauft"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10320,
+        0,
+        738
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Farb-TV Anschaffung in letzten 12 Monaten",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 738,
+      "invalid": 10320
     }
   },
   {
@@ -9773,7 +9821,7 @@
   {
     "name": "yh5416",
     "dataset": "yh",
-    "label": "DVD Player (Without Recorder) In HH",
+    "label": "DVD player (Without Recorder) Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -9827,75 +9875,11 @@
       ]
     },
     "scale": "cat",
-    "label_de": "DVD-Spieler (ohne Recorder) im HH",
+    "label_de": "DVD-Spieler (ohne Recorder) Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 416,
       "invalid": 10642
-    }
-  },
-  {
-    "name": "yh5418",
-    "dataset": "yh",
-    "label": "DVD Recorder In HH",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Yes, Bought In The Last 12 Month"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Ja, in letzten 12 Mon gekauft"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        10545,
-        0,
-        513
-      ]
-    },
-    "scale": "cat",
-    "label_de": "DVD-Recorder im HH",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 513,
-      "invalid": 10545
     }
   },
   {
@@ -9963,9 +9947,9 @@
     }
   },
   {
-    "name": "yh5420",
+    "name": "yh5418",
     "dataset": "yh",
-    "label": "Computer In HH",
+    "label": "DVD Recorder Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -10013,17 +9997,17 @@
         0,
         0,
         0,
-        10225,
+        10545,
         0,
-        833
+        513
       ]
     },
     "scale": "cat",
-    "label_de": "PC im HH",
+    "label_de": "DVD-Recorder Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
-      "valid": 833,
-      "invalid": 10225
+      "valid": 513,
+      "invalid": 10545
     }
   },
   {
@@ -10088,6 +10072,70 @@
     "statistics": {
       "valid": 7828,
       "invalid": 3230
+    }
+  },
+  {
+    "name": "yh5420",
+    "dataset": "yh",
+    "label": "Computer Acquired In Last 12 Months",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes, Bought In The Last 12 Month"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja, in letzten 12 Mon gekauft"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10225,
+        0,
+        833
+      ]
+    },
+    "scale": "cat",
+    "label_de": "PC Anschaffung in letzten 12 Monaten",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 833,
+      "invalid": 10225
     }
   },
   {
@@ -10157,7 +10205,7 @@
   {
     "name": "yh5422",
     "dataset": "yh",
-    "label": "Internet Connection (No DSL) In HH",
+    "label": "Internet Connection (No DSL) Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -10211,7 +10259,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Internet-Anschluss (ohne DSL) im HH",
+    "label_de": "Internet-Anschluss (ohne DSL) Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 350,
@@ -10285,7 +10333,7 @@
   {
     "name": "yh5424",
     "dataset": "yh",
-    "label": "DSL Connection In HH",
+    "label": "Broadband-Internet Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -10339,7 +10387,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "DSL-Anschluss im HH",
+    "label_de": "Breitband-Internet Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 865,
@@ -10413,7 +10461,7 @@
   {
     "name": "yh5426",
     "dataset": "yh",
-    "label": "Telephone In HH",
+    "label": "Telephone Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -10467,75 +10515,11 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Telefon im HH",
+    "label_de": "Telefon Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 268,
       "invalid": 10790
-    }
-  },
-  {
-    "name": "yh5428",
-    "dataset": "yh",
-    "label": "Mobile Phone In HH",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Yes, Bought In The Last 12 Month"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Ja, in letzten 12 Mon gekauft"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        10383,
-        0,
-        675
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Mobiltelefon, Handy im HH",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 675,
-      "invalid": 10383
     }
   },
   {
@@ -10603,9 +10587,9 @@
     }
   },
   {
-    "name": "yh5430",
+    "name": "yh5428",
     "dataset": "yh",
-    "label": "Fax Machin In HH",
+    "label": "Mobile Telephone Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -10653,17 +10637,17 @@
         0,
         0,
         0,
-        10664,
+        10383,
         0,
-        394
+        675
       ]
     },
     "scale": "cat",
-    "label_de": "Faxgeraet im HH",
+    "label_de": "Mobiltelefon Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
-      "valid": 394,
-      "invalid": 10664
+      "valid": 675,
+      "invalid": 10383
     }
   },
   {
@@ -10728,6 +10712,70 @@
     "statistics": {
       "valid": 2632,
       "invalid": 8426
+    }
+  },
+  {
+    "name": "yh5430",
+    "dataset": "yh",
+    "label": "Fax Acquired In Last 12 Months",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes, Bought In The Last 12 Month"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja, in letzten 12 Mon gekauft"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10664,
+        0,
+        394
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Faxgeraet Anschaffung in letzten 12 Monaten",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 394,
+      "invalid": 10664
     }
   },
   {
@@ -10797,7 +10845,7 @@
   {
     "name": "yh5432",
     "dataset": "yh",
-    "label": "ISDN Connection In HH",
+    "label": "ISDN Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -10851,7 +10899,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "ISDN-Anschluss im HH",
+    "label_de": "ISDN Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 339,
@@ -12133,6 +12181,54 @@
     }
   },
   {
+    "name": "yhhdaer1",
+    "dataset": "yh",
+    "label": "Interview Length Oral",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Interviewdauer muendlich",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 14.0,
+      "Median": 15.0,
+      "Mean": 17.634522661523626,
+      "3rd Qu.": 20.0,
+      "Max.": 102.0,
+      "valid": 6222,
+      "invalid": 4836
+    }
+  },
+  {
+    "name": "yhhdaer2",
+    "dataset": "yh",
+    "label": "Interview Length Written",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Interviewdauer schriftlich",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 5.0,
+      "1st Qu.": 15.0,
+      "Median": 20.0,
+      "Mean": 20.06938053097345,
+      "3rd Qu.": 25.0,
+      "Max.": 150.0,
+      "valid": 2825,
+      "invalid": 8233
+    }
+  },
+  {
     "name": "yhivform",
     "dataset": "yh",
     "label": "Survey Instrument",
@@ -12229,78 +12325,6 @@
     "statistics": {
       "valid": 10973,
       "invalid": 85
-    }
-  },
-  {
-    "name": "yhhdaer1",
-    "dataset": "yh",
-    "label": "Interview Length Oral",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Interviewdauer muendlich",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 14.0,
-      "Median": 15.0,
-      "Mean": 17.634522661523626,
-      "3rd Qu.": 20.0,
-      "Max.": 102.0,
-      "valid": 6222,
-      "invalid": 4836
-    }
-  },
-  {
-    "name": "yhhdaer2",
-    "dataset": "yh",
-    "label": "Interview Length Written",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Interviewdauer schriftlich",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 5.0,
-      "1st Qu.": 15.0,
-      "Median": 20.0,
-      "Mean": 20.06938053097345,
-      "3rd Qu.": 25.0,
-      "Max.": 150.0,
-      "valid": 2825,
-      "invalid": 8233
-    }
-  },
-  {
-    "name": "yhtagin",
-    "dataset": "yh",
-    "label": "Day Of Interview",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Tag des Interviews",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 8.0,
-      "Median": 15.0,
-      "Mean": 15.177789835413275,
-      "3rd Qu.": 22.0,
-      "Max.": 31.0,
-      "valid": 11058,
-      "invalid": 0
     }
   },
   {
@@ -12447,9 +12471,9 @@
     }
   },
   {
-    "name": "ycalcinc",
+    "name": "yhtagin",
     "dataset": "yh",
-    "label": "Calculated Mon. HH Net Income, Infratest",
+    "label": "Day Of Interview",
     "categories": {
       "values": [],
       "labels": [],
@@ -12457,15 +12481,15 @@
       "frequencies": []
     },
     "scale": "number",
-    "label_de": "Errechn. monatl. HH-Nettoeink., Infratest",
+    "label_de": "Tag des Interviews",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 1156.25,
-      "Median": 1906.5,
-      "Mean": 2255.793904865256,
-      "3rd Qu.": 2985.0,
-      "Max.": 24906.0,
+      "Min.": 1.0,
+      "1st Qu.": 8.0,
+      "Median": 15.0,
+      "Mean": 15.177789835413275,
+      "3rd Qu.": 22.0,
+      "Max.": 31.0,
       "valid": 11058,
       "invalid": 0
     }
@@ -12557,30 +12581,6 @@
     "statistics": {
       "valid": 11058,
       "invalid": 0
-    }
-  },
-  {
-    "name": "intid",
-    "dataset": "yh",
-    "label": "Interviewer ID",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Interviewer ID",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 1001004.0,
-      "1st Qu.": 1001888.0,
-      "Median": 1002740.0,
-      "Mean": 1002847.7828839646,
-      "3rd Qu.": 1003846.0,
-      "Max.": 1004760.0,
-      "valid": 9161,
-      "invalid": 1897
     }
   }
 ]

@@ -14,12 +14,12 @@
     "study": "soep-core",
     "statistics": {
       "Min.": 19.0,
-      "1st Qu.": 299624.0,
-      "Median": 2111015.0,
-      "Mean": 1952930.0345586387,
-      "3rd Qu.": 3138653.0,
-      "Max.": 5540404.0,
-      "valid": 47716,
+      "1st Qu.": 341113.5,
+      "Median": 2295916.5,
+      "Mean": 2625973.691122485,
+      "3rd Qu.": 3826647.25,
+      "Max.": 6508230.0,
+      "valid": 56660,
       "invalid": 0
     }
   },
@@ -61,7 +61,9 @@
         23,
         24,
         25,
-        26
+        26,
+        27,
+        28
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -85,18 +87,20 @@
         "[12] L1 2010 Birth Cohort (2007-2010)",
         "[13] L2 2010 Family Type (Low-Income, Single-Parent, Large Families)",
         "[14] L3 2011 Family Type (Single-Parent, Large Families)",
-        "[15] M1 2013 Migration (1995-2011)",
-        "[16] M2 2015 Migration (2009-2013)",
-        "[17] M3 2016 Refugee (2013-2015)",
-        "[18] M4 2016 Refugee/family (2013-2015)",
-        "[19] M5 2017 Refugee (2013-2016)",
+        "[15] M1 IAB-SOEP 2013 Migration (1995-2011)",
+        "[16] M2 IAB-SOEP 2015 Migration (2009-2013)",
+        "[17] M3 IAB-BAMF-SOEP 2016 Refugee (2013-2015)",
+        "[18] M4 IAB-BAMF-SOEP 2016 Refugee/family (2013-2015)",
+        "[19] M5 IAB-BAMF-SOEP 2017 Refugee (2013-2016)",
         "[20] N 2017 Refreshment (PIAAC-L)",
         "[21] O 2018 Refreshment",
         "[22] P 2019 Top-Shareholder",
         "[23] Q 2019 Lesbian-Gay-Bisexual (LGB) persons",
-        "[24] M6 2020 Refugee",
-        "[25] M7 2020 Migration",
-        "[26] M8 2020 Migration Professionals"
+        "[24] M6 IAB-BAMF-SOEP 2020 Refugee",
+        "[25] M7 IAB-SOEP 2020 Migration",
+        "[26] M8 IAB-SOEP 2020 Migration Professionals",
+        "[27] R 2022 Refreshment",
+        "[28] M8b IAB-SOEP 2022 Refreshment"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -120,18 +124,20 @@
         "[12] L1 2010 Geburtskohorten (2007-2010)",
         "[13] L2 2010 Familientypen(NiedrigEinkommen,AlleinErziehend,MehrKindFamilien)",
         "[14] L3 2011 Familientypen(AlleinErziehend,MehrKindFamilien)",
-        "[15] M1 2013 Migration (1995-2010)",
-        "[16] M2 2015 Migration (2009-2013)",
-        "[17] M3 2016 Flucht (2013-2015)",
-        "[18] M4 2016 Flucht/Familie (2013-2015)",
-        "[19] M5 2017 Flucht (2013-2016)",
+        "[15] M1 IAB-SOEP 2013 Migration (1995-2010)",
+        "[16] M2 IAB-SOEP 2015 Migration (2009-2013)",
+        "[17] M3 IAB-BAMF-SOEP 2016 Flucht (2013-2015)",
+        "[18] M4 IAB-BAMF-SOEP 2016 Flucht/Familie (2013-2015)",
+        "[19] M5 IAB-BAMF-SOEP 2017 Flucht (2013-2016)",
         "[20] N 2017 Aufstockung (PIAAC-L)",
         "[21] O 2018 Aufstockung",
         "[22] P 2019 Top-Gesellschafter",
         "[23] Q 2019 Lesbische-Schwule-Bisexuelle (LGB) Personen",
-        "[24] M6 2020 Schutzsuchende",
-        "[25] M7 2020 Migration",
-        "[26] M8 2020 Migration-Fachkräfteeinwanderung"
+        "[24] M6 IAB-BAMF-SOEP 2020 Schutzsuchende",
+        "[25] M7 IAB-SOEP 2020 Migration",
+        "[26] M8 IAB-SOEP 2020 Migration-Fachkräfteeinwanderung",
+        "[27] R 2022 Aufstockung",
+        "[28] M8b IAB-SOEP 2022 Aufstockung"
       ],
       "missings": [
         true,
@@ -141,6 +147,8 @@
         true,
         true,
         true,
+        false,
+        false,
         false,
         false,
         false,
@@ -201,14 +209,16 @@
         477,
         1141,
         783,
-        1096
+        1096,
+        6603,
+        2341
       ]
     },
     "scale": "cat",
     "label_de": "Stichprobenart",
     "study": "soep-core",
     "statistics": {
-      "valid": 47716,
+      "valid": 56660,
       "invalid": 0
     }
   },
@@ -229,17 +239,17 @@
       "Min.": 1.0,
       "1st Qu.": 3.0,
       "Median": 5.0,
-      "Mean": 4.50207477575656,
+      "Mean": 4.501659018708083,
       "3rd Qu.": 6.0,
       "Max.": 8.0,
-      "valid": 47716,
+      "valid": 56660,
       "invalid": 0
     }
   },
   {
     "name": "design",
     "dataset": "design",
-    "label": "Inverse Sampling Probability",
+    "label": "PRELIMINARY: Inverse Sampling Probability",
     "categories": {
       "values": [],
       "labels": [],
@@ -247,16 +257,16 @@
       "frequencies": []
     },
     "scale": "number",
-    "label_de": "Inverse Ziehungswahrscheinlichkeit",
+    "label_de": "VORLÄUFIG: Inverse Ziehungswahrscheinlichkeit",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
-      "1st Qu.": 317.3609924316406,
+      "1st Qu.": 308.0,
       "Median": 1900.0,
-      "Mean": 3237.789715313239,
-      "3rd Qu.": 3519.0,
+      "Mean": 3315.0403645585334,
+      "3rd Qu.": 3715.8496102595072,
       "Max.": 26293.0,
-      "valid": 47716,
+      "valid": 56660,
       "invalid": 0
     }
   },
@@ -276,11 +286,11 @@
     "statistics": {
       "Min.": 101.0,
       "1st Qu.": 601.0,
-      "Median": 1101.0,
-      "Mean": 1170.512626421918,
-      "3rd Qu.": 1811.0,
-      "Max.": 2620.0,
-      "valid": 47559,
+      "Median": 1303.0,
+      "Mean": 1420.1297630214324,
+      "3rd Qu.": 2204.0,
+      "Max.": 2801.0,
+      "valid": 56503,
       "invalid": 157
     }
   },
@@ -298,14 +308,14 @@
     "label_de": "Interviewer ID",
     "study": "soep-core",
     "statistics": {
-      "Min.": 1001002.0,
-      "1st Qu.": 1002336.0,
-      "Median": 1003662.0,
-      "Mean": 1003633.4560620551,
-      "3rd Qu.": 1004969.0,
+      "Min.": 1.0,
+      "1st Qu.": 1001806.0,
+      "Median": 1003326.0,
+      "Mean": 886536.348011257,
+      "3rd Qu.": 1004833.0,
       "Max.": 1006095.0,
-      "valid": 47055,
-      "invalid": 661
+      "valid": 53300,
+      "invalid": 3360
     }
   },
   {
@@ -323,13 +333,13 @@
     "study": "soep-core",
     "statistics": {
       "Min.": 101001.0,
-      "1st Qu.": 601368.0,
-      "Median": 1101043.0,
-      "Mean": 1154371.9987256275,
-      "3rd Qu.": 1700084.0,
-      "Max.": 2600125.0,
-      "valid": 47082,
-      "invalid": 634
+      "1st Qu.": 601753.5,
+      "Median": 1300312.0,
+      "Mean": 1412868.4285967117,
+      "3rd Qu.": 2200035.0,
+      "Max.": 2800085.0,
+      "valid": 56503,
+      "invalid": 157
     }
   }
 ]
