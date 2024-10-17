@@ -1,53 +1,5 @@
 [
   {
-    "name": "hid",
-    "dataset": "uh",
-    "label": "Current Wave HH Number (=hid_2004)",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=hid_2004)",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 27.0,
-      "1st Qu.": 101287.75,
-      "Median": 268832.0,
-      "Mean": 293081.507629705,
-      "3rd Qu.": 385398.5,
-      "Max.": 825840.0,
-      "valid": 11796,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "syear",
-    "dataset": "uh",
-    "label": "Survey Year",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Befragungsjahr",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 2004.0,
-      "1st Qu.": 2004.0,
-      "Median": 2004.0,
-      "Mean": 2004.0,
-      "3rd Qu.": 2004.0,
-      "Max.": 2004.0,
-      "valid": 11796,
-      "invalid": 0
-    }
-  },
-  {
     "name": "cid",
     "dataset": "uh",
     "label": "Original Houshold Number, Case ID",
@@ -67,6 +19,30 @@
       "Mean": 287079.3891997287,
       "3rd Qu.": 501706.5,
       "Max.": 824984.0,
+      "valid": 11796,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "hid",
+    "dataset": "uh",
+    "label": "Current Wave HH Number (=hid_2004)",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Aktuelle Haushaltsnummer (=hid_2004)",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 27.0,
+      "1st Qu.": 101287.75,
+      "Median": 268832.0,
+      "Mean": 293081.507629705,
+      "3rd Qu.": 385398.5,
+      "Max.": 825840.0,
       "valid": 11796,
       "invalid": 0
     }
@@ -96,9 +72,9 @@
     }
   },
   {
-    "name": "welle",
+    "name": "intid",
     "dataset": "uh",
-    "label": "Survey Year (1984 = 1)",
+    "label": "Interviewer ID",
     "categories": {
       "values": [],
       "labels": [],
@@ -106,17 +82,17 @@
       "frequencies": []
     },
     "scale": "number",
-    "label_de": "Befragungswelle (1984=1)",
+    "label_de": "Interviewer ID",
     "study": "soep-core",
     "statistics": {
-      "Min.": 2004.0,
-      "1st Qu.": 2004.0,
-      "Median": 2004.0,
-      "Mean": 2004.0,
-      "3rd Qu.": 2004.0,
-      "Max.": 2004.0,
-      "valid": 11796,
-      "invalid": 0
+      "Min.": 1001004.0,
+      "1st Qu.": 1001827.0,
+      "Median": 1002751.0,
+      "Mean": 1002824.5119896948,
+      "3rd Qu.": 1003846.0,
+      "Max.": 1004765.0,
+      "valid": 10092,
+      "invalid": 1704
     }
   },
   {
@@ -186,18 +162,18 @@
         "[11] E2 Refreshment (CAPI), 1998",
         "[12] F1 Refreshment, 2000",
         "[13] F2 Refreshment, Additional Foreigner Addresses, 2000",
-        "[14] G1 High Income (PreTest), 2002",
+        "[14] G1 High Income Pretest, 2002",
         "[15] G2 High Income, 2002",
         "[16] H Refreshment, 2006",
-        "[19] I Refreshment, Incentivation, 2009",
+        "[19] I Refreshment, Incentivation 2009",
         "[20] J Refreshment, 2011",
         "[21] K Refreshment, 2012",
-        "[22] I2 Refreshment IS, 2012",
+        "[22] Refreshment SOEP-IS, Supplementary Sample 2012",
         "[23] Special Survey (Laboratory Sample), 2012",
-        "[24] M1 Migration (1995-2011), 2013",
-        "[29] M2 Migration (2009-2013), 2015",
-        "[30] M3 Refugees (01/2013-01/2016), 2016",
-        "[31] M4 Refugee Families (01/2013-01/2016), 2016",
+        "[24] M1 IAB-SOEP 2013 Migration (1995-2011)",
+        "[29] M2 IAB-SOEP Migration (2009-2013), 2015",
+        "[30] M3 IAB-BAMF-SOEP 2016 Refugee (2013-2015)",
+        "[31] M4 IAB-BAMF-SOEP 2016 Refugee/ Families (2013-2015)",
         "[60] L2/3 FiD Screening, Low Income, 2010/11",
         "[61] L2/3 FiD Screening, Single Parent, 2010/11",
         "[62] L2/3 FiD Screening, Families with Several Children, 2010/11",
@@ -214,38 +190,38 @@
         "[-3] nicht valide",
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
-        "[1] A Deutscher HV (West)",
-        "[2] B1 Tuerkischer HV",
-        "[3] B2 Jugoslawischer HV",
-        "[4] B3 Griechischer HV",
-        "[5] B4 Italienischer HV",
-        "[6] B5 Spanischer HV",
-        "[7] C Deutscher HV (Ost)",
-        "[8] D1 Zuwanderung nach Westdeutschland",
-        "[9] D2 Zuwanderung nach Westdeutschland",
-        "[10] E1 (PAPI)",
-        "[11] E2 (CAPI)",
-        "[12] F1 ISOEP (Innovation)",
-        "[13] F2 ISOEP, Zusatzbegehung Auslaenderadr.",
-        "[14] G1 Hocheinkommensbezieher (PreTest)",
-        "[15] G2 Hocheinkommensbezieher",
-        "[16] H Ergaenzung 2006",
-        "[19] I Incentivierung 2009",
-        "[20] J Aufstockung 2011",
-        "[21] K Aufstockung 2012",
-        "[22] I2 Aufstockung IS 2012",
+        "[1] Westdeutsche/sonstige Ausländer Stichprobe A",
+        "[2] Türken Stichprobe B",
+        "[3] Jugoslawen Stichprobe B",
+        "[4] Griechen Stichprobe B",
+        "[5] Italiener Stichprobe B",
+        "[6] Spanier Stichprobe B",
+        "[7] Ostdeutsche/sonstige Ausländer Stichprobe C",
+        "[8] Zuwanderer Stichprobe D1",
+        "[9] Zuwanderer Stichprobe D2",
+        "[10] Aufstockung 1998/PAPI Stichprobe E1",
+        "[11] Aufstockung 1998/CAPI Stichprobe E2",
+        "[12] Aufstockung 2000/Adresse 1-12 Stichprobe F",
+        "[13] Aufstockung 2000/Adresse 13-24 Stichprobe F",
+        "[14] G1 Hocheinkommensbezieher (PreTest), 2002",
+        "[15] Aufstockung 2002/Stichprobe G2",
+        "[16] Aufstockung 2006/Stichprobe H",
+        "[19] Aufstockung 2009/ Incentivierung I",
+        "[20] Aufstockung 2011/Stichprobe J",
+        "[21] Aufstockung 2012/Stichprobe K",
+        "[22] Innovationssample 2012 Aufstockung",
         "[23] Sondererhebung 2012 (Laborstichprobe)",
-        "[24] M1 2013 Migration (1995-2010)",
-        "[29] M2 2015 Migration (2009-2013)",
-        "[30] M3 2016 Flucht (2013-2015)",
-        "[31] M4 2016 Flucht/Familien (2013-2015)",
-        "[60] L2/3 FiD Screening 2010/11 Niedrigeinkommen",
-        "[61] L2/3 FiD Screening 2010/11 Alleinerziehende",
-        "[62] L2/3 FiD Screening 2010/11 Mehrkindfamilien",
-        "[63] L1 FiD Geburtskohorte 2007",
-        "[64] L1 FiD Geburtskohorte 2008",
-        "[65] L1 FiD Geburtskohorte 2009",
-        "[66] L1 FiD Geburtskohorte 2010"
+        "[24] M1 IAB-SOEP 2013 Migration (1995-2011)",
+        "[29] M2 IAB-SOEP Migration 2015 (2009-2013)",
+        "[30] M3 IAB-BAMF-SOEP 2016 Flucht (2013-2015)",
+        "[31] M4 IAB-BAMF-SOEP 2016 Flucht/Familien (2013-2015)",
+        "[60] FiD Screening 2010/11 - Niedrigeinkommen/Stichprobe L2/3",
+        "[61] FiD Screening 2010/11 - Alleinerziehende/Stichprobe L2/3",
+        "[62] FiD Screening 2010/11 - Mehrkindfamilien/Stichprobe L2/3",
+        "[63] FiD Geburtskohorte 2007/Stichprobe L1",
+        "[64] FiD Geburtskohorte 2008/Stichprobe L1",
+        "[65] FiD Geburtskohorte 2009/Stichprobe L1",
+        "[66] FiD Geburtskohorte 2010/Stichprobe L1"
       ],
       "missings": [
         true,
@@ -339,6 +315,30 @@
     }
   },
   {
+    "name": "syear",
+    "dataset": "uh",
+    "label": "Survey Year",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Befragungsjahr",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 2004.0,
+      "1st Qu.": 2004.0,
+      "Median": 2004.0,
+      "Mean": 2004.0,
+      "3rd Qu.": 2004.0,
+      "Max.": 2004.0,
+      "valid": 11796,
+      "invalid": 0
+    }
+  },
+  {
     "name": "uausku",
     "dataset": "uh",
     "label": "ID Number Of Person Interviewed (_PNRAKT)",
@@ -358,6 +358,30 @@
       "Mean": 1.2783146829433707,
       "3rd Qu.": 1.0,
       "Max.": 9.0,
+      "valid": 11796,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "ucalcinc",
+    "dataset": "uh",
+    "label": "Calculated Mon. HH Net Income, Infratest",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Errechn. monatl. HH-Nettoeink., Infratest",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 1185.75,
+      "Median": 1900.0,
+      "Mean": 2249.5873177348253,
+      "3rd Qu.": 2900.0,
+      "Max.": 30000.0,
       "valid": 11796,
       "invalid": 0
     }
@@ -1392,80 +1416,6 @@
     }
   },
   {
-    "name": "uh0302",
-    "dataset": "uh",
-    "label": "Compare Old,New Size",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1,
-        2,
-        3
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Improved",
-        "[2] Remained Same",
-        "[3] Worsened"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Verbessert",
-        "[2] Etwa gleichwertig",
-        "[3] Verschlechtert"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        10600,
-        64,
-        684,
-        210,
-        238
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Wohnungsvergleich Groesse",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 1132,
-      "invalid": 10664
-    }
-  },
-  {
     "name": "uh0301",
     "dataset": "uh",
     "label": "Compare Old,New Rent",
@@ -1537,6 +1487,80 @@
     "statistics": {
       "valid": 1128,
       "invalid": 10668
+    }
+  },
+  {
+    "name": "uh0302",
+    "dataset": "uh",
+    "label": "Compare Old,New Size",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Improved",
+        "[2] Remained Same",
+        "[3] Worsened"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Verbessert",
+        "[2] Etwa gleichwertig",
+        "[3] Verschlechtert"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10600,
+        64,
+        684,
+        210,
+        238
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Wohnungsvergleich Groesse",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 1132,
+      "invalid": 10664
     }
   },
   {
@@ -3060,75 +3084,6 @@
     }
   },
   {
-    "name": "uh11",
-    "dataset": "uh",
-    "label": "Change In Size Of Dwelling",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1,
-        2
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Yes",
-        "[2] No"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Ja",
-        "[2] Nein"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        26,
-        591,
-        11179
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Aenderung Wohnflaeche seit letztem Jahr",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 11770,
-      "invalid": 26
-    }
-  },
-  {
     "name": "uh1009",
     "dataset": "uh",
     "label": "Dwelling With Alarm Device",
@@ -3198,27 +3153,72 @@
     }
   },
   {
-    "name": "uh13",
+    "name": "uh11",
     "dataset": "uh",
-    "label": "Number Of Rooms GE 6 Sq Meters",
+    "label": "Change In Size Of Dwelling",
     "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes",
+        "[2] No"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja",
+        "[2] Nein"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        26,
+        591,
+        11179
+      ]
     },
-    "scale": "number",
-    "label_de": "Anzahl der Wohnraeume",
+    "scale": "cat",
+    "label_de": "Aenderung Wohnflaeche seit letztem Jahr",
     "study": "soep-core",
     "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 3.0,
-      "Median": 4.0,
-      "Mean": 3.9238095238095236,
-      "3rd Qu.": 5.0,
-      "Max.": 18.0,
-      "valid": 11760,
-      "invalid": 36
+      "valid": 11770,
+      "invalid": 26
     }
   },
   {
@@ -3243,6 +3243,30 @@
       "Max.": 450.0,
       "valid": 11753,
       "invalid": 43
+    }
+  },
+  {
+    "name": "uh13",
+    "dataset": "uh",
+    "label": "Number Of Rooms GE 6 Sq Meters",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Anzahl der Wohnraeume",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 3.0,
+      "Median": 4.0,
+      "Mean": 3.9238095238095236,
+      "3rd Qu.": 5.0,
+      "Max.": 18.0,
+      "valid": 11760,
+      "invalid": 36
     }
   },
   {
@@ -3409,70 +3433,6 @@
     }
   },
   {
-    "name": "uh1602",
-    "dataset": "uh",
-    "label": "Since 2003-Bath, Shower,WC Renovated,Added",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Yes"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Ja"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        11463,
-        0,
-        333
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Seit 2003-Bad,Dusche,WC eingebaut",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 333,
-      "invalid": 11463
-    }
-  },
-  {
     "name": "uh1601",
     "dataset": "uh",
     "label": "Since 2003-Kitchen Renovated,Added",
@@ -3534,6 +3494,70 @@
     "statistics": {
       "valid": 393,
       "invalid": 11403
+    }
+  },
+  {
+    "name": "uh1602",
+    "dataset": "uh",
+    "label": "Since 2003-Bath, Shower,WC Renovated,Added",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        11463,
+        0,
+        333
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Seit 2003-Bad,Dusche,WC eingebaut",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 333,
+      "invalid": 11463
     }
   },
   {
@@ -4532,6 +4556,30 @@
     }
   },
   {
+    "name": "uh2501",
+    "dataset": "uh",
+    "label": "Cost Of Heat And Hot Water Per Month",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Monatl. Heizkosten, durchschnittl.",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 5.0,
+      "1st Qu.": 45.0,
+      "Median": 60.0,
+      "Mean": 71.08278145695364,
+      "3rd Qu.": 90.0,
+      "Max.": 500.0,
+      "valid": 3926,
+      "invalid": 7870
+    }
+  },
+  {
     "name": "uh2502",
     "dataset": "uh",
     "label": "Cost Of Heat And Hot Water Per Month",
@@ -4593,30 +4641,6 @@
     "statistics": {
       "valid": 1777,
       "invalid": 10019
-    }
-  },
-  {
-    "name": "uh2501",
-    "dataset": "uh",
-    "label": "Cost Of Heat And Hot Water Per Month",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Monatl. Heizkosten, durchschnittl.",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 5.0,
-      "1st Qu.": 45.0,
-      "Median": 60.0,
-      "Mean": 71.08278145695364,
-      "3rd Qu.": 90.0,
-      "Max.": 500.0,
-      "valid": 3926,
-      "invalid": 7870
     }
   },
   {
@@ -4720,7 +4744,7 @@
   {
     "name": "uh2603",
     "dataset": "uh",
-    "label": "Cost Of Water, Etc. Per Month",
+    "label": "No Shared Costs",
     "categories": {
       "values": [
         -7,
@@ -4774,7 +4798,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Monatl Hoehe der Umlagen",
+    "label_de": "Keine Umlagekosten",
     "study": "soep-core",
     "statistics": {
       "valid": 2198,
@@ -5354,30 +5378,6 @@
     }
   },
   {
-    "name": "uh4001",
-    "dataset": "uh",
-    "label": "Operation,Maintenance Costs Prev. Year",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Betriebs- u.Instandhaltgskosten letzt. Jahr",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 300.0,
-      "Median": 1500.0,
-      "Mean": 4364.607680722892,
-      "3rd Qu.": 4000.0,
-      "Max.": 350000.0,
-      "valid": 1328,
-      "invalid": 10468
-    }
-  },
-  {
     "name": "uh39",
     "dataset": "uh",
     "label": "Amount Income From Rent Previous Year",
@@ -5399,6 +5399,30 @@
       "Max.": 999999.0,
       "valid": 1399,
       "invalid": 10397
+    }
+  },
+  {
+    "name": "uh4001",
+    "dataset": "uh",
+    "label": "Operation,Maintenance Costs Prev. Year",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Betriebs- u.Instandhaltgskosten letzt. Jahr",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 300.0,
+      "Median": 1500.0,
+      "Mean": 4364.607680722892,
+      "3rd Qu.": 4000.0,
+      "Max.": 350000.0,
+      "valid": 1328,
+      "invalid": 10468
     }
   },
   {
@@ -5554,70 +5578,6 @@
     }
   },
   {
-    "name": "uh4104",
-    "dataset": "uh",
-    "label": "Fixed Interest Securities Previous Yr",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Yes"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Ja"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        9751,
-        0,
-        2045
-      ]
-    },
-    "scale": "cat",
-    "label_de": "festverzinsl. Wertpapiere letzt. Jahr",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 2045,
-      "invalid": 9751
-    }
-  },
-  {
     "name": "uh4103",
     "dataset": "uh",
     "label": "Life Insurance Previous Yr",
@@ -5679,6 +5639,70 @@
     "statistics": {
       "valid": 6214,
       "invalid": 5582
+    }
+  },
+  {
+    "name": "uh4104",
+    "dataset": "uh",
+    "label": "Fixed Interest Securities Previous Yr",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        9751,
+        0,
+        2045
+      ]
+    },
+    "scale": "cat",
+    "label_de": "festverzinsl. Wertpapiere letzt. Jahr",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2045,
+      "invalid": 9751
     }
   },
   {
@@ -6671,70 +6695,6 @@
     }
   },
   {
-    "name": "uh4601",
-    "dataset": "uh",
-    "label": "Reg. Subsistence Support Prev. Year",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Yes"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Ja"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        11599,
-        0,
-        197
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Hilfe Lebensunterhalt",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 197,
-      "invalid": 11599
-    }
-  },
-  {
     "name": "uh4510",
     "dataset": "uh",
     "label": "Social Assistance In Prev. Year",
@@ -6801,6 +6761,70 @@
     "statistics": {
       "valid": 11768,
       "invalid": 28
+    }
+  },
+  {
+    "name": "uh4601",
+    "dataset": "uh",
+    "label": "Reg. Subsistence Support Prev. Year",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        11599,
+        0,
+        197
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Hilfe Lebensunterhalt",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 197,
+      "invalid": 11599
     }
   },
   {
@@ -7116,30 +7140,6 @@
     }
   },
   {
-    "name": "uh4703",
-    "dataset": "uh",
-    "label": "Number Children",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Anz. Kinder",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 1.0,
-      "Median": 2.0,
-      "Mean": 1.7076144467448815,
-      "3rd Qu.": 2.0,
-      "Max.": 12.0,
-      "valid": 4347,
-      "invalid": 7449
-    }
-  },
-  {
     "name": "uh4702",
     "dataset": "uh",
     "label": "Child Benefit, Amount",
@@ -7161,6 +7161,30 @@
       "Max.": 1700.0,
       "valid": 4287,
       "invalid": 7509
+    }
+  },
+  {
+    "name": "uh4703",
+    "dataset": "uh",
+    "label": "Number Children",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Anz. Kinder",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 1.0,
+      "Median": 2.0,
+      "Mean": 1.7076144467448815,
+      "3rd Qu.": 2.0,
+      "Max.": 12.0,
+      "valid": 4347,
+      "invalid": 7449
     }
   },
   {
@@ -7877,7 +7901,7 @@
   {
     "name": "uh5102",
     "dataset": "uh",
-    "label": "Car In HH",
+    "label": "Car Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -7931,7 +7955,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Auto im HH",
+    "label_de": "Auto Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 1240,
@@ -8005,7 +8029,7 @@
   {
     "name": "uh5104",
     "dataset": "uh",
-    "label": "Motorcycle, Moped In HH",
+    "label": "Motorcycle, Moped Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -8059,75 +8083,11 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Motorrad,Moped im HH",
+    "label_de": "Motorrad,Moped Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 270,
       "invalid": 11526
-    }
-  },
-  {
-    "name": "uh5106",
-    "dataset": "uh",
-    "label": "Color Television In HH",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Yes, Bought In The Last 12 Months"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Ja, in letzten 12 Mon gekauft"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        11060,
-        0,
-        736
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Farb-TV im HH",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 736,
-      "invalid": 11060
     }
   },
   {
@@ -8192,6 +8152,70 @@
     "statistics": {
       "valid": 11476,
       "invalid": 320
+    }
+  },
+  {
+    "name": "uh5106",
+    "dataset": "uh",
+    "label": "Color TV Acquired In Last 12 Months",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes, Bought In The Last 12 Months"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja, in letzten 12 Mon gekauft"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        11060,
+        0,
+        736
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Farb-TV Anschaffung in letzten 12 Monaten",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 736,
+      "invalid": 11060
     }
   },
   {
@@ -8261,7 +8285,7 @@
   {
     "name": "uh5108",
     "dataset": "uh",
-    "label": "Video Recorder In HH",
+    "label": "Video Recorder Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -8315,35 +8339,11 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Videorecorder im HH",
+    "label_de": "Videorecorder Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 327,
       "invalid": 11469
-    }
-  },
-  {
-    "name": "uh5110",
-    "dataset": "uh",
-    "label": "DVD player In HH",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "DVD-Spieler im HH",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 1.0,
-      "Median": 1.0,
-      "Mean": 1.0,
-      "3rd Qu.": 1.0,
-      "Max.": 1.0,
-      "valid": 1862,
-      "invalid": 9934
     }
   },
   {
@@ -8371,67 +8371,27 @@
     }
   },
   {
-    "name": "uh5112",
+    "name": "uh5110",
     "dataset": "uh",
-    "label": "Stereo In HH",
+    "label": "DVD player Acquired In Last 12 Months",
     "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Yes, Bought In The Last 12 Months"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Ja, in letzten 12 Mon gekauft"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        11520,
-        0,
-        276
-      ]
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
-    "scale": "cat",
-    "label_de": "Stereoanlage im HH",
+    "scale": "number",
+    "label_de": "DVD-Spieler Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
-      "valid": 276,
-      "invalid": 11520
+      "Min.": 1.0,
+      "1st Qu.": 1.0,
+      "Median": 1.0,
+      "Mean": 1.0,
+      "3rd Qu.": 1.0,
+      "Max.": 1.0,
+      "valid": 1862,
+      "invalid": 9934
     }
   },
   {
@@ -8496,6 +8456,70 @@
     "statistics": {
       "valid": 9375,
       "invalid": 2421
+    }
+  },
+  {
+    "name": "uh5112",
+    "dataset": "uh",
+    "label": "Stereo Acquired In Last 12 Months",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes, Bought In The Last 12 Months"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja, in letzten 12 Mon gekauft"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        11520,
+        0,
+        276
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Stereoanlage Anschaffung in letzten 12 Monaten",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 276,
+      "invalid": 11520
     }
   },
   {
@@ -8565,7 +8589,7 @@
   {
     "name": "uh5114",
     "dataset": "uh",
-    "label": "PC In HH",
+    "label": "PC/Laptop Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -8619,75 +8643,11 @@
       ]
     },
     "scale": "cat",
-    "label_de": "PC im HH",
+    "label_de": "PC/Laptop Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 1062,
       "invalid": 10734
-    }
-  },
-  {
-    "name": "uh5116",
-    "dataset": "uh",
-    "label": "Internet Connection In HH",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Yes, Bought In The Last 12 Months"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Ja, in letzten 12 Mon gekauft"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        11248,
-        0,
-        548
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Internet-Anschluss im HH",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 548,
-      "invalid": 11248
     }
   },
   {
@@ -8752,6 +8712,70 @@
     "statistics": {
       "valid": 5793,
       "invalid": 6003
+    }
+  },
+  {
+    "name": "uh5116",
+    "dataset": "uh",
+    "label": "Slow Internet Acquired In Last 12 Months",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes, Bought In The Last 12 Months"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja, in letzten 12 Mon gekauft"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        11248,
+        0,
+        548
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Langsames Internet Anschaffung in letzten 12 Monaten",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 548,
+      "invalid": 11248
     }
   },
   {
@@ -8821,7 +8845,7 @@
   {
     "name": "uh5118",
     "dataset": "uh",
-    "label": "Microwave In HH",
+    "label": "Microwave Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -8875,75 +8899,11 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Mikrowelle im HH",
+    "label_de": "Mikrowelle Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 468,
       "invalid": 11328
-    }
-  },
-  {
-    "name": "uh5120",
-    "dataset": "uh",
-    "label": "Dishwasher In HH",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Yes, Bought In The Last 12 Months"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Ja, in letzten 12 Mon gekauft"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        11257,
-        0,
-        539
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Geschirrspuelmaschine im HH",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 539,
-      "invalid": 11257
     }
   },
   {
@@ -9008,6 +8968,70 @@
     "statistics": {
       "valid": 7699,
       "invalid": 4097
+    }
+  },
+  {
+    "name": "uh5120",
+    "dataset": "uh",
+    "label": "Dishwasher Acquired In Last 12 Months",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes, Bought In The Last 12 Months"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja, in letzten 12 Mon gekauft"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        11257,
+        0,
+        539
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Geschirrspuelmaschine Anschaffung in letzten 12 Monaten",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 539,
+      "invalid": 11257
     }
   },
   {
@@ -9077,7 +9101,7 @@
   {
     "name": "uh5122",
     "dataset": "uh",
-    "label": "Washing Machine In HH",
+    "label": "Washing Machine Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -9131,75 +9155,11 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Waschmaschine im HH",
+    "label_de": "Waschmaschine Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 502,
       "invalid": 11294
-    }
-  },
-  {
-    "name": "uh5124",
-    "dataset": "uh",
-    "label": "Telephone In HH",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Yes, Bought In The Last 12 Months"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Ja, in letzten 12 Mon gekauft"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        11374,
-        0,
-        422
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Telefon im HH",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 422,
-      "invalid": 11374
     }
   },
   {
@@ -9267,6 +9227,70 @@
     }
   },
   {
+    "name": "uh5124",
+    "dataset": "uh",
+    "label": "Telephone Acquired In Last 12 Months",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes, Bought In The Last 12 Months"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja, in letzten 12 Mon gekauft"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        11374,
+        0,
+        422
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Telefon Anschaffung in letzten 12 Monaten",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 422,
+      "invalid": 11374
+    }
+  },
+  {
     "name": "uh5125",
     "dataset": "uh",
     "label": "Cellular, Mobile Telephone In HH",
@@ -9331,73 +9355,9 @@
     }
   },
   {
-    "name": "uh5128",
-    "dataset": "uh",
-    "label": "Fax Machine In HH",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Yes, Bought In The Last 12 Months"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Ja, in letzten 12 Mon gekauft"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        11490,
-        0,
-        306
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Faxgeraet im HH",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 306,
-      "invalid": 11490
-    }
-  },
-  {
     "name": "uh5126",
     "dataset": "uh",
-    "label": "Cellular, Mobile Telephone In HH",
+    "label": "Cellular, Mobile Telephone Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -9451,7 +9411,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Mobiltelefon, Handy im HH",
+    "label_de": "Mobiltelefon Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
       "valid": 1206,
@@ -9523,9 +9483,9 @@
     }
   },
   {
-    "name": "uh5130",
+    "name": "uh5128",
     "dataset": "uh",
-    "label": "ISDN Connection In HH",
+    "label": "Fax Acquired In Last 12 Months",
     "categories": {
       "values": [
         -7,
@@ -9573,17 +9533,17 @@
         0,
         0,
         0,
-        11327,
+        11490,
         0,
-        469
+        306
       ]
     },
     "scale": "cat",
-    "label_de": "ISDN-Anschluss im HH",
+    "label_de": "Faxgeraet Anschaffung in letzten 12 Monaten",
     "study": "soep-core",
     "statistics": {
-      "valid": 469,
-      "invalid": 11327
+      "valid": 306,
+      "invalid": 11490
     }
   },
   {
@@ -9648,6 +9608,70 @@
     "statistics": {
       "valid": 3470,
       "invalid": 8326
+    }
+  },
+  {
+    "name": "uh5130",
+    "dataset": "uh",
+    "label": "ISDN Acquired In Last 12 Months",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No Answer",
+        "[1] Yes, Bought In The Last 12 Months"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Ja, in letzten 12 Mon gekauft"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        11327,
+        0,
+        469
+      ]
+    },
+    "scale": "cat",
+    "label_de": "ISDN Anschaffung in letzten 12 Monaten",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 469,
+      "invalid": 11327
     }
   },
   {
@@ -9789,6 +9813,30 @@
     }
   },
   {
+    "name": "uh5901",
+    "dataset": "uh",
+    "label": "PNR Of 1.Person Requiring Help",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "PNR hilfebeduerfige Person",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 1.0,
+      "Median": 2.0,
+      "Mean": 2.08,
+      "3rd Qu.": 2.0,
+      "Max.": 9.0,
+      "valid": 500,
+      "invalid": 11296
+    }
+  },
+  {
     "name": "uh5902",
     "dataset": "uh",
     "label": "Help On Tasks Outside HH, 1. Person",
@@ -9850,30 +9898,6 @@
     "statistics": {
       "valid": 459,
       "invalid": 11337
-    }
-  },
-  {
-    "name": "uh5901",
-    "dataset": "uh",
-    "label": "PNR Of 1.Person Requiring Help",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "PNR hilfebeduerfige Person",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 1.0,
-      "Median": 2.0,
-      "Mean": 2.08,
-      "3rd Qu.": 2.0,
-      "Max.": 9.0,
-      "valid": 500,
-      "invalid": 11296
     }
   },
   {
@@ -12609,6 +12633,54 @@
     }
   },
   {
+    "name": "uhhdaer1",
+    "dataset": "uh",
+    "label": "Interview Length Oral",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Interviewdauer muendlich",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 15.0,
+      "Median": 15.0,
+      "Mean": 18.32815395580898,
+      "3rd Qu.": 20.0,
+      "Max.": 80.0,
+      "valid": 7015,
+      "invalid": 4781
+    }
+  },
+  {
+    "name": "uhhdaer2",
+    "dataset": "uh",
+    "label": "Interview Length Written",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Interviewdauer schriftlich",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 2.0,
+      "1st Qu.": 15.0,
+      "Median": 20.0,
+      "Mean": 19.76215334420881,
+      "3rd Qu.": 25.0,
+      "Max.": 80.0,
+      "valid": 3065,
+      "invalid": 8731
+    }
+  },
+  {
     "name": "uhivform",
     "dataset": "uh",
     "label": "Survey Instrument",
@@ -12705,78 +12777,6 @@
     "statistics": {
       "valid": 11746,
       "invalid": 50
-    }
-  },
-  {
-    "name": "uhhdaer1",
-    "dataset": "uh",
-    "label": "Interview Length Oral",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Interviewdauer muendlich",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 15.0,
-      "Median": 15.0,
-      "Mean": 18.32815395580898,
-      "3rd Qu.": 20.0,
-      "Max.": 80.0,
-      "valid": 7015,
-      "invalid": 4781
-    }
-  },
-  {
-    "name": "uhhdaer2",
-    "dataset": "uh",
-    "label": "Interview Length Written",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Interviewdauer schriftlich",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 2.0,
-      "1st Qu.": 15.0,
-      "Median": 20.0,
-      "Mean": 19.76215334420881,
-      "3rd Qu.": 25.0,
-      "Max.": 80.0,
-      "valid": 3065,
-      "invalid": 8731
-    }
-  },
-  {
-    "name": "uhtagin",
-    "dataset": "uh",
-    "label": "Day Of Interview",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Tag des Interviews",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 8.0,
-      "Median": 15.0,
-      "Mean": 15.457443201085114,
-      "3rd Qu.": 23.0,
-      "Max.": 31.0,
-      "valid": 11796,
-      "invalid": 0
     }
   },
   {
@@ -12899,6 +12899,30 @@
     }
   },
   {
+    "name": "uhtagin",
+    "dataset": "uh",
+    "label": "Day Of Interview",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Tag des Interviews",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 8.0,
+      "Median": 15.0,
+      "Mean": 15.457443201085114,
+      "3rd Qu.": 23.0,
+      "Max.": 31.0,
+      "valid": 11796,
+      "invalid": 0
+    }
+  },
+  {
     "name": "ulimit",
     "dataset": "uh",
     "label": "Selection Criteria, Hi-Income",
@@ -12988,9 +13012,9 @@
     }
   },
   {
-    "name": "ucalcinc",
+    "name": "welle",
     "dataset": "uh",
-    "label": "Calculated Mon. HH Net Income, Infratest",
+    "label": "Survey Year (1984 = 1)",
     "categories": {
       "values": [],
       "labels": [],
@@ -12998,41 +13022,17 @@
       "frequencies": []
     },
     "scale": "number",
-    "label_de": "Errechn. monatl. HH-Nettoeink., Infratest",
+    "label_de": "Befragungswelle (1984=1)",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 1185.75,
-      "Median": 1900.0,
-      "Mean": 2249.5873177348253,
-      "3rd Qu.": 2900.0,
-      "Max.": 30000.0,
+      "Min.": 2004.0,
+      "1st Qu.": 2004.0,
+      "Median": 2004.0,
+      "Mean": 2004.0,
+      "3rd Qu.": 2004.0,
+      "Max.": 2004.0,
       "valid": 11796,
       "invalid": 0
-    }
-  },
-  {
-    "name": "intid",
-    "dataset": "uh",
-    "label": "Interviewer ID",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Interviewer ID",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 1001004.0,
-      "1st Qu.": 1001827.0,
-      "Median": 1002751.0,
-      "Mean": 1002824.5119896948,
-      "3rd Qu.": 1003846.0,
-      "Max.": 1004765.0,
-      "valid": 10092,
-      "invalid": 1704
     }
   }
 ]

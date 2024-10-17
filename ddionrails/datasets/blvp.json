@@ -120,6 +120,38 @@
     }
   },
   {
+    "name": "hid_2021",
+    "dataset": "blvp",
+    "label": "Current Householdnummer (=hid)",
+    "categories": {
+      "values": [
+        -1
+      ],
+      "labels": [
+        "[-1] "
+      ],
+      "missings": [
+        true
+      ],
+      "frequencies": [
+        0
+      ]
+    },
+    "scale": "number",
+    "label_de": "Aktuelle Haushaltsnummer (=hid)",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 930.0,
+      "1st Qu.": 300245.25,
+      "Median": 2052157.5,
+      "Mean": 1740213.205882353,
+      "3rd Qu.": 2664839.0,
+      "Max.": 5556320.0,
+      "valid": 1054,
+      "invalid": 0
+    }
+  },
+  {
     "name": "pid",
     "dataset": "blvp",
     "label": "Unchanging ID Person Surveyed",
@@ -166,7 +198,7 @@
       ]
     },
     "scale": "number",
-    "label_de": "Unveränderliche Personennummer Befragter",
+    "label_de": "Unveränderliche Personennummer Befragungsperson",
     "study": "soep-core",
     "statistics": {
       "Min.": 9302.0,
@@ -226,7 +258,7 @@
       ]
     },
     "scale": "number",
-    "label_de": "pid Verstrobene Person",
+    "label_de": "ID verstorbene Person",
     "study": "soep-core",
     "statistics": {
       "Min.": 9399.0,
@@ -378,18 +410,18 @@
         "[19] I Refreshment, Incentivation 2009",
         "[20] J Refreshment, 2011",
         "[21] K Refreshment, 2012",
-        "[24] M1 Migration (1995-2011), 2013",
-        "[29] M2 Migration (2009-2013), 2015",
-        "[30] M3 Persons in Need of Protection Refreshment, 2016",
-        "[31] M4 Refugee Families (01/2013-01/2016), 2016",
+        "[24] M1 IAB-SOEP 2013 Migration (1995-2011)",
+        "[29] M2 IAB-SOEP Migration (2009-2013), 2015",
+        "[30] M3 IAB-BAMF-SOEP 2016 Refugee (2013-2015)",
+        "[31] M4 IAB-BAMF-SOEP 2016 Refugee/ Families (2013-2015)",
         "[33] N Refreshment (from PIAAC-L), 2017",
-        "[34] M5 Persons in Need of Protection Refreshment, 2017",
+        "[34] M5 IAB-BAMF-SOEP 2017 Refugee",
         "[35] O 2018 Social City",
-        "[36] P 2019 High Net‐Worth Individuals",
+        "[36] P 2019 High Net-Worth Individuals",
         "[37] Q 2019 LGB",
-        "[39] [de] Aufstockung 2020/Stichprobe M7",
-        "[40] [de] Aufstockung 2020/Stichprobe M8",
-        "[41] [de] Schutzsuchende 2020/Stichprobe M6",
+        "[39] M7 IAB-SOEP 2020 Migration",
+        "[40] M8 IAB-SOEP 2020 Migration",
+        "[41] M6 IAB-BAMF-SOEP 2020 Refugee",
         "[60] L2/3 FiD Screening, Low Income, 2010/11",
         "[61] L2/3 FiD Screening, Single Parent, 2010/11",
         "[62] L2/3 FiD Screening, Families with Several Children, 2010/11",
@@ -420,23 +452,23 @@
         "[11] Aufstockung 1998/CAPI Stichprobe E2",
         "[12] Aufstockung 2000/Adresse 1-12 Stichprobe F",
         "[13] Aufstockung 2000/Adresse 13-24 Stichprobe F",
-        "[15] Aufstockung 2002/Stichprobe G",
+        "[15] Aufstockung 2002/Stichprobe G2",
         "[16] Aufstockung 2006/Stichprobe H",
-        "[19] I Incentivierung 2009",
+        "[19] Aufstockung 2009/ Incentivierung I",
         "[20] Aufstockung 2011/Stichprobe J",
         "[21] Aufstockung 2012/Stichprobe K",
-        "[24] Aufstockung 2013/Stichprobe M1",
-        "[29] Aufstockung 2015/Stichprobe M2",
-        "[30] Schutzsuchende 2016/Stichprobe M3",
-        "[31] Gefluechtete Familien 2016/Stichprobe M4",
+        "[24] M1 IAB-SOEP 2013 Migration (1995-2011)",
+        "[29] M2 IAB-SOEP Migration 2015 (2009-2013)",
+        "[30] M3 IAB-BAMF-SOEP 2016 Flucht (2013-2015)",
+        "[31] M4 IAB-BAMF-SOEP 2016 Flucht/Familien (2013-2015)",
         "[33] Aufstockung 2017/Stichprobe N",
-        "[34] Schutzsuchende 2017/Stichprobe M5",
+        "[34] M5 IAB-BAMF-SOEP 2017 Refugee",
         "[35] Soziale Stadt 2018/Stichprobe O",
         "[36] Top-Gesellschafter 2019/ Stichprobe P",
         "[37] Lesbisch-Schwul-Bisexuelle (LGB) 2019/Stichprobe Q",
-        "[39] Aufstockung 2020/Stichprobe M7",
-        "[40] Aufstockung 2020/Stichprobe M8",
-        "[41] Schutzsuchende 2020/Stichprobe M6",
+        "[39] M7 IAB-SOEP 2020 Migration",
+        "[40] M8 IAB-SOEP 2020 Migration",
+        "[41] M6 IAB-BAMF-SOEP 2020 Flucht",
         "[60] FiD Screening 2010/11 - Niedrigeinkommen/Stichprobe L2/3",
         "[61] FiD Screening 2010/11 - Alleinerziehende/Stichprobe L2/3",
         "[62] FiD Screening 2010/11 - Mehrkindfamilien/Stichprobe L2/3",
@@ -551,7 +583,7 @@
   {
     "name": "name",
     "dataset": "blvp",
-    "label": "[de] Vorname",
+    "label": "[de] Vorname Befragungsperson",
     "categories": {
       "values": [],
       "labels": [],
@@ -559,14 +591,14 @@
       "frequencies": []
     },
     "scale": "63",
-    "label_de": "Vorname",
+    "label_de": "Vorname Befragungsperson",
     "study": "soep-core",
     "statistics": {}
   },
   {
     "name": "blvp_1_01",
     "dataset": "blvp",
-    "label": "[de] Vorname Person 3",
+    "label": "[de] Vorname verstorbene Person",
     "categories": {
       "values": [],
       "labels": [],
@@ -574,14 +606,14 @@
       "frequencies": []
     },
     "scale": "63",
-    "label_de": "Vorname Person 3",
+    "label_de": "Vorname verstorbene Person",
     "study": "soep-core",
     "statistics": {}
   },
   {
     "name": "blvp_1_03",
     "dataset": "blvp",
-    "label": "[de] Geburtstag Person 4",
+    "label": "[de] Geburtstag verstorbene Person",
     "categories": {
       "values": [
         -8,
@@ -625,7 +657,7 @@
       ]
     },
     "scale": "number",
-    "label_de": "Geburtstag Person 4",
+    "label_de": "Geburtstag verstorbene Person",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
@@ -641,7 +673,7 @@
   {
     "name": "blvp_1_04",
     "dataset": "blvp",
-    "label": "[de] Geburtsmonat Person 5",
+    "label": "[de] Geburtsmonat verstorbene Person",
     "categories": {
       "values": [
         -8,
@@ -685,7 +717,7 @@
       ]
     },
     "scale": "number",
-    "label_de": "Geburtsmonat Person 5",
+    "label_de": "Geburtsmonat verstorbene Person",
     "study": "soep-core",
     "statistics": {
       "Min.": 1.0,
@@ -701,7 +733,7 @@
   {
     "name": "blvp_1_05",
     "dataset": "blvp",
-    "label": "[de] Geburtsjahr Person 5",
+    "label": "[de] Geburtsjahr verstorbene Person",
     "categories": {
       "values": [
         -8,
@@ -745,7 +777,7 @@
       ]
     },
     "scale": "number",
-    "label_de": "Geburtsjahr Person 5",
+    "label_de": "Geburtsjahr verstorbene Person",
     "study": "soep-core",
     "statistics": {
       "Min.": 1901.0,
@@ -761,7 +793,7 @@
   {
     "name": "blvp_1_06",
     "dataset": "blvp",
-    "label": "[de] Geschlecht Person 2",
+    "label": "[de] Geschlecht verstorbene Person",
     "categories": {
       "values": [
         -8,
@@ -830,7 +862,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Geschlecht Person 2",
+    "label_de": "Geschlecht verstorbene Person",
     "study": "soep-core",
     "statistics": {
       "valid": 1047,
@@ -840,7 +872,7 @@
   {
     "name": "blvp_2_01",
     "dataset": "blvp",
-    "label": "[de] Verwandtschaftsverhältnis Person 2",
+    "label": "[de] Verwandtschaftsverhältnis",
     "categories": {
       "values": [
         -8,
@@ -914,7 +946,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Verwandtschaftsverhältnis Person 2",
+    "label_de": "Verwandtschaftsverhältnis",
     "study": "soep-core",
     "statistics": {
       "valid": 1019,
@@ -924,7 +956,7 @@
   {
     "name": "blvp_2_02",
     "dataset": "blvp",
-    "label": "[de] Text andere Person 4",
+    "label": "[de] Text andere Person",
     "categories": {
       "values": [],
       "labels": [],
@@ -932,14 +964,14 @@
       "frequencies": []
     },
     "scale": "63",
-    "label_de": "Text andere Person 4",
+    "label_de": "Text andere Person",
     "study": "soep-core",
     "statistics": {}
   },
   {
     "name": "blvp_3",
     "dataset": "blvp",
-    "label": "[de] Alter Person 3",
+    "label": "[de] Alter verstorbene Person",
     "categories": {
       "values": [
         -8,
@@ -983,7 +1015,7 @@
       ]
     },
     "scale": "number",
-    "label_de": "Alter Person 3",
+    "label_de": "Alter verstorbene Person",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
@@ -999,7 +1031,7 @@
   {
     "name": "blvp_4",
     "dataset": "blvp",
-    "label": "[de] Im Haushalt gelebt Person 1",
+    "label": "[de] Im Haushalt",
     "categories": {
       "values": [
         -8,
@@ -1063,7 +1095,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Im Haushalt gelebt Person 1",
+    "label_de": "Im Haushalt",
     "study": "soep-core",
     "statistics": {
       "valid": 1053,
@@ -1073,7 +1105,7 @@
   {
     "name": "blvp_5",
     "dataset": "blvp",
-    "label": "[de] Teilnahme an LID Person 4",
+    "label": "[de] Teilnahme an ‚Leben in Deutschland‘",
     "categories": {
       "values": [
         -8,
@@ -1142,7 +1174,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Teilnahme an LID Person 4",
+    "label_de": "Teilnahme an ‚Leben in Deutschland‘",
     "study": "soep-core",
     "statistics": {
       "valid": 875,
@@ -1152,7 +1184,7 @@
   {
     "name": "blvp_6",
     "dataset": "blvp",
-    "label": "[de] Zuletzt häusliches Umfeld Person 2",
+    "label": "[de] Zuletzt häusliches Umfeld",
     "categories": {
       "values": [
         -8,
@@ -1241,7 +1273,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Zuletzt häusliches Umfeld Person 2",
+    "label_de": "Zuletzt häusliches Umfeld",
     "study": "soep-core",
     "statistics": {
       "valid": 867,
@@ -1251,7 +1283,7 @@
   {
     "name": "blvp_7",
     "dataset": "blvp",
-    "label": "[de] Wo gelebt Person 1",
+    "label": "[de] Wo gelebt",
     "categories": {
       "values": [
         -8,
@@ -1330,7 +1362,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Wo gelebt Person 1",
+    "label_de": "Wo gelebt",
     "study": "soep-core",
     "statistics": {
       "valid": 872,
@@ -1340,7 +1372,7 @@
   {
     "name": "blvp_8",
     "dataset": "blvp",
-    "label": "[de] Kontakt letzte 12 Mon. Person 3",
+    "label": "[de] Kontakt letzte 12 Monate",
     "categories": {
       "values": [
         -8,
@@ -1419,7 +1451,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Kontakt letzte 12 Mon. Person 3",
+    "label_de": "Kontakt letzte 12 Monate",
     "study": "soep-core",
     "statistics": {
       "valid": 869,
@@ -1429,7 +1461,7 @@
   {
     "name": "blvp_9",
     "dataset": "blvp",
-    "label": "[de] Wo verstorben Person 4",
+    "label": "[de] Wo verstorben",
     "categories": {
       "values": [
         -8,
@@ -1518,7 +1550,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Wo verstorben Person 4",
+    "label_de": "Wo verstorben",
     "study": "soep-core",
     "statistics": {
       "valid": 1046,
@@ -1528,7 +1560,7 @@
   {
     "name": "blvp_10_01",
     "dataset": "blvp",
-    "label": "[de] Herzinfarkt Person 4",
+    "label": "[de] Todesursache: Herzinfarkt",
     "categories": {
       "values": [
         -8,
@@ -1587,7 +1619,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Herzinfarkt Person 4",
+    "label_de": "Todesursache: Herzinfarkt",
     "study": "soep-core",
     "statistics": {
       "valid": 87,
@@ -1597,7 +1629,7 @@
   {
     "name": "blvp_10_02",
     "dataset": "blvp",
-    "label": "[de] Herz-Kreislauf-Erkrankung Person 3",
+    "label": "[de] Todesursache: Herz-Kreislauf-Erkrankung",
     "categories": {
       "values": [
         -8,
@@ -1656,7 +1688,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Herz-Kreislauf-Erkrankung Person 3",
+    "label_de": "Todesursache: Herz-Kreislauf-Erkrankung",
     "study": "soep-core",
     "statistics": {
       "valid": 167,
@@ -1666,7 +1698,7 @@
   {
     "name": "blvp_10_03",
     "dataset": "blvp",
-    "label": "[de] Krebs Person 4",
+    "label": "[de] Todesursache: Krebs",
     "categories": {
       "values": [
         -8,
@@ -1725,7 +1757,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Krebs Person 4",
+    "label_de": "Todesursache: Krebs",
     "study": "soep-core",
     "statistics": {
       "valid": 244,
@@ -1735,7 +1767,7 @@
   {
     "name": "blvp_10_04",
     "dataset": "blvp",
-    "label": "[de] Schlaganfall Person 4",
+    "label": "[de] Todesursache: Schlaganfall",
     "categories": {
       "values": [
         -8,
@@ -1794,7 +1826,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Schlaganfall Person 4",
+    "label_de": "Todesursache: Schlaganfall",
     "study": "soep-core",
     "statistics": {
       "valid": 76,
@@ -1804,7 +1836,7 @@
   {
     "name": "blvp_10_05",
     "dataset": "blvp",
-    "label": "[de] Infektionskrankheit Person 4",
+    "label": "[de] Todesursache: Infektionskrankheit",
     "categories": {
       "values": [
         -8,
@@ -1863,7 +1895,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Infektionskrankheit Person 4",
+    "label_de": "Todesursache: Infektionskrankheit",
     "study": "soep-core",
     "statistics": {
       "valid": 104,
@@ -1873,7 +1905,7 @@
   {
     "name": "blvp_10_06",
     "dataset": "blvp",
-    "label": "[de] Magen-Darm Person 3",
+    "label": "[de] Todesursache: Magen-Darm",
     "categories": {
       "values": [
         -8,
@@ -1932,7 +1964,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Magen-Darm Person 3",
+    "label_de": "Todesursache: Magen-Darm",
     "study": "soep-core",
     "statistics": {
       "valid": 34,
@@ -1942,7 +1974,7 @@
   {
     "name": "blvp_10_07",
     "dataset": "blvp",
-    "label": "[de] Atemwegserkrankung Person 4",
+    "label": "[de] Todesursache: Atemwegserkrankung",
     "categories": {
       "values": [
         -8,
@@ -2001,7 +2033,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Atemwegserkrankung Person 4",
+    "label_de": "Todesursache: Atemwegserkrankung",
     "study": "soep-core",
     "statistics": {
       "valid": 62,
@@ -2011,7 +2043,7 @@
   {
     "name": "blvp_10_08",
     "dataset": "blvp",
-    "label": "[de] Unfall Person 4",
+    "label": "[de] Todesursache: Unfall",
     "categories": {
       "values": [
         -8,
@@ -2070,7 +2102,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Unfall Person 4",
+    "label_de": "Todesursache: Unfall",
     "study": "soep-core",
     "statistics": {
       "valid": 15,
@@ -2080,7 +2112,7 @@
   {
     "name": "blvp_10_09",
     "dataset": "blvp",
-    "label": "[de] Sonstige Ursache Person 1",
+    "label": "[de] Todesursache: Sonstiges",
     "categories": {
       "values": [
         -8,
@@ -2139,7 +2171,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Sonstige Ursache Person 1",
+    "label_de": "Todesursache: Sonstiges",
     "study": "soep-core",
     "statistics": {
       "valid": 365,
@@ -2149,7 +2181,7 @@
   {
     "name": "blvp_10_10",
     "dataset": "blvp",
-    "label": "[de] Weiß nicht Person 4",
+    "label": "[de] Todesursache: Weiß nicht",
     "categories": {
       "values": [
         -8,
@@ -2208,7 +2240,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Weiß nicht Person 4",
+    "label_de": "Todesursache: Weiß nicht",
     "study": "soep-core",
     "statistics": {
       "valid": 92,
@@ -2218,7 +2250,7 @@
   {
     "name": "blvp_10_11",
     "dataset": "blvp",
-    "label": "[de] Text sonstige Ursache Person 5",
+    "label": "[de] Text sonstige Ursache",
     "categories": {
       "values": [],
       "labels": [],
@@ -2226,14 +2258,14 @@
       "frequencies": []
     },
     "scale": "number",
-    "label_de": "Text sonstige Ursache Person 5",
+    "label_de": "Text sonstige Ursache",
     "study": "soep-core",
     "statistics": {}
   },
   {
     "name": "blvp_11_01",
     "dataset": "blvp",
-    "label": "[de] Testament Person 2",
+    "label": "[de] Testament",
     "categories": {
       "values": [
         -8,
@@ -2302,7 +2334,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Testament Person 2",
+    "label_de": "Testament",
     "study": "soep-core",
     "statistics": {
       "valid": 1022,
@@ -2312,7 +2344,7 @@
   {
     "name": "blvp_11_02",
     "dataset": "blvp",
-    "label": "[de] Patientenverfügung Person 4",
+    "label": "[de] Patientenverfügung",
     "categories": {
       "values": [
         -8,
@@ -2381,7 +2413,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Patientenverfügung Person 4",
+    "label_de": "Patientenverfügung",
     "study": "soep-core",
     "statistics": {
       "valid": 1024,
@@ -2391,7 +2423,7 @@
   {
     "name": "blvp_11_03",
     "dataset": "blvp",
-    "label": "[de] Vorsorgevollmacht Person 2",
+    "label": "[de] Vorsorgevollmacht",
     "categories": {
       "values": [
         -8,
@@ -2460,7 +2492,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Vorsorgevollmacht Person 2",
+    "label_de": "Vorsorgevollmacht",
     "study": "soep-core",
     "statistics": {
       "valid": 1017,
@@ -2470,7 +2502,7 @@
   {
     "name": "blvp_11_04",
     "dataset": "blvp",
-    "label": "[de] Sterbeverfügung Person 3",
+    "label": "[de] Sterbeverfügung",
     "categories": {
       "values": [
         -8,
@@ -2539,7 +2571,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Sterbeverfügung Person 3",
+    "label_de": "Sterbeverfügung",
     "study": "soep-core",
     "statistics": {
       "valid": 1011,
@@ -2549,7 +2581,7 @@
   {
     "name": "blvp_12",
     "dataset": "blvp",
-    "label": "[de] Geistige Einschränkung Person 3",
+    "label": "[de] Geistige Einschränkung",
     "categories": {
       "values": [
         -8,
@@ -2618,7 +2650,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Geistige Einschränkung Person 3",
+    "label_de": "Geistige Einschränkung",
     "study": "soep-core",
     "statistics": {
       "valid": 1049,
@@ -2628,7 +2660,7 @@
   {
     "name": "blvp_13",
     "dataset": "blvp",
-    "label": "[de] Gesundheitszustand 3 Mon. Zuvor Person 1",
+    "label": "[de] Gesundheitszustand 3 Monate zuvor",
     "categories": {
       "values": [
         -8,
@@ -2707,7 +2739,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Gesundheitszustand 3 Mon. Zuvor Person 1",
+    "label_de": "Gesundheitszustand 3 Monate zuvor",
     "study": "soep-core",
     "statistics": {
       "valid": 1038,
@@ -2717,7 +2749,7 @@
   {
     "name": "blvp_14",
     "dataset": "blvp",
-    "label": "[de] Hilfebedürftig 3 Mon. Zuvor Person 1",
+    "label": "[de] Hilfebedürftig 3 Monate uvor",
     "categories": {
       "values": [
         -8,
@@ -2781,7 +2813,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Hilfebedürftig 3 Mon. Zuvor Person 1",
+    "label_de": "Hilfebedürftig 3 Monate uvor",
     "study": "soep-core",
     "statistics": {
       "valid": 1040,
@@ -2791,7 +2823,7 @@
   {
     "name": "blvp_15_01",
     "dataset": "blvp",
-    "label": "[de] Hilfe Besorgungen Person 2",
+    "label": "[de] Hilfe Besorgungen",
     "categories": {
       "values": [
         -8,
@@ -2850,7 +2882,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Hilfe Besorgungen Person 2",
+    "label_de": "Hilfe Besorgungen",
     "study": "soep-core",
     "statistics": {
       "valid": 542,
@@ -2860,7 +2892,7 @@
   {
     "name": "blvp_15_02",
     "dataset": "blvp",
-    "label": "[de] Hilfe Haushaltsführung Person 2",
+    "label": "[de] Hilfe Haushaltsführung",
     "categories": {
       "values": [
         -8,
@@ -2919,7 +2951,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Hilfe Haushaltsführung Person 2",
+    "label_de": "Hilfe Haushaltsführung",
     "study": "soep-core",
     "statistics": {
       "valid": 502,
@@ -2929,7 +2961,7 @@
   {
     "name": "blvp_15_03",
     "dataset": "blvp",
-    "label": "[de] Einfache Pflege Person 1",
+    "label": "[de] Einfache Pflege",
     "categories": {
       "values": [
         -8,
@@ -2988,7 +3020,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Einfache Pflege Person 1",
+    "label_de": "Einfache Pflege",
     "study": "soep-core",
     "statistics": {
       "valid": 463,
@@ -2998,7 +3030,7 @@
   {
     "name": "blvp_15_04",
     "dataset": "blvp",
-    "label": "[de] Schwierige Pflege Person 3",
+    "label": "[de] Schwierige Pflege",
     "categories": {
       "values": [
         -8,
@@ -3057,7 +3089,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Schwierige Pflege Person 3",
+    "label_de": "Schwierige Pflege",
     "study": "soep-core",
     "statistics": {
       "valid": 349,
@@ -3067,7 +3099,7 @@
   {
     "name": "blvp_15_05",
     "dataset": "blvp",
-    "label": "[de] kein Hilfebedarf Person 1",
+    "label": "[de] Kein Hilfebedarf",
     "categories": {
       "values": [
         -8,
@@ -3126,7 +3158,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "kein Hilfebedarf Person 1",
+    "label_de": "Kein Hilfebedarf",
     "study": "soep-core",
     "statistics": {
       "valid": 9,
@@ -3136,7 +3168,7 @@
   {
     "name": "blvp_16_01",
     "dataset": "blvp",
-    "label": "[de] Zufriedenheit 1 Jahr zuvor Person 2",
+    "label": "[de] Zufriedenheit 1 Jahr zuvor",
     "categories": {
       "values": [
         -8,
@@ -3245,7 +3277,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Zufriedenheit 1 Jahr zuvor Person 2",
+    "label_de": "Zufriedenheit 1 Jahr zuvor",
     "study": "soep-core",
     "statistics": {
       "valid": 999,
@@ -3255,7 +3287,7 @@
   {
     "name": "blvp_16_02",
     "dataset": "blvp",
-    "label": "[de] Zufriedenheit 3 Mon. Zuvor Person 4",
+    "label": "[de] Zufriedenheit 3 Monate zuvor",
     "categories": {
       "values": [
         -8,
@@ -3364,7 +3396,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Zufriedenheit 3 Mon. Zuvor Person 4",
+    "label_de": "Zufriedenheit 3 Monate zuvor",
     "study": "soep-core",
     "statistics": {
       "valid": 944,
@@ -3374,7 +3406,7 @@
   {
     "name": "blvp_17",
     "dataset": "blvp",
-    "label": "[de] Wie verändert Person 1",
+    "label": "[de] Wie verändert",
     "categories": {
       "values": [
         -8,
@@ -3443,7 +3475,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Wie verändert Person 1",
+    "label_de": "Wie verändert",
     "study": "soep-core",
     "statistics": {
       "valid": 1031,
@@ -3508,38 +3540,6 @@
       "Max.": 16170.0,
       "valid": 459,
       "invalid": 595
-    }
-  },
-  {
-    "name": "hid_2021",
-    "dataset": "blvp",
-    "label": "Current Householdnummer (=hid)",
-    "categories": {
-      "values": [
-        -1
-      ],
-      "labels": [
-        "[-1] "
-      ],
-      "missings": [
-        true
-      ],
-      "frequencies": [
-        0
-      ]
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer (=hid)",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 930.0,
-      "1st Qu.": 300245.25,
-      "Median": 2052157.5,
-      "Mean": 1740213.205882353,
-      "3rd Qu.": 2664839.0,
-      "Max.": 5556320.0,
-      "valid": 1054,
-      "invalid": 0
     }
   },
   {
@@ -3614,6 +3614,178 @@
     "statistics": {
       "valid": 1054,
       "invalid": 0
+    }
+  },
+  {
+    "name": "iyear",
+    "dataset": "blvp",
+    "label": "Year of interview",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Jahr des Interviews",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 2021.0,
+      "1st Qu.": 2021.0,
+      "Median": 2021.0,
+      "Mean": 2021.0047607421875,
+      "3rd Qu.": 2021.0,
+      "Max.": 2022.0,
+      "valid": 1046,
+      "invalid": 8
+    }
+  },
+  {
+    "name": "imonth",
+    "dataset": "blvp",
+    "label": "Month of interview",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don't know",
+        "[1] January",
+        "[2] February",
+        "[3] March",
+        "[4] April",
+        "[5] May",
+        "[6] June",
+        "[7] July",
+        "[8] August",
+        "[9] September",
+        "[10] October",
+        "[11] November",
+        "[12] December"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulässige Mehrfachantwort",
+        "[-3] Unplausibler Wert",
+        "[-2] Trifft nicht zu",
+        "[-1] Keine Angabe/weiß nicht",
+        "[1] Januar",
+        "[2] Februar",
+        "[3] März",
+        "[4] April",
+        "[5] Mai",
+        "[6] Juni",
+        "[7] Juli",
+        "[8] August",
+        "[9] September",
+        "[10] Oktober",
+        "[11] November",
+        "[12] Dezember"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        3,
+        2,
+        0,
+        2,
+        99,
+        179,
+        237,
+        142,
+        153,
+        158,
+        53,
+        18
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Monat des Interviews",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 1046,
+      "invalid": 8
+    }
+  },
+  {
+    "name": "iday",
+    "dataset": "blvp",
+    "label": "Day of interview",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Tag des Interviews",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 8.0,
+      "Median": 17.0,
+      "Mean": 15.869025230407715,
+      "3rd Qu.": 23.0,
+      "Max.": 31.0,
+      "valid": 1046,
+      "invalid": 8
     }
   }
 ]
