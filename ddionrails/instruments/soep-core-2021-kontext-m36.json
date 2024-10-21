@@ -1,0 +1,304 @@
+{
+  "study": "soep-core",
+  "name": "soep-core-2021-kontext-m36",
+  "label": "Context questions about the interview (M3-M6) 2021",
+  "label_de": "Kontextfragen zum Interview (M3-M6) 2021",
+  "period": 2021,
+  "mode": "CAPI",
+  "instrument": "soep-core-2021-kontext-m36",
+  "questions": {
+    "Z1": {
+      "question": "Z1",
+      "name": "Z1",
+      "label": "Were other persons present while filling out the questionnaire?",
+      "label_de": "Waren beim Ausfüllen des Fragebogens weitere Personen anwesend?",
+      "items": [
+        {
+          "item": "1",
+          "text": "Were other persons present while filling out the questionnaire?",
+          "text_de": "Waren beim Ausfüllen des Fragebogens weitere Personen anwesend?",
+          "instruction": "[de] Jahrgang == 2007,2009: Bitte gib alles Zutreffende an.\nJahrgang !=  2007,2009: Bitte geben Sie alles Zutreffende an.",
+          "instruction_de": "Jahrgang == 2007,2009: Bitte gib alles Zutreffende an.\nJahrgang !=  2007,2009: Bitte geben Sie alles Zutreffende an.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "anw5",
+          "text": "[de] Ja, mein Vater oder meine Mutter",
+          "text_de": "Ja, mein Vater oder meine Mutter",
+          "filter": "Jahrgang == 2004,2007,2009",
+          "goto": "1@Z2",
+          "concept": "anw5",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "anw1",
+          "text": "Yes, spouse / partner",
+          "text_de": "Ja, Ehepartner / Lebenspartner",
+          "filter": "Jahrgang != 2004,2007,2009",
+          "goto": "1@Z2",
+          "concept": "anw1",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "anw2",
+          "text": "Yes, other person, who is living in the same household",
+          "text_de": "Ja, andere Person, die hier im Haushalt lebt",
+          "goto": "1@Z2",
+          "concept": "anw2",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "anw3",
+          "text": "Yes, other person, who do not live in the same household",
+          "text_de": "Ja, andere Person, die nicht hier im Haushalt lebt",
+          "goto": "1@Z2",
+          "concept": "anw3",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "anw4",
+          "text": "No",
+          "text_de": "Nein",
+          "goto": "1@Z3",
+          "concept": "anw4",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "[de] Kann/ möchte ich nicht beantworten",
+          "text_de": "Kann/ möchte ich nicht beantworten",
+          "goto": "1@Z3",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        }
+      ],
+      "sn": 0,
+      "instrument": "soep-core-2021-kontext-m36",
+      "study": "soep-core"
+    },
+    "Z2": {
+      "question": "Z2",
+      "name": "Z2",
+      "label": "Did any of the aforementioned people bother you while filling out the questionaire?",
+      "label_de": "Hat Sie eine der oben genannten Personen beim Ausfüllen des Fragebogens gestört?",
+      "items": [
+        {
+          "item": "abl",
+          "text": "Did any of the aforementioned people bother you while filling out the questionaire?",
+          "text_de": "Hat Sie eine der oben genannten Personen beim Ausfüllen des Fragebogens gestört?",
+          "filter": "(Z1;anw5=1)|(Z1;anw1=1)|(Z1;anw2=1)|(Z1;anw3=1)|(Z1;anw4=1)",
+          "concept": "abl",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 1,
+      "instrument": "soep-core-2021-kontext-m36",
+      "study": "soep-core"
+    },
+    "Z3": {
+      "question": "Z3",
+      "name": "Z3",
+      "label": "[de] Jahrgang == 2007, 2009: Abschließend interessieren wir uns für Deine Meinung zum Fragebogen. Falls Dir beispielsweise etwas gefehlt hat oder Du Probleme bei der Beantwortung von Fragen hattest, kannst Du dies im Folgenden ausführen. Auch wenn Du noch weitere Ergänzungen, Anmerkungen oder kritische Hinweise hast, bitten wir Dich, uns diese hier mitzuteilen.\nJahrgang != 2007, 2009: Abschließend interessieren wir uns für Ihre Meinung zum Fragebogen. Falls Ihnen beispielsweise etwas gefehlt hat oder Sie Probleme bei der Beantwortung von Fragen hatten, können Sie dies im Folgenden ausführen. Auch wenn Sie noch weitere Ergän-zungen, Anmerkungen oder kritische Hinweise haben, bitten wir Sie, uns diese hier mitzuteilen.",
+      "label_de": "Jahrgang == 2007, 2009: Abschließend interessieren wir uns für Deine Meinung zum Fragebogen. Falls Dir beispielsweise etwas gefehlt hat oder Du Probleme bei der Beantwortung von Fragen hattest, kannst Du dies im Folgenden ausführen. Auch wenn Du noch weitere Ergänzungen, Anmerkungen oder kritische Hinweise hast, bitten wir Dich, uns diese hier mitzuteilen.\nJahrgang != 2007, 2009: Abschließend interessieren wir uns für Ihre Meinung zum Fragebogen. Falls Ihnen beispielsweise etwas gefehlt hat oder Sie Probleme bei der Beantwortung von Fragen hatten, können Sie dies im Folgenden ausführen. Auch wenn Sie noch weitere Ergän-zungen, Anmerkungen oder kritische Hinweise haben, bitten wir Sie, uns diese hier mitzuteilen.",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Jahrgang == 2007, 2009: Abschließend interessieren wir uns für Deine Meinung zum Fragebogen. Falls Dir beispielsweise etwas gefehlt hat oder Du Probleme bei der Beantwortung von Fragen hattest, kannst Du dies im Folgenden ausführen. Auch wenn Du noch weitere Ergänzungen, Anmerkungen oder kritische Hinweise hast, bitten wir Dich, uns diese hier mitzuteilen.\nJahrgang != 2007, 2009: Abschließend interessieren wir uns für Ihre Meinung zum Fragebogen. Falls Ihnen beispielsweise etwas gefehlt hat oder Sie Probleme bei der Beantwortung von Fragen hatten, können Sie dies im Folgenden ausführen. Auch wenn Sie noch weitere Ergän-zungen, Anmerkungen oder kritische Hinweise haben, bitten wir Sie, uns diese hier mitzuteilen.",
+          "text_de": "Jahrgang == 2007, 2009: Abschließend interessieren wir uns für Deine Meinung zum Fragebogen. Falls Dir beispielsweise etwas gefehlt hat oder Du Probleme bei der Beantwortung von Fragen hattest, kannst Du dies im Folgenden ausführen. Auch wenn Du noch weitere Ergänzungen, Anmerkungen oder kritische Hinweise hast, bitten wir Dich, uns diese hier mitzuteilen.\nJahrgang != 2007, 2009: Abschließend interessieren wir uns für Ihre Meinung zum Fragebogen. Falls Ihnen beispielsweise etwas gefehlt hat oder Sie Probleme bei der Beantwortung von Fragen hatten, können Sie dies im Folgenden ausführen. Auch wenn Sie noch weitere Ergän-zungen, Anmerkungen oder kritische Hinweise haben, bitten wir Sie, uns diese hier mitzuteilen.",
+          "concept": "text",
+          "scale": "chr",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 2,
+      "instrument": "soep-core-2021-kontext-m36",
+      "study": "soep-core"
+    },
+    "Z4": {
+      "question": "Z4",
+      "name": "Z4",
+      "label": "[de] Jahrgang == 2007, 2009: Im Zuge der Modernisierung unseres Befragungslayouts sowie zur Sicherung der Datenqualität interessieren wir uns für die Rahmenbedingungen Deiner Befragungsteilnahme und möchten Dir hierzu abschließend ein paar Fragen stellen.\nJahrgang != 2007, 2009: Im Zuge der Modernisierung unseres Befragungslayouts sowie zur Sicherung der Datenqualität interessieren wir uns für die Rahmenbedingungen Ihrer Befragungsteilnahme und möchten Ihnen hierzu abschließend ein paar Fragen stellen.",
+      "label_de": "Jahrgang == 2007, 2009: Im Zuge der Modernisierung unseres Befragungslayouts sowie zur Sicherung der Datenqualität interessieren wir uns für die Rahmenbedingungen Deiner Befragungsteilnahme und möchten Dir hierzu abschließend ein paar Fragen stellen.\nJahrgang != 2007, 2009: Im Zuge der Modernisierung unseres Befragungslayouts sowie zur Sicherung der Datenqualität interessieren wir uns für die Rahmenbedingungen Ihrer Befragungsteilnahme und möchten Ihnen hierzu abschließend ein paar Fragen stellen.",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Jahrgang == 2007, 2009: Im Zuge der Modernisierung unseres Befragungslayouts sowie zur Sicherung der Datenqualität interessieren wir uns für die Rahmenbedingungen Deiner Befragungsteilnahme und möchten Dir hierzu abschließend ein paar Fragen stellen.\nJahrgang != 2007, 2009: Im Zuge der Modernisierung unseres Befragungslayouts sowie zur Sicherung der Datenqualität interessieren wir uns für die Rahmenbedingungen Ihrer Befragungsteilnahme und möchten Ihnen hierzu abschließend ein paar Fragen stellen.",
+          "text_de": "Jahrgang == 2007, 2009: Im Zuge der Modernisierung unseres Befragungslayouts sowie zur Sicherung der Datenqualität interessieren wir uns für die Rahmenbedingungen Deiner Befragungsteilnahme und möchten Dir hierzu abschließend ein paar Fragen stellen.\nJahrgang != 2007, 2009: Im Zuge der Modernisierung unseres Befragungslayouts sowie zur Sicherung der Datenqualität interessieren wir uns für die Rahmenbedingungen Ihrer Befragungsteilnahme und möchten Ihnen hierzu abschließend ein paar Fragen stellen.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "[de] Jahrgang == 2007, 2009: Mit welchen Gerätetypen hast Du an unserer Befragung teilgenommen?\nJahrgang != 2007, 2009: Mit welchen Gerätetypen haben Sie an unserer Befragung teilgenommen?",
+          "text_de": "Jahrgang == 2007, 2009: Mit welchen Gerätetypen hast Du an unserer Befragung teilgenommen?\nJahrgang != 2007, 2009: Mit welchen Gerätetypen haben Sie an unserer Befragung teilgenommen?",
+          "instruction": "[de] Jahrgang == 2007, 2009: Bitte gib alles zutreffende an.\nJahrgang != 2007, 2009: Bitte markieren Sie alles Zutreffende.",
+          "instruction_de": "Jahrgang == 2007, 2009: Bitte gib alles zutreffende an.\nJahrgang != 2007, 2009: Bitte markieren Sie alles Zutreffende.",
+          "scale": "txt",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "[de] stationärer Computer/PC",
+          "text_de": "stationärer Computer/PC",
+          "concept": "zgeraet1",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "4",
+          "text": "[de] Laptop/Notebook",
+          "text_de": "Laptop/Notebook",
+          "concept": "zgeraet2",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "5",
+          "text": "[de] Tablet",
+          "text_de": "Tablet",
+          "concept": "zgeraet3",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "6",
+          "text": "[de] Smartphone",
+          "text_de": "Smartphone",
+          "concept": "zgeraet4",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "7",
+          "text": "[de] Sonstiges",
+          "text_de": "Sonstiges",
+          "concept": "zgeraet5",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "8",
+          "text": "[de] [Sonstiges] und zwar:",
+          "text_de": "[Sonstiges] und zwar:",
+          "concept": "zgeraetx",
+          "scale": "chr",
+          "sn": 7,
+          "number": ""
+        }
+      ],
+      "sn": 3,
+      "instrument": "soep-core-2021-kontext-m36",
+      "study": "soep-core"
+    },
+    "Z5": {
+      "question": "Z5",
+      "name": "Z5",
+      "label": "[de] Wir interessieren uns auch dafür, unter welchen Bedingungen Sie an unserer Online-Befragung teilgenommen haben.",
+      "label_de": "Wir interessieren uns auch dafür, unter welchen Bedingungen Sie an unserer Online-Befragung teilgenommen haben.",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Wir interessieren uns auch dafür, unter welchen Bedingungen Sie an unserer Online-Befragung teilgenommen haben.",
+          "text_de": "Wir interessieren uns auch dafür, unter welchen Bedingungen Sie an unserer Online-Befragung teilgenommen haben.",
+          "filter": "Jahrgang != 2007, 2009",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "[de] Wo haben Sie die Bearbeitung der Fragen hauptsächlich durchgeführt?",
+          "text_de": "Wo haben Sie die Bearbeitung der Fragen hauptsächlich durchgeführt?",
+          "concept": "umf",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] zu Hause",
+              "label_de": "zu Hause"
+            },
+            {
+              "value": 2,
+              "label": "[de] unterwegs (z. B. im Zug, in der U-/S-Bahn)",
+              "label_de": "unterwegs (z. B. im Zug, in der U-/S-Bahn)"
+            },
+            {
+              "value": 3,
+              "label": "[de] im Büro/in der Bibliothek/im Computerpool",
+              "label_de": "im Büro/in der Bibliothek/im Computerpool"
+            },
+            {
+              "value": 4,
+              "label": "[de] in der Mensa/in der Cafeteria/im Restaurant/im Café",
+              "label_de": "in der Mensa/in der Cafeteria/im Restaurant/im Café"
+            },
+            {
+              "value": 5,
+              "label": "[de] Sonstiges",
+              "label_de": "Sonstiges"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "[de] [Sonstiges] und zwar:",
+          "text_de": "[Sonstiges] und zwar:",
+          "concept": "umfx",
+          "scale": "chr",
+          "sn": 2,
+          "number": ""
+        }
+      ],
+      "sn": 4,
+      "instrument": "soep-core-2021-kontext-m36",
+      "study": "soep-core"
+    }
+  }
+}

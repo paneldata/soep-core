@@ -1,0 +1,5498 @@
+{
+  "study": "soep-core",
+  "name": "soep-core-2021-soeprki2",
+  "label": "RKI-SOEP Corona-Monitoring nationwide (Wave 2; CAWI) 2021/2022",
+  "label_de": "RKI-SOEP Corona-Monitoring bundesweit (Welle 2) 2021/2022",
+  "analysis_unit": "p",
+  "period": 2021,
+  "mode": "CAWI",
+  "instrument": "soep-core-2021-soeprki2",
+  "questions": {
+    "0": {
+      "question": "0",
+      "name": "0",
+      "label": "Living in Germany - Coronavirus Monitoring 2021",
+      "label_de": "Leben in Deutschland - Corona Monitoring 2021",
+      "items": [
+        {
+          "item": "1",
+          "text": "Living in Germany - Coronavirus Monitoring 2021",
+          "text_de": "Leben in Deutschland - Corona Monitoring 2021",
+          "instruction": "Label",
+          "instruction_de": "Etikett",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 0,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "1": {
+      "question": "1",
+      "name": "1",
+      "label": "Have you ever had an infection with the coronavirus (SARS-CoV-2) detected by a PCR test?",
+      "label_de": "Ist bei Ihnen schon einmal eine Infektion mit dem Coronavirus (SARS-CoV-2) durch einen PCR-Test nachgewiesen worden?",
+      "items": [
+        {
+          "item": "v2",
+          "text": "Have you ever had an infection with the coronavirus (SARS-CoV-2) detected by a PCR test?",
+          "text_de": "Ist bei Ihnen schon einmal eine Infektion mit dem Coronavirus (SARS-CoV-2) durch einen PCR-Test nachgewiesen worden?",
+          "instruction": "For a PCR test, a sample (throat swab) is taken from one’s mouth or nose. The result is available after several hours or days. We are not referring to rapid tests here.",
+          "instruction_de": "Für einen PCR-Test wird eine Probe (Rachenabstrich) durch den Mund oder die Nase entnommen. Das Ergebnis steht nach mehreren Stunden bis zu mehreren Tagen fest. Sogenannte Schnelltests sind hier nicht gemeint.",
+          "goto": "2:3@3",
+          "concept": "v2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": 3,
+              "label": "Don't know",
+              "label_de": "Weiß nicht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "1",
+          "text": "[de] [Ja] Datum des (ersten) positiven Tests:",
+          "text_de": "[Ja] Datum des (ersten) positiven Tests:",
+          "instruction": "If you no longer know the exact date, please estimate!",
+          "instruction_de": "Wenn Sie das genaue Datum nicht mehr wissen, schätzen Sie bitte!",
+          "filter": "1;v2=1",
+          "scale": "txt",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "v2_pos_day",
+          "text": "Day",
+          "text_de": "Tag",
+          "concept": "v2_pos_day",
+          "scale": "int",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "v2_pos_mon",
+          "text": "Month",
+          "text_de": "Monat",
+          "concept": "v2_pos_mon",
+          "scale": "int",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "v2_pos_year",
+          "text": "Year",
+          "text_de": "Jahr",
+          "concept": "v2_pos_year",
+          "scale": "int",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "4",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 7,
+          "number": ""
+        }
+      ],
+      "sn": 1,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "2": {
+      "question": "2",
+      "name": "2",
+      "label": "If you were found to be infected with the coronavirus (positive test): Were you so seriously ill from the coronavirus infection that you were treated in hospital?",
+      "label_de": "Wenn bei Ihnen eine Infektion mit dem Coronavirus festgestellt wurde (positiver Test): Sind Sie durch die Coronavirus-Infektion so schwer erkrankt, dass Sie deswegen im Krankenhaus behandelt wurden?",
+      "items": [
+        {
+          "item": "1",
+          "text": "If you were found to be infected with the coronavirus (positive test): Were you so seriously ill from the coronavirus infection that you were treated in hospital?",
+          "text_de": "Wenn bei Ihnen eine Infektion mit dem Coronavirus festgestellt wurde (positiver Test): Sind Sie durch die Coronavirus-Infektion so schwer erkrankt, dass Sie deswegen im Krankenhaus behandelt wurden?",
+          "instruction": "I am referring to an admission to hospital with an overnight stay.\nPlease continue with question 3",
+          "instruction_de": "Gemeint ist eine Aufnahme ins Krankenhaus mit Übernachtung.\nBitte weiter mit Frage 3",
+          "filter": "1;v2=1",
+          "concept": "v5",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 2,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "3": {
+      "question": "3",
+      "name": "3",
+      "label": "Have you been vaccinated against the coronavirus disease (COVID-19)?",
+      "label_de": "Haben Sie sich gegen die Coronavirus-Erkrankung (Covid-19) impfen lassen?",
+      "items": [
+        {
+          "item": "pcovimpf_n",
+          "text": "Have you been vaccinated against the coronavirus disease (COVID-19)?",
+          "text_de": "Haben Sie sich gegen die Coronavirus-Erkrankung (Covid-19) impfen lassen?",
+          "instruction": "Please also respond with “Yes” if you have only been vaccinated once.\nPlease continue with question 8",
+          "instruction_de": "Bitte antworten Sie auch mit „Ja“, wenn Sie bisher nur einmal geimpft wurden.\nBitte weiter mit Frage 8",
+          "goto": "2@8",
+          "concept": "pcovimpf",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 3,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "4": {
+      "question": "4",
+      "name": "4",
+      "label": "Which vaccination have you received?",
+      "label_de": "Welche Impfung haben Sie erhalten?",
+      "items": [
+        {
+          "item": "1",
+          "text": "Which vaccination have you received?",
+          "text_de": "Welche Impfung haben Sie erhalten?",
+          "instruction": "Please select all answers that apply.",
+          "instruction_de": "Bitte geben Sie alles Zutreffende an.",
+          "filter": "3;pcovimpf_n=1",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "prki2impf1",
+          "text": "1st vaccination",
+          "text_de": "1. Impfung",
+          "concept": "prki2impf1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "prki2impf2",
+          "text": "2nd vaccination",
+          "text_de": "2. Impfung",
+          "concept": "prki2impf2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "prki2impf3",
+          "text": "3rd vaccination",
+          "text_de": "3. Impfung",
+          "concept": "prki2impf3",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "4",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        }
+      ],
+      "sn": 4,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "5": {
+      "question": "5",
+      "name": "5",
+      "label": "Please specify the date and vaccine for each vaccination.",
+      "label_de": "Bitte geben Sie für jede Impfung das Datum und den Impfstoff der Impfung an.",
+      "items": [
+        {
+          "item": "1",
+          "text": "Please specify the date and vaccine for each vaccination.",
+          "text_de": "Bitte geben Sie für jede Impfung das Datum und den Impfstoff der Impfung an.",
+          "instruction": "Please check your vaccination certificate (proof of vaccination) if available.",
+          "instruction_de": "Bitte sehen Sie dafür in Ihrem Impfpass oder Ihrer Impfbescheinigung (Impfnachweis) nach, wenn vorhanden.",
+          "filter": "3;pcovimpf_n=1",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Date",
+          "text_de": "Datum",
+          "instruction": "Please enter.",
+          "instruction_de": "Bitte eintragen.",
+          "scale": "txt",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "prki2i1tag",
+          "text": "[1st vaccination] day",
+          "text_de": "[1. Impfung] Tag",
+          "filter": "4;prki2impf1=1",
+          "concept": "prki2i1tag",
+          "scale": "int",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "4",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "prki2i1mon",
+          "text": "[1st vaccination] month",
+          "text_de": "[1. Impfung] Monat",
+          "filter": "4;prki2impf1=1",
+          "concept": "prki2i1mon",
+          "scale": "int",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "5",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "prki2i1jahr",
+          "text": "[1st vaccination] year",
+          "text_de": "[1. Impfung] Jahr",
+          "filter": "4;prki2impf1=1",
+          "concept": "prki2i1jahr",
+          "scale": "int",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "6",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "prki2i2tag",
+          "text": "[2nd vaccination] day",
+          "text_de": "[2. Impfung] Tag",
+          "filter": "4;prki2impf2=1",
+          "concept": "prki2i2tag",
+          "scale": "int",
+          "sn": 8,
+          "number": ""
+        },
+        {
+          "item": "7",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 9,
+          "number": ""
+        },
+        {
+          "item": "prki2i2mon",
+          "text": "[2nd vaccination] month",
+          "text_de": "[2. Impfung] Monat",
+          "filter": "4;prki2impf2=1",
+          "concept": "prki2i2mon",
+          "scale": "int",
+          "sn": 10,
+          "number": ""
+        },
+        {
+          "item": "8",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 11,
+          "number": ""
+        },
+        {
+          "item": "prki2i2jahr",
+          "text": "[2nd vaccination] year",
+          "text_de": "[2. Impfung] Jahr",
+          "filter": "4;prki2impf2=1",
+          "concept": "prki2i2jahr",
+          "scale": "int",
+          "sn": 12,
+          "number": ""
+        },
+        {
+          "item": "9",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 13,
+          "number": ""
+        },
+        {
+          "item": "prki2i3tag",
+          "text": "[3rd vaccination] day",
+          "text_de": "[3. Impfung] Tag",
+          "filter": "4;prki2impf3=1",
+          "concept": "prki2i3tag",
+          "scale": "int",
+          "sn": 14,
+          "number": ""
+        },
+        {
+          "item": "10",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 15,
+          "number": ""
+        },
+        {
+          "item": "prki2i3mon",
+          "text": "[3rd vaccination] month",
+          "text_de": "[3. Impfung] Monat",
+          "filter": "4;prki2impf3=1",
+          "concept": "prki2i3mon",
+          "scale": "int",
+          "sn": 16,
+          "number": ""
+        },
+        {
+          "item": "11",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 17,
+          "number": ""
+        },
+        {
+          "item": "prki2i3jahr",
+          "text": "[3rd vaccination] year",
+          "text_de": "[3. Impfung] Jahr",
+          "filter": "4;prki2impf3=1",
+          "concept": "prki2i3jahr",
+          "scale": "int",
+          "sn": 18,
+          "number": ""
+        },
+        {
+          "item": "12",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 19,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "Vaccine",
+          "text_de": "Impfstoff",
+          "scale": "txt",
+          "sn": 20,
+          "number": ""
+        },
+        {
+          "item": "prki2i1stoff",
+          "text": "[1st vaccination]",
+          "text_de": "[1. Impfung]",
+          "filter": "4;prki2impf1=1",
+          "concept": "prki2i1stoff",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "BioNTech/Pfizer (Comirnaty)",
+              "label_de": "BionTech/Pfizer (Comirnaty)"
+            },
+            {
+              "value": 2,
+              "label": "Moderna (Spikevax, COVID-19 Vaccine Moderna)",
+              "label_de": "Moderna (Spikevax, Covid-19 Vaccine Moderna)"
+            },
+            {
+              "value": 3,
+              "label": "AstraZeneca (Vaxzevria)",
+              "label_de": "AstraZeneca (Vaxzevria)"
+            },
+            {
+              "value": 4,
+              "label": "Johnson & Johnson (Janssen)",
+              "label_de": "Johnson & Johnson (Janssen)"
+            },
+            {
+              "value": 5,
+              "label": "A different vaccine",
+              "label_de": "Ein anderer Impfstoff"
+            },
+            {
+              "value": 6,
+              "label": "I don’t know",
+              "label_de": "Weiß ich nicht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 21,
+          "number": ""
+        },
+        {
+          "item": "prki2i2stoff",
+          "text": "[2nd vaccination]",
+          "text_de": "[2. Impfung]",
+          "filter": "4;prki2impf2=1",
+          "concept": "prki2i2stoff",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "BioNTech/Pfizer (Comirnaty)",
+              "label_de": "BionTech/Pfizer (Comirnaty)"
+            },
+            {
+              "value": 2,
+              "label": "Moderna (Spikevax, COVID-19 Vaccine Moderna)",
+              "label_de": "Moderna (Spikevax, Covid-19 Vaccine Moderna)"
+            },
+            {
+              "value": 3,
+              "label": "AstraZeneca (Vaxzevria)",
+              "label_de": "AstraZeneca (Vaxzevria)"
+            },
+            {
+              "value": 4,
+              "label": "Johnson & Johnson (Janssen)",
+              "label_de": "Johnson & Johnson (Janssen)"
+            },
+            {
+              "value": 5,
+              "label": "A different vaccine",
+              "label_de": "Ein anderer Impfstoff"
+            },
+            {
+              "value": 6,
+              "label": "I don’t know",
+              "label_de": "Weiß ich nicht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 22,
+          "number": ""
+        },
+        {
+          "item": "prki2i3stoff",
+          "text": "[3rd vaccination]",
+          "text_de": "[3. Impfung]",
+          "filter": "4;prki2impf3=1",
+          "concept": "prki2i3stoff",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "BioNTech/Pfizer (Comirnaty)",
+              "label_de": "BionTech/Pfizer (Comirnaty)"
+            },
+            {
+              "value": 2,
+              "label": "Moderna (Spikevax, COVID-19 Vaccine Moderna)",
+              "label_de": "Moderna (Spikevax, Covid-19 Vaccine Moderna)"
+            },
+            {
+              "value": 3,
+              "label": "AstraZeneca (Vaxzevria)",
+              "label_de": "AstraZeneca (Vaxzevria)"
+            },
+            {
+              "value": 4,
+              "label": "Johnson & Johnson (Janssen)",
+              "label_de": "Johnson & Johnson (Janssen)"
+            },
+            {
+              "value": 5,
+              "label": "A different vaccine",
+              "label_de": "Ein anderer Impfstoff"
+            },
+            {
+              "value": 6,
+              "label": "I don’t know",
+              "label_de": "Weiß ich nicht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 23,
+          "number": ""
+        }
+      ],
+      "sn": 5,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "6": {
+      "question": "6",
+      "name": "6",
+      "label": "Where did you get your 1st vaccination?",
+      "label_de": "Wo haben Sie Ihre 1. Impfung erhalten?",
+      "items": [
+        {
+          "item": "prki2i1ort",
+          "text": "Where did you get your 1st vaccination?",
+          "text_de": "Wo haben Sie Ihre 1. Impfung erhalten?",
+          "filter": "3;pcovimpf_n=1",
+          "concept": "prki2i1ort",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "In a vaccination centre",
+              "label_de": "In einem Impfzentrum"
+            },
+            {
+              "value": 2,
+              "label": "In a doctor's practice",
+              "label_de": "In einer Arztpraxis"
+            },
+            {
+              "value": 3,
+              "label": "In the facility where I live, e.g. nursing home, shared accommodation",
+              "label_de": "In der Einrichtung, in der ich lebe, z. B. Altenpflegeheim, Gemeinschaftsunterkunft"
+            },
+            {
+              "value": 4,
+              "label": "In my workplace, e.g. from the company doctor",
+              "label_de": "Am Arbeitsplatz, z. B. durch den Betriebsarzt"
+            },
+            {
+              "value": 5,
+              "label": "At home",
+              "label_de": "Zu Hause"
+            },
+            {
+              "value": 6,
+              "label": "Other location, e.g. supermarket, community centre, airport, school, vaccination van",
+              "label_de": "Anderer Ort, z. B. Supermarkt, Gemeindezentrum, Flughafen, Schule, Impfmobil"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 6,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "7": {
+      "question": "7",
+      "name": "7",
+      "label": "Where did the 1st vaccination take place?",
+      "label_de": "Wo fand die 1. Impfung statt?",
+      "items": [
+        {
+          "item": "prki2i1land",
+          "text": "Where did the 1st vaccination take place?",
+          "text_de": "Wo fand die 1. Impfung statt?",
+          "instruction": "Please continue with question 10",
+          "instruction_de": "Bitte weiter mit Frage 10",
+          "filter": "3;pcovimpf_n=1",
+          "goto": "ALL@10",
+          "concept": "prki2i1land",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "In Germany",
+              "label_de": "In Deutschland"
+            },
+            {
+              "value": 2,
+              "label": "Abroad",
+              "label_de": "Im Ausland"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 7,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "8": {
+      "question": "8",
+      "name": "8",
+      "label": "Do you intend to get vaccinated against the coronavirus disease (COVID-19)?",
+      "label_de": "Haben Sie vor, sich gegen die Coronavirus-Erkrankung (Covid-19) impfen zu lassen?",
+      "items": [
+        {
+          "item": "prki2iabsi",
+          "text": "Do you intend to get vaccinated against the coronavirus disease (COVID-19)?",
+          "text_de": "Haben Sie vor, sich gegen die Coronavirus-Erkrankung (Covid-19) impfen zu lassen?",
+          "filter": "3;pcovimpf_n=2",
+          "concept": "prki2iabsi",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Definitely get vaccinated",
+              "label_de": "Auf jeden Fall impfen"
+            },
+            {
+              "value": 2,
+              "label": "Probably get vaccinated",
+              "label_de": "Eher impfen"
+            },
+            {
+              "value": 3,
+              "label": "Undecided",
+              "label_de": "Unentschlossen"
+            },
+            {
+              "value": 4,
+              "label": "Probably not get vaccinated",
+              "label_de": "Eher nicht impfen"
+            },
+            {
+              "value": 5,
+              "label": "Definitely not get vaccinated",
+              "label_de": "Auf keinen Fall impfen"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 8,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "9": {
+      "question": "9",
+      "name": "9",
+      "label": "Why aren't you vaccinated against the coronavirus disease (COVID-19)?",
+      "label_de": "Warum sind Sie nicht gegen die Coronavirus-Erkrankung (Covid-19) geimpft?",
+      "items": [
+        {
+          "item": "1",
+          "text": "Why aren't you vaccinated against the coronavirus disease (COVID-19)?",
+          "text_de": "Warum sind Sie nicht gegen die Coronavirus-Erkrankung (Covid-19) geimpft?",
+          "instruction": "Please specify for each statement whether it applies to you personally.",
+          "instruction_de": "Bitte geben Sie jeweils an, ob die Aussagen für Sie persönlich zutreffen.",
+          "filter": "3;pcovimpf_n=2",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "prki2ungei1",
+          "text": "I don't want to get vaccinated.",
+          "text_de": "Ich möchte mich nicht impfen lassen.",
+          "concept": "prki2ungei1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "prki2ungei2",
+          "text": "I don't know how to get a vaccination appointment.",
+          "text_de": "Ich weiß nicht, wie ich einen Impftermin bekomme.",
+          "concept": "prki2ungei2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "prki2ungei3",
+          "text": "Despite my best efforts, it is difficult for me to get a vaccination appointment.",
+          "text_de": "Ich bekomme trotz Bemühungen nur schwer einen Impftermin.",
+          "concept": "prki2ungei3",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "prki2ungei4",
+          "text": "It is difficult for me to get to the vaccination location.",
+          "text_de": "Es ist für mich schwer, den Ort der Impfung zu erreichen.",
+          "concept": "prki2ungei4",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "prki2ungei5",
+          "text": "I don't have enough time to organise getting a vaccination.",
+          "text_de": "Ich habe nicht genug Zeit, mich um eine Impfung zu kümmern.",
+          "concept": "prki2ungei5",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "prki2ungei6",
+          "text": "Language barriers make it difficult for me to get a vaccination.",
+          "text_de": "Sprachliche Barrieren erschweren es mir, eine Impfung zu bekommen.",
+          "concept": "prki2ungei6",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "prki2ungei7",
+          "text": "The vaccine I wanted was not (yet) offered to me.",
+          "text_de": "Der von mir gewünschte Impfstoff wurde mir (noch) nicht angeboten.",
+          "concept": "prki2ungei7",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 7,
+          "number": ""
+        }
+      ],
+      "sn": 9,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "10": {
+      "question": "10",
+      "name": "10",
+      "label": "Regardless of whether or not you are vaccinated: We are interested in what you personally think about the COVID-19 vaccine.",
+      "label_de": "Unabhängig davon, ob Sie geimpft sind oder nicht: Uns interessiert, was Sie persönlich über die Covid-19-Impfung denken.",
+      "items": [
+        {
+          "item": "1",
+          "text": "Regardless of whether or not you are vaccinated: We are interested in what you personally think about the COVID-19 vaccine.",
+          "text_de": "Unabhängig davon, ob Sie geimpft sind oder nicht: Uns interessiert, was Sie persönlich über die Covid-19-Impfung denken.",
+          "instruction": "Please specify for each statement whether it applies to you personally.",
+          "instruction_de": "Bitte geben Sie jeweils an, ob die Aussagen für Sie persönlich zutreffen.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "prki2einst1",
+          "text": "I have complete trust in the safety of the COVID-19 vaccine.",
+          "text_de": "Ich habe vollstes Vertrauen in die Sicherheit der Covid-19-Impfung.",
+          "concept": "prki2einst1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "prki2einst2",
+          "text": "I only trust certain COVID-19 vaccines.",
+          "text_de": "Ich vertraue nur bestimmten Covid-19-Impfstoffen.",
+          "concept": "prki2einst2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "prki2einst3",
+          "text": "COVID-19 is not a major threat, thus vaccinations against COVID-19 are superfluous.",
+          "text_de": "Covid-19 stellt keine große Bedrohung dar, deshalb sind Impfungen gegen Covid-19 überflüssig.",
+          "concept": "prki2einst3",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "prki2einst4",
+          "text": "When I think about getting vaccinated against COVID-19, I carefully weigh up the benefits and risks in order to make the best possible decision.",
+          "text_de": "Wenn ich darüber nachdenke, mich gegen Covid-19 impfen zu lassen, wäge ich sorgfältig Nutzen und Risiken ab, um die bestmögliche Entscheidung zu treffen.",
+          "concept": "prki2einst4",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "prki2einst5",
+          "text": "Vaccination is a community measure to prevent the spread of COVID-19.",
+          "text_de": "Impfen ist eine gemeinschaftliche Maßnahme, um die Verbreitung von Covid-19 zu verhindern.",
+          "concept": "prki2einst5",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "prki2einst6",
+          "text": "It is too much hassle for me to get the COVID-19 vaccine.",
+          "text_de": "Es ist aufwändig für mich, die Covid-19-Impfung zu bekommen.",
+          "concept": "prki2einst6",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 6,
+          "number": ""
+        }
+      ],
+      "sn": 10,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "11": {
+      "question": "11",
+      "name": "11",
+      "label": "How would you describe your current health?",
+      "label_de": "Wie würden Sie Ihren gegenwärtigen Gesundheitszustand beschreiben?",
+      "items": [
+        {
+          "item": "ple0008",
+          "text": "How would you describe your current health?",
+          "text_de": "Wie würden Sie Ihren gegenwärtigen Gesundheitszustand beschreiben?",
+          "concept": "pges01",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Very good",
+              "label_de": "Sehr gut"
+            },
+            {
+              "value": 2,
+              "label": "Good",
+              "label_de": "Gut"
+            },
+            {
+              "value": 3,
+              "label": "Satisfactory",
+              "label_de": "Zufriedenstellend"
+            },
+            {
+              "value": 4,
+              "label": "Poor",
+              "label_de": "Weniger gut"
+            },
+            {
+              "value": 5,
+              "label": "Bad",
+              "label_de": "Schlecht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 11,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "12": {
+      "question": "12",
+      "name": "12",
+      "label": "If you have to climb stairs, i.e. walk up several floors: Does this affect your state of health severely, a little or not at all?",
+      "label_de": "Wenn Sie Treppen steigen müssen, also mehrere Stockwerke zu Fuß hochgehen: Beeinträchtigt Sie dabei Ihr Gesundheitszustand stark, ein wenig oder gar nicht?",
+      "items": [
+        {
+          "item": "ple0004",
+          "text": "If you have to climb stairs, i.e. walk up several floors: Does this affect your state of health severely, a little or not at all?",
+          "text_de": "Wenn Sie Treppen steigen müssen, also mehrere Stockwerke zu Fuß hochgehen: Beeinträchtigt Sie dabei Ihr Gesundheitszustand stark, ein wenig oder gar nicht?",
+          "concept": "pges02",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "A lot",
+              "label_de": "Stark"
+            },
+            {
+              "value": 2,
+              "label": "A little",
+              "label_de": "Ein wenig"
+            },
+            {
+              "value": 3,
+              "label": "Not at all",
+              "label_de": "Gar nicht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 12,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "13": {
+      "question": "13",
+      "name": "13",
+      "label": "How do you cope with other strenuous daily tasks, i.e. if you have to lift something heavy or have to move around a lot? When this happens, how much does it affect your health?",
+      "label_de": "Und wie ist das mit anderen anstrengenden Tätigkeiten im Alltag, wenn man z. B. etwas Schweres heben muss oder Beweglichkeit braucht: Beeinträchtigt Sie dabei Ihr Gesundheitszustand stark, ein wenig oder gar nicht?",
+      "items": [
+        {
+          "item": "ple0005",
+          "text": "How do you cope with other strenuous daily tasks, i.e. if you have to lift something heavy or have to move around a lot? When this happens, how much does it affect your health?",
+          "text_de": "Und wie ist das mit anderen anstrengenden Tätigkeiten im Alltag, wenn man z. B. etwas Schweres heben muss oder Beweglichkeit braucht: Beeinträchtigt Sie dabei Ihr Gesundheitszustand stark, ein wenig oder gar nicht?",
+          "concept": "pges03",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "A lot",
+              "label_de": "Stark"
+            },
+            {
+              "value": 2,
+              "label": "A little",
+              "label_de": "Ein wenig"
+            },
+            {
+              "value": 3,
+              "label": "Not at all",
+              "label_de": "Gar nicht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 13,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "14": {
+      "question": "14",
+      "name": "14",
+      "label": "Please think about the last four weeks. How often was it the case in this time ...",
+      "label_de": "Bitte denken Sie einmal an die letzten vier Wochen. Wie oft kam es in der Zeit vor, ...",
+      "items": [
+        {
+          "text": "Please think about the last four weeks. How often was it the case in this time ...",
+          "text_de": "Bitte denken Sie einmal an die letzten vier Wochen. Wie oft kam es in der Zeit vor, ...",
+          "scale": "txt",
+          "sn": 0,
+          "item": "root",
+          "number": ""
+        },
+        {
+          "item": "ple0026",
+          "text": "... that you felt rushed or under time pressure?",
+          "text_de": "... dass Sie sich gehetzt oder unter Zeitdruck fühlten?",
+          "concept": "pges04",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Greatly",
+              "label_de": "Immer"
+            },
+            {
+              "value": 2,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Almost never",
+              "label_de": "Fast nie"
+            },
+            {
+              "value": 5,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "ple0027",
+          "text": "... that you felt depressed and miserable?",
+          "text_de": "... dass Sie sich niedergeschlagen und trübsinnig fühlten?",
+          "concept": "pges05",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Greatly",
+              "label_de": "Immer"
+            },
+            {
+              "value": 2,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Almost never",
+              "label_de": "Fast nie"
+            },
+            {
+              "value": 5,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "ple0028",
+          "text": "... that you felt calm and even-tempered?",
+          "text_de": "... dass Sie sich ruhig und ausgeglichen fühlten?",
+          "concept": "pges06",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Greatly",
+              "label_de": "Immer"
+            },
+            {
+              "value": 2,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Almost never",
+              "label_de": "Fast nie"
+            },
+            {
+              "value": 5,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "ple0029",
+          "text": "... that you felt like you had a lot of energy?",
+          "text_de": "... dass Sie jede Menge Energie verspürten?",
+          "concept": "pges07",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Greatly",
+              "label_de": "Immer"
+            },
+            {
+              "value": 2,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Almost never",
+              "label_de": "Fast nie"
+            },
+            {
+              "value": 5,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "ple0030",
+          "text": "... that you had severe physical pain?",
+          "text_de": "... dass Sie starke körperliche Schmerzen hatten?",
+          "concept": "pges08",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Greatly",
+              "label_de": "Immer"
+            },
+            {
+              "value": 2,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Almost never",
+              "label_de": "Fast nie"
+            },
+            {
+              "value": 5,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "... that because of health problems of a physical nature, in your work or everyday activities,",
+          "text_de": "... dass Sie wegen gesundheitlicher Probleme körperlicher Art in Ihrer Arbeit oder Ihren alltäglichen Beschäftigungen",
+          "scale": "txt",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "ple0031",
+          "text": "... you have managed less than you actually wanted?",
+          "text_de": "... weniger geschafft haben als Sie eigentlich wollten?",
+          "concept": "pges09",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Greatly",
+              "label_de": "Immer"
+            },
+            {
+              "value": 2,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Almost never",
+              "label_de": "Fast nie"
+            },
+            {
+              "value": 5,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "ple0032",
+          "text": "... you were restricted in the nature of your activities?",
+          "text_de": "... in der Art Ihrer Tätigkeiten eingeschränkt waren?",
+          "concept": "pges10",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Greatly",
+              "label_de": "Immer"
+            },
+            {
+              "value": 2,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Almost never",
+              "label_de": "Fast nie"
+            },
+            {
+              "value": 5,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 8,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "... that because of psychological or emotional problems, in your work or your everyday activities",
+          "text_de": "... dass Sie wegen seelischer oder emotionaler Probleme in Ihrer Arbeit oder Ihren alltäglichen Beschäftigungen",
+          "scale": "txt",
+          "sn": 9,
+          "number": ""
+        },
+        {
+          "item": "ple0033",
+          "text": "... you have managed less than you actually wanted?",
+          "text_de": "... weniger geschafft haben als Sie eigentlich wollten?",
+          "concept": "pges11",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Greatly",
+              "label_de": "Immer"
+            },
+            {
+              "value": 2,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Almost never",
+              "label_de": "Fast nie"
+            },
+            {
+              "value": 5,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 10,
+          "number": ""
+        },
+        {
+          "item": "ple0034",
+          "text": "... you performed your work or activity less carefully than usual?",
+          "text_de": "... Ihre Arbeit oder Tätigkeit weniger sorgfältig als sonst gemacht haben?",
+          "concept": "pges12",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Greatly",
+              "label_de": "Immer"
+            },
+            {
+              "value": 2,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Almost never",
+              "label_de": "Fast nie"
+            },
+            {
+              "value": 5,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 11,
+          "number": ""
+        },
+        {
+          "item": "ple0035",
+          "text": "... that you were restricted in your social contacts, e.g. with friends, acquaintances or relatives, due to health or psychological problems?",
+          "text_de": "... dass Sie wegen gesundheitlicher oder seelischer Probleme in Ihren sozialen Kontakten, z. B. mit Freunden, Bekannten oder Verwandten, eingeschränkt waren?",
+          "concept": "pges13",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Greatly",
+              "label_de": "Immer"
+            },
+            {
+              "value": 2,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Almost never",
+              "label_de": "Fast nie"
+            },
+            {
+              "value": 5,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 12,
+          "number": ""
+        }
+      ],
+      "sn": 14,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "15": {
+      "question": "15",
+      "name": "15",
+      "label": "Compared to the time before the coronavirus pandemic (i.e. before March 2020), how would you describe your current state of health?",
+      "label_de": "Verglichen mit der Zeit vor der Corona-Pandemie (also vor März 2020), wie würden Sie Ihren derzeitigen Gesundheitszustand beschreiben?",
+      "items": [
+        {
+          "item": "prki2ges01",
+          "text": "Compared to the time before the coronavirus pandemic (i.e. before March 2020), how would you describe your current state of health?",
+          "text_de": "Verglichen mit der Zeit vor der Corona-Pandemie (also vor März 2020), wie würden Sie Ihren derzeitigen Gesundheitszustand beschreiben?",
+          "concept": "prki2ges01",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Much better",
+              "label_de": "Viel besser"
+            },
+            {
+              "value": 2,
+              "label": "Slightly better",
+              "label_de": "Etwas besser"
+            },
+            {
+              "value": 3,
+              "label": "Around the same",
+              "label_de": "Etwa gleich"
+            },
+            {
+              "value": 4,
+              "label": "Slightly worse",
+              "label_de": "Etwas schlechter"
+            },
+            {
+              "value": 5,
+              "label": "Much worse",
+              "label_de": "Viel schlechter"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 15,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "16": {
+      "question": "16",
+      "name": "16",
+      "label": " Have you experienced recurring or permanent complaints in the last 6 months? Please report all complaints, regardless of whether you have had COVID-19. ",
+      "label_de": "Hatten Sie in den letzten 6 Monaten wiederkehrende oder dauerhafte Beschwerden? Bitte berichten Sie alle Beschwerden, unabhängig davon, ob Sie an Covid-19 erkrankt waren.",
+      "items": [
+        {
+          "item": "1",
+          "text": " Have you experienced recurring or permanent complaints in the last 6 months? Please report all complaints, regardless of whether you have had COVID-19. ",
+          "text_de": "Hatten Sie in den letzten 6 Monaten wiederkehrende oder dauerhafte Beschwerden? Bitte berichten Sie alle Beschwerden, unabhängig davon, ob Sie an Covid-19 erkrankt waren.",
+          "instruction": "Please indicate all applicable options in each line.",
+          "instruction_de": "Bitte geben Sie in jeder Zeile alles Zutreffende an.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "v6_1_n",
+          "text": "Fever above 38°C",
+          "text_de": "Fieber über 38°C",
+          "concept": "v6_1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "v6_1a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_1_n=1",
+          "concept": "v6_1a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "v6_5_n",
+          "text": "Cough",
+          "text_de": "Husten",
+          "concept": "v6_5",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "v6_5a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_5_n=1",
+          "concept": "v6_5a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "v6_2_n",
+          "text": "Respiratory distress, shortness of breath",
+          "text_de": "Atemnot, Kurzatmigkeit",
+          "concept": "v6_2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "v6_2a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_2_n=1",
+          "concept": "v6_2a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "v6_6_n",
+          "text": "Pain when breathing",
+          "text_de": "Schmerzen beim Atmen",
+          "concept": "v6_6",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "v6_6a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_6_n=1",
+          "concept": "v6_6a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 8,
+          "number": ""
+        },
+        {
+          "item": "v6_11",
+          "text": "Chest pains",
+          "text_de": "Brustschmerzen",
+          "concept": "v6_11",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 9,
+          "number": ""
+        },
+        {
+          "item": "v6_11a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_11=1",
+          "concept": "v6_11a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 10,
+          "number": ""
+        },
+        {
+          "item": "v6_7_n",
+          "text": "Sore throat",
+          "text_de": "Halsschmerzen",
+          "concept": "v6_7",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 11,
+          "number": ""
+        },
+        {
+          "item": "v6_7a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_7_n=1",
+          "concept": "v6_7a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 12,
+          "number": ""
+        },
+        {
+          "item": "v6_4_n",
+          "text": "Runny nose",
+          "text_de": "Schnupfen",
+          "concept": "v6_4",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 13,
+          "number": ""
+        },
+        {
+          "item": "v6_4a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_4_n=1",
+          "concept": "v6_4a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 14,
+          "number": ""
+        },
+        {
+          "item": "v6_8_n",
+          "text": "Impaired sense of smell or taste",
+          "text_de": "Geruchs- oder Geschmacksstörung",
+          "concept": "v6_8",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 15,
+          "number": ""
+        },
+        {
+          "item": "v6_8a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_8_n=1",
+          "concept": "v6_8a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 16,
+          "number": ""
+        },
+        {
+          "item": "v6_12",
+          "text": "Loss of appetite",
+          "text_de": "Appetitlosigkeit",
+          "concept": "v6_12",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 17,
+          "number": ""
+        },
+        {
+          "item": "v6_12a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_12=1",
+          "concept": "v6_12a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 18,
+          "number": ""
+        },
+        {
+          "item": "v6_13",
+          "text": "Exhaustion",
+          "text_de": "Erschöpfung",
+          "concept": "v6_13",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 19,
+          "number": ""
+        },
+        {
+          "item": "v6_13a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_13=1",
+          "concept": "v6_13a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 20,
+          "number": ""
+        },
+        {
+          "item": "v6_14",
+          "text": "Concentration problems",
+          "text_de": "Konzentrationsstörungen",
+          "concept": "v6_14",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 21,
+          "number": ""
+        },
+        {
+          "item": "v6_14a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_14=1",
+          "concept": "v6_14a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 22,
+          "number": ""
+        },
+        {
+          "item": "v6_14b",
+          "text": "Headaches",
+          "text_de": "Kopfschmerzen",
+          "concept": "v6_14b",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 23,
+          "number": ""
+        },
+        {
+          "item": "v6_14ba",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_14b=1",
+          "concept": "v6_14ba",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 24,
+          "number": ""
+        },
+        {
+          "item": "v6_15",
+          "text": "Dizziness",
+          "text_de": "Schwindelgefühle",
+          "concept": "v6_15",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 25,
+          "number": ""
+        },
+        {
+          "item": "v6_15a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_15=1",
+          "concept": "v6_15a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 26,
+          "number": ""
+        },
+        {
+          "item": "v6_16",
+          "text": "Nausea or upset stomach",
+          "text_de": "Übelkeit oder Magenverstimmung",
+          "concept": "v6_16",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 27,
+          "number": ""
+        },
+        {
+          "item": "v6_16a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_16=1",
+          "concept": "v6_16a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 28,
+          "number": ""
+        },
+        {
+          "item": "v6_17",
+          "text": "Hot flushes or shivering",
+          "text_de": "Hitzewallungen oder Kälteschauer",
+          "concept": "v6_17",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 29,
+          "number": ""
+        },
+        {
+          "item": "v6_17a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_17=1",
+          "concept": "v6_17a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 30,
+          "number": ""
+        },
+        {
+          "item": "v6_18",
+          "text": "Insomnia",
+          "text_de": "Schlafstörungen",
+          "concept": "v6_18",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 31,
+          "number": ""
+        },
+        {
+          "item": "v6_18a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_18=1",
+          "concept": "v6_18a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 32,
+          "number": ""
+        },
+        {
+          "item": "v6_19",
+          "text": "Muscle pains (rheumatic pains)",
+          "text_de": "Muskelschmerzen (Gliederreißen)",
+          "concept": "v6_19",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 33,
+          "number": ""
+        },
+        {
+          "item": "v6_19a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_19=1",
+          "concept": "v6_19a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 34,
+          "number": ""
+        },
+        {
+          "item": "v6_20",
+          "text": "Numbness or a burning sensation in your feet or legs",
+          "text_de": "Taubheit oder Brennen in den Füßen oder Beinen",
+          "concept": "v6_20",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 35,
+          "number": ""
+        },
+        {
+          "item": "v6_20a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_20=1",
+          "concept": "v6_20a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 36,
+          "number": ""
+        },
+        {
+          "item": "v6_21",
+          "text": "Weakness in your legs",
+          "text_de": "Schwäche in den Beinen",
+          "concept": "v6_21",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 37,
+          "number": ""
+        },
+        {
+          "item": "v6_21a",
+          "text": "Do you still suffer from these complaints?",
+          "text_de": "[Ja] Bestehen diese Beschwerden bis heute?",
+          "filter": "16;v6_21=1",
+          "concept": "v6_21a",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 38,
+          "number": ""
+        }
+      ],
+      "sn": 16,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "17": {
+      "question": "17",
+      "name": "17",
+      "label": "Have these complaints affected the following areas?",
+      "label_de": "Haben sich diese Beschwerden auf folgende Bereiche ausgewirkt?",
+      "items": [
+        {
+          "item": "1",
+          "text": "Have these complaints affected the following areas?",
+          "text_de": "Haben sich diese Beschwerden auf folgende Bereiche ausgewirkt?",
+          "instruction": "Please provide a response in each line.",
+          "instruction_de": "Bitte machen Sie in jeder Zeile eine Angabe.",
+          "filter": "16;v6_1_n=1 | v6_5_n=1 |  v6_2_n=1 |  v6_6_n=1 | v6_11=1 | v6_7_n=1 |  v6_4_n=1 |  v6_8_n=1 | v6_12 | v6_13=1 |  v6_14=1 |  v6_14b=1 |  v6_15=1 |  v6_16=1 |   v6_17=1 |  v6_18=1 |  v6_19=1  |  v6_20=1 |  v6_21=1",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "prki2ausw1",
+          "text": "Employment",
+          "text_de": "Erwerbstätigkeit",
+          "instruction": "If you have specified “Yes” to the “Employment” area, please respond to question 18 next. \nOtherwise, please continue with question 19",
+          "instruction_de": "Wenn Sie zum Bereich „Erwerbstätigkeit“ „Ja“ angegeben haben, beantworten Sie bitte als nächstes Frage 18. \nAnsonsten bitte weiter mit Frage 19",
+          "concept": "prki2ausw1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": 3,
+              "label": "Does not apply",
+              "label_de": "Trifft nicht zu"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "prki2ausw2",
+          "text": "Job hunting",
+          "text_de": "Arbeitssuche",
+          "concept": "prki2ausw2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": 3,
+              "label": "Does not apply",
+              "label_de": "Trifft nicht zu"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "prki2ausw3",
+          "text": "Apprenticeship / training",
+          "text_de": "Ausbildung / Weiterbildung",
+          "concept": "prki2ausw3",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": 3,
+              "label": "Does not apply",
+              "label_de": "Trifft nicht zu"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "prki2ausw4",
+          "text": "School attendance / degree course",
+          "text_de": "Schulbesuch / Studium",
+          "concept": "prki2ausw4",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": 3,
+              "label": "Does not apply",
+              "label_de": "Trifft nicht zu"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        }
+      ],
+      "sn": 17,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "18": {
+      "question": "18",
+      "name": "18",
+      "label": "How have these complaints affected your  employment?",
+      "label_de": "Inwiefern haben sich diese Beschwerden auf Ihre Erwerbstätigkeit ausgewirkt?",
+      "items": [
+        {
+          "item": "1",
+          "text": "How have these complaints affected your  employment?",
+          "text_de": "Inwiefern haben sich diese Beschwerden auf Ihre Erwerbstätigkeit ausgewirkt?",
+          "instruction": "Please select all answers that apply.",
+          "instruction_de": "Bitte geben Sie alles Zutreffende an.",
+          "filter": "17;prki2ausw1=1",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "prki2ausw1a",
+          "text": "I could not / can no longer perform these activities at all",
+          "text_de": "Ich konnte / kann diesen Tätigkeiten überhaupt nicht mehr nachgehen",
+          "concept": "prki2ausw1a",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "prki2ausw1b",
+          "text": "I had to / must partially reduce my number of hours",
+          "text_de": "Ich musste / muss meine Stundenanzahl teilweise reduzieren",
+          "concept": "prki2ausw1b",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "prki2ausw1c",
+          "text": "I had to / must reduce or change my tasks",
+          "text_de": "Ich musste / muss meine Aufgaben reduzieren oder ändern",
+          "concept": "prki2ausw1c",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        }
+      ],
+      "sn": 18,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "19": {
+      "question": "19",
+      "name": "19",
+      "label": "Have you gone to a doctor in the last three months?  If so, please state how many times.",
+      "label_de": "Haben Sie in den letzten 3 Monaten Ärzte aufgesucht? Wenn ja, geben Sie bitte an wie häufig.",
+      "items": [
+        {
+          "item": "1",
+          "text": "Have you gone to a doctor in the last three months?  If so, please state how many times.",
+          "text_de": "Haben Sie in den letzten 3 Monaten Ärzte aufgesucht? Wenn ja, geben Sie bitte an wie häufig.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "ple0072",
+          "text": "Number of visits to a doctor in the last three months @input",
+          "text_de": "Zahl aller Arztbesuche in den letzten 3 Monaten:",
+          "concept": "pdr1",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "ple0073",
+          "text": "Have not gone to the doctor in the last three months",
+          "text_de": "Keinen Arzt in Anspruch genommen",
+          "concept": "pdr2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        }
+      ],
+      "sn": 19,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "20": {
+      "question": "20",
+      "name": "20",
+      "label": "How was it for you in terms of hospitalisations this year? Have you been admitted to hospital once or several times for at least one night this year (2021)?",
+      "label_de": "Und wie war das mit Krankenhausaufenthalten in diesem Jahr. Wurden Sie in diesem Jahr (2021) einmal oder mehrmals für mindestens eine Nacht im Krankenhaus aufgenommen?",
+      "items": [
+        {
+          "item": "ple0053",
+          "text": "How was it for you in terms of hospitalisations this year? Have you been admitted to hospital once or several times for at least one night this year (2021)?",
+          "text_de": "Und wie war das mit Krankenhausaufenthalten in diesem Jahr. Wurden Sie in diesem Jahr (2021) einmal oder mehrmals für mindestens eine Nacht im Krankenhaus aufgenommen?",
+          "instruction": "Please continue with question 22",
+          "instruction_de": "Bitte weiter mit Frage 22",
+          "goto": "2@22",
+          "concept": "pkr1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 20,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "21": {
+      "question": "21",
+      "name": "21",
+      "label": "How many nights have you spent in hospital this year, thus 2021?",
+      "label_de": "Wie viele Nächte haben Sie alles in allem dieses Jahr, also 2021, im Krankenhaus verbracht?",
+      "items": [
+        {
+          "item": "1",
+          "text": "How many nights have you spent in hospital this year, thus 2021?",
+          "text_de": "Wie viele Nächte haben Sie alles in allem dieses Jahr, also 2021, im Krankenhaus verbracht?",
+          "filter": "20;pkr1_n =1",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "ple0056",
+          "text": "Nights: @input",
+          "text_de": "Nächte:",
+          "concept": "pkr2",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        }
+      ],
+      "sn": 21,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "22": {
+      "question": "22",
+      "name": "22",
+      "label": "On how many days in a typical week do you walk or cycle to get from place to place (e.g. to go to work, shopping or for leisure activities)?",
+      "label_de": "An wie vielen Tagen in einer typischen Woche gehen Sie zu Fuß oder fahren Sie mit dem Fahrrad, um von Ort zu Ort zu gelangen (z. B. zur Arbeit, zum Einkaufen oder in der Freizeit)?",
+      "items": [
+        {
+          "item": "1",
+          "text": "On how many days in a typical week do you walk or cycle to get from place to place (e.g. to go to work, shopping or for leisure activities)?",
+          "text_de": "An wie vielen Tagen in einer typischen Woche gehen Sie zu Fuß oder fahren Sie mit dem Fahrrad, um von Ort zu Ort zu gelangen (z. B. zur Arbeit, zum Einkaufen oder in der Freizeit)?",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "prki2weg1",
+          "text": "Days per week:",
+          "text_de": "Tage pro Woche:",
+          "concept": "prki2weg1",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "prki2weg2",
+          "text": "Never or less than 1 day per week",
+          "text_de": "Nie oder seltener als 1 Tag pro Woche",
+          "concept": "prki2weg2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        }
+      ],
+      "sn": 22,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "23": {
+      "question": "23",
+      "name": "23",
+      "label": "Since the beginning of the coronavirus pandemic (March 2020), has there been any change in the distances that you walk or cycle to get from place to place (e.g. to go to work, shopping or for leisure activities)?",
+      "label_de": "Hat sich seit Beginn der Corona-Pandemie (März 2020) der Umfang Ihrer Fuß- oder Fahrradstrecken, um von Ort zu Ort zu gelangen, verändert (z. B. zur Arbeit, zum Einkaufen oder in der Freizeit)?",
+      "items": [
+        {
+          "item": "prki2weg3",
+          "text": "Since the beginning of the coronavirus pandemic (March 2020), has there been any change in the distances that you walk or cycle to get from place to place (e.g. to go to work, shopping or for leisure activities)?",
+          "text_de": "Hat sich seit Beginn der Corona-Pandemie (März 2020) der Umfang Ihrer Fuß- oder Fahrradstrecken, um von Ort zu Ort zu gelangen, verändert (z. B. zur Arbeit, zum Einkaufen oder in der Freizeit)?",
+          "concept": "prki2weg3",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "No, I walk / cycle just as much",
+              "label_de": "Nein, ich gehe / fahre genauso viel"
+            },
+            {
+              "value": 2,
+              "label": "Yes, I walk / cycle less",
+              "label_de": "Ja, ich gehe / fahre weniger"
+            },
+            {
+              "value": 3,
+              "label": "Yes, I walk / cycle more",
+              "label_de": "Ja, ich gehe / fahre mehr"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 23,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "24": {
+      "question": "24",
+      "name": "24",
+      "label": "If you walk or cycle: What are the reasons for this?",
+      "label_de": "Wenn Sie zu Fuß gehen oder mit dem Fahrrad fahren: Was sind die Gründe dafür?",
+      "items": [
+        {
+          "item": "1",
+          "text": "If you walk or cycle: What are the reasons for this?",
+          "text_de": "Wenn Sie zu Fuß gehen oder mit dem Fahrrad fahren: Was sind die Gründe dafür?",
+          "instruction": "Please select all answers that apply.",
+          "instruction_de": "Bitte geben Sie alles Zutreffende an.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "prki2wgr01",
+          "text": "I have been avoiding public transport since the coronavirus pandemic (e.g. bus, tram, train)",
+          "text_de": "Ich vermeide seit der Corona-Pandemie den öffentlichen Nahverkehr (z. B. Bus, S-Bahn, Zug)",
+          "concept": "prki2wgr01",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "prki2wgr02",
+          "text": "I try to be physically active",
+          "text_de": "Ich versuche, körperlich aktiv zu sein",
+          "concept": "prki2wgr02",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "prki2wgr03",
+          "text": "It’s fast",
+          "text_de": "Ist schnell",
+          "concept": "prki2wgr03",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "prki2wgr04",
+          "text": "It’s cheap",
+          "text_de": "Ist kostengünstig",
+          "concept": "prki2wgr04",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "prki2wgr05",
+          "text": "It’s good for my health",
+          "text_de": "Ist gut für meine Gesundheit",
+          "concept": "prki2wgr05",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "prki2wgr06",
+          "text": "It’s good for the climate and environment",
+          "text_de": "Ist gut für Klima und Umwelt",
+          "concept": "prki2wgr06",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "prki2wgr07",
+          "text": "The public transport system is inadequate",
+          "text_de": "Es gibt kein ausreichendes Angebot an öffentlichen Verkehrsmitteln",
+          "concept": "prki2wgr07",
+          "scale": "bin",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "prki2wgr08",
+          "text": "I don't have a driving licence",
+          "text_de": "Ich habe keinen Führerschein",
+          "concept": "prki2wgr08",
+          "scale": "bin",
+          "sn": 8,
+          "number": ""
+        },
+        {
+          "item": "prki2wgr09",
+          "text": "I don't own a car",
+          "text_de": "Ich besitze kein Auto",
+          "concept": "prki2wgr09",
+          "scale": "bin",
+          "sn": 9,
+          "number": ""
+        },
+        {
+          "item": "prki2wgr10",
+          "text": "Other reasons",
+          "text_de": "Andere Gründe",
+          "concept": "prki2wgr10",
+          "scale": "bin",
+          "sn": 10,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 11,
+          "number": ""
+        }
+      ],
+      "sn": 24,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "25": {
+      "question": "25",
+      "name": "25",
+      "label": "Do you or does any other person in your household have a pet/pets?",
+      "label_de": "Haben Sie oder eine andere Person in Ihrem Haushalt ein oder mehrere Tiere?",
+      "items": [
+        {
+          "item": "prki2tier",
+          "text": "Do you or does any other person in your household have a pet/pets?",
+          "text_de": "Haben Sie oder eine andere Person in Ihrem Haushalt ein oder mehrere Tiere?",
+          "instruction": "Please continue with question 27",
+          "instruction_de": "Bitte weiter mit Frage 27",
+          "goto": "2@27",
+          "concept": "htier",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": 3,
+              "label": "Don't know",
+              "label_de": "Weiß nicht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 25,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "26": {
+      "question": "26",
+      "name": "26",
+      "label": "Which pet/pets do you have in your household?",
+      "label_de": "Welche Tiere gibt es in Ihrem Haushalt?",
+      "items": [
+        {
+          "item": "prki2tie",
+          "text": "Which pet/pets do you have in your household?",
+          "text_de": "Welche Tiere gibt es in Ihrem Haushalt?",
+          "filter": "25;prki2tier=1",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "prki2tier1",
+          "text": "Dog",
+          "text_de": "Hund",
+          "concept": "htier1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "prki2tier2",
+          "text": "Cat",
+          "text_de": "Katze",
+          "concept": "htier2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "prki2tier8",
+          "text": "Rabbit",
+          "text_de": "Hase / Kaninchen",
+          "concept": "htier8",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "prki2tier9",
+          "text": "Guinea pig / hamster / mouse",
+          "text_de": "Meerschweinchen / Hamster / Mäuse",
+          "concept": "htier9",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "prki2tier3",
+          "text": "Bird",
+          "text_de": "Vogel",
+          "concept": "htier3",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "prki2tier4",
+          "text": "Fish",
+          "text_de": "Fische",
+          "concept": "htier4",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "prki2tier5",
+          "text": "Horse / pony",
+          "text_de": "Pferd / Pony",
+          "concept": "htier5",
+          "scale": "bin",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "prki2tier6",
+          "text": "Other pets",
+          "text_de": "Sonstige Haustiere",
+          "concept": "htier6",
+          "scale": "bin",
+          "sn": 8,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 9,
+          "number": ""
+        }
+      ],
+      "sn": 26,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "27": {
+      "question": "27",
+      "name": "27",
+      "label": "How well or badly do you feel informed about the following issues?",
+      "label_de": "Wie gut oder schlecht fühlen Sie sich zu folgenden Themen informiert?",
+      "items": [
+        {
+          "item": "1",
+          "text": "How well or badly do you feel informed about the following issues?",
+          "text_de": "Wie gut oder schlecht fühlen Sie sich zu folgenden Themen informiert?",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "prki2infor1",
+          "text": "Coronavirus-related events",
+          "text_de": "Geschehen zum Coronavirus",
+          "concept": "prki2infor1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "1 Very well",
+              "label_de": "1 Sehr gut"
+            },
+            {
+              "value": 2,
+              "label": "2",
+              "label_de": "2"
+            },
+            {
+              "value": 3,
+              "label": "3",
+              "label_de": "3"
+            },
+            {
+              "value": 4,
+              "label": "4",
+              "label_de": "4"
+            },
+            {
+              "value": 5,
+              "label": "5 Very badly",
+              "label_de": "5 Sehr schlecht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "prki2infor2",
+          "text": "Vaccination against the coronavirus",
+          "text_de": "Impfen gegen das Coronavirus",
+          "concept": "prki2infor2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "1 Very well",
+              "label_de": "1 Sehr gut"
+            },
+            {
+              "value": 2,
+              "label": "2",
+              "label_de": "2"
+            },
+            {
+              "value": 3,
+              "label": "3",
+              "label_de": "3"
+            },
+            {
+              "value": 4,
+              "label": "4",
+              "label_de": "4"
+            },
+            {
+              "value": 5,
+              "label": "5 Very badly",
+              "label_de": "5 Sehr schlecht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        }
+      ],
+      "sn": 27,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "28": {
+      "question": "28",
+      "name": "28",
+      "label": "There are many ways to learn about the coronavirus and the pandemic. How often do you use the following sources for this purpose?",
+      "label_de": "Es gibt viele Möglichkeiten sich über das Coronavirus und die Pandemie zu informieren. Wie häufig nutzen Sie dafür die folgenden Quellen?",
+      "items": [
+        {
+          "item": "1",
+          "text": "There are many ways to learn about the coronavirus and the pandemic. How often do you use the following sources for this purpose?",
+          "text_de": "Es gibt viele Möglichkeiten sich über das Coronavirus und die Pandemie zu informieren. Wie häufig nutzen Sie dafür die folgenden Quellen?",
+          "instruction": "Please provide only one response in each line.",
+          "instruction_de": "Bitte machen Sie in jeder Zeile nur eine Angabe.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "prki2iqu01",
+          "text": "Conversations with family, friends or acquaintances",
+          "text_de": "Gespräche mit der Familie, mit Freunden oder Bekannten",
+          "concept": "prki2iqu01",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": 2,
+              "label": "Occasionally",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 3,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "prki2iqu02",
+          "text": "Conversations with doctors",
+          "text_de": "Gespräche mit Ärztinnen / Ärzten",
+          "concept": "prki2iqu02",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": 2,
+              "label": "Occasionally",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 3,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "prki2iqu03",
+          "text": "Conversations with qualified staff in pharmacies",
+          "text_de": "Gespräche mit Fachpersonal in Apotheken",
+          "concept": "prki2iqu03",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": 2,
+              "label": "Occasionally",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 3,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "prki2iqu04",
+          "text": "TV, radio",
+          "text_de": "Fernsehen, Radio",
+          "concept": "prki2iqu04",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": 2,
+              "label": "Occasionally",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 3,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "prki2iqu05",
+          "text": "Daily newspapers, magazines or online news sites (e.g. Spiegel online, BILD.de)",
+          "text_de": "Tageszeitungen, Zeitschriften oder Online-News-Seiten (z. B. Spiegel online, BILD.de)",
+          "concept": "prki2iqu05",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": 2,
+              "label": "Occasionally",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 3,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "prki2iqu06",
+          "text": "Information from social networks, messenger services (e.g. YouTube, Telegram)",
+          "text_de": "Informationen aus sozialen Netzwerken, Messenger-Diensten (z. B. YouTube, Telegram)",
+          "concept": "prki2iqu06",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": 2,
+              "label": "Occasionally",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 3,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "prki2iqu08",
+          "text": "Brochures or websites of authorities, e.g. state government, German Ministry of Health (zusammengegencorona.de, rki.de)",
+          "text_de": "Broschüren oder Websites von Behörden, z. B. Landesregierung, Gesundheitsministerium (zusammengegencorona.de, rki.de)",
+          "concept": "prki2iqu08",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": 2,
+              "label": "Occasionally",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 3,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "prki2iqu09",
+          "text": "Free brochures from health insurance companies, pharmacies and the like (e.g. Apotheken-Umschau)",
+          "text_de": "Kostenlose Broschüren von Krankenkassen, Apotheken und ähnlichen (z. B. Apothekenumschau)",
+          "concept": "prki2iqu09",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": 2,
+              "label": "Occasionally",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 3,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 8,
+          "number": ""
+        },
+        {
+          "item": "prki2iqu10",
+          "text": "Health portals on the Internet (e.B. NetDoktor.de, gesundheit.de)",
+          "text_de": "Gesundheitsportale im Internet (z. B. NetDoktor.de, gesundheit.de)",
+          "concept": "prki2iqu10",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": 2,
+              "label": "Occasionally",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 3,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 9,
+          "number": ""
+        }
+      ],
+      "sn": 28,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "29": {
+      "question": "29",
+      "name": "29",
+      "label": "What mainly convinced you in your decision in favour of or against a COVID-19 vaccination? Regardless of whether you have decided in favour of or against vaccination.",
+      "label_de": "Was hat Sie hauptsächlich in Ihrer Entscheidung für oder gegen eine Covid-19-Impfung überzeugt? Unabhängig davon, ob Sie sich für oder gegen das Impfen entschieden haben.",
+      "items": [
+        {
+          "item": "1",
+          "text": "What mainly convinced you in your decision in favour of or against a COVID-19 vaccination? Regardless of whether you have decided in favour of or against vaccination.",
+          "text_de": "Was hat Sie hauptsächlich in Ihrer Entscheidung für oder gegen eine Covid-19-Impfung überzeugt? Unabhängig davon, ob Sie sich für oder gegen das Impfen entschieden haben.",
+          "instruction": "Please select a response in each line.",
+          "instruction_de": "Bitte kreuzen Sie in jeder Zeile an.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "prki2iueb01",
+          "text": "Conversations with family, friends or acquaintances",
+          "text_de": "Gespräche mit der Familie, mit Freunden oder Bekannten",
+          "concept": "prki2iueb01",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "prki2iueb02",
+          "text": "Conversations with doctors",
+          "text_de": "Gespräche mit Ärztinnen / Ärzten",
+          "concept": "prki2iueb02",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "prki2iueb03",
+          "text": "Conversations with qualified staff in pharmacies",
+          "text_de": "Gespräche mit Fachpersonal in Apotheken",
+          "concept": "prki2iueb03",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "prki2iueb04",
+          "text": "TV, radio",
+          "text_de": "Fernsehen, Radio",
+          "concept": "prki2iueb04",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "prki2iueb05",
+          "text": "Daily newspapers, magazines or online news sites (e.g. Spiegel online, BILD.de)",
+          "text_de": "Tageszeitungen, Zeitschriften oder Online-News-Seiten (z. B. Spiegel online, BILD.de)",
+          "concept": "prki2iueb05",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "prki2iueb06",
+          "text": "Information from social networks, messenger services (e.g. YouTube, Telegram)",
+          "text_de": "Informationen aus sozialen Netzwerken, Messenger-Diensten (z. B. YouTube, Telegram)",
+          "concept": "prki2iueb06",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "prki2iueb08",
+          "text": "Brochures or websites of authorities, e.g. state government, German Ministry of Health (zusammengegencorona.de, rki.de)",
+          "text_de": "Broschüren oder Websites von Behörden, z. B. Landesregierung, Gesundheitsministerium (zusammengegencorona.de, rki.de)",
+          "concept": "prki2iueb08",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "prki2iueb09",
+          "text": "Free brochures from health insurance companies, pharmacies and the like (e.g. Apotheken-Umschau)",
+          "text_de": "Kostenlose Broschüren von Krankenkassen, Apotheken und ähnlichen (z. B. Apothekenumschau)",
+          "concept": "prki2iueb09",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 8,
+          "number": ""
+        },
+        {
+          "item": "prki2iueb10",
+          "text": "Health portals on the Internet (e.B. NetDoktor.de, gesundheit.de)",
+          "text_de": "Gesundheitsportale im Internet (z. B. NetDoktor.de, gesundheit.de)",
+          "concept": "prki2iueb10",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Does not apply at all",
+              "label_de": "Gar nicht zutreffend"
+            },
+            {
+              "value": 2,
+              "label": "Tends not to apply",
+              "label_de": "Eher nicht zutreffend"
+            },
+            {
+              "value": 3,
+              "label": "Partly applicable",
+              "label_de": "Teils / teils zutreffend"
+            },
+            {
+              "value": 4,
+              "label": "Tends to apply",
+              "label_de": "Eher zutreffend"
+            },
+            {
+              "value": 5,
+              "label": "Applies completely",
+              "label_de": "Voll und ganz zutreffend"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 9,
+          "number": ""
+        }
+      ],
+      "sn": 29,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "30": {
+      "question": "30",
+      "name": "30",
+      "label": "In which language do you mainly obtain information about the coronavirus?",
+      "label_de": "In welcher Sprache beziehen Sie hauptsächlich Informationen zum Coronavirus?",
+      "items": [
+        {
+          "item": "prki2ispr",
+          "text": "In which language do you mainly obtain information about the coronavirus?",
+          "text_de": "In welcher Sprache beziehen Sie hauptsächlich Informationen zum Coronavirus?",
+          "concept": "prki2ispr",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "In German",
+              "label_de": "Auf Deutsch"
+            },
+            {
+              "value": 2,
+              "label": "In English",
+              "label_de": "Auf Englisch"
+            },
+            {
+              "value": 3,
+              "label": "In my native language (if it is not German or English)",
+              "label_de": "In meiner Muttersprache (wenn diese nicht Deutsch oder Englisch ist)"
+            },
+            {
+              "value": 4,
+              "label": "In another language",
+              "label_de": "In einer anderen Sprache"
+            },
+            {
+              "value": 5,
+              "label": "I don't look for information about it",
+              "label_de": "Ich informiere mich nicht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 30,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "31": {
+      "question": "31",
+      "name": "31",
+      "label": "How often in the last 6 months have you worried about whether you or people close to you might get sick with COVID-19?",
+      "label_de": "Wie oft haben Sie sich in den letzten 6 Monaten Sorgen darüber gemacht, ob Sie selbst oder Ihnen nahestehende Menschen an Covid-19 erkranken könnten?",
+      "items": [
+        {
+          "item": "prki2krsor",
+          "text": "How often in the last 6 months have you worried about whether you or people close to you might get sick with COVID-19?",
+          "text_de": "Wie oft haben Sie sich in den letzten 6 Monaten Sorgen darüber gemacht, ob Sie selbst oder Ihnen nahestehende Menschen an Covid-19 erkranken könnten?",
+          "concept": "prki2krsor",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Not at all",
+              "label_de": "Überhaupt nicht"
+            },
+            {
+              "value": 2,
+              "label": "Seldom",
+              "label_de": "Selten"
+            },
+            {
+              "value": 3,
+              "label": "Occasionally",
+              "label_de": "Gelegentlich"
+            },
+            {
+              "value": 4,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 5,
+              "label": "Very often",
+              "label_de": "Sehr oft"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 31,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "32": {
+      "question": "32",
+      "name": "32",
+      "label": "How severely has the coronavirus pandemic stressed you out overall? With respect to ...",
+      "label_de": "Wie stark hat Sie die bisherige Corona-Pandemie insgesamt belastet? Im Hinblick auf...",
+      "items": [
+        {
+          "item": "1",
+          "text": "How severely has the coronavirus pandemic stressed you out overall? With respect to ...",
+          "text_de": "Wie stark hat Sie die bisherige Corona-Pandemie insgesamt belastet? Im Hinblick auf...",
+          "instruction": "Please provide only one response in each line.",
+          "instruction_de": "Bitte machen Sie in jeder Zeile nur eine Angabe.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "prki2belas1",
+          "text": "Your family",
+          "text_de": "Ihre Familie",
+          "concept": "prki2belas1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Not stressed out at all",
+              "label_de": "Gar nicht belastet"
+            },
+            {
+              "value": 2,
+              "label": "Slightly stressed out",
+              "label_de": "Wenig belastet"
+            },
+            {
+              "value": 3,
+              "label": "Quite stressed out",
+              "label_de": "Eher belastet"
+            },
+            {
+              "value": 4,
+              "label": "Affected severely",
+              "label_de": "Stark belastet"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply",
+              "label_de": "Trifft nicht zu"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "prki2belas2",
+          "text": "Your relationship",
+          "text_de": "Ihre Partnerschaft",
+          "concept": "prki2belas2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Not stressed out at all",
+              "label_de": "Gar nicht belastet"
+            },
+            {
+              "value": 2,
+              "label": "Slightly stressed out",
+              "label_de": "Wenig belastet"
+            },
+            {
+              "value": 3,
+              "label": "Quite stressed out",
+              "label_de": "Eher belastet"
+            },
+            {
+              "value": 4,
+              "label": "Affected severely",
+              "label_de": "Stark belastet"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply",
+              "label_de": "Trifft nicht zu"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "prki2belas3",
+          "text": "Your economic and financial situation",
+          "text_de": "Ihre wirtschaftliche und finanzielle Situation",
+          "concept": "prki2belas3",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Not stressed out at all",
+              "label_de": "Gar nicht belastet"
+            },
+            {
+              "value": 2,
+              "label": "Slightly stressed out",
+              "label_de": "Wenig belastet"
+            },
+            {
+              "value": 3,
+              "label": "Quite stressed out",
+              "label_de": "Eher belastet"
+            },
+            {
+              "value": 4,
+              "label": "Affected severely",
+              "label_de": "Stark belastet"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply",
+              "label_de": "Trifft nicht zu"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "prki2belas4",
+          "text": "Your social life (e.g. friends, neighbours, relatives)",
+          "text_de": "Ihr soziales Leben (z. B. Freunde, Nachbarn, Verwandte)",
+          "concept": "prki2belas4",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Not stressed out at all",
+              "label_de": "Gar nicht belastet"
+            },
+            {
+              "value": 2,
+              "label": "Slightly stressed out",
+              "label_de": "Wenig belastet"
+            },
+            {
+              "value": 3,
+              "label": "Quite stressed out",
+              "label_de": "Eher belastet"
+            },
+            {
+              "value": 4,
+              "label": "Affected severely",
+              "label_de": "Stark belastet"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply",
+              "label_de": "Trifft nicht zu"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "prki2belas5",
+          "text": "Your work, apprenticeship, school or university attendance",
+          "text_de": "Ihre Arbeit, Ihre Ausbildung, Ihren Schul- oder Hochschulbesuch",
+          "concept": "prki2belas5",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Not stressed out at all",
+              "label_de": "Gar nicht belastet"
+            },
+            {
+              "value": 2,
+              "label": "Slightly stressed out",
+              "label_de": "Wenig belastet"
+            },
+            {
+              "value": 3,
+              "label": "Quite stressed out",
+              "label_de": "Eher belastet"
+            },
+            {
+              "value": 4,
+              "label": "Affected severely",
+              "label_de": "Stark belastet"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply",
+              "label_de": "Trifft nicht zu"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "prki2belas6",
+          "text": "Your personal psychological / emotional well-being",
+          "text_de": "Ihr persönliches psychisches / seelisches Wohlbefinden",
+          "concept": "prki2belas6",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Not stressed out at all",
+              "label_de": "Gar nicht belastet"
+            },
+            {
+              "value": 2,
+              "label": "Slightly stressed out",
+              "label_de": "Wenig belastet"
+            },
+            {
+              "value": 3,
+              "label": "Quite stressed out",
+              "label_de": "Eher belastet"
+            },
+            {
+              "value": 4,
+              "label": "Affected severely",
+              "label_de": "Stark belastet"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply",
+              "label_de": "Trifft nicht zu"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "prki2belas7",
+          "text": "Your activities in your free time (e.g. going out, sports, travelling)",
+          "text_de": "Ihre Aktivitäten in der Freizeit (z. B. Ausgehen, Sport, Reisen)",
+          "concept": "prki2belas7",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Not stressed out at all",
+              "label_de": "Gar nicht belastet"
+            },
+            {
+              "value": 2,
+              "label": "Slightly stressed out",
+              "label_de": "Wenig belastet"
+            },
+            {
+              "value": 3,
+              "label": "Quite stressed out",
+              "label_de": "Eher belastet"
+            },
+            {
+              "value": 4,
+              "label": "Affected severely",
+              "label_de": "Stark belastet"
+            },
+            {
+              "value": 5,
+              "label": "Does not apply",
+              "label_de": "Trifft nicht zu"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 7,
+          "number": ""
+        }
+      ],
+      "sn": 32,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "33": {
+      "question": "33",
+      "name": "33",
+      "label": "How often in the last 4 weeks have you taken the following measures to protect yourself from the coronavirus?",
+      "label_de": "Wie häufig haben Sie die folgenden Maßnahmen in den letzten 4 Wochen ergriffen, um sich vor dem Coronavirus zu schützen?",
+      "items": [
+        {
+          "item": "1",
+          "text": "How often in the last 4 weeks have you taken the following measures to protect yourself from the coronavirus?",
+          "text_de": "Wie häufig haben Sie die folgenden Maßnahmen in den letzten 4 Wochen ergriffen, um sich vor dem Coronavirus zu schützen?",
+          "instruction": "Please provide only one response in each line.",
+          "instruction_de": "Bitte machen Sie in jeder Zeile nur eine Angabe.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "prki2schtz1",
+          "text": "Regular hand washing (at least 20 seconds) and hand disinfection",
+          "text_de": "Regelmäßiges Händewaschen (mindestens 20 Sekunden) und Händedesinfektion",
+          "concept": "prki2schtz1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": 2,
+              "label": "Rarely",
+              "label_de": "Selten"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 5,
+              "label": "Always",
+              "label_de": "Immer"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "prki2schtz2",
+          "text": "Maintaining a distance of at least 1.5 metres from people outside your own household",
+          "text_de": "Abstandhalten von mindestens 1,5 Metern zu Personen außerhalb des eigenen Haushaltes",
+          "concept": "prki2schtz2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": 2,
+              "label": "Rarely",
+              "label_de": "Selten"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 5,
+              "label": "Always",
+              "label_de": "Immer"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "prki2schtz3",
+          "text": "Wearing a medical mask when shopping or travelling on public transport",
+          "text_de": "Tragen einer medizinischen Maske beim Einkaufen oder im öffentlichen Nahverkehr",
+          "concept": "prki2schtz3",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": 2,
+              "label": "Rarely",
+              "label_de": "Selten"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 5,
+              "label": "Always",
+              "label_de": "Immer"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "prki2schtz4",
+          "text": "Ventilating regularly for a few minutes in enclosed spaces",
+          "text_de": "Regelmäßiges Lüften in geschlossenen Räumen für einige Minuten",
+          "concept": "prki2schtz4",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": 2,
+              "label": "Rarely",
+              "label_de": "Selten"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 5,
+              "label": "Always",
+              "label_de": "Immer"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "prki2schtz5",
+          "text": "Consciously refraining from contact with other people",
+          "text_de": "Bewusst auf Kontakte mit anderen Menschen verzichtet",
+          "concept": "prki2schtz5",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Never",
+              "label_de": "Nie"
+            },
+            {
+              "value": 2,
+              "label": "Rarely",
+              "label_de": "Selten"
+            },
+            {
+              "value": 3,
+              "label": "Sometimes",
+              "label_de": "Manchmal"
+            },
+            {
+              "value": 4,
+              "label": "Often",
+              "label_de": "Oft"
+            },
+            {
+              "value": 5,
+              "label": "Always",
+              "label_de": "Immer"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        }
+      ],
+      "sn": 33,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "34": {
+      "question": "34",
+      "name": "34",
+      "label": "To what degree to you personally agree with the following statements?",
+      "label_de": "Inwieweit stimmen Sie den folgenden Aussagen zu?",
+      "items": [
+        {
+          "item": "1",
+          "text": "To what degree to you personally agree with the following statements?",
+          "text_de": "Inwieweit stimmen Sie den folgenden Aussagen zu?",
+          "instruction": "Please provide only one response in each line.",
+          "instruction_de": "Bitte machen Sie in jeder Zeile nur eine Angabe.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "prki2staat1",
+          "text": "Even if not everything has always gone well, I am satisfied with the government’s overall management of the coronavirus",
+          "text_de": "Auch wenn nicht immer alles gut gelaufen ist, bin ich mit dem Corona-Management des Staates insgesamt zufrieden",
+          "concept": "prki2staat1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Disagree completely",
+              "label_de": "Stimme überhaupt nicht zu"
+            },
+            {
+              "value": 2,
+              "label": "Tend to disagree",
+              "label_de": "Stimmer eher nicht zu"
+            },
+            {
+              "value": 3,
+              "label": "Agree",
+              "label_de": "Stimme eher zu"
+            },
+            {
+              "value": 4,
+              "label": "Agree completely",
+              "label_de": "Stimme voll und ganz zu"
+            },
+            {
+              "value": 5,
+              "label": "Don‘t know",
+              "label_de": "Weiß nicht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "prki2staat2",
+          "text": "It is a pity that the government has not cracked down harder in the fight against the coronavirus pandemic",
+          "text_de": "Es ist schade, dass der Staat bei der Bekämpfung der Corona-Pandemie nicht härter durchgegriffen hat",
+          "concept": "prki2staat2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Disagree completely",
+              "label_de": "Stimme überhaupt nicht zu"
+            },
+            {
+              "value": 2,
+              "label": "Tend to disagree",
+              "label_de": "Stimmer eher nicht zu"
+            },
+            {
+              "value": 3,
+              "label": "Agree",
+              "label_de": "Stimme eher zu"
+            },
+            {
+              "value": 4,
+              "label": "Agree completely",
+              "label_de": "Stimme voll und ganz zu"
+            },
+            {
+              "value": 5,
+              "label": "Don‘t know",
+              "label_de": "Weiß nicht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "prki2staat3",
+          "text": "It is correct that the government should also restrict personal freedoms if necessary in order to protect the health of its citizens.",
+          "text_de": "Es ist richtig, dass der Staat zum Schutz der Gesundheit seiner Bürgerinnen und Bürger notfalls auch persönliche Freiheiten einschränkt",
+          "concept": "prki2staat3",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Disagree completely",
+              "label_de": "Stimme überhaupt nicht zu"
+            },
+            {
+              "value": 2,
+              "label": "Tend to disagree",
+              "label_de": "Stimmer eher nicht zu"
+            },
+            {
+              "value": 3,
+              "label": "Agree",
+              "label_de": "Stimme eher zu"
+            },
+            {
+              "value": 4,
+              "label": "Agree completely",
+              "label_de": "Stimme voll und ganz zu"
+            },
+            {
+              "value": 5,
+              "label": "Don‘t know",
+              "label_de": "Weiß nicht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "prki2staat4",
+          "text": "The coronavirus pandemic provides a pretext for the government to press ahead with citizen surveillance",
+          "text_de": "Die Corona-Pandemie bietet dem Staat einen Vorwand, um die Überwachung der Bürgerinnen und Bürger voranzutreiben",
+          "concept": "prki2staat4",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Disagree completely",
+              "label_de": "Stimme überhaupt nicht zu"
+            },
+            {
+              "value": 2,
+              "label": "Tend to disagree",
+              "label_de": "Stimmer eher nicht zu"
+            },
+            {
+              "value": 3,
+              "label": "Agree",
+              "label_de": "Stimme eher zu"
+            },
+            {
+              "value": 4,
+              "label": "Agree completely",
+              "label_de": "Stimme voll und ganz zu"
+            },
+            {
+              "value": 5,
+              "label": "Don‘t know",
+              "label_de": "Weiß nicht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "prki2staat5",
+          "text": "The risk posed by the coronavirus is exaggerated by the media",
+          "text_de": "Die Gefahr, die vom Coronavirus ausgeht, wir von den Medien übertrieben",
+          "concept": "prki2staat5",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Disagree completely",
+              "label_de": "Stimme überhaupt nicht zu"
+            },
+            {
+              "value": 2,
+              "label": "Tend to disagree",
+              "label_de": "Stimmer eher nicht zu"
+            },
+            {
+              "value": 3,
+              "label": "Agree",
+              "label_de": "Stimme eher zu"
+            },
+            {
+              "value": 4,
+              "label": "Agree completely",
+              "label_de": "Stimme voll und ganz zu"
+            },
+            {
+              "value": 5,
+              "label": "Don‘t know",
+              "label_de": "Weiß nicht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "prki2staat6",
+          "text": "It is good if the government primarily follows the advice of established scientists and experts during the crisis",
+          "text_de": "Es ist gut, wenn der Staat in der Krise vorrangig dem Rat etablierter Wissenschaftlerinnen und Wissenschaftlern sowie Expertinnen und Experten folgt",
+          "concept": "prki2staat6",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Disagree completely",
+              "label_de": "Stimme überhaupt nicht zu"
+            },
+            {
+              "value": 2,
+              "label": "Tend to disagree",
+              "label_de": "Stimmer eher nicht zu"
+            },
+            {
+              "value": 3,
+              "label": "Agree",
+              "label_de": "Stimme eher zu"
+            },
+            {
+              "value": 4,
+              "label": "Agree completely",
+              "label_de": "Stimme voll und ganz zu"
+            },
+            {
+              "value": 5,
+              "label": "Don‘t know",
+              "label_de": "Weiß nicht"
+            },
+            {
+              "value": -1,
+              "label": "Can not / Prefer not to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 6,
+          "number": ""
+        }
+      ],
+      "sn": 34,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "35": {
+      "question": "35",
+      "name": "35",
+      "label": "Please enter today’s date:",
+      "label_de": "Bitte tragen Sie das heutige Datum ein:",
+      "items": [
+        {
+          "item": "1",
+          "text": "Please enter today’s date:",
+          "text_de": "Bitte tragen Sie das heutige Datum ein:",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "datt_n",
+          "text": "Day",
+          "text_de": "Tag",
+          "concept": "pdatt",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "datm_n",
+          "text": "Month",
+          "text_de": "Monat",
+          "concept": "pdatm",
+          "scale": "int",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "2021",
+          "text_de": "2021",
+          "scale": "txt",
+          "sn": 3,
+          "number": ""
+        }
+      ],
+      "sn": 35,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    },
+    "36": {
+      "question": "36",
+      "name": "36",
+      "label": "Please specify your date of birth:",
+      "label_de": "Bitte geben Sie Ihr Geburtsdatum an:",
+      "items": [
+        {
+          "item": "1",
+          "text": "Please specify your date of birth:",
+          "text_de": "Bitte geben Sie Ihr Geburtsdatum an:",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "ppgebta",
+          "text": "Day",
+          "text_de": "Tag",
+          "concept": "ppgebta",
+          "scale": "int",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "ple0003",
+          "text": "Month",
+          "text_de": "Monat",
+          "concept": "pgebmo",
+          "scale": "int",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "4",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "ple0010_v2",
+          "text": "Year",
+          "text_de": "Jahr",
+          "concept": "pgeb",
+          "scale": "int",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "5",
+          "text": "Can not / Prefer not to answer",
+          "text_de": "Kann / möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        }
+      ],
+      "sn": 36,
+      "instrument": "soep-core-2021-soeprki2",
+      "study": "soep-core"
+    }
+  }
+}
