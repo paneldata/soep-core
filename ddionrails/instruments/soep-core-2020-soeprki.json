@@ -1,0 +1,508 @@
+{
+  "study": "soep-core",
+  "name": "soep-core-2020-soeprki",
+  "label": "RKI-SOEP Corona-Monitoring nationwide (Wave 1) 2020",
+  "label_de": "RKI-SOEP Corona-Monitoring bundesweit (Welle 1) 2020",
+  "analysis_unit": "p",
+  "period": 2020,
+  "mode": "PAPI",
+  "instrument": "soep-core-2020-soeprki",
+  "questions": {
+    "0": {
+      "question": "0",
+      "name": "0",
+      "label": "Short questionnaire for people aged 18 and over",
+      "label_de": "Kurzfragebogen für Personen ab 18 Jahren",
+      "items": [
+        {
+          "item": "1",
+          "text": "Short questionnaire for people aged 18 and over",
+          "text_de": "Kurzfragebogen für Personen ab 18 Jahren",
+          "instruction": "[de] Etikett",
+          "instruction_de": "Etikett",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 0,
+      "instrument": "soep-core-2020-soeprki",
+      "study": "soep-core"
+    },
+    "1": {
+      "question": "1",
+      "name": "1",
+      "label": "Have you ever been tested for the new coronavirus with a throat swab?",
+      "label_de": "Wurden Sie selbst schon einmal mit einem Rachenabstrich auf das neue Coronavirus getestet?",
+      "items": [
+        {
+          "item": "1",
+          "text": "Have you ever been tested for the new coronavirus with a throat swab?",
+          "text_de": "Wurden Sie selbst schon einmal mit einem Rachenabstrich auf das neue Coronavirus getestet?",
+          "instruction": "For this laboratory test, a sample is taken through the mouth or nose with a stick. ",
+          "instruction_de": "Für diesen Labor-Test wird mit einem Stäbchen eine Probe durch den Mund oder die Nase entnommen.\nSelbst-Tests wie in dieser Studie sind nicht gemeint.",
+          "goto": "3@6",
+          "concept": "v1",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Ja, einmal",
+              "label_de": "Ja, einmal"
+            },
+            {
+              "value": 2,
+              "label": "[de] Ja, mehrmals",
+              "label_de": "Ja, mehrmals"
+            },
+            {
+              "value": 3,
+              "label": "[de] Nein, noch nie",
+              "label_de": "Nein, noch nie"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 1,
+      "instrument": "soep-core-2020-soeprki",
+      "study": "soep-core"
+    },
+    "2": {
+      "question": "2",
+      "name": "2",
+      "label": "Was at least one test result positive, so was the new coronavirus diagnosed? ",
+      "label_de": "War mindestens ein Testergebnis positiv, also wurde das neue Coronavirus bei Ihnen festgestellt?",
+      "items": [
+        {
+          "item": "1",
+          "text": "Was at least one test result positive, so was the new coronavirus diagnosed? ",
+          "text_de": "War mindestens ein Testergebnis positiv, also wurde das neue Coronavirus bei Ihnen festgestellt?",
+          "concept": "v2",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": -1,
+              "label": "[de] Weiß nicht",
+              "label_de": "Weiß nicht"
+            },
+            {
+              "value": 1,
+              "label": "[de] Ja",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "[de] Nein",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Date of the (first) positive test:",
+          "text_de": "Datum des (ersten) positiven Tests:",
+          "instruction": "If you don`t know the exacte date, please estimate!",
+          "instruction_de": "Wenn Sie das genaue Datum\nnicht mehr wissen, schätzen Sie!",
+          "filter": "2; 1=1",
+          "scale": "txt",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "day",
+          "text_de": "Tag",
+          "concept": "v2_pos_day",
+          "scale": "int",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "4",
+          "text": "month",
+          "text_de": "Monat",
+          "concept": "v2_pos_mon",
+          "scale": "int",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "5",
+          "text": "2020",
+          "text_de": "2020",
+          "concept": "v2_pos_year",
+          "scale": "txt",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "6",
+          "text": "Date of the (last) negative test:",
+          "text_de": "Datum des (letzten) negativen Tests:",
+          "instruction": "If you don`t know the exacte date, please estimate!",
+          "instruction_de": "Wenn Sie das genaue Datum\nnicht mehr wissen, schätzen Sie!",
+          "filter": "2; 1=2",
+          "scale": "txt",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "7",
+          "text": "day",
+          "text_de": "Tag",
+          "concept": "v2_neg_day",
+          "scale": "int",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "8",
+          "text": "month",
+          "text_de": "Monat",
+          "concept": "v2_neg_mon",
+          "scale": "int",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "9",
+          "text": "2020",
+          "text_de": "2020",
+          "concept": "v2_neg_year",
+          "scale": "txt",
+          "sn": 8,
+          "number": ""
+        }
+      ],
+      "sn": 2,
+      "instrument": "soep-core-2020-soeprki",
+      "study": "soep-core"
+    },
+    "3": {
+      "question": "3",
+      "name": "3",
+      "label": "Why were you tested for the new coronavirus?",
+      "label_de": "Warum wurden Sie auf das neue Coronavirus getestet?",
+      "items": [
+        {
+          "item": "1",
+          "text": "Why were you tested for the new coronavirus?",
+          "text_de": "Warum wurden Sie auf das neue Coronavirus getestet?",
+          "instruction": "Please mark all that applies.",
+          "instruction_de": "Mehrfachangaben möglich.",
+          "scale": "bin",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Symptoms that indicated an infection with the new coronavirus",
+          "text_de": "Symptome, die auf eine Infektion mit dem neuen Coronavirus hinwiesen",
+          "concept": "v3_1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "Contact with infected person",
+          "text_de": "Kontakt zu infizierter Person",
+          "concept": "v3_2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "4",
+          "text": "Contact with a possibly infected person",
+          "text_de": "Kontakt zu möglicherweise infizierter Person",
+          "concept": "v3_3",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "5",
+          "text": "Routine testing (e.g. at work, when admitted to hospital, ...) ",
+          "text_de": "Routine-Testung (z.B. am Arbeitsplatz, bei Aufnahme ins Krankenhaus,…) ",
+          "concept": "v3_4",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "6",
+          "text": "Returning from a trip abroad",
+          "text_de": "Rückkehr von einer Auslandsreise",
+          "concept": "v3_5",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "7",
+          "text": "Upcoming trip",
+          "text_de": "Bevorstehende Reise",
+          "concept": "v3_6",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "8",
+          "text": "Personal wish for a test",
+          "text_de": "Eigener Wunsch nach einem Test",
+          "concept": "v3_7",
+          "scale": "bin",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "9",
+          "text": "Other reason",
+          "text_de": "Anderer Grund",
+          "concept": "v3_8",
+          "scale": "bin",
+          "sn": 8,
+          "number": ""
+        }
+      ],
+      "sn": 3,
+      "instrument": "soep-core-2020-soeprki",
+      "study": "soep-core"
+    },
+    "4": {
+      "question": "4",
+      "name": "4",
+      "label": "If you were tested for symptoms, from when to when did the symptoms exist? ",
+      "label_de": "Wenn Sie wegen Symptomen getestet wurden: Von wann bis wann bestanden die Symptome?",
+      "items": [
+        {
+          "item": "1",
+          "text": "If you were tested for symptoms, from when to when did the symptoms exist? ",
+          "text_de": "Wenn Sie wegen Symptomen getestet wurden: Von wann bis wann bestanden die Symptome?",
+          "instruction": "[de] Wenn Sie das genaue Datum nicht mehr wissen, schätzen Sie! ",
+          "instruction_de": "Wenn Sie das genaue Datum nicht mehr wissen, schätzen Sie! ",
+          "filter": "3;2=1",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "[de] Von:",
+          "text_de": "Von:",
+          "scale": "txt",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "day",
+          "text_de": "Tag",
+          "concept": "v4_start_day",
+          "scale": "int",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "4",
+          "text": "month",
+          "text_de": "Monat",
+          "concept": "v4_start_mon",
+          "scale": "int",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "5",
+          "text": "2020",
+          "text_de": "2020",
+          "concept": "v4_start_year",
+          "scale": "txt",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "6",
+          "text": "[de] Bis:",
+          "text_de": "Bis:",
+          "scale": "txt",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "7",
+          "text": "day",
+          "text_de": "Tag",
+          "concept": "v4_end_day",
+          "scale": "int",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "8",
+          "text": "month",
+          "text_de": "Monat",
+          "concept": "v4_end_mon",
+          "scale": "int",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "9",
+          "text": "2020",
+          "text_de": "2020",
+          "concept": "v4_end_year",
+          "scale": "txt",
+          "sn": 8,
+          "number": ""
+        }
+      ],
+      "sn": 4,
+      "instrument": "soep-core-2020-soeprki",
+      "study": "soep-core"
+    },
+    "5": {
+      "question": "5",
+      "name": "5",
+      "label": "[de] Wenn eine Infektion mit dem neuen Coronavirus festgestellt wurde (positiver Test): Sind Sie durch die Coronavirus-Infektion so schwer erkrankt, dass Sie deswegen im Krankenhaus behandelt wurden?",
+      "label_de": "Wenn eine Infektion mit dem neuen Coronavirus festgestellt wurde (positiver Test): Sind Sie durch die Coronavirus-Infektion so schwer erkrankt, dass Sie deswegen im Krankenhaus behandelt wurden?",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Wenn eine Infektion mit dem neuen Coronavirus festgestellt wurde (positiver Test): Sind Sie durch die Coronavirus-Infektion so schwer erkrankt, dass Sie deswegen im Krankenhaus behandelt wurden?",
+          "text_de": "Wenn eine Infektion mit dem neuen Coronavirus festgestellt wurde (positiver Test): Sind Sie durch die Coronavirus-Infektion so schwer erkrankt, dass Sie deswegen im Krankenhaus behandelt wurden?",
+          "instruction": "[de] Gemeint ist eine Aufnahme ins Krankenhaus mit Übernachtung.",
+          "instruction_de": "Gemeint ist eine Aufnahme ins Krankenhaus mit Übernachtung.",
+          "filter": "2;1=1",
+          "concept": "v5",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "[de] Ja",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "[de] Nein",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 5,
+      "instrument": "soep-core-2020-soeprki",
+      "study": "soep-core"
+    },
+    "6": {
+      "question": "6",
+      "name": "6",
+      "label": "[de] Hatten Sie in den letzten zwei Wochen eines oder mehrere der folgenden Symptome oder Beschwerden?",
+      "label_de": "Hatten Sie in den letzten zwei Wochen eines oder mehrere der folgenden Symptome oder Beschwerden?",
+      "items": [
+        {
+          "item": "1",
+          "text": "[de] Hatten Sie in den letzten zwei Wochen eines oder mehrere der folgenden Symptome oder Beschwerden?",
+          "text_de": "Hatten Sie in den letzten zwei Wochen eines oder mehrere der folgenden Symptome oder Beschwerden?",
+          "instruction": "[de] Mehrfachangaben möglich.",
+          "instruction_de": "Mehrfachangaben möglich.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "[de] Fieber über 38°C",
+          "text_de": "Fieber über 38°C",
+          "concept": "v6_1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "[de] Atemnot, Kurzatmigkeit ",
+          "text_de": "Atemnot, Kurzatmigkeit ",
+          "concept": "v6_2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "4",
+          "text": "[de] Lungenentzündung",
+          "text_de": "Lungenentzündung",
+          "concept": "v6_3",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "5",
+          "text": "[de] Schnupfen",
+          "text_de": "Schnupfen",
+          "concept": "v6_4",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "6",
+          "text": "[de] Husten",
+          "text_de": "Husten",
+          "concept": "v6_5",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "7",
+          "text": "[de] Schmerzen beim Atmen",
+          "text_de": "Schmerzen beim Atmen",
+          "concept": "v6_6",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "8",
+          "text": "[de] Halsschmerzen",
+          "text_de": "Halsschmerzen",
+          "concept": "v6_7",
+          "scale": "bin",
+          "sn": 7,
+          "number": ""
+        },
+        {
+          "item": "9",
+          "text": "[de] Geruchs- oder Geschmacksstörung",
+          "text_de": "Geruchs- oder Geschmacksstörung",
+          "concept": "v6_8",
+          "scale": "bin",
+          "sn": 8,
+          "number": ""
+        },
+        {
+          "item": "10",
+          "text": "[de] Nein, ich hatte nichts davon ",
+          "text_de": "Nein, ich hatte nichts davon ",
+          "concept": "v6_9",
+          "scale": "bin",
+          "sn": 9,
+          "number": ""
+        }
+      ],
+      "sn": 6,
+      "instrument": "soep-core-2020-soeprki",
+      "study": "soep-core"
+    }
+  }
+}
