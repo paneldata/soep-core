@@ -1,0 +1,485 @@
+{
+  "study": "soep-core",
+  "name": "soep-core-2022-kontext",
+  "label": "Context questions about the interview 2022",
+  "label_de": "Kontextfragen zum Interview 2022",
+  "period": 2022,
+  "value": 325.0,
+  "mode": "CAPI",
+  "instrument": "soep-core-2022-kontext",
+  "questions": {
+    "PL1": {
+      "question": "PL1",
+      "name": "PL1",
+      "label": "Questions are only for the following sub-studies",
+      "label_de": "Fragen richten sich nur an folgende Teilstudien",
+      "items": [
+        {
+          "item": "prev_studie",
+          "text": "Questions are only for the following sub-studies",
+          "text_de": "Fragen richten sich nur an folgende Teilstudien",
+          "concept": "studie",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "CORE",
+              "label_de": "CORE"
+            },
+            {
+              "value": 2,
+              "label": "REF",
+              "label_de": "REF"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 0,
+      "instrument": "soep-core-2022-kontext",
+      "study": "soep-core"
+    },
+    "Z1": {
+      "question": "Z1",
+      "name": "Z1",
+      "label": "Were other persons present while filling out the questionnaire?",
+      "label_de": "Waren beim Ausfüllen des Fragebogens weitere Personen anwesend?",
+      "items": [
+        {
+          "item": "1",
+          "text": "Were other persons present while filling out the questionnaire?",
+          "text_de": "Waren beim Ausfüllen des Fragebogens weitere Personen anwesend?",
+          "instruction": "Please select all answers that apply.",
+          "instruction_de": "Jahrgang == 2007,2009: Bitte gib alles Zutreffende an.\r\nJahrgang !=  2007,2009: Bitte geben Sie alles Zutreffende an.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "anw5",
+          "text": "Yes, my father or mother",
+          "text_de": "Ja, mein Vater oder meine Mutter",
+          "filter": "Jahrgang == 2004,2007,2009",
+          "goto": "1@Z2",
+          "concept": "anw5",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "anw1",
+          "text": "Yes, spouse / partner",
+          "text_de": "Ja, Ehepartner / Lebenspartner",
+          "filter": "Jahrgang != 2004,2007,2009",
+          "goto": "1@Z2",
+          "concept": "anw1",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "anw2",
+          "text": "Yes, other person, who is living in the same household",
+          "text_de": "Ja, andere Person, die hier im Haushalt lebt",
+          "goto": "1@Z2",
+          "concept": "anw2",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "anw3",
+          "text": "Yes, other person, who do not live in the same household",
+          "text_de": "Ja, andere Person, die nicht hier im Haushalt lebt",
+          "goto": "1@Z2",
+          "concept": "anw3",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "anw4",
+          "text": "No",
+          "text_de": "Nein",
+          "goto": "1@Z3",
+          "concept": "anw4",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Can't / don't want to answer",
+          "text_de": "Kann/ möchte ich nicht beantworten",
+          "goto": "1@Z3",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        }
+      ],
+      "sn": 1,
+      "instrument": "soep-core-2022-kontext",
+      "study": "soep-core"
+    },
+    "Z2": {
+      "question": "Z2",
+      "name": "Z2",
+      "label": "Did any of the aforementioned people bother you while filling out the questionaire?",
+      "label_de": "Hat Sie eine der oben genannten Personen beim Ausfüllen des Fragebogens gestört?",
+      "items": [
+        {
+          "item": "abl",
+          "text": "Did any of the aforementioned people bother you while filling out the questionaire?",
+          "text_de": "Hat Sie eine der oben genannten Personen beim Ausfüllen des Fragebogens gestört?",
+          "filter": "(Z1;anw5=1)|(Z1;anw1=1)|(Z1;anw2=1)|(Z1;anw3=1)|(Z1;anw4=1)",
+          "concept": "abl",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can't / don't want to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 2,
+      "instrument": "soep-core-2022-kontext",
+      "study": "soep-core"
+    },
+    "Z3": {
+      "question": "Z3",
+      "name": "Z3",
+      "label": "Finally, we are interested in your opinion on the questionnaire. If, for example, something was missing or you had problems answering questions, you can explain this below. If you have any further additions, comments or critical remarks, please let us know here.",
+      "label_de": "Jahrgang == 2007, 2009: Abschließend interessieren wir uns für Deine Meinung zum Fragebogen. Falls Dir beispielsweise etwas gefehlt hat oder Du Probleme bei der Beantwortung von Fragen hattest, kannst Du dies im Folgenden ausführen. Auch wenn Du noch weitere Ergänzungen, Anmerkungen oder kritische Hinweise hast, bitten wir Dich, uns diese hier mitzuteilen.\r\nJahrgang != 2007, 2009: Abschließend interessieren wir uns für Ihre Meinung zum Fragebogen. Falls Ihnen beispielsweise etwas gefehlt hat oder Sie Probleme bei der Beantwortung von Fragen hatten, können Sie dies im Folgenden ausführen. Auch wenn Sie noch weitere Ergän-zungen, Anmerkungen oder kritische Hinweise haben, bitten wir Sie, uns diese hier mitzuteilen.",
+      "items": [
+        {
+          "item": "1",
+          "text": "Finally, we are interested in your opinion on the questionnaire. If, for example, something was missing or you had problems answering questions, you can explain this below. If you have any further additions, comments or critical remarks, please let us know here.",
+          "text_de": "Jahrgang == 2007, 2009: Abschließend interessieren wir uns für Deine Meinung zum Fragebogen. Falls Dir beispielsweise etwas gefehlt hat oder Du Probleme bei der Beantwortung von Fragen hattest, kannst Du dies im Folgenden ausführen. Auch wenn Du noch weitere Ergänzungen, Anmerkungen oder kritische Hinweise hast, bitten wir Dich, uns diese hier mitzuteilen.\r\nJahrgang != 2007, 2009: Abschließend interessieren wir uns für Ihre Meinung zum Fragebogen. Falls Ihnen beispielsweise etwas gefehlt hat oder Sie Probleme bei der Beantwortung von Fragen hatten, können Sie dies im Folgenden ausführen. Auch wenn Sie noch weitere Ergän-zungen, Anmerkungen oder kritische Hinweise haben, bitten wir Sie, uns diese hier mitzuteilen.",
+          "concept": "text",
+          "scale": "chr",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 3,
+      "instrument": "soep-core-2022-kontext",
+      "study": "soep-core"
+    },
+    "Z4": {
+      "question": "Z4",
+      "name": "Z4",
+      "label": "As part of the modernisation of our survey layout and to ensure data quality, we are interested in the framework conditions for your participation in the survey and would like to ask you a few final questions.",
+      "label_de": "Jahrgang == 2007, 2009: Im Zuge der Modernisierung unseres Befragungslayouts sowie zur Sicherung der Datenqualität interessieren wir uns für die Rahmenbedingungen Deiner Befragungsteilnahme und möchten Dir hierzu abschließend ein paar Fragen stellen.\r\nJahrgang != 2007, 2009: Im Zuge der Modernisierung unseres Befragungslayouts sowie zur Sicherung der Datenqualität interessieren wir uns für die Rahmenbedingungen Ihrer Befragungsteilnahme und möchten Ihnen hierzu abschließend ein paar Fragen stellen.",
+      "items": [
+        {
+          "item": "1",
+          "text": "As part of the modernisation of our survey layout and to ensure data quality, we are interested in the framework conditions for your participation in the survey and would like to ask you a few final questions.",
+          "text_de": "Jahrgang == 2007, 2009: Im Zuge der Modernisierung unseres Befragungslayouts sowie zur Sicherung der Datenqualität interessieren wir uns für die Rahmenbedingungen Deiner Befragungsteilnahme und möchten Dir hierzu abschließend ein paar Fragen stellen.\r\nJahrgang != 2007, 2009: Im Zuge der Modernisierung unseres Befragungslayouts sowie zur Sicherung der Datenqualität interessieren wir uns für die Rahmenbedingungen Ihrer Befragungsteilnahme und möchten Ihnen hierzu abschließend ein paar Fragen stellen.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Which device types did you use to take part in our survey?",
+          "text_de": "Jahrgang == 2007, 2009: Mit welchen Gerätetypen hast Du an unserer Befragung teilgenommen?\r\nJahrgang != 2007, 2009: Mit welchen Gerätetypen haben Sie an unserer Befragung teilgenommen?",
+          "instruction": "Please select all answers that apply.",
+          "instruction_de": "Jahrgang == 2007, 2009: Bitte gib alles zutreffende an.\r\nJahrgang != 2007, 2009: Bitte markieren Sie alles Zutreffende.",
+          "scale": "txt",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "Desktop computer / PC",
+          "text_de": "stationärer Computer/PC",
+          "concept": "zgeraet1",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "4",
+          "text": "Laptop / notebook",
+          "text_de": "Laptop/Notebook",
+          "concept": "zgeraet2",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "5",
+          "text": "Tablet",
+          "text_de": "Tablet",
+          "concept": "zgeraet3",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "6",
+          "text": "Smartphone",
+          "text_de": "Smartphone",
+          "concept": "zgeraet4",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "7",
+          "text": "Other",
+          "text_de": "Sonstiges",
+          "concept": "zgeraet5",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        },
+        {
+          "item": "8",
+          "text": "[Other] Please state:",
+          "text_de": "[Sonstiges] und zwar:",
+          "concept": "zgeraetx",
+          "scale": "chr",
+          "sn": 7,
+          "number": ""
+        }
+      ],
+      "sn": 4,
+      "instrument": "soep-core-2022-kontext",
+      "study": "soep-core"
+    },
+    "Z5": {
+      "question": "Z5",
+      "name": "Z5",
+      "label": "We are also interested in how you took part in our online survey.",
+      "label_de": "Wir interessieren uns auch dafür, unter welchen Bedingungen Sie an unserer Online-Befragung teilgenommen haben.",
+      "items": [
+        {
+          "item": "1",
+          "text": "We are also interested in how you took part in our online survey.",
+          "text_de": "Wir interessieren uns auch dafür, unter welchen Bedingungen Sie an unserer Online-Befragung teilgenommen haben.",
+          "filter": "Jahrgang != 2007, 2009",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Where were you when you were answering the majority of the questions?",
+          "text_de": "Wo haben Sie die Bearbeitung der Fragen hauptsächlich durchgeführt?",
+          "concept": "umf",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "at home",
+              "label_de": "zu Hause"
+            },
+            {
+              "value": 2,
+              "label": "out and about (for example, on the train or subway) ",
+              "label_de": "unterwegs (z. B. im Zug, in der U-/S-Bahn)"
+            },
+            {
+              "value": 3,
+              "label": "at work / at the library / in a computer pool",
+              "label_de": "im Büro/in der Bibliothek/im Computerpool"
+            },
+            {
+              "value": 4,
+              "label": "at the cafeteria / at a restaurant / at a cafe",
+              "label_de": "in der Mensa/in der Cafeteria/im Restaurant/im Café"
+            },
+            {
+              "value": 5,
+              "label": "Other",
+              "label_de": "Sonstiges"
+            },
+            {
+              "value": -1,
+              "label": "Can't / don't want to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "3",
+          "text": "[Other] please specify:",
+          "text_de": "[Sonstiges] und zwar:",
+          "concept": "umfx",
+          "scale": "chr",
+          "sn": 2,
+          "number": ""
+        }
+      ],
+      "sn": 5,
+      "instrument": "soep-core-2022-kontext",
+      "study": "soep-core"
+    },
+    "Z6": {
+      "question": "Z6",
+      "name": "Z6",
+      "label": "Aside from linguistic difficulties or the presence of other people, other things can have an effect on an interview. Examples include questions dealing with sensitive issues, questions that do not reflect respondents’ life realities, or a respondent’s general lack of trust in the confidentiality of their answers. How closely do you as an interviewer think the responses given in this interview reflect reality?",
+      "label_de": "Außer Sprachschwierigkeiten oder Anwesenheit anderer Personen, kann es viele weitere Einflussmöglichkeiten auf ein Interview geben. Beispiele dafür wären sensible Fragen, die Befragten finden sich in den Fragen nicht wieder oder fehlendes Vertrauen in den Datenschutz etc. Wie realitätsnah oder -fern würden Sie aus Ihrer Erfahrung als Interviewer die Beantwortung der Fragen in dem eben geführten Interview einschätzen?",
+      "items": [
+        {
+          "item": "i15",
+          "text": "Aside from linguistic difficulties or the presence of other people, other things can have an effect on an interview. Examples include questions dealing with sensitive issues, questions that do not reflect respondents’ life realities, or a respondent’s general lack of trust in the confidentiality of their answers. How closely do you as an interviewer think the responses given in this interview reflect reality?",
+          "text_de": "Außer Sprachschwierigkeiten oder Anwesenheit anderer Personen, kann es viele weitere Einflussmöglichkeiten auf ein Interview geben. Beispiele dafür wären sensible Fragen, die Befragten finden sich in den Fragen nicht wieder oder fehlendes Vertrauen in den Datenschutz etc. Wie realitätsnah oder -fern würden Sie aus Ihrer Erfahrung als Interviewer die Beantwortung der Fragen in dem eben geführten Interview einschätzen?",
+          "filter": "PL1;prev_studie=2",
+          "concept": "i15",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Very close to reality",
+              "label_de": "Sehr realitätsnah"
+            },
+            {
+              "value": 2,
+              "label": "Fairly close to reality",
+              "label_de": "Eher realitätsnah"
+            },
+            {
+              "value": 3,
+              "label": "Fairly far from reality",
+              "label_de": "Eher realitätsfern"
+            },
+            {
+              "value": 4,
+              "label": "Very far from reality",
+              "label_de": "Sehr realitätsfern"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 6,
+      "instrument": "soep-core-2022-kontext",
+      "study": "soep-core"
+    },
+    "Z7": {
+      "question": "Z7",
+      "name": "Z7",
+      "label": "Is there any other important information that you would like to add about this interview?",
+      "label_de": "Gibt es noch wichtige Hinweise zu diesem Interview?",
+      "items": [
+        {
+          "item": "i16",
+          "text": "Is there any other important information that you would like to add about this interview?",
+          "text_de": "Gibt es noch wichtige Hinweise zu diesem Interview?",
+          "filter": "PL1;prev_studie=2",
+          "concept": "i16",
+          "scale": "chr",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "i161",
+          "text": "Other notes edited",
+          "text_de": "Sonstige Hinweise bearbeitet",
+          "filter": "PL1;prev_studie=2",
+          "concept": "i161",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 7,
+      "instrument": "soep-core-2022-kontext",
+      "study": "soep-core"
+    },
+    "Z8": {
+      "question": "Z8",
+      "name": "Z8",
+      "label": "Aside from linguistic difficulties or the presence of other people, other things can have an effect on an interview. Examples include questions dealing with sensitive issues, questions that do not reflect respondents’ life realities, or a respondent’s general lack of trust in the confidentiality of their answers. How closely do you as an interviewer think the responses given in this interview reflect reality?",
+      "label_de": "Haushaltsinterview: Außer Sprachschwierigkeiten oder Anwesenheit anderer Personen, kann es viele weitere Einflussmöglichkeiten auf ein Interview geben. Beispiele dafür wären sensible Fragen, die Befragten finden sich in den Fragen nicht wieder oder fehlendes Vertrauen in den Datenschutz etc. Wie realitätsnah oder -fern würden Sie aus Ihrer Erfahrung als Interviewer die Beantwortung der Fragen in dem eben geführten Interview einschätzen?",
+      "items": [
+        {
+          "item": "1",
+          "text": "Aside from linguistic difficulties or the presence of other people, other things can have an effect on an interview. Examples include questions dealing with sensitive issues, questions that do not reflect respondents’ life realities, or a respondent’s general lack of trust in the confidentiality of their answers. How closely do you as an interviewer think the responses given in this interview reflect reality?",
+          "text_de": "Haushaltsinterview: Außer Sprachschwierigkeiten oder Anwesenheit anderer Personen, kann es viele weitere Einflussmöglichkeiten auf ein Interview geben. Beispiele dafür wären sensible Fragen, die Befragten finden sich in den Fragen nicht wieder oder fehlendes Vertrauen in den Datenschutz etc. Wie realitätsnah oder -fern würden Sie aus Ihrer Erfahrung als Interviewer die Beantwortung der Fragen in dem eben geführten Interview einschätzen?",
+          "filter": "PL1;prev_studie=2",
+          "concept": "i15",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Very close to reality",
+              "label_de": "Sehr realitätsnah"
+            },
+            {
+              "value": 2,
+              "label": "Fairly close to reality",
+              "label_de": "Eher realitätsnah"
+            },
+            {
+              "value": 3,
+              "label": "Fairly far from reality",
+              "label_de": "Eher realitätsfern"
+            },
+            {
+              "value": 4,
+              "label": "Very far from reality",
+              "label_de": "Sehr realitätsfern"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 8,
+      "instrument": "soep-core-2022-kontext",
+      "study": "soep-core"
+    },
+    "Z9": {
+      "question": "Z9",
+      "name": "Z9",
+      "label": "Is there any other important information that you would like to add about this interview?",
+      "label_de": "Gibt es noch wichtige Hinweise zu diesem Interview?",
+      "items": [
+        {
+          "item": "i16",
+          "text": "Is there any other important information that you would like to add about this interview?",
+          "text_de": "Gibt es noch wichtige Hinweise zu diesem Interview?",
+          "filter": "PL1;prev_studie=2",
+          "concept": "i16",
+          "scale": "chr",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "i161",
+          "text": "Other notes edited",
+          "text_de": "Sonstige Hinweise bearbeitet",
+          "filter": "PL1;prev_studie=2",
+          "concept": "i161",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 9,
+      "instrument": "soep-core-2022-kontext",
+      "study": "soep-core"
+    }
+  }
+}
