@@ -45,33 +45,33 @@ The SOEP is presented to respondents and interviewers under the easy-to-remember
 
 The most current instruments for our main samples: 
 
-| paneldata.org (Links to CAPI-Versions)                        | Field version (PAPI)                                                                                                                                                                  | Version with variable names (CAPI/CAWI) |
+| paneldata.org (Links to CAPI-Versions)                        | Field version (mostly PAPI)                                                                                                                                                                  | Version with variable names (CAPI/CAWI) |
 | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
 | Address/contact protocol and supporting instruments 2022      |                                                                                                                                                                                       |                                    |
-| [Household](inst/soep-core-2022-hh2)                          | PDF (de/en) | PDF (de/en)|
-| [Individual](inst/soep-core-2022-pe2)                         | PDF (de/en) | PDF (de/en)|
-| [Biography](inst/soep-core-2022-ll2)                          | PDF (de/en) | PDF (de/en)|
-| [Catch-up Individual](inst/soep-core-2022-l2)                 | PDF (de/en) | PDF (de/en)|
-| [Childhood (0-11-year-olds)](inst/soep-core-2022-ki-2)        | PDF (de/en) | PDF (de/en)|
-| [Pre-teen (11-12-year-olds)](inst/soep-core-2022-s-2)         | PDF (de/en) | PDF (de/en)|
-| [Early Youth (13-14-year-olds)](inst/soep-core-2022-s2-2)     | PDF (de/en) | PDF (de/en)|
-| [Youth (16-17-year-olds)](inst/soep-core-2022-ju2)            | PDF (de/en) | PDF (de/en)|
-| [Deceased Individual](inst/soep-core-2022-vp2)                | PDF (de/en) | PDF (de/en)|
-| [CAMCES](inst/soep-core-2022-camces)                          | PDF (de/en) | PDF (de/en)|
-| [Residential Environment](inst/soep-core-2022-wuma)           | PDF (de/en) | PDF (de/en)|
-| [Self-employed Persons](inst/soep-core-2022-selfempl)         | PDF (de/en) | PDF (de/en)|
-| [About the intervie](inst/soep-core-2022-kontext)                          | PDF (de/en) | PDF (de/en)|
+| [Household](inst/soep-core-2022-hh2)                          | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.928748.de/diw_ssp1377.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.932222.de/diw_ssp1405.pdf))|
+| [Individual](inst/soep-core-2022-pe2)                         | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.928019.de/diw_ssp1376.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.932234.de/diw_ssp1406.pdf))|
+| [Biography](inst/soep-core-2022-ll2)                          | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.928752.de/diw_ssp1379.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.932218.de/diw_ssp1403.pdf))|
+| [Catch-up Individual](inst/soep-core-2022-l2)                 | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.927995.de/diw_ssp1373.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.932357.de/diw_ssp1409.pdf))|
+| [Childhood (0-11-year-olds)](inst/soep-core-2022-ki-2)        | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.931134.de/diw_ssp1388.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.931165.de/diw_ssp1394.pdf))|
+| [Pre-teen (11-12-year-olds)](inst/soep-core-2022-s-2)         | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.927895.de/diw_ssp1370.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.932368.de/diw_ssp1412.pdf))|
+| [Early Youth (13-14-year-olds)](inst/soep-core-2022-s2-2)     | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.927897.de/diw_ssp1371.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.932366.de/diw_ssp1411.pdf))|
+| [Youth (16-17-year-olds)](inst/soep-core-2022-ju2)            | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.927997.de/diw_ssp1374.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.932348.de/diw_ssp1408.pdf))|
+| [Deceased Individual](inst/soep-core-2022-vp2)                | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.927891.de/diw_ssp1369.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.932370.de/diw_ssp1413.pdf))|
+| [CAMCES](inst/soep-core-2022-camces)                          | [PDF (multilang)](https://www.diw.de/documents/publikationen/73/diw_01.c.937877.de/diw_ssp1428.pdf) | PDF (de/en)|
+| [Residential Environment](inst/soep-core-2022-wuma)           | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.931132.de/diw_ssp1387.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.931167.de/diw_ssp1395.pdf))|
+| [Self-employed Persons](inst/soep-core-2022-selfempl)         | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.928754.de/diw_ssp1380.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.932112.de/diw_ssp1402.pdf))|
+| [About the interview](inst/soep-core-2022-kontext)                          | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.931130.de/diw_ssp1386.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.931169.de/diw_ssp1396.pdf))|
 
 In some samples adapted versions of the instruments were used:
 
 | paneldata.org (Links to CAPI-Versions)                                           | Field version (PAPI)                                                                         | Version with variable names |
 | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | --------------------------- |
 | Samples M3-M6 (“Refugee Samples”)                                                |                                                                                              |                             |
-| [Household](inst/soep-core-2022-hh-m3456)                                        | PDF                                                                                          |                             |
-| [Individual, Follow-up](inst/soep-core-2022-pe2-m3456)                           | PDF                                                                                          |                             |
-| [Biography](inst/soep-core-2022-ll-m3456)                                        | PDF                                                                                          |                             |
-| [Childhood, 0-11-year-olds](inst/soep-core-2022-ki-m3456)                        | PDF                                                                                          |                             |
-| [Youth (11-17-year-olds)](inst/soep-core-2022-ju-m3456)                          | PDF                                                                                          |                             |
+| [Household](inst/soep-core-2022-hh-m3456)                                        | PDF                                                                                          | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.931128.de/diw_ssp1385.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.932100.de/diw_ssp1397.pdf))                            |
+| [Individual, Follow-up](inst/soep-core-2022-pe2-m3456)                           | PDF                                                                                          | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.928756.de/diw_ssp1381.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.932110.de/diw_ssp1401.pdf))                            |
+| [Biography](inst/soep-core-2022-ll-m3456)                                        | PDF                                                                                          | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.931124.de/diw_ssp1383.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.932106.de/diw_ssp1399.pdf))                            |
+| [Childhood, 0-11-year-olds](inst/soep-core-2022-ki-m3456)                        | PDF                                                                                          | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.931136.de/diw_ssp1389.pdf)/en)                            |
+| [Youth (11-17-year-olds)](inst/soep-core-2022-ju-m3456)                          | PDF                                                                                          | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.931126.de/diw_ssp1384.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.932104.de/diw_ssp1398.pdf))                            |
 
 ## Data access
 
