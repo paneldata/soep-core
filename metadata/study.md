@@ -1,7 +1,7 @@
 ---
 name: soep-core
 label: SOEP-Core
-doi: 10.5684/soep.core.v38.1o
+doi: 10.5684/soep.core.v39o
 config:
     variables:
         label_table: True
