@@ -1,130 +1,11 @@
 [
   {
-    "name": "pid",
-    "dataset": "vpl",
-    "label": "Never Changing Person ID",
-    "categories": {
-      "values": [
-        -8,
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1
-      ],
-      "labels": [
-        "[-8] Question this year not part of survey",
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissable multiple response",
-        "[-3] Implausible value",
-        "[-2] Does not apply",
-        "[-1] No answer"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    "scale": "number",
-    "label_de": "Unveränderliche Personennummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 2913202.0,
-      "Median": 20063805.0,
-      "Mean": 16860986.45592519,
-      "3rd Qu.": 30250401.5,
-      "Max.": 64951802.0,
-      "valid": 6523,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "hid",
-    "dataset": "vpl",
-    "label": "Current Wave HH Number",
-    "categories": {
-      "values": [
-        -8,
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1
-      ],
-      "labels": [
-        "[-8] Question this year not part of survey",
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissable multiple response",
-        "[-3] Implausible value",
-        "[-2] Does not apply",
-        "[-1] No answer"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    "scale": "number",
-    "label_de": "Aktuelle Haushaltsnummer",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 94.0,
-      "1st Qu.": 288373.0,
-      "Median": 2004677.0,
-      "Mean": 1698301.044151464,
-      "3rd Qu.": 3029751.5,
-      "Max.": 6495180.0,
-      "valid": 6523,
-      "invalid": 0
-    }
-  },
-  {
     "name": "cid",
     "dataset": "vpl",
     "label": "Original Houshold Number, Case ID",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -135,6 +16,7 @@
         -1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -144,7 +26,19 @@
         "[-2] Does not apply",
         "[-1] No answer"
       ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
       "missings": [
+        true,
         true,
         true,
         true,
@@ -155,6 +49,7 @@
         true
       ],
       "frequencies": [
+        0,
         0,
         0,
         0,
@@ -170,95 +65,22 @@
     "study": "soep-core",
     "statistics": {
       "Min.": 94.0,
-      "1st Qu.": 292681.5,
-      "Median": 2007307.0,
-      "Mean": 1692269.4378353518,
-      "3rd Qu.": 3026270.0,
-      "Max.": 6495180.0,
-      "valid": 6523,
+      "1st Qu.": 295892.0,
+      "Median": 2017205.0,
+      "Mean": 1796897.308804764,
+      "3rd Qu.": 3034690.0,
+      "Max.": 7070890.0,
+      "valid": 7053,
       "invalid": 0
     }
   },
   {
-    "name": "pnr",
+    "name": "hid",
     "dataset": "vpl",
-    "label": "Seq. person number",
+    "label": "Current Wave HH Number",
     "categories": {
       "values": [
-        -8,
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        98,
-        99
-      ],
-      "labels": [
-        "[-8] Question this year not part of survey",
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissable multiple response",
-        "[-3] Implausible value",
-        "[-2] Does not apply",
-        "[-1] No answer",
-        "[98] Former Core Sample Member",
-        "[99] [de] Kein Stichprobenmitglied"
-      ],
-      "labels_de": [
-        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
-        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] in Fragebogenversion nicht enthalten",
-        "[-4] unzulaessige Mehrfachantwort",
-        "[-3] unplausibler Wert",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[98] Frueheres Stichprobenmitglied",
-        "[99] Kein Stichprobenmitglied"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        5297,
-        0,
-        0,
-        0,
-        0,
-        0,
-        20,
-        0,
-        0,
-        0
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Lfd. Personennummer",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 1206,
-      "invalid": 5317
-    }
-  },
-  {
-    "name": "vpid",
-    "dataset": "vpl",
-    "label": "Unchanging ID Person deceased",
-    "categories": {
-      "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -269,6 +91,7 @@
         -1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -278,7 +101,19 @@
         "[-2] Does not apply",
         "[-1] No answer"
       ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
       "missings": [
+        true,
         true,
         true,
         true,
@@ -289,6 +124,157 @@
         true
       ],
       "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "scale": "number",
+    "label_de": "Aktuelle Haushaltsnummer",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 94.0,
+      "1st Qu.": 292664.0,
+      "Median": 2015695.0,
+      "Mean": 1802345.5614632072,
+      "3rd Qu.": 3038644.0,
+      "Max.": 7070890.0,
+      "valid": 7053,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "pid",
+    "dataset": "vpl",
+    "label": "Never Changing Person ID",
+    "categories": {
+      "values": [
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-9] Missing due to a terminated interview",
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer"
+      ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "scale": "number",
+    "label_de": "Unveränderliche Personennummer",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 2945401.0,
+      "Median": 20160002.0,
+      "Mean": 17901490.197362825,
+      "3rd Qu.": 30341001.0,
+      "Max.": 70708901.0,
+      "valid": 7053,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "vpid",
+    "dataset": "vpl",
+    "label": "Unchanging ID Person deceased",
+    "categories": {
+      "values": [
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-9] Missing due to a terminated interview",
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer"
+      ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        0,
         0,
         0,
         0,
@@ -304,73 +290,13 @@
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
-      "1st Qu.": 2902352.0,
-      "Median": 20228549.0,
-      "Mean": 17885412.141807493,
-      "3rd Qu.": 30300799.0,
-      "Max.": 64951897.0,
-      "valid": 5444,
+      "1st Qu.": 2943851.0,
+      "Median": 20336598.0,
+      "Mean": 19033724.93404754,
+      "3rd Qu.": 30438798.75,
+      "Max.": 70708997.0,
+      "valid": 5974,
       "invalid": 1079
-    }
-  },
-  {
-    "name": "vpnr",
-    "dataset": "vpl",
-    "label": "[de] Lfd. Nr. der Angaben der verstorbenen Person",
-    "categories": {
-      "values": [
-        -8,
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1
-      ],
-      "labels": [
-        "[-8] Question this year not part of survey",
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissable multiple response",
-        "[-3] Implausible value",
-        "[-2] Does not apply",
-        "[-1] No answer"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "frequencies": [
-        2103,
-        0,
-        0,
-        0,
-        0,
-        0,
-        15,
-        0
-      ]
-    },
-    "scale": "number",
-    "label_de": "Lfd. Nr. der Angaben der verstorbenen Person",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 1.0,
-      "Median": 1.0,
-      "Mean": 36.77230419977298,
-      "3rd Qu.": 99.0,
-      "Max.": 99.0,
-      "valid": 4405,
-      "invalid": 2118
     }
   },
   {
@@ -379,6 +305,7 @@
     "label": "Survey Year",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -389,6 +316,7 @@
         -1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -398,7 +326,19 @@
         "[-2] Does not apply",
         "[-1] No answer"
       ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
       "missings": [
+        true,
         true,
         true,
         true,
@@ -409,6 +349,7 @@
         true
       ],
       "frequencies": [
+        0,
         0,
         0,
         0,
@@ -426,10 +367,10 @@
       "Min.": 2009.0,
       "1st Qu.": 2014.0,
       "Median": 2018.0,
-      "Mean": 2017.1036332975625,
+      "Mean": 2017.5467177087764,
       "3rd Qu.": 2021.0,
-      "Max.": 2022.0,
-      "valid": 6523,
+      "Max.": 2023.0,
+      "valid": 7053,
       "invalid": 0
     }
   },
@@ -439,6 +380,7 @@
     "label": "Sample information",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -465,20 +407,35 @@
         19,
         20,
         21,
+        22,
         24,
+        25,
+        26,
+        28,
         29,
         30,
         31,
+        32,
         33,
         34,
         35,
         36,
         37,
+        38,
         39,
         40,
         41,
         42,
         43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
         60,
         61,
         62,
@@ -488,6 +445,7 @@
         66
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -514,20 +472,35 @@
         "[19] I Refreshment, Incentivation 2009",
         "[20] J Refreshment, 2011",
         "[21] K Refreshment, 2012",
+        "[22] Refreshment SOEP-IS, Supplementary Sample 2012",
         "[24] M1 IAB-SOEP 2013 Migration (1995-2011)",
+        "[25] Refreshment SOEP-IS, S2 Supplementary 2013",
+        "[26] Refreshment SOEP-IS, S3 Supplementary 2014",
+        "[28] SOEP- IS, Bonn Intervention Panel 2014",
         "[29] M2 IAB-SOEP Migration (2009-2013), 2015",
         "[30] M3 IAB-BAMF-SOEP 2016 Refugee (2013-2015)",
         "[31] M4 IAB-BAMF-SOEP 2016 Refugee/ Families (2013-2015)",
+        "[32] Refreshment SOEP-IS, S4 Supplementary 2016",
         "[33] N Refreshment (from PIAAC-L), 2017",
         "[34] M5 IAB-BAMF-SOEP 2017 Refugee",
         "[35] O 2018 Social City",
         "[36] P 2019 High Net-Worth Individuals",
         "[37] Q 2019 LGB",
+        "[38] SOEP-IS, S5 Supplementary 2020 ESS",
         "[39] M7 IAB-SOEP 2020 Migration",
         "[40] M8 IAB-SOEP 2020 Migration",
         "[41] M6 IAB-BAMF-SOEP 2020 Refugee",
         "[42] R Refreshment 2022",
         "[43] M8b IAB-SOEP 2020 Migration",
+        "[44] M9 Persons in Need of Protection (Ukraine), 2022",
+        "[45] M8c IAB-SOEP Refreshment non-EU countries, 2023",
+        "[46] Refreshment SOEP-IS 2023 (CAWI)",
+        "[47] M9 IAB-BAMF-SOEP Persons in Need of Protection (other countries), 2023",
+        "[48] M9 IAB-BAMF-SOEP Persons in Need of Protection (Ukraine), 2023",
+        "[49] S Refreshement 2024",
+        "[50] M8d IAB-SOEP Refreshment non-EU countries, 2024",
+        "[51] M10 IAB-SOEP 2024 Migration",
+        "[52] Refreshment SOEP-IS 2025",
         "[60] L2/3 FiD Screening, Low Income, 2010/11",
         "[61] L2/3 FiD Screening, Single Parent, 2010/11",
         "[62] L2/3 FiD Screening, Families with Several Children, 2010/11",
@@ -537,6 +510,7 @@
         "[66] L1 FiD Birth Cohort 2010, 2010/11"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -563,20 +537,35 @@
         "[19] Aufstockung 2009/ Incentivierung I",
         "[20] Aufstockung 2011/Stichprobe J",
         "[21] Aufstockung 2012/Stichprobe K",
+        "[22] Innovationssample 2012 Aufstockung",
         "[24] M1 IAB-SOEP 2013 Migration (1995-2011)",
+        "[25] Innovationssample 2013 Aufstockung",
+        "[26] Innovationssample 2014 Aufstockung",
+        "[28] Bonn Intervention Panel 2014",
         "[29] M2 IAB-SOEP Migration 2015 (2009-2013)",
         "[30] M3 IAB-BAMF-SOEP 2016 Flucht (2013-2015)",
         "[31] M4 IAB-BAMF-SOEP 2016 Flucht/Familien (2013-2015)",
+        "[32] Innovationssample 2016 Aufstockung",
         "[33] Aufstockung 2017/Stichprobe N",
         "[34] M5 IAB-BAMF-SOEP 2017 Refugee",
         "[35] Soziale Stadt 2018/Stichprobe O",
         "[36] Top-Gesellschafter 2019/ Stichprobe P",
         "[37] Lesbisch-Schwul-Bisexuelle (LGB) 2019/Stichprobe Q",
+        "[38] Innovationssample 2020 Aufstockung ESS",
         "[39] M7 IAB-SOEP 2020 Migration",
         "[40] M8 IAB-SOEP 2020 Migration",
         "[41] M6 IAB-BAMF-SOEP 2020 Flucht",
         "[42] Aufstockung 2022/Stichprobe R",
         "[43] M8b IAB-SOEP 2020 Migration",
+        "[44] Schutzsuchende 2022 (Ukraine)/Stichprobe M9",
+        "[45] M8c IAB-SOEP 2023 Migration Nicht-EU-Länder",
+        "[46] Aufstockung SOEP-IS 2023 (CAWI)",
+        "[47] M9 IAB-BAMF-SOEP 2023 Schutzsuchende (andere Länder)",
+        "[48] M9 IAB-BAMF-SOEP 2023 Schutzsuchende (Ukraine)",
+        "[49] Aufstockung 2024/Stichprobe S",
+        "[50] M8d IAB-SOEP 2024 Migration Nicht-EU-Länder",
+        "[51] M10 IAB-SOEP 2024 Migration",
+        "[52] Aufstockung SOEP-IS 2025",
         "[60] FiD Screening 2010/11 - Niedrigeinkommen/Stichprobe L2/3",
         "[61] FiD Screening 2010/11 - Alleinerziehende/Stichprobe L2/3",
         "[62] FiD Screening 2010/11 - Mehrkindfamilien/Stichprobe L2/3",
@@ -594,6 +583,22 @@
         true,
         true,
         true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false,
@@ -643,61 +648,382 @@
         0,
         0,
         0,
-        761,
+        0,
+        786,
         27,
-        38,
+        39,
         14,
         32,
         10,
-        434,
-        63,
-        26,
+        448,
+        64,
+        27,
         30,
-        32,
-        1047,
-        19,
-        297,
-        321,
+        33,
+        1080,
+        20,
+        313,
+        338,
         31,
-        765,
-        343,
-        302,
-        47,
+        803,
+        363,
+        0,
+        308,
         0,
         0,
-        415,
         0,
-        74,
-        169,
-        55,
-        11,
-        9,
-        0,
-        278,
         50,
-        182,
-        126,
-        221,
-        74,
-        93,
-        57,
-        70
+        0,
+        0,
+        0,
+        474,
+        0,
+        85,
+        206,
+        67,
+        0,
+        13,
+        12,
+        0,
+        391,
+        69,
+        0,
+        13,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        195,
+        138,
+        252,
+        80,
+        98,
+        67,
+        77
       ]
     },
     "scale": "cat",
     "label_de": "Stichprobenkennzeichen",
     "study": "soep-core",
     "statistics": {
-      "valid": 6523,
+      "valid": 7053,
       "invalid": 0
     }
   },
   {
-    "name": "dl001_v1",
+    "name": "pnr",
     "dataset": "vpl",
-    "label": "Gender",
+    "label": "Seq. person number",
     "categories": {
       "values": [
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        98,
+        99
+      ],
+      "labels": [
+        "[-9] Missing due to a terminated interview",
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[98] Former sample member",
+        "[99] Not a sample member"
+      ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[98] Früheres Stichprobenmitglied",
+        "[99] Kein Stichprobenmitglied"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        5827,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Lfd. Personennummer",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 1206,
+      "invalid": 5847
+    }
+  },
+  {
+    "name": "vpnr",
+    "dataset": "vpl",
+    "label": "Seq. person number of deceased",
+    "categories": {
+      "values": [
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-9] Missing due to a terminated interview",
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer"
+      ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        0,
+        2633,
+        0,
+        0,
+        0,
+        0,
+        0,
+        15,
+        0
+      ]
+    },
+    "scale": "number",
+    "label_de": "Lfd. Nr. der Angaben der verstorbenen Person",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 1.0,
+      "Median": 1.0,
+      "Mean": 36.77230419977298,
+      "3rd Qu.": 99.0,
+      "Max.": 99.0,
+      "valid": 4405,
+      "invalid": 2648
+    }
+  },
+  {
+    "name": "birthm",
+    "dataset": "vpl",
+    "label": "Month of birth of the respondent",
+    "categories": {
+      "values": [
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-9] Missing due to a terminated interview",
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer"
+      ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        0,
+        6523,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3
+      ]
+    },
+    "scale": "number",
+    "label_de": "Geburtsmonat des Befragten",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 3.0,
+      "Median": 6.0,
+      "Mean": 6.455407969639468,
+      "3rd Qu.": 9.0,
+      "Max.": 12.0,
+      "valid": 527,
+      "invalid": 6526
+    }
+  },
+  {
+    "name": "birthy_v2",
+    "dataset": "vpl",
+    "label": "Year of birth of the respondent [2023]",
+    "categories": {
+      "values": [
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-9] Missing due to a terminated interview",
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer"
+      ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        0,
+        6523,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "scale": "number",
+    "label_de": "Geburtsjahr des Befragten [2023]",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1932.0,
+      "1st Qu.": 1960.0,
+      "Median": 1968.0,
+      "Mean": 1969.1094339622641,
+      "3rd Qu.": 1978.0,
+      "Max.": 2005.0,
+      "valid": 530,
+      "invalid": 6523
+    }
+  },
+  {
+    "name": "dl001_h",
+    "dataset": "vpl",
+    "label": "Gender of person deceased [harmonised]",
+    "categories": {
+      "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -710,6 +1036,7 @@
         2
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -722,6 +1049,7 @@
         "[2] Female"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -742,11 +1070,92 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
       "frequencies": [
-        1049,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        1,
+        43,
+        3726,
+        3280
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Geschlecht der verstorbenen Person [harmonisiert]",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 7006,
+      "invalid": 47
+    }
+  },
+  {
+    "name": "dl001_v1",
+    "dataset": "vpl",
+    "label": "Gender of person deceased [2009/2021] [2009-2021]",
+    "categories": {
+      "values": [
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2
+      ],
+      "labels": [
+        "[-9] Missing due to a terminated interview",
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[1] Male",
+        "[2] Female"
+      ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Maennlich",
+        "[2] Weiblich"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        1579,
         0,
         0,
         0,
@@ -759,19 +1168,20 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Geschlecht der verstorbenen Person",
+    "label_de": "Geschlecht der verstorbenen Person [2009/2021] [2009-2021]",
     "study": "soep-core",
     "statistics": {
       "valid": 5464,
-      "invalid": 1059
+      "invalid": 1589
     }
   },
   {
     "name": "dl001_v2",
     "dataset": "vpl",
-    "label": "[de] Geschlecht der verstorbenen Person",
+    "label": "Gender of person deceased [2022/2023] [2022, 2023]",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -785,6 +1195,7 @@
         3
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -798,6 +1209,7 @@
         "[3] Divers"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -819,11 +1231,13 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false
       ],
       "frequencies": [
+        0,
         5474,
         0,
         0,
@@ -831,26 +1245,27 @@
         0,
         3,
         0,
-        32,
-        544,
-        469,
+        33,
+        827,
+        715,
         1
       ]
     },
     "scale": "cat",
-    "label_de": "Geschlecht der verstorbenen Person",
+    "label_de": "Geschlecht der verstorbenen Person [2022/2023] [2022, 2023]",
     "study": "soep-core",
     "statistics": {
-      "valid": 1014,
-      "invalid": 5509
+      "valid": 1543,
+      "invalid": 5510
     }
   },
   {
     "name": "dl002",
     "dataset": "vpl",
-    "label": "[de] Geburtsjahr der verstorbenen Person",
+    "label": "Year of birth: Deceased Person",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -861,6 +1276,7 @@
         -1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -870,7 +1286,19 @@
         "[-2] Does not apply",
         "[-1] No answer"
       ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
       "missings": [
+        true,
         true,
         true,
         true,
@@ -886,9 +1314,10 @@
         0,
         0,
         0,
+        0,
         13,
         0,
-        128
+        134
       ]
     },
     "scale": "number",
@@ -896,21 +1325,22 @@
     "study": "soep-core",
     "statistics": {
       "Min.": 1895.0,
-      "1st Qu.": 1929.0,
-      "Median": 1936.0,
-      "Mean": 1938.9717956753368,
-      "3rd Qu.": 1946.0,
-      "Max.": 2022.0,
-      "valid": 6382,
-      "invalid": 141
+      "1st Qu.": 1930.0,
+      "Median": 1937.0,
+      "Mean": 1939.3843035041994,
+      "3rd Qu.": 1947.0,
+      "Max.": 2023.0,
+      "valid": 6906,
+      "invalid": 147
     }
   },
   {
     "name": "dl003",
     "dataset": "vpl",
-    "label": "Month Of Birth",
+    "label": "Month Of Birth: Deceased Person",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -933,6 +1363,7 @@
         12
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -955,6 +1386,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -985,6 +1417,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -999,6 +1432,7 @@
         false
       ],
       "frequencies": [
+        0,
         2780,
         1,
         0,
@@ -1006,35 +1440,36 @@
         0,
         10,
         0,
-        158,
-        295,
+        169,
+        346,
+        376,
+        397,
+        399,
+        326,
+        320,
+        328,
         330,
-        355,
-        347,
-        281,
-        271,
-        291,
-        287,
-        268,
-        307,
-        274,
-        268
+        310,
+        346,
+        306,
+        309
       ]
     },
     "scale": "cat",
     "label_de": "Geburtsmonat der verstorbenen Person",
     "study": "soep-core",
     "statistics": {
-      "valid": 3574,
-      "invalid": 2949
+      "valid": 4093,
+      "invalid": 2960
     }
   },
   {
     "name": "dl004",
     "dataset": "vpl",
-    "label": "[de] Verwandtschaftsverhältnis zur verstorbenen Person",
+    "label": "Relationship: Deceased Person",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -1049,6 +1484,7 @@
         4
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -1063,6 +1499,7 @@
         "[4] Other"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1085,6 +1522,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -1095,30 +1533,32 @@
         0,
         0,
         0,
+        0,
         1,
         3,
         1,
-        50,
-        4457,
-        1132,
-        181,
-        698
+        52,
+        4899,
+        1181,
+        195,
+        721
       ]
     },
     "scale": "cat",
     "label_de": "Verwandtschaftsverhältnis zur verstorbenen Person",
     "study": "soep-core",
     "statistics": {
-      "valid": 6468,
-      "invalid": 55
+      "valid": 6996,
+      "invalid": 57
     }
   },
   {
     "name": "dl005",
     "dataset": "vpl",
-    "label": "[de] Alter der verstorbenen Person",
+    "label": "Age: Deceased Person",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -1129,6 +1569,7 @@
         -1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -1138,7 +1579,19 @@
         "[-2] Does not apply",
         "[-1] No answer"
       ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
       "missings": [
+        true,
         true,
         true,
         true,
@@ -1154,9 +1607,10 @@
         0,
         0,
         0,
+        0,
         14,
         1,
-        164
+        170
       ]
     },
     "scale": "number",
@@ -1164,21 +1618,22 @@
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
-      "1st Qu.": 69.0,
+      "1st Qu.": 70.0,
       "Median": 79.0,
-      "Mean": 76.42156368221943,
+      "Mean": 76.51840419330497,
       "3rd Qu.": 86.0,
       "Max.": 117.0,
-      "valid": 6344,
-      "invalid": 179
+      "valid": 6868,
+      "invalid": 185
     }
   },
   {
     "name": "dl006",
     "dataset": "vpl",
-    "label": "[de] Verstorbene Person lebte im hiesigen HH",
+    "label": "Deceased Person lived in the househol",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -1191,6 +1646,7 @@
         2
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -1203,6 +1659,7 @@
         "[2] No"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1223,6 +1680,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -1232,19 +1690,20 @@
         0,
         0,
         0,
+        0,
         3,
         1,
-        14,
-        1544,
-        4961
+        15,
+        1629,
+        5405
       ]
     },
     "scale": "cat",
     "label_de": "Verstorbene Person lebte im hiesigen HH",
     "study": "soep-core",
     "statistics": {
-      "valid": 6505,
-      "invalid": 18
+      "valid": 7034,
+      "invalid": 19
     }
   },
   {
@@ -1253,6 +1712,7 @@
     "label": "person died was SOEP attendant",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -1266,6 +1726,7 @@
         3
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -1279,6 +1740,7 @@
         "[3] Do Not Know"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1300,6 +1762,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false
@@ -1310,28 +1773,30 @@
         0,
         0,
         0,
+        0,
         3,
-        1556,
-        121,
-        393,
-        4210,
-        240
+        1642,
+        123,
+        416,
+        4604,
+        265
       ]
     },
     "scale": "cat",
     "label_de": "Verstorbene Person nahm am SOEP teil",
     "study": "soep-core",
     "statistics": {
-      "valid": 4843,
-      "invalid": 1680
+      "valid": 5285,
+      "invalid": 1768
     }
   },
   {
     "name": "dl008",
     "dataset": "vpl",
-    "label": "[de] Häusliches Umfeld im letzten Lebensjahr",
+    "label": "Domestic environment of deceased Person",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -1349,6 +1814,7 @@
         7
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -1358,14 +1824,15 @@
         "[-2] Does not apply",
         "[-1] No answer",
         "[1] Alone",
-        "[2] [de] Zusammen mit Ehe- / Lebenspartner im eigenen Haushalt",
-        "[3] [de] Zusammen mit sonstigen Familienangehörigen in Privathaushalt",
-        "[4] [de] Wohnanlage fuer Senioren",
+        "[2] Together with spouse / partner in private household",
+        "[3] Together with other family members in private household",
+        "[4] Accommodation geared to the needs of senior citizens (assisted living, etc.)",
         "[5] Old-Age Home",
-        "[6] [de] Klinik/Krankenhaus",
+        "[6] Clinic, hospital",
         "[7] other environment"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1391,6 +1858,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -1404,25 +1872,26 @@
         0,
         0,
         0,
-        16,
+        0,
+        17,
         3,
-        1556,
-        124,
-        1443,
-        1925,
-        415,
-        135,
-        814,
-        52,
-        40
+        1642,
+        127,
+        1574,
+        2120,
+        440,
+        144,
+        884,
+        57,
+        45
       ]
     },
     "scale": "cat",
     "label_de": "Häusliches Umfeld im letzten Lebensjahr",
     "study": "soep-core",
     "statistics": {
-      "valid": 4824,
-      "invalid": 1699
+      "valid": 5264,
+      "invalid": 1789
     }
   },
   {
@@ -1431,6 +1900,7 @@
     "label": "focus of deceased person's life",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -1446,6 +1916,7 @@
         5
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -1456,11 +1927,12 @@
         "[-1] No answer",
         "[1] here in the house",
         "[2] In the neighborhood",
-        "[3] [de] Innerhalb von einer Stunde zu Fuß erreichbar",
-        "[4] [de] Weiter entfernt in Deutschland",
+        "[3] Nearby (within an hour on foot)",
+        "[4] Further away in Germany",
         "[5] In A Foreign Country"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1484,6 +1956,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -1496,30 +1969,32 @@
         0,
         0,
         0,
+        0,
         3,
-        1527,
-        157,
-        324,
-        570,
-        1543,
-        1984,
-        415
+        1613,
+        160,
+        347,
+        623,
+        1690,
+        2159,
+        458
       ]
     },
     "scale": "cat",
     "label_de": "Lebensmittelpunkt der verstorbenen Person",
     "study": "soep-core",
     "statistics": {
-      "valid": 4836,
-      "invalid": 1687
+      "valid": 5277,
+      "invalid": 1776
     }
   },
   {
     "name": "dl010",
     "dataset": "vpl",
-    "label": "[de] Persönlicher Kontakt zur verstorbenen Person im letzten Jahr",
+    "label": "Contact to deceased person last 12 months",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -1535,6 +2010,7 @@
         5
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -1543,13 +2019,14 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[1] [de] Täglich oder fast täglich",
-        "[2] [de] Mindestens einmal in der Woche",
-        "[3] [de] Mindestens einmal im Monat",
+        "[1] Every day or almost every day",
+        "[2] At least once a week",
+        "[3] At least once a month",
         "[4] Less Frequently",
         "[5] Not at All"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1573,6 +2050,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -1584,31 +2062,33 @@
         0,
         0,
         0,
+        0,
         3,
         3,
-        1527,
-        141,
-        1779,
-        1750,
-        702,
-        437,
-        181
+        1613,
+        142,
+        1934,
+        1911,
+        779,
+        468,
+        200
       ]
     },
     "scale": "cat",
     "label_de": "Persönlicher Kontakt zur verstorbenen Person im letzten Jahr",
     "study": "soep-core",
     "statistics": {
-      "valid": 4849,
-      "invalid": 1674
+      "valid": 5292,
+      "invalid": 1761
     }
   },
   {
     "name": "dl011",
     "dataset": "vpl",
-    "label": "[de] Sterbeort",
+    "label": "Place of death",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -1626,6 +2106,7 @@
         7
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -1643,6 +2124,7 @@
         "[7] Do Not Know"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1668,6 +2150,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -1682,24 +2165,25 @@
         0,
         0,
         0,
+        0,
         3,
         2,
-        24,
-        2021,
-        69,
-        2958,
-        1018,
-        217,
-        186,
-        25
+        25,
+        2199,
+        76,
+        3176,
+        1107,
+        237,
+        200,
+        28
       ]
     },
     "scale": "cat",
     "label_de": "Sterbeort",
     "study": "soep-core",
     "statistics": {
-      "valid": 6494,
-      "invalid": 29
+      "valid": 7023,
+      "invalid": 30
     }
   },
   {
@@ -1708,6 +2192,7 @@
     "label": "cause of death: heart attack",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -1719,6 +2204,7 @@
         1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -1727,9 +2213,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[1] [de] genannt"
+        "[1] mentioned"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1749,6 +2236,7 @@
         true,
         true,
         true,
+        true,
         false
       ],
       "frequencies": [
@@ -1757,18 +2245,19 @@
         0,
         0,
         0,
+        0,
         3,
-        5883,
-        56,
-        581
+        6322,
+        107,
+        621
       ]
     },
     "scale": "cat",
     "label_de": "Todesursache: Herzinfarkt",
     "study": "soep-core",
     "statistics": {
-      "valid": 581,
-      "invalid": 5942
+      "valid": 621,
+      "invalid": 6432
     }
   },
   {
@@ -1777,6 +2266,7 @@
     "label": "cause of death: cardiovascular disease",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -1788,6 +2278,7 @@
         1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -1796,9 +2287,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[1] [de] genannt"
+        "[1] mentioned"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1818,6 +2310,7 @@
         true,
         true,
         true,
+        true,
         false
       ],
       "frequencies": [
@@ -1826,18 +2319,19 @@
         0,
         0,
         0,
+        0,
         3,
-        5474,
-        48,
-        998
+        5888,
+        93,
+        1069
       ]
     },
     "scale": "cat",
     "label_de": "Todesursache: Herz-Kreislauf-Erkrankung",
     "study": "soep-core",
     "statistics": {
-      "valid": 998,
-      "invalid": 5525
+      "valid": 1069,
+      "invalid": 5984
     }
   },
   {
@@ -1846,6 +2340,7 @@
     "label": "cause of death: cancer",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -1857,6 +2352,7 @@
         1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -1865,9 +2361,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[1] [de] genannt"
+        "[1] mentioned"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1887,6 +2384,7 @@
         true,
         true,
         true,
+        true,
         false
       ],
       "frequencies": [
@@ -1895,18 +2393,19 @@
         0,
         0,
         0,
+        0,
         3,
-        4753,
-        56,
-        1711
+        5124,
+        100,
+        1826
       ]
     },
     "scale": "cat",
     "label_de": "Todesursache: Krebserkrankung",
     "study": "soep-core",
     "statistics": {
-      "valid": 1711,
-      "invalid": 4812
+      "valid": 1826,
+      "invalid": 5227
     }
   },
   {
@@ -1915,6 +2414,7 @@
     "label": "cause of death: epileptic stroke",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -1926,6 +2426,7 @@
         1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -1934,9 +2435,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[1] [de] genannt"
+        "[1] mentioned"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -1956,6 +2458,7 @@
         true,
         true,
         true,
+        true,
         false
       ],
       "frequencies": [
@@ -1964,18 +2467,19 @@
         0,
         0,
         0,
+        0,
         3,
-        5983,
-        56,
-        481
+        6425,
+        109,
+        516
       ]
     },
     "scale": "cat",
     "label_de": "Todesursache: Schlaganfall",
     "study": "soep-core",
     "statistics": {
-      "valid": 481,
-      "invalid": 6042
+      "valid": 516,
+      "invalid": 6537
     }
   },
   {
@@ -1984,6 +2488,7 @@
     "label": "cause of death: sever infectious disease",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -1995,6 +2500,7 @@
         1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -2003,9 +2509,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[1] [de] genannt"
+        "[1] mentioned"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2025,6 +2532,7 @@
         true,
         true,
         true,
+        true,
         false
       ],
       "frequencies": [
@@ -2033,18 +2541,19 @@
         0,
         0,
         0,
+        0,
         3,
-        5930,
-        56,
-        534
+        6355,
+        100,
+        595
       ]
     },
     "scale": "cat",
     "label_de": "Todesursache: Schwere Infektionskrankheit",
     "study": "soep-core",
     "statistics": {
-      "valid": 534,
-      "invalid": 5989
+      "valid": 595,
+      "invalid": 6458
     }
   },
   {
@@ -2053,6 +2562,7 @@
     "label": "cause of death: gastrointestinal tract disease",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -2064,6 +2574,7 @@
         1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -2072,9 +2583,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[1] [de] genannt"
+        "[1] mentioned"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2094,6 +2606,7 @@
         true,
         true,
         true,
+        true,
         false
       ],
       "frequencies": [
@@ -2102,18 +2615,19 @@
         0,
         0,
         0,
+        0,
         3,
-        6284,
-        56,
-        180
+        6743,
+        109,
+        198
       ]
     },
     "scale": "cat",
     "label_de": "Todesursache: Magen-Darm-Trakt-Erkrankung",
     "study": "soep-core",
     "statistics": {
-      "valid": 180,
-      "invalid": 6343
+      "valid": 198,
+      "invalid": 6855
     }
   },
   {
@@ -2122,6 +2636,7 @@
     "label": "cause of death: respiratory disease",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -2133,6 +2648,7 @@
         1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -2141,9 +2657,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[1] [de] genannt"
+        "[1] mentioned"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2163,6 +2680,7 @@
         true,
         true,
         true,
+        true,
         false
       ],
       "frequencies": [
@@ -2171,18 +2689,19 @@
         0,
         0,
         0,
+        0,
         3,
-        6170,
-        56,
-        294
+        6618,
+        107,
+        325
       ]
     },
     "scale": "cat",
     "label_de": "Todesursache: Atemwegserkrankung",
     "study": "soep-core",
     "statistics": {
-      "valid": 294,
-      "invalid": 6229
+      "valid": 325,
+      "invalid": 6728
     }
   },
   {
@@ -2191,6 +2710,7 @@
     "label": "cause of death: accident",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -2202,6 +2722,7 @@
         1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -2210,9 +2731,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[1] [de] genannt"
+        "[1] mentioned"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2232,6 +2754,7 @@
         true,
         true,
         true,
+        true,
         false
       ],
       "frequencies": [
@@ -2240,18 +2763,19 @@
         0,
         0,
         0,
+        0,
         3,
-        6326,
-        56,
-        138
+        6792,
+        110,
+        148
       ]
     },
     "scale": "cat",
     "label_de": "Todesursache: Unfall",
     "study": "soep-core",
     "statistics": {
-      "valid": 138,
-      "invalid": 6385
+      "valid": 148,
+      "invalid": 6905
     }
   },
   {
@@ -2260,6 +2784,7 @@
     "label": "cause of death: other",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -2271,6 +2796,7 @@
         1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -2279,9 +2805,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[1] [de] genannt"
+        "[1] mentioned"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2301,6 +2828,7 @@
         true,
         true,
         true,
+        true,
         false
       ],
       "frequencies": [
@@ -2309,18 +2837,19 @@
         0,
         0,
         0,
+        0,
         3,
-        4437,
-        27,
-        2056
+        4743,
+        66,
+        2241
       ]
     },
     "scale": "cat",
     "label_de": "Todesursache: Sonstige Ursache",
     "study": "soep-core",
     "statistics": {
-      "valid": 2056,
-      "invalid": 4467
+      "valid": 2241,
+      "invalid": 4812
     }
   },
   {
@@ -2329,6 +2858,7 @@
     "label": "cause of death unknown",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -2340,6 +2870,7 @@
         1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -2348,9 +2879,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[1] [de] genannt"
+        "[1] mentioned"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2370,6 +2902,7 @@
         true,
         true,
         true,
+        true,
         false
       ],
       "frequencies": [
@@ -2378,18 +2911,19 @@
         0,
         0,
         0,
+        0,
         3,
-        6096,
-        75,
-        349
+        6571,
+        124,
+        355
       ]
     },
     "scale": "cat",
     "label_de": "Todesursache: Unbekannt",
     "study": "soep-core",
     "statistics": {
-      "valid": 349,
-      "invalid": 6174
+      "valid": 355,
+      "invalid": 6698
     }
   },
   {
@@ -2398,6 +2932,7 @@
     "label": "left last will",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -2411,6 +2946,7 @@
         3
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -2424,6 +2960,7 @@
         "[3] Do Not Know"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2445,6 +2982,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false
@@ -2454,21 +2992,22 @@
         0,
         0,
         0,
+        0,
         3,
         3,
         1,
-        96,
-        2618,
-        3407,
-        395
+        98,
+        2849,
+        3681,
+        418
       ]
     },
     "scale": "cat",
     "label_de": "Hinterlegung von Testament",
     "study": "soep-core",
     "statistics": {
-      "valid": 6420,
-      "invalid": 103
+      "valid": 6948,
+      "invalid": 105
     }
   },
   {
@@ -2477,6 +3016,7 @@
     "label": "left living will",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -2490,6 +3030,7 @@
         3
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -2503,6 +3044,7 @@
         "[3] Do Not Know"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2524,6 +3066,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false
@@ -2533,21 +3076,22 @@
         0,
         0,
         0,
+        0,
         1,
         3,
         1,
-        114,
-        3102,
-        2800,
-        502
+        117,
+        3419,
+        2971,
+        541
       ]
     },
     "scale": "cat",
     "label_de": "Hinterlegung von Patientenverfügung",
     "study": "soep-core",
     "statistics": {
-      "valid": 6404,
-      "invalid": 119
+      "valid": 6931,
+      "invalid": 122
     }
   },
   {
@@ -2556,6 +3100,7 @@
     "label": "left provisional power or attorney",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -2569,6 +3114,7 @@
         3
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -2582,6 +3128,7 @@
         "[3] Do Not Know"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2603,6 +3150,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false
@@ -2612,21 +3160,22 @@
         0,
         0,
         0,
+        0,
         1,
         3,
         1,
-        127,
-        3163,
-        2644,
-        584
+        132,
+        3486,
+        2799,
+        631
       ]
     },
     "scale": "cat",
     "label_de": "Hinterlegung von Vorsorgevollmacht",
     "study": "soep-core",
     "statistics": {
-      "valid": 6391,
-      "invalid": 132
+      "valid": 6916,
+      "invalid": 137
     }
   },
   {
@@ -2635,6 +3184,7 @@
     "label": "left living will with instructions on use of death-delaying procedures",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -2648,6 +3198,7 @@
         3
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -2661,6 +3212,7 @@
         "[3] Do Not Know"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2682,6 +3234,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false
@@ -2691,29 +3244,31 @@
         0,
         0,
         0,
+        0,
         1,
         3,
         1,
-        153,
-        1458,
-        4292,
-        615
+        158,
+        1602,
+        4635,
+        653
       ]
     },
     "scale": "cat",
     "label_de": "Hinterlegung von Sterbeverfügung",
     "study": "soep-core",
     "statistics": {
-      "valid": 6365,
-      "invalid": 158
+      "valid": 6890,
+      "invalid": 163
     }
   },
   {
     "name": "dl026",
     "dataset": "vpl",
-    "label": "[de] Eingeschränkte geistige Leistungsfähigkeit verstorbene Person",
+    "label": "Mental limitation",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -2727,6 +3282,7 @@
         3
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -2740,6 +3296,7 @@
         "[3] Do Not Know"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2761,6 +3318,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false
@@ -2771,28 +3329,30 @@
         0,
         0,
         0,
+        0,
         3,
         1,
-        29,
-        1591,
-        4779,
-        120
+        33,
+        1742,
+        5141,
+        133
       ]
     },
     "scale": "cat",
     "label_de": "Eingeschränkte geistige Leistungsfähigkeit verstorbene Person",
     "study": "soep-core",
     "statistics": {
-      "valid": 6490,
-      "invalid": 33
+      "valid": 7016,
+      "invalid": 37
     }
   },
   {
     "name": "dl027",
     "dataset": "vpl",
-    "label": "[de] Gesundheitszustand der/des Verstorbenen 3 Monate vor Tod",
+    "label": "Three months before death: state of health",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -2808,6 +3368,7 @@
         5
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -2823,6 +3384,7 @@
         "[5] Bad"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2846,6 +3408,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -2858,30 +3421,32 @@
         0,
         0,
         0,
+        2,
         3,
         1,
-        102,
-        208,
-        665,
-        1044,
-        1708,
-        2792
+        111,
+        227,
+        712,
+        1142,
+        1827,
+        3028
       ]
     },
     "scale": "cat",
     "label_de": "Gesundheitszustand der/des Verstorbenen 3 Monate vor Tod",
     "study": "soep-core",
     "statistics": {
-      "valid": 6417,
-      "invalid": 106
+      "valid": 6936,
+      "invalid": 117
     }
   },
   {
     "name": "dl028",
     "dataset": "vpl",
-    "label": "[de] Verstorbene Person 3 Monate vor Tod hilfe- / pflegebedürftig",
+    "label": "Three months before death: in need of assistance",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -2894,6 +3459,7 @@
         2
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -2906,6 +3472,7 @@
         "[2] No"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2926,6 +3493,7 @@
         true,
         true,
         true,
+        true,
         false,
         false
       ],
@@ -2935,27 +3503,29 @@
         0,
         0,
         0,
+        0,
         3,
         1,
-        62,
-        4005,
-        2452
+        66,
+        4352,
+        2631
       ]
     },
     "scale": "cat",
     "label_de": "Verstorbene Person 3 Monate vor Tod hilfe- / pflegebedürftig",
     "study": "soep-core",
     "statistics": {
-      "valid": 6457,
-      "invalid": 66
+      "valid": 6983,
+      "invalid": 70
     }
   },
   {
     "name": "dl029",
     "dataset": "vpl",
-    "label": "[de] Hilfe bei Besorgungen / Erledigungen außer Haus",
+    "label": "Need help: errands",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -2967,6 +3537,7 @@
         1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -2975,9 +3546,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[1] [de] genannt"
+        "[1] mentioned"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -2997,6 +3569,7 @@
         true,
         true,
         true,
+        true,
         false
       ],
       "frequencies": [
@@ -3005,26 +3578,28 @@
         0,
         0,
         0,
+        0,
         3,
-        3068,
-        9,
-        3443
+        3296,
+        19,
+        3735
       ]
     },
     "scale": "cat",
     "label_de": "Hilfe bei Besorgungen / Erledigungen außer Haus",
     "study": "soep-core",
     "statistics": {
-      "valid": 3443,
-      "invalid": 3080
+      "valid": 3735,
+      "invalid": 3318
     }
   },
   {
     "name": "dl030",
     "dataset": "vpl",
-    "label": "Help On Housework, 1. Person",
+    "label": "Help On Housework",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -3036,6 +3611,7 @@
         1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -3044,9 +3620,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[1] [de] genannt"
+        "[1] mentioned"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -3066,6 +3643,7 @@
         true,
         true,
         true,
+        true,
         false
       ],
       "frequencies": [
@@ -3074,18 +3652,19 @@
         0,
         0,
         0,
+        0,
         3,
-        3241,
-        9,
-        3270
+        3480,
+        25,
+        3545
       ]
     },
     "scale": "cat",
     "label_de": "Hilfe im HH / bei Zunahme von Mahlzeiten / Trinken",
     "study": "soep-core",
     "statistics": {
-      "valid": 3270,
-      "invalid": 3253
+      "valid": 3545,
+      "invalid": 3508
     }
   },
   {
@@ -3094,6 +3673,7 @@
     "label": "help with simple personal care: dressing, bathing...",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -3105,6 +3685,7 @@
         1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -3113,9 +3694,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[1] [de] genannt"
+        "[1] mentioned"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -3135,6 +3717,7 @@
         true,
         true,
         true,
+        true,
         false
       ],
       "frequencies": [
@@ -3143,18 +3726,19 @@
         0,
         0,
         0,
+        0,
         3,
-        3444,
-        9,
-        3067
+        3698,
+        21,
+        3331
       ]
     },
     "scale": "cat",
     "label_de": "Hilfe bei einfacher Pflege",
     "study": "soep-core",
     "statistics": {
-      "valid": 3067,
-      "invalid": 3456
+      "valid": 3331,
+      "invalid": 3722
     }
   },
   {
@@ -3163,6 +3747,7 @@
     "label": "help in getting in and out of bed, using toilet",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -3174,6 +3759,7 @@
         1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -3182,9 +3768,10 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[1] [de] genannt"
+        "[1] mentioned"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -3204,6 +3791,7 @@
         true,
         true,
         true,
+        true,
         false
       ],
       "frequencies": [
@@ -3212,18 +3800,19 @@
         0,
         0,
         0,
+        0,
         3,
-        4169,
-        9,
-        2342
+        4486,
+        39,
+        2525
       ]
     },
     "scale": "cat",
     "label_de": "Hilfe bei schwieriger Pflege",
     "study": "soep-core",
     "statistics": {
-      "valid": 2342,
-      "invalid": 4181
+      "valid": 2525,
+      "invalid": 4528
     }
   },
   {
@@ -3232,6 +3821,7 @@
     "label": "help in total, n.a.",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -3243,6 +3833,7 @@
         1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -3254,6 +3845,7 @@
         "[1] [de] Ja"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -3273,10 +3865,12 @@
         true,
         true,
         true,
+        true,
         false
       ],
       "frequencies": [
-        1049,
+        0,
+        1579,
         0,
         0,
         0,
@@ -3292,15 +3886,16 @@
     "study": "soep-core",
     "statistics": {
       "valid": 9,
-      "invalid": 6514
+      "invalid": 7044
     }
   },
   {
     "name": "dl034",
     "dataset": "vpl",
-    "label": "[de] Zufriedenheit verstorbene Person 1 Jahr vor dem Tod",
+    "label": "Satisfaction one year before death",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -3322,6 +3917,7 @@
         10
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -3343,6 +3939,7 @@
         "[10] Completely Satisfied"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -3372,6 +3969,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -3389,37 +3987,39 @@
         0,
         0,
         0,
+        0,
         1,
         3,
         1,
-        368,
-        183,
-        202,
-        370,
-        436,
-        367,
-        881,
-        541,
-        915,
-        1295,
-        517,
-        443
+        399,
+        220,
+        225,
+        403,
+        481,
+        397,
+        930,
+        592,
+        987,
+        1384,
+        551,
+        479
       ]
     },
     "scale": "cat",
     "label_de": "Zufriedenheit verstorbene Person 1 Jahr vor dem Tod",
     "study": "soep-core",
     "statistics": {
-      "valid": 6150,
-      "invalid": 373
+      "valid": 6649,
+      "invalid": 404
     }
   },
   {
     "name": "dl035",
     "dataset": "vpl",
-    "label": "[de] Zufriedenheit verstorbene Person 3 Monate vor dem Tod",
+    "label": "Satisfaction three months before death",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -3441,6 +4041,7 @@
         10
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -3462,6 +4063,7 @@
         "[10] Completely Satisfied"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -3491,6 +4093,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -3509,28 +4112,29 @@
         0,
         0,
         0,
+        0,
         3,
         1,
-        728,
-        426,
-        528,
-        696,
-        659,
-        381,
-        764,
-        438,
-        574,
-        754,
-        310,
-        261
+        769,
+        497,
+        580,
+        740,
+        721,
+        414,
+        807,
+        480,
+        626,
+        803,
+        327,
+        285
       ]
     },
     "scale": "cat",
     "label_de": "Zufriedenheit verstorbene Person 3 Monate vor dem Tod",
     "study": "soep-core",
     "statistics": {
-      "valid": 5791,
-      "invalid": 732
+      "valid": 6280,
+      "invalid": 773
     }
   },
   {
@@ -3539,6 +4143,7 @@
     "label": "change in personal life since death",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -3552,6 +4157,7 @@
         3
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -3561,10 +4167,11 @@
         "[-2] Does not apply",
         "[-1] No answer",
         "[1] Order life in a new way",
-        "[2] [de] Einiges aendert sich",
-        "[3] [de] Nichts aendert sich"
+        "[2] Some things will change",
+        "[3] Nothing has really changed in my life"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -3586,6 +4193,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false
@@ -3595,29 +4203,31 @@
         0,
         0,
         0,
+        0,
         7,
         3,
         1,
-        75,
-        956,
-        2971,
-        2510
+        79,
+        1011,
+        3232,
+        2720
       ]
     },
     "scale": "cat",
     "label_de": "Veränderung des persönlichen Lebens seit dem Tod",
     "study": "soep-core",
     "statistics": {
-      "valid": 6437,
-      "invalid": 86
+      "valid": 6963,
+      "invalid": 90
     }
   },
   {
-    "name": "intid",
+    "name": "vhil5",
     "dataset": "vpl",
-    "label": "Interviewer ID",
+    "label": "Need for help: No need for help",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -3625,9 +4235,11 @@
         -4,
         -3,
         -2,
-        -1
+        -1,
+        1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -3635,7 +4247,20 @@
         "[-4] Inadmissable multiple response",
         "[-3] Implausible value",
         "[-2] Does not apply",
-        "[-1] No answer"
+        "[-1] No answer",
+        "[1] mentioned"
+      ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] mentioned"
       ],
       "missings": [
         true,
@@ -3645,31 +4270,29 @@
         true,
         true,
         true,
-        true
+        true,
+        true,
+        false
       ],
       "frequencies": [
-        535,
+        0,
+        6523,
         0,
         0,
         0,
         0,
         0,
-        1314,
-        31
+        485,
+        40,
+        5
       ]
     },
-    "scale": "number",
-    "label_de": "Interviewer-ID",
+    "scale": "cat",
+    "label_de": "Bedarf Hilfe: Kein Hilfebedarf Person (1)",
     "study": "soep-core",
     "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 1001283.0,
-      "Median": 1002740.0,
-      "Mean": 799818.7581305191,
-      "3rd Qu.": 1004246.0,
-      "Max.": 1006092.0,
-      "valid": 4643,
-      "invalid": 1880
+      "valid": 5,
+      "invalid": 7048
     }
   },
   {
@@ -3678,6 +4301,7 @@
     "label": "survey instrument",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -3697,6 +4321,7 @@
         10
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -3716,6 +4341,7 @@
         "[10] CAWI"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -3743,6 +4369,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -3754,7 +4381,8 @@
         false
       ],
       "frequencies": [
-        2103,
+        0,
+        2633,
         0,
         0,
         0,
@@ -3778,15 +4406,16 @@
     "study": "soep-core",
     "statistics": {
       "valid": 3605,
-      "invalid": 2918
+      "invalid": 3448
     }
   },
   {
-    "name": "idevice",
+    "name": "iday",
     "dataset": "vpl",
-    "label": "Device",
+    "label": "Day of interview",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -3794,13 +4423,10 @@
         -4,
         -3,
         -2,
-        -1,
-        1,
-        2,
-        3,
-        4
+        -1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -3808,13 +4434,10 @@
         "[-4] Inadmissable multiple response",
         "[-3] Implausible value",
         "[-2] Does not apply",
-        "[-1] No answer",
-        "[1] Computer/Laptop",
-        "[2] tablet computer",
-        "[3] smart phone",
-        "[4] Other"
+        "[-1] No answer"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -3822,75 +4445,10 @@
         "[-4] unzulaessige Mehrfachantwort",
         "[-3] unplausibler Wert",
         "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[1] Computer/Laptop",
-        "[2] Tablet",
-        "[3] Smartphone",
-        "[4] Sonstiges"
+        "[-1] keine Angabe"
       ],
       "missings": [
         true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false,
-        false,
-        false
-      ],
-      "frequencies": [
-        4469,
-        0,
-        0,
-        1804,
-        0,
-        0,
-        183,
-        0,
-        59,
-        2,
-        5,
-        1
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Gerät",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 67,
-      "invalid": 6456
-    }
-  },
-  {
-    "name": "iminute",
-    "dataset": "vpl",
-    "label": "End of Interview (Minutes)",
-    "categories": {
-      "values": [
-        -8,
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1
-      ],
-      "labels": [
-        "[-8] Question this year not part of survey",
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissable multiple response",
-        "[-3] Implausible value",
-        "[-2] Does not apply",
-        "[-1] No answer"
-      ],
-      "missings": [
         true,
         true,
         true,
@@ -3901,126 +4459,7 @@
         true
       ],
       "frequencies": [
-        3183,
         0,
-        0,
-        0,
-        0,
-        3,
-        0,
-        184
-      ]
-    },
-    "scale": "number",
-    "label_de": "Zeitpunkt des Interviews: Minute",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 14.0,
-      "Median": 29.0,
-      "Mean": 28.517285125277514,
-      "3rd Qu.": 44.0,
-      "Max.": 59.0,
-      "valid": 3153,
-      "invalid": 3370
-    }
-  },
-  {
-    "name": "ihour",
-    "dataset": "vpl",
-    "label": "End of Interview (Hour)",
-    "categories": {
-      "values": [
-        -8,
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1
-      ],
-      "labels": [
-        "[-8] Question this year not part of survey",
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissable multiple response",
-        "[-3] Implausible value",
-        "[-2] Does not apply",
-        "[-1] No answer"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "frequencies": [
-        3183,
-        0,
-        0,
-        0,
-        0,
-        3,
-        0,
-        52
-      ]
-    },
-    "scale": "number",
-    "label_de": "Zeitpunkt des Interviews: Stunde",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 12.0,
-      "Median": 16.0,
-      "Mean": 15.005783866057838,
-      "3rd Qu.": 18.0,
-      "Max.": 23.0,
-      "valid": 3285,
-      "invalid": 3238
-    }
-  },
-  {
-    "name": "iday",
-    "dataset": "vpl",
-    "label": "day of interview",
-    "categories": {
-      "values": [
-        -8,
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1
-      ],
-      "labels": [
-        "[-8] Question this year not part of survey",
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissable multiple response",
-        "[-3] Implausible value",
-        "[-2] Does not apply",
-        "[-1] No answer"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true
-      ],
-      "frequencies": [
         0,
         0,
         0,
@@ -4028,7 +4467,7 @@
         0,
         0,
         4,
-        28
+        30
       ]
     },
     "scale": "number",
@@ -4038,19 +4477,20 @@
       "Min.": 1.0,
       "1st Qu.": 9.0,
       "Median": 16.0,
-      "Mean": 15.728701278693576,
+      "Mean": 15.713634420857671,
       "3rd Qu.": 23.0,
       "Max.": 31.0,
-      "valid": 6491,
-      "invalid": 32
+      "valid": 7019,
+      "invalid": 34
     }
   },
   {
     "name": "imonth",
     "dataset": "vpl",
-    "label": "month of interview",
+    "label": "Month of interview",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -4073,6 +4513,7 @@
         12
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -4095,6 +4536,7 @@
         "[12] December"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -4125,6 +4567,7 @@
         true,
         true,
         true,
+        true,
         false,
         false,
         false,
@@ -4145,36 +4588,38 @@
         0,
         0,
         0,
+        0,
         4,
-        27,
+        30,
         30,
         1217,
         1196,
-        726,
-        656,
-        624,
-        623,
-        425,
-        327,
-        303,
-        233,
-        132
+        770,
+        734,
+        704,
+        706,
+        521,
+        408,
+        331,
+        249,
+        153
       ]
     },
     "scale": "cat",
     "label_de": "Zeitpunkt des Interviews: Monat",
     "study": "soep-core",
     "statistics": {
-      "valid": 6492,
-      "invalid": 31
+      "valid": 7019,
+      "invalid": 34
     }
   },
   {
     "name": "iyear",
     "dataset": "vpl",
-    "label": "year of interview",
+    "label": "Year of interview",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -4185,6 +4630,7 @@
         -1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -4194,7 +4640,19 @@
         "[-2] Does not apply",
         "[-1] No answer"
       ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
       "missings": [
+        true,
         true,
         true,
         true,
@@ -4205,6 +4663,7 @@
         true
       ],
       "frequencies": [
+        0,
         4149,
         0,
         0,
@@ -4212,7 +4671,7 @@
         0,
         0,
         4,
-        8
+        10
       ]
     },
     "scale": "number",
@@ -4221,20 +4680,21 @@
     "statistics": {
       "Min.": 2010.0,
       "1st Qu.": 2021.0,
-      "Median": 2021.0,
-      "Mean": 2020.1913632514818,
+      "Median": 2022.0,
+      "Mean": 2020.7044982698962,
       "3rd Qu.": 2022.0,
       "Max.": 2023.0,
-      "valid": 2362,
-      "invalid": 4161
+      "valid": 2890,
+      "invalid": 4163
     }
   },
   {
     "name": "duration",
     "dataset": "vpl",
-    "label": "[de] Interviewdauer",
+    "label": "Duration of interview",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -4245,6 +4705,7 @@
         -1
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -4254,7 +4715,19 @@
         "[-2] Does not apply",
         "[-1] No answer"
       ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
       "missings": [
+        true,
         true,
         true,
         true,
@@ -4265,7 +4738,8 @@
         true
       ],
       "frequencies": [
-        5474,
+        0,
+        6004,
         0,
         0,
         775,
@@ -4286,15 +4760,16 @@
       "3rd Qu.": 20.0,
       "Max.": 75.0,
       "valid": 273,
-      "invalid": 6250
+      "invalid": 6780
     }
   },
   {
-    "name": "instrument",
+    "name": "idevice",
     "dataset": "vpl",
-    "label": "[de] Fragebogenversion",
+    "label": "Device",
     "categories": {
       "values": [
+        -9,
         -8,
         -7,
         -6,
@@ -4303,12 +4778,13 @@
         -3,
         -2,
         -1,
-        260,
-        261,
-        312,
-        313
+        1,
+        2,
+        3,
+        4
       ],
       "labels": [
+        "[-9] Missing due to a terminated interview",
         "[-8] Question this year not part of survey",
         "[-7] Only available in less restricted edition",
         "[-6] Version of questionnaire with modified filtering",
@@ -4317,12 +4793,13 @@
         "[-3] Implausible value",
         "[-2] Does not apply",
         "[-1] No answer",
-        "[260] [de] Verstorbene Person (PAPI) 2021 (soep-core-2021-vp)",
-        "[261] [de] Verstorbene Person (techn.) 2021 (soep-core-2021-vp2)",
-        "[312] [de] Verstorbene Person (PAPI) 2022 (soep-core-2022-vp)",
-        "[313] [de] Verstorbene Person (techn.) 2022 (soep-core-2022-vp2)"
+        "[1] Computer/Laptop",
+        "[2] tablet computer",
+        "[3] smart phone",
+        "[4] Other"
       ],
       "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
@@ -4331,12 +4808,13 @@
         "[-3] unplausibler Wert",
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
-        "[260] Verstorbene Person (PAPI) 2021 (soep-core-2021-vp)",
-        "[261] Verstorbene Person (techn.) 2021 (soep-core-2021-vp2)",
-        "[312] Verstorbene Person (PAPI) 2022 (soep-core-2022-vp)",
-        "[313] Verstorbene Person (techn.) 2022 (soep-core-2022-vp2)"
+        "[1] Computer/Laptop",
+        "[2] Tablet",
+        "[3] Smartphone",
+        "[4] Sonstiges"
       ],
       "missings": [
+        true,
         true,
         true,
         true,
@@ -4351,6 +4829,329 @@
         false
       ],
       "frequencies": [
+        0,
+        4999,
+        0,
+        0,
+        1804,
+        0,
+        0,
+        183,
+        0,
+        59,
+        2,
+        5,
+        1
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Gerät",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 67,
+      "invalid": 6986
+    }
+  },
+  {
+    "name": "ihour",
+    "dataset": "vpl",
+    "label": "End of Interview (Hour)",
+    "categories": {
+      "values": [
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-9] Missing due to a terminated interview",
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer"
+      ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        0,
+        3713,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        52
+      ]
+    },
+    "scale": "number",
+    "label_de": "Zeitpunkt des Interviews: Stunde",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 12.0,
+      "Median": 16.0,
+      "Mean": 15.005783866057838,
+      "3rd Qu.": 18.0,
+      "Max.": 23.0,
+      "valid": 3285,
+      "invalid": 3768
+    }
+  },
+  {
+    "name": "iminute",
+    "dataset": "vpl",
+    "label": "End of Interview (Minutes)",
+    "categories": {
+      "values": [
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-9] Missing due to a terminated interview",
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer"
+      ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        0,
+        3713,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        184
+      ]
+    },
+    "scale": "number",
+    "label_de": "Zeitpunkt des Interviews: Minute",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 14.0,
+      "Median": 29.0,
+      "Mean": 28.517285125277514,
+      "3rd Qu.": 44.0,
+      "Max.": 59.0,
+      "valid": 3153,
+      "invalid": 3900
+    }
+  },
+  {
+    "name": "intid",
+    "dataset": "vpl",
+    "label": "Interviewer ID",
+    "categories": {
+      "values": [
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-9] Missing due to a terminated interview",
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer"
+      ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        0,
+        535,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1498,
+        31
+      ]
+    },
+    "scale": "number",
+    "label_de": "Interviewer-ID",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 17435.0,
+      "Median": 1002456.0,
+      "Mean": 744580.1631589497,
+      "3rd Qu.": 1004110.0,
+      "Max.": 1006092.0,
+      "valid": 4989,
+      "invalid": 2064
+    }
+  },
+  {
+    "name": "instrument",
+    "dataset": "vpl",
+    "label": "Survey instrument",
+    "categories": {
+      "values": [
+        -9,
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        260,
+        261,
+        312,
+        313,
+        333,
+        334
+      ],
+      "labels": [
+        "[-9] Missing due to a terminated interview",
+        "[-8] Question this year not part of survey",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[260] Deceased Individual (PAPI) 2021",
+        "[261] Deceased Individual (techn) 2021",
+        "[312] Deceased Individual (PAPI) 2022 (soep-core-2022-vp)",
+        "[313] Deceased Individual (techn) 2022 (soep-core-2022-vp2)",
+        "[333] Deceased Individual (PAPI) 2023 (soep-core-2023-vp)",
+        "[334] Deceased Individual (techn) 2023 (soep-core-2023-vp2)"
+      ],
+      "labels_de": [
+        "[-9] fehlend aufgrund eines abgebrochenen Interviews",
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschraenkter Edition verfuegbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[260] Verstorbene Person (PAPI) 2021 (soep-core-2021-vp)",
+        "[261] Verstorbene Person (techn.) 2021 (soep-core-2021-vp2)",
+        "[312] Verstorbene Person (PAPI) 2022 (soep-core-2022-vp)",
+        "[313] Verstorbene Person (techn.) 2022 (soep-core-2022-vp2)",
+        "[333] Deceased Individual (PAPI) 2023 (soep-core-2023-vp)",
+        "[334] Deceased Individual (techn) 2023 (soep-core-2023-vp2)"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
         4420,
         0,
         0,
@@ -4362,14 +5163,16 @@
         523,
         531,
         274,
-        775
+        775,
+        50,
+        480
       ]
     },
     "scale": "cat",
     "label_de": "Fragebogenversion",
     "study": "soep-core",
     "statistics": {
-      "valid": 2103,
+      "valid": 2633,
       "invalid": 4420
     }
   },
@@ -4383,8 +5186,8 @@
       "missings": [],
       "frequencies": []
     },
-    "scale": "4",
-    "label_de": "Urspungsdatensatz",
+    "scale": "18",
+    "label_de": "Ursprungsdatensatz",
     "study": "soep-core",
     "statistics": {}
   }

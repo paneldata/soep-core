@@ -2,7 +2,7 @@
   {
     "name": "cid",
     "dataset": "cogdj",
-    "label": "Original Houshold Number, Case ID",
+    "label": "Original Household Number, Case ID",
     "categories": {
       "values": [],
       "labels": [],
@@ -14,12 +14,12 @@
     "study": "soep-core",
     "statistics": {
       "Min.": 60.0,
-      "1st Qu.": 255602.0,
-      "Median": 341037.0,
-      "Mean": 1133545.095191122,
-      "3rd Qu.": 2168881.5,
-      "Max.": 3499773.0,
-      "valid": 4055,
+      "1st Qu.": 256749.0,
+      "Median": 424616.0,
+      "Mean": 1159840.0757333334,
+      "3rd Qu.": 2166523.5,
+      "Max.": 6336460.0,
+      "valid": 3750,
       "invalid": 0
     }
   },
@@ -38,12 +38,12 @@
     "study": "soep-core",
     "statistics": {
       "Min.": 981.0,
-      "1st Qu.": 251530.0,
-      "Median": 341258.0,
-      "Mean": 1136618.225647349,
-      "3rd Qu.": 2168193.5,
-      "Max.": 3503126.0,
-      "valid": 4055,
+      "1st Qu.": 253387.25,
+      "Median": 349634.0,
+      "Mean": 1162039.3605333334,
+      "3rd Qu.": 2165814.25,
+      "Max.": 6336460.0,
+      "valid": 3750,
       "invalid": 0
     }
   },
@@ -62,19 +62,43 @@
     "study": "soep-core",
     "statistics": {
       "Min.": 9804.0,
-      "1st Qu.": 2555153.5,
-      "Median": 3420802.0,
-      "Mean": 11416138.891491985,
-      "3rd Qu.": 21688803.0,
-      "Max.": 35031205.0,
-      "valid": 4055,
+      "1st Qu.": 2566053.0,
+      "Median": 3815705.0,
+      "Mean": 11676108.216533333,
+      "3rd Qu.": 21665229.0,
+      "Max.": 63364603.0,
+      "valid": 3750,
       "invalid": 0
+    }
+  },
+  {
+    "name": "intid",
+    "dataset": "cogdj",
+    "label": "Interviewer ID",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Interviewer ID",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 1001647.0,
+      "Median": 1002760.5,
+      "Mean": 906831.6925162689,
+      "3rd Qu.": 1004012.0,
+      "Max.": 1005844.0,
+      "valid": 3688,
+      "invalid": 62
     }
   },
   {
     "name": "syear",
     "dataset": "cogdj",
-    "label": "Survey Year",
+    "label": "Survey year",
     "categories": {
       "values": [],
       "labels": [],
@@ -88,19 +112,20 @@
       "Min.": 2006.0,
       "1st Qu.": 2007.0,
       "Median": 2012.0,
-      "Mean": 2012.0295930949444,
+      "Mean": 2012.2,
       "3rd Qu.": 2016.0,
-      "Max.": 2020.0,
-      "valid": 4055,
+      "Max.": 2023.0,
+      "valid": 3750,
       "invalid": 0
     }
   },
   {
-    "name": "djstat",
+    "name": "imonth",
     "dataset": "cogdj",
-    "label": "Status Of Partitipation",
+    "label": "Month of interview",
     "categories": {
       "values": [
+        -8,
         -7,
         -6,
         -5,
@@ -110,31 +135,60 @@
         -1,
         1,
         2,
-        3
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
       ],
       "labels": [
+        "[-8] Question not part of the survey program this year",
         "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[1] Questionnaire Missing",
-        "[2] Chosen Without Interview - No Participation",
-        "[3] Dj-Questionnaire Refused"
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] Inadmissable multiple response",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] January",
+        "[2] February",
+        "[3] March",
+        "[4] April",
+        "[5] May",
+        "[6] June",
+        "[7] July",
+        "[8] August",
+        "[9] September",
+        "[10] October",
+        "[11] November",
+        "[12] December"
       ],
       "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
+        "[-4] Unzulässige Mehrfachantwort",
         "[-3] nicht valide",
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
-        "[1] Fragebogen liegt vor",
-        "[2] Ausgew.ohne Interviewer - T.n.mgl.",
-        "[3] DJ-Fragebogen verweigert"
+        "[1] Januar",
+        "[2] Februar",
+        "[3] Maerz",
+        "[4] April",
+        "[5] Mai",
+        "[6] Juni",
+        "[7] Juli",
+        "[8] August",
+        "[9] September",
+        "[10] Oktober",
+        "[11] November",
+        "[12] Dezember"
       ],
       "missings": [
         true,
@@ -144,8 +198,118 @@
         true,
         true,
         true,
+        true,
         false,
         false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        1,
+        7,
+        8,
+        5,
+        913,
+        999,
+        656,
+        413,
+        330,
+        199,
+        121,
+        62,
+        21,
+        9,
+        4
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Monat des Interviews",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3732,
+      "invalid": 18
+    }
+  },
+  {
+    "name": "iday",
+    "dataset": "cogdj",
+    "label": "Day of interview",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Tag des Interviews",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1.0,
+      "1st Qu.": 9.0,
+      "Median": 15.0,
+      "Mean": 15.629351615905762,
+      "3rd Qu.": 23.0,
+      "Max.": 31.0,
+      "valid": 3734,
+      "invalid": 16
+    }
+  },
+  {
+    "name": "instrument",
+    "dataset": "cogdj",
+    "label": "Questionnaire",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        300
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[300] soep-core-2022-dj"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[300] soep-core-2022-dj"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
         false
       ],
       "frequencies": [
@@ -156,25 +320,39 @@
         0,
         0,
         0,
-        3579,
-        242,
-        234
+        62
       ]
     },
     "scale": "cat",
-    "label_de": "Teilnahmestatus DJ",
+    "label_de": "Erhebungsinstrument",
     "study": "soep-core",
     "statistics": {
-      "valid": 4055,
-      "invalid": 0
+      "valid": 137,
+      "invalid": 3613
     }
   },
   {
-    "name": "schule",
+    "name": "inputdataset",
     "dataset": "cogdj",
-    "label": "Educational Partitipation",
+    "label": "Source dataset",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "4",
+    "label_de": "Ursprungsdatensatz",
+    "study": "soep-core",
+    "statistics": {}
+  },
+  {
+    "name": "sample1",
+    "dataset": "cogdj",
+    "label": "Sample Identifier",
     "categories": {
       "values": [
+        -8,
         -7,
         -6,
         -5,
@@ -197,9 +375,274 @@
         13,
         14,
         15,
+        16,
+        19,
+        20,
         21,
         22,
-        23
+        23,
+        24,
+        25,
+        26,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] Implausible value",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] A German HH Head, West, 1984",
+        "[2] B1 Turkish HH Head, 1984",
+        "[3] B2 Yugoslav HH Head, 1984",
+        "[4] B3 Greek HH Head, 1984",
+        "[5] B4 Italian HH Head, 1984",
+        "[6] B5 Spanish HH Head, 1984",
+        "[7] C German HH Head, East, 1990",
+        "[8] D1 Immigrant W. Germany (1984-1994), 1994/95",
+        "[9] D2 Immigrant W. Germany (1984-1994), 1994/95",
+        "[10] E1 Refreshment (PAPI), 1998",
+        "[11] E2 Refreshment (CAPI), 1998",
+        "[12] F1 Refreshment, 2000",
+        "[13] F2 Refreshment, Additional Foreigner Addresses, 2000",
+        "[14] G1 High Income Pretest, 2002",
+        "[15] G2 High Income, 2002",
+        "[16] H Refreshment, 2006",
+        "[19] I Refreshment, Incentivation 2009",
+        "[20] J Refreshment, 2011",
+        "[21] K Refreshment, 2012",
+        "[22] Refreshment SOEP-IS, Supplementary Sample 2012",
+        "[23] [de] Sondererhebung 2012 (Laborstichprobe)",
+        "[24] M1 IAB-SOEP 2013 Migration (1995-2011)",
+        "[25] Refreshment SOEP-IS, S2 Supplementary 2013",
+        "[26] Refreshment SOEP-IS, S3 Supplementary 2014",
+        "[29] M2 IAB-SOEP Migration (2009-2013), 2015",
+        "[30] M3 IAB-BAMF-SOEP 2016 Refugee (2013-2015)",
+        "[31] M4 IAB-BAMF-SOEP 2016 Refugee/ Families (2013-2015)",
+        "[32] Refreshment SOEP-IS, S4 Supplementary 2016",
+        "[33] N Refreshment (from PIAAC-L), 2017",
+        "[34] M5 IAB-BAMF-SOEP 2017 Refugee",
+        "[35] O 2018 Social City",
+        "[36] P 2019 High Net-Worth Individuals",
+        "[37] Q 2019 LGB",
+        "[60] L2/3 FiD Screening, Low Income, 2010/11",
+        "[61] L2/3 FiD Screening, Single Parent, 2010/11",
+        "[62] L2/3 FiD Screening, Families with Several Children, 2010/11",
+        "[63] L1 FiD Birth Cohort 2007, 2010/11",
+        "[64] L1 FiD Birth Cohort 2008, 2010/11",
+        "[65] L1 FiD Birth Cohort 2009, 2010/11",
+        "[66] L1 FiD Birth Cohort 2010, 2010/11"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] Westdeutsche/sonstige Ausländer Stichprobe A",
+        "[2] Türken Stichprobe B",
+        "[3] Jugoslawen Stichprobe B",
+        "[4] Griechen Stichprobe B",
+        "[5] Italiener Stichprobe B",
+        "[6] Spanier Stichprobe B",
+        "[7] Ostdeutsche/sonstige Ausländer Stichprobe C",
+        "[8] Zuwanderer Stichprobe D1",
+        "[9] Zuwanderer Stichprobe D2",
+        "[10] Aufstockung 1998/PAPI Stichprobe E1",
+        "[11] Aufstockung 1998/CAPI Stichprobe E2",
+        "[12] Aufstockung 2000/Adresse 1-12 Stichprobe F",
+        "[13] Aufstockung 2000/Adresse 13-24 Stichprobe F",
+        "[14] G1 Hocheinkommensbezieher (PreTest), 2002",
+        "[15] Aufstockung 2002/Stichprobe G2",
+        "[16] Aufstockung 2006/Stichprobe H",
+        "[19] Aufstockung 2009/ Incentivierung I",
+        "[20] Aufstockung 2011/Stichprobe J",
+        "[21] Aufstockung 2012/Stichprobe K",
+        "[22] Innovationssample 2012 Aufstockung",
+        "[23] Sondererhebung 2012 (Laborstichprobe)",
+        "[24] M1 IAB-SOEP 2013 Migration (1995-2011)",
+        "[25] Innovationssample 2013 Aufstockung",
+        "[26] Innovationssample 2014 Aufstockung",
+        "[29] M2 IAB-SOEP Migration 2015 (2009-2013)",
+        "[30] M3 IAB-BAMF-SOEP 2016 Flucht (2013-2015)",
+        "[31] M4 IAB-BAMF-SOEP 2016 Flucht/Familien (2013-2015)",
+        "[32] Innovationssample 2016 Aufstockung",
+        "[33] Aufstockung 2017/Stichprobe N",
+        "[34] M5 IAB-BAMF-SOEP 2017 Refugee",
+        "[35] Soziale Stadt 2018/Stichprobe O",
+        "[36] Top-Gesellschafter 2019/ Stichprobe P",
+        "[37] Lesbisch-Schwul-Bisexuelle (LGB) 2019/Stichprobe Q",
+        "[60] FiD Screening 2010/11 - Niedrigeinkommen/Stichprobe L2/3",
+        "[61] FiD Screening 2010/11 - Alleinerziehende/Stichprobe L2/3",
+        "[62] FiD Screening 2010/11 - Mehrkindfamilien/Stichprobe L2/3",
+        "[63] FiD Geburtskohorte 2007/Stichprobe L1",
+        "[64] FiD Geburtskohorte 2008/Stichprobe L1",
+        "[65] FiD Geburtskohorte 2009/Stichprobe L1",
+        "[66] FiD Geburtskohorte 2010/Stichprobe L1"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        554,
+        103,
+        26,
+        20,
+        39,
+        10,
+        285,
+        39,
+        47,
+        53,
+        44,
+        784,
+        42,
+        0,
+        218,
+        200,
+        20,
+        334,
+        146,
+        0,
+        0,
+        302,
+        0,
+        0,
+        53,
+        0,
+        0,
+        0,
+        100,
+        0,
+        18,
+        5,
+        0,
+        11,
+        6,
+        22,
+        87,
+        69,
+        54,
+        47
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Stichprobenkennzeichen",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3750,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "schule",
+    "dataset": "cogdj",
+    "label": "Type of school attended",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -208,7 +651,7 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
+        "[-1] No answer",
         "[1] No Degree, No School Attendence",
         "[2] Other Degree",
         "[3] Other School, continued education",
@@ -218,15 +661,17 @@
         "[7] Intermediate School Attendence",
         "[8] Intermediate School Degree",
         "[9] Technical HighSchool Attendence",
-        "[10] Technical School Degree",
+        "[10] Technical School Degree, HighSchool Diploma",
         "[11] Upper Secondary School Attendence",
-        "[12] Upper Secondary School Degree",
         "[13] Vocational School Attendence",
         "[14] Technical Collegel Attendence",
         "[15] University Attendence",
-        "[21] Former Secondary General School According To Mother",
-        "[22] Former Intermediate School According To Mother",
-        "[23] Former Upper School According To Mother"
+        "[21] Previous Year's Information Secondary General School According To Head Of Household",
+        "[22] Prev. Year's Information Intermediate School According To Head Of Household",
+        "[23] Prev. Year's Information Upper School According To Head Of Household",
+        "[24] Prev. Year's Information Comprehensive School According To Head Of Household",
+        "[25] Prev. Year's Information Vocational School According To Head Of Household",
+        "[26] Prev. Year's Information Other Schooll According To Head Of Household"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -245,15 +690,17 @@
         "[7] Besuch der Realschule",
         "[8] Mittlere Reife",
         "[9] Besuch der Fachoberschule",
-        "[10] Fachhochschulreife (Fach-Abitur)",
+        "[10] Fachhochschulreife, Abitur",
         "[11] Besuch des Gymnasiums",
-        "[12] Allgem. Abitur",
         "[13] Besuch einer beruflichen Schule",
         "[14] Besuch einer Fachhochschule",
         "[15] Besuch einer Universitaet",
-        "[21] ehem. Hauptschule nach Angaben der Mutte",
-        "[22] ehem. Realschule nach Angaben der Mutter",
-        "[23] ehem. Gymnasium nach Angaben der Mutter"
+        "[21] Vorjahresangabe Hauptschule nach Angaben des Haushaltsvorstandes",
+        "[22] Vorjahresangabe Realschule nach Angaben des Haushaltsvorstandes",
+        "[23] Vorjahresangabe Gymnasium nach Angaben des Haushaltsvorstandes",
+        "[24] Vorjahresangabe Gesamtschule nach Angabe des Haushaltsvorstandes",
+        "[25] Vorjahresangabe Berufsschule nach Angabe des Haushaltsvorstandes",
+        "[26] Vorjahresangabe sonstige Schule nach Angabe des Haushaltsvorstandes"
       ],
       "missings": [
         true,
@@ -263,6 +710,8 @@
         true,
         true,
         true,
+        false,
+        false,
         false,
         false,
         false,
@@ -289,39 +738,41 @@
         0,
         0,
         0,
-        34,
-        19,
-        6,
+        81,
+        257,
+        31,
         2,
-        287,
-        342,
-        339,
-        732,
-        430,
-        19,
-        12,
-        1486,
-        8,
-        33,
+        267,
+        333,
+        322,
+        657,
+        465,
+        0,
+        24,
+        1267,
+        10,
+        0,
+        0,
         1,
+        12,
+        13,
+        3,
         2,
-        72,
-        110,
-        121
+        3
       ]
     },
     "scale": "cat",
-    "label_de": "Bildungsbeteiligung",
+    "label_de": "Bildungsinformation",
     "study": "soep-core",
     "statistics": {
-      "valid": 4021,
-      "invalid": 34
+      "valid": 3669,
+      "invalid": 81
     }
   },
   {
-    "name": "sumindex",
+    "name": "a_161",
     "dataset": "cogdj",
-    "label": "Sumindex From all given Answers",
+    "label": "Figure Selection 1",
     "categories": {
       "values": [
         -7,
@@ -330,7 +781,9 @@
         -4,
         -3,
         -2,
-        -1
+        -1,
+        0,
+        1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -339,7 +792,20 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
       ],
       "missings": [
         true,
@@ -348,36 +814,34 @@
         true,
         true,
         true,
-        true
+        true,
+        false,
+        false
       ],
       "frequencies": [
         0,
         0,
         0,
+        4,
+        3,
         0,
-        0,
-        476,
-        0
+        57,
+        222,
+        3464
       ]
     },
-    "scale": "number",
-    "label_de": "Summenindex aus allen gegebenen Antworten",
+    "scale": "cat",
+    "label_de": "Figurenauswahl 1",
     "study": "soep-core",
     "statistics": {
-      "Min.": 8.0,
-      "1st Qu.": 49.0,
-      "Median": 55.0,
-      "Mean": 52.63285834031853,
-      "3rd Qu.": 59.0,
-      "Max.": 60.0,
-      "valid": 3579,
-      "invalid": 476
+      "valid": 3686,
+      "invalid": 64
     }
   },
   {
-    "name": "indexa2",
+    "name": "a_162",
     "dataset": "cogdj",
-    "label": "Sumindex From Answers In Taskgroup No. 2 - Analogies",
+    "label": "Figure Selection 2",
     "categories": {
       "values": [
         -7,
@@ -386,7 +850,9 @@
         -4,
         -3,
         -2,
-        -1
+        -1,
+        0,
+        1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -395,7 +861,20 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
       ],
       "missings": [
         true,
@@ -404,36 +883,34 @@
         true,
         true,
         true,
-        true
+        true,
+        false,
+        false
       ],
       "frequencies": [
         0,
         0,
         0,
+        3,
+        6,
         0,
-        0,
-        475,
-        10
+        80,
+        1289,
+        2372
       ]
     },
-    "scale": "number",
-    "label_de": "Summenindex aller Antworten in Aufgabengr.2 - Analogien",
+    "scale": "cat",
+    "label_de": "Figurenauswahl 2",
     "study": "soep-core",
     "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 19.0,
-      "Median": 20.0,
-      "Mean": 18.988515406162463,
-      "3rd Qu.": 20.0,
-      "Max.": 20.0,
-      "valid": 3570,
-      "invalid": 485
+      "valid": 3661,
+      "invalid": 89
     }
   },
   {
-    "name": "indexa6",
+    "name": "a_163",
     "dataset": "cogdj",
-    "label": "sumindes From Answers In Taskgroups No. 6 - Arithmetic Operator",
+    "label": "Figure Selection 3",
     "categories": {
       "values": [
         -7,
@@ -442,7 +919,9 @@
         -4,
         -3,
         -2,
-        -1
+        -1,
+        0,
+        1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -451,7 +930,20 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
       ],
       "missings": [
         true,
@@ -460,36 +952,34 @@
         true,
         true,
         true,
-        true
+        true,
+        false,
+        false
       ],
       "frequencies": [
         0,
         0,
         0,
+        2,
         0,
         0,
-        475,
-        35
+        210,
+        916,
+        2622
       ]
     },
-    "scale": "number",
-    "label_de": "Summenindex aller Antworten in Aufgabengr.6 - Rechenzeichen",
+    "scale": "cat",
+    "label_de": "Figurenauswahl 3",
     "study": "soep-core",
     "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 14.0,
-      "Median": 18.0,
-      "Mean": 16.047672778561353,
-      "3rd Qu.": 20.0,
-      "Max.": 20.0,
-      "valid": 3545,
-      "invalid": 510
+      "valid": 3538,
+      "invalid": 212
     }
   },
   {
-    "name": "indexa9",
+    "name": "a_164",
     "dataset": "cogdj",
-    "label": "Sumindex From Answers Taskgroup No. 9 - Figures",
+    "label": "Figure Selection 4",
     "categories": {
       "values": [
         -7,
@@ -498,7 +988,9 @@
         -4,
         -3,
         -2,
-        -1
+        -1,
+        0,
+        1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -507,7 +999,20 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
       ],
       "missings": [
         true,
@@ -516,36 +1021,34 @@
         true,
         true,
         true,
-        true
+        true,
+        false,
+        false
       ],
       "frequencies": [
         0,
         0,
         0,
+        3,
+        1,
         0,
-        0,
-        475,
-        18
+        87,
+        1064,
+        2595
       ]
     },
-    "scale": "number",
-    "label_de": "Summenindex aller Antworten in Aufgabengr.9 - Figuren",
+    "scale": "cat",
+    "label_de": "Figurenauswahl 4",
     "study": "soep-core",
     "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 17.0,
-      "Median": 20.0,
-      "Mean": 17.895002807411565,
-      "3rd Qu.": 20.0,
-      "Max.": 20.0,
-      "valid": 3562,
-      "invalid": 493
+      "valid": 3659,
+      "invalid": 91
     }
   },
   {
-    "name": "sdindex",
+    "name": "a_165",
     "dataset": "cogdj",
-    "label": "complete Sumindex deductive thinking - Right Answers",
+    "label": "Figure Selection 5",
     "categories": {
       "values": [
         -7,
@@ -554,7 +1057,9 @@
         -4,
         -3,
         -2,
-        -1
+        -1,
+        0,
+        1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -563,7 +1068,20 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
       ],
       "missings": [
         true,
@@ -572,76 +1090,34 @@
         true,
         true,
         true,
-        true
+        true,
+        false,
+        false
       ],
       "frequencies": [
         0,
         0,
         0,
+        1,
+        2,
         0,
-        0,
-        475,
-        56
+        127,
+        1220,
+        2400
       ]
     },
-    "scale": "number",
-    "label_de": "Gesamtsummenindex Schlussfolgerndes Denken - richtige Antworten",
+    "scale": "cat",
+    "label_de": "Figurenauswahl 5",
     "study": "soep-core",
     "statistics": {
-      "Min.": 3.0,
-      "1st Qu.": 24.0,
-      "Median": 31.0,
-      "Mean": 30.662031782065835,
-      "3rd Qu.": 38.0,
-      "Max.": 55.0,
-      "valid": 3524,
-      "invalid": 531
+      "valid": 3620,
+      "invalid": 130
     }
   },
   {
-    "name": "analog",
+    "name": "a_166",
     "dataset": "cogdj",
-    "label": "Sumindex Right Answers In Taskgroup No. 2 - Analogies",
-    "categories": {
-      "values": [
-        -7,
-        -2,
-        -1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-2] Does not apply",
-        "[-1] No Answer"
-      ],
-      "missings": [
-        true,
-        true,
-        true
-      ],
-      "frequencies": [
-        0,
-        475,
-        10
-      ]
-    },
-    "scale": "number",
-    "label_de": "Summenindex richtige Antworten in Aufgabengr. 2 - Analogien",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 5.0,
-      "Median": 8.0,
-      "Mean": 8.179271708683473,
-      "3rd Qu.": 11.0,
-      "Max.": 20.0,
-      "valid": 3570,
-      "invalid": 485
-    }
-  },
-  {
-    "name": "ianalog",
-    "dataset": "cogdj",
-    "label": "Sumindex Wrong Answers In Taskgroup No. 2 - Analogies",
+    "label": "Figure Selection 6",
     "categories": {
       "values": [
         -7,
@@ -650,7 +1126,9 @@
         -4,
         -3,
         -2,
-        -1
+        -1,
+        0,
+        1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -659,7 +1137,20 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
       ],
       "missings": [
         true,
@@ -668,60 +1159,34 @@
         true,
         true,
         true,
-        true
+        true,
+        false,
+        false
       ],
       "frequencies": [
         0,
         0,
         0,
+        3,
+        2,
         0,
-        0,
-        475,
-        10
+        167,
+        467,
+        3111
       ]
     },
-    "scale": "number",
-    "label_de": "Summenindex falsche  Antworten in Aufgabengr. 2 - Analogien",
+    "scale": "cat",
+    "label_de": "Figurenauswahl 6",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 8.0,
-      "Median": 11.0,
-      "Mean": 10.809243697478992,
-      "3rd Qu.": 14.0,
-      "Max.": 19.0,
-      "valid": 3570,
-      "invalid": 485
+      "valid": 3578,
+      "invalid": 172
     }
   },
   {
-    "name": "fanalog",
+    "name": "a_167",
     "dataset": "cogdj",
-    "label": "Sumindex Not Given Answers In Taskgroup No. 2 - Analogies",
-    "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
-    },
-    "scale": "number",
-    "label_de": "Summenindex nicht beantwortet  in Aufgabengr. 2 - Analogien",
-    "study": "soep-core",
-    "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 0.0,
-      "Mean": 0.9546239210850801,
-      "3rd Qu.": 1.0,
-      "Max.": 20.0,
-      "valid": 4055,
-      "invalid": 0
-    }
-  },
-  {
-    "name": "rechenz",
-    "dataset": "cogdj",
-    "label": "Sumindex Right Answers In Taskgroup No. 6 - Arithmetic Operator",
+    "label": "Figure Selection 7",
     "categories": {
       "values": [
         -7,
@@ -730,7 +1195,9 @@
         -4,
         -3,
         -2,
-        -1
+        -1,
+        0,
+        1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -739,7 +1206,20 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
       ],
       "missings": [
         true,
@@ -748,36 +1228,34 @@
         true,
         true,
         true,
-        true
+        true,
+        false,
+        false
       ],
       "frequencies": [
         0,
         0,
         0,
+        1,
+        3,
         0,
-        0,
-        475,
-        35
+        324,
+        1302,
+        2120
       ]
     },
-    "scale": "number",
-    "label_de": "Summenindex richtige Antworten in Aufgabengr. 6 - Rechenzeichen",
+    "scale": "cat",
+    "label_de": "Figurenauswahl 7",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 9.0,
-      "Median": 13.0,
-      "Mean": 12.589562764456982,
-      "3rd Qu.": 16.0,
-      "Max.": 20.0,
-      "valid": 3545,
-      "invalid": 510
+      "valid": 3422,
+      "invalid": 328
     }
   },
   {
-    "name": "irechenz",
+    "name": "a_168",
     "dataset": "cogdj",
-    "label": "Sumindex Wrong Answers In Taskgroup No. 6 - Arithmetic Operator",
+    "label": "Figure Selection 8",
     "categories": {
       "values": [
         -7,
@@ -786,7 +1264,9 @@
         -4,
         -3,
         -2,
-        -1
+        -1,
+        0,
+        1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -795,7 +1275,20 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
       ],
       "missings": [
         true,
@@ -804,60 +1297,862 @@
         true,
         true,
         true,
-        true
+        true,
+        false,
+        false
       ],
       "frequencies": [
         0,
         0,
         0,
+        2,
+        3,
         0,
-        0,
-        475,
-        35
+        210,
+        1811,
+        1724
       ]
     },
-    "scale": "number",
-    "label_de": "Summenindex falsche  Antworten in Aufgabengr. 6 - Rechenzeichen",
+    "scale": "cat",
+    "label_de": "Figurenauswahl 8",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 2.0,
-      "Mean": 3.4581100141043724,
-      "3rd Qu.": 5.0,
-      "Max.": 20.0,
-      "valid": 3545,
-      "invalid": 510
+      "valid": 3535,
+      "invalid": 215
     }
   },
   {
-    "name": "frechenz",
+    "name": "a_169",
     "dataset": "cogdj",
-    "label": "Sumindex Not Given Answers In Taskgroup No. 6 - Arithmetic Operator",
+    "label": "Figure Selection 9",
     "categories": {
-      "values": [],
-      "labels": [],
-      "missings": [],
-      "frequencies": []
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        241,
+        1900,
+        1605
+      ]
     },
-    "scale": "number",
-    "label_de": "Summenindex nicht beantwortet  in Aufgabengr. 6 - Rechenzeichen",
+    "scale": "cat",
+    "label_de": "Figurenauswahl 9",
     "study": "soep-core",
     "statistics": {
-      "Min.": 0.0,
-      "1st Qu.": 0.0,
-      "Median": 1.0,
-      "Mean": 3.6416769420468555,
-      "3rd Qu.": 6.0,
-      "Max.": 20.0,
-      "valid": 4055,
-      "invalid": 0
+      "valid": 3505,
+      "invalid": 245
+    }
+  },
+  {
+    "name": "a_170",
+    "dataset": "cogdj",
+    "label": "Figure Selection 10",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        480,
+        2284,
+        983
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Figurenauswahl 10",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3267,
+      "invalid": 483
+    }
+  },
+  {
+    "name": "a_171",
+    "dataset": "cogdj",
+    "label": "Figure Selection 11",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        276,
+        1438,
+        2033
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Figurenauswahl 11",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3471,
+      "invalid": 279
+    }
+  },
+  {
+    "name": "a_172",
+    "dataset": "cogdj",
+    "label": "Figure Selection 12",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        310,
+        1816,
+        1620
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Figurenauswahl 12",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3436,
+      "invalid": 314
+    }
+  },
+  {
+    "name": "a_173",
+    "dataset": "cogdj",
+    "label": "Figure Selection 13",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        576,
+        2405,
+        767
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Figurenauswahl 13",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3172,
+      "invalid": 578
+    }
+  },
+  {
+    "name": "a_174",
+    "dataset": "cogdj",
+    "label": "Figure Selection 14",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        337,
+        769,
+        2642
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Figurenauswahl 14",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3411,
+      "invalid": 339
+    }
+  },
+  {
+    "name": "a_175",
+    "dataset": "cogdj",
+    "label": "Figure Selection 15",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        517,
+        2490,
+        742
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Figurenauswahl 15",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3232,
+      "invalid": 518
+    }
+  },
+  {
+    "name": "a_176",
+    "dataset": "cogdj",
+    "label": "Figure Selection 16",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        574,
+        1986,
+        1186
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Figurenauswahl 16",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3172,
+      "invalid": 578
+    }
+  },
+  {
+    "name": "a_177",
+    "dataset": "cogdj",
+    "label": "Figure Selection 17",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        4,
+        1,
+        0,
+        782,
+        1512,
+        1451
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Figurenauswahl 17",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2963,
+      "invalid": 787
+    }
+  },
+  {
+    "name": "a_178",
+    "dataset": "cogdj",
+    "label": "Figure Selection 18",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        1021,
+        1893,
+        833
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Figurenauswahl 18",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2726,
+      "invalid": 1024
+    }
+  },
+  {
+    "name": "a_179",
+    "dataset": "cogdj",
+    "label": "Figure Selection 19",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        895,
+        1677,
+        1175
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Figurenauswahl 19",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2852,
+      "invalid": 898
+    }
+  },
+  {
+    "name": "a_180",
+    "dataset": "cogdj",
+    "label": "Figure Selection 20",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[0] falsche Antwort",
+        "[1] richtige Antwort"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        1197,
+        1706,
+        842
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Figurenauswahl 20",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2548,
+      "invalid": 1202
     }
   },
   {
     "name": "matrize",
     "dataset": "cogdj",
-    "label": "Sumindex Right Answers In Taskgroup No. 9 - Figures",
+    "label": "Sum index: Correct answers (Figures)",
     "categories": {
       "values": [
         -7,
@@ -875,7 +2170,16 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer"
+        "[-1] No answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
       ],
       "missings": [
         true,
@@ -892,28 +2196,28 @@
         0,
         0,
         0,
-        475,
-        18
+        0,
+        0
       ]
     },
     "scale": "number",
-    "label_de": "Summenindex richtige Antworten in Aufgabengr. 9 - Figuren",
+    "label_de": "Summenindex: richtige Antworten (Figuren)",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
-      "1st Qu.": 8.0,
+      "1st Qu.": 7.0,
       "Median": 10.0,
-      "Mean": 9.78270634475014,
+      "Mean": 9.676533333333333,
       "3rd Qu.": 12.0,
       "Max.": 20.0,
-      "valid": 3562,
-      "invalid": 493
+      "valid": 3750,
+      "invalid": 0
     }
   },
   {
     "name": "imatrize",
     "dataset": "cogdj",
-    "label": "Sumindex Wrong Answers In Taskgroup No. 9 - Figures",
+    "label": "Sum index: Wrong answers (Figures)",
     "categories": {
       "values": [
         -7,
@@ -931,7 +2235,16 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer"
+        "[-1] No answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
       ],
       "missings": [
         true,
@@ -948,28 +2261,28 @@
         0,
         0,
         0,
-        475,
-        18
+        0,
+        0
       ]
     },
     "scale": "number",
-    "label_de": "Summenindex falsche  Antworten in Aufgabengr. 9 - Figuren",
+    "label_de": "Summenindex: falsche Antworten (Figuren)",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
       "1st Qu.": 5.0,
       "Median": 8.0,
-      "Mean": 8.112296462661426,
+      "Mean": 8.065333333333333,
       "3rd Qu.": 11.0,
       "Max.": 20.0,
-      "valid": 3562,
-      "invalid": 493
+      "valid": 3750,
+      "invalid": 0
     }
   },
   {
     "name": "fmatrize",
     "dataset": "cogdj",
-    "label": "Sumindex Not Given Answers In Taskgroup No. 9 - Figures",
+    "label": "Sum index: Tasks not completed (Figures)",
     "categories": {
       "values": [],
       "labels": [],
@@ -977,23 +2290,88 @@
       "frequencies": []
     },
     "scale": "number",
-    "label_de": "Summenindex nicht beantwortet  in Aufgabengr. 9 - Figuren",
+    "label_de": "Summenindex: nicht bearbeitete Aufgaben (Figuren)",
     "study": "soep-core",
     "statistics": {
       "Min.": 0.0,
       "1st Qu.": 0.0,
       "Median": 0.0,
-      "Mean": 1.9504315659679408,
-      "3rd Qu.": 3.0,
+      "Mean": 2.2581333333333333,
+      "3rd Qu.": 4.0,
       "Max.": 20.0,
-      "valid": 4055,
+      "valid": 3750,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "indexa9",
+    "dataset": "cogdj",
+    "label": "Sum index: Tasks completed (Figures)",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "scale": "number",
+    "label_de": "Summenindex: bearbeitete Aufgaben (Figuren)",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 16.0,
+      "Median": 20.0,
+      "Mean": 17.741866666666667,
+      "3rd Qu.": 20.0,
+      "Max.": 20.0,
+      "valid": 3750,
       "invalid": 0
     }
   },
   {
     "name": "a_21",
     "dataset": "cogdj",
-    "label": "Row 1 Analogoy Task",
+    "label": "Analogy Task 1",
     "categories": {
       "values": [
         -7,
@@ -1013,9 +2391,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1043,26 +2421,26 @@
         0,
         0,
         0,
+        7,
+        6,
         0,
-        0,
-        472,
-        68,
-        123,
-        3392
+        54,
+        142,
+        3541
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 1 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 1",
     "study": "soep-core",
     "statistics": {
-      "valid": 3515,
-      "invalid": 540
+      "valid": 3683,
+      "invalid": 67
     }
   },
   {
     "name": "a_22",
     "dataset": "cogdj",
-    "label": "Row 2 Analogoy Task",
+    "label": "Analogy Task 2",
     "categories": {
       "values": [
         -7,
@@ -1082,9 +2460,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1112,26 +2490,26 @@
         0,
         0,
         0,
+        6,
+        9,
         0,
-        0,
-        472,
-        110,
-        284,
-        3189
+        93,
+        303,
+        3339
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 2 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 2",
     "study": "soep-core",
     "statistics": {
-      "valid": 3473,
-      "invalid": 582
+      "valid": 3642,
+      "invalid": 108
     }
   },
   {
     "name": "a_23",
     "dataset": "cogdj",
-    "label": "Row 3 Analogoy Task",
+    "label": "Analogy Task 3",
     "categories": {
       "values": [
         -7,
@@ -1151,9 +2529,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1181,26 +2559,26 @@
         0,
         0,
         0,
+        9,
+        11,
         0,
-        0,
-        472,
-        69,
-        1399,
-        2115
+        47,
+        1492,
+        2191
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 3 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 3",
     "study": "soep-core",
     "statistics": {
-      "valid": 3514,
-      "invalid": 541
+      "valid": 3683,
+      "invalid": 67
     }
   },
   {
     "name": "a_24",
     "dataset": "cogdj",
-    "label": "Row 4 Analogoy Task",
+    "label": "Analogy Task 4",
     "categories": {
       "values": [
         -7,
@@ -1220,9 +2598,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1250,26 +2628,26 @@
         0,
         0,
         0,
+        6,
+        9,
         0,
-        0,
-        472,
-        123,
-        2096,
-        1364
+        109,
+        2208,
+        1418
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 4 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 4",
     "study": "soep-core",
     "statistics": {
-      "valid": 3460,
-      "invalid": 595
+      "valid": 3626,
+      "invalid": 124
     }
   },
   {
     "name": "a_25",
     "dataset": "cogdj",
-    "label": "Row 5 Analogoy Task",
+    "label": "Analogy Task 5",
     "categories": {
       "values": [
         -7,
@@ -1289,9 +2667,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1319,26 +2697,26 @@
         0,
         0,
         0,
+        5,
+        8,
         0,
-        0,
-        472,
-        130,
-        1084,
-        2369
+        117,
+        1151,
+        2469
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 5 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 5",
     "study": "soep-core",
     "statistics": {
-      "valid": 3453,
-      "invalid": 602
+      "valid": 3620,
+      "invalid": 130
     }
   },
   {
     "name": "a_26",
     "dataset": "cogdj",
-    "label": "Row 6 Analogoy Task",
+    "label": "Analogy Task 6",
     "categories": {
       "values": [
         -7,
@@ -1358,9 +2736,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1388,26 +2766,26 @@
         0,
         0,
         0,
+        11,
+        12,
         0,
-        0,
-        472,
-        52,
-        1240,
-        2291
+        29,
+        1313,
+        2385
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 6 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 6",
     "study": "soep-core",
     "statistics": {
-      "valid": 3531,
-      "invalid": 524
+      "valid": 3698,
+      "invalid": 52
     }
   },
   {
     "name": "a_27",
     "dataset": "cogdj",
-    "label": "Row 7 Analogoy Task",
+    "label": "Analogy Task 7",
     "categories": {
       "values": [
         -7,
@@ -1427,9 +2805,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1457,26 +2835,26 @@
         0,
         0,
         0,
+        4,
+        8,
         0,
-        0,
-        472,
-        93,
-        1399,
-        2091
+        80,
+        1476,
+        2182
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 7 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 7",
     "study": "soep-core",
     "statistics": {
-      "valid": 3490,
-      "invalid": 565
+      "valid": 3658,
+      "invalid": 92
     }
   },
   {
     "name": "a_28",
     "dataset": "cogdj",
-    "label": "Row 8 Analogoy Task",
+    "label": "Analogy Task 8",
     "categories": {
       "values": [
         -7,
@@ -1496,9 +2874,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1526,26 +2904,26 @@
         0,
         0,
         0,
+        8,
+        7,
         0,
-        0,
-        472,
-        85,
-        2138,
-        1360
+        72,
+        2256,
+        1407
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 8 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 8",
     "study": "soep-core",
     "statistics": {
-      "valid": 3498,
-      "invalid": 557
+      "valid": 3663,
+      "invalid": 87
     }
   },
   {
     "name": "a_29",
     "dataset": "cogdj",
-    "label": "Row 9 Analogoy Task",
+    "label": "Analogy Task 9",
     "categories": {
       "values": [
         -7,
@@ -1565,9 +2943,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1595,26 +2973,26 @@
         0,
         0,
         0,
+        8,
+        11,
         0,
-        0,
-        472,
-        294,
-        1807,
-        1482
+        283,
+        1913,
+        1535
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 9 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 9",
     "study": "soep-core",
     "statistics": {
-      "valid": 3289,
-      "invalid": 766
+      "valid": 3448,
+      "invalid": 302
     }
   },
   {
     "name": "a_30",
     "dataset": "cogdj",
-    "label": "Row 10 Analogoy Task",
+    "label": "Analogy Task 10",
     "categories": {
       "values": [
         -7,
@@ -1634,9 +3012,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1664,26 +3042,26 @@
         0,
         0,
         0,
+        3,
+        11,
         0,
-        0,
-        472,
-        59,
-        1532,
-        1992
+        44,
+        1610,
+        2082
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 10 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 10",
     "study": "soep-core",
     "statistics": {
-      "valid": 3524,
-      "invalid": 531
+      "valid": 3692,
+      "invalid": 58
     }
   },
   {
     "name": "a_31",
     "dataset": "cogdj",
-    "label": "Row 11 Analogoy Task",
+    "label": "Analogy Task 11",
     "categories": {
       "values": [
         -7,
@@ -1703,9 +3081,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1733,26 +3111,26 @@
         0,
         0,
         0,
+        4,
+        6,
         0,
-        0,
-        472,
-        249,
-        2029,
-        1305
+        246,
+        2143,
+        1351
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 11 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 11",
     "study": "soep-core",
     "statistics": {
-      "valid": 3334,
-      "invalid": 721
+      "valid": 3494,
+      "invalid": 256
     }
   },
   {
     "name": "a_32",
     "dataset": "cogdj",
-    "label": "Row 12 Analogoy Task",
+    "label": "Analogy Task 12",
     "categories": {
       "values": [
         -7,
@@ -1772,9 +3150,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1802,26 +3180,26 @@
         0,
         0,
         0,
+        7,
+        11,
         0,
-        0,
-        472,
-        238,
-        2448,
-        897
+        221,
+        2571,
+        940
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 12 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 12",
     "study": "soep-core",
     "statistics": {
-      "valid": 3345,
-      "invalid": 710
+      "valid": 3511,
+      "invalid": 239
     }
   },
   {
     "name": "a_33",
     "dataset": "cogdj",
-    "label": "Row 13 Analogoy Task",
+    "label": "Analogy Task 13",
     "categories": {
       "values": [
         -7,
@@ -1841,9 +3219,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1871,26 +3249,26 @@
         0,
         0,
         0,
+        4,
+        9,
         0,
-        0,
-        472,
-        578,
-        2026,
-        979
+        576,
+        2128,
+        1033
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 13 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 13",
     "study": "soep-core",
     "statistics": {
-      "valid": 3005,
-      "invalid": 1050
+      "valid": 3161,
+      "invalid": 589
     }
   },
   {
     "name": "a_34",
     "dataset": "cogdj",
-    "label": "Row 14 Analogoy Task",
+    "label": "Analogy Task 14",
     "categories": {
       "values": [
         -7,
@@ -1910,9 +3288,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -1940,26 +3318,26 @@
         0,
         0,
         0,
+        5,
+        6,
         0,
-        0,
-        472,
         292,
-        2475,
-        816
+        2601,
+        846
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 14 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 14",
     "study": "soep-core",
     "statistics": {
-      "valid": 3291,
-      "invalid": 764
+      "valid": 3447,
+      "invalid": 303
     }
   },
   {
     "name": "a_35",
     "dataset": "cogdj",
-    "label": "Row 15 Analogoy Task",
+    "label": "Analogy Task 15",
     "categories": {
       "values": [
         -7,
@@ -1979,9 +3357,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2009,26 +3387,26 @@
         0,
         0,
         0,
+        5,
+        9,
         0,
-        0,
-        472,
-        198,
-        2814,
-        571
+        194,
+        2946,
+        596
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 15 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 15",
     "study": "soep-core",
     "statistics": {
-      "valid": 3385,
-      "invalid": 670
+      "valid": 3542,
+      "invalid": 208
     }
   },
   {
     "name": "a_36",
     "dataset": "cogdj",
-    "label": "Row 16 Analogoy Task",
+    "label": "Analogy Task 16",
     "categories": {
       "values": [
         -7,
@@ -2048,9 +3426,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2078,26 +3456,26 @@
         0,
         0,
         0,
+        7,
+        12,
         0,
-        0,
-        472,
-        133,
-        2723,
-        727
+        119,
+        2854,
+        758
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 16 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 16",
     "study": "soep-core",
     "statistics": {
-      "valid": 3450,
-      "invalid": 605
+      "valid": 3612,
+      "invalid": 138
     }
   },
   {
     "name": "a_37",
     "dataset": "cogdj",
-    "label": "Row 17 Analogoy Task",
+    "label": "Analogy Task 17",
     "categories": {
       "values": [
         -7,
@@ -2117,9 +3495,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2147,26 +3525,26 @@
         0,
         0,
         0,
+        5,
+        8,
         0,
-        0,
-        472,
-        283,
-        2635,
-        665
+        279,
+        2768,
+        690
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 17 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 17",
     "study": "soep-core",
     "statistics": {
-      "valid": 3300,
-      "invalid": 755
+      "valid": 3458,
+      "invalid": 292
     }
   },
   {
     "name": "a_38",
     "dataset": "cogdj",
-    "label": "Row 18 Analogoy Task",
+    "label": "Analogy Task 18",
     "categories": {
       "values": [
         -7,
@@ -2186,9 +3564,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2216,26 +3594,26 @@
         0,
         0,
         0,
+        11,
+        8,
         0,
-        0,
-        472,
-        249,
-        2755,
-        579
+        238,
+        2884,
+        609
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 18 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 18",
     "study": "soep-core",
     "statistics": {
-      "valid": 3334,
-      "invalid": 721
+      "valid": 3493,
+      "invalid": 257
     }
   },
   {
     "name": "a_39",
     "dataset": "cogdj",
-    "label": "Row 19 Analogoy Task",
+    "label": "Analogy Task 19",
     "categories": {
       "values": [
         -7,
@@ -2255,9 +3633,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2285,26 +3663,26 @@
         0,
         0,
         0,
+        5,
+        9,
         0,
-        0,
-        472,
-        359,
-        2719,
-        505
+        362,
+        2849,
+        525
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 19 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 19",
     "study": "soep-core",
     "statistics": {
-      "valid": 3224,
-      "invalid": 831
+      "valid": 3374,
+      "invalid": 376
     }
   },
   {
     "name": "a_40",
     "dataset": "cogdj",
-    "label": "Row 20 Analogoy Task",
+    "label": "Analogy Task 20",
     "categories": {
       "values": [
         -7,
@@ -2324,9 +3702,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2354,26 +3732,225 @@
         0,
         0,
         0,
+        4,
+        8,
         0,
-        0,
-        472,
-        209,
-        2863,
-        511
+        208,
+        2991,
+        539
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 20 Analogieaufgabe",
+    "label_de": "Analogieaufgabe 20",
     "study": "soep-core",
     "statistics": {
-      "valid": 3374,
-      "invalid": 681
+      "valid": 3530,
+      "invalid": 220
+    }
+  },
+  {
+    "name": "analog",
+    "dataset": "cogdj",
+    "label": "Sum index: Correct answers (Analogies)",
+    "categories": {
+      "values": [
+        -7,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-2] Does not apply",
+        "[-1] No answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
+      "missings": [
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        0,
+        0,
+        0
+      ]
+    },
+    "scale": "number",
+    "label_de": "Summenindex: richtige Antworten (Analogien)",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 5.0,
+      "Median": 8.0,
+      "Mean": 8.116266666666666,
+      "3rd Qu.": 11.0,
+      "Max.": 20.0,
+      "valid": 3750,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "ianalog",
+    "dataset": "cogdj",
+    "label": "Sum index: Wrong answers (Analogies)",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "scale": "number",
+    "label_de": "Summenindex: falsche Antworten (Analogien)",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 8.0,
+      "Median": 11.0,
+      "Mean": 10.906933333333333,
+      "3rd Qu.": 14.0,
+      "Max.": 20.0,
+      "valid": 3750,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "fanalog",
+    "dataset": "cogdj",
+    "label": "Sum index: Tasks not completed (Analogies)",
+    "categories": {
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
+    },
+    "scale": "number",
+    "label_de": "Summenindex: nicht bearbeitete Aufgaben (Analogien)",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 0.0,
+      "Median": 0.0,
+      "Mean": 0.9768,
+      "3rd Qu.": 1.0,
+      "Max.": 20.0,
+      "valid": 3750,
+      "invalid": 0
+    }
+  },
+  {
+    "name": "indexa2",
+    "dataset": "cogdj",
+    "label": "Sum index: Tasks completed (Analogies)",
+    "categories": {
+      "values": [
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissible multiple response",
+        "[-3] Answer improbable",
+        "[-2] Does not apply",
+        "[-1] No answer"
+      ],
+      "labels_de": [
+        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "scale": "number",
+    "label_de": "Summenindex: bearbeitete Aufgaben (Analogien)",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 0.0,
+      "1st Qu.": 19.0,
+      "Median": 20.0,
+      "Mean": 19.0232,
+      "3rd Qu.": 20.0,
+      "Max.": 20.0,
+      "valid": 3750,
+      "invalid": 0
     }
   },
   {
     "name": "b_101",
     "dataset": "cogdj",
-    "label": "Row 1 Task Arithmetic Operator",
+    "label": "Arithmetic Task 1",
     "categories": {
       "values": [
         -7,
@@ -2393,9 +3970,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2424,25 +4001,25 @@
         0,
         0,
         0,
+        2,
         0,
-        472,
-        79,
-        22,
-        3482
+        78,
+        25,
+        3645
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 1 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 1",
     "study": "soep-core",
     "statistics": {
-      "valid": 3504,
-      "invalid": 551
+      "valid": 3670,
+      "invalid": 80
     }
   },
   {
     "name": "b_102",
     "dataset": "cogdj",
-    "label": "Row 2 Task Arithmetic Operator",
+    "label": "Arithmetic Task 2",
     "categories": {
       "values": [
         -7,
@@ -2462,9 +4039,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2492,26 +4069,26 @@
         0,
         0,
         0,
+        2,
+        2,
         0,
-        0,
-        472,
-        130,
-        64,
-        3389
+        125,
+        68,
+        3553
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 2 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 2",
     "study": "soep-core",
     "statistics": {
-      "valid": 3453,
-      "invalid": 602
+      "valid": 3621,
+      "invalid": 129
     }
   },
   {
     "name": "b_103",
     "dataset": "cogdj",
-    "label": "Row 3 Task Arithmetic Operator",
+    "label": "Arithmetic Task 3",
     "categories": {
       "values": [
         -7,
@@ -2531,9 +4108,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2563,24 +4140,172 @@
         0,
         0,
         0,
-        472,
-        327,
-        342,
-        2914
+        0,
+        261,
+        442,
+        3047
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 3 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 3",
     "study": "soep-core",
     "statistics": {
-      "valid": 3256,
-      "invalid": 799
+      "valid": 3489,
+      "invalid": 261
+    }
+  },
+  {
+    "name": "b_103a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 3: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        4,
+        3,
+        272,
+        0,
+        2994,
+        59,
+        263,
+        18
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 3: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3334,
+      "invalid": 416
+    }
+  },
+  {
+    "name": "b_103b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 3: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        308,
+        0,
+        48,
+        56,
+        3034,
+        167
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 3: 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3305,
+      "invalid": 445
     }
   },
   {
     "name": "b_104",
     "dataset": "cogdj",
-    "label": "Row 4 Task Arithmetic Operator",
+    "label": "Arithmetic Task 4",
     "categories": {
       "values": [
         -7,
@@ -2600,9 +4325,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2632,24 +4357,172 @@
         0,
         0,
         0,
-        472,
-        425,
-        543,
-        2615
+        0,
+        423,
+        591,
+        2736
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 4 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 4",
     "study": "soep-core",
     "statistics": {
-      "valid": 3158,
-      "invalid": 897
+      "valid": 3327,
+      "invalid": 423
+    }
+  },
+  {
+    "name": "b_104a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 4: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        1,
+        3,
+        421,
+        0,
+        210,
+        2679,
+        185,
+        114
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 4: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3188,
+      "invalid": 562
+    }
+  },
+  {
+    "name": "b_104b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 4: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        3,
+        438,
+        0,
+        47,
+        49,
+        2980,
+        96
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 4 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3172,
+      "invalid": 578
     }
   },
   {
     "name": "b_105",
     "dataset": "cogdj",
-    "label": "Row 5 Task Arithmetic Operator",
+    "label": "Arithmetic Task 5",
     "categories": {
       "values": [
         -7,
@@ -2669,9 +4542,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2701,24 +4574,172 @@
         0,
         0,
         0,
-        472,
-        280,
-        338,
-        2965
+        0,
+        257,
+        393,
+        3100
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 5 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 5",
     "study": "soep-core",
     "statistics": {
-      "valid": 3303,
-      "invalid": 752
+      "valid": 3493,
+      "invalid": 257
+    }
+  },
+  {
+    "name": "b_105a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 5: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        3,
+        2,
+        256,
+        0,
+        111,
+        3030,
+        128,
+        83
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 5: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3352,
+      "invalid": 398
+    }
+  },
+  {
+    "name": "b_105b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 5: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        1,
+        281,
+        0,
+        103,
+        34,
+        3171,
+        23
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 5 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3331,
+      "invalid": 419
     }
   },
   {
     "name": "b_106",
     "dataset": "cogdj",
-    "label": "Row 6 Task Arithmetic Operator",
+    "label": "Arithmetic Task 6",
     "categories": {
       "values": [
         -7,
@@ -2738,9 +4759,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2770,24 +4791,172 @@
         0,
         0,
         0,
-        472,
-        498,
-        529,
-        2556
+        0,
+        511,
+        569,
+        2670
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 6 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 6",
     "study": "soep-core",
     "statistics": {
-      "valid": 3085,
-      "invalid": 970
+      "valid": 3239,
+      "invalid": 511
+    }
+  },
+  {
+    "name": "b_106a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 6: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        1,
+        510,
+        0,
+        122,
+        186,
+        2698,
+        96
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 6: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3102,
+      "invalid": 648
+    }
+  },
+  {
+    "name": "b_106b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 6: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        2,
+        1,
+        533,
+        0,
+        114,
+        2623,
+        265,
+        75
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 6 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3077,
+      "invalid": 673
     }
   },
   {
     "name": "b_107",
     "dataset": "cogdj",
-    "label": "Row 7 Task Arithmetic Operator",
+    "label": "Arithmetic Task 7",
     "categories": {
       "values": [
         -7,
@@ -2807,9 +4976,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2839,24 +5008,172 @@
         0,
         0,
         0,
-        472,
+        0,
         601,
-        624,
-        2358
+        681,
+        2468
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 7 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 7",
     "study": "soep-core",
     "statistics": {
-      "valid": 2982,
-      "invalid": 1073
+      "valid": 3149,
+      "invalid": 601
+    }
+  },
+  {
+    "name": "b_107a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 7: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        3,
+        3,
+        604,
+        0,
+        2415,
+        362,
+        88,
+        138
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 7: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3003,
+      "invalid": 747
+    }
+  },
+  {
+    "name": "b_107b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 7: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        1,
+        2,
+        624,
+        0,
+        112,
+        213,
+        130,
+        2531
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 7 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2986,
+      "invalid": 764
     }
   },
   {
     "name": "b_108",
     "dataset": "cogdj",
-    "label": "Row 8 Task Arithmetic Operator",
+    "label": "Arithmetic Task 8",
     "categories": {
       "values": [
         -7,
@@ -2876,9 +5193,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2908,24 +5225,172 @@
         0,
         0,
         0,
-        472,
-        453,
-        539,
-        2591
+        0,
+        475,
+        571,
+        2704
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 8 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 8",
     "study": "soep-core",
     "statistics": {
-      "valid": 3130,
-      "invalid": 925
+      "valid": 3275,
+      "invalid": 475
+    }
+  },
+  {
+    "name": "b_108a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 8: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        1,
+        1,
+        472,
+        0,
+        183,
+        115,
+        2818,
+        23
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 8: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3139,
+      "invalid": 611
+    }
+  },
+  {
+    "name": "b_108b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 8: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        1,
+        483,
+        0,
+        2688,
+        182,
+        223,
+        36
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 8 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3129,
+      "invalid": 621
     }
   },
   {
     "name": "b_109",
     "dataset": "cogdj",
-    "label": "Row 9 Task Arithmetic Operator",
+    "label": "Arithmetic Task 9",
     "categories": {
       "values": [
         -7,
@@ -2945,9 +5410,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -2977,24 +5442,172 @@
         0,
         0,
         0,
-        472,
-        502,
-        481,
-        2600
+        0,
+        524,
+        508,
+        2718
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 9 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 9",
     "study": "soep-core",
     "statistics": {
-      "valid": 3081,
-      "invalid": 974
+      "valid": 3226,
+      "invalid": 524
+    }
+  },
+  {
+    "name": "b_109a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 9: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        1,
+        3,
+        512,
+        0,
+        69,
+        2868,
+        37,
+        123
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 9: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3097,
+      "invalid": 653
+    }
+  },
+  {
+    "name": "b_109b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 9: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        2,
+        1,
+        522,
+        0,
+        227,
+        2696,
+        125,
+        40
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 9 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 3088,
+      "invalid": 662
     }
   },
   {
     "name": "b_110",
     "dataset": "cogdj",
-    "label": "Row 10 Task Arithmetic Operator",
+    "label": "Arithmetic Task 10",
     "categories": {
       "values": [
         -7,
@@ -3014,9 +5627,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -3046,24 +5659,172 @@
         0,
         0,
         0,
-        472,
-        659,
-        643,
-        2281
+        0,
+        679,
+        692,
+        2379
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 10 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 10",
     "study": "soep-core",
     "statistics": {
-      "valid": 2924,
-      "invalid": 1131
+      "valid": 3071,
+      "invalid": 679
+    }
+  },
+  {
+    "name": "b_110a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 10: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        686,
+        0,
+        2721,
+        99,
+        72,
+        35
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 10: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2927,
+      "invalid": 823
+    }
+  },
+  {
+    "name": "b_110b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 10: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        699,
+        0,
+        2341,
+        358,
+        118,
+        97
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 10 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2914,
+      "invalid": 836
     }
   },
   {
     "name": "b_111",
     "dataset": "cogdj",
-    "label": "Row 11 Task Arithmetic Operator",
+    "label": "Arithmetic Task 11",
     "categories": {
       "values": [
         -7,
@@ -3083,9 +5844,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -3115,24 +5876,172 @@
         0,
         0,
         0,
-        472,
-        690,
-        711,
-        2182
+        0,
+        729,
+        742,
+        2279
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 11 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 11",
     "study": "soep-core",
     "statistics": {
-      "valid": 2893,
-      "invalid": 1162
+      "valid": 3021,
+      "invalid": 729
+    }
+  },
+  {
+    "name": "b_111a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 11: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        727,
+        0,
+        108,
+        2705,
+        24,
+        49
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 11: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2886,
+      "invalid": 864
+    }
+  },
+  {
+    "name": "b_111b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 11: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        2,
+        1,
+        739,
+        0,
+        2231,
+        352,
+        144,
+        144
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 11 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2871,
+      "invalid": 879
     }
   },
   {
     "name": "b_112",
     "dataset": "cogdj",
-    "label": "Row 12 Task Arithmetic Operator",
+    "label": "Arithmetic Task 12",
     "categories": {
       "values": [
         -7,
@@ -3152,9 +6061,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -3184,24 +6093,172 @@
         0,
         0,
         0,
-        472,
-        625,
-        454,
-        2504
+        0,
+        669,
+        462,
+        2619
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 12 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 12",
     "study": "soep-core",
     "statistics": {
-      "valid": 2958,
-      "invalid": 1097
+      "valid": 3081,
+      "invalid": 669
+    }
+  },
+  {
+    "name": "b_112a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 12: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        4,
+        0,
+        665,
+        0,
+        2582,
+        209,
+        100,
+        53
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 12: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2944,
+      "invalid": 806
+    }
+  },
+  {
+    "name": "b_112b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 12: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        1,
+        0,
+        663,
+        0,
+        2735,
+        77,
+        94,
+        43
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 12 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2949,
+      "invalid": 801
     }
   },
   {
     "name": "b_113",
     "dataset": "cogdj",
-    "label": "Row 13 Task Arithmetic Operator",
+    "label": "Arithmetic Task 13",
     "categories": {
       "values": [
         -7,
@@ -3221,9 +6278,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -3253,24 +6310,172 @@
         0,
         0,
         0,
-        472,
-        759,
-        682,
-        2142
+        0,
+        834,
+        684,
+        2232
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 13 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 13",
     "study": "soep-core",
     "statistics": {
-      "valid": 2824,
-      "invalid": 1231
+      "valid": 2916,
+      "invalid": 834
+    }
+  },
+  {
+    "name": "b_113a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 13: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        1,
+        0,
+        808,
+        0,
+        116,
+        2581,
+        50,
+        57
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 13: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2804,
+      "invalid": 946
+    }
+  },
+  {
+    "name": "b_113b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 13: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        1,
+        0,
+        830,
+        0,
+        346,
+        2240,
+        93,
+        103
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 13 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2782,
+      "invalid": 968
     }
   },
   {
     "name": "b_114",
     "dataset": "cogdj",
-    "label": "Row 14 Task Arithmetic Operator",
+    "label": "Arithmetic Task 14",
     "categories": {
       "values": [
         -7,
@@ -3290,9 +6495,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -3322,24 +6527,172 @@
         0,
         0,
         0,
-        472,
-        982,
-        863,
-        1738
+        0,
+        1076,
+        862,
+        1812
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 14 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 14",
     "study": "soep-core",
     "statistics": {
-      "valid": 2601,
-      "invalid": 1454
+      "valid": 2674,
+      "invalid": 1076
+    }
+  },
+  {
+    "name": "b_114a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 14: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        4,
+        1,
+        1061,
+        0,
+        56,
+        2297,
+        21,
+        173
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 14: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2547,
+      "invalid": 1203
+    }
+  },
+  {
+    "name": "b_114b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 14: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        1103,
+        0,
+        110,
+        489,
+        71,
+        1840
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 14 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2510,
+      "invalid": 1240
     }
   },
   {
     "name": "b_115",
     "dataset": "cogdj",
-    "label": "Row 15 Task Arithmetic Operator",
+    "label": "Arithmetic Task 15",
     "categories": {
       "values": [
         -7,
@@ -3359,9 +6712,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -3391,24 +6744,172 @@
         0,
         0,
         0,
-        472,
-        933,
-        552,
-        2098
+        0,
+        1052,
+        511,
+        2187
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 15 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 15",
     "study": "soep-core",
     "statistics": {
-      "valid": 2650,
-      "invalid": 1405
+      "valid": 2698,
+      "invalid": 1052
+    }
+  },
+  {
+    "name": "b_115a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 15: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        1019,
+        0,
+        62,
+        2398,
+        22,
+        112
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 15: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2594,
+      "invalid": 1156
+    }
+  },
+  {
+    "name": "b_115b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 15: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        1,
+        0,
+        1026,
+        0,
+        79,
+        95,
+        211,
+        2201
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 15 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2586,
+      "invalid": 1164
     }
   },
   {
     "name": "b_116",
     "dataset": "cogdj",
-    "label": "Row 16 Task Arithmetic Operator",
+    "label": "Arithmetic Task 16",
     "categories": {
       "values": [
         -7,
@@ -3428,9 +6929,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -3460,24 +6961,172 @@
         0,
         0,
         0,
-        472,
-        846,
-        949,
-        1788
+        0,
+        938,
+        950,
+        1862
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 16 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 16",
     "study": "soep-core",
     "statistics": {
-      "valid": 2737,
-      "invalid": 1318
+      "valid": 2812,
+      "invalid": 938
+    }
+  },
+  {
+    "name": "b_116a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 16: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        7,
+        3,
+        910,
+        0,
+        1863,
+        393,
+        371,
+        66
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 16: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2693,
+      "invalid": 1057
+    }
+  },
+  {
+    "name": "b_116b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 16: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        922,
+        0,
+        170,
+        72,
+        2388,
+        61
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 16 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2691,
+      "invalid": 1059
     }
   },
   {
     "name": "b_117",
     "dataset": "cogdj",
-    "label": "Row 17 Task Arithmetic Operator",
+    "label": "Arithmetic Task 17",
     "categories": {
       "values": [
         -7,
@@ -3497,9 +7146,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -3529,24 +7178,172 @@
         0,
         0,
         0,
-        473,
-        1302,
-        964,
-        1316
+        0,
+        1423,
+        951,
+        1376
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 17 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 17",
     "study": "soep-core",
     "statistics": {
-      "valid": 2280,
-      "invalid": 1775
+      "valid": 2327,
+      "invalid": 1423
+    }
+  },
+  {
+    "name": "b_117a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 17: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        1,
+        1394,
+        0,
+        74,
+        212,
+        33,
+        1899
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 17: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2218,
+      "invalid": 1532
+    }
+  },
+  {
+    "name": "b_117b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 17: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        2,
+        0,
+        1428,
+        0,
+        181,
+        341,
+        102,
+        1559
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 17 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2183,
+      "invalid": 1567
     }
   },
   {
     "name": "b_118",
     "dataset": "cogdj",
-    "label": "Row 18 Task Arithmetic Operator",
+    "label": "Arithmetic Task 18",
     "categories": {
       "values": [
         -7,
@@ -3566,9 +7363,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -3598,24 +7395,172 @@
         0,
         0,
         0,
-        473,
-        1435,
-        1170,
-        977
+        0,
+        1600,
+        1137,
+        1013
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 18 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 18",
     "study": "soep-core",
     "statistics": {
-      "valid": 2147,
-      "invalid": 1908
+      "valid": 2150,
+      "invalid": 1600
+    }
+  },
+  {
+    "name": "b_118a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 18: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        1,
+        0,
+        1562,
+        0,
+        1012,
+        554,
+        52,
+        432
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 18: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2050,
+      "invalid": 1700
+    }
+  },
+  {
+    "name": "b_118b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 18: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        1,
+        0,
+        1580,
+        0,
+        208,
+        164,
+        147,
+        1513
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 18 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 2032,
+      "invalid": 1718
     }
   },
   {
     "name": "b_119",
     "dataset": "cogdj",
-    "label": "Row 19 Task Arithmetic Operator",
+    "label": "Arithmetic Task 19",
     "categories": {
       "values": [
         -7,
@@ -3635,9 +7580,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -3667,24 +7612,172 @@
         0,
         0,
         0,
-        473,
-        1633,
-        999,
-        950
+        0,
+        1810,
+        960,
+        980
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 19 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 19",
     "study": "soep-core",
     "statistics": {
-      "valid": 1949,
-      "invalid": 2106
+      "valid": 1940,
+      "invalid": 1810
+    }
+  },
+  {
+    "name": "b_119a",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 19: 1st operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        2,
+        2,
+        1785,
+        0,
+        106,
+        511,
+        176,
+        1031
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 19: 1. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 1824,
+      "invalid": 1926
+    }
+  },
+  {
+    "name": "b_119b",
+    "dataset": "cogdj",
+    "label": "Arithmetic Task 19: 2nd operator",
+    "categories": {
+      "values": [
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "labels": [
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
+      ],
+      "labels_de": [
+        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] In Fragebogenversion nicht enthalten",
+        "[-4] Unzulaessige Mehrfachantwort",
+        "[-3] nicht valide",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        1,
+        0,
+        1767,
+        0,
+        1040,
+        485,
+        60,
+        260
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rechenzeichenaufgabe 19 2. Operator",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 1845,
+      "invalid": 1905
     }
   },
   {
     "name": "b_120",
     "dataset": "cogdj",
-    "label": "Row 20 Task Arithmetic Operator",
+    "label": "Arithmetic Task 20",
     "categories": {
       "values": [
         -7,
@@ -3704,9 +7797,9 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer",
+        "[0] Wrong answer",
+        "[1] Right answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -3736,57 +7829,60 @@
         0,
         0,
         0,
-        473,
-        1608,
-        790,
-        1184
+        0,
+        1800,
+        715,
+        1235
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 20 Rechenzeichenaufgabe",
+    "label_de": "Rechenzeichenaufgabe 20",
     "study": "soep-core",
     "statistics": {
-      "valid": 1974,
-      "invalid": 2081
+      "valid": 1950,
+      "invalid": 1800
     }
   },
   {
-    "name": "a_161",
+    "name": "b_120a",
     "dataset": "cogdj",
-    "label": "Row 1 Task Figures",
+    "label": "Arithmetic Task 20: 1st operator",
     "categories": {
       "values": [
-        -7,
         -6,
         -5,
         -4,
         -3,
         -2,
         -1,
-        0,
-        1
+        1,
+        2,
+        3,
+        4
       ],
       "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
       ],
       "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
         "[-3] nicht valide",
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
       ],
       "missings": [
         true,
@@ -3795,67 +7891,72 @@
         true,
         true,
         true,
-        true,
+        false,
+        false,
         false,
         false
       ],
       "frequencies": [
         0,
         0,
+        2,
         0,
+        1759,
         0,
-        0,
-        472,
-        49,
-        207,
-        3327
+        155,
+        233,
+        139,
+        1325
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 1 figurale Aufgabe",
+    "label_de": "Rechenzeichenaufgabe 20: 1. Operator",
     "study": "soep-core",
     "statistics": {
-      "valid": 3534,
-      "invalid": 521
+      "valid": 1852,
+      "invalid": 1898
     }
   },
   {
-    "name": "a_162",
+    "name": "b_120b",
     "dataset": "cogdj",
-    "label": "Row 2 Task Figures",
+    "label": "Arithmetic Task 20: 2nd operator",
     "categories": {
       "values": [
-        -7,
         -6,
         -5,
         -4,
         -3,
         -2,
         -1,
-        0,
-        1
+        1,
+        2,
+        3,
+        4
       ],
       "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-6] [de] Fragebogenversion mit geaenderter Filterfuehrung",
+        "[-5] [de] In Fragebogenversion nicht enthalten",
+        "[-4] [de] Unzulaessige Mehrfachantwort",
+        "[-3] [de] nicht valide",
+        "[-2] [de] trifft nicht zu",
+        "[-1] [de] keine Angabe",
+        "[1] plus",
+        "[2] minus",
+        "[3] times",
+        "[4] divided"
       ],
       "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
         "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
         "[-5] In Fragebogenversion nicht enthalten",
         "[-4] Unzulaessige Mehrfachantwort",
         "[-3] nicht valide",
         "[-2] trifft nicht zu",
         "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
+        "[1] plus",
+        "[2] minus",
+        "[3] mal",
+        "[4] geteilt"
       ],
       "missings": [
         true,
@@ -3864,34 +7965,36 @@
         true,
         true,
         true,
-        true,
+        false,
+        false,
         false,
         false
       ],
       "frequencies": [
         0,
         0,
+        1,
         0,
+        1770,
         0,
-        0,
-        473,
-        70,
-        1243,
-        2269
+        1262,
+        329,
+        92,
+        159
       ]
     },
     "scale": "cat",
-    "label_de": "Zeile 2 figurale Aufgabe",
+    "label_de": "Rechenzeichenaufgabe 20 2. Operator",
     "study": "soep-core",
     "statistics": {
-      "valid": 3512,
-      "invalid": 543
+      "valid": 1842,
+      "invalid": 1908
     }
   },
   {
-    "name": "a_163",
+    "name": "rechenz",
     "dataset": "cogdj",
-    "label": "Row 3 Task Figures",
+    "label": "Sum index: Correct answers (Arithmetic operators)",
     "categories": {
       "values": [
         -7,
@@ -3900,9 +8003,7 @@
         -4,
         -3,
         -2,
-        -1,
-        0,
-        1
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -3911,9 +8012,7 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -3922,9 +8021,7 @@
         "[-4] Unzulaessige Mehrfachantwort",
         "[-3] nicht valide",
         "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
+        "[-1] keine Angabe"
       ],
       "missings": [
         true,
@@ -3933,9 +8030,7 @@
         true,
         true,
         true,
-        true,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
@@ -3943,24 +8038,28 @@
         0,
         0,
         0,
-        472,
-        189,
-        874,
-        2520
+        0,
+        0
       ]
     },
-    "scale": "cat",
-    "label_de": "Zeile 3 figurale Aufgabe",
+    "scale": "number",
+    "label_de": "Summenindex: richtige Antworten (Rechenzeichen)",
     "study": "soep-core",
     "statistics": {
-      "valid": 3394,
-      "invalid": 661
+      "Min.": 0.0,
+      "1st Qu.": 9.0,
+      "Median": 13.0,
+      "Mean": 12.430666666666667,
+      "3rd Qu.": 16.0,
+      "Max.": 20.0,
+      "valid": 3750,
+      "invalid": 0
     }
   },
   {
-    "name": "a_164",
+    "name": "irechenz",
     "dataset": "cogdj",
-    "label": "Row 4 Task Figures",
+    "label": "Sum index: Wrong answers (Arithmetic operators)",
     "categories": {
       "values": [
         -7,
@@ -3969,9 +8068,7 @@
         -4,
         -3,
         -2,
-        -1,
-        0,
-        1
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -3980,9 +8077,7 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -3991,9 +8086,7 @@
         "[-4] Unzulaessige Mehrfachantwort",
         "[-3] nicht valide",
         "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
+        "[-1] keine Angabe"
       ],
       "missings": [
         true,
@@ -4002,9 +8095,7 @@
         true,
         true,
         true,
-        true,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
@@ -4012,93 +8103,52 @@
         0,
         0,
         0,
-        472,
-        74,
-        1025,
-        2484
+        0,
+        0
       ]
     },
-    "scale": "cat",
-    "label_de": "Zeile 4 figurale Aufgabe",
+    "scale": "number",
+    "label_de": "Summenindex: falsche Antworten (Rechenzeichen)",
     "study": "soep-core",
     "statistics": {
-      "valid": 3509,
-      "invalid": 546
+      "Min.": 0.0,
+      "1st Qu.": 0.0,
+      "Median": 2.0,
+      "Mean": 3.3386666666666667,
+      "3rd Qu.": 5.0,
+      "Max.": 20.0,
+      "valid": 3750,
+      "invalid": 0
     }
   },
   {
-    "name": "a_165",
+    "name": "frechenz",
     "dataset": "cogdj",
-    "label": "Row 5 Task Figures",
+    "label": "Sum index: Tasks not completed (Arithmetic operators)",
     "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        0,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        472,
-        112,
-        1158,
-        2313
-      ]
+      "values": [],
+      "labels": [],
+      "missings": [],
+      "frequencies": []
     },
-    "scale": "cat",
-    "label_de": "Zeile 5 figurale Aufgabe",
+    "scale": "number",
+    "label_de": "Summenindex: nicht bearbeitete Aufgaben (Rechenzeichen)",
     "study": "soep-core",
     "statistics": {
-      "valid": 3471,
-      "invalid": 584
+      "Min.": 0.0,
+      "1st Qu.": 0.0,
+      "Median": 3.0,
+      "Mean": 4.230666666666667,
+      "3rd Qu.": 7.0,
+      "Max.": 20.0,
+      "valid": 3750,
+      "invalid": 0
     }
   },
   {
-    "name": "a_166",
+    "name": "indexa6",
     "dataset": "cogdj",
-    "label": "Row 6 Task Figures",
+    "label": "Sum index: Tasks completed (Arithmetic operators)",
     "categories": {
       "values": [
         -7,
@@ -4107,9 +8157,7 @@
         -4,
         -3,
         -2,
-        -1,
-        0,
-        1
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -4118,9 +8166,7 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -4129,9 +8175,7 @@
         "[-4] Unzulaessige Mehrfachantwort",
         "[-3] nicht valide",
         "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
+        "[-1] keine Angabe"
       ],
       "missings": [
         true,
@@ -4140,9 +8184,7 @@
         true,
         true,
         true,
-        true,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
@@ -4150,24 +8192,28 @@
         0,
         0,
         0,
-        472,
-        149,
-        445,
-        2989
+        0,
+        0
       ]
     },
-    "scale": "cat",
-    "label_de": "Zeile 6 figurale Aufgabe",
+    "scale": "number",
+    "label_de": "Summenindex: bearbeitete Aufgaben (Rechenzeichen)",
     "study": "soep-core",
     "statistics": {
-      "valid": 3434,
-      "invalid": 621
+      "Min.": 0.0,
+      "1st Qu.": 13.0,
+      "Median": 17.0,
+      "Mean": 15.769333333333334,
+      "3rd Qu.": 20.0,
+      "Max.": 20.0,
+      "valid": 3750,
+      "invalid": 0
     }
   },
   {
-    "name": "a_167",
+    "name": "sdindex",
     "dataset": "cogdj",
-    "label": "Row 7 Task Figures",
+    "label": "Sum index: Correct answers (All categories)",
     "categories": {
       "values": [
         -7,
@@ -4176,9 +8222,7 @@
         -4,
         -3,
         -2,
-        -1,
-        0,
-        1
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -4187,9 +8231,7 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -4198,9 +8240,7 @@
         "[-4] Unzulaessige Mehrfachantwort",
         "[-3] nicht valide",
         "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
+        "[-1] keine Angabe"
       ],
       "missings": [
         true,
@@ -4209,9 +8249,7 @@
         true,
         true,
         true,
-        true,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
@@ -4219,24 +8257,28 @@
         0,
         0,
         0,
-        472,
-        300,
-        1248,
-        2035
+        0,
+        0
       ]
     },
-    "scale": "cat",
-    "label_de": "Zeile 7 figurale Aufgabe",
+    "scale": "number",
+    "label_de": "Summenindex: richtige Antworten (alle Kategorien)",
     "study": "soep-core",
     "statistics": {
-      "valid": 3283,
-      "invalid": 772
+      "Min.": 1.0,
+      "1st Qu.": 23.0,
+      "Median": 31.0,
+      "Mean": 30.223466666666667,
+      "3rd Qu.": 37.0,
+      "Max.": 55.0,
+      "valid": 3750,
+      "invalid": 0
     }
   },
   {
-    "name": "a_168",
+    "name": "sumindex",
     "dataset": "cogdj",
-    "label": "Row 8 Task Figures",
+    "label": "Sum index: Tasks completed (All categories)",
     "categories": {
       "values": [
         -7,
@@ -4245,9 +8287,7 @@
         -4,
         -3,
         -2,
-        -1,
-        0,
-        1
+        -1
       ],
       "labels": [
         "[-7] Only available in less restricted edition",
@@ -4256,9 +8296,7 @@
         "[-4] Inadmissible multiple response",
         "[-3] Answer improbable",
         "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
+        "[-1] No answer"
       ],
       "labels_de": [
         "[-7] Nur in weniger eingeschränkter Edition verfügbar",
@@ -4267,9 +8305,7 @@
         "[-4] Unzulaessige Mehrfachantwort",
         "[-3] nicht valide",
         "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
+        "[-1] keine Angabe"
       ],
       "missings": [
         true,
@@ -4278,9 +8314,7 @@
         true,
         true,
         true,
-        true,
-        false,
-        false
+        true
       ],
       "frequencies": [
         0,
@@ -4288,846 +8322,22 @@
         0,
         0,
         0,
-        472,
-        196,
-        1727,
-        1660
+        0,
+        0
       ]
     },
-    "scale": "cat",
-    "label_de": "Zeile 8 figurale Aufgabe",
+    "scale": "number",
+    "label_de": "Summenindex: bearbeitete Aufgaben (alle Kategorien)",
     "study": "soep-core",
     "statistics": {
-      "valid": 3387,
-      "invalid": 668
-    }
-  },
-  {
-    "name": "a_169",
-    "dataset": "cogdj",
-    "label": "Row 9 Task Figures",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        0,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        472,
-        220,
-        1804,
-        1559
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Zeile 9 figurale Aufgabe",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 3363,
-      "invalid": 692
-    }
-  },
-  {
-    "name": "a_170",
-    "dataset": "cogdj",
-    "label": "Row 10 Task Figures",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        0,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        472,
-        451,
-        2203,
-        929
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Zeile 10 figurale Aufgabe",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 3132,
-      "invalid": 923
-    }
-  },
-  {
-    "name": "a_171",
-    "dataset": "cogdj",
-    "label": "Row 11 Task Figures",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        0,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        472,
-        250,
-        1377,
-        1956
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Zeile 11 figurale Aufgabe",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 3333,
-      "invalid": 722
-    }
-  },
-  {
-    "name": "a_172",
-    "dataset": "cogdj",
-    "label": "Row 12 Task Figures",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        0,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        472,
-        283,
-        1736,
-        1564
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Zeile 12 figurale Aufgabe",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 3300,
-      "invalid": 755
-    }
-  },
-  {
-    "name": "a_173",
-    "dataset": "cogdj",
-    "label": "Row 13 Task Figures",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        0,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        473,
-        538,
-        2308,
-        736
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Zeile 13 figurale Aufgabe",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 3044,
-      "invalid": 1011
-    }
-  },
-  {
-    "name": "a_174",
-    "dataset": "cogdj",
-    "label": "Row 14 Task Figures",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        0,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        473,
-        306,
-        741,
-        2535
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Zeile 14 figurale Aufgabe",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 3276,
-      "invalid": 779
-    }
-  },
-  {
-    "name": "a_175",
-    "dataset": "cogdj",
-    "label": "Row 15 Task Figures",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        0,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        473,
-        480,
-        2395,
-        707
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Zeile 15 figurale Aufgabe",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 3102,
-      "invalid": 953
-    }
-  },
-  {
-    "name": "a_176",
-    "dataset": "cogdj",
-    "label": "Row 16 Task Figures",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        0,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        473,
-        539,
-        1903,
-        1140
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Zeile 16 figurale Aufgabe",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 3043,
-      "invalid": 1012
-    }
-  },
-  {
-    "name": "a_177",
-    "dataset": "cogdj",
-    "label": "Row 17 Task Figures",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        0,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        473,
-        745,
-        1453,
-        1384
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Zeile 17 figurale Aufgabe",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 2837,
-      "invalid": 1218
-    }
-  },
-  {
-    "name": "a_178",
-    "dataset": "cogdj",
-    "label": "Row 18 Task Figures",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        0,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        473,
-        974,
-        1821,
-        787
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Zeile 18 figurale Aufgabe",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 2608,
-      "invalid": 1447
-    }
-  },
-  {
-    "name": "a_179",
-    "dataset": "cogdj",
-    "label": "Row 19 Task Figures",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        0,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        473,
-        846,
-        1600,
-        1136
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Zeile 19 figurale Aufgabe",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 2736,
-      "invalid": 1319
-    }
-  },
-  {
-    "name": "a_180",
-    "dataset": "cogdj",
-    "label": "Row 20 Task Figures",
-    "categories": {
-      "values": [
-        -7,
-        -6,
-        -5,
-        -4,
-        -3,
-        -2,
-        -1,
-        0,
-        1
-      ],
-      "labels": [
-        "[-7] Only available in less restricted edition",
-        "[-6] Version of questionnaire with modified filtering",
-        "[-5] Not included in this version of the questionnaire",
-        "[-4] Inadmissible multiple response",
-        "[-3] Answer improbable",
-        "[-2] Does not apply",
-        "[-1] No Answer",
-        "[0] Wrong Answer",
-        "[1] Right Answer"
-      ],
-      "labels_de": [
-        "[-7] Nur in weniger eingeschränkter Edition verfügbar",
-        "[-6] Fragebogenversion mit geaenderter Filterfuehrung",
-        "[-5] In Fragebogenversion nicht enthalten",
-        "[-4] Unzulaessige Mehrfachantwort",
-        "[-3] nicht valide",
-        "[-2] trifft nicht zu",
-        "[-1] keine Angabe",
-        "[0] falsche Antwort",
-        "[1] richtige Antwort"
-      ],
-      "missings": [
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        true,
-        false,
-        false
-      ],
-      "frequencies": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        473,
-        1138,
-        1628,
-        816
-      ]
-    },
-    "scale": "cat",
-    "label_de": "Zeile 20 figurale Aufgabe",
-    "study": "soep-core",
-    "statistics": {
-      "valid": 2444,
-      "invalid": 1611
+      "Min.": 8.0,
+      "1st Qu.": 48.0,
+      "Median": 55.0,
+      "Mean": 52.5344,
+      "3rd Qu.": 59.0,
+      "Max.": 60.0,
+      "valid": 3750,
+      "invalid": 0
     }
   }
 ]
