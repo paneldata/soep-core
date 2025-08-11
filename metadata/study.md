@@ -48,27 +48,27 @@ The most current instruments for our main samples:
 | paneldata.org (Links to CAPI-Versions)                        | Field version (mostly PAPI)                                                                                                                                                                  | Version with variable names (CAPI/CAWI) |
 | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
 | Address/contact protocol and supporting instruments 2022      | PDF                                                                                                                                                                                       |                                    |
-| [Household](inst/soep-core-2023-hh2)                          | PDF (de/en) | PDF (de/en)|
-| [Individual](inst/soep-core-2023-pe2)                         | PDF (de/en) | PDF (de/en)|
-| [Biography](inst/soep-core-2023-ll2)                          | PDF (de/en) | PDF (de/en)|
-| [Catch-up Individual](inst/soep-core-2023-l2)                 | PDF (de/en) | PDF (de/en)|
-| [Childhood (0-11-year-olds)](inst/soep-core-2023-ki-2)        | PDF (de/en) | PDF (de/en)|
-| [Youth (12-17-year-olds)](inst/soep-core-2023-ju-2)           | PDF (de/en) | PDF (de/en)|
-| [Deceased Individual](inst/soep-core-2023-vp2)                | PDF (de/en) | PDF (de/en)|
+| [Household](inst/soep-core-2023-hh2)                          | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970352.de/diw_ssp1510.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.969902.de/diw_ssp1499.pdf))|
+| [Individual](inst/soep-core-2023-pe2)                         | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970614.de/diw_ssp1525.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970910.de/diw_ssp1526.pdf))|
+| [Biography](inst/soep-core-2023-ll2)                          | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.971141.de/diw_ssp1531.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.971155.de/diw_ssp1532.pdf))|
+| [Catch-up Individual](inst/soep-core-2023-l2)                 | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970356.de/diw_ssp1512.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.969964.de/diw_ssp1501.pdf))|
+| [Childhood (0-11-year-olds)](inst/soep-core-2023-ki-2)        | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970590.de/diw_ssp1516.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970344.de/diw_ssp1506.pdf))|
+| [Youth (12-17-year-olds)](inst/soep-core-2023-ju-2)           | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970362.de/diw_ssp1515.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970000.de/diw_ssp1505.pdf))|
+| [Deceased Individual](inst/soep-core-2023-vp2)                | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970358.de/diw_ssp1513.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.969975.de/diw_ssp1503.pdf))|
 | CAMCES                                                        | PDF (de/en) | PDF (de/en)|
 | [Grip Strength](inst/soep-core-2023-gs)                       | PDF (de/en) | PDF (de/en)|
-| [Residential Environment](inst/soep-core-2023-wuma)           | PDF (de/en) | PDF (de/en)|
-| [About the interview](inst/soep-core-2023-kontext)            | PDF (de/en) | PDF (de/en)|
+| [Residential Environment](inst/soep-core-2023-wuma)           | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970594.de/diw_ssp1519.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970348.de/diw_ssp1509.pdf))|
+| [About the interview](inst/soep-core-2023-kontext)            | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970592.de/diw_ssp1518.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970346.de/diw_ssp1508.pdf))|
 
 
 In some samples adapted versions of the instruments were used:
 
 | paneldata.org (Links to CAPI-Versions)                                           | Field version (PAPI)                                                                         | Version with variable names |
 | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | --------------------------- |
-| Samples M3-M10 (“Refugee Samples”)                                                |                                                                                              |                             |
-| [Household](inst/soep-core-2023-hh-ref)            | PDF (de/en) | PDF (de/en)|
-| [Individual](inst/soep-core-2023-p-ref)            | PDF (de/en) | PDF (de/en)|
-| [Biography](inst/soep-core-2023-ll-ref)            | PDF (de/en) | PDF (de/en)|
+| Samples M3-M9 (“Refugee Samples”)                                                |                                                                                              |                             |
+| [Household](inst/soep-core-2023-hh-ref)            | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970608.de/diw_ssp1522.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970606.de/diw_ssp1521.pdf))|
+| [Individual](inst/soep-core-2023-p-ref)            | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970610.de/diw_ssp1523.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970610.de/diw_ssp1523.pdf))|
+| [Biography](inst/soep-core-2023-ll-ref)            | PDF (de/en) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970921.de/diw_ssp1529.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970923.de/diw_ssp1530.pdf))|
 
 ## Data access
 
