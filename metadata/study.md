@@ -61,7 +61,6 @@ The most current instruments for our main samples:
 | [About the interview](inst/soep-core-2023-kontext)            |  | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970592.de/diw_ssp1518.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970346.de/diw_ssp1508.pdf))|
 
 
-
 In some samples adapted versions of the instruments were used:
 
 | paneldata.org (Links to CAPI-Versions)                                           | Field version (PAPI)                                                                         | Version with variable names |
@@ -70,7 +69,6 @@ In some samples adapted versions of the instruments were used:
 | [Household](inst/soep-core-2023-hh-ref)            |  | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970608.de/diw_ssp1522.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970606.de/diw_ssp1521.pdf))|
 | [Individual](inst/soep-core-2023-p-ref)            |  | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970610.de/diw_ssp1523.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970610.de/diw_ssp1523.pdf))|
 | [Biography](inst/soep-core-2023-ll-ref)            |  | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970921.de/diw_ssp1529.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970923.de/diw_ssp1530.pdf))|
-
 
 ## Data access
 
