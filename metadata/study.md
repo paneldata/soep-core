@@ -17,10 +17,10 @@ config:
 * **Title:** German Socio-Economic Panel Study (SOEP-Core)
 * **Authors:**  Jan Goebel, Markus M. Grabka, Carsten Schröder, Sabine Zinn, Mattis Beckmannshagen, Philippa Cumming, Jascha Dräger, Andreas Franken, Miriam Gauer, Martin Gerike, Daniel Graeber, Florian Griese, Selin Kara, Daniel Labarca Pinto, Antonia Meier, Cristóbal Moya, Jana Nebelin, Marvin Petrenz, Denise Rolle, Claudia Saalbach, Sarah Satilmis, Daniel Schnitzlein, Rainer Siegers, Hans Walter Steinhauer, Felix Süttmann, Yogam Tchokni, Knut Wenzig
 
-Publications using these data should cite the DOI (https://doi.org/10.5684/soep.core.v41o, or the DOI of another used edition) and include one of the following references:
+Publications using these data should cite the DOI ([https://doi.org/10.5684/soep.core.v41o](https://doi.org/10.5684/soep.core.v41o), or the DOI of another used edition) and include one of the following references:
 
-* Jan Goebel, Markus M. Grabka, Stefan Liebig, Martin Kroh, David Richter, Carsten Schröder, Jürgen Schupp (2018) [The German Socio-Economic Panel Study (SOEP)](https://doi.org/10.1515/jbnst-2018-0022). Jahrbücher für Nationalökonomie und Statistik / Journal of Economics and Statistics (online first), doi: 10.1515/jbnst-2018-0022
-* Gert G. Wagner, Jan Göbel, Peter Krause, Rainer Pischner, and Ingo Sieber (2008) [Das Sozio-oekonomische Panel (SOEP): Multidisziplinäres Haushaltspanel und Kohortenstudie für Deutschland - Eine Einführung (für neue Datennutzer) mit einem Ausblick (für erfahrene Anwender)](https://doi.org/10.1007/s11943-008-0050-y), AStA Wirtschafts- und Sozialstatistisches Archiv 2 (4), 301-328.
+* Jan Goebel, Markus M. Grabka, Stefan Liebig, Martin Kroh, David Richter, Carsten Schröder, Jürgen Schupp (2018) The German Socio-Economic Panel Study (SOEP). Jahrbücher für Nationalökonomie und Statistik / Journal of Economics and Statistics, [https://doi.org/10.1515/jbnst-2018-0022](https://doi.org/10.1515/jbnst-2018-0022)
+* Gert G. Wagner, Jan Göbel, Peter Krause, Rainer Pischner, and Ingo Sieber (2008) Das Sozio-oekonomische Panel (SOEP): Multidisziplinäres Haushaltspanel und Kohortenstudie für Deutschland - Eine Einführung (für neue Datennutzer) mit einem Ausblick (für erfahrene Anwender), AStA Wirtschafts- und Sozialstatistisches Archiv 2 (4), 301-328, [https://doi.org/10.1007/s11943-008-0050-y](https://doi.org/10.1007/s11943-008-0050-y)
 * Schupp, Jürgen (2009): 25 Jahre Sozio-oekonomisches Panel – Ein Infrastrukturprojekt der empirischen Sozial- und Wirtschaftsforschung in Deutschland, Zeitschrift für Soziologie 38 (5), pp. 350-357.
 
 ## Study Info
