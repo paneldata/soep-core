@@ -1,7 +1,5 @@
 ---
-name: soep-core
 label: SOEP-Core
-doi: 10.5684/soep.core.v40o
 config:
     variables:
         label_table: True
@@ -15,12 +13,12 @@ config:
 ## Citation
 
 * **Title:** German Socio-Economic Panel Study (SOEP-Core)
-* **Authors:**  Jan Goebel, Markus M. Grabka, Carsten Schröder, Sabine Zinn, Charlotte Bartels, Mattis Beckmannshagen, Andreas Franken, Martin Gerike, Florian Griese, Christoph Halbmeier, Selin Kara, Peter Krause, Elisabeth Liebau, Jana Nebelin, Marvin Petrenz, Sarah Satilmis, Rainer Siegers, Hans Walter Steinhauer, Felix Süttmann, Knut Wenzig, Jascha Dräger, Miriam Gauer, Yogam Tchokni, Claudia Saalbach
+* **Authors:**  Jan Goebel, Markus M. Grabka, Carsten Schröder, Sabine Zinn, Mattis Beckmannshagen, Philippa Cumming, Jascha Dräger, Andreas Franken, Miriam Gauer, Martin Gerike, Daniel Graeber, Florian Griese, Selin Kara, Daniel Labarca Pinto, Antonia Meier, Cristóbal Moya, Jana Nebelin, Marvin Petrenz, Denise Rolle, Claudia Saalbach, Sarah Satilmis, Daniel Schnitzlein, Rainer Siegers, Hans Walter Steinhauer, Felix Süttmann, Yogam Tchokni, Knut Wenzig
 
-Publications using these data should cite the DOI (doi:10.5684/soep.core.v40.1o, or the DOI of another used edition) and include one of the following references:
+Publications using these data should cite the DOI ([https://doi.org/10.5684/soep.core.v41o](https://doi.org/10.5684/soep.core.v41o), or the DOI of another used edition) and include one of the following references:
 
-* Jan Goebel, Markus M. Grabka, Stefan Liebig, Martin Kroh, David Richter, Carsten Schröder, Jürgen Schupp (2018) [The German Socio-Economic Panel Study (SOEP)](https://doi.org/10.1515/jbnst-2018-0022). Jahrbücher für Nationalökonomie und Statistik / Journal of Economics and Statistics (online first), doi: 10.1515/jbnst-2018-0022
-* Gert G. Wagner, Jan Göbel, Peter Krause, Rainer Pischner, and Ingo Sieber (2008) [Das Sozio-oekonomische Panel (SOEP): Multidisziplinäres Haushaltspanel und Kohortenstudie für Deutschland - Eine Einführung (für neue Datennutzer) mit einem Ausblick (für erfahrene Anwender)](https://doi.org/10.1007/s11943-008-0050-y), AStA Wirtschafts- und Sozialstatistisches Archiv 2 (4), 301-328.
+* Jan Goebel, Markus M. Grabka, Stefan Liebig, Martin Kroh, David Richter, Carsten Schröder, Jürgen Schupp (2018) The German Socio-Economic Panel Study (SOEP). Jahrbücher für Nationalökonomie und Statistik / Journal of Economics and Statistics, [https://doi.org/10.1515/jbnst-2018-0022](https://doi.org/10.1515/jbnst-2018-0022)
+* Gert G. Wagner, Jan Göbel, Peter Krause, Rainer Pischner, and Ingo Sieber (2008) Das Sozio-oekonomische Panel (SOEP): Multidisziplinäres Haushaltspanel und Kohortenstudie für Deutschland - Eine Einführung (für neue Datennutzer) mit einem Ausblick (für erfahrene Anwender), AStA Wirtschafts- und Sozialstatistisches Archiv 2 (4), 301-328, [https://doi.org/10.1007/s11943-008-0050-y](https://doi.org/10.1007/s11943-008-0050-y)
 * Schupp, Jürgen (2009): 25 Jahre Sozio-oekonomisches Panel – Ein Infrastrukturprojekt der empirischen Sozial- und Wirtschaftsforschung in Deutschland, Zeitschrift für Soziologie 38 (5), pp. 350-357.
 
 ## Study Info
@@ -39,36 +37,47 @@ A more detailled overview can be found in the [SOEP Companion](http://companion.
 * [Working with SOEP Data](http://companion.soep.de/Working%20with%20SOEP%20Data/)
 * [Working with SOEP Documentation](http://companion.soep.de/Working%20with%20SOEP%20Documentation/)
 
+Changes in the Dataset:
+
+* Details on the current data delivery can be found as a supplied "WhatsNew" document in the data package or [here](https://git.soep.de/kwenzig/publicecoredoku/-/blob/master/meta/WhatsNew.md?ref_type=heads#whats-new-in-soep-core-v40). 
+
 ## Current Instruments
 
-The SOEP is presented to respondents and interviewers under the easy-to-remember name “Living in Germany”. This umbrella term covers in survey year 2023 a wide range of field instruments, many of them adapted for special samples and processed with PAPI as well as CAPI or CAWI.
+The SOEP is presented to respondents and interviewers under the easy-to-remember name “Living in Germany”. This umbrella term covers in survey year 2024 a wide range of field instruments, some of them adapted for special samples and processed with PAPI as well as CAPI or CAWI.
 
-The most current instruments for our main samples: 
+The most current instruments for our main samples (A-R, M1, M2, M7, M8a-M8c): 
 
-| paneldata.org (Links to CAPI-Versions)                        | Field version (mostly PAPI)                                                                                                                                                                  | Version with variable names (CAPI/CAWI) |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| Address/contact protocol and supporting instruments 2022      | PDF                                                                                                                                                                                       |                                    |
-| [Household](inst/soep-core-2023-hh2)                          | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.942457.de/diw_ssp1444.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.942467.de/diw_ssp1449.pdf)) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970352.de/diw_ssp1510.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.969902.de/diw_ssp1499.pdf))|
-| [Individual](inst/soep-core-2023-pe2)                         | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.942459.de/diw_ssp1445.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.942469.de/diw_ssp1450.pdf)) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970614.de/diw_ssp1525.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970910.de/diw_ssp1526.pdf))|
-| [Biography](inst/soep-core-2023-ll2)                          | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.942461.de/diw_ssp1446.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.942487.de/diw_ssp1451.pdf)) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.971141.de/diw_ssp1531.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.971155.de/diw_ssp1532.pdf))|
-| [Catch-up Individual](inst/soep-core-2023-l2)                 | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.944247.de/diw_ssp1463.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.942493.de/diw_ssp1453.pdf)) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970356.de/diw_ssp1512.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.969964.de/diw_ssp1501.pdf))|
-| [Childhood (0-11-year-olds)](inst/soep-core-2023-ki-2)        |  | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970590.de/diw_ssp1516.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970344.de/diw_ssp1506.pdf))|
-| [Youth (12-17-year-olds)](inst/soep-core-2023-ju-2)           |  | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970362.de/diw_ssp1515.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970000.de/diw_ssp1505.pdf))|
-| [Deceased Individual](inst/soep-core-2023-vp2)                | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.942463.de/diw_ssp1447.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.942491.de/diw_ssp1452.pdf)) | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970358.de/diw_ssp1513.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.969975.de/diw_ssp1503.pdf))|
-| CAMCES                                                        |  | PDF (de/en)|
-| [Grip Strength](inst/soep-core-2023-gs)                       |  | PDF (de/en)|
-| [Residential Environment](inst/soep-core-2023-wuma)           |  | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970594.de/diw_ssp1519.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970348.de/diw_ssp1509.pdf))|
-| [About the interview](inst/soep-core-2023-kontext)            |  | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970592.de/diw_ssp1518.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970346.de/diw_ssp1508.pdf))|
+| paneldata.org (Links to CAPI-Versions)                     | Field version (mostly PAPI) | Version with variable names (CAPI/CAWI) |
+|------------------------------------------------------------|-----------------------------|-----------------------------------------|
+| Address/contact protocol and supporting instruments 2024   | PDF                         |                                         |
+| Household Matrix                                           | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1004966.de/diw_ssp1599.pdf)/en)                            | PDF (de/en)                             |
+| [Household](inst/soep-core-2024-hh2)                       | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1004958.de/diw_ssp1595.pdf)/en)                 | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1005584.de/diw_ssp1614.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1009261.de/diw_ssp1630.pdf))                             |
+| [Screening](inst/soep-core-2024-scf-2)                     |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1005588.de/diw_ssp1616.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1009269.de/diw_ssp1632.pdf))                             |
+| [Individual](inst/soep-core-2024-pe2)                      | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1004956.de/diw_ssp1591.pdf)/en)                 | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1005088.de/diw_ssp1612.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1009257.de/diw_ssp1628.pdf))                             |
+| [Cognition Tests for Adults](inst/soep-core-2024-kogt)     |                             | PDF (de/en)                             |
+| [Biography](inst/soep-core-2024-ll-2)                      | PDF (de/en)                 | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1005590.de/diw_ssp1617.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1009271.de/diw_ssp1633.pdf))                             |
+| [Catch-up Individual](inst/soep-core-2024-l2)              | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1004962.de/diw_ssp1597.pdf)/en)                 | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1005069.de/diw_ssp1610.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1005663.de/diw_ssp1626.pdf))                             |
+| [Youth (12-17-year-olds)](inst/soep-core-2024-ju-2)        | PDF (de/en)                 | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1005594.de/diw_ssp1619.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1009275.de/diw_ssp1635.pdf))                             |
+| Competency test “Lust auf DJ”                              |                             | PDF (de/en)                             |
+| [Childhood (0-11-year-olds)](inst/soep-core-2024-ki-2)     | PDF (de/en)                 | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1005592.de/diw_ssp1618.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1009273.de/diw_ssp1634.pdf))                             |
+| [Deceased Individual](inst/soep-core-2024-vp2)             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1004960.de/diw_ssp1596.pdf)/en)                 | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1004990.de/diw_ssp1608.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1005659.de/diw_ssp1624.pdf))                             |
+| [Drop-off Hourly Wages](inst/soep-core-2024-dropoff)       | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1004964.de/diw_ssp1598.pdf)/en)                 | PDF (de/en)                             |
+| [Residential Environment](inst/soep-core-2024-wuma)        |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1004986.de/diw_ssp1606.pdf)/en)                             |
+| CAMCES                                                     |                             | PDF (de/en)                             |
+| [Self-Employed Persons 2024](inst/soep-core-2024-selfempl) |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1005596.de/diw_ssp1620.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1009279.de/diw_ssp1637.pdf))                             |
+| [About the interview](inst/soep-core-2024-kontext)         |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1009281.de/diw_ssp1638.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1005598.de/diw_ssp1621.pdf))                             |
+| [Pre-recruitment](inst/soep-core-2024-recruit2)            |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1004982.de/diw_ssp1604.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1005645.de/diw_ssp1622.pdf))                             |
+
+
 
 
 In some samples adapted versions of the instruments were used:
 
-| paneldata.org (Links to CAPI-Versions)                                           | Field version (PAPI)                                                                         | Version with variable names |
-| -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | --------------------------- |
-| Samples M3-M9 (“Refugee Samples”)                                                |                                                                                              |                             |
-| [Household](inst/soep-core-2023-hh-ref)            |  | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970608.de/diw_ssp1522.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970606.de/diw_ssp1521.pdf))|
-| [Individual](inst/soep-core-2023-p-ref)            |  | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970610.de/diw_ssp1523.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970610.de/diw_ssp1523.pdf))|
-| [Biography](inst/soep-core-2023-ll-ref)            |  | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.970921.de/diw_ssp1529.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.970923.de/diw_ssp1530.pdf))|
+| paneldata.org (Links to CAPI-Versions)  | Field version (PAPI) | Version with variable names |
+|-----------------------------------------|----------------------|-----------------------------|
+| Samples M3-M6,M9 (“Refugee Samples”)    |                      |                             |
+| [Household](inst/soep-core-2024-hh-ref) |                      | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1009283.de/diw_ssp1639.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1009277.de/diw_ssp1636.pdf))                 |
+| [Individual](inst/soep-core-2024-p-ref) |                      | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1005586.de/diw_ssp1615.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1009267.de/diw_ssp1631.pdf))                 |
 
 ## Data access
 
@@ -76,5 +85,5 @@ To ensure the confidentiality of respondents’ information, the SOEP adheres to
 
 ## Other material and Notes
 
-More detailed documentation is [available online](https://doi.org/10.5684/soep.core.v40.1o).
+More detailed documentation is [available online](https://doi.org/10.5684/soep.core.v41o).
 
