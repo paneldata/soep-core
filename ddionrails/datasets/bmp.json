@@ -202,7 +202,7 @@
       "Min.": 901.0,
       "1st Qu.": 21138301.75,
       "Median": 31474251.5,
-      "Mean": 36950911.650432,
+      "Mean": 36950911.65039716,
       "3rd Qu.": 61327501.0,
       "Max.": 65082301.0,
       "valid": 28704,
@@ -306,7 +306,201 @@
   {
     "name": "bmbirthy",
     "dataset": "bmp",
-    "label": "Year of Birth",
+    "label": "Year of Birth (self-reported)",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        17543,
+        0,
+        4,
+        0,
+        76
+      ]
+    },
+    "scale": "number",
+    "label_de": "Geburtsjahr (Angabe des Befragten)",
+    "study": "soep-core",
+    "statistics": {
+      "Min.": 1922.0,
+      "1st Qu.": 1967.0,
+      "Median": 1982.0,
+      "Mean": 1979.4161176789098,
+      "3rd Qu.": 1993.0,
+      "Max.": 2022.0,
+      "valid": 11081,
+      "invalid": 17623
+    }
+  },
+  {
+    "name": "bmbirthm",
+    "dataset": "bmp",
+    "label": "Month Of Birth (self-reported)",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know",
+        "[1] January",
+        "[2] February",
+        "[3] March",
+        "[4] April",
+        "[5] May",
+        "[6] June",
+        "[7] July",
+        "[8] August",
+        "[9] September",
+        "[10] October",
+        "[11] November",
+        "[12] December"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht",
+        "[1] Januar",
+        "[2] Februar",
+        "[3] März",
+        "[4] April",
+        "[5] Mai",
+        "[6] Juni",
+        "[7] Juli",
+        "[8] August",
+        "[9] September",
+        "[10] Oktober",
+        "[11] November",
+        "[12] Dezember"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        17543,
+        0,
+        5,
+        0,
+        262,
+        979,
+        878,
+        943,
+        902,
+        930,
+        916,
+        941,
+        940,
+        911,
+        858,
+        846,
+        850
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Geburtsmonat (Angabe des Befragten)",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 10894,
+      "invalid": 17810
+    }
+  },
+  {
+    "name": "bmprebirthy",
+    "dataset": "bmp",
+    "label": "Year of Birth (Preload)",
     "categories": {
       "values": [
         -8,
@@ -354,29 +548,29 @@
         0,
         0,
         0,
-        4,
-        2,
-        76
+        0,
+        0,
+        0
       ]
     },
     "scale": "number",
-    "label_de": "Geburtsjahr (Viersteller)",
+    "label_de": "Geburtsjahr (Preload)",
     "study": "soep-core",
     "statistics": {
       "Min.": 1921.0,
       "1st Qu.": 1963.0,
       "Median": 1978.0,
-      "Mean": 1976.1801411501642,
+      "Mean": 1976.136322463768,
       "3rd Qu.": 1990.0,
-      "Max.": 2022.0,
-      "valid": 28622,
-      "invalid": 82
+      "Max.": 2021.0,
+      "valid": 28704,
+      "invalid": 0
     }
   },
   {
-    "name": "bmbirthm",
+    "name": "bmprebirthm",
     "dataset": "bmp",
-    "label": "Month Of Birth",
+    "label": "Month Of Birth (Preload)",
     "categories": {
       "values": [
         -8,
@@ -386,7 +580,19 @@
         -4,
         -3,
         -2,
-        -1
+        -1,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
       ],
       "labels": [
         "[-8] Question not part of the survey program this year",
@@ -396,7 +602,19 @@
         "[-4] Inadmissable multiple response",
         "[-3] Implausible value",
         "[-2] Does not apply",
-        "[-1] No answer / don’t know"
+        "[-1] No answer / don’t know",
+        "[1] January",
+        "[2] February",
+        "[3] March",
+        "[4] April",
+        "[5] May",
+        "[6] June",
+        "[7] July",
+        "[8] August",
+        "[9] September",
+        "[10] October",
+        "[11] November",
+        "[12] December"
       ],
       "labels_de": [
         "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
@@ -406,7 +624,19 @@
         "[-4] unzulässige Mehrfachantwort",
         "[-3] unplausibler Wert",
         "[-2] trifft nicht zu",
-        "[-1] keine Angabe/weiß nicht"
+        "[-1] keine Angabe/weiß nicht",
+        "[1] Januar",
+        "[2] Februar",
+        "[3] März",
+        "[4] April",
+        "[5] Mai",
+        "[6] Juni",
+        "[7] Juli",
+        "[8] August",
+        "[9] September",
+        "[10] Oktober",
+        "[11] November",
+        "[12] Dezember"
       ],
       "missings": [
         true,
@@ -416,7 +646,19 @@
         true,
         true,
         true,
-        true
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
       ],
       "frequencies": [
         0,
@@ -426,19 +668,25 @@
         0,
         5,
         2,
-        309
+        309,
+        2964,
+        2197,
+        2554,
+        2268,
+        2404,
+        2325,
+        2448,
+        2371,
+        2292,
+        2214,
+        2177,
+        2174
       ]
     },
-    "scale": "number",
-    "label_de": "Geburtsmonat",
+    "scale": "cat",
+    "label_de": "Geburtsmonat (Preload)",
     "study": "soep-core",
     "statistics": {
-      "Min.": 1.0,
-      "1st Qu.": 3.0,
-      "Median": 6.0,
-      "Mean": 6.304388999938965,
-      "3rd Qu.": 9.0,
-      "Max.": 12.0,
       "valid": 28388,
       "invalid": 316
     }
@@ -132694,6 +132942,903 @@
     }
   },
   {
+    "name": "bmp_137_01",
+    "dataset": "bmp",
+    "label": "Full Time Employed",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        489,
+        15763
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Voll erwerbstätig",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 28215,
+      "invalid": 489
+    }
+  },
+  {
+    "name": "bmp_137_02",
+    "dataset": "bmp",
+    "label": "Employed Part-Time",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        489,
+        7449
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Teilzeitbeschäftigt",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 28215,
+      "invalid": 489
+    }
+  },
+  {
+    "name": "bmp_137_03",
+    "dataset": "bmp",
+    "label": "short time work",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        489,
+        3871
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Kurzarbeit",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 28215,
+      "invalid": 489
+    }
+  },
+  {
+    "name": "bmp_137_04",
+    "dataset": "bmp",
+    "label": "Mini-Job (up to 450€)",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        489,
+        5300
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Mini-Job (bis 450€)",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 28215,
+      "invalid": 489
+    }
+  },
+  {
+    "name": "bmp_137_05",
+    "dataset": "bmp",
+    "label": "Education, Retraining",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        489,
+        3973
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Betriebl. Erstausbildung/Lehre",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 28215,
+      "invalid": 489
+    }
+  },
+  {
+    "name": "bmp_137_06",
+    "dataset": "bmp",
+    "label": "On-the-job training, rehabilitation",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        489,
+        3997
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Fortbildung, Umsch. Weiterb. Rehabilitation",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 28215,
+      "invalid": 489
+    }
+  },
+  {
+    "name": "bmp_137_07",
+    "dataset": "bmp",
+    "label": "Officially Unemployed",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        489,
+        4795
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Arbeitslos",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 28215,
+      "invalid": 489
+    }
+  },
+  {
+    "name": "bmp_137_08",
+    "dataset": "bmp",
+    "label": "Retired",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        489,
+        7017
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Rente/Pension",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 28215,
+      "invalid": 489
+    }
+  },
+  {
+    "name": "bmp_137_09",
+    "dataset": "bmp",
+    "label": "Maternity Leave",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        489,
+        3956
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Mutterschutz/Elternzeit",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 28215,
+      "invalid": 489
+    }
+  },
+  {
+    "name": "bmp_137_10",
+    "dataset": "bmp",
+    "label": "In School, College",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        489,
+        5575
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Schule/Fach-/Hochschule/Universität",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 28215,
+      "invalid": 489
+    }
+  },
+  {
+    "name": "bmp_137_11",
+    "dataset": "bmp",
+    "label": "Military,Comm Service",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        489,
+        3387
+      ]
+    },
+    "scale": "cat",
+    "label_de": "FsJ/Bundesfreiwilligendienst",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 28215,
+      "invalid": 489
+    }
+  },
+  {
+    "name": "bmp_137_12",
+    "dataset": "bmp",
+    "label": "Full-Time Housework",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        489,
+        6064
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Hausfrau/Hausmann",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 28215,
+      "invalid": 489
+    }
+  },
+  {
+    "name": "bmp_137_13",
+    "dataset": "bmp",
+    "label": "Other",
+    "categories": {
+      "values": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        1
+      ],
+      "labels": [
+        "[-8] Question not part of the survey program this year",
+        "[-7] Only available in less restricted edition",
+        "[-6] Version of questionnaire with modified filtering",
+        "[-5] Not included in this version of the questionnaire",
+        "[-4] Inadmissable multiple response",
+        "[-3] Implausible value",
+        "[-2] Does not apply",
+        "[-1] No answer / don’t know",
+        "[1] Yes"
+      ],
+      "labels_de": [
+        "[-8] Frage in diesem Jahr nicht Teil des Frageprogramms",
+        "[-7] nur in weniger eingeschränkter Edition verfügbar",
+        "[-6] Fragebogenversion mit geänderter Filterführung",
+        "[-5] in Fragebogenversion nicht enthalten",
+        "[-4] unzulässige Mehrfachantwort",
+        "[-3] unplausibler Wert",
+        "[-2] trifft nicht zu",
+        "[-1] keine Angabe/weiß nicht",
+        "[1] Ja"
+      ],
+      "missings": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        489,
+        4171
+      ]
+    },
+    "scale": "cat",
+    "label_de": "Sonstiges",
+    "study": "soep-core",
+    "statistics": {
+      "valid": 28215,
+      "invalid": 489
+    }
+  },
+  {
     "name": "bmp_138",
     "dataset": "bmp",
     "label": "Current Health",
@@ -179707,7 +180852,7 @@
   {
     "name": "bmp_268j_q306",
     "dataset": "bmp",
-    "label": "[de] Kein 5. Kind nach Deutschland gezogen",
+    "label": "[de] Informationen Einbürgerungsverfahren eingeholt",
     "categories": {
       "values": [
         -8,
@@ -179781,7 +180926,7 @@
       ]
     },
     "scale": "cat",
-    "label_de": "Kein 5. Kind nach Deutschland gezogen",
+    "label_de": "Informationen Einbürgerungsverfahren eingeholt",
     "study": "soep-core",
     "statistics": {
       "valid": 1827,
@@ -208985,7 +210130,7 @@
         0,
         0,
         0,
-        160,
+        0,
         0
       ]
     },
@@ -208996,11 +210141,11 @@
       "Min.": 2022.0,
       "1st Qu.": 2022.0,
       "Median": 2022.0,
-      "Mean": 2022.0235595703125,
+      "Mean": 2022.0242919921875,
       "3rd Qu.": 2022.0,
       "Max.": 2023.0,
-      "valid": 28544,
-      "invalid": 160
+      "valid": 28704,
+      "invalid": 0
     }
   },
   {
@@ -209103,28 +210248,28 @@
         0,
         0,
         0,
-        160,
-        197,
-        709,
-        5,
+        199,
+        0,
+        730,
+        6,
         0,
         1,
         1360,
-        3779,
-        3520,
-        3435,
-        2720,
-        4122,
-        4978,
-        3718
+        3780,
+        3522,
+        3437,
+        2729,
+        4153,
+        4998,
+        3789
       ]
     },
     "scale": "cat",
     "label_de": "Monat des Interviews",
     "study": "soep-core",
     "statistics": {
-      "valid": 28347,
-      "invalid": 357
+      "valid": 28505,
+      "invalid": 199
     }
   },
   {
@@ -209144,11 +210289,11 @@
       "Min.": 1.0,
       "1st Qu.": 9.0,
       "Median": 16.0,
-      "Mean": 16.00387954711914,
+      "Mean": 16.012346267700195,
       "3rd Qu.": 23.0,
       "Max.": 31.0,
-      "valid": 28352,
-      "invalid": 352
+      "valid": 28510,
+      "invalid": 194
     }
   }
 ]
