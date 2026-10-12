@@ -1,0 +1,554 @@
+{
+  "study": "soep-core",
+  "name": "soep-core-2025-kontext",
+  "label": "Context questions about the interview 2025",
+  "label_de": "Kontextfragen zum Interview 2025",
+  "analysis_unit": "p",
+  "period": 2025,
+  "value": 386.0,
+  "mode": "CAPI",
+  "type_position": 33.0,
+  "type": "Context",
+  "type_de": "Kontext",
+  "instrument": "soep-core-2025-kontext",
+  "questions": {
+    "PL_year": {
+      "question": "PL_year",
+      "name": "PL_year",
+      "label": "Survey year=2025",
+      "label_de": "Erhebungsjahr=2025",
+      "items": [
+        {
+          "item": "currentyear",
+          "text": "Survey year=2025",
+          "text_de": "Erhebungsjahr=2025",
+          "concept": "currentyear",
+          "scale": "int",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 0,
+      "instrument": "soep-core-2025-kontext",
+      "study": "soep-core"
+    },
+    "PL1": {
+      "question": "PL1",
+      "name": "PL1",
+      "label": "Preload birth year",
+      "label_de": "Preload Geburtsjahr",
+      "items": [
+        {
+          "item": "gebjahr",
+          "text": "Preload birth year",
+          "text_de": "Preload Geburtsjahr",
+          "concept": "gebjahr",
+          "scale": "int",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 1,
+      "instrument": "soep-core-2025-kontext",
+      "study": "soep-core"
+    },
+    "PL2": {
+      "question": "PL2",
+      "name": "PL2",
+      "label": "Survey mode",
+      "label_de": "Erhebungsmethode",
+      "items": [
+        {
+          "item": "qmethod",
+          "text": "Survey mode",
+          "text_de": "Erhebungsmethode",
+          "concept": "qmethod",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "CAPI",
+              "label_de": "CAPI"
+            },
+            {
+              "value": 2,
+              "label": "CATI",
+              "label_de": "CATI"
+            },
+            {
+              "value": 4,
+              "label": "CAWI",
+              "label_de": "CAWI"
+            },
+            {
+              "value": 5,
+              "label": "CASI",
+              "label_de": "CASI"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 2,
+      "instrument": "soep-core-2025-kontext",
+      "study": "soep-core"
+    },
+    "PL3": {
+      "question": "PL3",
+      "name": "PL3",
+      "label": "Survey mode",
+      "label_de": "ZP soll den Fragebogen \"Lust auf DJ\" erhalten",
+      "items": [
+        {
+          "item": "dj_ja",
+          "text": "Survey mode",
+          "text_de": "ZP soll den Fragebogen \"Lust auf DJ\" erhalten",
+          "concept": "dj_ja",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 3,
+      "instrument": "soep-core-2025-kontext",
+      "study": "soep-core"
+    },
+    "1": {
+      "question": "1",
+      "name": "1",
+      "label": "[PL2;qmethod=3,4] Was anyone else present while you were filling out the questionnaire?",
+      "label_de": "[PL2;qmethod=3,4] Waren beim Ausfüllen des Fragebogens weitere Personen anwesend?",
+      "items": [
+        {
+          "item": "1",
+          "text": "[PL2;qmethod=3,4] Was anyone else present while you were filling out the questionnaire?",
+          "text_de": "[PL2;qmethod=3,4] Waren beim Ausfüllen des Fragebogens weitere Personen anwesend?",
+          "instruction": "[PL2;qmethod=1,2] [INT (do not read out): Were other people present when you completed the questionnaire? Please select all that apply.]\r\n[(PL1;gebjahr<=[PL_year]-18)&(PL2;qmethod=3,4)] Please select all that apply. \r\n[(PL1;gebjahr>=[PL_year]-17)&(PL1;gebjahr<=[PL_year]-12)&(PL2;qmethod=3,4)] Please select all that apply.",
+          "instruction_de": "[PL2;qmethod=1,2] [INT (nicht vorlesen): Waren beim Ausfüllen des Fragebogens weitere Personen anwesend? Bitte alles Zutreffende angeben.]\r\n[(PL1;gebjahr<=[PL_year]-18)&(PL2;qmethod=3,4)] Bitte geben Sie alles Zutreffende an. \r\n[(PL1;gebjahr>=[PL_year]-17)&(PL1;gebjahr<=[PL_year]-12)&(PL2;qmethod=3,4)] Bitte gib alles Zutreffende an.",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "present1",
+          "text": "[PL1;gebjahr<=[PL_year]-18] Yes, spouse / partner",
+          "text_de": "[PL1;gebjahr<=[PL_year]-18] Ja, Ehepartner / Lebenspartner",
+          "filter": "PL1;gebjahr<=[PL_year]-18",
+          "concept": "anw1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "present5",
+          "text": "[(PL1;gebjahr>=[PL_year]-17)&(PL1;gebjahr<=[PL_Year]- 12)] Yes, father or mother",
+          "text_de": "[(PL1;gebjahr>=[PL_year]-17)&(PL1;gebjahr<=[PL_Year]- 12)] Ja, Vater oder Mutter",
+          "filter": "(PL1;gebjahr>=[PL_year]-17)&(PL1;gebjahr<=[PL_year]-12)",
+          "concept": "anw5",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "present2",
+          "text": "Yes, someone who lives here in this household",
+          "text_de": "Ja, andere Person, die hier im Haushalt lebt",
+          "concept": "anw2",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "present3",
+          "text": "Yes, someone who does not live here in this household",
+          "text_de": "Ja, andere Person, die nicht hier im Haushalt lebt",
+          "concept": "anw3",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "present4",
+          "text": "No",
+          "text_de": "Nein",
+          "concept": "anw4",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "2",
+          "text": "Can't / don't want to answer",
+          "text_de": "Kann/ möchte ich nicht beantworten",
+          "scale": "bin",
+          "sn": 6,
+          "number": ""
+        }
+      ],
+      "sn": 4,
+      "instrument": "soep-core-2025-kontext",
+      "study": "soep-core"
+    },
+    "2": {
+      "question": "2",
+      "name": "2",
+      "label": "Did any of the aforementioned people bother you while you were filling out the questionnaire?",
+      "label_de": "[(PL1;gebjahr<=[PL_year]-18)&(PL2;qmethod=3,4)] Hat Sie eine der oben genannten Personen beim Ausfüllen des Fragebogens gestört? \r\n[(PL1;gebjahr>=[PL_year]-17)&(PL1;gebjahr<=[PL_Year]- 12)] Hat eine der oben genannten Personen beim Ausfüllen des Fragebogens gestört?",
+      "items": [
+        {
+          "item": "distract",
+          "text": "Did any of the aforementioned people bother you while you were filling out the questionnaire?",
+          "text_de": "[(PL1;gebjahr<=[PL_year]-18)&(PL2;qmethod=3,4)] Hat Sie eine der oben genannten Personen beim Ausfüllen des Fragebogens gestört? \r\n[(PL1;gebjahr>=[PL_year]-17)&(PL1;gebjahr<=[PL_Year]- 12)] Hat eine der oben genannten Personen beim Ausfüllen des Fragebogens gestört?",
+          "instruction": "[PL2;qmethod=1,2] [INT (nicht vorlesen): Hat eine der oben genannten Personen beim Ausfüllen des Fragebogens gestört?]",
+          "instruction_de": "[PL2;qmethod=1,2] [INT (nicht vorlesen): Hat eine der oben genannten Personen beim Ausfüllen des Fragebogens gestört?]",
+          "filter": "(1;present1=1)|(1;present2=1)|(1;present3=1)|(1;present5=1)",
+          "concept": "abl",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Yes",
+              "label_de": "Ja"
+            },
+            {
+              "value": 2,
+              "label": "No",
+              "label_de": "Nein"
+            },
+            {
+              "value": -1,
+              "label": "Can't / don't want to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 5,
+      "instrument": "soep-core-2025-kontext",
+      "study": "soep-core"
+    },
+    "3": {
+      "question": "3",
+      "name": "3",
+      "label": "What types of devices did you use to participate in our survey?",
+      "label_de": "[PL1;gebjahr<=[PL_year]-18] Mit welchen Gerätetypen haben Sie an unserer Befragung teilgenommen? \r\n[(PL1;gebjahr>=(PL_Year]-17)&(PL1;gebjahr<=[PL_Year]- 12)] Mit welchen Gerätetypen hast Du an unserer Befragung teilgenommen?",
+      "items": [
+        {
+          "item": "2",
+          "text": "What types of devices did you use to participate in our survey?",
+          "text_de": "[PL1;gebjahr<=[PL_year]-18] Mit welchen Gerätetypen haben Sie an unserer Befragung teilgenommen? \r\n[(PL1;gebjahr>=(PL_Year]-17)&(PL1;gebjahr<=[PL_Year]- 12)] Mit welchen Gerätetypen hast Du an unserer Befragung teilgenommen?",
+          "instruction": "Please select all that apply.",
+          "instruction_de": "[PL1;gebjahr<=[PL_year]-18] Bitte geben Sie alles Zutreffende an. \r\n[(PL1;gebjahr>=[PL_Year]-17)&(PL1;gebjahr<= [PL_Year]- 12)] Bitte gib alles Zutreffende an.",
+          "filter": "PL2;qmethod=4",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "device_01",
+          "text": "Desktop computer/PC",
+          "text_de": "stationärer Computer/PC",
+          "concept": "zgeraet1",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "device_02",
+          "text": "Laptop/notebook",
+          "text_de": "Laptop/Notebook",
+          "concept": "zgeraet2",
+          "scale": "bin",
+          "sn": 2,
+          "number": ""
+        },
+        {
+          "item": "device_03",
+          "text": "Tablet",
+          "text_de": "Tablet",
+          "concept": "zgeraet3",
+          "scale": "bin",
+          "sn": 3,
+          "number": ""
+        },
+        {
+          "item": "device_04",
+          "text": "Smartphone",
+          "text_de": "Smartphone",
+          "concept": "zgeraet4",
+          "scale": "bin",
+          "sn": 4,
+          "number": ""
+        },
+        {
+          "item": "device_05",
+          "text": "Other",
+          "text_de": "Sonstiges",
+          "concept": "zgeraet5",
+          "scale": "bin",
+          "sn": 5,
+          "number": ""
+        },
+        {
+          "item": "device_05_open",
+          "text": "[Other] please specify:",
+          "text_de": "[Sonstiges] und zwar:",
+          "filter": "3;device_05=1",
+          "concept": "zgeraetx",
+          "scale": "chr",
+          "sn": 6,
+          "number": ""
+        }
+      ],
+      "sn": 6,
+      "instrument": "soep-core-2025-kontext",
+      "study": "soep-core"
+    },
+    "4": {
+      "question": "4",
+      "name": "4",
+      "label": "We are also interested in how you took part in our online survey.",
+      "label_de": "[PL1;gebjahr<=[PL_year]-18] Wir interessieren uns auch dafür, unter welchen Bedingungen Sie an unserer Online-Befragung teilgenommen haben.\r\n[(PL1;gebjahr>=[PL_Year]-17)&(PL1;gebjahr<=[PL_Year]- 12)] Wir interessieren uns auch dafür, unter welchen Bedingungen Du an unserer Online-Befragung teilgenommen hast.",
+      "items": [
+        {
+          "item": "1",
+          "text": "We are also interested in how you took part in our online survey.",
+          "text_de": "[PL1;gebjahr<=[PL_year]-18] Wir interessieren uns auch dafür, unter welchen Bedingungen Sie an unserer Online-Befragung teilgenommen haben.\r\n[(PL1;gebjahr>=[PL_Year]-17)&(PL1;gebjahr<=[PL_Year]- 12)] Wir interessieren uns auch dafür, unter welchen Bedingungen Du an unserer Online-Befragung teilgenommen hast.",
+          "filter": "PL2;qmethod=4",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "location",
+          "text": "Where were you when you were answering the majority of the questions?",
+          "text_de": "[PL1;gebjahr<=[PL_year]-18] Wo haben Sie die Bearbeitung der Fragen hauptsächlich durchgeführt? \r\n[(PL1;gebjahr>=[PL_Year]-17)&(PL1;gebjahr<=[PL_Year]- 12)] Wo hast Du die Bearbeitung der Fragen hauptsächlich durchgeführt?",
+          "concept": "umf",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "at home",
+              "label_de": "zu Hause"
+            },
+            {
+              "value": 2,
+              "label": "out and about (for example, on the train or subway) ",
+              "label_de": "unterwegs (z. B. im Zug, in der U-/S-Bahn)"
+            },
+            {
+              "value": 3,
+              "label": "at work / at the library / in a computer pool",
+              "label_de": "im Büro/in der Bibliothek/im Computerpool"
+            },
+            {
+              "value": 4,
+              "label": "at the cafeteria / at a restaurant / at a cafe",
+              "label_de": "in der Mensa/in der Cafeteria/im Restaurant/im Café"
+            },
+            {
+              "value": 5,
+              "label": "Other",
+              "label_de": "Sonstiges"
+            },
+            {
+              "value": -1,
+              "label": "Can't / don't want to answer",
+              "label_de": "Kann / möchte ich nicht beantworten"
+            }
+          ],
+          "sn": 1,
+          "number": ""
+        },
+        {
+          "item": "location_open",
+          "text": "[Other] please specify:",
+          "text_de": "[Sonstiges] und zwar:",
+          "filter": "4;location=5",
+          "concept": "umfx",
+          "scale": "chr",
+          "sn": 2,
+          "number": ""
+        }
+      ],
+      "sn": 7,
+      "instrument": "soep-core-2025-kontext",
+      "study": "soep-core"
+    },
+    "5": {
+      "question": "5",
+      "name": "5",
+      "label": "Finally, we are interested in your opinion about the questionnaire. For example, if something was missing or you had problems answering questions, you can explain this below. Also, if you would like to add anything or give us any comments or critique, please let us know here.",
+      "label_de": "[PL1;gebjahr<=[PL_year]-18] Abschließend interessieren wir uns für Ihre Meinung zum Fragebogen. Falls Ihnen beispielsweise etwas gefehlt hat oder Sie Probleme bei der Beantwortung von Fragen hatten, können Sie dies im Folgenden ausführen. Auch wenn Sie noch weitere Ergänzungen, Anmerkungen oder kritische Hinweise haben, bitten wir Sie, uns diese hier mitzuteilen. \r\n[(PL1;gebjahr>=[PL_Year]-17)&(PL1;gebjahr<= [PL_Year]- 12)] Abschließend interessieren wir uns für Deine Meinung zum Fragebogen. Falls Dir beispielsweise etwas gefehlt hat oder Du Probleme bei der Beantwortung von Fragen hattest, kannst Du dies im Folgenden ausführen. Auch wenn Du noch weitere Ergänzungen, Anmerkungen oder kritische Hinweise hast, bitten wir Dich, uns diese hier mitzuteilen.",
+      "items": [
+        {
+          "item": "feedback",
+          "text": "Finally, we are interested in your opinion about the questionnaire. For example, if something was missing or you had problems answering questions, you can explain this below. Also, if you would like to add anything or give us any comments or critique, please let us know here.",
+          "text_de": "[PL1;gebjahr<=[PL_year]-18] Abschließend interessieren wir uns für Ihre Meinung zum Fragebogen. Falls Ihnen beispielsweise etwas gefehlt hat oder Sie Probleme bei der Beantwortung von Fragen hatten, können Sie dies im Folgenden ausführen. Auch wenn Sie noch weitere Ergänzungen, Anmerkungen oder kritische Hinweise haben, bitten wir Sie, uns diese hier mitzuteilen. \r\n[(PL1;gebjahr>=[PL_Year]-17)&(PL1;gebjahr<= [PL_Year]- 12)] Abschließend interessieren wir uns für Deine Meinung zum Fragebogen. Falls Dir beispielsweise etwas gefehlt hat oder Du Probleme bei der Beantwortung von Fragen hattest, kannst Du dies im Folgenden ausführen. Auch wenn Du noch weitere Ergänzungen, Anmerkungen oder kritische Hinweise hast, bitten wir Dich, uns diese hier mitzuteilen.",
+          "concept": "text",
+          "scale": "chr",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 8,
+      "instrument": "soep-core-2025-kontext",
+      "study": "soep-core"
+    },
+    "6": {
+      "question": "6",
+      "name": "6",
+      "label": "So that we can send you our thank you for your participation and reach you again for the next survey, I would first like to check whether we have your current contact details.",
+      "label_de": "[PL1;gebjahr<=[PL_year]-18] Damit wir Ihnen unser Dankeschön für Ihre Teilnahme zusenden und Sie für die nächste Befragung wieder erreichen können, möchten ich zum Schluss überprüfen, ob wir von Ihnen die aktuellen Kontaktdaten haben.\r\n\r\n[(PL1;gebjahr>=[PL_Year]-17)&(PL1;gebjahr<=[PL_Year]- 12)] Damit wir Dir unser Dankeschön für Deine Teilnahme zusenden und für die nächste Befragung wieder erreichen können, möchte ich zunächst noch überprüfen, ob wir von Dir die aktuellen Kontaktdaten haben.\r\n",
+      "items": [
+        {
+          "item": "bp_adresse",
+          "text": "So that we can send you our thank you for your participation and reach you again for the next survey, I would first like to check whether we have your current contact details.",
+          "text_de": "[PL1;gebjahr<=[PL_year]-18] Damit wir Ihnen unser Dankeschön für Ihre Teilnahme zusenden und Sie für die nächste Befragung wieder erreichen können, möchten ich zum Schluss überprüfen, ob wir von Ihnen die aktuellen Kontaktdaten haben.\r\n\r\n[(PL1;gebjahr>=[PL_Year]-17)&(PL1;gebjahr<=[PL_Year]- 12)] Damit wir Dir unser Dankeschön für Deine Teilnahme zusenden und für die nächste Befragung wieder erreichen können, möchte ich zunächst noch überprüfen, ob wir von Dir die aktuellen Kontaktdaten haben.\r\n",
+          "filter": "(PL2;qmethod=1)&(intro_2_pe2!=2)&(intro_2_pe!=2)&(intro_2_ll2!=2)&(intro_2_l2!=2)&(intro_2_ki2!=2)&(intro_2_vp2!=2)",
+          "scale": "cat",
+          "answers": [
+            {
+              "value": 1,
+              "label": "Continue to address recording",
+              "label_de": "Weiter zur Adressaufnahme"
+            },
+            {
+              "value": 2,
+              "label": "Respondent does not wish to provide any information",
+              "label_de": "Befragungsperson möchte keine Angaben machen"
+            }
+          ],
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 9,
+      "instrument": "soep-core-2025-kontext",
+      "study": "soep-core"
+    },
+    "7": {
+      "question": "7",
+      "name": "7",
+      "label": "We will be happy to send you the access data for the online survey by e-mail.\r\nTo ensure that we send them to the correct e-mail address, I would now like to check whether we have your current contact details.",
+      "label_de": "[PL1;gebjahr<=(PL_year;currentyear-18)]\r\nGerne senden wir Ihnen die Zugangsdaten zur Onlinebefragung per E-Mail zu.\r\nDamit wir sie an die richtige E-Mail-Adresse schicken, möchte ich nun überprüfen, ob wir von Ihnen die aktuellen Kontaktdaten haben.\r\n\r\n[PL1;gebjahr>=(PL_year;currentyear-17)]\r\nGerne senden wir Dir die Zugangsdaten zur Onlinebefragung per E-Mail zu.\r\nDamit wir sie an die richtige E-Mail-Adresse schicken, möchte ich nun überprüfen, ob wir von Dir die aktuellen Kontaktdaten haben.",
+      "items": [
+        {
+          "item": "1",
+          "text": "We will be happy to send you the access data for the online survey by e-mail.\r\nTo ensure that we send them to the correct e-mail address, I would now like to check whether we have your current contact details.",
+          "text_de": "[PL1;gebjahr<=(PL_year;currentyear-18)]\r\nGerne senden wir Ihnen die Zugangsdaten zur Onlinebefragung per E-Mail zu.\r\nDamit wir sie an die richtige E-Mail-Adresse schicken, möchte ich nun überprüfen, ob wir von Ihnen die aktuellen Kontaktdaten haben.\r\n\r\n[PL1;gebjahr>=(PL_year;currentyear-17)]\r\nGerne senden wir Dir die Zugangsdaten zur Onlinebefragung per E-Mail zu.\r\nDamit wir sie an die richtige E-Mail-Adresse schicken, möchte ich nun überprüfen, ob wir von Dir die aktuellen Kontaktdaten haben.",
+          "filter": "(PL2;qmethod=1)&((intro_4_pe2=1)|(intro_4_pe=1)|(intro_4_ll2=1)|(intro_4_l2=1)|(intro_4_ki2=1)|(intro_4_vp2=1))",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 10,
+      "instrument": "soep-core-2025-kontext",
+      "study": "soep-core"
+    },
+    "8": {
+      "question": "8",
+      "name": "8",
+      "label": "[Call OAT]",
+      "label_de": "[Aufruf OAT]",
+      "items": [
+        {
+          "item": "OAT",
+          "text": "[Call OAT]",
+          "text_de": "[Aufruf OAT]",
+          "filter": "(PL2;qmethod=1)&(Z7;bp_adresse=1)|(intro_4_pe2=1)|(intro_4_pe=1)|(intro_4_ll2=1)|(intro_4_l2=1)|(intro_4_ki2=1)|(intro_4_vp2=1))",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 11,
+      "instrument": "soep-core-2025-kontext",
+      "study": "soep-core"
+    },
+    "9": {
+      "question": "9",
+      "name": "9",
+      "label": "[(PL3;dj_ja=!1)|(PL1;gebjahr<=[PL_year]-18)]\r\nWe have now reached the end of our interview. \r\nI would like to thank you very much on behalf of all the researchers involved in \"Life in Germany\". In the next few weeks, we will be sending out the thank-you letter for participating in the survey.\r\n\r\n[PL3;dj_ja=1]\r\nWe have now reached the end of our interview with you.\r\nNow it's time to process ‘Lust auf DJ’ on the tablet. I would like to thank you very much on behalf of all the researchers involved in \"Life in Germany\". In the next few weeks, we will be sending out the thank-you letter for participating in the survey.",
+      "label_de": "[(PL3;dj_ja=!1)|(PL1;gebjahr<=[PL_year]-18)]\r\nWir sind nun am Ende unseres Interviews angelangt.\r\nIch möchte mich im Namen aller an „Leben in Deutschland“ beteiligten Forscherinnen und Forscher recht herzlich bedanken. In den nächsten Wochen versenden wir das Dankeschön für die Teilnahme an der Erhebung.\r\n\r\n[PL3;dj_ja=1] \r\nWir sind nun am Ende unseres Interviews zu Ihrer Person angelangt. Nun folgt an dem Tablet die Bearbeitung von \"Lust auf DJ\".\r\nIch möchte mich im Namen aller an „Leben in Deutschland“ beteiligten Forscherinnen und Forscher recht herzlich bedanken. In den nächsten Wochen versenden wir das Dankeschön für die Teilnahme an der Erhebung.",
+      "items": [
+        {
+          "item": "BP_ENDE",
+          "text": "[(PL3;dj_ja=!1)|(PL1;gebjahr<=[PL_year]-18)]\r\nWe have now reached the end of our interview. \r\nI would like to thank you very much on behalf of all the researchers involved in \"Life in Germany\". In the next few weeks, we will be sending out the thank-you letter for participating in the survey.\r\n\r\n[PL3;dj_ja=1]\r\nWe have now reached the end of our interview with you.\r\nNow it's time to process ‘Lust auf DJ’ on the tablet. I would like to thank you very much on behalf of all the researchers involved in \"Life in Germany\". In the next few weeks, we will be sending out the thank-you letter for participating in the survey.",
+          "text_de": "[(PL3;dj_ja=!1)|(PL1;gebjahr<=[PL_year]-18)]\r\nWir sind nun am Ende unseres Interviews angelangt.\r\nIch möchte mich im Namen aller an „Leben in Deutschland“ beteiligten Forscherinnen und Forscher recht herzlich bedanken. In den nächsten Wochen versenden wir das Dankeschön für die Teilnahme an der Erhebung.\r\n\r\n[PL3;dj_ja=1] \r\nWir sind nun am Ende unseres Interviews zu Ihrer Person angelangt. Nun folgt an dem Tablet die Bearbeitung von \"Lust auf DJ\".\r\nIch möchte mich im Namen aller an „Leben in Deutschland“ beteiligten Forscherinnen und Forscher recht herzlich bedanken. In den nächsten Wochen versenden wir das Dankeschön für die Teilnahme an der Erhebung.",
+          "filter": "(PL2;qmethod=1)&(intro_2_pe2!=2)&(intro_2_pe!=2)&(intro_2_ll2!=2)&(intro_2_l2!=2)&(intro_2_ki2!=2)&(intro_2_vp2!=2)",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 12,
+      "instrument": "soep-core-2025-kontext",
+      "study": "soep-core"
+    },
+    "10": {
+      "question": "10",
+      "name": "10",
+      "label": "[PL1;gebjahr<=[PL_year]-18]\r\nYou have now reached the end of the survey.\r\nTo complete the survey and be forwarded to the address recording, please click on the ‘Complete survey’ button.\r\n\r\n[(PL1;gebjahr>=[PL_Year]-17)&(PL1;gebjahr<=[PL_year]-12)]\r\nYou have now reached the end of the survey.\r\nTo complete the survey, please click on the ‘Complete survey’ button. ",
+      "label_de": "[PL1;gebjahr<=[PL_year]-18] \r\nDamit sind Sie am Ende der Befragung angekommen.\r\nUm die Befragung abzuschließen und zur Adressaufnahme weitergeleitet zu werden, klicken Sie bitte auf den Button „Befragung abschließen“. \r\n\r\n[(PL1;gebjahr>=[PL_Year]-17)&(PL1;gebjahr<=[PL_year]-12)]\r\nDamit bist Du am Ende der Befragung angekommen.\r\nUm die Befragung abzuschließen, klicke bitte auf den Button „Befragung abschließen“. ",
+      "items": [
+        {
+          "item": "txt_ende_adress",
+          "text": "[PL1;gebjahr<=[PL_year]-18]\r\nYou have now reached the end of the survey.\r\nTo complete the survey and be forwarded to the address recording, please click on the ‘Complete survey’ button.\r\n\r\n[(PL1;gebjahr>=[PL_Year]-17)&(PL1;gebjahr<=[PL_year]-12)]\r\nYou have now reached the end of the survey.\r\nTo complete the survey, please click on the ‘Complete survey’ button. ",
+          "text_de": "[PL1;gebjahr<=[PL_year]-18] \r\nDamit sind Sie am Ende der Befragung angekommen.\r\nUm die Befragung abzuschließen und zur Adressaufnahme weitergeleitet zu werden, klicken Sie bitte auf den Button „Befragung abschließen“. \r\n\r\n[(PL1;gebjahr>=[PL_Year]-17)&(PL1;gebjahr<=[PL_year]-12)]\r\nDamit bist Du am Ende der Befragung angekommen.\r\nUm die Befragung abzuschließen, klicke bitte auf den Button „Befragung abschließen“. ",
+          "filter": "PL2;qmethod=2,4",
+          "scale": "txt",
+          "sn": 0,
+          "number": ""
+        }
+      ],
+      "sn": 13,
+      "instrument": "soep-core-2025-kontext",
+      "study": "soep-core"
+    },
+    "11": {
+      "question": "11",
+      "name": "11",
+      "label": "",
+      "label_de": "",
+      "items": [
+        {
+          "item": "bp_ende_open",
+          "instruction": "INT (do not read out): Were there any problems or disruptions when conducting the interview? Or do you have any other comments or suggestions for conducting the study?",
+          "instruction_de": "INT (nicht vorlesen): Gab es bei der Durchführung des Interviews Probleme oder Störungen? Oder haben Sie sonstige Anmerkungen und Anregungen für die Durchführung der Studie?",
+          "filter": "PL2;qmethod=1,2",
+          "scale": "chr",
+          "sn": 0,
+          "number": ""
+        },
+        {
+          "item": "bp_nofeedback",
+          "text": "No feedback",
+          "text_de": "Keine Rückmeldung",
+          "scale": "bin",
+          "sn": 1,
+          "number": ""
+        }
+      ],
+      "sn": 14,
+      "instrument": "soep-core-2025-kontext",
+      "study": "soep-core"
+    }
+  }
+}

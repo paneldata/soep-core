@@ -7,7 +7,7 @@
   "period": 2021,
   "value": 293.0,
   "mode": "PAPI",
-  "type_position": 9,
+  "type_position": 9.0,
   "type": "Biography",
   "type_de": "Biografie",
   "instrument": "soep-core-2021-ll-m78",
@@ -6702,6 +6702,7 @@
           "text_de": "Haben Sie vor dem Zuzug von Ihrer ersten Stelle erfahren?",
           "filter": "74a;ldsuch01=1,2",
           "goto": "1@74d, 2@75",
+          "concept": "ldze01",
           "scale": "cat",
           "answers": [
             {
@@ -6737,6 +6738,7 @@
           "instruction_de": "Falls Sie im Laufe Ihres Lebens mehrmals nach Deutschland zugezogen sind, beziehen Sie sich bitte auf den letzten Zuzug.",
           "filter": "74c;ldsuch02=1 | 74a;ldsuch01=3",
           "goto": "13@74e, 1:12@77, 14@77",
+          "concept": "ldzsuchv",
           "scale": "cat",
           "answers": [
             {
@@ -6820,6 +6822,7 @@
           "text_de": "Woher stammt diese Person?",
           "filter": "74d;ldsuch03=13",
           "goto": "ALL@77",
+          "concept": "ldze03",
           "scale": "cat",
           "answers": [
             {
