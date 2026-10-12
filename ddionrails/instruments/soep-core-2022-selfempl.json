@@ -7,7 +7,7 @@
   "period": 2022,
   "value": 304.0,
   "mode": "CAWI",
-  "type_position": 29,
+  "type_position": 29.0,
   "type": "Sonstiges",
   "type_de": "Other",
   "instrument": "soep-core-2022-selfempl",
@@ -60,6 +60,7 @@
           "item": "elb0301_v2",
           "text": "You have stated that you are self-employed. How did you found your company?",
           "text_de": "Sie haben angegeben, selbstständig tätig zu sein. Wie haben Sie Ihr Unternehmen gegründet?\r\n",
+          "concept": "elb0301_v2",
           "scale": "cat",
           "answers": [
             {
@@ -93,7 +94,7 @@
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 1,
@@ -115,13 +116,14 @@
           "text": "With how many other people did you found the company?",
           "text_de": "Mit wie vielen weiteren Personen haben Sie das Unternehmen gegründet?",
           "filter": "1;elb0301_v2=2",
+          "concept": "elb0302",
           "scale": "int",
           "sn": 0,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 1,
@@ -143,13 +145,14 @@
           "text": "How many women were on the founding team?",
           "text_de": "Wie viele Frauen waren im Gründungsteam?",
           "filter": "1;elb0301_v2=2",
+          "concept": "elb0630",
           "scale": "int",
           "sn": 0,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 1,
@@ -171,13 +174,14 @@
           "text": "How many persons with migration background were on the founding team?",
           "text_de": "Wie viele Personen mit Migrationshintergrund waren im Gründungsteam?",
           "filter": "1;elb0301_v2=2",
+          "concept": "elb0631",
           "scale": "int",
           "sn": 0,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 1,
@@ -199,13 +203,14 @@
           "text": "How many other people were in the team that you joined as a partner?",
           "text_de": "Wie viele weitere Personen waren in dem Team, in das Sie als Teilhaber/in eingestiegen sind?",
           "filter": "1;elb0301_v2=4",
+          "concept": "elb0303",
           "scale": "int",
           "sn": 0,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 1,
@@ -227,13 +232,14 @@
           "text": "How many of them were women?",
           "text_de": "Wie viele davon waren Frauen?",
           "filter": "1;elb0301_v2=4",
+          "concept": "elb0632",
           "scale": "int",
           "sn": 0,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 1,
@@ -255,13 +261,14 @@
           "text": "How many of them had a migration background?",
           "text_de": "Wie viele davon hatten Migrationshintergrund?",
           "filter": "1;elb0301_v2=4",
+          "concept": "elb0633",
           "scale": "int",
           "sn": 0,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 1,
@@ -279,10 +286,11 @@
       "label_de": "Hat Ihr Unternehmen eine/n Mehrheitseigentümer/in?",
       "items": [
         {
-          "item": "betr_eigent",
+          "item": "elb0003",
           "text": "Does your company have a majority owner?",
           "text_de": "Hat Ihr Unternehmen eine/n Mehrheitseigentümer/in?",
           "filter": "1;elb0301_v2=2,4",
+          "concept": "betr_eigent",
           "scale": "cat",
           "answers": [
             {
@@ -312,12 +320,12 @@
     "5": {
       "question": "5",
       "name": "5",
-      "label": "What percentage of your company is owned by the majority shareholder?",
+      "label": "What percentage of your company is owned by the majority owner?",
       "label_de": "Zu wie viel Prozent ist der/die Mehrheitseigentümer/in an Ihrem Unternehmen beteiligt?",
       "items": [
         {
           "item": "1",
-          "text": "What percentage of your company is owned by the majority shareholder?",
+          "text": "What percentage of your company is owned by the majority owner?",
           "text_de": "Zu wie viel Prozent ist der/die Mehrheitseigentümer/in an Ihrem Unternehmen beteiligt?",
           "filter": "(1;elb0301_v2=2,4) & (4;betr_eigent=1)",
           "scale": "txt",
@@ -325,16 +333,17 @@
           "number": ""
         },
         {
-          "item": "betr_eigent2",
+          "item": "elb0004",
           "text": "[…] percent",
           "text_de": "[…] Prozent",
+          "concept": "betr_eigent2",
           "scale": "int",
           "sn": 1,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 2,
@@ -362,16 +371,17 @@
           "number": ""
         },
         {
-          "item": "betr_gruendung",
+          "item": "elb0006",
           "text": "In the year:",
           "text_de": "Im Jahr:",
+          "concept": "betr_gruendung",
           "scale": "int",
           "sn": 1,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 2,
@@ -403,13 +413,14 @@
           "item": "elb0313",
           "text": "In the year:",
           "text_de": "Im Jahr:",
+          "concept": "elb0313",
           "scale": "int",
           "sn": 1,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 2,
@@ -441,13 +452,14 @@
           "item": "elb0318",
           "text": "In the year:",
           "text_de": "Im Jahr:",
+          "concept": "elb0318",
           "scale": "int",
           "sn": 1,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 2,
@@ -461,12 +473,12 @@
     "B4": {
       "question": "B4",
       "name": "B4",
-      "label": "Personnel structure",
+      "label": "Workforce structure",
       "label_de": "Personalstruktur",
       "items": [
         {
           "item": "1",
-          "text": "Personnel structure",
+          "text": "Workforce structure",
           "text_de": "Personalstruktur",
           "scale": "txt",
           "sn": 0,
@@ -508,6 +520,7 @@
           "text_de": "Waren in Ihrem Unternehmen im Jahr 2021 abhängig Beschäftigte tätig?",
           "instruction": "Dependent employees include full-time and part-time employees, workers, apprentices, students, and interns.",
           "instruction_de": "Zu abhängig Beschäftigten zählen voll- und teilzeitbeschäftigte Angestellte, Arbeiter, Auszubildende, Studenten und Praktikanten.",
+          "concept": "elb0636",
           "scale": "cat",
           "answers": [
             {
@@ -568,17 +581,19 @@
           "number": ""
         },
         {
-          "item": "anz_besch",
-          "text": "[Blue-collar and white-collar employees] Number of respective employees on 30.06.2021",
+          "item": "elb0013",
+          "text": "[Blue- and white-collar employees] Number of respective employees on June 30, 2021",
           "text_de": "[Arbeiter/innen und Angestellte] Anzahl der jeweiligen Beschäftigten am 30.06.2021",
+          "concept": "anz_besch",
           "scale": "int",
           "sn": 3,
           "number": ""
         },
         {
-          "item": "ant_besch_frauen",
+          "item": "elb0022",
           "text": "[Blue- and white-collar employees] Of which share of women (in %)  [...] %",
           "text_de": "[Arbeiter/innen und Angestellte] Davon Anteil der Frauen (in %) [...] %",
+          "concept": "ant_besch_frauen",
           "scale": "int",
           "sn": 4,
           "number": ""
@@ -592,24 +607,26 @@
           "number": ""
         },
         {
-          "item": "anz_azubi",
-          "text": "[Apprentices] Number of respective employees on 30.06.2021",
+          "item": "elb0014",
+          "text": "[Apprentices] Number of respective employees on June 30, 2021",
           "text_de": "[Auszubildende] Anzahl der jeweiligen Beschäftigten am 30.06.2021",
+          "concept": "anz_azubi",
           "scale": "int",
           "sn": 6,
           "number": ""
         },
         {
-          "item": "ant_azubi_frauen",
+          "item": "elb0023",
           "text": "[Apprentices] Of which share of women (in %)  [...] %",
           "text_de": "[Auszubildende] Davon Anteil der Frauen (in %) [...] %",
+          "concept": "ant_azubi_frauen",
           "scale": "int",
           "sn": 7,
           "number": ""
         },
         {
           "item": "9",
-          "text": "Employees not subject to social security contributions ...",
+          "text": "Employees not subject to social insurance contributions ...",
           "text_de": "Nicht sozialversicherungspflichtige …",
           "scale": "txt",
           "sn": 8,
@@ -624,17 +641,19 @@
           "number": ""
         },
         {
-          "item": "anz_inh",
-          "text": "[Active owners] Number of respective employees on 30.06.2021",
+          "item": "elb0016",
+          "text": "[Active owners] Number of respective employees on June 30, 2021",
           "text_de": "[Tätige Inhaber/innen] Anzahl der jeweiligen Beschäftigten am 30.06.2021",
+          "concept": "anz_inh",
           "scale": "int",
           "sn": 10,
           "number": ""
         },
         {
-          "item": "ant_inh_frauen",
+          "item": "elb0025",
           "text": "[Active owners] Of which share of women (in %) [...] %",
           "text_de": "[Tätige Inhaber/innen] Davon Anteil der Frauen (in %) [...] %",
+          "concept": "ant_inh_frauen",
           "scale": "int",
           "sn": 11,
           "number": ""
@@ -643,24 +662,26 @@
           "item": "19",
           "text": "Marginal employees",
           "text_de": "Geringfügige Beschäftigte",
-          "instruction": "E.g. € 450 employees, short-term employees, mini-jobbers",
+          "instruction": "E.g. €450/month employees, short-term employees, mini-jobbers",
           "instruction_de": "Z. B. 450€-Kräfte, kurzfristige Beschäftigte, Minijobber/innen",
           "scale": "txt",
           "sn": 12,
           "number": ""
         },
         {
-          "item": "anz_gering",
-          "text": "[Marginal employees] Number of respective employees on 30.06.2021",
+          "item": "elb0018",
+          "text": "[Marginal employees] Number of respective employees on June 30, 2021",
           "text_de": "[Geringfügige Beschäftigte] Anzahl der jeweiligen Beschäftigten am 30.06.2021",
+          "concept": "anz_gering",
           "scale": "int",
           "sn": 13,
           "number": ""
         },
         {
-          "item": "ant_gering_frauen",
+          "item": "elb0027",
           "text": "[Marginal employees] Of which share of women (in %) [...] %",
           "text_de": "[Geringfügige Beschäftigte] Davon Anteil der Frauen (in %) [...] %",
+          "concept": "ant_gering_frauen",
           "scale": "int",
           "sn": 14,
           "number": ""
@@ -674,24 +695,26 @@
           "number": ""
         },
         {
-          "item": "summe_besch",
-          "text": "[Total] Total number of respective employees as at 30.06.2021",
+          "item": "elb0665",
+          "text": "[Total] Total number of respective employees on June 30, 2021",
           "text_de": "[Summe] Gesamtanzahl der jeweiligen Beschäftigten am 30.06.2021",
+          "concept": "summe_besch",
           "scale": "int",
           "sn": 16,
           "number": ""
         },
         {
-          "item": "ant_summe_frauen",
+          "item": "elb0666",
           "text": "[Total] Of which share of women (in %) [...] %",
           "text_de": "[Summe] Davon Anteil der Frauen (in %) [...] %",
+          "concept": "ant_summe_frauen",
           "scale": "int",
           "sn": 17,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 18,
@@ -709,10 +732,11 @@
       "label_de": "Waren am 30.06.2021 unter den Beschäftigten Teilzeitbeschäftigte, einschließlich geringfügig Beschäftigte mit maximal 450 Euro im Monat?",
       "items": [
         {
-          "item": "teilzeit",
+          "item": "elb0031",
           "text": "As of June 30, 2021, were there any part-time employees among your staff, including those in marginal employment earning a maximum of 450 euros per month?",
           "text_de": "Waren am 30.06.2021 unter den Beschäftigten Teilzeitbeschäftigte, einschließlich geringfügig Beschäftigte mit maximal 450 Euro im Monat?",
           "filter": "7;elb0636=1",
+          "concept": "teilzeit",
           "scale": "cat",
           "answers": [
             {
@@ -742,12 +766,12 @@
     "10": {
       "question": "10",
       "name": "10",
-      "label": "Of the part-time employees, how many were workig on June 30, 2021 …",
+      "label": "Of the part-time employees, how many were working on June 30, 2021 …",
       "label_de": "Von den Teilzeitbeschäftigten, wie viele waren am 30.06.2021 in der …",
       "items": [
         {
           "item": "1",
-          "text": "Of the part-time employees, how many were workig on June 30, 2021 …",
+          "text": "Of the part-time employees, how many were working on June 30, 2021 …",
           "text_de": "Von den Teilzeitbeschäftigten, wie viele waren am 30.06.2021 in der …",
           "instruction": "Please enter \"0\" for groups that do not occur.",
           "instruction_de": "Bei nicht vorkommenden Gruppen bitte „0“ eintragen.",
@@ -765,17 +789,19 @@
           "number": ""
         },
         {
-          "item": "anz_groteilz",
+          "item": "elb0032",
           "text": "[Large part-time] Number of part-time employees",
           "text_de": "[Große Teilzeit] Anzahl der Teilzeitbeschäftigten",
+          "concept": "anz_groteilz",
           "scale": "int",
           "sn": 2,
           "number": ""
         },
         {
-          "item": "ant_groteilz_frauen",
+          "item": "elb0034",
           "text": "[Large part-time] Of which share of women (in %) [...] %",
           "text_de": "[Große Teilzeit] Davon Anteil der Frauen (in %) [...] %",
+          "concept": "ant_groteilz_frauen",
           "scale": "int",
           "sn": 3,
           "number": ""
@@ -789,24 +815,26 @@
           "number": ""
         },
         {
-          "item": "anz_klteilz",
+          "item": "elb0033",
           "text": "[Small part-time] Number of part-time employees",
           "text_de": "[Kleine Teilzeit] Anzahl der Teilzeitbeschäftigten",
+          "concept": "anz_klteilz",
           "scale": "int",
           "sn": 5,
           "number": ""
         },
         {
-          "item": "ant_klteilz_frauen",
+          "item": "elb0035",
           "text": "[Small part-time] Of which share of women (in %) [...] %",
           "text_de": "[Kleine Teilzeit] Davon Anteil der Frauen (in %) [...] %",
+          "concept": "ant_klteilz_frauen",
           "scale": "int",
           "sn": 6,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 7,
@@ -820,12 +848,12 @@
     "11": {
       "question": "11",
       "name": "11",
-      "label": "How were the employees of your compamy distributed among the following employee groups on June 30, 2021? Please do not include temporary workers and freelancers with contracts for work and services.",
+      "label": "How were the employees of your company distributed among the following employee groups on June 30, 2021? Please do not include temporary workers and freelancers with contracts for work or services.",
       "label_de": "Wie verteilten sich die Beschäftigten Ihres Unternehmens am 30.06.2021 auf die folgenden Beschäftigtengruppen? Zählen Sie zu den Beschäftigten bitte nicht die Leiharbeitskräfte und die freien Mitarbeiter/innen mit Werk- oder Dienstverträgen hinzu.",
       "items": [
         {
           "item": "1",
-          "text": "How were the employees of your compamy distributed among the following employee groups on June 30, 2021? Please do not include temporary workers and freelancers with contracts for work and services.",
+          "text": "How were the employees of your company distributed among the following employee groups on June 30, 2021? Please do not include temporary workers and freelancers with contracts for work or services.",
           "text_de": "Wie verteilten sich die Beschäftigten Ihres Unternehmens am 30.06.2021 auf die folgenden Beschäftigtengruppen? Zählen Sie zu den Beschäftigten bitte nicht die Leiharbeitskräfte und die freien Mitarbeiter/innen mit Werk- oder Dienstverträgen hinzu.",
           "instruction": "Please enter \"0\" for groups that do not occur.",
           "instruction_de": "Bei nicht vorkommenden Gruppen bitte „0“ eintragen.",
@@ -843,9 +871,10 @@
           "number": ""
         },
         {
-          "item": "ant_einf",
+          "item": "elb0036",
           "text": "[Simple activities] Share of employees (in %) […] %",
           "text_de": "[Einfache Tätigkeiten] Anteil der Beschäftigten (in %) [...] %",
+          "concept": "ant_einf",
           "scale": "int",
           "sn": 2,
           "number": ""
@@ -859,9 +888,10 @@
           "number": ""
         },
         {
-          "item": "ant_ausb",
+          "item": "elb0037",
           "text": "[Vocational training/apprenticeship] Share of employees (in %) [...] %",
           "text_de": "[Lehre/Ausbildung] Anteil der Beschäftigten (in %) [...] %",
+          "concept": "ant_ausb",
           "scale": "int",
           "sn": 4,
           "number": ""
@@ -875,9 +905,10 @@
           "number": ""
         },
         {
-          "item": "ant_hochsch",
+          "item": "elb0038",
           "text": "[University degree] Share of employees (in %) [...] %",
           "text_de": "[Hochschulabschluss] Anteil der Beschäftigten (in %) [...] %",
+          "concept": "ant_hochsch",
           "scale": "int",
           "sn": 6,
           "number": ""
@@ -891,16 +922,17 @@
           "number": ""
         },
         {
-          "item": "ant_summe",
+          "item": "elb0667",
           "text": "[Total] Total share of employees [...]",
           "text_de": "[Summe] Gesamtanteil der Beschäftigten  […] %",
+          "concept": "ant_summe",
           "scale": "int",
           "sn": 8,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 9,
@@ -914,12 +946,12 @@
     "12": {
       "question": "12",
       "name": "12",
-      "label": "What was the share of foreign employees in your establishment/public body on June 30, 2021?\r\nThis includes all persons who do not have German citizenship.",
+      "label": "What was the share of foreign employees in your company on June 30, 2021?\r\nThis includes all persons who do not have German citizenship.",
       "label_de": "Wie hoch war insgesamt am 30.06.2021 der Anteil an ausländischen Beschäftigten in Ihrem Unternehmen? Dazu zählen alle Personen, die nicht die deutsche Staatsangehörigkeit besitzen.",
       "items": [
         {
           "item": "1",
-          "text": "What was the share of foreign employees in your establishment/public body on June 30, 2021?\r\nThis includes all persons who do not have German citizenship.",
+          "text": "What was the share of foreign employees in your company on June 30, 2021?\r\nThis includes all persons who do not have German citizenship.",
           "text_de": "Wie hoch war insgesamt am 30.06.2021 der Anteil an ausländischen Beschäftigten in Ihrem Unternehmen? Dazu zählen alle Personen, die nicht die deutsche Staatsangehörigkeit besitzen.",
           "filter": "7;elb0636=1",
           "scale": "txt",
@@ -935,16 +967,17 @@
           "number": ""
         },
         {
-          "item": "ant_ges_ausl",
+          "item": "elb0039",
           "text": "Total share of foreign employees […] %",
           "text_de": "Gesamtanteil der ausländischen Beschäftigten […] %",
+          "concept": "ant_ges_ausl",
           "scale": "int",
           "sn": 2,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 3,
@@ -979,9 +1012,10 @@
           "number": ""
         },
         {
-          "item": "ant_einf_ausl",
+          "item": "elb0040",
           "text": "[Simple activities] Share of foreign employees [...] %",
           "text_de": "[Einfache Tätigkeiten] Anteil der ausländischen Beschäftigten […] %",
+          "concept": "ant_einf_ausl",
           "scale": "int",
           "sn": 2,
           "number": ""
@@ -995,9 +1029,10 @@
           "number": ""
         },
         {
-          "item": "ant_aub_ausl",
+          "item": "elb0041",
           "text": "[Qualified training] Share of foreign employees [...] %",
           "text_de": "[Lehre/Ausbildung] Anteil der ausländischen Beschäftigten […] %",
+          "concept": "ant_aub_ausl",
           "scale": "int",
           "sn": 4,
           "number": ""
@@ -1011,9 +1046,10 @@
           "number": ""
         },
         {
-          "item": "ant_hochsch_ausl",
+          "item": "elb0042",
           "text": "[University degree] Share of foreign employees [...] %",
           "text_de": "[Hochschulabschluss] Anteil der ausländischen Beschäftigten […] %",
+          "concept": "ant_hochsch_ausl",
           "scale": "int",
           "sn": 6,
           "number": ""
@@ -1027,16 +1063,17 @@
           "number": ""
         },
         {
-          "item": "ant_leitung_ausl",
+          "item": "elb0043",
           "text": "[Management Board] Share of foreign employees [...] %",
           "text_de": "[Vorstand] Anteil der ausländischen Beschäftigten […] %",
+          "concept": "ant_leitung_ausl",
           "scale": "int",
           "sn": 8,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 9,
@@ -1050,13 +1087,14 @@
     "14": {
       "question": "14",
       "name": "14",
-      "label": "Were there freelances, temporary workers or assisting family members working in your company in 2021?",
+      "label": "Were there freelancers, temporary workers or assisting family members working in your company in 2021?",
       "label_de": "Waren in Ihrem Unternehmen im Jahr 2021 freie Mitarbeiter, Leiharbeitskräfte oder mithelfende Familienangehörige tätig?",
       "items": [
         {
           "item": "elb0661",
-          "text": "Were there freelances, temporary workers or assisting family members working in your company in 2021?",
+          "text": "Were there freelancers, temporary workers or assisting family members working in your company in 2021?",
           "text_de": "Waren in Ihrem Unternehmen im Jahr 2021 freie Mitarbeiter, Leiharbeitskräfte oder mithelfende Familienangehörige tätig?",
+          "concept": "elb0661",
           "scale": "cat",
           "answers": [
             {
@@ -1107,17 +1145,19 @@
           "number": ""
         },
         {
-          "item": "anz_frei",
+          "item": "elb0020",
           "text": "[Freelancers ] Number of respective employees as on June 30, 2021",
           "text_de": "[Freie Mitarbeiter/innen ] Anzahl der jeweiligen Beschäftigten am 30.06.2021",
+          "concept": "anz_frei",
           "scale": "int",
           "sn": 2,
           "number": ""
         },
         {
-          "item": "ant_frei_frauen",
+          "item": "elb0029",
           "text": "[Freelancers ] Of which share of women [...] %",
           "text_de": "[Freie Mitarbeiter/innen ] Davon Anteil der Frauen [...] %",
+          "concept": "ant_frei_frauen",
           "scale": "int",
           "sn": 3,
           "number": ""
@@ -1131,17 +1171,19 @@
           "number": ""
         },
         {
-          "item": "anz_leih",
+          "item": "elb0019",
           "text": "[Temporary workers] Number of respective employees on June 30, 2021",
           "text_de": "[Leiharbeitskräfte] Anzahl der jeweiligen Beschäftigten am 30.06.2021",
+          "concept": "anz_leih",
           "scale": "int",
           "sn": 5,
           "number": ""
         },
         {
-          "item": "ant_leih_frauen",
+          "item": "elb0028",
           "text": "[Temporary workers] Of which share of women (in %) [...] %",
           "text_de": "[Leiharbeitskräfte] Davon Anteil der Frauen (in %) [...] %",
+          "concept": "ant_leih_frauen",
           "scale": "int",
           "sn": 6,
           "number": ""
@@ -1155,17 +1197,19 @@
           "number": ""
         },
         {
-          "item": "anz_fam",
+          "item": "elb0017",
           "text": "[Family members] Number of respective employees on June 30, 2021",
           "text_de": "[Familienangehörige] Anzahl der jeweiligen Beschäftigten am 30.06.2021",
+          "concept": "anz_fam",
           "scale": "int",
           "sn": 8,
           "number": ""
         },
         {
-          "item": "ant_fam_frauen",
+          "item": "elb0026",
           "text": "[Family members] Of which share of women (in %) [...] %",
           "text_de": "[Familienangehörige] Davon Anteil der Frauen (in %) [...] %",
+          "concept": "ant_fam_frauen",
           "scale": "int",
           "sn": 9,
           "number": ""
@@ -1179,24 +1223,26 @@
           "number": ""
         },
         {
-          "item": "summe_sonstbesch",
+          "item": "elb0668",
           "text": "[Total] Total number of respective employees on June 30, 2021",
           "text_de": "[Summe] Gesamtanzahl der jeweiligen Beschäftigten am 30.06.2021",
+          "concept": "summe_sonstbesch",
           "scale": "int",
           "sn": 11,
           "number": ""
         },
         {
-          "item": "ant_summe_sonst_frauen",
+          "item": "elb0669",
           "text": "[Total] Of which share of women (in %) [...] %",
           "text_de": "[Summe] Davon Anteil der Frauen (in %) [...] %",
+          "concept": "ant_summe_sonst_frauen",
           "scale": "int",
           "sn": 12,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 13,
@@ -1265,13 +1311,14 @@
           "item": "elb0502",
           "text": "[…] euros",
           "text_de": "[…] Euro",
+          "concept": "elb0502",
           "scale": "int",
           "sn": 1,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 2,
@@ -1302,13 +1349,14 @@
           "item": "elb0533",
           "text": "[…] euros",
           "text_de": "[…] Euro",
+          "concept": "elb0533",
           "scale": "int",
           "sn": 1,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 2,
@@ -1329,6 +1377,7 @@
           "item": "elb0536_v2",
           "text": "Did your company improve or further develop a service or product that you previously offered in the last fiscal year 2021?",
           "text_de": "Hat Ihr Unternehmen im letzten Geschäftsjahr 2021 eine vorher bereits von Ihnen angebotene Leistung oder ein Produkt verbessert oder weiterentwickelt?",
+          "concept": "elb0536_v2",
           "scale": "cat",
           "answers": [
             {
@@ -1365,6 +1414,7 @@
           "item": "elb0539_v2",
           "text": "Did your company launch a completely new service or product for which a new market has yet to be created in the last fiscal year 2021?",
           "text_de": "Hat Ihr Unternehmen im letzten Geschäftsjahr 2021 eine völlig neue Leistung oder ein völlig neues Produkt, wofür ein neuer Markt geschaffen werden muss, in Ihr Angebot aufgenommen",
+          "concept": "elb0539_v2",
           "scale": "cat",
           "answers": [
             {
@@ -1401,6 +1451,7 @@
           "item": "elb0540_v2",
           "text": "Did your company develop and introduce new methods in the organization of business processes in the last fiscal year 2021? By this quality management, supply chain management, lean production, knowledge management are meant.",
           "text_de": "Hat Ihr Unternehmen im letzten Geschäftsjahr 2021 neue Methoden bei der Organisation von Geschäftsprozessen entwickelt und im Unternehmen eingeführt? Damit sind z.B. Qualitätsmanagement, Supply Chain Management, Lean Production, Wissensmanagement gemeint.",
+          "concept": "elb0540_v2",
           "scale": "cat",
           "answers": [
             {
@@ -1437,6 +1488,7 @@
           "item": "elb0541_v2",
           "text": "Did your company introduce new marketing/sales methods in the last fiscal year 2021 that were not previously used in your company?  Marketing innovations are part of a new marketing concept or a new marketing strategy.",
           "text_de": "Hat Ihr Unternehmen im letzten Geschäftsjahr 2021 neue Marketing-/Verkaufsmethoden eingeführt, die in Ihrem Unternehmen zuvor noch nicht angewendet wurden? Marketinginnovationen sind Teil eines neuen Marketingkonzepts bzw. einer neuen Marketingstrategie.",
+          "concept": "elb0541_v2",
           "scale": "cat",
           "answers": [
             {
@@ -1473,6 +1525,7 @@
           "item": "elb0542_v2",
           "text": "Did your company develop or introduce processes in the last fiscal year 2021 that significantly improved the production process or the provision of services?",
           "text_de": "Hat Ihr Unternehmen im letzten Geschäftsjahr 2021 Verfahren entwickelt oder eingeführt, die den Produktionsprozess oder das Bereitstellen von Dienstleistungen merklich verbessert haben?",
+          "concept": "elb0542_v2",
           "scale": "cat",
           "answers": [
             {
@@ -1555,6 +1608,7 @@
           "item": "elb0584",
           "text": "Participation in/execution of the production of the goods or services that my company operates",
           "text_de": "Beteiligung an/Durchführung der Produktion der Güter oder Dienstleistungen, die mein Unternehmen betreibt",
+          "concept": "elb0584",
           "scale": "cat",
           "answers": [
             {
@@ -1600,6 +1654,7 @@
           "item": "elb0585",
           "text": "Recruitment and personnel selection",
           "text_de": "Personalsuche und Personalauswahl",
+          "concept": "elb0585",
           "scale": "cat",
           "answers": [
             {
@@ -1645,6 +1700,7 @@
           "item": "elb0586",
           "text": "Conversations with employees and managers in the company",
           "text_de": "Gespräche mit Mitarbeiter/innen und Führungskräften im Unternehmen",
+          "concept": "elb0586",
           "scale": "cat",
           "answers": [
             {
@@ -1690,6 +1746,7 @@
           "item": "elb0587",
           "text": "Organization of production processes in the company",
           "text_de": "Organisation der Produktionsabläufe im Unternehmen",
+          "concept": "elb0587",
           "scale": "cat",
           "answers": [
             {
@@ -1735,6 +1792,7 @@
           "item": "elb0588",
           "text": "Quality management",
           "text_de": "Qualitätsmanagement",
+          "concept": "elb0588",
           "scale": "cat",
           "answers": [
             {
@@ -1780,6 +1838,7 @@
           "item": "elb0589",
           "text": "Marketing activities",
           "text_de": "Marketingaktivitäten",
+          "concept": "elb0589",
           "scale": "cat",
           "answers": [
             {
@@ -1825,6 +1884,7 @@
           "item": "elb0590",
           "text": "Bureaucratic activities due to government requirements and regulations",
           "text_de": "Bürokratische Tätigkeiten aufgrund staatlicher Vorgaben und Regulierungen",
+          "concept": "elb0590",
           "scale": "cat",
           "answers": [
             {
@@ -1870,6 +1930,7 @@
           "item": "elb0591",
           "text": "Customer acquisition and conversations with customers",
           "text_de": "Kundenakquise und Gespräche mit Kund/innen",
+          "concept": "elb0591",
           "scale": "cat",
           "answers": [
             {
@@ -1915,6 +1976,7 @@
           "item": "elb0592",
           "text": "Conversations with suppliers",
           "text_de": "Gespräche mit Lieferanten",
+          "concept": "elb0592",
           "scale": "cat",
           "answers": [
             {
@@ -1960,6 +2022,7 @@
           "item": "elb0593",
           "text": "Conversations with co-owners, co-managing directors",
           "text_de": "Gespräche mit Miteigentümer/innen, Mitgeschäftsführer/innen",
+          "concept": "elb0593",
           "scale": "cat",
           "answers": [
             {
@@ -2005,6 +2068,7 @@
           "item": "elb0594",
           "text": "Conversations with the company's financiers",
           "text_de": "Gespräche mit Finanzierern des Unternehmens",
+          "concept": "elb0594",
           "scale": "cat",
           "answers": [
             {
@@ -2050,6 +2114,7 @@
           "item": "elb0595",
           "text": "Analysis of the market and competitors",
           "text_de": "Auseinandersetzung mit dem Markt und den Wettbewerbern",
+          "concept": "elb0595",
           "scale": "cat",
           "answers": [
             {
@@ -2095,6 +2160,7 @@
           "item": "elb0596",
           "text": "Preparing and making growth and investment decisions",
           "text_de": "Wachstums- und Investitionsentscheidungen vorbereiten und treffen",
+          "concept": "elb0596",
           "scale": "cat",
           "answers": [
             {
@@ -2140,6 +2206,7 @@
           "item": "elb0597",
           "text": "Association work",
           "text_de": "Verbandsarbeit",
+          "concept": "elb0597",
           "scale": "cat",
           "answers": [
             {
@@ -2185,6 +2252,7 @@
           "item": "elb0598",
           "text": "Other business-related activities",
           "text_de": "Andere unternehmensbezogene Aktivitäten",
+          "concept": "elb0598",
           "scale": "cat",
           "answers": [
             {
@@ -2230,6 +2298,7 @@
           "item": "eab0033",
           "text": "[Other business-related activities], namely:",
           "text_de": "[Andere unternehmensbezogene Aktivitäten], und zwar:",
+          "concept": "eab0033",
           "scale": "chr",
           "sn": 16,
           "number": ""
@@ -2258,6 +2327,7 @@
           "text": "Participation in/execution of the production of the goods or services that my company operates",
           "text_de": "Beteiligung an/Durchführung der Produktion der Güter oder Dienstleistungen, die mein Unternehmen betreibt",
           "filter": "(23;elb0584=1)",
+          "concept": "elb0599",
           "scale": "int",
           "sn": 1,
           "number": ""
@@ -2267,6 +2337,7 @@
           "text": "Recruitment and personnel selection",
           "text_de": "Personalsuche und Personalauswahl",
           "filter": "(23;elb0585=1)",
+          "concept": "elb0600",
           "scale": "int",
           "sn": 2,
           "number": ""
@@ -2276,6 +2347,7 @@
           "text": "Conversations with employees and managers in the company",
           "text_de": "Gespräche mit Mitarbeiter/innen und Führungskräften im Unternehmen",
           "filter": "(23;elb0586=1)",
+          "concept": "elb0601",
           "scale": "int",
           "sn": 3,
           "number": ""
@@ -2285,6 +2357,7 @@
           "text": "Organization of production processes in the company",
           "text_de": "Organisation der Produktionsabläufe im Unternehmen",
           "filter": "(23;elb0587=1)",
+          "concept": "elb0602",
           "scale": "int",
           "sn": 4,
           "number": ""
@@ -2294,6 +2367,7 @@
           "text": "Quality management",
           "text_de": "Qualitätsmanagement",
           "filter": "(23;elb0588=1)",
+          "concept": "elb0603",
           "scale": "int",
           "sn": 5,
           "number": ""
@@ -2303,6 +2377,7 @@
           "text": "Marketing activities",
           "text_de": "Marketingaktivitäten",
           "filter": "(23;elb0589=1)",
+          "concept": "elb0604",
           "scale": "int",
           "sn": 6,
           "number": ""
@@ -2312,6 +2387,7 @@
           "text": "Bureaucratic activities due to government requirements and regulations",
           "text_de": "Bürokratische Tätigkeiten aufgrund staatlicher Vorgaben und Regulierungen",
           "filter": "(23;elb0590=1)",
+          "concept": "elb0605",
           "scale": "int",
           "sn": 7,
           "number": ""
@@ -2321,6 +2397,7 @@
           "text": "Customer acquisition and conversations with customers",
           "text_de": "Kundenakquise und Gespräche mit Kund/innen",
           "filter": "(23;elb0591=1)",
+          "concept": "elb0606",
           "scale": "int",
           "sn": 8,
           "number": ""
@@ -2330,6 +2407,7 @@
           "text": "Conversations with suppliers",
           "text_de": "Gespräche mit Lieferanten",
           "filter": "(23;elb0592=1)",
+          "concept": "elb0607",
           "scale": "int",
           "sn": 9,
           "number": ""
@@ -2339,6 +2417,7 @@
           "text": "Conversations with co-owners, co-managing directors",
           "text_de": "Gespräche mit Miteigentümer/innen, Mitgeschäftsführer/innen",
           "filter": "(23;elb0593=1)",
+          "concept": "elb0608",
           "scale": "int",
           "sn": 10,
           "number": ""
@@ -2348,6 +2427,7 @@
           "text": "Conversations with the company's financiers",
           "text_de": "Gespräche mit Finanzierern des Unternehmens",
           "filter": "(23;elb0594=1)",
+          "concept": "elb0609",
           "scale": "int",
           "sn": 11,
           "number": ""
@@ -2357,6 +2437,7 @@
           "text": "Analysis of the market and competitors",
           "text_de": "Auseinandersetzung mit dem Markt und den Wettbewerbern",
           "filter": "(23;elb0595=1)",
+          "concept": "elb0610",
           "scale": "int",
           "sn": 12,
           "number": ""
@@ -2366,6 +2447,7 @@
           "text": "Preparing and making growth and investment decisions",
           "text_de": "Wachstums- und Investitionsentscheidungen vorbereiten und treffen",
           "filter": "(23;elb0596=1)",
+          "concept": "elb0611",
           "scale": "int",
           "sn": 13,
           "number": ""
@@ -2375,6 +2457,7 @@
           "text": "Association work",
           "text_de": "Verbandsarbeit",
           "filter": "(23;elb0597=1)",
+          "concept": "elb0612",
           "scale": "int",
           "sn": 14,
           "number": ""
@@ -2384,13 +2467,14 @@
           "text": "Other activities",
           "text_de": "Andere Aktivitäten",
           "filter": "(23;elb0598=1)",
+          "concept": "elb0613",
           "scale": "int",
           "sn": 15,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 16,
@@ -2411,6 +2495,7 @@
           "item": "elb0637",
           "text": "Would you say taking an hour or two off during working hours to deal with personal or family matters is ...",
           "text_de": "Würden Sie sagen, während der Arbeitszeit ein bis zwei Stunden frei zunehmen, um persönliche oder familiäre Angelegenheiten zu erledigen, ist für Sie …",
+          "concept": "elb0637",
           "scale": "cat",
           "answers": [
             {
@@ -2481,9 +2566,10 @@
           "number": ""
         },
         {
-          "item": "weiterb_c_1",
+          "item": "elb0670",
           "text": "Courses, training programs, seminars",
           "text_de": "Kurse, Lehrgänge, Seminare",
+          "concept": "weiterb_c_1",
           "scale": "cat",
           "answers": [
             {
@@ -2506,9 +2592,10 @@
           "number": ""
         },
         {
-          "item": "weiterb_c_2",
+          "item": "elb0671",
           "text": "Participation in lectures, conferences, trade fairs, etc.",
           "text_de": "Teilnahme an Vorträgen, Fachtagungen, Messeveranstaltungen usw.",
+          "concept": "weiterb_c_2",
           "scale": "cat",
           "answers": [
             {
@@ -2531,9 +2618,10 @@
           "number": ""
         },
         {
-          "item": "weiterb_c_3",
-          "text": "On-the-job training, e.g. instruction, induction, on-the-job training",
+          "item": "elb0672",
+          "text": "Workplace training, e.g. instruction, onboarding, on-the-job training",
           "text_de": "Weiterbildung am Arbeitsplatz, z. B. Unterweisung, Einarbeitung, Training on the Job",
+          "concept": "weiterb_c_3",
           "scale": "cat",
           "answers": [
             {
@@ -2556,9 +2644,10 @@
           "number": ""
         },
         {
-          "item": "weiterb_c_4",
+          "item": "elb0673",
           "text": "Job change / job rotation",
           "text_de": "Arbeitsplatzwechsel/Job-Rotation",
+          "concept": "weiterb_c_4",
           "scale": "cat",
           "answers": [
             {
@@ -2581,9 +2670,10 @@
           "number": ""
         },
         {
-          "item": "weiterb_c_5",
-          "text": "Quality circles, workshop circles, learning workshop",
+          "item": "elb0674",
+          "text": "Quality circle, workshop circle, learning workshop",
           "text_de": "Qualitätszirkel, Werkstattzirkel, Lernstatt",
+          "concept": "weiterb_c_5",
           "scale": "cat",
           "answers": [
             {
@@ -2606,9 +2696,10 @@
           "number": ""
         },
         {
-          "item": "weiterb_c_6",
+          "item": "elb0675",
           "text": "Collaboration in project teams",
           "text_de": "Mitarbeit in Projektteams",
+          "concept": "weiterb_c_6",
           "scale": "cat",
           "answers": [
             {
@@ -2631,9 +2722,10 @@
           "number": ""
         },
         {
-          "item": "weiterb_c_7",
+          "item": "elb0676",
           "text": "Coaching / Mentoring",
           "text_de": "Coaching/Mentoring",
+          "concept": "weiterb_c_7",
           "scale": "cat",
           "answers": [
             {
@@ -2656,9 +2748,10 @@
           "number": ""
         },
         {
-          "item": "weiterb_c_8",
-          "text": "Other qualification measures; namely:",
+          "item": "elb0677",
+          "text": "Other qualification measures, namely:",
           "text_de": "Sonstige Qualifizierungsmaßnahmen, und zwar:",
+          "concept": "weiterb_c_8",
           "scale": "chr",
           "sn": 10,
           "number": ""
@@ -2679,6 +2772,7 @@
           "text": "How are decisions made in your company? Please indicate which of the following applies to your company.",
           "text_de": "Wie werden die Entscheidungen in Ihrem Unternehmen getroffen? Bitte geben Sie an, was von dem folgenden für Ihr Unternehmen zutrifft.",
           "filter": "(1;elb0301_v2=2,4) | (7;elb0636=1)",
+          "concept": "elb0614_v2",
           "scale": "cat",
           "answers": [
             {
@@ -2745,6 +2839,7 @@
           "text": "How often do you or managers in your company hold structured feedback meetings with your employees, for example about service quality, customer satisfaction, production, costs, performance decline, quality, inventory, absenteeism?",
           "text_de": "Wie häufig machen Sie oder Führungskräfte in Ihrem Unternehmen strukturierte Feedbackgespräche mit Ihren Mitarbeiter/innen, beispielsweise über Servicequalität, Kundenzufriedenheit, Produktion, Kosten, Leistungsabfall, Qualität, Inventar, absence?",
           "filter": "7;elb0636=1",
+          "concept": "elb0616_v2",
           "scale": "cat",
           "answers": [
             {
@@ -2807,6 +2902,7 @@
           "text": "Apart from feedback meetings, do you use other tools to motivate your employees?",
           "text_de": "Verwenden Sie, abgesehen von Feedbackgesprächen, noch andere Instrumente, um Ihre Mitarbeiter/innen zu motivieren?",
           "filter": "(7;elb0636=1) & (28;elb0616_v2>2)",
+          "concept": "elb0617",
           "scale": "cat",
           "answers": [
             {
@@ -2833,6 +2929,7 @@
           "text": "[Other instruments]",
           "text_de": "[Andere Instrumente]",
           "filter": "29;elb0617=1",
+          "concept": "eab0034",
           "scale": "chr",
           "sn": 1,
           "number": ""
@@ -2879,127 +2976,142 @@
           "number": ""
         },
         {
-          "item": "ant_brut_0",
+          "item": "2",
           "text": "Share of full-time employees with a gross monthly income of …",
           "text_de": "Anteil der Vollzeitbeschäftigten mit einem Bruttomonatseinkommen von...",
+          "concept": "ant_brut_0",
           "scale": "txt",
           "sn": 1,
           "number": ""
         },
         {
-          "item": "ant_brut_1",
+          "item": "elb0154",
           "text": "Under 1900€: Share of full-time employees [...] %",
           "text_de": "unter 1900€: Anteil Vollzeitbeschäftigter (in %) […] %",
+          "concept": "ant_brut_1",
           "scale": "int",
           "sn": 2,
           "number": ""
         },
         {
-          "item": "ant_brut_1_no",
+          "item": "3",
           "text": "Does not apply",
           "text_de": "Trifft nicht zu",
+          "concept": "ant_brut_1_no",
           "scale": "bin",
           "sn": 3,
           "number": ""
         },
         {
-          "item": "ant_brut_2",
+          "item": "elb0156",
           "text": "1900€ to under 2500€: Share of full-time employees [...] %",
           "text_de": "1900€ bis unter 2500€: Anteil Vollzeitbeschäftigter (in %) […] %",
+          "concept": "ant_brut_2",
           "scale": "int",
           "sn": 4,
           "number": ""
         },
         {
-          "item": "ant_brut_2_no",
+          "item": "4",
           "text": "Does not apply",
           "text_de": "Trifft nicht zu",
+          "concept": "ant_brut_2_no",
           "scale": "bin",
           "sn": 5,
           "number": ""
         },
         {
-          "item": "ant_brut_3",
+          "item": "elb0158",
           "text": "2500€ to under 3300€: Share of full-time employees [...] %",
           "text_de": "2500€ bis unter 3300€: Anteil Vollzeitbeschäftigter (in %) […] %",
+          "concept": "ant_brut_3",
           "scale": "int",
           "sn": 6,
           "number": ""
         },
         {
-          "item": "ant_brut_3_no",
+          "item": "5",
           "text": "Does not apply",
           "text_de": "Trifft nicht zu",
+          "concept": "ant_brut_3_no",
           "scale": "bin",
           "sn": 7,
           "number": ""
         },
         {
-          "item": "ant_brut_4",
+          "item": "elb0160",
           "text": "3300€ to under 4000€: Share of full-time employees [...] %",
           "text_de": "3300€ bis unter 4000€: Anteil Vollzeitbeschäftigter (in %) […] %",
+          "concept": "ant_brut_4",
           "scale": "int",
           "sn": 8,
           "number": ""
         },
         {
-          "item": "ant_brut_4_no",
+          "item": "6",
           "text": "Does not apply",
           "text_de": "Trifft nicht zu",
+          "concept": "ant_brut_4_no",
           "scale": "bin",
           "sn": 9,
           "number": ""
         },
         {
-          "item": "ant_brut_5",
+          "item": "elb0162",
           "text": "4000€ to under 6000€: Share of full-time employees [...] %",
           "text_de": "4000€ bis unter 6000€: Anteil Vollzeitbeschäftigter (in %) […] %",
+          "concept": "ant_brut_5",
           "scale": "int",
           "sn": 10,
           "number": ""
         },
         {
-          "item": "ant_brut_5_no",
+          "item": "7",
           "text": "Does not apply",
           "text_de": "Trifft nicht zu",
+          "concept": "ant_brut_5_no",
           "scale": "bin",
           "sn": 11,
           "number": ""
         },
         {
-          "item": "ant_brut_6",
+          "item": "elb0164",
           "text": "6000€ to under 7800€: Share of full-time employees [...] %",
           "text_de": "6000€ bis unter 7800€: Anteil Vollzeitbeschäftigter (in %) […] %",
+          "concept": "ant_brut_6",
           "scale": "int",
           "sn": 12,
           "number": ""
         },
         {
-          "item": "ant_brut_6_no",
+          "item": "8",
           "text": "Does not apply",
           "text_de": "Trifft nicht zu",
+          "concept": "ant_brut_6_no",
           "scale": "bin",
           "sn": 13,
           "number": ""
         },
         {
-          "item": "ant_brut_7",
+          "item": "elb0166",
           "text": "7800€ and more: Share of full-time employees [...] %",
           "text_de": "7800€ und mehr: Anteil Vollzeitbeschäftigter (in %) […] %",
+          "concept": "ant_brut_7",
           "scale": "int",
           "sn": 14,
           "number": ""
         },
         {
-          "item": "ant_brut_7_no",
+          "item": "9",
           "text": "Does not apply",
           "text_de": "Trifft nicht zu",
+          "concept": "ant_brut_7_no",
           "scale": "bin",
           "sn": 15,
           "number": ""
         },
         {
-          "item": "9",
+          "item": "10",
           "text": "Total: 100%",
           "text_de": "Summe: 100%",
           "scale": "txt",
@@ -3027,9 +3139,10 @@
           "number": ""
         },
         {
-          "item": "krit_entl_1",
+          "item": "elb0168",
           "text": "Individual performance",
           "text_de": "Individuelle Leistung",
+          "concept": "krit_entl_1",
           "scale": "cat",
           "answers": [
             {
@@ -3067,9 +3180,10 @@
           "number": ""
         },
         {
-          "item": "krit_entl_2",
+          "item": "elb0169",
           "text": "Team performance",
           "text_de": "Teamleistung",
+          "concept": "krit_entl_2",
           "scale": "cat",
           "answers": [
             {
@@ -3107,9 +3221,10 @@
           "number": ""
         },
         {
-          "item": "krit_entl_3",
+          "item": "elb0170",
           "text": "Success of the entire company",
           "text_de": "Erfolg des gesamten Unternehmens",
+          "concept": "krit_entl_3",
           "scale": "cat",
           "answers": [
             {
@@ -3147,9 +3262,10 @@
           "number": ""
         },
         {
-          "item": "krit_entl_4",
+          "item": "elb0171",
           "text": "Length of service",
           "text_de": "Dauer der Unternehmenszugehörigkeit",
+          "concept": "krit_entl_4",
           "scale": "cat",
           "answers": [
             {
@@ -3187,9 +3303,10 @@
           "number": ""
         },
         {
-          "item": "krit_entl_5",
+          "item": "elb0172",
           "text": "Formal educational or professional qualification",
           "text_de": "Formaler Ausbildungs- oder Berufsabschluss",
+          "concept": "krit_entl_5",
           "scale": "cat",
           "answers": [
             {
@@ -3227,9 +3344,10 @@
           "number": ""
         },
         {
-          "item": "krit_entl_6",
+          "item": "elb0173",
           "text": "Individual professional experience",
           "text_de": "Individuelle Berufserfahrung",
+          "concept": "krit_entl_6",
           "scale": "cat",
           "answers": [
             {
@@ -3267,9 +3385,10 @@
           "number": ""
         },
         {
-          "item": "krit_entl_7",
+          "item": "elb0174",
           "text": "Social criteria, e.g. number of children, place of residence",
           "text_de": "Soziale Kriterien, z. B. Kinderzahl, Wohnort",
+          "concept": "krit_entl_7",
           "scale": "cat",
           "answers": [
             {
@@ -3329,58 +3448,65 @@
           "number": ""
         },
         {
-          "item": "anreiz1",
+          "item": "elb0175",
           "text": "Equity participation",
           "text_de": "Kapitalbeteiligungen",
+          "concept": "anreiz1",
           "scale": "bin",
           "sn": 1,
           "number": ""
         },
         {
-          "item": "anreiz2",
+          "item": "elb0176",
           "text": "Profit-sharing",
           "text_de": "Erfolgsbeteiligungen",
+          "concept": "anreiz2",
           "scale": "bin",
           "sn": 2,
           "number": ""
         },
         {
-          "item": "anreiz3",
+          "item": "elb0177",
           "text": "Bonus payments",
           "text_de": "Bonuszahlungen",
+          "concept": "anreiz3",
           "scale": "bin",
           "sn": 3,
           "number": ""
         },
         {
-          "item": "anreiz4",
+          "item": "elb0178",
           "text": "Share options",
           "text_de": "Aktienoptionen",
+          "concept": "anreiz4",
           "scale": "bin",
           "sn": 4,
           "number": ""
         },
         {
-          "item": "anreiz5",
+          "item": "elb0179",
           "text": "Other",
           "text_de": "Sonstiges",
+          "concept": "anreiz5",
           "scale": "bin",
           "sn": 5,
           "number": ""
         },
         {
-          "item": "anreizso",
-          "text": "[Other] namely:",
+          "item": "eab0005",
+          "text": "[Other], namely:",
           "text_de": "[Sonstiges], und zwar:",
           "filter": "32;anreiz5=1",
+          "concept": "anreizso",
           "scale": "chr",
           "sn": 6,
           "number": ""
         },
         {
-          "item": "anreiz_ka",
+          "item": "elb0180",
           "text": "Nothing applies",
           "text_de": "Nichts trifft zu",
+          "concept": "anreiz_ka",
           "scale": "bin",
           "sn": 7,
           "number": ""
@@ -3408,42 +3534,47 @@
           "number": ""
         },
         {
-          "item": "zusatz3",
+          "item": "elb0183",
           "text": "Company pension scheme/company pension that exceeds the statutory entitlement",
           "text_de": "Betriebliche Altersvorsorge / Betriebsrente, die über den gesetzlichen Anspruch hinausgeht",
+          "concept": "zusatz3",
           "scale": "bin",
           "sn": 1,
           "number": ""
         },
         {
-          "item": "zusatz4",
+          "item": "elb0184",
           "text": "Release from work and/or covering of costs for further training measures",
           "text_de": "Freistellung und / oder Übernahmen der Kosten für Weiterbildungsmaßnahmen",
+          "concept": "zusatz4",
           "scale": "bin",
           "sn": 2,
           "number": ""
         },
         {
-          "item": "zusatz6",
+          "item": "elb0186",
           "text": "Other",
           "text_de": "Sonstiges",
+          "concept": "zusatz6",
           "scale": "bin",
           "sn": 3,
           "number": ""
         },
         {
-          "item": "zusatzso",
-          "text": "[Other] namely:",
+          "item": "eab0006",
+          "text": "[Other], namely:",
           "text_de": "[Sonstiges], und zwar:",
           "filter": "33;zusatz6=1",
+          "concept": "zusatzso",
           "scale": "chr",
           "sn": 4,
           "number": ""
         },
         {
-          "item": "zusatz_ka",
+          "item": "elb0187",
           "text": "Nothing applies",
           "text_de": "Nichts trifft zu",
+          "concept": "zusatz_ka",
           "scale": "bin",
           "sn": 5,
           "number": ""
@@ -3473,6 +3604,7 @@
           "item": "elb0638",
           "text": "I have acquired entitlements to statutory pension insurance as a former employee",
           "text_de": "Ich habe als früherer Arbeitnehmer Ansprüche an die gesetzliche Rentenversicherung erworben",
+          "concept": "elb0638",
           "scale": "bin",
           "sn": 1,
           "number": ""
@@ -3481,6 +3613,7 @@
           "item": "elb0639",
           "text": "I have entitlements to a company pension as a former employee",
           "text_de": "Ich habe Ansprüche als früherer Arbeitnehmer an eine Betriebsrente",
+          "concept": "elb0639",
           "scale": "bin",
           "sn": 2,
           "number": ""
@@ -3489,6 +3622,7 @@
           "item": "elb0640",
           "text": "I have entitlements to the artists' social security fund",
           "text_de": "Ich habe Ansprüche an die Künstlersozialkasse",
+          "concept": "elb0640",
           "scale": "bin",
           "sn": 3,
           "number": ""
@@ -3497,6 +3631,7 @@
           "item": "elb0641",
           "text": "I have entitlements to a berufsständische Versorgungswerk (pension scheme fro free professions)",
           "text_de": "Ich habe Ansprüche an ein berufsständisches Versorgungswerk",
+          "concept": "elb0641",
           "scale": "bin",
           "sn": 4,
           "number": ""
@@ -3505,6 +3640,7 @@
           "item": "elb0642",
           "text": "I have acquired real estate for retirement provision",
           "text_de": "Ich habe Immobilienbesitz zur Altersvorsorge erworben",
+          "concept": "elb0642",
           "scale": "bin",
           "sn": 5,
           "number": ""
@@ -3513,6 +3649,7 @@
           "item": "elb0643",
           "text": "I have taken out a capital life insurance policy for retirement provision",
           "text_de": "Ich habe eine Kapitallebensversicherung zur Altersvorsorge abgeschlossen",
+          "concept": "elb0643",
           "scale": "bin",
           "sn": 6,
           "number": ""
@@ -3521,6 +3658,7 @@
           "item": "elb0644",
           "text": "I have taken out private pension insurance",
           "text_de": "Ich habe eine private Rentenversicherung abgeschlossen",
+          "concept": "elb0644",
           "scale": "bin",
           "sn": 7,
           "number": ""
@@ -3529,6 +3667,7 @@
           "item": "elb0645",
           "text": "I am building wealth through stocks, funds, bonds, or similar investments",
           "text_de": "Ich baue Vermögen über Aktien, Fonds, Anleihen oder Ähnliches auf",
+          "concept": "elb0645",
           "scale": "bin",
           "sn": 8,
           "number": ""
@@ -3537,6 +3676,7 @@
           "item": "elb0646",
           "text": "I regularly save money in other ways",
           "text_de": "Ich spare auf andere Weise regelmäßig Geld an",
+          "concept": "elb0646",
           "scale": "bin",
           "sn": 9,
           "number": ""
@@ -3545,6 +3685,7 @@
           "item": "elb0647",
           "text": "I am covered through my partner",
           "text_de": "Ich bin über meine Partnerin/meinen Partner abgesichert",
+          "concept": "elb0647",
           "scale": "bin",
           "sn": 10,
           "number": ""
@@ -3553,13 +3694,14 @@
           "item": "elb0648",
           "text": "No retirement provision has been made so far",
           "text_de": "Bisher noch keine Altersvorsorge betrieben",
+          "concept": "elb0648",
           "scale": "bin",
           "sn": 11,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 12,
@@ -3626,25 +3768,27 @@
           "number": ""
         },
         {
-          "item": "anz_pc",
+          "item": "elb0188",
           "text": "Total number of employees who use PCs, laptops, tablets/iPads or other digital devices, e.g. for machine control:",
           "text_de": "Gesamtanzahl der Beschäftigten, die PCs, Laptops, Tablets / iPads oder andere digitale  Geräte, z. B. zur Maschinensteuerung, nutzen:",
           "goto": "0@37",
+          "concept": "anz_pc",
           "scale": "int",
           "sn": 1,
           "number": ""
         },
         {
-          "item": "ant_pc_frauen",
+          "item": "elb0189",
           "text": "Of which share of women (in %) [...] %",
           "text_de": "Davon Anteil der Frauen (in %) […] %",
+          "concept": "ant_pc_frauen",
           "scale": "int",
           "sn": 2,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 3,
@@ -3658,14 +3802,14 @@
     "36": {
       "question": "36",
       "name": "36",
-      "label": "Please indicate the approximate share per employee group who use PCs, laptops, tablets/iPads or other digital devices (e.g. for machine control) to perform their daily tasks in your eompany.stablishment/public body.c",
+      "label": "Please indicate the approximate share per employee group who use PCs, laptops, tablets/iPads or other digital devices (e.g. for machine control) to perform their daily tasks in your eompany.",
       "label_de": "Bitte geben Sie den ungefähren Anteil pro Beschäftigtengruppe an, die in Ihrem Unternehmen für die Ausübung Ihrer täglichen Aufgaben PCs, Laptops, Tablets/iPads oder andere digitale  Geräte, z. B. zur Maschinensteuerung, nutzen.",
       "items": [
         {
           "item": "1",
-          "text": "Please indicate the approximate share per employee group who use PCs, laptops, tablets/iPads or other digital devices (e.g. for machine control) to perform their daily tasks in your eompany.stablishment/public body.c",
+          "text": "Please indicate the approximate share per employee group who use PCs, laptops, tablets/iPads or other digital devices (e.g. for machine control) to perform their daily tasks in your eompany.",
           "text_de": "Bitte geben Sie den ungefähren Anteil pro Beschäftigtengruppe an, die in Ihrem Unternehmen für die Ausübung Ihrer täglichen Aufgaben PCs, Laptops, Tablets/iPads oder andere digitale  Geräte, z. B. zur Maschinensteuerung, nutzen.",
-          "instruction": "If exact figures are not possible, please estimate.",
+          "instruction": "This does not include temporary workers and freelancers. \r\nIf exact figures are not possible, please estimate.",
           "instruction_de": "Hier zählen Leiharbeitskräfte und freie Mitarbeiter/innen nicht dazu.\r\nFalls genaue Angaben nicht möglich sind, schätzen Sie bitte.",
           "filter": "(7;elb0636=1) & (35;anz_pc>0)",
           "scale": "txt",
@@ -3673,32 +3817,35 @@
           "number": ""
         },
         {
-          "item": "ant_pc_grp1",
+          "item": "elb0190",
           "text": "Employees in jobs that do not require vocational training: [...] %",
           "text_de": "Anteil unter den Beschäftigten in Tätigkeiten, die keine Berufsausbildung erfordern (in %) […] %",
+          "concept": "ant_pc_grp1",
           "scale": "int",
           "sn": 1,
           "number": ""
         },
         {
-          "item": "ant_pc_grp2",
+          "item": "elb0191",
           "text": "Employees in jobs that require a completed apprenticeship, comparable vocational training or corresponding professional experience: [...] %",
           "text_de": "Anteil unter den Beschäftigten in Tätigkeiten, die eine abgeschlossene Lehre, eine vergleichbare Berufsausbildung oder eine entsprechende Berufserfahrung erfordern (in %) […] %",
+          "concept": "ant_pc_grp2",
           "scale": "int",
           "sn": 2,
           "number": ""
         },
         {
-          "item": "ant_pc_grp3",
+          "item": "elb0192",
           "text": "Employees in jobs that require a technical or university degree: [...] %",
           "text_de": "Anteil unter den Beschäftigten in Tätigkeiten, die einen Fach- oder Hochschulabschluss erfordern (in %) […] %",
+          "concept": "ant_pc_grp3",
           "scale": "int",
           "sn": 3,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 4,
@@ -3724,9 +3871,10 @@
           "number": ""
         },
         {
-          "item": "techno1",
-          "text": "Custom software, i.e., software that has been developed or adapted to meet the needs of the company. ",
+          "item": "elb0193",
+          "text": "Customized software, i.e., software that has been developed or adapted to meet the needs of the company. ",
           "text_de": "Angepasste Software, d. h.  eine Software, die für die Bedarfe des Unternehmens entwickelt oder dafür angepasst wurde.",
+          "concept": "techno1",
           "scale": "cat",
           "answers": [
             {
@@ -3769,9 +3917,10 @@
           "number": ""
         },
         {
-          "item": "techno2",
+          "item": "elb0194",
           "text": "Data analytics, i.e., the use of digital tools to analyze data collected in this company or from other sources. ",
           "text_de": "Datenanalytik, d.h. der Einsatz digitaler Tools zur Analyse von Daten, die in diesem Unternehmen oder von anderen Quellen erhoben werden.",
+          "concept": "techno2",
           "scale": "cat",
           "answers": [
             {
@@ -3814,9 +3963,10 @@
           "number": ""
         },
         {
-          "item": "techno3",
+          "item": "elb0195",
           "text": "Big data, i.e., the analysis of large datasets. ",
           "text_de": "Big Data, d. h. das Auswerten großer Datensätze.",
+          "concept": "techno3",
           "scale": "cat",
           "answers": [
             {
@@ -3859,9 +4009,10 @@
           "number": ""
         },
         {
-          "item": "techno4",
+          "item": "elb0196",
           "text": "Robots, i.e., programmable machines that can automatically perform complex sequences of actions.",
           "text_de": "Roboter, d. h. programmierbare Maschinen, die komplexe Abfolgen von Handlungen automatisch durchführen können.",
+          "concept": "techno4",
           "scale": "cat",
           "answers": [
             {
@@ -3904,9 +4055,10 @@
           "number": ""
         },
         {
-          "item": "techno5",
+          "item": "elb0197",
           "text": "Virtual or augmented reality, i.e., the enhancement of images with objects that exist only virtually. ",
           "text_de": "Virtuelle oder Augmented Reality, d. h. die Ergänzung von Bildern durch nur virtuell existierende Objekte.",
+          "concept": "techno5",
           "scale": "cat",
           "answers": [
             {
@@ -3949,9 +4101,10 @@
           "number": ""
         },
         {
-          "item": "techno6",
+          "item": "elb0198",
           "text": "Artificial intelligence, i.e., computer programs that assist in optimizing goal achievement and learn autonomously.",
           "text_de": "Künstliche Intelligenz, d. h. Computerprogramme, die bei der Optimierung der Zielerreichung unterstützen und selbstständig lernen.",
+          "concept": "techno6",
           "scale": "cat",
           "answers": [
             {
@@ -3994,9 +4147,10 @@
           "number": ""
         },
         {
-          "item": "techno7",
+          "item": "elb0199",
           "text": "3D printing, i.e., a manufacturing process in which material is applied layer by layer to create a three-dimensional product. ",
           "text_de": "3D-Druck, d. h. ein Herstellungsverfahren, bei dem Material Schicht für Schicht aufgetragen und so ein dreidimensionales Produkt erzeugt wird.",
+          "concept": "techno7",
           "scale": "cat",
           "answers": [
             {
@@ -4039,9 +4193,10 @@
           "number": ""
         },
         {
-          "item": "techno8",
+          "item": "elb0200",
           "text": "Internet of Things, i.e., the digital networking of devices and objects, as well as entire industrial plants or buildings. ",
           "text_de": "Internet der Dinge, d. h. die digitale Vernetzung von Geräten und Gegenständen, aber auch von ganzen Industrieanlagen oder Gebäuden.",
+          "concept": "techno8",
           "scale": "cat",
           "answers": [
             {
@@ -4084,9 +4239,10 @@
           "number": ""
         },
         {
-          "item": "techno9",
+          "item": "elb0678",
           "text": "Platforms for acquiring orders, i.e., acquisition of customers through a platform. ",
           "text_de": "Plattformen zur Auftragsakquise, d.h. Vermittlung von Kund/innen über eine Plattform.",
+          "concept": "techno9",
           "scale": "cat",
           "answers": [
             {
@@ -4148,9 +4304,10 @@
           "number": ""
         },
         {
-          "item": "digitalisierung1",
-          "text": "Our company is well equipped with digitalization technologies compared to other companies in our industry",
+          "item": "elb0201",
+          "text": "Our company is well equipped with digitalization technologies compared to other companies in our industry.",
           "text_de": "Unser Unternehmen ist im Vergleich zu anderen Unternehmen unserer Branche gut mit Digitalisierungstechnologien ausgestattet.",
+          "concept": "digitalisierung1",
           "scale": "cat",
           "answers": [
             {
@@ -4193,10 +4350,11 @@
           "number": ""
         },
         {
-          "item": "digitalisierung2",
-          "text": "The use of digitalization technologies has led to additional personnel requirements, i.e. new hires",
+          "item": "elb0202",
+          "text": "The use of digitalization technologies has led to additional personnel requirements, i.e. new hires.",
           "text_de": "Der Einsatz von Digitalisierungstechnologien hat zu einem zusätzlichen Personalbedarf, also Neueinstellung geführt.",
           "filter": "7;elb0636=1",
+          "concept": "digitalisierung2",
           "scale": "cat",
           "answers": [
             {
@@ -4239,10 +4397,11 @@
           "number": ""
         },
         {
-          "item": "digitalisierung3",
-          "text": "The use of digitalization technologies has led to a high demand for further training for employees",
+          "item": "elb0203",
+          "text": "The use of digitalization technologies has led to a high demand for further training for employees.",
           "text_de": "Der Einsatz von Digitalisierungstechnologien hat zu einem hohen Weiterbildungsbedarf bei den Beschäftigten geführt.",
           "filter": "7;elb0636=1",
+          "concept": "digitalisierung3",
           "scale": "cat",
           "answers": [
             {
@@ -4285,10 +4444,11 @@
           "number": ""
         },
         {
-          "item": "digitalisierung4",
-          "text": "Employees tend to be critical of the use of digitalization technologies",
+          "item": "elb0204",
+          "text": "Employees tend to be critical of the use of digitalization technologies.",
           "text_de": "Die Beschäftigten stehen dem Einsatz von Digitalisierungstechnologien eher kritisch gegenüber.",
           "filter": "7;elb0636=1",
+          "concept": "digitalisierung4",
           "scale": "cat",
           "answers": [
             {
@@ -4331,9 +4491,10 @@
           "number": ""
         },
         {
-          "item": "digitalisierung5",
-          "text": "The use of digitalization technologies has led to problems with data security or cyberattacks",
+          "item": "elb0205",
+          "text": "The use of digitalization technologies has led to problems with data security or cyberattacks.",
           "text_de": "Der Einsatz von Digitalisierungstechnologien hat zu Problemen bei der Datensicherheit oder zu Cyberangriffen geführt.",
+          "concept": "digitalisierung5",
           "scale": "cat",
           "answers": [
             {
@@ -4376,9 +4537,10 @@
           "number": ""
         },
         {
-          "item": "digitalisierung6",
-          "text": "The use of digitalization technologies leads to a strong dependence on external service providers",
+          "item": "elb0206",
+          "text": "The use of digitalization technologies leads to a strong dependence on external service providers.",
           "text_de": "Der Einsatz von Digitalisierungstechnologien führt zu einer starken Abhängigkeit von exter­nen Dienstleistern.",
+          "concept": "digitalisierung6",
           "scale": "cat",
           "answers": [
             {
@@ -4421,9 +4583,10 @@
           "number": ""
         },
         {
-          "item": "digitalisierung9",
-          "text": "The use of digitalization technologies has changed the process of acquiring orders and is leading to increased use of intermediary platforms",
+          "item": "elb0679",
+          "text": "The use of digitalization technologies has changed the process of acquiring orders and is leading to increased use of intermediary platforms.",
           "text_de": "Der Einsatz von Digitalisierungstechnologien hat die Auftragsakquise verändert und führt zu vermehrter Nutzung von Vermittlungsplattformen.",
+          "concept": "digitalisierung9",
           "scale": "cat",
           "answers": [
             {
@@ -4466,10 +4629,11 @@
           "number": ""
         },
         {
-          "item": "digitalisierung7",
-          "text": "Digitalization technologies are used in company to monitor employee performance",
+          "item": "elb0207",
+          "text": "Digitalization technologies are used in my company to monitor employee performance.",
           "text_de": "Digitalisierungstechnologien werden in meinem Unternehmen genutzt um die Leistung der Beschäftigten zu kontrollieren.",
           "filter": "7;elb0636=1",
+          "concept": "digitalisierung7",
           "scale": "cat",
           "answers": [
             {
@@ -4512,9 +4676,10 @@
           "number": ""
         },
         {
-          "item": "digitalisierung8",
-          "text": "I am very familiar with the digitalization technologies in my company",
+          "item": "elb0208",
+          "text": "I am very familiar with the digitalization technologies in my company.",
           "text_de": "Ich kenne mich sehr gut mit den Digitalisierungstechnologien in meinem Unternehmen aus.",
+          "concept": "digitalisierung8",
           "scale": "cat",
           "answers": [
             {
@@ -4606,9 +4771,10 @@
       "label_de": "Welche Auswirkungen hatte die Corona-Pandemie bis zum 30.06.2021 für Ihr Unternehmen?",
       "items": [
         {
-          "item": "covidausw",
+          "item": "elb0209",
           "text": "What impact did the coronavirus pandemic have on your company up to June 30, 2021?",
           "text_de": "Welche Auswirkungen hatte die Corona-Pandemie bis zum 30.06.2021 für Ihr Unternehmen?",
+          "concept": "covidausw",
           "scale": "cat",
           "answers": [
             {
@@ -4662,10 +4828,11 @@
       "label_de": "Verglichen mit dem Personalbestand unmittelbar vor der Corona-Pandemie, wie hat sich der Personalbestand in Ihrem Unternehmen bis zum 30.06.2021 verändert?",
       "items": [
         {
-          "item": "covidperso",
+          "item": "elb0210",
           "text": "Compared to the headcount immediately before the coronavirus pandemic, how has the headcount in your company changed by June 30, 2021?",
           "text_de": "Verglichen mit dem Personalbestand unmittelbar vor der Corona-Pandemie, wie hat sich der Personalbestand in Ihrem Unternehmen bis zum 30.06.2021 verändert?",
           "filter": "7;elb0636=1",
+          "concept": "covidperso",
           "scale": "cat",
           "answers": [
             {
@@ -4725,56 +4892,62 @@
           "number": ""
         },
         {
-          "item": "covidpersomaßn1",
+          "item": "elb0211",
           "text": "Reduction of temporary staff",
           "text_de": "Abbau von Leiharbeitskräften",
+          "concept": "covidpersomaßn1",
           "scale": "bin",
           "sn": 1,
           "number": ""
         },
         {
-          "item": "covidpersomaßn2",
+          "item": "elb0212",
           "text": "No retention of apprentices",
           "text_de": "Keine Übernahme von Auszubildenden",
+          "concept": "covidpersomaßn2",
           "scale": "bin",
           "sn": 2,
           "number": ""
         },
         {
-          "item": "covidpersomaßn3",
+          "item": "elb0213",
           "text": "Vacancies not filled",
           "text_de": "Nichtbesetzen freier Stellen",
+          "concept": "covidpersomaßn3",
           "scale": "bin",
           "sn": 3,
           "number": ""
         },
         {
-          "item": "covidpersomaßn4",
+          "item": "elb0214",
           "text": "Postponement of a planned increase in personnel",
           "text_de": "Zurückstellen einer geplanten Personalaufstockung",
+          "concept": "covidpersomaßn4",
           "scale": "bin",
           "sn": 4,
           "number": ""
         },
         {
-          "item": "covidpersomaßn5",
+          "item": "elb0215",
           "text": "Cancelation of planned hiring of apprenticeship positions",
           "text_de": "Verzicht auf geplante Besetzung von Ausbildungsplätzen",
+          "concept": "covidpersomaßn5",
           "scale": "bin",
           "sn": 5,
           "number": ""
         },
         {
-          "item": "covidpersomaßn_ka",
+          "item": "elb0216",
           "text": "None of this",
           "text_de": "Nichts davon",
+          "concept": "covidpersomaßn_ka",
           "scale": "bin",
           "sn": 6,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 7,
@@ -4803,17 +4976,18 @@
           "number": ""
         },
         {
-          "item": "ant_homeoffice",
+          "item": "elb0245",
           "text": "Number of employees",
           "text_de": "Anzahl der Beschäftigten",
           "goto": "0@45",
+          "concept": "ant_homeoffice",
           "scale": "int",
           "sn": 1,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 2,
@@ -4842,16 +5016,17 @@
           "number": ""
         },
         {
-          "item": "ant_homeoffice_frauen",
+          "item": "elb0246",
           "text": "Share of women (in %) […] %",
           "text_de": "Anteil der Frauen (in %)  [...] %",
+          "concept": "ant_homeoffice_frauen",
           "scale": "int",
           "sn": 1,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 2,
@@ -4872,7 +5047,7 @@
           "item": "1",
           "text": "What was the share per employee group that worked from home (home office) on June 30, 2021?",
           "text_de": "Wie hoch war der Anteil pro Beschäftigtengruppe, der am 30.06.2021 von zuhause aus gearbeitet hat (Homeoffice)?",
-          "instruction": "If exact figures are not possible, please estimate.",
+          "instruction": "This does not include temporary workers and freelancers. \r\nIf exact figures are not possible, please estimate.",
           "instruction_de": "Hier zählen Leiharbeitskräfte und freie Mitarbeiter/innen nicht dazu. \r\nFalls genaue Angaben nicht möglich sind, schätzen Sie bitte.",
           "filter": "(7;elb0636=1) & (42;ant_homeoffice>0)",
           "scale": "txt",
@@ -4880,32 +5055,35 @@
           "number": ""
         },
         {
-          "item": "ant_homeoffice_grp1",
+          "item": "elb0247",
           "text": "Employees in jobs that do not require vocational training [...] %",
           "text_de": "Beschäftigte in Tätigkeiten, die keine Berufsausbildung erfordern (in %)  [...] %",
+          "concept": "ant_homeoffice_grp1",
           "scale": "int",
           "sn": 1,
           "number": ""
         },
         {
-          "item": "ant_homeoffice_grp2",
+          "item": "elb0248",
           "text": "Employees in jobs that require a completed apprenticeship, comparable vocational training or corresponding professional experience [...] %",
           "text_de": "Beschäftigte in Tätigkeiten, die eine abgeschlossene Lehre, eine vergleichbare Berufsausbildung oder eine entsprechende Berufserfahrung erfordern (in %) [...] %",
+          "concept": "ant_homeoffice_grp2",
           "scale": "int",
           "sn": 2,
           "number": ""
         },
         {
-          "item": "ant_homeoffice_grp3",
+          "item": "elb0249",
           "text": "Employees in qualified jobs that require a technical or university degree [...] %",
           "text_de": "Beschäftigte in Tätigkeiten, die einen Fach- oder Hochschulabschluss erfordern (in %) [...] %",
+          "concept": "ant_homeoffice_grp3",
           "scale": "int",
           "sn": 3,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 4,
@@ -4923,10 +5101,11 @@
       "label_de": "Denken Sie an die Zeit unmittelbar vor der Corona-Pandemie. Wie hat sich dabei der Anteil der Mitarbeiter/innen, die von zuhause aus arbeiten (Homeoffice) bis zum 30.06.2021 verändert?",
       "items": [
         {
-          "item": "ant_homeofficeaender",
+          "item": "elb0250",
           "text": "Think back to the time immediately before the coronavirus pandemic. How has the share of employees working from home (home office) changed by June 30, 2021?",
           "text_de": "Denken Sie an die Zeit unmittelbar vor der Corona-Pandemie. Wie hat sich dabei der Anteil der Mitarbeiter/innen, die von zuhause aus arbeiten (Homeoffice) bis zum 30.06.2021 verändert?",
           "filter": "(7;elb0636=1) & (42;ant_homeoffice>0)",
+          "concept": "ant_homeofficeaender",
           "scale": "cat",
           "answers": [
             {
@@ -4975,10 +5154,11 @@
       "label_de": "Wie hat sich bis zum 30.06.2021 der Umfang der Arbeitszeit verändert, den die Beschäftigten zuhause gearbeitet haben (Homeoffice)?",
       "items": [
         {
-          "item": "homeofficezeit",
+          "item": "elb0251",
           "text": "How did the number of working hours that employees worked from home (home office) change by June 30, 2021?",
           "text_de": "Wie hat sich bis zum 30.06.2021 der Umfang der Arbeitszeit verändert, den die Beschäftigten zuhause gearbeitet haben (Homeoffice)?",
           "filter": "(7;elb0636=1) & (42;ant_homeoffice>0)",
+          "concept": "homeofficezeit",
           "scale": "cat",
           "answers": [
             {
@@ -5027,10 +5207,11 @@
       "label_de": "Wer entscheidet, zu welchen Zeiten der Beschäftigte zuhause (im Homeoffice) arbeitet?",
       "items": [
         {
-          "item": "homeofficeentsch",
+          "item": "elb0259",
           "text": "Who decides when the employee works at home (in the home office)?",
           "text_de": "Wer entscheidet, zu welchen Zeiten der Beschäftigte zuhause (im Homeoffice) arbeitet?",
           "filter": "(7;elb0636=1) & (42;ant_homeoffice>0)",
+          "concept": "homeofficeentsch",
           "scale": "cat",
           "answers": [
             {
@@ -5079,9 +5260,10 @@
       "label_de": "Hat Ihr Unternehmen innerhalb der letzten drei Jahre Coworking Spaces genutzt oder die Nutzung in Erwägung gezogen?\r\nEin Coworking Space ist ein Arbeitsort außerhalb des Unternehmens, welcher vom Arbeitgeber flexibel für die Beschäftigten gebucht werden kann.",
       "items": [
         {
-          "item": "coworking",
+          "item": "elb0260",
           "text": "Has your company used or considered using coworking spaces within the last three years? A coworking space is a workspace outside the company that can be booked flexibly by the employer for employees.",
           "text_de": "Hat Ihr Unternehmen innerhalb der letzten drei Jahre Coworking Spaces genutzt oder die Nutzung in Erwägung gezogen?\r\nEin Coworking Space ist ein Arbeitsort außerhalb des Unternehmens, welcher vom Arbeitgeber flexibel für die Beschäftigten gebucht werden kann.",
+          "concept": "coworking",
           "scale": "cat",
           "answers": [
             {
@@ -5123,6 +5305,7 @@
           "item": "elb0650",
           "text": "Think back to the time immediately before the coronavirus pandemic. How has the amount of time you worked from home (home office) changed by June 30, 2021?\r\n",
           "text_de": "Denken Sie an die Zeit unmittelbar vor der Corona-Pandemie. Wie hat sich bis zum 30.06.2021 der Umfang der Arbeitszeit verändert, den Sie zuhause gearbeitet haben (Homeoffice)?",
+          "concept": "elb0650",
           "scale": "cat",
           "answers": [
             {
@@ -5201,6 +5384,7 @@
           "item": "elb0651",
           "text": "My own business premises (office, factory, store, school, etc.) ",
           "text_de": "Meine eigenen Geschäftsräume (Büro, Fabrik, Laden, Schule usw.)",
+          "concept": "elb0651",
           "scale": "cat",
           "answers": [
             {
@@ -5241,6 +5425,7 @@
           "item": "elb0652",
           "text": "Clients' premises",
           "text_de": "Räumlichkeiten von Kund/innen",
+          "concept": "elb0652",
           "scale": "cat",
           "answers": [
             {
@@ -5281,6 +5466,7 @@
           "item": "elb0653",
           "text": "In the car or another vehicle",
           "text_de": "Im Auto oder einem anderen Fahrzeug",
+          "concept": "elb0653",
           "scale": "cat",
           "answers": [
             {
@@ -5321,6 +5507,7 @@
           "item": "elb0654",
           "text": "Outdoors (e.g., construction site, field, city streets) ",
           "text_de": "Im Freien (z. B. Baustelle, Feld, Straßen einer Stadt)",
+          "concept": "elb0654",
           "scale": "cat",
           "answers": [
             {
@@ -5361,6 +5548,7 @@
           "item": "elb0655",
           "text": "Your own home",
           "text_de": "Ihr eigenes Zuhause",
+          "concept": "elb0655",
           "scale": "cat",
           "answers": [
             {
@@ -5401,6 +5589,7 @@
           "item": "elb0656",
           "text": "Public places such as cafés, airports, etc.",
           "text_de": "Öffentliche Orte wie Cafés, Flughäfen usw.",
+          "concept": "elb0656",
           "scale": "cat",
           "answers": [
             {
@@ -5452,6 +5641,7 @@
           "item": "elb0657",
           "text": "Is there a remuneration regulation in your field, such as the fee schedule for architects and engineers (Honorarordnung für Architekten und Ingenieure)? ",
           "text_de": "Gibt es in dem Bereich, in dem Sie tätig sind, eine Vergütungsverordnung wie bspw. die Honorarordnung für Architekt/innen und Ingenieur/innen?",
+          "concept": "elb0657",
           "scale": "cat",
           "answers": [
             {
@@ -5490,9 +5680,10 @@
       "label_de": "Welche Rechtsform hat Ihr Unternehmen?",
       "items": [
         {
-          "item": "rechtsform",
+          "item": "elb0261",
           "text": "What is the legal form of your company?",
           "text_de": "Welche Rechtsform hat Ihr Unternehmen?",
+          "concept": "rechtsform",
           "scale": "cat",
           "answers": [
             {
@@ -5554,9 +5745,10 @@
           "number": ""
         },
         {
-          "item": "ertraglag2020",
+          "item": "elb0262",
           "text": "2020",
           "text_de": "2020",
+          "concept": "ertraglag2020",
           "scale": "cat",
           "answers": [
             {
@@ -5594,9 +5786,10 @@
           "number": ""
         },
         {
-          "item": "ertraglag2021",
+          "item": "elb0263",
           "text": "2021",
           "text_de": "2021",
+          "concept": "ertraglag2021",
           "scale": "cat",
           "answers": [
             {
@@ -5648,6 +5841,7 @@
           "item": "elb0658",
           "text": "What share of your revenue comes from your largest client?",
           "text_de": "Welchen Anteil an Ihren Einnahmen machen Sie mit Ihrem/Ihrer größten Kund/in?",
+          "concept": "elb0658",
           "scale": "cat",
           "answers": [
             {
@@ -5696,33 +5890,37 @@
           "number": ""
         },
         {
-          "item": "umsatz2020",
+          "item": "elb0264",
           "text": "[Amount approximately] 2020 [...] euros",
           "text_de": "[Betrag etwa] 2020 […] Euro",
+          "concept": "umsatz2020",
           "scale": "int",
           "sn": 1,
           "number": ""
         },
         {
-          "item": "umsatz2020_ka",
-          "text": "Can’t / don’t want to answer",
+          "item": "2",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
+          "concept": "umsatz2020_ka",
           "scale": "bin",
           "sn": 2,
           "number": ""
         },
         {
-          "item": "umsatz2021",
+          "item": "elb0266",
           "text": "[Amount approximately] 2021 [...] euros",
           "text_de": "[Betrag etwa] 2021 […] Euro",
+          "concept": "umsatz2021",
           "scale": "int",
           "sn": 3,
           "number": ""
         },
         {
-          "item": "umsatz2021_ka",
-          "text": "Can’t / don’t want to answer",
+          "item": "3",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
+          "concept": "umsatz2021_ka",
           "scale": "bin",
           "sn": 4,
           "number": ""
@@ -5750,13 +5948,14 @@
           "item": "elb0484",
           "text": "[...] euros",
           "text_de": "[...] Euro",
+          "concept": "elb0484",
           "scale": "int",
           "sn": 1,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 2,
@@ -5787,6 +5986,7 @@
           "item": "elb0482",
           "text": "Expenditure in euros […]",
           "text_de": "Ausgaben in Euro: [...]",
+          "concept": "elb0482",
           "scale": "int",
           "sn": 1,
           "number": ""
@@ -5795,13 +5995,14 @@
           "item": "elb0483",
           "text": "Expenditure relative to sales (in percent): […]",
           "text_de": "Ausgaben relativ zum Umsatz (in Prozent): []",
+          "concept": "elb0483",
           "scale": "int",
           "sn": 2,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 3,
@@ -5830,16 +6031,17 @@
           "number": ""
         },
         {
-          "item": "perskost",
+          "item": "elb0270",
           "text": "Percentage of operating costs [...] %",
           "text_de": "Prozentanteil an den Betriebskosten [...] %",
+          "concept": "perskost",
           "scale": "int",
           "sn": 1,
           "number": ""
         },
         {
           "item": "-1",
-          "text": "Can’t / don’t want to answer",
+          "text": "Can't / don't want to answer",
           "text_de": "Kann/möchte ich nicht beantworten",
           "scale": "bin",
           "sn": 2,
@@ -5853,14 +6055,15 @@
     "59": {
       "question": "59",
       "name": "59",
-      "label": "How has the percentage share of personnel costs in total operating costs changed in 2020 compared to 2020?1",
+      "label": "How has the percentage share of personnel costs in total operating costs changed in 2021 compared to 2020?",
       "label_de": "Wie hat sich der prozentuale Anteil der Personalkosten an den gesamten Betriebskosten im Jahr 2021 im Vergleich zum Jahr 2020 verändert?",
       "items": [
         {
-          "item": "perskostaend",
-          "text": "How has the percentage share of personnel costs in total operating costs changed in 2020 compared to 2020?1",
+          "item": "elb0273",
+          "text": "How has the percentage share of personnel costs in total operating costs changed in 2021 compared to 2020?",
           "text_de": "Wie hat sich der prozentuale Anteil der Personalkosten an den gesamten Betriebskosten im Jahr 2021 im Vergleich zum Jahr 2020 verändert?",
           "filter": "7;elb0636=1",
+          "concept": "perskostaend",
           "scale": "cat",
           "answers": [
             {
@@ -5929,6 +6132,7 @@
           "item": "elb0361_v2",
           "text": "From today's perspective, it is the right decision to be an entrepreneur or self-employed",
           "text_de": "Es ist aus heutiger Sicht eine richtige Entscheidung, unternehmerisch bzw. selbstständig tätig zu sein",
+          "concept": "elb0361_v2",
           "scale": "cat",
           "answers": [
             {
@@ -5979,6 +6183,7 @@
           "item": "elb0362_v2",
           "text": "I have my entrepreneurial development as a self-employed completely under control",
           "text_de": "Ich habe meine unternehmerische Entwicklung als selbständig tätige Person vollständig unter Kontrolle",
+          "concept": "elb0362_v2",
           "scale": "cat",
           "answers": [
             {
@@ -6048,6 +6253,7 @@
           "item": "elb0364_v2",
           "text": "It was the right decision to become an entrepreneur or self-employed",
           "text_de": "Es war eine richtige Entscheidung, unternehmerisch bzw. selbstständig tätig zu werden",
+          "concept": "elb0364_v2",
           "scale": "cat",
           "answers": [
             {
@@ -6098,6 +6304,7 @@
           "item": "elb0365_v2",
           "text": "I had my entrepreneurial development as a self-employed completely under control",
           "text_de": "Ich hatte meine unternehmerische Entwicklung als selbständig tätige Person vollständig unter Kontrolle",
+          "concept": "elb0365_v2",
           "scale": "cat",
           "answers": [
             {
@@ -6167,6 +6374,7 @@
           "item": "elb0377_v2",
           "text": "A lot of bureaucracy",
           "text_de": "Viel Bürokratie",
+          "concept": "elb0377_v2",
           "scale": "cat",
           "answers": [
             {
@@ -6217,6 +6425,7 @@
           "item": "elb0378_v2",
           "text": "High workload",
           "text_de": "Hohe Arbeitsbelastung",
+          "concept": "elb0378_v2",
           "scale": "cat",
           "answers": [
             {
@@ -6267,6 +6476,7 @@
           "item": "elb0379_v2",
           "text": "Financial risk",
           "text_de": "Finanzielles Risiko",
+          "concept": "elb0379_v2",
           "scale": "cat",
           "answers": [
             {
@@ -6317,6 +6527,7 @@
           "item": "elb0380_v2",
           "text": "Lack of employees",
           "text_de": "Fehlende Mitarbeiter/innen",
+          "concept": "elb0380_v2",
           "scale": "cat",
           "answers": [
             {
@@ -6367,6 +6578,7 @@
           "item": "elb0381_v2",
           "text": "Qualification of employees",
           "text_de": "Qualifikation der Mitarbeiter/innen",
+          "concept": "elb0381_v2",
           "scale": "cat",
           "answers": [
             {
@@ -6417,6 +6629,7 @@
           "item": "elb0382_v2",
           "text": "Uncertain future",
           "text_de": "Unsichere Zukunft",
+          "concept": "elb0382_v2",
           "scale": "cat",
           "answers": [
             {
@@ -6467,6 +6680,7 @@
           "item": "elb0660",
           "text": "Other difficulties",
           "text_de": "Sonstige Herausforderungen",
+          "concept": "elb0660",
           "scale": "cat",
           "answers": [
             {
@@ -6528,6 +6742,7 @@
           "item": "elb0376",
           "text": "To what extent do you agree with the following statement: We have the right framework conditions in Germany for entrepreneurial or self-employed activities.",
           "text_de": "Inwiefern stimmen Sie der folgenden Aussage zu:\r\nWir haben in Deutschland die passenden Rahmenbedingungen für unternehmerische bzw. selbstständige Tätigkeiten",
+          "concept": "elb0376",
           "scale": "cat",
           "answers": [
             {
@@ -6586,9 +6801,10 @@
       "label_de": "Falls Sie weitere Kommentare oder Anregungen zur Befragung haben, können Sie uns diese hier mitteilen.",
       "items": [
         {
-          "item": "comment",
+          "item": "eab0013",
           "text": "If you have any additional comments or suggestions regarding the survey, you can share them with us here.",
           "text_de": "Falls Sie weitere Kommentare oder Anregungen zur Befragung haben, können Sie uns diese hier mitteilen.",
+          "concept": "comment",
           "scale": "chr",
           "sn": 0,
           "number": ""
