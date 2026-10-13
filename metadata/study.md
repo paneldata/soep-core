@@ -12,8 +12,8 @@ config:
 
 ## Citation
 
-* **Title:** German Socio-Economic Panel Study (SOEP-Core)
-* **Authors:**  Jan Goebel, Markus M. Grabka, Carsten Schröder, Sabine Zinn, Mattis Beckmannshagen, Philippa Cumming, Jascha Dräger, Andreas Franken, Miriam Gauer, Martin Gerike, Daniel Graeber, Florian Griese, Selin Kara, Daniel Labarca Pinto, Antonia Meier, Cristóbal Moya, Jana Nebelin, Marvin Petrenz, Denise Rolle, Claudia Saalbach, Sarah Satilmis, Daniel Schnitzlein, Rainer Siegers, Hans Walter Steinhauer, Felix Süttmann, Yogam Tchokni, Knut Wenzig
+* **Title:** Socio-Economic Panel, data from 1984-2025, (SOEP-Core, v42)
+* **Authors:** Jan Goebel, Markus M. Grabka, Christian Hunkler, Carsten Schröder, Sabine Zinn, Mattis Beckmannshagen, Jascha Dräger, Andreas Franken, Martin Gerike, Daniel Graeber, Florian Griese, Jörg Hartmann, Selin Kara, Daniel Labarca Pinto, Antonia Meier, Cristóbal Moya, Jana Nebelin, Rebecca Olthaus, Marvin Petrenz, Denise Rolle, Claudia Saalbach, Sarah Satilmis, Johannes Schütt, Rainer Siegers, Elena Sommer, Hans Walter Steinhauer, Felix Süttmann, Yogam Tchokni, Knut Wenzig, Alina Zainullina
 
 Publications using these data should cite the DOI ([https://doi.org/10.5684/soep.core.v41o](https://doi.org/10.5684/soep.core.v41o), or the DOI of another used edition) and include one of the following references:
 
