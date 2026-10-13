@@ -15,7 +15,7 @@ config:
 * **Title:** Socio-Economic Panel, data from 1984-2025, (SOEP-Core, v42)
 * **Authors:** Jan Goebel, Markus M. Grabka, Christian Hunkler, Carsten Schröder, Sabine Zinn, Mattis Beckmannshagen, Jascha Dräger, Andreas Franken, Martin Gerike, Daniel Graeber, Florian Griese, Jörg Hartmann, Selin Kara, Daniel Labarca Pinto, Antonia Meier, Cristóbal Moya, Jana Nebelin, Rebecca Olthaus, Marvin Petrenz, Denise Rolle, Claudia Saalbach, Sarah Satilmis, Johannes Schütt, Rainer Siegers, Elena Sommer, Hans Walter Steinhauer, Felix Süttmann, Yogam Tchokni, Knut Wenzig, Alina Zainullina
 
-Publications using these data should cite the DOI ([https://doi.org/10.5684/soep.core.v41o](https://doi.org/10.5684/soep.core.v41o), or the DOI of another used edition) and include one of the following references:
+Publications using these data should cite the DOI ([https://doi.org/10.5684/soep.core.v42o](https://doi.org/10.5684/soep.core.v42o), or the DOI of another used edition) and include one of the following references:
 
 * Jan Goebel, Markus M. Grabka, Stefan Liebig, Martin Kroh, David Richter, Carsten Schröder, Jürgen Schupp (2018) The German Socio-Economic Panel Study (SOEP). Jahrbücher für Nationalökonomie und Statistik / Journal of Economics and Statistics, [https://doi.org/10.1515/jbnst-2018-0022](https://doi.org/10.1515/jbnst-2018-0022)
 * Gert G. Wagner, Jan Göbel, Peter Krause, Rainer Pischner, and Ingo Sieber (2008) Das Sozio-oekonomische Panel (SOEP): Multidisziplinäres Haushaltspanel und Kohortenstudie für Deutschland - Eine Einführung (für neue Datennutzer) mit einem Ausblick (für erfahrene Anwender), AStA Wirtschafts- und Sozialstatistisches Archiv 2 (4), 301-328, [https://doi.org/10.1007/s11943-008-0050-y](https://doi.org/10.1007/s11943-008-0050-y)
