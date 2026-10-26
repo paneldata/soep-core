@@ -47,26 +47,28 @@ The SOEP is presented to respondents and interviewers under the easy-to-remember
 
 The most current instruments for our main samples (A-R, M1, M2, M7, M8a-M8c): 
 
-| paneldata.org (Links to CAPI-Versions)                     | Field version (mostly PAPI) | Version with variable names (CAPI/CAWI) |
-|------------------------------------------------------------|-----------------------------|-----------------------------------------|
-| Household Matrix                                           |                              | PDF (de/en)                             |
-| Household                       |                              | PDF (de/en)                             |
-| Screening                     |                             | PDF (de/en)                             |
-| Individual                      |                             | PDF (de/en)                             |
-| Cognition Tests for Adults     |                             | PDF (de/en)                             |
-| Biography                      |                             | PDF (de/en)                             |
-| Catch-up Individual              |                             | PDF (de/en)                             |
-| Youth (12-17-year-olds)        |                             | PDF (de/en)                             |
-| Competency test “Lust auf DJ”                              |                             | PDF (de/en)                             |
-| Childhood (0-11-year-olds)     |                             | PDF (de/en)                             |
-| Deceased Individual             |                              | PDF (de/en)                             |
-| Drop-off Hourly Wages       |                              | PDF (de/en)                             |
-| Residential Environment        |                             | PDF (de/en)                             |
-| CAMCES                                                     |                             | PDF (de/en)                             |
-| Self-Employed Persons 2024 |                             | PDF (de/en)                             |
-| About the interview         |                             | PDF (de/en)                             |
-| Pre-recruitment]            |                             | PDF (de/en)                             |
-
+| paneldata.org (Links to CAPI-Versions)                                                     | Field version (mostly PAPI) | Version with variable names (CAPI/CAWI)                                                                                                                                               |
+|--------------------------------------------------------------------------------------------|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Household Matrix                                                                           |                             | PDF (de/en)                                                                                                                                                                       |
+| [Household](https://paneldata.org/soep-core/inst/soep-core-2025-hh2)                       |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1022221.de/diw_ssp1686.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1022219.de/diw_ssp1685.pdf)) |
+| [Intro](https://ddionrails.soep.de/soep-core/inst/soep-core-2025-intro)                    |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1021123.de/diw_ssp1665.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1021121.de/diw_ssp1664.pdf)) |
+| [Screening](https://ddionrails.soep.de/soep-core/inst/soep-core-2025-scf2)                 |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1022335.de/diw_ssp1695.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1022333.de/diw_ssp1694.pdf)) |
+| [Individual](https://ddionrails.soep.de/soep-core/inst/soep-core-2025-pe2)                 |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1021888.de/diw_ssp1682.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1021886.de/diw_ssp1681.pdf)) |
+| Cognition Tests for Adults                                                                 |                             | PDF (de/en)                                                                                                                                                                       |
+| [Biography](https://ddionrails.soep.de/soep-core/inst/soep-core-2025-ll2)                  |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1022339.de/diw_ssp1697.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1022337.de/diw_ssp1696.pdf)) |
+| [Catch-up Individual](https://ddionrails.soep.de/soep-core/inst/soep-core-2025-l2)         |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1021872.de/diw_ssp1679.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1021870.de/diw_ssp1678.pdf)) |
+| [Youth (12-17-year-olds)](https://ddionrails.soep.de/soep-core/inst/soep-core-2025-ju2)    |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1022280.de/diw_ssp1691.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1022230.de/diw_ssp1690.pdf)) |
+| Competency test “Lust auf DJ”                                                              |                             | PDF (de/en)                                                                                                                                                                       |
+| [Childhood (0-11-year-olds)](https://ddionrails.soep.de/soep-core/inst/soep-core-2025-ki2) |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1022227.de/diw_ssp1689.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1022225.de/diw_ssp1688.pdf)) |
+| [Deceased Individual](https://ddionrails.soep.de/soep-core/inst/soep-core-2025-vp2)        |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1021864.de/diw_ssp1675.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1021159.de/diw_ssp1674.pdf)) |
+| Drop-off Hourly Wages                                                                      |                             | PDF (de/en)                                                                                                                                                                       |
+| [Residential Environment](https://ddionrails.soep.de/soep-core/inst/soep-core-2025-wuma)   |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1021149.de/diw_ssp1669.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1021159.de/diw_ssp1674.pdf)) |
+| CAMCES                                                                                     |                             | PDF (de/en)                                                                                                                                                                       |
+| Self-Employed Persons 2024                                                                 |                             | PDF (de/en)                                                                                                                                                                       |
+| [About the interview](https://ddionrails.soep.de/soep-core/inst/soep-core-2025-kontext)    |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1021153.de/diw_ssp1671.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1021151.de/diw_ssp1670.pdf)) |
+| Pre-recruitment                                                                            |                             | PDF (de/en)                                                                                                                                                                       |
+| [Flash Survey 1](https://paneldata.org/soep-core/inst/soep-core-2025-fs-01)                |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1021118.de/diw_ssp1663.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1021116.de/diw_ssp1662.pdf)) |
+| [Interviewer Survey](https://ddionrails.soep.de/soep-core/inst/soep-core-2025-int)         |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1021145.de/diw_ssp1667.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1021125.de/diw_ssp1666.pdf)) |
 
 
 
@@ -74,9 +76,11 @@ In some samples adapted versions of the instruments were used:
 
 | paneldata.org (Links to CAPI-Versions)  | Field version (PAPI) | Version with variable names |
 |-----------------------------------------|----------------------|-----------------------------|
-| Samples M3-M6,M9 (“Refugee Samples”)    |                      |                             |
-| Household |                             | PDF (de/en)                             |             |
-| Individual |                             | PDF (de/en)                             |
+| Samples M3-M6, M9 (Refugee Samples)    |                      |                             |
+| Household |                             |                             |             |
+| [Individual](https://ddionrails.soep.de/soep-core/inst/soep-core-2025-p-ref) |                             | PDF ([de](https://www.diw.de/documents/publikationen/73/diw_01.c.1022331.de/diw_ssp1693.pdf)/[en](https://www.diw.de/documents/publikationen/73/diw_01.c.1022282.de/diw_ssp1692.pdf))                             |
+
+
 
 ## Data access
 
